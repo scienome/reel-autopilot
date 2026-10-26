@@ -53,6 +53,15 @@ def main():
     cap = caption_for(rid)
     print(f'next reel: {rid}  ({len(q)} in queue)\nvideo: {url}\ncaption:\n{cap}\n')
     if a.dry_run:
+        # check everything short of posting: the token, the account, and that the video link downloads
+        import requests
+        if os.environ.get('IG_ACCESS_TOKEN'):
+            me = api('GET', '/me', fields='user_id,username')
+            print(f"token OK: @{me.get('username')} (id {me.get('user_id')}, secret IG_USER_ID {'matches' if str(me.get('user_id')) == os.environ.get('IG_USER_ID') else 'DOES NOT MATCH'})")
+        r = requests.get(url, stream=True, timeout=60)
+        print(f'video link: HTTP {r.status_code}, {r.headers.get("content-length")} bytes, {r.headers.get("content-type")}')
+        if r.status_code != 200:
+            sys.exit('the video link does not download')
         return
     ig = os.environ['IG_USER_ID']
     c = api('POST', f'/{ig}/media', media_type='REELS', video_url=url, caption=cap, share_to_feed=True)
