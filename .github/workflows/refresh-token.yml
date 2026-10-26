@@ -18,5 +18,10 @@ jobs:
         run: |
           NEW=$(curl -sf "https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${IG_ACCESS_TOKEN}" | python3 -c "import sys,json; print(json.load(sys.stdin)['access_token'])")
           echo "::add-mask::$NEW"
+          if [ -z "$GH_TOKEN" ]; then
+            echo "Token refreshed with Instagram. No GH_PAT secret, so the returned token was not saved."
+            [ "$NEW" = "$IG_ACCESS_TOKEN" ] || echo "::warning::Instagram returned a different token. Add a GH_PAT secret (see README) so it can be saved, or regenerate the token before it expires."
+            exit 0
+          fi
           gh secret set IG_ACCESS_TOKEN --body "$NEW" --repo "$GITHUB_REPOSITORY"
-          echo "Token renewed."
+          echo "Token renewed and saved."
