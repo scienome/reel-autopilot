@@ -1,0 +1,12 @@
+{
+  "voice": {
+    "voice_id": "PASTE_YOUR_ELEVENLABS_VOICE_ID",
+    "model_id": "eleven_v4",
+    "voice_settings": null
+  },
+  "instagram": {
+    "api_version": "v26.0",
+    "post_times_ist": ["13:00", "20:00"],
+    "default_hashtags": ["couplegoals", "relatable", "couplehumor", "sarcasm", "animation", "reels"]
+  }
+}

@@ -1,0 +1,72 @@
+[
+ {
+  "id": "hook",
+  "phrases": [
+   "Has this ever happened to you?"
+  ]
+ },
+ {
+  "id": "ask",
+  "phrases": [
+   "You ask one simple question.",
+   "Where do you wanna eat?"
+  ]
+ },
+ {
+  "id": "she",
+  "phrases": [
+   "And she says...",
+   "I don't care.",
+   "Anything is fine."
+  ]
+ },
+ {
+  "id": "pizza",
+  "phrases": [
+   "Pizza?",
+   "Too greasy."
+  ]
+ },
+ {
+  "id": "burger",
+  "phrases": [
+   "Burgers?",
+   "Seriously?"
+  ]
+ },
+ {
+  "id": "sushi",
+  "phrases": [
+   "Sushi?",
+   "We literally just had sushi.",
+   "Three weeks ago."
+  ]
+ },
+ {
+  "id": "fault",
+  "phrases": [
+   "So now you're starving...",
+   "and somehow, it's your fault."
+  ]
+ },
+ {
+  "id": "bell",
+  "phrases": [
+   "Then... the doorbell rings."
+  ]
+ },
+ {
+  "id": "fav",
+  "phrases": [
+   "Because you already ordered her favorite.",
+   "Pizza."
+  ]
+ },
+ {
+  "id": "listen",
+  "phrases": [
+   "Wow. You actually listen?",
+   "Shocking, right?"
+  ]
+ }
+]

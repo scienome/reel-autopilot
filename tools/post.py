@@ -1,0 +1,80 @@
+#!/usr/bin/env python3
+"""Post the next reel in the queue to Instagram (Instagram API with Instagram Login).
+
+Usage: python3 tools/post.py [--dry-run] [--reel <id>]
+
+The queue is every reels/<id> folder (in name order) that has out/<id>.mp4 on the main branch and is not yet in
+posted.json. The video must be publicly reachable, so the repo is public and the URL is the raw GitHub file.
+Environment: IG_ACCESS_TOKEN, IG_USER_ID, GITHUB_REPOSITORY (set by Actions), POST_BRANCH (default main).
+Caption: reels/<id>/meta.json -> caption + hashtags. Appends the result to posted.json.
+"""
+import argparse, datetime, glob, json, os, sys, time
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+CFG = json.load(open(os.path.join(ROOT, 'config.json')))
+API = 'https://graph.instagram.com/' + CFG['instagram'].get('api_version', 'v26.0')
+LOG = os.path.join(ROOT, 'posted.json')
+
+
+def queue():
+    done = {p['id'] for p in json.load(open(LOG))} if os.path.exists(LOG) else set()
+    ids = [os.path.basename(p) for p in sorted(glob.glob(os.path.join(ROOT, 'reels', '*')))]
+    return [i for i in ids if i not in done and os.path.exists(os.path.join(ROOT, 'out', i + '.mp4'))]
+
+
+def caption_for(rid):
+    mp = os.path.join(ROOT, 'reels', rid, 'meta.json')
+    meta = json.load(open(mp)) if os.path.exists(mp) else {}
+    tags = meta.get('hashtags') or CFG['instagram'].get('default_hashtags', [])
+    cap = meta.get('caption', '').strip()
+    return (cap + '\n\n' + ' '.join('#' + t.lstrip('#') for t in tags)).strip()
+
+
+def api(method, path, **data):
+    import requests
+    h = {'Authorization': 'Bearer ' + os.environ['IG_ACCESS_TOKEN']}
+    r = requests.request(method, API + path, headers=h, json=data if method == 'POST' else None, params=data if method == 'GET' else None, timeout=120)
+    j = r.json() if r.headers.get('content-type', '').startswith(('application/json', 'text/javascript')) else {'raw': r.text}
+    if r.status_code != 200 or 'error' in j:
+        raise RuntimeError(f'{method} {path} -> {r.status_code} {json.dumps(j)[:600]}')
+    return j
+
+
+def main():
+    ap = argparse.ArgumentParser(); ap.add_argument('--dry-run', action='store_true'); ap.add_argument('--reel')
+    a = ap.parse_args()
+    q = queue()
+    rid = a.reel or (q[0] if q else None)
+    if not rid:
+        print('::error::The queue is empty: no rendered reels left to post. Merge the next weekly batch.')
+        sys.exit(1)
+    repo, branch = os.environ.get('GITHUB_REPOSITORY', 'OWNER/REPO'), os.environ.get('POST_BRANCH', 'main')
+    url = f'https://raw.githubusercontent.com/{repo}/{branch}/out/{rid}.mp4'
+    cap = caption_for(rid)
+    print(f'next reel: {rid}  ({len(q)} in queue)\nvideo: {url}\ncaption:\n{cap}\n')
+    if a.dry_run:
+        return
+    ig = os.environ['IG_USER_ID']
+    c = api('POST', f'/{ig}/media', media_type='REELS', video_url=url, caption=cap, share_to_feed=True)
+    cid = c['id']; print('container', cid)
+    for _ in range(30):  # up to ~10 minutes
+        time.sleep(20)
+        st = api('GET', f'/{cid}', fields='status_code,status').get('status_code')
+        print('status', st)
+        if st == 'FINISHED':
+            break
+        if st in ('ERROR', 'EXPIRED'):
+            raise RuntimeError(f'Instagram could not process the video ({st}). Check that the repo is public and {url} downloads.')
+    else:
+        raise RuntimeError('Instagram did not finish processing the video in time')
+    m = api('POST', f'/{ig}/media_publish', creation_id=cid)
+    log = json.load(open(LOG)) if os.path.exists(LOG) else []
+    log.append({'id': rid, 'media_id': m['id'], 'posted_at': datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds')})
+    json.dump(log, open(LOG, 'w'), indent=1)
+    print('published', rid, 'media', m['id'], f'({len(q) - 1} left in queue)')
+    if len(q) - 1 <= 2:
+        print(f'::warning::Only {len(q) - 1} reels left in the queue.')
+
+
+if __name__ == '__main__':
+    main()
