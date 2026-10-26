@@ -1,0 +1,71 @@
+[
+ {
+  "id": "hook",
+  "phrases": [
+   "POV: he sets five alarms for one nap."
+  ]
+ },
+ {
+  "id": "first",
+  "phrases": [
+   "Six o'clock.",
+   "Snooze."
+  ]
+ },
+ {
+  "id": "second",
+  "phrases": [
+   "Six-oh-nine.",
+   "Snooze."
+  ]
+ },
+ {
+  "id": "third",
+  "phrases": [
+   "Six-eighteen.",
+   "Snooze."
+  ]
+ },
+ {
+  "id": "she",
+  "phrases": [
+   "She's been awake since the first one,",
+   "staring at the ceiling."
+  ]
+ },
+ {
+  "id": "plan",
+  "phrases": [
+   "So she changes his alarm sound",
+   "to her own voice."
+  ]
+ },
+ {
+  "id": "alarm",
+  "phrases": [
+   "Six-twenty-seven.",
+   "Dinner's ready!"
+  ]
+ },
+ {
+  "id": "jump",
+  "phrases": [
+   "He's up in half a second,",
+   "smiling, hair everywhere,",
+   "fork in hand."
+  ]
+ },
+ {
+  "id": "twist",
+  "phrases": [
+   "There's no dinner.",
+   "Not even toast."
+  ]
+ },
+ {
+  "id": "close",
+  "phrases": [
+   "Rise and shine, sunshine."
+  ]
+ }
+]

@@ -1,0 +1,12 @@
+[
+ { "id": "hook", "phrases": ["Every couple has this standoff."] },
+ { "id": "cake", "phrases": ["One piece of cake left."] },
+ { "id": "you", "phrases": ["You have it.", "No, you have it."] },
+ { "id": "insist", "phrases": ["I insist.", "No, I insist."] },
+ { "id": "stare", "phrases": ["Ten minutes of very polite staring.", "Neither one blinks."] },
+ { "id": "give", "phrases": ["Finally he gives in.", "Okay, I'll have it."] },
+ { "id": "gone", "phrases": ["He looks down.", "The plate is empty."] },
+ { "id": "chew", "phrases": ["She's chewing.", "Slowly.", "Making eye contact."] },
+ { "id": "what", "phrases": ["What?", "You hesitated."] },
+ { "id": "close", "phrases": ["Dessert waits for no one."] }
+]

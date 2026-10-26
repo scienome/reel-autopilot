@@ -1,0 +1,12 @@
+[
+ { "id": "hook", "phrases": ["He says, I'm just getting milk."] },
+ { "id": "quick", "phrases": ["Quick trip.", "Ten minutes, tops."] },
+ { "id": "hours", "phrases": ["Two hours later."] },
+ { "id": "bags", "phrases": ["He's back with twelve bags,", "and a very proud face."] },
+ { "id": "inside", "phrases": ["Snacks.", "Three kinds of cheese.", "A giant inflatable flamingo."] },
+ { "id": "she", "phrases": ["She checks every single bag.", "Twice.", "Then a third time."] },
+ { "id": "milk", "phrases": ["Babe.", "Where's the milk?"] },
+ { "id": "silence", "phrases": ["He checks the receipt.", "Silence."] },
+ { "id": "again", "phrases": ["I'll be right back."] },
+ { "id": "close", "phrases": ["See you in two hours."] }
+]

@@ -1,0 +1,65 @@
+[
+ {
+  "id": "hook",
+  "phrases": [
+   "Be honest.",
+   "Is this your relationship?"
+  ]
+ },
+ {
+  "id": "smile",
+  "phrases": [
+   "She's giggling at her phone."
+  ]
+ },
+ {
+  "id": "sus",
+  "phrases": [
+   "He narrows his eyes.",
+   "Who's making you laugh like that?"
+  ]
+ },
+ {
+  "id": "nobody",
+  "phrases": [
+   "Nobody.",
+   "Giggles again."
+  ]
+ },
+ {
+  "id": "check",
+  "phrases": [
+   "Then his phone buzzes.",
+   "And buzzes.",
+   "And buzzes."
+  ]
+ },
+ {
+  "id": "it",
+  "phrases": [
+   "Forty-two memes.",
+   "All from her."
+  ]
+ },
+ {
+  "id": "couch",
+  "phrases": [
+   "From two feet away.",
+   "On the same couch."
+  ]
+ },
+ {
+  "id": "reply",
+  "phrases": [
+   "He sends one back.",
+   "She laughs so hard she snorts."
+  ]
+ },
+ {
+  "id": "close",
+  "phrases": [
+   "This is love now,",
+   "apparently."
+  ]
+ }
+]

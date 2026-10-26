@@ -1,0 +1,10 @@
+[
+ { "id": "hook", "phrases": ["Every couple has one person who can't keep a secret."] },
+ { "id": "she", "phrases": ["She finished the book.", "He's still on chapter two."] },
+ { "id": "rule", "phrases": ["His one rule:", "no spoilers."] },
+ { "id": "burst", "phrases": ["She's bursting at the seams.", "Every page he turns,", "she gasps."] },
+ { "id": "ears", "phrases": ["He reads the next line.", "She covers her mouth."] },
+ { "id": "guess", "phrases": ["Finally he says,", "Let me guess.", "The butler did it."] },
+ { "id": "shock", "phrases": ["She freezes.", "How?"] },
+ { "id": "close", "phrases": ["Your face told me."] }
+]

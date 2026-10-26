@@ -1,0 +1,10 @@
+[
+ { "id": "hook", "phrases": ["Four words that stop his heart."] },
+ { "id": "talk", "phrases": ["We need to talk."] },
+ { "id": "panic", "phrases": ["Instantly, he replays the whole week.", "Every single day."] },
+ { "id": "list", "phrases": ["Her birthday? Remembered.", "Her coffee order? Remembered.", "The last cookie?", "Oh no."] },
+ { "id": "says", "phrases": ["Then she says,", "It's about the dishes."] },
+ { "id": "relief", "phrases": ["The dishes!", "Just the dishes!"] },
+ { "id": "twist", "phrases": ["He's never been this happy to scrub a pan.", "He even dries them."] },
+ { "id": "close", "phrases": ["Works every single time."] }
+]

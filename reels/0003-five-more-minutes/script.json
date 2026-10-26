@@ -1,0 +1,10 @@
+[
+ { "id": "hook", "phrases": ["POV: he said five more minutes."] },
+ { "id": "ago", "phrases": ["Forty minutes ago."] },
+ { "id": "wait", "phrases": ["Shoes on. Jacket on. Keys in hand.", "He's still gaming."] },
+ { "id": "grab", "phrases": ["So she grabs the controller,", "just to show him how silly it is."] },
+ { "id": "round", "phrases": ["One round.", "Then another.", "Then she beats his high score."] },
+ { "id": "ready", "phrases": ["Now he's the one in his shoes,", "keys in hand."] },
+ { "id": "twist", "phrases": ["And she says...", "Five more minutes."] },
+ { "id": "close", "phrases": ["Who's addicted now?"] }
+]
