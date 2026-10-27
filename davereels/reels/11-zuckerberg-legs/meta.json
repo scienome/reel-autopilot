@@ -1,0 +1,22 @@
+{
+ "title": "Zuckerberg's billion-dollar legs",
+ "caption": "Billions of dollars into the metaverse, and the avatars still floated like ghosts. 🦿\nA VR headset's cameras look outward, so it sees your hands but not your legs, and has to guess where your knees are.\nWould you pay for legs in the metaverse?",
+ "hashtags": [
+  "gearsandglitches",
+  "metaverse",
+  "vr",
+  "virtualreality",
+  "tech",
+  "engineering",
+  "techfails",
+  "darkhumor"
+ ],
+ "cover_t": 3.0,
+ "libs": [
+  "davereels/props/dave.js"
+ ],
+ "sources": [
+  "Meta Connect, 11 October 2022: legs announced for Horizon avatars",
+  "Meta statement to UploadVR, October 2022: the legs segment used animations created from motion capture, not live tracking"
+ ]
+}

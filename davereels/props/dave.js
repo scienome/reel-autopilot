@@ -5,11 +5,11 @@
   // dave(S, pos, o):
   //   o.yaw, o.s (scale), o.pitch / o.roll (tip him over, around his middle)
   //   o.pose: 'stand' | 'walk' | 'sit' | 'drive' | 'point' | 'thumbs' | 'salute' | 'wave' | 'carry' | 'flail' | 'hold'
-  //   o.t (for walk / wave / flail cycles), o.hands = [L, R] to override hand targets (local metres), o.lean, o.headTilt
+  //   o.t (for walk / wave / flail cycles), o.hands = [L, R] / o.feet = [L, R] to override targets (local metres), o.kp (knee pole), o.lean, o.headTilt
   //   o.death: 'squash' | 'launch' | 'puff' | 'blown', o.u = 0..1 progress, o.to = world offset at u = 1, o.arc = peak height
   //   o.blink 0..1 (1 = eyes shut), o.xeyes (cartoon X eyes), o.half (upper body only: in a hatch, a seat, a hole)
   //   o.look = [x, y] pupil offset, o.mouth 0..1 (an O-shaped mouth), o.sweat 0..1, o.hat === false (no hard hat)
-  //   o.colors = { body, joint, hat } and o.decals === false: the same figure as somebody else (kept generic); o.suit: jacket and tie
+  //   o.colors = { body, joint, hat, head } and o.decals === false: the same figure as somebody else (kept generic); o.suit: jacket and tie
   // davePile(S, pos, t, o): the end state, a smoking heap of Dave with blinking eyes on top
   // ripCard(ctx, W, H, n, u, t, o): the "R.I.P. Dave #N" end card (o.cause: one small line under it)
   const DV = { body: [246, 196, 62], joint: [48, 50, 58], hat: [246, 122, 38], eye: [252, 252, 248], pupil: [24, 24, 30] };
@@ -44,6 +44,8 @@
       default: break;
     }
     if (o.hands) o.hands.forEach((h2, i) => { if (h2) P0.hands[i] = h2; });
+    if (o.feet) o.feet.forEach((f, i) => { if (f) P0.feet[i] = f; });
+    if (o.kp) P0.kp = o.kp;
     if (o.lean != null) P0.lean = o.lean;
     if (o.headTilt != null) P0.head = o.headTilt;
     return P0;
@@ -80,7 +82,7 @@
       boxAt([0, 0.98, 0], 0.18, 0.1, 0.12, [44, 52, 78], {}, false);
     }
     const hc = [0, 1.63, 0], HT = (p) => W(add(rotX(p, pz.head), hc));
-    S.box(HT, 0.12, 0.13, 0.13, col.body, { bevel: 0.45, ...gl, sidePaint: o.decals === false ? null : (c, w, h) => daveTarget(c, w, h) });
+    S.box(HT, 0.12, 0.13, 0.13, col.head || col.body, { bevel: 0.45, ...gl, sidePaint: o.decals === false ? null : (c, w, h) => daveTarget(c, w, h) });
     if (o.decals !== false) S.box((p) => HT(add(rotY(p, Math.PI), [-0.121, 0, 0])), 0.003, 0.07, 0.07, col.body, { bevel: 0, noShadow: true, sidePaint: (c, w, h) => daveTarget(c, w, h) });
     // face: two big cartoon eyes (blink, X when dead), an optional O mouth
     const bl = H.clamp(o.blink ?? 0), lk = o.look || [0, 0];

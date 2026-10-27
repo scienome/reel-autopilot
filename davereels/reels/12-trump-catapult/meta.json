@@ -1,0 +1,22 @@
+{
+ "title": "Trump vs. the electric catapult",
+ "caption": "Steam versus electromagnets: the US Navy's most expensive argument. Dave lost either way. ✈️\nA carrier catapult flings a jet to take-off speed in about a hundred metres, with steam on older ships or electromagnets on the USS Gerald R. Ford.\nTeam steam or team electric?",
+ "hashtags": [
+  "gearsandglitches",
+  "aircraftcarrier",
+  "navy",
+  "engineering",
+  "emals",
+  "aviation",
+  "physics",
+  "darkhumor"
+ ],
+ "cover_t": 5.0,
+ "libs": [
+  "davereels/props/dave.js"
+ ],
+ "sources": [
+  "TIME interview with Donald Trump, May 2017 (on EMALS: \"You have to be Albert Einstein to figure it out\"; told the Navy to go back to steam)",
+  "US DoD Director, Operational Test & Evaluation annual reports (EMALS reliability problems on CVN-78 Gerald R. Ford)"
+ ]
+}

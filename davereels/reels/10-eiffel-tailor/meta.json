@@ -1,0 +1,21 @@
+{
+ "title": "The tailor who jumped off the Eiffel Tower",
+ "caption": "He promised the police he'd test it with a dummy. Then he sent the dummy home. 🪂\nA parachute slows you by catching a lot of air; a suit barely bigger than a cape catches almost none, and 57 metres gives it no time.\nWould you have trusted the suit?",
+ "hashtags": [
+  "gearsandglitches",
+  "eiffeltower",
+  "paris",
+  "history",
+  "physics",
+  "parachute",
+  "weirdhistory",
+  "engineering"
+ ],
+ "cover_t": 3.0,
+ "libs": [
+  "davereels/props/dave.js"
+ ],
+ "sources": [
+  "Wikipedia, Franz Reichelt (4 February 1912; jumped from the first platform of the Eiffel Tower, about 57 m; had told police he would use a dummy; hesitated about 40 seconds; the jump was filmed)"
+ ]
+}
