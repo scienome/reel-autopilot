@@ -1,0 +1,8 @@
+{
+  "note": "Posting plan for YouTube. Times are local (IST). Each day: the full video first, then its 3 Shorts, which link to it.",
+  "timezone_offset": "+05:30",
+  "times": { "video": "07:30", "shorts": ["12:30", "17:30", "21:30"] },
+  "days": [
+    { "date": "2026-11-02", "video": "001-gimli-glider", "shorts": ["02-gimli-fuel-mistake", "03-gimli-tiny-propeller", "04-gimli-racetrack-landing"] }
+  ]
+}

@@ -1,0 +1,50 @@
+name: Publish to YouTube
+# Uploads every rendered video and Short listed in schedule.json to YouTube and schedules it for its time slot
+# (YouTube itself makes it public at that moment). The full video goes up first; its Shorts get its link in their
+# description. Runs right after each render finishes, every 2 hours as a backup, or by hand.
+on:
+  workflow_run:
+    workflows: ['Make mechanic videos', 'Make mechanic reels']
+    types: [completed]
+  schedule:
+    - cron: '17 */2 * * *'
+  push:
+    branches: [main]
+    paths: ['schedule.json']
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Only show what would be uploaded'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-youtube
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -q requests
+      - name: Upload and schedule
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+        run: python tools/youtube_publish.py ${{ inputs.dry_run && '--dry-run' || '' }}
+      - name: Save what was uploaded
+        if: always()
+        run: |
+          git config user.name "youtube-bot"; git config user.email "youtube-bot@users.noreply.github.com"
+          git add youtube_posted.json 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "YouTube uploads [skip ci]" && git pull --rebase -q && git push)
