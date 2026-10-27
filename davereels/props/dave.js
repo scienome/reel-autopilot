@@ -9,7 +9,7 @@
   //   o.death: 'squash' | 'launch' | 'puff' | 'blown', o.u = 0..1 progress, o.to = world offset at u = 1, o.arc = peak height
   //   o.blink 0..1 (1 = eyes shut), o.xeyes (cartoon X eyes), o.half (upper body only: in a hatch, a seat, a hole)
   //   o.look = [x, y] pupil offset, o.mouth 0..1 (an O-shaped mouth), o.sweat 0..1, o.hat === false (no hard hat)
-  //   o.colors = { body, joint, hat } and o.decals === false: the same figure as somebody else (kept generic)
+  //   o.colors = { body, joint, hat } and o.decals === false: the same figure as somebody else (kept generic); o.suit: jacket and tie
   // davePile(S, pos, t, o): the end state, a smoking heap of Dave with blinking eyes on top
   // ripCard(ctx, W, H, n, u, t, o): the "R.I.P. Dave #N" end card (o.cause: one small line under it)
   const DV = { body: [246, 196, 62], joint: [48, 50, 58], hat: [246, 122, 38], eye: [252, 252, 248], pupil: [24, 24, 30] };
@@ -75,6 +75,10 @@
     if (ho) { /* head only */ } else if (puff > 0.08) S.ico(W([0, 1.24, 0]), 0.24 * (1 + 1.9 * puff) * s, col.body, { sub: 1, gloss: 0.35 });
     else boxAt([0, 1.26, 0], 0.21, 0.19, 0.13, col.body, o.decals === false ? {} : { paint: (c, w, h) => daveTarget(c, w, h, 'DAVE') });
     S.rod(W([0, 1.44, 0]), W([0, 1.52, 0]), 0.05 * thick, col.joint, 8);
+    if (o.suit && !ho) { // a dark suit jacket over the chest, white shirt V and a red tie
+      boxAt([0, 1.24, 0], 0.225, 0.2, 0.145, [44, 52, 78], { paint: (c, w, h) => { c.fillStyle = '#f4f2ee'; c.beginPath(); c.moveTo(w * 0.32, 0); c.lineTo(w * 0.68, 0); c.lineTo(w * 0.5, h * 0.55); c.closePath(); c.fill(); c.fillStyle = '#d83a34'; c.beginPath(); c.moveTo(w * 0.46, h * 0.05); c.lineTo(w * 0.54, h * 0.05); c.lineTo(w * 0.56, h * 0.5); c.lineTo(w * 0.5, h * 0.6); c.lineTo(w * 0.44, h * 0.5); c.closePath(); c.fill(); } });
+      boxAt([0, 0.98, 0], 0.18, 0.1, 0.12, [44, 52, 78], {}, false);
+    }
     const hc = [0, 1.63, 0], HT = (p) => W(add(rotX(p, pz.head), hc));
     S.box(HT, 0.12, 0.13, 0.13, col.body, { bevel: 0.45, ...gl, sidePaint: o.decals === false ? null : (c, w, h) => daveTarget(c, w, h) });
     if (o.decals !== false) S.box((p) => HT(add(rotY(p, Math.PI), [-0.121, 0, 0])), 0.003, 0.07, 0.07, col.body, { bevel: 0, noShadow: true, sidePaint: (c, w, h) => daveTarget(c, w, h) });
@@ -154,3 +158,5 @@
   const ripSound = (k, t) => { ['G4', 'F#4', 'F4', 'E4'].forEach((n, i) => k.tone(t + i * 0.42, { f: i < 3 ? n : [[0, 'E4'], [0.9, 'D#4']], type: 'sawtooth', dur: i < 3 ? 0.38 : 1.1, gain: 0.07, a: 0.03, hold: i < 3 ? 0.25 : 0.9, filter: 'lowpass', f2: 1300 })); k.play('thud', t, { f: 70, gain: 0.25 }); };
   // the R.I.P. card's progress at time t (it rises half a second after the voice ends)
   const ripU = (t) => ramp(t, REEL_WORDS.end + 0.45, 0.7);
+  // a world point in Dave's own frame (for hand targets): Dave at pos, turned by yaw, scale s
+  const daveLocal = (pos, yaw, w, s = 1) => mul(rotY(sub(w, pos), -yaw), 1 / s);

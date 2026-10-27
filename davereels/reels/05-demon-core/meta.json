@@ -1,0 +1,22 @@
+{
+ "title": "The Demon Core's screwdriver",
+ "caption": "The only thing between a room full of physicists and a runaway chain reaction was a screwdriver held by hand. 🪛\nA neutron reflector bounces escaping neutrons back into the core, so closing the shell can push it past critical in an instant.\nWhat's the sketchiest 'safety system' you've ever seen at work?",
+ "hashtags": [
+  "gearsandglitches",
+  "demoncore",
+  "nuclearphysics",
+  "history",
+  "science",
+  "physics",
+  "labsafety",
+  "darkhumor"
+ ],
+ "cover_t": 9.0,
+ "libs": [
+  "davereels/props/dave.js"
+ ],
+ "sources": [
+  "Los Alamos National Laboratory history: Louis Slotin criticality accident, 21 May 1946 (beryllium reflector halves held apart with a screwdriver; Slotin died nine days later)",
+  "Wikipedia, Demon core (\"tickling the dragon's tail\")"
+ ]
+}

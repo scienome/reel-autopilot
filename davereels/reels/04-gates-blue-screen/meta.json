@@ -1,0 +1,22 @@
+{
+ "title": "Bill Gates' live blue screen",
+ "caption": "Windows 98 met its first scanner on live TV, and the scanner won. 💙\nA blue screen is Windows stopping everything on purpose when a driver does something illegal, before it can wreck your data.\nWhat's the worst time a computer has crashed on you?",
+ "hashtags": [
+  "gearsandglitches",
+  "windows98",
+  "bluescreen",
+  "bsod",
+  "techhistory",
+  "computers",
+  "engineeringfails",
+  "darkhumor"
+ ],
+ "cover_t": 12.0,
+ "libs": [
+  "davereels/props/dave.js"
+ ],
+ "sources": [
+  "COMDEX/Spring and Windows World, Chicago, 20 April 1998: Windows 98 plug-and-play demo with a scanner ends in a blue screen; Bill Gates: \"That must be why we're not shipping Windows 98 yet.\"",
+  "Microsoft Learn, Bug check (blue screen) basics: the system stops when kernel-mode code such as a driver does something illegal, to prevent data corruption"
+ ]
+}

@@ -1,0 +1,7 @@
+[
+  { "id": "hook", "text": "In 1946, the safety system for a plutonium core was a screwdriver. Held by hand." },
+  { "id": "shell", "text": "The core sat inside a shell that reflects neutrons back into it. Close the shell and the chain reaction runs away." },
+  { "id": "slotin", "text": "Physicist Louis Slotin kept the halves apart with the tip of a screwdriver. Colleagues called it \"tickling the dragon's tail\"." },
+  { "id": "slip", "text": "The screwdriver slipped. A flash of blue light. He knocked the shell apart and saved the others in the room, but he died nine days later." },
+  { "id": "end", "text": "Some safety equipment is just optimism." }
+]

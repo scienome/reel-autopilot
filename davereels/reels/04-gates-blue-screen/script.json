@@ -1,0 +1,7 @@
+[
+  { "id": "hook", "text": "In 1998, Microsoft showed off Windows 98 live, on stage, with Bill Gates watching." },
+  { "id": "pnp", "text": "The new trick was \"plug and play\": connect a device and Windows finds the right driver automatically." },
+  { "id": "scan", "text": "They plugged in a scanner. The screen turned blue." },
+  { "id": "why", "text": "A driver runs deep inside the system. If it does something illegal, Windows stops everything instantly, before it can damage your data. That's the blue screen of death." },
+  { "id": "quote", "text": "Gates said: \"That must be why we're not shipping Windows 98 yet.\"" }
+]
