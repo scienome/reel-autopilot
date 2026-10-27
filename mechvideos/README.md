@@ -26,3 +26,4 @@ Each video gets 3 vertical Shorts in `mechreels/reels/` that open on its most sh
 | 003 | What Happens If an Elevator Cable Snaps? | mechreels 08, 09, 10 |
 | 004 | How the Titan Submarine Imploded | mechreels 11, 12, 13 |
 | 005 | The Plane That Landed on a River (Miracle on the Hudson) | mechreels 14, 15, 16 |
+| 006 | What Really Sank the Titanic (It Wasn't Just the Iceberg) | mechreels 17, 18, 19 |

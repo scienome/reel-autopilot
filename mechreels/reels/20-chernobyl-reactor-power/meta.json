@@ -1,0 +1,8 @@
+{
+ "title": "How Chernobyl's reactor made power",
+ "caption": "Graphite slows the neutrons, water boils into steam, boron rods keep it in check, and one feedback loop could make it run away. ⚛️\nFull video: [LINK]\nDid you know a reactor is basically a kettle?",
+ "hashtags": ["chernobyl", "nuclear", "reactor", "engineering", "physics", "howitworks", "science", "gearsandglitches", "shorts"],
+ "cover_t": 10.0,
+ "libs": ["mechreels/props/gimli.js", "mechreels/props/world.js", "mechreels/props/chernobyl.js"],
+ "sources": ["World Nuclear Association, RBMK Reactors; IAEA INSAG-7 (1992)"]
+}

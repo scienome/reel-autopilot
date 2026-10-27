@@ -1,0 +1,8 @@
+{
+ "title": "Why Chernobyl's roof went flying",
+ "caption": "Water that flashes into steam all at once has nowhere to go. At Chernobyl, it threw a lid of at least 1,000 tonnes through the roof. 💨\nFull video: [LINK]\nWhat surprised you most?",
+ "hashtags": ["chernobyl", "steamexplosion", "nuclear", "engineering", "physics", "history", "science", "gearsandglitches", "shorts"],
+ "cover_t": 2.5,
+ "libs": ["mechreels/props/gimli.js", "mechreels/props/world.js", "mechreels/props/chernobyl.js"],
+ "sources": ["Wikipedia, Chernobyl disaster; IAEA INSAG-7 (1992); World Nuclear Association, Chernobyl Accident 1986"]
+}

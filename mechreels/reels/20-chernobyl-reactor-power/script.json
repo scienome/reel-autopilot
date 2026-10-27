@@ -1,0 +1,8 @@
+[
+  { "id": "hook", "text": "This is how the reactor at Chernobyl made electricity, and why it could run away." },
+  { "id": "split", "text": "Uranium atoms split, releasing heat and neutrons that split more atoms. A huge stack of graphite slows those neutrons down, to keep the chain going." },
+  { "id": "boil", "text": "Water flows up through the core, boils, and the steam spins a turbine." },
+  { "id": "rods", "text": "Boron rods slide in from above to swallow neutrons and control it." },
+  { "id": "catch", "text": "But the water also swallows neutrons. Turn it to steam, and the reaction speeds up, which makes more steam." },
+  { "id": "cta", "text": "At low power, that loop made it unstable. Full video on my channel." }
+]

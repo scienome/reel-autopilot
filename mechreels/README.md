@@ -51,3 +51,6 @@ Changing the voice (or anything in `style/`) and pushing to main remakes every M
 | 17 | The Titanic's weak rivets (Short for mechvideo 006) |
 | 18 | Why the Titanic's watertight walls failed (Short for mechvideo 006) |
 | 19 | Could hitting head-on have saved the Titanic? (Short for mechvideo 006) |
+| 20 | How Chernobyl's reactor made power (Short for mechvideo 007) |
+| 21 | Chernobyl's shutdown button made it worse (Short for mechvideo 007) |
+| 22 | Why Chernobyl's roof went flying (Short for mechvideo 007) |

@@ -1,0 +1,295 @@
+[
+ {
+  "chapter": "Not just the iceberg",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "The Titanic was called practically unsinkable.",
+     "It sank in two hours and forty minutes."
+    ]
+   },
+   {
+    "id": "more",
+    "phrases": [
+     "An iceberg started it.",
+     "But the iceberg wasn't the whole story."
+    ]
+   },
+   {
+    "id": "promise",
+    "phrases": [
+     "Weak rivets, walls that stopped short, and one split-second turn all played a part.",
+     "More than fifteen hundred people died.",
+     "Here's the engineering of how it happened."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "The unsinkable design",
+  "beats": [
+   {
+    "id": "ship",
+    "phrases": [
+     "In nineteen twelve, the Titanic was one of the largest moving objects ever built.",
+     "Two hundred and sixty-nine metres long."
+    ]
+   },
+   {
+    "id": "compartments",
+    "phrases": [
+     "Its hull was divided into sixteen watertight compartments, by fifteen steel walls called bulkheads."
+    ]
+   },
+   {
+    "id": "doors",
+    "phrases": [
+     "If the hull was holed, doors in those walls could be closed from the bridge, trapping the water in one section."
+    ]
+   },
+   {
+    "id": "four",
+    "phrases": [
+     "The ship could stay afloat with any two compartments flooded, or even the first four at the front."
+    ]
+   },
+   {
+    "id": "practically",
+    "phrases": [
+     "That's where 'practically unsinkable' came from."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "Thirty-seven seconds",
+  "beats": [
+   {
+    "id": "night",
+    "phrases": [
+     "April the fourteenth, nineteen twelve, just before midnight.",
+     "The sea is flat calm, and there's no moon."
+    ]
+   },
+   {
+    "id": "speed",
+    "phrases": [
+     "The Titanic is doing about twenty-two knots, close to her top speed, through waters with ice warnings."
+    ]
+   },
+   {
+    "id": "spot",
+    "phrases": [
+     "A lookout spots an iceberg, dead ahead.",
+     "By most accounts, around thirty-seven seconds before impact."
+    ]
+   },
+   {
+    "id": "turn",
+    "phrases": [
+     "The officer on watch orders the ship hard over, to steer around it, and signals the engine room."
+    ]
+   },
+   {
+    "id": "slow",
+    "phrases": [
+     "But a ship this big turns slowly.",
+     "The bow swings left. Just not far enough."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "The glancing blow",
+  "beats": [
+   {
+    "id": "scrape",
+    "phrases": [
+     "Instead of a head-on hit, the iceberg scrapes along the right-hand side, below the waterline, for around ninety metres."
+    ]
+   },
+   {
+    "id": "small",
+    "phrases": [
+     "There was no giant gash.",
+     "Sonar scans of the wreck suggest a row of narrow openings, adding up to only about one square metre."
+    ]
+   },
+   {
+    "id": "where",
+    "phrases": [
+     "But they were spread along the first five compartments.",
+     "One more than the ship could survive."
+    ]
+   },
+   {
+    "id": "andrews",
+    "phrases": [
+     "Thomas Andrews, the ship's chief designer, studied the damage.",
+     "He said she would sink, within an hour or two."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "The weak rivets",
+  "beats": [
+   {
+    "id": "rivets",
+    "phrases": [
+     "So how did a scrape open up so much of the hull?",
+     "Researchers point to the rivets."
+    ]
+   },
+   {
+    "id": "three",
+    "phrases": [
+     "The Titanic's plates were held together by about three million rivets."
+    ]
+   },
+   {
+    "id": "steel",
+    "phrases": [
+     "Along the middle of the ship, hydraulic machines pressed in strong steel rivets."
+    ]
+   },
+   {
+    "id": "iron",
+    "phrases": [
+     "But at the curved bow and stern, the machines couldn't fit.",
+     "Workers hammered in wrought iron rivets by hand."
+    ]
+   },
+   {
+    "id": "slag",
+    "phrases": [
+     "Rivets recovered from the wreck held a lot of slag, the glassy leftovers of iron-making, which can make rivets weaker and more brittle."
+    ]
+   },
+   {
+    "id": "pop",
+    "phrases": [
+     "When the iceberg shoved the plates, rivet heads could snap off.",
+     "The seams opened, and the sea poured in."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "Walls that stopped short",
+  "beats": [
+   {
+    "id": "short",
+    "phrases": [
+     "Now, those bulkheads.",
+     "They didn't reach the top of the hull.",
+     "Most stopped just a few decks above the waterline."
+    ]
+   },
+   {
+    "id": "tilt",
+    "phrases": [
+     "With five compartments filling, the bow sank lower, and lower."
+    ]
+   },
+   {
+    "id": "spill",
+    "phrases": [
+     "Until the water spilled over the top of one wall, into the next.",
+     "Like an ice cube tray, tipped forward."
+    ]
+   },
+   {
+    "id": "doom",
+    "phrases": [
+     "Once that started, nothing could keep the Titanic afloat."
+    ]
+   },
+   {
+    "id": "sank",
+    "phrases": [
+     "At twenty past two in the morning, she broke apart and sank.",
+     "There were lifeboats for barely half the people on board."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "What if it hit head-on?",
+  "beats": [
+   {
+    "id": "headon",
+    "phrases": [
+     "Here's the strange part.",
+     "Many naval architects think a head-on hit might have saved her."
+    ]
+   },
+   {
+    "id": "crumple",
+    "phrases": [
+     "The bow would have crumpled, flooding perhaps the first two compartments.",
+     "Well within what the ship could survive."
+    ]
+   },
+   {
+    "id": "arizona",
+    "phrases": [
+     "In eighteen seventy-nine, a steamship called the Arizona hit an iceberg head-on.",
+     "Her bow was crushed, and she still made it to port."
+    ]
+   },
+   {
+    "id": "instinct",
+    "phrases": [
+     "But a head-on crash would have been deadly for anyone in the bow, and turning away is every sailor's instinct.",
+     "Nobody had time to calculate."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "What changed",
+  "beats": [
+   {
+    "id": "solas",
+    "phrases": [
+     "In nineteen fourteen, nations agreed the first international treaty for the Safety of Life at Sea."
+    ]
+   },
+   {
+    "id": "boats",
+    "phrases": [
+     "Lifeboat space for everyone on board.",
+     "Radios staffed day and night."
+    ]
+   },
+   {
+    "id": "patrol",
+    "phrases": [
+     "And an International Ice Patrol, which still watches the North Atlantic for icebergs today."
+    ]
+   },
+   {
+    "id": "hulls",
+    "phrases": [
+     "Later ships got double hulls and taller watertight walls, so a long scrape can't flood them the same way."
+    ]
+   },
+   {
+    "id": "lesson",
+    "phrases": [
+     "The Titanic wasn't sunk by one big failure.",
+     "It was a chain of small ones, lined up in the dark."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Which link in that chain do you think mattered most?",
+     "Tell me in the comments."
+    ]
+   }
+  ]
+ }
+]

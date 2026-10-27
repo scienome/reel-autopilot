@@ -1,0 +1,8 @@
+{
+ "title": "Chernobyl's shutdown button made it worse",
+ "caption": "AZ-5 was the emergency shutdown button. Because of a graphite tip on the control rods, its first few seconds added power instead. 🔴\nFull video: [LINK]\nHad you heard of the AZ-5 flaw?",
+ "hashtags": ["chernobyl", "az5", "nuclear", "engineering", "designflaw", "history", "science", "gearsandglitches", "shorts"],
+ "cover_t": 2.0,
+ "libs": ["mechreels/props/gimli.js", "mechreels/props/world.js", "mechreels/props/chernobyl.js"],
+ "sources": ["IAEA INSAG-7 (1992); World Nuclear Association, Chernobyl Accident 1986"]
+}
