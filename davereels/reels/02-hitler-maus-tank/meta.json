@@ -1,0 +1,23 @@
+{
+ "title": "Hitler's 188-tonne tank",
+ "caption": "Hitler wanted a tank nothing could stop. Physics agreed: nothing could move it either. 🐭\nThe Maus weighed about 188 tonnes, most bridges of the day took 20 to 60, and its top speed was about 13 km/h.\nWhat's the most overbuilt thing you've ever seen?",
+ "hashtags": [
+  "gearsandglitches",
+  "tanks",
+  "militaryhistory",
+  "engineering",
+  "history",
+  "ww2history",
+  "engineeringfails",
+  "darkhumor"
+ ],
+ "cover_t": 1.6,
+ "libs": [
+  "davereels/props/dave.js",
+  "davereels/props/maus.js"
+ ],
+ "sources": [
+  "Wikipedia, Panzer VIII Maus (mass about 188 t; top speed about 13 km/h; two prototype hulls; never saw combat)",
+  "Tank Museum (Bovington), Panzer VIII Maus: designed to ford rivers submerged with a snorkel"
+ ]
+}

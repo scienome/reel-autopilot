@@ -336,6 +336,6 @@
   // V(beat, WORD, n): the start time of the n-th WORD inside a beat (WORD in caps, punctuation ignored)
   const V = (beat, w, n = 1) => { const W2 = w.toUpperCase().replace(/[^A-Z0-9'%°-]/g, ''); for (const x of WORDS) if (x.beat === beat && x.w === W2 && --n === 0) return x.t; console.warn('V: no word', beat, w); const f = WORDS.find((x) => x.beat === beat); return f ? f.t : 0; };
   const BEAT0 = (beat) => { const f = WORDS.find((x) => x.beat === beat); return f ? f.t : 0; };
-  const DURATION = Math.ceil((REEL_WORDS.end + 1.2) * 10) / 10;
+  const DURATION = Math.ceil((REEL_WORDS.end + 2.8) * 10) / 10; // Dave reels: room for the R.I.P. card after the voice
   // the angle reached by a speed function sp(t) (rad/s) at time t: a fixed-step integral, so frames stay pure in t
   const integ = (sp, t, dt = 1 / 60) => { let a = 0; const n = Math.floor(Math.max(0, t) / dt); for (let i = 0; i < n; i++) a += sp((i + 0.5) * dt) * dt; return a + sp(t) * (Math.max(0, t) - n * dt); };
