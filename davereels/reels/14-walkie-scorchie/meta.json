@@ -1,0 +1,22 @@
+{
+ "title": "The skyscraper that melts cars",
+ "caption": "London built a skyscraper that doubled as a giant magnifying glass. ☀️\nA concave face works like a curved mirror: it gathers sunlight from a wide area and focuses it into one hot spot on the street.\nWould you have tried the egg?",
+ "hashtags": [
+  "gearsandglitches",
+  "walkiescorchie",
+  "london",
+  "architecture",
+  "physics",
+  "engineering",
+  "engineeringfails",
+  "darkhumor"
+ ],
+ "cover_t": 5.0,
+ "libs": [
+  "davereels/props/dave.js"
+ ],
+ "sources": [
+  "BBC News, September 2013: 20 Fenchurch Street ('Walkie-Talkie') reflected sunlight melted parts of a parked Jaguar; a reporter fried an egg; nicknamed the 'Walkie-Scorchie'",
+  "City of London / BBC, 2014: permanent sunshade (brise soleil) fitted"
+ ]
+}

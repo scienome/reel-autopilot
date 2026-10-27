@@ -1,0 +1,22 @@
+{
+ "title": "The man who poisoned the planet twice",
+ "caption": "One man. Two inventions. One very confused atmosphere. ☠️\nLeaded petrol stopped engine knock but spread lead everywhere, and CFCs made perfect fridge gas but destroyed ozone high in the sky.\nWhich invention was worse?",
+ "hashtags": [
+  "gearsandglitches",
+  "history",
+  "science",
+  "chemistry",
+  "environment",
+  "ozone",
+  "engineeringfails",
+  "darkhumor"
+ ],
+ "cover_t": 4.0,
+ "libs": [
+  "davereels/props/dave.js"
+ ],
+ "sources": [
+  "Wikipedia, Thomas Midgley Jr. (tetraethyl lead; 1924 press demonstration; CFCs/Freon; polio in 1940; died 1944 entangled in his pulley device)",
+  "J. R. McNeill, Something New Under the Sun (2000): Midgley 'had more impact on the atmosphere than any other single organism in Earth's history'"
+ ]
+}

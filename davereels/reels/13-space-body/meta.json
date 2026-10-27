@@ -1,0 +1,22 @@
+{
+ "title": "What space does to your body",
+ "caption": "Good news: you won't explode in space. Bad news: everything else. 🚀\nWith no air pressure, the water in your body boils even at 37°C; your skin swells but holds, and you'd pass out in about 10 to 15 seconds.\nWould you risk the shortcut?",
+ "hashtags": [
+  "gearsandglitches",
+  "space",
+  "nasa",
+  "physics",
+  "science",
+  "astronaut",
+  "vacuum",
+  "darkhumor"
+ ],
+ "cover_t": 3.0,
+ "libs": [
+  "davereels/props/dave.js"
+ ],
+ "sources": [
+  "NASA Ask an Astrophysicist / NASA Goddard, human body in a vacuum (no explosion; ebullism; ~10-15 s of useful consciousness)",
+  "NASA Manned Spacecraft Center, 1966 vacuum chamber accident (Jim LeBlanc: saliva bubbling; repressurised within seconds; survived)"
+ ]
+}
