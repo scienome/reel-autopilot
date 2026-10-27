@@ -1,0 +1,8 @@
+{
+ "title": "A square filter in a round hole",
+ "caption": "Apollo 13's spare CO2 filters were square. The lifeboat's sockets were round. Engineers fixed it with bags, cardboard, a sock and duct tape. 🧦\nFull video: [LINK]\nWhat would you have used?",
+ "hashtags": ["apollo13", "ducttape", "nasa", "engineering", "space", "problemsolving", "spacehistory", "gearsandglitches", "shorts"],
+ "cover_t": 14.0,
+ "libs": ["mechreels/props/gimli.js", "mechreels/props/world.js", "mechreels/props/apollo13.js"],
+ "sources": ["NASA History, Apollo 13 'Houston, we've had a problem' (EP-76); Report of Apollo 13 Review Board (1970)"]
+}

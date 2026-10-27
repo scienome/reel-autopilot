@@ -54,3 +54,6 @@ Changing the voice (or anything in `style/`) and pushing to main remakes every M
 | 20 | How Chernobyl's reactor made power (Short for mechvideo 007) |
 | 21 | Chernobyl's shutdown button made it worse (Short for mechvideo 007) |
 | 22 | Why Chernobyl's roof went flying (Short for mechvideo 007) |
+| 23 | The tank that was broken before Apollo 13 launched (Short for mechvideo 008) |
+| 24 | A square filter in a round hole (Short for mechvideo 008) |
+| 25 | Apollo 13's slingshot around the Moon (Short for mechvideo 008) |

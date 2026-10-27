@@ -1,0 +1,8 @@
+{
+ "title": "The tank that was broken before Apollo 13 launched",
+ "caption": "A jolt, the wrong voltage and one routine stir. Apollo 13's oxygen tank was damaged long before it blew up in space. 🚀\nFull video: [LINK]\nDid you know this part of the story?",
+ "hashtags": ["apollo13", "nasa", "space", "engineering", "spacehistory", "houstonwehaveaproblem", "howitworks", "gearsandglitches", "shorts"],
+ "cover_t": 2.0,
+ "libs": ["mechreels/props/gimli.js", "mechreels/props/world.js", "mechreels/props/apollo13.js"],
+ "sources": ["Report of Apollo 13 Review Board, NASA (1970)"]
+}

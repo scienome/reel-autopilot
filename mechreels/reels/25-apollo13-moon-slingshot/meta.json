@@ -1,0 +1,8 @@
+{
+ "title": "Apollo 13's slingshot around the Moon",
+ "caption": "With the main engine too risky to use, Apollo 13 used the Moon's gravity to swing home. 🌕\nFull video: [LINK]\nWould you trust the lunar module's engine?",
+ "hashtags": ["apollo13", "moon", "nasa", "space", "orbitalmechanics", "spacehistory", "engineering", "gearsandglitches", "shorts"],
+ "cover_t": 12.0,
+ "libs": ["mechreels/props/gimli.js", "mechreels/props/world.js", "mechreels/props/apollo13.js"],
+ "sources": ["NASA, Apollo 13 mission overview; Wikipedia, Apollo 13 (DPS burn to free return, PC+2 burn, splashdown 17 April 1970)"]
+}
