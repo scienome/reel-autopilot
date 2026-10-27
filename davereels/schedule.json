@@ -1,0 +1,15 @@
+{
+  "note": "Instagram posting plan for the Dave series (@gearsandglitches). Times are local (IST). Each day's reels go out at times[0], times[1], times[2]; null = no post in that slot. 02-hitler-maus-tank is posted early by hand, so it has no slot here.",
+  "timezone_offset": "+05:30",
+  "times": ["08:30", "12:30", "20:30"],
+  "posted_by_hand": ["02-hitler-maus-tank"],
+  "days": [
+    { "date": "2026-10-28", "reels": [null, "01-alaska-door-plug", "03-cybertruck-window"] },
+    { "date": "2026-10-29", "reels": ["04-gates-blue-screen", "05-demon-core", "06-apollo10-turd"] },
+    { "date": "2026-10-30", "reels": ["07-jobs-antenna", "08-tsar-bomba", "09-exploding-whale"] },
+    { "date": "2026-10-31", "reels": ["10-eiffel-tailor", "11-zuckerberg-legs", "12-trump-catapult"] },
+    { "date": "2026-11-01", "reels": ["13-space-body", "14-walkie-scorchie", "15-midgley"] },
+    { "date": "2026-11-02", "reels": ["16-lake-peigneur", "17-starship-rud", "18-molasses-flood"] },
+    { "date": "2026-11-03", "reels": ["19-mars-units", "20-north-korea-hotel", "21-galloping-gertie"] }
+  ]
+}

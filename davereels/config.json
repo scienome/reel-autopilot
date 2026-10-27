@@ -1,0 +1,12 @@
+{
+  "voice": {
+    "voice_id": "c6SfcYrb2t09NHXiT80T",
+    "model_id": "eleven_v4",
+    "voice_settings": null,
+    "_voice_name": "Dave series narrator (from the owner's ElevenLabs My Voices): deadpan"
+  },
+  "size": [
+    720,
+    1280
+  ]
+}
