@@ -20,7 +20,8 @@ writes the reel, you push (or Claude pushes), GitHub does the voice and the rend
 To remake one reel by hand: Actions → Make mechanic reels → Run workflow → type the folder name.
 
 ## Voice
-`config.json` → `voice.voice_id` (default: Steve, `IvUJKFyjVb5hItY9dJAT`) and `voice.model_id`. Needs the
+`config.json` → `voice.voice_id` (Brian, `nPczCjzI2devNBz1zQrb`, an ElevenLabs default voice) and `voice.model_id`.
+Changing the voice (or anything in `style/`) and pushing to main remakes every Mechanic reel with the new voice. Needs the
 `ELEVENLABS_API_KEY` repository secret. A reel is about 1,000–1,300 characters.
 
 ## Local tools

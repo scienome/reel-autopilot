@@ -1,8 +1,12 @@
 {
   "voice": {
-    "voice_id": "IvUJKFyjVb5hItY9dJAT",
+    "voice_id": "nPczCjzI2devNBz1zQrb",
     "model_id": "eleven_v4",
-    "voice_settings": null
+    "voice_settings": null,
+    "_voice_name": "Brian (ElevenLabs default voice: deep, steady narrator)"
   },
-  "size": [720, 1280]
+  "size": [
+    720,
+    1280
+  ]
 }

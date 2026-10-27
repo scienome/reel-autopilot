@@ -5,7 +5,7 @@ name: Make mechanic reels
 on:
   push:
     branches: [main]
-    paths: ['mechreels/reels/**']
+    paths: ['mechreels/reels/**', 'mechreels/config.json', 'mechreels/style/**']
   workflow_dispatch:
     inputs:
       reel:
@@ -48,7 +48,11 @@ jobs:
           if [ -n "${{ inputs.reel }}" ]; then
             LIST="${{ inputs.reel }}"
           elif [ "${{ github.event_name }}" = "push" ] && [ "${{ github.event.before }}" != "0000000000000000000000000000000000000000" ]; then
-            LIST=$(git diff --name-only "${{ github.event.before }}" "${{ github.sha }}" -- reels | grep -v '/voice' | grep -v '/timing.json' | cut -d/ -f3 | sort -u | tr '\n' ' ')
+            if git diff --name-only "${{ github.event.before }}" "${{ github.sha }}" -- config.json style | grep -q .; then
+              LIST=$(ls reels | tr '\n' ' ')   # voice or style changed: remake every reel
+            else
+              LIST=$(git diff --name-only "${{ github.event.before }}" "${{ github.sha }}" -- reels | grep -v '/voice' | grep -v '/timing.json' | cut -d/ -f3 | sort -u | tr '\n' ' ')
+            fi
           else
             LIST=""; for d in reels/*/; do id=$(basename "$d"); gh release view "mechreel-$id" >/dev/null 2>&1 || LIST="$LIST $id"; done
           fi
