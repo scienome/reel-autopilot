@@ -1,0 +1,22 @@
+{
+ "title": "Rapid unscheduled disassembly",
+ "caption": "Rocket engineers never say 'it exploded'. They say something much more polite. 🚀\nA rocket is a controlled explosion pointed one way; one failed valve, pump or weld and it stops being controlled.\nWould you sit in the front row?",
+ "hashtags": [
+  "gearsandglitches",
+  "starship",
+  "spacex",
+  "rocket",
+  "space",
+  "engineering",
+  "rocketscience",
+  "darkhumor"
+ ],
+ "cover_t": 4.0,
+ "libs": [
+  "davereels/props/dave.js"
+ ],
+ "sources": [
+  "SpaceX, Starship Flight Test, 20 April 2023 (vehicle lost over the Gulf of Mexico; SpaceX described the test as a success for the data gathered)",
+  "FAA / news reports on concrete debris from the Starbase launch pad, April 2023"
+ ]
+}

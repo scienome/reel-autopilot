@@ -1,0 +1,7 @@
+[
+  { "id": "hook", "text": "Rocket engineers have a polite phrase for an explosion: \"rapid unscheduled disassembly\"." },
+  { "id": "ctrl", "text": "A rocket is a controlled explosion pointed one way. If anything goes wrong, a valve, a pump, one weld, it stops being controlled." },
+  { "id": "flight", "text": "In 2023, SpaceX's first full Starship flight blew apart over the Gulf of Mexico. The launch had already blasted the pad so hard that chunks of concrete flew across the site." },
+  { "id": "success", "text": "SpaceX called it a success. They got the data they wanted." },
+  { "id": "end", "text": "The data includes Dave." }
+]

@@ -1,0 +1,21 @@
+{
+ "title": "The Boston molasses flood",
+ "caption": "A company found leaks in its giant syrup tank, so it painted the tank brown. 🍯\nAn overstressed steel tank split and released a wave of molasses that thickened as it cooled, trapping everything it reached.\nWhat's the worst 'fix' you've ever seen?",
+ "hashtags": [
+  "gearsandglitches",
+  "molassesflood",
+  "boston",
+  "history",
+  "engineering",
+  "engineeringfails",
+  "weirdhistory",
+  "structuralengineering"
+ ],
+ "cover_t": 10.0,
+ "libs": [
+  "davereels/props/dave.js"
+ ],
+ "sources": [
+  "Wikipedia, Great Molasses Flood (Boston, 15 January 1919; tank of about 8.7 million litres; wave up to about 7.6 m at about 56 km/h; 21 killed; tank painted brown to hide leaks; the company blamed anarchists; the court found against it)"
+ ]
+}
