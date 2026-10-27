@@ -1,0 +1,8 @@
+{
+  "voice": {
+    "voice_id": "IvUJKFyjVb5hItY9dJAT",
+    "model_id": "eleven_v4",
+    "voice_settings": null
+  },
+  "size": [720, 1280]
+}

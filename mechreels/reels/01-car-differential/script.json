@@ -1,0 +1,14 @@
+[
+  { "id": "hook", "text": "How does a car turn a corner without fighting its own wheels?" },
+  { "id": "distance", "text": "In every ninety-degree turn, the outside wheel rolls more than two metres farther than the inside one." },
+  { "id": "locked", "text": "If both wheels were locked together, one tyre would have to scrub and skid." },
+  { "id": "fix", "text": "The fix is a clever box of gears called the differential." },
+  { "id": "pinion", "text": "In a rear-wheel-drive car, the driveshaft spins a small pinion gear." },
+  { "id": "ring", "text": "The pinion turns a big ring gear, sending the power out toward the wheels at ninety degrees, and slowing it down for extra torque." },
+  { "id": "carrier", "text": "Bolted to the ring gear is the carrier. Inside it sit small spider gears, and they mesh with two side gears, one for each axle." },
+  { "id": "straight", "text": "Driving straight, the spider gears don't spin. The whole carrier turns as one, and both wheels roll at the same speed." },
+  { "id": "turn", "text": "But in a turn, the spider gears start to rotate. They let the outside wheel speed up exactly as much as the inside wheel slows down." },
+  { "id": "catch", "text": "There's one catch. An open differential sends equal torque to both wheels. Put one wheel on ice, and it just spins." },
+  { "id": "lsd", "text": "So engineers added limited-slip differentials, using clutches or special gears to send more power to the wheel with grip." },
+  { "id": "finale", "text": "And that's how your car glides through every single corner." }
+]

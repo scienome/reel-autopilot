@@ -1,0 +1,11 @@
+{
+  "title": "How a car's differential works",
+  "caption": "Your outside wheel travels over two metres farther in every 90° turn. This little box of gears is why your car doesn't fight itself. 🔧\nSave this for the next time someone asks what a diff does.",
+  "hashtags": ["howitworks", "carengineering", "differential", "mechanic", "engineering", "cars", "automotive", "learnontiktok", "carsofinstagram"],
+  "cover_t": 50.0,
+  "sources": [
+    "Outside-wheel extra distance in a turn = turn angle x track width (pi/2 x ~1.5 m = ~2.4 m)",
+    "Open differential kinematics: carrier speed = average of the two side-gear speeds; torque split equally (standard bevel-gear differential theory)",
+    "Limited-slip differentials: clutch-pack and helical-gear (Torsen) types bias torque to the wheel with more traction"
+  ]
+}
