@@ -1,4 +1,4 @@
-name: Make YouTube video
+name: Make mechanic videos
 # Mechanic 16:9 YouTube videos (mechvideos/ folder): ElevenLabs voice (chapter by chapter, word-timed) -> 1080p render -> thumbnail -> Release "mechvideo-<id>" with the MP4, thumbnail and youtube.txt.
 # 1080p video, and publishes it as a Release with the MP4, the thumbnail and the YouTube text.
 on:
