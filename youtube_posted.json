@@ -142,5 +142,29 @@
   "url": "https://youtu.be/PP9YJKnT0hc",
   "publish_utc": "2026-11-01T16:00:00.000Z",
   "title": "Could hitting head-on have saved the Titanic?"
+ },
+ "mechvideo-007-chernobyl": {
+  "id": "fw27jdDmf_A",
+  "url": "https://youtu.be/fw27jdDmf_A",
+  "publish_utc": "2026-11-02T02:00:00.000Z",
+  "title": "The Button That Blew Up Chernobyl"
+ },
+ "mechreel-20-chernobyl-reactor-power": {
+  "id": "UzKnF2DAxDI",
+  "url": "https://youtu.be/UzKnF2DAxDI",
+  "publish_utc": "2026-11-02T07:00:00.000Z",
+  "title": "How Chernobyl's reactor made power"
+ },
+ "mechreel-21-chernobyl-az5-flaw": {
+  "id": "Nhij_qaYcU8",
+  "url": "https://youtu.be/Nhij_qaYcU8",
+  "publish_utc": "2026-11-02T12:00:00.000Z",
+  "title": "Chernobyl's shutdown button made it worse"
+ },
+ "mechreel-22-chernobyl-roof": {
+  "id": "Oj_V8es0Bqk",
+  "url": "https://youtu.be/Oj_V8es0Bqk",
+  "publish_utc": "2026-11-02T16:00:00.000Z",
+  "title": "Why Chernobyl's roof went flying"
  }
 }
