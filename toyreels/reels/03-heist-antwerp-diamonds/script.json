@@ -1,0 +1,65 @@
+[
+ {
+  "chapter": "Antwerp diamonds",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "Part three.",
+     "Antwerp, Belgium.",
+     "One of the most secure vaults in the diamond world."
+    ]
+   },
+   {
+    "id": "security",
+    "phrases": [
+     "Two floors underground.",
+     "Heat sensors, radar, a magnetic field, a seismic sensor,",
+     "and a giant combination lock."
+    ]
+   },
+   {
+    "id": "crew",
+    "phrases": [
+     "In two thousand three, a crew led by Leonardo Notarbartolo got in anyway.",
+     "He had even rented an office in the building, posing as a diamond trader."
+    ]
+   },
+   {
+    "id": "weekend",
+    "phrases": [
+     "Over one weekend, they emptied the vault.",
+     "More than one hundred million dollars in diamonds, gold, and jewels."
+    ]
+   },
+   {
+    "id": "trash",
+    "phrases": [
+     "But the next morning, a landowner found their trash, dumped in the woods."
+    ]
+   },
+   {
+    "id": "sandwich",
+    "phrases": [
+     "Inside was a half-eaten salami sandwich.",
+     "The DNA led police straight to Notarbartolo."
+    ]
+   },
+   {
+    "id": "sentence",
+    "phrases": [
+     "He got ten years.",
+     "But most of the diamonds were never found."
+    ]
+   },
+   {
+    "id": "next",
+    "phrases": [
+     "Part four, the finale:",
+     "the biggest art theft in American history.",
+     "And it's still unsolved."
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,48 @@
+[
+ {
+  "chapter": "Goosebumps",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "Why do you get goosebumps?"
+    ]
+   },
+   {
+    "id": "muscle",
+    "phrases": [
+     "Every hair on your body has a tiny muscle attached to it."
+    ]
+   },
+   {
+    "id": "trigger",
+    "phrases": [
+     "When you're cold, scared, or you hear an amazing song,",
+     "your nerves tell those muscles to pull.",
+     "The hairs stand up, and the skin bumps up around them."
+    ]
+   },
+   {
+    "id": "fur",
+    "phrases": [
+     "For animals with thick fur, that makes a fluffy coat that traps warm air.",
+     "And a scared cat puffs up, to look bigger."
+    ]
+   },
+   {
+    "id": "us",
+    "phrases": [
+     "But we lost most of our fur.",
+     "So for us, goosebumps are mostly a leftover from our hairy ancestors."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "What song gives you goosebumps?",
+     "Tell us below."
+    ]
+   }
+  ]
+ }
+]

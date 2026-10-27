@@ -1,0 +1,50 @@
+[
+ {
+  "chapter": "Your body in space",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "What happens to your body in space?"
+    ]
+   },
+   {
+    "id": "taller",
+    "phrases": [
+     "First, you get taller.",
+     "Without gravity squashing your spine, astronauts can grow up to three percent taller.",
+     "Back on Earth, they shrink again."
+    ]
+   },
+   {
+    "id": "puffy",
+    "phrases": [
+     "Fluids float up to your head,",
+     "so your face gets puffy, and your legs get skinny."
+    ]
+   },
+   {
+    "id": "bones",
+    "phrases": [
+     "Without exercise, you can lose up to one percent of your bone density every month.",
+     "That's why astronauts work out about two hours a day."
+    ]
+   },
+   {
+    "id": "flashes",
+    "phrases": [
+     "And when you close your eyes to sleep,",
+     "you might see flashes of light:",
+     "cosmic rays zipping through your eyes."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Would you still go?",
+     "Tell us below."
+    ]
+   }
+  ]
+ }
+]

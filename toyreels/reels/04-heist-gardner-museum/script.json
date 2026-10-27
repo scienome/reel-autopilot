@@ -1,0 +1,70 @@
+[
+ {
+  "chapter": "Gardner Museum",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "Part four, the finale.",
+     "Boston, nineteen ninety.",
+     "After midnight, two police officers knock at a museum door."
+    ]
+   },
+   {
+    "id": "trick",
+    "phrases": [
+     "They say they're answering a call.",
+     "The guard lets them in."
+    ]
+   },
+   {
+    "id": "fake",
+    "phrases": [
+     "But they weren't police."
+    ]
+   },
+   {
+    "id": "tied",
+    "phrases": [
+     "They handcuffed the guards, and tied them up in the basement."
+    ]
+   },
+   {
+    "id": "minutes",
+    "phrases": [
+     "Then they took their time.",
+     "Eighty-one minutes later, they were gone, with thirteen works of art."
+    ]
+   },
+   {
+    "id": "worth",
+    "phrases": [
+     "A Vermeer.",
+     "Rembrandt's only seascape.",
+     "Worth up to five hundred million dollars."
+    ]
+   },
+   {
+    "id": "frames",
+    "phrases": [
+     "Today, the empty frames still hang on the walls."
+    ]
+   },
+   {
+    "id": "reward",
+    "phrases": [
+     "There's a ten-million-dollar reward.",
+     "No one has ever been charged,",
+     "and the art has never been found."
+    ]
+   },
+   {
+    "id": "end",
+    "phrases": [
+     "Which heist should we build next?",
+     "Tell us in the comments."
+    ]
+   }
+  ]
+ }
+]

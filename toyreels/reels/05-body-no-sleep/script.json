@@ -1,0 +1,56 @@
+[
+ {
+  "chapter": "No sleep",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "What happens to your body if you stop sleeping?"
+    ]
+   },
+   {
+    "id": "day1",
+    "phrases": [
+     "After twenty-four hours awake,",
+     "your coordination is about as bad as having a blood alcohol level of zero point one percent.",
+     "That's over the drink-driving limit in many places."
+    ]
+   },
+   {
+    "id": "micro",
+    "phrases": [
+     "Your brain starts taking microsleeps:",
+     "tiny naps that last a few seconds,",
+     "while you still look awake."
+    ]
+   },
+   {
+    "id": "day3",
+    "phrases": [
+     "By day three, many people start to hallucinate,",
+     "and feel anxious and confused."
+    ]
+   },
+   {
+    "id": "record",
+    "phrases": [
+     "In nineteen sixty-three, a seventeen-year-old student named Randy Gardner stayed awake for eleven days,",
+     "for a science fair."
+    ]
+   },
+   {
+    "id": "sleep",
+    "phrases": [
+     "He recovered. But don't try it.",
+     "Sleep is when your brain sorts and saves your memories."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "What time did you go to bed last night?"
+    ]
+   }
+  ]
+ }
+]

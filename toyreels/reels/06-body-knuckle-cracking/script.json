@@ -1,0 +1,59 @@
+[
+ {
+  "chapter": "Knuckle cracking",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "Does cracking your knuckles give you arthritis?"
+    ]
+   },
+   {
+    "id": "inside",
+    "phrases": [
+     "Your finger joints are wrapped in a capsule of slippery fluid,",
+     "full of dissolved gas."
+    ]
+   },
+   {
+    "id": "pop",
+    "phrases": [
+     "Pull the joint apart,",
+     "the pressure drops,",
+     "and a bubble of gas forms.",
+     "That's the pop."
+    ]
+   },
+   {
+    "id": "wait",
+    "phrases": [
+     "That's why you can't crack the same knuckle again right away.",
+     "You have to wait about twenty minutes."
+    ]
+   },
+   {
+    "id": "unger",
+    "phrases": [
+     "One doctor, Donald Unger, cracked the knuckles of his left hand for more than fifty years,",
+     "and never his right."
+    ]
+   },
+   {
+    "id": "result",
+    "phrases": [
+     "The result?",
+     "Neither hand got arthritis.",
+     "He won an Ig Nobel Prize for it."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "So, crack away.",
+     "Are you a knuckle cracker?",
+     "Tell us below."
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,73 @@
+[
+ {
+  "chapter": "D.B. Cooper",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "Part two.",
+     "In nineteen seventy-one, a man in a dark suit bought a plane ticket,",
+     "under the name Dan Cooper."
+    ]
+   },
+   {
+    "id": "note",
+    "phrases": [
+     "Soon after takeoff, he handed the flight attendant a note.",
+     "He had a bomb."
+    ]
+   },
+   {
+    "id": "demand",
+    "phrases": [
+     "His demands:",
+     "two hundred thousand dollars,",
+     "and four parachutes."
+    ]
+   },
+   {
+    "id": "swap",
+    "phrases": [
+     "In Seattle, he let the passengers go, in exchange for the cash,",
+     "and the plane took off again."
+    ]
+   },
+   {
+    "id": "jump",
+    "phrases": [
+     "Somewhere over the dark forests of Washington,",
+     "he opened the back stairs,",
+     "and jumped."
+    ]
+   },
+   {
+    "id": "gone",
+    "phrases": [
+     "He was never seen again."
+    ]
+   },
+   {
+    "id": "money",
+    "phrases": [
+     "Nine years later, an eight-year-old boy found about five thousand eight hundred dollars of the ransom,",
+     "buried in the sand by a river."
+    ]
+   },
+   {
+    "id": "unsolved",
+    "phrases": [
+     "The FBI stopped actively investigating in twenty sixteen.",
+     "It's still the only unsolved hijacking of its kind."
+    ]
+   },
+   {
+    "id": "next",
+    "phrases": [
+     "So, did he survive?",
+     "Tell us what you think.",
+     "Part three: the diamond vault no one could crack."
+    ]
+   }
+  ]
+ }
+]

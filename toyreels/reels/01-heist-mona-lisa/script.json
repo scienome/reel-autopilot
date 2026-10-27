@@ -1,0 +1,11 @@
+[{"chapter": "The Mona Lisa", "beats": [
+ {"id": "hook", "phrases": ["In nineteen eleven, someone stole the most famous painting on Earth,", "and simply walked out with it."]},
+ {"id": "who", "phrases": ["His name was Vincenzo Peruggia.", "He had worked at the Louvre, so he knew its secrets."]},
+ {"id": "monday", "phrases": ["On a Monday, when the museum was closed,", "he slipped in wearing a white smock, just like the staff."]},
+ {"id": "grab", "phrases": ["He lifted the painting off the wall,", "ditched the frame in a stairwell,", "and left."]},
+ {"id": "nobody", "phrases": ["Nobody noticed until the next day."]},
+ {"id": "trunk", "phrases": ["For over two years, it hid in a trunk in his Paris apartment."]},
+ {"id": "caught", "phrases": ["Then he tried to sell it to an art dealer in Florence.", "The dealer called the museum director,", "and police arrested him."]},
+ {"id": "twist", "phrases": ["And the twist?", "The theft made the Mona Lisa a global superstar."]},
+ {"id": "next", "phrases": ["Part two:", "a man who hijacked a plane, and vanished into the sky."]}
+]}]

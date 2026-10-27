@@ -1,0 +1,54 @@
+[
+ {
+  "chapter": "One second",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "What happens inside your body in just one second?"
+    ]
+   },
+   {
+    "id": "cells",
+    "phrases": [
+     "You replace about three point eight million cells.",
+     "Every second."
+    ]
+   },
+   {
+    "id": "day",
+    "phrases": [
+     "That's about three hundred and thirty billion cells a day,",
+     "roughly one percent of you."
+    ]
+   },
+   {
+    "id": "who",
+    "phrases": [
+     "Most of them are blood cells,",
+     "and cells lining your gut, which wear out in days."
+    ]
+   },
+   {
+    "id": "heart",
+    "phrases": [
+     "Meanwhile, your heart beats about once a second,",
+     "without you ever asking it to."
+    ]
+   },
+   {
+    "id": "rebuild",
+    "phrases": [
+     "So you're quietly rebuilding yourself,",
+     "every single day."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Follow for more weird facts about your body."
+    ]
+   }
+  ]
+ }
+]
