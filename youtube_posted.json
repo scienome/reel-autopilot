@@ -166,5 +166,23 @@
   "url": "https://youtu.be/Oj_V8es0Bqk",
   "publish_utc": "2026-11-02T16:00:00.000Z",
   "title": "Why Chernobyl's roof went flying"
+ },
+ "mechvideo-008-apollo-13": {
+  "id": "ZJlf4gaO11k",
+  "url": "https://youtu.be/ZJlf4gaO11k",
+  "publish_utc": "2026-11-03T02:00:00.000Z",
+  "title": "How 3 Astronauts Survived Apollo 13 With Duct Tape"
+ },
+ "mechreel-23-apollo13-tank-blast": {
+  "id": "y_1E3reCm2s",
+  "url": "https://youtu.be/y_1E3reCm2s",
+  "publish_utc": "2026-11-03T07:00:00.000Z",
+  "title": "The tank that was broken before Apollo 13 launched"
+ },
+ "mechreel-24-apollo13-square-filter": {
+  "id": "BQn3fvzsDM0",
+  "url": "https://youtu.be/BQn3fvzsDM0",
+  "publish_utc": "2026-11-03T12:00:00.000Z",
+  "title": "A square filter in a round hole"
  }
 }
