@@ -42,7 +42,24 @@ def api(method, path, **data):
 
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument('--dry-run', action='store_true'); ap.add_argument('--reel')
+    ap.add_argument('--at', help='publish slots in UTC, e.g. 07:30,14:30: upload early, then publish exactly on the slot')
     a = ap.parse_args()
+    target = None
+    if a.at and not a.dry_run:
+        now = datetime.datetime.now(datetime.timezone.utc)
+        slots = []
+        for s in a.at.split(','):
+            hh, mm = map(int, s.split(':'))
+            slots.append(now.replace(hour=hh, minute=mm, second=0, microsecond=0))
+        # the slot this run belongs to: the next one, or one that passed less than 90 minutes ago (a very late run)
+        cands = [s for s in sorted(slots) if s > now - datetime.timedelta(minutes=90)]
+        if not cands:
+            print('no posting slot near now; nothing to do'); return
+        target = cands[0]
+        log = json.load(open(LOG)) if os.path.exists(LOG) else []
+        if any(datetime.datetime.fromisoformat(p['posted_at']) > target - datetime.timedelta(hours=3) for p in log):
+            print(f'already posted for the {target:%H:%M} UTC slot (backup run): nothing to do'); return
+        print(f'slot {target:%H:%M} UTC; publishing exactly then')
     q = queue()
     rid = a.reel or (q[0] if q else None)
     if not rid:
@@ -76,6 +93,10 @@ def main():
             raise RuntimeError(f'Instagram could not process the video ({st}). Check that the repo is public and {url} downloads.')
     else:
         raise RuntimeError('Instagram did not finish processing the video in time')
+    if target:
+        wait = (target - datetime.datetime.now(datetime.timezone.utc)).total_seconds()
+        if wait > 0:
+            print(f'video ready; waiting {wait:.0f} s to publish at {target:%H:%M:%S} UTC', flush=True); time.sleep(wait)
     m = api('POST', f'/{ig}/media_publish', creation_id=cid)
     log = json.load(open(LOG)) if os.path.exists(LOG) else []
     log.append({'id': rid, 'media_id': m['id'], 'posted_at': datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds')})
