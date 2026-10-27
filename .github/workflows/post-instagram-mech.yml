@@ -1,0 +1,76 @@
+name: Post Gears & Glitches reels to Instagram
+# Posts each Gears & Glitches Short (mechreels) to the Gears & Glitches Instagram account as a Reel, at the same slots
+# as on YouTube: 12:30, 17:30 and 21:30 IST (07:00, 12:00 and 16:00 UTC), from schedule.json. Each run starts ~25 minutes
+# early, uploads the MP4 from its Release so Instagram has it processed, then publishes on the exact minute. A backup run
+# 15 minutes later covers a skipped start; it sees the slot is already posted and does nothing.
+# Needs the IG_GG_ACCESS_TOKEN and IG_GG_USER_ID secrets. The token is renewed every Monday (needs GH_PAT to save it).
+on:
+  schedule:
+    - cron: '35 6 * * *'
+    - cron: '50 6 * * *'
+    - cron: '35 11 * * *'
+    - cron: '50 11 * * *'
+    - cron: '35 15 * * *'
+    - cron: '50 15 * * *'
+    - cron: '10 3 * * 1'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Only show what would be posted (checks the token and the video link)'
+        type: boolean
+        default: true
+      short:
+        description: 'Post this Short now, e.g. 05-comet-square-windows (empty = whatever is due)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: post-instagram-mech
+  cancel-in-progress: false
+
+jobs:
+  post:
+    if: github.event.schedule != '10 3 * * 1'
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install -q requests
+      - name: Post the Short that is due
+        env:
+          IG_GG_ACCESS_TOKEN: ${{ secrets.IG_GG_ACCESS_TOKEN }}
+          IG_GG_USER_ID: ${{ secrets.IG_GG_USER_ID }}
+        run: |
+          git pull -q --rebase || true
+          python tools/ig_mech_post.py ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '--dry-run' || '' }} ${{ (github.event_name == 'workflow_dispatch' && inputs.short != '') && format('--id {0}', inputs.short) || '' }}
+      - name: Record it in ig_posted.json
+        if: always()
+        run: |
+          git config user.name "instagram-bot"; git config user.email "instagram-bot@users.noreply.github.com"
+          git add ig_posted.json 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -q -m "Instagram post [skip ci]"
+            for i in 1 2 3 4; do git pull --rebase -q && git push -q && break; sleep $((i * 5)); done
+          fi
+
+  refresh-token:
+    if: github.event.schedule == '10 3 * * 1'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Renew and store the Gears & Glitches Instagram token
+        env:
+          IG_GG_ACCESS_TOKEN: ${{ secrets.IG_GG_ACCESS_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          if [ -z "$IG_GG_ACCESS_TOKEN" ]; then echo "No IG_GG_ACCESS_TOKEN yet; nothing to renew."; exit 0; fi
+          NEW=$(curl -sf "https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${IG_GG_ACCESS_TOKEN}" | python3 -c "import sys,json; print(json.load(sys.stdin)['access_token'])")
+          echo "::add-mask::$NEW"
+          if [ -z "$GH_TOKEN" ]; then echo "::warning::Token renewed with Instagram but not saved: add a GH_PAT secret (Secrets: read and write)."; exit 0; fi
+          gh secret set IG_GG_ACCESS_TOKEN --body "$NEW" --repo "$GITHUB_REPOSITORY"
+          echo "Token renewed and saved."

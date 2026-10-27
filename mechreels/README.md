@@ -57,3 +57,11 @@ Changing the voice (or anything in `style/`) and pushing to main remakes every M
 | 23 | The tank that was broken before Apollo 13 launched (Short for mechvideo 008) |
 | 24 | A square filter in a round hole (Short for mechvideo 008) |
 | 25 | Apollo 13's slingshot around the Moon (Short for mechvideo 008) |
+
+## Instagram
+`.github/workflows/post-instagram-mech.yml` (with `tools/ig_mech_post.py`) posts each Short to the Gears & Glitches
+Instagram account as a Reel at the same slots as on YouTube (12:30, 17:30, 21:30 IST, from `schedule.json`), using the
+MP4 from its `mechreel-<id>` Release. The caption swaps `Full video: [LINK]` for the day's YouTube link plus "link in bio".
+Posted Reels are recorded in `ig_posted.json`. Needs the `IG_GG_ACCESS_TOKEN` and `IG_GG_USER_ID` secrets; the token is
+renewed every Monday (saved when a `GH_PAT` secret exists). To test: Actions → Post Gears & Glitches reels to Instagram →
+Run workflow (dry run).
