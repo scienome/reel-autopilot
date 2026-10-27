@@ -44,7 +44,7 @@ def token():
 
 def upload(tok, mp4, title, desc, tags, publish_at):
     import requests
-    now = dt.datetime.utcnow()
+    now = dt.datetime.now(dt.timezone.utc).replace(tzinfo=None)
     status = {'selfDeclaredMadeForKids': False, 'embeddable': True}
     if publish_at > now + dt.timedelta(minutes=20):
         status.update(privacyStatus='private', publishAt=publish_at.strftime('%Y-%m-%dT%H:%M:%S.000Z'))
