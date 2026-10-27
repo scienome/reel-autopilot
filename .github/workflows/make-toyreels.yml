@@ -59,10 +59,14 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "reel-bot"; git config user.email "reel-bot@users.noreply.github.com"
+          FAILED=""
           for id in ${{ steps.pick.outputs.list }}; do
             [ -f "reels/$id/story.js" ] || continue
             echo "::group::Making $id"
-            python tools/produce.py "reels/$id" --workers "$(nproc)"
+            git pull --rebase -q || true   # pick up voices a previous run already paid for
+            if ! python tools/produce.py "reels/$id" --workers "$(nproc)"; then
+              echo "::error::$id failed (see the ElevenLabs line above)"; FAILED="$FAILED $id"; echo "::endgroup::"; continue
+            fi
             # keep the paid-for voice in the repo so a re-render never pays twice
             git add "reels/$id/voice.mp3" "reels/$id/timing.json" "reels/$id/voice_chunks" 2>/dev/null || true
             git diff --cached --quiet || (git commit -m "Voiceover for toy reel $id [skip ci]" && git pull --rebase -q && git push)
@@ -71,3 +75,4 @@ jobs:
             gh release create "toyreel-$id" "out/$id/$id.mp4" "out/$id/cover.jpg" "out/$id/caption.txt" --title "$TITLE" --notes-file "out/$id/caption.txt"
             echo "::endgroup::"
           done
+          if [ -n "$FAILED" ]; then echo "::error::Not made:$FAILED"; exit 1; fi
