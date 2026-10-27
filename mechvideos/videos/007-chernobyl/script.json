@@ -1,0 +1,73 @@
+[
+ {
+  "chapter": "The off switch",
+  "beats": [
+   { "id": "hook", "phrases": ["At twenty-three minutes past one in the morning, an operator at Chernobyl pressed the emergency shutdown button."] },
+   { "id": "boom", "phrases": ["Seconds later, reactor number four exploded."] },
+   { "id": "promise", "phrases": ["The button meant to stop the reactor helped to destroy it.", "To see how, we need to look inside an R B M K reactor."] }
+  ]
+ },
+ {
+  "chapter": "How the reactor makes power",
+  "beats": [
+   { "id": "fuel", "phrases": ["The fuel is uranium, packed into long rods."] },
+   { "id": "fission", "phrases": ["When a uranium atom splits, it releases heat, and a few neutrons that can split more atoms.", "A chain reaction."] },
+   { "id": "graphite", "phrases": ["Those neutrons work best when they're slowed down.", "In an R B M K, that's done by a huge stack of graphite blocks."] },
+   { "id": "water", "phrases": ["Water is pumped up through more than a thousand channels in the graphite.", "It boils, and the steam spins turbines that make electricity."] },
+   { "id": "rods", "phrases": ["To control it all, rods of boron, which swallows neutrons, slide in and out from above."] }
+  ]
+ },
+ {
+  "chapter": "A dangerous feedback loop",
+  "beats": [
+   { "id": "absorb", "phrases": ["Here's the catch.", "The cooling water also absorbs some neutrons."] },
+   { "id": "steam", "phrases": ["When it turns to steam, it absorbs fewer.", "More neutrons, more splitting, more heat, more steam."] },
+   { "id": "loop", "phrases": ["Engineers call it a positive void coefficient.", "At low power, it made this reactor unstable."] },
+   { "id": "west", "phrases": ["Most reactors in the West are designed the other way round.", "If their water boils away, the reaction slows down."] }
+  ]
+ },
+ {
+  "chapter": "The night of the test",
+  "beats": [
+   { "id": "test", "phrases": ["On the night of April the twenty-sixth, nineteen eighty-six, the crew was running a safety test, to see if a spinning-down turbine could keep the water pumps going during a blackout."] },
+   { "id": "delay", "phrases": ["The test had been delayed by about ten hours, and handed to the night shift."] },
+   { "id": "drop", "phrases": ["Power fell far too low, and the reactor was choked by xenon, a by-product that also swallows neutrons."] },
+   { "id": "pull", "phrases": ["To push the power back up, the operators pulled out almost all the control rods.", "Far more than the rules allowed."] },
+   { "id": "pumps", "phrases": ["Then the test began.", "As the turbine slowed, the pumps slowed, less water flowed, and more of it boiled."] }
+  ]
+ },
+ {
+  "chapter": "A Z five",
+  "beats": [
+   { "id": "button", "phrases": ["At one twenty-three and forty seconds, the button marked A Z five was pressed.", "Every control rod began to drive in."] },
+   { "id": "flaw", "phrases": ["But the rods had a fatal design flaw.", "Below the boron, each one carried a long section of graphite."] },
+   { "id": "why", "phrases": ["It was there to make the rods more effective, by keeping water out of the channel when a rod was pulled out."] },
+   { "id": "tip", "phrases": ["But with the rods pulled almost all the way out, the first thing to slide into the bottom of the core was that graphite, pushing the water out."] },
+   { "id": "surge", "phrases": ["So for the first few seconds, the shutdown button added power at the bottom of the reactor, instead of taking it away."] },
+   { "id": "slow", "phrases": ["And the rods were slow.", "Around eighteen seconds to go all the way in."] }
+  ]
+ },
+ {
+  "chapter": "Why the roof went flying",
+  "beats": [
+   { "id": "spike", "phrases": ["The power spiked to many times its normal level, in a few seconds."] },
+   { "id": "burst", "phrases": ["Fuel shattered, water flashed into steam, and the pressure burst the fuel channels.", "The rods jammed, partway in."] },
+   { "id": "lid", "phrases": ["A steam explosion threw the reactor's massive steel lid, weighing at least a thousand tonnes, up through the roof."] },
+   { "id": "second", "phrases": ["Seconds later, a second explosion scattered burning graphite and fuel across the site."] },
+   { "id": "fire", "phrases": ["The graphite burned for days, and the smoke carried radioactive material across Europe."] },
+   { "id": "toll", "phrases": ["Two workers died that night.", "Dozens more died from radiation in the months that followed, and the long-term toll is still debated."] }
+  ]
+ },
+ {
+  "chapter": "What changed",
+  "beats": [
+   { "id": "fixes", "phrases": ["Every other R B M K was changed.", "The control rods were redesigned, and a faster emergency shutdown system was added."] },
+   { "id": "fuel2", "phrases": ["The fuel was made slightly richer, and extra absorbers were added, to tame that feedback loop."] },
+   { "id": "margin", "phrases": ["And the minimum number of rods that must stay in the core was raised sharply."] },
+   { "id": "report", "phrases": ["An international safety review later concluded that the reactor's design flaws were central to the disaster, not just the operators' mistakes."] },
+   { "id": "arch", "phrases": ["Today, reactor four sits under a giant steel arch, slid into place in twenty sixteen."] },
+   { "id": "lesson", "phrases": ["A safety button that can make things worse isn't really a safety button."] },
+   { "id": "cta", "phrases": ["What other machine do you know with a button that could backfire?", "Tell me in the comments."] }
+  ]
+ }
+]

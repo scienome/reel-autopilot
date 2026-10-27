@@ -1,0 +1,14 @@
+{
+  "title": "The Button That Blew Up Chernobyl",
+  "description": "At 1:23 in the morning on 26 April 1986, an operator at Chernobyl pressed AZ-5, the emergency shutdown button. Seconds later, reactor number four exploded. This is how an RBMK reactor makes power, why its boiling water made it unstable at low power, what happened during the night-time safety test, and the design flaw in the control rods that made the shutdown button add power for the first few seconds. Then what changed afterwards. Built in low-poly 3D, told accurately and with respect.",
+  "tags": ["chernobyl", "az-5", "rbmk reactor", "positive void coefficient", "control rods", "nuclear reactor", "how it works", "engineering", "engineering failure", "nuclear power", "new safe confinement", "gears and glitches"],
+  "libs": ["mechreels/props/gimli.js", "mechreels/props/world.js", "mechreels/props/chernobyl.js"],
+  "sources": [
+    "INSAG-7, The Chernobyl Accident: Updating of INSAG-1, International Atomic Energy Agency (1992): positive void coefficient, low operational reactivity margin, graphite displacers on the control rods (positive scram), slow rod insertion, design flaws central to the accident",
+    "Chernobyl disaster (26 April 1986, AZ-5 pressed at 01:23:40, test delayed about 10 hours, xenon poisoning, rods withdrawn, steam explosion lifted the reactor's upper plate, second explosion, graphite fire, 2 deaths that night and 28 from acute radiation syndrome): Wikipedia, Chernobyl disaster",
+    "RBMK design and post-accident changes (higher enrichment, additional absorbers, redesigned rods, fast-acting shutdown system, higher minimum reactivity margin): World Nuclear Association, RBMK Reactors; World Nuclear Association, Chernobyl Accident 1986",
+    "UNSCEAR 2008 Report, Annex D: Health effects due to radiation from the Chernobyl accident",
+    "New Safe Confinement (slid into place over reactor 4 in November 2016): European Bank for Reconstruction and Development"
+  ],
+  "footer": "What other machine do you know with a button that could backfire? Tell me in the comments. New Gears & Glitches breakdown every day."
+}
