@@ -57,7 +57,7 @@ def call_api(text, prev_text, next_text, cfg):
         r = requests.post(url, headers={'xi-api-key': key, 'Content-Type': 'application/json'}, json=body, timeout=600)
         if r.status_code == 200:
             return r.json()
-        print(f'ElevenLabs {r.status_code}: {r.text[:400]}', file=sys.stderr)
+        print(f'::error::ElevenLabs {r.status_code}: {r.text[:300]}', flush=True)
         if r.status_code == 422 and ('previous_text' in body or 'next_text' in body):  # a model that refuses context: retry without it
             body.pop('previous_text', None); body.pop('next_text', None); continue
         if r.status_code in (429, 500, 502, 503, 504):
