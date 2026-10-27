@@ -1,0 +1,13 @@
+{
+  "title": "The Plane That Landed on a River (Miracle on the Hudson)",
+  "description": "Two minutes after takeoff from New York, US Airways Flight 1549 flew into a flock of Canada geese and lost both engines. The crew had 208 seconds, no reachable runway, and one of the biggest cities on Earth underneath. Here's the engineering behind the Miracle on the Hudson: what a goose does to a jet engine, the little engine in the tail that kept the flight computers alive, why landing on water is so dangerous, and how all 155 people got out. Built in low-poly 3D.",
+  "tags": ["miracle on the hudson", "us airways 1549", "sully", "airbus a320", "bird strike", "ditching", "auxiliary power unit", "aviation", "how it works", "engineering", "plane landing on water", "gears and glitches"],
+  "libs": ["mechreels/props/gimli.js", "mechreels/props/world.js", "mechreels/props/hudson.js"],
+  "sources": [
+    "NTSB Aircraft Accident Report AAR-10/03, Loss of Thrust in Both Engines After Encountering a Flock of Birds and Subsequent Ditching on the Hudson River, US Airways Flight 1549 (2010): bird strike at about 2,800 ft, Canada geese, APU started by the captain, RAT deployed, engine restart checklist designed for high altitude, touchdown at about 125 knots, rear fuselage damage, recommendations on bird-ingestion certification, dual-engine-failure checklists and ditching training",
+    "US Airways Flight 1549 (15 January 2009, LaGuardia to Charlotte, 155 aboard, LaGuardia and Teterboro offered, 'We're gonna be in the Hudson', cleared the George Washington Bridge by less than 900 ft, first ferry alongside within about 4 minutes, all survived): Wikipedia, US Airways Flight 1549",
+    "208 seconds from bird strike to ditching: Sullenberger, C., Highest Duty (2009); NTSB cockpit voice recorder transcript",
+    "Wildlife management around New York airports after 2009: Port Authority of New York and New Jersey; USDA Wildlife Services"
+  ],
+  "footer": "Would you have tried for the runway, or the river? Tell me in the comments. New Gears & Glitches breakdown every day."
+}

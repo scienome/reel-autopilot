@@ -1,0 +1,8 @@
+{
+ "title": "Why the Titanic's watertight walls failed",
+ "caption": "16 watertight compartments, but the walls stopped short of the top. Once five were open, the water just spilled over. 🧊\nFull video: [LINK]\nWhat would you have changed in the design?",
+ "hashtags": ["titanic", "engineering", "shipdesign", "history", "navalarchitecture", "shipwreck", "howitworks", "gearsandglitches", "shorts"],
+ "cover_t": 12.0,
+ "libs": ["mechreels/props/gimli.js", "mechreels/props/world.js", "mechreels/props/titanic.js"],
+ "sources": ["Wikipedia, Sinking of the Titanic; British Wreck Commissioner's Inquiry (1912); Garzke et al., SNAME Marine Forensics Panel (1997)"]
+}

@@ -1,0 +1,8 @@
+{
+ "title": "The Titanic's weak rivets",
+ "caption": "Steel rivets in the middle, hand-hammered wrought iron at the bow. Researchers think that mattered. 🔩\nFull video: [LINK]\nDid you know about the rivets?",
+ "hashtags": ["titanic", "engineering", "history", "rivets", "shipwreck", "materials", "howitworks", "gearsandglitches", "shorts"],
+ "cover_t": 2.5,
+ "libs": ["mechreels/props/gimli.js", "mechreels/props/world.js", "mechreels/props/titanic.js"],
+ "sources": ["McCarty, J. H. and Foecke, T., What Really Sank the Titanic (2008); NIST, metallurgy of Titanic steel and rivets"]
+}

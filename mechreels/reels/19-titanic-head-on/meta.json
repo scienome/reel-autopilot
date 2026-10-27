@@ -1,0 +1,8 @@
+{
+ "title": "Could hitting head-on have saved the Titanic?",
+ "caption": "The turn spread the damage along five compartments. Head-on, it might have been two. 🧊\nFull video: [LINK]\nWould you have turned, or hit it?",
+ "hashtags": ["titanic", "iceberg", "engineering", "history", "whatif", "shipwreck", "navalarchitecture", "gearsandglitches", "shorts"],
+ "cover_t": 9.0,
+ "libs": ["mechreels/props/gimli.js", "mechreels/props/world.js", "mechreels/props/titanic.js"],
+ "sources": ["Wikipedia, Sinking of the Titanic; Wikipedia, SS Arizona (1879); Garzke et al., SNAME Marine Forensics Panel (1997)"]
+}

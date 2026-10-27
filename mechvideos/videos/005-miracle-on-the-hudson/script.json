@@ -1,0 +1,291 @@
+[
+ {
+  "chapter": "Both engines gone",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "Two minutes after takeoff from New York, a passenger jet flies straight into a flock of geese, and both engines lose power."
+    ]
+   },
+   {
+    "id": "decide",
+    "phrases": [
+     "The captain has about three and a half minutes, and no runway he can reach."
+    ]
+   },
+   {
+    "id": "promise",
+    "phrases": [
+     "So he lands an Airbus on the Hudson River.",
+     "And all one hundred and fifty-five people on board survive.",
+     "Here's how."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "Birds versus jet engines",
+  "beats": [
+   {
+    "id": "flight",
+    "phrases": [
+     "January the fifteenth, two thousand nine.",
+     "US Airways Flight fifteen forty-nine takes off from LaGuardia, bound for Charlotte."
+    ]
+   },
+   {
+    "id": "climb",
+    "phrases": [
+     "It's climbing through about two thousand eight hundred feet when the crew sees birds.",
+     "Canada geese.",
+     "Big ones, several kilograms each."
+    ]
+   },
+   {
+    "id": "fan",
+    "phrases": [
+     "A jet engine's front fan spins thousands of times a minute, and swallows a huge amount of air."
+    ]
+   },
+   {
+    "id": "tested",
+    "phrases": [
+     "Engines are tested by firing birds into them.",
+     "But these geese were heavier than the birds these engines had to keep running after."
+    ]
+   },
+   {
+    "id": "damage",
+    "phrases": [
+     "Geese go into both engines.",
+     "Blades and cores are damaged, and both engines lose almost all their thrust."
+    ]
+   },
+   {
+    "id": "core",
+    "phrases": [
+     "Behind the fan sits the core, where fuel burns.",
+     "Wreck the blades in front of it, and the airflow breaks down.",
+     "The engine can't keep itself running."
+    ]
+   },
+   {
+    "id": "contain",
+    "phrases": [
+     "At least the engines' casings did their job.",
+     "Broken parts stayed inside, instead of flying into the wings and cabin."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "The little engine in the tail",
+  "beats": [
+   {
+    "id": "glider",
+    "phrases": [
+     "Now the Airbus is a heavy glider, over one of the biggest cities on Earth."
+    ]
+   },
+   {
+    "id": "apu",
+    "phrases": [
+     "Captain Chesley Sullenberger does something that turns out to be vital.",
+     "He starts the A P U, the auxiliary power unit."
+    ]
+   },
+   {
+    "id": "what",
+    "phrases": [
+     "It's a small jet engine in the tail.",
+     "It doesn't push the plane, but it makes electricity."
+    ]
+   },
+   {
+    "id": "computers",
+    "phrases": [
+     "That keeps the Airbus's flight computers fully working.",
+     "Even with no engines, they won't let the wing stall, however hard the captain pulls back."
+    ]
+   },
+   {
+    "id": "rat",
+    "phrases": [
+     "A little wind turbine also drops out of the belly, for backup power."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "Two hundred and eight seconds",
+  "beats": [
+   {
+    "id": "checklist",
+    "phrases": [
+     "First Officer Jeff Skiles works through the engine restart checklist.",
+     "It was written for planes up at cruising height, not this low."
+    ]
+   },
+   {
+    "id": "runways",
+    "phrases": [
+     "Air traffic control offers runways back at LaGuardia, and at Teterboro in New Jersey."
+    ]
+   },
+   {
+    "id": "reach",
+    "phrases": [
+     "Sullenberger judges he can't reach either one.",
+     "Trying, and falling short, would mean crashing into the city."
+    ]
+   },
+   {
+    "id": "hudson",
+    "phrases": [
+     "His answer.",
+     "We're gonna be in the Hudson."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "Why water is so hard",
+  "beats": [
+   {
+    "id": "hard",
+    "phrases": [
+     "Landing on water sounds soft. It isn't.",
+     "At over two hundred kilometres an hour, water hits like concrete."
+    ]
+   },
+   {
+    "id": "cartwheel",
+    "phrases": [
+     "If one wingtip or engine digs in first, the plane can spin round, and break apart."
+    ]
+   },
+   {
+    "id": "needs",
+    "phrases": [
+     "So a ditching needs four things.",
+     "Wings perfectly level.",
+     "The nose slightly up.",
+     "The lowest possible speed.",
+     "And the gentlest possible sink."
+    ]
+   },
+   {
+    "id": "river",
+    "phrases": [
+     "And the Hudson offers something rare.",
+     "A long, straight, calm stretch of water, with boats nearby."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "Touchdown",
+  "beats": [
+   {
+    "id": "bridge",
+    "phrases": [
+     "The Airbus clears the George Washington Bridge by less than three hundred metres, and glides down the river."
+    ]
+   },
+   {
+    "id": "touch",
+    "phrases": [
+     "Two hundred and eight seconds after the birds hit, Flight fifteen forty-nine touches the water, at about two hundred and thirty kilometres an hour."
+    ]
+   },
+   {
+    "id": "slide",
+    "phrases": [
+     "The tail hits first, the belly follows, and the jet slides to a stop, floating."
+    ]
+   },
+   {
+    "id": "leak",
+    "phrases": [
+     "The impact tears open the back of the fuselage, and icy water starts coming in."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "Everyone off",
+  "beats": [
+   {
+    "id": "wings",
+    "phrases": [
+     "Passengers climb out onto the wings and into the inflatable slides.",
+     "The water is just above freezing."
+    ]
+   },
+   {
+    "id": "ferries",
+    "phrases": [
+     "Within about four minutes, the first ferry is alongside.",
+     "Boats and rescuers pull everyone out."
+    ]
+   },
+   {
+    "id": "last",
+    "phrases": [
+     "Sullenberger walks the cabin twice, to make sure nobody is left behind."
+    ]
+   },
+   {
+    "id": "all",
+    "phrases": [
+     "All one hundred and fifty-five people survive."
+    ]
+   },
+   {
+    "id": "cold",
+    "phrases": [
+     "The air that afternoon was below freezing.",
+     "Speed saved them twice: in the air, and in the water."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "What changed",
+  "beats": [
+   {
+    "id": "ntsb",
+    "phrases": [
+     "Investigators confirmed both engines had swallowed geese heavier than they were built to handle."
+    ]
+   },
+   {
+    "id": "changes",
+    "phrases": [
+     "They pushed for tougher bird tests for engines, better checklists for losing both engines down low, and more ditching training."
+    ]
+   },
+   {
+    "id": "geese",
+    "phrases": [
+     "And around New York's airports, wildlife teams now manage the geese, to keep big flocks away from the flight paths."
+    ]
+   },
+   {
+    "id": "lesson",
+    "phrases": [
+     "The machines bought the time.",
+     "The crew used every second of it."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Would you have tried for the runway, or the river?",
+     "Tell me in the comments."
+    ]
+   }
+  ]
+ }
+]

@@ -48,3 +48,6 @@ Changing the voice (or anything in `style/`) and pushing to main remakes every M
 | 14 | What a goose does to a jet engine (Short for mechvideo 005) |
 | 15 | 208 seconds to land on a river (Short for mechvideo 005) |
 | 16 | Why landing on water is so hard (Short for mechvideo 005) |
+| 17 | The Titanic's weak rivets (Short for mechvideo 006) |
+| 18 | Why the Titanic's watertight walls failed (Short for mechvideo 006) |
+| 19 | Could hitting head-on have saved the Titanic? (Short for mechvideo 006) |
