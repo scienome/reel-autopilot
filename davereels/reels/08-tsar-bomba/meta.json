@@ -1,0 +1,23 @@
+{
+ "title": "The bomb they made smaller to be safe",
+ "caption": "They cut it in half to be safe. It was still the biggest explosion in history. ☢️\nTsar Bomba was tested at about 50 megatons in 1961, half its 100-megaton design, and fell under a giant parachute so the plane could escape.\nWhat's the most 'safe' unsafe thing you've ever seen?",
+ "hashtags": [
+  "gearsandglitches",
+  "tsarbomba",
+  "history",
+  "coldwar",
+  "physics",
+  "science",
+  "engineering",
+  "darkhumor"
+ ],
+ "cover_t": 6.0,
+ "libs": [
+  "davereels/props/dave.js",
+  "mechreels/props/gimli.js"
+ ],
+ "sources": [
+  "Wikipedia, Tsar Bomba (30 October 1961; ~50 Mt test of a 100 Mt design; cloud top about 64-67 km; parachute; the Tu-95 dropped about 1 km)",
+  "Rosatom archive / Atomic Heritage Foundation, Tsar Bomba"
+ ]
+}

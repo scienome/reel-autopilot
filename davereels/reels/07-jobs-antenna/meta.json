@@ -1,0 +1,22 @@
+{
+ "title": "Steve Jobs: \"Just avoid holding it that way\"",
+ "caption": "The most beautiful phone of 2010 had one flaw: your hand. 📵\nThe steel band was the antenna, split by tiny gaps; bridge the bottom-left gap with your skin and the signal dropped.\nWould you have taken the free bumper or held it 'wrong' anyway?",
+ "hashtags": [
+  "gearsandglitches",
+  "iphone4",
+  "antennagate",
+  "techhistory",
+  "engineering",
+  "physics",
+  "engineeringfails",
+  "darkhumor"
+ ],
+ "cover_t": 5.0,
+ "libs": [
+  "davereels/props/dave.js"
+ ],
+ "sources": [
+  "Apple press conference, 16 July 2010 (free bumper cases for iPhone 4 owners)",
+  "Widely reported email reply from Steve Jobs, June 2010: \"Just avoid holding it in that way.\""
+ ]
+}
