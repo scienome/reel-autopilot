@@ -1,0 +1,8 @@
+{
+ "title": "208 seconds to land on a river",
+ "caption": "No engines, no reachable runway, and 208 seconds. Captain Sullenberger chose the Hudson River, and all 155 people survived. ⏱️\nFull video: [LINK]\nRunway or river: what would you have picked?",
+ "hashtags": ["miracleonthehudson", "sully", "aviation", "pilot", "engineering", "planes", "airbus", "gearsandglitches", "shorts"],
+ "cover_t": 2.0,
+ "libs": ["mechreels/props/gimli.js", "mechreels/props/world.js", "mechreels/props/hudson.js"],
+ "sources": ["NTSB AAR-10/03, US Airways Flight 1549 (2010); Wikipedia, US Airways Flight 1549"]
+}

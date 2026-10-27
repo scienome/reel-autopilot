@@ -1,0 +1,8 @@
+{
+ "title": "What a goose does to a jet engine",
+ "caption": "A Canada goose can weigh several kilos. In 2009, geese took out BOTH engines of an Airbus over New York. 🪿\nFull video: [LINK]\nHave you ever seen a bird hit a plane?",
+ "hashtags": ["birdstrike", "jetengine", "aviation", "miracleonthehudson", "engineering", "howitworks", "planes", "gearsandglitches", "shorts"],
+ "cover_t": 2.0,
+ "libs": ["mechreels/props/gimli.js", "mechreels/props/world.js", "mechreels/props/hudson.js"],
+ "sources": ["NTSB AAR-10/03, US Airways Flight 1549 (2010); Wikipedia, US Airways Flight 1549"]
+}

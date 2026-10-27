@@ -1,0 +1,8 @@
+{
+ "title": "Why landing on water is so hard",
+ "caption": "At 230 km/h, water is as hard as concrete. One wingtip in first and a plane cartwheels. Here's how the Hudson landing worked. 🌊\nFull video: [LINK]\nWould you sit by the wing or the tail?",
+ "hashtags": ["miracleonthehudson", "ditching", "aviation", "engineering", "physics", "planes", "howitworks", "gearsandglitches", "shorts"],
+ "cover_t": 2.0,
+ "libs": ["mechreels/props/gimli.js", "mechreels/props/world.js", "mechreels/props/hudson.js"],
+ "sources": ["NTSB AAR-10/03, US Airways Flight 1549 (2010); Wikipedia, US Airways Flight 1549; Wikipedia, Water landing"]
+}
