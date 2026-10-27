@@ -12,7 +12,7 @@ You                    ->  Releases page: download the MP4 + thumbnail, paste yo
 ## One-time setup
 1. Everything lives in the `youtube/` folder; the workflow is `.github/workflows/make-video.yml`.
 2. Uses the repo's existing `ELEVENLABS_API_KEY` secret.
-3. The voice is set in `config.json` (Jarnathan, `eleven_v4`). Change `voice_id` to use another voice.
+3. The voice is set in `config.json` (`voice_id` IvUJKFyjVb5hItY9dJAT, model `eleven_v4`). Change `voice_id` to use another voice; the voice is then re-made automatically.
 
 ## Making a video
 - **New video:** Claude adds `videos/<number>-<slug>/` and pushes. The **Make video** workflow starts by itself.

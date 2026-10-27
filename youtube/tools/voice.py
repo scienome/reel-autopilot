@@ -81,14 +81,14 @@ if __name__ == '__main__':
     for i, ch in enumerate(script):
         text, wl = chapter_text(ch)
         cache = os.path.join(cdir, f'{i:02d}.json')
-        if os.path.exists(cache) and json.load(open(cache)).get('text') == text:
+        if os.path.exists(cache) and json.load(open(cache)).get('text') == text and json.load(open(cache)).get('voice') == cfg['voice_id'] + '/' + cfg.get('model_id', ''):
             res = json.load(open(cache))
         elif a.offline:
             sys.exit(f'no saved voice for chapter {i} ("{ch["chapter"]}")')
         else:
             print(f'voicing chapter {i + 1}/{len(script)}: {ch["chapter"]} ({len(text)} chars)')
             res = call_api(text, ' '.join(texts[max(0, i - 1):i])[-1000:], (texts[i + 1] if i + 1 < len(texts) else '')[:1000], cfg)
-            res['text'] = text; json.dump(res, open(cache, 'w'))
+            res['text'] = text; res['voice'] = cfg['voice_id'] + '/' + cfg.get('model_id', ''); json.dump(res, open(cache, 'w'))
         mp3 = os.path.join(tmp, f'{i:02d}.mp3'); open(mp3, 'wb').write(base64.b64decode(res['audio_base64']))
         wav = os.path.join(tmp, f'{i:02d}.wav')
         subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', mp3, '-ar', '44100', '-ac', '1', wav], check=True)
