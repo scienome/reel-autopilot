@@ -1,0 +1,21 @@
+{
+ "title": "Galloping Gertie",
+ "caption": "The bridge had a nickname for its wobble before it even opened. It was not a compliment. 🌉\nWind around a thin, shallow deck made it twist, and each twist fed the next: aerodynamic flutter tore it apart four months after opening.\nWould you have driven across it?",
+ "hashtags": [
+  "gearsandglitches",
+  "tacomanarrows",
+  "gallopinggertie",
+  "bridge",
+  "engineering",
+  "physics",
+  "engineeringfails",
+  "darkhumor"
+ ],
+ "cover_t": 5.0,
+ "libs": [
+  "davereels/props/dave.js"
+ ],
+ "sources": [
+  "Washington State DOT, Tacoma Narrows Bridge history (opened 1 July 1940; collapsed 7 November 1940 in a steady ~64 km/h wind; aeroelastic flutter; wind-tunnel testing of later bridges)"
+ ]
+}

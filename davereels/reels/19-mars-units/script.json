@@ -1,0 +1,6 @@
+[
+  { "id": "hook", "text": "NASA lost a Mars spacecraft because two teams used different units." },
+  { "id": "units", "text": "One team's software gave thruster data in pound-seconds. The other expected newton-seconds. One pound-force is about four and a half newtons. So every small push was more than four times bigger than the navigation thought." },
+  { "id": "lost", "text": "The spacecraft drifted far too close to Mars and was lost. Cost: about one hundred and twenty-five million dollars for the spacecraft alone." },
+  { "id": "end", "text": "Always write the units." }
+]

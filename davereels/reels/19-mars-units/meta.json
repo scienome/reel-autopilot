@@ -1,0 +1,22 @@
+{
+ "title": "NASA's $125 million units mix-up",
+ "caption": "A spacecraft flew 670 million km to Mars and was lost to a missing unit label. 📏\nOne team sent thruster data in pound-force seconds, the other read it as newton-seconds, so every push was about 4.45 times bigger than navigation thought.\nMetric or imperial: which side are you on?",
+ "hashtags": [
+  "gearsandglitches",
+  "nasa",
+  "mars",
+  "space",
+  "engineering",
+  "units",
+  "engineeringfails",
+  "darkhumor"
+ ],
+ "cover_t": 9.0,
+ "libs": [
+  "davereels/props/dave.js"
+ ],
+ "sources": [
+  "NASA, Mars Climate Orbiter Mishap Investigation Board Phase I Report (10 November 1999): ground software gave impulse in pound-force seconds instead of newton-seconds",
+  "NASA: Mars Climate Orbiter spacecraft cost about $125 million"
+ ]
+}
