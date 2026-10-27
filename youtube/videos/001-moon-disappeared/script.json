@@ -1,0 +1,296 @@
+[
+ {
+  "chapter": "What if the Moon vanished?",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "What if, tonight, the Moon just disappeared?"
+    ]
+   },
+   {
+    "id": "gone",
+    "phrases": [
+     "No explosion.",
+     "No warning.",
+     "One second it's up there, and the next, it's gone."
+    ]
+   },
+   {
+    "id": "notice",
+    "phrases": [
+     "Would anyone even notice?",
+     "Oh, the whole planet would.",
+     "We'll go from the very first second, to millions of years later.",
+     "Let's build it, brick by brick."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "Meet the Moon",
+  "beats": [
+   {
+    "id": "size",
+    "phrases": [
+     "First, meet the Moon.",
+     "It's about three thousand four hundred and seventy kilometres across,",
+     "roughly a quarter of the width of Earth.",
+     "It's the fifth biggest moon in the whole solar system."
+    ]
+   },
+   {
+    "id": "dist",
+    "phrases": [
+     "On average, it sits about three hundred and eighty-four thousand kilometres away."
+    ]
+   },
+   {
+    "id": "planets",
+    "phrases": [
+     "That gap is so big, you could line up every other planet in the solar system inside it."
+    ]
+   },
+   {
+    "id": "drift",
+    "phrases": [
+     "And it's slowly drifting away,",
+     "about three point eight centimetres every year.",
+     "That's about how fast your fingernails grow."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "The first second",
+  "beats": [
+   {
+    "id": "vanish",
+    "phrases": [
+     "So, the Moon vanishes.",
+     "What happens in the very first second?",
+     "Well, moonlight takes just over a second to reach us.",
+     "So for one more second, you'd still see it.",
+     "Then, the sky is empty."
+    ]
+   },
+   {
+    "id": "balance",
+    "phrases": [
+     "Earth and the Moon actually swing around a shared balance point,",
+     "about four thousand seven hundred kilometres from Earth's centre."
+    ]
+   },
+   {
+    "id": "stop",
+    "phrases": [
+     "Without the Moon, that monthly wobble simply stops.",
+     "Earth keeps circling the Sun almost exactly as before.",
+     "No crash, and nobody flies off into space."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "The tides shrink",
+  "beats": [
+   {
+    "id": "beach",
+    "phrases": [
+     "The first big change would be at the beach.",
+     "In Canada's Bay of Fundy, the sea rises and falls by up to sixteen metres, twice a day."
+    ]
+   },
+   {
+    "id": "bulge",
+    "phrases": [
+     "The Moon's gravity stretches the oceans into two bulges.",
+     "As Earth turns, coastlines move through them.",
+     "That's high tide, and low tide."
+    ]
+   },
+   {
+    "id": "suntide",
+    "phrases": [
+     "The Sun makes tides too,",
+     "but they're less than half as strong."
+    ]
+   },
+   {
+    "id": "shrink",
+    "phrases": [
+     "So without the Moon, tides would shrink to less than half their size."
+    ]
+   },
+   {
+    "id": "pools",
+    "phrases": [
+     "Rock pools, mudflats, and everything that lives between the tides would be in serious trouble."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "Darker nights",
+  "beats": [
+   {
+    "id": "night",
+    "phrases": [
+     "Then, the nights.",
+     "A full moon is bright enough to walk by, without a torch."
+    ]
+   },
+   {
+    "id": "dark",
+    "phrases": [
+     "Without it, every night would be as dark as a new-moon night."
+    ]
+   },
+   {
+    "id": "coral",
+    "phrases": [
+     "And lots of life runs on a Moon clock.",
+     "On the Great Barrier Reef, corals sense the faint light of the full moon,",
+     "and release their eggs together a few nights later."
+    ]
+   },
+   {
+    "id": "lost",
+    "phrases": [
+     "No moonlight, no signal.",
+     "That timing could fall apart."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "No more eclipses",
+  "beats": [
+   {
+    "id": "eclipse",
+    "phrases": [
+     "Say goodbye to solar eclipses, too."
+    ]
+   },
+   {
+    "id": "ratio",
+    "phrases": [
+     "The Sun is about four hundred times wider than the Moon,",
+     "but also about four hundred times farther away.",
+     "That's why the Moon can cover it perfectly."
+    ]
+   },
+   {
+    "id": "never",
+    "phrases": [
+     "No Moon, no total eclipses.",
+     "Ever.",
+     "Funny thing is, even with the Moon, that won't last.",
+     "It's drifting away, and in roughly six hundred million years,",
+     "it will look too small to cover the Sun."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "Longer days",
+  "beats": [
+   {
+    "id": "brake",
+    "phrases": [
+     "Now for the slow changes.",
+     "Those tides act like a brake on Earth's spin."
+    ]
+   },
+   {
+    "id": "ms",
+    "phrases": [
+     "Every century, they stretch our day by less than two thousandths of a second."
+    ]
+   },
+   {
+    "id": "fossil",
+    "phrases": [
+     "It adds up.",
+     "Fossil corals show that about three hundred and fifty million years ago,",
+     "a year had around three hundred and eighty-five days,",
+     "because each day was shorter."
+    ]
+   },
+   {
+    "id": "nobrake",
+    "phrases": [
+     "Without the Moon, that brake gets much weaker,",
+     "and our days would stay almost the same length."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "The wobbly tilt",
+  "beats": [
+   {
+    "id": "tilt",
+    "phrases": [
+     "And the biggest change of all: the tilt.",
+     "Earth leans about twenty-three and a half degrees.",
+     "That lean gives us our seasons."
+    ]
+   },
+   {
+    "id": "steady",
+    "phrases": [
+     "The Moon's gravity helps hold that lean steady."
+    ]
+   },
+   {
+    "id": "wander",
+    "phrases": [
+     "Without it, over very long times, the tilt could wander more.",
+     "Some studies say about ten degrees.",
+     "Older ones say much, much more."
+    ]
+   },
+   {
+    "id": "seasons",
+    "phrases": [
+     "Either way, our seasons would slowly shift."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "Would we survive?",
+  "beats": [
+   {
+    "id": "survive",
+    "phrases": [
+     "So, would we survive?",
+     "Yes."
+    ]
+   },
+   {
+    "id": "world",
+    "phrases": [
+     "But it would be a darker world,",
+     "with smaller tides, no eclipses,",
+     "and seasons that slowly drift."
+    ]
+   },
+   {
+    "id": "wave",
+    "phrases": [
+     "So next time you see the Moon, give it a little wave.",
+     "It's doing a lot more work than it looks."
+    ]
+   },
+   {
+    "id": "next",
+    "phrases": [
+     "Which what if should we build next?",
+     "Tell us in the comments."
+    ]
+   }
+  ]
+ }
+]
