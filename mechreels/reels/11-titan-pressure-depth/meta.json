@@ -1,0 +1,8 @@
+{
+ "title": "The pressure at the Titanic's depth",
+ "caption": "3,800 metres down, the ocean pushes with almost 400 kg on every square centimetre. That's a grand piano on your fingertip. 🌊\nFull video: [LINK]\nWould you ever dive that deep?",
+ "hashtags": ["deepsea", "titanic", "ocean", "pressure", "engineering", "science", "titansub", "gearsandglitches", "shorts"],
+ "cover_t": 3.0,
+ "libs": ["mechreels/props/gimli.js", "mechreels/props/world.js", "mechreels/props/titan.js"],
+ "sources": ["NOAA Ocean Service, How does pressure change with ocean depth?; Woods Hole Oceanographic Institution, Alvin; Wikipedia, Titan submersible implosion"]
+}

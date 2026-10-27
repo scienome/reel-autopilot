@@ -1,0 +1,8 @@
+{
+ "title": "The Titan implosion took milliseconds",
+ "caption": "Nearly 4 km down, the ocean pushes in from every side. When Titan's hull gave way, it was over in a few milliseconds. 🕊️\nFull video: [LINK]\nWhat do you think should change for deep-sea trips?",
+ "hashtags": ["titansub", "deepsea", "titanic", "engineering", "implosion", "ocean", "science", "gearsandglitches", "shorts"],
+ "cover_t": 12.0,
+ "libs": ["mechreels/props/gimli.js", "mechreels/props/world.js", "mechreels/props/titan.js"],
+ "sources": ["Wikipedia, Titan submersible implosion; US Coast Guard Marine Board of Investigation, TITAN report (2025); NOAA Ocean Service, pressure and depth"]
+}

@@ -24,7 +24,7 @@
       if (foggy) { if (t > tI) { FX.heat(ctx, fp[0], fp[1], 90, ramp(t, tI, 0.5), t, 'rgba(255,120,40,0.9)'); puffs(ctx, fp[0], fp[1] - 20, ((t - tI) / 2.5) % 1, 11, '90,90,96', 50); } fog(ctx, W, H_, 0.32); flash = 0.25 * Math.exp(-Math.pow((t - tI) * 4, 2)); }
       else FX.confetti(ctx, W, H_, ramp(t, V('lived', 'lived'), 2.4), t);
     } else if (n === 'pit') {
-      const cy = 0.42 + 1.4 * (1 - ramp(t, sh.t0, Math.max(1, BEATEND('air') - sh.t0)));
+      const cy = 0.42 + 1.4 * (1 - ramp(t, sh.t0, Math.max(1, WORDS.filter((x) => x.beat === 'air').reduce((m, x) => Math.max(m, x.e || x.t), 0) - sh.t0)));
       const [E, TG] = dolly(t, sh.t0, sh.t1, [0.9, 1.5, 2.6], [0.05, 1.15, 0], [0.8, 1.3, 2.2], [0.05, 1.0, 0]);
       const S = Scene(E, TG, W, H_);
       shaft(S, [0, 0, 0], { h: 62, carY: cy, floors: 0.78, snap: 1, gov: false, ropes: 6, coil: ramp(t, V('coil', 'cables') - 0.2, 2.0) });

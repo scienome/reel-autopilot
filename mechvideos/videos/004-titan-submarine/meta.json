@@ -1,0 +1,14 @@
+{
+  "title": "How the Titan Submarine Imploded",
+  "description": "In June 2023 the Titan submersible was diving to the wreck of the Titanic when its hull collapsed inward in a few milliseconds. Five people were lost. This is the engineering behind it, told with respect: how much the ocean pushes at 3,800 metres, why deep-sea crews usually ride in titanium spheres, how Titan's carbon-fibre tube and titanium end caps were different, how every dive can grow hidden damage, and what investigators found afterwards. Built in low-poly 3D.",
+  "tags": ["titan submersible", "titan implosion", "oceangate", "titanic", "deep sea pressure", "carbon fibre hull", "engineering failure", "how it works", "engineering", "submarine", "coast guard investigation", "gears and glitches"],
+  "libs": ["mechreels/props/gimli.js", "mechreels/props/world.js", "mechreels/props/titan.js"],
+  "sources": [
+    "Titan submersible implosion (18 June 2023, loss of contact about 1 h 45 min into the dive, five people aboard, debris found on 22 June about 1,600 ft / 500 m from the Titanic's bow, carbon-fibre hull about 5 in / 127 mm thick with titanium end domes and rings): Wikipedia, Titan submersible implosion",
+    "US Coast Guard Marine Board of Investigation, Report of Investigation into the Implosion of the Submersible TITAN (2025): the loss was preventable; hull damage likely during an earlier dive with a loud bang in 2022; no independent certification; the real-time monitoring system",
+    "Hydrostatic pressure (about 1 atmosphere per 10 m of seawater; about 380 atm / 38 MPa at 3,800 m, about 390 kgf per square centimetre): NOAA Ocean Service, How does pressure change with ocean depth?",
+    "DSV Alvin (titanium personnel sphere, more than 5,000 dives): Woods Hole Oceanographic Institution",
+    "DSV Limiting Factor (titanium-sphere submersible classed by DNV, repeated dives to Challenger Deep, about 10,900 m): Wikipedia, DSV Limiting Factor"
+  ],
+  "footer": "Should deep-sea trips follow the same strict rules as airliners? Tell me what you think in the comments. New Gears & Glitches breakdown every day."
+}

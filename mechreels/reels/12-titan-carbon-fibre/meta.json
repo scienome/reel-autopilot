@@ -1,0 +1,8 @@
+{
+ "title": "Why Titan's carbon fibre hull failed",
+ "caption": "Carbon fibre is amazing when you pull on it. Deep underwater, a hull gets squeezed, dive after dive. 🧵\nFull video: [LINK]\nWould you trust a carbon fibre hull?",
+ "hashtags": ["titansub", "carbonfiber", "engineering", "deepsea", "materials", "engineeringfailure", "howitworks", "gearsandglitches", "shorts"],
+ "cover_t": 14.0,
+ "libs": ["mechreels/props/gimli.js", "mechreels/props/world.js", "mechreels/props/titan.js"],
+ "sources": ["US Coast Guard Marine Board of Investigation, TITAN report (2025); Wikipedia, Titan submersible implosion"]
+}

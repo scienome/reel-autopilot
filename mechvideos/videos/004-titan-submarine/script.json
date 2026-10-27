@@ -1,0 +1,271 @@
+[
+ {
+  "chapter": "Crushed in milliseconds",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "In June, twenty twenty-three, a submersible diving to the Titanic was crushed inward, in a few milliseconds."
+    ]
+   },
+   {
+    "id": "people",
+    "phrases": [
+     "Five people were on board.",
+     "None of them survived."
+    ]
+   },
+   {
+    "id": "promise",
+    "phrases": [
+     "This is how the deep sea's pressure works, why the Titan's hull was so unusual, and what changed afterwards."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "The weight of the ocean",
+  "beats": [
+   {
+    "id": "depth",
+    "phrases": [
+     "The Titanic lies about three thousand eight hundred metres down, at the bottom of the North Atlantic."
+    ]
+   },
+   {
+    "id": "column",
+    "phrases": [
+     "Every ten metres of seawater adds about one more atmosphere of pressure."
+    ]
+   },
+   {
+    "id": "bottom",
+    "phrases": [
+     "So down there, it's around three hundred and eighty times the pressure at the surface."
+    ]
+   },
+   {
+    "id": "piano",
+    "phrases": [
+     "That's almost four hundred kilograms pressing on every square centimetre.",
+     "Like a grand piano, balanced on your fingertip."
+    ]
+   },
+   {
+    "id": "squeeze",
+    "phrases": [
+     "Anything hollow down there is being squeezed from every direction at once."
+    ]
+   },
+   {
+    "id": "can",
+    "phrases": [
+     "Send an empty soda can down there, and it wouldn't just dent.",
+     "It would be crushed flat, long before it reached the bottom."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "How deep-sea hulls are built",
+  "beats": [
+   {
+    "id": "sphere",
+    "phrases": [
+     "Most deep-diving submersibles carry their crew inside a sphere of thick titanium or steel."
+    ]
+   },
+   {
+    "id": "even",
+    "phrases": [
+     "A sphere is the ideal shape.",
+     "The pressure pushes evenly over the whole surface, so no spot carries more than its share."
+    ]
+   },
+   {
+    "id": "alvin",
+    "phrases": [
+     "The research sub Alvin has made more than five thousand dives like this, with its crew inside a titanium sphere."
+    ]
+   },
+   {
+    "id": "metal",
+    "phrases": [
+     "And engineers have decades of tests showing exactly how those metals behave, dive after dive."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "Titan's different design",
+  "beats": [
+   {
+    "id": "tube",
+    "phrases": [
+     "Titan was different.",
+     "Its middle was a tube of carbon fibre, about thirteen centimetres thick, built up from layers of fibre and glue."
+    ]
+   },
+   {
+    "id": "caps",
+    "phrases": [
+     "At each end, a titanium dome, joined to the tube by titanium rings, glued in place."
+    ]
+   },
+   {
+    "id": "why",
+    "phrases": [
+     "A tube holds more people than a sphere.",
+     "And carbon fibre is light, and incredibly strong when you pull on it."
+    ]
+   },
+   {
+    "id": "but",
+    "phrases": [
+     "But deep underwater, a hull isn't pulled. It's squeezed.",
+     "And for thick carbon fibre under squeezing, again and again, there's far less proof.",
+     "Its layers can start to separate, and the damage hides inside."
+    ]
+   },
+   {
+    "id": "mismatch",
+    "phrases": [
+     "And carbon fibre and titanium squeeze by different amounts, which loads the joints between them."
+    ]
+   },
+   {
+    "id": "new",
+    "phrases": [
+     "It was a new kind of hull, taking people this deep, and it was never certified by an outside inspector."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "Every dive leaves a mark",
+  "beats": [
+   {
+    "id": "cycle",
+    "phrases": [
+     "Every dive loads the hull with that enormous pressure, and every ascent releases it."
+    ]
+   },
+   {
+    "id": "damage",
+    "phrases": [
+     "Each cycle can grow tiny damage.",
+     "A gap between layers.",
+     "A weak spot in the glue."
+    ]
+   },
+   {
+    "id": "sensors",
+    "phrases": [
+     "Titan had sensors to listen for cracking, meant to warn the pilot in time to head back up."
+    ]
+   },
+   {
+    "id": "warning",
+    "phrases": [
+     "But a warning only helps if there's time to act, and if someone decides to stop."
+    ]
+   },
+   {
+    "id": "bang",
+    "phrases": [
+     "On a dive in twenty twenty-two, the people aboard heard a loud bang.",
+     "Investigators later concluded the hull was most likely damaged around then.",
+     "It kept diving."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "The last dive",
+  "beats": [
+   {
+    "id": "dive",
+    "phrases": [
+     "On the eighteenth of June, twenty twenty-three, Titan began its dive toward the Titanic."
+    ]
+   },
+   {
+    "id": "descent",
+    "phrases": [
+     "It starts from a floating platform, then sinks slowly, for about two hours, down to the wreck."
+    ]
+   },
+   {
+    "id": "lost",
+    "phrases": [
+     "About an hour and forty-five minutes in, communication stopped."
+    ]
+   },
+   {
+    "id": "collapse",
+    "phrases": [
+     "Investigators believe the hull gave way, and the ocean crushed it inward."
+    ]
+   },
+   {
+    "id": "ms",
+    "phrases": [
+     "An implosion like that is over in a few milliseconds.",
+     "Far faster than anyone on board could have noticed."
+    ]
+   },
+   {
+    "id": "search",
+    "phrases": [
+     "For four days, the world searched.",
+     "Then a robot found the pieces on the sea floor, about five hundred metres from the Titanic's bow."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "What changed",
+  "beats": [
+   {
+    "id": "report",
+    "phrases": [
+     "In twenty twenty-five, the US Coast Guard's investigation called the disaster preventable.",
+     "It found the design had never been properly tested, or checked by independent inspectors."
+    ]
+   },
+   {
+    "id": "shut",
+    "phrases": [
+     "The company that built Titan suspended all its operations soon after the accident."
+    ]
+   },
+   {
+    "id": "classed",
+    "phrases": [
+     "Certified deep submersibles are inspected by outside experts, and their hulls are pressure-tested beyond the depth they'll dive to."
+    ]
+   },
+   {
+    "id": "deepest",
+    "phrases": [
+     "One titanium-sphere submersible has dived to the deepest point in the ocean again and again.",
+     "Almost three times deeper than the Titanic."
+    ]
+   },
+   {
+    "id": "lesson",
+    "phrases": [
+     "The deep ocean doesn't forgive shortcuts.",
+     "A new idea has to be proven before people climb inside."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Should deep-sea trips follow the same strict rules as airliners?",
+     "Tell me what you think in the comments."
+    ]
+   }
+  ]
+ }
+]

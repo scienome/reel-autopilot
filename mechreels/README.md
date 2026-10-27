@@ -42,3 +42,6 @@ Changing the voice (or anything in `style/`) and pushing to main remakes every M
 | 08 | He cut the only rope, on purpose (Short for mechvideo 003) |
 | 09 | She fell 75 floors in an elevator and lived (Short for mechvideo 003) |
 | 10 | Why elevators have so many cables (Short for mechvideo 003) |
+| 11 | The pressure at the Titanic's depth (Short for mechvideo 004) |
+| 12 | Why Titan's carbon fibre hull failed (Short for mechvideo 004) |
+| 13 | The Titan implosion took milliseconds (Short for mechvideo 004) |
