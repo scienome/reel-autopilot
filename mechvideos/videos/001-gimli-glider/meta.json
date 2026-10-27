@@ -1,0 +1,12 @@
+{
+  "title": "How a Jet Flew With No Engines (The Gimli Glider)",
+  "description": "At 41,000 feet, a brand-new Boeing 767 ran out of fuel and both engines stopped. One wrong number on a fuel sheet put it there. A tiny drop-down propeller, a glider pilot's trick and an old air force runway with a car race on it brought all 69 people home. Here's every machine and every mistake, built in low-poly 3D.",
+  "tags": ["gimli glider", "air canada 143", "boeing 767", "aviation", "how it works", "engineering", "plane crash", "ram air turbine", "forward slip", "metric mistake", "aviation history", "mechanic"],
+  "libs": ["mechreels/props/gimli.js"],
+  "sources": [
+    "Flight facts (date, aircraft, 69 on board, fuel required 22,300 kg vs ~10,100 kg loaded, 1.77 lb/L used instead of 0.803 kg/L, FQIS fault, flameout at 41,000 ft over Red Lake, ~17-minute glide, RAT, no vertical speed indicator, transponder failure, 5,000 ft lost in 10 nmi, forward slip, Gimli Motorsports Park race, nose gear collapse, guardrail, 10 minor injuries, 1985 FAI Diploma, retired 2008, luggage tags): Wikipedia, Gimli Glider",
+    "The Gimli Glider: A 767 Runs Dry at 41,000 Feet, MigFlug",
+    "The Gimli Glider, Amusing Planet (2022)"
+  ],
+  "footer": "What would you have done at 41,000 feet? Tell me in the comments. New Mechanic breakdown every day."
+}

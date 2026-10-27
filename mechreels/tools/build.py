@@ -10,6 +10,7 @@ script.json -> window.SCRIPT; timing.json (if present) -> window.WORD_TIMES / VO
 import argparse, base64, json, os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+REPO = os.path.dirname(ROOT)
 STYLE = os.path.join(ROOT, 'style')
 
 
@@ -25,7 +26,9 @@ def engine_js(reel):
         pre += 'window.WORD_TIMES = ' + json.dumps(tm['words']) + ';\nwindow.VOICE_END = ' + json.dumps(tm.get('end', 0)) + ';\n'
     else:
         pre += 'window.WORD_TIMES = null;\n'
-    return pre + read(STYLE, 'mech_base.js') + '\n' + read(reel, 'story.js') + '\n}\n'
+    mp = os.path.join(reel, 'meta.json')
+    shared = ''.join(read(REPO, l) + '\n' for l in (json.load(open(mp)).get('libs', []) if os.path.exists(mp) else []))
+    return pre + read(STYLE, 'mech_base.js') + '\n' + shared + read(reel, 'story.js') + '\n}\n'
 
 
 def libs(reel):

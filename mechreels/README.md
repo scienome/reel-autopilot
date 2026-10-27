@@ -9,7 +9,7 @@ writes the reel, you push (or Claude pushes), GitHub does the voice and the rend
    - `script.json` – the voiceover, by beat: `[{ "id": "hook", "text": "..." }, ...]`. Numbers spelled out.
    - `story.js` – the animation, built on `style/mech_base.js` (renderer, sets, props, FX, captions). Every visual
      event hangs on a word time `V(beatId, 'WORD')`. Do not end the file with a closing brace (the build adds it).
-   - `meta.json` – title, caption, hashtags, `cover_t`, sources.
+   - `meta.json` – title, caption, hashtags, `cover_t`, sources, and optional `libs` (shared prop files such as `mechreels/props/gimli.js`).
 2. Pushing a change to `mechreels/reels/**` on `main` runs **Make mechanic reels** (`.github/workflows/make-mechreels.yml`).
 3. GitHub sends the script to ElevenLabs' with-timestamps endpoint, so every word gets an exact start time; the
    animation re-times itself to the take, renders the MP4 and publishes a Release `mechreel-<id>` with the MP4,
@@ -33,3 +33,6 @@ Changing the voice (or anything in `style/`) and pushing to main remakes every M
 | # | Reel |
 |---|---|
 | 01 | How a car's differential works |
+| 02 | One number emptied this jet's tanks (Short for mechvideo 001) |
+| 03 | The tiny propeller that saved 69 people (Short for mechvideo 001) |
+| 04 | A jet landed in the middle of a car race (Short for mechvideo 001) |

@@ -1,0 +1,322 @@
+[
+ {
+  "chapter": "Forty-one thousand feet, no engines",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "At forty-one thousand feet over Canada, a brand-new Boeing seven sixty-seven goes completely silent."
+    ]
+   },
+   {
+    "id": "silent",
+    "phrases": [
+     "Both engines, gone.",
+     "Sixty-nine people on board."
+    ]
+   },
+   {
+    "id": "promise",
+    "phrases": [
+     "No fuel, almost no instruments, and about seventeen minutes to find somewhere to land.",
+     "This is the Gimli Glider, and the machines that brought it home."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "A brand-new jet with blank gauges",
+  "beats": [
+   {
+    "id": "date",
+    "phrases": [
+     "July the twenty-third, nineteen eighty-three.",
+     "Air Canada Flight one forty-three is getting ready to fly from Montreal to Edmonton."
+    ]
+   },
+   {
+    "id": "metric",
+    "phrases": [
+     "The seven sixty-seven is one of the airline's newest planes, and one of the first to measure its fuel in kilograms instead of pounds."
+    ]
+   },
+   {
+    "id": "gauges",
+    "phrases": [
+     "But tonight, the fuel gauges in the cockpit are blank.",
+     "A faulty sensor has knocked them out.",
+     "By the rules, the plane should never have been cleared to fly. But it was."
+    ]
+   },
+   {
+    "id": "dip",
+    "phrases": [
+     "So the crew does it the old way.",
+     "A stick is dipped into the tanks, the depth is read, and a chart turns it into litres."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "One wrong number",
+  "beats": [
+   {
+    "id": "need",
+    "phrases": [
+     "The trip needs twenty-two thousand, three hundred kilograms of fuel."
+    ]
+   },
+   {
+    "id": "convert",
+    "phrases": [
+     "To turn litres into weight, you multiply by the fuel's density."
+    ]
+   },
+   {
+    "id": "wrong",
+    "phrases": [
+     "They used one point seven seven.",
+     "But that's pounds per litre, not kilograms.",
+     "The right number was about zero point eight, so every litre was counted as more than twice its real weight."
+    ]
+   },
+   {
+    "id": "half",
+    "phrases": [
+     "Every number on the sheet looked right.",
+     "But the tanks held less than half the fuel the flight needed."
+    ]
+   },
+   {
+    "id": "ottawa",
+    "phrases": [
+     "At a stop in Ottawa, they dip the tanks again, and make the same mistake again."
+    ]
+   },
+   {
+    "id": "nowarn",
+    "phrases": [
+     "And with the gauges dead, nothing in the cockpit can warn them."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "Flameout",
+  "beats": [
+   {
+    "id": "alarm",
+    "phrases": [
+     "Over Red Lake, Ontario, a warning chimes.",
+     "Low fuel pressure in the left engine."
+    ]
+   },
+   {
+    "id": "divert",
+    "phrases": [
+     "The captain turns for Winnipeg."
+    ]
+   },
+   {
+    "id": "left",
+    "phrases": [
+     "Then the left engine stops."
+    ]
+   },
+   {
+    "id": "right",
+    "phrases": [
+     "A few minutes later, the right engine stops too."
+    ]
+   },
+   {
+    "id": "dark",
+    "phrases": [
+     "The engines also make the plane's electricity, so the glass screens in the cockpit go dark.",
+     "Even the transponder dies, so controllers on the ground can no longer see how high they are."
+    ]
+   },
+   {
+    "id": "tone",
+    "phrases": [
+     "And a warning sounds that nobody on board had ever heard before.",
+     "All engines out."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "The little propeller",
+  "beats": [
+   {
+    "id": "glider",
+    "phrases": [
+     "The seven sixty-seven is now a very heavy glider."
+    ]
+   },
+   {
+    "id": "hydraulic",
+    "phrases": [
+     "But its controls are moved by hydraulic pressure, and the pumps were powered by the engines."
+    ]
+   },
+   {
+    "id": "rat",
+    "phrases": [
+     "So, from the belly of the plane, a small propeller drops out into the wind.",
+     "The ram air turbine."
+    ]
+   },
+   {
+    "id": "pump",
+    "phrases": [
+     "The rushing air spins it, and it drives a hydraulic pump, just enough to move the controls."
+    ]
+   },
+   {
+    "id": "weak",
+    "phrases": [
+     "Just enough.",
+     "No flaps, no slats, and the plane gets harder to steer as it slows down."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "Running out of sky",
+  "beats": [
+   {
+    "id": "byhand",
+    "phrases": [
+     "With only backup instruments, the crew works out the glide by hand.",
+     "The backup instruments don't even show how fast they're sinking."
+    ]
+   },
+   {
+    "id": "rate",
+    "phrases": [
+     "In ten nautical miles, they lose five thousand feet."
+    ]
+   },
+   {
+    "id": "far",
+    "phrases": [
+     "At that rate, Winnipeg is too far.",
+     "They would hit the ground first."
+    ]
+   },
+   {
+    "id": "gimli",
+    "phrases": [
+     "First officer Maurice Quintal remembers an old air force base where he once served.",
+     "Gimli."
+    ]
+   },
+   {
+    "id": "race",
+    "phrases": [
+     "What nobody in the cockpit knows is that part of the old base is now a racetrack.",
+     "And today, there's a car race on it."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "The glider pilot's trick",
+  "beats": [
+   {
+    "id": "high",
+    "phrases": [
+     "As they line up, they're too high and too fast.",
+     "With no engines, there's no second try."
+    ]
+   },
+   {
+    "id": "pearson",
+    "phrases": [
+     "But Captain Bob Pearson is also an experienced glider pilot."
+    ]
+   },
+   {
+    "id": "slip",
+    "phrases": [
+     "He crosses the controls, one wing down and the opposite rudder, so the jet flies slightly sideways."
+    ]
+   },
+   {
+    "id": "brake",
+    "phrases": [
+     "The whole side of the plane hits the wind like a brake.",
+     "It drops fast, without speeding up."
+    ]
+   },
+   {
+    "id": "gear",
+    "phrases": [
+     "The landing gear falls out by gravity.",
+     "The main wheels lock.",
+     "The nose wheel doesn't."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "Touchdown at Gimli",
+  "beats": [
+   {
+    "id": "touch",
+    "phrases": [
+     "The seven sixty-seven hits the runway.",
+     "The nose collapses and scrapes along the concrete, slowing it down."
+    ]
+   },
+   {
+    "id": "rail",
+    "phrases": [
+     "The main wheels straddle a guardrail down the middle of the runway, and the jet grinds to a stop, short of the people at the race."
+    ]
+   },
+   {
+    "id": "fire",
+    "phrases": [
+     "A small fire at the nose is put out by racers with hand extinguishers."
+    ]
+   },
+   {
+    "id": "safe",
+    "phrases": [
+     "All sixty-nine people survive.",
+     "Ten have minor injuries, mostly from the evacuation slides."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "Why it still matters",
+  "beats": [
+   {
+    "id": "after",
+    "phrases": [
+     "The plane was repaired, and flew for almost twenty-five more years.",
+     "Pearson and Quintal were later given an award for outstanding airmanship.",
+     "Everyone called it the Gimli Glider.",
+     "When it finally retired, pieces of it were turned into luggage tags."
+    ]
+   },
+   {
+    "id": "lesson",
+    "phrases": [
+     "One wrong number nearly brought it down.",
+     "A dropped propeller, a glider pilot's trick, and an old runway brought it home."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "What would you have done at forty-one thousand feet?",
+     "Tell me in the comments."
+    ]
+   }
+  ]
+ }
+]
