@@ -1,0 +1,23 @@
+{
+ "title": "The plane that lost a wall at 16,000 feet",
+ "caption": "Four bolts. Zero bolts. One very breezy flight. ✈️\nCabin pressure pushes outward on every panel of a jet at altitude, so a door plug with no bolts in it is just a door.\nWould you still pick the window seat?",
+ "hashtags": [
+  "gearsandglitches",
+  "aviation",
+  "boeing",
+  "engineering",
+  "planes",
+  "aviationsafety",
+  "engineeringfails",
+  "darkhumor"
+ ],
+ "cover_t": 9.0,
+ "libs": [
+  "davereels/props/dave.js",
+  "mechreels/props/gimli.js"
+ ],
+ "sources": [
+  "NTSB, Alaska Airlines Flight 1282 (5 January 2024): door plug departed at about 16,000 ft; four retaining bolts not reinstalled after factory rework",
+  "NTSB: seats 26A and 26B were unoccupied; all on board survived; a passenger's iPhone was found working in a yard in Portland"
+ ]
+}
