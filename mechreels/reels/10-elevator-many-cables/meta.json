@@ -1,0 +1,8 @@
+{
+ "title": "Why elevators have so many cables",
+ "caption": "One cable snaps and... nothing happens. Elevators hang from several steel ropes, and that's only the first layer of safety. 🛡️\nFull video: [LINK]\nDo you take the stairs or the elevator?",
+ "hashtags": ["elevator", "engineering", "howitworks", "safety", "elevatorsafety", "mechanism", "failsafe", "gearsandglitches", "shorts"],
+ "cover_t": 3.0,
+ "libs": ["mechreels/props/gimli.js", "mechreels/props/world.js", "mechreels/props/elevator.js"],
+ "sources": ["Wikipedia, Elevator (traction elevators, hoist ropes, counterweight, governor, safety gear, buffers); ASME A17.1 Safety Code for Elevators and Escalators"]
+}

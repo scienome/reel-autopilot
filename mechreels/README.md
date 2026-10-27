@@ -39,3 +39,6 @@ Changing the voice (or anything in `style/`) and pushing to main remakes every M
 | 05 | Why plane windows can't be square (Short for mechvideo 002) |
 | 06 | The first jet airliner kept falling apart (Short for mechvideo 002) |
 | 07 | Your plane is a metal balloon (Short for mechvideo 002) |
+| 08 | He cut the only rope, on purpose (Short for mechvideo 003) |
+| 09 | She fell 75 floors in an elevator and lived (Short for mechvideo 003) |
+| 10 | Why elevators have so many cables (Short for mechvideo 003) |

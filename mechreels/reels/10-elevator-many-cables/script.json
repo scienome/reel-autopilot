@@ -1,0 +1,8 @@
+[
+  { "id": "hook", "text": "Your elevator doesn't hang from one cable. It hangs from several, and any one of them could hold the loaded car." },
+  { "id": "counter", "text": "They run over a wheel at the top, down to a counterweight, so the motor barely has to lift." },
+  { "id": "governor", "text": "And if the car ever goes too fast, a spinning wheel called the governor trips a clamp." },
+  { "id": "wedges", "text": "That jams steel wedges against the rails, and the car squeezes to a stop." },
+  { "id": "buffers", "text": "And springs in the pit catch anything left." },
+  { "id": "cta", "text": "So what happened the one time all of it failed? Full video on my channel." }
+]

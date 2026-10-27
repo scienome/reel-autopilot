@@ -1,0 +1,276 @@
+[
+ {
+  "chapter": "The cable snaps",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "You're in an elevator, forty floors up, and the cable snaps.",
+     "What happens next?"
+    ]
+   },
+   {
+    "id": "answer",
+    "phrases": [
+     "Almost certainly, nothing dramatic.",
+     "The car grabs the rails, and stops."
+    ]
+   },
+   {
+    "id": "promise",
+    "phrases": [
+     "Because more than a hundred and seventy years ago, one mechanic made falling elevators almost impossible.",
+     "And in nineteen forty-five, one woman survived a fall of seventy-five floors, when everything else went wrong."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "A ride nobody trusted",
+  "beats": [
+   {
+    "id": "before",
+    "phrases": [
+     "In the early eighteen hundreds, hoists already lifted goods in factories, warehouses and mines, hanging from a single rope."
+    ]
+   },
+   {
+    "id": "breaks",
+    "phrases": [
+     "If that rope broke, the platform simply dropped."
+    ]
+   },
+   {
+    "id": "stairs",
+    "phrases": [
+     "So nobody wanted to ride one.",
+     "And buildings stayed low, because people will only climb so many stairs."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "Otis and the wagon spring",
+  "beats": [
+   {
+    "id": "otis",
+    "phrases": [
+     "In eighteen fifty-two, a mechanic named Elisha Otis worked out a fix."
+    ]
+   },
+   {
+    "id": "spring",
+    "phrases": [
+     "He fixed a curved steel spring, like the ones on a wagon, to the top of the platform, and tied the rope to the middle of it."
+    ]
+   },
+   {
+    "id": "taut",
+    "phrases": [
+     "While the rope is holding the weight, it pulls the spring into a bow."
+    ]
+   },
+   {
+    "id": "teeth",
+    "phrases": [
+     "The guide rails on each side got teeth, like a ratchet."
+    ]
+   },
+   {
+    "id": "snap",
+    "phrases": [
+     "If the rope breaks, the spring springs flat.",
+     "Its ends shoot out into the teeth, and the platform locks in place."
+    ]
+   },
+   {
+    "id": "failsafe",
+    "phrases": [
+     "And here's the clever part.",
+     "Nobody has to notice anything.",
+     "The broken rope itself is the trigger.",
+     "Engineers call that fail-safe."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "All safe, gentlemen",
+  "beats": [
+   {
+    "id": "fair",
+    "phrases": [
+     "In eighteen fifty-four, at the Crystal Palace exhibition in New York, Otis rode his platform high above the crowd."
+    ]
+   },
+   {
+    "id": "cut",
+    "phrases": [
+     "Then he had the only rope cut."
+    ]
+   },
+   {
+    "id": "drop",
+    "phrases": [
+     "The platform dropped a few inches, and stopped."
+    ]
+   },
+   {
+    "id": "safe",
+    "phrases": [
+     "All safe, gentlemen.",
+     "All safe."
+    ]
+   },
+   {
+    "id": "skyline",
+    "phrases": [
+     "Within a few decades, safe passenger elevators made the skyscraper possible."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "Today's safety system",
+  "beats": [
+   {
+    "id": "ropes",
+    "phrases": [
+     "A modern traction elevator doesn't hang from one rope.",
+     "It hangs from several steel ropes, often four to eight, and any one of them could hold the loaded car."
+    ]
+   },
+   {
+    "id": "counter",
+    "phrases": [
+     "They run over a grooved wheel at the top, down to a counterweight that balances the car, so the motor barely has to lift."
+    ]
+   },
+   {
+    "id": "motorbrake",
+    "phrases": [
+     "The motor has its own brake, held open by electricity.",
+     "If the power goes off, springs clamp it shut, and the car just stays where it is."
+    ]
+   },
+   {
+    "id": "governor",
+    "phrases": [
+     "And a separate system watches the speed.",
+     "A thin rope loops from the car, up around a wheel called the governor, and back down."
+    ]
+   },
+   {
+    "id": "weights",
+    "phrases": [
+     "As the car moves, the governor spins.",
+     "If it spins too fast, weights inside swing outward, and trip a clamp that grabs the governor rope."
+    ]
+   },
+   {
+    "id": "wedges",
+    "phrases": [
+     "That yanks a lever on the car, which jams steel wedges against the guide rails.",
+     "The car squeezes to a stop."
+    ]
+   },
+   {
+    "id": "buffers",
+    "phrases": [
+     "And at the very bottom of the shaft, buffers, big springs or oil pistons, soften any last landing."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "Seventy-five floors",
+  "beats": [
+   {
+    "id": "fog",
+    "phrases": [
+     "On a foggy Saturday morning in July, nineteen forty-five, a B twenty-five bomber, lost in the fog, flew into the Empire State Building."
+    ]
+   },
+   {
+    "id": "hit",
+    "phrases": [
+     "It struck the seventy-ninth floor.",
+     "Fourteen people were killed.",
+     "One of its engines plunged into an elevator shaft."
+    ]
+   },
+   {
+    "id": "betty",
+    "phrases": [
+     "Betty Lou Oliver, an elevator operator, was badly hurt.",
+     "Rescuers put her in an elevator car to take her down."
+    ]
+   },
+   {
+    "id": "fall",
+    "phrases": [
+     "But that elevator's cables had been damaged in the crash.",
+     "They snapped, and the car fell about seventy-five floors, into the basement."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "How she survived",
+  "beats": [
+   {
+    "id": "coil",
+    "phrases": [
+     "Two things helped save her.",
+     "First, the broken cables piled up at the bottom of the shaft, coiling under the car like a giant spring."
+    ]
+   },
+   {
+    "id": "air",
+    "phrases": [
+     "Second, the shaft was tight around the car.",
+     "The air underneath had nowhere to go, so it was squeezed into a cushion that slowed the fall."
+    ]
+   },
+   {
+    "id": "lived",
+    "phrases": [
+     "She was badly injured, but she lived.",
+     "It's still the longest elevator fall anyone is known to have survived."
+    ]
+   },
+   {
+    "id": "back",
+    "phrases": [
+     "Five months later, she rode an elevator to the top of the Empire State Building again."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "Why you're safe",
+  "beats": [
+   {
+    "id": "layers",
+    "phrases": [
+     "It took a plane crash to make that fall possible.",
+     "In a normal elevator, the ropes, the governor, the rail brakes and the buffers would all have to fail at once."
+    ]
+   },
+   {
+    "id": "today",
+    "phrases": [
+     "That's why elevators are one of the safest ways to get around.",
+     "And it all started with a wagon spring."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "So, would you still take the stairs?",
+     "Tell me in the comments."
+    ]
+   }
+  ]
+ }
+]

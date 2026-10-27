@@ -1,0 +1,8 @@
+{
+ "title": "He cut the only rope, on purpose",
+ "caption": "1854: Elisha Otis rode a platform up high and had the only rope cut. A wagon spring saved him, and made skyscrapers possible. 🛗\nFull video: [LINK]\nWould you have stood on that platform?",
+ "hashtags": ["elevator", "elishaotis", "engineering", "invention", "howitworks", "history", "failsafe", "gearsandglitches", "shorts"],
+ "cover_t": 13.0,
+ "libs": ["mechreels/props/gimli.js", "mechreels/props/world.js", "mechreels/props/elevator.js"],
+ "sources": ["Wikipedia, Elisha Otis (1854 Crystal Palace demonstration); Otis Worldwide, About Elisha Otis"]
+}

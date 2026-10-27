@@ -1,0 +1,8 @@
+{
+ "title": "She fell 75 floors in an elevator and lived",
+ "caption": "1945: a bomber hit the Empire State Building. Betty Lou Oliver's elevator fell 75 floors, and she survived. Here's how. 🏢\nFull video: [LINK]\nHave you ever been stuck in an elevator?",
+ "hashtags": ["elevator", "empirestatebuilding", "bettylouoliver", "history", "engineering", "survival", "howitworks", "gearsandglitches", "shorts"],
+ "cover_t": 4.0,
+ "libs": ["mechreels/props/gimli.js", "mechreels/props/world.js", "mechreels/props/elevator.js"],
+ "sources": ["Wikipedia, Betty Lou Oliver; Wikipedia, 1945 Empire State Building B-25 crash; Guinness World Records, longest fall survived in an elevator"]
+}

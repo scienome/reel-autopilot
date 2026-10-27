@@ -1,0 +1,13 @@
+{
+  "title": "What Happens If an Elevator Cable Snaps?",
+  "description": "You're forty floors up and the cable snaps. What actually happens? Almost certainly nothing dramatic, and that's thanks to a wagon spring from the 1850s. Here's how Elisha Otis's safety brake works, why modern elevators hang from several ropes, how the governor catches a car that's going too fast, and how Betty Lou Oliver survived a 75-floor fall inside the Empire State Building in 1945. All built in low-poly 3D.",
+  "tags": ["elevator cable snaps", "elevator safety", "elisha otis", "safety brake", "elevator governor", "betty lou oliver", "empire state building", "1945 b-25 crash", "how it works", "engineering", "fail-safe design", "gears and glitches"],
+  "libs": ["mechreels/props/gimli.js", "mechreels/props/world.js", "mechreels/props/elevator.js"],
+  "sources": [
+    "Elisha Otis (safety elevator devised around 1852, demonstration at the New York Crystal Palace exhibition in 1854, 'All safe, gentlemen, all safe'): Wikipedia, Elisha Otis; Otis Worldwide, About Elisha Otis",
+    "How traction elevators work (multiple hoist ropes, counterweight, overspeed governor, safety gear on the guide rails, machine brake, pit buffers): ASME A17.1 Safety Code for Elevators and Escalators overview; Wikipedia, Elevator",
+    "1945 Empire State Building B-25 crash (28 July 1945, fog, 79th floor, 14 killed, an engine fell down an elevator shaft): Wikipedia, 1945 Empire State Building B-25 crash",
+    "Betty Lou Oliver (elevator operator, fell about 75 storeys, survived; coiled cable and compressed air in the shaft slowed the car; returned to the building five months later; Guinness World Record for the longest survived elevator fall): Wikipedia, Betty Lou Oliver; Guinness World Records"
+  ],
+  "footer": "So, would you still take the stairs? Tell me in the comments. New Gears & Glitches breakdown every day."
+}
