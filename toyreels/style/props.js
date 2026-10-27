@@ -182,7 +182,10 @@
       drawCaps(ctx, W, CAPS, t);
       finish(ctx, W, H_, t, flash);
     };
-    function scoreSound(k) {
+    function scoreSound(k0) {
+      // a sound timed to lead the first word can land before 0 s, which Web Audio rejects: clamp every start time to 0
+      const k = new Proxy(k0, { get(o, name) { const v = o[name]; if (typeof v !== 'function') return v;
+        return (...args) => { const i = typeof args[0] === 'number' ? 0 : 1; if (typeof args[i] === 'number') args[i] = Math.max(0, args[i]); return v.apply(o, args); }; } });
       const fx = SFX(k);
       SH.slice(1).forEach(([, s]) => fx.cut(s));
       CAPS.forEach((c) => c.times.forEach((tt) => k.play('tick', tt, { f: 3400, gain: 0.18, minor: true })));
