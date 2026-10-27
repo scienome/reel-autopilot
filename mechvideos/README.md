@@ -28,3 +28,4 @@ Each video gets 3 vertical Shorts in `mechreels/reels/` that open on its most sh
 | 005 | The Plane That Landed on a River (Miracle on the Hudson) | mechreels 14, 15, 16 |
 | 006 | What Really Sank the Titanic (It Wasn't Just the Iceberg) | mechreels 17, 18, 19 |
 | 007 | The Button That Blew Up Chernobyl | mechreels 20, 21, 22 |
+| 008 | How 3 Astronauts Survived Apollo 13 With Duct Tape | mechreels 23, 24, 25 |

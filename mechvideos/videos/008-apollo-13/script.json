@@ -1,0 +1,77 @@
+[
+ {
+  "chapter": "We've had a problem",
+  "beats": [
+   { "id": "hook", "phrases": ["Nearly two hundred thousand miles from Earth, an oxygen tank on Apollo thirteen blows apart."] },
+   { "id": "problem", "phrases": ["Okay, Houston, we've had a problem here."] },
+   { "id": "promise", "phrases": ["Three astronauts, a dying spaceship, and a lifeboat built for two people for two days.", "Here's how duct tape, a slingshot around the Moon, and some brilliant engineering got them home."] }
+  ]
+ },
+ {
+  "chapter": "A tank that was already broken",
+  "beats": [
+   { "id": "ship", "phrases": ["Apollo was really two spacecraft.", "The command and service module, called Odyssey, and the lunar module, called Aquarius."] },
+   { "id": "tanks", "phrases": ["In the service module sat two oxygen tanks.", "They supplied air to breathe, and fed the fuel cells that made the ship's electricity and water."] },
+   { "id": "jolt", "phrases": ["Oxygen tank two had a hidden history.", "Two years earlier, it had been jolted while being removed from another spacecraft."] },
+   { "id": "heaters", "phrases": ["Then, in a ground test, it wouldn't empty properly.", "So technicians switched on its internal heater, for hours, to boil the oxygen off."] },
+   { "id": "volts", "phrases": ["The heater's safety switches were rated for twenty-eight volts.", "But the ground power supply ran at sixty-five.", "The switches welded shut."] },
+   { "id": "cooked", "phrases": ["Inside the tank, temperatures reached over five hundred degrees Celsius, and cooked the insulation on the wires."] }
+  ]
+ },
+ {
+  "chapter": "The stir",
+  "beats": [
+   { "id": "stir", "phrases": ["Fifty-six hours into the flight, Mission Control asked for a routine stir of the oxygen tanks, switching on small fans inside."] },
+   { "id": "spark", "phrases": ["The damaged wires sparked, and the insulation caught fire, inside a tank full of pure oxygen."] },
+   { "id": "blast", "phrases": ["The pressure soared, the tank failed, and the blast blew a whole panel off the side of the service module."] },
+   { "id": "lost", "phrases": ["Both tanks lost their oxygen.", "The fuel cells died, one by one.", "Odyssey was running out of power."] },
+   { "id": "landing", "phrases": ["The Moon landing was off.", "Now the only goal was getting home alive."] }
+  ]
+ },
+ {
+  "chapter": "The lifeboat",
+  "beats": [
+   { "id": "move", "phrases": ["The crew moved into the lunar module, Aquarius, and shut Odyssey down, to save its batteries for re-entry."] },
+   { "id": "two", "phrases": ["Aquarius was built to keep two people alive for about two days.", "Now it had to keep three alive for about four."] },
+   { "id": "cold", "phrases": ["Power, water and heat were cut to the bone.", "The cabin dropped to just a few degrees above freezing."] }
+  ]
+ },
+ {
+  "chapter": "A square filter in a round hole",
+  "beats": [
+   { "id": "co2", "phrases": ["But a new danger was building.", "Carbon dioxide, from three people breathing."] },
+   { "id": "round", "phrases": ["Canisters of lithium hydroxide scrub it out of the air.", "Aquarius had round ones, and they were filling up."] },
+   { "id": "square", "phrases": ["Odyssey had plenty of spares.", "But they were square, and they wouldn't fit the lunar module's round sockets."] },
+   { "id": "ground", "phrases": ["On the ground, engineers raced to build an adapter, using only things the crew had on board."] },
+   { "id": "tape", "phrases": ["Plastic bags.", "Cardboard from the flight plan.", "A spacesuit hose.", "A sock.", "And lots of duct tape."] },
+   { "id": "fixed", "phrases": ["The crew built it from instructions read up over the radio.", "And the carbon dioxide level started to fall."] }
+  ]
+ },
+ {
+  "chapter": "The slingshot",
+  "beats": [
+   { "id": "path", "phrases": ["To get home, they needed the Moon's gravity.", "But Apollo thirteen had left its safe, free-return path, to aim for its landing site."] },
+   { "id": "burn", "phrases": ["So they fired Aquarius's descent engine, built to land on the Moon, to put them back on a path that would swing around the Moon and fall back toward Earth."] },
+   { "id": "far", "phrases": ["Behind the Moon, they flew farther from Earth than any humans had ever been."] },
+   { "id": "faster", "phrases": ["After the Moon, another burn sped them up, to get home sooner."] }
+  ]
+ },
+ {
+  "chapter": "Coming home",
+  "beats": [
+   { "id": "sm", "phrases": ["Near Earth, they let the service module go, and saw the damage for the first time.", "A whole side was missing."] },
+   { "id": "wake", "phrases": ["They brought the frozen Odyssey back to life, using a power-up plan worked out on the ground."] },
+   { "id": "bye", "phrases": ["Then they let go of Aquarius, the lifeboat that had saved them."] },
+   { "id": "splash", "phrases": ["On April the seventeenth, nineteen seventy, Odyssey splashed down in the Pacific.", "All three astronauts were safe."] }
+  ]
+ },
+ {
+  "chapter": "What changed",
+  "beats": [
+   { "id": "fix", "phrases": ["NASA redesigned the oxygen tanks.", "No fans inside, wiring sheathed in stainless steel, and a third tank in a separate bay."] },
+   { "id": "battery", "phrases": ["An extra battery was added to the service module too."] },
+   { "id": "lesson", "phrases": ["A jolted tank, the wrong voltage and one routine stir nearly killed them.", "Duct tape, a slingshot and thousands of engineers brought them home."] },
+   { "id": "cta", "phrases": ["Could you have built that filter, with only what was on board?", "Tell me in the comments."] }
+  ]
+ }
+]

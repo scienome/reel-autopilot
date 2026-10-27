@@ -1,0 +1,13 @@
+{
+  "title": "How 3 Astronauts Survived Apollo 13 With Duct Tape",
+  "description": "Nearly 200,000 miles from Earth, an oxygen tank on Apollo 13 blew apart. The crew had a dying command module, a lunar module built for two people for two days, and carbon dioxide building up in the air. Here's the engineering of how they got home: the tank that was damaged years before launch, the lunar module used as a lifeboat, the square filter that had to fit a round hole (with duct tape and a sock), and the slingshot around the Moon. Built in low-poly 3D.",
+  "tags": ["apollo 13", "houston we have a problem", "duct tape", "lunar module", "co2 scrubber", "oxygen tank", "free return trajectory", "nasa", "how it works", "engineering", "space history", "gears and glitches"],
+  "libs": ["mechreels/props/gimli.js", "mechreels/props/world.js", "mechreels/props/apollo13.js"],
+  "sources": [
+    "Report of Apollo 13 Review Board (Cortright Commission), NASA, 1970: oxygen tank 2 jolted in 1968, detanking with the heaters, 28 V thermostatic switches welded by 65 V ground power, damaged wire insulation, the cryo stir, tank failure and loss of the bay 4 panel; redesign (no fans, stainless-steel sheathed wiring, third tank, added battery)",
+    "Apollo 13 (launched 11 April 1970; Lovell, Swigert, Haise; accident about 56 hours into the flight; lunar module Aquarius as lifeboat; descent-engine burn to a free-return trajectory; splashdown 17 April 1970 in the Pacific): NASA, Apollo 13 mission overview; Wikipedia, Apollo 13",
+    "The lithium hydroxide canister adapter (square command-module cartridges, round lunar-module sockets; plastic bags, flight-plan cardboard, a suit hose, a sock and duct tape): NASA History, Apollo 13 'Houston, we've had a problem' (NASA EP-76); Lovell, J. and Kluger, J., Lost Moon (1994)",
+    "Lunar module designed to support two crew for about 45 hours: NASA, Apollo Lunar Module news reference"
+  ],
+  "footer": "Could you have built that filter, with only what was on board? Tell me in the comments. New Gears & Glitches breakdown every day."
+}
