@@ -1,0 +1,8 @@
+{
+ "title": "Why plane windows can't be square",
+ "caption": "Square corners tore the world's first jet airliner open in mid-air. That's why your plane window is round. ✈️\nFull video: [LINK]\nDid you ever notice the corners?",
+ "hashtags": ["planewindows", "decomet", "aviation", "engineering", "metalfatigue", "howitworks", "aviationhistory", "gearsandglitches", "shorts"],
+ "cover_t": 12.0,
+ "libs": ["mechreels/props/gimli.js", "mechreels/props/world.js", "mechreels/props/comet.js"],
+ "sources": ["Wikipedia, de Havilland Comet; Wikipedia, BOAC Flight 781 (crack traced to a corner of the roof ADF window)"]
+}

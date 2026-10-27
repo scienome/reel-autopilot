@@ -1,0 +1,8 @@
+{
+ "title": "Your plane is a metal balloon",
+ "caption": "At cruising height, the air in the cabin pushes out on the skin with more than 5 tonnes on every square metre. 🎈\nFull video: [LINK]\nDid your ears ever pop on a flight?",
+ "hashtags": ["cabinpressure", "aviation", "planes", "engineering", "howitworks", "metalfatigue", "decomet", "gearsandglitches", "shorts"],
+ "cover_t": 14.0,
+ "libs": ["mechreels/props/gimli.js", "mechreels/props/world.js", "mechreels/props/comet.js"],
+ "sources": ["FAA, Pilot's Handbook of Aeronautical Knowledge, cabin pressurisation (cabin altitude about 8,000 ft); Wikipedia, de Havilland Comet (8.25 psi cabin differential)"]
+}

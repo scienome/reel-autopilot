@@ -36,3 +36,6 @@ Changing the voice (or anything in `style/`) and pushing to main remakes every M
 | 02 | One number emptied this jet's tanks (Short for mechvideo 001) |
 | 03 | The tiny propeller that saved 69 people (Short for mechvideo 001) |
 | 04 | A jet landed in the middle of a car race (Short for mechvideo 001) |
+| 05 | Why plane windows can't be square (Short for mechvideo 002) |
+| 06 | The first jet airliner kept falling apart (Short for mechvideo 002) |
+| 07 | Your plane is a metal balloon (Short for mechvideo 002) |

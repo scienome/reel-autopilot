@@ -1,0 +1,14 @@
+{
+  "title": "Why Plane Windows Are Round (3 Jets Fell Apart First)",
+  "description": "Every plane window you've ever looked through is round, and that's not a style choice. In the early 1950s the world's first jet airliner, the de Havilland Comet, broke up in the air three times in less than a year. The cause was hiding in the corners: a pressurised cabin swelling and relaxing on every flight, metal fatigue, and stress piling up at square-cornered openings. Here's the whole story, built in low-poly 3D: the metal balloon, the paper-clip physics, the giant water tank at Farnborough, and the fix that's on every airliner today.",
+  "tags": ["de havilland comet", "why plane windows are round", "metal fatigue", "stress concentration", "cabin pressurisation", "aviation", "how it works", "engineering", "plane crash investigation", "aviation history", "engineering failure", "gears and glitches"],
+  "libs": ["mechreels/props/gimli.js", "mechreels/props/world.js", "mechreels/props/comet.js"],
+  "sources": [
+    "Comet history (first jet airliner service May 1952; BOAC Flight 783 near Calcutta 2 May 1953; Flight 781 near Elba 10 Jan 1954; South African Airways Flight 201 near Naples 8 Apr 1954, 16 days after flights resumed; Farnborough water-tank test; Comet 4 first transatlantic jet service 4 Oct 1958): Wikipedia, de Havilland Comet",
+    "BOAC Flight 781 (break-up at about 26,000-27,000 ft, crack traced to the corner of the ADF window in the roof; punch-riveting): Wikipedia, BOAC Flight 781",
+    "Report of the Public Inquiry into the Causes and Circumstances of the Accidents to Comet G-ALYP and Comet G-ALYY, Ministry of Transport and Civil Aviation, 1955",
+    "Withey, P. A., Fatigue failure of the de Havilland Comet I, Engineering Failure Analysis 4 (1997)",
+    "Comet 1 maximum cabin pressure differential 8.25 psi (about 57 kPa, about 5.8 tonnes-force per square metre): Swift, T., Damage tolerance in pressurized fuselages (FAA, 1987)"
+  ],
+  "footer": "What other everyday shape do you think hides a story like this? Tell me in the comments. New Gears & Glitches breakdown every day."
+}

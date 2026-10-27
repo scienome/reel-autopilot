@@ -22,3 +22,4 @@ Each video gets 3 vertical Shorts in `mechreels/reels/` that open on its most sh
 | # | Video | Shorts |
 |---|---|---|
 | 001 | How a Jet Flew With No Engines (The Gimli Glider) | mechreels 02, 03, 04 |
+| 002 | Why Plane Windows Are Round (3 Jets Fell Apart First) | mechreels 05, 06, 07 |

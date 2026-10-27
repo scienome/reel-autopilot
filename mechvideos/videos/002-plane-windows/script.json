@@ -1,0 +1,287 @@
+[
+ {
+  "chapter": "Why are plane windows round?",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "Why is every window on every plane you've ever flown in round?"
+    ]
+   },
+   {
+    "id": "crack",
+    "phrases": [
+     "Because in the early nineteen-fifties, the world's first jet airliner kept tearing open in the sky."
+    ]
+   },
+   {
+    "id": "promise",
+    "phrases": [
+     "In less than a year, three of them broke up in the air.",
+     "The killer was hiding in the corners.",
+     "This is the de Havilland Comet."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "The jet age arrives",
+  "beats": [
+   {
+    "id": "first",
+    "phrases": [
+     "In nineteen fifty-two, the Comet became the first jet airliner to carry paying passengers."
+    ]
+   },
+   {
+    "id": "fast",
+    "phrases": [
+     "It cruised up above the weather, at around thirty-five thousand feet, far faster than any propeller airliner."
+    ]
+   },
+   {
+    "id": "quiet",
+    "phrases": [
+     "Smooth, quiet, and sleek, with big windows to watch the clouds go by."
+    ]
+   },
+   {
+    "id": "thin",
+    "phrases": [
+     "But up there, the air is far too thin to breathe.",
+     "So the cabin had to be pressurised."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "A balloon made of metal",
+  "beats": [
+   {
+    "id": "pump",
+    "phrases": [
+     "Air is pumped into the cabin until it feels like being at about eight thousand feet, even though the plane is flying four times higher."
+    ]
+   },
+   {
+    "id": "push",
+    "phrases": [
+     "So the air inside pushes outward on the skin.",
+     "More than five tonnes on every square metre."
+    ]
+   },
+   {
+    "id": "breathe",
+    "phrases": [
+     "On every flight, the fuselage swells a tiny bit as it climbs, and relaxes as it lands.",
+     "Like a balloon, breathing in and out."
+    ]
+   },
+   {
+    "id": "cycle",
+    "phrases": [
+     "Once is fine.",
+     "But thousands of times?"
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "Metal gets tired",
+  "beats": [
+   {
+    "id": "clip",
+    "phrases": [
+     "Bend a paper clip once, and nothing happens.",
+     "Bend it back and forth, and it snaps."
+    ]
+   },
+   {
+    "id": "fatigue",
+    "phrases": [
+     "Engineers call that metal fatigue.",
+     "It doesn't need a big force. Just a smaller one, repeated again and again, until a tiny crack starts to grow."
+    ]
+   },
+   {
+    "id": "where",
+    "phrases": [
+     "And cracks love one place more than any other.",
+     "Sharp corners."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "Why corners are dangerous",
+  "beats": [
+   {
+    "id": "flow",
+    "phrases": [
+     "Picture the stress in the skin as lines of force, flowing around a hole."
+    ]
+   },
+   {
+    "id": "round",
+    "phrases": [
+     "Around a round hole, they bend smoothly, and the load is shared."
+    ]
+   },
+   {
+    "id": "square",
+    "phrases": [
+     "But at a sharp corner, they have to squeeze around a tight turn.",
+     "The stress piles up right at the tip, several times higher than in the rest of the skin."
+    ]
+   },
+   {
+    "id": "grow",
+    "phrases": [
+     "Engineers call this a stress concentration.",
+     "And a tiny crack at a corner is an even sharper corner, so once it starts, it grows faster and faster."
+    ]
+   },
+   {
+    "id": "openings",
+    "phrases": [
+     "The Comet's skin was thin, and its openings had tight, almost square corners.",
+     "Windows, hatches, and a small window in the roof for a navigation antenna."
+    ]
+   },
+   {
+    "id": "rivets",
+    "phrases": [
+     "And many rivet holes were punched, not drilled, leaving tiny flaws right where the stress was highest."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "Three jets lost",
+  "beats": [
+   {
+    "id": "calcutta",
+    "phrases": [
+     "In May, nineteen fifty-three, a Comet broke up in a violent storm near Calcutta."
+    ]
+   },
+   {
+    "id": "elba",
+    "phrases": [
+     "In January, nineteen fifty-four, another came apart at about twenty-seven thousand feet, over the sea near the island of Elba."
+    ]
+   },
+   {
+    "id": "grounded",
+    "phrases": [
+     "The Comets were grounded, checked over, and cleared to fly again."
+    ]
+   },
+   {
+    "id": "naples",
+    "phrases": [
+     "Just two weeks later, a third Comet broke up over the sea near Naples."
+    ]
+   },
+   {
+    "id": "nobody",
+    "phrases": [
+     "Nobody on any of the three flights survived."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "The water tank test",
+  "beats": [
+   {
+    "id": "tank",
+    "phrases": [
+     "So engineers at Farnborough, in England, did something new.",
+     "They put a whole Comet fuselage into a giant tank of water."
+    ]
+   },
+   {
+    "id": "water",
+    "phrases": [
+     "Why water?",
+     "Because if it burst, water wouldn't explode outward like compressed air."
+    ]
+   },
+   {
+    "id": "flights",
+    "phrases": [
+     "Then they pumped it up and let it down, again and again, one fake flight every few minutes."
+    ]
+   },
+   {
+    "id": "burst",
+    "phrases": [
+     "After about three thousand flights, real and simulated, the skin split open, from a crack at the corner of an opening."
+    ]
+   },
+   {
+    "id": "found",
+    "phrases": [
+     "Wreckage lifted from the sea near Elba told the same story.",
+     "The crack had started at a corner of that little roof window."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "Why your window is round",
+  "beats": [
+   {
+    "id": "fix",
+    "phrases": [
+     "The answer changed every airliner that came after.",
+     "Openings got rounded corners, so the stress can flow smoothly around them."
+    ]
+   },
+   {
+    "id": "skin",
+    "phrases": [
+     "The Comet came back as the Comet four, with thicker skin and rounded windows."
+    ]
+   },
+   {
+    "id": "stopper",
+    "phrases": [
+     "Designers added straps that stop a crack from running, so one crack can't tear open the whole cabin."
+    ]
+   },
+   {
+    "id": "test",
+    "phrases": [
+     "And new airliners are tested by flexing a full airframe for far more flights than they will ever fly."
+    ]
+   },
+   {
+    "id": "today",
+    "phrases": [
+     "Today, airliner windows are small and rounded, and the skin around each one is made thicker, to carry the load around the hole."
+    ]
+   },
+   {
+    "id": "atlantic",
+    "phrases": [
+     "In nineteen fifty-eight, a Comet four flew the first transatlantic jet service with passengers."
+    ]
+   },
+   {
+    "id": "lesson",
+    "phrases": [
+     "So the next time you look out of a round plane window, that curve is a lesson, learned the hard way."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "What other everyday shape do you think hides a story like this?",
+     "Tell me in the comments."
+    ]
+   }
+  ]
+ }
+]

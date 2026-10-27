@@ -3,6 +3,12 @@
   "timezone_offset": "+05:30",
   "times": { "video": "07:30", "shorts": ["12:30", "17:30", "21:30"] },
   "days": [
-    { "date": "2026-11-02", "video": "001-gimli-glider", "shorts": ["02-gimli-fuel-mistake", "03-gimli-tiny-propeller", "04-gimli-racetrack-landing"] }
+    { "date": "2026-10-28", "video": "002-plane-windows", "shorts": ["05-comet-square-windows", "06-comet-crashes", "07-cabin-pressure"] },
+    { "date": "2026-10-29", "video": "003-elevator-cable", "shorts": ["08-otis-safety-brake", "09-elevator-75-floor-fall", "10-elevator-many-cables"] },
+    { "date": "2026-10-30", "video": "004-titan-submarine", "shorts": ["11-titan-pressure-depth", "12-titan-carbon-fibre", "13-titan-milliseconds"] },
+    { "date": "2026-10-31", "video": "005-miracle-on-the-hudson", "shorts": ["14-hudson-bird-strike", "15-hudson-208-seconds", "16-hudson-water-landing"] },
+    { "date": "2026-11-01", "video": "006-titanic", "shorts": ["17-titanic-weak-rivets", "18-titanic-bulkheads", "19-titanic-head-on"] },
+    { "date": "2026-11-02", "video": "007-chernobyl", "shorts": ["20-chernobyl-reactor-power", "21-chernobyl-az5-flaw", "22-chernobyl-roof"] },
+    { "date": "2026-11-03", "video": "008-apollo-13", "shorts": ["23-apollo13-tank-blast", "24-apollo13-square-filter", "25-apollo13-moon-slingshot"] }
   ]
 }

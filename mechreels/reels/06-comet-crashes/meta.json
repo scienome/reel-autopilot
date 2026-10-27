@@ -1,0 +1,8 @@
+{
+ "title": "The first jet airliner kept falling apart",
+ "caption": "Three Comets broke up in the air in less than a year. Engineers sank a whole fuselage in a water tank to find out why. 💥\nFull video: [LINK]\nWould you have flown on one in 1954?",
+ "hashtags": ["decomet", "aviation", "aviationhistory", "engineering", "metalfatigue", "planes", "howitworks", "gearsandglitches", "shorts"],
+ "cover_t": 9.0,
+ "libs": ["mechreels/props/gimli.js", "mechreels/props/world.js", "mechreels/props/comet.js"],
+ "sources": ["Wikipedia, de Havilland Comet (Calcutta May 1953, Elba January 1954, Naples April 1954; Farnborough water-tank test)"]
+}
