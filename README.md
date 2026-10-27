@@ -1,12 +1,12 @@
 # Reel autopilot
 
-Posts 2 Violet Room reels a day to Instagram (1:00 PM and 8:00 PM IST), from a queue you approve once a week.
+Posts 2 Violet Room reels a day to Instagram (7:30 AM and 9:30 PM IST), from a queue you approve once a week.
 
 ```
 Sunday       Claude writes 14 reels  ->  pull request "Reels for the week of ..."
              GitHub Actions voices them (ElevenLabs) and renders the MP4s onto the pull request
 You          watch them (out/*.mp4, out/*.jpg in the pull request), ask for changes or merge = approve
-Every day    GitHub Actions posts the next reel at 1 PM and 8 PM IST, and records it in posted.json
+Every day    GitHub Actions posts the next reel at 7:30 AM and 9:30 PM IST, and records it in posted.json
 Every Monday GitHub Actions renews the Instagram token
 ```
 

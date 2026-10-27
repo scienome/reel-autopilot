@@ -2,7 +2,7 @@
 
 These are the instructions for the weekly Claude run. It writes 14 new reels for the week, checks how they look,
 and opens a pull request. GitHub Actions then voices and renders them. The owner watches them and merges the pull
-request to approve, and the posting job publishes 2 a day (1 PM and 8 PM IST).
+request to approve, and the posting job publishes 2 a day (7:30 AM and 9:30 PM IST).
 
 ## 1. Get oriented
 
