@@ -1,0 +1,11 @@
+[
+ { "id": "hook", "phrases": ["Her rule: no phones at dinner."] },
+ { "id": "puts", "phrases": ["So he puts his phone away."] },
+ { "id": "she", "phrases": ["She picks hers up.", "Just one photo."] },
+ { "id": "photo", "phrases": ["Then one from the top.", "Then one with better lighting."] },
+ { "id": "cold", "phrases": ["Twenty minutes later,", "the food is cold."] },
+ { "id": "asks", "phrases": ["He asks, is it a good photo?"] },
+ { "id": "yes", "phrases": ["She says, it's perfect."] },
+ { "id": "twist", "phrases": ["Then she looks down.", "Her fries are gone."] },
+ { "id": "close", "phrases": ["No phones at dinner, babe."] }
+]

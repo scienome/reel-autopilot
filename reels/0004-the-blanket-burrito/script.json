@@ -1,0 +1,64 @@
+[
+ {
+  "id": "hook",
+  "phrases": [
+   "Tell me this isn't your couch.",
+   "Every single night."
+  ]
+ },
+ {
+  "id": "one",
+  "phrases": [
+   "One blanket.",
+   "Two people."
+  ]
+ },
+ {
+  "id": "roll",
+  "phrases": [
+   "He rolls himself up like a burrito.",
+   "Head to toe."
+  ]
+ },
+ {
+  "id": "corner",
+  "phrases": [
+   "Not one corner left for her."
+  ]
+ },
+ {
+  "id": "ask",
+  "phrases": [
+   "Comfy?",
+   "Very."
+  ]
+ },
+ {
+  "id": "leave",
+  "phrases": [
+   "So she gets up,",
+   "without a word,",
+   "and comes back with hot chocolate."
+  ]
+ },
+ {
+  "id": "two",
+  "phrases": [
+   "Two mugs.",
+   "With marshmallows."
+  ]
+ },
+ {
+  "id": "open",
+  "phrases": [
+   "Suddenly the burrito opens up.",
+   "Plenty of room for two."
+  ]
+ },
+ {
+  "id": "close",
+  "phrases": [
+   "Funny how that works."
+  ]
+ }
+]

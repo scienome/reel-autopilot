@@ -1,0 +1,10 @@
+[
+ { "id": "hook", "phrases": ["POV: dinner with friends tonight."] },
+ { "id": "text", "phrases": ["Then a text.", "Dinner's cancelled.", "Sorry, guys."] },
+ { "id": "fake", "phrases": ["Oh no.", "That's so sad.", "We were so looking forward to it."] },
+ { "id": "pjs", "phrases": ["Ten seconds later.", "Pajamas on.", "Snacks out."] },
+ { "id": "read", "phrases": ["Then he reads the rest.", "Hope you both feel better."] },
+ { "id": "both", "phrases": ["Both?", "They look at each other."] },
+ { "id": "twist", "phrases": ["He told them he was sick.", "She told them she was sick."] },
+ { "id": "close", "phrases": ["Soulmates.", "Truly."] }
+]

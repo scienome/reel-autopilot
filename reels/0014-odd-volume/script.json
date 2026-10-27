@@ -1,0 +1,12 @@
+[
+ { "id": "hook", "phrases": ["Every couple has one weird rule."] },
+ { "id": "his", "phrases": ["His:", "the volume can't be an odd number."] },
+ { "id": "she", "phrases": ["She turns it to twenty-one."] },
+ { "id": "fix", "phrases": ["He quietly fixes it.", "Twenty-two."] },
+ { "id": "again", "phrases": ["Twenty-three.", "Twenty-four.", "Twenty-five."] },
+ { "id": "hide", "phrases": ["So he hides the remote", "under the cushion."] },
+ { "id": "solved", "phrases": ["He leans back.", "Problem solved."] },
+ { "id": "phone", "phrases": ["Then she opens the TV app on her phone,", "and sets it to fifty-five."] },
+ { "id": "twist", "phrases": ["He unplugs the TV."] },
+ { "id": "close", "phrases": ["Zero.", "That's an even number."] }
+]

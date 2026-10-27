@@ -1,0 +1,11 @@
+[
+ { "id": "hook", "phrases": ["The most dangerous question in a relationship."] },
+ { "id": "ask", "phrases": ["Do I look okay?"] },
+ { "id": "fast", "phrases": ["He says, you look great.", "Without looking up."] },
+ { "id": "look", "phrases": ["You didn't even look."] },
+ { "id": "looks", "phrases": ["So he looks.", "Really looks.", "Beautiful."] },
+ { "id": "trap", "phrases": ["Now you're just saying that.", "There's no winning."] },
+ { "id": "twist", "phrases": ["So he puts on his new shirt.", "Do I look okay?"] },
+ { "id": "her", "phrases": ["She says, you look great.", "Eyes on her phone."] },
+ { "id": "close", "phrases": ["He smiles.", "You didn't even look."] }
+]

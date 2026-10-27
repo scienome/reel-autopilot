@@ -1,0 +1,12 @@
+[
+ { "id": "hook", "phrases": ["Nobody talks about this kind of betrayal."] },
+ { "id": "deal", "phrases": ["We said we'd watch it together.", "Every episode.", "No cheating."] },
+ { "id": "tonight", "phrases": ["Tonight, episode five."] },
+ { "id": "gasp", "phrases": ["She gasps.", "Right before the big twist."] },
+ { "id": "pause", "phrases": ["He hits pause.", "You've seen this."] },
+ { "id": "deny", "phrases": ["She swears she hasn't."] },
+ { "id": "line", "phrases": ["Then she whispers the next line,", "word for word."] },
+ { "id": "confess", "phrases": ["Okay.", "Twice.", "I watched it twice."] },
+ { "id": "twist", "phrases": ["He sighs.", "Me too.", "Three times."] },
+ { "id": "close", "phrases": ["Match made in heaven."] }
+]
