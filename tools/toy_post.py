@@ -4,8 +4,9 @@
 Usage: python3 tools/toy_post.py [--dry-run] [--now] [--id 05-body-no-sleep]
 
 Reels go out in folder order (01-, 02-, ...), the next one not yet posted that has a Release "toyreel-<id>", at
-the times in toyreels/posting.json (IST). A run looks for a slot between 3 hours ago and 100 minutes from now that
-has not been used yet. For that slot it:
+the times in toyreels/posting.json (IST). A run looks for a slot between 3 hours ago and 4 h 15 min from now that
+has not been used yet (GitHub starts scheduled runs up to ~2 hours late, so runs are set 4, 3 and 2 hours early and
+the one that starts first waits for the exact minute). For that slot it:
   1. uploads the MP4 to YouTube as a Short, scheduled to go public at the slot (YouTube publishes it then),
   2. uploads it to Instagram, waits for processing, then publishes the Reel at the slot.
 So both go live together. Everything is recorded in toyreels/posted.json, so nothing is posted twice; if one
@@ -181,7 +182,7 @@ def main():
         slot = None
     else:
         used = {e.get('slot') for e in log.values()}
-        due = [s for s in slots_around(t, conf) if t - dt.timedelta(hours=3) <= s <= t + dt.timedelta(minutes=100)
+        due = [s for s in slots_around(t, conf) if t - dt.timedelta(hours=3) <= s <= t + dt.timedelta(minutes=255)
                and s.strftime('%Y-%m-%dT%H:%MZ') not in used]
         slot = due[0] if due else None
         if not slot and not half:

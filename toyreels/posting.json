@@ -1,5 +1,5 @@
 {
-  "note": "When the toy reels go live on Instagram and YouTube together (IST). If you change these, change the cron lines in .github/workflows/post-toyreels.yml too (each run starts 90 minutes before its slot).",
+  "note": "When the toy reels go live on Instagram and YouTube together (IST), 30 minutes before each audience peak: 06:00 = 7:30 PM New York (US prime time peaks 8-9 PM ET), 12:30 = India lunch peak (1 PM IST), 20:30 = India prime time (peaks 9 PM IST; also 3 PM UK). GitHub starts scheduled runs up to ~2 hours late, so each slot has runs 4, 3 and 2 hours before it; the first one to start uploads and then waits for the exact minute. If you change these times, change the cron lines in .github/workflows/post-toyreels.yml too.",
   "timezone_offset": "+05:30",
-  "times_ist": ["10:00", "15:00", "20:00"]
+  "times_ist": ["06:00", "12:30", "20:30"]
 }

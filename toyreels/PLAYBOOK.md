@@ -4,7 +4,7 @@ A scheduled Claude session runs this **every 3 days** (the 3rd, 6th, 9th... of e
 the Dave and CouchSarcasm batches). Each run writes **21 new toy reels** (a week at 3 a day; posting uses 9 every 3 days, so the queue grows, as intended), pushes
 them to `main`, and GitHub voices them with **Steve** (ElevenLabs `IvUJKFyjVb5hItY9dJAT`, set in
 `toyreels/config.json`; never change it) and renders them into `toyreel-<id>` Releases. The posting workflow
-(`.github/workflows/post-toyreels.yml`) then posts them in folder order, 3 a day (10:00, 15:00, 20:00 IST), to
+(`.github/workflows/post-toyreels.yml`) then posts them in folder order, 3 a day (06:00, 12:30, 20:30 IST), to
 Instagram and YouTube at the same moment. Nothing else needs doing by hand.
 
 ## 0. Setup (fresh cloud session)
@@ -34,7 +34,7 @@ A backup run fires 6 hours after each main run. Every run starts by reading `toy
   re-render them. Everything new follows the style below.
 - Next number = highest folder number + 1. Folder ids: `NN-short-slug` (e.g. `11-kim-missile-boomerang`).
 - Posting order is folder order, so number the reels in the order they should post. Mix the formats across the
-  week (see section 2). Each day: strongest reel in the 20:00 IST slot, next at 15:00, weakest at 10:00.
+  week (see section 2). Posting cycles 06:00 (US prime time), 12:30, 20:30 IST in folder order: put the strongest reels at positions 1, 3, 4, 6... (the 06:00 and 20:30 slots).
 
 ## 2. What the reels are now: dark-comedy brick stories that people cannot scroll past
 The owner wants **funny, hilarious, dark-humoured, shocking** reels that make people react, tag friends and write

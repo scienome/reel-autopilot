@@ -15,10 +15,10 @@ To remake one reel by hand: Actions → Make toy reels → Run workflow → type
 Every 3 days     Claude writes 21 new toy reels (3rd, 6th, 9th... of the month) (toyreels/PLAYBOOK.md) and pushes them to main
                  GitHub voices them with Steve and renders them into toyreel-<id> Releases
 Every day        "Post toy reels" posts the next reel to Instagram AND YouTube at the same moment,
-                 at 10:00, 15:00 and 20:00 IST, in folder order, and records it in toyreels/posted.json
+                 at 06:00, 12:30 and 20:30 IST (30 min before the US and India peaks), in folder order, and records it in toyreels/posted.json
 Every Monday     the Instagram token is renewed
 ```
-Each posting run starts 90 minutes early. It uploads the YouTube Short scheduled for the slot (YouTube makes it public
+GitHub starts scheduled runs up to ~2 hours late, so each slot has runs 4, 3 and 2 hours early; the first to start does the work. It uploads the YouTube Short scheduled for the slot (YouTube makes it public
 at that minute), uploads the Instagram Reel so it is processed, then publishes it on the same minute. If one platform
 fails (for example, YouTube's daily quota runs out), the next run finishes that reel on the missing platform first.
 Nothing posts until all five secrets below exist, so the two accounts stay in step.
@@ -58,7 +58,7 @@ next reel, its slot, the Instagram username and "YouTube sign-in OK". After that
 - **Post one now:** run the workflow with dry run unticked and "post now" ticked (or type a reel id).
 - **Skip a reel:** add `"<id>": {"skipped": true, "instagram": {}, "youtube": {}}` to `toyreels/posted.json`.
 - **Change times:** edit `toyreels/posting.json` and the cron lines in `.github/workflows/post-toyreels.yml`
-  (each run is 90 minutes before its slot, in UTC; IST is UTC+5:30).
+  (runs 4, 3 and 2 hours before each slot, in UTC; IST is UTC+5:30).
 
 ## The first 10
 | # | Reel | Series |
