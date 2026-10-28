@@ -1,0 +1,8 @@
+{
+ "title": "A Melted Chocolate Bar Invented The Microwave 🍫",
+ "caption": "Percy Spencer noticed his chocolate melting next to a radar tube in 1945, and the microwave oven was born. 🍫\nMicrowaves shake water molecules billions of times a second, but only a few centimetres deep.\nBest invention ever, or crime against leftovers?",
+ "hashtags": ["microwave", "howitworks", "invention", "science", "engineering", "physics", "gearsandglitches", "shorts"],
+ "cover_t": 12.5,
+ "libs": ["davereels/props/dave.js", "davereels/props/dave_kit.js", "mechreels/props/mech_kit.js"],
+ "sources": ["Smithsonian Magazine / Raytheon history: Percy Spencer, the magnetron and the melted candy bar (1945); first Radarange (1947) about 1.8 m tall, about 340 kg", "Microwave ovens operate at 2.45 GHz; penetration depth in food is typically about 1-2 cm, the inside heats by conduction"]
+}
