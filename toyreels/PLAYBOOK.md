@@ -3,7 +3,7 @@
 A scheduled Claude session runs this **every 3 days** (the 3rd, 6th, 9th... of each month; the other days belong to
 the Dave and CouchSarcasm batches). Each run writes **21 new toy reels** (a week at 3 a day; posting uses 9 every 3 days, so the queue grows, as intended), pushes
 them to `main`, and GitHub voices them with the ElevenLabs voice set in `toyreels/config.json`
-(`V33LkP9pVLdcjeB2y5Na`, a deep deadpan narrator; never change it) and renders them into `toyreel-<id>` Releases. The posting workflow
+(`n1PvBOwxb8X6m7tahp2h`, a deep deadpan narrator; never change it) and renders them into `toyreel-<id>` Releases. The posting workflow
 (`.github/workflows/post-toyreels.yml`) then posts them in folder order, 3 a day (06:00, 12:30, 20:30 IST), to
 Instagram and YouTube at the same moment. Nothing else needs doing by hand.
 

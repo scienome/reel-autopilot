@@ -1,6 +1,6 @@
 # Toy reels (Brick Toy style)
 
-Vertical 9:16 explainer reels in the Brick Toy style, voiced by ElevenLabs (the voice in `config.json`, `V33LkP9pVLdcjeB2y5Na` since 28 Oct 2026; earlier reels used Steve) and rendered on GitHub.
+Vertical 9:16 explainer reels in the Brick Toy style, voiced by ElevenLabs (the voice in `config.json`, `n1PvBOwxb8X6m7tahp2h` since 28 Oct 2026; earlier reels used Steve) and rendered on GitHub.
 
 ## How it works
 1. Each reel is a folder in `reels/` with `script.json` (the words, by beat), `story.js` (the animation) and `meta.json` (title, caption, hashtags, cover time).
