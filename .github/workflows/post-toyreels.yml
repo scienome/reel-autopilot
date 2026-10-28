@@ -1,0 +1,89 @@
+name: Post toy reels (Instagram + YouTube)
+# Posts the toy reels (toyreels/, Brick Toy style, Steve's voice) to the toy reels Instagram account AND the toy reels
+# YouTube channel at the same moment, 3 a day at 10:00, 15:00 and 20:00 IST (04:30, 09:30 and 14:30 UTC), in folder
+# order, from their toyreel-<id> Releases. Each run starts 90 minutes early: it uploads the YouTube Short scheduled for
+# the slot, uploads the Instagram Reel so it is processed, then publishes it on the exact minute. A backup run 25
+# minutes later covers a skipped start. Times live in toyreels/posting.json; change the cron lines with them.
+# Needs the IG_TOY_ACCESS_TOKEN, IG_TOY_USER_ID, YT_TOY_CLIENT_ID, YT_TOY_CLIENT_SECRET and YT_TOY_REFRESH_TOKEN
+# secrets. Until all five exist it posts nothing. The Instagram token is renewed every Monday (needs GH_PAT).
+on:
+  schedule:
+    - cron: '0 3 * * *'
+    - cron: '25 3 * * *'
+    - cron: '0 8 * * *'
+    - cron: '25 8 * * *'
+    - cron: '0 13 * * *'
+    - cron: '25 13 * * *'
+    - cron: '40 3 * * 1'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Only show what would be posted (checks both sign-ins)'
+        type: boolean
+        default: true
+      reel:
+        description: 'Post this toy reel now on both, e.g. 05-body-no-sleep (empty = the next one, if "post now" is ticked)'
+        required: false
+        default: ''
+      post_now:
+        description: 'Post the next reel straight away instead of waiting for its slot'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: post-toyreels
+  cancel-in-progress: false
+
+jobs:
+  post:
+    if: github.event.schedule != '40 3 * * 1'
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install -q requests
+      - name: Post the toy reel that is due
+        env:
+          IG_TOY_ACCESS_TOKEN: ${{ secrets.IG_TOY_ACCESS_TOKEN }}
+          IG_TOY_USER_ID: ${{ secrets.IG_TOY_USER_ID }}
+          YT_CLIENT_ID: ${{ secrets.YT_TOY_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_TOY_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_TOY_REFRESH_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git pull -q --rebase || true
+          python tools/toy_post.py \
+            ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '--dry-run' || '' }} \
+            ${{ (github.event_name == 'workflow_dispatch' && inputs.post_now) && '--now' || '' }} \
+            ${{ (github.event_name == 'workflow_dispatch' && inputs.reel != '') && format('--id {0}', inputs.reel) || '' }}
+      - name: Record it in toyreels/posted.json
+        if: always()
+        run: |
+          git config user.name "toyreel-bot"; git config user.email "toyreel-bot@users.noreply.github.com"
+          git add toyreels/posted.json 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -q -m "Toy reel posted [skip ci]"
+            for i in 1 2 3 4; do git pull --rebase -q && git push -q && break; sleep $((i * 5)); done
+          fi
+
+  refresh-token:
+    if: github.event.schedule == '40 3 * * 1'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Renew and store the toy reels Instagram token
+        env:
+          IG_TOY_ACCESS_TOKEN: ${{ secrets.IG_TOY_ACCESS_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          if [ -z "$IG_TOY_ACCESS_TOKEN" ]; then echo "No IG_TOY_ACCESS_TOKEN yet; nothing to renew."; exit 0; fi
+          NEW=$(curl -sf "https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${IG_TOY_ACCESS_TOKEN}" | python3 -c "import sys,json; print(json.load(sys.stdin)['access_token'])")
+          echo "::add-mask::$NEW"
+          if [ -z "$GH_TOKEN" ]; then echo "::warning::Token renewed with Instagram but not saved: add a GH_PAT secret (Secrets: read and write)."; exit 0; fi
+          gh secret set IG_TOY_ACCESS_TOKEN --body "$NEW" --repo "$GITHUB_REPOSITORY"
+          echo "Token renewed and saved."

@@ -1,0 +1,5 @@
+{
+  "note": "When the toy reels go live on Instagram and YouTube together (IST). If you change these, change the cron lines in .github/workflows/post-toyreels.yml too (each run starts 90 minutes before its slot).",
+  "timezone_offset": "+05:30",
+  "times_ist": ["10:00", "15:00", "20:00"]
+}
