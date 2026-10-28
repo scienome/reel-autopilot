@@ -1,0 +1,13 @@
+{
+ "title": "The jet that shot itself down",
+ "caption": "In 1956 a test pilot shot down his own jet. With his own guns. 🎯\nShells leave faster than the jet, but drag slows them and gravity pulls them down. The jet kept diving along the same path and caught up with them about 11 seconds later.\nCould this happen to a modern fighter jet? Yes or no, and why?",
+ "hashtags": ["gearsandglitches", "aviation", "fighterjet", "f11tiger", "physics", "aviationhistory", "engineeringfails", "darkhumor"],
+ "first_comment": "Undefeated in combat. Lost one fight: to itself ✈️💥 Skill issue or physics issue?",
+ "potential": 8,
+ "cover_t": 1.4,
+ "libs": ["davereels/props/dave.js", "davereels/props/dave_kit.js"],
+ "sources": [
+  "Wikipedia, 'Grumman F-11 Tiger' (citing contemporary accounts): on 21 September 1956 a Grumman test pilot fired two bursts from the 20 mm cannons in a shallow supersonic dive; about 11 seconds later the jet flew into its own rounds, which damaged the windscreen, the nose and the engine; he crash-landed short of the runway and survived with serious injuries",
+  "The National Interest, 'That Time an F11F Tiger Test Pilot Shot Himself Down': the decelerating rounds dropped onto the jet's descending flight path"
+ ]
+}

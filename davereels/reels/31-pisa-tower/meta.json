@@ -1,0 +1,13 @@
+{
+ "title": "Why Pisa's tower leans (and bends)",
+ "caption": "The most famous building in Italy is famous for one thing: they built it on mud. 🇮🇹\nSoft clay under the south side squashed more than the north, so the tower tipped. They built the upper floors taller on the low side, which is why it curves like a banana.\nShould they have straightened it completely, or is the lean the whole point?",
+ "hashtags": ["gearsandglitches", "pisa", "leaningtower", "civilengineering", "engineering", "engineeringfails", "history", "darkhumor"],
+ "first_comment": "800 years of leaning and it still hasn't fallen. Most stubborn building on Earth or luckiest? 🍌",
+ "potential": 5,
+ "cover_t": 2.0,
+ "libs": ["davereels/props/dave.js", "davereels/props/dave_kit.js"],
+ "sources": [
+  "Encyclopaedia Britannica, 'Leaning Tower of Pisa': construction began in 1173 and the tower began to lean by 1178 because of soft subsoil; upper storeys were built with one side taller to compensate, giving it a slight curve",
+  "Burland, J. B. et al., 'The stabilisation of the Leaning Tower of Pisa' (Soils and Foundations, 2003): closed in 1990 at a lean of about 5.5°; soil extraction from beneath the north (high) side reduced the lean to about 4° (3.97°) by 2001"
+ ]
+}

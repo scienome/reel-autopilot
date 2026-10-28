@@ -1,0 +1,8 @@
+[
+  {"id": "hook", "text": "In nineteen fifty-six, a test pilot shot down his own jet. With his own guns."},
+  {"id": "fire", "text": "He was testing the cannons on a Grumman Tiger, firing bursts while diving at nearly the speed of sound."},
+  {"id": "physics", "text": "The shells left faster than the jet, but drag slowed them and gravity pulled them down, right into the diving jet's path."},
+  {"id": "hit", "text": "About eleven seconds later, he flew straight into his own shells. One cracked the windscreen. Another went into the engine."},
+  {"id": "survive", "text": "He crash-landed short of the runway, badly hurt, and survived."},
+  {"id": "end", "text": "Dave flew the same test the next day."}
+]

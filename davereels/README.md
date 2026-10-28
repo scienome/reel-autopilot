@@ -89,3 +89,6 @@ A scheduled Claude session runs every 3 days and keeps at least 7 days of Reels 
 | 28 | The electric car of the future (1985) | Sat 31 Oct 08:30 |
 | 29 | The most expensive hyphen in history | Sat 31 Oct 12:30 |
 | 30 | The bat bomb that bombed its own base | Sat 31 Oct 20:30 |
+| 31 | Why Pisa's tower leans (and bends) | Sun 1 Nov 08:30 |
+| 32 | $440 million in 45 minutes | Sun 1 Nov 12:30 |
+| 33 | The jet that shot itself down | Sun 1 Nov 20:30 |

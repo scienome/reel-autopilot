@@ -1,0 +1,13 @@
+{
+ "title": "$440 million in 45 minutes",
+ "caption": "A trading firm lost $440 million in 45 minutes because one of eight servers didn't get the update. 💸\nThe new code reused an old on/off flag. On the one server still running old code, that flag switched on a long-dead test program, which bought high and sold low millions of times.\nWho's really at fault: the technician who missed one server, or the developers who reused the flag?",
+ "hashtags": ["gearsandglitches", "knightcapital", "softwarebug", "coding", "devops", "stockmarket", "engineeringfails", "darkhumor"],
+ "first_comment": "Never deploy on a Wednesday morning. Or apparently ever 😬 Who's pushing to prod on a Friday after this?",
+ "potential": 7,
+ "cover_t": 2.6,
+ "libs": ["davereels/props/dave.js", "davereels/props/dave_kit.js"],
+ "sources": [
+  "US SEC, Order Instituting Administrative and Cease-and-Desist Proceedings, In the Matter of Knight Capital Americas LLC (16 October 2013): new RLP code was deployed to only seven of eight SMARS servers; a repurposed flag activated the defunct Power Peg code on the eighth; about 4 million executions in 154 stocks in roughly 45 minutes on 1 August 2012",
+  "Knight Capital Group reported a pre-tax loss of about $440 million from the incident (Knight press release, 2 August 2012; Wikipedia 'Knight Capital Group')"
+ ]
+}
