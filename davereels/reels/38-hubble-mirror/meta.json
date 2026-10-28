@@ -1,0 +1,14 @@
+{
+ "title": "Hubble's $1.5 billion blurry mirror",
+ "caption": "NASA launched a $1.5 billion space telescope and the first pictures came back blurry. 🔭\nThe mirror's edge was ground 2.2 microns too flat because the instrument used to test it was assembled 1.3 mm out: light from the edge and the centre focused in different places (spherical aberration).\nWas fixing it in space genius, or should it never have launched?",
+ "hashtags": ["gearsandglitches", "hubble", "nasa", "space", "optics", "astronomy", "engineeringfails", "darkhumor"],
+ "first_comment": "Humanity's greatest telescope needed glasses before it could see anything. Relatable 👓",
+ "potential": 6,
+ "cover_t": 2.5,
+ "libs": ["davereels/props/dave.js", "davereels/props/dave_kit.js"],
+ "sources": [
+  "NASA Science, 'Hubble Servicing Mission 1': the primary mirror's outer edge was too flat by about 2.2 microns (spherical aberration); corrected by COSTAR and WFPC2 installed in December 1993",
+  "NASA, 'The Hubble Space Telescope Optical Systems Failure Report' (Allen Report, 1990): the reflective null corrector used to test the mirror was assembled with a 1.3 mm spacing error, so the mirror was precisely made to the wrong shape",
+  "Hubble cost about $1.5 billion at launch in April 1990 (NASA)"
+ ]
+}

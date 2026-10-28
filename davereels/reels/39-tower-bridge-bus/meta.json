@@ -1,0 +1,13 @@
+{
+ "title": "The bus that jumped Tower Bridge",
+ "caption": "In 1952 a London bus driver jumped a double-decker over Tower Bridge. While it was opening. 🚌\nTower Bridge's road is two bascules that tip up on counterweights; nobody rang the bell or shut the gates, so bus 78 was already on one leaf as it rose, and its speed carried it across the gap.\nWould you have floored it or slammed the brakes?",
+ "hashtags": ["gearsandglitches", "towerbridge", "london", "londonbus", "history", "engineering", "physics", "darkhumor"],
+ "first_comment": "This man got £10 for the most legendary bus ride in history. Underpaid hero or reckless? 🇬🇧",
+ "potential": 8,
+ "cover_t": 1.0,
+ "libs": ["davereels/props/dave.js", "davereels/props/dave_kit.js"],
+ "sources": [
+  "Tower Bridge (City of London), 'The day a bus jumped Tower Bridge': on 30 December 1952 the number 78 bus driven by Albert Gunter was on the bridge as the bascules began to rise; the watchman had not rung the warning bell or closed the gates; Gunter accelerated and the bus jumped the gap onto the other bascule",
+  "Wikipedia, 'Albert Gunter': some passengers had minor injuries; Gunter was given £10 for his bravery"
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "title": "The Tsar Tank: a 9-metre tricycle",
+ "caption": "In 1915 Russia built a tank shaped like a giant tricycle, with front wheels 9 metres tall. It moved about as far as you'd expect. 🛞\nHuge wheels roll over trenches easily, but the small rear wheel carried too much of the weight: it sank into soft ground and the front wheels couldn't drag it out.\nGenius idea let down by one wheel, or doomed from the start?",
+ "hashtags": ["gearsandglitches", "tsartank", "ww1", "militaryhistory", "tank", "engineeringfails", "weirdhistory", "darkhumor"],
+ "first_comment": "Two wheels the size of a building and it still lost to mud 🪵 Mud: undefeated since forever",
+ "potential": 4,
+ "cover_t": 2.4,
+ "libs": ["davereels/props/dave.js", "davereels/props/dave_kit.js"],
+ "sources": [
+  "Wikipedia, 'Tsar Tank' (citing Russian sources): designed by Nikolai Lebedenko, tested in August 1915; front wheels about 9 m in diameter; during trials the rear wheel became stuck in soft ground and the front wheels could not pull it out; the project was cancelled and the machine was left in place until it was scrapped in 1923",
+  "Military History Matters, 'Back to the drawing board: the Tsar Tank': the weight on the small rear wheel caused it to sink"
+ ]
+}

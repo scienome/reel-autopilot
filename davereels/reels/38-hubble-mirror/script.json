@@ -1,0 +1,7 @@
+[
+  { "id": "hook", "text": "NASA launched a one and a half billion dollar space telescope. The first pictures came back blurry." },
+  { "id": "flaw", "text": "Hubble's main mirror had been ground to the wrong shape. Its edge was too flat by two point two microns. About one fiftieth of the thickness of paper." },
+  { "id": "cause", "text": "The instrument used to test it was assembled wrong, by one point three millimetres. So the mirror was made perfectly, to the wrong measurement." },
+  { "id": "fix", "text": "In nineteen ninety-three, astronauts flew up and installed corrective optics. Basically, glasses." },
+  { "id": "end", "text": "Dave volunteered to hold the eye chart." }
+]

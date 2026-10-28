@@ -95,3 +95,6 @@ A scheduled Claude session runs every 3 days and keeps at least 7 days of Reels 
 | 34 | The bomb steered by pigeons | Mon 2 Nov 08:30 |
 | 35 | The rocket killed by one number | Mon 2 Nov 12:30 |
 | 36 | The atomic bomb dropped on a garden | Mon 2 Nov 20:30 |
+| 37 | The Tsar Tank: a 9-metre tricycle | Tue 3 Nov 08:30 |
+| 38 | Hubble's $1.5 billion blurry mirror | Tue 3 Nov 12:30 |
+| 39 | The bus that jumped Tower Bridge | Tue 3 Nov 20:30 |
