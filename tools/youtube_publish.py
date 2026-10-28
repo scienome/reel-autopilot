@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Upload the week's rendered videos and Shorts to YouTube and schedule them (YouTube publishes them at the set time).
+"""Upload the full mechanic videos to YouTube, one a day, a few hours before their time (YouTube publishes them then).
+
+Only the full 16:9 videos are uploaded here, and only within 6 hours of their slot, so nothing sits scheduled for
+days. The Shorts in schedule.json are posted by tools/ig_mech_post.py instead (3 a day, same minute as Instagram).
 
 Usage: python3 tools/youtube_publish.py [--dry-run] [--only ID]
 
@@ -103,6 +106,8 @@ def main():
         items = [(vkey, 'video', vid_id, slot_utc(day['date'], times['video'], off))]
         items += [('mechreel-' + s, 'short', s, slot_utc(day['date'], times['shorts'][i % len(times['shorts'])], off)) for i, s in enumerate(day['shorts'])]
         for key, kind, ident, when in items:
+            if kind == 'short': continue  # Shorts: tools/ig_mech_post.py
+            if when > dt.datetime.now(dt.timezone.utc).replace(tzinfo=None) + dt.timedelta(hours=6) and not a.only: continue
             if a.only and ident != a.only: continue
             if key in log: continue
             if kind == 'short' and vkey not in log and not a.dry_run:

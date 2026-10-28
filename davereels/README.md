@@ -47,7 +47,7 @@ skipped. Posted reels are recorded in `/ig_posted.json`. To post one by hand: Ac
 Instagram → Run workflow, type the id in "short", first with "dry run" ticked, then unticked.
 
 ## YouTube Shorts
-`.github/workflows/publish-youtube-dave.yml` (with `tools/yt_dave_publish.py`) uploads the same rendered Reels to the
+(Retired 28 Oct: `tools/ig_mech_post.py` now posts each Dave reel to YouTube at the same minute as Instagram.) `tools/yt_dave_publish.py` used to upload the same rendered Reels to the
 Gears & Glitches YouTube channel as Shorts, scheduled for the same slots as Instagram, earliest slot first. If YouTube's daily upload quota runs out, the
 run stops cleanly and the next run (every 2 hours) carries on. Uploads are recorded in
 `davereels/youtube_posted.json`.

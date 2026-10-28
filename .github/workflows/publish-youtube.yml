@@ -1,7 +1,7 @@
 name: Publish to YouTube
-# Uploads every rendered video and Short listed in schedule.json to YouTube and schedules it for its time slot
-# (YouTube itself makes it public at that moment). The full video goes up first; its Shorts get its link in their
-# description. Runs right after each render finishes, every 2 hours as a backup, or by hand.
+# Uploads the full mechanic videos in schedule.json to YouTube, 1 a day at 07:30 IST, each within 6 hours of its slot
+# (YouTube makes it public on the minute). The Shorts are posted by post-instagram-mech.yml (3 a day, same minute as
+# Instagram). Runs every 2 hours, after renders, or by hand.
 on:
   workflow_run:
     workflows: ['Make mechanic videos', 'Make mechanic reels']

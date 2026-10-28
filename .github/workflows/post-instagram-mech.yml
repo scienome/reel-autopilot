@@ -1,5 +1,5 @@
-name: Post Gears & Glitches reels to Instagram
-# Posts to the Gears & Glitches Instagram at 08:30, 12:30 and 20:30 IST (03:00, 07:00 and 15:00 UTC), alternating a Dave
+name: Post Gears & Glitches reels (Instagram + YouTube)
+# Posts to the Gears & Glitches Instagram AND YouTube (same item, same minute) at 08:30, 12:30 and 20:30 IST (03:00, 07:00 and 15:00 UTC), alternating a Dave
 # reel (davereels, in davereels/schedule.json order) and a mechanic Short (mechreels, in folder order). GitHub starts scheduled runs late (90-125 minutes measured on this repo,
 # Oct 2026), so every slot has three runs, 4, 3 and 2 hours before it. The first to start uploads the MP4 from its
 # davereel-<id> Release so Instagram has it processed, then publishes on the exact minute; the later runs see the slot
@@ -50,10 +50,14 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install -q requests
-      - name: Post the Dave reel that is due
+      - name: Post the reel that is due
         env:
           IG_GG_ACCESS_TOKEN: ${{ secrets.IG_GG_ACCESS_TOKEN }}
           IG_GG_USER_ID: ${{ secrets.IG_GG_USER_ID }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           git pull -q --rebase || true
           python tools/ig_mech_post.py ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '--dry-run' || '' }} ${{ (github.event_name == 'workflow_dispatch' && inputs.short != '') && format('--id {0}', inputs.short) || '' }}
