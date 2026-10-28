@@ -1,5 +1,8 @@
 # Reel autopilot
 
+**All finished videos, one folder per series:** [the `videos` branch](https://github.com/scienome/reel-autopilot/tree/videos)
+(updates itself after every render).
+
 Posts 3 Violet Room reels a day to Instagram (7:30 AM, 1:30 PM and 9:30 PM IST), from a queue that a scheduled
 Claude run fills with 21 new reels every 3 days (see `WEEKLY.md`).
 

@@ -1,0 +1,51 @@
+name: Update the videos folder
+# Copies every finished MP4 into the `videos` branch (one folder per series, plus an index README) so they can be
+# browsed and played on GitHub: https://github.com/<owner>/<repo>/tree/videos . Runs after every render, when
+# CouchSarcasm videos land on main, once a day, or by hand. Only new or changed files are copied.
+on:
+  workflow_run:
+    workflows: ['Make toy reels', 'Make Dave reels', 'Make mechanic reels', 'Make reels']
+    types: [completed]
+  push:
+    branches: [main]
+    paths: ['out/**', 'posted.json', 'ig_posted.json', 'toyreels/posted.json']
+  schedule:
+    - cron: '41 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-videos
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install -q requests
+      - name: Check out the videos branch (create it the first time)
+        run: |
+          git config --global user.name "videos-bot"; git config --global user.email "videos-bot@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin videos >/dev/null 2>&1; then
+            git clone -q --depth 1 --branch videos "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" vids
+          else
+            mkdir vids && cd vids && git init -q -b videos && git remote add origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
+          fi
+      - name: Copy new videos and rebuild the index
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python tools/sync_videos.py vids
+      - name: Save
+        working-directory: vids
+        run: |
+          git add -A
+          if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
+          git commit -q -m "Update videos [skip ci]"
+          for i in 1 2 3 4; do git push -q origin videos && break; sleep $((i * 10)); done
