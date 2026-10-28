@@ -9,7 +9,7 @@ The queue is allowed to pile up (each run adds 21; posting uses 9 every 3 days).
 ## 0. Resume an unfinished batch first (usage limits)
 A run can stop halfway (for example when the Claude usage limit is reached). A backup run fires 5 hours after each
 main run. Every run starts by checking for an open pull request titled "Reels for the week of ...":
-- If one is open and its last commit (or render commit) is less than 90 minutes old, another run is still working
+- If one is open and its last commit is less than 90 minutes old, or a "Make reels" run on it is queued or in progress, another run is still working
   on it: stop at once with a one-line report.
 - If one is open: do NOT start a new batch. Finish it: write any of its 21 reels that are missing (the pull request
   description lists the plan), wait for the renders, check the videos and merge it.

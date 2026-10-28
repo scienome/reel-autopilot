@@ -18,7 +18,8 @@ A run can stop halfway (for example when the Claude usage limit is reached). A b
 main run, and every run starts by checking `davereels/batch_log.json`:
 `[{ "batch": "2026-10-31", "ids": ["22-...", ...], "days": ["2026-11-04", ...], "status": "in_progress" | "done", "updated": "<UTC time>" }]`.
 - Keep `"updated"` (UTC time) on the entry current: update it with every push. If the newest entry is `in_progress`
-  and `"updated"` is less than 90 minutes old, another run is still working on it: stop at once with a one-line report.
+  and `"updated"` is less than 90 minutes old (or a "Make Dave reels" run is queued or in progress), another
+  run is still working on it: stop at once with a one-line report.
 - If the newest entry is `in_progress`: do NOT start a new batch. Finish that one: write the reels in `ids` that are
   missing, push the days that are not yet in `schedule.json`, wait for the renders, then set `"status": "done"`.
 - If the newest entry is `done` and its `batch` date is today or yesterday (IST): this is a backup run and there is
