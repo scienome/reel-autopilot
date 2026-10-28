@@ -27,7 +27,7 @@ Folder: [`couch-sarcasm/`](couch-sarcasm/)
 | [0017-the-sick-day](couch-sarcasm/0017-the-sick-day.mp4) | The sick day. | Waiting to post |
 | [0018-the-usual](couch-sarcasm/0018-the-usual.mp4) | The usual. | Waiting to post |
 
-## Dave (Gears & Glitches) (27)
+## Dave (Gears & Glitches) (33)
 Folder: [`dave-reels/`](dave-reels/)
 
 | Video | Title | Status |
@@ -59,6 +59,12 @@ Folder: [`dave-reels/`](dave-reels/)
 | [25-tsar-bell](dave-reels/25-tsar-bell.mp4) | The biggest bell that never rang | Waiting to post |
 | [26-genesis-upside-down](dave-reels/26-genesis-upside-down.mp4) | NASA's upside-down parachute switch | Waiting to post |
 | [27-panjandrum](dave-reels/27-panjandrum.mp4) | The Great Panjandrum | Waiting to post |
+| [28-sinclair-c5](dave-reels/28-sinclair-c5.mp4) | The electric car of the future (1985) | Waiting to post |
+| [29-mariner-hyphen](dave-reels/29-mariner-hyphen.mp4) | The most expensive hyphen in history | Waiting to post |
+| [30-bat-bomb](dave-reels/30-bat-bomb.mp4) | The bat bomb that bombed its own base | Waiting to post |
+| [31-pisa-tower](dave-reels/31-pisa-tower.mp4) | Why Pisa's tower leans (and bends) | Waiting to post |
+| [32-knight-capital](dave-reels/32-knight-capital.mp4) | $440 million in 45 minutes | Waiting to post |
+| [33-f11-shot-itself](dave-reels/33-f11-shot-itself.mp4) | The jet that shot itself down | Waiting to post |
 
 ## Toy reels (Brick Toy) (31)
 Folder: [`toy-reels/`](toy-reels/)
