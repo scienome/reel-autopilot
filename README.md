@@ -27,7 +27,7 @@ Folder: [`couch-sarcasm/`](couch-sarcasm/)
 | [0017-the-sick-day](couch-sarcasm/0017-the-sick-day.mp4) | The sick day. | Waiting to post |
 | [0018-the-usual](couch-sarcasm/0018-the-usual.mp4) | The usual. | Waiting to post |
 
-## Dave (Gears & Glitches) (24)
+## Dave (Gears & Glitches) (27)
 Folder: [`dave-reels/`](dave-reels/)
 
 | Video | Title | Status |
@@ -56,6 +56,9 @@ Folder: [`dave-reels/`](dave-reels/)
 | [22-vasa](dave-reels/22-vasa.mp4) | The warship that sank in 1,300 metres | Waiting to post |
 | [23-skylab-fine](dave-reels/23-skylab-fine.mp4) | Australia fined NASA for littering | Waiting to post |
 | [24-plumbbob-manhole](dave-reels/24-plumbbob-manhole.mp4) | The manhole cover that left Earth | Waiting to post |
+| [25-tsar-bell](dave-reels/25-tsar-bell.mp4) | The biggest bell that never rang | Waiting to post |
+| [26-genesis-upside-down](dave-reels/26-genesis-upside-down.mp4) | NASA's upside-down parachute switch | Waiting to post |
+| [27-panjandrum](dave-reels/27-panjandrum.mp4) | The Great Panjandrum | Waiting to post |
 
 ## Toy reels (Brick Toy) (31)
 Folder: [`toy-reels/`](toy-reels/)
