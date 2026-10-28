@@ -99,13 +99,13 @@ def main():
     tok = token() if have_keys and not a.dry_run else None
     changed = False
     for day in sched['days']:
-        vid_id = day.get('video'); vkey = 'mechvideo-' + vid_id if vid_id else None  # "video": null = a day of standalone Shorts
-        items = [(vkey, 'video', vid_id, slot_utc(day['date'], times['video'], off))] if vid_id else []
+        vid_id = day['video']; vkey = 'mechvideo-' + vid_id
+        items = [(vkey, 'video', vid_id, slot_utc(day['date'], times['video'], off))]
         items += [('mechreel-' + s, 'short', s, slot_utc(day['date'], times['shorts'][i % len(times['shorts'])], off)) for i, s in enumerate(day['shorts'])]
         for key, kind, ident, when in items:
             if a.only and ident != a.only: continue
             if key in log: continue
-            if kind == 'short' and vkey and vkey not in log and not a.dry_run:
+            if kind == 'short' and vkey not in log and not a.dry_run:
                 print(f'{ident}: waiting for the full video {vid_id} to be uploaded first'); continue
             d = tempfile.mkdtemp()
             if not release_assets(key, d):
@@ -118,7 +118,6 @@ def main():
                 title = cap.split('\n', 1)[0].strip()
                 body = cap.split('\n', 1)[1].strip() if '\n' in cap else ''
                 link = f"https://youtu.be/{log[vkey]['id']}" if vkey in log else '[LINK]'
-                if not vkey: body = '\n'.join(l for l in body.split('\n') if '[LINK]' not in l)  # standalone Short: no full-video line
                 desc = body.replace('[LINK]', link) + '\n\n#shorts'
                 tags = ['shorts'] + [t.lstrip('#') for t in re.findall(r'#(\w+)', body)]
                 mp4 = os.path.join(d, ident + '.mp4')
