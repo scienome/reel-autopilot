@@ -128,6 +128,7 @@
           if (o.mustache === 'toothbrush') c.fillRect(mx - w * 0.08, ty - h * 0.06, w * 0.16, h * 0.085);
           else if (o.mustache === 'big') { c.beginPath(); c.ellipse(mx - w * 0.08, ty, w * 0.1, h * 0.045, -0.2, 0, TAU); c.ellipse(mx + w * 0.08, ty, w * 0.1, h * 0.045, 0.2, 0, TAU); c.fill(); }
           else if (o.mustache === 'beard') { c.beginPath(); c.moveTo(w * 0.12, h * 0.55); c.lineTo(w * 0.88, h * 0.55); c.lineTo(w * 0.8, h); c.lineTo(w * 0.2, h); c.closePath(); c.fill(); c.fillStyle = rgb(o.skin || P.skin); c.beginPath(); c.ellipse(mx, my + h * 0.1, w * 0.12, h * 0.07, 0, 0, TAU); c.fill(); c.fillStyle = '#2a2a33'; c.beginPath(); c.ellipse(mx, my + h * 0.1, w * 0.07, h * 0.03, 0, 0, TAU); c.fill(); } }
+        if (o.facePaint) o.facePaint(c, w, h);
         if (o.sweat) { c.fillStyle = '#7ec8ff'; c.beginPath(); c.moveTo(w * 0.86, h * 0.22); c.quadraticCurveTo(w * 0.94, h * 0.36, w * 0.86, h * 0.38); c.quadraticCurveTo(w * 0.78, h * 0.36, w * 0.86, h * 0.22); c.fill(); }
       };
       const HT = (p) => T0(add(rotY(p, o.headTurn || 0), [0, 0, 0]));

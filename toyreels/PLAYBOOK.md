@@ -60,9 +60,20 @@ on a Tuesday." Something big happens on screen in the first second: an explosion
 - **WHAT IF...?:** "What if a nuke button was in a kids' toy shop?", "What if gravity switched off for 5 seconds?"
 - Invent new formats when you have a better idea, and keep the ones that work.
 
-**Tone:** dark, savage, absurd, fast. Short punchy lines (deadpan Steve narration works best: understate the chaos).
-Slapstick and cartoon violence are fine: toy guns and blasters, missiles, explosions that blow figures into bricks,
-x-eyes, soot faces, people launched into the sky.
+**Tone: as dark as the hard limits below allow.** Savage, absurd, fast, with a cruel twist. Pitch-black irony:
+the villain wins, the hero dies stupidly, the plan works perfectly and that is the problem, Death is overworked,
+the devil is out-evilled by a politician, heaven's waiting room has a 3,000-year queue, the dictator's bunker has
+terrible Wi-Fi, the robbers rob the wrong bank (the Illuminati's). Fictional and historical characters can die,
+explode and go to hell in slapstick ways (they come back as bricks). Deadpan Steve narration works best: understate
+the chaos. Slapstick and cartoon violence are fine: toy guns and blasters, missiles, explosions that blow figures
+into bricks, x-eyes, soot faces, people launched into the sky. **Every scene must make people go "NO WAY" or laugh
+out loud. If a line is merely nice, cut it.**
+
+**Dark premises that work** (make your own, never reuse one): Death gets fired and replaced by an AI; Hitler is
+stuck in hell's customer-service queue behind Stalin; Kim's missile test lands in Putin's pool; Bat-Guy's parents'
+murder turns out to be the Illuminati's paperwork error; the devil sues a billionaire for stealing his business
+model; a zombie apocalypse fails because nobody leaves the house anyway; the last man on Earth gets a spam call;
+the Mona Lisa's smile is because she knows where the bodies are buried.
 
 **Hard limits.** These keep the accounts alive. Instagram and YouTube delete reels and close channels for these, and
 YouTube is strictest with toy-style animation:
@@ -92,6 +103,29 @@ only if the reel uses real facts.
 ## 3. Build each reel
 - `script.json` (beats with ids and phrases), `story.js` (`makeReel({...})` with one shot per beat, shots timed on
   words with `V(beat, 'word')`), `meta.json`. Copy the structure of the existing reels.
+- **Never use the plain blue studio (`studioShot`) or empty sets.** Every shot has a real location from
+  `style/scenes.js` (signature `xxxShot(ctx, W, H_, t, E, TG, (S) => {...}, opt)`):
+  `officeShot` (president's office, `{ desk: false }`), `bunkerShot` (war room, glowing world map, `{ alarm: 0..1 }`),
+  `prisonShot` (cell, `{ bars: true }`), `lairShot` (Illuminati lair, eye-pyramid, `{ eye: 0..1, table: false }`),
+  `desertShot` (pyramids at sunset), `stageShot` (TV / summit stage, `{ banner: 'TEXT', audience: false }`),
+  `heavenShot` (clouds and golden gates), `hellShot` (lava, throne), `graveyardShot` (night, fog, moon), `moonShot`,
+  `baseShot` (military base at dusk), `bankShot` (`{ sign: 'BANK' }`), `palaceShot` (throne room), `courtShot`,
+  `streetShot` (shop fronts, `{ night: 0..1, signs: [...] }`), plus the older `cityShot`, `skyShot`, `spaceShot`,
+  `museumShot`, `forestShot`, `lawnShot`. Use at least 3 different scenes per reel; change scene on the twist.
+  Stand the cast at z = -1.5..1.5, x = -2..2; captions cover the top quarter, so keep faces below it.
+- **Famous characters are ready made:** `actor(S, x, z, s, rot, 'name', { ...pose and face overrides })`. The cast:
+  world leaders `trump`, `putin`, `kim`, `biden`, `obama`, `xi`, billionaires `musk`, `zuckerberg`, `bezos`,
+  `gates`; history `hitler`, `stalin`, `napoleon`, `caesar`, `cleopatra`, `einstein`, `elvis`, `henry8`,
+  `lincoln`; myth and the higher powers `death`, `devil`, `angel`, `zeus`, `illuminati`, `reptilian`, `alien`,
+  `dracula`, `mummy`, `zombie`, `santa`; types `robber`, `prisoner`, `cop`, `soldier`, `general`, `ninja`,
+  `pirate`, `cowboy`, `viking`, `caveman`, `chef`, `doctor`, `scientist`, `judge`, `clownGuy`; parody heroes
+  `batGuy`, `ironDude`, `superDude`, `spiderBro`, `bigGreen`, `capAmericano`, `wonderLady`, `thud`. Overrides like
+  `{ eyes: 'x', mouth: 'open', arms: [2.6, 2.6], hold: 'remote', sweat: true }` change the pose for the moment.
+  Extra items for `hold`: `scythe`, `pitchfork`, `trident`, `bolt`, `torch`, `club`, `wand`, `gavel`. Extra looks:
+  `robe`, `wings`, hats `hood`, `horns`, `halo`, `laurel`, `bicorne`, `tricorn`, `cowboy`, `viking`, `chef`,
+  `santa`, `witch`, `tiara`, `beret`, `wig`, `fullmask`, hair `wild`, `bob`, `pompadour`, `bun`, `mohawk`, and
+  `facePaint` (see `faceFx`: skull, fangs, glasses, clown, alien, zombie, mummy). Add new cast members inside your
+  own story.js by passing the options straight to `actor` or `S.figure`. Use 3-6 famous characters per reel.
 - **Dress every character for what they are doing.** The costume kit in `style/bricktoy_base.js` (options on
   `S.figure(x, z, s, rot, {...})`):
   - prisoner `stripes: [[240,240,236],[30,30,36]], number: '24601'` · robber `balaclava: [30,30,36]` or `mask: true`

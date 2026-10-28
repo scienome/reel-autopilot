@@ -3,7 +3,7 @@
 
 Usage: python3 tools/build.py reels/<id> OUT.html [--voice] [--poster SECONDS]
 
-engine = style/bricktoy_base.js + style/kit.js + style/props.js + reels/<id>/story.js + the closing brace.
+engine = style/bricktoy_base.js + style/kit.js + style/props.js + style/scenes.js + reels/<id>/story.js + the closing brace.
 reels/<id>/script.json -> window.SCRIPT; reels/<id>/timing.json (if present) -> window.WORD_TIMES / VOICE_END.
 --voice embeds reels/<id>/voice.mp3 in the player (big: only for previews you open in a browser).
 """
@@ -25,7 +25,7 @@ def engine_js(video):
         pre += 'window.WORD_TIMES = ' + json.dumps(tm['words']) + ';\nwindow.VOICE_END = ' + json.dumps(tm.get('end', 0)) + ';\n'
     else:
         pre += 'window.WORD_TIMES = null;\n'
-    return pre + read(STYLE, 'bricktoy_base.js') + read(STYLE, 'kit.js') + read(STYLE, 'props.js') + read(video, 'story.js') + '\n}\n'
+    return pre + read(STYLE, 'bricktoy_base.js') + read(STYLE, 'kit.js') + read(STYLE, 'props.js') + read(STYLE, 'scenes.js') + read(video, 'story.js') + '\n}\n'
 
 
 def libs(video):
