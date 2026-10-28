@@ -1,0 +1,9 @@
+[{"chapter": "Parking tickets", "beats": [
+ {"id": "hook", "phrases": ["Super-Dude saved the city nine hundred times.", "He got nine hundred parking tickets."]},
+ {"id": "land", "phrases": ["Every rescue, he landed on a road,", "a roof,", "or a bus."]},
+ {"id": "cop", "phrases": ["And every time,", "Officer Gary was waiting."]},
+ {"id": "debt", "phrases": ["Total fines:", "two million dollars.", "Plus interest."]},
+ {"id": "twist", "phrases": ["So he stopped flying and took the bus.", "The city was destroyed in eleven minutes."]},
+ {"id": "punch", "phrases": ["Officer Gary got a promotion."]},
+ {"id": "cta", "phrases": ["Should heroes pay parking tickets? Vote."]}
+]}]

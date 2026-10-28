@@ -1,0 +1,9 @@
+[{"chapter": "Earth's reviews", "beats": [
+ {"id": "hook", "phrases": ["Aliens invaded Earth.", "Read the reviews.", "And left."]},
+ {"id": "land", "phrases": ["The ship landed outside the president's office.", "Weapons ready."]},
+ {"id": "reviews", "phrases": ["But first, they checked Earth's rating.", "One point two stars."]},
+ {"id": "quotes", "phrases": ["Too hot.", "Too loud.", "Residents keep pressing big red buttons."]},
+ {"id": "leave", "phrases": ["So they left.", "But they took one souvenir."]},
+ {"id": "twist", "phrases": ["Zuckerberg.", "They thought he was one of them.", "Two days later, they returned him.", "Too robotic, even for aliens."]},
+ {"id": "cta", "phrases": ["Rate Earth out of five. Honestly."]}
+]}]
