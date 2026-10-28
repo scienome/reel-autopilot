@@ -3,7 +3,7 @@
 Every finished video, one folder per series. Click a folder, then a file, then **View raw** (or the download
 button) to play it. This page updates itself after every render.
 
-## CouchSarcasm (couple comedy) (18)
+## CouchSarcasm (couple comedy) (39)
 Folder: [`couch-sarcasm/`](couch-sarcasm/)
 
 | Video | Title | Status |
@@ -26,6 +26,27 @@ Folder: [`couch-sarcasm/`](couch-sarcasm/)
 | [0016-one-week](couch-sarcasm/0016-one-week.mp4) | One week, she said. | Waiting to post |
 | [0017-the-sick-day](couch-sarcasm/0017-the-sick-day.mp4) | The sick day. | Waiting to post |
 | [0018-the-usual](couch-sarcasm/0018-the-usual.mp4) | The usual. | Waiting to post |
+| [0019-sold-the-ps5](couch-sarcasm/0019-sold-the-ps5.mp4) | Sold the PS5. | Waiting to post |
+| [0020-the-dog-decides](couch-sarcasm/0020-the-dog-decides.mp4) | The dog decides. | Waiting to post |
+| [0021-vows-with-receipts](couch-sarcasm/0021-vows-with-receipts.mp4) | Vows with receipts. | Waiting to post |
+| [0022-search-history](couch-sarcasm/0022-search-history.mp4) | Search history. | Waiting to post |
+| [0023-im-fine](couch-sarcasm/0023-im-fine.mp4) | I'm fine. | Waiting to post |
+| [0024-split-the-bill](couch-sarcasm/0024-split-the-bill.mp4) | Let's split it. | Waiting to post |
+| [0025-moms-lasagna](couch-sarcasm/0025-moms-lasagna.mp4) | Mom's lasagna. | Waiting to post |
+| [0026-the-plus-one](couch-sarcasm/0026-the-plus-one.mp4) | The plus one. | Waiting to post |
+| [0027-shared-location](couch-sarcasm/0027-shared-location.mp4) | Shared location. | Waiting to post |
+| [0028-no-takeout-pact](couch-sarcasm/0028-no-takeout-pact.mp4) | The no takeout pact. | Waiting to post |
+| [0029-couples-therapy](couch-sarcasm/0029-couples-therapy.mp4) | Couples therapy. | Waiting to post |
+| [0030-road-trip-dj](couch-sarcasm/0030-road-trip-dj.mp4) | Road trip DJ. | Waiting to post |
+| [0031-the-proposal-poll](couch-sarcasm/0031-the-proposal-poll.mp4) | The proposal poll. | Waiting to post |
+| [0032-reply-all](couch-sarcasm/0032-reply-all.mp4) | Reply all. | Waiting to post |
+| [0033-dance-lessons](couch-sarcasm/0033-dance-lessons.mp4) | Dance lessons. | Waiting to post |
+| [0034-no-gifts](couch-sarcasm/0034-no-gifts.mp4) | No gifts this year. | Waiting to post |
+| [0035-the-2am-squad](couch-sarcasm/0035-the-2am-squad.mp4) | The 2am squad. | Waiting to post |
+| [0036-closet-space](couch-sarcasm/0036-closet-space.mp4) | Closet space. | Waiting to post |
+| [0037-meet-the-dad](couch-sarcasm/0037-meet-the-dad.mp4) | Meet the dad. | Waiting to post |
+| [0038-best-man-speech](couch-sarcasm/0038-best-man-speech.mp4) | The best man's speech. | Waiting to post |
+| [0039-crop-her-out](couch-sarcasm/0039-crop-her-out.mp4) | Crop her out. | Waiting to post |
 
 ## Dave (Gears & Glitches) (42)
 Folder: [`dave-reels/`](dave-reels/)
