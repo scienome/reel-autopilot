@@ -98,3 +98,6 @@ A scheduled Claude session runs every 3 days and keeps at least 7 days of Reels 
 | 37 | The Tsar Tank: a 9-metre tricycle | Tue 3 Nov 08:30 |
 | 38 | Hubble's $1.5 billion blurry mirror | Tue 3 Nov 12:30 |
 | 39 | The bus that jumped Tower Bridge | Tue 3 Nov 20:30 |
+| 40 | The Spruce Goose flew once | Wed 4 Nov 08:30 |
+| 41 | Britain's aircraft carrier made of ice | Wed 4 Nov 12:30 |
+| 42 | The destroyer that torpedoed the President | Wed 4 Nov 20:30 |

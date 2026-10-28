@@ -1,0 +1,13 @@
+{
+ "title": "Britain's aircraft carrier made of ice",
+ "caption": "In WW2 Britain seriously planned an aircraft carrier made of ice. 🧊🚢\nPykrete is ice frozen with about 14% wood pulp: the fibres stop cracks from spreading, so it is much tougher than plain ice and melts more slowly.\nWould you have served on an ice ship? Yes or absolutely not?",
+ "hashtags": ["gearsandglitches", "habakkuk", "pykrete", "ww2", "materials", "science", "engineeringfails", "darkhumor"],
+ "first_comment": "A warship you can fix with a freezer and a bag of sawdust. Genius or madness? 🧊🪵",
+ "potential": 5,
+ "cover_t": 2.4,
+ "libs": ["davereels/props/dave.js", "davereels/props/dave_kit.js"],
+ "sources": [
+  "Wikipedia, 'Pykrete' and 'Project Habakkuk' (citing M. F. Perutz, 'Description of the Iceberg Aircraft Carrier', Journal of Glaciology, 1948): pykrete is about 14% wood pulp and 86% ice by weight, much stronger and slower-melting than ice; the planned ship was about 2,000 ft (610 m) long, kept frozen by refrigeration pipes; a small prototype was built at Patricia Lake, Alberta, in 1943; the project was abandoned as costs and steel requirements grew",
+  "The often-told demonstration in which a pistol shot shattered a block of ice but ricocheted off pykrete is reported in several accounts (Wikipedia 'Pykrete'), with differing details of who fired and where"
+ ]
+}

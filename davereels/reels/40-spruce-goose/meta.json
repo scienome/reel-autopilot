@@ -1,0 +1,13 @@
+{
+ "title": "The Spruce Goose flew once",
+ "caption": "Howard Hughes built the biggest plane of its time out of wood. It flew once, for less than a minute. 🪵✈️\nWartime metal shortages pushed the H-4 Hercules into birch laminate; a 97 m wing got it off the water, but only about 20 m up for about a mile.\nLegendary engineering or the most expensive boat ride ever?",
+ "hashtags": ["gearsandglitches", "sprucegoose", "howardhughes", "aviation", "aviationhistory", "engineering", "engineeringfails", "darkhumor"],
+ "first_comment": "Built a plane, flew it a mile, never touched it again. Most of us do that with gym memberships 🏋️",
+ "potential": 3,
+ "cover_t": 2.6,
+ "libs": ["davereels/props/dave.js", "davereels/props/dave_kit.js"],
+ "sources": [
+  "Evergreen Aviation & Space Museum, 'The Spruce Goose': the Hughes H-4 Hercules flying boat, built mostly of birch because of wartime metal shortages; wingspan 320 ft (97.5 m); its only flight was on 2 November 1947 at Long Beach",
+  "Wikipedia, 'Hughes H-4 Hercules': the flight reached about 70 ft (21 m) for about 26 seconds over roughly one mile; Hughes testified before the Senate War Investigating Committee in 1947 about the use of government funds; it never flew again"
+ ]
+}

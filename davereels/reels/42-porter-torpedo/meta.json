@@ -1,0 +1,13 @@
+{
+ "title": "The destroyer that torpedoed the President",
+ "caption": "In 1943 a US Navy destroyer accidentally fired a torpedo at the battleship carrying the President. 🇺🇸🚢\nA practice run used the battleship as a pretend target and one torpedo was left armed; under radio silence the warning went out by signal lamp, and it was the wrong message.\nWho takes the blame: the sailor who left it armed or the officer who ran the drill?",
+ "hashtags": ["gearsandglitches", "usswilliamdporter", "ussiowa", "ww2", "navy", "militaryhistory", "history", "darkhumor"],
+ "first_comment": "Unluckiest ship in the US Navy or the most chaotic crew ever? Pick one ⚓",
+ "potential": 7,
+ "cover_t": 2.2,
+ "libs": ["davereels/props/dave.js", "davereels/props/dave_kit.js"],
+ "sources": [
+  "Naval History and Heritage Command (DANFS) / Naval Historical Center, 'William D. Porter (DD-579)': on 14 November 1943, during drills with USS Iowa as a simulated target while Iowa carried President Roosevelt to the Cairo and Tehran conferences, the destroyer accidentally launched a torpedo",
+  "Wikipedia, 'USS Iowa (BB-61)' and 'USS William D. Porter (DD-579)': the warning was first sent by signal lamp with an incorrect message before radio silence was broken; Iowa turned away and the torpedo detonated in her wake; Roosevelt asked to be moved to the rail to watch"
+ ]
+}
