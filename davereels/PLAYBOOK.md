@@ -56,6 +56,11 @@ main run, and every run starts by checking `davereels/batch_log.json`:
   No YouTube link. Title in `title`. `cover_t` on a strong frame. `libs` always includes `davereels/props/dave.js`.
 
 ## 3. Build each Reel
+- **Use the bigger world.** Every Reel moves through 2-3 real locations, not only the garage: `set` can be garage,
+  road, sky, space, lab, launchpad, factory, ocean, city, office, stage or desert (see the top of `dave_kit.js`). Add
+  the **crew**, other crash-test dummies with jobs, when the story has people in it: engineer, boss, scientist,
+  general, astronaut, intern, pilot, chef. They play every human role (the CEO on stage, the general who ordered it,
+  the engineer who warned everyone), so no real person is ever shown. Dave is always the one who pays the price.
 - **Write `story.js` with `makeDave`** (`davereels/props/dave_kit.js`, documented at its top): one short spec per
   shot (set, camera orbit or dolly, the scene builder, Dave's pose or death, labels, flashes, sounds). Cuts,
   captions, the R.I.P. card and its sound are automatic. `meta.json` `libs` must be
