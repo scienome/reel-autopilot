@@ -211,7 +211,13 @@ def main():
     print(f"Instagram: posting as @{me.get('username')}")
     tok = yt.token()
     if a.dry_run:
-        print('dry run: YouTube sign-in OK, nothing posted')
+        import requests
+        ch = requests.get('https://www.googleapis.com/youtube/v3/channels', params={'part': 'snippet', 'mine': 'true'},
+                          headers={'Authorization': 'Bearer ' + tok}, timeout=60).json()
+        name = (ch.get('items') or [{}])[0].get('snippet', {}).get('title')
+        print(f'YouTube: posting to the channel "{name}"' if name else
+              'YouTube sign-in OK (channel name not readable: add the youtube.readonly scope to see it)')
+        print('dry run: nothing posted')
         return
 
     errs = []
