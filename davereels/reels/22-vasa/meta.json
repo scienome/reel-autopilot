@@ -1,0 +1,13 @@
+{
+ "title": "The warship that sank in 1,300 metres",
+ "caption": "Sweden's mightiest warship failed its stability test, so they sailed it anyway. It made it 1,300 metres. ⚓\nToo many cannons high up and too little ballast low down put the centre of gravity too high: one gust and the open gunports took on water.\nWould you have stopped the launch, or kept your head down and kept your job?",
+ "hashtags": ["gearsandglitches", "vasa", "shipwreck", "engineering", "engineeringfails", "physics", "history", "darkhumor"],
+ "first_comment": "The king wanted more guns. The ocean wanted the ship. Ocean won 1-0 🌊 Who's really to blame: the king or the shipbuilders?",
+ "potential": 5,
+ "cover_t": 2.0,
+ "libs": ["davereels/props/dave.js", "davereels/props/dave_kit.js"],
+ "sources": [
+  "Vasa Museum (Vasamuseet), 'The ship' and 'Why did Vasa sink?': sank on her maiden voyage on 10 August 1628 after about 1,300 m; 64 guns on two gun decks; too little ballast and a high centre of gravity; water entered the open lower gunports; about 30 people died",
+  "Vasa Museum / Military History Matters, 'Back to the drawing board: Vasa': the pre-sailing stability test in which 30 men ran across the deck was stopped after three runs because she heeled so much"
+ ]
+}

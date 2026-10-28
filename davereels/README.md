@@ -80,3 +80,6 @@ A scheduled Claude session runs every 3 days and keeps at least 7 days of Reels 
 | 19 | NASA's $125 million units mix-up | Tue 3 Nov 08:30 |
 | 20 | North Korea's hotel of doom | Wed 28 Oct 12:30 (moved by the owner) |
 | 21 | Galloping Gertie | Tue 3 Nov 20:30 |
+| 22 | The warship that sank in 1,300 metres | Thu 29 Oct 08:30 |
+| 23 | Australia fined NASA for littering | Thu 29 Oct 12:30 |
+| 24 | The manhole cover that left Earth | Thu 29 Oct 20:30 |

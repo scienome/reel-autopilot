@@ -1,0 +1,14 @@
+{
+ "title": "Australia fined NASA for littering",
+ "caption": "NASA dropped a 77-tonne space station on Australia. Australia sent back a $400 fine for littering. 🛰️\nA more active Sun heated and puffed up the upper atmosphere, so Skylab hit more air, felt more drag and fell out of orbit early.\nShould NASA have paid the fine, or should Australia have paid NASA for the souvenirs?",
+ "hashtags": ["gearsandglitches", "skylab", "nasa", "space", "spacehistory", "physics", "engineeringfails", "darkhumor"],
+ "first_comment": "Esperance is the only town on Earth that ever won a fight with NASA 🇦🇺 Fair fine or petty legend?",
+ "potential": 7,
+ "cover_t": 2.5,
+ "libs": ["davereels/props/dave.js", "davereels/props/dave_kit.js"],
+ "sources": [
+  "NASA, Skylab history: the 77-tonne (about 170,000 lb) station re-entered on 11 July 1979 and debris fell over the Indian Ocean and Western Australia; higher-than-predicted solar activity heated and expanded the upper atmosphere, increasing drag and bringing it down early",
+  "ABC News (Australia), 2009: the Shire of Esperance fined NASA A$400 for littering in 1979; the fine was paid 30 years later by a US radio host (Scott Barley, Highway Radio)",
+  "No one was injured by Skylab debris (NASA)"
+ ]
+}

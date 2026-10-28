@@ -1,0 +1,13 @@
+{
+ "title": "The manhole cover that left Earth",
+ "caption": "America may have launched a manhole cover faster than any rocket ever built. By accident. With a nuke. 🚀\nAn underground blast turned a 150 m shaft into a gun barrel: hot gas punched the 900 kg steel lid out at an estimated 66 km/s.\nDid it reach space, or burn up in seconds? Pick a side.",
+ "hashtags": ["gearsandglitches", "manholecover", "operationplumbbob", "physics", "nuclear", "coldwar", "engineeringfails", "darkhumor"],
+ "first_comment": "The first object humans sent past escape velocity was a manhole cover. Change my mind 🛸",
+ "potential": 10,
+ "cover_t": 1.2,
+ "libs": ["davereels/props/dave.js", "davereels/props/dave_kit.js"],
+ "sources": [
+  "Operation Plumbbob, shot Pascal-B, Nevada Test Site, 27 August 1957: a low-yield device at the bottom of a ~150 m (500 ft) shaft capped with a ~900 kg (2,000 lb) steel/iron lid (US DOE Nevada nuclear test history; Wikipedia 'Operation Plumbbob')",
+  "Robert Brownlee (Los Alamos), 'Learning to Contain Underground Nuclear Explosions' (2002): the lid appeared in only one high-speed camera frame; his estimate of about 66 km/s, roughly six times Earth's escape velocity; the lid was never found and probably burned up or broke up in the atmosphere"
+ ]
+}
