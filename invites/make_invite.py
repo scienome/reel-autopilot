@@ -10,6 +10,8 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 SR, FPS, DUR, W, H = 44100, 30, 30.0, 1080, 1920
+INTRO = 5.0  # the envelope opening plays first; the card's own animation then runs for DUR
+TOTAL = DUR + INTRO
 SRC, OUT = sys.argv[1], sys.argv[2]
 os.makedirs(OUT, exist_ok=True)
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -17,6 +19,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # ------------------------------------------------------------------ music (no voice)
 def music(path):
+    DUR = TOTAL
     t = np.arange(int(SR * DUR)) / SR
     out = np.zeros((len(t), 2))
     sa = 146.83  # D
@@ -152,7 +155,7 @@ def frame(card, t, bgcache, keys):
         for p in PETALS[:20]:
             y = -60 + (t * 900) * (0.6 + p['v'] / 300) + p['x'] * 0.1; x = p['x'] + 60 * math.sin(t * 3 + p['a'])
             sp = petal(p['s'] * 1.3, p['c'], p['a'] + t * 5); fr.paste(sp, (int(x), int(y)), sp)
-    a = min(1, t / 1.2)
+    a = 1 if INTRO else min(1, t / 1.2)
     if a < 1: fr = Image.blend(Image.new('RGB', fr.size, (252, 244, 222)), fr, a)
     e = min(1, max(0, (DUR - t) / 1.5))
     if e < 1: fr = Image.blend(Image.new('RGB', fr.size, (20, 10, 5)), fr, e)
@@ -178,15 +181,69 @@ def glow(card, t):
     return c.convert('RGB')
 
 
+def envelope(card, t, bg):
+    """Intro: a maroon envelope drops in, the wax seal fades, the flap opens, the card slides out and grows to full view."""
+    ease = lambda k: (lambda k: k * k * (3 - 2 * k))(min(1, max(0, k)))
+    fr = bg.copy().convert('RGBA'); L = Image.new('RGBA', fr.size, (0, 0, 0, 0)); d = ImageDraw.Draw(L)
+    ew, eh, cx = 900, 620, W // 2
+    drop = ease(t / 0.8); away = ease((t - 3.3) / 1.1)
+    top = int(1050 - 300 * (1 - drop) + 900 * away); l, r, bot = cx - ew // 2, cx + ew // 2, top + eh
+    alpha = int(255 * drop * (1 - away))
+    MAR, MAR2, GLD = (128, 18, 28), (96, 12, 22), (214, 170, 80)
+    k = ease((t - 1.0) / 0.7)  # flap: 0 closed, 1 open
+    apex = top + int(eh * 0.52 * math.cos(math.pi * k))
+    sh = Image.new('RGBA', fr.size, (0, 0, 0, 0)); ImageDraw.Draw(sh).ellipse([l + 40, bot - 20, r - 40, bot + 70], fill=(0, 0, 0, int(0.45 * alpha)))
+    fr.alpha_composite(sh.filter(ImageFilter.GaussianBlur(25)))
+    if alpha > 0:
+        d.rectangle([l, top, r, bot], fill=MAR2 + (alpha,))
+        if k > 0.5: d.polygon([(l, top), (r, top), (cx, apex)], fill=MAR2 + (alpha,), outline=GLD + (alpha,))
+    fr.alpha_composite(L)
+    # the card: rises out of the envelope, then grows into the full-screen position
+    up = ease((t - 1.6) / 1.6); grow = ease((t - 3.3) / 1.4)
+    w0 = 800; h0 = int(w0 * 1.5); y_in = top + 60; y_out = top + 300 - h0
+    x, y, w = cx - w0 / 2, y_in + (y_out - y_in) * up, w0
+    x, y, w = x + (0 - x) * grow, y + (150 - y) * grow, w + (W - w) * grow
+    if t > 1.5:
+        c = card.resize((int(w), int(w * 1.5)), Image.BILINEAR).convert('RGBA')
+        if alpha > 0 and away < 0.05: c = c.crop((0, 0, c.width, max(1, min(c.height, int(bot - 30 - y)))))  # still inside the envelope
+        fr.alpha_composite(c, (int(x), int(y)))
+    L = Image.new('RGBA', fr.size, (0, 0, 0, 0)); d = ImageDraw.Draw(L)
+    if alpha > 0:  # front pocket and (closed) flap over the card
+        d.polygon([(l, top + 40), (cx, top + int(eh * 0.55)), (r, top + 40), (r, bot), (l, bot)], fill=MAR + (alpha,))
+        d.line([(l, top + 40), (cx, top + int(eh * 0.55)), (r, top + 40)], fill=GLD + (alpha,), width=4)
+        d.rectangle([l, top, r, bot], outline=GLD + (alpha,), width=6)
+        if k <= 0.5:
+            d.polygon([(l, top), (r, top), (cx, apex)], fill=MAR + (alpha,), outline=GLD + (alpha,))
+            sa = int(alpha * (1 - ease((t - 0.7) / 0.4)))  # wax seal
+            if sa > 0:
+                d.ellipse([cx - 58, apex - 70, cx + 58, apex + 46], fill=(200, 150, 50, sa), outline=(150, 100, 30, sa), width=5)
+                d.ellipse([cx - 30, apex - 42, cx + 30, apex + 18], outline=(255, 230, 160, sa), width=4)
+    fr.alpha_composite(L)
+    if 3.0 < t < 4.6:  # golden burst as the card comes out
+        q = (t - 3.0) / 1.6
+        for i in range(36):
+            a = i * 2.4; rr = 80 + 650 * q
+            px, py = cx + math.cos(a) * rr * (0.6 + 0.4 * ((i * 7) % 5) / 4), 760 + math.sin(a) * rr * 0.9
+            sp = DOT[3 + i % 5]; fr.alpha_composite(sp, (int(px), int(py)))
+    for p in PETALS[:24]:
+        yy = (p['y'] + p['v'] * t) % (H + 200) - 100; xx = p['x'] + 30 * math.sin(t * 0.8 + p['a'])
+        sp = petal(p['s'], p['c'], p['a'] + p['w'] * t); fr.alpha_composite(sp.convert('RGBA'), (int(xx), int(yy)))
+    fr = fr.convert('RGB')
+    if t < 0.6: fr = Image.blend(Image.new('RGB', fr.size, (20, 10, 5)), fr, t / 0.6)
+    return fr
+
+
 def render(name, card_at, keys):
     bg = card_at(DUR).resize((W, H)).filter(ImageFilter.GaussianBlur(40))
     bg = Image.blend(bg, Image.new('RGB', bg.size, (40, 20, 10)), 0.35)
     ff = subprocess.Popen(['ffmpeg', '-y', '-loglevel', 'error', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-',
                            '-i', os.path.join(OUT, 'music.wav'), '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', '19', '-preset', 'medium',
                            '-c:a', 'aac', '-b:a', '192k', '-shortest', '-movflags', '+faststart', os.path.join(OUT, name)], stdin=subprocess.PIPE)
-    for i in range(int(DUR * FPS)):
+    first = card_at(0)
+    for i in range(int(TOTAL * FPS)):
         t = i / FPS
-        ff.stdin.write(frame(glow(card_at(t), t), t, bg, keys).tobytes())
+        fr = envelope(first, t, bg) if t < INTRO else frame(glow(card_at(t - INTRO), t - INTRO), t - INTRO, bg, keys)
+        ff.stdin.write(fr.tobytes())
     ff.stdin.close(); ff.wait()
     print('wrote', name)
 
@@ -196,7 +253,7 @@ base = Image.open(os.path.join(SRC, 'card_hi.jpg')).convert('RGB')
 
 
 def hindi_at(t):  # the original card, revealed top to bottom
-    if t >= 4.5: return base
+    if INTRO or t >= 4.5: return base  # with the envelope intro the card arrives complete
     cream = Image.new('RGB', base.size, (250, 241, 210)); edge = 130
     y = (t / 4.5) * (base.height + edge)
     m = np.clip((y - np.arange(base.height)) / edge, 0, 1)
