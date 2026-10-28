@@ -1,0 +1,10 @@
+[
+ {"id": "hook", "phrases": ["New rule.", "No takeout.", "We're saving money."]},
+ {"id": "him", "phrases": ["Day one.", "He sneaks a burger at the door."]},
+ {"id": "hide", "phrases": ["Hides the bag in the closet."]},
+ {"id": "her", "phrases": ["Day two.", "She sneaks sushi.", "Hides it in the bathtub."]},
+ {"id": "knock", "phrases": ["Day three.", "Doorbell."]},
+ {"id": "delivery", "phrases": ["The delivery guy smiles.", "Your usual, both of you?"]},
+ {"id": "twist", "phrases": ["He's on first name terms.", "With both of them."]},
+ {"id": "close", "phrases": ["Saved zero dollars."]}
+]

@@ -1,0 +1,9 @@
+[
+ {"id": "hook", "phrases": ["He says he's working late.", "His location says the mall."]},
+ {"id": "drive", "phrases": ["She grabs her keys."]},
+ {"id": "mall", "phrases": ["She storms in.", "Ready for war."]},
+ {"id": "found", "phrases": ["She finds him.", "Asleep in a massage chair."]},
+ {"id": "why", "phrases": ["He's hiding from your mom's visit."]},
+ {"id": "twist", "phrases": ["The chair next to him.", "Her dad.", "Also hiding."]},
+ {"id": "close", "phrases": ["She sits down too.", "Move over."]}
+]

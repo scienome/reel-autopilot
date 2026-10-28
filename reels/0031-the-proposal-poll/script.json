@@ -1,0 +1,10 @@
+[
+ {"id": "hook", "phrases": ["He gets down on one knee."]},
+ {"id": "ask", "phrases": ["Will you marry me?"]},
+ {"id": "think", "phrases": ["She looks at the ring.", "She says, let me think."]},
+ {"id": "poll", "phrases": ["And posts a poll.", "Yes or no."]},
+ {"id": "votes", "phrases": ["Votes pour in.", "Fifty-fifty."]},
+ {"id": "waits", "phrases": ["Ten minutes later.", "He's still kneeling.", "His knee is gone."]},
+ {"id": "twist", "phrases": ["The deciding vote.", "His mom.", "No."]},
+ {"id": "close", "phrases": ["She says yes.", "Out of spite."]}
+]
