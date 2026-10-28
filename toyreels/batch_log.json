@@ -1,1 +1,53 @@
-[]
+[
+ {
+  "batch": "2026-10-28",
+  "ids": [
+   "11-kim-missile-boomerang",
+   "12-zombie-apocalypse-fails",
+   "13-hitler-hell-queue",
+   "14-death-replaced-by-ai",
+   "15-napoleon-sues-everyone",
+   "16-robbers-rob-illuminati",
+   "17-einstein-art-school",
+   "18-santa-layoffs",
+   "19-batguy-electricity-bill",
+   "20-illuminati-moon-landing",
+   "21-zeus-wifi-down",
+   "22-devil-sues-billionaire",
+   "23-last-man-spam-call",
+   "24-mummy-gift-shop",
+   "25-summit-cooking-show",
+   "26-aliens-read-reviews",
+   "27-kim-haircut-law",
+   "28-superdude-parking-tickets",
+   "29-dracula-energy-drink",
+   "30-death-vs-oldest-man",
+   "31-illuminati-hr-trapdoor"
+  ],
+  "hooks": {
+   "11-kim-missile-boomerang": "Kim pressed the button. The missile came back.",
+   "12-zombie-apocalypse-fails": "The zombie apocalypse failed because nobody leaves the house anymore.",
+   "13-hitler-hell-queue": "Hitler arrives in hell and gets put on hold behind Stalin.",
+   "14-death-replaced-by-ai": "Death got fired and replaced by an AI. Nobody has died since.",
+   "15-napoleon-sues-everyone": "Napoleon came back from the dead to sue everyone who called him short.",
+   "16-robbers-rob-illuminati": "Two robbers hit the wrong bank: the Illuminati's.",
+   "17-einstein-art-school": "Einstein built a time machine for one job: get Hitler into art school.",
+   "18-santa-layoffs": "Santa replaced the elves with robots. The elves did not take it well.",
+   "19-batguy-electricity-bill": "Bat-Guy's worst villain is his electricity bill.",
+   "20-illuminati-moon-landing": "The Illuminati faked the moon landing on the actual moon, because it was cheaper.",
+   "21-zeus-wifi-down": "Zeus unplugged heaven's Wi-Fi to charge his lightning.",
+   "22-devil-sues-billionaire": "The devil sued a billionaire for stealing his business model.",
+   "23-last-man-spam-call": "The last man on Earth finally got a phone call. It was spam.",
+   "24-mummy-gift-shop": "A mummy woke up after 3,000 years inside a museum gift shop.",
+   "25-summit-cooking-show": "World leaders, one kitchen, one poisoned dish.",
+   "26-aliens-read-reviews": "Aliens invaded Earth, read the reviews, and left. Except one passenger.",
+   "27-kim-haircut-law": "Kim made his haircut the law. Then his barber escaped.",
+   "28-superdude-parking-tickets": "Super-Dude saved the city 900 times and got 900 parking tickets.",
+   "29-dracula-energy-drink": "Dracula robbed a blood bank. Every donor was an energy-drink addict.",
+   "30-death-vs-oldest-man": "Death came for a 120-year-old man. The man had other plans.",
+   "31-illuminati-hr-trapdoor": "The Illuminati have the shortest HR meetings in the world."
+  },
+  "status": "in_progress",
+  "updated": "2026-10-28T09:12:35Z"
+ }
+]

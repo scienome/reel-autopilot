@@ -320,3 +320,65 @@
     if (it === 'wand') S.box((p) => HD(add(p, [0, 0.02, 0.2])), 0.015, 0.015, 0.2, [40, 30, 30], { bevel: 0.3 });
     if (it === 'gavel') { S.box((p) => HD(add(p, [0, 0, 0.14])), 0.02, 0.02, 0.14, [110, 70, 40], { bevel: 0.3 }); S.box((p) => HD(add(p, [0, 0, 0.3])), 0.09, 0.05, 0.05, [110, 70, 40], { bevel: 0.4 }); }
   };
+
+  // ==================== makeComedy: a whole reel from short per-beat specs ====================
+  // makeComedy({ badge, badgeCol, captions, beats: ({ V, B }) => ({ beatId: spec, ... }), sound(k, fx, ctx) })
+  // spec = {
+  //   set: 'office' | 'bunker' | 'prison' | 'lair' | 'desert' | 'stage' | 'heaven' | 'hell' | 'graveyard' | 'moon' |
+  //        'base' | 'bank' | 'palace' | 'court' | 'street' | 'city' | 'sky' | 'space' | 'lawn' | 'museum',  opt: {...},
+  //   cam: 'wide' | 'mid' | 'close' | 'low' | 'high' | 'pull' | [eye0, target0, eye1, target1],  at: x or [x0, x1] (pan),
+  //   shake: time (camera shake from that moment),
+  //   cast: [[who | null, x, z, rot, extra | (t, u) => extra]]  (who = a CAST name; null = plain S.figure with extra;
+  //          extra may also return x, z, rot, s to move the actor; u = 0..1 through the beat),
+  //   props: (S, t, u) => {...},  tags: [[x, y, z, 'TEXT', time, colour, width]],  booms: [[x, y, z, time, scale]],
+  //   flash: [times],  over: (ctx, W, H_, t, u) => {...} (2D on top),  sfx: [['name', time, opts]] }
+  // Tags pop with a sound, booms explode with a hit, a flash and a shake. Everything else is the normal reel.
+  const SETS = { office: officeShot, bunker: bunkerShot, prison: prisonShot, lair: lairShot, desert: desertShot, stage: stageShot, heaven: heavenShot, hell: hellShot, graveyard: graveyardShot, moon: moonShot, base: baseShot, bank: bankShot, palace: palaceShot, court: courtShot, street: streetShot,
+    city: (ctx, W, H_, t, E, TG, b, o = {}) => cityShot(ctx, W, H_, t, E, TG, b, o.night == null ? 1 : o.night),
+    sky: (ctx, W, H_, t, E, TG, b, o = {}) => skyShot(ctx, W, H_, t, E, TG, b, o.night || 0),
+    space: (ctx, W, H_, t, E, TG, b) => spaceShot(ctx, W, H_, t, E, TG, b),
+    lawn: (ctx, W, H_, t, E, TG, b, o = {}) => lawnShot(ctx, W, H_, t, E, TG, b, o.night || 0),
+    museum: (ctx, W, H_, t, E, TG, b, o = {}) => museumShot(ctx, W, H_, E, TG, b, o.wall, o.night || 0) };
+  const CAMS = { wide: [[0.3, 2.4, 6.8], [0, 1.25, 0], [0.15, 2.25, 6.0], [0, 1.3, 0]], mid: [[0.25, 2.1, 4.8], [0, 1.45, 0], [0.1, 2.0, 4.1], [0, 1.5, 0]],
+    close: [[0.1, 1.95, 3.0], [0, 1.75, 0], [0, 1.9, 2.5], [0, 1.78, 0]], low: [[0.5, 0.7, 4.4], [0, 1.6, 0], [0.3, 0.8, 3.7], [0, 1.65, 0]],
+    high: [[0, 5.5, 4.2], [0, 0.6, 0], [0, 5.0, 3.6], [0, 0.6, 0]], pull: [[0.1, 2.0, 3.4], [0, 1.6, 0], [0.3, 2.5, 7.2], [0, 1.25, 0]] };
+  const TAGCOL = { red: P.red, yellow: P.yellow, green: P.green, blue: P.blue, orange: P.orange, dark: [40, 40, 48], white: [236, 236, 236], purple: [130, 60, 170] };
+  const pulse = (t, at, k = 6) => Math.exp(-Math.pow((t - at) * k, 2));
+  const comedyShot = (sp) => (ctx, W, H_, t, a, b) => {
+    const u = H.clamp((t - a) / Math.max(0.01, b - a));
+    const cam = Array.isArray(sp.cam) ? sp.cam : CAMS[sp.cam || 'wide'];
+    const at = sp.at == null ? 0 : Array.isArray(sp.at) ? H.lerp(sp.at[0], sp.at[1], H.ease.inOut(u)) : sp.at;
+    const sh = [...(sp.shake != null ? [sp.shake] : []), ...(sp.booms || []).map((bm) => bm[3])].reduce((m, s0) => Math.max(m, t > s0 ? Math.exp(-(t - s0) * 3) : 0), 0);
+    const jig = (v, i) => v + (i < 2 ? Math.sin(t * 61 + i * 7) * 0.08 * sh : 0);
+    let [E, TG] = shotCam(t, a, b, cam[0].map((v, i) => (i ? v : v + at)), cam[1].map((v, i) => (i ? v : v + at)), cam[2].map((v, i) => (i ? v : v + at)), cam[3].map((v, i) => (i ? v : v + at)));
+    E = E.map(jig); TG = TG.map(jig);
+    const S = (SETS[sp.set] || SETS.office)(ctx, W, H_, t, E, TG, (S) => {
+      for (const [who, x, z, rot, ex] of sp.cast || []) {
+        const e = Object.assign({}, typeof ex === 'function' ? ex(t, u) : ex || {});
+        const px = e.x == null ? x : e.x, pz = e.z == null ? z : e.z, pr = e.rot == null ? rot || 0 : e.rot, ps = e.s || 0.9;
+        delete e.x; delete e.z; delete e.rot; delete e.s;
+        if (e.hide) continue;
+        if (who) actor(S, px, pz, ps, pr, who, e); else S.figure(px, pz, ps, pr, e);
+      }
+      if (sp.props) sp.props(S, t, u);
+      for (const [x, y, z, txt, tm, col, wd] of sp.tags || []) S.tag(x, y, z, txt, popU(t, tm), -0.05, Array.isArray(col) ? col : TAGCOL[col || 'red'], wd || Math.max(0.5, 0.22 + txt.length * 0.075));
+      for (const [x, y, z, tm, sc] of sp.booms || []) boom(S, x, y, z, sc || 1.4, (t - tm) * 1.6);
+    }, sp.opt || {});
+    if (sp.over) sp.over(ctx, W, H_, t, u);
+    let fl = 0; for (const tm of [...(sp.flash || []), ...(sp.booms || []).map((bm) => bm[3])]) fl = Math.max(fl, 0.35 * pulse(t, tm));
+    return fl;
+  };
+  const makeComedy = (cfg) => {
+    let specs = {};
+    makeReel({ badge: cfg.badge, badgeCol: cfg.badgeCol, captions: cfg.captions,
+      shots: (cx) => { specs = cfg.beats(cx); const out = {}; for (const id in specs) out[id] = comedyShot(specs[id]); return out; },
+      sound: (k, fx, cx) => {
+        for (const id in specs) { const s = specs[id];
+          (s.tags || []).forEach((tg, i) => k.play('pop', tg[4], { f: 480 + ((i * 97) % 300), gain: 0.45 }));
+          (s.booms || []).forEach((bm) => { k.play('impact', bm[3], { gain: 0.7 }); k.play('thud', bm[3], { f: 70, gain: 0.7 }); k.noise(bm[3], { dur: 1.1, color: 'brown', filter: 'lowpass', f: 500, gain: 0.3, a: 0.01 }); });
+          (s.flash || []).forEach((tm) => k.play('slap', tm, { gain: 0.5 }));
+          (s.sfx || []).forEach(([name, tm, o]) => k.play(name, tm, o || {}));
+        }
+        if (cfg.sound) cfg.sound(k, fx, cx);
+      } });
+  };
