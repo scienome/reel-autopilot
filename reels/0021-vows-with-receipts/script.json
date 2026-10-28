@@ -1,0 +1,10 @@
+[
+ {"id": "hook", "phrases": ["Wedding day.", "She reads her vows."]},
+ {"id": "love", "phrases": ["I promise to love you,", "even though..."]},
+ {"id": "receipts", "phrases": ["On March third, you forgot my birthday."]},
+ {"id": "more", "phrases": ["She unrolls a list.", "It touches the floor."]},
+ {"id": "guests", "phrases": ["Guests are taking notes."]},
+ {"id": "him", "phrases": ["His turn.", "He just says, Ditto."]},
+ {"id": "twist", "phrases": ["Then he pulls out his own folder.", "Thicker."]},
+ {"id": "close", "phrases": ["Till receipts do us part."]}
+]

@@ -1,0 +1,10 @@
+[
+ {"id": "hook", "phrases": ["He promised her a holiday.", "Then he forgot."]},
+ {"id": "forgot", "phrases": ["Three months. Not one booking."]},
+ {"id": "ps5", "phrases": ["So she quietly sells his PS5."]},
+ {"id": "tickets", "phrases": ["Two plane tickets to Bali.", "Paid in full."]},
+ {"id": "home", "phrases": ["He gets home.", "Where's my console?"]},
+ {"id": "she", "phrases": ["She smiles.", "You'll love the beach."]},
+ {"id": "twist", "phrases": ["Then his phone buzzes.", "A selfie from his best friend.", "Playing his PS5."]},
+ {"id": "close", "phrases": ["Bought it for half price."]}
+]

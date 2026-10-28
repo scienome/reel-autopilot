@@ -1,0 +1,10 @@
+[
+ {"id": "hook", "phrases": ["His mom's famous lasagna.", "Secret recipe.", "Thirty years."]},
+ {"id": "try", "phrases": ["She tries to make it.", "Ten times."]},
+ {"id": "mil", "phrases": ["His mom tastes it.", "Not quite, sweetie."]},
+ {"id": "order", "phrases": ["So she orders one from the Italian place."]},
+ {"id": "dinner", "phrases": ["Sunday dinner.", "His mom takes one bite."]},
+ {"id": "smile", "phrases": ["Finally.", "Just like mine."]},
+ {"id": "twist", "phrases": ["Then the delivery guy walks in.", "Your usual, Mrs Rossi?"]},
+ {"id": "close", "phrases": ["Thirty years.", "Same restaurant."]}
+]

@@ -1,0 +1,10 @@
+[
+ {"id": "hook", "phrases": ["Date night.", "He says, let's split the bill."]},
+ {"id": "menu", "phrases": ["She smiles and opens the menu."]},
+ {"id": "order", "phrases": ["Lobster.", "Steak.", "Three desserts."]},
+ {"id": "him", "phrases": ["He orders a salad."]},
+ {"id": "bill", "phrases": ["The bill arrives.", "It's longer than his arm."]},
+ {"id": "fifty", "phrases": ["Fifty-fifty, babe."]},
+ {"id": "twist", "phrases": ["She hands the waiter a card.", "His card."]},
+ {"id": "close", "phrases": ["She splits it.", "Between his two accounts."]}
+]

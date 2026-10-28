@@ -1,0 +1,10 @@
+[
+ {"id": "hook", "phrases": ["Someone ate her birthday cake.", "The whole thing."]},
+ {"id": "accuse", "phrases": ["She blames him.", "He blames her."]},
+ {"id": "judge", "phrases": ["So they let the dog decide."]},
+ {"id": "him", "phrases": ["The dog sniffs him.", "Nothing."]},
+ {"id": "her", "phrases": ["Sniffs her.", "Nothing."]},
+ {"id": "walk", "phrases": ["Then he walks away.", "Straight to the kitchen."]},
+ {"id": "twist", "phrases": ["And sits next to his mother.", "Frosting on her chin."]},
+ {"id": "close", "phrases": ["She was visiting for an hour.", "Happy birthday."]}
+]
