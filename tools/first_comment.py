@@ -23,3 +23,19 @@ def post_first_comment(api, media_id, text):
         print(f'first comment posted: {text}')
     except Exception as e:  # noqa: BLE001
         print(f'::warning::First comment not posted ({str(e)[:200]}). The Instagram token needs the instagram_business_manage_comments permission.')
+
+
+class SlotTaken(RuntimeError):
+    """Something was already published on this account in the last minutes (another run got there first)."""
+
+
+def guard_slot(api, ig, minutes=45):
+    """Call right before media_publish: if the account already has a post from the last `minutes`, raise SlotTaken.
+    Two runs can overlap (GitHub delays, a lost log commit); this keeps one post per slot whatever the logs say."""
+    import datetime as dt
+    recent = api('GET', f'/{ig}/media', fields='id,timestamp', limit=3).get('data', [])
+    now = dt.datetime.now(dt.timezone.utc)
+    for m in recent:
+        ts = dt.datetime.strptime(m['timestamp'], '%Y-%m-%dT%H:%M:%S%z')
+        if (now - ts).total_seconds() < minutes * 60:
+            raise SlotTaken(f'the account already posted media {m["id"]} at {m["timestamp"]}; not posting a second one in this slot')

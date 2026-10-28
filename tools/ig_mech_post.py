@@ -25,7 +25,7 @@ Instagram Login), YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN (the Gears Yo
 import argparse, datetime as dt, json, os, sys, time
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from first_comment import first_comment, post_first_comment  # noqa: E402
+from first_comment import first_comment, post_first_comment, guard_slot, SlotTaken  # noqa: E402
 import youtube_publish as yt  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -192,6 +192,7 @@ def ig_post(logkey, at):
     wait = (at - dt.datetime.now(dt.timezone.utc)).total_seconds()
     if wait > 0:
         print(f'Instagram ready; publishing at {at:%H:%M} UTC (in {wait:.0f} s)', flush=True); time.sleep(wait)
+    guard_slot(api, ig)
     m = api('POST', f'/{ig}/media_publish', creation_id=cid)
     print(f'Instagram: published {rid} -> media {m["id"]}')
     post_first_comment(api, m['id'], first_comment('dave', logkey, os.path.join(folder, rid, 'meta.json')))
@@ -209,6 +210,10 @@ def post(logkey, at, log, tok):
     if 'media_id' not in e:
         try:
             e.update(ig_post(logkey, at)); json.dump(log, open(LOG, 'w'), indent=1)
+        except SlotTaken as x:  # another run already posted in this slot: leave this item for a later slot
+            print(f'::warning::{x}')
+            if 'youtube' not in e: log.pop(logkey, None)
+            json.dump(log, open(LOG, 'w'), indent=1)
         except RuntimeError as x:
             print(f'::error::Instagram failed for {logkey}: {str(x)[:400]}'); err = err or x
     return err

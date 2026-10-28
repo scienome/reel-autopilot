@@ -24,7 +24,7 @@ import argparse, datetime as dt, json, os, sys, tempfile, time
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, 'tools'))
 import youtube_publish as yt  # noqa: E402
-from first_comment import first_comment, post_first_comment  # noqa: E402
+from first_comment import first_comment, post_first_comment, guard_slot  # noqa: E402
 
 TOY = os.path.join(ROOT, 'toyreels')
 REELS, LOG, CONF = os.path.join(TOY, 'reels'), os.path.join(TOY, 'posted.json'), os.path.join(TOY, 'posting.json')
@@ -107,6 +107,7 @@ def ig_post(rid, url, cap, key, at):
     if wait > 0:
         print(f'Instagram ready; publishing at {at:%H:%M} UTC (in {wait:.0f} s)', flush=True)
         time.sleep(wait)
+    guard_slot(ig_api, ig)
     m = ig_api('POST', f'/{ig}/media_publish', creation_id=cid)
     print(f'Instagram: published {rid} -> media {m["id"]}')
     post_first_comment(ig_api, m['id'], first_comment('toy', rid, os.path.join(REELS, rid, 'meta.json')))

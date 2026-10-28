@@ -11,7 +11,7 @@ Caption: reels/<id>/meta.json -> caption + hashtags. Appends the result to poste
 import argparse, datetime, glob, json, os, sys, time
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from first_comment import first_comment, post_first_comment  # noqa: E402
+from first_comment import first_comment, post_first_comment, guard_slot, SlotTaken  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CFG = json.load(open(os.path.join(ROOT, 'config.json')))
@@ -102,6 +102,10 @@ def main():
         wait = (target - datetime.datetime.now(datetime.timezone.utc)).total_seconds()
         if wait > 0:
             print(f'video ready; waiting {wait:.0f} s to publish at {target:%H:%M:%S} UTC', flush=True); time.sleep(wait)
+    try:
+        guard_slot(api, ig)
+    except SlotTaken as e:
+        print(f'::warning::{e}'); return
     m = api('POST', f'/{ig}/media_publish', creation_id=cid)
     log = json.load(open(LOG)) if os.path.exists(LOG) else []
     log.append({'id': rid, 'media_id': m['id'], 'posted_at': datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds')})
