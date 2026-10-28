@@ -93,7 +93,7 @@ Folder: [`mechanic-shorts/`](mechanic-shorts/)
 
 | Video | Title | Status |
 |---|---|---|
-| [01-car-differential](mechanic-shorts/01-car-differential.mp4) | How a car's differential works | Not scheduled |
+| [01-car-differential](mechanic-shorts/01-car-differential.mp4) | How a car's differential works | Not on YouTube |
 | [02-gimli-fuel-mistake](mechanic-shorts/02-gimli-fuel-mistake.mp4) | One number emptied this jet's tanks | YouTube: 2026-11-02 |
 | [03-gimli-tiny-propeller](mechanic-shorts/03-gimli-tiny-propeller.mp4) | The tiny propeller that saved 69 people | YouTube: 2026-11-02 |
 | [04-gimli-racetrack-landing](mechanic-shorts/04-gimli-racetrack-landing.mp4) | A jet landed in the middle of a car race | YouTube: 2026-11-02 |
@@ -124,7 +124,7 @@ Folder: [`anatomy/`](anatomy/)
 
 | Video | Title | Status |
 |---|---|---|
-| [27-cubital-fossa](anatomy/27-cubital-fossa.mp4) | The Cubital Fossa, Dissected Layer by Layer 🩺 | Not scheduled |
+| [27-cubital-fossa](anatomy/27-cubital-fossa.mp4) | The Cubital Fossa, Dissected Layer by Layer 🩺 | Not on YouTube |
 
 ## Long YouTube videos
 Too big for a GitHub folder (over 100 MB), so they live in Releases:
