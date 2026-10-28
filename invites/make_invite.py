@@ -112,28 +112,73 @@ for r in range(80, 0, -2):
     ImageDraw.Draw(GLOW).ellipse([80 - r, 80 - r, 80 + r, 80 + r], fill=(255, 190, 80, int(90 * (1 - r / 80) ** 2)))
 
 
-def frame(card, t, bgcache):
-    s = 1.0 + 0.05 * (t / DUR)  # slow push in
-    cw, ch = card.size; vw, vh = cw / s, ch / s; x0, y0 = (cw - vw) / 2, (ch - vh) * 0.45
-    view = card.crop((int(x0), int(y0), int(x0 + vw), int(y0 + vh))).resize((W, int(W * ch / cw)), Image.BILINEAR)
+def star(sz):  # a soft four-point golden twinkle
+    im = Image.new('RGBA', (sz * 2, sz * 2), (0, 0, 0, 0)); d = ImageDraw.Draw(im); c = sz
+    d.polygon([(c, 0), (c + sz * 0.16, c - sz * 0.16), (2 * c, c), (c + sz * 0.16, c + sz * 0.16), (c, 2 * c), (c - sz * 0.16, c + sz * 0.16), (0, c), (c - sz * 0.16, c - sz * 0.16)], fill=(255, 236, 170, 255))
+    return Image.alpha_composite(im.filter(ImageFilter.GaussianBlur(1.2)), im)
+
+
+STARS = [dict(x=rng.uniform(140, 884), y=rng.uniform(60, 1480), ph=rng.random(), sp=rng.uniform(0.3, 0.6), im=star(rng.randint(9, 18))) for _ in range(34)]
+DUST = [dict(x=rng.uniform(0, W), y=rng.uniform(0, H), v=rng.uniform(25, 60), r=rng.randint(3, 8), ph=rng.random()) for _ in range(30)]
+DOT = {r: (lambda r: (lambda im: (ImageDraw.Draw(im).ellipse([r, r, 3 * r, 3 * r], fill=(255, 215, 120, 150)), im.filter(ImageFilter.GaussianBlur(r * 0.6)))[1])(Image.new('RGBA', (4 * r, 4 * r), (0, 0, 0, 0))))(r) for r in range(3, 9)}
+BAND = Image.new('RGBA', (260, 260), (0, 0, 0, 0))
+for i in range(260):
+    ImageDraw.Draw(BAND).line([(i, 0), (i, 259)], fill=(255, 250, 225, int(110 * math.exp(-((i - 130) / 45) ** 2))))
+BAND = BAND.rotate(-25, resample=Image.BICUBIC, expand=True)
+CAMS = {'hi': [(0, 1, 768), (4.5, 1, 768), (6.5, 1.25, 300), (9.5, 1.3, 300), (11.5, 1.3, 700), (15, 1.32, 760), (17, 1.3, 1060), (22, 1.32, 1060), (24.5, 1.0, 768), (30, 1.04, 768)],
+        'en': [(0, 1, 768), (11.5, 1, 768), (13, 1.25, 300), (15.5, 1.3, 300), (17, 1.3, 700), (19.5, 1.32, 760), (21, 1.3, 1060), (24, 1.32, 1060), (26, 1.0, 768), (30, 1.03, 768)]}
+
+
+def cam(keys, t):  # smooth camera tour: (zoom, centre y on the card)
+    for (t0, s0, y0), (t1, s1, y1) in zip(keys, keys[1:]):
+        if t <= t1:
+            k = (t - t0) / max(1e-6, t1 - t0); k = k * k * (3 - 2 * k)
+            return s0 + (s1 - s0) * k, y0 + (y1 - y0) * k
+    return keys[-1][1], keys[-1][2]
+
+
+def frame(card, t, bgcache, keys):
+    s, cy = cam(keys, t)
+    cw, ch = card.size; vw = cw / s; vh = min(ch, vw * H / W); x0 = (cw - vw) / 2; y0 = min(max(0, cy - vh / 2), ch - vh)
+    view = card.crop((int(x0), int(y0), int(x0 + vw), int(y0 + vh))).resize((W, min(H, int(W * vh / vw))), Image.BILINEAR)
     fr = bgcache.copy(); fr.paste(view, (0, (H - view.height) // 2))
+    for p in DUST:  # golden dust drifting up
+        y = (p['y'] - p['v'] * t) % H; x = p['x'] + 20 * math.sin(t * 0.6 + p['ph'] * 6)
+        sp = DOT[p['r']]; fr.paste(sp, (int(x), int(y)), sp)
     for p in PETALS:
         y = (p['y'] + p['v'] * t) % (H + 200) - 100; x = p['x'] + 30 * math.sin(t * 0.8 + p['a'])
         sp = petal(p['s'], p['c'], p['a'] + p['w'] * t); fr.paste(sp, (int(x), int(y)), sp)
+    if t < 2.5:  # opening flower shower
+        for p in PETALS[:20]:
+            y = -60 + (t * 900) * (0.6 + p['v'] / 300) + p['x'] * 0.1; x = p['x'] + 60 * math.sin(t * 3 + p['a'])
+            sp = petal(p['s'] * 1.3, p['c'], p['a'] + t * 5); fr.paste(sp, (int(x), int(y)), sp)
     a = min(1, t / 1.2)
     if a < 1: fr = Image.blend(Image.new('RGB', fr.size, (252, 244, 222)), fr, a)
+    e = min(1, max(0, (DUR - t) / 1.5))
+    if e < 1: fr = Image.blend(Image.new('RGB', fr.size, (20, 10, 5)), fr, e)
     return fr
 
 
 def glow(card, t):
-    c = card.copy()
-    for i, (x, y) in enumerate([(268, 1388), (757, 1388)]):
+    c = card.copy().convert('RGBA')
+    for i, (x, y) in enumerate([(268, 1388), (757, 1388)]):  # diyas flicker
         k = 0.75 + 0.25 * math.sin(t * 11 + i * 2) * math.sin(t * 7.3 + i)
-        g = GLOW.resize((int(160 * k), int(160 * k))); c.paste(g, (x - g.width // 2, y - g.height // 2), g)
-    return c
+        g = GLOW.resize((int(160 * k), int(160 * k))); c.alpha_composite(g, (x - g.width // 2, y - g.height // 2))
+    k = 1.6 + 0.5 * math.sin(t * 2.2)  # Om pulse
+    g = GLOW.resize((int(160 * k), int(160 * k))); c.alpha_composite(g, (512 - g.width // 2, 92 - g.height // 2))
+    for p in STARS:  # twinkles
+        v = max(0.0, math.sin(2 * math.pi * (t * p['sp'] + p['ph']))) ** 6
+        if v > 0.05:
+            im = p['im'].resize((max(2, int(p['im'].width * (0.4 + 0.6 * v))),) * 2); c.alpha_composite(im, (int(p['x'] - im.width / 2), int(p['y'] - im.height / 2)))
+    for st in (5.0, 15.5, 26.0):  # light sweep over the title
+        if st <= t < st + 1.3:
+            x = int(150 + (t - st) / 1.3 * 760 - BAND.width / 2); box = (150, 140, 880, 350)
+            reg = c.crop(box); layer = Image.new('RGBA', reg.size, (0, 0, 0, 0)); layer.paste(BAND, (x - 150, -40), BAND)
+            c.paste(Image.alpha_composite(reg, layer), box[:2])
+    return c.convert('RGB')
 
 
-def render(name, card_at):
+def render(name, card_at, keys):
     bg = card_at(DUR).resize((W, H)).filter(ImageFilter.GaussianBlur(40))
     bg = Image.blend(bg, Image.new('RGB', bg.size, (40, 20, 10)), 0.35)
     ff = subprocess.Popen(['ffmpeg', '-y', '-loglevel', 'error', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-',
@@ -141,7 +186,7 @@ def render(name, card_at):
                            '-c:a', 'aac', '-b:a', '192k', '-shortest', '-movflags', '+faststart', os.path.join(OUT, name)], stdin=subprocess.PIPE)
     for i in range(int(DUR * FPS)):
         t = i / FPS
-        ff.stdin.write(frame(glow(card_at(t), t), t, bg).tobytes())
+        ff.stdin.write(frame(glow(card_at(t), t), t, bg, keys).tobytes())
     ff.stdin.close(); ff.wait()
     print('wrote', name)
 
@@ -212,11 +257,13 @@ def english_at(t):
         a = min(1, max(0, (t - st) / 0.5))
         if a <= 0: continue
         if a < 1:
-            im = im.copy(); im.putalpha(im.getchannel('A').point(lambda v: int(v * a)))
-        c.paste(im, (int(x), int(y + 14 * (1 - a))), im)
+            sc = 1 + 0.25 * (1 - a) * math.cos(a * 6)  # pop with a little bounce
+            w0, h0 = im.size; im = im.resize((max(1, int(w0 * sc)), max(1, int(h0 * sc))), Image.BICUBIC)
+            im.putalpha(im.getchannel('A').point(lambda v: int(v * a))); x, y = x - (im.width - w0) / 2, y - (im.height - h0) / 2
+        c.paste(im, (int(x), int(y)), im)
     return c
 
 
 music(os.path.join(OUT, 'music.wav'))
-render('griha-pravesh-hindi.mp4', hindi_at)
-render('griha-pravesh-english.mp4', english_at)
+render('griha-pravesh-hindi.mp4', hindi_at, CAMS['hi'])
+render('griha-pravesh-english.mp4', english_at, CAMS['en'])
