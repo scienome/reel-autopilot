@@ -1,0 +1,8 @@
+[{"chapter": "Santa's layoffs", "beats": [
+ {"id": "hook", "phrases": ["Santa replaced the elves with robots.", "The elves did not take it well."]},
+ {"id": "memo", "phrases": ["One email.", "Subject line:", "you're all fired. Merry Christmas."]},
+ {"id": "robots", "phrases": ["The robots worked twenty four seven.", "No breaks. No cookies. No mistakes."]},
+ {"id": "revenge", "phrases": ["So the elves did the one thing robots can't stop:", "they hacked the naughty list."]},
+ {"id": "twist", "phrases": ["Christmas morning,", "every child on Earth got coal.", "Santa got arrested."]},
+ {"id": "cta", "phrases": ["Whose side are you on? The elves or Santa?"]}
+]}]

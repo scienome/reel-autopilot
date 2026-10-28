@@ -1,0 +1,9 @@
+[{"chapter": "Bat-Guy's bill", "beats": [
+ {"id": "hook", "phrases": ["Bat-Guy beat every villain in the city.", "Except one.", "The electricity bill."]},
+ {"id": "signal", "phrases": ["The bat signal runs all night.", "Every night.", "For twenty years."]},
+ {"id": "bill", "phrases": ["The bill came in.", "Four point two million dollars."]},
+ {"id": "broke", "phrases": ["He sold the car.", "He sold the cape.", "He sold the butler."]},
+ {"id": "twist", "phrases": ["Then he did the only thing left:", "robbed a bank."]},
+ {"id": "caught", "phrases": ["Who caught him?", "Nobody.", "The city couldn't afford the signal anymore."]},
+ {"id": "cta", "phrases": ["What's your worst bill? Be honest."]}
+]}]
