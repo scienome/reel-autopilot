@@ -3,17 +3,23 @@ name: Post reel
 # (02:00, 08:00 and 16:00 UTC). 7:30 AM IST = evening in the USA (about 9 PM New York, 6 PM California);
 # 1:30 PM IST = lunchtime in India, early morning in the UK; 9:30 PM IST = prime time in India, late afternoon in
 # the UK and lunchtime in the USA.
-# GitHub often starts scheduled runs 30-60 minutes late, so the job is set to start 90 minutes early, uploads the
-# video so Instagram has it processed, then waits and publishes on the exact second. A backup start 25 minutes later
-# covers a skipped run; it sees the slot is already posted and does nothing.
+# GitHub starts scheduled runs late (90-125 minutes measured on this repo, Oct 2026), so every slot has three runs,
+# 4, 3 and 2 hours before it. The first to start uploads the video so Instagram has it processed, then waits and
+# publishes on the exact minute. The later runs queue behind it, see the slot is already posted and do nothing.
 on:
   schedule:
-    - cron: '30 0 * * *'
-    - cron: '55 0 * * *'
-    - cron: '30 6 * * *'
-    - cron: '55 6 * * *'
-    - cron: '30 14 * * *'
-    - cron: '55 14 * * *'
+    # 07:30 IST slot (02:00 UTC)
+    - cron: '49 21 * * *'
+    - cron: '49 22 * * *'
+    - cron: '49 23 * * *'
+    # 13:30 IST slot (08:00 UTC)
+    - cron: '49 3 * * *'
+    - cron: '49 4 * * *'
+    - cron: '49 5 * * *'
+    # 21:30 IST slot (16:00 UTC)
+    - cron: '49 11 * * *'
+    - cron: '49 12 * * *'
+    - cron: '49 13 * * *'
   workflow_dispatch:
     inputs:
       dry_run:
@@ -31,7 +37,7 @@ concurrency:
 jobs:
   post:
     runs-on: ubuntu-latest
-    timeout-minutes: 150
+    timeout-minutes: 320
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

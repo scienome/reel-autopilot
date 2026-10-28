@@ -50,9 +50,11 @@ def main():
         slots = []
         for s in a.at.split(','):
             hh, mm = map(int, s.split(':'))
-            slots.append(now.replace(hour=hh, minute=mm, second=0, microsecond=0))
-        # the slot this run belongs to: the next one, or one that passed less than 90 minutes ago (a very late run)
-        cands = [s for s in sorted(slots) if s > now - datetime.timedelta(minutes=90)]
+            for day in (0, 1):  # today's and tomorrow's slots: runs start up to 4 hours early, across midnight
+                slots.append(now.replace(hour=hh, minute=mm, second=0, microsecond=0) + datetime.timedelta(days=day))
+        # the slot this run belongs to: the next one within 4 h 15 min (runs start 4, 3 and 2 hours early because
+        # GitHub starts scheduled runs up to ~2 hours late), or one that passed less than 90 minutes ago (a very late run)
+        cands = [s for s in sorted(slots) if now - datetime.timedelta(minutes=90) < s <= now + datetime.timedelta(minutes=255)]
         if not cands:
             print('no posting slot near now; nothing to do'); return
         target = cands[0]

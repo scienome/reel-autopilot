@@ -4,7 +4,8 @@
 Usage: python3 tools/ig_mech_post.py [--dry-run] [--id 02-hitler-maus-tank]
 
 Reads davereels/schedule.json: each day's reels go out at times[0..2] (IST); a null slot posts nothing.
-A run picks the first reel whose slot is between 3 hours ago and 100 minutes from now, has a Release
+A run picks the first reel whose slot is between 3 hours ago and 4 h 15 min from now (runs start 4, 3 and 2 hours
+early because GitHub starts scheduled runs up to ~2 hours late), has a Release
 "davereel-<id>" and is not yet in ig_posted.json. It uploads the MP4 from that Release, waits for Instagram to
 process it, then publishes on the exact minute of the slot. One Reel per run. Slots missed by more than 3 hours
 are not posted late (use --id to post one by hand; --id takes any reel folder in davereels/reels and posts it now).
@@ -74,7 +75,7 @@ def main():
             sys.exit(f'{a.id} is not a reel in davereels/reels')
         pick = (now, a.id)
     else:
-        due = [(s, i) for s, i in items if i not in log and now - dt.timedelta(hours=3) <= s <= now + dt.timedelta(minutes=100)]
+        due = [(s, i) for s, i in items if i not in log and now - dt.timedelta(hours=3) <= s <= now + dt.timedelta(minutes=255)]
         if not due:
             nxt = next(((s, i) for s, i in sorted(items) if i not in log and s > now), None)
             print('no reel due now' + (f'; next: {nxt[1]} at {nxt[0]:%Y-%m-%d %H:%M} UTC' if nxt else '; nothing left in davereels/schedule.json'))
