@@ -31,25 +31,25 @@ Folder: [`dave-reels/`](dave-reels/)
 |---|---|---|
 | [01-alaska-door-plug](dave-reels/01-alaska-door-plug.mp4) | The plane that lost a wall at 16,000 feet | Posted on Instagram · on YouTube |
 | [02-hitler-maus-tank](dave-reels/02-hitler-maus-tank.mp4) | Hitler's 188-tonne tank | Posted on Instagram · on YouTube |
-| [03-cybertruck-window](dave-reels/03-cybertruck-window.mp4) | The Cybertruck's "unbreakable" window | Waiting to post · on YouTube |
-| [04-gates-blue-screen](dave-reels/04-gates-blue-screen.mp4) | Bill Gates' live blue screen | Waiting to post · on YouTube |
-| [05-demon-core](dave-reels/05-demon-core.mp4) | The Demon Core's screwdriver | Waiting to post · on YouTube |
-| [06-apollo10-turd](dave-reels/06-apollo10-turd.mp4) | Apollo 10's floating turd | Waiting to post · on YouTube |
-| [07-jobs-antenna](dave-reels/07-jobs-antenna.mp4) | Steve Jobs: "Just avoid holding it that way" | Waiting to post · on YouTube |
-| [08-tsar-bomba](dave-reels/08-tsar-bomba.mp4) | The bomb they made smaller to be safe | Waiting to post · on YouTube |
-| [09-exploding-whale](dave-reels/09-exploding-whale.mp4) | The exploding whale | Waiting to post · on YouTube |
-| [10-eiffel-tailor](dave-reels/10-eiffel-tailor.mp4) | The tailor who jumped off the Eiffel Tower | Waiting to post · on YouTube |
-| [11-zuckerberg-legs](dave-reels/11-zuckerberg-legs.mp4) | Zuckerberg's billion-dollar legs | Waiting to post · on YouTube |
-| [12-trump-catapult](dave-reels/12-trump-catapult.mp4) | Trump vs. the electric catapult | Waiting to post · on YouTube |
-| [13-space-body](dave-reels/13-space-body.mp4) | What space does to your body | Waiting to post · on YouTube |
-| [14-walkie-scorchie](dave-reels/14-walkie-scorchie.mp4) | The skyscraper that melts cars | Waiting to post · on YouTube |
-| [15-midgley](dave-reels/15-midgley.mp4) | The man who poisoned the planet twice | Waiting to post · on YouTube |
-| [16-lake-peigneur](dave-reels/16-lake-peigneur.mp4) | The oil rig that drained a lake | Waiting to post · on YouTube |
-| [17-starship-rud](dave-reels/17-starship-rud.mp4) | Rapid unscheduled disassembly | Waiting to post · on YouTube |
-| [18-molasses-flood](dave-reels/18-molasses-flood.mp4) | The Boston molasses flood | Waiting to post · on YouTube |
-| [19-mars-units](dave-reels/19-mars-units.mp4) | NASA's $125 million units mix-up | Waiting to post · on YouTube |
+| [03-cybertruck-window](dave-reels/03-cybertruck-window.mp4) | The Cybertruck's "unbreakable" window | Waiting to post |
+| [04-gates-blue-screen](dave-reels/04-gates-blue-screen.mp4) | Bill Gates' live blue screen | Waiting to post |
+| [05-demon-core](dave-reels/05-demon-core.mp4) | The Demon Core's screwdriver | Waiting to post |
+| [06-apollo10-turd](dave-reels/06-apollo10-turd.mp4) | Apollo 10's floating turd | Waiting to post |
+| [07-jobs-antenna](dave-reels/07-jobs-antenna.mp4) | Steve Jobs: "Just avoid holding it that way" | Waiting to post |
+| [08-tsar-bomba](dave-reels/08-tsar-bomba.mp4) | The bomb they made smaller to be safe | Waiting to post |
+| [09-exploding-whale](dave-reels/09-exploding-whale.mp4) | The exploding whale | Waiting to post |
+| [10-eiffel-tailor](dave-reels/10-eiffel-tailor.mp4) | The tailor who jumped off the Eiffel Tower | Waiting to post |
+| [11-zuckerberg-legs](dave-reels/11-zuckerberg-legs.mp4) | Zuckerberg's billion-dollar legs | Waiting to post |
+| [12-trump-catapult](dave-reels/12-trump-catapult.mp4) | Trump vs. the electric catapult | Waiting to post |
+| [13-space-body](dave-reels/13-space-body.mp4) | What space does to your body | Waiting to post |
+| [14-walkie-scorchie](dave-reels/14-walkie-scorchie.mp4) | The skyscraper that melts cars | Waiting to post |
+| [15-midgley](dave-reels/15-midgley.mp4) | The man who poisoned the planet twice | Waiting to post |
+| [16-lake-peigneur](dave-reels/16-lake-peigneur.mp4) | The oil rig that drained a lake | Waiting to post |
+| [17-starship-rud](dave-reels/17-starship-rud.mp4) | Rapid unscheduled disassembly | Waiting to post |
+| [18-molasses-flood](dave-reels/18-molasses-flood.mp4) | The Boston molasses flood | Waiting to post |
+| [19-mars-units](dave-reels/19-mars-units.mp4) | NASA's $125 million units mix-up | Waiting to post |
 | [20-north-korea-hotel](dave-reels/20-north-korea-hotel.mp4) | North Korea's hotel of doom | Posted on Instagram · on YouTube |
-| [21-galloping-gertie](dave-reels/21-galloping-gertie.mp4) | Galloping Gertie | Waiting to post · on YouTube |
+| [21-galloping-gertie](dave-reels/21-galloping-gertie.mp4) | Galloping Gertie | Waiting to post |
 
 ## Toy reels (Brick Toy) (31)
 Folder: [`toy-reels/`](toy-reels/)
@@ -94,30 +94,30 @@ Folder: [`mechanic-shorts/`](mechanic-shorts/)
 | Video | Title | Status |
 |---|---|---|
 | [01-car-differential](mechanic-shorts/01-car-differential.mp4) | How a car's differential works | Not on YouTube |
-| [02-gimli-fuel-mistake](mechanic-shorts/02-gimli-fuel-mistake.mp4) | One number emptied this jet's tanks | YouTube: 2026-11-02 |
-| [03-gimli-tiny-propeller](mechanic-shorts/03-gimli-tiny-propeller.mp4) | The tiny propeller that saved 69 people | YouTube: 2026-11-02 |
-| [04-gimli-racetrack-landing](mechanic-shorts/04-gimli-racetrack-landing.mp4) | A jet landed in the middle of a car race | YouTube: 2026-11-02 |
+| [02-gimli-fuel-mistake](mechanic-shorts/02-gimli-fuel-mistake.mp4) | One number emptied this jet's tanks | Not on YouTube |
+| [03-gimli-tiny-propeller](mechanic-shorts/03-gimli-tiny-propeller.mp4) | The tiny propeller that saved 69 people | Not on YouTube |
+| [04-gimli-racetrack-landing](mechanic-shorts/04-gimli-racetrack-landing.mp4) | A jet landed in the middle of a car race | Not on YouTube |
 | [05-comet-square-windows](mechanic-shorts/05-comet-square-windows.mp4) | Why plane windows can't be square | YouTube: 2026-10-28 |
 | [06-comet-crashes](mechanic-shorts/06-comet-crashes.mp4) | The first jet airliner kept falling apart | YouTube: 2026-10-28 |
-| [07-cabin-pressure](mechanic-shorts/07-cabin-pressure.mp4) | Your plane is a metal balloon | YouTube: 2026-10-28 |
-| [08-otis-safety-brake](mechanic-shorts/08-otis-safety-brake.mp4) | He cut the only rope, on purpose | YouTube: 2026-10-29 |
-| [09-elevator-75-floor-fall](mechanic-shorts/09-elevator-75-floor-fall.mp4) | She fell 75 floors in an elevator and lived | YouTube: 2026-10-29 |
-| [10-elevator-many-cables](mechanic-shorts/10-elevator-many-cables.mp4) | Why elevators have so many cables | YouTube: 2026-10-29 |
-| [11-titan-pressure-depth](mechanic-shorts/11-titan-pressure-depth.mp4) | The pressure at the Titanic's depth | YouTube: 2026-10-30 |
-| [12-titan-carbon-fibre](mechanic-shorts/12-titan-carbon-fibre.mp4) | Why Titan's carbon fibre hull failed | YouTube: 2026-10-30 |
-| [13-titan-milliseconds](mechanic-shorts/13-titan-milliseconds.mp4) | The Titan implosion took milliseconds | YouTube: 2026-10-30 |
-| [14-hudson-bird-strike](mechanic-shorts/14-hudson-bird-strike.mp4) | What a goose does to a jet engine | YouTube: 2026-10-31 |
-| [15-hudson-208-seconds](mechanic-shorts/15-hudson-208-seconds.mp4) | 208 seconds to land on a river | YouTube: 2026-10-31 |
-| [16-hudson-water-landing](mechanic-shorts/16-hudson-water-landing.mp4) | Why landing on water is so hard | YouTube: 2026-10-31 |
-| [17-titanic-weak-rivets](mechanic-shorts/17-titanic-weak-rivets.mp4) | The Titanic's weak rivets | YouTube: 2026-11-01 |
-| [18-titanic-bulkheads](mechanic-shorts/18-titanic-bulkheads.mp4) | Why the Titanic's watertight walls failed | YouTube: 2026-11-01 |
-| [19-titanic-head-on](mechanic-shorts/19-titanic-head-on.mp4) | Could hitting head-on have saved the Titanic? | YouTube: 2026-11-01 |
-| [20-chernobyl-reactor-power](mechanic-shorts/20-chernobyl-reactor-power.mp4) | How Chernobyl's reactor made power | YouTube: 2026-11-02 |
-| [21-chernobyl-az5-flaw](mechanic-shorts/21-chernobyl-az5-flaw.mp4) | Chernobyl's shutdown button made it worse | YouTube: 2026-11-02 |
-| [22-chernobyl-roof](mechanic-shorts/22-chernobyl-roof.mp4) | Why Chernobyl's roof went flying | YouTube: 2026-11-02 |
-| [23-apollo13-tank-blast](mechanic-shorts/23-apollo13-tank-blast.mp4) | The tank that was broken before Apollo 13 launched | YouTube: 2026-11-03 |
-| [24-apollo13-square-filter](mechanic-shorts/24-apollo13-square-filter.mp4) | A square filter in a round hole | YouTube: 2026-11-03 |
-| [25-apollo13-moon-slingshot](mechanic-shorts/25-apollo13-moon-slingshot.mp4) | Apollo 13's slingshot around the Moon | YouTube: 2026-11-03 |
+| [07-cabin-pressure](mechanic-shorts/07-cabin-pressure.mp4) | Your plane is a metal balloon | Not on YouTube |
+| [08-otis-safety-brake](mechanic-shorts/08-otis-safety-brake.mp4) | He cut the only rope, on purpose | Not on YouTube |
+| [09-elevator-75-floor-fall](mechanic-shorts/09-elevator-75-floor-fall.mp4) | She fell 75 floors in an elevator and lived | Not on YouTube |
+| [10-elevator-many-cables](mechanic-shorts/10-elevator-many-cables.mp4) | Why elevators have so many cables | Not on YouTube |
+| [11-titan-pressure-depth](mechanic-shorts/11-titan-pressure-depth.mp4) | The pressure at the Titanic's depth | Not on YouTube |
+| [12-titan-carbon-fibre](mechanic-shorts/12-titan-carbon-fibre.mp4) | Why Titan's carbon fibre hull failed | Not on YouTube |
+| [13-titan-milliseconds](mechanic-shorts/13-titan-milliseconds.mp4) | The Titan implosion took milliseconds | Not on YouTube |
+| [14-hudson-bird-strike](mechanic-shorts/14-hudson-bird-strike.mp4) | What a goose does to a jet engine | Not on YouTube |
+| [15-hudson-208-seconds](mechanic-shorts/15-hudson-208-seconds.mp4) | 208 seconds to land on a river | Not on YouTube |
+| [16-hudson-water-landing](mechanic-shorts/16-hudson-water-landing.mp4) | Why landing on water is so hard | Not on YouTube |
+| [17-titanic-weak-rivets](mechanic-shorts/17-titanic-weak-rivets.mp4) | The Titanic's weak rivets | Not on YouTube |
+| [18-titanic-bulkheads](mechanic-shorts/18-titanic-bulkheads.mp4) | Why the Titanic's watertight walls failed | Not on YouTube |
+| [19-titanic-head-on](mechanic-shorts/19-titanic-head-on.mp4) | Could hitting head-on have saved the Titanic? | Not on YouTube |
+| [20-chernobyl-reactor-power](mechanic-shorts/20-chernobyl-reactor-power.mp4) | How Chernobyl's reactor made power | Not on YouTube |
+| [21-chernobyl-az5-flaw](mechanic-shorts/21-chernobyl-az5-flaw.mp4) | Chernobyl's shutdown button made it worse | Not on YouTube |
+| [22-chernobyl-roof](mechanic-shorts/22-chernobyl-roof.mp4) | Why Chernobyl's roof went flying | Not on YouTube |
+| [23-apollo13-tank-blast](mechanic-shorts/23-apollo13-tank-blast.mp4) | The tank that was broken before Apollo 13 launched | Not on YouTube |
+| [24-apollo13-square-filter](mechanic-shorts/24-apollo13-square-filter.mp4) | A square filter in a round hole | Not on YouTube |
+| [25-apollo13-moon-slingshot](mechanic-shorts/25-apollo13-moon-slingshot.mp4) | Apollo 13's slingshot around the Moon | Not on YouTube |
 
 ## Anatomy (1)
 Folder: [`anatomy/`](anatomy/)
@@ -131,12 +131,12 @@ Too big for a GitHub folder (over 100 MB), so they live in Releases:
 
 | Video | Download | YouTube |
 |---|---|---|
-| How a Jet Flew With No Engines (The Gimli Glider) | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-001-gimli-glider) | https://youtu.be/tvgFBect824 |
+| How a Jet Flew With No Engines (The Gimli Glider) | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-001-gimli-glider) |  |
 | Why Plane Windows Are Round (3 Jets Fell Apart First) | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-002-plane-windows) | https://youtu.be/V0X6W1LDHek |
-| What Happens If an Elevator Cable Snaps? | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-003-elevator-cable) | https://youtu.be/Fy6Wig2GwdE |
-| How the Titan Submarine Imploded | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-004-titan-submarine) | https://youtu.be/Ds0eT6RPXmo |
-| The Plane That Landed on a River (Miracle on the Hudson) | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-005-miracle-on-the-hudson) | https://youtu.be/FDXWOH72pJI |
-| What Really Sank the Titanic (It Wasn't Just the Iceberg) | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-006-titanic) | https://youtu.be/Mn7ucUDdY_c |
-| The Button That Blew Up Chernobyl | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-007-chernobyl) | https://youtu.be/fw27jdDmf_A |
-| How 3 Astronauts Survived Apollo 13 With Duct Tape | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-008-apollo-13) | https://youtu.be/ZJlf4gaO11k |
+| What Happens If an Elevator Cable Snaps? | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-003-elevator-cable) |  |
+| How the Titan Submarine Imploded | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-004-titan-submarine) |  |
+| The Plane That Landed on a River (Miracle on the Hudson) | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-005-miracle-on-the-hudson) |  |
+| What Really Sank the Titanic (It Wasn't Just the Iceberg) | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-006-titanic) |  |
+| The Button That Blew Up Chernobyl | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-007-chernobyl) |  |
+| How 3 Astronauts Survived Apollo 13 With Duct Tape | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-008-apollo-13) |  |
 | What If the Moon Disappeared? (Built in Toy Bricks) | [Release](https://github.com/scienome/reel-autopilot/releases/tag/video-001-moon-disappeared) |  |
