@@ -82,5 +82,16 @@
  "21-galloping-gertie": {
   "skipped": true,
   "why": "made before the Oct 28 upgrade; never posted"
+ },
+ "mechreel-01-car-differential": {
+  "slot": "2026-10-28T15:00Z",
+  "youtube": {
+   "id": "wEU-lE8YQCU",
+   "url": "https://youtu.be/wEU-lE8YQCU",
+   "publish_utc": "now",
+   "title": "How a car's differential works #shorts"
+  },
+  "media_id": "17948173365075772",
+  "posted_at": "2026-10-28T15:04:04+00:00"
  }
 }
