@@ -46,10 +46,14 @@ IST from `schedule.json`, using the MP4 from each `davereel-<id>` Release; a slo
 skipped. Posted reels are recorded in `/ig_posted.json`. To post one by hand: Actions → Post Gears & Glitches reels to
 Instagram → Run workflow, type the id in "short", first with "dry run" ticked, then unticked.
 
+## Automatic new Reels
+A scheduled Claude session runs every 3 days and keeps at least 7 days of Reels scheduled ahead, following
+[`PLAYBOOK.md`](PLAYBOOK.md). Edit the playbook to change the rules, topics or tone for future runs.
+
 ## Reels
 | # | Reel | Slot (IST) |
 |---|---|---|
-| 01 | The plane that lost a wall at 16,000 feet | Wed 28 Oct (see schedule.json) |
+| 01 | The plane that lost a wall at 16,000 feet | Wed 28 Oct 08:30 |
 | 02 | Hitler's 188-tonne tank | posted early by hand |
 | 03 | The Cybertruck's "unbreakable" window | Wed 28 Oct 20:30 |
 | 04 | Bill Gates' live blue screen | Thu 29 Oct 08:30 |
@@ -68,5 +72,5 @@ Instagram → Run workflow, type the id in "short", first with "dry run" ticked,
 | 17 | Rapid unscheduled disassembly | Mon 2 Nov 12:30 |
 | 18 | The Boston molasses flood | Mon 2 Nov 20:30 |
 | 19 | NASA's $125 million units mix-up | Tue 3 Nov 08:30 |
-| 20 | North Korea's hotel of doom | Tue 3 Nov 12:30 |
+| 20 | North Korea's hotel of doom | Wed 28 Oct 12:30 (moved by the owner) |
 | 21 | Galloping Gertie | Tue 3 Nov 20:30 |
