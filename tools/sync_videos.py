@@ -58,7 +58,8 @@ def put(dst, src_path=None, url=None, size=None):
 
 def main():
     vids = os.path.abspath(sys.argv[1])
-    couch_posted = {p['id'] for p in load('posted.json', [])}
+    couch_log = load('posted.json', []); couch_posted = {p['id'] for p in couch_log if not p.get('skipped')}
+    couch_skipped = {p['id'] for p in couch_log if p.get('skipped')}
     dave_ig, dave_yt = load('ig_posted.json', {}), load('davereels/youtube_posted.json', {})
     toy_log, yt_log = load('toyreels/posted.json', {}), load('youtube_posted.json', {})
     rows = {k: [] for k in ('couch-sarcasm', 'dave-reels', 'toy-reels', 'mechanic-shorts', 'anatomy')}
@@ -69,7 +70,7 @@ def main():
         if not f.endswith('.mp4'): continue
         rid = f[:-4]; src = os.path.join(ROOT, 'out', f)
         put(os.path.join(vids, 'couch-sarcasm', f), src_path=src, size=os.path.getsize(src))
-        rows['couch-sarcasm'].append((rid, title('reels', rid), 'Posted on Instagram' if rid in couch_posted else 'Waiting to post'))
+        rows['couch-sarcasm'].append((rid, title('reels', rid), 'Posted on Instagram' if rid in couch_posted else 'Skipped (older kind, never posted)' if rid in couch_skipped else 'Waiting to post'))
 
     for rel in sorted(releases(), key=lambda r: r['tag_name']):
         tag = rel['tag_name']; prefix, _, rid = tag.partition('-')
@@ -79,7 +80,7 @@ def main():
             yt = yt_log.get(tag, {})
             longs.append((rid, rel.get('name') or rid, rel['html_url'], yt.get('url', ''))); continue
         if prefix == 'davereel':
-            folder, st = 'dave-reels', ('Posted on Instagram' if 'media_id' in dave_ig.get(rid, {}) else 'Waiting to post') + (' · on YouTube' if rid in dave_yt or 'youtube' in dave_ig.get(rid, {}) else '')
+            folder, st = 'dave-reels', ('Posted on Instagram' if 'media_id' in dave_ig.get(rid, {}) else 'Skipped (older kind, never posted)' if dave_ig.get(rid, {}).get('skipped') else 'Waiting to post') + (' · on YouTube' if rid in dave_yt or 'youtube' in dave_ig.get(rid, {}) else '')
             name = title('davereels/reels', rid)
         elif prefix == 'toyreel':
             e = toy_log.get(rid, {}); folder, name = 'toy-reels', title('toyreels/reels', rid)

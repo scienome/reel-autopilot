@@ -62,7 +62,7 @@ def main():
             print('no posting slot near now; nothing to do'); return
         target = cands[0]
         log = json.load(open(LOG)) if os.path.exists(LOG) else []
-        if any(datetime.datetime.fromisoformat(p['posted_at']) > target - datetime.timedelta(hours=3) for p in log):
+        if any(datetime.datetime.fromisoformat(p['posted_at']) > target - datetime.timedelta(hours=3) for p in log if p.get('posted_at')):
             print(f'already posted for the {target:%H:%M} UTC slot (backup run): nothing to do'); return
         print(f'slot {target:%H:%M} UTC; publishing exactly then')
     q = queue()
