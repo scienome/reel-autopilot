@@ -1,0 +1,11 @@
+[
+ { "id": "hook", "phrases": ["POV:", "his mom is staying", "for one week."] },
+ { "id": "day1", "phrases": ["Day one.", "Three suitcases."] },
+ { "id": "day30", "phrases": ["Day thirty.", "She's in his spot on the couch."] },
+ { "id": "day90", "phrases": ["Day ninety.", "She took the remote.", "And the wifi password."] },
+ { "id": "side", "phrases": ["Every fight?", "She takes his side."] },
+ { "id": "day400", "phrases": ["Day four hundred.", "He smiles.", "Isn't this nice?"] },
+ { "id": "bell", "phrases": ["Day four hundred and one.", "Doorbell."] },
+ { "id": "twist", "phrases": ["Her mom.", "Four suitcases."] },
+ { "id": "close", "phrases": ["Welcome to", "the cold war."] }
+]

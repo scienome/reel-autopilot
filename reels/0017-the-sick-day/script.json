@@ -1,0 +1,11 @@
+[
+ { "id": "hook", "phrases": ["Never fake being sick", "to skip her friend's party."] },
+ { "id": "cough", "phrases": ["He coughs.", "I think I'm dying."] },
+ { "id": "she", "phrases": ["She says,", "Rest, baby."] },
+ { "id": "free", "phrases": ["The door closes.", "Pizza.", "Game.", "Freedom."] },
+ { "id": "party", "phrases": ["At the party,", "she makes an announcement."] },
+ { "id": "bell", "phrases": ["Ten minutes later.", "Doorbell."] },
+ { "id": "friends", "phrases": ["All her friends.", "With soup.", "And a camera."] },
+ { "id": "live", "phrases": ["Streaming live.", "He's holding a controller", "and a pizza."] },
+ { "id": "close", "phrases": ["Get well soon,", "champ."] }
+]
