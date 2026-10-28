@@ -1,0 +1,9 @@
+[{"chapter": "Dracula's heist", "beats": [
+ {"id": "hook", "phrases": ["Dracula robbed a blood bank.", "Worst decision of his afterlife."]},
+ {"id": "heist", "phrases": ["Five hundred bags.", "One night.", "A perfect heist."]},
+ {"id": "drink", "phrases": ["He drank every single one.", "Every donor was an energy drink addict."]},
+ {"id": "effect", "phrases": ["His heart started beating.", "For the first time in four hundred years."]},
+ {"id": "wired", "phrases": ["He didn't sleep for three months.", "He started a podcast.", "He did his taxes. Twice."]},
+ {"id": "twist", "phrases": ["Then the sun came up.", "He was too wired to notice.", "For about four seconds."]},
+ {"id": "cta", "phrases": ["Coffee or energy drinks? Dracula needs to know."]}
+]}]
