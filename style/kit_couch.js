@@ -66,6 +66,123 @@
     return { CAMS, POSE, label, card, bubble, stamp, zzz, hearts, meme, sounds, autoCaps };
   })();
 
+  // ==================== the bigger world: locations, outfits, extra characters, pets ====================
+  // spec.set: 'living' (default) | 'bedroom' | 'kitchen' | 'restaurant' | 'car' | 'mall' | 'party' | 'wedding' | 'street'
+  //   (opt: { banner: 'HAPPY ANNIVERSARY', signs: [...] , table: false }). Kitchen, mall, party, wedding and street stand
+  //   the couple up (cameras lift to match); he / she { sit: true | false } overrides. They keep their usual places
+  //   (him at x -0.62, her at x 0.62), so 'him' / 'her' / 'two' / 'wide' cameras work everywhere.
+  // he / she: { outfit: 'suit' | 'pajamas' | 'gym' | 'party' | 'wedding' | 'dress' | 'apron' | 'winter' | 'towel', cap: col,
+  //   shirt, pants, hair, x, z, yaw, sit } on top of the usual pose options.
+  // spec.extras: [{ who: 'mil' | 'dad' | 'bff' | 'bro' | 'ex' | 'exgirl' | 'delivery' | 'waiter' | 'cop' | 'boss' | 'kid',
+  //   x, z, yaw, sit, arms, head, face, outfit, hide } or (t, u) => [...]]  (fx can point at them with who: 'mil' etc.)
+  // spec.pets: [{ kind: 'dog' | 'cat', x, z, yaw, col }]
+  // cam: 'on' with on: [x, y, z] frames a close-up on any point (an extra's head, a prop).
+  const COUCHWORLD = (() => {
+    const WZ = -1.25;
+    const wall = (S, col, paint) => S.quad([[-7, 0, WZ], [7, 0, WZ], [7, 4.2, WZ], [-7, 4.2, WZ]], col, { bg: true, z: 99, paint: paint && ((c, w, h) => { c.save(); c.translate(0, h); c.scale(1, -1); paint(c, w, h); c.restore(); }) }); // the quad maps its texture from the floor up: flip so y = 0 is the top and text reads
+    const floor = (S, col, paint) => S.quad([[-7, 0, WZ], [7, 0, WZ], [7, 0, 9], [-7, 0, 9]], col, { z: 98, paint });
+    const planks = (n) => (c, w, h) => { for (let i = 0; i < n; i++) { c.fillStyle = i % 2 ? 'rgba(0,0,0,0.05)' : 'rgba(255,230,200,0.04)'; c.fillRect((i * w) / n, 0, w / n, h); } };
+    const checker = (n, a, b) => (c, w, h) => { for (let i = 0; i < n; i++) for (let j = 0; j < n; j++) { c.fillStyle = (i + j) & 1 ? a : b; c.fillRect((i * w) / n, (j * h) / n, w / n + 1, h / n + 1); } };
+    const glow = (c, x, y, r, col) => { const g = c.createRadialGradient(x, y, 2, x, y, r); g.addColorStop(0, col); g.addColorStop(1, 'rgba(0,0,0,0)'); c.fillStyle = g; c.fillRect(x - r, y - r, 2 * r, 2 * r); };
+    const txt = (c, s2, x, y, px, col) => { c.font = FONT(900, px); c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillStyle = col; c.fillText(s2, x, y); };
+    const SETS = {
+      living: { stand: false, build: (S, o) => livingRoom(S, Object.assign({ table: true }, o)) },
+      bedroom: { stand: false, build: (S) => {
+        wall(S, [92, 96, 146], (c, w, h) => { glow(c, w * 0.5, h * 0.62, w * 0.3, 'rgba(255,200,140,0.35)'); c.fillStyle = '#1c2250'; c.fillRect(w * 0.62, h * 0.3, w * 0.12, h * 0.22); c.fillStyle = '#f2ecc8'; c.beginPath(); c.arc(w * 0.7, h * 0.36, h * 0.03, 0, TAU); c.fill(); c.strokeStyle = '#e8e0d0'; c.lineWidth = 6; c.strokeRect(w * 0.62, h * 0.3, w * 0.12, h * 0.22); });
+        floor(S, [118, 84, 70], planks(26));
+        S.rbox((p) => add(p, [0, 0.27, -0.62]), 1.9, 0.2, 0.62, [240, 236, 228], { bevel: 0.3, bias: 0.6 });
+        S.rbox((p) => add(p, [0, 0.42, -0.5]), 1.85, 0.06, 0.55, [120, 150, 210], { bevel: 0.5, bias: 0.55 });
+        S.rbox((p) => add(p, [0, 0.95, -1.18]), 1.95, 0.55, 0.06, [110, 74, 52], { bevel: 0.3, bg: true });
+        [-0.62, 0.62].forEach((x) => S.rbox((p) => add(p, [x, 0.6, -1.05]), 0.4, 0.1, 0.16, [250, 248, 240], { bevel: 0.6 }));
+        [-2.25, 2.25].forEach((x) => { S.rbox((p) => add(p, [x, 0.3, -0.95]), 0.28, 0.3, 0.26, [130, 86, 60], { bevel: 0.2 }); S.ball([x, 0.82, -0.95], [0.16, 0.18, 0.16], [255, 220, 150], { gloss: 0.4 }); });
+      } },
+      kitchen: { stand: true, build: (S) => {
+        wall(S, [214, 222, 214], (c, w, h) => { for (let i = 0; i < 40; i++) for (let j = 0; j < 10; j++) { c.fillStyle = (i + j) & 1 ? 'rgba(255,255,255,0.35)' : 'rgba(0,0,0,0.03)'; c.fillRect((i * w) / 40, h * 0.62 + (j * h * 0.2) / 10, w / 40, (h * 0.2) / 10); } c.fillStyle = '#7a9a8a'; c.fillRect(w * 0.25, h * 0.12, w * 0.5, h * 0.22); c.strokeStyle = 'rgba(0,0,0,0.2)'; c.lineWidth = 3; for (let k = 1; k < 5; k++) { c.beginPath(); c.moveTo(w * (0.25 + k * 0.1), h * 0.12); c.lineTo(w * (0.25 + k * 0.1), h * 0.34); c.stroke(); } });
+        floor(S, [200, 196, 186], checker(24, '#c8c2b4', '#e2ddd0'));
+        S.rbox((p) => add(p, [0, 0.46, -1.0]), 2.6, 0.46, 0.26, [110, 150, 140], { bevel: 0.15 }); S.rbox((p) => add(p, [0, 0.94, -1.0]), 2.65, 0.03, 0.28, [236, 232, 222], { bevel: 0.3 });
+        S.rbox((p) => add(p, [2.3, 1.0, -0.9]), 0.42, 1.0, 0.36, [236, 238, 242], { bevel: 0.15, paint: (c, w, h) => { c.fillStyle = 'rgba(0,0,0,0.15)'; c.fillRect(0, h * 0.38, w, h * 0.02); c.fillStyle = '#9aa0aa'; c.fillRect(w * 0.08, h * 0.12, w * 0.05, h * 0.2); } });
+        S.cyl((p) => add(p, [-0.9, 0.97, -1.0]), 0.16, 0.16, [70, 70, 80], 14);
+      } },
+      restaurant: { stand: false, build: (S, o) => {
+        wall(S, [96, 30, 40], (c, w, h) => { c.fillStyle = '#1a1c3a'; c.fillRect(w * 0.3, h * 0.2, w * 0.4, h * 0.38); const r = H.rng(3); for (let i = 0; i < 40; i++) { c.fillStyle = `rgba(255,${200 + r.range(0, 50) | 0},120,${r.range(0.4, 0.9)})`; c.fillRect(w * 0.3 + r.range(0, w * 0.4), h * 0.3 + r.range(0, h * 0.28), 4, 6); } c.strokeStyle = '#d8b060'; c.lineWidth = 8; c.strokeRect(w * 0.3, h * 0.2, w * 0.4, h * 0.38); glow(c, w * 0.15, h * 0.5, w * 0.12, 'rgba(255,190,110,0.35)'); glow(c, w * 0.85, h * 0.5, w * 0.12, 'rgba(255,190,110,0.35)'); });
+        floor(S, [86, 52, 42], planks(30));
+        [-0.62, 0.62].forEach((x) => S.rbox((p) => add(p, [x, 0.75, -0.75]), 0.3, 0.32, 0.05, [60, 30, 26], { bevel: 0.3 }));
+        if (o.table !== false) { S.rbox((p) => add(p, [0, 0.72, 0.22]), 1.15, 0.03, 0.34, [246, 244, 238], { bevel: 0.3, bias: -0.3 }); S.rbox((p) => add(p, [0, 0.36, 0.22]), 0.06, 0.36, 0.06, [60, 40, 30], { bevel: 0.3 });
+          [-0.45, 0.45].forEach((x) => S.cyl((p) => add(p, [x, 0.75, 0.22]), 0.13, 0.015, [250, 250, 250], 16)); S.cyl((p) => add(p, [0, 0.75, 0.22]), 0.025, 0.12, [250, 240, 220], 8); S.ball([0, 0.9, 0.22], [0.025, 0.04, 0.025], [255, 200, 90], { gloss: 0.6 }); }
+      } },
+      car: { stand: false, build: (S) => {
+        wall(S, [20, 22, 44], (c, w, h) => { const g = c.createLinearGradient(0, 0, 0, h); g.addColorStop(0, '#141836'); g.addColorStop(1, '#3a3060'); c.fillStyle = g; c.fillRect(0, 0, w, h); c.fillStyle = '#2a2a36'; c.fillRect(0, h * 0.62, w, h * 0.38); c.fillStyle = 'rgba(255,230,160,0.8)'; for (let i = 0; i < 9; i++) c.fillRect((i * w) / 9 + 20, h * 0.78, w / 30, 6); for (let i = 0; i < 7; i++) { glow(c, (i * w) / 6, h * 0.35, 40, 'rgba(255,210,120,0.5)'); } });
+        floor(S, [30, 30, 36]);
+        [-0.62, 0.62].forEach((x) => { S.rbox((p) => add(p, [x, 0.42, -0.5]), 0.36, 0.14, 0.32, [60, 60, 70], { bevel: 0.4 }); S.rbox((p) => add(rotX(p, -0.2), [x, 0.95, -0.82]), 0.34, 0.42, 0.08, [70, 70, 82], { bevel: 0.5 }); });
+        S.rbox((p) => add(p, [0, 0.82, 0.45]), 1.7, 0.12, 0.25, [40, 40, 48], { bevel: 0.3, bias: -0.4 });
+        S.cyl((p) => add(rotX(p, 1.2), [-0.62, 0.98, 0.32]), 0.2, 0.03, [30, 30, 34], 20, { bias: -0.5 });
+        [-1.25, 1.25].forEach((x) => S.rbox((p) => add(rotZ(p, x > 0 ? -0.35 : 0.35), [x, 1.5, 0.3]), 0.04, 0.8, 0.04, [40, 40, 48], { bevel: 0.3 }));
+      } },
+      mall: { stand: true, build: (S, o) => {
+        const sg = o.signs || ['SALE 70%', 'SHOES', 'PHONES'];
+        wall(S, [236, 232, 240], (c, w, h) => { [0.08, 0.38, 0.68].forEach((x, i) => { c.fillStyle = ['#e85a8a', '#4a8ae8', '#f0b030'][i]; c.fillRect(w * x, h * 0.3, w * 0.24, h * 0.07); txt(c, sg[i] || '', w * (x + 0.12), h * 0.335, h * 0.045, '#fff'); c.fillStyle = 'rgba(160,200,230,0.55)'; c.fillRect(w * x, h * 0.38, w * 0.24, h * 0.42); c.fillStyle = 'rgba(255,255,255,0.4)'; c.fillRect(w * (x + 0.02), h * 0.4, w * 0.03, h * 0.35); }); });
+        floor(S, [230, 226, 220], checker(20, '#e8e4dc', '#d8d2c8'));
+      } },
+      party: { stand: true, build: (S, o) => {
+        wall(S, [70, 40, 96], (c, w, h) => { for (let i = 0; i < 26; i++) { const x = (i / 25) * w, y = h * 0.18 + Math.sin(i * 0.9) * h * 0.03; c.fillStyle = ['#ffd23f', '#ff6a8a', '#6ae0ff', '#9aff6a'][i % 4]; c.beginPath(); c.arc(x, y, 7, 0, TAU); c.fill(); } if (o.banner) { c.fillStyle = '#f2e6ff'; c.fillRect(w * 0.25, h * 0.26, w * 0.5, h * 0.08); txt(c, o.banner, w / 2, h * 0.3, h * 0.04, '#6a2a8a'); } });
+        floor(S, [60, 40, 70], checker(18, '#3c2c4a', '#4c3a5c'));
+        const r = H.rng(9); for (let i = 0; i < 7; i++) { const x = -2.4 + i * 0.8 + r.range(-0.2, 0.2), y = 2.1 + r.range(0, 0.5); S.ball([x, y, -1.0], [0.17, 0.21, 0.17], [[240, 80, 120], [80, 160, 240], [255, 210, 60], [140, 230, 120]][i % 4], { gloss: 0.5, bg: true }); }
+      } },
+      wedding: { stand: true, build: (S) => {
+        wall(S, [244, 238, 230], (c, w, h) => glow(c, w / 2, h * 0.45, w * 0.35, 'rgba(255,220,180,0.4)'));
+        floor(S, [220, 214, 204], planks(30)); S.quad([[-0.5, 0.003, -1.2], [0.5, 0.003, -1.2], [0.5, 0.003, 4], [-0.5, 0.003, 4]], [200, 40, 60], { z: 97 });
+        const r = H.rng(4); for (let i = 0; i <= 16; i++) { const a = Math.PI * (i / 16); S.ball([Math.cos(a) * 1.35, 0.2 + Math.sin(a) * 2.3, -1.05], 0.16 + r.range(0, 0.06), i % 3 ? [250, 250, 250] : [240, 150, 170], { bg: true, rim: false }); }
+      } },
+      street: { stand: true, night: true, build: (S, o, ctx, t) => nightStreet(ctx, S, t, 1) },
+    };
+    const OUTFIT = {
+      suit: { shirt: [40, 44, 62], pants: [40, 44, 62], tie: [200, 40, 50] }, wedding: { shirt: [30, 30, 36], pants: [30, 30, 36], tie: [240, 240, 240] },
+      pajamas: { shirt: [150, 176, 230], pants: [150, 176, 230] }, gym: { shirt: [70, 200, 130], pants: [40, 40, 48] }, party: { shirt: [200, 60, 160], pants: [30, 30, 40] },
+      dress: { shirt: [200, 40, 70], pants: [200, 40, 70], dress: [200, 40, 70] }, bride: { shirt: [250, 250, 250], pants: [250, 250, 250], dress: [252, 252, 252] },
+      apron: { apron: [246, 246, 246] }, winter: { shirt: [160, 50, 50], pants: [50, 60, 90], scarf: [240, 200, 60] }, towel: { shirt: [226, 172, 128], pants: [255, 255, 255] },
+    };
+    const CAST = {
+      mil: { kind: 'girl', hair: [205, 205, 210], shirt: [120, 60, 140], pants: [80, 50, 90], s: 0.95, face: { lids: 0.35, brows: -0.4, mouth: 'flat' } },
+      dad: { kind: 'boy', hair: [190, 190, 196], hairStyle: 'flat', shirt: [130, 100, 70], pants: [70, 70, 80], face: { mouth: 'flat' } },
+      bff: { kind: 'girl', hair: [30, 24, 22], shirt: [250, 180, 60], pants: [60, 80, 140] },
+      bro: { kind: 'boy', hair: [210, 150, 60], shirt: [60, 170, 150], pants: [60, 60, 70] },
+      ex: { kind: 'boy', hair: [20, 20, 24], shirt: [30, 30, 36], pants: [30, 30, 36], face: { mouth: 'smile', lids: 0.3 } },
+      exgirl: { kind: 'girl', hair: [232, 200, 110], shirt: [30, 30, 36], pants: [30, 30, 36], face: { mouth: 'smile', lids: 0.3 } },
+      delivery: { kind: 'boy', shirt: [230, 90, 40], pants: [50, 50, 60], cap: [230, 90, 40] },
+      waiter: { kind: 'boy', hair: [30, 26, 24], hairStyle: 'flat', shirt: [246, 246, 246], pants: [30, 30, 36], tie: [30, 30, 36] },
+      cop: { kind: 'boy', shirt: [40, 60, 130], pants: [30, 40, 90], cap: [30, 40, 90] },
+      boss: { kind: 'boy', hair: [120, 110, 100], hairStyle: 'flat', shirt: [50, 50, 60], pants: [50, 50, 60], tie: [120, 30, 40], face: { brows: -0.5, mouth: 'flat' } },
+      kid: { kind: 'boy', s: 0.65, shirt: [240, 200, 60], pants: [70, 110, 200] },
+    };
+    const sitLegs = [[1.42, 1.38], [1.42, 1.38]];
+    // one person: role defaults (he / she / a cast name), the set's sit/stand, an outfit, then accessories
+    const person = (S, base, o, standDefault) => {
+      const q = Object.assign({}, base, o.outfit ? OUTFIT[o.outfit] : {}, o);
+      const sit = q.sit != null ? q.sit : !standDefault;
+      const opts = Object.assign({}, q, { legs: q.legs || (sit ? sitLegs : [[0, 0], [0, 0]]) });
+      const s = q.s || 1, y = sit ? 0.62 : 1.03 * s, yaw = q.yaw ?? 0, x = q.x, z = q.z;
+      const d = S.doll(x, y, z, yaw, opts);
+      const L = (p) => add(rotY(mul(p, s), yaw), [x, y, z]);
+      if (q.tie) S.rbox((p) => L(add(p, [0, 0.4, 0.245])), 0.035, 0.15, 0.012, q.tie, { bevel: 0.3, bias: -0.05 });
+      if (q.apron) S.rbox((p) => L(add(p, [0, 0.22, 0.235])), 0.24, 0.3, 0.012, q.apron, { bevel: 0.3, bias: -0.05 });
+      if (q.scarf) S.cyl((p) => L(add(p, [0, 0.6, 0.0])), 0.17, 0.08, q.scarf, 14);
+      if (q.dress && !sit) S.cyl((p) => L(add(p, [0, -0.85, 0])), 0.42, 0.95, q.dress, 18, { top: 0.62 });
+      if (q.cap) { S.ball(add(d.head, d.Rh([0, 0.17 * s, -0.01])), [0.29 * s, 0.17 * s, 0.28 * s], q.cap, { gloss: 0.2 }); S.rbox((p) => add(d.head, d.Rh(add(mul(p, s), [0, 0.12 * s, 0.27 * s]))), 0.18, 0.02, 0.1, q.cap, { bevel: 0.4 }); }
+      return d;
+    };
+    const pet = (S, o) => {
+      const T = (p) => add(rotY(p, o.yaw || 0), [o.x || 0, 0, o.z || 0.6]), col = o.col || (o.kind === 'cat' ? [60, 60, 66] : [200, 150, 90]), s = o.kind === 'cat' ? 0.8 : 1;
+      S.ball(T([0, 0.22 * s, 0]), [0.24 * s, 0.14 * s, 0.13 * s], col); S.ball(T([0.24 * s, 0.34 * s, 0]), [0.12 * s, 0.11 * s, 0.11 * s], col);
+      [[-0.15, -0.07], [-0.15, 0.07], [0.13, -0.07], [0.13, 0.07]].forEach(([a, b]) => S.limb(T([a * s, 0.18 * s, b * s]), T([a * s, 0.02, b * s]), 0.035 * s, 0.03 * s, col));
+      if (o.kind === 'cat') [-0.05, 0.05].forEach((b) => S.limb(T([0.26 * s, 0.43 * s, b * s]), T([0.27 * s, 0.5 * s, b * s * 1.3]), 0.03, 0.005, col));
+      else [-0.07, 0.07].forEach((b) => S.ball(T([0.22 * s, 0.38 * s, b * 1.4]), [0.04, 0.07, 0.03], shade(col, 0.7), { rim: false }));
+      S.limb(T([-0.22 * s, 0.26 * s, 0]), T([-0.36 * s, 0.38 * s + (o.wag ? Math.sin(o.wag) * 0.04 : 0), 0]), 0.03, 0.015, col);
+      S.ball(T([0.34 * s, 0.37 * s, -0.05]), 0.014, [20, 20, 20], { rim: false }); S.ball(T([0.34 * s, 0.37 * s, 0.05]), 0.014, [20, 20, 20], { rim: false });
+      S.shadow(T([0, 0, 0]), 0.35 * s, 0.18 * s, 0.35);
+    };
+    return { SETS, OUTFIT, CAST, person, pet };
+  })();
+
   const makeCouch = (cfg) => {
     const BEATS = window.SCRIPT, TM = REEL_TIMING(BEATS), { V, WORDS, DURATION } = TM;
     const specs = cfg.shots(TM), names = Object.keys(specs);
@@ -80,16 +197,26 @@
     const pulse = (t, at, k = 6) => Math.exp(-Math.pow((t - at) * k, 2));
     const STORY = (ctx, W, H_, t) => {
       const [name, a, b] = shotAt(t), sp = specs[name] || {}, u = H.clamp((t - a) / Math.max(0.01, b - a));
-      const cam = typeof sp.cam === 'string' || !sp.cam ? COUCH.CAMS[sp.cam || 'wide'] : sp.cam;
-      const [E, TG] = shotCam(t, a, b, ...cam); const S = Scene(E, TG, W, H_); livingRoom(S, sp.room || { table: true });
       const val = (v) => (typeof v === 'function' ? v(t, u) : v);
-      const he = doll((o) => BOY(S, o), val(sp.he) || { arms: 'rest' }), she = doll((o) => GIRL(S, o), val(sp.she) || { arms: 'rest' });
+      const set = COUCHWORLD.SETS[sp.set || 'living'] || COUCHWORLD.SETS.living, standDef = set.stand;
+      const heO = val(sp.he) || { arms: 'rest' }, sheO = val(sp.she) || { arms: 'rest' };
+      const standing = (heO.sit != null ? !heO.sit : standDef) || (sheO.sit != null ? !sheO.sit : standDef);
+      let cam = sp.cam === 'on' ? (() => { const q = sp.on || [0, 1.6, 0]; return [[q[0] + 0.12, q[1] + 0.04, q[2] + 1.55], q, [q[0] + 0.1, q[1] + 0.04, q[2] + 1.3], q]; })() : typeof sp.cam === 'string' || !sp.cam ? COUCH.CAMS[sp.cam || 'wide'] : sp.cam;
+      if (standing && sp.cam !== 'on' && !Array.isArray(sp.cam)) cam = cam.map((v) => [v[0], v[1] + 0.4, v[2]]);
+      const [E, TG] = shotCam(t, a, b, ...cam); const S = Scene(E, TG, W, H_);
+      if (set.night) nightSky(ctx, W, H_, t);
+      set.build(S, Object.assign({}, sp.room || {}, sp.opt || {}), ctx, t);
+      const role = (base, o) => { if (!o || o.hide) return null; const p = Object.assign({}, o); if (p.arms) p.arms = pose(p.arms); return COUCHWORLD.person(S, base, p, standDef); };
+      const he = role({ kind: 'boy', x: -0.62, z: -0.42, yaw: 0.18, head: { yaw: 0.25 } }, heO), she = role({ kind: 'girl', s: 0.95, x: 0.62, z: -0.42, yaw: -0.2, head: { yaw: -0.3 } }, sheO);
+      const people = { he, she };
+      for (const ex of val(sp.extras) || []) { const e = val(ex); if (!e || e.hide) continue; people[e.who] = role(Object.assign({ x: 0, z: 0.3, yaw: 0 }, COUCHWORLD.CAST[e.who] || {}), e); }
+      for (const pt of val(sp.pets) || []) COUCHWORLD.pet(S, pt);
       if (sp.heHold && he) phone(S, add(midHands(he), [0, 0.06, 0.04]), 0.2, 1.1, screenOf(val(sp.heHold)));
       if (sp.sheHold && she) phone(S, add(midHands(she), [0, 0.06, 0.04]), -0.2, 1.1, screenOf(val(sp.sheHold)));
       if (sp.props) sp.props(S, t, u, he, she);
-      S.render(ctx, W, H_, { dof: sp.dof == null ? (sp.cam === 'him' || sp.cam === 'her' ? 0.22 : 0.28) : sp.dof });
+      S.render(ctx, W, H_, Object.assign({ dof: sp.dof == null ? (sp.cam === 'him' || sp.cam === 'her' || sp.cam === 'on' ? 0.22 : 0.28) : sp.dof }, set.night ? { bg: 'rgba(0,0,0,0)', dof: 0 } : {}));
       for (const f of sp.fx || []) {
-        const d = f.who === 'he' ? he : f.who === 'she' ? she : null, hp = d ? S.proj(d.head) : [f.x ?? W / 2, f.y ?? 900], side = f.who === 'he' ? -1 : 1;
+        const d = f.who ? people[f.who] : null, hp = d ? S.proj(d.head) : [f.x ?? W / 2, f.y ?? 900], side = f.who === 'he' ? -1 : 1;
         const pu = popU(t, f.at ?? a, 0.3), x = hp[0] + (f.dx ?? (d ? side * 190 : 0)), y = hp[1] + (f.dy ?? (d ? -140 : 0));
         if (t < (f.at ?? a) || (f.until != null && t > f.until)) continue;
         if (f.k === 'q') FX.qmark(ctx, x, y, 0.8 * pu, f.text || '?', -0.12 * side);
