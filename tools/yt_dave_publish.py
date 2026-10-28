@@ -9,7 +9,7 @@ straight away. Reels listed in "posted_by_hand" (posted early on Instagram) go p
 Earliest slots first. Title, description and tags come from the reel's meta.json, with #shorts added.
 Uploads are recorded in davereels/youtube_posted.json, so nothing is uploaded twice.
 
-YouTube's API allows about 6 uploads a day on the default quota. When the quota runs out the run stops cleanly and
+If YouTube's daily upload quota runs out, the run stops cleanly and
 the next run (every 2 hours) carries on, earliest slot first.
 
 Uses the same sign-in and upload code as tools/youtube_publish.py (YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN,

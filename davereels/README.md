@@ -48,8 +48,8 @@ Instagram → Run workflow, type the id in "short", first with "dry run" ticked,
 
 ## YouTube Shorts
 `.github/workflows/publish-youtube-dave.yml` (with `tools/yt_dave_publish.py`) uploads the same rendered Reels to the
-Gears & Glitches YouTube channel as Shorts, scheduled for the same slots as Instagram. YouTube's API allows about 6
-uploads a day, so a big batch goes up over a few days, earliest slot first. Uploads are recorded in
+Gears & Glitches YouTube channel as Shorts, scheduled for the same slots as Instagram, earliest slot first. If YouTube's daily upload quota runs out, the
+run stops cleanly and the next run (every 2 hours) carries on. Uploads are recorded in
 `davereels/youtube_posted.json`.
 
 ## Automatic new Reels

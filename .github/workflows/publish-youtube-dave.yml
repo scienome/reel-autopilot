@@ -1,7 +1,7 @@
 name: Publish Dave reels to YouTube
 # Uploads each rendered Dave reel (davereels/) to YouTube as a Short and schedules it for the same slot as on Instagram
 # (08:30 / 12:30 / 20:30 IST, from davereels/schedule.json); YouTube makes it public at that moment. Runs after each
-# Dave render, every 2 hours as a backup (YouTube allows about 6 uploads a day, so a big batch goes up over a few runs),
+# Dave render, every 2 hours as a backup (if YouTube's upload quota runs out, the next run carries on),
 # when the Dave schedule changes, or by hand. Uploads are recorded in davereels/youtube_posted.json.
 on:
   workflow_run:
