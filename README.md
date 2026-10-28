@@ -27,7 +27,7 @@ Folder: [`couch-sarcasm/`](couch-sarcasm/)
 | [0017-the-sick-day](couch-sarcasm/0017-the-sick-day.mp4) | The sick day. | Waiting to post |
 | [0018-the-usual](couch-sarcasm/0018-the-usual.mp4) | The usual. | Waiting to post |
 
-## Dave (Gears & Glitches) (33)
+## Dave (Gears & Glitches) (38)
 Folder: [`dave-reels/`](dave-reels/)
 
 | Video | Title | Status |
@@ -65,6 +65,11 @@ Folder: [`dave-reels/`](dave-reels/)
 | [31-pisa-tower](dave-reels/31-pisa-tower.mp4) | Why Pisa's tower leans (and bends) | Waiting to post |
 | [32-knight-capital](dave-reels/32-knight-capital.mp4) | $440 million in 45 minutes | Waiting to post |
 | [33-f11-shot-itself](dave-reels/33-f11-shot-itself.mp4) | The jet that shot itself down | Waiting to post |
+| [34-project-pigeon](dave-reels/34-project-pigeon.mp4) | The bomb steered by pigeons | Waiting to post |
+| [35-ariane-5](dave-reels/35-ariane-5.mp4) | The rocket killed by one number | Waiting to post |
+| [36-mars-bluff](dave-reels/36-mars-bluff.mp4) | The atomic bomb dropped on a garden | Waiting to post |
+| [37-tsar-tank](dave-reels/37-tsar-tank.mp4) | The Tsar Tank: a 9-metre tricycle | Waiting to post |
+| [38-hubble-mirror](dave-reels/38-hubble-mirror.mp4) | Hubble's $1.5 billion blurry mirror | Waiting to post |
 
 ## Toy reels (Brick Toy) (31)
 Folder: [`toy-reels/`](toy-reels/)
