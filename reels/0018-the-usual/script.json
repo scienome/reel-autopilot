@@ -1,0 +1,10 @@
+[
+ { "id": "hook", "phrases": ["Anniversary dinner.", "Guess who's at the next table."] },
+ { "id": "ex", "phrases": ["Her ex.", "Waving."] },
+ { "id": "waiter", "phrases": ["The waiter comes over.", "The usual for you, miss?"] },
+ { "id": "him", "phrases": ["He stares at her.", "The usual?"] },
+ { "id": "she", "phrases": ["She says,", "I've never been here."] },
+ { "id": "same", "phrases": ["Waiter:", "Same table as Friday?"] },
+ { "id": "twist", "phrases": ["Then he turns to him.", "And for you, sir?", "The usual,", "with the blonde?"] },
+ { "id": "close", "phrases": ["Table for one.", "Each."] }
+]
