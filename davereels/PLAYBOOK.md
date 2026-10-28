@@ -1,8 +1,9 @@
 # Dave reels: the scheduled-run playbook
 
-A scheduled Claude session runs this every 3 days. Goal: **keep at least 7 full days (21 Reels) scheduled ahead of
-today** in `davereels/schedule.json`, all rendered on GitHub before their slot. A run normally adds 3 days (9 Reels);
-if the schedule has fallen behind it adds up to 7 days. If 7 days ahead are already filled, it does nothing but report.
+A scheduled Claude session runs this every 3 days. Each run makes **a full week: 7 days, 21 Reels**, scheduled
+right after the last date already in `davereels/schedule.json` (3 a day at 08:30 / 12:30 / 20:30 IST), all rendered
+on GitHub before their slot. Posting uses 9 Reels every 3 days, so the queue grows by about 12 per run; that is
+intended (the owner wants the bigger buffer).
 
 ## 0. Setup (fresh cloud session)
 - Repo: `scienome/reel-autopilot`, push straight to `main` (the owner wants that). Clone it if it is not there.
@@ -14,9 +15,13 @@ if the schedule has fallen behind it adds up to 7 days. If 7 days ahead are alre
 
 ## 1. Work out what to make
 - Read `davereels/schedule.json`, `davereels/README.md` (the reel list) and `ig_posted.json`.
-- Days to add: from the day after the last scheduled date, up to and including today + 7 (IST). Max 7 days per run.
+- Days to add: the 7 days after the last scheduled date (if that date is in the past, start from tomorrow, IST).
 - Next reel number = highest existing folder number + 1 (`22-...`, `23-...`). Folder ids: `NN-short-slug`.
 - Next "R.I.P. Dave #N" = last card number used + 1 (check the latest `ripCard(..., N, ...)` in the newest story.js).
+- Pick the MOST HILARIOUS true stories you can find: absurd engineering fails, ridiculous inventions, ego-driven
+  disasters, insane public demos gone wrong, bizarre military/space/science projects, laws of physics winning
+  embarrassingly. The best ones make people laugh and then say "wait, that's REAL?". Favour stories with a big,
+  visual, slapstick moment for Dave. Prefer famous or instantly-clickable hooks.
 - Pick NEW stories only: never repeat a topic already in `davereels/reels/`. Order each day so its strongest hook
   goes at 20:30 IST, the next at 12:30, the weakest at 08:30.
 
