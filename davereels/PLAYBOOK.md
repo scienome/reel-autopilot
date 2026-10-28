@@ -41,7 +41,13 @@ main run, and every run starts by checking `davereels/batch_log.json`:
 
 ## 2. The rules for every Reel (non-negotiable)
 - One real mechanism per Reel, explained correctly; every number checked against a reliable source, listed in `sources`.
-- Tone: dark, shocking, funny, educational. Jokes land on bad decisions, physics, egos and Dave; never on real victims.
+- Tone: **as dark and savage as these rules allow.** Pitch-black deadpan: the narrator roasts the bad decision,
+  the ego and the "it'll be fine" with zero mercy, and Dave suffers the most absurd, over-the-top slapstick death
+  for it (squashed flat, launched into orbit, blown into a smoking pile, folded like a deckchair). Cruel irony
+  works best: the safety feature that caused the disaster, the expert who was sure, the fix that made it worse.
+  Every Reel needs at least one line that makes people go "that's so dark" and laugh anyway, and the R.I.P. card's
+  cause of death should be a savage one-liner ("cause of death: trusted the PowerPoint").
+  Jokes land on bad decisions, physics, egos and Dave; never on real victims.
   When real people died, say it plainly, show no people in that moment, and keep jokes away from it.
 - Living people appear only through what they really said or did (quotes on a card, word for word), never shown, never hurt.
 - No Nazi or other hate symbols, no Holocaust references, no gore or blood: slapstick deaths only (squash, launch,
