@@ -1,0 +1,26 @@
+name: Make invitation videos
+# Griha Pravesh invitation videos (Hindi + English) with instrumental music: invites/make_invite.py -> Release "invite-grah-pravesh".
+on:
+  push:
+    branches: [main]
+    paths: ['invites/**']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  make:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: sudo apt-get install -y -q ffmpeg >/dev/null && pip install -q pillow numpy
+      - run: python invites/make_invite.py invites/grah-pravesh out/invites
+      - name: Publish as a Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete invite-grah-pravesh --yes --cleanup-tag 2>/dev/null || true
+          gh release create invite-grah-pravesh out/invites/griha-pravesh-hindi.mp4 out/invites/griha-pravesh-english.mp4 --title "Griha Pravesh invitation videos" --notes "Hindi and English invitation videos with instrumental music."
