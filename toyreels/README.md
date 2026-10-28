@@ -12,7 +12,7 @@ To remake one reel by hand: Actions → Make toy reels → Run workflow → type
 
 ## Fully automatic
 ```
-Every Thursday   Claude writes 21 new toy reels (toyreels/PLAYBOOK.md) and pushes them to main
+Every 3 days     Claude writes 21 new toy reels (3rd, 6th, 9th... of the month) (toyreels/PLAYBOOK.md) and pushes them to main
                  GitHub voices them with Steve and renders them into toyreel-<id> Releases
 Every day        "Post toy reels" posts the next reel to Instagram AND YouTube at the same moment,
                  at 10:00, 15:00 and 20:00 IST, in folder order, and records it in toyreels/posted.json

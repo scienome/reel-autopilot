@@ -220,7 +220,7 @@ def main():
     if pick and (slot or a.now or a.id):
         errs.append(post(pick, at, log, tok, slot.strftime('%Y-%m-%dT%H:%MZ') if slot else None))
     elif not pick and slot:
-        print('::warning::The toy reel queue is empty: no rendered reel left to post. The weekly Claude batch adds 21 more.')
+        print('::warning::The toy reel queue is empty: no rendered reel left to post. The Claude batch adds 21 more every 3 days.')
     if any(errs):
         sys.exit(1)
 
