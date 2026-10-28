@@ -6,6 +6,16 @@ renders them onto the pull request, checks the videos, and then merges the pull 
 this to be fully automatic. The posting job publishes 3 a day (7:30 AM, 1:30 PM and 9:30 PM IST) from the queue.
 The queue is allowed to pile up (each run adds 21; posting uses 9 every 3 days).
 
+## 0. Resume an unfinished batch first (usage limits)
+A run can stop halfway (for example when the Claude usage limit is reached). A backup run fires 5 hours after each
+main run. Every run starts by checking for an open pull request titled "Reels for the week of ...":
+- If one is open: do NOT start a new batch. Finish it: write any of its 21 reels that are missing (the pull request
+  description lists the plan), wait for the renders, check the videos and merge it.
+- If none is open and a "Reels for the week of ..." pull request was merged today or yesterday (IST): this is a
+  backup run and there is nothing to do. Stop at once with a one-line report.
+- Otherwise start a new batch. Open the pull request early (as soon as the first reels are committed) with the full
+  plan of 21 ids, titles and premises in its description, so a later run can pick it up.
+
 ## 1. Get oriented
 
 - Read `posted.json`, the titles in `reels/*/meta.json` and the scripts in `reels/*/script.json`, so this week's

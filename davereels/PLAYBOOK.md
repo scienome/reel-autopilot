@@ -13,7 +13,18 @@ intended (the owner wants the bigger buffer).
   Copy `davereels/fonts/*.ttf` into `~/.local/share/fonts` and run `fc-cache -f` first.
 - `GH_TOKEN` in the environment can read Releases and Actions runs through the GitHub API.
 
-## 1. Work out what to make
+## 0b. Resume an unfinished batch first (usage limits)
+A run can stop halfway (for example when the Claude usage limit is reached). A backup run fires 5 hours after each
+main run, and every run starts by checking `davereels/batch_log.json`:
+`[{ "batch": "2026-10-31", "ids": ["22-...", ...], "days": ["2026-11-04", ...], "status": "in_progress" | "done" }]`.
+- If the newest entry is `in_progress`: do NOT start a new batch. Finish that one: write the reels in `ids` that are
+  missing, push the days that are not yet in `schedule.json`, wait for the renders, then set `"status": "done"`.
+- If the newest entry is `done` and its `batch` date is today or yesterday (IST): this is a backup run and there is
+  nothing to do. Stop at once with a one-line report.
+- Otherwise start a new batch: before writing any reel, append an entry with the planned ids and days and
+  `"status": "in_progress"`, commit and push it (`[skip ci]` is fine: it holds no reel folders). Set `"done"` at the end.
+
+
 - Read `davereels/schedule.json`, `davereels/README.md` (the reel list) and `ig_posted.json`.
 - Days to add: the 7 days after the last scheduled date (if that date is in the past, start from tomorrow, IST).
 - Next reel number = highest existing folder number + 1 (`22-...`, `23-...`). Folder ids: `NN-short-slug`.
