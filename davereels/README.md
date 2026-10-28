@@ -86,3 +86,6 @@ A scheduled Claude session runs every 3 days and keeps at least 7 days of Reels 
 | 25 | The biggest bell that never rang | Fri 30 Oct 08:30 |
 | 26 | NASA's upside-down parachute switch | Fri 30 Oct 12:30 |
 | 27 | The Great Panjandrum | Fri 30 Oct 20:30 |
+| 28 | The electric car of the future (1985) | Sat 31 Oct 08:30 |
+| 29 | The most expensive hyphen in history | Sat 31 Oct 12:30 |
+| 30 | The bat bomb that bombed its own base | Sat 31 Oct 20:30 |

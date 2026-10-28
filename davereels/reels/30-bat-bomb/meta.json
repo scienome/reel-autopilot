@@ -1,0 +1,14 @@
+{
+ "title": "The bat bomb that bombed its own base",
+ "caption": "The US military strapped tiny firebombs to bats. The bats set fire to the US military. 🦇🔥\nThe plan relied on bats roosting under roofs, so each little timed incendiary would end up hidden inside a building. They did exactly that, on their own airfield.\nWorst weapon of WW2, or secretly a genius idea? Defend your answer.",
+ "hashtags": ["gearsandglitches", "batbomb", "ww2", "militaryhistory", "weirdhistory", "engineeringfails", "science", "darkhumor"],
+ "first_comment": "The bats completed the mission flawlessly. Wrong target, perfect execution 🦇 Bats 1, generals 0",
+ "potential": 9,
+ "cover_t": 2.0,
+ "libs": ["davereels/props/dave.js", "davereels/props/dave_kit.js"],
+ "sources": [
+  "Air & Space Forces Magazine, 'The Bat Bombers' and Wikipedia 'Bat bomb' (Project X-Ray): bats fitted with small timed incendiaries were meant to be released from a bomb-shaped casing and roost in buildings",
+  "On 15 May 1943 armed bats accidentally released at the Carlsbad Army Airfield Auxiliary Air Base, New Mexico, roosted under a fuel tank and set the base on fire, including a general's car (American Heritage; Wikipedia 'Bat bomb')",
+  "The program cost about $2 million and was cancelled in 1944 because it would not be combat-ready until mid-1945 (Wikipedia 'Bat bomb')"
+ ]
+}

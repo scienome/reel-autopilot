@@ -1,0 +1,13 @@
+{
+ "title": "The most expensive hyphen in history",
+ "caption": "NASA's first Venus probe was blown up by its own safety officer less than five minutes after launch. Because of one missing line. ✏️\nThe bar over a symbol meant 'use the smoothed, averaged speed': without it the guidance program chased every random jitter and steered the rocket off course.\nWho is more to blame: the person who wrote the formula or the people who never checked it?",
+ "hashtags": ["gearsandglitches", "mariner1", "nasa", "softwarebug", "spacehistory", "engineeringfails", "coding", "darkhumor"],
+ "first_comment": "One missing bar, $18.5 million. Every code reviewer just felt a chill 🥶 Typo or process failure?",
+ "potential": 6,
+ "cover_t": 1.6,
+ "libs": ["davereels/props/dave.js", "davereels/props/dave_kit.js"],
+ "sources": [
+  "NASA NSSDCA, 'Mariner 1': launched 22 July 1962, destroyed by the range safety officer 293 seconds after launch when it veered off course; the cause was an error in the guidance equations (a missing overbar, meaning smoothed velocity) combined with a loss of the guidance radar signal; cost about $18.5 million",
+  "Arthur C. Clarke, 'The Promise of Space' (1968): 'the most expensive hyphen in history'"
+ ]
+}

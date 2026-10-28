@@ -1,0 +1,7 @@
+[
+  { "id": "hook", "text": "In nineteen sixty-two, NASA's first Venus probe was blown up by its own safety officer, less than five minutes after launch." },
+  { "id": "bar", "text": "A handwritten formula for the guidance program was missing one tiny bar over a symbol. That bar meant: smooth the speed data. Without it, the computer reacted to every random jitter." },
+  { "id": "fail", "text": "When the rocket briefly lost its guidance signal, the program started steering it hard. It veered toward the shipping lanes, so they hit self-destruct." },
+  { "id": "cost", "text": "Eighteen and a half million dollars. Arthur C. Clarke called it the most expensive hyphen in history." },
+  { "id": "end", "text": "Dave was the one who proofread it." }
+]

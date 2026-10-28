@@ -1,0 +1,13 @@
+{
+ "title": "The electric car of the future (1985)",
+ "caption": "Britain was promised the electric car of the future. It was a battery tricycle with a top speed of 24 km/h. 🔋\nOne small motor and one lead-acid battery: batteries lose capacity in the cold, and a small motor climbing a hill draws so much current that it overheats.\nAhead of its time or a death trap in a tracksuit: which was it?",
+ "hashtags": ["gearsandglitches", "sinclairc5", "electriccar", "80s", "engineering", "engineeringfails", "retrotech", "darkhumor"],
+ "first_comment": "Honestly with a better battery this is just an e-scooter with a roof. Visionary or disaster? 🛵",
+ "potential": 3,
+ "cover_t": 2.4,
+ "libs": ["davereels/props/dave.js", "davereels/props/dave_kit.js"],
+ "sources": [
+  "Encyclopaedia Britannica, 'Sinclair C5': launched January 1985, a battery electric tricycle limited to 15 mph (24 km/h)",
+  "Wikipedia, 'Sinclair C5' (citing contemporary coverage): built by Hoover at its Merthyr Tydfil washing machine plant; a single lead-acid battery and motor; criticism of its low height in traffic, exposure to the weather, poor performance on hills and in cold weather (pedal assist); production cut within months; Sinclair Vehicles (renamed TPD) went into receivership in October 1985"
+ ]
+}
