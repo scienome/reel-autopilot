@@ -157,7 +157,7 @@ Too big for a GitHub folder (over 100 MB), so they live in Releases:
 |---|---|---|
 | How a Jet Flew With No Engines (The Gimli Glider) | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-001-gimli-glider) |  |
 | Why Plane Windows Are Round (3 Jets Fell Apart First) | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-002-plane-windows) | https://youtu.be/V0X6W1LDHek |
-| What Happens If an Elevator Cable Snaps? | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-003-elevator-cable) |  |
+| What Happens If an Elevator Cable Snaps? | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-003-elevator-cable) | https://youtu.be/grOypwsu3zk |
 | How the Titan Submarine Imploded | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-004-titan-submarine) |  |
 | The Plane That Landed on a River (Miracle on the Hudson) | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-005-miracle-on-the-hudson) |  |
 | What Really Sank the Titanic (It Wasn't Just the Iceberg) | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-006-titanic) |  |
