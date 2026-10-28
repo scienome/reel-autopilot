@@ -27,7 +27,7 @@ Folder: [`couch-sarcasm/`](couch-sarcasm/)
 | [0017-the-sick-day](couch-sarcasm/0017-the-sick-day.mp4) | The sick day. | Waiting to post |
 | [0018-the-usual](couch-sarcasm/0018-the-usual.mp4) | The usual. | Waiting to post |
 
-## Dave (Gears & Glitches) (21)
+## Dave (Gears & Glitches) (24)
 Folder: [`dave-reels/`](dave-reels/)
 
 | Video | Title | Status |
@@ -53,6 +53,9 @@ Folder: [`dave-reels/`](dave-reels/)
 | [19-mars-units](dave-reels/19-mars-units.mp4) | NASA's $125 million units mix-up | Skipped (older kind, never posted) |
 | [20-north-korea-hotel](dave-reels/20-north-korea-hotel.mp4) | North Korea's hotel of doom | Posted on Instagram · on YouTube |
 | [21-galloping-gertie](dave-reels/21-galloping-gertie.mp4) | Galloping Gertie | Skipped (older kind, never posted) |
+| [22-vasa](dave-reels/22-vasa.mp4) | The warship that sank in 1,300 metres | Waiting to post |
+| [23-skylab-fine](dave-reels/23-skylab-fine.mp4) | Australia fined NASA for littering | Waiting to post |
+| [24-plumbbob-manhole](dave-reels/24-plumbbob-manhole.mp4) | The manhole cover that left Earth | Waiting to post |
 
 ## Toy reels (Brick Toy) (31)
 Folder: [`toy-reels/`](toy-reels/)
