@@ -46,6 +46,12 @@ IST from `schedule.json`, using the MP4 from each `davereel-<id>` Release; a slo
 skipped. Posted reels are recorded in `/ig_posted.json`. To post one by hand: Actions → Post Gears & Glitches reels to
 Instagram → Run workflow, type the id in "short", first with "dry run" ticked, then unticked.
 
+## YouTube Shorts
+`.github/workflows/publish-youtube-dave.yml` (with `tools/yt_dave_publish.py`) uploads the same rendered Reels to the
+Gears & Glitches YouTube channel as Shorts, scheduled for the same slots as Instagram. YouTube's API allows about 6
+uploads a day, so a big batch goes up over a few days, earliest slot first. Uploads are recorded in
+`davereels/youtube_posted.json`.
+
 ## Automatic new Reels
 A scheduled Claude session runs every 3 days and keeps at least 7 days of Reels scheduled ahead, following
 [`PLAYBOOK.md`](PLAYBOOK.md). Edit the playbook to change the rules, topics or tone for future runs.

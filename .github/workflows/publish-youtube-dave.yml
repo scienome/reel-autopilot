@@ -1,0 +1,56 @@
+name: Publish Dave reels to YouTube
+# Uploads each rendered Dave reel (davereels/) to YouTube as a Short and schedules it for the same slot as on Instagram
+# (08:30 / 12:30 / 20:30 IST, from davereels/schedule.json); YouTube makes it public at that moment. Runs after each
+# Dave render, every 2 hours as a backup (YouTube allows about 6 uploads a day, so a big batch goes up over a few runs),
+# when the Dave schedule changes, or by hand. Uploads are recorded in davereels/youtube_posted.json.
+on:
+  workflow_run:
+    workflows: ['Make Dave reels']
+    types: [completed]
+  schedule:
+    - cron: '47 */2 * * *'
+  push:
+    branches: [main]
+    paths: ['davereels/schedule.json']
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Only show what would be uploaded'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-youtube-dave
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install -q requests
+      - name: Upload and schedule
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git pull -q --rebase || true
+          python tools/yt_dave_publish.py ${{ inputs.dry_run && '--dry-run' || '' }}
+      - name: Save what was uploaded
+        if: always()
+        run: |
+          git config user.name "youtube-bot"; git config user.email "youtube-bot@users.noreply.github.com"
+          git add davereels/youtube_posted.json 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -q -m "YouTube Dave uploads [skip ci]"
+            for i in 1 2 3 4; do git pull --rebase -q && git push -q && break; sleep $((i * 5)); done
+          fi
