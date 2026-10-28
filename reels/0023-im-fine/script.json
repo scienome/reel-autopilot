@@ -1,0 +1,10 @@
+[
+ {"id": "hook", "phrases": ["He asks, are you okay?", "She says, I'm fine."]},
+ {"id": "cold", "phrases": ["Day two.", "She's still fine."]},
+ {"id": "notes", "phrases": ["Sticky notes appear on the fridge.", "Fine."]},
+ {"id": "bed", "phrases": ["A line of pillows down the bed."]},
+ {"id": "lawyer", "phrases": ["Day five.", "She hires a lawyer."]},
+ {"id": "his", "phrases": ["So does he."]},
+ {"id": "twist", "phrases": ["The lawyers read the case.", "It was about the last slice of pizza."]},
+ {"id": "close", "phrases": ["The dog gets the bed."]}
+]

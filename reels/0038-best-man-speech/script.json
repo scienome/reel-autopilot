@@ -1,0 +1,9 @@
+[
+ {"id": "hook", "phrases": ["Wedding speech.", "The best man grabs the mic."]},
+ {"id": "story", "phrases": ["The time he cried at a cooking show."]},
+ {"id": "more", "phrases": ["The time he got lost in IKEA.", "For six hours."]},
+ {"id": "laugh", "phrases": ["Everyone is laughing.", "Except the groom."]},
+ {"id": "her", "phrases": ["Then the bride stands up."]},
+ {"id": "twist", "phrases": ["The time the best man", "cried at that same cooking show.", "Holding hands with my husband."]},
+ {"id": "close", "phrases": ["Cake, anyone?"]}
+]

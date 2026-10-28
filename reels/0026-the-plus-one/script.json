@@ -1,0 +1,10 @@
+[
+ {"id": "hook", "phrases": ["He drags her to his ex's wedding.", "It'll be fine."]},
+ {"id": "ex", "phrases": ["His ex looks stunning.", "He can't stop staring."]},
+ {"id": "her", "phrases": ["She's bored.", "Then the groom walks in."]},
+ {"id": "groom", "phrases": ["She freezes."]},
+ {"id": "twist", "phrases": ["The groom is her ex.", "He winks."]},
+ {"id": "vows", "phrases": ["Now she can't stop staring."]},
+ {"id": "car", "phrases": ["Silent drive home.", "Nobody touches the radio."]},
+ {"id": "close", "phrases": ["Same time next year?"]}
+]

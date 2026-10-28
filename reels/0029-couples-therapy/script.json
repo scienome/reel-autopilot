@@ -1,0 +1,10 @@
+[
+ {"id": "hook", "phrases": ["Couples therapy.", "First session.", "Simple question."]},
+ {"id": "ask", "phrases": ["Name one thing you love about each other."]},
+ {"id": "silence", "phrases": ["Silence.", "A long, painful silence.", "The clock ticks."]},
+ {"id": "him", "phrases": ["He thinks.", "Really hard.", "Nothing."]},
+ {"id": "her", "phrases": ["She checks her phone for ideas."]},
+ {"id": "twist", "phrases": ["Finally, they both say it.", "The dog."]},
+ {"id": "therapist", "phrases": ["The therapist nods.", "Same."]},
+ {"id": "close", "phrases": ["Same time next week."]}
+]

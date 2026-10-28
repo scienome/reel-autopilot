@@ -1,0 +1,9 @@
+[
+ {"id": "hook", "phrases": ["He texts his best friend.", "Her mom is visiting again.", "Send help."]},
+ {"id": "sent", "phrases": ["Sent."]},
+ {"id": "wrong", "phrases": ["To her family group chat."]},
+ {"id": "panic", "phrases": ["He tries to delete it.", "Too late.", "Seen by six."]},
+ {"id": "mom", "phrases": ["Her mom types.", "And types."]},
+ {"id": "twist", "phrases": ["Then her dad replies.", "Run."]},
+ {"id": "close", "phrases": ["Her mom leaves the chat.", "Her dad adds him to a new one."]}
+]
