@@ -1,0 +1,9 @@
+[{"chapter": "The time machine", "beats": [
+ {"id": "hook", "phrases": ["Einstein built a time machine for one job:", "get Hitler into art school."]},
+ {"id": "vienna", "phrases": ["Vienna, nineteen oh seven.", "A young painter gets rejected."]},
+ {"id": "bribe", "phrases": ["Einstein slips the professor a bag of cash.", "Accepted!"]},
+ {"id": "saved", "phrases": ["History is saved.", "No war.", "Just one man painting very bad flowers."]},
+ {"id": "back", "phrases": ["Einstein returns to the future, proud.", "Then he starts to fade."]},
+ {"id": "twist", "phrases": ["No war meant his parents never met.", "Einstein never existed.", "Neither did the time machine."]},
+ {"id": "cta", "phrases": ["Would you still press the button?"]}
+]}]
