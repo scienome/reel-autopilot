@@ -81,7 +81,11 @@ def main():
             continue
         if a.dry_run:
             print(f'{rid}: would move from {old:%Y-%m-%d %H:%M} to {when:%Y-%m-%d %H:%M} UTC'); continue
-        e['publish_utc'] = reschedule(tok, e['id'], when)
+        try:
+            e['publish_utc'] = reschedule(tok, e['id'], when)
+        except RuntimeError as err:  # e.g. the sign-in only has the youtube.upload permission: leave the time as it is
+            print(f'::warning::{rid}: could not move its publish time ({str(err)[:120]}...). It stays at {old:%Y-%m-%d %H:%M} UTC.')
+            continue
         json.dump(log, open(LOG, 'w'), indent=1); done += 1
         print(f'{rid}: moved from {old:%Y-%m-%d %H:%M} to {when:%Y-%m-%d %H:%M} UTC ({e["url"]})')
     for when, rid in plan():
