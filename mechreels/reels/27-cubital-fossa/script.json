@@ -1,0 +1,13 @@
+[
+ { "id": "hook", "text": "The cubital fossa. The most needled triangle in your body. Let's dissect it." },
+ { "id": "skin", "text": "First incision, along the front of the elbow." },
+ { "id": "veins", "text": "In the superficial fascia: the cephalic vein laterally, the basilic vein medially, and the median cubital vein joining them. That's where blood is drawn." },
+ { "id": "nerves", "text": "Beside them run the lateral and medial cutaneous nerves of the forearm." },
+ { "id": "roof", "text": "The roof is deep fascia, reinforced by the bicipital aponeurosis, which shields the artery underneath." },
+ { "id": "bounds", "text": "The boundaries. Above, a line between the two epicondyles. Laterally, brachioradialis. Medially, pronator teres. They meet at the apex." },
+ { "id": "floor", "text": "The floor is brachialis, and supinator." },
+ { "id": "contents", "text": "Contents, from lateral to medial: radial nerve, biceps tendon, brachial artery, median nerve." },
+ { "id": "mnemonic", "text": "Remember: Really Need Beer To Be At My Nicest." },
+ { "id": "split", "text": "At the apex, the brachial artery divides into the radial and ulnar arteries." },
+ { "id": "cta", "text": "Save this for your anatomy exam." }
+]
