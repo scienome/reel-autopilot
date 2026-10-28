@@ -1,0 +1,13 @@
+{
+ "title": "The biggest bell that never rang",
+ "caption": "Russia cast a 202-tonne bell. It has never made a single sound. Not once. 🔔\nCold water on hot bronze: the outside cooled and shrank while the inside stayed hot, and brittle cast bronze cracked (thermal shock).\nShould they glue the slab back and finally ring it, or leave the legend alone?",
+ "hashtags": ["gearsandglitches", "tsarbell", "moscow", "physics", "thermalshock", "engineering", "history", "darkhumor"],
+ "first_comment": "202 tonnes of bronze and its greatest achievement is silence. Relatable or tragic? 🤐",
+ "potential": 4,
+ "cover_t": 2.5,
+ "libs": ["davereels/props/dave.js", "davereels/props/dave_kit.js"],
+ "sources": [
+  "Moscow Kremlin Museums, 'Tsar Bell': cast 1733-1735 by Ivan and Mikhail Motorin; weight about 202 tonnes (201,924 kg); damaged in the Kremlin fire of May 1737 when cold water was poured on the hot bell; a piece of about 11.5 tonnes broke off; it has never been rung; raised onto a pedestal in 1836",
+  "Encyclopaedia Britannica, 'Tsar Bell'"
+ ]
+}

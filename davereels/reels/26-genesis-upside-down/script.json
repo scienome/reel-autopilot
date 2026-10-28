@@ -1,0 +1,7 @@
+[
+  { "id": "hook", "text": "NASA spent over two years catching pieces of the Sun. Then it dropped them on Utah at three hundred kilometres an hour." },
+  { "id": "mission", "text": "The Genesis capsule collected solar wind in deep space and brought it home in two thousand four. A parachute was supposed to open on the way down." },
+  { "id": "switch", "text": "The trigger was a tiny gravity switch that senses the capsule slowing down. It was installed upside down. A test would have caught it. The test was skipped." },
+  { "id": "crash", "text": "No parachute. The capsule hit the desert and cracked open. Scientists still saved some of the samples." },
+  { "id": "end", "text": "Dave was the backup parachute." }
+]

@@ -1,0 +1,14 @@
+{
+ "title": "NASA's upside-down parachute switch",
+ "caption": "NASA caught pieces of the Sun for over two years, then dropped them on Utah at about 310 km/h. ☀️\nA gravity switch meant to sense the capsule slowing and fire the parachute was installed upside down, so the parachute never opened.\nWho takes the blame: the one who installed it, or the one who skipped the test?",
+ "hashtags": ["gearsandglitches", "nasa", "genesis", "space", "spacehistory", "engineeringfails", "physics", "darkhumor"],
+ "first_comment": "Billions of kilometres of perfect flying, ruined by one part the wrong way up. Every IKEA build ever 🔧",
+ "potential": 6,
+ "cover_t": 1.2,
+ "libs": ["davereels/props/dave.js", "davereels/props/dave_kit.js"],
+ "sources": [
+  "NASA Genesis Mishap Investigation Board report (2006): the capsule's drogue parachute and parafoil did not deploy because the gravity (g) switches were installed in an inverted orientation per an erroneous design; a pre-launch test that would have caught it was not performed",
+  "NBC News / AP (2006): the capsule hit the Utah desert on 8 September 2004 at nearly 200 mph (~310 km/h); some solar wind samples were still recovered and studied",
+  "NASA Genesis mission: launched August 2001, collected solar wind from December 2001 to April 2004"
+ ]
+}

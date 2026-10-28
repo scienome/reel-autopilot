@@ -1,0 +1,13 @@
+{
+ "title": "The Great Panjandrum",
+ "caption": "Britain strapped rockets to a giant wheel of explosives and hoped it would roll in a straight line. It did not. 🎡💥\nRockets on both rims had to push equally: when one side's rockets failed, the lopsided push turned the wheel toward the side still firing.\nGenius weapon ahead of its time, or the worst idea of the war?",
+ "hashtags": ["gearsandglitches", "panjandrum", "ww2", "militaryhistory", "rockets", "engineeringfails", "physics", "darkhumor"],
+ "first_comment": "Somewhere a 1943 engineer said 'what if a bomb, but it does donuts' and got funding 🍩🚀",
+ "potential": 9,
+ "cover_t": 1.5,
+ "libs": ["davereels/props/dave.js", "davereels/props/dave_kit.js"],
+ "sources": [
+  "Imperial War Museums film records and Wikipedia 'Panjandrum': designed 1943 by the Admiralty's Directorate of Miscellaneous Weapons Development; two 10 ft (3 m) wheels with a central drum carrying about 4,000 lb (~1.8 t) of explosive, driven by cordite rockets on the rims; never used in action",
+  "Westward Ho! trials (Devon, January 1944): during the final demonstration rockets broke loose, the wheel veered toward the cameraman (Louis Klemantaski) and onlookers took cover behind the pebble ridge (Wikipedia 'Panjandrum'; The Past, 'Back to the drawing board: the Great Panjandrum')"
+ ]
+}

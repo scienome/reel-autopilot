@@ -83,3 +83,6 @@ A scheduled Claude session runs every 3 days and keeps at least 7 days of Reels 
 | 22 | The warship that sank in 1,300 metres | Thu 29 Oct 08:30 |
 | 23 | Australia fined NASA for littering | Thu 29 Oct 12:30 |
 | 24 | The manhole cover that left Earth | Thu 29 Oct 20:30 |
+| 25 | The biggest bell that never rang | Fri 30 Oct 08:30 |
+| 26 | NASA's upside-down parachute switch | Fri 30 Oct 12:30 |
+| 27 | The Great Panjandrum | Fri 30 Oct 20:30 |
