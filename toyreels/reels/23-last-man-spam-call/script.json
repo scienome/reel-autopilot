@@ -1,0 +1,9 @@
+[{"chapter": "The last call", "beats": [
+ {"id": "hook", "phrases": ["The last man on Earth finally got a phone call."]},
+ {"id": "alone", "phrases": ["Eight billion people, gone.", "Just him and a cat.", "And the cat didn't like him."]},
+ {"id": "ring", "phrases": ["After three years of silence,", "his phone rang."]},
+ {"id": "hope", "phrases": ["He cried. He answered.", "Hello? Is anyone out there?"]},
+ {"id": "spam", "phrases": ["We've been trying to reach you", "about your car's extended warranty."]},
+ {"id": "twist", "phrases": ["It was a robot.", "Humanity was gone.", "The robocalls survived."]},
+ {"id": "cta", "phrases": ["What's the last thing you'd say to it?"]}
+]}]

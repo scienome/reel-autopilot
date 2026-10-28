@@ -1,0 +1,9 @@
+[{"chapter": "Devil v. billionaire", "beats": [
+ {"id": "hook", "phrases": ["The devil sued a billionaire", "for stealing his business model."]},
+ {"id": "claim", "phrases": ["His argument:", "I invented making people sign contracts they never read."]},
+ {"id": "evidence", "phrases": ["Exhibit A:", "terms and conditions,", "ninety thousand words long."]},
+ {"id": "defense", "phrases": ["The billionaire's lawyer opened one page.", "Page eighty four."]},
+ {"id": "twist", "phrases": ["In two thousand nine,", "the devil had signed up for free shipping.", "He clicked I agree."]},
+ {"id": "verdict", "phrases": ["He lost.", "Now he pays fourteen ninety nine a month.", "Forever."]},
+ {"id": "cta", "phrases": ["Have you ever read the terms? Don't lie."]}
+]}]
