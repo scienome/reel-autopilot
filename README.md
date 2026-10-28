@@ -11,18 +11,18 @@ Folder: [`couch-sarcasm/`](couch-sarcasm/)
 | [0001-anything-is-fine](couch-sarcasm/0001-anything-is-fine.mp4) | Anything is fine. | Posted on Instagram |
 | [0002-the-thermostat-war](couch-sarcasm/0002-the-thermostat-war.mp4) | The thermostat war. | Posted on Instagram |
 | [0003-five-more-minutes](couch-sarcasm/0003-five-more-minutes.mp4) | Five more minutes. | Posted on Instagram |
-| [0004-the-blanket-burrito](couch-sarcasm/0004-the-blanket-burrito.mp4) | The blanket burrito. | Waiting to post |
-| [0005-we-said-together](couch-sarcasm/0005-we-said-together.mp4) | We said together. | Waiting to post |
-| [0006-we-need-to-talk](couch-sarcasm/0006-we-need-to-talk.mp4) | We need to talk. | Waiting to post |
-| [0007-the-last-piece](couch-sarcasm/0007-the-last-piece.mp4) | The last piece. | Waiting to post |
-| [0008-cancelled-plans](couch-sarcasm/0008-cancelled-plans.mp4) | Cancelled plans. | Waiting to post |
-| [0009-just-getting-milk](couch-sarcasm/0009-just-getting-milk.mp4) | Just getting milk. | Waiting to post |
-| [0010-no-phones-at-dinner](couch-sarcasm/0010-no-phones-at-dinner.mp4) | No phones at dinner. | Waiting to post |
-| [0011-no-spoilers](couch-sarcasm/0011-no-spoilers.mp4) | No spoilers. | Waiting to post |
-| [0012-the-snooze-button](couch-sarcasm/0012-the-snooze-button.mp4) | The snooze button. | Waiting to post |
-| [0013-do-i-look-okay](couch-sarcasm/0013-do-i-look-okay.mp4) | Do I look okay? | Waiting to post |
-| [0014-odd-volume](couch-sarcasm/0014-odd-volume.mp4) | Odd volume. | Waiting to post |
-| [0015-two-feet-away](couch-sarcasm/0015-two-feet-away.mp4) | Two feet away. | Waiting to post |
+| [0004-the-blanket-burrito](couch-sarcasm/0004-the-blanket-burrito.mp4) | The blanket burrito. | Skipped (older kind, never posted) |
+| [0005-we-said-together](couch-sarcasm/0005-we-said-together.mp4) | We said together. | Skipped (older kind, never posted) |
+| [0006-we-need-to-talk](couch-sarcasm/0006-we-need-to-talk.mp4) | We need to talk. | Skipped (older kind, never posted) |
+| [0007-the-last-piece](couch-sarcasm/0007-the-last-piece.mp4) | The last piece. | Skipped (older kind, never posted) |
+| [0008-cancelled-plans](couch-sarcasm/0008-cancelled-plans.mp4) | Cancelled plans. | Skipped (older kind, never posted) |
+| [0009-just-getting-milk](couch-sarcasm/0009-just-getting-milk.mp4) | Just getting milk. | Skipped (older kind, never posted) |
+| [0010-no-phones-at-dinner](couch-sarcasm/0010-no-phones-at-dinner.mp4) | No phones at dinner. | Skipped (older kind, never posted) |
+| [0011-no-spoilers](couch-sarcasm/0011-no-spoilers.mp4) | No spoilers. | Skipped (older kind, never posted) |
+| [0012-the-snooze-button](couch-sarcasm/0012-the-snooze-button.mp4) | The snooze button. | Skipped (older kind, never posted) |
+| [0013-do-i-look-okay](couch-sarcasm/0013-do-i-look-okay.mp4) | Do I look okay? | Skipped (older kind, never posted) |
+| [0014-odd-volume](couch-sarcasm/0014-odd-volume.mp4) | Odd volume. | Skipped (older kind, never posted) |
+| [0015-two-feet-away](couch-sarcasm/0015-two-feet-away.mp4) | Two feet away. | Skipped (older kind, never posted) |
 
 ## Dave (Gears & Glitches) (21)
 Folder: [`dave-reels/`](dave-reels/)
@@ -31,25 +31,25 @@ Folder: [`dave-reels/`](dave-reels/)
 |---|---|---|
 | [01-alaska-door-plug](dave-reels/01-alaska-door-plug.mp4) | The plane that lost a wall at 16,000 feet | Posted on Instagram · on YouTube |
 | [02-hitler-maus-tank](dave-reels/02-hitler-maus-tank.mp4) | Hitler's 188-tonne tank | Posted on Instagram · on YouTube |
-| [03-cybertruck-window](dave-reels/03-cybertruck-window.mp4) | The Cybertruck's "unbreakable" window | Waiting to post |
-| [04-gates-blue-screen](dave-reels/04-gates-blue-screen.mp4) | Bill Gates' live blue screen | Waiting to post |
-| [05-demon-core](dave-reels/05-demon-core.mp4) | The Demon Core's screwdriver | Waiting to post |
-| [06-apollo10-turd](dave-reels/06-apollo10-turd.mp4) | Apollo 10's floating turd | Waiting to post |
-| [07-jobs-antenna](dave-reels/07-jobs-antenna.mp4) | Steve Jobs: "Just avoid holding it that way" | Waiting to post |
-| [08-tsar-bomba](dave-reels/08-tsar-bomba.mp4) | The bomb they made smaller to be safe | Waiting to post |
-| [09-exploding-whale](dave-reels/09-exploding-whale.mp4) | The exploding whale | Waiting to post |
-| [10-eiffel-tailor](dave-reels/10-eiffel-tailor.mp4) | The tailor who jumped off the Eiffel Tower | Waiting to post |
-| [11-zuckerberg-legs](dave-reels/11-zuckerberg-legs.mp4) | Zuckerberg's billion-dollar legs | Waiting to post |
-| [12-trump-catapult](dave-reels/12-trump-catapult.mp4) | Trump vs. the electric catapult | Waiting to post |
-| [13-space-body](dave-reels/13-space-body.mp4) | What space does to your body | Waiting to post |
-| [14-walkie-scorchie](dave-reels/14-walkie-scorchie.mp4) | The skyscraper that melts cars | Waiting to post |
-| [15-midgley](dave-reels/15-midgley.mp4) | The man who poisoned the planet twice | Waiting to post |
-| [16-lake-peigneur](dave-reels/16-lake-peigneur.mp4) | The oil rig that drained a lake | Waiting to post |
-| [17-starship-rud](dave-reels/17-starship-rud.mp4) | Rapid unscheduled disassembly | Waiting to post |
-| [18-molasses-flood](dave-reels/18-molasses-flood.mp4) | The Boston molasses flood | Waiting to post |
-| [19-mars-units](dave-reels/19-mars-units.mp4) | NASA's $125 million units mix-up | Waiting to post |
+| [03-cybertruck-window](dave-reels/03-cybertruck-window.mp4) | The Cybertruck's "unbreakable" window | Skipped (older kind, never posted) |
+| [04-gates-blue-screen](dave-reels/04-gates-blue-screen.mp4) | Bill Gates' live blue screen | Skipped (older kind, never posted) |
+| [05-demon-core](dave-reels/05-demon-core.mp4) | The Demon Core's screwdriver | Skipped (older kind, never posted) |
+| [06-apollo10-turd](dave-reels/06-apollo10-turd.mp4) | Apollo 10's floating turd | Skipped (older kind, never posted) |
+| [07-jobs-antenna](dave-reels/07-jobs-antenna.mp4) | Steve Jobs: "Just avoid holding it that way" | Skipped (older kind, never posted) |
+| [08-tsar-bomba](dave-reels/08-tsar-bomba.mp4) | The bomb they made smaller to be safe | Skipped (older kind, never posted) |
+| [09-exploding-whale](dave-reels/09-exploding-whale.mp4) | The exploding whale | Skipped (older kind, never posted) |
+| [10-eiffel-tailor](dave-reels/10-eiffel-tailor.mp4) | The tailor who jumped off the Eiffel Tower | Skipped (older kind, never posted) |
+| [11-zuckerberg-legs](dave-reels/11-zuckerberg-legs.mp4) | Zuckerberg's billion-dollar legs | Skipped (older kind, never posted) |
+| [12-trump-catapult](dave-reels/12-trump-catapult.mp4) | Trump vs. the electric catapult | Skipped (older kind, never posted) |
+| [13-space-body](dave-reels/13-space-body.mp4) | What space does to your body | Skipped (older kind, never posted) |
+| [14-walkie-scorchie](dave-reels/14-walkie-scorchie.mp4) | The skyscraper that melts cars | Skipped (older kind, never posted) |
+| [15-midgley](dave-reels/15-midgley.mp4) | The man who poisoned the planet twice | Skipped (older kind, never posted) |
+| [16-lake-peigneur](dave-reels/16-lake-peigneur.mp4) | The oil rig that drained a lake | Skipped (older kind, never posted) |
+| [17-starship-rud](dave-reels/17-starship-rud.mp4) | Rapid unscheduled disassembly | Skipped (older kind, never posted) |
+| [18-molasses-flood](dave-reels/18-molasses-flood.mp4) | The Boston molasses flood | Skipped (older kind, never posted) |
+| [19-mars-units](dave-reels/19-mars-units.mp4) | NASA's $125 million units mix-up | Skipped (older kind, never posted) |
 | [20-north-korea-hotel](dave-reels/20-north-korea-hotel.mp4) | North Korea's hotel of doom | Posted on Instagram · on YouTube |
-| [21-galloping-gertie](dave-reels/21-galloping-gertie.mp4) | Galloping Gertie | Waiting to post |
+| [21-galloping-gertie](dave-reels/21-galloping-gertie.mp4) | Galloping Gertie | Skipped (older kind, never posted) |
 
 ## Toy reels (Brick Toy) (31)
 Folder: [`toy-reels/`](toy-reels/)
