@@ -6,7 +6,7 @@
   },
   "instagram": {
     "api_version": "v26.0",
-    "post_times_ist": ["13:00", "20:00"],
+    "post_times_ist": ["07:30", "13:30", "21:30"],
     "default_hashtags": ["couplegoals", "relatable", "couplehumor", "sarcasm", "animation", "reels"]
   }
 }

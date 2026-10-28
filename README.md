@@ -1,16 +1,17 @@
 # Reel autopilot
 
-Posts 2 Violet Room reels a day to Instagram (7:30 AM and 9:30 PM IST), from a queue you approve once a week.
+Posts 3 Violet Room reels a day to Instagram (7:30 AM, 1:30 PM and 9:30 PM IST), from a queue that a scheduled
+Claude run fills with 21 new reels every 3 days (see `WEEKLY.md`).
 
 ```
-Sunday       Claude writes 14 reels  ->  pull request "Reels for the week of ..."
+Every 3 days Claude writes 21 reels  ->  pull request "Reels for the week of ..."
              GitHub Actions voices them (ElevenLabs) and renders the MP4s onto the pull request
-You          watch them (out/*.mp4, out/*.jpg in the pull request), ask for changes or merge = approve
-Every day    GitHub Actions posts the next reel at 7:30 AM and 9:30 PM IST, and records it in posted.json
+             Claude checks the videos and merges the pull request (fully automatic, at the owner's request)
+Every day    GitHub Actions posts the next reel at 7:30 AM, 1:30 PM and 9:30 PM IST, and records it in posted.json
 Every Monday GitHub Actions renews the Instagram token
 ```
 
-Nothing posts until you merge. If the queue runs empty, the posting run fails and GitHub emails you.
+Nothing posts until the pull request is merged. If the queue runs empty, the posting run fails and GitHub emails you.
 
 ## One-time setup (about 30 minutes)
 
@@ -32,7 +33,7 @@ Your Instagram account must be a Professional (Creator or Business) account.
 1. ElevenLabs → your profile → **API keys** → create a key with text-to-speech access.
 2. Voices → open the voice you use (Jarnathan) → copy its **Voice ID** into `config.json` (already set to Jarnathan, `c6SfcYrb2t09NHXiT80T`)
    (`voice.voice_id`). `voice.model_id` is `eleven_v4`, the model your first take used.
-   A week of 14 reels uses roughly 7,000 characters.
+   A batch of 21 reels uses roughly 10,500 characters.
 
 ### 4. Repository secrets
 Settings → Secrets and variables → Actions → **New repository secret**:
@@ -54,7 +55,7 @@ Settings → Secrets and variables → Actions → **New repository secret**:
 - **Approve a week:** open the pull request, watch the videos, merge. Comment with changes instead and Claude
   fixes them.
 - **Skip a reel:** delete its `out/<id>.mp4` on main.
-- **Change post times:** edit the two `cron` lines in `.github/workflows/post.yml` (UTC; IST is UTC+5:30).
+- **Change post times:** edit the `cron` lines and the `--at` slots in `.github/workflows/post.yml` (UTC; IST is UTC+5:30).
 - **Post one now:** Actions → Post reel → Run workflow, dry run unticked.
 
 ## Layout

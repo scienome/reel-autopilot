@@ -1,15 +1,16 @@
-# Weekly batch: how to write the next 14 reels
+# Batch run: how to write the next 21 reels
 
-These are the instructions for the weekly Claude run. It writes 14 new reels for the week, checks how they look,
-and opens a pull request. GitHub Actions then voices and renders them. The owner watches them and merges the pull
-request to approve, and the posting job publishes 2 a day (7:30 AM and 9:30 PM IST).
+These are the instructions for the scheduled Claude run (every 3 days, the day after the Dave reels run). It writes
+21 new reels (a week at 3 a day), checks how they look, opens a pull request, waits while GitHub Actions voices and
+renders them onto the pull request, checks the videos, and then merges the pull request itself: the owner asked for
+this to be fully automatic. The posting job publishes 3 a day (7:30 AM, 1:30 PM and 9:30 PM IST) from the queue.
+The queue is allowed to pile up (each run adds 21; posting uses 9 every 3 days).
 
 ## 1. Get oriented
 
 - Read `posted.json`, the titles in `reels/*/meta.json` and the scripts in `reels/*/script.json`, so this week's
   topics are new. Never repeat a premise, a punchline or a "twist" from an earlier reel.
-- Count the rendered but unposted reels (folders with `out/<id>.mp4` that are not in `posted.json`). If 14 or more
-  are still waiting, write only enough to bring the queue to 14 + 14, and say so in the pull request.
+- Always write 21 new reels, whatever is still waiting in the queue.
 - Reel ids continue the numbering: `NNNN-short-slug` (for example `0015-who-ate-the-last-slice`).
 
 ## 2. Write each reel
@@ -84,4 +85,15 @@ reaction reads at a glance. Frames should draw in under 150 ms.
 Commit only `reels/<id>/script.json`, `story.js` and `meta.json` for the new reels to a branch
 `week-YYYY-MM-DD`, push, and open a pull request titled `Reels for the week of <date>` whose description lists each
 reel's id, title and full script. The "Make reels" workflow then voices and renders them onto the pull request
-(about 4-5 minutes per reel). Finish by telling the owner the pull request is up and what the week's reels are about.
+(about 4-5 minutes per reel, so 1.5-2 hours for 21).
+
+## 5. Check the videos and merge
+
+- Wait until the "Make reels" run on the pull request has finished and `out/<id>.mp4` exists for all 21 reels.
+  If a reel failed, read the job log, fix it, push to the branch and wait for the re-render.
+- Spot-check every new MP4 (a few frames with ffmpeg): voice present, captions readable, nothing broken.
+  A reel that is still broken after a fix: remove its folder and its out/ files from the branch rather than ship it.
+- Merge the pull request into main (squash or merge commit). The posting job picks the reels up from the queue in
+  name order. Do not run the posting workflow by hand. Do not change `config.json`'s voice (ElevenLabs stays as it is).
+- Finish with a short report: the new reels (id, title), how many are now waiting in the queue, anything removed or
+  failed and why.

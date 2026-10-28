@@ -1,7 +1,8 @@
 name: Post reel
-# Posts the next rendered reel on main to Instagram, twice a day, at exactly 7:30 AM and 9:30 PM IST (02:00 and 16:00 UTC).
-# 7:30 AM IST = evening in the USA (about 9 PM New York, 6 PM California); 9:30 PM IST = prime time in India,
-# late afternoon in the UK and lunchtime in the USA.
+# Posts the next rendered reel on main to Instagram, three times a day, at exactly 7:30 AM, 1:30 PM and 9:30 PM IST
+# (02:00, 08:00 and 16:00 UTC). 7:30 AM IST = evening in the USA (about 9 PM New York, 6 PM California);
+# 1:30 PM IST = lunchtime in India, early morning in the UK; 9:30 PM IST = prime time in India, late afternoon in
+# the UK and lunchtime in the USA.
 # GitHub often starts scheduled runs late, so the job starts ~25 minutes early, uploads the video so Instagram has it
 # processed, then publishes on the exact second. A backup start 15 minutes later covers a skipped run; it sees the
 # slot is already posted and does nothing.
@@ -9,6 +10,8 @@ on:
   schedule:
     - cron: '35 1 * * *'
     - cron: '50 1 * * *'
+    - cron: '35 7 * * *'
+    - cron: '50 7 * * *'
     - cron: '35 15 * * *'
     - cron: '50 15 * * *'
   workflow_dispatch:
@@ -39,7 +42,7 @@ jobs:
         env:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
-        run: python tools/post.py ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '--dry-run' || '' }} ${{ github.event_name == 'schedule' && '--at 02:00,16:00' || '' }}
+        run: python tools/post.py ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '--dry-run' || '' }} ${{ github.event_name == 'schedule' && '--at 02:00,08:00,16:00' || '' }}
       - name: Record it in posted.json
         run: |
           git config user.name "reel-bot"
