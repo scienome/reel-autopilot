@@ -220,7 +220,9 @@ def main():
     log = json.load(open(LOG)) if os.path.exists(LOG) else {}
     now = dt.datetime.now(dt.timezone.utc)
     # items posted under this system (they have a slot) that are still missing a platform
-    half = [k for k, e in log.items() if e.get('slot') and ('media_id' not in e or not on_youtube(k, log))]
+    # (also anything posted on Instagram after the switch to this system, 28 Oct 14:30 UTC, by a run still on older code)
+    half = [k for k, e in log.items() if (e.get('slot') or e.get('posted_at', '') >= '2026-10-28T14:30')
+            and ('media_id' not in e or not on_youtube(k, log))]
     if a.id:
         kind, rid = split(a.id)
         if not os.path.exists(os.path.join(item(kind, rid)[1], rid, 'meta.json')):
@@ -266,7 +268,7 @@ def main():
         print('dry run: nothing posted'); return
     errs = []
     for k in half:
-        own = dt.datetime.strptime(log[k]['slot'], '%Y-%m-%dT%H:%MZ').replace(tzinfo=dt.timezone.utc)
+        own = dt.datetime.strptime(log[k]['slot'], '%Y-%m-%dT%H:%MZ').replace(tzinfo=dt.timezone.utc) if log[k].get('slot') else now
         print(f'finishing {k} on the platform it is missing from'); errs.append(post(k, max(now, own), log, tok))
     if rid:
         logkey = item(kind, rid)[0]
