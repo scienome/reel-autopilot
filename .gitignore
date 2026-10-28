@@ -2,3 +2,4 @@ out/*_check.png
 reels/*/alignment.json
 __pycache__/
 *.pyc
+out/invites/
