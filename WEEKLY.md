@@ -27,16 +27,32 @@ main run. Every run starts by checking for an open pull request titled "Reels fo
 
 ## 2. Write each reel
 
-**The account:** sarcastic couple comedy. The same couple on the same navy-violet couch, in the Violet Room style
-(soft 3D mannequin-doll cartoon, cosy living room). Every reel is one tiny everyday argument with a sarcastic line
-and a twist, ending warm (hearts) or on a smug punchline. Both of them get to be the sarcastic one; alternate who
-"wins". Keep it affectionate. No insults about looks, weight, money or family, and nothing mean-spirited.
+**The account:** savage, dark relationship comedy. The same couple (him in mustard, her in red), Violet Room style
+(soft 3D mannequin-doll cartoon). The owner wants it **as dark and savage as the limits below allow**: petty revenge,
+passive-aggressive wars, red flags, in-law warfare, exes showing up, jealousy that backfires, "divorce speedrun"
+energy, villain-level pettiness, and a cruel twist at the end that makes people tag their partner and fight in the
+comments. Both of them get to be the villain; alternate who wins. End on a savage punchline or a dark twist, or
+(sometimes) a twisted-sweet one. Every reel is a real story: hook, escalation, twist, punchline (see
+`engagement/RULES.md`).
 
-Good premises: "I'm fine", the thermostat war, "five more minutes", splitting the blanket, who finished the show
-without the other, "we need to talk" (about the dishes), the last slice, the plans they cancelled with relief,
-"Do I look okay?", the "quick" trip to the shop, the phone at dinner, spoilers, the alarm snooze.
+**Use the whole world, not just the couch** (`style/kit_couch.js`, `makeCouch`): at least 2-3 locations per reel
+(`set`: living, bedroom, kitchen, restaurant, car, mall, party, wedding, street), outfits that fit the moment
+(`outfit`: suit, pajamas, gym, party, dress, bride, wedding, apron, winter, towel), and the extra cast when the story
+needs them (`extras`: mil = mother-in-law, dad, bff, bro, ex, exgirl, delivery, waiter, cop, boss, kid) plus pets
+(`pets`: dog, cat). Give each character a clear role (the mother-in-law who always takes his side, the ex who
+"just happened" to be at the same restaurant, the dog who knows everything).
 
-**Script (`script.json`):** 25-40 seconds, about 60-95 words. A hook in the first line ("Has this ever happened to
+**Hard limits (they keep the account alive):** no sexual content or innuendo, no nudity; no jokes about domestic
+violence, abuse, self-harm or real tragedies; nobody actually gets hurt (slapstick only); no insults about looks,
+weight, race, religion or disability. Dark means savage behaviour and twists, not cruelty about who people are.
+
+Premises that work (never reuse one): she "accidentally" sells his PS5 to pay for the holiday he forgot; his
+mother-in-law moves in "for one week" (day 400); he fakes being sick to skip her friend's party and her friends
+show up with soup and a camera; the ex sits at the next table and the waiter knows both their orders; they both
+secretly cancel the same anniversary dinner; the dog testifies; the wedding vows include receipts; she reads his
+search history out loud; he puts the thermostat in a safe; "I'm fine" escalates into a cold war with lawyers.
+
+**Script (`script.json`):** 20-35 seconds, about 55-90 words. A hook in the first line ("Has this ever happened to
 you?", "POV:", "Every couple has this fight."), short punchy phrases, the twist near the end, a 2-6 word closer.
 Spell numbers as words. Quoted lines are read by the same narrator.
 
