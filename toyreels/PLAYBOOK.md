@@ -102,8 +102,10 @@ real people appear. 6-10 hashtags (always include `toybricks`, plus trend tags l
 only if the reel uses real facts.
 
 ## 3. Build each reel
-- `script.json` (beats with ids and phrases), `story.js` (`makeReel({...})` with one shot per beat, shots timed on
-  words with `V(beat, 'word')`), `meta.json`. Copy the structure of the existing reels.
+- `script.json` (beats with ids and phrases), `story.js`, `meta.json`. **Write `story.js` with `makeComedy`**
+  (documented at the bottom of `style/scenes.js`): one short spec per beat (scene, camera, cast with poses that change
+  on words via `V(beat, 'word')`, props, tags, explosions, sounds). Reels 11-31 are complete examples: copy them.
+  Plain `makeReel` still works for anything makeComedy can't do.
 - **Never use the plain blue studio (`studioShot`) or empty sets.** Every shot has a real location from
   `style/scenes.js` (signature `xxxShot(ctx, W, H_, t, E, TG, (S) => {...}, opt)`):
   `officeShot` (president's office, `{ desk: false }`), `bunkerShot` (war room, glowing world map, `{ alarm: 0..1 }`),
@@ -156,6 +158,9 @@ only if the reel uses real facts.
   costumes right for each character, labels readable, no overlapping text, the first frame already grabs attention. Fix and re-check. Never push an unchecked reel.
 - Push a few reels at a time (a series together) to `main` with their README rows, waiting before each push until no
   "Make toy reels" run is queued or in progress. Each push renders only the changed reels.
+  GitHub keeps only one queued run: a push made while another run is queued cancels the queued one, and those reels
+  never render. If that happens (or a run fails), run "Make toy reels" by hand with the reel box empty: it renders
+  every reel that has no Release yet.
 - Wait for every new `toyreel-<id>` Release to exist (`gh api repos/scienome/reel-autopilot/releases`). If a render
   fails, read its log, fix the reel and push again, or re-run "Make toy reels" for it.
 - Set the batch to `"done"`. Do not run the posting workflow by hand.
