@@ -25,12 +25,29 @@ DAVE = os.path.join(ROOT, 'davereels')
 SCHED, LOG = os.path.join(DAVE, 'schedule.json'), os.path.join(DAVE, 'youtube_posted.json')
 
 
+def yt_time(s, date, hhmm):
+    """YouTube can use a different time than Instagram: schedule.json "youtube_times": {"12:30": {"to": "14:30",
+    "until": "2026-11-03"}} moves that slot on YouTube only, up to and including the "until" date."""
+    o = s.get('youtube_times', {}).get(hhmm)
+    return o['to'] if o and date <= o.get('until', '9999-12-31') else hhmm
+
+
 def plan():
     s = json.load(open(SCHED)); off = s.get('timezone_offset', '+05:30'); times = s['times']
     now = dt.datetime.now(dt.timezone.utc).replace(tzinfo=None)
     items = [(now, rid) for rid in s.get('posted_by_hand', [])]
-    items += [(slot_utc(d['date'], times[i], off), rid) for d in s['days'] for i, rid in enumerate(d['reels']) if rid]
+    items += [(slot_utc(d['date'], yt_time(s, d['date'], times[i]), off), rid) for d in s['days'] for i, rid in enumerate(d['reels']) if rid]
     return sorted(items)
+
+
+def reschedule(tok, yid, when):
+    """Move a not-yet-public scheduled Short to a new publish time."""
+    import requests
+    body = {'id': yid, 'status': {'privacyStatus': 'private', 'publishAt': when.strftime('%Y-%m-%dT%H:%M:%S.000Z'), 'selfDeclaredMadeForKids': False, 'embeddable': True}}
+    r = requests.put('https://www.googleapis.com/youtube/v3/videos?part=status', headers={'Authorization': 'Bearer ' + tok, 'Content-Type': 'application/json'}, data=json.dumps(body), timeout=60)
+    if r.status_code != 200:
+        raise RuntimeError(f'reschedule failed {r.status_code}: {r.text[:400]}')
+    return body['status']['publishAt']
 
 
 def texts(rid):
@@ -53,6 +70,20 @@ def main():
         return
     tok = token() if have_keys and not a.dry_run else None
     done = 0
+    # Shorts already uploaded but scheduled for a time that has since changed (and still in the future): move them
+    now = dt.datetime.now(dt.timezone.utc).replace(tzinfo=None)
+    for when, rid in plan():
+        e = log.get(rid)
+        if not e or e.get('publish_utc', 'now') == 'now' or (a.only and rid != a.only):
+            continue
+        old = dt.datetime.strptime(e['publish_utc'], '%Y-%m-%dT%H:%M:%S.000Z')
+        if old == when or old <= now + dt.timedelta(minutes=15) or when <= now + dt.timedelta(minutes=15):
+            continue
+        if a.dry_run:
+            print(f'{rid}: would move from {old:%Y-%m-%d %H:%M} to {when:%Y-%m-%d %H:%M} UTC'); continue
+        e['publish_utc'] = reschedule(tok, e['id'], when)
+        json.dump(log, open(LOG, 'w'), indent=1); done += 1
+        print(f'{rid}: moved from {old:%Y-%m-%d %H:%M} to {when:%Y-%m-%d %H:%M} UTC ({e["url"]})')
     for when, rid in plan():
         if (a.only and rid != a.only) or rid in log:
             continue
