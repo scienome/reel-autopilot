@@ -3,7 +3,7 @@
 Every finished video, one folder per series. Click a folder, then a file, then **View raw** (or the download
 button) to play it. This page updates itself after every render.
 
-## CouchSarcasm (couple comedy) (15)
+## CouchSarcasm (couple comedy) (18)
 Folder: [`couch-sarcasm/`](couch-sarcasm/)
 
 | Video | Title | Status |
@@ -23,6 +23,9 @@ Folder: [`couch-sarcasm/`](couch-sarcasm/)
 | [0013-do-i-look-okay](couch-sarcasm/0013-do-i-look-okay.mp4) | Do I look okay? | Skipped (older kind, never posted) |
 | [0014-odd-volume](couch-sarcasm/0014-odd-volume.mp4) | Odd volume. | Skipped (older kind, never posted) |
 | [0015-two-feet-away](couch-sarcasm/0015-two-feet-away.mp4) | Two feet away. | Skipped (older kind, never posted) |
+| [0016-one-week](couch-sarcasm/0016-one-week.mp4) | One week, she said. | Waiting to post |
+| [0017-the-sick-day](couch-sarcasm/0017-the-sick-day.mp4) | The sick day. | Waiting to post |
+| [0018-the-usual](couch-sarcasm/0018-the-usual.mp4) | The usual. | Waiting to post |
 
 ## Dave (Gears & Glitches) (21)
 Folder: [`dave-reels/`](dave-reels/)
