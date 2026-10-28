@@ -66,7 +66,7 @@ Folder: [`toy-reels/`](toy-reels/)
 | [08-body-in-space](toy-reels/08-body-in-space.mp4) | What happens to your body in space? | Skipped (never posted) |
 | [09-body-one-second](toy-reels/09-body-one-second.mp4) | What happens in your body every second? | Skipped (never posted) |
 | [10-body-hiccups](toy-reels/10-body-hiccups.mp4) | The man who hiccupped for 68 years | Skipped (never posted) |
-| [11-kim-missile-boomerang](toy-reels/11-kim-missile-boomerang.mp4) | Kim Pressed The Button. The Missile Came Back. 💀 | Waiting to post |
+| [11-kim-missile-boomerang](toy-reels/11-kim-missile-boomerang.mp4) | Kim Pressed The Button. The Missile Came Back. 💀 | Posted (Instagram + YouTube) |
 | [12-zombie-apocalypse-fails](toy-reels/12-zombie-apocalypse-fails.mp4) | The Zombie Apocalypse Failed For The Dumbest Reason 🧟 | Waiting to post |
 | [13-hitler-hell-queue](toy-reels/13-hitler-hell-queue.mp4) | Hitler Went To Hell And Got Put On Hold 💀 | Waiting to post |
 | [14-death-replaced-by-ai](toy-reels/14-death-replaced-by-ai.mp4) | Death Got Replaced By AI. Nobody Has Died Since 💀 | Waiting to post |
@@ -93,7 +93,7 @@ Folder: [`mechanic-shorts/`](mechanic-shorts/)
 
 | Video | Title | Status |
 |---|---|---|
-| [01-car-differential](mechanic-shorts/01-car-differential.mp4) | How a car's differential works | Not on YouTube |
+| [01-car-differential](mechanic-shorts/01-car-differential.mp4) | How a car's differential works | YouTube: now · posted on Instagram |
 | [02-gimli-fuel-mistake](mechanic-shorts/02-gimli-fuel-mistake.mp4) | One number emptied this jet's tanks | Not on YouTube |
 | [03-gimli-tiny-propeller](mechanic-shorts/03-gimli-tiny-propeller.mp4) | The tiny propeller that saved 69 people | Not on YouTube |
 | [04-gimli-racetrack-landing](mechanic-shorts/04-gimli-racetrack-landing.mp4) | A jet landed in the middle of a car race | Not on YouTube |
