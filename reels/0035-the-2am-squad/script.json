@@ -1,0 +1,9 @@
+[
+ {"id": "hook", "phrases": ["Two A.M.", "He's still shouting at his squad."]},
+ {"id": "her", "phrases": ["She can't sleep.", "So she grabs the other controller."]},
+ {"id": "join", "phrases": ["She joins his game."]},
+ {"id": "wins", "phrases": ["First match.", "She carries the whole team."]},
+ {"id": "squad", "phrases": ["His squad is in love.", "Bring her back tomorrow."]},
+ {"id": "twist", "phrases": ["Next night.", "They kick him."]},
+ {"id": "close", "phrases": ["She plays.", "He sleeps on the couch."]}
+]

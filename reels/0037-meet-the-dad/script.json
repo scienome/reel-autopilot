@@ -1,0 +1,10 @@
+[
+ {"id": "hook", "phrases": ["Meeting her dad.", "First dinner."]},
+ {"id": "stare", "phrases": ["Her dad doesn't blink."]},
+ {"id": "ask", "phrases": ["Where were you on Friday at nine?"]},
+ {"id": "sweat", "phrases": ["He sweats.", "Gaming.", "With friends."]},
+ {"id": "badge", "phrases": ["Her dad puts a badge on the table."]},
+ {"id": "panic", "phrases": ["He confesses everything.", "Even things nobody asked about."]},
+ {"id": "twist", "phrases": ["She leans over.", "He's a mall cop."]},
+ {"id": "close", "phrases": ["The dad smiles.", "Still a cop."]}
+]

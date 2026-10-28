@@ -1,0 +1,10 @@
+[
+ {"id": "hook", "phrases": ["Vacation photos.", "He posts ten."]},
+ {"id": "crop", "phrases": ["She's in none of them.", "Cropped out.", "Every single one."]},
+ {"id": "her", "phrases": ["She says nothing."]},
+ {"id": "post", "phrases": ["Next morning, she posts one photo."]},
+ {"id": "photo", "phrases": ["Him.", "Asleep on the plane.", "Mouth open."]},
+ {"id": "viral", "phrases": ["Fifty thousand likes.", "His boss shares it."]},
+ {"id": "twist", "phrases": ["His mom comments.", "Finally a good one."]},
+ {"id": "close", "phrases": ["Crop that."]}
+]

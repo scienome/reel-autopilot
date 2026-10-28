@@ -1,0 +1,9 @@
+[
+ {"id": "hook", "phrases": ["She needs a little more closet space."]},
+ {"id": "half", "phrases": ["Week one.", "Half the closet."]},
+ {"id": "more", "phrases": ["Week two.", "Three quarters."]},
+ {"id": "one", "phrases": ["Week three.", "He has one hanger."]},
+ {"id": "where", "phrases": ["He asks, where are my clothes?", "She points down."]},
+ {"id": "twist", "phrases": ["The dog's bed.", "Folded nicely.", "The dog is wearing his hoodie."]},
+ {"id": "close", "phrases": ["The dog needed space too."]}
+]

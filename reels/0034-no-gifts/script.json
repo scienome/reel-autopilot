@@ -1,0 +1,9 @@
+[
+ {"id": "hook", "phrases": ["Anniversary.", "They agree: no gifts this year."]},
+ {"id": "him", "phrases": ["He keeps his word.", "Nothing."]},
+ {"id": "her", "phrases": ["She walks in with a giant box."]},
+ {"id": "guilt", "phrases": ["He panics.", "You said no gifts."]},
+ {"id": "open", "phrases": ["He opens it.", "Layers of paper.", "More paper."]},
+ {"id": "twist", "phrases": ["It's his old hoodie.", "The one she stole.", "Washed."]},
+ {"id": "close", "phrases": ["I kept my word.", "Technically."]}
+]
