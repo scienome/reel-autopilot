@@ -92,3 +92,6 @@ A scheduled Claude session runs every 3 days and keeps at least 7 days of Reels 
 | 31 | Why Pisa's tower leans (and bends) | Sun 1 Nov 08:30 |
 | 32 | $440 million in 45 minutes | Sun 1 Nov 12:30 |
 | 33 | The jet that shot itself down | Sun 1 Nov 20:30 |
+| 34 | The bomb steered by pigeons | Mon 2 Nov 08:30 |
+| 35 | The rocket killed by one number | Mon 2 Nov 12:30 |
+| 36 | The atomic bomb dropped on a garden | Mon 2 Nov 20:30 |

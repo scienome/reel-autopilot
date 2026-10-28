@@ -1,0 +1,13 @@
+{
+ "title": "The rocket killed by one number",
+ "caption": "Europe's brand-new rocket blew itself up 37 seconds after liftoff because one number was too big. 🚀\nReused code squeezed the sideways speed from a 64-bit number into a 16-bit integer, which can't hold more than 32,767. The faster rocket overflowed it and both guidance computers crashed.\nShould you ever reuse old code on new hardware? Defend your answer.",
+ "hashtags": ["gearsandglitches", "ariane5", "softwarebug", "coding", "space", "rocket", "engineeringfails", "darkhumor"],
+ "first_comment": "The backup computer ran the exact same code, so it crashed the exact same way. Redundancy speedrun 💀",
+ "potential": 6,
+ "cover_t": 3.0,
+ "libs": ["davereels/props/dave.js", "davereels/props/dave_kit.js"],
+ "sources": [
+  "ESA/CNES Inquiry Board report, 'Ariane 5 Flight 501 Failure' (J. L. Lions, July 1996): software reused from Ariane 4 converted the horizontal velocity bias (BH) from a 64-bit floating point number to a 16-bit signed integer; the larger values of Ariane 5 caused an operand error; the active and backup inertial reference systems, running identical software, both failed; the nozzles were commanded to full deflection, the launcher broke up and self-destructed about 37-40 seconds after lift-off on 4 June 1996",
+  "ESA: the four Cluster science satellites were lost on flight 501"
+ ]
+}

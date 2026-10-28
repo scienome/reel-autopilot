@@ -1,0 +1,13 @@
+{
+ "title": "The atomic bomb dropped on a garden",
+ "caption": "In 1958 an American bomber accidentally dropped an atomic bomb on a family's garden in South Carolina. 💣\nA crewman checking a stuck locking pin grabbed the emergency release; the bomb's weight broke straight through the bomb bay doors. The nuclear core wasn't aboard, but the conventional explosives were.\nHow is this not taught in every history class? Did you know about it, yes or no?",
+ "hashtags": ["gearsandglitches", "marsbluff", "coldwar", "brokenarrow", "nuclear", "history", "engineeringfails", "darkhumor"],
+ "first_comment": "The bomb bay doors had one job: stay shut under a 3-tonne bomb. They lost 💀 Wildest Cold War accident?",
+ "potential": 8,
+ "cover_t": 1.8,
+ "libs": ["davereels/props/dave.js", "davereels/props/dave_kit.js"],
+ "sources": [
+  "University of South Carolina Broken Arrow Project, 'March 11, 1958 - Florence, South Carolina': a B-47 accidentally dropped a Mark 6 bomb (nuclear capsule not aboard) on Mars Bluff after a crew member checking the locking pin grabbed the emergency release; the bomb broke through the bomb bay doors; the high explosive detonated in the Gregg family's garden",
+  "Wikipedia, 'Mars Bluff' and Mental Floss, 'The Night They (Almost) Bombed Old Dixie Down': crater about 70-75 ft (21-23 m) wide; no one was killed but several members of the Gregg family were injured; the Mark 6 weighed about 7,600 lb (3.4 t)"
+ ]
+}

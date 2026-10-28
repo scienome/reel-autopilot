@@ -1,0 +1,7 @@
+[
+  { "id": "hook", "text": "In nineteen ninety-six, Europe's brand-new rocket blew itself up thirty-seven seconds after liftoff. Because one number was too big." },
+  { "id": "code", "text": "Its guidance code was reused from the older Ariane four. One value, sideways speed, was squeezed from a sixty-four bit number into a sixteen bit one." },
+  { "id": "overflow", "text": "Ariane five was faster. The number didn't fit. The computer crashed, and the backup, running the same code, crashed the same way." },
+  { "id": "boom", "text": "The nozzles swung hard over, the rocket started breaking up, and it destroyed itself. Four science satellites went with it." },
+  { "id": "end", "text": "Dave said the old code worked fine." }
+]

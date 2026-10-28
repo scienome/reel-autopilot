@@ -1,0 +1,13 @@
+{
+ "title": "The bomb steered by pigeons",
+ "caption": "In WW2, an American guided bomb was designed to be flown by pigeons. Seriously. 🐦\nA trained pigeon pecked at the target's image on a screen in the nose: when the target drifted off centre, its pecks steered the bomb back. Three birds, so two could outvote one.\nWould you trust a pigeon over 1940s electronics? Yes or no?",
+ "hashtags": ["gearsandglitches", "projectpigeon", "ww2", "skinner", "weirdhistory", "militaryhistory", "science", "darkhumor"],
+ "first_comment": "Three pigeons and a majority vote is more democracy than most group chats 🗳️🐦",
+ "potential": 5,
+ "cover_t": 1.6,
+ "libs": ["davereels/props/dave.js", "davereels/props/dave_kit.js"],
+ "sources": [
+  "Smithsonian Magazine, 'B.F. Skinner's Pigeon-Guided Rocket' (2011): pigeons trained to peck at a target image on a screen in the nose cone to steer; three pigeons so that one wrong bird could be outvoted; a nose cone survives at the National Museum of American History",
+  "B. F. Skinner, 'Pigeons in a Pelican', American Psychologist 15 (1960): the project got a $25,000 contract in 1943, worked in demonstrations but was not taken up and was cancelled; revived by the Navy as Project ORCON until 1953"
+ ]
+}
