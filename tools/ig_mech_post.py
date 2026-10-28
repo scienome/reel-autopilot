@@ -25,7 +25,7 @@ Instagram Login), YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN (the Gears Yo
 import argparse, datetime as dt, json, os, sys, time
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from first_comment import first_comment, post_first_comment, guard_slot, SlotTaken  # noqa: E402
+from first_comment import first_comment, post_first_comment, guard_slot, SlotTaken, best_for_slot, is_afternoon  # noqa: E402
 import youtube_publish as yt  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -244,10 +244,14 @@ def main():
             last = max(((k, e.get('slot') or e.get('posted_at') or '') for k, e in log.items()), key=lambda kv: kv[1], default=(None, ''))[0]
             order = ['mech', 'dave'] if last and not str(last).startswith('mechreel-') else ['dave', 'mech']
             for kind in order:
+                ready = []
                 for r in (dave_order() if kind == 'dave' else mech_order()):
                     key0, folder, tag = item(kind, r)
                     if key0 in log: continue
-                    if video_url(r, tag)[0]: rid = r; break
+                    if video_url(r, tag)[0]: ready.append(r)
+                    if len(ready) == 3: break
+                folder = item(kind, 'x')[1]
+                rid = best_for_slot(ready, lambda r: os.path.join(folder, r, 'meta.json'), is_afternoon(slot.replace(tzinfo=None)))
                 if rid: break
             if not rid:
                 print('::warning::Nothing rendered left to post on Gears & Glitches.')

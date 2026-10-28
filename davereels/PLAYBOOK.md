@@ -100,3 +100,6 @@ main run, and every run starts by checking `davereels/batch_log.json`:
 
 ## 5. Report (short, plain language)
 New Reels and their slots (IST), what rendered, anything skipped or failed and why, the next R.I.P. number.
+
+## Posting order
+- **`"potential"` in meta.json (1-10):** your honest guess of how hard the reel will hit (hook strength, shock, comment bait). The posters put the strongest of the next few reels in the morning and evening slots and the weakest in the afternoon slot, so score every reel and spread the scores (not all 8s).

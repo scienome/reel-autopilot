@@ -11,7 +11,7 @@ Caption: reels/<id>/meta.json -> caption + hashtags. Appends the result to poste
 import argparse, datetime, glob, json, os, sys, time
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from first_comment import first_comment, post_first_comment, guard_slot, SlotTaken  # noqa: E402
+from first_comment import first_comment, post_first_comment, guard_slot, SlotTaken, best_for_slot, is_afternoon  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CFG = json.load(open(os.path.join(ROOT, 'config.json')))
@@ -66,7 +66,8 @@ def main():
             print(f'already posted for the {target:%H:%M} UTC slot (backup run): nothing to do'); return
         print(f'slot {target:%H:%M} UTC; publishing exactly then')
     q = queue()
-    rid = a.reel or (q[0] if q else None)
+    slot_utc = target.replace(tzinfo=None) if target else None
+    rid = a.reel or best_for_slot(q, lambda r: os.path.join(ROOT, 'reels', r, 'meta.json'), is_afternoon(slot_utc))
     if not rid:
         print('::error::The queue is empty: no rendered reels left to post. Merge the next weekly batch.')
         sys.exit(1)

@@ -24,7 +24,7 @@ import argparse, datetime as dt, json, os, sys, tempfile, time
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, 'tools'))
 import youtube_publish as yt  # noqa: E402
-from first_comment import first_comment, post_first_comment, guard_slot  # noqa: E402
+from first_comment import first_comment, post_first_comment, guard_slot, best_for_slot, is_afternoon  # noqa: E402
 
 TOY = os.path.join(ROOT, 'toyreels')
 REELS, LOG, CONF = os.path.join(TOY, 'reels'), os.path.join(TOY, 'posted.json'), os.path.join(TOY, 'posting.json')
@@ -193,7 +193,11 @@ def main():
             print(f'no slot due now; next slot {nxt:%Y-%m-%d %H:%M} UTC; {len(queue)} reel(s) waiting')
             return
 
-    pick = a.id or next((r for r in queue if rendered(r)), None)
+    ready = []
+    for r in queue:
+        if len(ready) == 3: break
+        if rendered(r): ready.append(r)
+    pick = a.id or best_for_slot(ready, lambda r: os.path.join(REELS, r, 'meta.json'), is_afternoon(slot))
     unrendered = [r for r in queue[:queue.index(pick)]] if pick in queue else []
     at = slot or t
     print(f'unfinished: {half or "none"}\nnext reel: {pick or "NONE - queue is empty"}'

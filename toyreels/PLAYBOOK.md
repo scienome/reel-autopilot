@@ -171,3 +171,6 @@ only if the reel uses real facts.
 ## 5. Report
 A short plain-language report: the 21 new reels (id and title), how many are rendered, how many are now waiting to
 post, anything that failed and why.
+
+## Posting order
+- **`"potential"` in meta.json (1-10):** your honest guess of how hard the reel will hit (hook strength, shock, comment bait). The posters put the strongest of the next few reels in the morning and evening slots and the weakest in the afternoon slot, so score every reel and spread the scores (not all 8s).

@@ -39,3 +39,22 @@ def guard_slot(api, ig, minutes=45):
         ts = dt.datetime.strptime(m['timestamp'], '%Y-%m-%dT%H:%M:%S%z')
         if (now - ts).total_seconds() < minutes * 60:
             raise SlotTaken(f'the account already posted media {m["id"]} at {m["timestamp"]}; not posting a second one in this slot')
+
+
+def best_for_slot(cands, meta_of, afternoon, look=3):
+    """Pick from the next `look` waiting reels by meta.json "potential" (1-10, default 5): the strongest for a morning or
+    evening slot, the weakest for the afternoon slot. Ties keep queue order."""
+    import json, os
+    c = cands[:look]
+    if not c:
+        return None
+    pot = lambda r: (json.load(open(meta_of(r))).get('potential', 5) if os.path.exists(meta_of(r)) else 5)
+    if afternoon:
+        return min(c, key=lambda r: (pot(r), c.index(r)))
+    return max(c, key=lambda r: (pot(r), -c.index(r)))
+
+
+def is_afternoon(slot_utc):
+    """12:00-16:59 IST counts as the afternoon slot."""
+    import datetime as dt
+    return slot_utc is not None and 12 <= (slot_utc + dt.timedelta(hours=5, minutes=30)).hour < 17

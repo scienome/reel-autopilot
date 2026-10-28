@@ -65,6 +65,8 @@ Each beat id names one shot-sized moment. Phrases are joined with spaces and sen
 
 **`meta.json`:** `{ "title": "...", "caption": "one or two lines + a call to tag someone", "hashtags": [6-9 tags], "first_comment": "..." }`.
 
+- **`"potential"` in meta.json (1-10):** your honest guess of how hard the reel will hit (hook strength, shock, comment bait). The posters put the strongest of the next few reels in the morning and evening slots and the weakest in the afternoon slot, so score every reel and spread the scores (not all 8s).
+
 **Engagement:** follow `engagement/RULES.md` for every reel: a hook in the first second, something changing every
 2-3 seconds, the twist in the last 5 seconds, an ending that loops back into the start, 20-35 seconds, a caption
 ending in a two-sided question or "tag the one who...", and a `first_comment` hot take or playful vote.
