@@ -1,0 +1,60 @@
+name: Check ElevenLabs key and voices
+# Run by hand after changing ELEVENLABS_API_KEY: checks that the key works and that its account can use every voice
+# set in the config.json files (couple reels, Dave reels, mechanic reels and videos, toy reels, YouTube videos).
+# It only reads account and voice info: it makes no audio and uses no credits.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check the key and every voice
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+        run: |
+          python3 - <<'EOF'
+          import json, os, sys, urllib.request, urllib.error
+
+          key = os.environ.get('ELEVENLABS_API_KEY', '')
+          if not key:
+              sys.exit('::error::ELEVENLABS_API_KEY is not set')
+
+          def get(path):
+              req = urllib.request.Request('https://api.elevenlabs.io/v1' + path, headers={'xi-api-key': key})
+              try:
+                  with urllib.request.urlopen(req, timeout=30) as r:
+                      return r.status, json.load(r)
+              except urllib.error.HTTPError as e:
+                  return e.code, e.read().decode(errors='replace')[:300]
+
+          code, sub = get('/user/subscription')
+          if code == 200:
+              print(f"Key OK: {sub.get('tier')} plan, {sub.get('character_count')} of {sub.get('character_limit')} characters used this month")
+          elif code in (401, 403) and 'missing_permissions' in str(sub):
+              print('::notice::The key cannot read the plan (no user_read permission); checking the voices anyway')
+          else:
+              sys.exit(f'::error::ElevenLabs rejected the key ({code}): {sub}')
+
+          users = {}
+          for cfg in ['config.json', 'davereels/config.json', 'mechreels/config.json', 'mechvideos/config.json',
+                      'toyreels/config.json', 'youtube/config.json']:
+              if os.path.exists(cfg):
+                  v = json.load(open(cfg)).get('voice', {}).get('voice_id')
+                  if v:
+                      users.setdefault(v, []).append(os.path.dirname(cfg) or 'reels (couple)')
+
+          bad = 0
+          for v, where in users.items():
+              code, info = get('/voices/' + v)
+              if code == 200:
+                  print(f"OK  {v}  {info.get('name')} ({info.get('category')})  used by: {', '.join(where)}")
+              else:
+                  print(f"::error::{v} (used by {', '.join(where)}) is not usable with this key ({code}): {info}")
+                  bad += 1
+          sys.exit(1 if bad else 0)
+          EOF
