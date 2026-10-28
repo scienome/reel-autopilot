@@ -158,6 +158,33 @@
   // a wall clock / alarm clock face (hours as a float), used on plates and tags
   const clock = (S, x, y, z, s, hours, col = P.red) => S.box((p) => add(mul(p, s), [x, y, z]), 0.5, 0.5, 0.1, col, { bevel: 0.25, paint: clockFace(hours) });
 
+  // ---- dark-comedy kit ----
+  // a cartoon missile along +y (tilt = radians from vertical), with a flame (0..1) out of the tail
+  const missile = (S, x, y, z, s = 1, tilt = 0, flame = 0, col = [236, 236, 240], tip = P.red) => {
+    const T = (p) => add(rotZ(mul(p, s), tilt), [x, y, z]);
+    S.cyl((p) => T(p), 0.16, 1.1, col, 14);
+    for (let i = 0; i < 3; i++) S.cyl((p) => T(add(p, [0, 1.1 + i * 0.1, 0])), 0.16 * (1 - i * 0.3), 0.1, tip, 14);
+    for (const a of [0, Math.PI / 2]) S.box((p) => T(add(rotY(p, a), [0, 0.15, 0])), 0.32, 0.15, 0.02, tip, { bevel: 0.3 });
+    if (flame > 0) for (let i = 0; i < 3; i++) S.box((p) => T(add(p, [0, -0.15 - i * 0.16 * flame, 0])), 0.12 - i * 0.03, 0.09 * flame, 0.12 - i * 0.03, [[255, 220, 60], [255, 150, 40], [240, 70, 40]][i], { bevel: 0.5 });
+  };
+  // a stepped brick pyramid; eye = 0..1 opens the glowing all-seeing eye on its capstone (Illuminati jokes)
+  const pyramid = (S, x, z, s = 1, eye = 0, col = [226, 190, 120]) => {
+    for (let i = 0; i < 5; i++) S.box((p) => add(mul(p, s), [x, (0.12 + i * 0.24) * s, z]), 1.1 - i * 0.22, 0.12, 1.1 - i * 0.22, col, { bevel: 0.15 });
+    if (eye > 0) S.box((p) => add(mul(p, s), [x, 1.3 * s, z + 0.12 * s]), 0.2, 0.13, 0.02, [255, 230, 120], { bevel: 0.3, paint: (c, w, h) => { c.fillStyle = '#fff6d0'; c.beginPath(); c.ellipse(w / 2, h / 2, w * 0.42, h * 0.34 * eye, 0, 0, TAU); c.fill(); c.fillStyle = '#2a2a33'; c.beginPath(); c.arc(w / 2, h / 2, h * 0.22 * eye, 0, TAU); c.fill(); } });
+  };
+  // a cartoon explosion: puffs of bricks growing with u (0..1) and fading out after 1
+  const boom = (S, x, y, z, s = 1, u = 1) => {
+    if (u <= 0 || u >= 2) return;
+    const k = Math.min(u, 1) * (u > 1 ? 2 - u : 1), r = H.rng(11);
+    for (let i = 0; i < 14; i++) { const a = r.range(0, TAU), e = r.range(-0.6, 1.2), d = r.range(0.2, 0.9) * k * s; S.box((p) => add(rotY(rotZ(p, a), e), [x + Math.cos(a) * d, y + Math.abs(e) * d * 0.8, z + Math.sin(a) * d * 0.5]), 0.16 * k * s, 0.16 * k * s, 0.16 * k * s, [[255, 220, 60], [255, 150, 40], [240, 70, 40], [90, 90, 100]][i % 4], { bevel: 0.5 }); }
+  };
+  // jail bars in front of the camera-side of a cell (n bars across width w)
+  const jailBars = (S, x, z, w = 2, n = 7, h = 2.6) => { for (let i = 0; i < n; i++) S.cyl((p) => add(p, [x - w / 2 + (i * w) / (n - 1), 0, z]), 0.04, h, [120, 124, 134], 8); for (const y of [0.1, h]) S.box((p) => add(p, [x, y, z]), w / 2 + 0.06, 0.05, 0.06, [100, 104, 114], { bevel: 0.3 }); };
+  // a speech podium with printed text on its front
+  const podium = (S, x, z, txt = '', col = [120, 84, 50], s = 1) => S.box((p) => add(mul(p, s), [x, 0.55 * s, z]), 0.4, 0.55, 0.25, col, { bevel: 0.2, paint: (c, w, h) => { if (!txt) return; c.fillStyle = '#ffd23f'; c.font = FONT(800, h * 0.12); c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText(txt, w / 2, h * 0.3); } });
+  // the big red button on a desk-top box; press 0..1 pushes it down
+  const bigButton = (S, x, y, z, s = 1, press = 0) => { S.box((p) => add(mul(p, s), [x, y + 0.15 * s, z]), 0.3, 0.15, 0.3, [230, 210, 60], { bevel: 0.2, paint: (c, w, h) => { c.fillStyle = '#16161c'; for (let i = 0; i < 6; i++) c.fillRect(w * (i / 6), 0, w / 12, h); } }); S.cyl((p) => add(mul(p, s), [x, y + 0.3 * s, z]), 0.18, 0.12 * (1 - 0.7 * press), [230, 30, 30], 16); };
+
   // ==================== shot wrappers ====================
   const lawnShot = (ctx, W, H_, t, E, TG, build, night = 0) => { const S = Scene(E, TG, W, H_); build(S); grassSet(ctx, W, H_, S, t); S.render(ctx, W, H_, {}); nightGrade(ctx, W, H_, night); return S; };
   const studioShot = (ctx, W, H_, E, TG, build) => { const S = Scene(E, TG, W, H_); build(S); studioSet(ctx, W, H_, S); S.render(ctx, W, H_, { sky: [210, 225, 255], ground: [110, 150, 230] }); return S; };

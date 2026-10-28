@@ -66,19 +66,43 @@
       box(T, w, h, d, col, { bevel: 0.12 });
       for (let i = 0; i < nx; i++) for (let j = 0; j < nz; j++) cyl((p) => T(add(p, [-w + u * (i + 0.5), h, -d + u * (j + 0.5)])), 0.095, 0.07, col, 10);
     };
-    // the brick figure: block legs, chunky torso, swinging arms, cube head with a printed face and a hat
+    // the brick figure: block legs, chunky torso, swinging arms, cube head with a printed face and a hat.
+    // Costume kit (all optional): stripes [colA, colB] (prisoner), number '24601' (chest plate), suit, tie col,
+    // medals n, emblem { txt, col, bg, shape: 'diamond' | 'circle' }, cape col (capeFlap), sleeve col, pantsPaint,
+    // hair 'short' | 'side' | 'combover' | 'flattop' | 'thin' | 'long' | 'spiky' (hairCol), hat 'cap' | 'police' |
+    // 'beanie' | 'hard' | 'peaked' | 'crown' | 'tophat' | 'cowl' (ears) | 'helmet' | 'army' (hatCol), balaclava col,
+    // mustache 'toothbrush' | 'big' | 'beard', shades, brows 'angry' | 'worried' | 'raised', sweat,
+    // eyes adds 'angry', mouth adds 'grin' | 'evil', hold 'gun' | 'bag' | 'briefcase' | 'phone' | 'remote' | 'sword' |
+    // 'shield' | 'flag' | 'hammer' (holdArm 1 = right, -1 = left; holdCol)
+    const rgb = (col) => 'rgb(' + col.join(',') + ')';
     const figure = (x, z, s, rot, o = {}) => {
       const bob = o.bob || 0, T0 = (p) => add(rotY(mul(p, s), rot), [x, bob, z]);
       const legA = o.walk ? Math.sin(o.walk) * 0.5 : 0;
-      for (const sd of [-1, 1]) box((p) => T0(add(rotX(add(p, [0, -0.32, 0]), legA * sd), [sd * 0.17, 0.66, 0])), 0.15, 0.32, 0.16, o.pants || P.denim, { bevel: 0.25 });
-      box((p) => T0(add(p, [0, 1.2, 0])), 0.36, 0.3, 0.2, o.shirt || P.tan, { bevel: 0.3, paint: o.shirtPaint });
+      const stripes = o.stripes ? (c, w, h) => { for (let i = 0; i < 6; i++) { c.fillStyle = rgb(o.stripes[i % 2]); c.fillRect(0, h * i / 6, w, h / 6 + 1); } } : null;
+      const shirt = o.shirt || (o.stripes ? o.stripes[0] : o.suit ? [40, 44, 56] : P.tan);
+      const pants = o.pants || (o.stripes ? o.stripes[0] : o.suit ? [40, 44, 56] : P.denim);
+      const dressed = o.stripes || o.suit || o.tie || o.medals || o.emblem || o.number;
+      const torsoPaint = o.shirtPaint || (dressed ? (c, w, h) => {
+        if (stripes) stripes(c, w, h);
+        if (o.suit) { c.fillStyle = '#f4f4f0'; c.beginPath(); c.moveTo(w * 0.36, 0); c.lineTo(w * 0.5, h * 0.6); c.lineTo(w * 0.64, 0); c.fill(); }
+        if (o.tie) { c.fillStyle = rgb(o.tie); c.beginPath(); c.moveTo(w * 0.46, h * 0.04); c.lineTo(w * 0.54, h * 0.04); c.lineTo(w * 0.56, h * 0.78); c.lineTo(w * 0.5, h * 0.96); c.lineTo(w * 0.44, h * 0.78); c.fill(); }
+        for (let i = 0; i < (o.medals || 0); i++) { const mx = w * (0.16 + (i % 3) * 0.08), my = h * (0.18 + Math.floor(i / 3) * 0.2); c.fillStyle = ['#e04040', '#3a7ad8', '#2aa860'][i % 3]; c.fillRect(mx, my, w * 0.06, h * 0.08); c.fillStyle = '#ffd23f'; c.beginPath(); c.arc(mx + w * 0.03, my + h * 0.13, w * 0.025, 0, TAU); c.fill(); }
+        if (o.emblem) { const e = o.emblem; c.fillStyle = rgb(e.bg || P.yellow); c.beginPath(); if (e.shape === 'circle') c.arc(w / 2, h * 0.45, h * 0.3, 0, TAU); else { c.moveTo(w * 0.5, h * 0.1); c.lineTo(w * 0.7, h * 0.3); c.lineTo(w * 0.5, h * 0.82); c.lineTo(w * 0.3, h * 0.3); c.closePath(); } c.fill();
+          if (e.txt) { c.fillStyle = rgb(e.col || P.red); c.font = FONT(800, h * 0.34); c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText(e.txt, w / 2, h * 0.42); } }
+        if (o.number) { c.fillStyle = '#f4f4f0'; c.fillRect(w * 0.25, h * 0.32, w * 0.5, h * 0.24); c.fillStyle = '#16161c'; c.font = FONT(800, h * 0.18); c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText(String(o.number), w / 2, h * 0.445); }
+      } : undefined);
+      for (const sd of [-1, 1]) box((p) => T0(add(rotX(add(p, [0, -0.32, 0]), legA * sd), [sd * 0.17, 0.66, 0])), 0.15, 0.32, 0.16, pants, { bevel: 0.25, paint: o.pantsPaint || stripes || undefined });
+      box((p) => T0(add(p, [0, 1.2, 0])), 0.36, 0.3, 0.2, shirt, { bevel: 0.3, paint: torsoPaint });
+      if (o.cape) box((p) => T0(add(rotX(add(p, [0, -0.6, 0]), 0.16 + (o.capeFlap || 0)), [0, 1.5, -0.24])), 0.42, 0.62, 0.025, o.cape, { bevel: 0.2 });
       const arms = o.arms || [0.15, 0.15]; // radians, positive = raised outward
       for (const sd of [-1, 1]) {
         const ang = arms[sd < 0 ? 0 : 1];
-        box((p) => T0(add(rotZ(add(p, [0, -0.26, 0]), sd * ang), [sd * 0.47, 1.42, 0])), 0.1, 0.27, 0.12, o.shirt || P.tan, { bevel: 0.35 });
+        box((p) => T0(add(rotZ(add(p, [0, -0.26, 0]), sd * ang), [sd * 0.47, 1.42, 0])), 0.1, 0.27, 0.12, o.sleeve || shirt, { bevel: 0.35, paint: o.sleeve ? undefined : stripes || undefined });
         box((p) => T0(add(rotZ(add(p, [0, -0.6, 0]), sd * ang), [sd * 0.47, 1.42, 0])), 0.1, 0.08, 0.1, o.skin || P.skin, { bevel: 0.4 });
+        if (o.hold && sd === (o.holdArm || 1)) holdItem(o.hold, (p) => T0(add(rotZ(add(p, [0, -0.7, 0.04]), sd * ang), [sd * 0.47, 1.42, 0])), o.holdCol);
       }
-      const face2 = (c, w, h) => { // printed face: eyes (open | wide | closed | x | sleepy), mouth (smile | o | flat | frown | open), optional mask
+      const face2 = (c, w, h) => { // printed face: eyes (open | wide | closed | x | sleepy | angry), mouth (smile | o | flat | frown | open | grin | evil), optional mask
+        if (o.balaclava) { c.fillStyle = rgb(o.skin || P.skin); c.beginPath(); c.roundRect(w * 0.16, h * 0.32, w * 0.68, h * 0.26, h * 0.06); c.fill(); c.beginPath(); c.ellipse(w * (0.5 + (o.look || 0)), h * 0.74, w * 0.17, h * 0.1, 0, 0, TAU); c.fill(); }
         c.fillStyle = '#2a2a33'; c.strokeStyle = '#2a2a33'; c.lineCap = 'round'; const ex = o.look || 0, ey = o.lookY || 0, eyes = o.eyes || 'open';
         if (o.mask) { c.fillStyle = '#16161c'; c.fillRect(0, h * 0.3, w, h * 0.3); c.fillStyle = '#f4f0e6'; }
         for (const cx of [0.34, 0.66]) {
@@ -86,19 +110,59 @@
           if (eyes === 'closed' || eyes === 'sleepy') { c.lineWidth = w * 0.04; c.beginPath(); c.moveTo(x - w * 0.06, y + (eyes === 'sleepy' ? 0 : h * 0.01)); c.lineTo(x + w * 0.06, y); c.stroke(); if (eyes === 'sleepy') { c.beginPath(); c.ellipse(x, y + h * 0.02, w * 0.045, h * 0.035, 0, 0, Math.PI); c.fill(); } }
           else if (eyes === 'x') { c.lineWidth = w * 0.035; c.beginPath(); c.moveTo(x - w * 0.05, y - h * 0.05); c.lineTo(x + w * 0.05, y + h * 0.05); c.moveTo(x + w * 0.05, y - h * 0.05); c.lineTo(x - w * 0.05, y + h * 0.05); c.stroke(); }
           else { const k = eyes === 'wide' ? 1.45 : 1; c.beginPath(); c.ellipse(x, y, w * 0.055 * k, h * 0.08 * k, 0, 0, TAU); c.fill(); if (eyes === 'wide') { c.fillStyle = '#fff'; c.beginPath(); c.arc(x - w * 0.02, y - h * 0.03, w * 0.022, 0, TAU); c.fill(); c.fillStyle = o.mask ? '#f4f0e6' : '#2a2a33'; } }
+          const br = o.brows || (eyes === 'angry' ? 'angry' : null);
+          if (br) { const inner = cx < 0.5 ? 1 : -1, by = y - h * 0.14; c.lineWidth = w * 0.045; c.strokeStyle = o.mask ? '#f4f0e6' : '#2a2a33'; c.beginPath();
+            const d = br === 'angry' ? h * 0.05 : br === 'worried' ? -h * 0.05 : 0, lift = br === 'raised' ? -h * 0.05 : 0;
+            c.moveTo(x - inner * w * 0.08, by - d / 2 + lift); c.lineTo(x + inner * w * 0.07, by + d / 2 + lift); c.stroke(); c.strokeStyle = '#2a2a33'; }
         }
+        if (o.shades) { c.fillStyle = '#121218'; for (const cx of [0.34, 0.66]) { c.beginPath(); c.roundRect(w * (cx + ex - 0.12), h * (0.38 + ey), w * 0.24, h * 0.15, h * 0.04); c.fill(); } c.fillRect(w * (0.44 + ex), h * (0.41 + ey), w * 0.12, h * 0.03); c.fillStyle = 'rgba(255,255,255,0.35)'; for (const cx of [0.28, 0.6]) c.fillRect(w * (cx + ex), h * (0.4 + ey), w * 0.05, h * 0.03); }
         c.fillStyle = '#2a2a33'; c.lineWidth = w * 0.045; c.beginPath(); const m = o.mouth || 'smile', mx = w * (0.5 + ex), my = h * (0.62 + ey);
         if (m === 'o') { c.arc(mx, my + h * 0.1, w * 0.06, 0, TAU); c.stroke(); }
         else if (m === 'open') { c.ellipse(mx, my + h * 0.08, w * 0.11, h * 0.09, 0, 0, TAU); c.fill(); }
         else if (m === 'flat') { c.moveTo(mx - w * 0.1, my + h * 0.1); c.lineTo(mx + w * 0.1, my + h * 0.1); c.stroke(); }
         else if (m === 'frown') { c.arc(mx, my + h * 0.2, w * 0.12, 1.25 * Math.PI, 1.75 * Math.PI); c.stroke(); }
+        else if (m === 'grin') { c.moveTo(mx - w * 0.17, my + h * 0.02); c.quadraticCurveTo(mx, my + h * 0.3, mx + w * 0.17, my + h * 0.02); c.closePath(); c.fill(); c.fillStyle = '#fff'; c.fillRect(mx - w * 0.13, my + h * 0.03, w * 0.26, h * 0.04); }
+        else if (m === 'evil') { c.moveTo(mx - w * 0.13, my + h * 0.08); c.quadraticCurveTo(mx + w * 0.02, my + h * 0.14, mx + w * 0.15, my); c.stroke(); }
         else { c.arc(mx, my, w * 0.14, 0.25 * Math.PI, 0.75 * Math.PI); c.stroke(); }
+        if (o.mustache) { c.fillStyle = rgb(o.hairCol || [40, 30, 26]); const ty = my - h * 0.02;
+          if (o.mustache === 'toothbrush') c.fillRect(mx - w * 0.08, ty - h * 0.06, w * 0.16, h * 0.085);
+          else if (o.mustache === 'big') { c.beginPath(); c.ellipse(mx - w * 0.08, ty, w * 0.1, h * 0.045, -0.2, 0, TAU); c.ellipse(mx + w * 0.08, ty, w * 0.1, h * 0.045, 0.2, 0, TAU); c.fill(); }
+          else if (o.mustache === 'beard') { c.beginPath(); c.moveTo(w * 0.12, h * 0.55); c.lineTo(w * 0.88, h * 0.55); c.lineTo(w * 0.8, h); c.lineTo(w * 0.2, h); c.closePath(); c.fill(); c.fillStyle = rgb(o.skin || P.skin); c.beginPath(); c.ellipse(mx, my + h * 0.1, w * 0.12, h * 0.07, 0, 0, TAU); c.fill(); c.fillStyle = '#2a2a33'; c.beginPath(); c.ellipse(mx, my + h * 0.1, w * 0.07, h * 0.03, 0, 0, TAU); c.fill(); } }
+        if (o.sweat) { c.fillStyle = '#7ec8ff'; c.beginPath(); c.moveTo(w * 0.86, h * 0.22); c.quadraticCurveTo(w * 0.94, h * 0.36, w * 0.86, h * 0.38); c.quadraticCurveTo(w * 0.78, h * 0.36, w * 0.86, h * 0.22); c.fill(); }
       };
-      box((p) => T0(add(rotY(p, o.headTurn || 0), [0, 1.86, 0])), 0.3, 0.3, 0.28, o.skin || P.skin, { bevel: 0.28, paint: face2 });
-      if (o.hat === 'cap') { box((p) => T0(add(p, [0, 2.2, -0.02])), 0.32, 0.07, 0.3, o.hatCol || P.blue, { bevel: 0.4 }); box((p) => T0(add(p, [0, 2.14, 0.34])), 0.28, 0.025, 0.12, o.hatCol || P.blue, { bevel: 0.4 }); }
-      if (o.hat === 'police') { box((p) => T0(add(p, [0, 2.2, 0])), 0.33, 0.08, 0.31, o.hatCol || [30, 40, 90], { bevel: 0.4 }); box((p) => T0(add(p, [0, 2.28, 0])), 0.36, 0.04, 0.34, o.hatCol || [30, 40, 90], { bevel: 0.4, paint: (c, w, h) => { c.fillStyle = '#ffd23f'; c.beginPath(); c.arc(w / 2, h / 2, w * 0.12, 0, TAU); c.fill(); } }); box((p) => T0(add(p, [0, 2.14, 0.33])), 0.28, 0.02, 0.1, [20, 20, 30], { bevel: 0.4 }); }
-      if (o.hat === 'beanie') box((p) => T0(add(p, [0, 2.16, 0])), 0.33, 0.12, 0.31, o.hatCol || [30, 30, 36], { bevel: 0.5 });
+      const HT = (p) => T0(add(rotY(p, o.headTurn || 0), [0, 0, 0]));
+      box((p) => HT(add(p, [0, 1.86, 0])), 0.3, 0.3, 0.28, o.balaclava || o.skin || P.skin, { bevel: 0.28, paint: face2 });
+      const hc = o.hairCol || (o.hair === 'combover' ? [246, 196, 92] : o.hair === 'thin' ? [196, 170, 140] : o.hair === 'flattop' ? [24, 22, 26] : [70, 48, 34]);
+      if (o.hair === 'short' || o.hair === 'side' || o.hair === 'long') { box((p) => HT(add(p, [0, 2.17, -0.01])), 0.31, 0.05, 0.29, hc, { bevel: 0.45 }); box((p) => HT(add(p, [0, 1.98, -0.27])), 0.31, 0.2, 0.03, hc, { bevel: 0.4 }); }
+      if (o.hair === 'side') box((p) => HT(add(rotZ(p, 0.45), [-0.1, 2.06, 0.285])), 0.17, 0.045, 0.02, hc, { bevel: 0.4 });
+      if (o.hair === 'long') box((p) => HT(add(p, [0, 1.7, -0.27])), 0.33, 0.3, 0.04, hc, { bevel: 0.4 });
+      if (o.hair === 'combover') { box((p) => HT(add(p, [0, 2.2, -0.02])), 0.33, 0.09, 0.3, hc, { bevel: 0.5 }); box((p) => HT(add(rotZ(p, -0.12), [0.05, 2.19, 0.27])), 0.3, 0.07, 0.07, hc, { bevel: 0.5 }); box((p) => HT(add(p, [0, 1.98, -0.27])), 0.31, 0.2, 0.03, hc, { bevel: 0.4 }); }
+      if (o.hair === 'flattop') { box((p) => HT(add(p, [0, 2.25, -0.02])), 0.25, 0.1, 0.24, hc, { bevel: 0.35 }); box((p) => HT(add(p, [0, 2.15, -0.01])), 0.31, 0.03, 0.29, hc, { bevel: 0.4 }); }
+      if (o.hair === 'thin') box((p) => HT(add(p, [0, 2.165, -0.08])), 0.29, 0.02, 0.2, hc, { bevel: 0.4 });
+      if (o.hair === 'spiky') for (let i = 0; i < 5; i++) box((p) => HT(add(rotZ(rotX(p, (i % 2 - 0.5) * 0.4), 0.78), [-0.24 + i * 0.12, 2.2, (i % 2) * 0.08 - 0.04])), 0.08, 0.08, 0.08, hc, { bevel: 0.3 });
+      const hat = o.hatCol;
+      if (o.hat === 'cap') { box((p) => T0(add(p, [0, 2.2, -0.02])), 0.32, 0.07, 0.3, hat || P.blue, { bevel: 0.4 }); box((p) => T0(add(p, [0, 2.14, 0.34])), 0.28, 0.025, 0.12, hat || P.blue, { bevel: 0.4 }); }
+      if (o.hat === 'police') { box((p) => T0(add(p, [0, 2.2, 0])), 0.33, 0.08, 0.31, hat || [30, 40, 90], { bevel: 0.4 }); box((p) => T0(add(p, [0, 2.28, 0])), 0.36, 0.04, 0.34, hat || [30, 40, 90], { bevel: 0.4, paint: (c, w, h) => { c.fillStyle = '#ffd23f'; c.beginPath(); c.arc(w / 2, h / 2, w * 0.12, 0, TAU); c.fill(); } }); box((p) => T0(add(p, [0, 2.14, 0.33])), 0.28, 0.02, 0.1, [20, 20, 30], { bevel: 0.4 }); }
+      if (o.hat === 'beanie') box((p) => T0(add(p, [0, 2.16, 0])), 0.33, 0.12, 0.31, hat || [30, 30, 36], { bevel: 0.5 });
       if (o.hat === 'hard') { cyl((p) => T0(add(p, [0, 2.12, 0])), 0.34, 0.16, P.yellow, 16); cyl((p) => T0(add(p, [0, 2.1, 0])), 0.42, 0.03, P.yellow, 16); }
+      if (o.hat === 'peaked') { const hcol = hat || [84, 96, 62]; box((p) => HT(add(p, [0, 2.21, 0])), 0.32, 0.07, 0.3, hcol, { bevel: 0.4, paint: (c, w, h) => { c.fillStyle = '#1c1c22'; c.fillRect(0, h * 0.55, w, h * 0.45); c.fillStyle = '#ffd23f'; c.beginPath(); c.arc(w / 2, h * 0.4, h * 0.3, 0, TAU); c.fill(); } }); box((p) => HT(add(rotX(p, -0.12), [0, 2.32, 0.03])), 0.4, 0.05, 0.38, hcol, { bevel: 0.45 }); box((p) => HT(add(rotX(p, 0.25), [0, 2.15, 0.36])), 0.28, 0.02, 0.11, [24, 24, 30], { bevel: 0.4 }); }
+      if (o.hat === 'crown') { const g = hat || [250, 200, 50]; box((p) => HT(add(p, [0, 2.22, 0])), 0.32, 0.07, 0.3, g, { bevel: 0.35, paint: (c, w, h) => { for (const [cx, col] of [[0.25, '#e03040'], [0.5, '#3070e0'], [0.75, '#30b060']]) { c.fillStyle = col; c.beginPath(); c.arc(w * cx, h / 2, h * 0.28, 0, TAU); c.fill(); } } }); for (const sx of [-0.24, 0, 0.24]) for (const sz of [-0.22, 0.22]) box((p) => HT(add(rotY(rotZ(p, 0.78), 0.78), [sx, 2.33, sz])), 0.05, 0.05, 0.05, g, { bevel: 0.3 }); }
+      if (o.hat === 'tophat') { cyl((p) => HT(add(p, [0, 2.15, 0])), 0.27, 0.42, hat || [24, 24, 30], 16); cyl((p) => HT(add(p, [0, 2.15, 0])), 0.42, 0.03, hat || [24, 24, 30], 16); }
+      if (o.hat === 'army') { cyl((p) => HT(add(p, [0, 2.1, 0])), 0.37, 0.15, hat || [84, 96, 62], 16); cyl((p) => HT(add(p, [0, 2.08, 0])), 0.44, 0.03, hat || [84, 96, 62], 16); }
+      if (o.hat === 'cowl') { const cc = hat || [36, 36, 44]; box((p) => HT(add(p, [0, 2.0, 0])), 0.32, 0.17, 0.3, cc, { bevel: 0.3, paint: (c, w, h) => { c.fillStyle = '#f4f4f0'; for (const sx of [-1, 1]) { c.beginPath(); c.moveTo(w * (0.5 + sx * 0.08), h * 0.66); c.lineTo(w * (0.5 + sx * 0.27), h * 0.56); c.lineTo(w * (0.5 + sx * 0.25), h * 0.78); c.closePath(); c.fill(); } } }); if (o.ears !== false) for (const sx of [-0.2, 0.2]) box((p) => HT(add(p, [sx, 2.27, 0])), 0.05, 0.11, 0.05, cc, { bevel: 0.3 }); }
+      if (o.hat === 'helmet') { const hcol = hat || [196, 36, 36]; box((p) => HT(add(p, [0, 1.86, 0])), 0.32, 0.32, 0.3, hcol, { bevel: 0.3, paint: (c, w, h) => { c.fillStyle = '#f2c23c'; c.beginPath(); c.roundRect(w * 0.14, h * 0.24, w * 0.72, h * 0.66, w * 0.14); c.fill(); c.fillStyle = '#cff4ff'; c.shadowColor = '#7fe0ff'; c.shadowBlur = w * 0.06; for (const sx of [0.3, 0.56]) c.fillRect(w * sx, h * 0.44, w * 0.14, h * 0.06); c.shadowBlur = 0; c.fillStyle = '#7a5a10'; c.fillRect(w * 0.38, h * 0.72, w * 0.24, h * 0.025); } }); }
+    };
+    // things a figure can hold, in hand space (T maps hand-local points; +z is forward)
+    const holdItem = (kind, T, col) => {
+      if (kind === 'gun') { const g = col || [52, 52, 60]; box((p) => T(add(p, [0, 0.04, 0.2])), 0.06, 0.08, 0.24, g, { bevel: 0.3 }); box((p) => T(add(p, [0, -0.08, 0.06])), 0.05, 0.11, 0.06, g, { bevel: 0.3 }); box((p) => T(add(p, [0, 0.04, 0.47])), 0.04, 0.04, 0.03, P.orange, { bevel: 0.3 }); }
+      if (kind === 'bag') { box((p) => T(add(p, [0, -0.2, 0.04])), 0.17, 0.16, 0.14, col || [196, 170, 120], { bevel: 0.5, paint: (c, w, h) => { c.fillStyle = '#3a6a2a'; c.font = FONT(800, h * 0.6); c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText('$', w / 2, h * 0.55); } }); box((p) => T(add(p, [0, -0.02, 0.04])), 0.06, 0.04, 0.05, col || [196, 170, 120], { bevel: 0.4 }); }
+      if (kind === 'briefcase') { box((p) => T(add(p, [0, -0.17, 0.02])), 0.22, 0.15, 0.05, col || [90, 58, 36], { bevel: 0.3, paint: (c, w, h) => { c.fillStyle = '#ffd23f'; c.fillRect(w * 0.42, h * 0.1, w * 0.16, h * 0.1); } }); }
+      if (kind === 'phone') box((p) => T(add(p, [0, 0, 0.1])), 0.05, 0.09, 0.015, col || [20, 20, 26], { bevel: 0.3, paint: (c, w, h) => { c.fillStyle = '#5ab0ff'; c.fillRect(w * 0.1, h * 0.06, w * 0.8, h * 0.88); } });
+      if (kind === 'remote') box((p) => T(add(p, [0, 0, 0.1])), 0.06, 0.03, 0.1, col || [40, 40, 48], { bevel: 0.3, paint: (c, w, h) => { c.fillStyle = '#ff2a2a'; c.beginPath(); c.arc(w / 2, h / 2, w * 0.3, 0, TAU); c.fill(); } });
+      if (kind === 'sword') { box((p) => T(add(p, [0, 0.02, 0.42])), 0.025, 0.04, 0.36, col || [210, 216, 226], { bevel: 0.3 }); box((p) => T(add(p, [0, 0.02, 0.05])), 0.1, 0.03, 0.025, [250, 200, 50], { bevel: 0.3 }); }
+      if (kind === 'hammer') { box((p) => T(add(p, [0, 0, 0.18])), 0.025, 0.025, 0.2, [120, 84, 50], { bevel: 0.3 }); box((p) => T(add(p, [0, 0, 0.4])), 0.1, 0.08, 0.06, col || [170, 176, 186], { bevel: 0.3 }); }
+      if (kind === 'shield') cyl((p) => T(add(rotX(p, Math.PI / 2), [0, -0.05, 0.1])), 0.3, 0.04, col || [196, 36, 36], 20, { capPaint: (c, w, h) => { const r = w / 2; [['#c42424', 1], ['#f4f4f0', 0.75], ['#c42424', 0.5], ['#2a52b0', 0.3]].forEach(([f, k]) => { c.fillStyle = f; c.beginPath(); c.arc(r, r, r * k, 0, TAU); c.fill(); }); } });
+      if (kind === 'flag') { box((p) => T(add(p, [0, 0.35, 0.05])), 0.015, 0.5, 0.015, [200, 200, 206], { bevel: 0.3 }); box((p) => T(add(p, [0.17, 0.7, 0.05])), 0.17, 0.11, 0.01, col || P.red, { bevel: 0.2 }); }
     };
     // a red plastic number tag (bevelled plate with white printed numerals), popping in with scale u
     const tag = (x, y, z, txt, u, rot = -0.06, col = P.red, wd = 1.15) => {
@@ -163,7 +227,7 @@
         }
       }
     };
-    return { proj, box, cyl, brick, figure, tag, render, faces, E, TG };
+    return { proj, box, cyl, brick, figure, holdItem, tag, render, faces, E, TG };
   };
 
   // ==================== sets ====================

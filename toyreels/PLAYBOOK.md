@@ -12,8 +12,8 @@ Instagram and YouTube at the same moment. Nothing else needs doing by hand.
   `mkdir -p $SP/pwb/chromium-1140 && ln -s /opt/pw-browsers/chromium-*/chrome-linux64 $SP/pwb/chromium-1140/chrome-linux && touch $SP/pwb/chromium-1140/INSTALLATION_COMPLETE`
   (`$SP` = your scratchpad) and run checks as `PLAYWRIGHT_BROWSERS_PATH=$SP/pwb python3 tools/check.py reels/<id>`
   from `toyreels/`. Copy `toyreels/fonts/*.ttf` into `~/.local/share/fonts` and run `fc-cache -f` first.
-- If the `/toystyle` skill is available, load it: it describes the Brick Toy style. The existing reels in
-  `toyreels/reels/` are the reference either way. Copy their patterns exactly.
+- If the `/toystyle` skill is available, load it for the Brick Toy visual style and animation patterns. Its
+  content advice (educational explainers) does NOT apply: the content rules are in section 2 below.
 
 ## 0b. Resume an unfinished batch first (usage limits)
 A backup run fires 6 hours after each main run. Every run starts by reading `toyreels/batch_log.json`:
@@ -28,34 +28,97 @@ A backup run fires 6 hours after each main run. Every run starts by reading `toy
 
 ## 1. Plan the week
 - Read every `toyreels/reels/*/meta.json` and `script.json`, `toyreels/README.md` (the reel list) and
-  `toyreels/posted.json`. Never repeat a topic.
-- Next number = highest folder number + 1. Folder ids: `NN-series-slug` (e.g. `11-heist-lufthansa`, `14-body-yawning`).
-- Posting order is folder order, so number the reels in the order they should post. Mix series across the week.
-- Series that work: **Greatest Heists in Bricks** (multi-part, "Part N/4"), **Your Weird Body**, plus new ones in the
-  same spirit: "What if...?" scenarios, history's strangest true stories, how everyday things work, animal
-  superpowers, space oddities. Favour instantly clickable hooks and very visual moments that suit toy bricks.
-  Keep a multi-part series in consecutive numbers and push all of its parts in the same commit.
+  `toyreels/posted.json`. Never repeat a premise, twist or punchline.
+- The 10 original reels (01-10, the educational heists and body facts) stay exactly as they are. Do not edit or
+  re-render them. Everything new follows the style below.
+- Next number = highest folder number + 1. Folder ids: `NN-short-slug` (e.g. `11-kim-missile-boomerang`).
+- Posting order is folder order, so number the reels in the order they should post. Mix the formats across the
+  week (see section 2). Each day: strongest reel in the 20:00 IST slot, next at 15:00, weakest at 10:00.
 
-## 2. Rules for every reel
-- Facts correct; every number checked against a reliable source, listed in `meta.json` `sources`.
-- Family friendly: no gore, no blood, no hate symbols, no brand logos, nothing defamatory about real people,
-  no current tragedies. Real victims are never the joke.
-- Voiceover 25-45 seconds (about 70-120 words), a hook in the first line, short spoken phrases, ends on a question to
-  the viewer or a "follow for Part N" line. **Numbers spelled out** in `script.json` (Steve reads them); map them to
-  digits on screen with `captions.say`, as the existing reels do. No [brackets] in `script.json`.
-- `meta.json`: `title`, `caption` (a hook line + one fact + emoji, plus "Part N of M: follow for Part N+1!" in a
-  series), 7-10 `hashtags` (always include `toybricks`), `sources`, `cover_t` on a strong frame.
+## 2. What the reels are now: dark-comedy brick stories that people cannot scroll past
+The owner wants **funny, hilarious, dark-humoured, shocking** reels that make people react, tag friends and write
+crazy comments. Knowledge is optional; **shock and laughs are the goal**. Aim for "best reels on the internet" level.
+
+**Every reel is a story:** hook (0-2 s), setup, escalation (it keeps getting worse and more absurd), a twist nobody
+sees coming, and a punchline. End on a line that begs for comments ("Who's next? Comment a name.", "Be honest:
+would you have pressed it?").
+
+**The hook must be impossible to skip.** The first line and the first frame carry the reel. Open in the middle of
+chaos, with a shocking claim or a forbidden question. For example: "Kim pressed the button. The missile came back.",
+"Batman's been broke since 2019. Here's why.", "The Illuminati just fired their worst employee.", "Never rob a bank
+on a Tuesday." Something big happens on screen in the first second: an explosion, a fall, a reveal, a scream.
+
+**Formats to rotate** (badge text in caps, one colour per format):
+- **WORLD LEADERS IN BRICKS:** Trump, Putin, Kim Jong Un, and any other famous leader or billionaire, as caricatures,
+  in absurd made-up situations (a summit that turns into a cooking show, a missile that boomerangs, a group chat leak).
+- **SUPERHERO PROBLEMS:** parody lookalikes of Marvel and DC heroes with their real-life problems (Bat-Guy's
+  electricity bill, Iron Dude's suit stuck in airport security, Super-Dude getting a parking ticket).
+- **HISTORY'S DUMBEST VILLAINS:** Hitler and other dictators as clueless, pathetic losers whose plans fail stupidly.
+- **THE ILLUMINATI FILES:** secret societies, the all-seeing pyramid, lizard bosses, aliens and "higher powers"
+  running the world badly: office drama in the secret lair, the moon-landing film crew, the pyramid HR department.
+- **HEISTS GONE WRONG:** robbers in balaclavas and prisoners in stripes; plans that go spectacularly wrong.
+- **WHAT IF...?:** "What if a nuke button was in a kids' toy shop?", "What if gravity switched off for 5 seconds?"
+- Invent new formats when you have a better idea, and keep the ones that work.
+
+**Tone:** dark, savage, absurd, fast. Short punchy lines (deadpan Steve narration works best: understate the chaos).
+Slapstick and cartoon violence are fine: toy guns and blasters, missiles, explosions that blow figures into bricks,
+x-eyes, soot faces, people launched into the sky.
+
+**Hard limits.** These keep the accounts alive. Instagram and YouTube delete reels and close channels for these, and
+YouTube is strictest with toy-style animation:
+- **No sexual content, nudity or sexual jokes.** "Adult" here means dark, crime, bad decisions and death jokes, with
+  swears bleeped. Never sexual.
+- **Real people** (Trump, Putin, Kim and anyone else living) are made fun of: humiliated, out-smarted, covered in soot,
+  stuck, embarrassed. They are **never shot, killed, tortured or shown being seriously hurt**. The story must be
+  obviously absurd fiction, and the caption starts with "Parody." Never put fake quotes into their mouths that
+  could pass as real news.
+- **Hitler and other dead dictators** are only ever the pathetic butt of the joke: never cool, admired or right.
+  Plain uniform. **No swastikas or other hate symbols, no Nazi salute, no Holocaust or genocide jokes.**
+- **Superheroes are parody lookalikes with parody names** (Bat-Guy, Iron Dude, Super-Dude, Spider-Bro, Captain
+  Americano, Wonder Lady, Thud). Never the real names, logos or their S/bat/spider symbols on screen (use
+  your own letters and shapes). Copyright claims take reels down.
+- No jokes about real victims, real recent tragedies, real mass shootings or terror attacks, suicide or self-harm.
+  No gore or blood: the toys break into bricks. No slurs. No jokes at a group's race, religion, gender or disability.
+- Never show how to make a weapon, or how to do a real crime in a way someone could copy.
+
+**Script (`script.json`):** 20-40 seconds, about 55-110 words. First phrase = the hook. Numbers spelled out (Steve
+reads them; show digits via `captions.say`). No [brackets].
+
+**Caption (`meta.json`):** a savage one-liner that adds to the joke, plus a comment bait question. "Parody." first when
+real people appear. 6-10 hashtags (always include `toybricks`, plus trend tags like `darkhumor`, `funny`, `parody`).
+`title` is a clickbait-style YouTube title under 70 characters. `cover_t` is the most shocking frame. Add `sources`
+only if the reel uses real facts.
 
 ## 3. Build each reel
 - `script.json` (beats with ids and phrases), `story.js` (`makeReel({...})` with one shot per beat, shots timed on
-  words with `V(beat, 'word')`), `meta.json`. Copy the structure of the newest existing reels.
+  words with `V(beat, 'word')`), `meta.json`. Copy the structure of the existing reels.
+- **Dress every character for what they are doing.** The costume kit in `style/bricktoy_base.js` (options on
+  `S.figure(x, z, s, rot, {...})`):
+  - prisoner `stripes: [[240,240,236],[30,30,36]], number: '24601'` · robber `balaclava: [30,30,36]` or `mask: true`
+    with `hat: 'beanie'` · hand props `hold: 'gun' | 'bag' | 'briefcase' | 'phone' | 'remote' | 'sword' | 'shield' |
+    'flag' | 'hammer'` (`holdArm: -1` = left hand, `holdCol`)
+  - leaders: `suit: true, tie: [200,30,40]` · `hair: 'combover'` (blond swoop) · `hair: 'flattop'` (black, Kim) ·
+    `hair: 'thin'` (Putin) · `hair: 'side'` + `mustache: 'toothbrush'` + `hat: 'peaked'` + olive uniform +
+    `medals: 5` (dictator) · `hat: 'crown'`, `'tophat'`, `'army'`, `'police'`, `'hard'`, `'cap'`, `'beanie'`
+  - heroes: `cape: [r,g,b]` (`capeFlap`), `emblem: { txt, col, bg, shape: 'diamond' | 'circle' }`, `hat: 'cowl'`
+    (bat ears; `ears: false` without), `hat: 'helmet'` (red/gold iron face plate), `sleeve` colour, `shirt`/`pants`
+  - faces: `eyes` open | wide | closed | x | sleepy | angry · `mouth` smile | o | flat | frown | open | grin | evil ·
+    `brows` angry | worried | raised · `shades: true` · `sweat: true` · `mustache` toothbrush | big | beard
+    (`hairCol` sets hair, mustache and beard colour)
+- **Dark-comedy props** in `style/props.js`: `missile(S, x, y, z, s, tilt, flame)`, `pyramid(S, x, z, s, eye)`
+  (all-seeing eye opens 0..1), `boom(S, x, y, z, s, u)` (explosion, u 0..2), `jailBars(S, x, z, w, n, h)`,
+  `podium(S, x, z, 'TEXT')`, `bigButton(S, x, y, z, s, press)`, plus the older `cash`, `bag`, `gem`, `vaultDoor`,
+  `plane`, `parachute`, `astronaut`, `painting`, and the sets `studioShot`, `cityShot`, `skyShot`, `spaceShot`,
+  `museumShot`, `forestShot`, `lawnShot`. Build new props inside your own `story.js` with `S.box` / `S.cyl` when you need them.
+- Make it move: fast camera pushes, things flying, x-eyes, explosions on the punchline word, and a sound hit on every
+  beat (`sound:` in `makeReel`, see the existing reels).
 - Do not edit `toyreels/style/`, `toyreels/config.json` (the voice and size), `toyreels/tools/`, or anything outside
   `toyreels/reels/`, `toyreels/README.md` and `toyreels/batch_log.json`. Never touch `toyreels/posted.json`,
   `toyreels/posting.json` or the workflows.
 
 ## 4. Check, push, wait
 - Run `tools/check.py` on every reel and LOOK at the contact sheets: no page errors, characters and props in frame,
-  labels readable, no overlapping text. Fix and re-check. Never push an unchecked reel.
+  costumes right for each character, labels readable, no overlapping text, the first frame already grabs attention. Fix and re-check. Never push an unchecked reel.
 - Push a few reels at a time (a series together) to `main` with their README rows, waiting before each push until no
   "Make toy reels" run is queued or in progress. Each push renders only the changed reels.
 - Wait for every new `toyreel-<id>` Release to exist (`gh api repos/scienome/reel-autopilot/releases`). If a render
