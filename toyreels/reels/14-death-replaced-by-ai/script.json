@@ -1,0 +1,9 @@
+[{"chapter": "DeathGPT", "beats": [
+ {"id": "hook", "phrases": ["Death got fired.", "Replaced by an AI.", "Nobody has died since."]},
+ {"id": "fired", "phrases": ["After nine thousand years on the job,", "Death was called into HR."]},
+ {"id": "ai", "phrases": ["His replacement: DeathGPT.", "Faster, cheaper, and it never sleeps."]},
+ {"id": "bug", "phrases": ["On day one, it had a bug.", "It cancelled everyone's death."]},
+ {"id": "chaos", "phrases": ["Heaven went quiet.", "Hell went bankrupt.", "A two hundred year old man asked for a refund."]},
+ {"id": "twist", "phrases": ["So they rehired Death.", "As a consultant.", "Double the pay."]},
+ {"id": "cta", "phrases": ["Would you trust an AI with your death?"]}
+]}]

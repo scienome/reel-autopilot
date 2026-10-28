@@ -1,0 +1,10 @@
+[{"chapter": "Zombie apocalypse", "beats": [
+ {"id": "hook", "phrases": ["The zombie apocalypse finally started.", "Nobody noticed."]},
+ {"id": "rise", "phrases": ["The dead crawled out of their graves,", "hungry for brains."]},
+ {"id": "street", "phrases": ["They marched into the city.", "The streets were empty."]},
+ {"id": "why", "phrases": ["Everyone was inside,", "ordering food on their phones."]},
+ {"id": "starve", "phrases": ["Three weeks later,", "the zombies were starving."]},
+ {"id": "twist", "phrases": ["So they took the only job left.", "Food delivery."]},
+ {"id": "punch", "phrases": ["Rating: four point nine stars.", "They only ate the customers who didn't tip."]},
+ {"id": "cta", "phrases": ["Would you tip a zombie? Be honest."]}
+]}]

@@ -1,0 +1,14 @@
+[
+ {
+  "chapter": "Kim's missile",
+  "beats": [
+   {"id": "hook", "phrases": ["Kim pressed the big red button.", "Thirty minutes later, the missile came back."]},
+   {"id": "launch", "phrases": ["It was supposed to scare the whole world."]},
+   {"id": "flight", "phrases": ["It flew over Japan.", "Then Alaska.", "Then it saw the North Pole, panicked,", "and made a U-turn."]},
+   {"id": "home", "phrases": ["Guess which palace it remembered?"]},
+   {"id": "boom", "phrases": ["Boom. Direct hit.", "Kim survived. Extra crispy."]},
+   {"id": "twist", "phrases": ["Next morning, Putin called.", "Not to laugh.", "He wanted to order ten."]},
+   {"id": "cta", "phrases": ["Rate Kim's aim from one to ten in the comments."]}
+  ]
+ }
+]

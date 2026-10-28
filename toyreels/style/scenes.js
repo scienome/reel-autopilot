@@ -330,7 +330,8 @@
   //   shake: time (camera shake from that moment),
   //   cast: [[who | null, x, z, rot, extra | (t, u) => extra]]  (who = a CAST name; null = plain S.figure with extra;
   //          extra may also return x, z, rot, s to move the actor; u = 0..1 through the beat),
-  //   props: (S, t, u) => {...},  tags: [[x, y, z, 'TEXT', time, colour, width]],  booms: [[x, y, z, time, scale]],
+  //   props: (S, t, u) => {...},  tags: [[x, y, z, 'TEXT', time, colour, width]] (keep tags at z -0.5..0.6 and
+  //   y 0.3..2.6 so they stay in frame and below the captions),  booms: [[x, y, z, time, scale]],
   //   flash: [times],  over: (ctx, W, H_, t, u) => {...} (2D on top),  sfx: [['name', time, opts]] }
   // Tags pop with a sound, booms explode with a hit, a flash and a shake. Everything else is the normal reel.
   const SETS = { office: officeShot, bunker: bunkerShot, prison: prisonShot, lair: lairShot, desert: desertShot, stage: stageShot, heaven: heavenShot, hell: hellShot, graveyard: graveyardShot, moon: moonShot, base: baseShot, bank: bankShot, palace: palaceShot, court: courtShot, street: streetShot,
@@ -361,7 +362,7 @@
         if (who) actor(S, px, pz, ps, pr, who, e); else S.figure(px, pz, ps, pr, e);
       }
       if (sp.props) sp.props(S, t, u);
-      for (const [x, y, z, txt, tm, col, wd] of sp.tags || []) S.tag(x, y, z, txt, popU(t, tm), -0.05, Array.isArray(col) ? col : TAGCOL[col || 'red'], wd || Math.max(0.5, 0.22 + txt.length * 0.075));
+      for (const [x, y, z, txt, tm, col, wd] of sp.tags || []) { const d = Math.hypot(E[0] - x, E[1] - y, E[2] - z), k = H.clamp(d / 5.2, 0.38, 1); S.tag(x, y, z, txt, popU(t, tm) * k, -0.05, Array.isArray(col) ? col : TAGCOL[col || 'red'], wd || Math.max(0.42, 0.14 + txt.length * 0.055)); } // tags shrink when the camera is close
       for (const [x, y, z, tm, sc] of sp.booms || []) boom(S, x, y, z, sc || 1.4, (t - tm) * 1.6);
     }, sp.opt || {});
     if (sp.over) sp.over(ctx, W, H_, t, u);
