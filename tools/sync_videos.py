@@ -87,7 +87,7 @@ def main():
         elif prefix == 'mechreel':
             if not os.path.isdir(os.path.join(ROOT, 'mechreels', 'reels', rid)): continue  # removed from the repo
             folder = 'anatomy' if rid in ANATOMY else 'mechanic-shorts'; name = title('mechreels/reels', rid)
-            yt = yt_log.get(tag); st = f"YouTube: {yt['publish_utc'][:10]}" if yt else 'Not scheduled'
+            yt = yt_log.get(tag); st = (f"YouTube: {yt['publish_utc'][:10]}" if yt else 'Not on YouTube') + (' · posted on Instagram' if tag in dave_ig else '')
         else:
             continue
         put(os.path.join(vids, folder, rid + '.mp4'), url=mp4['browser_download_url'], size=mp4['size'])

@@ -1,7 +1,6 @@
 name: Post Gears & Glitches reels to Instagram
-# Posts the Dave series (davereels: Dave the crash-test dummy, Instagram-only Reels) to the Gears & Glitches Instagram
-# account at 08:30, 12:30 and 20:30 IST (03:00, 07:00 and 15:00 UTC), from davereels/schedule.json. The YouTube Shorts
-# (mechreels) are no longer posted here. GitHub starts scheduled runs late (90-125 minutes measured on this repo,
+# Posts to the Gears & Glitches Instagram at 08:30, 12:30 and 20:30 IST (03:00, 07:00 and 15:00 UTC), alternating a Dave
+# reel (davereels, in davereels/schedule.json order) and a mechanic Short (mechreels, in folder order). GitHub starts scheduled runs late (90-125 minutes measured on this repo,
 # Oct 2026), so every slot has three runs, 4, 3 and 2 hours before it. The first to start uploads the MP4 from its
 # davereel-<id> Release so Instagram has it processed, then publishes on the exact minute; the later runs see the slot
 # is posted and stop. A slot whose Release does not exist yet is skipped.
@@ -29,7 +28,7 @@ on:
         type: boolean
         default: true
       short:
-        description: 'Post this Dave reel now, e.g. 02-hitler-maus-tank (empty = whatever is due)'
+        description: 'Post this now: a Dave reel id (02-hitler-maus-tank) or mechreel-<id> (empty = whatever is due)'
         required: false
         default: ''
 

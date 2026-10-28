@@ -1,5 +1,8 @@
 # Dave reels: the scheduled-run playbook
 
+(Gears & Glitches Instagram alternates Dave reels with the older mechanic Shorts, 3 posts a day; `schedule.json` still
+sets each Dave reel's YouTube time and its order on Instagram.)
+
 A scheduled Claude session runs this every 3 days. Each run makes **a full week: 7 days, 21 Reels**, scheduled
 right after the last date already in `davereels/schedule.json` (3 a day at 08:30 / 12:30 / 20:30 IST), all rendered
 on GitHub before their slot. Posting uses 9 Reels every 3 days, so the queue grows by about 12 per run; that is
