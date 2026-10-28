@@ -47,10 +47,19 @@ Spell numbers as words. Quoted lines are read by the same narrator.
 
 Each beat id names one shot-sized moment. Phrases are joined with spaces and sent as one voiceover.
 
-**`meta.json`:** `{ "title": "...", "caption": "one or two lines + a call to tag someone", "hashtags": [6-9 tags] }`.
+**`meta.json`:** `{ "title": "...", "caption": "one or two lines + a call to tag someone", "hashtags": [6-9 tags], "first_comment": "..." }`.
 
-**`story.js`:** the picture. Copy `reels/0001-anything-is-fine/story.js` as the starting point and keep its shape.
-Do not end the file with a closing brace (the build adds it). What it can use:
+**Engagement:** follow `engagement/RULES.md` for every reel: a hook in the first second, something changing every
+2-3 seconds, the twist in the last 5 seconds, an ending that loops back into the start, 20-35 seconds, a caption
+ending in a two-sided question or "tag the one who...", and a `first_comment` hot take or playful vote.
+
+**`story.js`:** the picture. **Write it with `makeCouch`** (`style/kit_couch.js`, documented at the top of that
+file): one short spec per shot (camera, his and her pose and face, phones, props, reaction effects such as `q`,
+`bubble`, `card`, `stamp`, `hearts`, `twist`, `nope`). Shots, captions (built from script.json, with `keys` in
+yellow), cut sounds and effect sounds are automatic, so a reel is about 4 KB instead of 18 KB. Write the custom
+`STORY` shape below only for something makeCouch can't do. Do not end the file with a closing brace (the build adds it).
+
+The building blocks (used by makeCouch, and available directly):
 
 - Timing: `const BEATS = window.SCRIPT; const { V, DURATION } = REEL_TIMING(BEATS);`
   `V(beatId, word, n?)` is the start time of a word (minus 0.12 s). Every time in the reel comes from `V`.

@@ -96,6 +96,9 @@ YouTube is strictest with toy-style animation:
 **Script (`script.json`):** 20-40 seconds, about 55-110 words. First phrase = the hook. Numbers spelled out (Steve
 reads them; show digits via `captions.say`). No [brackets].
 
+**Engagement:** follow `engagement/RULES.md` too. Add each reel's first comment to `engagement/toy.json`
+(`"<id>": "hot take or playful vote"`); that file never triggers a re-render.
+
 **Caption (`meta.json`):** a savage one-liner that adds to the joke, plus a comment bait question. "Parody." first when
 real people appear. 6-10 hashtags (always include `toybricks`, plus trend tags like `darkhumor`, `funny`, `parody`).
 `title` is a clickbait-style YouTube title under 70 characters. `cover_t` is the most shocking frame. Add `sources`

@@ -24,6 +24,7 @@ import argparse, datetime as dt, json, os, sys, tempfile, time
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, 'tools'))
 import youtube_publish as yt  # noqa: E402
+from first_comment import first_comment, post_first_comment  # noqa: E402
 
 TOY = os.path.join(ROOT, 'toyreels')
 REELS, LOG, CONF = os.path.join(TOY, 'reels'), os.path.join(TOY, 'posted.json'), os.path.join(TOY, 'posting.json')
@@ -108,6 +109,7 @@ def ig_post(rid, url, cap, key, at):
         time.sleep(wait)
     m = ig_api('POST', f'/{ig}/media_publish', creation_id=cid)
     print(f'Instagram: published {rid} -> media {m["id"]}')
+    post_first_comment(ig_api, m['id'], first_comment('toy', rid, os.path.join(REELS, rid, 'meta.json')))
     return {'media_id': m['id'], 'posted_at': dt.datetime.now(UTC).isoformat(timespec='seconds')}
 
 
@@ -198,7 +200,7 @@ def main():
           f'goes live: {f"{slot:%Y-%m-%d %H:%M} UTC" if slot else "now" if (a.now or a.id) else "at the next slot"}\n'
           f'waiting after it: {max(len(queue) - 1, 0)}')
     if pick:
-        print('---\n' + texts(pick)[3] + '\n---')
+        print('---\n' + texts(pick)[3] + '\n---\nfirst comment: ' + str(first_comment('toy', pick, os.path.join(REELS, pick, 'meta.json'))))
 
     need = ['IG_TOY_ACCESS_TOKEN', 'IG_TOY_USER_ID', 'YT_CLIENT_ID', 'YT_CLIENT_SECRET', 'YT_REFRESH_TOKEN']
     missing = [k for k in need if not os.environ.get(k)]

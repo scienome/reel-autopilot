@@ -4,7 +4,7 @@
 Usage: python3 tools/build.py reels/<id> OUT.html [--voice] [--poster SECONDS]
 
 The page = style/player_body.html + harness.js + sound.js + the engine, where the engine is
-style/violet_base.js + style/kit_timing.js + style/kit_props.js + reels/<id>/story.js (+ the closing brace).
+style/violet_base.js + style/kit_timing.js + style/kit_props.js + style/kit_couch.js + reels/<id>/story.js (+ the closing brace).
 reels/<id>/script.json becomes window.SCRIPT; reels/<id>/timing.json (if present) becomes window.WORD_TIMES.
 --voice embeds reels/<id>/voice.mp3 so the player has the voiceover built in. Leave it off for the render page.
 """
@@ -27,7 +27,7 @@ def engine_js(reel):
         pre += 'window.WORD_TIMES = ' + json.dumps(tm['words']) + ';\nwindow.VOICE_END = ' + json.dumps(tm.get('end', 0)) + ';\n'
     else:
         pre += 'window.WORD_TIMES = null;\n'
-    eng = read(STYLE, 'violet_base.js') + read(STYLE, 'kit_timing.js') + read(STYLE, 'kit_props.js') + read(reel, 'story.js') + '\n}\n'
+    eng = read(STYLE, 'violet_base.js') + read(STYLE, 'kit_timing.js') + read(STYLE, 'kit_props.js') + read(STYLE, 'kit_couch.js') + read(reel, 'story.js') + '\n}\n'
     return pre + eng, meta
 
 

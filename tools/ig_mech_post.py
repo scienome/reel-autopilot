@@ -19,6 +19,9 @@ Instagram Login), GITHUB_REPOSITORY. Without the token it explains what is missi
 """
 import argparse, datetime as dt, json, os, sys, time
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from first_comment import first_comment, post_first_comment  # noqa: E402
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REELS = os.path.join(ROOT, 'davereels', 'reels')
 SCHED, LOG = os.path.join(ROOT, 'davereels', 'schedule.json'), os.path.join(ROOT, 'ig_posted.json')
@@ -84,7 +87,7 @@ def main():
     slot, rid = pick
     cap, key = caption(rid)
     url, code, size = video_url(rid)
-    print(f'{rid}: slot {slot:%Y-%m-%d %H:%M} UTC\nvideo: HTTP {code}, {size} bytes\ncaption:\n{cap}\n')
+    print(f'{rid}: slot {slot:%Y-%m-%d %H:%M} UTC\nvideo: HTTP {code}, {size} bytes\ncaption:\n{cap}\nfirst comment: {first_comment("dave", rid, os.path.join(REELS, rid, "meta.json"))}\n')
     if not url:
         print(f'::warning::{rid} has no rendered Release yet ({TAG}{rid}); will try again next run'); return
     if not os.environ.get('IG_GG_ACCESS_TOKEN') or not os.environ.get('IG_GG_USER_ID'):
@@ -120,6 +123,7 @@ def main():
     log[rid] = {'media_id': m['id'], 'posted_at': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds')}
     json.dump(log, open(LOG, 'w'), indent=1)
     print(f'published {rid} -> media {m["id"]}')
+    post_first_comment(api, m['id'], first_comment('dave', rid, os.path.join(REELS, rid, 'meta.json')))
 
 
 if __name__ == '__main__':

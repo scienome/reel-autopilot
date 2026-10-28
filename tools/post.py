@@ -10,6 +10,9 @@ Caption: reels/<id>/meta.json -> caption + hashtags. Appends the result to poste
 """
 import argparse, datetime, glob, json, os, sys, time
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from first_comment import first_comment, post_first_comment  # noqa: E402
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CFG = json.load(open(os.path.join(ROOT, 'config.json')))
 API = 'https://graph.instagram.com/' + CFG['instagram'].get('api_version', 'v26.0')
@@ -70,7 +73,7 @@ def main():
     repo, branch = os.environ.get('GITHUB_REPOSITORY', 'OWNER/REPO'), os.environ.get('POST_BRANCH', 'main')
     url = f'https://raw.githubusercontent.com/{repo}/{branch}/out/{rid}.mp4'
     cap = caption_for(rid)
-    print(f'next reel: {rid}  ({len(q)} in queue)\nvideo: {url}\ncaption:\n{cap}\n')
+    print(f'next reel: {rid}  ({len(q)} in queue)\nvideo: {url}\ncaption:\n{cap}\nfirst comment: {first_comment("couch", rid, os.path.join(ROOT, "reels", rid, "meta.json"))}\n')
     if a.dry_run:
         # check everything short of posting: the token, the account, and that the video link downloads
         import requests
@@ -104,6 +107,7 @@ def main():
     log.append({'id': rid, 'media_id': m['id'], 'posted_at': datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds')})
     json.dump(log, open(LOG, 'w'), indent=1)
     print('published', rid, 'media', m['id'], f'({len(q) - 1} left in queue)')
+    post_first_comment(api, m['id'], first_comment('couch', rid, os.path.join(ROOT, 'reels', rid, 'meta.json')))
     if len(q) - 1 <= 2:
         print(f'::warning::Only {len(q) - 1} reels left in the queue.')
 

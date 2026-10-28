@@ -47,13 +47,21 @@ main run, and every run starts by checking `davereels/batch_log.json`:
 - No Nazi or other hate symbols, no Holocaust references, no gore or blood: slapstick deaths only (squash, launch,
   puff, blown away, smoking pile). No brand logos.
 - Avoid politics-for-its-own-sake and current tragedies; nothing defamatory or speculative about real people.
-- Voiceover 110-170 words, deadpan, short sentences, ends on a dry punchline. Numbers spelled out in script.json.
+- Voiceover 80-120 words (about 25-35 seconds), deadpan, short sentences, ends on a dry punchline. Numbers spelled out in script.json.
   [Brackets] are only for planning on-screen action; they never go in script.json.
-- Caption (meta.json): a dark one-liner, one learn line, a comment question. 6-9 hashtags including `gearsandglitches`.
+- Caption (meta.json): a dark one-liner, one learn line, a two-sided comment question. 6-9 hashtags including `gearsandglitches`.
+  Add `"first_comment"`: a hot take or playful vote people want to argue with.
+- Engagement: follow `engagement/RULES.md` (hook in the first second, a change every 2-3 seconds, the twist in the
+  last 5 seconds, an ending that loops into the start).
   No YouTube link. Title in `title`. `cover_t` on a strong frame. `libs` always includes `davereels/props/dave.js`.
 
 ## 3. Build each Reel
-- Follow `davereels/README.md` and copy the patterns of the existing `reels/*/story.js` (shots on word times
+- **Write `story.js` with `makeDave`** (`davereels/props/dave_kit.js`, documented at its top): one short spec per
+  shot (set, camera orbit or dolly, the scene builder, Dave's pose or death, labels, flashes, sounds). Cuts,
+  captions, the R.I.P. card and its sound are automatic. `meta.json` `libs` must be
+  `["davereels/props/dave.js", "davereels/props/dave_kit.js"]`. Spend the effort on the one custom prop or
+  mechanism the story needs, not on boilerplate.
+- Otherwise follow `davereels/README.md` and copy the patterns of the existing `reels/*/story.js` (shots on word times
   `V(beat, 'word')`, `tagLabel` for numbers, `ripCard(ctx, W, H, N, ripU(t), t, { cause })` at the end,
   `ripSound(k, REEL_WORDS.end + 0.45)`, `window.LESSON` / `window.scoreSound` at the bottom, no closing brace).
 - Do not edit `davereels/style/` or `davereels/config.json` (that re-renders every Dave Reel), nor anything in
