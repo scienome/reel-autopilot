@@ -1,6 +1,6 @@
-# Toy reels (Brick Toy style, Steve's voice)
+# Toy reels (Brick Toy style)
 
-Vertical 9:16 explainer reels in the Brick Toy style, voiced by ElevenLabs (Steve, `IvUJKFyjVb5hItY9dJAT`) and rendered on GitHub.
+Vertical 9:16 explainer reels in the Brick Toy style, voiced by ElevenLabs (the voice in `config.json`, `V33LkP9pVLdcjeB2y5Na` since 28 Oct 2026; earlier reels used Steve) and rendered on GitHub.
 
 ## How it works
 1. Each reel is a folder in `reels/` with `script.json` (the words, by beat), `story.js` (the animation) and `meta.json` (title, caption, hashtags, cover time).
@@ -13,7 +13,7 @@ To remake one reel by hand: Actions → Make toy reels → Run workflow → type
 ## Fully automatic
 ```
 Every 3 days     Claude writes 21 new toy reels (3rd, 6th, 9th... of the month) (toyreels/PLAYBOOK.md) and pushes them to main
-                 GitHub voices them with Steve and renders them into toyreel-<id> Releases
+                 GitHub voices them (voice in config.json) and renders them into toyreel-<id> Releases
 Every day        "Post toy reels" posts the next reel to Instagram AND YouTube at the same moment,
                  at 06:00, 12:30 and 20:30 IST (30 min before the US and India peaks), in folder order, and records it in toyreels/posted.json
 Every Monday     the Instagram token is renewed

@@ -1,5 +1,5 @@
 name: Make toy reels
-# Brick Toy reels (toyreels/ folder, Steve's voice). When a reel folder changes on main (or you run this by hand), GitHub makes the voiceover
+# Brick Toy reels (toyreels/ folder). When a reel folder changes on main (or you run this by hand), GitHub makes the voiceover
 # with ElevenLabs, renders the 9:16 MP4, and publishes it as a Release "toyreel-<id>" with the MP4, a cover frame and the caption to paste.
 on:
   push:

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Post the toy reels (toyreels/, Brick Toy style, Steve's voice) to Instagram AND YouTube at the same moment.
+"""Post the toy reels (toyreels/, Brick Toy style) to Instagram AND YouTube at the same moment.
 
 Usage: python3 tools/toy_post.py [--dry-run] [--now] [--id 05-body-no-sleep]
 

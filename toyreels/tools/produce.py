@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Make one finished toy reel: voiceover (ElevenLabs, Steve) -> word timing -> 720x1280 render -> cover -> caption.
+"""Make one finished toy reel: voiceover (ElevenLabs, the voice in config.json) -> word timing -> 720x1280 render -> cover -> caption.
 
 Usage: python3 tools/produce.py reels/<id> [--no-voice] [--workers N] [--end SECONDS]
 

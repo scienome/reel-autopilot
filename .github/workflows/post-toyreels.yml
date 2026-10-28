@@ -1,5 +1,5 @@
 name: Post toy reels (Instagram + YouTube)
-# Posts the toy reels (toyreels/, Brick Toy style, Steve's voice) to the toy reels Instagram account AND the toy reels
+# Posts the toy reels (toyreels/, Brick Toy style) to the toy reels Instagram account AND the toy reels
 # YouTube channel at the same moment, 3 a day, 30 minutes before the audience peaks: 06:00, 12:30 and 20:30 IST
 # (00:30, 07:00 and 15:00 UTC), in folder order, from their toyreel-<id> Releases (times in toyreels/posting.json).
 # GitHub starts scheduled runs late (90-125 minutes late measured on this repo, Oct 2026), so every slot has three

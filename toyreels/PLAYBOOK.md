@@ -2,8 +2,8 @@
 
 A scheduled Claude session runs this **every 3 days** (the 3rd, 6th, 9th... of each month; the other days belong to
 the Dave and CouchSarcasm batches). Each run writes **21 new toy reels** (a week at 3 a day; posting uses 9 every 3 days, so the queue grows, as intended), pushes
-them to `main`, and GitHub voices them with **Steve** (ElevenLabs `IvUJKFyjVb5hItY9dJAT`, set in
-`toyreels/config.json`; never change it) and renders them into `toyreel-<id>` Releases. The posting workflow
+them to `main`, and GitHub voices them with the ElevenLabs voice set in `toyreels/config.json`
+(`V33LkP9pVLdcjeB2y5Na`, a deep deadpan narrator; never change it) and renders them into `toyreel-<id>` Releases. The posting workflow
 (`.github/workflows/post-toyreels.yml`) then posts them in folder order, 3 a day (06:00, 12:30, 20:30 IST), to
 Instagram and YouTube at the same moment. Nothing else needs doing by hand.
 
@@ -65,7 +65,7 @@ on a Tuesday." Something big happens on screen in the first second: an explosion
 the villain wins, the hero dies stupidly, the plan works perfectly and that is the problem, Death is overworked,
 the devil is out-evilled by a politician, heaven's waiting room has a 3,000-year queue, the dictator's bunker has
 terrible Wi-Fi, the robbers rob the wrong bank (the Illuminati's). Fictional and historical characters can die,
-explode and go to hell in slapstick ways (they come back as bricks). Deadpan Steve narration works best: understate
+explode and go to hell in slapstick ways (they come back as bricks). Deadpan narration works best: understate
 the chaos. Slapstick and cartoon violence are fine: toy guns and blasters, missiles, explosions that blow figures
 into bricks, x-eyes, soot faces, people launched into the sky. **Every scene must make people go "NO WAY" or laugh
 out loud. If a line is merely nice, cut it.**
@@ -93,7 +93,7 @@ YouTube is strictest with toy-style animation:
   No gore or blood: the toys break into bricks. No slurs. No jokes at a group's race, religion, gender or disability.
 - Never show how to make a weapon, or how to do a real crime in a way someone could copy.
 
-**Script (`script.json`):** 20-40 seconds, about 55-110 words. First phrase = the hook. Numbers spelled out (Steve
+**Script (`script.json`):** 20-40 seconds, about 55-110 words. First phrase = the hook. Numbers spelled out (the narrator
 reads them; show digits via `captions.say`). No [brackets].
 
 **Engagement:** follow `engagement/RULES.md` too. Add each reel's first comment to `engagement/toy.json`
