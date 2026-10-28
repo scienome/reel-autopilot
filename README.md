@@ -27,7 +27,7 @@ Folder: [`couch-sarcasm/`](couch-sarcasm/)
 | [0017-the-sick-day](couch-sarcasm/0017-the-sick-day.mp4) | The sick day. | Waiting to post |
 | [0018-the-usual](couch-sarcasm/0018-the-usual.mp4) | The usual. | Waiting to post |
 
-## Dave (Gears & Glitches) (38)
+## Dave (Gears & Glitches) (39)
 Folder: [`dave-reels/`](dave-reels/)
 
 | Video | Title | Status |
@@ -70,6 +70,7 @@ Folder: [`dave-reels/`](dave-reels/)
 | [36-mars-bluff](dave-reels/36-mars-bluff.mp4) | The atomic bomb dropped on a garden | Waiting to post |
 | [37-tsar-tank](dave-reels/37-tsar-tank.mp4) | The Tsar Tank: a 9-metre tricycle | Waiting to post |
 | [38-hubble-mirror](dave-reels/38-hubble-mirror.mp4) | Hubble's $1.5 billion blurry mirror | Waiting to post |
+| [39-tower-bridge-bus](dave-reels/39-tower-bridge-bus.mp4) | The bus that jumped Tower Bridge | Waiting to post |
 
 ## Toy reels (Brick Toy) (31)
 Folder: [`toy-reels/`](toy-reels/)
