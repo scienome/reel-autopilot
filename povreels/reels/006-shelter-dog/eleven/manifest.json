@@ -1,0 +1,33 @@
+{
+ "music-b4d2d0e9b164.mp3": {
+  "prompt": "Gentle emotional piano and strings, starting lightly playful, becoming sad and quiet, then warm, hopeful and uplifting at the end, no vocals",
+  "music_length_ms": 35460,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-eb96bd696dc6.mp3": {
+  "text": "animal shelter ambience, distant dogs barking",
+  "duration_seconds": 3,
+  "prompt_influence": 0.5
+ },
+ "sfx-69a6f4d647ba.mp3": {
+  "text": "excited small dog yapping",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-11bd75d20b7a.mp3": {
+  "text": "tiny dog growl",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-60183f834029.mp3": {
+  "text": "metal cage gate creaking open",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-afe51fc7bd5b.mp3": {
+  "text": "happy dog sigh and plopping onto a couch",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ }
+}
