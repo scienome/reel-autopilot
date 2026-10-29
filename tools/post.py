@@ -12,6 +12,7 @@ import argparse, datetime, glob, json, os, sys, time
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from first_comment import first_comment, post_first_comment, guard_slot, SlotTaken, best_for_slot, is_afternoon  # noqa: E402
+import couch_source as src  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CFG = json.load(open(os.path.join(ROOT, 'config.json')))
@@ -21,12 +22,14 @@ LOG = os.path.join(ROOT, 'posted.json')
 
 def queue():
     done = {p['id'] for p in json.load(open(LOG))} if os.path.exists(LOG) else set()
+    if CFG.get('queue') == 'couchnew':  # the new sitcom episodes, in couchnew/schedule.json order, once rendered
+        return [i for i in src.new_queue() if i not in done and src.rendered(i)]
     ids = [os.path.basename(p) for p in sorted(glob.glob(os.path.join(ROOT, 'reels', '*')))]
     return [i for i in ids if i not in done and os.path.exists(os.path.join(ROOT, 'out', i + '.mp4'))]
 
 
 def caption_for(rid):
-    mp = os.path.join(ROOT, 'reels', rid, 'meta.json')
+    mp = src.meta_path(rid)
     meta = json.load(open(mp)) if os.path.exists(mp) else {}
     tags = meta.get('hashtags') or CFG['instagram'].get('default_hashtags', [])
     cap = meta.get('caption', '').strip()
@@ -69,14 +72,16 @@ def main():
         print(f'slot {target:%H:%M} UTC; publishing exactly then')
     q = queue()
     slot_utc = target.replace(tzinfo=None) if target else None
-    rid = a.reel or best_for_slot(q, lambda r: os.path.join(ROOT, 'reels', r, 'meta.json'), is_afternoon(slot_utc))
+    rid = a.reel or ((q[0] if q else None) if CFG.get('queue') == 'couchnew' else best_for_slot(q, src.meta_path, is_afternoon(slot_utc)))
     if not rid:
         print('::error::The queue is empty: no rendered reels left to post. Merge the next weekly batch.')
         sys.exit(1)
     repo, branch = os.environ.get('GITHUB_REPOSITORY', 'OWNER/REPO'), os.environ.get('POST_BRANCH', 'main')
-    url = f'https://raw.githubusercontent.com/{repo}/{branch}/out/{rid}.mp4'
+    url = src.video_url(rid, branch)
+    if not url:
+        sys.exit(f'::error::{rid} has no rendered video yet')
     cap = caption_for(rid)
-    print(f'next reel: {rid}  ({len(q)} in queue)\nvideo: {url}\ncaption:\n{cap}\nfirst comment: {first_comment("couch", rid, os.path.join(ROOT, "reels", rid, "meta.json"))}\n')
+    print(f'next reel: {rid}  ({len(q)} in queue)\nvideo: {url}\ncaption:\n{cap}\nfirst comment: {first_comment("couch", rid, src.meta_path(rid))}\n')
     if a.dry_run:
         # check everything short of posting: the token, the account, and that the video link downloads
         import requests
@@ -107,7 +112,7 @@ def main():
             ylog = json.load(open(cy.LOG)) if os.path.exists(cy.LOG) else {}
             if rid not in ylog:
                 when = (target or datetime.datetime.now(datetime.timezone.utc)).replace(tzinfo=None)
-                yid, st = cy.yt.upload(cy.yt.token(), os.path.join(ROOT, 'out', rid + '.mp4'), *cy.texts(rid), when)
+                yid, st = cy.yt.upload(cy.yt.token(), src.local_mp4(rid), *cy.texts(rid), when)
                 ylog[rid] = {'id': yid, 'url': f'https://youtu.be/{yid}', 'publish_utc': st.get('publishAt', 'now'),
                              'uploaded_at': datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds')}
                 cy.save(ylog); print(f'YouTube: https://youtu.be/{yid} (goes public {st.get("publishAt", "now")})')
@@ -126,7 +131,7 @@ def main():
     log.append({'id': rid, 'media_id': m['id'], 'posted_at': datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds')})
     json.dump(log, open(LOG, 'w'), indent=1)
     print('published', rid, 'media', m['id'], f'({len(q) - 1} left in queue)')
-    post_first_comment(api, m['id'], first_comment('couch', rid, os.path.join(ROOT, 'reels', rid, 'meta.json')))
+    post_first_comment(api, m['id'], first_comment('couch', rid, src.meta_path(rid)))
     if len(q) - 1 <= 2:
         print(f'::warning::Only {len(q) - 1} reels left in the queue.')
 

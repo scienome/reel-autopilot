@@ -15,6 +15,7 @@ import argparse, datetime as dt, json, os, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, 'tools'))
 import youtube_publish as yt  # noqa: E402
+import couch_source as src  # noqa: E402
 
 CFG = json.load(open(os.path.join(ROOT, 'config.json')))
 POSTED = os.path.join(ROOT, 'posted.json')
@@ -23,7 +24,7 @@ yt.CATEGORY = '23'  # Comedy
 
 
 def texts(rid):
-    mp = os.path.join(ROOT, 'reels', rid, 'meta.json')
+    mp = src.meta_path(rid)
     meta = json.load(open(mp)) if os.path.exists(mp) else {}
     tags = [t.lstrip('#') for t in (meta.get('hashtags') or CFG['instagram'].get('default_hashtags', []))]
     title = (meta.get('title') or rid.split('-', 1)[-1].replace('-', ' ').capitalize()).strip()
@@ -60,10 +61,10 @@ def main():
         print('dry run: YouTube sign-in OK, nothing posted')
         return
     for rid in todo:
-        mp4 = os.path.join(ROOT, 'out', rid + '.mp4')
-        if not os.path.exists(mp4):
-            print(f'::warning::{rid}: out/{rid}.mp4 is missing, so it cannot go to YouTube')
-            log[rid] = {'skipped': f'out/{rid}.mp4 missing'}; save(log); continue
+        mp4 = src.local_mp4(rid)
+        if not mp4:
+            print(f'::warning::{rid}: its video is missing, so it cannot go to YouTube')
+            log[rid] = {'skipped': 'video missing'}; save(log); continue
         title, desc, tags = texts(rid)
         try:
             yid, _ = yt.upload(tok, mp4, title, desc, tags, dt.datetime.now(dt.timezone.utc).replace(tzinfo=None))

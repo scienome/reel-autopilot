@@ -37,6 +37,8 @@ TAG = 'davereel-'
 MECH = os.path.join(ROOT, 'mechreels', 'reels')
 ANATOMY = {'27-cubital-fossa'}  # anatomy videos are not Gears & Glitches posts
 YT_LOGS = {'dave': os.path.join(ROOT, 'davereels', 'youtube_posted.json'), 'mech': os.path.join(ROOT, 'youtube_posted.json')}
+POV = os.path.join(ROOT, 'povreels', 'reels')  # the POV series ("YOU are the only one"), Gears & Glitches since 30 Oct 2026
+POV_SCHED = os.path.join(ROOT, 'povreels', 'schedule.json')
 
 
 def slot_utc(date, hhmm, off):
@@ -76,8 +78,20 @@ def slot_used(slot, log):
     return False
 
 
+def pov_order():
+    """POV episodes in povreels/schedule.json "queue" order (empty if the file is missing or paused)."""
+    if not os.path.exists(POV_SCHED):
+        return []
+    s = json.load(open(POV_SCHED))
+    if s.get('paused'):
+        print(f"::notice::POV reels are paused: {s['paused']}"); return []
+    return list(s.get('queue', []))
+
+
 def item(kind, rid):
-    """(log key, folder, release tag prefix, first-comment series) for a Dave reel or a mechanic Short."""
+    """(log key, folder, release tag prefix) for a POV episode, a Dave reel or a mechanic Short."""
+    if kind == 'pov':
+        return ('povreel-' + rid, POV, 'povreel-')
     return (rid, REELS, TAG) if kind == 'dave' else ('mechreel-' + rid, MECH, 'mechreel-')
 
 
@@ -109,12 +123,14 @@ def caption(rid, folder=REELS):
 
 
 def split(logkey):
+    if logkey.startswith('povreel-'):
+        return ('pov', logkey[len('povreel-'):])
     return ('mech', logkey[len('mechreel-'):]) if logkey.startswith('mechreel-') else ('dave', logkey)
 
 
 def yt_log(kind):
-    p = YT_LOGS[kind]
-    return json.load(open(p)) if os.path.exists(p) else {}
+    p = YT_LOGS.get(kind)
+    return json.load(open(p)) if p and os.path.exists(p) else {}
 
 
 def on_youtube(logkey, log):
@@ -233,7 +249,7 @@ def main():
     if a.id:
         kind, rid = split(a.id)
         if not os.path.exists(os.path.join(item(kind, rid)[1], rid, 'meta.json')):
-            sys.exit(f'{a.id} is not a Dave reel or a mechanic Short')
+            sys.exit(f'{a.id} is not a POV episode, a Dave reel or a mechanic Short')
         slot = now
     else:
         due = [s2 for s2 in slots_near(now) if now - dt.timedelta(hours=3) <= s2 <= now + dt.timedelta(minutes=255) and not slot_used(s2, log)]
@@ -244,16 +260,17 @@ def main():
         if slot:
             # alternate: the kind that did not post last goes next
             last = max(((k, e.get('slot') or e.get('posted_at') or '') for k, e in log.items()), key=lambda kv: kv[1], default=(None, ''))[0]
-            order = ['mech', 'dave'] if last and not str(last).startswith('mechreel-') else ['dave', 'mech']
+            # the POV series comes first, in its schedule order; the old kinds only if no POV episode is ready
+            order = ['pov'] + (['mech', 'dave'] if last and not str(last).startswith('mechreel-') else ['dave', 'mech'])
             for kind in order:
                 ready = []
-                for r in (dave_order() if kind == 'dave' else mech_order()):
+                for r in (pov_order() if kind == 'pov' else dave_order() if kind == 'dave' else mech_order()):
                     key0, folder, tag = item(kind, r)
                     if key0 in log: continue
                     if video_url(r, tag)[0]: ready.append(r)
                     if len(ready) == 3: break
                 folder = item(kind, 'x')[1]
-                rid = best_for_slot(ready, lambda r: os.path.join(folder, r, 'meta.json'), is_afternoon(slot.replace(tzinfo=None)))
+                rid = (ready[0] if ready else None) if kind == 'pov' else best_for_slot(ready, lambda r: os.path.join(folder, r, 'meta.json'), is_afternoon(slot.replace(tzinfo=None)))
                 if rid: break
             if not rid:
                 print('::warning::Nothing rendered left to post on Gears & Glitches.')
