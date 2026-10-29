@@ -1,0 +1,33 @@
+{
+ "music-e4452eec7975.mp3": {
+  "prompt": "Prehistoric tribal drums and bone xylophone, comedic courtroom drama sting, no vocals",
+  "music_length_ms": 23640,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-3941424fb785.mp3": {
+  "text": "heavy stone wheel rolling on rocks",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-7d04b2a2ffb2.mp3": {
+  "text": "heavy stone block thudding clunk clunk",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-0944ecabf64e.mp3": {
+  "text": "clock ticking very fast like time passing",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-86063df3b70a.mp3": {
+  "text": "gavel bang",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-5f32ba42dc96.mp3": {
+  "text": "huge stone block dragged across sand",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ }
+}
