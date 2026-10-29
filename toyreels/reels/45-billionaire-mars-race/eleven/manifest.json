@@ -1,0 +1,33 @@
+{
+ "music-8179b687dd5c.mp3": {
+  "prompt": "Epic space race orchestral countdown music with heroic brass, turning silly and deflated, no vocals",
+  "music_length_ms": 31240,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-a3de89c82c05.mp3": {
+  "text": "rocket launch roar with countdown beeps",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-a8406f7026a4.mp3": {
+  "text": "engine sputtering and dying with a sad fizzle",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-6723cfa30c15.mp3": {
+  "text": "doorbell and a package thud",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-4fb22f2a07de.mp3": {
+  "text": "lonely tumbleweed wind whistle",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-49c89d3cf36c.mp3": {
+  "text": "cash register cha-ching",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ }
+}
