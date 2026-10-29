@@ -1,0 +1,33 @@
+{
+ "music-5b18c2028e78.mp3": {
+  "prompt": "Pompous Roman fanfare with trumpets and harp, turning into a silly party polka, no vocals",
+  "music_length_ms": 29080,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-7653c5cd7b1f.mp3": {
+  "text": "crowd shouting surprise with party poppers",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-832e9c6c76e7.mp3": {
+  "text": "knives being sharpened, metallic",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-4ed03d6cf20e.mp3": {
+  "text": "sad trombone wah wah",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-a8a2a5903dec.mp3": {
+  "text": "cartoon slip whistle and a big thud",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-c7f6575d885d.mp3": {
+  "text": "crackling campfire",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ }
+}
