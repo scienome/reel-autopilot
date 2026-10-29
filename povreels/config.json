@@ -3,5 +3,163 @@
     "voice_id": "s3TPKV1kjDlVtZbl4Ksh",
     "model_id": "eleven_v4",
     "voice_settings": null
+  },
+  "cast": {
+    "narrator": "s3TPKV1kjDlVtZbl4Ksh",
+    "dog": "FgiNpTIapnCbaD6xiqIo",
+    "pug": "zJrRUu1KEcKH8qdpNaPJ",
+    "husky": "XB0fDUnXU5powFXDhCwa",
+    "chihuahua": "zJrRUu1KEcKH8qdpNaPJ",
+    "poodle": "JBFqnCBsd6RMkjVDRZzb",
+    "cat": "FgiNpTIapnCbaD6xiqIo",
+    "cat2": "zJrRUu1KEcKH8qdpNaPJ",
+    "boss": "pNInz6obpgDQGcFmaJgB",
+    "date": "cgSgspJ2msm6clMCkdW9",
+    "mum": "Xb7hH8MSUJpSbSDYk0k2",
+    "dad": "JBFqnCBsd6RMkjVDRZzb",
+    "baby": "FgiNpTIapnCbaD6xiqIo",
+    "car": "onwK4e9ZLuTAKqWW03F9",
+    "friend": "iP95p4xoKVk53GoZ742B",
+    "grandma": "Xb7hH8MSUJpSbSDYk0k2"
+  },
+  "_cast_names": {
+    "narrator": "Adam (you)",
+    "dog": "owner's cute voice (ElevenLabs library FgiNpTIapnCbaD6xiqIo) for dogs, cats and children",
+    "pug": "owner's naughty voice (ElevenLabs library zJrRUu1KEcKH8qdpNaPJ) for bullies and troublemakers",
+    "husky": "Helen",
+    "chihuahua": "owner's naughty voice (ElevenLabs library zJrRUu1KEcKH8qdpNaPJ) for bullies and troublemakers",
+    "poodle": "George",
+    "cat": "owner's cute voice (ElevenLabs library FgiNpTIapnCbaD6xiqIo) for dogs, cats and children",
+    "cat2": "owner's naughty voice (ElevenLabs library zJrRUu1KEcKH8qdpNaPJ) for bullies and troublemakers",
+    "boss": "Adam - Dominant",
+    "date": "Jessica",
+    "mum": "Alice",
+    "dad": "George",
+    "baby": "owner's cute voice (ElevenLabs library FgiNpTIapnCbaD6xiqIo) for dogs, cats and children",
+    "car": "Daniel",
+    "friend": "Chris",
+    "grandma": "Alice"
+  },
+  "cast_settings": {
+    "narrator": {
+      "stability": 0.45,
+      "similarity_boost": 0.8,
+      "style": 0.35,
+      "use_speaker_boost": true,
+      "speed": 1.05
+    },
+    "dog": {
+      "stability": 0.3,
+      "similarity_boost": 0.8,
+      "style": 0.6,
+      "use_speaker_boost": true,
+      "speed": 1.08
+    },
+    "pug": {
+      "stability": 0.3,
+      "similarity_boost": 0.8,
+      "style": 0.6,
+      "use_speaker_boost": true,
+      "speed": 1.08
+    },
+    "husky": {
+      "stability": 0.3,
+      "similarity_boost": 0.8,
+      "style": 0.6,
+      "use_speaker_boost": true,
+      "speed": 1.08
+    },
+    "chihuahua": {
+      "stability": 0.3,
+      "similarity_boost": 0.8,
+      "style": 0.6,
+      "use_speaker_boost": true,
+      "speed": 1.08
+    },
+    "poodle": {
+      "stability": 0.3,
+      "similarity_boost": 0.8,
+      "style": 0.6,
+      "use_speaker_boost": true,
+      "speed": 1.08
+    },
+    "cat": {
+      "stability": 0.3,
+      "similarity_boost": 0.8,
+      "style": 0.6,
+      "use_speaker_boost": true,
+      "speed": 1.08
+    },
+    "cat2": {
+      "stability": 0.3,
+      "similarity_boost": 0.8,
+      "style": 0.6,
+      "use_speaker_boost": true,
+      "speed": 1.08
+    },
+    "boss": {
+      "stability": 0.3,
+      "similarity_boost": 0.8,
+      "style": 0.6,
+      "use_speaker_boost": true,
+      "speed": 1.08
+    },
+    "date": {
+      "stability": 0.3,
+      "similarity_boost": 0.8,
+      "style": 0.6,
+      "use_speaker_boost": true,
+      "speed": 1.08
+    },
+    "mum": {
+      "stability": 0.3,
+      "similarity_boost": 0.8,
+      "style": 0.6,
+      "use_speaker_boost": true,
+      "speed": 1.08
+    },
+    "dad": {
+      "stability": 0.3,
+      "similarity_boost": 0.8,
+      "style": 0.6,
+      "use_speaker_boost": true,
+      "speed": 1.08
+    },
+    "baby": {
+      "stability": 0.3,
+      "similarity_boost": 0.8,
+      "style": 0.6,
+      "use_speaker_boost": true,
+      "speed": 1.08
+    },
+    "car": {
+      "stability": 0.3,
+      "similarity_boost": 0.8,
+      "style": 0.6,
+      "use_speaker_boost": true,
+      "speed": 1.08
+    },
+    "friend": {
+      "stability": 0.3,
+      "similarity_boost": 0.8,
+      "style": 0.6,
+      "use_speaker_boost": true,
+      "speed": 1.08
+    },
+    "grandma": {
+      "stability": 0.3,
+      "similarity_boost": 0.8,
+      "style": 0.6,
+      "use_speaker_boost": true,
+      "speed": 1.08
+    }
+  },
+  "cast_fallback": {
+    "dog": "nPczCjzI2devNBz1zQrb",
+    "cat": "XB0fDUnXU5powFXDhCwa",
+    "baby": "IvUJKFyjVb5hItY9dJAT",
+    "chihuahua": "IvUJKFyjVb5hItY9dJAT",
+    "pug": "N2lVS1w4EtoT3dr4eOWO",
+    "cat2": "N2lVS1w4EtoT3dr4eOWO"
   }
 }

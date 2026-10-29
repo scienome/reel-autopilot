@@ -1,0 +1,13 @@
+[
+ {"id": "hook", "who": "narrator", "phrases": ["You're the only person on Earth", "who can hear what cats think."]},
+ {"id": "n1", "who": "narrator", "phrases": ["Your cat watches you sleep."]},
+ {"id": "c1", "who": "cat", "phrases": ["If he dies, I eat the face first.", "Nothing personal."]},
+ {"id": "n2", "who": "narrator", "phrases": ["You bring home a second cat."]},
+ {"id": "c2", "who": "cat2", "phrases": ["Hello. I'm the new favourite."]},
+ {"id": "c3", "who": "cat", "phrases": ["Sleep with one eye open, Kevin."]},
+ {"id": "n3", "who": "narrator", "phrases": ["Then you lose your job.", "You lie on the floor all evening."]},
+ {"id": "c4", "who": "cat", "phrases": ["Ugh. Fine. Move over.", "I'm lying on your chest.", "This is not affection. It's heat."]},
+ {"id": "n4", "who": "narrator", "phrases": ["It's affection."]},
+ {"id": "c5", "who": "cat", "phrases": ["Tell anyone, and your phone goes off the table."]},
+ {"id": "cta", "who": "narrator", "phrases": ["Cat person or dog person?", "Part two?"]}
+]

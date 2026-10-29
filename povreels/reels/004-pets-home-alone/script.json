@@ -1,0 +1,12 @@
+[
+ {"id": "hook", "who": "narrator", "phrases": ["You can hear your pets.", "So you pretend to leave the house."]},
+ {"id": "d1", "who": "dog", "phrases": ["He's gone. Forever.", "This is the worst day of my life."]},
+ {"id": "c1", "who": "cat", "phrases": ["Finally. The castle is mine."]},
+ {"id": "n2", "who": "narrator", "phrases": ["Ten minutes later."]},
+ {"id": "c2", "who": "cat", "phrases": ["The glass. Knock the glass."]},
+ {"id": "d2", "who": "dog", "phrases": ["I ate the couch.", "I regret nothing."]},
+ {"id": "n3", "who": "narrator", "phrases": ["You walk back in."]},
+ {"id": "d3", "who": "dog", "phrases": ["You came back! I thought you died! I love you!"]},
+ {"id": "c3", "who": "cat", "phrases": ["Oh. You're back.", "The dog did all of this."]},
+ {"id": "cta", "who": "narrator", "phrases": ["Who's the real criminal?", "Part two?"]}
+]

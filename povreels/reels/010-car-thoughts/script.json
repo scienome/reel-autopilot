@@ -1,0 +1,12 @@
+[
+ {"id": "hook", "who": "narrator", "phrases": ["You're the only person", "who can hear what your car thinks."]},
+ {"id": "a1", "who": "car", "phrases": ["You call that parallel parking?", "I have feelings. And a bumper."]},
+ {"id": "n2", "who": "narrator", "phrases": ["Your friend borrows it for one night."]},
+ {"id": "a2", "who": "car", "phrases": ["What happened in the back seat", "stays in the back seat.", "I need therapy."]},
+ {"id": "n3", "who": "narrator", "phrases": ["Ten years later, you're selling it."]},
+ {"id": "a3", "who": "car", "phrases": ["Remember the road trips?", "The night you cried at the gas station?", "I kept the receipt."]},
+ {"id": "a4", "who": "car", "phrases": ["Go on. Sell me. I'll be fine."]},
+ {"id": "n4", "who": "narrator", "phrases": ["You keep it."]},
+ {"id": "a5", "who": "car", "phrases": ["Good. Now wash me, you animal."]},
+ {"id": "cta", "who": "narrator", "phrases": ["Would you sell a car that talks?", "Part two?"]}
+]

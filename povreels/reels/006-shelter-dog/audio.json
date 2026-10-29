@@ -1,0 +1,47 @@
+{
+ "music": {
+  "prompt": "Gentle emotional piano and strings, starting lightly playful, becoming sad and quiet, then warm, hopeful and uplifting at the end, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "shelter",
+   "prompt": "animal shelter ambience, distant dogs barking",
+   "dur": 3,
+   "gain": -9
+  },
+  {
+   "beat": "d1",
+   "word": "perfect",
+   "offset": 0.2,
+   "prompt": "excited small dog yapping",
+   "dur": 1.2,
+   "gain": -5
+  },
+  {
+   "beat": "d2",
+   "word": "bite",
+   "offset": 0.2,
+   "prompt": "tiny dog growl",
+   "dur": 1,
+   "gain": -4
+  },
+  {
+   "beat": "n3",
+   "word": "cage",
+   "prompt": "metal cage gate creaking open",
+   "dur": 1.5,
+   "gain": -4
+  },
+  {
+   "beat": "d5",
+   "word": "couch",
+   "offset": 0.2,
+   "prompt": "happy dog sigh and plopping onto a couch",
+   "dur": 1.5,
+   "gain": -5
+  }
+ ]
+}

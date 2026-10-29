@@ -1,0 +1,11 @@
+[
+ {"id": "hook", "who": "narrator", "phrases": ["You can see how many lies", "someone told today."]},
+ {"id": "b1", "who": "boss", "phrases": ["Your raise is coming. Next quarter. Promise."]},
+ {"id": "d1", "who": "date", "phrases": ["I never do this on a first date."]},
+ {"id": "f1", "who": "friend", "phrases": ["Love the haircut, bro. Seriously."]},
+ {"id": "n2", "who": "narrator", "phrases": ["Grandma. Just one lie today."]},
+ {"id": "g1", "who": "grandma", "phrases": ["I'm fine, love. Don't you worry about me."]},
+ {"id": "n3", "who": "narrator", "phrases": ["You drive to her house that night.", "Then you look in the mirror."]},
+ {"id": "n4", "who": "narrator", "phrases": ["I'm fine."]},
+ {"id": "cta", "who": "narrator", "phrases": ["Whose number would scare you most?", "Part two?"]}
+]

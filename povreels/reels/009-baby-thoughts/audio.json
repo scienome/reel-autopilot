@@ -1,0 +1,53 @@
+{
+ "music": {
+  "prompt": "Cute playful lullaby-style comedy underscore with music box, glockenspiel and plucky strings, becoming tender and soft in the middle, then a silly party burst at the end, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "babies",
+   "prompt": "baby giggling",
+   "dur": 1.5,
+   "gain": -4
+  },
+  {
+   "beat": "k1",
+   "word": "yesterday",
+   "offset": 0.2,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "k2",
+   "word": "purpose",
+   "prompt": "cartoon fart squeak",
+   "dur": 1,
+   "gain": -3
+  },
+  {
+   "beat": "n3",
+   "word": "Three",
+   "prompt": "quiet night room, soft clock ticking",
+   "dur": 3,
+   "gain": -9
+  },
+  {
+   "beat": "k3",
+   "word": "her",
+   "offset": 0.3,
+   "prompt": "soft music box lullaby notes",
+   "dur": 2,
+   "gain": -8
+  },
+  {
+   "beat": "k4",
+   "word": "Party",
+   "prompt": "baby crying loudly and a party horn",
+   "dur": 2,
+   "gain": -3
+  }
+ ]
+}

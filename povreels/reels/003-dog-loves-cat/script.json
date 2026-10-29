@@ -1,0 +1,12 @@
+[
+ {"id": "hook", "who": "narrator", "phrases": ["You can hear what your dog thinks.", "And he's in love."]},
+ {"id": "d1", "who": "dog", "phrases": ["Her name is Mittens.", "She hissed at me.", "I think it's going well."]},
+ {"id": "n2", "who": "narrator", "phrases": ["Mittens watches him from the fence."]},
+ {"id": "c1", "who": "cat", "phrases": ["He licked a window for three hours.", "Pathetic.", "Adorable. But pathetic."]},
+ {"id": "n3", "who": "narrator", "phrases": ["Then the neighbours move away."]},
+ {"id": "d2", "who": "dog", "phrases": ["She's gone.", "She didn't even hiss goodbye."]},
+ {"id": "n4", "who": "narrator", "phrases": ["A week later, a box arrives."]},
+ {"id": "c2", "who": "cat", "phrases": ["Surprise, idiot. I moved in."]},
+ {"id": "d3", "who": "dog", "phrases": ["Best. Day. Ever."]},
+ {"id": "cta", "who": "narrator", "phrases": ["Would you let them date?", "Part two?"]}
+]

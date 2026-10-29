@@ -1,0 +1,53 @@
+{
+ "music": {
+  "prompt": "Laid-back funky road-trip comedy underscore with slap bass and wah guitar, turning into a nostalgic warm acoustic guitar section in the middle, then funky again, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "car",
+   "prompt": "car engine starting and idling",
+   "dur": 2,
+   "gain": -6
+  },
+  {
+   "beat": "a1",
+   "word": "parking",
+   "offset": 0.1,
+   "prompt": "car bumper bumping into another car, small crunch",
+   "dur": 1,
+   "gain": -3
+  },
+  {
+   "beat": "a2",
+   "word": "therapy",
+   "offset": 0.2,
+   "prompt": "small audience ooh then laugh",
+   "dur": 2,
+   "gain": -7
+  },
+  {
+   "beat": "a3",
+   "word": "road",
+   "prompt": "car driving on a highway with windows down, wind",
+   "dur": 3,
+   "gain": -10
+  },
+  {
+   "beat": "n4",
+   "word": "keep",
+   "prompt": "happy car horn double honk",
+   "dur": 1,
+   "gain": -3
+  },
+  {
+   "beat": "a5",
+   "word": "wash",
+   "prompt": "car wash spraying water and brushes",
+   "dur": 2,
+   "gain": -6
+  }
+ ]
+}

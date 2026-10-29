@@ -1,0 +1,48 @@
+{
+ "music": {
+  "prompt": "Playful mischievous comedy underscore with plucky strings and a ticking counter feel, turning into a soft emotional piano piece in the middle, then a funny sting at the end, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "lies",
+   "prompt": "slot machine counter clicking up fast",
+   "dur": 1.5,
+   "gain": -4
+  },
+  {
+   "beat": "b1",
+   "word": "Promise",
+   "offset": 0.2,
+   "prompt": "cartoon lie detector buzzer",
+   "dur": 1,
+   "gain": -3
+  },
+  {
+   "beat": "d1",
+   "word": "date",
+   "offset": 0.2,
+   "prompt": "small audience ooh reaction",
+   "dur": 1.5,
+   "gain": -6
+  },
+  {
+   "beat": "g1",
+   "word": "worry",
+   "offset": 0.3,
+   "prompt": "soft sad piano note with gentle rain",
+   "dur": 2.5,
+   "gain": -8
+  },
+  {
+   "beat": "n4",
+   "word": "fine",
+   "offset": 0.2,
+   "prompt": "fast slot machine counter spinning then a loud jackpot alarm",
+   "dur": 2,
+   "gain": -3
+  }
+ ]
+}

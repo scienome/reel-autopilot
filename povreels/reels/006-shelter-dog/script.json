@@ -1,0 +1,12 @@
+[
+ {"id": "hook", "who": "narrator", "phrases": ["You can hear what dogs think.", "You walk into a shelter."]},
+ {"id": "d1", "who": "pug", "phrases": ["Pick me! I'm cute! I'm perfect!"]},
+ {"id": "d2", "who": "chihuahua", "phrases": ["Pick me, and I'll only bite you a little."]},
+ {"id": "n2", "who": "narrator", "phrases": ["In the last cage, an old dog doesn't even stand up."]},
+ {"id": "d3", "who": "dog", "phrases": ["Nobody picks the old ones.", "It's fine. I'll just sleep."]},
+ {"id": "n3", "who": "narrator", "phrases": ["You open his cage."]},
+ {"id": "d4", "who": "dog", "phrases": ["Wait. Me?", "Are you sure?"]},
+ {"id": "n4", "who": "narrator", "phrases": ["Three weeks later."]},
+ {"id": "d5", "who": "dog", "phrases": ["This is my house.", "That's my human.", "And that is MY couch."]},
+ {"id": "cta", "who": "narrator", "phrases": ["Adopt, don't shop.", "Part two?"]}
+]

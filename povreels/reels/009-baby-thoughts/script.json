@@ -1,0 +1,11 @@
+[
+ {"id": "hook", "who": "narrator", "phrases": ["You're the only person", "who understands babies."]},
+ {"id": "k1", "who": "baby", "phrases": ["Your face is the scariest thing I've ever seen.", "And I was born yesterday."]},
+ {"id": "n2", "who": "narrator", "phrases": ["Your sister's baby, at dinner."]},
+ {"id": "k2", "who": "baby", "phrases": ["I pooped on purpose.", "Look at me. I'll do it again."]},
+ {"id": "n3", "who": "narrator", "phrases": ["Three a.m.", "Your sister hasn't slept in a week."]},
+ {"id": "k3", "who": "baby", "phrases": ["She looks so tired.", "Tonight, I'll sleep. For her."]},
+ {"id": "n4", "who": "narrator", "phrases": ["Five minutes later."]},
+ {"id": "k4", "who": "baby", "phrases": ["Just kidding. Party time!"]},
+ {"id": "cta", "who": "narrator", "phrases": ["Would you want to know?", "Part two?"]}
+]

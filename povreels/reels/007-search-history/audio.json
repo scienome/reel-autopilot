@@ -1,0 +1,54 @@
+{
+ "music": {
+  "prompt": "Light quirky suspense comedy underscore with plucked strings and soft synth bleeps, a tender emotional piano section in the middle, then a comedic sting at the end, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "search",
+   "prompt": "computer keyboard typing then a search whoosh",
+   "dur": 1.5,
+   "gain": -4
+  },
+  {
+   "beat": "d1",
+   "word": "time",
+   "offset": 0.2,
+   "prompt": "restaurant ambience with cutlery clinking",
+   "dur": 2.5,
+   "gain": -10
+  },
+  {
+   "beat": "b1",
+   "word": "quarter",
+   "offset": 0.2,
+   "prompt": "ominous low brass hit",
+   "dur": 1.2,
+   "gain": -5
+  },
+  {
+   "beat": "m1",
+   "word": "worry",
+   "prompt": "phone call line hum, quiet",
+   "dur": 1.5,
+   "gain": -12
+  },
+  {
+   "beat": "dd1",
+   "word": "Sure",
+   "offset": 0.3,
+   "prompt": "soft emotional piano chord",
+   "dur": 2.5,
+   "gain": -6
+  },
+  {
+   "beat": "n5",
+   "word": "staring",
+   "prompt": "party music record scratch then dead silence",
+   "dur": 1.5,
+   "gain": -3
+  }
+ ]
+}

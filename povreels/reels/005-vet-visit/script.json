@@ -1,0 +1,13 @@
+[
+ {"id": "hook", "who": "narrator", "phrases": ["You can hear your pets.", "Today is the vet."]},
+ {"id": "d1", "who": "dog", "phrases": ["Car ride! Park? Beach?", "Wait. I know this smell."]},
+ {"id": "d2", "who": "dog", "phrases": ["No. No no no.", "Tell my family I loved them."]},
+ {"id": "n2", "who": "narrator", "phrases": ["It's a nail trim."]},
+ {"id": "c1", "who": "cat", "phrases": ["Touch me and I'll haunt your grandchildren."]},
+ {"id": "n3", "who": "narrator", "phrases": ["Then the vet looks at your old cat", "a little too long."]},
+ {"id": "c2", "who": "cat", "phrases": ["Don't make that face.", "I've had a good life. Mostly naps."]},
+ {"id": "c3", "who": "cat", "phrases": ["Just stay with me tonight.", "On the bed. Not the floor."]},
+ {"id": "n4", "who": "narrator", "phrases": ["It's a sore tooth."]},
+ {"id": "c4", "who": "cat", "phrases": ["Great. Back to hating you."]},
+ {"id": "cta", "who": "narrator", "phrases": ["Who's more dramatic at the vet?", "Part two?"]}
+]

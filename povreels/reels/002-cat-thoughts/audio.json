@@ -1,0 +1,60 @@
+{
+ "music": {
+  "prompt": "Sneaky playful pizzicato comedy underscore with a mischievous clarinet, turning soft and tender with warm piano in the middle, then cheeky again, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "cats",
+   "offset": 0.2,
+   "prompt": "single cat meow, curious",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "c1",
+   "word": "face",
+   "prompt": "creepy horror violin sting",
+   "dur": 1.2,
+   "gain": -5
+  },
+  {
+   "beat": "c2",
+   "word": "favourite",
+   "prompt": "smug cat purring loudly",
+   "dur": 2,
+   "gain": -5
+  },
+  {
+   "beat": "c3",
+   "word": "Kevin",
+   "offset": 0.2,
+   "prompt": "angry cat hiss",
+   "dur": 1,
+   "gain": -3
+  },
+  {
+   "beat": "n3",
+   "word": "floor",
+   "prompt": "sad trombone wah wah",
+   "dur": 1.5,
+   "gain": -6
+  },
+  {
+   "beat": "c4",
+   "word": "chest",
+   "prompt": "soft cat purring close up, cosy",
+   "dur": 3,
+   "gain": -6
+  },
+  {
+   "beat": "c5",
+   "word": "table",
+   "prompt": "phone falling off a table and clattering on a wooden floor",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

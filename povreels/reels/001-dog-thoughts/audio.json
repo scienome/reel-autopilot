@@ -1,15 +1,80 @@
 {
- "music": { "prompt": "Warm quirky comedy underscore: plucky acoustic guitar, ukulele and light hand percussion, playful and curious, with a soft tender piano section in the middle, then playful again, no vocals", "gain": 0, "tail": 3 },
+ "music": {
+  "prompt": "Warm quirky comedy underscore: plucky acoustic guitar, ukulele and light hand percussion, playful and curious, with a soft tender piano section in the middle, then playful again, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
  "sfx": [
-  { "beat": "hook", "word": "think", "offset": 0.1, "prompt": "curious dog head tilt whine, then one short soft bark", "dur": 1.5, "gain": -4 },
-  { "beat": "day1", "word": "toaster", "prompt": "toaster popping up toast", "dur": 1 },
-  { "beat": "street", "word": "ugly", "prompt": "pug snorting grunt", "dur": 1 },
-  { "beat": "street", "word": "hot", "prompt": "playful wolf whistle", "dur": 1 },
-  { "beat": "street", "word": "dead", "prompt": "tiny chihuahua aggressive growl and yapping", "dur": 1.5 },
-  { "beat": "neighbour", "word": "twice", "prompt": "doorbell ding dong ringing twice", "dur": 1.5, "gain": -2 },
-  { "beat": "neighbour", "word": "leak", "prompt": "comedic record scratch", "dur": 0.8, "gain": -3 },
-  { "beat": "night", "word": "Three", "prompt": "quiet bedroom at night, soft clock ticking and distant crickets", "dur": 3, "gain": -8 },
-  { "beat": "night", "word": "climbs", "prompt": "old dog jumping onto a bed, mattress creak, long soft sigh", "dur": 2, "gain": -4 },
-  { "beat": "twist", "word": "Bacon", "prompt": "bacon sizzling in a pan", "dur": 1.5, "gain": -3 }
+  {
+   "beat": "hook",
+   "word": "think",
+   "offset": 0.1,
+   "prompt": "curious dog head tilt whine, then one short soft bark",
+   "dur": 1.5,
+   "gain": -6
+  },
+  {
+   "beat": "dog1",
+   "word": "toaster",
+   "prompt": "toaster popping up toast",
+   "dur": 1,
+   "gain": -2
+  },
+  {
+   "beat": "pug",
+   "word": "Ugly",
+   "prompt": "pug snorting grunt",
+   "dur": 1,
+   "gain": -2
+  },
+  {
+   "beat": "husky",
+   "word": "Hot",
+   "prompt": "playful wolf whistle",
+   "dur": 1,
+   "gain": -2
+  },
+  {
+   "beat": "chi",
+   "word": "end",
+   "prompt": "tiny chihuahua aggressive growl and yapping",
+   "dur": 1.5,
+   "gain": -2
+  },
+  {
+   "beat": "poodle",
+   "word": "twice",
+   "prompt": "doorbell ding dong ringing twice",
+   "dur": 1.5,
+   "gain": -4
+  },
+  {
+   "beat": "poodle",
+   "word": "leak",
+   "prompt": "comedic record scratch",
+   "dur": 0.8,
+   "gain": -5
+  },
+  {
+   "beat": "night",
+   "word": "Three",
+   "prompt": "quiet bedroom at night, soft clock ticking and distant crickets",
+   "dur": 3,
+   "gain": -10
+  },
+  {
+   "beat": "night",
+   "word": "climbs",
+   "prompt": "old dog jumping onto a bed, mattress creak, long soft sigh",
+   "dur": 2,
+   "gain": -6
+  },
+  {
+   "beat": "dog3",
+   "word": "Bacon",
+   "prompt": "bacon sizzling in a pan",
+   "dur": 1.5,
+   "gain": -5
+  }
  ]
 }

@@ -1,0 +1,54 @@
+{
+ "music": {
+  "prompt": "Upbeat silly comedy underscore with bouncy tuba and pizzicato, a mock-dramatic orchestral swell, then a soft emotional piano section, then playful again for the ending, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "d1",
+   "word": "ride",
+   "prompt": "car engine and happy dog panting",
+   "dur": 2,
+   "gain": -6
+  },
+  {
+   "beat": "d1",
+   "word": "smell",
+   "offset": 0.2,
+   "prompt": "dramatic horror movie sting",
+   "dur": 1.2,
+   "gain": -4
+  },
+  {
+   "beat": "n2",
+   "word": "trim",
+   "prompt": "nail clipper click",
+   "dur": 0.8,
+   "gain": -3
+  },
+  {
+   "beat": "c1",
+   "word": "grandchildren",
+   "offset": 0.2,
+   "prompt": "ghostly spooky whoosh",
+   "dur": 1.5,
+   "gain": -5
+  },
+  {
+   "beat": "c2",
+   "word": "naps",
+   "offset": 0.2,
+   "prompt": "soft cat purring",
+   "dur": 2.5,
+   "gain": -7
+  },
+  {
+   "beat": "n4",
+   "word": "tooth",
+   "prompt": "relieved sigh and a happy ding",
+   "dur": 1.2,
+   "gain": -4
+  }
+ ]
+}

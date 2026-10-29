@@ -1,0 +1,13 @@
+[
+ {"id": "hook", "who": "narrator", "phrases": ["You're the only person", "who can see everyone's search history."]},
+ {"id": "n1", "who": "narrator", "phrases": ["Your date."]},
+ {"id": "d1", "who": "date", "phrases": ["I'm having such a great time!"]},
+ {"id": "n2", "who": "narrator", "phrases": ["Your boss."]},
+ {"id": "b1", "who": "boss", "phrases": ["Great work this quarter."]},
+ {"id": "n3", "who": "narrator", "phrases": ["Your mum, on the phone."]},
+ {"id": "m1", "who": "mum", "phrases": ["I'm fine, sweetie. Don't worry about me."]},
+ {"id": "n4", "who": "narrator", "phrases": ["Your dad never says it."]},
+ {"id": "dd1", "who": "dad", "phrases": ["Proud? Of you? Hm. Sure."]},
+ {"id": "n5", "who": "narrator", "phrases": ["Then you walk into the party.", "And everyone is staring above your head."]},
+ {"id": "cta", "who": "narrator", "phrases": ["What would yours say?", "Part two?"]}
+]

@@ -1,0 +1,51 @@
+{
+ "music": {
+  "prompt": "Sweet playful romantic comedy underscore with ukulele, glockenspiel and soft strings, turning wistful and sad in the middle, then joyful and bouncy at the end, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "love",
+   "prompt": "cartoon heart beating fast, comedic",
+   "dur": 1.5,
+   "gain": -4
+  },
+  {
+   "beat": "d1",
+   "word": "hissed",
+   "prompt": "angry cat hiss",
+   "dur": 1,
+   "gain": -3
+  },
+  {
+   "beat": "c1",
+   "word": "window",
+   "prompt": "dog licking a glass window, squeaky",
+   "dur": 1.5,
+   "gain": -4
+  },
+  {
+   "beat": "n3",
+   "word": "move",
+   "prompt": "moving truck driving away",
+   "dur": 2,
+   "gain": -8
+  },
+  {
+   "beat": "n4",
+   "word": "box",
+   "prompt": "cardboard box dropped on a doorstep, doorbell ding dong",
+   "dur": 1.5,
+   "gain": -4
+  },
+  {
+   "beat": "d3",
+   "word": "Ever",
+   "prompt": "happy dog barking and excited whining",
+   "dur": 2,
+   "gain": -4
+  }
+ ]
+}

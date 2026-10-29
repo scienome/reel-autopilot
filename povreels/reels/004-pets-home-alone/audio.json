@@ -1,0 +1,54 @@
+{
+ "music": {
+  "prompt": "Sneaky heist-style comedy underscore with plucked bass, pizzicato and a tiptoe rhythm, building into chaos, then a big happy brass finish, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "leave",
+   "prompt": "front door closing and keys jingling",
+   "dur": 1.5,
+   "gain": -4
+  },
+  {
+   "beat": "d1",
+   "word": "life",
+   "offset": 0.2,
+   "prompt": "dramatic dog howl, comedic",
+   "dur": 1.5,
+   "gain": -5
+  },
+  {
+   "beat": "c2",
+   "word": "glass",
+   "n": 2,
+   "offset": 0.3,
+   "prompt": "glass falling off a counter and shattering",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "d2",
+   "word": "couch",
+   "prompt": "fabric ripping and dog growling playfully",
+   "dur": 1.5,
+   "gain": -4
+  },
+  {
+   "beat": "n3",
+   "word": "walk",
+   "prompt": "front door opening",
+   "dur": 1,
+   "gain": -5
+  },
+  {
+   "beat": "d3",
+   "word": "love",
+   "prompt": "excited dog barking and whining, tail thumping",
+   "dur": 2,
+   "gain": -4
+  }
+ ]
+}
