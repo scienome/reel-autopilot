@@ -101,3 +101,4 @@ A scheduled Claude session runs every 3 days and keeps at least 7 days of Reels 
 | 40 | The Spruce Goose flew once | Wed 4 Nov 08:30 |
 | 41 | Britain's aircraft carrier made of ice | Wed 4 Nov 12:30 |
 | 42 | The destroyer that torpedoed the President | Wed 4 Nov 20:30 |
+| 43 | What if you grew 1 inch every day? (special, posted by hand on 29 Oct) | Thu 29 Oct (extra post) |

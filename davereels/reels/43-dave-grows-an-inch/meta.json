@@ -1,0 +1,14 @@
+{
+ "title": "What if you grew 1 inch every day?",
+ "caption": "What if Dave grew one inch taller every day? One year later: 11 metres tall. Then physics shows up. 📏\nThe square-cube law: grow 6x in every direction and your weight goes up 216x, but your bones only get 36x stronger.\nWould you take the height anyway? Yes or absolutely not?",
+ "hashtags": ["gearsandglitches", "whatif", "squarecubelaw", "physics", "science", "biology", "engineering", "darkhumor"],
+ "first_comment": "King Kong would collapse under his own weight before he ever climbed a building. Prove me wrong 🦍📏",
+ "potential": 10,
+ "cover_t": 4.0,
+ "libs": ["davereels/props/dave.js", "davereels/props/dave_kit.js"],
+ "sources": [
+  "Galileo Galilei, 'Two New Sciences' (Discorsi, 1638), Day Two: scaling a structure up makes it weaker relative to its weight; giant animals would need disproportionately thick bones",
+  "J. B. S. Haldane, 'On Being the Right Size' (1926): weight grows with the cube of size while bone strength grows with the cross-section (the square)",
+  "Arithmetic: 1.8 m + 1 inch x 365 days = about 11 m, about 6.2x taller; 6^3 = 216, 6^2 = 36, so stress on the bones rises about 6x"
+ ]
+}
