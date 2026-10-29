@@ -49,5 +49,11 @@
   "text": "sitcom studio audience roaring with laughter",
   "duration_seconds": 3,
   "prompt_influence": 0.5
+ },
+ "music-d0aadea0a440.mp3": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a short tender solo piano moment two thirds in, then upbeat again for the ending, no vocals",
+  "music_length_ms": 41120,
+  "model_id": "music_v1",
+  "force_instrumental": true
  }
 }
