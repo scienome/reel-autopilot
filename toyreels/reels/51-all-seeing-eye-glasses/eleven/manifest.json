@@ -1,0 +1,33 @@
+{
+ "music-6b01a66d88a7.mp3": {
+  "prompt": "Mysterious secret society choir, comedic and slightly off-key, with a goofy optician jingle in the middle, no vocals",
+  "music_length_ms": 21400,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-1e258af3b0fb.mp3": {
+  "text": "magical eye blinking sound with a sparkle",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-092b54b45eac.mp3": {
+  "text": "cartoon boing",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-0edd3bed717d.mp3": {
+  "text": "bubbles in a fish tank",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-9771f1e76931.mp3": {
+  "text": "horror movie violin screech sting",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-482f28808f47.mp3": {
+  "text": "small studio audience laugh",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ }
+}
