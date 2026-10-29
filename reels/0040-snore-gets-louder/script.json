@@ -1,0 +1,10 @@
+[
+ {"id": "hook", "phrases": ["What if his snoring got", "twice as loud every night?"]},
+ {"id": "one", "phrases": ["Night one.", "Sixty decibels.", "She can still sleep. Barely."]},
+ {"id": "three", "phrases": ["Night three.", "Eighty decibels.", "An alarm clock with no snooze."]},
+ {"id": "five", "phrases": ["Night five.", "A hundred decibels.", "The neighbours call the police."]},
+ {"id": "seven", "phrases": ["Night seven.", "Louder than thunder.", "Every car alarm on the street goes off."]},
+ {"id": "ten", "phrases": ["Night ten.", "Louder than a jet engine.", "The windows crack."]},
+ {"id": "twist", "phrases": ["Morning.", "He says he doesn't snore.", "Her recording disagrees."]},
+ {"id": "close", "phrases": ["Stay, or sleep on the couch?"]}
+]

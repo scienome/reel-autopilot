@@ -26,6 +26,10 @@ on:
         description: 'Only show what would be posted'
         type: boolean
         default: true
+      reel:
+        description: 'Post this reel (folder name under reels/) instead of the next in the queue'
+        type: string
+        default: ''
 
 permissions:
   contents: write
@@ -48,7 +52,7 @@ jobs:
         env:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
-        run: python tools/post.py ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '--dry-run' || '' }} ${{ github.event_name == 'schedule' && '--at 02:00,08:00,16:00' || '' }}
+        run: python tools/post.py ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '--dry-run' || '' }} ${{ github.event_name == 'schedule' && '--at 02:00,08:00,16:00' || '' }} ${{ (github.event_name == 'workflow_dispatch' && inputs.reel != '') && format('--reel {0}', inputs.reel) || '' }}
       - name: Record it in posted.json
         run: |
           git config user.name "reel-bot"
