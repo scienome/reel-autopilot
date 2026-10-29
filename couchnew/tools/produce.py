@@ -19,8 +19,10 @@ a = ap.parse_args()
 reel = os.path.abspath(a.reel); rid = os.path.basename(reel); out = os.path.join(ROOT, 'out', rid); os.makedirs(out, exist_ok=True)
 meta = json.load(open(os.path.join(reel, 'meta.json')))
 voice = os.path.join(reel, 'voice.mp3')
-if not a.no_voice and not (os.path.exists(voice) and os.path.exists(os.path.join(reel, 'timing.json'))):
-    dialogue = any('who' in b for b in json.load(open(os.path.join(reel, 'script.json'))))  # one voice per character
+dialogue = any('who' in b for b in json.load(open(os.path.join(reel, 'script.json'))))  # one voice per character
+# dialogue reels: always (dialogue_voice.py caches per line, so only new or changed lines cost credit, and a changed
+# script can never keep an old take); single-voice reels: only when there is no take yet (voice.py has no cache)
+if not a.no_voice and (dialogue or not (os.path.exists(voice) and os.path.exists(os.path.join(reel, 'timing.json')))):
     subprocess.run([sys.executable, os.path.join(ROOT, 'tools', 'dialogue_voice.py' if dialogue else 'voice.py'), reel], check=True)
 page = build(reel, os.path.join(tempfile.mkdtemp(), 'render.html'))
 mp4 = os.path.join(out, rid + '.mp4')
