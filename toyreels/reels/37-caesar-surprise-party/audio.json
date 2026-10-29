@@ -1,0 +1,49 @@
+{
+ "music": {
+  "prompt": "Pompous Roman fanfare with trumpets and harp, turning into a silly party polka, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "surprise",
+   "offset": 0.0,
+   "prompt": "crowd shouting surprise with party poppers",
+   "dur": 1.5,
+   "gain": -3
+  },
+  {
+   "beat": "hook",
+   "word": "knife",
+   "offset": 0.0,
+   "prompt": "knives being sharpened, metallic",
+   "dur": 1.2,
+   "gain": -4
+  },
+  {
+   "beat": "cake",
+   "word": "cake",
+   "offset": 0.0,
+   "prompt": "sad trombone wah wah",
+   "dur": 1.5,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "slipped",
+   "offset": 0.0,
+   "prompt": "cartoon slip whistle and a big thud",
+   "dur": 1.5,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "marshmallows",
+   "offset": 0.0,
+   "prompt": "crackling campfire",
+   "dur": 2,
+   "gain": -6
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "music": {
+  "prompt": "Sneaky heist comedy underscore, plucked bass, tiptoe pizzicato strings and a brushed snare, building to a big brass blast, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "wrong",
+   "offset": 0.0,
+   "prompt": "big rock wall breaking through with debris",
+   "dur": 1.5,
+   "gain": -3
+  },
+  {
+   "beat": "dig",
+   "word": "digging",
+   "offset": 0.0,
+   "prompt": "shovel digging into dirt repeatedly, fast",
+   "dur": 2,
+   "gain": -5
+  },
+  {
+   "beat": "twist",
+   "word": "police",
+   "offset": 0.0,
+   "prompt": "police siren whoop",
+   "dur": 1.2,
+   "gain": -4
+  },
+  {
+   "beat": "twist",
+   "word": "party",
+   "offset": 0.0,
+   "prompt": "party horns and a crowd cheering",
+   "dur": 2,
+   "gain": -4
+  },
+  {
+   "beat": "punch",
+   "word": "forever",
+   "offset": 0.0,
+   "prompt": "jackhammer drilling",
+   "dur": 1.5,
+   "gain": -6
+  }
+ ]
+}

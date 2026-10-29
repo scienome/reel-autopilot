@@ -1,0 +1,9 @@
+[{"chapter": "The party", "beats": [
+ {"id": "hook", "phrases": ["Julius Caesar's friends threw him a surprise party.", "Everyone brought a knife."]},
+ {"id": "butter", "phrases": ["Good news.", "They were butter knives."]},
+ {"id": "cake", "phrases": ["Bad news.", "There was no cake."]},
+ {"id": "brutus", "phrases": ["Brutus brought the biggest one.", "And a card that said sorry."]},
+ {"id": "twist", "phrases": ["Caesar survived twenty three butter knives.", "Then he slipped on the confetti."]},
+ {"id": "punch", "phrases": ["Rome stopped throwing parties.", "Nero threw the next one.", "Bring marshmallows."]},
+ {"id": "cta", "phrases": ["Who would bring a knife to your party? Tag them."]}
+]}]

@@ -1,0 +1,49 @@
+{
+ "music": {
+  "prompt": "Dark secret society choir with organ, turning into frantic panicky comedic orchestra, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "remote",
+   "offset": 0.0,
+   "prompt": "old TV remote click then a TV static burst",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "search",
+   "word": "vault",
+   "offset": 0.0,
+   "prompt": "heavy vault door spinning open",
+   "dur": 1.5,
+   "gain": -4
+  },
+  {
+   "beat": "chaos",
+   "word": "snowed",
+   "offset": 0.0,
+   "prompt": "cold howling winter wind",
+   "dur": 2,
+   "gain": -6
+  },
+  {
+   "beat": "twist",
+   "word": "cat",
+   "offset": 0.0,
+   "prompt": "annoyed cat meow hiss",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "everything",
+   "offset": 0.0,
+   "prompt": "dramatic orchestra hit",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

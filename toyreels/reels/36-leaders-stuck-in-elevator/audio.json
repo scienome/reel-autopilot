@@ -1,0 +1,57 @@
+{
+ "music": {
+  "prompt": "Cheesy elevator bossa nova muzak that slowly gets tense and falls apart, comedic, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "elevator",
+   "offset": 0.0,
+   "prompt": "elevator jolting to a stop with a metal clunk",
+   "dur": 1.5,
+   "gain": -3
+  },
+  {
+   "beat": "b1",
+   "word": "button",
+   "offset": 0.0,
+   "prompt": "many elevator buttons beeping fast",
+   "dur": 1.5,
+   "gain": -4
+  },
+  {
+   "beat": "b2",
+   "word": "apologised",
+   "offset": 0.0,
+   "prompt": "tiny squeaky metal creak",
+   "dur": 1,
+   "gain": -4
+  },
+  {
+   "beat": "b3",
+   "word": "missile",
+   "offset": 0.0,
+   "prompt": "small rocket whoosh then a muffled boom",
+   "dur": 2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "opened",
+   "offset": 0.0,
+   "prompt": "elevator ding and doors sliding open",
+   "dur": 1.5,
+   "gain": -2
+  },
+  {
+   "beat": "punch",
+   "word": "read",
+   "offset": 0.0,
+   "prompt": "small studio audience laugh",
+   "dur": 1.6,
+   "gain": -8
+  }
+ ]
+}
