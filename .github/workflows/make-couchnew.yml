@@ -68,13 +68,13 @@ jobs:
             if ! python tools/produce.py "reels/$id" --workers "$(nproc)" > "/tmp/$id.log" 2>&1; then
               cat "/tmp/$id.log"
               echo "::error::$id failed: $(tail -n 12 "/tmp/$id.log" | tr '\n' ' ' | cut -c1-900)"; FAILED="$FAILED $id"
-              for f in voice.mp3 timing.json alignment.json eleven; do git add "reels/$id/$f" 2>/dev/null || true; done   # paid once, kept
+              for f in voice.mp3 timing.json alignment.json voice_lines eleven; do git add "reels/$id/$f" 2>/dev/null || true; done   # paid once, kept
               git diff --cached --quiet || (git commit -m "Voiceover for couch pilot $id [skip ci]" && git pull --rebase -q && git push)
               echo "::endgroup::"; continue
             fi
             cat "/tmp/$id.log"
             # keep the paid-for voice in the repo so a re-render never pays twice
-            for f in voice.mp3 timing.json alignment.json eleven; do git add "reels/$id/$f" 2>/dev/null || true; done   # paid once, kept
+            for f in voice.mp3 timing.json alignment.json voice_lines eleven; do git add "reels/$id/$f" 2>/dev/null || true; done   # paid once, kept
             git diff --cached --quiet || (git commit -m "Voiceover for couch pilot $id [skip ci]" && git pull --rebase -q && git push)
             gh release delete "couchnew-$id" --yes --cleanup-tag >/dev/null 2>&1 || true
             TITLE=$(python -c "import json;print(json.load(open('reels/$id/meta.json'))['title'])")

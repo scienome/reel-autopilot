@@ -20,7 +20,8 @@ reel = os.path.abspath(a.reel); rid = os.path.basename(reel); out = os.path.join
 meta = json.load(open(os.path.join(reel, 'meta.json')))
 voice = os.path.join(reel, 'voice.mp3')
 if not a.no_voice and not (os.path.exists(voice) and os.path.exists(os.path.join(reel, 'timing.json'))):
-    subprocess.run([sys.executable, os.path.join(ROOT, 'tools', 'voice.py'), reel], check=True)
+    dialogue = any('who' in b for b in json.load(open(os.path.join(reel, 'script.json'))))  # one voice per character
+    subprocess.run([sys.executable, os.path.join(ROOT, 'tools', 'dialogue_voice.py' if dialogue else 'voice.py'), reel], check=True)
 page = build(reel, os.path.join(tempfile.mkdtemp(), 'render.html'))
 mp4 = os.path.join(out, rid + '.mp4')
 cmd = [sys.executable, os.path.join(ROOT, 'tools', 'render_reel.py'), page, mp4, '--workers', str(a.workers)]

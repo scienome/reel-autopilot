@@ -27,7 +27,7 @@ def engine_js(reel):
         pre += 'window.WORD_TIMES = ' + json.dumps(tm['words']) + ';\nwindow.VOICE_END = ' + json.dumps(tm.get('end', 0)) + ';\n'
     else:
         pre += 'window.WORD_TIMES = null;\n'
-    eng = read(STYLE, 'violet_base.js') + read(STYLE, 'kit_timing.js') + read(STYLE, 'kit_props.js') + read(STYLE, 'kit_couch.js') + read(reel, 'story.js') + '\n}\n'
+    eng = read(STYLE, 'violet_base.js') + read(STYLE, 'kit_timing.js') + read(STYLE, 'kit_props.js') + read(STYLE, 'kit_couch.js') + ''.join(read(ROOT, l) for l in meta.get('libs', [])) + read(reel, 'story.js') + '\n}\n'
     return pre + eng, meta
 
 

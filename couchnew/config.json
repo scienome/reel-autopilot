@@ -3,5 +3,17 @@
     "voice_id": "s3TPKV1kjDlVtZbl4Ksh",
     "model_id": "eleven_v4",
     "voice_settings": null
+  },
+  "cast": {
+    "narrator": "s3TPKV1kjDlVtZbl4Ksh",
+    "sam": "s3TPKV1kjDlVtZbl4Ksh",
+    "maya": "cgSgspJ2msm6clMCkdW9",
+    "mum": "Xb7hH8MSUJpSbSDYk0k2"
+  },
+  "_cast_names": {
+    "narrator": "Adam (the one voice for every channel)",
+    "sam": "Adam",
+    "maya": "Jessica - Playful, Bright, Warm",
+    "mum": "Alice - Clear, Engaging Educator"
   }
 }
