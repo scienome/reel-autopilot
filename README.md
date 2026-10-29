@@ -26,7 +26,7 @@ Folder: [`couch-sarcasm/`](couch-sarcasm/)
 | [0016-one-week](couch-sarcasm/0016-one-week.mp4) | One week, she said. | Posted on Instagram |
 | [0017-the-sick-day](couch-sarcasm/0017-the-sick-day.mp4) | The sick day. | Posted on Instagram |
 | [0018-the-usual](couch-sarcasm/0018-the-usual.mp4) | The usual. | Waiting to post |
-| [0019-sold-the-ps5](couch-sarcasm/0019-sold-the-ps5.mp4) | Sold the PS5. | Waiting to post |
+| [0019-sold-the-ps5](couch-sarcasm/0019-sold-the-ps5.mp4) | Sold the PS5. | Posted on Instagram |
 | [0020-the-dog-decides](couch-sarcasm/0020-the-dog-decides.mp4) | The dog decides. | Waiting to post |
 | [0021-vows-with-receipts](couch-sarcasm/0021-vows-with-receipts.mp4) | Vows with receipts. | Waiting to post |
 | [0022-search-history](couch-sarcasm/0022-search-history.mp4) | Search history. | Waiting to post |
@@ -49,7 +49,7 @@ Folder: [`couch-sarcasm/`](couch-sarcasm/)
 | [0039-crop-her-out](couch-sarcasm/0039-crop-her-out.mp4) | Crop her out. | Waiting to post |
 | [0040-snore-gets-louder](couch-sarcasm/0040-snore-gets-louder.mp4) | What if his snoring got twice as loud every night? | Waiting to post |
 
-## Dave (Gears & Glitches) (43)
+## Dave (Gears & Glitches) (44)
 Folder: [`dave-reels/`](dave-reels/)
 
 | Video | Title | Status |
@@ -76,7 +76,7 @@ Folder: [`dave-reels/`](dave-reels/)
 | [20-north-korea-hotel](dave-reels/20-north-korea-hotel.mp4) | North Korea's hotel of doom | Posted on Instagram · on YouTube |
 | [21-galloping-gertie](dave-reels/21-galloping-gertie.mp4) | Galloping Gertie | Skipped (older kind, never posted) |
 | [22-vasa](dave-reels/22-vasa.mp4) | The warship that sank in 1,300 metres | Waiting to post |
-| [23-skylab-fine](dave-reels/23-skylab-fine.mp4) | Australia fined NASA for littering | Waiting to post |
+| [23-skylab-fine](dave-reels/23-skylab-fine.mp4) | Australia fined NASA for littering | Posted on Instagram · on YouTube |
 | [24-plumbbob-manhole](dave-reels/24-plumbbob-manhole.mp4) | The manhole cover that left Earth | Posted on Instagram · on YouTube |
 | [25-tsar-bell](dave-reels/25-tsar-bell.mp4) | The biggest bell that never rang | Posted on Instagram · on YouTube |
 | [26-genesis-upside-down](dave-reels/26-genesis-upside-down.mp4) | NASA's upside-down parachute switch | Waiting to post |
@@ -97,8 +97,9 @@ Folder: [`dave-reels/`](dave-reels/)
 | [41-habakkuk-ice](dave-reels/41-habakkuk-ice.mp4) | Britain's aircraft carrier made of ice | Waiting to post |
 | [42-porter-torpedo](dave-reels/42-porter-torpedo.mp4) | The destroyer that torpedoed the President | Waiting to post |
 | [43-dave-grows-an-inch](dave-reels/43-dave-grows-an-inch.mp4) | What if you grew 1 inch every day? | Waiting to post |
+| [44-gimli-glider](dave-reels/44-gimli-glider.mp4) | The jet that ran out of fuel because of maths | Waiting to post |
 
-## Toy reels (Brick Toy) (33)
+## Toy reels (Brick Toy) (34)
 Folder: [`toy-reels/`](toy-reels/)
 
 | Video | Title | Status |
@@ -116,7 +117,7 @@ Folder: [`toy-reels/`](toy-reels/)
 | [11-kim-missile-boomerang](toy-reels/11-kim-missile-boomerang.mp4) | Kim Pressed The Button. The Missile Came Back. 💀 | Posted (Instagram + YouTube) |
 | [12-zombie-apocalypse-fails](toy-reels/12-zombie-apocalypse-fails.mp4) | The Zombie Apocalypse Failed For The Dumbest Reason 🧟 | Posted (Instagram + YouTube) |
 | [13-hitler-hell-queue](toy-reels/13-hitler-hell-queue.mp4) | Hitler Went To Hell And Got Put On Hold 💀 | Posted (Instagram + YouTube) |
-| [14-death-replaced-by-ai](toy-reels/14-death-replaced-by-ai.mp4) | Death Got Replaced By AI. Nobody Has Died Since 💀 | Waiting to post |
+| [14-death-replaced-by-ai](toy-reels/14-death-replaced-by-ai.mp4) | Death Got Replaced By AI. Nobody Has Died Since 💀 | Posted (Instagram + YouTube) |
 | [15-napoleon-sues-everyone](toy-reels/15-napoleon-sues-everyone.mp4) | Napoleon Came Back From The Dead To Sue Everyone 💀 | Waiting to post |
 | [16-robbers-rob-illuminati](toy-reels/16-robbers-rob-illuminati.mp4) | Two Robbers Robbed The Illuminati's Bank 👁️ | Waiting to post |
 | [17-einstein-art-school](toy-reels/17-einstein-art-school.mp4) | Einstein Went Back In Time To Get Hitler Into Art School 🎨 | Waiting to post |
@@ -136,6 +137,7 @@ Folder: [`toy-reels/`](toy-reels/)
 | [31-illuminati-hr-trapdoor](toy-reels/31-illuminati-hr-trapdoor.mp4) | The Illuminati Have The Shortest HR Meetings 👁️ | Waiting to post |
 | [32-nose-grows-an-inch](toy-reels/32-nose-grows-an-inch.mp4) | 32-nose-grows-an-inch | Waiting to post |
 | [33-earth-grows-every-day](toy-reels/33-earth-grows-every-day.mp4) | What If Earth Got 1% Bigger Every Day? 🌍 | Waiting to post |
+| [34-zeus-lightning-subscription](toy-reels/34-zeus-lightning-subscription.mp4) | Zeus Has To Subscribe To Lightning ⚡ | Waiting to post |
 
 ## Mechanic Shorts (YouTube) (25)
 Folder: [`mechanic-shorts/`](mechanic-shorts/)
