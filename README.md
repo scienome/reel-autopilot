@@ -17,7 +17,7 @@ Folder: [`couch-cartoon/`](couch-cartoon/)
 | [m001-she-means](couch-cartoon/m001-she-means.mp4) | What she says vs what she means 💀 | Not scheduled |
 | [t001-dentist](couch-cartoon/t001-dentist.mp4) | Who's Jessica? 📱 | Not scheduled |
 
-## Gears & Glitches POV stories (new) (5)
+## Gears & Glitches POV stories (new) (7)
 Folder: [`gears-pov/`](gears-pov/)
 
 | Video | Title | Status |
@@ -27,6 +27,8 @@ Folder: [`gears-pov/`](gears-pov/)
 | [003-dog-loves-cat](gears-pov/003-dog-loves-cat.mp4) | My dog is in love with the neighbour's cat 🐶❤️🐱 | Waiting to post |
 | [004-pets-home-alone](gears-pov/004-pets-home-alone.mp4) | What your pets do when you leave 🐶🐱 | Waiting to post |
 | [005-vet-visit](gears-pov/005-vet-visit.mp4) | What your pets think at the vet 🐶🐱🏥 | Waiting to post |
+| [006-shelter-dog](gears-pov/006-shelter-dog.mp4) | Nobody picks the old dog 🐶 | Waiting to post |
+| [007-search-history](gears-pov/007-search-history.mp4) | You can see everyone's search history 🔎 | Waiting to post |
 
 ## CouchSarcasm (old couple comedy) (40)
 Folder: [`couch-sarcasm/`](couch-sarcasm/)
