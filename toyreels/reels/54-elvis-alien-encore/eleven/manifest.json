@@ -1,0 +1,33 @@
+{
+ "music-ffdc0dc7afd8.mp3": {
+  "prompt": "1950s rock and roll guitar shuffle mixed with spacey theremin UFO sounds, no vocals",
+  "music_length_ms": 26040,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-5e9c484046eb.mp3": {
+  "text": "UFO tractor beam humming and zapping",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-cc52f1c50d31.mp3": {
+  "text": "alien crowd cheering, strange high-pitched voices",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-0e81e1eb488f.mp3": {
+  "text": "fast counter clicking up",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-11bbcb94fa90.mp3": {
+  "text": "loud alien snoring",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-39faeeba3fe4.mp3": {
+  "text": "drive-through speaker crackle",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
