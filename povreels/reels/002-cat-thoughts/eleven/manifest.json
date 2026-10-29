@@ -1,0 +1,43 @@
+{
+ "music-f1d215d6a48a.mp3": {
+  "prompt": "Sneaky playful pizzicato comedy underscore with a mischievous clarinet, turning soft and tender with warm piano in the middle, then cheeky again, no vocals",
+  "music_length_ms": 40400,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-b106c5486f36.mp3": {
+  "text": "single cat meow, curious",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-3e8de34d1ed1.mp3": {
+  "text": "creepy horror violin sting",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-556838de5fc4.mp3": {
+  "text": "smug cat purring loudly",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-92d7e888c50d.mp3": {
+  "text": "angry cat hiss",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-4ed03d6cf20e.mp3": {
+  "text": "sad trombone wah wah",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-b5909d734eeb.mp3": {
+  "text": "soft cat purring close up, cosy",
+  "duration_seconds": 3,
+  "prompt_influence": 0.5
+ },
+ "sfx-69324a977a3b.mp3": {
+  "text": "phone falling off a table and clattering on a wooden floor",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
