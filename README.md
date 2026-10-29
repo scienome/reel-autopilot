@@ -129,7 +129,7 @@ Folder: [`dave-reels/`](dave-reels/)
 | [43-dave-grows-an-inch](dave-reels/43-dave-grows-an-inch.mp4) | What if you grew 1 inch every day? | Waiting to post |
 | [44-gimli-glider](dave-reels/44-gimli-glider.mp4) | The jet that ran out of fuel because of maths | Waiting to post |
 
-## Toy reels (Brick Toy) (44)
+## Toy reels (Brick Toy) (49)
 Folder: [`toy-reels/`](toy-reels/)
 
 | Video | Title | Status |
@@ -178,6 +178,11 @@ Folder: [`toy-reels/`](toy-reels/)
 | [42-getaway-driving-test](toy-reels/42-getaway-driving-test.mp4) | Robbers Stole A Driving School Car 🚗🚨 | Waiting to post |
 | [43-hitler-late-delivery](toy-reels/43-hitler-late-delivery.mp4) | Hitler's Super Weapon Arrived 80 Years Late 📦 | Waiting to post |
 | [44-gravity-off-mondays](toy-reels/44-gravity-off-mondays.mp4) | What If Gravity Turned Off Every Monday? 🌍 | Waiting to post |
+| [45-billionaire-mars-race](toy-reels/45-billionaire-mars-race.mp4) | Musk vs Bezos vs Zuckerberg: Race To Mars 🚀 | Waiting to post |
+| [46-iron-dude-update](toy-reels/46-iron-dude-update.mp4) | Iron Dude's Suit Updated Mid-Fight 🤖 | Waiting to post |
+| [47-musical-chairs-summit](toy-reels/47-musical-chairs-summit.mp4) | World Leaders Played Musical Chairs 🪑 | Waiting to post |
+| [48-devil-retires](toy-reels/48-devil-retires.mp4) | The Devil Retired. Grandma Runs Hell Now. 👵🔥 | Waiting to post |
+| [49-dracula-moves-to-italy](toy-reels/49-dracula-moves-to-italy.mp4) | Dracula Moved To Italy. Big Mistake. 🧛🍕 | Waiting to post |
 
 ## Mechanic Shorts (YouTube) (25)
 Folder: [`mechanic-shorts/`](mechanic-shorts/)
