@@ -1,0 +1,33 @@
+{
+ "music-3aae0f29ea45.mp3": {
+  "prompt": "Pompous military march played badly on a kazoo and tuba, comedic, no vocals",
+  "music_length_ms": 28440,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-8c0ef857ab9e.mp3": {
+  "text": "old computer keyboard clicking and a dial-up modem",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-0adccb8e6974.mp3": {
+  "text": "clock ticking slowly with a yawn",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-1c374bc50757.mp3": {
+  "text": "doorbell ding dong",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-df6691aaf384.mp3": {
+  "text": "camera shutter click",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-0bd0b40a26aa.mp3": {
+  "text": "evil low drone and crackling flames",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ }
+}
