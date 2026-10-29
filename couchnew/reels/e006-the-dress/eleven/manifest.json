@@ -1,0 +1,43 @@
+{
+ "music-87f4f1019588.mp3": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a sweeping fake-romantic wedding march parody and a dramatic sting in the middle, no vocals",
+  "music_length_ms": 28840,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-5dff3bd1e1bb.mp3": {
+  "text": "cartoon bonk and lamp crash",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-13668af8d66e.mp3": {
+  "text": "cartoon bonk with glass breaking",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-ca1d43d589bd.mp3": {
+  "text": "sitcom studio audience laugh",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-9c670cf545a9.mp3": {
+  "text": "heavenly choir aaah",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-c0ab9f85e5ca.mp3": {
+  "text": "record scratch then dramatic orchestra sting",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-69467d5471b0.mp3": {
+  "text": "sitcom studio audience oooh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-7eb3ebe304e8.mp3": {
+  "text": "sitcom studio audience big laugh and applause",
+  "duration_seconds": 2.2,
+  "prompt_influence": 0.5
+ }
+}
