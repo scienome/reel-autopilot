@@ -3,7 +3,32 @@
 Every finished video, one folder per series. Click a folder, then a file, then **View raw** (or the download
 button) to play it. This page updates itself after every render.
 
-## CouchSarcasm (couple comedy) (40)
+## CouchSarcasm cartoon sitcom (new) (8)
+Folder: [`couch-cartoon/`](couch-cartoon/)
+
+| Video | Title | Status |
+|---|---|---|
+| [e001-the-ring](couch-cartoon/e001-the-ring.mp4) | He hid the ring in a doughnut 💍🍩 | Waiting to post |
+| [e002-thursday](couch-cartoon/e002-thursday.mp4) | The ring came back... on Thursday 💍🚽 | Waiting to post |
+| [e003-mum-moves-in](couch-cartoon/e003-mum-moves-in.mp4) | Mum said one week. It's day forty. 🧳 | Waiting to post |
+| [e004-sam-cooks](couch-cartoon/e004-sam-cooks.mp4) | He cooked to impress her mum 🔥🍳 | Waiting to post |
+| [e005-the-birthday](couch-cartoon/e005-the-birthday.mp4) | He didn't forget her birthday this time 🎂 | Waiting to post |
+| [e006-the-dress](couch-cartoon/e006-the-dress.mp4) | He wasn't allowed to see the wedding dress 👰 | Waiting to post |
+| [m001-she-means](couch-cartoon/m001-she-means.mp4) | What she says vs what she means 💀 | Not scheduled |
+| [t001-dentist](couch-cartoon/t001-dentist.mp4) | Who's Jessica? 📱 | Not scheduled |
+
+## Gears & Glitches POV stories (new) (5)
+Folder: [`gears-pov/`](gears-pov/)
+
+| Video | Title | Status |
+|---|---|---|
+| [001-dog-thoughts](gears-pov/001-dog-thoughts.mp4) | You can hear what dogs think 🐶 | Waiting to post |
+| [002-cat-thoughts](gears-pov/002-cat-thoughts.mp4) | You can hear what cats think 🐱 | Waiting to post |
+| [003-dog-loves-cat](gears-pov/003-dog-loves-cat.mp4) | My dog is in love with the neighbour's cat 🐶❤️🐱 | Waiting to post |
+| [004-pets-home-alone](gears-pov/004-pets-home-alone.mp4) | What your pets do when you leave 🐶🐱 | Waiting to post |
+| [005-vet-visit](gears-pov/005-vet-visit.mp4) | What your pets think at the vet 🐶🐱🏥 | Waiting to post |
+
+## CouchSarcasm (old couple comedy) (40)
 Folder: [`couch-sarcasm/`](couch-sarcasm/)
 
 | Video | Title | Status |
@@ -136,7 +161,7 @@ Folder: [`toy-reels/`](toy-reels/)
 | [30-death-vs-oldest-man](toy-reels/30-death-vs-oldest-man.mp4) | Death Came For A 120-Year-Old Man. Big Mistake. 💀 | Waiting to post |
 | [31-illuminati-hr-trapdoor](toy-reels/31-illuminati-hr-trapdoor.mp4) | The Illuminati Have The Shortest HR Meetings 👁️ | Waiting to post |
 | [32-nose-grows-an-inch](toy-reels/32-nose-grows-an-inch.mp4) | 32-nose-grows-an-inch | Waiting to post |
-| [33-earth-grows-every-day](toy-reels/33-earth-grows-every-day.mp4) | What If Earth Got 1% Bigger Every Day? 🌍 | Waiting to post |
+| [33-earth-grows-every-day](toy-reels/33-earth-grows-every-day.mp4) | What If Earth Got 1% Bigger Every Day? 🌍 | Posted (Instagram + YouTube) |
 | [34-zeus-lightning-subscription](toy-reels/34-zeus-lightning-subscription.mp4) | Zeus Has To Subscribe To Lightning ⚡ | Waiting to post |
 
 ## Mechanic Shorts (YouTube) (25)
