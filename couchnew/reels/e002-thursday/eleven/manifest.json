@@ -1,0 +1,48 @@
+{
+ "music-f435e3d63aec.mp3": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a fake-romantic string swell in the middle, no vocals",
+  "music_length_ms": 31020,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-8cfe0f688c9e.mp3": {
+  "text": "toilet flushing loudly",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-f1d8a5dd604d.mp3": {
+  "text": "magical sparkle chime",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-44d49732a66a.mp3": {
+  "text": "fast cartoon scrubbing and squeaking",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-c09040356bdb.mp3": {
+  "text": "short sitcom studio audience laugh burst",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-1f8afe53b402.mp3": {
+  "text": "metal kitchen tongs clacking twice",
+  "duration_seconds": 0.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-3a616b17d6f5.mp3": {
+  "text": "dramatic orchestra sting dun dun dun",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-3d45a5cfe1c3.mp3": {
+  "text": "cash register ka-ching",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-7eb3ebe304e8.mp3": {
+  "text": "sitcom studio audience big laugh and applause",
+  "duration_seconds": 2.2,
+  "prompt_influence": 0.5
+ }
+}
