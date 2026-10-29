@@ -55,5 +55,51 @@
   "music_length_ms": 41120,
   "model_id": "music_v1",
   "force_instrumental": true
+ },
+ "music-b9305ed3060a.mp3": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a short tender solo piano moment two thirds in, then upbeat again for the ending, no vocals",
+  "music_length_ms": 39640,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-57b14e71519d.mp3": {
+  "text": "hospital heart monitor beeping in a quiet room",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-8d074300e4e0.mp3": {
+  "text": "fast tape rewind whoosh with a comedic zip",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-ba4c73b0b96a.mp3": {
+  "text": "squishy cartoon squelch",
+  "duration_seconds": 0.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-5e1822d6e722.mp3": {
+  "text": "loud cartoon crunch then a big gulp swallow",
+  "duration_seconds": 1.3,
+  "prompt_influence": 0.5
+ },
+ "sfx-c09040356bdb.mp3": {
+  "text": "short sitcom studio audience laugh burst",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-6ab60d594ec8.mp3": {
+  "text": "short sitcom audience groan then chuckle",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-92d1fd1e9946.mp3": {
+  "text": "short sitcom audience cheer",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-09c3d6fcb64a.mp3": {
+  "text": "short sitcom studio audience big laugh",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
  }
 }
