@@ -1,0 +1,38 @@
+{
+ "music-8a6fe4d5acdc.mp3": {
+  "prompt": "Cheesy elevator bossa nova muzak that slowly gets tense and falls apart, comedic, no vocals",
+  "music_length_ms": 28440,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-aebf81c70067.mp3": {
+  "text": "elevator jolting to a stop with a metal clunk",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-f3662d4f1622.mp3": {
+  "text": "many elevator buttons beeping fast",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-880b133e690b.mp3": {
+  "text": "tiny squeaky metal creak",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-edef0cb8254b.mp3": {
+  "text": "small rocket whoosh then a muffled boom",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-c62513c02afc.mp3": {
+  "text": "elevator ding and doors sliding open",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-482f28808f47.mp3": {
+  "text": "small studio audience laugh",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ }
+}
