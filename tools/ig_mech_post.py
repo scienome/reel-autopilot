@@ -3,7 +3,7 @@
 
 Usage: python3 tools/ig_mech_post.py [--dry-run] [--id 02-hitler-maus-tank | --id mechreel-05-comet-square-windows]
 
-Three slots a day at davereels/schedule.json "times" (08:30, 12:30, 20:30 IST). Each slot posts the next item,
+Three slots a day at davereels/schedule.json "times" (07:30, 12:30, 20:30 IST). Each slot posts the next item,
 alternating a Dave reel and a mechanic Short (if one kind has nothing rendered left, the other goes). Dave reels go in
 schedule.json order (that file still sets their YouTube times), mechanic Shorts in folder order (not anatomy videos).
 A run handles the first unused slot between 3 hours ago and 4 h 15 min from now (runs start 4, 3 and 2 hours early

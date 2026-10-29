@@ -9,7 +9,7 @@ either continue the open tasks below, or ask me if something is unclear. Talk to
 |---|---|---|---|---|
 | Toy (Brick toy "what if") | `toyreels/` | LEGO-like 3D toys | 06:00, 12:30, 20:30 | live |
 | CouchSarcasm (couch) | `couchnew/` (new); old `reels/` at root is retired | 2D adult cartoon sitcom (Sam, Maya, Mum), one voice per character, laugh track | 07:30, 13:30, 21:30 (02:00/08:00/16:00 UTC) | resumes 30 Oct with e001 |
-| Gears & Glitches | `povreels/` (new); `davereels/` is PAUSED, I rejected Dave | 3D soft "violet" style "YOU are the only one who..." POV stories, many voices | 08:30, 12:30, 20:30 | resumes 30 Oct with 001 |
+| Gears & Glitches | `povreels/` (new); `davereels/` is PAUSED, I rejected Dave | 3D soft "violet" style "YOU are the only one who..." POV stories, many voices | 07:30, 12:30, 20:30 | resumes 30 Oct with 001 |
 
 Every reel posts to Instagram **and** YouTube Shorts automatically (GitHub Actions cron). Never run posting workflows by hand unless I ask.
 
@@ -46,7 +46,7 @@ Every reel posts to Instagram **and** YouTube Shorts automatically (GitHub Actio
 ## Open tasks (as of 29 Oct 2026, 23:40 IST)
 1. Renders of Gears 001-010 and couch e002-e006 were running. Check each Release exists; if any failed, read the log, fix, and
    re-run it (workflow_dispatch with `reel=<id>`). A 2:30 IST re-check was scheduled. **Morning posts must work**: couch
-   07:30 IST (e001), Gears 08:30 IST (001).
+   07:30 IST (e001), Gears 07:30 IST (001).
 2. Send me every finished reel one by one (download the Release MP4, check it, send it).
 3. After that: keep both queues at least 2 days ahead with new episodes in the same styles. Ask me before changing a style.
 
