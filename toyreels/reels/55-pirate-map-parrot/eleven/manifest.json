@@ -1,0 +1,33 @@
+{
+ "music-e4a85a1b25c2.mp3": {
+  "prompt": "Rollicking pirate sea shanty with accordion and fiddle, comedic, no vocals",
+  "music_length_ms": 26760,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-2d0ad6db8899.mp3": {
+  "text": "shovel digging sand and a treasure chest thud",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-545ca52f7798.mp3": {
+  "text": "pirate grunting while twisting around",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-8ce83304e7dc.mp3": {
+  "text": "parrot squawk",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-58c7dcf673a8.mp3": {
+  "text": "cracker crunch and seagull call",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-87324065b02e.mp3": {
+  "text": "seagull screaming and flapping wings",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ }
+}
