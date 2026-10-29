@@ -3,7 +3,7 @@
 Every finished video, one folder per series. Click a folder, then a file, then **View raw** (or the download
 button) to play it. This page updates itself after every render.
 
-## CouchSarcasm (couple comedy) (39)
+## CouchSarcasm (couple comedy) (40)
 Folder: [`couch-sarcasm/`](couch-sarcasm/)
 
 | Video | Title | Status |
@@ -47,6 +47,7 @@ Folder: [`couch-sarcasm/`](couch-sarcasm/)
 | [0037-meet-the-dad](couch-sarcasm/0037-meet-the-dad.mp4) | Meet the dad. | Waiting to post |
 | [0038-best-man-speech](couch-sarcasm/0038-best-man-speech.mp4) | The best man's speech. | Waiting to post |
 | [0039-crop-her-out](couch-sarcasm/0039-crop-her-out.mp4) | Crop her out. | Waiting to post |
+| [0040-snore-gets-louder](couch-sarcasm/0040-snore-gets-louder.mp4) | What if his snoring got twice as loud every night? | Waiting to post |
 
 ## Dave (Gears & Glitches) (43)
 Folder: [`dave-reels/`](dave-reels/)
