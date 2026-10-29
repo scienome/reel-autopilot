@@ -1,0 +1,33 @@
+{
+ "music-9d806aaa4a66.mp3": {
+  "prompt": "Sneaky heist comedy underscore, plucked bass, tiptoe pizzicato strings and a brushed snare, building to a big brass blast, no vocals",
+  "music_length_ms": 32040,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-2458254d5874.mp3": {
+  "text": "big rock wall breaking through with debris",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-c3ad478f3684.mp3": {
+  "text": "shovel digging into dirt repeatedly, fast",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-8e451b2b44c5.mp3": {
+  "text": "police siren whoop",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-58aa67dc8613.mp3": {
+  "text": "party horns and a crowd cheering",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-7415cc3c2eec.mp3": {
+  "text": "jackhammer drilling",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ }
+}
