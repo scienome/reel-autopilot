@@ -97,7 +97,7 @@ Folder: [`dave-reels/`](dave-reels/)
 | [42-porter-torpedo](dave-reels/42-porter-torpedo.mp4) | The destroyer that torpedoed the President | Waiting to post |
 | [43-dave-grows-an-inch](dave-reels/43-dave-grows-an-inch.mp4) | What if you grew 1 inch every day? | Waiting to post |
 
-## Toy reels (Brick Toy) (32)
+## Toy reels (Brick Toy) (33)
 Folder: [`toy-reels/`](toy-reels/)
 
 | Video | Title | Status |
@@ -133,7 +133,8 @@ Folder: [`toy-reels/`](toy-reels/)
 | [29-dracula-energy-drink](toy-reels/29-dracula-energy-drink.mp4) | Dracula Robbed A Blood Bank. Every Donor Drank Energy Drinks 🧛 | Waiting to post |
 | [30-death-vs-oldest-man](toy-reels/30-death-vs-oldest-man.mp4) | Death Came For A 120-Year-Old Man. Big Mistake. 💀 | Waiting to post |
 | [31-illuminati-hr-trapdoor](toy-reels/31-illuminati-hr-trapdoor.mp4) | The Illuminati Have The Shortest HR Meetings 👁️ | Waiting to post |
-| [32-nose-grows-an-inch](toy-reels/32-nose-grows-an-inch.mp4) | What If Your Nose Grew 1 Inch Every Day? 👃 | Waiting to post |
+| [32-nose-grows-an-inch](toy-reels/32-nose-grows-an-inch.mp4) | 32-nose-grows-an-inch | Waiting to post |
+| [33-earth-grows-every-day](toy-reels/33-earth-grows-every-day.mp4) | What If Earth Got 1% Bigger Every Day? 🌍 | Waiting to post |
 
 ## Mechanic Shorts (YouTube) (25)
 Folder: [`mechanic-shorts/`](mechanic-shorts/)
