@@ -1,0 +1,33 @@
+{
+ "music-5438aed75b5a.mp3": {
+  "prompt": "Playful mischievous comedy underscore with plucky strings and a ticking counter feel, turning into a soft emotional piano piece in the middle, then a funny sting at the end, no vocals",
+  "music_length_ms": 27880,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-b212556367b2.mp3": {
+  "text": "slot machine counter clicking up fast",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-0c21731bca8b.mp3": {
+  "text": "cartoon lie detector buzzer",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-f262cb8c675b.mp3": {
+  "text": "small audience ooh reaction",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-8973ced5fc7f.mp3": {
+  "text": "soft sad piano note with gentle rain",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-bee3c8a0b02c.mp3": {
+  "text": "fast slot machine counter spinning then a loud jackpot alarm",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ }
+}
