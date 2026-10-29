@@ -3,7 +3,9 @@
 
 Usage (from the main checkout): python3 tools/sync_videos.py <path to a checkout of the videos branch>
 
-  couch-sarcasm/   CouchSarcasm reels   (out/<id>.mp4 on main)
+  couch-cartoon/   CouchSarcasm cartoon sitcom (Releases couchnew-<id>)
+  gears-pov/       Gears & Glitches POV stories (Releases povreel-<id>)
+  couch-sarcasm/   CouchSarcasm reels, old kind (out/<id>.mp4 on main)
   dave-reels/      Gears & Glitches     (Releases davereel-<id>)
   toy-reels/       Brick Toy reels      (Releases toyreel-<id>)
   mechanic-shorts/ Mechanic Shorts      (Releases mechreel-<id>)
@@ -29,6 +31,10 @@ def load(p, default):
 def title(folder, rid):
     p = os.path.join(ROOT, folder, rid, 'meta.json')
     return json.load(open(p)).get('title', rid) if os.path.exists(p) else rid
+
+
+def sched(series):
+    return load(os.path.join(series, 'schedule.json'), {}).get('queue', [])
 
 
 def releases():
@@ -62,7 +68,7 @@ def main():
     couch_skipped = {p['id'] for p in couch_log if p.get('skipped')}
     dave_ig, dave_yt = load('ig_posted.json', {}), load('davereels/youtube_posted.json', {})
     toy_log, yt_log = load('toyreels/posted.json', {}), load('youtube_posted.json', {})
-    rows = {k: [] for k in ('couch-sarcasm', 'dave-reels', 'toy-reels', 'mechanic-shorts', 'anatomy')}
+    rows = {k: [] for k in ('couch-cartoon', 'gears-pov', 'couch-sarcasm', 'dave-reels', 'toy-reels', 'mechanic-shorts', 'anatomy')}
     longs = []
 
     # CouchSarcasm: rendered into out/ on main
@@ -79,7 +85,13 @@ def main():
         if prefix in ('mechvideo', 'video') or mp4['size'] > MAX:
             yt = yt_log.get(tag, {})
             longs.append((rid, rel.get('name') or rid, rel['html_url'], yt.get('url', ''))); continue
-        if prefix == 'davereel':
+        if prefix == 'couchnew':
+            folder, name = 'couch-cartoon', title('couchnew/reels', rid)
+            st = 'Posted' if rid in couch_posted else 'Waiting to post' if rid in sched('couchnew') else 'Not scheduled'
+        elif prefix == 'povreel':
+            e = dave_ig.get(tag, {}); folder, name = 'gears-pov', title('povreels/reels', rid)
+            st = ('Posted on Instagram' if 'media_id' in e else 'Waiting to post' if rid in sched('povreels') else 'Not scheduled') + (' · on YouTube' if 'youtube' in e else '')
+        elif prefix == 'davereel':
             folder, st = 'dave-reels', ('Posted on Instagram' if 'media_id' in dave_ig.get(rid, {}) else 'Skipped (older kind, never posted)' if dave_ig.get(rid, {}).get('skipped') else 'Waiting to post') + (' · on YouTube' if rid in dave_yt or 'youtube' in dave_ig.get(rid, {}) else '')
             name = title('davereels/reels', rid)
         elif prefix == 'toyreel':
@@ -94,7 +106,7 @@ def main():
         put(os.path.join(vids, folder, rid + '.mp4'), url=mp4['browser_download_url'], size=mp4['size'])
         rows[folder].append((rid, name, st))
 
-    names = {'couch-sarcasm': 'CouchSarcasm (couple comedy)', 'dave-reels': 'Dave (Gears & Glitches)', 'toy-reels': 'Toy reels (Brick Toy)', 'mechanic-shorts': 'Mechanic Shorts (YouTube)', 'anatomy': 'Anatomy'}
+    names = {'couch-cartoon': 'CouchSarcasm cartoon sitcom (new)', 'gears-pov': 'Gears & Glitches POV stories (new)', 'couch-sarcasm': 'CouchSarcasm (old couple comedy)', 'dave-reels': 'Dave (Gears & Glitches)', 'toy-reels': 'Toy reels (Brick Toy)', 'mechanic-shorts': 'Mechanic Shorts (YouTube)', 'anatomy': 'Anatomy'}
     md = ['# All videos', '', 'Every finished video, one folder per series. Click a folder, then a file, then **View raw** (or the download',
           'button) to play it. This page updates itself after every render.', '']
     for k, rs in rows.items():

@@ -4,7 +4,7 @@ name: Update the videos folder
 # CouchSarcasm videos land on main, once a day, or by hand. Only new or changed files are copied.
 on:
   workflow_run:
-    workflows: ['Make toy reels', 'Make Dave reels', 'Make mechanic reels', 'Make reels']
+    workflows: ['Make toy reels', 'Make Dave reels', 'Make mechanic reels', 'Make reels', 'Make POV reels', 'Make couch pilots']
     types: [completed]
   push:
     branches: [main]
