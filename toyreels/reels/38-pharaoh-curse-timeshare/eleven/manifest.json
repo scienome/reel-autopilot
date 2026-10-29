@@ -1,0 +1,33 @@
+{
+ "music-1fd309692c47.mp3": {
+  "prompt": "Mysterious Egyptian tomb music with oud and low drums, turning into a cheesy corporate sales jingle, no vocals",
+  "music_length_ms": 27640,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-7c1e07bf3bb4.mp3": {
+  "text": "heavy stone door grinding open, dust",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-58245ebac006.mp3": {
+  "text": "cheesy game show ding ding ding",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-17fa22db4348.mp3": {
+  "text": "heavy door slamming and a lock clicking",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-b6ffd96423c3.mp3": {
+  "text": "crunchy dry chips, very stale crunch",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-f5784fd58564.mp3": {
+  "text": "pen signing scribble then a stamp",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
