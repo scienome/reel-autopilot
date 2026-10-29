@@ -99,6 +99,18 @@ def main():
             raise RuntimeError(f'Instagram could not process the video ({st}). Check that the repo is public and {url} downloads.')
     else:
         raise RuntimeError('Instagram did not finish processing the video in time')
+    if os.environ.get('YT_REFRESH_TOKEN') and not a.dry_run:  # same minute on YouTube: upload now, YouTube publishes at the slot
+        try:
+            import couch_youtube as cy
+            ylog = json.load(open(cy.LOG)) if os.path.exists(cy.LOG) else {}
+            if rid not in ylog:
+                when = (target or datetime.datetime.now(datetime.timezone.utc)).replace(tzinfo=None)
+                yid, st = cy.yt.upload(cy.yt.token(), os.path.join(ROOT, 'out', rid + '.mp4'), *cy.texts(rid), when)
+                ylog[rid] = {'id': yid, 'url': f'https://youtu.be/{yid}', 'publish_utc': st.get('publishAt', 'now'),
+                             'uploaded_at': datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds')}
+                cy.save(ylog); print(f'YouTube: https://youtu.be/{yid} (goes public {st.get("publishAt", "now")})')
+        except Exception as e:  # the after-post YouTube workflow retries it
+            print(f'::warning::YouTube upload failed, the follow-up workflow will retry: {str(e)[:300]}')
     if target:
         wait = (target - datetime.datetime.now(datetime.timezone.utc)).total_seconds()
         if wait > 0:
