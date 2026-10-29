@@ -9,7 +9,7 @@ PAGE.html is the build WITHOUT an embedded voice (tools/build.py). Needs playwri
 import argparse, asyncio, base64, math, os, shutil, struct, subprocess, tempfile, time
 from playwright.async_api import async_playwright
 
-ap = argparse.ArgumentParser(); ap.add_argument('page'); ap.add_argument('out'); ap.add_argument('--voice')
+ap = argparse.ArgumentParser(); ap.add_argument('page'); ap.add_argument('out'); ap.add_argument('--voice'); ap.add_argument('--music'); ap.add_argument('--music-gain', type=float, default=0); ap.add_argument('--sfx')
 ap.add_argument('--fps', type=int, default=30); ap.add_argument('--workers', type=int, default=os.cpu_count() or 2)
 ap.add_argument('--crf', type=int, default=18); ap.add_argument('--end', type=float)
 a = ap.parse_args()
@@ -72,10 +72,21 @@ lst = os.path.join(work, 'segs.txt'); open(lst, 'w').write(''.join(f"file '{s}'\
 video = os.path.join(work, 'video.mp4'); ff('-f', 'concat', '-safe', '0', '-i', lst, '-c', 'copy', video)
 fx, mix = os.path.join(work, 'fx.wav'), os.path.join(work, 'mix.wav')
 if a.voice:
-    ff('-i', a.voice, '-i', fx, '-filter_complex',
-       f'[0:a]aresample={SR},apad=whole_dur={dur},loudnorm=I=-16:TP=-2,aresample={SR},asplit=2[v1][v2];'
+    # inputs: 0 voice, 1 rendered effects, then the optional ElevenLabs music (looped / trimmed to the reel) and sfx bed
+    ins, extra, k = ['-i', a.voice, '-i', fx], [], 2
+    if a.music:
+        ins += ['-stream_loop', '-1', '-i', a.music]
+        extra.append(f'[{k}:a]aresample={SR},atrim=0:{dur},afade=t=in:d=0.6,afade=t=out:st={max(0, dur - 2)}:d=2,loudnorm=I=-26:TP=-6:LRA=11,'
+                     f'volume={a.music_gain}dB,aresample={SR}[mu0];[mu0][vm]sidechaincompress=threshold=0.03:ratio=5:attack=20:release=400[mu]'); k += 1
+    if a.sfx:
+        ins += ['-i', a.sfx]
+        extra.append(f'[{k}:a]aresample={SR},apad=whole_dur={dur},atrim=0:{dur},loudnorm=I=-20:TP=-3:LRA=20,aresample={SR}[sx]'); k += 1
+    n = 2 + len(extra); legs = '[v2][fx]' + ('[mu]' if a.music else '') + ('[sx]' if a.sfx else '')
+    ff(*ins, '-filter_complex',
+       f'[0:a]aresample={SR},apad=whole_dur={dur},loudnorm=I=-16:TP=-2,aresample={SR},' + ('asplit=3[v1][v2][vm];' if a.music else 'asplit=2[v1][v2];') +
        f'[1:a]loudnorm=I=-27:TP=-4:LRA=20,aresample={SR}[fx0];[fx0][v1]sidechaincompress=threshold=0.05:ratio=3:attack=10:release=250[fx];'
-       f'[v2][fx]amix=inputs=2:normalize=0:duration=longest,loudnorm=I=-14:TP=-1.5:LRA=11,aresample={SR},atrim=0:{dur}[a]', '-map', '[a]', mix)
+       + ''.join(e + ';' for e in extra) +
+       f'{legs}amix=inputs={n}:normalize=0:duration=longest,loudnorm=I=-14:TP=-1.5:LRA=11,aresample={SR},atrim=0:{dur}[a]', '-map', '[a]', mix)
 else:
     ff('-i', fx, '-af', f'loudnorm=I=-16:TP=-1.5,atrim=0:{dur}', '-ar', str(SR), mix)
 ff('-i', video, '-i', mix, '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', '-shortest', a.out)

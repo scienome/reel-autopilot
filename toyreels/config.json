@@ -1,8 +1,9 @@
 {
   "voice": {
-    "voice_id": "n1PvBOwxb8X6m7tahp2h",
+    "voice_id": "s3TPKV1kjDlVtZbl4Ksh",
     "model_id": "eleven_v4",
-    "voice_settings": null
+    "voice_settings": null,
+    "_voice_name": "Owner's new ElevenLabs voice for toy reels from 34 on (29 Oct 2026); earlier reels keep their saved takes"
   },
   "size": [
     720,

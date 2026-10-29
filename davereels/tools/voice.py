@@ -69,7 +69,9 @@ if __name__ == '__main__':
     text, wl = script_text(script)
     raw = os.path.join(a.reel, 'voice_raw.json'); tag = cfg['voice_id'] + '/' + cfg.get('model_id', '')
     res = json.load(open(raw)) if os.path.exists(raw) else None
-    if not (res and res.get('text') == text and res.get('voice') == tag):
+    # a saved take of the same text is kept even if config.json now names another voice (a voice change is for new
+    # reels; set REVOICE=1 to re-voice old ones on purpose)
+    if not (res and res.get('text') == text and (res.get('voice') == tag or not os.environ.get('REVOICE'))):
         if a.offline:
             sys.exit('no saved voice matches this script')
         print(f'voicing {len(text)} characters with {tag}')

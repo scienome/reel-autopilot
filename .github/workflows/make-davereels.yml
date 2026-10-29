@@ -73,12 +73,14 @@ jobs:
               cat "/tmp/$id.log"
               echo "::error::$id failed: $(tail -n 12 "/tmp/$id.log" | tr '\n' ' ' | cut -c1-900)"; FAILED="$FAILED $id"
               git add "reels/$id/voice.mp3" "reels/$id/timing.json" "reels/$id/voice_raw.json" 2>/dev/null || true
+              git add "reels/$id/eleven" 2>/dev/null || true   # ElevenLabs music / sound effects, paid once
               git diff --cached --quiet || (git commit -m "Voiceover for Dave reel $id [skip ci]" && git pull --rebase -q && git push)
               echo "::endgroup::"; continue
             fi
             cat "/tmp/$id.log"
             # keep the paid-for voice in the repo so a re-render never pays twice
             git add "reels/$id/voice.mp3" "reels/$id/timing.json" "reels/$id/voice_raw.json" 2>/dev/null || true
+            git add "reels/$id/eleven" 2>/dev/null || true   # ElevenLabs music / sound effects, paid once
             git diff --cached --quiet || (git commit -m "Voiceover for Dave reel $id [skip ci]" && git pull --rebase -q && git push)
             gh release delete "davereel-$id" --yes --cleanup-tag >/dev/null 2>&1 || true
             TITLE=$(python -c "import json;print(json.load(open('reels/$id/meta.json'))['title'])")

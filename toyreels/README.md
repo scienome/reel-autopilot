@@ -1,6 +1,6 @@
 # Toy reels (Brick Toy style)
 
-Vertical 9:16 explainer reels in the Brick Toy style, voiced by ElevenLabs (the voice in `config.json`, `n1PvBOwxb8X6m7tahp2h` since 28 Oct 2026; earlier reels used Steve) and rendered on GitHub.
+Vertical 9:16 explainer reels in the Brick Toy style, voiced by ElevenLabs (the voice in `config.json`, `s3TPKV1kjDlVtZbl4Ksh` from reel 34 on, 29 Oct 2026; earlier reels keep their saved takes in `n1PvBOwxb8X6m7tahp2h` or Steve) and rendered on GitHub.
 
 ## How it works
 1. Each reel is a folder in `reels/` with `script.json` (the words, by beat), `story.js` (the animation) and `meta.json` (title, caption, hashtags, cover time).
@@ -77,3 +77,9 @@ next reel, its slot, the Instagram username and "YouTube sign-in OK". After that
 ## Local tools
 - `python tools/check.py reels/<id> --times 3 10` – draws key frames to `out/<id>_check/`.
 - `python tools/produce.py reels/<id> --no-voice` – silent render on estimated timing.
+
+## ElevenLabs music and sound effects
+
+A reel can add `audio.json` next to `script.json`: background music (Eleven Music, instrumental, as long as the voice plus a tail) and sound effects (Sound Effects API) pinned to spoken words. `tools/eleven_audio.py` makes each piece once and keeps it in `reels/<id>/eleven/`; `render_video.py` ducks the music under the voice and lays the effects just below it, on top of the built-in synth sounds. Format: see the docstring of `tools/eleven_audio.py`. A failed music or effect call is a warning; the reel still renders.
+
+Changing the voice in `config.json` only affects new or rewritten scripts: saved takes are kept (set `REVOICE=1` to re-voice old reels on purpose).

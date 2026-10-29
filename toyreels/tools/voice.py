@@ -81,7 +81,9 @@ if __name__ == '__main__':
     for i, ch in enumerate(script):
         text, wl = chapter_text(ch)
         cache = os.path.join(cdir, f'{i:02d}.json')
-        if os.path.exists(cache) and json.load(open(cache)).get('text') == text and json.load(open(cache)).get('voice') == cfg['voice_id'] + '/' + cfg.get('model_id', ''):
+        # a saved take of the same text is kept even if config.json now names another voice (a voice change is for new
+        # reels; set REVOICE=1 to re-voice old ones on purpose)
+        if os.path.exists(cache) and json.load(open(cache)).get('text') == text and (json.load(open(cache)).get('voice') == cfg['voice_id'] + '/' + cfg.get('model_id', '') or not os.environ.get('REVOICE')):
             res = json.load(open(cache))
         elif a.offline:
             sys.exit(f'no saved voice for chapter {i} ("{ch["chapter"]}")')

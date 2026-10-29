@@ -24,6 +24,13 @@ page = build(video, os.path.join(tempfile.mkdtemp(), 'render.html'))
 mp4 = os.path.join(out, vid + '.mp4')
 cmd = [sys.executable, os.path.join(ROOT, 'tools', 'render_video.py'), page, mp4, '--workers', str(a.workers)]
 if not a.no_voice: cmd += ['--voice', os.path.join(video, 'voice.mp3')]
+if not a.no_voice:
+    # ElevenLabs music and sound effects (audio.json in the reel), cached in its eleven/ folder
+    subprocess.run([sys.executable, os.path.join(ROOT, 'tools', 'eleven_audio.py'), video, out], check=True)
+    if os.path.exists(os.path.join(out, 'music.mp3')):
+        cmd += ['--music', os.path.join(out, 'music.mp3'), '--music-gain', str(json.load(open(os.path.join(out, 'music.json')))['gain'])]
+    if os.path.exists(os.path.join(out, 'sfx_bed.wav')):
+        cmd += ['--sfx', os.path.join(out, 'sfx_bed.wav')]
 if a.end: cmd += ['--end', str(a.end)]
 subprocess.run(cmd, check=True)
 subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-ss', str(meta.get('cover_t', 2.0)), '-i', mp4, '-frames:v', '1', '-q:v', '2', os.path.join(out, 'cover.jpg')], check=True)

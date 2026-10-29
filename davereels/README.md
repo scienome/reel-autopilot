@@ -33,7 +33,7 @@ To remake one reel by hand: Actions → Make Dave reels → Run workflow → typ
 - `ripCard(ctx, W, H, n, u, t)`: the "R.I.P. Dave #N" end card.
 
 ## Voice
-`config.json` → `voice.voice_id` = `c6SfcYrb2t09NHXiT80T` (deadpan, from the owner's ElevenLabs My Voices), model
+`config.json` → `voice.voice_id` = `s3TPKV1kjDlVtZbl4Ksh` from reel 44 on (29 Oct 2026; reels 01-43 keep their saved takes in `c6SfcYrb2t09NHXiT80T`, the deadpan voice from the owner's ElevenLabs My Voices), model
 `eleven_v4`. Needs the `ELEVENLABS_API_KEY` repository secret.
 
 ## Local tools
@@ -102,3 +102,9 @@ A scheduled Claude session runs every 3 days and keeps at least 7 days of Reels 
 | 41 | Britain's aircraft carrier made of ice | Wed 4 Nov 12:30 |
 | 42 | The destroyer that torpedoed the President | Wed 4 Nov 20:30 |
 | 43 | What if you grew 1 inch every day? (special, posted by hand on 29 Oct) | Thu 29 Oct (extra post) |
+
+## ElevenLabs music and sound effects
+
+A reel can add `audio.json` next to `script.json`: background music (Eleven Music, instrumental, as long as the voice plus a tail) and sound effects (Sound Effects API) pinned to spoken words. `tools/eleven_audio.py` makes each piece once and keeps it in `reels/<id>/eleven/`; `render_video.py` ducks the music under the voice and lays the effects just below it, on top of the built-in synth sounds. Format: see the docstring of `tools/eleven_audio.py`. A failed music or effect call is a warning; the reel still renders.
+
+Changing the voice in `config.json` only affects new or rewritten scripts: saved takes are kept (set `REVOICE=1` to re-voice old reels on purpose).
