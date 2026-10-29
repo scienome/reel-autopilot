@@ -62,4 +62,6 @@ jobs:
           git config user.name "reel-bot"
           git config user.email "reel-bot@users.noreply.github.com"
           git add posted.json couch_youtube_posted.json 2>/dev/null || true
-          git diff --cached --quiet || (git commit -m "Posted a reel" && git pull --rebase -q && git push)
+          git diff --cached --quiet || git commit -m "Posted a reel"
+          for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; sleep $((i * 5)); done
+          if git status -sb | head -1 | grep -q ahead; then echo "::error::could not save posted.json"; exit 1; fi
