@@ -206,5 +206,16 @@
  "mechreel-25-apollo13-moon-slingshot": {
   "skipped": true,
   "why": "old mechanic Short; the owner asked on 29 Oct to post only the new Dave reels"
+ },
+ "25-tsar-bell": {
+  "slot": "2026-10-29T07:00Z",
+  "youtube": {
+   "id": "PiBCZ9bTV0k",
+   "url": "https://youtu.be/PiBCZ9bTV0k",
+   "publish_utc": "2026-10-29T07:00:00.000Z",
+   "title": "The biggest bell that never rang #shorts"
+  },
+  "media_id": "18119199971085453",
+  "posted_at": "2026-10-29T07:00:08+00:00"
  }
 }
