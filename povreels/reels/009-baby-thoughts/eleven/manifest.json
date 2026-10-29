@@ -1,0 +1,38 @@
+{
+ "music-f34d2afc0ad2.mp3": {
+  "prompt": "Cute playful lullaby-style comedy underscore with music box, glockenspiel and plucky strings, becoming tender and soft in the middle, then a silly party burst at the end, no vocals",
+  "music_length_ms": 33320,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-c0d8bf468652.mp3": {
+  "text": "baby giggling",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-09f5a2915fda.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-854b04ce95ac.mp3": {
+  "text": "cartoon fart squeak",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-99a7692d4582.mp3": {
+  "text": "quiet night room, soft clock ticking",
+  "duration_seconds": 3,
+  "prompt_influence": 0.5
+ },
+ "sfx-fcccc72cd35b.mp3": {
+  "text": "soft music box lullaby notes",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-bfcb4ed14809.mp3": {
+  "text": "baby crying loudly and a party horn",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ }
+}
