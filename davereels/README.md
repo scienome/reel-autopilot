@@ -102,6 +102,7 @@ A scheduled Claude session runs every 3 days and keeps at least 7 days of Reels 
 | 41 | Britain's aircraft carrier made of ice | Wed 4 Nov 12:30 |
 | 42 | The destroyer that torpedoed the President | Wed 4 Nov 20:30 |
 | 43 | What if you grew 1 inch every day? (special, posted by hand on 29 Oct) | Thu 29 Oct (extra post) |
+| 44 | The Gimli Glider: fuel in pounds, not kilograms (test of the new voice + ElevenLabs music and sound effects; not scheduled) | not scheduled |
 
 ## ElevenLabs music and sound effects
 

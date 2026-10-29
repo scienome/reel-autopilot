@@ -1,0 +1,9 @@
+[{"chapter": "The higher powers", "beats": [
+ {"id": "hook", "phrases": ["Zeus now has to pay a monthly subscription for lightning."]},
+ {"id": "free", "phrases": ["The free plan gives him one bolt a week.", "With ads."]},
+ {"id": "ad", "phrases": ["Before every strike,", "he has to watch a thirty second ad.", "Mid-battle."]},
+ {"id": "outage", "phrases": ["Then the servers go down.", "Zeus throws a bolt.", "It buffers."]},
+ {"id": "upgrade", "phrases": ["Lightning Pro is nine ninety-nine a month.", "Thunder is extra."]},
+ {"id": "twist", "phrases": ["His card gets declined.", "Hades has a family plan."]},
+ {"id": "cta", "phrases": ["Would you pay for thunder? Comment below."]}
+]}]

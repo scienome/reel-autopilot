@@ -1,0 +1,15 @@
+{
+ "music": { "prompt": "Playful mischievous orchestral comedy underscore: pizzicato strings, bassoon, glockenspiel and light percussion, bouncy and cheeky, mythic brass stabs now and then, no vocals", "gain": 0, "tail": 3 },
+ "sfx": [
+  { "beat": "hook", "word": "lightning", "offset": -0.1, "prompt": "huge close lightning strike with a sharp thunder crack", "dur": 2.5 },
+  { "beat": "free", "word": "ads", "prompt": "cheesy upbeat advertising jingle sting, two seconds", "dur": 2, "gain": -3 },
+  { "beat": "ad", "word": "thirty", "prompt": "clock ticking loudly, impatient", "dur": 2.5, "gain": -4 },
+  { "beat": "ad", "word": "Mid-battle", "prompt": "swords clashing and a crowd of soldiers yelling in battle", "dur": 2, "gain": -5 },
+  { "beat": "outage", "word": "down", "prompt": "big power outage, electric hum shutting off with a clunk", "dur": 1.5 },
+  { "beat": "outage", "word": "buffers", "prompt": "digital loading beeps looping, slow buffering", "dur": 2, "gain": -3 },
+  { "beat": "upgrade", "word": "nine", "prompt": "cash register cha-ching", "dur": 1.2 },
+  { "beat": "upgrade", "word": "Thunder", "prompt": "deep rolling thunder rumble", "dur": 2.5, "gain": -2 },
+  { "beat": "twist", "word": "declined", "prompt": "payment terminal declined error beep, three harsh beeps", "dur": 1.2 },
+  { "beat": "twist", "word": "family", "prompt": "deep evil villain laugh echoing in a cave", "dur": 2.5, "gain": -3 }
+ ]
+}

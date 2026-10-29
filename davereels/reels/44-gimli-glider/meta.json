@@ -1,0 +1,15 @@
+{
+ "title": "The jet that ran out of fuel because of maths",
+ "caption": "Air Canada 143, 1983: fuel worked out in pounds instead of kilograms. Both engines stopped at 41,000 ft. ✈️\nThe captain glided it onto an old air base that was hosting a race day. Nobody was seriously hurt.\nWould you have checked the units? Be honest.",
+ "hashtags": ["gearsandglitches", "gimliglider", "aviation", "engineering", "metric", "history", "physics", "darkhumor"],
+ "first_comment": "One unit mix-up, 69 people gliding at 41,000 ft. Pounds or kilograms: which side are you on? ⚖️✈️",
+ "potential": 9,
+ "cover_t": 3.0,
+ "libs": ["davereels/props/dave.js", "davereels/props/dave_kit.js"],
+ "sources": [
+  "Transport Canada / Board of Inquiry (Lockhart report, 1985) into Air Canada Flight 143, 23 July 1983, Boeing 767-200 C-GAUN, Montreal-Ottawa-Edmonton",
+  "Fuel was computed with a pounds-per-litre factor (1.77) where kilograms per litre (0.8) was needed: about 22,300 lb (~10,100 kg) on board instead of the 22,300 kg required",
+  "Both engines flamed out at about 41,000 ft; most electronic flight instruments went blank; the ram air turbine deployed to power hydraulics",
+  "Captain Robert Pearson, an experienced glider pilot, used a forward slip to land on the decommissioned RCAF Station Gimli runway, then in use as a motor-racing strip during a race day; the nose gear did not lock and collapsed; no serious injuries among the 61 passengers and 8 crew"
+ ]
+}

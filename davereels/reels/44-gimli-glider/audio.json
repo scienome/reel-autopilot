@@ -1,0 +1,15 @@
+{
+ "music": { "prompt": "Deadpan documentary underscore for a darkly funny engineering-disaster reel: low pulsing synth bass, ticking clock percussion, light plucked strings, slowly building suspense, cinematic, no vocals", "gain": 0, "tail": 5 },
+ "sfx": [
+  { "beat": "hook", "word": "fuel", "offset": -0.2, "prompt": "jet airliner engines spooling down and whining to silence at high altitude", "dur": 3 },
+  { "beat": "units", "word": "pounds", "offset": 0.1, "prompt": "old pocket calculator button beeps", "dur": 1.2 },
+  { "beat": "units", "word": "half", "prompt": "cartoon error buzzer, short", "dur": 1, "gain": -3 },
+  { "beat": "glide", "word": "stopped", "prompt": "cockpit master caution alarm chime repeating", "dur": 2.5, "gain": -3 },
+  { "beat": "glide", "word": "dark", "prompt": "electronics powering down with a low hum cut off", "dur": 1.2 },
+  { "beat": "glide", "word": "propeller", "prompt": "small propeller turbine whirring up in strong wind", "dur": 2.5, "gain": -3 },
+  { "beat": "gimli", "word": "race", "offset": -0.3, "prompt": "race cars revving on a drag strip, distant crowd cheering", "dur": 3, "gain": -4 },
+  { "beat": "land", "word": "sideways", "prompt": "loud rushing wind past a gliding airliner", "dur": 2 },
+  { "beat": "land", "word": "collapsed", "offset": -0.1, "prompt": "airliner nose crunching onto asphalt, long metal scrape with sparks", "dur": 3.5 },
+  { "beat": "end", "word": "flag", "offset": 0.3, "prompt": "comedic metal clang then a cartoon whistle flying away", "dur": 2 }
+ ]
+}
