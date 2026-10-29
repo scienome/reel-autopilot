@@ -129,7 +129,7 @@ Folder: [`dave-reels/`](dave-reels/)
 | [43-dave-grows-an-inch](dave-reels/43-dave-grows-an-inch.mp4) | What if you grew 1 inch every day? | Waiting to post |
 | [44-gimli-glider](dave-reels/44-gimli-glider.mp4) | The jet that ran out of fuel because of maths | Waiting to post |
 
-## Toy reels (Brick Toy) (34)
+## Toy reels (Brick Toy) (39)
 Folder: [`toy-reels/`](toy-reels/)
 
 | Video | Title | Status |
@@ -168,6 +168,11 @@ Folder: [`toy-reels/`](toy-reels/)
 | [32-nose-grows-an-inch](toy-reels/32-nose-grows-an-inch.mp4) | 32-nose-grows-an-inch | Waiting to post |
 | [33-earth-grows-every-day](toy-reels/33-earth-grows-every-day.mp4) | What If Earth Got 1% Bigger Every Day? 🌍 | Posted (Instagram + YouTube) |
 | [34-zeus-lightning-subscription](toy-reels/34-zeus-lightning-subscription.mp4) | Zeus Has To Subscribe To Lightning ⚡ | Waiting to post |
+| [35-tunnel-into-police-station](toy-reels/35-tunnel-into-police-station.mp4) | They Dug For A Year. Wrong Building. 🚔 | Waiting to post |
+| [36-leaders-stuck-in-elevator](toy-reels/36-leaders-stuck-in-elevator.mp4) | Trump, Putin & Kim Stuck In One Elevator 🛗 | Waiting to post |
+| [37-caesar-surprise-party](toy-reels/37-caesar-surprise-party.mp4) | Caesar's Surprise Party Had 23 Knives 🎂🔪 | Waiting to post |
+| [38-pharaoh-curse-timeshare](toy-reels/38-pharaoh-curse-timeshare.mp4) | The Pharaoh's Curse Was A Timeshare Pitch 🏺 | Waiting to post |
+| [39-illuminati-lost-remote](toy-reels/39-illuminati-lost-remote.mp4) | The Illuminati Lost The Remote That Runs The World 📺 | Waiting to post |
 
 ## Mechanic Shorts (YouTube) (25)
 Folder: [`mechanic-shorts/`](mechanic-shorts/)
@@ -215,7 +220,7 @@ Too big for a GitHub folder (over 100 MB), so they live in Releases:
 | How a Jet Flew With No Engines (The Gimli Glider) | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-001-gimli-glider) |  |
 | Why Plane Windows Are Round (3 Jets Fell Apart First) | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-002-plane-windows) | https://youtu.be/V0X6W1LDHek |
 | What Happens If an Elevator Cable Snaps? | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-003-elevator-cable) | https://youtu.be/grOypwsu3zk |
-| How the Titan Submarine Imploded | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-004-titan-submarine) |  |
+| How the Titan Submarine Imploded | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-004-titan-submarine) | https://youtu.be/fWwk1ROjLsQ |
 | The Plane That Landed on a River (Miracle on the Hudson) | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-005-miracle-on-the-hudson) |  |
 | What Really Sank the Titanic (It Wasn't Just the Iceberg) | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-006-titanic) |  |
 | The Button That Blew Up Chernobyl | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-007-chernobyl) |  |
