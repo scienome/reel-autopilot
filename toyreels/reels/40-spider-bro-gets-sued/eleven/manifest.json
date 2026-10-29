@@ -1,0 +1,33 @@
+{
+ "music-bfd886d4c12e.mp3": {
+  "prompt": "Heroic superhero brass theme that deflates into a sad courtroom piano, then a sneaky crime groove, no vocals",
+  "music_length_ms": 30520,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-df6ed203098d.mp3": {
+  "text": "sticky web shooting thwip sound twice",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-7b3abb6bc961.mp3": {
+  "text": "man crying loudly and dramatically",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-91537e1ba7fa.mp3": {
+  "text": "gavel banging three times",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-7f24262a6c63.mp3": {
+  "text": "fast whoosh of swinging through the air",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-49c89d3cf36c.mp3": {
+  "text": "cash register cha-ching",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ }
+}
