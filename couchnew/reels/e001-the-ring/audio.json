@@ -1,0 +1,14 @@
+{
+ "music": { "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass, light drums, comedic and confident, with a short tender solo piano moment two thirds in, then upbeat again for the ending, no vocals", "gain": -1, "tail": 3 },
+ "sfx": [
+  { "beat": "n1", "word": "Sam", "offset": -0.2, "prompt": "busy coffee shop ambience with a door bell jingle", "dur": 3, "gain": -8 },
+  { "beat": "sam1", "word": "Perfect", "offset": 0.5, "prompt": "small sitcom studio audience chuckle", "dur": 2, "gain": -6 },
+  { "beat": "mum1", "word": "Crunchy", "prompt": "loud cartoon crunch then a big gulp swallow", "dur": 1.5 },
+  { "beat": "sam2", "word": "Crunchy", "offset": 0.4, "prompt": "sitcom studio audience big laugh", "dur": 3, "gain": -4 },
+  { "beat": "n2", "word": "Four", "offset": -0.2, "prompt": "hospital heart monitor beeping steadily in a quiet room", "dur": 3, "gain": -8 },
+  { "beat": "mum2", "word": "Thursday", "offset": 0.4, "prompt": "sitcom studio audience groaning then laughing", "dur": 2.5, "gain": -4 },
+  { "beat": "mum3", "word": "cries", "offset": 0.3, "prompt": "sitcom studio audience saying aww softly", "dur": 2, "gain": -5 },
+  { "beat": "maya2", "word": "Obviously", "prompt": "sitcom studio audience cheering and applauding", "dur": 3, "gain": -4 },
+  { "beat": "mum4", "word": "arrives", "offset": 0.3, "prompt": "sitcom studio audience roaring with laughter", "dur": 3, "gain": -3 }
+ ]
+}

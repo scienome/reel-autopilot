@@ -1,0 +1,14 @@
+[
+ {"id": "n1", "who": "narrator", "phrases": ["Sam hid the engagement ring inside a doughnut."]},
+ {"id": "sam1", "who": "sam", "phrases": ["She bites in, finds the ring, cries.", "Perfect."]},
+ {"id": "maya1", "who": "maya", "phrases": ["Ooh, a doughnut!", "Wait. I'm on a diet.", "Mum, you have it."]},
+ {"id": "mum1", "who": "mum", "phrases": ["Mm. Crunchy."]},
+ {"id": "sam2", "who": "sam", "phrases": ["Crunchy?!"]},
+ {"id": "n2", "who": "narrator", "phrases": ["Four hours later."]},
+ {"id": "mum2", "who": "mum", "phrases": ["The doctor says it'll come out on its own.", "Thursday."]},
+ {"id": "sam3", "who": "sam", "phrases": ["Then I'm asking you.", "Can I marry your daughter?"]},
+ {"id": "mum3", "who": "mum", "phrases": ["She cried for an hour when you forgot her birthday.", "You're the only one she cries for."]},
+ {"id": "maya2", "who": "maya", "phrases": ["Yes!", "Obviously, yes!"]},
+ {"id": "mum4", "who": "mum", "phrases": ["Lovely.", "I'll text you when it arrives."]},
+ {"id": "n3", "who": "narrator", "phrases": ["Part two?"]}
+]
