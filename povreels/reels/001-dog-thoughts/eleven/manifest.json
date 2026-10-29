@@ -54,5 +54,11 @@
   "text": "bacon sizzling in a pan",
   "duration_seconds": 1.5,
   "prompt_influence": 0.5
+ },
+ "music-69a8074dd0b0.mp3": {
+  "prompt": "Warm quirky comedy underscore: plucky acoustic guitar, ukulele and light hand percussion, playful and curious, with a soft tender piano section in the middle, then playful again, no vocals",
+  "music_length_ms": 41300,
+  "model_id": "music_v1",
+  "force_instrumental": true
  }
 }
