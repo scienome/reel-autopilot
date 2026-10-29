@@ -1,0 +1,33 @@
+{
+ "music-b0e463b1def7.mp3": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a wonky happy-birthday-style party feel and a sudden chaotic splash section near the end, no vocals",
+  "music_length_ms": 25760,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-cdcbc8096d4b.mp3": {
+  "text": "party popper and party horn",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-69467d5471b0.mp3": {
+  "text": "sitcom studio audience oooh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-7fbd3c28ec7c.mp3": {
+  "text": "sitcom studio audience big laugh",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-abd9ca7d1001.mp3": {
+  "text": "blowing out candles then a fire sprinkler system bursting on with water spraying",
+  "duration_seconds": 3,
+  "prompt_influence": 0.5
+ },
+ "sfx-847ec408fe44.mp3": {
+  "text": "sitcom studio audience laugh and applause",
+  "duration_seconds": 2.2,
+  "prompt_influence": 0.5
+ }
+}
