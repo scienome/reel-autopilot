@@ -1,0 +1,58 @@
+{
+ "music-d46d42effe72.mp3": {
+  "prompt": "Playful mischievous orchestral comedy underscore: pizzicato strings, bassoon, glockenspiel and light percussion, bouncy and cheeky, mythic brass stabs now and then, no vocals",
+  "music_length_ms": 28600,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-532aabc9103a.mp3": {
+  "text": "huge close lightning strike with a sharp thunder crack",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-f321c7728117.mp3": {
+  "text": "cheesy upbeat advertising jingle sting, two seconds",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-87bb36f7ee34.mp3": {
+  "text": "clock ticking loudly, impatient",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-ca9e7679fc4e.mp3": {
+  "text": "swords clashing and a crowd of soldiers yelling in battle",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-5d1667019ef3.mp3": {
+  "text": "big power outage, electric hum shutting off with a clunk",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-1c52dfa09b52.mp3": {
+  "text": "digital loading beeps looping, slow buffering",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-f0f00c0f2d27.mp3": {
+  "text": "cash register cha-ching",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-680c3ec623ed.mp3": {
+  "text": "deep rolling thunder rumble",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3ca7b610d92.mp3": {
+  "text": "payment terminal declined error beep, three harsh beeps",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-b734e32aed7d.mp3": {
+  "text": "deep evil villain laugh echoing in a cave",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ }
+}
