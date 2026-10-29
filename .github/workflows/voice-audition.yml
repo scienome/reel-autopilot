@@ -1,0 +1,39 @@
+name: Voice audition
+# Run by hand: every candidate ElevenLabs voice reads the same test lines (comedy + 18+ + emotional + punchline), and the
+# takes are published as the Release "voice-audition" (one MP3 per voice, all.mp3 with every take in a row, voices.txt).
+on:
+  workflow_dispatch:
+    inputs:
+      voices:
+        description: 'Comma-separated voice IDs (empty = the built-in candidate list)'
+        required: false
+        default: ''
+      mine:
+        description: 'Also audition every voice saved in the ElevenLabs account (My Voices)'
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+jobs:
+  audition:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg && pip install -q requests
+      - name: Voice every candidate
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+        run: python tools/voice_audition.py audition --voices "${{ inputs.voices }}" ${{ inputs.mine && '--mine' || '' }}
+      - name: Publish the takes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cat audition/voices.txt
+          gh release delete voice-audition --yes --cleanup-tag >/dev/null 2>&1 || true
+          gh release create voice-audition audition/*.mp3 audition/voices.txt --title "Voice audition $(date -u +%F)" --notes-file audition/voices.txt
