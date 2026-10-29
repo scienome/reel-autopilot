@@ -1,0 +1,58 @@
+{
+ "music-e63e4920660b.mp3": {
+  "prompt": "Warm quirky comedy underscore: plucky acoustic guitar, ukulele and light hand percussion, playful and curious, with a soft tender piano section in the middle, then playful again, no vocals",
+  "music_length_ms": 40280,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-dcfeee764721.mp3": {
+  "text": "curious dog head tilt whine, then one short soft bark",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-73e604d3cf95.mp3": {
+  "text": "toaster popping up toast",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-c21393586b48.mp3": {
+  "text": "pug snorting grunt",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-159df6135247.mp3": {
+  "text": "playful wolf whistle",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-a1ac1dcb5239.mp3": {
+  "text": "tiny chihuahua aggressive growl and yapping",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-260707f42e65.mp3": {
+  "text": "doorbell ding dong ringing twice",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-7bce9a5362f0.mp3": {
+  "text": "comedic record scratch",
+  "duration_seconds": 0.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-ca2d01750787.mp3": {
+  "text": "quiet bedroom at night, soft clock ticking and distant crickets",
+  "duration_seconds": 3,
+  "prompt_influence": 0.5
+ },
+ "sfx-3a1be2dfb510.mp3": {
+  "text": "old dog jumping onto a bed, mattress creak, long soft sigh",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-60d843476dfd.mp3": {
+  "text": "bacon sizzling in a pan",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ }
+}
