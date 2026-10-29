@@ -1,0 +1,33 @@
+{
+ "music-1625d9ff5f0b.mp3": {
+  "prompt": "Heavy superhero rock riff that slows down like a loading bar, with elevator music in the middle, no vocals",
+  "music_length_ms": 25320,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-d5f8b073a59c.mp3": {
+  "text": "computer update chime, the Windows-like startup sound style",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-3e03b2b5cc1a.mp3": {
+  "text": "slow loading beeps, one per second",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-452d95d8625c.mp3": {
+  "text": "crunchy bite of a sandwich",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-9a587aa73485.mp3": {
+  "text": "computer shutdown sound then a power down whine",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-fdb4dce82ad7.mp3": {
+  "text": "evil robot voice laugh, no words",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ }
+}
