@@ -24,7 +24,7 @@ Folder: [`couch-sarcasm/`](couch-sarcasm/)
 | [0014-odd-volume](couch-sarcasm/0014-odd-volume.mp4) | Odd volume. | Skipped (older kind, never posted) |
 | [0015-two-feet-away](couch-sarcasm/0015-two-feet-away.mp4) | Two feet away. | Skipped (older kind, never posted) |
 | [0016-one-week](couch-sarcasm/0016-one-week.mp4) | One week, she said. | Waiting to post |
-| [0017-the-sick-day](couch-sarcasm/0017-the-sick-day.mp4) | The sick day. | Waiting to post |
+| [0017-the-sick-day](couch-sarcasm/0017-the-sick-day.mp4) | The sick day. | Posted on Instagram |
 | [0018-the-usual](couch-sarcasm/0018-the-usual.mp4) | The usual. | Waiting to post |
 | [0019-sold-the-ps5](couch-sarcasm/0019-sold-the-ps5.mp4) | Sold the PS5. | Waiting to post |
 | [0020-the-dog-decides](couch-sarcasm/0020-the-dog-decides.mp4) | The dog decides. | Waiting to post |
@@ -76,8 +76,8 @@ Folder: [`dave-reels/`](dave-reels/)
 | [21-galloping-gertie](dave-reels/21-galloping-gertie.mp4) | Galloping Gertie | Skipped (older kind, never posted) |
 | [22-vasa](dave-reels/22-vasa.mp4) | The warship that sank in 1,300 metres | Waiting to post |
 | [23-skylab-fine](dave-reels/23-skylab-fine.mp4) | Australia fined NASA for littering | Waiting to post |
-| [24-plumbbob-manhole](dave-reels/24-plumbbob-manhole.mp4) | The manhole cover that left Earth | Waiting to post |
-| [25-tsar-bell](dave-reels/25-tsar-bell.mp4) | The biggest bell that never rang | Waiting to post |
+| [24-plumbbob-manhole](dave-reels/24-plumbbob-manhole.mp4) | The manhole cover that left Earth | Posted on Instagram · on YouTube |
+| [25-tsar-bell](dave-reels/25-tsar-bell.mp4) | The biggest bell that never rang | Posted on Instagram · on YouTube |
 | [26-genesis-upside-down](dave-reels/26-genesis-upside-down.mp4) | NASA's upside-down parachute switch | Waiting to post |
 | [27-panjandrum](dave-reels/27-panjandrum.mp4) | The Great Panjandrum | Waiting to post |
 | [28-sinclair-c5](dave-reels/28-sinclair-c5.mp4) | The electric car of the future (1985) | Waiting to post |
@@ -112,8 +112,8 @@ Folder: [`toy-reels/`](toy-reels/)
 | [09-body-one-second](toy-reels/09-body-one-second.mp4) | What happens in your body every second? | Skipped (never posted) |
 | [10-body-hiccups](toy-reels/10-body-hiccups.mp4) | The man who hiccupped for 68 years | Skipped (never posted) |
 | [11-kim-missile-boomerang](toy-reels/11-kim-missile-boomerang.mp4) | Kim Pressed The Button. The Missile Came Back. 💀 | Posted (Instagram + YouTube) |
-| [12-zombie-apocalypse-fails](toy-reels/12-zombie-apocalypse-fails.mp4) | The Zombie Apocalypse Failed For The Dumbest Reason 🧟 | Waiting to post |
-| [13-hitler-hell-queue](toy-reels/13-hitler-hell-queue.mp4) | Hitler Went To Hell And Got Put On Hold 💀 | Waiting to post |
+| [12-zombie-apocalypse-fails](toy-reels/12-zombie-apocalypse-fails.mp4) | The Zombie Apocalypse Failed For The Dumbest Reason 🧟 | Posted (Instagram + YouTube) |
+| [13-hitler-hell-queue](toy-reels/13-hitler-hell-queue.mp4) | Hitler Went To Hell And Got Put On Hold 💀 | Posted (Instagram + YouTube) |
 | [14-death-replaced-by-ai](toy-reels/14-death-replaced-by-ai.mp4) | Death Got Replaced By AI. Nobody Has Died Since 💀 | Waiting to post |
 | [15-napoleon-sues-everyone](toy-reels/15-napoleon-sues-everyone.mp4) | Napoleon Came Back From The Dead To Sue Everyone 💀 | Waiting to post |
 | [16-robbers-rob-illuminati](toy-reels/16-robbers-rob-illuminati.mp4) | Two Robbers Robbed The Illuminati's Bank 👁️ | Waiting to post |
