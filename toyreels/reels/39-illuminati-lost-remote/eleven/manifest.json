@@ -1,0 +1,33 @@
+{
+ "music-6494b6bc72d5.mp3": {
+  "prompt": "Dark secret society choir with organ, turning into frantic panicky comedic orchestra, no vocals",
+  "music_length_ms": 27880,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-f6e404ec8829.mp3": {
+  "text": "old TV remote click then a TV static burst",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-7aa9e7549dc7.mp3": {
+  "text": "heavy vault door spinning open",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-ef166449caa3.mp3": {
+  "text": "cold howling winter wind",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-d628d5be7e61.mp3": {
+  "text": "annoyed cat meow hiss",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-c8d29c552b23.mp3": {
+  "text": "dramatic orchestra hit",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
