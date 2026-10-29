@@ -1,0 +1,43 @@
+{
+ "music-d8c298b41784.mp3": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a fancy fake-French accordion section and frantic panic in the middle, no vocals",
+  "music_length_ms": 26820,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-b4610cbe6a7c.mp3": {
+  "text": "sizzling pan on a stove",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-8afde9f0514a.mp3": {
+  "text": "big whoosh of flames igniting",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-6e9aea50ad27.mp3": {
+  "text": "crackling fire",
+  "duration_seconds": 3,
+  "prompt_influence": 0.5
+ },
+ "sfx-98037ddeaa5a.mp3": {
+  "text": "short accordion flourish",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-1dba7d34ca32.mp3": {
+  "text": "loud smoke alarm beeping",
+  "duration_seconds": 3,
+  "prompt_influence": 0.5
+ },
+ "sfx-7110c206bf52.mp3": {
+  "text": "sitcom studio audience oooh then big laugh",
+  "duration_seconds": 2.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-1c374bc50757.mp3": {
+  "text": "doorbell ding dong",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
