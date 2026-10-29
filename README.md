@@ -129,7 +129,7 @@ Folder: [`dave-reels/`](dave-reels/)
 | [43-dave-grows-an-inch](dave-reels/43-dave-grows-an-inch.mp4) | What if you grew 1 inch every day? | Waiting to post |
 | [44-gimli-glider](dave-reels/44-gimli-glider.mp4) | The jet that ran out of fuel because of maths | Waiting to post |
 
-## Toy reels (Brick Toy) (39)
+## Toy reels (Brick Toy) (44)
 Folder: [`toy-reels/`](toy-reels/)
 
 | Video | Title | Status |
@@ -173,6 +173,11 @@ Folder: [`toy-reels/`](toy-reels/)
 | [37-caesar-surprise-party](toy-reels/37-caesar-surprise-party.mp4) | Caesar's Surprise Party Had 23 Knives 🎂🔪 | Waiting to post |
 | [38-pharaoh-curse-timeshare](toy-reels/38-pharaoh-curse-timeshare.mp4) | The Pharaoh's Curse Was A Timeshare Pitch 🏺 | Waiting to post |
 | [39-illuminati-lost-remote](toy-reels/39-illuminati-lost-remote.mp4) | The Illuminati Lost The Remote That Runs The World 📺 | Waiting to post |
+| [40-spider-bro-gets-sued](toy-reels/40-spider-bro-gets-sued.mp4) | Spider-Bro Got Sued By A Robber 🕸️⚖️ | Waiting to post |
+| [41-heaven-is-full](toy-reels/41-heaven-is-full.mp4) | Heaven Was Full So They Booked An Airbnb 😇🔥 | Waiting to post |
+| [42-getaway-driving-test](toy-reels/42-getaway-driving-test.mp4) | Robbers Stole A Driving School Car 🚗🚨 | Waiting to post |
+| [43-hitler-late-delivery](toy-reels/43-hitler-late-delivery.mp4) | Hitler's Super Weapon Arrived 80 Years Late 📦 | Waiting to post |
+| [44-gravity-off-mondays](toy-reels/44-gravity-off-mondays.mp4) | What If Gravity Turned Off Every Monday? 🌍 | Waiting to post |
 
 ## Mechanic Shorts (YouTube) (25)
 Folder: [`mechanic-shorts/`](mechanic-shorts/)
