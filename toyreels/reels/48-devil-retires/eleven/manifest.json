@@ -1,0 +1,33 @@
+{
+ "music-94373f83db85.mp3": {
+  "prompt": "Evil heavy metal organ riff that turns into a cozy grandma waltz with a music box, no vocals",
+  "music_length_ms": 25960,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-a7c09eb61eae.mp3": {
+  "text": "evil laugh fading into a gentle old lady giggle",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-ddb6bee5d9ec.mp3": {
+  "text": "old lady shushing sound",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-73a4cc2df8be.mp3": {
+  "text": "slurping soup",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-fe77a439045e.mp3": {
+  "text": "vacuum cleaner running",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-bca4a2a04fd6.mp3": {
+  "text": "door slam",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ }
+}
