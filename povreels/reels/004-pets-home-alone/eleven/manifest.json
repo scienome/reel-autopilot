@@ -1,0 +1,38 @@
+{
+ "music-0e04e3cee3ef.mp3": {
+  "prompt": "Sneaky heist-style comedy underscore with plucked bass, pizzicato and a tiptoe rhythm, building into chaos, then a big happy brass finish, no vocals",
+  "music_length_ms": 35780,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-53ba999411a6.mp3": {
+  "text": "front door closing and keys jingling",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-edc3c24e0696.mp3": {
+  "text": "dramatic dog howl, comedic",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-82777c2dc5a5.mp3": {
+  "text": "glass falling off a counter and shattering",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-69aa219d3891.mp3": {
+  "text": "fabric ripping and dog growling playfully",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-6f60b2226e8d.mp3": {
+  "text": "front door opening",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-c0065bbdd78d.mp3": {
+  "text": "excited dog barking and whining, tail thumping",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ }
+}
