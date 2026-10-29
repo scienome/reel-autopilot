@@ -48,6 +48,8 @@ def slot_utc(date, hhmm, off):
 def dave_order():
     """Dave reels in schedule.json order (posted-by-hand ones first)."""
     s = json.load(open(SCHED)); off = s.get('timezone_offset', '+05:30'); times = s['times']
+    if s.get('paused'):  # the owner paused the series (davereels/schedule.json "paused"): post nothing new
+        print(f"::notice::Dave reels are paused: {s['paused']}"); return []
     items = [(slot_utc(d['date'], times[i], off), rid) for d in s['days'] for i, rid in enumerate(d['reels']) if rid]
     return list(dict.fromkeys(s.get('posted_by_hand', []) + [rid for _, rid in sorted(items)]))
 
