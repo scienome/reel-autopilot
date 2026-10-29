@@ -1,0 +1,76 @@
+{
+ "music": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a fake-romantic string swell in the middle, no vocals",
+  "gain": -6,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "c1",
+   "word": "Thursday",
+   "offset": -0.2,
+   "prompt": "toilet flushing loudly",
+   "dur": 2,
+   "gain": -6
+  },
+  {
+   "beat": "mu1",
+   "word": "arrived",
+   "prompt": "magical sparkle chime",
+   "dur": 1.2,
+   "gain": -5
+  },
+  {
+   "beat": "mu2",
+   "word": "washed",
+   "prompt": "fast cartoon scrubbing and squeaking",
+   "dur": 1.2,
+   "gain": -5
+  },
+  {
+   "beat": "mu2",
+   "word": "Twice",
+   "offset": 0.3,
+   "prompt": "short sitcom studio audience laugh burst",
+   "dur": 1.6,
+   "gain": -10
+  },
+  {
+   "beat": "s2",
+   "word": "Absolutely",
+   "prompt": "metal kitchen tongs clacking twice",
+   "dur": 0.8,
+   "gain": -4
+  },
+  {
+   "beat": "s3",
+   "word": "romantic",
+   "offset": 0.2,
+   "prompt": "short sitcom studio audience laugh burst",
+   "dur": 1.6,
+   "gain": -10
+  },
+  {
+   "beat": "m3",
+   "word": "Where",
+   "prompt": "dramatic orchestra sting dun dun dun",
+   "dur": 1.5,
+   "gain": -6
+  },
+  {
+   "beat": "mu4",
+   "word": "discount",
+   "prompt": "cash register ka-ching",
+   "dur": 1,
+   "gain": -4
+  },
+  {
+   "beat": "mu4",
+   "word": "discount",
+   "offset": 0.5,
+   "prompt": "sitcom studio audience big laugh and applause",
+   "dur": 2.2,
+   "gain": -10
+  }
+ ]
+}

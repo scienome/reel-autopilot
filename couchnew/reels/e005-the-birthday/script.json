@@ -1,0 +1,13 @@
+[
+ {"id": "n1", "who": "narrator", "phrases": ["Maya's birthday.", "Sam did not forget."]},
+ {"id": "s1", "who": "sam", "phrases": ["Surprise!", "Thirty candles for my girl!"]},
+ {"id": "m1", "who": "maya", "phrases": ["I'm twenty-nine."]},
+ {"id": "s2", "who": "sam", "phrases": ["...Surprise?"]},
+ {"id": "mu1", "who": "mum", "phrases": ["Don't worry, darling.", "You look thirty."]},
+ {"id": "m2", "who": "maya", "phrases": ["Mum!"]},
+ {"id": "s3", "who": "sam", "phrases": ["Quick! Make a wish!"]},
+ {"id": "m3", "who": "maya", "phrases": ["Fine. I wish..."]},
+ {"id": "mu2", "who": "mum", "phrases": ["I wished for a different son-in-law."]},
+ {"id": "s4", "who": "sam", "phrases": ["That's not how wishes work!"]},
+ {"id": "n3", "who": "narrator", "phrases": ["Part two?"]}
+]

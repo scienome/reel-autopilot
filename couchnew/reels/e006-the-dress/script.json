@@ -1,0 +1,11 @@
+[
+ {"id": "mu1", "who": "mum", "phrases": ["Sam. You can't see the dress before the wedding.", "It's bad luck."]},
+ {"id": "s1", "who": "sam", "phrases": ["Okay. Eyes closed.", "Totally safe."]},
+ {"id": "s2", "who": "sam", "phrases": ["Ow. Lamp.", "Ow. Other lamp."]},
+ {"id": "m1", "who": "maya", "phrases": ["Babe, you can open your eyes!"]},
+ {"id": "s3", "who": "sam", "phrases": ["Why is your MUM in the dress?!"]},
+ {"id": "mu2", "who": "mum", "phrases": ["It was my dress.", "I'm checking it still fits."]},
+ {"id": "m2", "who": "maya", "phrases": ["Mum. It's my wedding."]},
+ {"id": "mu3", "who": "mum", "phrases": ["Exactly, darling.", "Something old."]},
+ {"id": "n3", "who": "narrator", "phrases": ["Part two?"]}
+]

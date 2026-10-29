@@ -1,0 +1,49 @@
+{
+ "music": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a wonky happy-birthday-style party feel and a sudden chaotic splash section near the end, no vocals",
+  "gain": -6,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "s1",
+   "word": "Surprise",
+   "offset": -0.2,
+   "prompt": "party popper and party horn",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "s2",
+   "word": "Surprise",
+   "offset": 0.3,
+   "prompt": "sitcom studio audience oooh",
+   "dur": 1.5,
+   "gain": -10
+  },
+  {
+   "beat": "mu1",
+   "word": "thirty",
+   "offset": 0.3,
+   "prompt": "sitcom studio audience big laugh",
+   "dur": 2,
+   "gain": -10
+  },
+  {
+   "beat": "m3",
+   "word": "wish",
+   "offset": 0.3,
+   "prompt": "blowing out candles then a fire sprinkler system bursting on with water spraying",
+   "dur": 3,
+   "gain": -3
+  },
+  {
+   "beat": "s4",
+   "word": "work",
+   "offset": 0.3,
+   "prompt": "sitcom studio audience laugh and applause",
+   "dur": 2.2,
+   "gain": -10
+  }
+ ]
+}

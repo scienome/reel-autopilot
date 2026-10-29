@@ -1,0 +1,12 @@
+[
+ {"id": "s1", "who": "sam", "phrases": ["Tonight, I cook for your mum.", "Finally, she'll respect me."]},
+ {"id": "n1", "who": "narrator", "phrases": ["Twenty minutes later."]},
+ {"id": "mu1", "who": "mum", "phrases": ["Is it meant to be on fire?"]},
+ {"id": "s2", "who": "sam", "phrases": ["It's flambé!", "It's French!"]},
+ {"id": "m1", "who": "maya", "phrases": ["Babe, the smoke alarm is singing."]},
+ {"id": "mu2", "who": "mum", "phrases": ["Mm.", "This is the best thing I've ever eaten."]},
+ {"id": "s3", "who": "sam", "phrases": ["Really?!"]},
+ {"id": "mu3", "who": "mum", "phrases": ["That's what I'll say at your funeral."]},
+ {"id": "m2", "who": "maya", "phrases": ["I ordered pizza an hour ago."]},
+ {"id": "n3", "who": "narrator", "phrases": ["Part two?"]}
+]

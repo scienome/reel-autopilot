@@ -1,0 +1,63 @@
+{
+ "music": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a sweeping fake-romantic wedding march parody and a dramatic sting in the middle, no vocals",
+  "gain": -6,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "s2",
+   "word": "Lamp",
+   "prompt": "cartoon bonk and lamp crash",
+   "dur": 1,
+   "gain": -3
+  },
+  {
+   "beat": "s2",
+   "word": "lamp",
+   "n": 2,
+   "prompt": "cartoon bonk with glass breaking",
+   "dur": 1,
+   "gain": -3
+  },
+  {
+   "beat": "s2",
+   "word": "lamp",
+   "offset": 0.3,
+   "prompt": "sitcom studio audience laugh",
+   "dur": 1.6,
+   "gain": -10
+  },
+  {
+   "beat": "m1",
+   "word": "eyes",
+   "offset": 0.3,
+   "prompt": "heavenly choir aaah",
+   "dur": 1.5,
+   "gain": -5
+  },
+  {
+   "beat": "s3",
+   "word": "MUM",
+   "prompt": "record scratch then dramatic orchestra sting",
+   "dur": 1.5,
+   "gain": -3
+  },
+  {
+   "beat": "mu2",
+   "word": "fits",
+   "offset": 0.3,
+   "prompt": "sitcom studio audience oooh",
+   "dur": 1.5,
+   "gain": -10
+  },
+  {
+   "beat": "mu3",
+   "word": "old",
+   "offset": 0.3,
+   "prompt": "sitcom studio audience big laugh and applause",
+   "dur": 2.2,
+   "gain": -10
+  }
+ ]
+}

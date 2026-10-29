@@ -1,5 +1,5 @@
 {
-  "paused": "owner paused all CouchSarcasm posts on 29 Oct 2026 while the format is rebuilt; remove this key to resume",
+  "queue": "couchnew",
   "voice": {
     "voice_id": "s3TPKV1kjDlVtZbl4Ksh",
     "model_id": "eleven_v4",

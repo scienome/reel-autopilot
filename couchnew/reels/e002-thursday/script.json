@@ -1,0 +1,14 @@
+[
+ {"id": "c1", "who": "narrator", "phrases": ["Thursday."]},
+ {"id": "mu1", "who": "mum", "phrases": ["Good news, everyone.", "It arrived."]},
+ {"id": "s1", "who": "sam", "phrases": ["Where... exactly... is it?"]},
+ {"id": "mu2", "who": "mum", "phrases": ["Don't worry.", "I washed it.", "Twice."]},
+ {"id": "m1", "who": "maya", "phrases": ["Babe!", "Put it on me!"]},
+ {"id": "s2", "who": "sam", "phrases": ["Of course.", "Absolutely."]},
+ {"id": "m2", "who": "maya", "phrases": ["Why are you using tongs?"]},
+ {"id": "s3", "who": "sam", "phrases": ["It's... romantic."]},
+ {"id": "mu3", "who": "mum", "phrases": ["Now. The wedding.", "I've already booked the venue."]},
+ {"id": "m3", "who": "maya", "phrases": ["Mum! Where?"]},
+ {"id": "mu4", "who": "mum", "phrases": ["The hospital.", "They gave me a loyalty discount."]},
+ {"id": "n3", "who": "narrator", "phrases": ["Part three?"]}
+]

@@ -1,0 +1,13 @@
+[
+ {"id": "n1", "who": "narrator", "phrases": ["Day one."]},
+ {"id": "mu1", "who": "mum", "phrases": ["Just for one week, sweetheart."]},
+ {"id": "n2", "who": "narrator", "phrases": ["Day forty."]},
+ {"id": "s1", "who": "sam", "phrases": ["Is that... my hoodie?"]},
+ {"id": "mu2", "who": "mum", "phrases": ["It's our hoodie now."]},
+ {"id": "s2", "who": "sam", "phrases": ["Babe. She labelled the fridge."]},
+ {"id": "m1", "who": "maya", "phrases": ["Babe, she's family."]},
+ {"id": "s3", "who": "sam", "phrases": ["She changed the wifi password!"]},
+ {"id": "m2", "who": "maya", "phrases": ["To what?"]},
+ {"id": "mu3", "who": "mum", "phrases": ["Sam, pack your bags.", "One word. Capital S."]},
+ {"id": "n3", "who": "narrator", "phrases": ["Part two?"]}
+]

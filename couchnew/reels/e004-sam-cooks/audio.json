@@ -1,0 +1,61 @@
+{
+ "music": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a fancy fake-French accordion section and frantic panic in the middle, no vocals",
+  "gain": -6,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "s1",
+   "word": "cook",
+   "prompt": "sizzling pan on a stove",
+   "dur": 2,
+   "gain": -8
+  },
+  {
+   "beat": "n1",
+   "word": "Twenty",
+   "offset": -0.2,
+   "prompt": "big whoosh of flames igniting",
+   "dur": 1.5,
+   "gain": -3
+  },
+  {
+   "beat": "mu1",
+   "word": "fire",
+   "prompt": "crackling fire",
+   "dur": 3,
+   "gain": -10
+  },
+  {
+   "beat": "s2",
+   "word": "French",
+   "prompt": "short accordion flourish",
+   "dur": 1.5,
+   "gain": -6
+  },
+  {
+   "beat": "m1",
+   "word": "Babe",
+   "offset": -0.2,
+   "prompt": "loud smoke alarm beeping",
+   "dur": 3,
+   "gain": -10
+  },
+  {
+   "beat": "mu3",
+   "word": "funeral",
+   "offset": 0.3,
+   "prompt": "sitcom studio audience oooh then big laugh",
+   "dur": 2.2,
+   "gain": -10
+  },
+  {
+   "beat": "m2",
+   "word": "pizza",
+   "prompt": "doorbell ding dong",
+   "dur": 1.2,
+   "gain": -4
+  }
+ ]
+}

@@ -1,4 +1,3 @@
 {
- "paused": "until the first two days of episodes are rendered and checked",
- "queue": []
+ "queue": ["e001-the-ring", "e002-thursday", "e003-mum-moves-in", "e004-sam-cooks", "e005-the-birthday", "e006-the-dress"]
 }

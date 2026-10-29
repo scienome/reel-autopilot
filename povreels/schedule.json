@@ -1,4 +1,3 @@
 {
- "paused": "until the first two days of episodes are rendered and checked",
- "queue": []
+ "queue": ["001-dog-thoughts", "007-search-history", "002-cat-thoughts", "008-lie-counter", "003-dog-loves-cat", "010-car-thoughts", "004-pets-home-alone", "009-baby-thoughts", "005-vet-visit", "006-shelter-dog"]
 }
