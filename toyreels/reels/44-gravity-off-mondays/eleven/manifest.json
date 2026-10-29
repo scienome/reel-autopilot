@@ -1,0 +1,33 @@
+{
+ "music-eb51cf3c2926.mp3": {
+  "prompt": "Dreamy floating space music box waltz with theremin, getting chaotic and silly, no vocals",
+  "music_length_ms": 28440,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-980598a2272f.mp3": {
+  "text": "magical whoosh rising upward",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-6b35046a6243.mp3": {
+  "text": "liquid splashing everywhere",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-9aff42f7e20f.mp3": {
+  "text": "man yelling as he flies upward, getting quieter",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-f3509420b5f0.mp3": {
+  "text": "deep power down hum",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-91491595290a.mp3": {
+  "text": "lonely cricket chirps in silence",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ }
+}
