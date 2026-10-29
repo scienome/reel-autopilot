@@ -1,0 +1,38 @@
+{
+ "music-996370ff4f94.mp3": {
+  "prompt": "Upbeat silly comedy underscore with bouncy tuba and pizzicato, a mock-dramatic orchestral swell, then a soft emotional piano section, then playful again for the ending, no vocals",
+  "music_length_ms": 41280,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-05a1f2f0f47d.mp3": {
+  "text": "car engine and happy dog panting",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-ea7950cfbc2e.mp3": {
+  "text": "dramatic horror movie sting",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-b1ddf4c5f9d0.mp3": {
+  "text": "nail clipper click",
+  "duration_seconds": 0.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-774a3977655f.mp3": {
+  "text": "ghostly spooky whoosh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-c2237aacde99.mp3": {
+  "text": "soft cat purring",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-75dcafa11103.mp3": {
+  "text": "relieved sigh and a happy ding",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
