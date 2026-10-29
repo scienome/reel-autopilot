@@ -1,0 +1,33 @@
+{
+ "music-438fe9165440.mp3": {
+  "prompt": "Spooky vampire harpsichord that turns into a cheesy Italian mandolin tarantella, no vocals",
+  "music_length_ms": 28600,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-1165cc71d0da.mp3": {
+  "text": "bats flapping and a creepy organ chord",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-074e52719745.mp3": {
+  "text": "man coughing and choking dramatically",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-75253bc1254a.mp3": {
+  "text": "wooden spoon bonk on a head",
+  "duration_seconds": 0.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-3e77636ffbdf.mp3": {
+  "text": "chomp bite and a yelp",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-7a634f77d730.mp3": {
+  "text": "lonely cricket chirps",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ }
+}
