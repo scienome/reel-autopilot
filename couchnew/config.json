@@ -6,14 +6,44 @@
   },
   "cast": {
     "narrator": "s3TPKV1kjDlVtZbl4Ksh",
-    "sam": "s3TPKV1kjDlVtZbl4Ksh",
+    "sam": "IvUJKFyjVb5hItY9dJAT",
     "maya": "cgSgspJ2msm6clMCkdW9",
     "mum": "Xb7hH8MSUJpSbSDYk0k2"
   },
   "_cast_names": {
     "narrator": "Adam (the one voice for every channel)",
-    "sam": "Adam",
+    "sam": "Stevie - The Living Cartoon (owner's My Voices)",
     "maya": "Jessica - Playful, Bright, Warm",
     "mum": "Alice - Clear, Engaging Educator"
+  },
+  "cast_settings": {
+    "narrator": {
+      "stability": 0.45,
+      "similarity_boost": 0.8,
+      "style": 0.25,
+      "use_speaker_boost": true,
+      "speed": 1.05
+    },
+    "sam": {
+      "stability": 0.25,
+      "similarity_boost": 0.75,
+      "style": 0.7,
+      "use_speaker_boost": true,
+      "speed": 1.1
+    },
+    "maya": {
+      "stability": 0.3,
+      "similarity_boost": 0.8,
+      "style": 0.6,
+      "use_speaker_boost": true,
+      "speed": 1.08
+    },
+    "mum": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.55,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    }
   }
 }
