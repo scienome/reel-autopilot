@@ -1,0 +1,38 @@
+{
+ "music-db1f5ddcd9d1.mp3": {
+  "prompt": "Sweet playful romantic comedy underscore with ukulele, glockenspiel and soft strings, turning wistful and sad in the middle, then joyful and bouncy at the end, no vocals",
+  "music_length_ms": 37380,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-3e0ac24d2aca.mp3": {
+  "text": "cartoon heart beating fast, comedic",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-92d7e888c50d.mp3": {
+  "text": "angry cat hiss",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-93fff0ada0bf.mp3": {
+  "text": "dog licking a glass window, squeaky",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-b82c7bf06c60.mp3": {
+  "text": "moving truck driving away",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-718d8abc0962.mp3": {
+  "text": "cardboard box dropped on a doorstep, doorbell ding dong",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-9b10b37e0ffc.mp3": {
+  "text": "happy dog barking and excited whining",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ }
+}
