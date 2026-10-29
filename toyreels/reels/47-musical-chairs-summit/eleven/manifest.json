@@ -1,0 +1,38 @@
+{
+ "music-3579369893c2.mp3": {
+  "prompt": "Silly circus musical chairs carousel music that stops abruptly several times, no vocals",
+  "music_length_ms": 27080,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-dae7b8616801.mp3": {
+  "text": "carousel organ music stopping with a needle scratch",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-a693d5db7ac2.mp3": {
+  "text": "shiny bling sparkle sound",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-b10f2d201ec9.mp3": {
+  "text": "sneaky tiptoe pizzicato",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-ecc6d420d92e.mp3": {
+  "text": "big button click then an alarm siren",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-16ac59d48b52.mp3": {
+  "text": "party poppers and kazoos",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-5f2ef810424b.mp3": {
+  "text": "loud snoring",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
