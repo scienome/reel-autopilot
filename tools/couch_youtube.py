@@ -38,6 +38,8 @@ def save(log):
 
 
 def main():
+    if CFG.get('paused'):  # the owner paused CouchSarcasm (config.json "paused"): post nothing
+        print(f"::notice::CouchSarcasm is paused: {CFG['paused']}"); return
     ap = argparse.ArgumentParser(); ap.add_argument('--dry-run', action='store_true')
     a = ap.parse_args()
     log = json.load(open(LOG)) if os.path.exists(LOG) else {}

@@ -47,6 +47,8 @@ def main():
     ap = argparse.ArgumentParser(); ap.add_argument('--dry-run', action='store_true'); ap.add_argument('--reel')
     ap.add_argument('--at', help='publish slots in UTC, e.g. 07:30,14:30: upload early, then publish exactly on the slot')
     a = ap.parse_args()
+    if CFG.get('paused'):  # the owner paused CouchSarcasm (config.json "paused"): post nothing
+        print(f"::notice::CouchSarcasm is paused: {CFG['paused']}"); return
     target = None
     if a.at and not a.dry_run:
         now = datetime.datetime.now(datetime.timezone.utc)
