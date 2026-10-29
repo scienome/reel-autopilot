@@ -1,0 +1,33 @@
+{
+ "music-701c216e4bea.mp3": {
+  "prompt": "Whimsical Pinocchio-style woodwind and xylophone waltz that gets more and more absurd, no vocals",
+  "music_length_ms": 27640,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-ddf048a2fd56.mp3": {
+  "text": "wooden creak growing, cartoon stretch sound",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-2e33e34d37cb.mp3": {
+  "text": "head bonk against a wooden door",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-ade0530a8475.mp3": {
+  "text": "rocket whoosh into space",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-c239556ff565.mp3": {
+  "text": "suspicious crowd murmur",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-72bac1ad9238.mp3": {
+  "text": "glass TV screen smashing",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
