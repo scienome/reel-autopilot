@@ -1,0 +1,58 @@
+{
+ "music-89fda9859272.mp3": {
+  "prompt": "Deadpan documentary underscore for a darkly funny engineering-disaster reel: low pulsing synth bass, ticking clock percussion, light plucked strings, slowly building suspense, cinematic, no vocals",
+  "music_length_ms": 44600,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-a8e760b6d763.mp3": {
+  "text": "jet airliner engines spooling down and whining to silence at high altitude",
+  "duration_seconds": 3,
+  "prompt_influence": 0.5
+ },
+ "sfx-f981fe59cd63.mp3": {
+  "text": "old pocket calculator button beeps",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-d9206e42c66c.mp3": {
+  "text": "cartoon error buzzer, short",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-614ec570c0ee.mp3": {
+  "text": "cockpit master caution alarm chime repeating",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-41783af45531.mp3": {
+  "text": "electronics powering down with a low hum cut off",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-c5fb99fb04ad.mp3": {
+  "text": "small propeller turbine whirring up in strong wind",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-c732eadf980e.mp3": {
+  "text": "race cars revving on a drag strip, distant crowd cheering",
+  "duration_seconds": 3,
+  "prompt_influence": 0.5
+ },
+ "sfx-0088dc80a827.mp3": {
+  "text": "loud rushing wind past a gliding airliner",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-dd87c775e122.mp3": {
+  "text": "airliner nose crunching onto asphalt, long metal scrape with sparks",
+  "duration_seconds": 3.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-1a125b4ea1ee.mp3": {
+  "text": "comedic metal clang then a cartoon whistle flying away",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ }
+}
