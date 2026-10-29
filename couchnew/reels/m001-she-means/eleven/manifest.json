@@ -1,0 +1,48 @@
+{
+ "music-55ade6ea2399.mp3": {
+  "prompt": "Sassy, cheeky pop beat with finger snaps, sneaky plucked bass and playful synth stabs, confident and funny, switching to a warm romantic swell near the end, no vocals",
+  "music_length_ms": 35720,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-7eca5d87be90.mp3": {
+  "text": "comedic record scratch then a bass drop",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-82439c2f4704.mp3": {
+  "text": "loud ticking clock countdown",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-c1ad242ee0fb.mp3": {
+  "text": "dramatic orchestral dun dun dun hit",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-19cbc2ddbdeb.mp3": {
+  "text": "audience ooooh reaction",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-d716bc62fc14.mp3": {
+  "text": "horror movie violin screech sting",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-bf607b51d259.mp3": {
+  "text": "single soft piano note, awkward silence",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-234505f6d2b0.mp3": {
+  "text": "magical romantic harp glissando with sparkles",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-0168f7d0a455.mp3": {
+  "text": "small crowd gasping in shock",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ }
+}
