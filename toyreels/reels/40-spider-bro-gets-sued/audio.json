@@ -1,0 +1,49 @@
+{
+ "music": {
+  "prompt": "Heroic superhero brass theme that deflates into a sad courtroom piano, then a sneaky crime groove, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "webbed",
+   "offset": 0.0,
+   "prompt": "sticky web shooting thwip sound twice",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "court",
+   "word": "cried",
+   "offset": 0.0,
+   "prompt": "man crying loudly and dramatically",
+   "dur": 2,
+   "gain": -4
+  },
+  {
+   "beat": "verdict",
+   "word": "guilty",
+   "offset": 0.0,
+   "prompt": "gavel banging three times",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "ride",
+   "offset": 0.0,
+   "prompt": "fast whoosh of swinging through the air",
+   "dur": 1.5,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "thrilled",
+   "offset": 0.0,
+   "prompt": "cash register cha-ching",
+   "dur": 1,
+   "gain": -3
+  }
+ ]
+}

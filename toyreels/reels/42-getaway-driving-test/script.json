@@ -1,0 +1,9 @@
+[{"chapter": "The getaway", "beats": [
+ {"id": "hook", "phrases": ["Two robbers stole a getaway car.", "It was a driving school car."]},
+ {"id": "inst", "phrases": ["The instructor was still inside."]},
+ {"id": "rules", "phrases": ["Mirror. Signal.", "Seat belts, please."]},
+ {"id": "drive", "phrases": ["They stopped at every red light.", "Indicated at every turn."]},
+ {"id": "twist", "phrases": ["The police caught them in four minutes.", "They were parallel parking."]},
+ {"id": "punch", "phrases": ["Ten years in prison.", "But they passed their driving test."]},
+ {"id": "cta", "phrases": ["Would you stop at the red light? Be honest."]}
+]}]

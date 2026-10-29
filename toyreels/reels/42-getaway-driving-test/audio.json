@@ -1,0 +1,49 @@
+{
+ "music": {
+  "prompt": "Fast heist car chase funk with wah guitar that keeps getting interrupted, comedic slow-down, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "stole",
+   "offset": 0.0,
+   "prompt": "car alarm then tires screeching",
+   "dur": 1.8,
+   "gain": -3
+  },
+  {
+   "beat": "rules",
+   "word": "Signal",
+   "offset": 0.0,
+   "prompt": "car indicator ticking click clack",
+   "dur": 2,
+   "gain": -3
+  },
+  {
+   "beat": "drive",
+   "word": "red",
+   "offset": 0.0,
+   "prompt": "car brakes squeak to a gentle stop",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "police",
+   "offset": 0.0,
+   "prompt": "police sirens approaching",
+   "dur": 2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "test",
+   "offset": 0.0,
+   "prompt": "small crowd applause and a cheer",
+   "dur": 1.8,
+   "gain": -6
+  }
+ ]
+}

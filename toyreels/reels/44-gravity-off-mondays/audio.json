@@ -1,0 +1,49 @@
+{
+ "music": {
+  "prompt": "Dreamy floating space music box waltz with theremin, getting chaotic and silly, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "gravity",
+   "offset": 0.0,
+   "prompt": "magical whoosh rising upward",
+   "dur": 1.5,
+   "gain": -3
+  },
+  {
+   "beat": "m1",
+   "word": "Coffee",
+   "offset": 0.0,
+   "prompt": "liquid splashing everywhere",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "m3",
+   "word": "forgot",
+   "offset": 0.0,
+   "prompt": "man yelling as he flies upward, getting quieter",
+   "dur": 2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "back",
+   "offset": 0.0,
+   "prompt": "deep power down hum",
+   "dur": 1.5,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "Gary",
+   "offset": 0.0,
+   "prompt": "lonely cricket chirps in silence",
+   "dur": 2,
+   "gain": -6
+  }
+ ]
+}

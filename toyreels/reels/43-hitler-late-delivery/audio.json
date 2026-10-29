@@ -1,0 +1,49 @@
+{
+ "music": {
+  "prompt": "Pompous military march played badly on a kazoo and tuba, comedic, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "online",
+   "offset": 0.0,
+   "prompt": "old computer keyboard clicking and a dial-up modem",
+   "dur": 1.5,
+   "gain": -4
+  },
+  {
+   "beat": "wait",
+   "word": "Weeks",
+   "offset": 0.0,
+   "prompt": "clock ticking slowly with a yawn",
+   "dur": 2,
+   "gain": -5
+  },
+  {
+   "beat": "twist",
+   "word": "arrived",
+   "offset": 0.0,
+   "prompt": "doorbell ding dong",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "selfie",
+   "offset": 0.0,
+   "prompt": "camera shutter click",
+   "dur": 1,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "hell",
+   "offset": 0.0,
+   "prompt": "evil low drone and crackling flames",
+   "dur": 2,
+   "gain": -5
+  }
+ ]
+}

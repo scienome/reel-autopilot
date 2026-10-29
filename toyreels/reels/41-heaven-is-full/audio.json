@@ -1,0 +1,49 @@
+{
+ "music": {
+  "prompt": "Angelic harp and choir that turns into a smooth sexy-free lounge jazz with a devilish bass, comedic, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "room",
+   "offset": 0.0,
+   "prompt": "heavenly choir singing aah then a record scratch",
+   "dur": 1.6,
+   "gain": -3
+  },
+  {
+   "beat": "host",
+   "word": "horns",
+   "offset": 0.0,
+   "prompt": "evil laugh, short and cheerful",
+   "dur": 1.5,
+   "gain": -3
+  },
+  {
+   "beat": "perks",
+   "word": "Hot",
+   "offset": 0.0,
+   "prompt": "bubbling boiling water",
+   "dur": 1.5,
+   "gain": -4
+  },
+  {
+   "beat": "review",
+   "word": "stars",
+   "offset": 0.0,
+   "prompt": "magical sparkle chime",
+   "dur": 1,
+   "gain": -4
+  },
+  {
+   "beat": "twist",
+   "word": "waiting",
+   "offset": 0.0,
+   "prompt": "long crowd murmur in a queue",
+   "dur": 2,
+   "gain": -6
+  }
+ ]
+}
