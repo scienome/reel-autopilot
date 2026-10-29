@@ -1,0 +1,33 @@
+{
+ "music-6b7c0941958f.mp3": {
+  "prompt": "Tense prison break thriller music with ticking clock and low strings, ending in a lazy happy ukulele, no vocals",
+  "music_length_ms": 27720,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-2ee4fd31c783.mp3": {
+  "text": "prison alarm siren far away",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-aad733ffdb4f.mp3": {
+  "text": "metal spoon scraping concrete",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-36675e977afb.mp3": {
+  "text": "chain-link fence rattling and a thud landing",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-e5db2b487423.mp3": {
+  "text": "door creaking open slowly",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-482f28808f47.mp3": {
+  "text": "small studio audience laugh",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ }
+}
