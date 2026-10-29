@@ -1,0 +1,33 @@
+{
+ "music-2158d5d8c8c1.mp3": {
+  "prompt": "Angelic harp and choir that turns into a smooth sexy-free lounge jazz with a devilish bass, comedic, no vocals",
+  "music_length_ms": 27720,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-5164c6a546e5.mp3": {
+  "text": "heavenly choir singing aah then a record scratch",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-3f39c9602e5b.mp3": {
+  "text": "evil laugh, short and cheerful",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-771c339627e1.mp3": {
+  "text": "bubbling boiling water",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-a2162cdc530f.mp3": {
+  "text": "magical sparkle chime",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-0ab1dc952d97.mp3": {
+  "text": "long crowd murmur in a queue",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ }
+}
