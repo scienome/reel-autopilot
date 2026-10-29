@@ -1,0 +1,48 @@
+{
+ "music-40b08e6a61e1.mp3": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, turning sneaky and suspicious in the middle like a heist, no vocals",
+  "music_length_ms": 24720,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-1c374bc50757.mp3": {
+  "text": "doorbell ding dong",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-d841554a15b9.mp3": {
+  "text": "heavy suitcase thumping onto the floor",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-e2fe9fe54554.mp3": {
+  "text": "fast calendar pages flipping whoosh",
+  "duration_seconds": 1.3,
+  "prompt_influence": 0.5
+ },
+ "sfx-c09040356bdb.mp3": {
+  "text": "short sitcom studio audience laugh burst",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-15eee641f4ee.mp3": {
+  "text": "fridge door opening with a hum",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-cae324eb9efe.mp3": {
+  "text": "error buzzer",
+  "duration_seconds": 0.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-a8bc6c6c6cb9.mp3": {
+  "text": "slow tea sip slurp",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-ac3f8f83e2b9.mp3": {
+  "text": "sitcom studio audience big laugh and oooh",
+  "duration_seconds": 2.2,
+  "prompt_influence": 0.5
+ }
+}
