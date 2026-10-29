@@ -1,0 +1,33 @@
+{
+ "music-3770aa5b39eb.mp3": {
+  "prompt": "Fast heist car chase funk with wah guitar that keeps getting interrupted, comedic slow-down, no vocals",
+  "music_length_ms": 26680,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-1019c81097e6.mp3": {
+  "text": "car alarm then tires screeching",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-4a641c3f7d34.mp3": {
+  "text": "car indicator ticking click clack",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-e74c2a7f937d.mp3": {
+  "text": "car brakes squeak to a gentle stop",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-d1616db6619d.mp3": {
+  "text": "police sirens approaching",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-15c09ba38e45.mp3": {
+  "text": "small crowd applause and a cheer",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
