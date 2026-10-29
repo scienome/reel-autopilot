@@ -1,0 +1,53 @@
+{
+ "music-ccbd0266d703.mp3": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass, light drums, comedic and confident, with a short tender solo piano moment two thirds in, then upbeat again for the ending, no vocals",
+  "music_length_ms": 41120,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-24779443c273.mp3": {
+  "text": "busy coffee shop ambience with a door bell jingle",
+  "duration_seconds": 3,
+  "prompt_influence": 0.5
+ },
+ "sfx-1ca037c75704.mp3": {
+  "text": "small sitcom studio audience chuckle",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-eb69df92f307.mp3": {
+  "text": "loud cartoon crunch then a big gulp swallow",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-ee4e05b2cfa2.mp3": {
+  "text": "sitcom studio audience big laugh",
+  "duration_seconds": 3,
+  "prompt_influence": 0.5
+ },
+ "sfx-7738e6532f31.mp3": {
+  "text": "hospital heart monitor beeping steadily in a quiet room",
+  "duration_seconds": 3,
+  "prompt_influence": 0.5
+ },
+ "sfx-79dc9d1fa7ff.mp3": {
+  "text": "sitcom studio audience groaning then laughing",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-abe727adb100.mp3": {
+  "text": "sitcom studio audience saying aww softly",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-aa4e512b9cf1.mp3": {
+  "text": "sitcom studio audience cheering and applauding",
+  "duration_seconds": 3,
+  "prompt_influence": 0.5
+ },
+ "sfx-03d30f7907e5.mp3": {
+  "text": "sitcom studio audience roaring with laughter",
+  "duration_seconds": 3,
+  "prompt_influence": 0.5
+ }
+}
