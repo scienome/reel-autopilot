@@ -1,0 +1,12 @@
+{
+ "music": { "prompt": "Tense, sneaky suspense beat for a text-message drama: soft trap drums, plucky pizzicato, low bass, ticking hi-hats, building tension, dramatic but playful, no vocals", "gain": 0, "tail": 3 },
+ "sfx": [
+  { "beat": "hook", "word": "text", "offset": -0.2, "prompt": "phone vibrating twice on a wooden table", "dur": 1.2 },
+  { "beat": "a2", "word": "teeth", "offset": 0.3, "prompt": "comedic record scratch", "dur": 0.8, "gain": -3 },
+  { "beat": "typing", "word": "typing", "prompt": "fast smartphone keyboard typing taps", "dur": 2 , "gain": -4},
+  { "beat": "typing", "word": "stops", "prompt": "phone keyboard backspace deleting text rapidly", "dur": 1, "gain": -4 },
+  { "beat": "reveal", "word": "Jessica", "offset": 0.2, "prompt": "suspenseful dun dun dun stinger", "dur": 1.5, "gain": -2 },
+  { "beat": "call", "word": "rings", "prompt": "modern smartphone ringtone marimba", "dur": 3, "gain": -3 },
+  { "beat": "twist", "word": "wife", "offset": 0.1, "prompt": "dramatic gasp from a small crowd and a deep cinematic boom", "dur": 2 }
+ ]
+}

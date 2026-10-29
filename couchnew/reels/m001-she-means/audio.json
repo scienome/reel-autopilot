@@ -1,0 +1,13 @@
+{
+ "music": { "prompt": "Sassy, cheeky pop beat with finger snaps, sneaky plucked bass and playful synth stabs, confident and funny, switching to a warm romantic swell near the end, no vocals", "gain": 0, "tail": 3 },
+ "sfx": [
+  { "beat": "hook", "word": "Versus", "prompt": "comedic record scratch then a bass drop", "dur": 1.5, "gain": -3 },
+  { "beat": "fine", "word": "four", "prompt": "loud ticking clock countdown", "dur": 2, "gain": -6 },
+  { "beat": "mum", "word": "criminal", "prompt": "dramatic orchestral dun dun dun hit", "dur": 1.5, "gain": -2 },
+  { "beat": "tired", "word": "Bold", "prompt": "audience ooooh reaction", "dur": 1.5, "gain": -4 },
+  { "beat": "ex", "word": "blood", "prompt": "horror movie violin screech sting", "dur": 1.2, "gain": -4 },
+  { "beat": "him", "word": "Okay", "prompt": "single soft piano note, awkward silence", "dur": 1.5, "gain": -6 },
+  { "beat": "twist", "word": "ring", "prompt": "magical romantic harp glissando with sparkles", "dur": 2, "gain": -3 },
+  { "beat": "twist", "word": "cancelled", "offset": 0.3, "prompt": "small crowd gasping in shock", "dur": 1.5, "gain": -3 }
+ ]
+}

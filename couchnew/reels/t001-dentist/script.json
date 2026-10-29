@@ -1,0 +1,12 @@
+[
+ {"id": "hook", "phrases": ["She found one text on his phone.", "So she asked him."]},
+ {"id": "q1", "phrases": ["Who's Jessica?"]},
+ {"id": "a1", "phrases": ["My dentist."]},
+ {"id": "q2", "phrases": ["Then why does she text you, miss you, with a kiss?"]},
+ {"id": "a2", "phrases": ["She misses my teeth."]},
+ {"id": "typing", "phrases": ["She's typing.", "She stops.", "She's typing again."]},
+ {"id": "reveal", "phrases": ["Cool.", "I just booked a cleaning.", "With Jessica."]},
+ {"id": "call", "phrases": ["Next morning, her phone rings.", "Jessica."]},
+ {"id": "twist", "phrases": ["Hi. About that cleaning.", "I'm not a dentist.", "I'm his wife."]},
+ {"id": "cta", "phrases": ["Part two?"]}
+]

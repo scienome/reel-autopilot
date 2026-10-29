@@ -1,0 +1,11 @@
+[
+ {"id": "hook", "phrases": ["What she says.", "Versus what she means."]},
+ {"id": "fine", "phrases": ["I'm fine.", "You have four minutes to figure out what you did."]},
+ {"id": "whatever", "phrases": ["Do whatever you want.", "Do it, and find out."]},
+ {"id": "mum", "phrases": ["Your mum is so sweet.", "Your mum is a war criminal."]},
+ {"id": "tired", "phrases": ["I'm too tired tonight.", "You left the dishes. Bold move."]},
+ {"id": "ex", "phrases": ["I don't care that you talked to your ex.", "I know her blood type."]},
+ {"id": "him", "phrases": ["Now, what he says.", "Okay."]},
+ {"id": "twist", "phrases": ["What he means.", "I bought the ring six months ago.", "And you just cancelled dinner."]},
+ {"id": "cta", "phrases": ["Tag the one who says, I'm fine."]}
+]
