@@ -129,7 +129,7 @@ Folder: [`dave-reels/`](dave-reels/)
 | [43-dave-grows-an-inch](dave-reels/43-dave-grows-an-inch.mp4) | What if you grew 1 inch every day? | Waiting to post |
 | [44-gimli-glider](dave-reels/44-gimli-glider.mp4) | The jet that ran out of fuel because of maths | Waiting to post |
 
-## Toy reels (Brick Toy) (49)
+## Toy reels (Brick Toy) (55)
 Folder: [`toy-reels/`](toy-reels/)
 
 | Video | Title | Status |
@@ -183,6 +183,12 @@ Folder: [`toy-reels/`](toy-reels/)
 | [47-musical-chairs-summit](toy-reels/47-musical-chairs-summit.mp4) | World Leaders Played Musical Chairs 🪑 | Waiting to post |
 | [48-devil-retires](toy-reels/48-devil-retires.mp4) | The Devil Retired. Grandma Runs Hell Now. 👵🔥 | Waiting to post |
 | [49-dracula-moves-to-italy](toy-reels/49-dracula-moves-to-italy.mp4) | Dracula Moved To Italy. Big Mistake. 🧛🍕 | Waiting to post |
+| [50-prison-door-was-open](toy-reels/50-prison-door-was-open.mp4) | 10-Year Prison Escape. The Door Was Open. 🔓 | Waiting to post |
+| [51-all-seeing-eye-glasses](toy-reels/51-all-seeing-eye-glasses.mp4) | The Illuminati's All-Seeing Eye Needed Glasses 👁️👓 | Waiting to post |
+| [52-lie-nose-grows](toy-reels/52-lie-nose-grows.mp4) | What If Your Nose Grew Every Time You Lied? 🤥 | Waiting to post |
+| [53-caveman-wheel-lawsuit](toy-reels/53-caveman-wheel-lawsuit.mp4) | The Caveman Who Invented The Wheel Got Sued 🪨⚖️ | Waiting to post |
+| [54-elvis-alien-encore](toy-reels/54-elvis-alien-encore.mp4) | Elvis Didn't Die. Aliens Wanted An Encore. 👽🎤 | Waiting to post |
+| [55-pirate-map-parrot](toy-reels/55-pirate-map-parrot.mp4) | Pirate Tattooed The Treasure Map On His Back 🏴‍☠️ | Waiting to post |
 
 ## Mechanic Shorts (YouTube) (25)
 Folder: [`mechanic-shorts/`](mechanic-shorts/)
