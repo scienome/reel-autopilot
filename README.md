@@ -34,7 +34,7 @@ Your Instagram account must be a Professional (Creator or Business) account.
 
 ### 3. ElevenLabs
 1. ElevenLabs → your profile → **API keys** → create a key with text-to-speech access.
-2. Voices → open the voice you use (Jarnathan) → copy its **Voice ID** into `config.json` (already set to Jarnathan, `c6SfcYrb2t09NHXiT80T`)
+2. Voices → open the voice you use → copy its **Voice ID** into `config.json` (set to Adam, `s3TPKV1kjDlVtZbl4Ksh`, the one voice for every channel since 29 Oct 2026; reels 0001-0040 keep their Jarnathan takes)
    (`voice.voice_id`). `voice.model_id` is `eleven_v4`, the model your first take used.
    A batch of 21 reels uses roughly 10,500 characters.
 
