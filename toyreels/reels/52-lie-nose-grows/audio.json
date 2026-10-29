@@ -1,0 +1,49 @@
+{
+ "music": {
+  "prompt": "Whimsical Pinocchio-style woodwind and xylophone waltz that gets more and more absurd, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "lied",
+   "offset": 0.0,
+   "prompt": "wooden creak growing, cartoon stretch sound",
+   "dur": 1.5,
+   "gain": -3
+  },
+  {
+   "beat": "b1",
+   "word": "doors",
+   "offset": 0.0,
+   "prompt": "head bonk against a wooden door",
+   "dur": 1,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "moon",
+   "offset": 0.0,
+   "prompt": "rocket whoosh into space",
+   "dur": 1.5,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "trusted",
+   "offset": 0.0,
+   "prompt": "suspicious crowd murmur",
+   "dur": 1.5,
+   "gain": -6
+  },
+  {
+   "beat": "punch",
+   "word": "TV",
+   "offset": 0.0,
+   "prompt": "glass TV screen smashing",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

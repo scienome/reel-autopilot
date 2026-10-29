@@ -1,0 +1,49 @@
+{
+ "music": {
+  "prompt": "Rollicking pirate sea shanty with accordion and fiddle, comedic, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "buried",
+   "offset": 0.0,
+   "prompt": "shovel digging sand and a treasure chest thud",
+   "dur": 1.5,
+   "gain": -3
+  },
+  {
+   "beat": "b1",
+   "word": "back",
+   "offset": 0.0,
+   "prompt": "pirate grunting while twisting around",
+   "dur": 1.2,
+   "gain": -4
+  },
+  {
+   "beat": "b3",
+   "word": "parrot",
+   "offset": 0.0,
+   "prompt": "parrot squawk",
+   "dur": 1,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "cracker",
+   "offset": 0.0,
+   "prompt": "cracker crunch and seagull call",
+   "dur": 1.5,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "chips",
+   "offset": 0.0,
+   "prompt": "seagull screaming and flapping wings",
+   "dur": 1.5,
+   "gain": -3
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "music": {
+  "prompt": "Prehistoric tribal drums and bone xylophone, comedic courtroom drama sting, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "wheel",
+   "offset": 0.0,
+   "prompt": "heavy stone wheel rolling on rocks",
+   "dur": 1.5,
+   "gain": -3
+  },
+  {
+   "beat": "square",
+   "word": "square",
+   "offset": 0.0,
+   "prompt": "heavy stone block thudding clunk clunk",
+   "dur": 1.5,
+   "gain": -3
+  },
+  {
+   "beat": "trial",
+   "word": "four",
+   "offset": 0.0,
+   "prompt": "clock ticking very fast like time passing",
+   "dur": 2,
+   "gain": -5
+  },
+  {
+   "beat": "twist",
+   "word": "rock",
+   "offset": 0.0,
+   "prompt": "gavel bang",
+   "dur": 1,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "pyramids",
+   "offset": 0.0,
+   "prompt": "huge stone block dragged across sand",
+   "dur": 2,
+   "gain": -4
+  }
+ ]
+}

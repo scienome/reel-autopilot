@@ -1,0 +1,49 @@
+{
+ "music": {
+  "prompt": "Mysterious secret society choir, comedic and slightly off-key, with a goofy optician jingle in the middle, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "glasses",
+   "offset": 0.0,
+   "prompt": "magical eye blinking sound with a sparkle",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b1",
+   "word": "potato",
+   "offset": 0.0,
+   "prompt": "cartoon boing",
+   "dur": 1,
+   "gain": -3
+  },
+  {
+   "beat": "b2",
+   "word": "goldfish",
+   "offset": 0.0,
+   "prompt": "bubbles in a fish tank",
+   "dur": 1.5,
+   "gain": -4
+  },
+  {
+   "beat": "twist",
+   "word": "roll",
+   "offset": 0.0,
+   "prompt": "horror movie violin screech sting",
+   "dur": 1.5,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "back",
+   "offset": 0.0,
+   "prompt": "small studio audience laugh",
+   "dur": 1.6,
+   "gain": -8
+  }
+ ]
+}

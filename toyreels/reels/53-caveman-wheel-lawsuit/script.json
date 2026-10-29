@@ -1,0 +1,8 @@
+[{"chapter": "The wheel", "beats": [
+ {"id": "hook", "phrases": ["A caveman invented the wheel.", "Another caveman sued him."]},
+ {"id": "square", "phrases": ["He'd invented a square wheel first."]},
+ {"id": "trial", "phrases": ["The trial took four hundred years."]},
+ {"id": "twist", "phrases": ["The square wheel won.", "Better lawyer.", "A big rock."]},
+ {"id": "punch", "phrases": ["Round wheels were banned for ten thousand years.", "That explains the pyramids."]},
+ {"id": "cta", "phrases": ["Square wheel or round? Defend your answer."]}
+]}]

@@ -1,0 +1,49 @@
+{
+ "music": {
+  "prompt": "Tense prison break thriller music with ticking clock and low strings, ending in a lazy happy ukulele, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "escape",
+   "offset": 0.0,
+   "prompt": "prison alarm siren far away",
+   "dur": 2,
+   "gain": -6
+  },
+  {
+   "beat": "tools",
+   "word": "spoons",
+   "offset": 0.0,
+   "prompt": "metal spoon scraping concrete",
+   "dur": 1.5,
+   "gain": -4
+  },
+  {
+   "beat": "night",
+   "word": "jumped",
+   "offset": 0.0,
+   "prompt": "chain-link fence rattling and a thud landing",
+   "dur": 1.5,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "unlocked",
+   "offset": 0.0,
+   "prompt": "door creaking open slowly",
+   "dur": 1.5,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "worse",
+   "offset": 0.0,
+   "prompt": "small studio audience laugh",
+   "dur": 1.6,
+   "gain": -8
+  }
+ ]
+}

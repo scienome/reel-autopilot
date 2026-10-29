@@ -1,0 +1,49 @@
+{
+ "music": {
+  "prompt": "1950s rock and roll guitar shuffle mixed with spacey theremin UFO sounds, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "Aliens",
+   "offset": 0.0,
+   "prompt": "UFO tractor beam humming and zapping",
+   "dur": 2,
+   "gain": -3
+  },
+  {
+   "beat": "years",
+   "word": "Encore",
+   "offset": 0.0,
+   "prompt": "alien crowd cheering, strange high-pitched voices",
+   "dur": 2,
+   "gain": -4
+  },
+  {
+   "beat": "count",
+   "word": "Twelve",
+   "offset": 0.0,
+   "prompt": "fast counter clicking up",
+   "dur": 1.5,
+   "gain": -4
+  },
+  {
+   "beat": "twist",
+   "word": "were",
+   "offset": 0.0,
+   "prompt": "loud alien snoring",
+   "dur": 1.5,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "requests",
+   "offset": 0.0,
+   "prompt": "drive-through speaker crackle",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

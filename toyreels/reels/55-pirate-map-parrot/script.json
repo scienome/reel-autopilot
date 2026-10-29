@@ -1,0 +1,9 @@
+[{"chapter": "The map", "beats": [
+ {"id": "hook", "phrases": ["A pirate buried his treasure", "and tattooed the map on his own back."]},
+ {"id": "b1", "phrases": ["Problem.", "He can't see his own back."]},
+ {"id": "b2", "phrases": ["Forty years searching.", "With a mirror."]},
+ {"id": "b3", "phrases": ["His parrot knew where it was.", "The whole time."]},
+ {"id": "twist", "phrases": ["The parrot sold the map to a seagull.", "For one cracker."]},
+ {"id": "punch", "phrases": ["That seagull is now the richest bird alive.", "Still steals chips."]},
+ {"id": "cta", "phrases": ["Would you trust your pet with your secrets?"]}
+]}]
