@@ -1,0 +1,9 @@
+[{"chapter": "Musical chairs", "beats": [
+ {"id": "hook", "phrases": ["Five world leaders played musical chairs.", "For the last chair on Earth."]},
+ {"id": "trump", "phrases": ["Trump brought his own chair.", "Gold."]},
+ {"id": "putin", "phrases": ["Putin removed a chair.", "Nobody saw him do it."]},
+ {"id": "kim", "phrases": ["Kim sat on a big red button.", "By accident."]},
+ {"id": "twist", "phrases": ["Confetti.", "Everywhere.", "It was the party button."]},
+ {"id": "punch", "phrases": ["Biden won.", "He'd been sitting there since the start.", "Asleep."]},
+ {"id": "cta", "phrases": ["Who should have won? Wrong answers only."]}
+]}]

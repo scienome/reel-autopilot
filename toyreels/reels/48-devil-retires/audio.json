@@ -1,0 +1,49 @@
+{
+ "music": {
+  "prompt": "Evil heavy metal organ riff that turns into a cozy grandma waltz with a music box, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "retired",
+   "offset": 0.0,
+   "prompt": "evil laugh fading into a gentle old lady giggle",
+   "dur": 2,
+   "gain": -3
+  },
+  {
+   "beat": "rules",
+   "word": "shouting",
+   "offset": 0.0,
+   "prompt": "old lady shushing sound",
+   "dur": 1,
+   "gain": -3
+  },
+  {
+   "beat": "jumper",
+   "word": "soup",
+   "offset": 0.0,
+   "prompt": "slurping soup",
+   "dur": 1.2,
+   "gain": -4
+  },
+  {
+   "beat": "hitler",
+   "word": "Forever",
+   "offset": 0.0,
+   "prompt": "vacuum cleaner running",
+   "dur": 1.5,
+   "gain": -6
+  },
+  {
+   "beat": "twist",
+   "word": "bed",
+   "offset": 0.0,
+   "prompt": "door slam",
+   "dur": 1,
+   "gain": -3
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "music": {
+  "prompt": "Heavy superhero rock riff that slows down like a loading bar, with elevator music in the middle, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "update",
+   "offset": 0.0,
+   "prompt": "computer update chime, the Windows-like startup sound style",
+   "dur": 1.5,
+   "gain": -3
+  },
+  {
+   "beat": "b1",
+   "word": "percent",
+   "offset": 0.0,
+   "prompt": "slow loading beeps, one per second",
+   "dur": 2,
+   "gain": -5
+  },
+  {
+   "beat": "b2",
+   "word": "sandwich",
+   "offset": 0.0,
+   "prompt": "crunchy bite of a sandwich",
+   "dur": 1,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "Restart",
+   "offset": 0.0,
+   "prompt": "computer shutdown sound then a power down whine",
+   "dur": 1.5,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "villain",
+   "offset": 0.0,
+   "prompt": "evil robot voice laugh, no words",
+   "dur": 2,
+   "gain": -4
+  }
+ ]
+}

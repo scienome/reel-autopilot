@@ -1,0 +1,57 @@
+{
+ "music": {
+  "prompt": "Silly circus musical chairs carousel music that stops abruptly several times, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "chairs",
+   "offset": 0.0,
+   "prompt": "carousel organ music stopping with a needle scratch",
+   "dur": 1.5,
+   "gain": -3
+  },
+  {
+   "beat": "trump",
+   "word": "Gold",
+   "offset": 0.0,
+   "prompt": "shiny bling sparkle sound",
+   "dur": 1,
+   "gain": -3
+  },
+  {
+   "beat": "putin",
+   "word": "Nobody",
+   "offset": 0.0,
+   "prompt": "sneaky tiptoe pizzicato",
+   "dur": 1.5,
+   "gain": -4
+  },
+  {
+   "beat": "kim",
+   "word": "button",
+   "offset": 0.0,
+   "prompt": "big button click then an alarm siren",
+   "dur": 1.5,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "Confetti",
+   "offset": 0.0,
+   "prompt": "party poppers and kazoos",
+   "dur": 1.5,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "Asleep",
+   "offset": 0.0,
+   "prompt": "loud snoring",
+   "dur": 1.8,
+   "gain": -3
+  }
+ ]
+}

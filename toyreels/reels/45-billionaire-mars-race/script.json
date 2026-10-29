@@ -1,0 +1,9 @@
+[{"chapter": "The race", "beats": [
+ {"id": "hook", "phrases": ["Musk, Bezos and Zuckerberg raced to Mars.", "Winner owns the planet."]},
+ {"id": "musk", "phrases": ["Musk launched first.", "Forgot the fuel."]},
+ {"id": "bezos", "phrases": ["Bezos launched second.", "His rocket was delivered to the wrong planet."]},
+ {"id": "zuck", "phrases": ["Zuckerberg built Mars in the metaverse.", "Nobody came."]},
+ {"id": "twist", "phrases": ["Musk finally landed.", "A sign was waiting.", "Private property. Rent is due."]},
+ {"id": "punch", "phrases": ["The landlord was a lizard.", "Now Musk sleeps in his rocket."]},
+ {"id": "cta", "phrases": ["Which billionaire goes to Mars? One way."]}
+]}]

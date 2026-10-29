@@ -1,0 +1,49 @@
+{
+ "music": {
+  "prompt": "Epic space race orchestral countdown music with heroic brass, turning silly and deflated, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "raced",
+   "offset": 0.0,
+   "prompt": "rocket launch roar with countdown beeps",
+   "dur": 2,
+   "gain": -3
+  },
+  {
+   "beat": "musk",
+   "word": "fuel",
+   "offset": 0.0,
+   "prompt": "engine sputtering and dying with a sad fizzle",
+   "dur": 1.5,
+   "gain": -3
+  },
+  {
+   "beat": "bezos",
+   "word": "wrong",
+   "offset": 0.0,
+   "prompt": "doorbell and a package thud",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "zuck",
+   "word": "Nobody",
+   "offset": 0.0,
+   "prompt": "lonely tumbleweed wind whistle",
+   "dur": 2,
+   "gain": -5
+  },
+  {
+   "beat": "twist",
+   "word": "Rent",
+   "offset": 0.0,
+   "prompt": "cash register cha-ching",
+   "dur": 1,
+   "gain": -3
+  }
+ ]
+}

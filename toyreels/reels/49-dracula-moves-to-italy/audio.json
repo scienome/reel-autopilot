@@ -1,0 +1,49 @@
+{
+ "music": {
+  "prompt": "Spooky vampire harpsichord that turns into a cheesy Italian mandolin tarantella, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "Italy",
+   "offset": 0.0,
+   "prompt": "bats flapping and a creepy organ chord",
+   "dur": 1.5,
+   "gain": -3
+  },
+  {
+   "beat": "garlic",
+   "word": "coffee",
+   "offset": 0.0,
+   "prompt": "man coughing and choking dramatically",
+   "dur": 1.5,
+   "gain": -3
+  },
+  {
+   "beat": "nonna",
+   "word": "spoon",
+   "offset": 0.0,
+   "prompt": "wooden spoon bonk on a head",
+   "dur": 0.8,
+   "gain": -3
+  },
+  {
+   "beat": "chef",
+   "word": "back",
+   "offset": 0.0,
+   "prompt": "chomp bite and a yelp",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "Zero",
+   "offset": 0.0,
+   "prompt": "lonely cricket chirps",
+   "dur": 2,
+   "gain": -6
+  }
+ ]
+}

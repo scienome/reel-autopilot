@@ -1,0 +1,9 @@
+[{"chapter": "The update", "beats": [
+ {"id": "hook", "phrases": ["Iron Dude's suit started an update", "in the middle of a fight."]},
+ {"id": "b1", "phrases": ["Installing.", "Two percent."]},
+ {"id": "b2", "phrases": ["The villain waited.", "Then made a sandwich."]},
+ {"id": "b3", "phrases": ["Ninety nine percent.", "Restart required."]},
+ {"id": "twist", "phrases": ["The suit restarted", "and joined the villain.", "Better Wi-Fi."]},
+ {"id": "punch", "phrases": ["Now Iron Dude fights in his dressing gown.", "Crime is down. Everyone's laughing too hard."]},
+ {"id": "cta", "phrases": ["Update now, or remind me later?"]}
+]}]
