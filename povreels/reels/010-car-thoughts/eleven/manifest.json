@@ -1,0 +1,38 @@
+{
+ "music-93ff3f0a8b53.mp3": {
+  "prompt": "Laid-back funky road-trip comedy underscore with slap bass and wah guitar, turning into a nostalgic warm acoustic guitar section in the middle, then funky again, no vocals",
+  "music_length_ms": 36100,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-fdc292195689.mp3": {
+  "text": "car engine starting and idling",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-939c120bd664.mp3": {
+  "text": "car bumper bumping into another car, small crunch",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-f9c2182020cb.mp3": {
+  "text": "small audience ooh then laugh",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-a0943b593890.mp3": {
+  "text": "car driving on a highway with windows down, wind",
+  "duration_seconds": 3,
+  "prompt_influence": 0.5
+ },
+ "sfx-7b33962838aa.mp3": {
+  "text": "happy car horn double honk",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-bfd5c2ee11ec.mp3": {
+  "text": "car wash spraying water and brushes",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ }
+}
