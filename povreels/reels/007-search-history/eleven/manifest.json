@@ -1,0 +1,38 @@
+{
+ "music-e14a21aadf90.mp3": {
+  "prompt": "Light quirky suspense comedy underscore with plucked strings and soft synth bleeps, a tender emotional piano section in the middle, then a comedic sting at the end, no vocals",
+  "music_length_ms": 29120,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-1d1cfd9cc38f.mp3": {
+  "text": "computer keyboard typing then a search whoosh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-20364584c0f6.mp3": {
+  "text": "restaurant ambience with cutlery clinking",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-ecdfa68b0b67.mp3": {
+  "text": "ominous low brass hit",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-551bb6876334.mp3": {
+  "text": "phone call line hum, quiet",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-c448c5fb4f23.mp3": {
+  "text": "soft emotional piano chord",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-1d6826f26051.mp3": {
+  "text": "party music record scratch then dead silence",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ }
+}
