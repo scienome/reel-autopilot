@@ -1,0 +1,28 @@
+{
+ "music-423f74c176b3.mp3": {
+  "prompt": "Epic Indian Mahabharata cinematic underscore: dhol and war drums, conch shells, bansuri flute, sitar, tense strings and choir swells, temple bells, mysterious royal birth, eerie demoness magic, a long brutal wrestling battle, a clever hint and a final blow, no vocals",
+  "music_length_ms": 51340,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-0ec3c4cd1d19.mp3": {
+  "text": "eerie magical fusing sound",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-a7d7a5fe0660.mp3": {
+  "text": "straw tearing snap",
+  "duration_seconds": 1.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-31bb990d09d5.mp3": {
+  "text": "massive wrestling slam impact",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
