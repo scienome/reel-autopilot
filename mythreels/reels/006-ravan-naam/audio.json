@@ -1,0 +1,51 @@
+{
+ "music": {
+  "prompt": "Dark epic Indian mythological cinematic underscore for a demon king saga: tanpura drone, deep war drums and taiko, menacing low brass, tabla, shehnai and choir swells, temple bells, awe-struck Himalayan majesty with Shiva damru rhythm, a huge cry, then devotional, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "b2",
+   "word": "रुक",
+   "prompt": "flying vehicle engine stalling and stopping",
+   "dur": 1.5,
+   "gain": -5
+  },
+  {
+   "beat": "b3",
+   "word": "उठा",
+   "prompt": "mountain rumbling and rocks cracking, earthquake",
+   "dur": 2.0,
+   "gain": -4
+  },
+  {
+   "beat": "b4",
+   "word": "अँगूठा",
+   "prompt": "deep divine boom and bell",
+   "dur": 1.5,
+   "gain": -5
+  },
+  {
+   "beat": "b5",
+   "word": "चीख",
+   "prompt": "monstrous agonised roar echoing across mountains",
+   "dur": 2.0,
+   "gain": -4
+  },
+  {
+   "beat": "sh",
+   "word": "रावण।",
+   "prompt": "damru drum roll and temple bell",
+   "dur": 1.8,
+   "gain": -5
+  },
+  {
+   "beat": "nx",
+   "word": "अगले",
+   "prompt": "deep suspense drum hit and rising whoosh",
+   "dur": 1.8,
+   "gain": -6
+  }
+ ]
+}

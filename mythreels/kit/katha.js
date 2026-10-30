@@ -20,10 +20,20 @@
     const pulse = (t, a, d = 0.35) => { const k = (t - a) / d; return k < 0 || k > 1 ? 0 : Math.sin(k * Math.PI); };
     const partTwo = (ctx, W, H_, t, a, txt = 'भाग 2?') => { const u = popU(t, a, 0.35); if (u <= 0) return; ctx.fillStyle = `rgba(20,4,0,${0.4 * u})`; ctx.fillRect(0, 0, W, H_); MYTH.card(ctx, W, H_, t, a, txt, { size: 96, y: 320 }); };
     const char = (ctx, who, x, y, s, t, oo = {}) => MYTH.person(ctx, x, y, s, Object.assign({ who, t }, oo, { face: Object.assign({ talk: talking(oo.as || who, t) }, oo.face || {}) }));
-    const h = { V, at, first, WORDS, RAW, talking, pulse, spanOf, char, AT: MYTH.armsAt, card: MYTH.card, partTwo };
+    // shortcuts: cameras, one / two characters, a card on a word
+    const CAM = { wide: [[360, 790, 1.0], [360, 770, 1.1]], mid: [[360, 800, 1.3], [360, 780, 1.45]], close: (x = 360) => [[x, 700, 1.9], [x, 690, 2.15]], push: [[360, 800, 1.0], [360, 720, 1.5]] };
+    const one = (who, oo = {}, x = 360, s = 0.85, y = 1170) => (ctx, t) => char(ctx, who, x, y, s, t, typeof oo === 'function' ? oo(t) : oo);
+    const two = (a, ao = {}, b, bo = {}, s = 0.72) => (ctx, t) => { char(ctx, a, 210, 1170, s, t, typeof ao === 'function' ? ao(t) : ao); char(ctx, b, 510, 1170, s, t, Object.assign({ flip: true }, typeof bo === 'function' ? bo(t) : bo)); };
+    const cardOn = (beat, word, txt, oo = {}) => (ctx, W, H_, t) => MYTH.card(ctx, W, H_, t, typeof word === 'number' ? at(beat, word) : V(beat, word), txt, Object.assign({ y: 320, size: 62 }, oo));
+    const h = { V, at, first, WORDS, RAW, talking, pulse, spanOf, char, AT: MYTH.armsAt, card: MYTH.card, partTwo, CAM, one, two, cardOn };
     const SHOTS = build(h), SPK = Object.assign({ hanuman: ['हनुमान', '#ff9a3c'], balhanuman: ['हनुमान', '#ff9a3c'], krishna: ['कृष्ण', '#7ab4ff'], balkrishna: ['कान्हा', '#7ab4ff'], rama: ['श्री राम', '#7ad0e0'],
       shiva: ['महादेव', '#b8d4f0'], parvati: ['माता पार्वती', '#ff8a9a'], sita: ['माता सीता', '#ffb070'], ganesha: ['गणेश', '#ffb08a'], indra: ['इंद्र', '#ffe08a'], vayu: ['पवन देव', '#cfe8ff'], brahma: ['ब्रह्मा', '#ffd0a0'],
-      ravana: ['रावण', '#ff6a5a'], arjuna: ['अर्जुन', '#f0f0f0'], yashoda: ['माँ यशोदा', '#8ae0b0'], sage: ['ऋषि', '#ffb060'], asura: ['असुर', '#a8e070'], shani: ['शनि देव', '#9ab0ff'], kumbhakarna: ['कुंभकर्ण', '#ff8a5a'], saraswati: ['माता सरस्वती', '#fff3c0'], barbarik: ['बर्बरीक', '#ffd070'], mandodari: ['मंदोदरी', '#ff8ac0'] }, o.spk || {}), noSub = o.noSub || [], GOLDW = (o.gold || []).map(clean);
+      ravana: ['रावण', '#ff6a5a'], arjuna: ['अर्जुन', '#f0f0f0'], yashoda: ['माँ यशोदा', '#8ae0b0'], sage: ['ऋषि', '#ffb060'], asura: ['असुर', '#a8e070'], shani: ['शनि देव', '#9ab0ff'], kumbhakarna: ['कुंभकर्ण', '#ff8a5a'], saraswati: ['माता सरस्वती', '#fff3c0'], barbarik: ['बर्बरीक', '#ffd070'], mandodari: ['मंदोदरी', '#ff8ac0'],
+      vali: ['बाली', '#f4c060'], kubera: ['कुबेर', '#ffe08a'], sahasrabahu: ['सहस्रबाहु', '#ffb08a'], meghnad: ['मेघनाद', '#d0a0ff'], lakshman: ['लक्ष्मण', '#ffd090'], vedavati: ['वेदवती', '#ffb070'], rambha: ['रंभा', '#ff9ac8'], nalakubara: ['नलकूबर', '#9ad0ff'],
+      jaya: ['जय', '#ffe08a'], kumara: ['सनत्कुमार', '#ffb070'], shurpanakha: ['शूर्पणखा', '#ff8ac0'], nandi: ['नंदी', '#f4f0e0'], ghatotkach: ['घटोत्कच', '#ff9a6a'], karna: ['कर्ण', '#ffd070'], bhima: ['भीम', '#ffb070'],
+      draupadi: ['द्रौपदी', '#ff8a9a'], drona: ['द्रोणाचार्य', '#f0f0f0'], ekalavya: ['एकलव्य', '#a8e070'], abhimanyu: ['अभिमन्यु', '#fff0c0'], iravan: ['इरावन', '#7ae0d0'], ulupi: ['उलूपी', '#7ae0d0'], duryodhana: ['दुर्योधन', '#d0a0ff'],
+      yuyutsu: ['युयुत्सु', '#b0e090'], vikarna: ['विकर्ण', '#d0a0ff'], babruvahana: ['बभ्रुवाहन', '#90e0a0'], shikhandi: ['शिखंडी', '#ff9ac8'], amba: ['अंबा', '#ff8a9a'], bhishma: ['भीष्म', '#f4f4f4'], bhagadatta: ['भगदत्त', '#9ad0ff'],
+      jarasandha: ['जरासंध', '#ff8a6a'], shalya: ['शल्य', '#9ad0ff'], vidura: ['विदुर', '#f4f4f0'], yama: ['यमराज', '#9ae0c0'], ashwatthama: ['अश्वत्थामा', '#9ae8ff'], dhritarashtra: ['धृतराष्ट्र', '#ffe08a'], arjuna: ['अर्जुन', '#f0f0f0'] }, o.spk || {}), noSub = o.noSub || [], GOLDW = (o.gold || []).map(clean);
     const SH = BEATS.filter((b) => SHOTS[b.id]).map((b, i) => [b.id, i ? first(b.id) - 0.06 : 0]);
     const shotAt = makeShotAt(SH, DURATION);
     const shotCam = (ctx, a, b, u) => { const k = H.ease.inOut(u), cx = H.lerp(a[0], b[0], k), cy = H.lerp(a[1], b[1], k), z = H.lerp(a[2], b[2], k); ctx.translate(360, 640); ctx.scale(z, z); ctx.translate(-cx, -cy); };

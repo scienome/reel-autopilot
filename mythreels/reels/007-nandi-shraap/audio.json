@@ -1,0 +1,44 @@
+{
+ "music": {
+  "prompt": "Dark epic Indian mythological cinematic underscore for a demon king saga: tanpura drone, deep war drums and taiko, menacing low brass, tabla, shehnai and choir swells, temple bells, mocking laughter turning ominous, a curse, then fire and war drums, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "b2",
+   "word": "ठहाका",
+   "prompt": "evil booming laughter echo",
+   "dur": 1.8,
+   "gain": -6
+  },
+  {
+   "beat": "nd",
+   "word": "नाश",
+   "prompt": "deep ominous curse boom with thunder",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "b4",
+   "word": "लंका",
+   "prompt": "huge fire roaring, city burning",
+   "dur": 2.5,
+   "gain": -5
+  },
+  {
+   "beat": "b4",
+   "word": "सेतु",
+   "prompt": "monkey army roaring and stones splashing into the sea",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "nx",
+   "word": "अगले",
+   "prompt": "deep suspense drum hit and rising whoosh",
+   "dur": 1.8,
+   "gain": -6
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "music": {
+  "prompt": "Dark epic Indian mythological cinematic underscore for a demon king saga: tanpura drone, deep war drums and taiko, menacing low brass, tabla, shehnai and choir swells, temple bells, deep fire ritual mood, dark and devotional, then triumphant, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "h1",
+   "word": "आग",
+   "prompt": "roaring sacred fire with crackling flames",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "b2",
+   "word": "अग्नि",
+   "prompt": "fire whoosh flare up",
+   "dur": 1.5,
+   "gain": -5
+  },
+  {
+   "beat": "b4",
+   "word": "प्रकट",
+   "prompt": "divine choir swell and a deep cosmic boom",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "rv",
+   "word": "कोई",
+   "prompt": "evil laugh echo",
+   "dur": 1.8,
+   "gain": -8
+  },
+  {
+   "beat": "end",
+   "word": "श्री",
+   "prompt": "heroic conch shell and drums",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "nx",
+   "word": "अगले",
+   "prompt": "deep suspense drum hit and rising whoosh",
+   "dur": 1.8,
+   "gain": -6
+  }
+ ]
+}
