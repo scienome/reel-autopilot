@@ -1,0 +1,38 @@
+{
+ "music-8ec147d76fc8.mp3": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a heroic mission-impossible style section that falls apart, no vocals",
+  "music_length_ms": 23620,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-382947798acb.mp3": {
+  "text": "foam padding squeak",
+  "duration_seconds": 0.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-7b4d280f8a40.mp3": {
+  "text": "padlock clicking shut",
+  "duration_seconds": 0.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-1b5dd8ad09a1.mp3": {
+  "text": "fridge handle rattling, locked",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-c09040356bdb.mp3": {
+  "text": "short sitcom studio audience laugh burst",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-9b359baa2583.mp3": {
+  "text": "muffled knocking from inside a cupboard",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-fb8143bb77b8.mp3": {
+  "text": "sitcom studio audience big laugh",
+  "duration_seconds": 2.2,
+  "prompt_influence": 0.5
+ }
+}
