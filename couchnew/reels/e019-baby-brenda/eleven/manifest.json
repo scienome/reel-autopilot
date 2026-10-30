@@ -1,0 +1,38 @@
+{
+ "music-6c3e00f0caf4.mp3": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a tender lullaby that keeps getting interrupted by chaos, then a smug ending, no vocals",
+  "music_length_ms": 22780,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-147623fc3c0d.mp3": {
+  "text": "soft baby coo",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-f37fec8936ae.mp3": {
+  "text": "newborn baby crying loudly",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-1f02efa0c122.mp3": {
+  "text": "baby screaming very loudly",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-68470ec04286.mp3": {
+  "text": "sudden silence then a single soft music box note",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-c09040356bdb.mp3": {
+  "text": "short sitcom studio audience laugh burst",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-fb8143bb77b8.mp3": {
+  "text": "sitcom studio audience big laugh",
+  "duration_seconds": 2.2,
+  "prompt_influence": 0.5
+ }
+}
