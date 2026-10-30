@@ -1,0 +1,38 @@
+{
+ "music-4af5315bc1c2.mp3": {
+  "prompt": "Warm playful family comedy music with clarinet and pizzicato, turning into a soft emotional piano, then happy, no vocals",
+  "music_length_ms": 27780,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-09f5a2915fda.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-b97657de96da.mp3": {
+  "text": "detective suspense sting",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-86fa73d089af.mp3": {
+  "text": "phone ringing",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-4bf59be96a80.mp3": {
+  "text": "phone hang up beep",
+  "duration_seconds": 0.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-bcb41468ef59.mp3": {
+  "text": "phone ringing",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-99f6d994c1c0.mp3": {
+  "text": "small audience laugh and aww",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
