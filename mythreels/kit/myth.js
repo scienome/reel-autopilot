@@ -42,7 +42,7 @@
       shani: { skin: '#3a4466', sh: '#283050', hair: '#0e1020', cloth: '#1e2a6a', cloth2: '#f4c430', crown: 'tall', tilak: 'dot', longHair: true, mustache: true },
       kumbhakarna: { skin: '#8a5a3e', sh: '#6a422c', hair: '#120c0c', cloth: '#6a2a1a', cloth2: '#f4c430', crown: 'small', mustache: true, muscle: 1.4, h: 1.12, belly: true, tilak: 'shaiv' },
       saraswati: { skin: '#f2c8a4', sh: '#d8a882', hair: '#1c1214', cloth: '#f8f6ee', cloth2: '#f4c430', girl: true, crown: 'small', tilak: 'dot' },
-      barbarik: { skin: '#c8906a', sh: '#a8724c', hair: '#1c1214', cloth: '#f4c430', cloth2: '#c8332a', crown: 'tall', tilak: 'vaishnav', longHair: true, armor: true },
+      barbarik: { skin: '#c8906a', sh: '#a8724c', hair: '#1c1214', cloth: '#f4c430', cloth2: '#c8332a', crown: 'tall', tilak: 'vaishnav', longHair: true, armor: true, mustache: true },
       mandodari: { skin: '#e9b48a', sh: '#cf9468', hair: '#1c1214', cloth: '#7a1a4a', cloth2: '#f4c430', girl: true, crown: 'small', tilak: 'dot' },
       villager: { skin: '#c88c62', sh: '#aa6e46', hair: '#1c1214', cloth: '#f2ead8', cloth2: '#d8a030', turban: '#d8402a', mustache: true },
     };

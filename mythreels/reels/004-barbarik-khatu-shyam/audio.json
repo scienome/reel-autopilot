@@ -1,0 +1,12 @@
+{
+ "music": {"prompt": "Epic Indian Mahabharata cinematic underscore: war drums, dhol and taiko, conch shells, soaring bansuri flute for Krishna, tense strings during the test, turning deeply emotional and devotional with choir and soft sitar at the sacrifice, ending in a warm devotional glow, no vocals", "gain": -7, "tail": 3},
+ "sfx": [
+  {"beat": "h1", "word": "मिनट", "prompt": "a single glowing arrow whooshing past at enormous speed", "dur": 1.5, "gain": -4},
+  {"beat": "b2", "word": "तीन", "prompt": "magical divine chime, three arrows glowing", "dur": 1.4, "gain": -6},
+  {"beat": "b4", "word": "बचता।", "offset": -0.4, "prompt": "huge battlefield explosion fading to silence and wind", "dur": 2.5, "gain": -5},
+  {"beat": "b5", "word": "छेद", "prompt": "arrow zipping through hundreds of leaves rustling rapidly", "dur": 1.8, "gain": -4},
+  {"beat": "b6", "word": "घूमने", "prompt": "arrow circling and humming magically", "dur": 1.6, "gain": -5},
+  {"beat": "b7", "word": "शीश।", "offset": 0.1, "prompt": "deep emotional gong and a hushed silence", "dur": 2.0, "gain": -6},
+  {"beat": "end", "word": "जय", "prompt": "temple bells ringing and conch shell", "dur": 2.5, "gain": -7}
+ ]
+}
