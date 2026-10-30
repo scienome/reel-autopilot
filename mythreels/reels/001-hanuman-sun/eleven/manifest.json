@@ -1,0 +1,58 @@
+{
+ "music-605ac938b8a1.mp3": {
+  "prompt": "Epic Indian mythological cinematic underscore for a children's legend: tabla groove, bansuri flute melody, sitar, shehnai and choir swells, temple bells, playful and wondrous at first, turning dark and dramatic with big taiko and thunder drums, ending on a heroic cliffhanger, no vocals",
+  "music_length_ms": 58020,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-37ccd87fd0f8.mp3": {
+  "text": "deep magical gulp with a cosmic boom",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-b33808ec4e9b.mp3": {
+  "text": "cartoon tummy rumble growl",
+  "duration_seconds": 1.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-de71d98d40e7.mp3": {
+  "text": "fast magical whoosh flying upward into the sky",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-dc904fc19141.mp3": {
+  "text": "crowd of gods gasping in shock, heavenly reverb",
+  "duration_seconds": 1.4,
+  "prompt_influence": 0.5
+ },
+ "sfx-c44ddee838e8.mp3": {
+  "text": "giant cosmic gulp swallowing a fireball",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-6b8ee17b9338.mp3": {
+  "text": "deep ominous drone as the world goes dark",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-4a12a5f2f21c.mp3": {
+  "text": "massive thunderclap and crackling lightning",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-7eb1f9f961c3.mp3": {
+  "text": "lightning strike impact with an electric zap",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-7abf017183dc.mp3": {
+  "text": "howling wind suddenly stopping into total silence",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-9e4ab8d8c059.mp3": {
+  "text": "conch shell blowing, temple bells ringing",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ }
+}
