@@ -1,0 +1,28 @@
+{
+ "music-01326508eac8.mp3": {
+  "prompt": "Epic Indian Mahabharata cinematic underscore: dhol and war drums, conch shells, bansuri flute, sitar, tense strings and choir swells, temple bells, thundering elephant charge, an unstoppable divine weapon, a breathtaking moment of grace, ending serene, no vocals",
+  "music_length_ms": 46060,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-717524e055f1.mp3": {
+  "text": "giant war elephant trumpeting and stomping",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-5a2061c33d15.mp3": {
+  "text": "divine weapon launching with a roar",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-d56f905bcd69.mp3": {
+  "text": "magical chime and soft flowers rustling, choir",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
