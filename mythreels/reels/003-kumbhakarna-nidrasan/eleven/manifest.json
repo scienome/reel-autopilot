@@ -39,5 +39,16 @@
   "text": "war drums and conch shells, battle horns",
   "duration_seconds": 2.5,
   "prompt_influence": 0.5
+ },
+ "music-f327c65b6b52.mp3": {
+  "prompt": "Playful yet epic Indian mythological underscore: tanpura drone, tabla, deep rakshasa drums, mysterious santoor and flute for the goddess, a comic sleepy bassoon moment, turning grim and heroic at the end, no vocals",
+  "music_length_ms": 56040,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
  }
 }
