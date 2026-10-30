@@ -49,5 +49,16 @@
   "text": "conch shell blowing, temple bells ringing",
   "duration_seconds": 2.5,
   "prompt_influence": 0.5
+ },
+ "music-41ea6d880aac.mp3": {
+  "prompt": "Dark epic Indian mythological cinematic underscore: low ominous drones, heavy war drums and taiko, tanpura, menacing brass for a demon king, turning heroic and divine with shehnai, temple bells and choir when Hanuman arrives, ending with fire and triumph, no vocals",
+  "music_length_ms": 58440,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
  }
 }
