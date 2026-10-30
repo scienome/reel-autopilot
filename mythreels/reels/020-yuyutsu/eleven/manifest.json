@@ -1,0 +1,28 @@
+{
+ "music-be401e091d5d.mp3": {
+  "prompt": "Epic Indian Mahabharata cinematic underscore: dhol and war drums, conch shells, bansuri flute, sitar, tense strings and choir swells, temple bells, tense pre-battle standoff, a brave choice, war drums, then solemn survival, no vocals",
+  "music_length_ms": 42400,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-8ee22164a6ed.mp3": {
+  "text": "conch shell call echoing over a battlefield",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-6f9d437304cc.mp3": {
+  "text": "chariot wheels turning and horses neighing",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-e1defc529dbc.mp3": {
+  "text": "war drums fading into wind",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
