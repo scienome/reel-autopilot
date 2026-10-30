@@ -1,0 +1,15 @@
+{
+ "music": {"prompt": "Epic Indian mythological cinematic underscore for a children's legend: tabla groove, bansuri flute melody, sitar, shehnai and choir swells, temple bells, playful and wondrous at first, turning dark and dramatic with big taiko and thunder drums, ending on a heroic cliffhanger, no vocals", "gain": -7, "tail": 3},
+ "sfx": [
+  {"beat": "h1", "word": "निगल", "prompt": "deep magical gulp with a cosmic boom", "dur": 1.6, "gain": -5},
+  {"beat": "b1", "word": "भूख", "prompt": "cartoon tummy rumble growl", "dur": 1.0, "gain": -6},
+  {"beat": "b3", "word": "उड़", "prompt": "fast magical whoosh flying upward into the sky", "dur": 1.6, "gain": -4},
+  {"beat": "b4", "word": "घबरा", "prompt": "crowd of gods gasping in shock, heavenly reverb", "dur": 1.4, "gain": -8},
+  {"beat": "b5", "word": "मुँह", "prompt": "giant cosmic gulp swallowing a fireball", "dur": 1.5, "gain": -4},
+  {"beat": "b6", "word": "अंधेरा", "prompt": "deep ominous drone as the world goes dark", "dur": 2.5, "gain": -6},
+  {"beat": "b7", "word": "वज्र", "prompt": "massive thunderclap and crackling lightning", "dur": 2.0, "gain": -3},
+  {"beat": "b8", "word": "ठोड़ी", "prompt": "lightning strike impact with an electric zap", "dur": 1.5, "gain": -3},
+  {"beat": "b10", "word": "हवा", "prompt": "howling wind suddenly stopping into total silence", "dur": 2.5, "gain": -5},
+  {"beat": "end", "word": "जय", "offset": -0.2, "prompt": "conch shell blowing, temple bells ringing", "dur": 2.5, "gain": -6}
+ ]
+}
