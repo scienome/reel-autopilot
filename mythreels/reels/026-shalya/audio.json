@@ -1,0 +1,30 @@
+{
+ "music": {
+  "prompt": "Epic Indian Mahabharata cinematic underscore: dhol and war drums, conch shells, bansuri flute, sitar, tense strings and choir swells, temple bells, friendly royal march, a cunning trap, a secret pact, then tense taunting on the battlefield, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "b3",
+   "word": "दुर्योधन।",
+   "prompt": "dramatic reveal sting",
+   "dur": 1.4,
+   "gain": -5
+  },
+  {
+   "beat": "end",
+   "word": "ताने",
+   "prompt": "chariot wheels rumbling in battle",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "nx",
+   "word": "अगले",
+   "prompt": "deep suspense drum hit and rising whoosh",
+   "dur": 1.8,
+   "gain": -6
+  }
+ ]
+}

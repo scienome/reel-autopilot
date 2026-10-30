@@ -1,0 +1,37 @@
+{
+ "music": {
+  "prompt": "Epic Indian Mahabharata cinematic underscore: dhol and war drums, conch shells, bansuri flute, sitar, tense strings and choir swells, temple bells, solemn heroic sacrifice, devotional and emotional, a magical transformation, ending sacred, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "b2",
+   "word": "काली",
+   "prompt": "deep temple drum and fire roar",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "b5",
+   "word": "मोहिनी",
+   "prompt": "magical shimmering transformation chime",
+   "dur": 1.8,
+   "gain": -5
+  },
+  {
+   "beat": "end",
+   "word": "पूजा",
+   "prompt": "temple bells and festival drums",
+   "dur": 2.5,
+   "gain": -7
+  },
+  {
+   "beat": "nx",
+   "word": "अगले",
+   "prompt": "deep suspense drum hit and rising whoosh",
+   "dur": 1.8,
+   "gain": -6
+  }
+ ]
+}

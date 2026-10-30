@@ -1,0 +1,37 @@
+{
+ "music": {
+  "prompt": "Epic Indian Mahabharata cinematic underscore: dhol and war drums, conch shells, bansuri flute, sitar, tense strings and choir swells, temple bells, forest determination and devotion, a dazzling archery feat, a painful request, ending in quiet sacrifice, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "b3",
+   "word": "भौंका।",
+   "prompt": "dog barking loudly then a yelp",
+   "dur": 1.4,
+   "gain": -5
+  },
+  {
+   "beat": "b3",
+   "word": "सात",
+   "prompt": "rapid flurry of arrows whooshing",
+   "dur": 1.6,
+   "gain": -5
+  },
+  {
+   "beat": "b5",
+   "word": "अँगूठा।",
+   "prompt": "deep emotional gong",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "nx",
+   "word": "अगले",
+   "prompt": "deep suspense drum hit and rising whoosh",
+   "dur": 1.8,
+   "gain": -6
+  }
+ ]
+}

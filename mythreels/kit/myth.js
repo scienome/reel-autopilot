@@ -221,7 +221,7 @@
       if (c.horns) for (const sd of [-1, 1]) poly(ctx, '#e8dcc0', [[hx + sd * 22, top + 12], [hx + sd * 56, top - 40], [hx + sd * 40, top + 18]], 4);
       if (c.bull) { for (const sd of [-1, 1]) { poly(ctx, '#e8dcc0', [[hx + sd * 26, top + 16], [hx + sd * 64, top - 22], [hx + sd * 44, top + 22]], 4); ell(ctx, c.skin, hx + sd * (rx + 10), hy - 6, 22, 10, sd * 0.4, 4); } }
       eyes(ctx, c, hx, hy, c.blind ? Object.assign({}, f, { eyes: 'closed' }) : f, t, seed, rx);
-      if (c.eyeband) line(ctx, '#c8332a', 7, [[hx - rx, hy - 24], [hx + rx, hy - 24]], false);
+      if (c.eyeband) line(ctx, '#c8332a', 12, [[hx - rx - 4, hy - 16], [hx + rx + 4, hy - 16]]);
       if (c.gem) { const g = ctx.createRadialGradient(hx, hy - ry * 0.55, 1, hx, hy - ry * 0.55, 26); g.addColorStop(0, 'rgba(160,240,255,0.9)'); g.addColorStop(1, 'rgba(160,240,255,0)'); ctx.fillStyle = g; ctx.beginPath(); ctx.arc(hx, hy - ry * 0.55, 26, 0, TAU); ctx.fill(); ell(ctx, '#7ae0ff', hx, hy - ry * 0.55, 7, 9, 0, 2.5); }
       if (c.bull) { ell(ctx, '#f6d8c8', hx, hy + 26, rx * 0.72, ry * 0.42, 0, 4); ell(ctx, '#7a4a3a', hx - 12, hy + 28, 5, 4, 0, 0); ell(ctx, '#7a4a3a', hx + 12, hy + 28, 5, 4, 0, 0); }
       // tilak

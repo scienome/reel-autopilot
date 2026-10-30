@@ -1,0 +1,37 @@
+{
+ "music": {
+  "prompt": "Epic Indian Mahabharata cinematic underscore: dhol and war drums, conch shells, bansuri flute, sitar, tense strings and choir swells, temple bells, night battle chaos, desperate plea, divine weapon, a giant falling, then quiet relief, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "b2",
+   "word": "तबाही",
+   "prompt": "giant monster roaring and an army screaming",
+   "dur": 2.0,
+   "gain": -4
+  },
+  {
+   "beat": "b5",
+   "word": "चला",
+   "prompt": "divine spear launch with thunder",
+   "dur": 1.8,
+   "gain": -3
+  },
+  {
+   "beat": "b6",
+   "word": "गिर",
+   "prompt": "colossal body crashing onto the ground, earthquake",
+   "dur": 2.2,
+   "gain": -3
+  },
+  {
+   "beat": "nx",
+   "word": "अगले",
+   "prompt": "deep suspense drum hit and rising whoosh",
+   "dur": 1.8,
+   "gain": -6
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "music": {
+  "prompt": "Epic Indian Mahabharata cinematic underscore: dhol and war drums, conch shells, bansuri flute, sitar, tense strings and choir swells, temple bells, eerie haunting mystery, dark night violence, a cosmic weapon, a terrible curse, ending with an eerie dawn, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "b2",
+   "word": "मार",
+   "prompt": "ominous night sword strike and silence",
+   "dur": 1.6,
+   "gain": -5
+  },
+  {
+   "beat": "b3",
+   "word": "ब्रह्मास्त्र",
+   "prompt": "cosmic weapon blast, enormous roar",
+   "dur": 2.0,
+   "gain": -3
+  },
+  {
+   "beat": "kr",
+   "word": "भटकोगे...",
+   "prompt": "deep curse boom with wind howl",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "end",
+   "word": "फूल",
+   "prompt": "eerie wind and a single temple bell at dawn",
+   "dur": 2.5,
+   "gain": -5
+  },
+  {
+   "beat": "nx",
+   "word": "अगले",
+   "prompt": "deep suspense drum hit and rising whoosh",
+   "dur": 1.8,
+   "gain": -6
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+KATHA((h) => {
+  const { V, at, first, char, card, CAM, one, two, cardOn, AT } = h;
+  return {
+    h1: { set: 'battle', cam: CAM.push, draw: (ctx, t) => { char(ctx, 'arjuna', 600, 990, 0.55, t, { lean: -Math.PI / 2, arms: 'down', face: { eyes: 'closed', mouth: 'calm' } }); char(ctx, 'babruvahana', 200, 1170, 0.66, t, { holdL: 'bow', arms: { r: 'cover', l: 'rest' }, face: { eyes: 'wide', mouth: 'o' } }); } },
+    b1: { set: 'forest', setOpt: { time: 'day' }, cam: CAM.wide, draw: one('arjuna', { holdL: 'bow', arms: { r: 'point', l: 'rest' }, face: { eyes: 'calm', mouth: 'calm' } }) },
+    b2: { set: 'palace', setOpt: { throne: 360 }, cam: CAM.mid, draw: one('babruvahana', { arms: 'bless', face: { eyes: 'calm', mouth: 'smile' } }), over: cardOn('b2', 'बभ्रुवाहन...', 'बभ्रुवाहन', { y: 300, size: 74 }) },
+    b3: { set: 'palace', cam: CAM.wide, draw: two('babruvahana', { arms: 'namaste', face: { eyes: 'happy', mouth: 'smile' } }, 'arjuna', { holdL: 'bow', arms: { r: 'cross', l: 'rest' }, face: { eyes: 'angry', mouth: 'frown' } }, 0.68) },
+    ar: { set: 'palace', cam: CAM.close(360), shake: V('ar', 'लड़ो'), draw: one('arjuna', { holdL: 'bow', arms: { r: 'point', l: 'rest' }, face: { eyes: 'angry', mouth: 'shout' } }) },
+    b4: { set: 'battle', cam: CAM.wide, shake: V('b4', 'गिर'), draw: (ctx, t) => { const f = H.clamp((t - V('b4', 'गिर')) / 0.6); char(ctx, 'babruvahana', 200, 1170, 0.62, t, { holdL: 'bow', hold: 'arrow', arms: { r: 'draw', l: 'bowL' }, face: { eyes: 'angry', mouth: 'calm' } }); char(ctx, 'arjuna', 540, 1170, 0.62, t, { flip: true, lean: -1.4 * f, holdL: 'bow', arms: f > 0 ? 'open' : { r: 'draw', l: 'bowL' }, face: { eyes: f > 0 ? 'closed' : 'angry', mouth: 'o' } }); } },
+    b5: { set: 'river', setOpt: { night: true }, cam: CAM.wide, draw: (ctx, t) => { char(ctx, 'arjuna', 640, 990, 0.5, t, { lean: -Math.PI / 2, arms: 'down', face: { eyes: t > V('b5', 'जीवित') ? 'open' : 'closed', mouth: 'calm' } }); char(ctx, 'ulupi', 200, 1170, 0.66, t, { halo: true, arms: { r: 'point', l: 'bless' }, face: { eyes: 'calm', mouth: 'calm' } }); const g = ctx.createRadialGradient(330, 900, 4, 330, 900, 80); g.addColorStop(0, 'rgba(140,255,220,0.95)'); g.addColorStop(1, 'rgba(140,255,220,0)'); ctx.fillStyle = g; ctx.beginPath(); ctx.arc(330, 900, 80, 0, 7); ctx.fill(); },
+      over: cardOn('b5', 'नागमणि', 'नागमणि', { y: 300, size: 76 }) },
+    end: { set: 'heaven', cam: CAM.wide, draw: (ctx, t) => { char(ctx, 'arjuna', 220, 1170, 0.66, t, { holdL: 'bow', arms: { r: 'bless', l: 'rest' }, face: { eyes: 'happy', mouth: 'smile' } }); char(ctx, 'babruvahana', 500, 1170, 0.62, t, { flip: true, arms: 'namaste', face: { eyes: 'happy', mouth: 'smile' } }); } },
+  };
+}, {"series": "महाभारत के छुपे योद्धा", "part": 7, "hook": "बेटे ने अपने ही\nपिता अर्जुन को मारा!", "next": "स्त्री ने पुरुष बनकर\nजन्म लिया... बदले के लिए", "nextAt": "nx", "gold": ["अर्जुन", "बभ्रुवाहन...", "बभ्रुवाहन", "उलूपी", "नागमणि"]});

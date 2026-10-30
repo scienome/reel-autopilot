@@ -1,0 +1,37 @@
+{
+ "music": {
+  "prompt": "Epic Indian Mahabharata cinematic underscore: dhol and war drums, conch shells, bansuri flute, sitar, tense strings and choir swells, temple bells, tense silent court, a lone brave voice, harsh rebuke, then tragic war and grief, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "vk",
+   "word": "अधर्म",
+   "prompt": "gasp of a royal court crowd",
+   "dur": 1.6,
+   "gain": -8
+  },
+  {
+   "beat": "b3",
+   "word": "डाँटकर",
+   "prompt": "harsh dramatic hit",
+   "dur": 1.2,
+   "gain": -5
+  },
+  {
+   "beat": "end",
+   "word": "वध",
+   "prompt": "heavy mace impact and silence",
+   "dur": 1.8,
+   "gain": -5
+  },
+  {
+   "beat": "nx",
+   "word": "अगले",
+   "prompt": "deep suspense drum hit and rising whoosh",
+   "dur": 1.8,
+   "gain": -6
+  }
+ ]
+}

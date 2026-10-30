@@ -1,0 +1,37 @@
+{
+ "music": {
+  "prompt": "Epic Indian Mahabharata cinematic underscore: dhol and war drums, conch shells, bansuri flute, sitar, tense strings and choir swells, temple bells, royal abduction drama, heartbreak, a burning vow, rebirth, a fateful battle, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "b1",
+   "word": "उठा",
+   "prompt": "chariot rushing away with horses",
+   "dur": 1.6,
+   "gain": -5
+  },
+  {
+   "beat": "am",
+   "word": "मृत्यु",
+   "prompt": "thunderclap and fire roar",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "end",
+   "word": "गिरा",
+   "prompt": "arrows raining and a mighty warrior falling",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "nx",
+   "word": "अगले",
+   "prompt": "deep suspense drum hit and rising whoosh",
+   "dur": 1.8,
+   "gain": -6
+  }
+ ]
+}

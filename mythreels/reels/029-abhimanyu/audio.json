@@ -1,0 +1,44 @@
+{
+ "music": {
+  "prompt": "Epic Indian Mahabharata cinematic underscore: dhol and war drums, conch shells, bansuri flute, sitar, tense strings and choir swells, temple bells, tender lullaby-like mystery in the womb, then epic tragic battle with war drums, ending in heroic glory and choir, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "b3",
+   "word": "नींद",
+   "prompt": "soft lullaby hum fading",
+   "dur": 1.8,
+   "gain": -8
+  },
+  {
+   "beat": "b5",
+   "word": "घुस",
+   "prompt": "heroic charge, war cry and drums",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "b6",
+   "word": "पहिया",
+   "prompt": "chariot wheel being torn off with a crack",
+   "dur": 1.6,
+   "gain": -5
+  },
+  {
+   "beat": "end",
+   "word": "अमर",
+   "prompt": "heroic choir swell and conch",
+   "dur": 2.5,
+   "gain": -5
+  },
+  {
+   "beat": "nx",
+   "word": "महाभारत",
+   "prompt": "deep suspense drum hit and rising whoosh",
+   "dur": 1.8,
+   "gain": -6
+  }
+ ]
+}

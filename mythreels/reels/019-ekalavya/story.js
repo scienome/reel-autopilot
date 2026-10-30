@@ -1,0 +1,13 @@
+KATHA((h) => {
+  const { V, at, first, char, card, CAM, one, two, cardOn, AT } = h;
+  return {
+    h1: { set: 'forest', setOpt: { time: 'day' }, cam: CAM.push, draw: one('ekalavya', { holdL: 'bow', hold: 'arrow', arms: { r: 'draw', l: 'bowL' }, face: { eyes: 'calm', mouth: 'calm' } }) },
+    b1: { set: 'forest', setOpt: { time: 'day', hut: 560 }, cam: CAM.wide, draw: two('ekalavya', { arms: 'namaste', face: { eyes: 'open', mouth: 'smile' } }, 'drona', { arms: { r: 'point', l: 'hips' }, face: { eyes: 'angry', mouth: 'frown' } }, 0.68) },
+    b2: { set: 'forest', setOpt: { time: 'dusk' }, cam: CAM.wide, draw: (ctx, t) => { char(ctx, 'drona', 520, 1170, 0.66, t, { flip: true, arms: 'bless', style: { skin: '#b08a6a', sh: '#8a6a4e', hair: '#9a8a7a', beard: '#9a8a7a', cloth: '#a88a6a', cloth2: '#8a6a4a', armor: false }, face: { eyes: 'calm', mouth: 'calm' } }); char(ctx, 'ekalavya', 200, 1170, 0.62, t, { holdL: 'bow', hold: 'arrow', arms: { r: 'draw', l: 'bowL' }, face: { eyes: 'calm' } }); } },
+    b3: { set: 'forest', setOpt: { time: 'day' }, cam: CAM.mid, shake: V('b3', 'भौंका।'), draw: (ctx, t) => { char(ctx, 'ekalavya', 220, 1170, 0.66, t, { holdL: 'bow', hold: 'arrow', arms: { r: 'draw', l: 'bowL' }, face: { eyes: 'angry', mouth: 'calm' } }); const u = H.clamp((t - V('b3', 'सात')) / 0.6); for (let i = 0; i < 7; i++) { if (u <= i / 7) continue; ctx.save(); ctx.translate(530, 1000 - i * 6); ctx.rotate(Math.PI + (i - 3) * 0.06); ctx.scale(0.4, 0.4); MYTH.ITEMS.arrow(ctx); ctx.restore(); } MYTH.ell(ctx, '#c89a6a', 570, 1060, 60, 40, 0, 5); MYTH.ell(ctx, '#c89a6a', 600, 1010, 34, 30, 0, 5); },
+      over: cardOn('b3', 'सात', '7 बाण', { y: 300, size: 74 }) },
+    b4: { set: 'forest', setOpt: { time: 'day' }, cam: CAM.close(360), draw: one('arjuna', { holdL: 'bow', arms: { r: 'cover', l: 'rest' }, face: { eyes: 'wide', mouth: 'o' } }) },
+    b5: { set: 'forest', setOpt: { time: 'dusk' }, cam: CAM.wide, draw: two('drona', { arms: { r: 'open', l: 'hips' }, face: { eyes: 'calm', mouth: 'calm' } }, 'ekalavya', { arms: 'namaste', face: { eyes: 'wide', mouth: 'o' } }, 0.68), over: cardOn('b5', 'अँगूठा।', 'गुरु दक्षिणा: अँगूठा', { y: 300, size: 54 }) },
+    end: { set: 'forest', setOpt: { time: 'dusk' }, cam: CAM.mid, draw: one('ekalavya', { arms: 'namaste', glow: 'rgba(255,220,150,0.4)', face: { eyes: 'closed', mouth: 'smile' } }), over: (ctx, W, H_, t) => MYTH.petals(ctx, W, t, V('end', 'अँगूठा'), 26) },
+  };
+}, {"series": "महाभारत के छुपे योद्धा", "part": 4, "hook": "एक कुत्ते का भौंकना...\nऔर कटा अँगूठा!", "next": "कौरवों का भाई जो\nपांडवों की तरफ़ लड़ा!", "nextAt": "nx", "gold": ["एकलव्य", "द्रोण", "सात", "अँगूठा।", "अँगूठा", "अर्जुन"]});

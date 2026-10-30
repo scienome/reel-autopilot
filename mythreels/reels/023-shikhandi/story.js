@@ -1,0 +1,12 @@
+KATHA((h) => {
+  const { V, at, first, char, card, CAM, one, two, cardOn, AT } = h;
+  return {
+    h1: { set: 'battle', cam: CAM.push, draw: one('shikhandi', { holdL: 'bow', hold: 'arrow', arms: { r: 'draw', l: 'bowL' }, face: { eyes: 'angry', mouth: 'calm' } }) },
+    b1: { set: 'court', cam: CAM.wide, draw: (ctx, t) => { char(ctx, 'bhishma', 180, 1170, 0.6, t, { arms: { r: 'point', l: 'hips' }, face: { eyes: 'calm', mouth: 'calm' } }); for (let i = 0; i < 3; i++) char(ctx, i ? 'parvati' : 'amba', 400 + i * 110, 1180, 0.5, t, { flip: true, arms: 'cover', face: { eyes: 'wide', mouth: 'o' }, style: i ? { cloth: ['#d8283c', '#f08a2a', '#2f9a6a'][i] } : {} }); } },
+    b2: { set: 'court', cam: CAM.close(360), draw: one('amba', { arms: 'cover', face: { eyes: 'sad', mouth: 'frown', tears: true } }) },
+    b3: { set: 'court', cam: CAM.wide, draw: two('amba', { arms: 'namaste', face: { eyes: 'sad', mouth: 'open' } }, 'bhishma', { arms: { r: 'bless', l: 'down' }, face: { eyes: 'closed', mouth: 'calm' } }, 0.68), over: cardOn('b3', 'ब्रह्मचर्य', 'भीष्म प्रतिज्ञा', { y: 300, size: 64 }) },
+    am: { set: 'forest', setOpt: { time: 'night' }, cam: [[360, 700, 1.9], [360, 680, 2.3]], shake: V('am', 'मृत्यु'), draw: (ctx, t) => { MYTH.flame(ctx, 200, 1250, 1.3, t); MYTH.flame(ctx, 520, 1250, 1.3, t + 1); char(ctx, 'amba', 360, 1170, 0.85, t, { glow: 'rgba(255,120,60,0.4)', arms: { r: 'point', l: 'fist' }, face: { eyes: 'angry', mouth: 'shout' } }); } },
+    b4: { set: 'kailash', cam: CAM.wide, draw: (ctx, t) => { char(ctx, 'shiva', 360, 1110, 0.5, t, { halo: true, pose: 'sit', arms: { r: 'bless', l: 'down' }, face: { eyes: 'calm', mouth: 'smile' } }); }, over: cardOn('b4', 'शिखंडी', 'शिखंडी', { y: 300, size: 80 }) },
+    end: { set: 'battle', cam: CAM.wide, draw: (ctx, t) => { char(ctx, 'bhishma', 560, 1170, 0.62, t, { flip: true, holdL: 'bow', arms: { r: 'down', l: 'rest' }, face: { eyes: 'closed', mouth: 'calm' } }); char(ctx, 'arjuna', 160, 1170, 0.58, t, { holdL: 'bow', hold: 'arrow', arms: { r: 'draw', l: 'bowL' }, face: { eyes: 'sad' } }); char(ctx, 'shikhandi', 330, 1180, 0.62, t, { holdL: 'bow', arms: { r: 'fist', l: 'rest' }, face: { eyes: 'angry' } }); } },
+  };
+}, {"series": "महाभारत के छुपे योद्धा", "part": 8, "hook": "बदले के लिए स्त्री ने\nपुरुष बनकर जन्म लिया!", "next": "कृष्ण ने अर्जुन के लिए\nअस्त्र छाती पर झेला!", "nextAt": "nx", "gold": ["अंबा", "भीष्म", "शिखंडी", "ब्रह्मचर्य", "मृत्यु"]});

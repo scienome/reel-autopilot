@@ -1,0 +1,37 @@
+{
+ "music": {
+  "prompt": "Epic Indian Mahabharata cinematic underscore: dhol and war drums, conch shells, bansuri flute, sitar, tense strings and choir swells, temple bells, mysterious royal birth, eerie demoness magic, a long brutal wrestling battle, a clever hint and a final blow, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "b3",
+   "word": "जोड़",
+   "prompt": "eerie magical fusing sound",
+   "dur": 1.6,
+   "gain": -5
+  },
+  {
+   "beat": "b5",
+   "word": "चीरा...",
+   "prompt": "straw tearing snap",
+   "dur": 1.0,
+   "gain": -5
+  },
+  {
+   "beat": "end",
+   "word": "कभी",
+   "prompt": "massive wrestling slam impact",
+   "dur": 1.6,
+   "gain": -4
+  },
+  {
+   "beat": "nx",
+   "word": "अगले",
+   "prompt": "deep suspense drum hit and rising whoosh",
+   "dur": 1.8,
+   "gain": -6
+  }
+ ]
+}

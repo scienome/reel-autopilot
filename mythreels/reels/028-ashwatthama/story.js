@@ -1,0 +1,13 @@
+KATHA((h) => {
+  const { V, at, first, char, card, CAM, one, two, cardOn, AT } = h;
+  return {
+    h1: { set: 'forest', setOpt: { time: 'night' }, cam: CAM.push, draw: one('ashwatthama', { arms: 'down', style: { gem: false, cloth: '#6a5a4a', cloth2: '#4a3a2a' }, face: { eyes: 'sad', mouth: 'frown' } }), over: (ctx, W, H_, t) => MYTH.dark(ctx, W, H_, 0.25) },
+    b1: { set: 'battle', cam: CAM.close(360), draw: one('ashwatthama', { arms: 'hips', face: { eyes: 'open', mouth: 'calm' } }), over: cardOn('b1', 'मणि', 'दिव्य मणि', { y: 300, size: 70 }) },
+    b2: { set: 'battle', cam: CAM.wide, draw: (ctx, t) => { char(ctx, 'ashwatthama', 360, 1170, 0.78, t, { hold: 'sword', arms: { r: 'up', l: 'fist' }, face: { eyes: 'angry', mouth: 'grin' } }); }, over: (ctx, W, H_, t) => MYTH.dark(ctx, W, H_, 0.55) },
+    b3: { set: 'battle', cam: CAM.mid, shake: V('b3', 'ब्रह्मास्त्र'), draw: one('ashwatthama', { arms: { r: 'point', l: 'fist' }, face: { eyes: 'angry', mouth: 'shout' } }), over: (ctx, W, H_, t) => { MYTH.shock(ctx, 520, 700, t, V('b3', 'ब्रह्मास्त्र'), 'rgba(255,200,120,'); card(ctx, W, H_, t, V('b3', 'ब्रह्मास्त्र'), 'ब्रह्मास्त्र', { y: 300, size: 74 }); } },
+    b4: { set: 'heaven', cam: CAM.mid, draw: one('krishna', { halo: true, hold: 'chakra', arms: { r: 'up', l: 'bless' }, face: { eyes: 'calm', mouth: 'calm' } }) },
+    kr: { set: 'battle', cam: CAM.close(360), shake: V('kr', 'भटकोगे...'), draw: one('krishna', { halo: true, arms: { r: 'point', l: 'down' }, face: { eyes: 'angry', mouth: 'calm' } }), over: cardOn('kr', 'तीन', '3000 साल', { y: 300, size: 74 }) },
+    b5: { set: 'battle', cam: CAM.close(360), draw: (ctx, t) => { const u = H.clamp((t - V('b5', 'निकाल')) / 0.6); char(ctx, 'ashwatthama', 360, 1170, 0.85, t, { arms: 'cover', style: { gem: u < 0.5 }, face: { eyes: 'closed', mouth: 'shout', tears: true } }); }, over: (ctx, W, H_, t) => MYTH.dark(ctx, W, H_, 0.3) },
+    end: { set: 'forest', setOpt: { time: 'dawn' }, cam: CAM.wide, draw: (ctx, t) => { MYTH.ell(ctx, '#9aa4b4', 470, 1130, 34, 56, 0, 5); for (let i = 0; i < 6; i++) MYTH.ell(ctx, i % 2 ? '#ff8a3a' : '#f4c430', 450 + i * 8, 1085 + (i % 3) * 6, 8, 8, 0, 2); ctx.save(); ctx.globalAlpha = 0.35; char(ctx, 'ashwatthama', 260, 1170, 0.66, t, { arms: 'namaste', style: { gem: false, cloth: '#6a5a4a' }, face: { eyes: 'closed', mouth: 'calm' } }); ctx.restore(); } },
+  };
+}, {"series": "महाभारत के छुपे योद्धा", "part": 13, "hook": "महाभारत का एक योद्धा\nआज भी ज़िंदा है!", "next": "अभिमन्यु ने चक्रव्यूह\nगर्भ में सीखा था!", "nextAt": "nx", "gold": ["अश्वत्थामा...", "मणि", "ब्रह्मास्त्र", "कृष्ण", "असीरगढ़"]});

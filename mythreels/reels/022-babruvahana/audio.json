@@ -1,0 +1,37 @@
+{
+ "music": {
+  "prompt": "Epic Indian Mahabharata cinematic underscore: dhol and war drums, conch shells, bansuri flute, sitar, tense strings and choir swells, temple bells, royal welcome turning into a father-son battle, tragedy, a glowing magical revival, warm reunion, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "ar",
+   "word": "लड़ो",
+   "prompt": "sword drawn with a metallic ring",
+   "dur": 1.2,
+   "gain": -5
+  },
+  {
+   "beat": "b4",
+   "word": "गिर",
+   "prompt": "arrow impact and a heavy fall",
+   "dur": 1.6,
+   "gain": -5
+  },
+  {
+   "beat": "b5",
+   "word": "नागमणि",
+   "prompt": "magical glowing gem hum and shimmer",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "nx",
+   "word": "अगले",
+   "prompt": "deep suspense drum hit and rising whoosh",
+   "dur": 1.8,
+   "gain": -6
+  }
+ ]
+}
