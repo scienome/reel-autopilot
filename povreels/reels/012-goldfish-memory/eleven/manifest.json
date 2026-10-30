@@ -1,0 +1,33 @@
+{
+ "music-6ff48e6fc8cd.mp3": {
+  "prompt": "Bubbly underwater comedy music with glockenspiel, plucked harp and soft bubbles, turning into a gentle emotional piano and strings, ending playful, no vocals",
+  "music_length_ms": 35280,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-5762810e3140.mp3": {
+  "text": "bubbles rising in a fish tank",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-a2162cdc530f.mp3": {
+  "text": "magical sparkle chime",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-09f5a2915fda.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-acaf7232e86c.mp3": {
+  "text": "door closing and keys locking",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-e1624176328c.mp3": {
+  "text": "small audience aww then laugh",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ }
+}
