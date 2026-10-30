@@ -1,0 +1,43 @@
+{
+ "music-b13302bce822.mp3": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a joyful freedom anthem in the middle that stops dead at the doorbell, no vocals",
+  "music_length_ms": 24560,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-13b6b0a0b49d.mp3": {
+  "text": "moving boxes being dropped",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-4cb870559927.mp3": {
+  "text": "crowd cheering",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-c09040356bdb.mp3": {
+  "text": "short sitcom studio audience laugh burst",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-029e5b12a60b.mp3": {
+  "text": "birds singing happily",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-1c374bc50757.mp3": {
+  "text": "doorbell ding dong",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-344d131e387b.mp3": {
+  "text": "dramatic horror sting",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-9b7189c26f3f.mp3": {
+  "text": "sitcom studio audience huge laugh and applause",
+  "duration_seconds": 2.4,
+  "prompt_influence": 0.5
+ }
+}
