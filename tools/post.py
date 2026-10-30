@@ -112,7 +112,14 @@ def main():
             ylog = json.load(open(cy.LOG)) if os.path.exists(cy.LOG) else {}
             if rid not in ylog:
                 when = (target or datetime.datetime.now(datetime.timezone.utc)).replace(tzinfo=None)
-                yid, st = cy.yt.upload(cy.yt.token(), src.local_mp4(rid), *cy.texts(rid), when)
+                tok, texts = cy.yt.token(), cy.texts(rid)
+                old = cy.yt.existing(tok, texts[0])  # an earlier, cancelled run may have uploaded it already
+                if old:
+                    yid, st = old[0], {'publishAt': 'already there'}
+                    if not target and old[1] != 'public':
+                        print(f'{rid} is already on YouTube ({old[1]}); making it public now: ' + ('done' if cy.yt.make_public(tok, yid) else 'not allowed, it goes public at its scheduled time'))
+                else:
+                    yid, st = cy.yt.upload(tok, src.local_mp4(rid), *texts, when)
                 ylog[rid] = {'id': yid, 'url': f'https://youtu.be/{yid}', 'publish_utc': st.get('publishAt', 'now'),
                              'uploaded_at': datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds')}
                 cy.save(ylog); print(f'YouTube: https://youtu.be/{yid} (goes public {st.get("publishAt", "now")})')

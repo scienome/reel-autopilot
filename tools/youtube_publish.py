@@ -68,6 +68,27 @@ def upload(tok, mp4, title, desc, tags, publish_at):
     return u.json()['id'], status
 
 
+def existing(tok, title):
+    """(video id, privacy) of a video with this title among the channel's latest 50 uploads, or None (best effort: needs a read scope)."""
+    import requests
+    h = {'Authorization': 'Bearer ' + tok}; g = 'https://www.googleapis.com/youtube/v3/'
+    try:
+        ch = requests.get(g + 'channels', params={'part': 'contentDetails', 'mine': 'true'}, headers=h, timeout=60).json()
+        up = ch['items'][0]['contentDetails']['relatedPlaylists']['uploads']
+        items = requests.get(g + 'playlistItems', params={'part': 'snippet,status', 'playlistId': up, 'maxResults': 50}, headers=h, timeout=60).json()['items']
+    except Exception:
+        return None
+    return next(((i['snippet']['resourceId']['videoId'], i.get('status', {}).get('privacyStatus')) for i in items if i['snippet']['title'].strip() == title.strip()[:100]), None)
+
+
+def make_public(tok, vid):
+    """Publish a private or scheduled video now (best effort: needs the youtube scope). True if it worked."""
+    import requests
+    r = requests.put('https://www.googleapis.com/youtube/v3/videos?part=status', headers={'Authorization': 'Bearer ' + tok, 'Content-Type': 'application/json'},
+                     data=json.dumps({'id': vid, 'status': {'privacyStatus': 'public', 'selfDeclaredMadeForKids': False, 'embeddable': True}}), timeout=60)
+    return r.status_code == 200
+
+
 def set_thumb(tok, vid, jpg):
     import requests
     with open(jpg, 'rb') as f:

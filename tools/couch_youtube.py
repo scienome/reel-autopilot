@@ -66,6 +66,10 @@ def main():
             print(f'::warning::{rid}: its video is missing, so it cannot go to YouTube')
             log[rid] = {'skipped': 'video missing'}; save(log); continue
         title, desc, tags = texts(rid)
+        old = yt.existing(tok, title)
+        if old:
+            print(f'{rid} is already on YouTube (https://youtu.be/{old[0]}, {old[1]}); not uploading it again')
+            log[rid] = {'id': old[0], 'url': f'https://youtu.be/{old[0]}', 'title': title, 'uploaded_at': 'already there'}; save(log); continue
         try:
             yid, _ = yt.upload(tok, mp4, title, desc, tags, dt.datetime.now(dt.timezone.utc).replace(tzinfo=None))
         except RuntimeError as e:
