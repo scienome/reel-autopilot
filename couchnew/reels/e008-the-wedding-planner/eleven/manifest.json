@@ -1,0 +1,33 @@
+{
+ "music-6222817c485e.mp3": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a fake-romantic wedding harp that keeps getting interrupted, no vocals",
+  "music_length_ms": 26180,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-7f2ffb33a7b0.mp3": {
+  "text": "paper flipping fast through a thick binder",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-3f57c42ab13b.mp3": {
+  "text": "hospital heart monitor beep",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-c09040356bdb.mp3": {
+  "text": "short sitcom studio audience laugh burst",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-f5938aaa2420.mp3": {
+  "text": "game show wrong answer buzzer",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-156cb38f21ae.mp3": {
+  "text": "small sitcom audience groan then big laugh",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ }
+}
