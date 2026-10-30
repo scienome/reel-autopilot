@@ -1,0 +1,38 @@
+{
+ "music-90d9f5312e98.mp3": {
+  "prompt": "Gentle quirky garden music with ukulele and glockenspiel, turning sad and dramatic in the middle, then playful, no vocals",
+  "music_length_ms": 33460,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-0f8f362f1a0d.mp3": {
+  "text": "dry leaves rustling",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-09f5a2915fda.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-22e25f20a770.mp3": {
+  "text": "suitcase wheels rolling and a door closing",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-3be5ca441659.mp3": {
+  "text": "sad violin sting",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-d8c85db78852.mp3": {
+  "text": "small audience aww",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-fd785d141bfa.mp3": {
+  "text": "water glugging and bubbling",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ }
+}
