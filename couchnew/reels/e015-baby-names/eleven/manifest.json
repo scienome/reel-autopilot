@@ -1,0 +1,33 @@
+{
+ "music-186d6ab499df.mp3": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a cute lullaby music box that turns into a dramatic reveal sting, no vocals",
+  "music_length_ms": 17680,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-c09040356bdb.mp3": {
+  "text": "short sitcom studio audience laugh burst",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-e3f481873b1f.mp3": {
+  "text": "dramatic orchestra sting",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-ea51637a8c22.mp3": {
+  "text": "awkward cricket chirps",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-ace819fbe424.mp3": {
+  "text": "big dramatic choir reveal aah",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-9b7189c26f3f.mp3": {
+  "text": "sitcom studio audience huge laugh and applause",
+  "duration_seconds": 2.4,
+  "prompt_influence": 0.5
+ }
+}
