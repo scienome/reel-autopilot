@@ -1,0 +1,38 @@
+{
+ "music-3af26cb58813.mp3": {
+  "prompt": "Dark epic Indian mythological cinematic underscore for a demon king saga: tanpura drone, deep war drums and taiko, menacing low brass, tabla, shehnai and choir swells, temple bells, thunderous sky battle, dark sorcery, a divine name, ritual fire, a heroic finale, no vocals",
+  "music_length_ms": 44120,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-39d7db2cbe59.mp3": {
+  "text": "massive battle clash with thunder",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-a13973f3410d.mp3": {
+  "text": "dark magic swirl and vanishing whoosh",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-5f384a62ab86.mp3": {
+  "text": "magical chains binding with a clank",
+  "duration_seconds": 1.4,
+  "prompt_influence": 0.5
+ },
+ "sfx-8e3cbc1fbdb3.mp3": {
+  "text": "divine choir and bell",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-62dd14cb2d8a.mp3": {
+  "text": "arrow release and powerful impact",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
