@@ -1,0 +1,28 @@
+{
+ "music-f4ae56209d16.mp3": {
+  "prompt": "Dark epic Indian mythological cinematic underscore for a demon king saga: tanpura drone, deep war drums and taiko, menacing low brass, tabla, shehnai and choir swells, temple bells, golden majestic city, greed and betrayal, battle drums, then soaring flight, no vocals",
+  "music_length_ms": 43500,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-323b2b03730a.mp3": {
+  "text": "sword strike and a dramatic hit",
+  "duration_seconds": 1.3,
+  "prompt_influence": 0.5
+ },
+ "sfx-cf17e5401170.mp3": {
+  "text": "army charge and battle clash",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-e39fcb290f6e.mp3": {
+  "text": "magical flying vehicle hum and whoosh",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
