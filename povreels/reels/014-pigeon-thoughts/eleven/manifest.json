@@ -1,0 +1,38 @@
+{
+ "music-bc59f482f88f.mp3": {
+  "prompt": "Sneaky city heist comedy music with pizzicato and bassoon, turning sweet and nostalgic with accordion in the middle, no vocals",
+  "music_length_ms": 30740,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-8911f5b9a672.mp3": {
+  "text": "pigeons cooing and flapping",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-09f5a2915fda.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-63d32aceaafd.mp3": {
+  "text": "many pigeons flapping excitedly",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3d1e3135c80.mp3": {
+  "text": "lonely wind in an empty street",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-71bff3ff9b30.mp3": {
+  "text": "cruise ship horn",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-e3f481873b1f.mp3": {
+  "text": "dramatic orchestra sting",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
