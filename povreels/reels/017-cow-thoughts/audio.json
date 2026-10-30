@@ -1,0 +1,57 @@
+{
+ "music": {
+  "prompt": "Country banjo and fiddle comedy music, turning into a dreamy starry music box in the middle, then a spacey synth ending, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "cows",
+   "offset": 0.0,
+   "prompt": "cow mooing in a field with birds",
+   "dur": 2,
+   "gain": -4
+  },
+  {
+   "beat": "c1",
+   "word": "selfie",
+   "offset": 0.0,
+   "prompt": "phone camera shutter click",
+   "dur": 0.8,
+   "gain": -4
+  },
+  {
+   "beat": "c3",
+   "word": "Kevin",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "n3",
+   "word": "stars",
+   "offset": 0.0,
+   "prompt": "night crickets and soft wind",
+   "dur": 2.5,
+   "gain": -10
+  },
+  {
+   "beat": "n4",
+   "word": "spaceship",
+   "offset": 0.0,
+   "prompt": "UFO landing hum and whoosh",
+   "dur": 2,
+   "gain": -3
+  },
+  {
+   "beat": "c5",
+   "word": "ride",
+   "offset": 0.0,
+   "prompt": "small audience laugh and applause",
+   "dur": 2,
+   "gain": -8
+  }
+ ]
+}

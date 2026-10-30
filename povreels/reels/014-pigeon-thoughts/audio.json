@@ -1,0 +1,57 @@
+{
+ "music": {
+  "prompt": "Sneaky city heist comedy music with pizzicato and bassoon, turning sweet and nostalgic with accordion in the middle, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "pigeons",
+   "offset": 0.0,
+   "prompt": "pigeons cooing and flapping",
+   "dur": 1.5,
+   "gain": -4
+  },
+  {
+   "beat": "g2",
+   "word": "staring",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "g3",
+   "word": "Mother",
+   "offset": 0.0,
+   "prompt": "many pigeons flapping excitedly",
+   "dur": 1.5,
+   "gain": -4
+  },
+  {
+   "beat": "n3",
+   "word": "come",
+   "offset": 0.0,
+   "prompt": "lonely wind in an empty street",
+   "dur": 2,
+   "gain": -8
+  },
+  {
+   "beat": "g5",
+   "word": "cruise",
+   "offset": 0.0,
+   "prompt": "cruise ship horn",
+   "dur": 1.5,
+   "gain": -4
+  },
+  {
+   "beat": "g5",
+   "word": "B",
+   "offset": 0.0,
+   "prompt": "dramatic orchestra sting",
+   "dur": 1.2,
+   "gain": -4
+  }
+ ]
+}

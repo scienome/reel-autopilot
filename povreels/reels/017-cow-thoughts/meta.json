@@ -1,0 +1,19 @@
+{
+ "title": "You can hear what cows think 🐄",
+ "caption": "\"I make the milk. You get the cheese. Unfair.\" 🐄\nThen a spaceship landed... 👇",
+ "hashtags": [
+  "cow",
+  "farm",
+  "animals",
+  "pov",
+  "funny",
+  "animation",
+  "relatable",
+  "whatif"
+ ],
+ "first_comment": "Where is the cow going? Wrong answers only 🐄🛸👇",
+ "cover_t": 3.5,
+ "libs": [
+  "lib/pov.js"
+ ]
+}

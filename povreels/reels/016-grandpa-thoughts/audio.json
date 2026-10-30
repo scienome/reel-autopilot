@@ -1,0 +1,57 @@
+{
+ "music": {
+  "prompt": "Gentle old-fashioned comedy music with clarinet and brushed drums, becoming a warm emotional piano and strings in the middle, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "gp1",
+   "word": "scam",
+   "offset": 0.0,
+   "prompt": "old man grumbling hmph",
+   "dur": 1,
+   "gain": -4
+  },
+  {
+   "beat": "gp2",
+   "word": "machine",
+   "offset": 0.0,
+   "prompt": "washing machine spin cycle",
+   "dur": 1.5,
+   "gain": -6
+  },
+  {
+   "beat": "gp3",
+   "word": "better",
+   "offset": 0.0,
+   "prompt": "small audience ooh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "n3",
+   "word": "photo",
+   "offset": 0.0,
+   "prompt": "old film projector clicking softly",
+   "dur": 2,
+   "gain": -8
+  },
+  {
+   "beat": "n4",
+   "word": "cups",
+   "offset": 0.0,
+   "prompt": "tea being poured into a cup",
+   "dur": 1.5,
+   "gain": -5
+  },
+  {
+   "beat": "gp5",
+   "word": "telly",
+   "offset": 0.0,
+   "prompt": "small audience warm laugh",
+   "dur": 1.8,
+   "gain": -8
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+{
+ "music": {
+  "prompt": "Corporate office comedy music with plucky marimba and light synth, a sad lonely piano moment in the middle, then upbeat, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "b1",
+   "word": "two",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "b2",
+   "word": "pod",
+   "offset": 0.0,
+   "prompt": "coffee machine gurgling",
+   "dur": 1.5,
+   "gain": -5
+  },
+  {
+   "beat": "b3",
+   "word": "printer",
+   "offset": 0.0,
+   "prompt": "printer jamming with beeps",
+   "dur": 1.5,
+   "gain": -4
+  },
+  {
+   "beat": "b4",
+   "word": "one",
+   "offset": 0.0,
+   "prompt": "small audience ooh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "n4",
+   "word": "quit",
+   "offset": 0.0,
+   "prompt": "door slam and confetti pop",
+   "dur": 1.2,
+   "gain": -4
+  },
+  {
+   "beat": "b5",
+   "word": "printer",
+   "offset": 0.0,
+   "prompt": "printer error beep three times",
+   "dur": 1.2,
+   "gain": -4
+  }
+ ]
+}

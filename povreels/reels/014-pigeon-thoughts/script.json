@@ -1,0 +1,12 @@
+[
+ {"id": "hook", "who": "narrator", "phrases": ["You can hear what pigeons think."]},
+ {"id": "g1", "who": "pug", "phrases": ["See that guy's sandwich?", "Plan A."]},
+ {"id": "g2", "who": "cat", "phrases": ["Plan A is just staring."]},
+ {"id": "n2", "who": "narrator", "phrases": ["Every morning, the bread lady comes."]},
+ {"id": "g3", "who": "cat", "phrases": ["Mother! She's here!"]},
+ {"id": "n3", "who": "narrator", "phrases": ["One day, she doesn't come."]},
+ {"id": "g4", "who": "cat", "phrases": ["Where is she?", "We waited all day."]},
+ {"id": "n4", "who": "narrator", "phrases": ["Next morning, she's back.", "With a tan."]},
+ {"id": "g5", "who": "pug", "phrases": ["A cruise?", "Without us?", "Plan B."]},
+ {"id": "cta", "who": "narrator", "phrases": ["What's Plan B? Wrong answers only.", "Part two?"]}
+]

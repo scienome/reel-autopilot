@@ -1,0 +1,12 @@
+[
+ {"id": "hook", "who": "narrator", "phrases": ["You can hear what your phone thinks."]},
+ {"id": "ph1", "who": "friend", "phrases": ["Six hours of screen time.", "I need a holiday."]},
+ {"id": "ph2", "who": "friend", "phrases": ["You unlocked me two hundred times today.", "For nothing."]},
+ {"id": "n2", "who": "narrator", "phrases": ["Then you drop it in the sink."]},
+ {"id": "ph3", "who": "friend", "phrases": ["I'm drowning!", "Save the dog photos!"]},
+ {"id": "n3", "who": "narrator", "phrases": ["Night. One percent battery."]},
+ {"id": "ph4", "who": "friend", "phrases": ["I've seen every photo of your dog.", "Charge me.", "I want to see more."]},
+ {"id": "n4", "who": "narrator", "phrases": ["Next week, you buy a new phone."]},
+ {"id": "ph5", "who": "friend", "phrases": ["It's fine.", "I'll be in the drawer.", "With the others."]},
+ {"id": "cta", "who": "narrator", "phrases": ["How many old phones are in your drawer?", "Part two?"]}
+]

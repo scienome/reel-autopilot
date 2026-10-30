@@ -1,0 +1,12 @@
+[
+ {"id": "hook", "who": "narrator", "phrases": ["You can hear what your boss thinks."]},
+ {"id": "b1", "who": "boss", "phrases": ["Great presentation.", "I didn't understand slide two."]},
+ {"id": "b2", "who": "boss", "phrases": ["Coffee?", "Please say no. That's my last pod."]},
+ {"id": "n2", "who": "narrator", "phrases": ["Performance review."]},
+ {"id": "b3", "who": "boss", "phrases": ["Promote him?", "He's the only one who knows how the printer works."]},
+ {"id": "n3", "who": "narrator", "phrases": ["Then you ask for a raise."]},
+ {"id": "b4", "who": "boss", "phrases": ["I can't give him a raise.", "I can't even give myself one."]},
+ {"id": "n4", "who": "narrator", "phrases": ["So you both quit.", "Same day."]},
+ {"id": "b5", "who": "boss", "phrases": ["Wait.", "Who knows how the printer works?"]},
+ {"id": "cta", "who": "narrator", "phrases": ["What is your boss really thinking?", "Part two?"]}
+]

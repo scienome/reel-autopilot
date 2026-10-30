@@ -1,0 +1,57 @@
+{
+ "music": {
+  "prompt": "Bubbly underwater comedy music with glockenspiel, plucked harp and soft bubbles, turning into a gentle emotional piano and strings, ending playful, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "goldfish",
+   "offset": 0.0,
+   "prompt": "bubbles rising in a fish tank",
+   "dur": 1.5,
+   "gain": -4
+  },
+  {
+   "beat": "f1",
+   "word": "castle",
+   "offset": 0.0,
+   "prompt": "magical sparkle chime",
+   "dur": 1,
+   "gain": -5
+  },
+  {
+   "beat": "f2",
+   "word": "castle",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "f3",
+   "word": "who",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "n3",
+   "word": "week",
+   "offset": 0.0,
+   "prompt": "door closing and keys locking",
+   "dur": 1.2,
+   "gain": -5
+  },
+  {
+   "beat": "f5",
+   "word": "castle",
+   "offset": 0.0,
+   "prompt": "small audience aww then laugh",
+   "dur": 2,
+   "gain": -8
+  }
+ ]
+}

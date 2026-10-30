@@ -1,0 +1,11 @@
+[
+ {"id": "hook", "who": "narrator", "phrases": ["You're the only person who knows what your parrot is thinking."]},
+ {"id": "p1", "who": "pug", "phrases": ["Your password is one two three four.", "I heard you."]},
+ {"id": "n2", "who": "narrator", "phrases": ["Your boss comes for dinner."]},
+ {"id": "p2", "who": "pug", "phrases": ["Should I tell him what you call him?", "Mister Spreadsheet."]},
+ {"id": "n3", "who": "narrator", "phrases": ["That night, you can't sleep."]},
+ {"id": "p3", "who": "pug", "phrases": ["You talk to me every night.", "I'm your only friend.", "You're mine too."]},
+ {"id": "n4", "who": "narrator", "phrases": ["Next morning, your phone buzzes."]},
+ {"id": "p4", "who": "pug", "phrases": ["I ordered forty pizzas.", "Your card. Your password."]},
+ {"id": "cta", "who": "narrator", "phrases": ["Would you keep this parrot?", "Part two?"]}
+]

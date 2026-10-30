@@ -1,0 +1,65 @@
+{
+ "music": {
+  "prompt": "Cheeky tropical comedy underscore with marimba, plucky strings and whistles, turning tender with soft piano in the middle, then cheeky again, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "parrot",
+   "offset": 0.0,
+   "prompt": "parrot squawk and wings flapping",
+   "dur": 1.5,
+   "gain": -4
+  },
+  {
+   "beat": "p1",
+   "word": "heard",
+   "offset": 0.0,
+   "prompt": "small audience ooh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "n2",
+   "word": "dinner",
+   "offset": 0.0,
+   "prompt": "doorbell ding dong",
+   "dur": 1.2,
+   "gain": -4
+  },
+  {
+   "beat": "p2",
+   "word": "Spreadsheet",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.6,
+   "gain": -8
+  },
+  {
+   "beat": "n3",
+   "word": "sleep",
+   "offset": 0.0,
+   "prompt": "quiet night crickets and a clock ticking",
+   "dur": 2.5,
+   "gain": -10
+  },
+  {
+   "beat": "n4",
+   "word": "buzzes",
+   "offset": 0.0,
+   "prompt": "phone vibrating on a table",
+   "dur": 1.2,
+   "gain": -4
+  },
+  {
+   "beat": "p4",
+   "word": "pizzas",
+   "offset": 0.0,
+   "prompt": "doorbell ringing many times in a row",
+   "dur": 2,
+   "gain": -3
+  }
+ ]
+}

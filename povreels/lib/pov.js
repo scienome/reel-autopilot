@@ -67,3 +67,44 @@
   const badge = (ctx, S, at, n, label, u, col = '#e8384f') => { if (u <= 0) return; const p = S.proj(at); ctx.save(); ctx.translate(p[0], Math.max(450, p[1] - 80)); ctx.scale(u, u);
     ctx.shadowColor = 'rgba(0,0,0,0.35)'; ctx.shadowBlur = 12; ctx.fillStyle = col; ctx.beginPath(); ctx.arc(0, 0, 58, 0, TAU); ctx.fill(); ctx.shadowColor = 'transparent'; ctx.lineWidth = 6; ctx.strokeStyle = '#fff'; ctx.stroke();
     ctx.fillStyle = '#fff'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.font = FONT(900, String(n).length > 2 ? 40 : 52); ctx.fillText(String(n), 0, -4); ctx.font = FONT(800, 16); ctx.fillText(label, 0, 34); ctx.restore(); };
+  // a bird facing +z (parrot, pigeon, seagull...): o = { x, y, z, yaw, s, col, belly, wing, beak, crest, mood, look, flap, t }
+  const bird = (S, o) => {
+    const s = o.s || 1, base = [o.x || 0, o.y || 0, o.z || 0], yaw = o.yaw || 0, col = o.col || [60, 170, 80], belly = o.belly || shade(col, 1.25), wing = o.wing || shade(col, 0.8);
+    const P = (p) => add(rotY(mul(p, s), yaw), base), t = o.t || 0, bob = Math.sin(t * 3) * 0.01;
+    S.shadow(P([0, 0, 0.02]), 0.12 * s, 0.1 * s, 0.3);
+    for (const sd of [-1, 1]) S.limb(P([sd * 0.04, 0.1, 0]), P([sd * 0.04, 0.0, 0.03]), 0.012 * s, 0.01 * s, [230, 160, 60]);
+    S.ball(P([0, 0.2 + bob, 0]), [0.1, 0.13, 0.1], col); S.ball(P([0, 0.18 + bob, 0.05]), [0.07, 0.09, 0.06], belly);
+    S.limb(P([0, 0.12, -0.08]), P([0, 0.04, -0.2]), 0.04 * s, 0.015 * s, wing);
+    const fl = o.flap ? Math.sin(t * 22) * 0.6 : 0;
+    for (const sd of [-1, 1]) S.limb(P([sd * 0.09, 0.26 + bob, -0.01]), P([sd * (0.12 + Math.abs(fl) * 0.12), 0.12 + bob + fl * 0.1, -0.06]), 0.05 * s, 0.02 * s, wing);
+    const hy = 0.36 + bob; S.ball(P([0, hy, 0.02]), 0.085 * s, col);
+    if (o.crest) for (let i = 0; i < 3; i++) S.limb(P([0, hy + 0.06, 0.0]), P([(i - 1) * 0.03, hy + 0.15, -0.04]), 0.015 * s, 0.006 * s, o.crest);
+    S.limb(P([0, hy - 0.005, 0.08]), P([0, hy - 0.03, 0.15]), 0.028 * s, 0.006 * s, o.beak || [245, 190, 50]);
+    const look = o.look || [0, 0], lid = o.mood === 'smug' ? 0.5 : o.mood === 'sad' ? 0.25 : 0;
+    for (const sd of [-1, 1]) { const e = [sd * 0.045, hy + 0.025, 0.065]; S.ball(P(e), 0.026 * s, [250, 250, 250], { rim: false }); S.ball(P(add(e, [look[0] * 0.008, look[1] * 0.008 - lid * 0.008, 0.016])), 0.016 * s, [20, 18, 20], { rim: false, gloss: 0.9 });
+      if (lid) S.ball(P(add(e, [0, 0.016, 0.004])), [0.028 * s, 0.016 * s * (0.6 + lid), 0.024 * s], col, { rim: false });
+      if (o.mood === 'mad') S.limb(P([sd * 0.02, hy + 0.06, 0.08]), P([sd * 0.07, hy + 0.075, 0.07]), 0.007 * s, 0.006 * s, [30, 24, 20]); } };
+  // a goldfish facing +z, swimming in place: o = { x, y, z, yaw, s, col, mood, look, t }
+  const fish = (S, o) => {
+    const s = o.s || 1, base = [o.x || 0, o.y || 0, o.z || 0], yaw = (o.yaw || 0) + Math.sin((o.t || 0) * 2) * 0.25, col = o.col || [250, 140, 40];
+    const P = (p) => add(rotY(mul(p, s), yaw), base), w = Math.sin((o.t || 0) * 9) * 0.04;
+    S.ball(P([0, 0, 0]), [0.08, 0.09, 0.13], col); S.limb(P([0, 0, -0.1]), P([w, 0.03, -0.22]), 0.05 * s, 0.07 * s, shade(col, 1.15));
+    S.limb(P([0, 0.07, -0.02]), P([0, 0.13, -0.06]), 0.03 * s, 0.01 * s, shade(col, 1.15));
+    const look = o.look || [0, 0];
+    for (const sd of [-1, 1]) { const e = [sd * 0.055, 0.025, 0.07]; S.ball(P(e), 0.03 * s, [250, 250, 250], { rim: false }); S.ball(P(add(e, [look[0] * 0.01, look[1] * 0.01, 0.018])), 0.018 * s, [20, 18, 20], { rim: false, gloss: 0.9 }); }
+    S.ball(P([0, -0.03, 0.12]), [0.022, o.mood === 'wow' ? 0.03 : 0.012, 0.01], [120, 30, 40], { rim: false }); };
+  // a cow facing +z: o = { x, y, z, yaw, s, mood, look, t }
+  const cow = (S, o) => {
+    const s = o.s || 1, base = [o.x || 0, o.y || 0, o.z || 0], yaw = o.yaw || 0, W_ = [245, 243, 238], B = [40, 36, 40], P = (p) => add(rotY(mul(p, s), yaw), base);
+    S.shadow(P([0, 0, 0]), 0.5 * s, 0.35 * s, 0.35);
+    for (const [a, b] of [[-0.2, 0.3], [0.2, 0.3], [-0.2, -0.3], [0.2, -0.3]]) S.limb(P([a, 0.5, b]), P([a, 0.02, b]), 0.07 * s, 0.06 * s, W_);
+    S.ball(P([0, 0.62, 0]), [0.32, 0.26, 0.46], W_); for (const q of [[0.15, 0.72, 0.1], [-0.18, 0.6, -0.2], [0.05, 0.75, -0.25]]) S.ball(P(q), [0.12, 0.1, 0.12], B, { rim: false });
+    S.ball(P([0, 0.85, 0.45]), [0.17, 0.17, 0.17], W_); S.ball(P([0, 0.78, 0.6]), [0.13, 0.09, 0.08], [240, 170, 170]);
+    for (const sd of [-1, 1]) { S.limb(P([sd * 0.12, 0.97, 0.45]), P([sd * 0.2, 1.06, 0.44]), 0.025 * s, 0.012 * s, [240, 230, 200]); S.ball(P([sd * 0.2, 0.9, 0.42]), [0.07, 0.03, 0.04], W_);
+      const e = [sd * 0.07, 0.9, 0.59], look = o.look || [0, 0]; S.ball(P(e), 0.035 * s, [250, 250, 250], { rim: false }); S.ball(P(add(e, [look[0] * 0.01, look[1] * 0.01 - (o.mood === 'sad' ? 0.008 : 0), 0.02])), 0.022 * s, [20, 18, 20], { rim: false, gloss: 0.9 }); } };
+  // big cartoon eyes on an object (a fridge, a phone, a car dash): screen space at a 3D point; mood 'calm' | 'mad' | 'sad' | 'happy' | 'tired'
+  const objFace = (ctx, S, at, mood, t, size = 1) => { const p = S.proj(at); if (p[2] < 0.2) return; ctx.save(); ctx.translate(p[0], p[1]); ctx.scale(size, size);
+    for (const sd of [-1, 1]) { const rx = 34, ry = mood === 'tired' ? 10 : mood === 'sad' ? 18 : 28; ctx.fillStyle = '#fff'; ctx.strokeStyle = '#1c1a22'; ctx.lineWidth = 5; ctx.beginPath(); ctx.ellipse(sd * 60, 0, rx, ry, 0, 0, TAU); ctx.fill(); ctx.stroke();
+      ctx.fillStyle = '#1c1a22'; ctx.beginPath(); ctx.arc(sd * 60 + Math.sin(t * 0.8) * 6, 3, Math.min(12, ry * 0.6), 0, TAU); ctx.fill();
+      if (mood === 'mad' || mood === 'sad') { ctx.lineWidth = 8; ctx.beginPath(); ctx.moveTo(sd * 28, mood === 'mad' ? -32 : -24); ctx.lineTo(sd * 92, mood === 'mad' ? -20 : -36); ctx.stroke(); } }
+    ctx.lineWidth = 6; ctx.strokeStyle = '#1c1a22'; ctx.beginPath(); if (mood === 'happy') ctx.arc(0, 40, 30, 0.2, Math.PI - 0.2); else if (mood === 'sad' || mood === 'tired') ctx.arc(0, 70, 26, Math.PI + 0.3, -0.3); else { ctx.moveTo(-22, 50); ctx.lineTo(22, 50); } ctx.stroke(); ctx.restore(); };

@@ -1,0 +1,57 @@
+{
+ "music": {
+  "prompt": "Sneaky late night jazz with upright bass and brushed drums, comedic, with a short tender piano moment, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "fridge",
+   "offset": 0.0,
+   "prompt": "fridge door opening with a hum and a bottle clink",
+   "dur": 1.5,
+   "gain": -4
+  },
+  {
+   "beat": "r1",
+   "word": "cheese",
+   "offset": 0.0,
+   "prompt": "plastic wrapper crinkling",
+   "dur": 1,
+   "gain": -4
+  },
+  {
+   "beat": "r2",
+   "word": "Tuesday",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "n3",
+   "word": "off",
+   "offset": 0.0,
+   "prompt": "fridge light click and a low hum",
+   "dur": 1.2,
+   "gain": -6
+  },
+  {
+   "beat": "r5",
+   "word": "ate",
+   "offset": 0.0,
+   "prompt": "loud burp",
+   "dur": 0.8,
+   "gain": -4
+  },
+  {
+   "beat": "r5",
+   "word": "feelings",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.6,
+   "gain": -8
+  }
+ ]
+}

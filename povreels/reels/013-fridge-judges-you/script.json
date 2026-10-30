@@ -1,0 +1,12 @@
+[
+ {"id": "hook", "who": "narrator", "phrases": ["You can hear what your fridge thinks."]},
+ {"id": "r1", "who": "car", "phrases": ["Two a.m. again?", "Put the cheese down."]},
+ {"id": "r2", "who": "car", "phrases": ["You said diet on Monday.", "It's Tuesday."]},
+ {"id": "n2", "who": "narrator", "phrases": ["Your mum visits."]},
+ {"id": "r3", "who": "car", "phrases": ["Finally.", "Someone who buys vegetables."]},
+ {"id": "n3", "who": "narrator", "phrases": ["Three a.m. The light goes off."]},
+ {"id": "r4", "who": "car", "phrases": ["I keep your milk cold.", "And your secrets.", "Nobody knows about the cake."]},
+ {"id": "n4", "who": "narrator", "phrases": ["Next night, the cake is gone."]},
+ {"id": "r5", "who": "car", "phrases": ["Yes. I ate it.", "You're not the only one with feelings."]},
+ {"id": "cta", "who": "narrator", "phrases": ["What would your fridge say about you?", "Part two?"]}
+]

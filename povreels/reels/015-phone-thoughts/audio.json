@@ -1,0 +1,57 @@
+{
+ "music": {
+  "prompt": "Upbeat electronic comedy music with bleeps and a funky bass, turning into a soft sad piano in the middle, then playful, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "phone",
+   "offset": 0.0,
+   "prompt": "phone notification chimes many times",
+   "dur": 1.5,
+   "gain": -4
+  },
+  {
+   "beat": "ph2",
+   "word": "nothing",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "n2",
+   "word": "sink",
+   "offset": 0.0,
+   "prompt": "phone splashing into water",
+   "dur": 1.2,
+   "gain": -4
+  },
+  {
+   "beat": "n3",
+   "word": "battery",
+   "offset": 0.0,
+   "prompt": "low battery warning beep",
+   "dur": 1.2,
+   "gain": -4
+  },
+  {
+   "beat": "ph5",
+   "word": "drawer",
+   "offset": 0.0,
+   "prompt": "wooden drawer sliding shut",
+   "dur": 1.2,
+   "gain": -4
+  },
+  {
+   "beat": "ph5",
+   "word": "others",
+   "offset": 0.0,
+   "prompt": "small audience aww",
+   "dur": 1.6,
+   "gain": -8
+  }
+ ]
+}

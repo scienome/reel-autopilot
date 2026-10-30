@@ -1,0 +1,12 @@
+[
+ {"id": "hook", "who": "narrator", "phrases": ["You can hear what your grandpa thinks."]},
+ {"id": "gp1", "who": "dad", "phrases": ["This phone is a scam.", "Where's the button for the telly?"]},
+ {"id": "gp2", "who": "dad", "phrases": ["Your music sounds like a washing machine."]},
+ {"id": "n2", "who": "narrator", "phrases": ["Sunday lunch."]},
+ {"id": "gp3", "who": "dad", "phrases": ["Lovely food.", "Your grandma's was better."]},
+ {"id": "n3", "who": "narrator", "phrases": ["Then you find an old photo."]},
+ {"id": "gp4", "who": "dad", "phrases": ["That's her.", "Fifty years.", "I still make two cups of tea."]},
+ {"id": "n4", "who": "narrator", "phrases": ["Next morning, you make two cups."]},
+ {"id": "gp5", "who": "dad", "phrases": ["Thank you.", "Now where's the button for the telly?"]},
+ {"id": "cta", "who": "narrator", "phrases": ["Call your grandparents today.", "Part two?"]}
+]

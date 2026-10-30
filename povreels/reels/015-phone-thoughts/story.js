@@ -1,0 +1,22 @@
+  const NOONE = { hide: true }; const pu = (t, at) => popU(t, at, 0.3);
+  const nightTint = (ctx, W, H_) => { ctx.save(); ctx.fillStyle = 'rgba(12,16,48,0.5)'; ctx.fillRect(0, 0, W, H_); ctx.restore(); };
+  const timeCard = (ctx, t, at, txt) => { const u = pu(t, at); if (u <= 0) return; ctx.save(); ctx.translate(360, 640); ctx.scale(u, u); ctx.fillStyle = '#ffd23f'; ctx.beginPath(); ctx.roundRect(-260, -54, 520, 108, 20); ctx.fill(); ctx.fillStyle = '#1c1a22'; ctx.font = FONT(900, 46); ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText(txt, 0, 4); ctx.restore(); };
+  const handset = (S, x, y, z, rx = -0.5, scr = true) => S.rbox((p) => add(rotX(p, rx), [x, y, z]), 0.1, 0.19, 0.012, [28, 28, 34], { bevel: 0.25, paint: scr ? (c, w, h) => { const g = c.createLinearGradient(0, 0, w, h); g.addColorStop(0, '#5ab0ff'); g.addColorStop(1, '#a070ff'); c.fillStyle = g; c.fillRect(w * 0.06, h * 0.04, w * 0.88, h * 0.92); } : null });
+  const face = (ctx, S, at, mood, t, s = 0.95) => objFace(ctx, S, at, mood, t, s);
+  makeCouch({
+    keys: ['phone', 'six', 'hours', 'holiday', 'two', 'hundred', 'nothing', 'sink', 'drowning', 'dog', 'one', 'percent', 'charge', 'new', 'drawer', 'others'],
+    shots: ({ V, first }) => ({
+      hook: { set: 'bedroom', cam: [[0, 1.3, 0.9], [0, 1.1, 0.35], [0, 1.28, 0.8], [0, 1.1, 0.35]], he: NOONE, she: NOONE, props: (S) => handset(S, 0, 1.1, 0.35),
+        over: (ctx, W, H_, t, S) => { face(ctx, S, [0, 1.12, 0.36], t > first('ph1') ? 'tired' : 'calm', t); badge(ctx, S, [0.25, 1.4, 0.35], '6h', 'SCREEN TIME', pu(t, V('ph1', 'six'))); thought(ctx, S, [0, 1.3, 0.35], t < V('ph1', 'I') - 0.1 ? '6 hours of screen time.' : 'I need a holiday.', pu(t, first('ph1'))); } },
+      ph2: { set: 'living', cam: [[0, 1.3, 0.9], [0, 1.1, 0.35], [0, 1.28, 0.75], [0, 1.1, 0.35]], he: NOONE, she: NOONE, props: (S) => handset(S, 0, 1.1, 0.35),
+        over: (ctx, W, H_, t, S) => { face(ctx, S, [0, 1.12, 0.36], 'mad', t); badge(ctx, S, [0.25, 1.4, 0.35], 200, 'UNLOCKS', pu(t, V('ph2', 'two'))); thought(ctx, S, [0, 1.3, 0.35], t < V('ph2', 'For') - 0.1 ? 'You unlocked me 200 times today.' : 'For nothing.', pu(t, first('ph2'))); } },
+      n2: { set: 'kitchen', cam: [[0.1, 1.5, 0.6], [0, 0.9, -0.7], [0.1, 1.45, 0.5], [0, 0.9, -0.7]], he: NOONE, she: NOONE, shake: first('ph3'), props: (S, t) => { S.rbox((p) => add(p, [0, 0.9, -0.7]), 0.3, 0.02, 0.2, [150, 200, 230], { bevel: 0.2 }); handset(S, 0, H.lerp(1.4, 0.92, H.clamp((t - V('n2', 'drop')) * 3)), -0.7, -1.4); },
+        over: (ctx, W, H_, t, S) => { face(ctx, S, [0, 1.0, -0.6], 'sad', t, 0.5); thought(ctx, S, [0, 1.1, -0.7], t < V('ph3', 'Save') - 0.1 ? "I'M DROWNING!" : 'Save the dog photos!', pu(t, first('ph3'))); } },
+      n3: { set: 'bedroom', cam: [[0, 1.3, 0.9], [0, 1.1, 0.35], [0, 1.28, 0.75], [0, 1.1, 0.35]], he: NOONE, she: NOONE, props: (S) => handset(S, 0, 1.1, 0.35),
+        over: (ctx, W, H_, t, S) => { nightTint(ctx, W, H_); face(ctx, S, [0, 1.12, 0.36], 'tired', t); badge(ctx, S, [0.25, 1.4, 0.35], '1%', 'BATTERY', pu(t, V('n3', 'one')), '#e8384f'); thought(ctx, S, [0, 1.3, 0.35], t < V('ph4', 'Charge') - 0.1 ? "I've seen every photo of your dog." : t < V('ph4', 'I', 2) - 0.1 ? 'Charge me.' : 'I want to see more.', pu(t, first('ph4'))); },
+        fx: [{ k: 'hearts', at: V('ph4', 'more'), n: 3, y: 600 }] },
+      n4: { set: 'bedroom', cam: [[0, 1.6, 0.9], [0, 0.8, 0.0], [0, 1.55, 0.8], [0, 0.8, 0.0]], he: NOONE, she: NOONE, props: (S) => { S.rbox((p) => add(p, [0, 0.7, 0]), 0.45, 0.1, 0.28, [150, 110, 70], { bevel: 0.1 }); S.rbox((p) => add(p, [0, 0.79, 0]), 0.4, 0.01, 0.24, [70, 50, 35], { bevel: 0.1 }); for (let i = 0; i < 4; i++) handset(S, -0.27 + i * 0.18, 0.82, 0.0, -Math.PI / 2, false); },
+        over: (ctx, W, H_, t, S) => { for (let i = 0; i < 4; i++) face(ctx, S, [-0.27 + i * 0.18, 0.83, 0.0], 'sad', t, 0.4); thought(ctx, S, [0, 0.95, 0.0], t < V('ph5', "I'll") - 0.1 ? "It's fine." : t < V('ph5', 'With') - 0.1 ? "I'll be in the drawer." : 'With the others.', pu(t, first('ph5'))); } },
+      cta: { set: 'bedroom', cam: [[0, 1.3, 0.9], [0, 1.1, 0.35], [0, 1.3, 0.85], [0, 1.1, 0.35]], he: NOONE, she: NOONE, props: (S) => handset(S, 0, 1.1, 0.35), over: (ctx, W, H_, t, S) => face(ctx, S, [0, 1.12, 0.36], 'calm', t), fx: [{ k: 'card', text: 'PART 2?', at: V('cta', 'Part'), y: 1110, fill: '#c0182a', col: '#fff', px: 52 }] },
+    }),
+  });

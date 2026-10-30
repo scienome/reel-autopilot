@@ -1,0 +1,13 @@
+[
+ {"id": "hook", "who": "narrator", "phrases": ["You can hear what your goldfish thinks."]},
+ {"id": "f1", "who": "cat", "phrases": ["Wow! A castle!"]},
+ {"id": "n1", "who": "narrator", "phrases": ["Three seconds later."]},
+ {"id": "f2", "who": "cat", "phrases": ["Wow! A castle!"]},
+ {"id": "n2", "who": "narrator", "phrases": ["Every three seconds.", "For two years."]},
+ {"id": "f3", "who": "cat", "phrases": ["Wow! A castle!", "Wait. Who are you?"]},
+ {"id": "n3", "who": "narrator", "phrases": ["Then you go away for a week."]},
+ {"id": "f4", "who": "cat", "phrases": ["Where's the big face?", "I don't remember much.", "But I remember you."]},
+ {"id": "n4", "who": "narrator", "phrases": ["You come home."]},
+ {"id": "f5", "who": "cat", "phrases": ["Big face!", "Wow! A castle!"]},
+ {"id": "cta", "who": "narrator", "phrases": ["Remember everything, or nothing?", "Part two?"]}
+]

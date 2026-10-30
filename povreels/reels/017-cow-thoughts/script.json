@@ -1,0 +1,13 @@
+[
+ {"id": "hook", "who": "narrator", "phrases": ["You can hear what cows think."]},
+ {"id": "c1", "who": "husky", "phrases": ["Oh look.", "Another human taking a selfie."]},
+ {"id": "c2", "who": "husky", "phrases": ["I make the milk.", "You get the cheese.", "Unfair."]},
+ {"id": "n2", "who": "narrator", "phrases": ["Your city friend visits."]},
+ {"id": "f1", "who": "friend", "phrases": ["Is it going to bite me?"]},
+ {"id": "c3", "who": "husky", "phrases": ["I'm a vegetarian, Kevin."]},
+ {"id": "n3", "who": "narrator", "phrases": ["At night, the cows look at the stars."]},
+ {"id": "c4", "who": "husky", "phrases": ["Mum said every star is a cow who made it.", "One day, I'll be up there."]},
+ {"id": "n4", "who": "narrator", "phrases": ["Next morning, a spaceship lands."]},
+ {"id": "c5", "who": "husky", "phrases": ["Finally.", "My ride."]},
+ {"id": "cta", "who": "narrator", "phrases": ["Where is the cow going? Wrong answers only.", "Part two?"]}
+]
