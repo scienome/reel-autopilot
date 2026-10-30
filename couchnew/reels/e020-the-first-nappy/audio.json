@@ -1,0 +1,57 @@
+{
+ "music": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a serious bomb-disposal suspense section with ticking and low drums, no vocals",
+  "gain": -6,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "s1",
+   "word": "ready",
+   "offset": 0.0,
+   "prompt": "heroic action movie brass stab",
+   "dur": 1.2,
+   "gain": -5
+  },
+  {
+   "beat": "n2",
+   "word": "ready",
+   "offset": 0.3,
+   "prompt": "short sitcom studio audience laugh burst",
+   "dur": 1.6,
+   "gain": -10
+  },
+  {
+   "beat": "s2",
+   "word": "Goggles",
+   "offset": 0.0,
+   "prompt": "snap of rubber gloves",
+   "dur": 0.8,
+   "gain": -4
+  },
+  {
+   "beat": "s3",
+   "word": "biohazard",
+   "offset": 0.0,
+   "prompt": "hazard alarm siren",
+   "dur": 1.5,
+   "gain": -6
+  },
+  {
+   "beat": "n4",
+   "word": "later",
+   "offset": 0.0,
+   "prompt": "clock ticking fast",
+   "dur": 1.5,
+   "gain": -6
+  },
+  {
+   "beat": "m2",
+   "word": "head",
+   "offset": 0.4,
+   "prompt": "sitcom studio audience huge laugh",
+   "dur": 2.2,
+   "gain": -10
+  }
+ ]
+}

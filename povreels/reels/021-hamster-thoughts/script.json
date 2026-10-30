@@ -1,0 +1,13 @@
+[
+ {"id": "hook", "who": "narrator", "phrases": ["You can hear what your hamster thinks."]},
+ {"id": "h1", "who": "cat", "phrases": ["Run.", "Run.", "Where am I running to?"]},
+ {"id": "h2", "who": "cat", "phrases": ["I've run four thousand miles.", "I'm still in the cage."]},
+ {"id": "n2", "who": "narrator", "phrases": ["Three a.m."]},
+ {"id": "h3", "who": "pug", "phrases": ["Time to run.", "Loudly."]},
+ {"id": "n3", "who": "narrator", "phrases": ["The cat watches."]},
+ {"id": "h4", "who": "cat", "phrases": ["Don't look at me like that.", "I'm not a snack."]},
+ {"id": "n4", "who": "narrator", "phrases": ["Then the cage door is open."]},
+ {"id": "h5", "who": "pug", "phrases": ["Freedom!"]},
+ {"id": "h6", "who": "cat", "phrases": ["Too scary.", "I'm going back to my wheel."]},
+ {"id": "cta", "who": "narrator", "phrases": ["Is your hamster an athlete or a criminal?", "Part two?"]}
+]

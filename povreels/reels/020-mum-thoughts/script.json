@@ -1,0 +1,12 @@
+[
+ {"id": "hook", "who": "narrator", "phrases": ["You can hear what your mum thinks."]},
+ {"id": "m1", "who": "mum", "phrases": ["Did you eat?", "You look thin.", "Eat."]},
+ {"id": "m2", "who": "mum", "phrases": ["Who is this girl in the photos?", "I'll find out."]},
+ {"id": "n2", "who": "narrator", "phrases": ["You call her.", "Two minutes."]},
+ {"id": "m3", "who": "mum", "phrases": ["Two minutes.", "He's busy.", "That's fine."]},
+ {"id": "n3", "who": "narrator", "phrases": ["After you hang up."]},
+ {"id": "m4", "who": "mum", "phrases": ["I'll wait by the phone.", "Just in case."]},
+ {"id": "n4", "who": "narrator", "phrases": ["So you call her back."]},
+ {"id": "m5", "who": "mum", "phrases": ["He called back!", "Quick. Act normal."]},
+ {"id": "cta", "who": "narrator", "phrases": ["When did you last call your mum?", "Part two?"]}
+]

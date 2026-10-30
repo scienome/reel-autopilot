@@ -6,7 +6,7 @@
   //   who: 'maya' | 'sam' | 'mum', t (time, for blinks / talking / boil), flip (face left),
   //   pose: 'stand' | 'kneel' | 'sit' | 'bed' (from the waist up), lean (rad), bob (px),
   //   arms: 'down' | 'hips' | 'cross' | 'point' | 'shrug' | 'wave' | 'facepalm' | 'hold' | 'cheeks' | 'up' | [[ex, ey, hx, hy], [..]] (elbow + hand, relative to each shoulder),
-  //   hold: 'doughnut' | 'phone' | 'box' | 'ring' | 'paper' | 'tongs' | 'cake' | 'cakeout' | 'pan' | 'mug' | 'suitcase' | 'remote' (in the right hand),
+  //   hold: 'doughnut' | 'phone' | 'box' | 'ring' | 'paper' | 'baby' | 'nappy' | 'tongs' | 'cake' | 'cakeout' | 'pan' | 'mug' | 'suitcase' | 'remote' (in the right hand),
   //   style: overrides for this shot's CAST traits, e.g. { outfit: 'gown', top: '#fff', veil: true },
   //   face: { eyes: 'open' | 'half' | 'wide' | 'angry' | 'sad' | 'closed' | 'happy', look: [dx, dy], brows: -1 (angry) .. 1 (worried),
   //           mouth: 'smile' | 'smirk' | 'flat' | 'frown' | 'open' | 'shout' | 'grin' | 'o' | 'chew', talk (true: the mouth flaps), tears, blush, sweat } }
@@ -68,6 +68,8 @@
       else if (kind === 'suitcase') { poly(ctx, '#c0583a', [[x - 70, y - 20], [x + 70, y - 20], [x + 70, y + 130], [x - 70, y + 130]], 116); line(ctx, [[x - 24, y - 20], [x - 24, y - 40], [x + 24, y - 40], [x + 24, y - 20]], 8, INK, 117); line(ctx, [[x - 70, y + 50], [x + 70, y + 50]], 4, '#8a3a24', 118); }
       else if (kind === 'remote') { poly(ctx, '#2a2a30', [[x - 14, y - 50], [x + 14, y - 50], [x + 14, y + 40], [x - 14, y + 40]], 119); oval(ctx, '#e8384f', x, y - 34, 6, 6, 120, 2, 8); }
       else if (kind === 'paper') { poly(ctx, '#fbf8ee', [[x - 50, y - 70], [x + 50, y - 70], [x + 50, y + 60], [x - 50, y + 60]], 121); for (let i = 0; i < 6; i++) line(ctx, [[x - 38, y - 50 + i * 18], [x + 38, y - 50 + i * 18]], 3, '#8a8a96', 122 + i); }
+      else if (kind === 'baby') { blob(ctx, '#f6c8d8', [[x - 52, y - 30], [x + 48, y - 40], [x + 62, y + 20], [x + 20, y + 58], [x - 40, y + 50], [x - 62, y + 10]], 130); oval(ctx, '#f0c6a0', x - 8, y - 22, 26, 24, 131); for (const sd of [-1, 1]) oval(ctx, '#17121c', x - 8 + sd * 9, y - 26, 3, 3, 132 + sd, 0, 8); curve(ctx, [x - 16, y - 12], [x - 8, y - 6], [x, y - 12], 3, INK, 134); }
+      else if (kind === 'nappy') { blob(ctx, '#f8f8f4', [[x - 40, y - 30], [x + 40, y - 30], [x + 30, y + 30], [x - 30, y + 30]], 135); oval(ctx, '#c8a050', x, y - 6, 14, 10, 136, 0, 8); }
       else if (kind === 'ring') { ctx.lineWidth = 7; ctx.strokeStyle = '#f2c230'; ctx.beginPath(); ctx.arc(x, y + 6, 16, 0, Math.PI * 2); ctx.stroke(); blob(ctx, '#bfefff', [[x, y - 28], [x + 13, y - 14], [x, y - 4], [x - 13, y - 14]], 99, 3); }
     };
     const person = (ctx, x, y, s, o = {}) => {

@@ -1,3 +1,25 @@
 {
- "queue": ["001-dog-thoughts", "007-search-history", "002-cat-thoughts", "008-lie-counter", "003-dog-loves-cat", "010-car-thoughts", "004-pets-home-alone", "009-baby-thoughts", "005-vet-visit", "006-shelter-dog"]
+ "queue": [
+  "001-dog-thoughts",
+  "007-search-history",
+  "002-cat-thoughts",
+  "008-lie-counter",
+  "003-dog-loves-cat",
+  "010-car-thoughts",
+  "004-pets-home-alone",
+  "009-baby-thoughts",
+  "005-vet-visit",
+  "006-shelter-dog",
+  "011-parrot-thoughts",
+  "016-grandpa-thoughts",
+  "012-goldfish-memory",
+  "018-boss-thoughts",
+  "014-pigeon-thoughts",
+  "013-fridge-judges-you",
+  "017-cow-thoughts",
+  "015-phone-thoughts",
+  "019-houseplant-thoughts",
+  "020-mum-thoughts",
+  "021-hamster-thoughts"
+ ]
 }

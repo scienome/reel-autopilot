@@ -1,0 +1,57 @@
+{
+ "music": {
+  "prompt": "Fast tiny-sports comedy music with snare rolls and kazoo, a tense heist section in the middle, then cosy, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "h1",
+   "word": "Run",
+   "offset": 0.0,
+   "prompt": "squeaky hamster wheel spinning fast",
+   "dur": 2,
+   "gain": -5
+  },
+  {
+   "beat": "h2",
+   "word": "cage",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "n2",
+   "word": "Three",
+   "offset": 0.0,
+   "prompt": "loud squeaky wheel at night",
+   "dur": 2,
+   "gain": -5
+  },
+  {
+   "beat": "h4",
+   "word": "snack",
+   "offset": 0.0,
+   "prompt": "cat hiss",
+   "dur": 1,
+   "gain": -4
+  },
+  {
+   "beat": "n4",
+   "word": "open",
+   "offset": 0.0,
+   "prompt": "tiny metal door creaking open",
+   "dur": 1.2,
+   "gain": -4
+  },
+  {
+   "beat": "h6",
+   "word": "wheel",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.6,
+   "gain": -8
+  }
+ ]
+}

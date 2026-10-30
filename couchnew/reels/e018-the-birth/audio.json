@@ -1,0 +1,65 @@
+{
+ "music": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a frantic emergency dash in the middle and a tender lullaby music box at the end, no vocals",
+  "gain": -6,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "n1",
+   "word": "time",
+   "offset": 0.0,
+   "prompt": "loud alarm clock ringing",
+   "dur": 1.5,
+   "gain": -4
+  },
+  {
+   "beat": "s1",
+   "word": "bag",
+   "offset": 0.0,
+   "prompt": "bag zip",
+   "dur": 0.8,
+   "gain": -4
+  },
+  {
+   "beat": "m2",
+   "word": "doughnuts",
+   "offset": 0.3,
+   "prompt": "short sitcom studio audience laugh burst",
+   "dur": 1.6,
+   "gain": -10
+  },
+  {
+   "beat": "n2",
+   "word": "hospital",
+   "offset": 0.0,
+   "prompt": "ambulance siren passing",
+   "dur": 2,
+   "gain": -6
+  },
+  {
+   "beat": "s3",
+   "word": "fingers",
+   "offset": 0.0,
+   "prompt": "knuckles cracking crunch",
+   "dur": 1,
+   "gain": -3
+  },
+  {
+   "beat": "doc2",
+   "word": "girl",
+   "offset": 0.0,
+   "prompt": "newborn baby crying then soft music box",
+   "dur": 2.5,
+   "gain": -5
+  },
+  {
+   "beat": "mu2",
+   "word": "Brenda",
+   "offset": 0.4,
+   "prompt": "sitcom studio audience aww then applause",
+   "dur": 2.2,
+   "gain": -8
+  }
+ ]
+}

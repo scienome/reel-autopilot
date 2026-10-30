@@ -1,0 +1,57 @@
+{
+ "music": {
+  "prompt": "Gentle quirky garden music with ukulele and glockenspiel, turning sad and dramatic in the middle, then playful, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "p1",
+   "word": "days",
+   "offset": 0.0,
+   "prompt": "dry leaves rustling",
+   "dur": 1.2,
+   "gain": -6
+  },
+  {
+   "beat": "p2",
+   "word": "cactus",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "n2",
+   "word": "holiday",
+   "offset": 0.0,
+   "prompt": "suitcase wheels rolling and a door closing",
+   "dur": 1.5,
+   "gain": -5
+  },
+  {
+   "beat": "p3",
+   "word": "go",
+   "offset": 0.0,
+   "prompt": "sad violin sting",
+   "dur": 1.5,
+   "gain": -6
+  },
+  {
+   "beat": "p4",
+   "word": "door",
+   "offset": 0.0,
+   "prompt": "small audience aww",
+   "dur": 1.6,
+   "gain": -8
+  },
+  {
+   "beat": "p5",
+   "word": "drowning",
+   "offset": 0.0,
+   "prompt": "water glugging and bubbling",
+   "dur": 1.5,
+   "gain": -5
+  }
+ ]
+}

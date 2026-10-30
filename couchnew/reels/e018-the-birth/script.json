@@ -1,0 +1,14 @@
+[
+ {"id": "n1", "who": "narrator", "phrases": ["Three a.m.", "It's time."]},
+ {"id": "m1", "who": "maya", "phrases": ["Sam!", "The baby's coming!"]},
+ {"id": "s1", "who": "sam", "phrases": ["I'm ready!", "I packed the bag!"]},
+ {"id": "m2", "who": "maya", "phrases": ["That's a bag of doughnuts."]},
+ {"id": "n2", "who": "narrator", "phrases": ["The hospital.", "Again."]},
+ {"id": "doc1", "who": "doc", "phrases": ["Push!"]},
+ {"id": "s2", "who": "sam", "phrases": ["I can't watch!"]},
+ {"id": "mu1", "who": "mum", "phrases": ["Then hold my hand, Samuel."]},
+ {"id": "s3", "who": "sam", "phrases": ["Ow!", "She's breaking my fingers!"]},
+ {"id": "doc2", "who": "doc", "phrases": ["It's a girl!"]},
+ {"id": "mu2", "who": "mum", "phrases": ["Welcome, Brenda."]},
+ {"id": "n3", "who": "narrator", "phrases": ["Part two?"]}
+]

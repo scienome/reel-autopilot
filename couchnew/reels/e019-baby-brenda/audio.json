@@ -1,0 +1,57 @@
+{
+ "music": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a tender lullaby that keeps getting interrupted by chaos, then a smug ending, no vocals",
+  "gain": -6,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "s1",
+   "word": "Daddy",
+   "offset": 0.0,
+   "prompt": "soft baby coo",
+   "dur": 1,
+   "gain": -6
+  },
+  {
+   "beat": "n2",
+   "word": "screams",
+   "offset": 0.0,
+   "prompt": "newborn baby crying loudly",
+   "dur": 2,
+   "gain": -4
+  },
+  {
+   "beat": "n3x",
+   "word": "louder",
+   "offset": 0.0,
+   "prompt": "baby screaming very loudly",
+   "dur": 2,
+   "gain": -3
+  },
+  {
+   "beat": "n4",
+   "word": "Silence",
+   "offset": 0.0,
+   "prompt": "sudden silence then a single soft music box note",
+   "dur": 1.5,
+   "gain": -6
+  },
+  {
+   "beat": "s3",
+   "word": "old",
+   "offset": 0.3,
+   "prompt": "short sitcom studio audience laugh burst",
+   "dur": 1.6,
+   "gain": -10
+  },
+  {
+   "beat": "mu3",
+   "word": "you",
+   "offset": 0.3,
+   "prompt": "sitcom studio audience big laugh",
+   "dur": 2.2,
+   "gain": -10
+  }
+ ]
+}

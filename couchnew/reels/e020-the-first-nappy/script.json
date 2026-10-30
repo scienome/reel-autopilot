@@ -1,0 +1,13 @@
+[
+ {"id": "m1", "who": "maya", "phrases": ["Sam.", "Your turn to change the nappy."]},
+ {"id": "s1", "who": "sam", "phrases": ["I'm ready."]},
+ {"id": "n2", "who": "narrator", "phrases": ["He was not ready."]},
+ {"id": "s2", "who": "sam", "phrases": ["Goggles.", "Gloves.", "Peg on the nose."]},
+ {"id": "mu1", "who": "mum", "phrases": ["It's one nappy, Samuel."]},
+ {"id": "s3", "who": "sam", "phrases": ["It's a biohazard!"]},
+ {"id": "n4", "who": "narrator", "phrases": ["Forty minutes later."]},
+ {"id": "s4", "who": "sam", "phrases": ["Done!"]},
+ {"id": "m2", "who": "maya", "phrases": ["Babe.", "It's on her head."]},
+ {"id": "mu2", "who": "mum", "phrases": ["Best one yet."]},
+ {"id": "n3", "who": "narrator", "phrases": ["Part two?"]}
+]

@@ -1,0 +1,65 @@
+{
+ "music": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a joyful freedom anthem in the middle that stops dead at the doorbell, no vocals",
+  "gain": -6,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "mu1",
+   "word": "out",
+   "offset": 0.0,
+   "prompt": "moving boxes being dropped",
+   "dur": 1.2,
+   "gain": -5
+  },
+  {
+   "beat": "s1",
+   "word": "Really",
+   "offset": 0.0,
+   "prompt": "crowd cheering",
+   "dur": 1.2,
+   "gain": -6
+  },
+  {
+   "beat": "s2",
+   "word": "go",
+   "offset": 0.3,
+   "prompt": "short sitcom studio audience laugh burst",
+   "dur": 1.6,
+   "gain": -10
+  },
+  {
+   "beat": "s3",
+   "word": "Freedom",
+   "offset": 0.0,
+   "prompt": "birds singing happily",
+   "dur": 1.8,
+   "gain": -6
+  },
+  {
+   "beat": "n4",
+   "word": "doorbell",
+   "offset": 0.0,
+   "prompt": "doorbell ding dong",
+   "dur": 1.2,
+   "gain": -2
+  },
+  {
+   "beat": "mu2",
+   "word": "neighbour",
+   "offset": 0.0,
+   "prompt": "dramatic horror sting",
+   "dur": 1.5,
+   "gain": -4
+  },
+  {
+   "beat": "mu3",
+   "word": "leaving",
+   "offset": 0.4,
+   "prompt": "sitcom studio audience huge laugh and applause",
+   "dur": 2.4,
+   "gain": -10
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+[
+ {"id": "mu1", "who": "mum", "phrases": ["Good news.", "I'm moving out."]},
+ {"id": "s1", "who": "sam", "phrases": ["Really?!"]},
+ {"id": "m1", "who": "maya", "phrases": ["Mum, you don't have to go."]},
+ {"id": "s2", "who": "sam", "phrases": ["She absolutely has to go."]},
+ {"id": "n2", "who": "narrator", "phrases": ["One week later."]},
+ {"id": "s3", "who": "sam", "phrases": ["Peace.", "Quiet.", "Freedom."]},
+ {"id": "n4", "who": "narrator", "phrases": ["Then the doorbell."]},
+ {"id": "mu2", "who": "mum", "phrases": ["Hello, neighbour."]},
+ {"id": "s4", "who": "sam", "phrases": ["You bought the house next door?!"]},
+ {"id": "mu3", "who": "mum", "phrases": ["I'm a grandma, Samuel.", "I'm never leaving."]},
+ {"id": "n3", "who": "narrator", "phrases": ["Part two?"]}
+]

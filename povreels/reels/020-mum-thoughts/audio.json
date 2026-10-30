@@ -1,0 +1,57 @@
+{
+ "music": {
+  "prompt": "Warm playful family comedy music with clarinet and pizzicato, turning into a soft emotional piano, then happy, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "m1",
+   "word": "Eat",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "m2",
+   "word": "out",
+   "offset": 0.0,
+   "prompt": "detective suspense sting",
+   "dur": 1.2,
+   "gain": -5
+  },
+  {
+   "beat": "n2",
+   "word": "call",
+   "offset": 0.0,
+   "prompt": "phone ringing",
+   "dur": 1.5,
+   "gain": -5
+  },
+  {
+   "beat": "n3",
+   "word": "up",
+   "offset": 0.0,
+   "prompt": "phone hang up beep",
+   "dur": 0.8,
+   "gain": -4
+  },
+  {
+   "beat": "n4",
+   "word": "back",
+   "offset": 0.0,
+   "prompt": "phone ringing",
+   "dur": 1.2,
+   "gain": -5
+  },
+  {
+   "beat": "m5",
+   "word": "normal",
+   "offset": 0.0,
+   "prompt": "small audience laugh and aww",
+   "dur": 1.8,
+   "gain": -8
+  }
+ ]
+}

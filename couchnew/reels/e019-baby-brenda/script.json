@@ -1,0 +1,14 @@
+[
+ {"id": "n1", "who": "narrator", "phrases": ["Week one.", "Baby Brenda."]},
+ {"id": "s1", "who": "sam", "phrases": ["Hi, Brenda.", "It's Daddy."]},
+ {"id": "n2", "who": "narrator", "phrases": ["She screams."]},
+ {"id": "m1", "who": "maya", "phrases": ["Let me try."]},
+ {"id": "n3x", "who": "narrator", "phrases": ["She screams louder."]},
+ {"id": "mu1", "who": "mum", "phrases": ["Give her here."]},
+ {"id": "n4", "who": "narrator", "phrases": ["Silence."]},
+ {"id": "s2", "who": "sam", "phrases": ["How?!"]},
+ {"id": "mu2", "who": "mum", "phrases": ["She knows who's in charge."]},
+ {"id": "s3", "who": "sam", "phrases": ["She's two weeks old!"]},
+ {"id": "mu3", "who": "mum", "phrases": ["Exactly.", "Two weeks smarter than you."]},
+ {"id": "n3", "who": "narrator", "phrases": ["Part two?"]}
+]

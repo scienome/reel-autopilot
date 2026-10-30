@@ -1,0 +1,12 @@
+[
+ {"id": "hook", "who": "narrator", "phrases": ["You can hear what your houseplant thinks."]},
+ {"id": "p1", "who": "cat", "phrases": ["Water.", "Please.", "It's been nine days."]},
+ {"id": "p2", "who": "cat", "phrases": ["You watered the cactus.", "The cactus doesn't even like you."]},
+ {"id": "n2", "who": "narrator", "phrases": ["You go on holiday."]},
+ {"id": "p3", "who": "cat", "phrases": ["Is this it?", "Is this how I go?"]},
+ {"id": "n3", "who": "narrator", "phrases": ["You come back.", "It's still alive."]},
+ {"id": "p4", "who": "cat", "phrases": ["I waited for you.", "I grew toward the door."]},
+ {"id": "n4", "who": "narrator", "phrases": ["So you water it.", "Every day."]},
+ {"id": "p5", "who": "cat", "phrases": ["Too much.", "Now I'm drowning.", "Humans."]},
+ {"id": "cta", "who": "narrator", "phrases": ["How many plants have you killed?", "Part two?"]}
+]
