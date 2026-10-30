@@ -34,11 +34,16 @@
       indra: { skin: '#f2c49c', sh: '#d8a47a', hair: '#2a1a14', cloth: '#f6e6b0', cloth2: '#d8a020', crown: 'tall', tilak: 'dot', mustache: true, longHair: true },
       vayu: { skin: '#cfe4f6', sh: '#a6c6e2', hair: '#6a8ab0', cloth: '#7ab8e8', cloth2: '#ffffff', crown: 'small', tilak: 'dot', longHair: true, scarf: '#e8f6ff' },
       deva: { skin: '#f0c098', sh: '#d6a076', hair: '#2a1a14', cloth: '#f0d070', cloth2: '#4a9ad8', crown: 'small', tilak: 'dot', longHair: true },
-      brahma: { skin: '#f2b07a', sh: '#d48e58', hair: '#f4f4f4', cloth: '#f4e8c8', cloth2: '#d83a2a', crown: 'tall', beard: '#f4f4f4', tilak: 'dot' },
+      brahma: { skin: '#f2b07a', sh: '#d48e58', hair: '#f4f4f4', cloth: '#f4e8c8', cloth2: '#d83a2a', crown: 'tall', beard: '#f4f4f4', tilak: 'dot', heads: 3 },
       arjuna: { skin: '#d9a07a', sh: '#bb805a', hair: '#1c1214', cloth: '#f2f2f2', cloth2: '#c8332a', crown: 'small', armor: true, tilak: 'vaishnav', longHair: true, mustache: true },
       ravana: { skin: '#9a6248', sh: '#7a4834', hair: '#120c0c', cloth: '#5a1a2a', cloth2: '#f4c430', crown: 'tall', heads: 10, mustache: true, armor: true, tilak: 'shaiv', muscle: 1.15 },
       sage: { skin: '#d8a27a', sh: '#bc845c', hair: '#f2f2f2', cloth: '#e8742a', cloth2: '#c85a1a', beard: '#f2f2f2', topknot: true, beads: true, tilak: 'shaiv' },
       asura: { skin: '#5a7a4a', sh: '#435e36', hair: '#120c0c', cloth: '#3a2a3a', cloth2: '#a02828', horns: true, tusks: true, muscle: 1.2, h: 1.1, redEyes: true },
+      shani: { skin: '#3a4466', sh: '#283050', hair: '#0e1020', cloth: '#1e2a6a', cloth2: '#f4c430', crown: 'tall', tilak: 'dot', longHair: true, mustache: true },
+      kumbhakarna: { skin: '#8a5a3e', sh: '#6a422c', hair: '#120c0c', cloth: '#6a2a1a', cloth2: '#f4c430', crown: 'small', mustache: true, muscle: 1.4, h: 1.12, belly: true, tilak: 'shaiv' },
+      saraswati: { skin: '#f2c8a4', sh: '#d8a882', hair: '#1c1214', cloth: '#f8f6ee', cloth2: '#f4c430', girl: true, crown: 'small', tilak: 'dot' },
+      barbarik: { skin: '#c8906a', sh: '#a8724c', hair: '#1c1214', cloth: '#f4c430', cloth2: '#c8332a', crown: 'tall', tilak: 'vaishnav', longHair: true, armor: true },
+      mandodari: { skin: '#e9b48a', sh: '#cf9468', hair: '#1c1214', cloth: '#7a1a4a', cloth2: '#f4c430', girl: true, crown: 'small', tilak: 'dot' },
       villager: { skin: '#c88c62', sh: '#aa6e46', hair: '#1c1214', cloth: '#f2ead8', cloth2: '#d8a030', turban: '#d8402a', mustache: true },
     };
     // ---------- drawing helpers (all in local units; the person's transform already applies the scale) ----------
@@ -91,6 +96,8 @@
         line(ctx, GOLD, 12, [[0, 0], [0, -120]]); for (const e of [-1, 1]) { const yy = e < 0 ? 0 : -120; poly(ctx, gold(ctx, yy - 50, yy + 50), [[-22, yy], [0, yy + e * 58], [22, yy], [0, yy - e * 10]], 4); line(ctx, GOLD_D, 4, [[-22, yy], [-30, yy + e * 40]], false); line(ctx, GOLD_D, 4, [[22, yy], [30, yy + e * 40]], false); } ell(ctx, '#e8402a', 0, -60, 10, 10, 0, 3); ctx.restore(); },
       mountain(ctx) { smooth(ctx, lg(ctx, -150, 150, '#8a6a4a', '#5a4430'), [[-150, 20], [-110, -90], [-40, -170], [20, -130], [80, -200], [150, -60], [140, 30], [0, 50]], 6); for (const [x, y] of [[-70, -100], [30, -110], [90, -120], [-20, -40]]) { line(ctx, '#5a3a22', 5, [[x, y], [x, y + 24]], false); ell(ctx, '#3e9a4a', x, y - 8, 18, 20, 0, 3); } ell(ctx, '#ffe28a', 70, -60, 12, 12, 0, 2); },
       sunfruit(ctx, x = 0, y = 0, t = 0) { MYTH.sun(ctx, x, y, 60, t); },
+      veena(ctx) { ctx.save(); ctx.rotate(-0.9); line(ctx, '#8a4a1c', 10, [[-150, 0], [130, 0]]); ell(ctx, lg(ctx, -60, 60, '#c8762a', '#8a4a1c'), -150, 10, 44, 40); ell(ctx, lg(ctx, -40, 40, '#c8762a', '#8a4a1c'), 120, 14, 30, 28); for (let i = 0; i < 4; i++) line(ctx, '#f4e8c8', 1.2, [[-140, -4 + i * 3], [110, -4 + i * 3]], false); ctx.restore(); },
+      sword(ctx) { ctx.save(); ctx.rotate(-0.4); poly(ctx, '#dfe4ec', [[-6, -10], [6, -10], [4, -170], [0, -186], [-4, -170]], 3.5); line(ctx, GOLD, 8, [[-26, -10], [26, -10]]); line(ctx, '#6a3a1a', 8, [[0, -6], [0, 30]]); ctx.restore(); },
     };
 
     // ---------- the head ----------
@@ -210,7 +217,7 @@
       // tail (behind)
       if (c.tail) { const k = c.child ? 0.75 : 1, w = Math.sin(t * 2.5 + seed) * 18; ctx.save(); ctx.scale(k, k); curve(ctx, c.skin, 16, [30, B.wy / k + 20], [170, B.wy / k + 60 + w], [150, B.wy / k - 120]); curve(ctx, c.skin, 14, [150, B.wy / k - 120], [130, B.wy / k - 240 - w], [190, B.wy / k - 250]); ell(ctx, c.hair, 192, B.wy / k - 250, 14, 12, 0, 4); ctx.restore(); }
       // Ravana's extra heads, behind the main one
-      if (c.heads) { const ex = [-4, -3, -2, -1, 1, 2, 3, 4, 5]; for (const i of ex.sort((a, b) => Math.abs(b) - Math.abs(a))) head(ctx, c, cx + i * 74, hy + Math.abs(i) * 8 + 10, Object.assign({}, f, { talk: false }), t + i, seed + i, 0.82); }
+      if (c.heads) { const ex = c.heads >= 10 ? [-4, -3, -2, -1, 1, 2, 3, 4, 5] : [-1, 1], sp = c.heads >= 10 ? 74 : 66; for (const i of ex.sort((a, b) => Math.abs(b) - Math.abs(a))) head(ctx, c, cx + i * sp, hy + Math.abs(i) * 8 + 10, Object.assign({}, f, { talk: false }), t + i, seed + i, 0.82); }
       head(ctx, c, cx, hy, f, t, seed, 1, 'back');
       // legs + lower cloth
       if (sit) {
@@ -296,6 +303,11 @@
       ctx.save(); ctx.shadowColor = '#9ad8ff'; ctx.shadowBlur = 30; ctx.lineJoin = 'round'; ctx.strokeStyle = 'rgba(150,210,255,0.7)'; ctx.lineWidth = w * 2.4; ctx.beginPath(); pts.forEach((p, i) => (i ? ctx.lineTo(...p) : ctx.moveTo(...p))); ctx.stroke(); ctx.strokeStyle = '#ffffff'; ctx.lineWidth = w; ctx.stroke(); ctx.restore(); };
     const shock = (ctx, x, y, t, at, col = 'rgba(255,240,200,') => { const u = (t - at) / 0.6; if (u < 0 || u > 1) return; ctx.save(); ctx.strokeStyle = col + (1 - u) + ')'; ctx.lineWidth = 18 * (1 - u) + 2; ctx.beginPath(); ctx.arc(x, y, 40 + u * 420, 0, TAU); ctx.stroke(); ctx.fillStyle = col + (0.6 * (1 - u) * (1 - u)) + ')'; ctx.beginPath(); ctx.arc(x, y, 60 + u * 200, 0, TAU); ctx.fill(); ctx.restore(); };
     const speed = (ctx, W, H_, t, dir = 1, a = 0.5) => { ctx.save(); ctx.strokeStyle = `rgba(255,255,255,${a})`; ctx.lineCap = 'round'; for (let i = 0; i < 26; i++) { const x = (i * 131) % W, len = 120 + (i * 53) % 200, y = (((i * 211) + t * 2400 * dir) % (H_ + 400)) - 200; ctx.lineWidth = 2 + (i % 3) * 2; ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x, y + len); ctx.stroke(); } ctx.restore(); };
+    // the nine planets (navagraha) as glowing orbs on a ring; spin: speed, k: 0..1 visible
+    const GRAHA = ['#ffb43a', '#f4f4ff', '#e8402a', '#3ab06a', '#f4d03a', '#f8f8f8', '#3a4a9a', '#6a4a7a', '#8a6a5a'];
+    const grahas = (ctx, x, y, r, t, spin = 0.3, k = 1, skip = -1) => { for (let i = 0; i < 9; i++) { if (i === skip) continue; const a = (i / 9) * TAU + t * spin, px = x + Math.cos(a) * r, py = y + Math.sin(a) * r * 0.45, s = 22 * k;
+      const g = ctx.createRadialGradient(px, py, 2, px, py, s * 2.4); g.addColorStop(0, GRAHA[i]); g.addColorStop(1, 'rgba(255,255,255,0)'); ctx.fillStyle = g; ctx.beginPath(); ctx.arc(px, py, s * 2.4, 0, TAU); ctx.fill(); ell(ctx, GRAHA[i], px, py, s, s, 0, 3); } };
+    const chains = (ctx, x0, y0, x1, y1, n = 10) => { for (let i = 0; i <= n; i++) { const k = i / n; ell(ctx, null, mix(x0, x1, k), mix(y0, y1, k) + Math.sin(k * Math.PI) * 30, 10, 6, i % 2 ? 0 : Math.PI / 2, 5); ctx.save(); ell(ctx, null, mix(x0, x1, k), mix(y0, y1, k) + Math.sin(k * Math.PI) * 30, 10, 6, i % 2 ? 0 : Math.PI / 2, 2.5); ctx.restore(); } };
     const dark = (ctx, W, H_, a) => { if (a <= 0) return; ctx.fillStyle = `rgba(4,4,16,${Math.min(0.92, a)})`; ctx.fillRect(0, 0, W, H_); };
     const flame = (ctx, x, y, s, t) => { for (let i = 0; i < 3; i++) { const k = 1 - i * 0.3, fl = Math.sin(t * 14 + i) * 6; ctx.fillStyle = ['#e8401c', '#f4a020', '#fff0a0'][i]; ctx.beginPath(); ctx.moveTo(x - 30 * s * k, y); ctx.quadraticCurveTo(x - 34 * s * k, y - 50 * s * k, x + fl, y - 100 * s * k); ctx.quadraticCurveTo(x + 34 * s * k, y - 50 * s * k, x + 30 * s * k, y); ctx.closePath(); ctx.fill(); } };
     const om = (ctx, x, y, size, a = 1) => { ctx.save(); ctx.globalAlpha = a; ctx.font = `${size}px "Noto Sans Devanagari", sans-serif`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.shadowColor = 'rgba(255,200,80,0.9)'; ctx.shadowBlur = 30; ctx.fillStyle = '#ffe08a'; ctx.fillText('ॐ', x, y); ctx.restore(); };
@@ -350,5 +362,5 @@
     // warm storybook light + vignette over the frame
     const light = (ctx, W, H_) => { let g = ctx.createRadialGradient(W * 0.25, H_ * 0.12, 40, W * 0.25, H_ * 0.12, H_ * 0.9); g.addColorStop(0, 'rgba(255,214,150,0.16)'); g.addColorStop(1, 'rgba(255,214,150,0)'); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H_);
       g = ctx.createRadialGradient(W / 2, H_ / 2, H_ * 0.32, W / 2, H_ / 2, H_ * 0.78); g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(1, 'rgba(20,6,2,0.45)'); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H_); };
-    return { person, head, armsAt, ARM, ITEMS, CAST, sets, light, aura, sun, rays, petals, lightning, shock, speed, dark, flame, om, card, banner, cloud, tree, stars, INK, GOLD, ell, poly, smooth, line, curve };
+    return { person, head, armsAt, grahas, chains, ARM, ITEMS, CAST, sets, light, aura, sun, rays, petals, lightning, shock, speed, dark, flame, om, card, banner, cloud, tree, stars, INK, GOLD, ell, poly, smooth, line, curve };
   })();

@@ -21,7 +21,7 @@
     const h = { V, at, first, WORDS, RAW, talking, pulse, spanOf, char, AT: MYTH.armsAt, card: MYTH.card, partTwo };
     const SHOTS = build(h), SPK = Object.assign({ hanuman: ['हनुमान', '#ff9a3c'], balhanuman: ['हनुमान', '#ff9a3c'], krishna: ['कृष्ण', '#7ab4ff'], balkrishna: ['कान्हा', '#7ab4ff'], rama: ['श्री राम', '#7ad0e0'],
       shiva: ['महादेव', '#b8d4f0'], parvati: ['माता पार्वती', '#ff8a9a'], sita: ['माता सीता', '#ffb070'], ganesha: ['गणेश', '#ffb08a'], indra: ['इंद्र', '#ffe08a'], vayu: ['पवन देव', '#cfe8ff'], brahma: ['ब्रह्मा', '#ffd0a0'],
-      ravana: ['रावण', '#ff6a5a'], arjuna: ['अर्जुन', '#f0f0f0'], yashoda: ['माँ यशोदा', '#8ae0b0'], sage: ['ऋषि', '#ffb060'], asura: ['असुर', '#a8e070'] }, o.spk || {}), noSub = o.noSub || [], GOLDW = (o.gold || []).map(clean);
+      ravana: ['रावण', '#ff6a5a'], arjuna: ['अर्जुन', '#f0f0f0'], yashoda: ['माँ यशोदा', '#8ae0b0'], sage: ['ऋषि', '#ffb060'], asura: ['असुर', '#a8e070'], shani: ['शनि देव', '#9ab0ff'], kumbhakarna: ['कुंभकर्ण', '#ff8a5a'], saraswati: ['माता सरस्वती', '#fff3c0'], barbarik: ['बर्बरीक', '#ffd070'], mandodari: ['मंदोदरी', '#ff8ac0'] }, o.spk || {}), noSub = o.noSub || [], GOLDW = (o.gold || []).map(clean);
     const SH = BEATS.filter((b) => SHOTS[b.id]).map((b, i) => [b.id, i ? first(b.id) - 0.06 : 0]);
     const shotAt = makeShotAt(SH, DURATION);
     const shotCam = (ctx, a, b, u) => { const k = H.ease.inOut(u), cx = H.lerp(a[0], b[0], k), cy = H.lerp(a[1], b[1], k), z = H.lerp(a[2], b[2], k); ctx.translate(360, 640); ctx.scale(z, z); ctx.translate(-cx, -cy); };
