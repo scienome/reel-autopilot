@@ -3,3 +3,4 @@ reels/*/alignment.json
 __pycache__/
 *.pyc
 out/invites/
+out/myth/
