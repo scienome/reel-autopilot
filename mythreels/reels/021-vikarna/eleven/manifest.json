@@ -1,0 +1,28 @@
+{
+ "music-39e3a19596fc.mp3": {
+  "prompt": "Epic Indian Mahabharata cinematic underscore: dhol and war drums, conch shells, bansuri flute, sitar, tense strings and choir swells, temple bells, tense silent court, a lone brave voice, harsh rebuke, then tragic war and grief, no vocals",
+  "music_length_ms": 50060,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-0bdbf5ffbbc8.mp3": {
+  "text": "gasp of a royal court crowd",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-cbf9335497cc.mp3": {
+  "text": "harsh dramatic hit",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-8012930a56c7.mp3": {
+  "text": "heavy mace impact and silence",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
