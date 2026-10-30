@@ -3,7 +3,7 @@
 Every finished video, one folder per series. Click a folder, then a file, then **View raw** (or the download
 button) to play it. This page updates itself after every render.
 
-## CouchSarcasm cartoon sitcom (new) (14)
+## CouchSarcasm cartoon sitcom (new) (19)
 Folder: [`couch-cartoon/`](couch-cartoon/)
 
 | Video | Title | Status |
@@ -20,10 +20,15 @@ Folder: [`couch-cartoon/`](couch-cartoon/)
 | [e010-the-vows](couch-cartoon/e010-the-vows.mp4) | Her mum edited his wedding vows ✍️ | Not scheduled |
 | [e011-the-wedding](couch-cartoon/e011-the-wedding.mp4) | "If anyone objects..." Her mum stood up 💍 | Not scheduled |
 | [e012-the-honeymoon](couch-cartoon/e012-the-honeymoon.mp4) | Her mum booked the middle seat on their honeymoon ✈️ | Not scheduled |
+| [e013-the-first-fight](couch-cartoon/e013-the-first-fight.mp4) | Their first married fight: the thermostat 🌡️ | Not scheduled |
+| [e014-the-baby-news](couch-cartoon/e014-the-baby-news.mp4) | She told him she's pregnant. Her mum already knew. 👶 | Not scheduled |
+| [e015-baby-names](couch-cartoon/e015-baby-names.mp4) | Nobody knew her mum's real name 👶 | Not scheduled |
+| [e016-sam-babyproofs](couch-cartoon/e016-sam-babyproofs.mp4) | He babyproofed the house. Too well. 🔒 | Not scheduled |
+| [e017-the-gender-reveal](couch-cartoon/e017-the-gender-reveal.mp4) | The gender reveal went VERY wrong 🎀🔥 | Not scheduled |
 | [m001-she-means](couch-cartoon/m001-she-means.mp4) | What she says vs what she means 💀 | Not scheduled |
 | [t001-dentist](couch-cartoon/t001-dentist.mp4) | Who's Jessica? 📱 | Not scheduled |
 
-## Gears & Glitches POV stories (new) (17)
+## Gears & Glitches POV stories (new) (18)
 Folder: [`gears-pov/`](gears-pov/)
 
 | Video | Title | Status |
@@ -42,6 +47,7 @@ Folder: [`gears-pov/`](gears-pov/)
 | [012-goldfish-memory](gears-pov/012-goldfish-memory.mp4) | You can hear what your goldfish thinks 🐠 | Not scheduled |
 | [013-fridge-judges-you](gears-pov/013-fridge-judges-you.mp4) | You can hear what your fridge thinks 🧀 | Not scheduled |
 | [014-pigeon-thoughts](gears-pov/014-pigeon-thoughts.mp4) | You can hear what pigeons think 🐦 | Not scheduled |
+| [015-phone-thoughts](gears-pov/015-phone-thoughts.mp4) | You can hear what your phone thinks 📱 | Not scheduled |
 | [016-grandpa-thoughts](gears-pov/016-grandpa-thoughts.mp4) | You can hear what your grandpa thinks 👴 | Not scheduled |
 | [017-cow-thoughts](gears-pov/017-cow-thoughts.mp4) | You can hear what cows think 🐄 | Not scheduled |
 | [018-boss-thoughts](gears-pov/018-boss-thoughts.mp4) | You can hear what your boss thinks 💼 | Not scheduled |
