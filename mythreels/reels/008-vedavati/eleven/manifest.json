@@ -1,0 +1,38 @@
+{
+ "music-95aeecd74d5f.mp3": {
+  "prompt": "Dark epic Indian mythological cinematic underscore for a demon king saga: tanpura drone, deep war drums and taiko, menacing low brass, tabla, shehnai and choir swells, temple bells, tender devotional beginning, shocking violence, a fiery vow, then divine rebirth, no vocals",
+  "music_length_ms": 38140,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-bd03b5e72148.mp3": {
+  "text": "sudden dramatic hit and gasp",
+  "duration_seconds": 1.4,
+  "prompt_influence": 0.5
+ },
+ "sfx-f9a4c9544712.mp3": {
+  "text": "sharp blade slice whoosh",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-70a16dfca42f.mp3": {
+  "text": "thunderclap and fire roar",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-827b125b4867.mp3": {
+  "text": "fire whoosh rising, flames roaring",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-7444b76f897a.mp3": {
+  "text": "divine choir and temple bells",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
