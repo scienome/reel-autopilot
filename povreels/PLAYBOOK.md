@@ -42,6 +42,11 @@ Keep the queue **at least 2 days (6 episodes) ahead**; a scheduled batch makes *
   pick from the ElevenLabs library voices already used, and ask the owner before adding a brand-new voice.
 - `meta.json`: title (<70 chars, emoji), caption (2 lines + a question), 8 hashtags (`pov`, topic tags, `funny`,
   `animation`, `relatable`, `whatif`, `reels`), `first_comment`, `cover_t`, **`"libs": ["lib/pov.js"]`**.
+- **Translations (free, YouTube only):** add the reel to `i18n/pov.json` as
+  `"<id>": {"hi": {"title", "caption"}, "es": {...}, "pt": {...}}` (natural Hindi, Spanish, Brazilian Portuguese;
+  same emojis; titles under 90 chars). The YouTube upload sends them as localized titles/descriptions,
+  so viewers with those languages see them translated. A missing entry only means English. Lives outside `reels/`,
+  so editing it never triggers a render.
 - `audio.json`: music that shifts mood with the story (playful → tender → playful), 5-8 sfx on words. See
   `tools/eleven_audio.py`.
 - `story.js`: `makeCouch({ keys: [...caption keywords], shots: ({ V, first }) => ({ <beat>: spec }) })` from the shared

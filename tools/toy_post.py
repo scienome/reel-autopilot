@@ -120,7 +120,7 @@ def yt_post(tok, rid, title, desc, tags, at):
     d = tempfile.mkdtemp()
     if not yt.release_assets(TAG + rid, d):
         raise RuntimeError(f'could not download Release {TAG}{rid}')
-    yid, st = yt.upload(tok, os.path.join(d, rid + '.mp4'), title, desc, tags, at)
+    yid, st = yt.upload(tok, os.path.join(d, rid + '.mp4'), title, desc, tags, at, yt.localized('toy', rid, desc))
     if os.path.exists(os.path.join(d, 'cover.jpg')):
         try:
             yt.set_thumb(tok, yid, os.path.join(d, 'cover.jpg'))

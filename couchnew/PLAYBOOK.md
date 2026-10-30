@@ -50,6 +50,11 @@ left: ids in `schedule.json` "queue" that are not in the root `posted.json`.
 - `meta.json`: `title` (<70 chars, emoji), `caption` (2 lines + a question, emoji), `hashtags` (8, include
   `couplehumor`, `motherinlaw`, `relationships`, `animation`, `cartoon`, `funny`, `sitcom`, `reels`), `first_comment`,
   `cover_t`, **`"libs": ["toon/adult.js", "toon/sitcom.js"]`**.
+- **Translations (free, YouTube only):** add the reel to `i18n/couch.json` as
+  `"<id>": {"hi": {"title", "caption"}, "es": {...}, "pt": {...}}` (natural Hindi, Spanish, Brazilian Portuguese;
+  same emojis; titles under 90 chars). The YouTube upload sends them as localized titles/descriptions,
+  so viewers with those languages see them translated. A missing entry only means English. Lives outside `reels/`,
+  so editing it never triggers a render.
 - `audio.json`: music prompt "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light
   drums, cheeky and fast, <one twist for this episode>, no vocals" (gain -6, tail 3) + 5-8 sfx pinned to words, including
   2-3 **short sitcom audience** laughs/oohs (gain -8 to -10) after the punchlines. See `tools/eleven_audio.py`.

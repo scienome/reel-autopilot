@@ -113,6 +113,12 @@ real people appear. 6-10 hashtags (always include `toybricks`, plus trend tags l
 `title` is a clickbait-style YouTube title under 70 characters. `cover_t` is the most shocking frame. Add `sources`
 only if the reel uses real facts.
 
+- **Translations (free, YouTube only):** add the reel to `i18n/toy.json` as
+  `"<id>": {"hi": {"title", "caption"}, "es": {...}, "pt": {...}}` (natural Hindi, Spanish, Brazilian Portuguese;
+  same emojis; translated "Parody." first when real people appear; titles under 90 chars). The YouTube upload sends them as localized titles/descriptions,
+  so viewers with those languages see them translated. A missing entry only means English. Lives outside `reels/`,
+  so editing it never triggers a render.
+
 ## 3. Build each reel
 - `script.json` (beats with ids and phrases), `story.js`, `meta.json`. **Write `story.js` with `makeComedy`**
   (documented at the bottom of `style/scenes.js`): one short spec per beat (scene, camera, cast with poses that change

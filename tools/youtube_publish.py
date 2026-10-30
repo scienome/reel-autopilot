@@ -45,7 +45,24 @@ def token():
     return r.json()['access_token']
 
 
-def upload(tok, mp4, title, desc, tags, publish_at):
+def localized(series, rid, desc):
+    """Translated titles and descriptions for a Short, from i18n/<series>.json ({rid: {lang: {title, caption}}}), as YouTube
+    `localizations`. The description keeps the English hashtag block. None when the reel has no translations."""
+    p = os.path.join(ROOT, 'i18n', series + '.json')
+    e = json.load(open(p)).get(rid) if os.path.exists(p) else None
+    if not e:
+        return None
+    tail = desc.rsplit('\n\n', 1)[1] if '\n\n' in desc else ''
+    out = {}
+    for lang, v in e.items():
+        t = v['title'].strip()
+        if len(t) + 8 <= 100:
+            t += ' #shorts'
+        out[lang] = {'title': t[:100], 'description': (v['caption'].strip() + ('\n\n' + tail if tail else ''))[:4900]}
+    return out
+
+
+def upload(tok, mp4, title, desc, tags, publish_at, loc=None):
     import requests
     now = dt.datetime.now(dt.timezone.utc).replace(tzinfo=None)
     status = {'selfDeclaredMadeForKids': False, 'embeddable': True}
@@ -56,9 +73,17 @@ def upload(tok, mp4, title, desc, tags, publish_at):
     body = {'snippet': {'title': title[:100], 'description': desc[:4900], 'tags': tags[:30], 'categoryId': CATEGORY,
                         'defaultLanguage': 'en', 'defaultAudioLanguage': 'en'}, 'status': status}
     size = os.path.getsize(mp4)
-    r = requests.post('https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status',
-                      headers={'Authorization': 'Bearer ' + tok, 'Content-Type': 'application/json; charset=UTF-8',
-                               'X-Upload-Content-Type': 'video/mp4', 'X-Upload-Content-Length': str(size)}, data=json.dumps(body), timeout=120)
+    def start(body, parts):
+        return requests.post('https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=' + parts,
+                             headers={'Authorization': 'Bearer ' + tok, 'Content-Type': 'application/json; charset=UTF-8',
+                                      'X-Upload-Content-Type': 'video/mp4', 'X-Upload-Content-Length': str(size)}, data=json.dumps(body), timeout=120)
+    if loc:  # translated titles / descriptions (Hindi, Spanish, Portuguese...): shown to viewers who use YouTube in that language
+        r = start(dict(body, localizations=loc), 'snippet,status,localizations')
+        if r.status_code != 200:
+            print(f'::warning::YouTube refused the translations ({r.status_code}: {r.text[:200]}); uploading without them')
+            r = start(body, 'snippet,status')
+    else:
+        r = start(body, 'snippet,status')
     if r.status_code != 200:
         raise RuntimeError(f'upload start failed {r.status_code}: {r.text[:500]}')
     with open(mp4, 'rb') as f:

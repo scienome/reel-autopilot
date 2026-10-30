@@ -176,7 +176,7 @@ def yt_post(tok, logkey, at):
     d = tempfile.mkdtemp()
     if not yt.release_assets(tag + rid, d):
         raise RuntimeError(f'could not download Release {tag}{rid}')
-    yid, st = yt.upload(tok, os.path.join(d, rid + '.mp4'), title, desc, tags, at.replace(tzinfo=None))
+    yid, st = yt.upload(tok, os.path.join(d, rid + '.mp4'), title, desc, tags, at.replace(tzinfo=None), yt.localized('pov', rid, desc) if kind == 'pov' else None)
     e = {'id': yid, 'url': f'https://youtu.be/{yid}', 'publish_utc': st.get('publishAt', 'now'), 'title': title}
     print(f'YouTube: https://youtu.be/{yid} ({st["privacyStatus"]}{", goes public " + st["publishAt"] if "publishAt" in st else ""})', flush=True)
     return e

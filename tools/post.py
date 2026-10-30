@@ -119,7 +119,7 @@ def main():
                     if not target and old[1] != 'public':
                         print(f'{rid} is already on YouTube ({old[1]}); making it public now: ' + ('done' if cy.yt.make_public(tok, yid) else 'not allowed, it goes public at its scheduled time'))
                 else:
-                    yid, st = cy.yt.upload(tok, src.local_mp4(rid), *texts, when)
+                    yid, st = cy.yt.upload(tok, src.local_mp4(rid), *texts, when, cy.yt.localized('couch', rid, texts[1]))
                 ylog[rid] = {'id': yid, 'url': f'https://youtu.be/{yid}', 'publish_utc': st.get('publishAt', 'now'),
                              'uploaded_at': datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds')}
                 cy.save(ylog); print(f'YouTube: https://youtu.be/{yid} (goes public {st.get("publishAt", "now")})')

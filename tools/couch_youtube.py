@@ -71,7 +71,7 @@ def main():
             print(f'{rid} is already on YouTube (https://youtu.be/{old[0]}, {old[1]}); not uploading it again')
             log[rid] = {'id': old[0], 'url': f'https://youtu.be/{old[0]}', 'title': title, 'uploaded_at': 'already there'}; save(log); continue
         try:
-            yid, _ = yt.upload(tok, mp4, title, desc, tags, dt.datetime.now(dt.timezone.utc).replace(tzinfo=None))
+            yid, _ = yt.upload(tok, mp4, title, desc, tags, dt.datetime.now(dt.timezone.utc).replace(tzinfo=None), yt.localized('couch', rid, desc))
         except RuntimeError as e:
             print(f'::warning::{rid} not uploaded; it is tried again after the next Instagram post. {str(e)[:300]}')
             break

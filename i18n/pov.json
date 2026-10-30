@@ -1,0 +1,268 @@
+{
+ "002-cat-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं बिल्ली क्या सोचती है 🐱",
+   "caption": "दिन 1: आपकी बिल्ली सोच रही है पहले आपका कौन सा हिस्सा खाएगी। 🐱\nफिर आपकी ज़िंदगी का सबसे बुरा दिन... और वो आ जाती है। कैट पर्सन या डॉग पर्सन? 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensan los gatos 🐱",
+   "caption": "Día 1: tu gato planea qué parte de ti comerse primero. 🐱\nLuego el peor día de tu vida... y aparece ella. ¿Gatos o perros? 👇"
+  },
+  "pt": {
+   "title": "Você ouve o que os gatos pensam 🐱",
+   "caption": "Dia 1: seu gato planeja qual parte de você comer primeiro. 🐱\nAí o pior dia da sua vida... e ela aparece. Gatos ou cachorros? 👇"
+  }
+ },
+ "008-lie-counter": {
+  "hi": {
+   "title": "आप देख सकते हैं आज किसने कितने झूठ बोले 🤥",
+   "caption": "आपका बॉस: 112। आपकी डेट: 47। दादी: बस एक। 🤥\nफिर आपने आईना देखा... 👇"
+  },
+  "es": {
+   "title": "Puedes ver cuántas mentiras dijo cada uno hoy 🤥",
+   "caption": "Tu jefe: 112. Tu cita: 47. La abuela: solo una. 🤥\nLuego te miraste al espejo... 👇"
+  },
+  "pt": {
+   "title": "Você vê quantas mentiras cada um contou hoje 🤥",
+   "caption": "Seu chefe: 112. Seu date: 47. A vovó: só uma. 🤥\nAí você se olhou no espelho... 👇"
+  }
+ },
+ "003-dog-loves-cat": {
+  "hi": {
+   "title": "मेरा कुत्ता पड़ोसी की बिल्ली से प्यार करता है 🐶❤️🐱",
+   "caption": "बिल्ली ने उस पर फुफकारा। उसे लगता है सब ठीक चल रहा है। 🐶❤️🐱\nफिर पड़ोसी घर छोड़कर चले गए... 👇"
+  },
+  "es": {
+   "title": "Mi perro está enamorado de la gata del vecino 🐶❤️🐱",
+   "caption": "Ella le bufó. Él cree que va bien. 🐶❤️🐱\nLuego los vecinos se mudaron... 👇"
+  },
+  "pt": {
+   "title": "Meu cachorro está apaixonado pela gata do vizinho 🐶❤️🐱",
+   "caption": "Ela bufou para ele. Ele acha que está indo bem. 🐶❤️🐱\nAí os vizinhos se mudaram... 👇"
+  }
+ },
+ "010-car-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं आपकी कार क्या सोचती है 🚗",
+   "caption": "दिन 1: आपकी कार आपकी पार्किंग का मज़ाक उड़ाती है। 🚗\nसाल 10: आप उसे बेचने चले... 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa tu coche 🚗",
+   "caption": "Día 1: tu coche se burla de cómo estacionas. 🚗\nAño 10: intentas venderlo... 👇"
+  },
+  "pt": {
+   "title": "Você ouve o que seu carro pensa 🚗",
+   "caption": "Dia 1: seu carro zoa como você estaciona. 🚗\nAno 10: você tenta vender ele... 👇"
+  }
+ },
+ "004-pets-home-alone": {
+  "hi": {
+   "title": "आपके जाने के बाद पालतू जानवर क्या करते हैं 🐶🐱",
+   "caption": "कुत्ता: 'मेरी ज़िंदगी का सबसे बुरा दिन।' बिल्ली: 'अब ये महल मेरा है।' 🐶🐱\nफिर आप वापस आ जाते हैं... 👇"
+  },
+  "es": {
+   "title": "Lo que hacen tus mascotas cuando te vas 🐶🐱",
+   "caption": "Perro: 'el peor día de mi vida'. Gato: 'el castillo es mío'. 🐶🐱\nLuego vuelves a entrar... 👇"
+  },
+  "pt": {
+   "title": "O que seus pets fazem quando você sai 🐶🐱",
+   "caption": "Cachorro: 'o pior dia da minha vida'. Gato: 'o castelo é meu'. 🐶🐱\nAí você volta... 👇"
+  }
+ },
+ "009-baby-thoughts": {
+  "hi": {
+   "title": "आप बच्चों की बात समझ सकते हैं 👶",
+   "caption": "दिन 1: बच्चा कहता है आपका चेहरा सबसे डरावनी चीज़ है जो उसने देखी। 👶\nफिर रात के 3 बजते हैं... 👇"
+  },
+  "es": {
+   "title": "Puedes entender a los bebés 👶",
+   "caption": "Día 1: el bebé dice que tu cara es lo más aterrador que ha visto. 👶\nLuego llegan las 3 a.m.... 👇"
+  },
+  "pt": {
+   "title": "Você entende os bebês 👶",
+   "caption": "Dia 1: o bebê diz que sua cara é a coisa mais assustadora que ele já viu. 👶\nAí chegam as 3 da manhã... 👇"
+  }
+ },
+ "005-vet-visit": {
+  "hi": {
+   "title": "डॉक्टर के पास पालतू जानवर क्या सोचते हैं 🐶🐱🏥",
+   "caption": "कुत्ता: 'मेरे परिवार से कहना मैं उनसे प्यार करता था।' (बस नाखून काटने थे।) 🐶\nफिर डॉक्टर ने आपकी बूढ़ी बिल्ली को कुछ ज़्यादा देर देखा... 👇"
+  },
+  "es": {
+   "title": "Lo que piensan tus mascotas en el veterinario 🐶🐱🏥",
+   "caption": "Perro: 'diles a mi familia que los quise'. (Es un corte de uñas.) 🐶\nLuego el veterinario miró a tu gata vieja demasiado tiempo... 👇"
+  },
+  "pt": {
+   "title": "O que seus pets pensam no veterinário 🐶🐱🏥",
+   "caption": "Cachorro: 'diga à minha família que eu amava eles'. (É só cortar a unha.) 🐶\nAí o veterinário olhou para sua gata velhinha tempo demais... 👇"
+  }
+ },
+ "006-shelter-dog": {
+  "hi": {
+   "title": "बूढ़े कुत्ते को कोई नहीं चुनता 🐶",
+   "caption": "पिल्ले चिल्ला रहे थे 'मुझे ले लो'। बूढ़ा कुत्ता उठा तक नहीं। 🐶\nतीन हफ़्ते बाद... 🥹👇"
+  },
+  "es": {
+   "title": "Nadie elige al perro viejo 🐶",
+   "caption": "Los cachorros gritaban 'elígeme'. El perro viejo ni se levantó. 🐶\nTres semanas después... 🥹👇"
+  },
+  "pt": {
+   "title": "Ninguém escolhe o cachorro velhinho 🐶",
+   "caption": "Os filhotes gritavam 'me escolhe'. O cachorro velho nem levantou. 🐶\nTrês semanas depois... 🥹👇"
+  }
+ },
+ "011-parrot-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं आपका तोता क्या सोचता है 🦜",
+   "caption": "उसे आपका पासवर्ड पता है। उसे पता है आप बॉस को क्या बुलाते हैं। 🦜\nफिर उसने चालीस पिज़्ज़ा ऑर्डर कर दिए... 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa tu loro 🦜",
+   "caption": "Sabe tu contraseña. Sabe cómo llamas a tu jefe. 🦜\nLuego pidió cuarenta pizzas... 👇"
+  },
+  "pt": {
+   "title": "Você ouve o que seu papagaio pensa 🦜",
+   "caption": "Ele sabe sua senha. Sabe como você chama seu chefe. 🦜\nAí ele pediu quarenta pizzas... 👇"
+  }
+ },
+ "016-grandpa-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं दादाजी क्या सोचते हैं 👴",
+   "caption": "उन्हें लगता है आपका म्यूज़िक वॉशिंग मशीन जैसा लगता है। 👴\nफिर आपको पुरानी फ़ोटो मिली... 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa tu abuelo 👴",
+   "caption": "Cree que tu música suena como una lavadora. 👴\nLuego encontraste la foto vieja... 👇"
+  },
+  "pt": {
+   "title": "Você ouve o que seu avô pensa 👴",
+   "caption": "Ele acha que sua música parece uma máquina de lavar. 👴\nAí você achou a foto antiga... 👇"
+  }
+ },
+ "012-goldfish-memory": {
+  "hi": {
+   "title": "आप सुन सकते हैं आपकी गोल्डफ़िश क्या सोचती है 🐠",
+   "caption": "\"वाह! एक महल!\" हर 3 सेकंड में। 2 साल से। 🏰\nपर एक चीज़ वो कभी नहीं भूलती... 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa tu pez dorado 🐠",
+   "caption": "\"¡Guau! ¡Un castillo!\" Cada 3 segundos. Durante 2 años. 🏰\nPero hay algo que nunca olvida... 👇"
+  },
+  "pt": {
+   "title": "Você ouve o que seu peixinho dourado pensa 🐠",
+   "caption": "\"Uau! Um castelo!\" A cada 3 segundos. Por 2 anos. 🏰\nMas tem uma coisa que ele nunca esquece... 👇"
+  }
+ },
+ "018-boss-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं आपका बॉस क्या सोचता है 💼",
+   "caption": "\"शानदार प्रेज़ेंटेशन।\" (उसे स्लाइड दो समझ नहीं आई।) 💼\nफिर आपने सैलरी बढ़ाने को कहा... 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa tu jefe 💼",
+   "caption": "\"Gran presentación.\" (No entendió la diapositiva dos.) 💼\nLuego pediste un aumento... 👇"
+  },
+  "pt": {
+   "title": "Você ouve o que seu chefe pensa 💼",
+   "caption": "\"Ótima apresentação.\" (Ele não entendeu o slide dois.) 💼\nAí você pediu um aumento... 👇"
+  }
+ },
+ "014-pigeon-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं कबूतर क्या सोचते हैं 🐦",
+   "caption": "प्लान A: घूरना। प्लान B: प्लान B की बात नहीं करते। 🐦\nप्लान B क्या है? गलत जवाब ही देना 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensan las palomas 🐦",
+   "caption": "Plan A: mirar fijamente. Plan B: del Plan B no se habla. 🐦\n¿Cuál es el Plan B? Solo respuestas incorrectas 👇"
+  },
+  "pt": {
+   "title": "Você ouve o que os pombos pensam 🐦",
+   "caption": "Plano A: encarar. Plano B: não falamos do Plano B. 🐦\nQual é o Plano B? Só respostas erradas 👇"
+  }
+ },
+ "013-fridge-judges-you": {
+  "hi": {
+   "title": "आप सुन सकते हैं आपका फ्रिज क्या सोचता है 🧀",
+   "caption": "रात के 2 बजे। हाथ में चीज़। फ्रिज ने सब देखा। 🧀\nआपका फ्रिज आपके बारे में क्या कहेगा? 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa tu nevera 🧀",
+   "caption": "2 a.m. Queso en la mano. Tu nevera lo vio todo. 🧀\n¿Qué diría TU nevera de ti? 👇"
+  },
+  "pt": {
+   "title": "Você ouve o que sua geladeira pensa 🧀",
+   "caption": "2 da manhã. Queijo na mão. Sua geladeira viu tudo. 🧀\nO que a SUA geladeira diria de você? 👇"
+  }
+ },
+ "017-cow-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं गाय क्या सोचती है 🐄",
+   "caption": "\"दूध मैं बनाती हूँ। चीज़ तुम्हें मिलता है। नाइंसाफ़ी।\" 🐄\nफिर एक स्पेसशिप उतरा... 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensan las vacas 🐄",
+   "caption": "\"Yo hago la leche. Tú te quedas el queso. Injusto.\" 🐄\nLuego aterrizó una nave espacial... 👇"
+  },
+  "pt": {
+   "title": "Você ouve o que as vacas pensam 🐄",
+   "caption": "\"Eu faço o leite. Você fica com o queijo. Injusto.\" 🐄\nAí uma nave espacial pousou... 👇"
+  }
+ },
+ "015-phone-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं आपका फ़ोन क्या सोचता है 📱",
+   "caption": "छह घंटे स्क्रीन टाइम। दो सौ बार अनलॉक। एक परसेंट बैटरी। 📱\nआपकी दराज़ में कितने पुराने फ़ोन हैं? 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa tu teléfono 📱",
+   "caption": "Seis horas de pantalla. Doscientos desbloqueos. Uno por ciento de batería. 📱\n¿Cuántos teléfonos viejos hay en TU cajón? 👇"
+  },
+  "pt": {
+   "title": "Você ouve o que seu celular pensa 📱",
+   "caption": "Seis horas de tela. Duzentos desbloqueios. Um por cento de bateria. 📱\nQuantos celulares velhos tem na SUA gaveta? 👇"
+  }
+ },
+ "019-houseplant-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं आपका पौधा क्या सोचता है 🪴",
+   "caption": "नौ दिन बिना पानी। फिर ज़रूरत से ज़्यादा पानी। 🪴\nआपने कितने पौधे मारे हैं? 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa tu planta 🪴",
+   "caption": "Nueve días sin agua. Luego demasiada agua. 🪴\n¿Cuántas plantas has matado TÚ? 👇"
+  },
+  "pt": {
+   "title": "Você ouve o que sua planta pensa 🪴",
+   "caption": "Nove dias sem água. Depois água demais. 🪴\nQuantas plantas VOCÊ já matou? 👇"
+  }
+ },
+ "020-mum-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं आपकी मम्मी क्या सोचती हैं 👩",
+   "caption": "\"खाना खाया?\" \"ये लड़की कौन है?\" फिर आपने दो मिनट में फ़ोन रख दिया... 👩\nआपने आखिरी बार मम्मी को कब फ़ोन किया? 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa tu mamá 👩",
+   "caption": "\"¿Comiste?\" \"¿Quién es esa chica?\" Luego colgaste a los dos minutos... 👩\n¿Cuándo llamaste a tu mamá por última vez? 👇"
+  },
+  "pt": {
+   "title": "Você ouve o que sua mãe pensa 👩",
+   "caption": "\"Comeu?\" \"Quem é essa menina?\" Aí você desligou depois de dois minutos... 👩\nQuando foi a última vez que VOCÊ ligou para sua mãe? 👇"
+  }
+ },
+ "021-hamster-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं आपका हैम्स्टर क्या सोचता है 🐹",
+   "caption": "पहिये पर चार हज़ार मील। अब भी पिंजरे में। 🐹\nफिर दरवाज़ा खुला... 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa tu hámster 🐹",
+   "caption": "Cuatro mil millas en la rueda. Sigue en la jaula. 🐹\nLuego se abrió la puerta... 👇"
+  },
+  "pt": {
+   "title": "Você ouve o que seu hamster pensa 🐹",
+   "caption": "Quatro mil milhas na rodinha. Ainda na gaiola. 🐹\nAí a porta abriu... 👇"
+  }
+ }
+}
