@@ -1,0 +1,43 @@
+{
+ "music-79f9b6c28ae1.mp3": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a wild party build-up that collapses into a sleepy bingo hall organ, no vocals",
+  "music_length_ms": 23700,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-d8bf87d97f0f.mp3": {
+  "text": "party air horn blasts",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-69b1cea50fa9.mp3": {
+  "text": "club music bass drop",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-772d7102aa93.mp3": {
+  "text": "record scratch",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-1519900f24cc.mp3": {
+  "text": "bingo balls rattling in a cage",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-c09040356bdb.mp3": {
+  "text": "short sitcom studio audience laugh burst",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-5cfa38661ff5.mp3": {
+  "text": "small crowd cheering",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-7fbd3c28ec7c.mp3": {
+  "text": "sitcom studio audience big laugh",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ }
+}
