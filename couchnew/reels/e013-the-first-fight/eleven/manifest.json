@@ -1,0 +1,38 @@
+{
+ "music-44d9abe13cb8.mp3": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a boxing-match bell and fight drums in the middle, no vocals",
+  "music_length_ms": 19120,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-85363f30ef07.mp3": {
+  "text": "boxing ring bell ding ding",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-f95047d62d33.mp3": {
+  "text": "cold wind howling",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-bfb17b67d98d.mp3": {
+  "text": "kettle whistling",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-be2fb03314e2.mp3": {
+  "text": "remote snatched whoosh",
+  "duration_seconds": 0.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-400b61dd10f9.mp3": {
+  "text": "thermostat beep",
+  "duration_seconds": 0.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-7fbd3c28ec7c.mp3": {
+  "text": "sitcom studio audience big laugh",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ }
+}
