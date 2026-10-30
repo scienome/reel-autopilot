@@ -1,12 +1,67 @@
 {
- "music": {"prompt": "Playful yet epic Indian mythological underscore: tanpura drone, tabla, deep rakshasa drums, mysterious santoor and flute for the goddess, a comic sleepy bassoon moment, turning grim and heroic at the end, no vocals", "gain": -7, "tail": 3},
+ "music": {
+  "prompt": "Playful yet epic Indian mythological underscore: tanpura drone, tabla, deep rakshasa drums, mysterious santoor and flute for the goddess, a comic sleepy bassoon moment, turning grim and heroic at the end, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
  "sfx": [
-  {"beat": "h1", "word": "सोने", "prompt": "giant monster snoring loudly, deep rumbling snore", "dur": 2.0, "gain": -4},
-  {"beat": "b2", "word": "विशाल", "prompt": "giant footsteps shaking the ground, heavy boom", "dur": 1.5, "gain": -4},
-  {"beat": "b5", "word": "जीभ", "prompt": "magical shimmering chime, divine sparkle", "dur": 1.4, "gain": -5},
-  {"beat": "kk1", "word": "निद्रासन", "offset": 0.4, "prompt": "comedic record scratch then a gasp", "dur": 1.2, "gain": -6},
-  {"beat": "br1", "word": "तथास्तु।", "offset": 0.2, "prompt": "divine bell and deep cosmic boom", "dur": 2.0, "gain": -5},
-  {"beat": "b8", "word": "नींद", "prompt": "deep slow snore, then yawning", "dur": 2.0, "gain": -6},
-  {"beat": "end", "word": "युद्ध", "prompt": "war drums and conch shells, battle horns", "dur": 2.5, "gain": -6}
+  {
+   "beat": "h1",
+   "word": "सोने",
+   "prompt": "giant monster snoring loudly, deep rumbling snore",
+   "dur": 2.0,
+   "gain": -4
+  },
+  {
+   "beat": "b2",
+   "word": "विशाल",
+   "prompt": "giant footsteps shaking the ground, heavy boom",
+   "dur": 1.5,
+   "gain": -4
+  },
+  {
+   "beat": "b5",
+   "word": "जीभ",
+   "prompt": "magical shimmering chime, divine sparkle",
+   "dur": 1.4,
+   "gain": -5
+  },
+  {
+   "beat": "kk1",
+   "word": "निद्रासन",
+   "offset": 0.4,
+   "prompt": "comedic record scratch then a gasp",
+   "dur": 1.2,
+   "gain": -6
+  },
+  {
+   "beat": "br1",
+   "word": "तथास्तु।",
+   "offset": 0.2,
+   "prompt": "divine bell and deep cosmic boom",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "b8",
+   "word": "नींद",
+   "prompt": "deep slow snore, then yawning",
+   "dur": 2.0,
+   "gain": -6
+  },
+  {
+   "beat": "end",
+   "word": "युद्ध",
+   "prompt": "war drums and conch shells, battle horns",
+   "dur": 2.5,
+   "gain": -6
+  },
+  {
+   "beat": "nx",
+   "word": "अगले",
+   "prompt": "deep suspense drum hit and rising whoosh",
+   "dur": 1.8,
+   "gain": -6
+  }
  ]
 }

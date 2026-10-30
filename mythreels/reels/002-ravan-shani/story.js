@@ -49,9 +49,9 @@ KATHA((h) => {
     end: { set: 'ocean', setOpt: { time: 'night', lanka: true }, cam: [[560, 730, 2.1], [500, 740, 1.5]],
       draw: (ctx, t) => { const u = H.clamp((t - V('end', 'जल')) / 1.5); for (let i = 0; i < 9; i++) MYTH.flame(ctx, 420 + i * 34, 760, (0.3 + 0.9 * u) * (0.8 + 0.3 * Math.sin(i)), t + i);
         const g = ctx.createRadialGradient(560, 700, 10, 560, 700, 400); g.addColorStop(0, `rgba(255,120,30,${0.6 * u})`); g.addColorStop(1, 'rgba(255,80,20,0)'); ctx.fillStyle = g; ctx.fillRect(160, 300, 800, 800); },
-      over: (ctx, W, H_, t) => { if (t > V('end', 'जय')) card(ctx, W, H_, t, V('end', 'जय'), 'जय श्री राम', { y: 320, size: 72 }); } },
+      over: (ctx, W, H_, t) => MYTH.dark(ctx, W, H_, t > first('nx') ? 0.35 : 0) },
   };
 }, {
-  title: 'रावण और शनि देव',
+  series: 'रावण के रहस्य', part: 1, hook: 'रावण ने शनि देव को\nसीढ़ी बना दिया!', next: 'एक शब्द की गलती...\n6 महीने की नींद!', nextAt: 'nx',
   gold: ['शनि', 'रावण', 'हनुमान।', 'हनुमान', 'शनिवार', 'लंका', 'नौ', 'ग्रहों'],
 });

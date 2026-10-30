@@ -13,7 +13,7 @@ KATHA((h) => {
     h1: { set: 'battle', cam: [[360, 760, 1.0], [360, 720, 1.15]],
       draw: (ctx, t) => { char(ctx, BB, 360, 1180, 0.8, t, { holdL: 'bow', hold: 'arrow', arms: { r: 'draw', l: 'bowL' }, face: { eyes: 'calm', mouth: 'calm' }, glow: 'rgba(255,210,120,0.35)' });
         const u = H.clamp((t - V('h1', 'मिनट') + 0.3) / 0.8); if (u > 0 && u < 1) arrow(ctx, -200 + 1200 * u, 420 - 120 * u, -0.1, 1.2); },
-      over: (ctx, W, H_, t) => card(ctx, W, H_, t, V('h1', 'मिनट'), '1 मिनट', { y: 330, size: 70 }) },
+    },
     h2: { set: 'heaven', cam: [[360, 720, 1.8], [360, 700, 2.0]],
       draw: (ctx, t) => char(ctx, 'krishna', 360, 1170, 0.82, t, { halo: true, arms: { r: 'bless', l: 'down' }, face: { eyes: 'calm', mouth: 'calm' } }) },
     b1: { set: 'forest', setOpt: { time: 'day' }, cam: [[360, 820, 1.1], [360, 760, 1.4]],
@@ -51,9 +51,9 @@ KATHA((h) => {
       draw: (ctx, t) => { MYTH.ell(ctx, '#6a8a4a', 360, 1180, 360, 220, 0, 6); MYTH.aura(ctx, 360, 760, 150, t);
         MYTH.head(ctx, MYTH.CAST.barbarik, 360, 780, { eyes: 'open', mouth: 'smile' }, t, 3, 1.6);
         for (let i = 0; i <= 16; i++) { const k = i / 16, x = 220 + 280 * k, y = 900 + Math.sin(k * Math.PI) * 70; MYTH.ell(ctx, i % 2 ? '#ff8a3a' : '#f4c430', x, y, 13, 13, 0, 2); } },
-      over: (ctx, W, H_, t) => { MYTH.petals(ctx, W, t, V('end', 'खाटू'), 30); card(ctx, W, H_, t, V('end', 'खाटू'), 'खाटू श्याम', { y: 300, size: 74 }); } },
+      over: (ctx, W, H_, t) => { MYTH.petals(ctx, W, t, V('end', 'खाटू'), 30); if (t < first('nx')) card(ctx, W, H_, t, V('end', 'खाटू'), 'खाटू श्याम', { y: 300, size: 74 }); else MYTH.dark(ctx, W, H_, 0.35); } },
   };
 }, {
-  title: 'बर्बरीक का शीश दान',
+  series: 'महाभारत के छुपे योद्धा', part: 1, hook: 'महाभारत 1 मिनट में\nखत्म हो सकती थी!', next: 'घटोत्कच का\nबलिदान', nextAt: 'nx',
   gold: ['बर्बरीक...', 'बर्बरीक', 'कृष्ण', 'तीन', 'शीश', 'शीश।', 'खाटू', 'श्याम', 'मिनट'],
 });

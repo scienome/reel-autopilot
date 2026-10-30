@@ -47,9 +47,9 @@ KATHA((h) => {
       over: (ctx, W, H_, t) => { card(ctx, W, H_, t, V('b8', 'छह'), '6 महीने नींद', { y: 300, size: 60 }); card(ctx, W, H_, t, V('b8', 'एक'), '1 दिन जागना', { y: 470, size: 60 }); } },
     end: { set: 'battle', cam: [[360, 760, 1.0], [360, 700, 1.2]], shake: V('end', 'युद्ध'),
       draw: (ctx, t) => char(ctx, KK, 360, 1200, 1.0, t, { arms: 'fist', face: { eyes: 'angry', mouth: 'shout' } }),
-      over: (ctx, W, H_, t) => { MYTH.dark(ctx, W, H_, 0.2); if (t > V('end', 'जय')) card(ctx, W, H_, t, V('end', 'जय'), 'जय श्री राम', { y: 300, size: 72 }); } },
+      over: (ctx, W, H_, t) => MYTH.dark(ctx, W, H_, t > first('nx') ? 0.45 : 0.2) },
   };
 }, {
-  title: 'कुंभकर्ण की नींद का रहस्य',
+  series: 'रावण के रहस्य', part: 2, hook: '1 शब्द की गलती...\n6 महीने की नींद!', next: 'रावण ने अपने ही\nसिर क्यों काटे?', nextAt: 'nx',
   gold: ['कुंभकर्ण', 'इंद्रासन।', 'इंद्रासन', 'निद्रासन', 'निद्रासन!', 'निद्रासन...', 'सरस्वती', 'तथास्तु।', 'छह', 'एक'],
 });
