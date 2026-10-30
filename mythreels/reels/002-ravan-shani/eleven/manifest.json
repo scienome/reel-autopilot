@@ -1,0 +1,53 @@
+{
+ "music-617215672d09.mp3": {
+  "prompt": "Dark epic Indian mythological cinematic underscore: low ominous drones, heavy war drums and taiko, tanpura, menacing brass for a demon king, turning heroic and divine with shehnai, temple bells and choir when Hanuman arrives, ending with fire and triumph, no vocals",
+  "music_length_ms": 53020,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-5e2e66972220.mp3": {
+  "text": "heavy iron chains rattling and clanking in a stone dungeon",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-066bfbfcc176.mp3": {
+  "text": "evil demon king booming laugh with echo",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-1157d8a03387.mp3": {
+  "text": "deep cosmic magical shift whoosh",
+  "duration_seconds": 1.4,
+  "prompt_influence": 0.5
+ },
+ "sfx-2294ec0a6969.mp3": {
+  "text": "heavy metal mace strike impact with a crunch",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-117572baf110.mp3": {
+  "text": "iron shackles locking with a heavy clank",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-4e3d065867d5.mp3": {
+  "text": "heroic divine arrival, choir swell and bell",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-6285946c2238.mp3": {
+  "text": "iron chains snapping and breaking apart",
+  "duration_seconds": 1.3,
+  "prompt_influence": 0.5
+ },
+ "sfx-bc5b37af4a74.mp3": {
+  "text": "huge fire roaring and a city burning",
+  "duration_seconds": 3.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-9e4ab8d8c059.mp3": {
+  "text": "conch shell blowing, temple bells ringing",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ }
+}
