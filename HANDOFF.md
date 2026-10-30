@@ -29,10 +29,14 @@ or anything that posts publicly.
    the files next to it directly), and ready-to-upload `skills/zips/*.zip`. If `/toystyle` etc. aren't installed on this
    account, tell me once: "download the 3 zips from skills/zips on GitHub → Settings → Capabilities → Skills → upload".
    Never block on it: the repo's series folders contain every renderer.
-5. **Scheduled Claude runs** (see §8) live on the Claude account that created them. If this is a new account, list
-   scheduled tasks; if they're missing, offer to create them from the templates in §8. Running the same tasks on two
-   accounts is SAFE because of the claim lock (§7b) — only one run ever does the work.
+5. **Scheduled Claude runs** (see §8) live on the Claude account that created them. List this account's scheduled
+   tasks; **if the toy, couch and POV batch tasks are missing, create them now from the templates in §8** (I want reel
+   making to run on whichever account I'm using). Running the same tasks on several accounts is SAFE because of the
+   claim lock (§7b): only one run ever does the work.
 6. Then give me a 3–5 line status: what's live, what's queued (days ahead per channel), anything broken.
+7. **If any live channel has less than 2 days (6 reels) queued, start making reels for it right away** with that
+   series' playbook (`toyreels/PLAYBOOK.md`, `couchnew/PLAYBOOK.md`, `povreels/PLAYBOOK.md`), claim first, then send me
+   each finished MP4. The playbooks are what keep the results consistent: follow them exactly.
 
 ---
 
@@ -133,6 +137,9 @@ Source of truth = each folder's `config.json`. As of 30 Oct 2026:
 - **Skip a toy reel:** add `"<id>": {"skipped": true, "instagram": {}, "youtube": {}}` to `toyreels/posted.json`.
 - **Change times:** edit the times file AND the cron lines in the workflow (cron is UTC; IST = UTC+5:30; posters run
   2–4 h before each slot).
+- Couch YouTube: `tools/post.py` uploads the Short when the Instagram post is prepared. If you cancel a waiting
+  post run, its Short may already be on YouTube scheduled for the slot: the owner must delete it in YouTube Studio
+  (our token can only upload, so the duplicate check in `youtube_publish.existing()` can't see it).
 - First comments: `first_comment` in meta.json wins; otherwise `engagement/<series>.json`. Needs the IG token to have
   `instagram_business_manage_comments`.
 - YouTube upload quota ≈ 6 uploads/day per Google Cloud project; each channel has its own project. If quota runs out,
@@ -209,6 +216,10 @@ Jobs: `toy-batch`, `couch-batch`, `pov-batch`, `mech-batch` (one name per schedu
 |---|---|---|
 | Toy reels: 21 new reels | 01:33 on the 3rd, 6th, 9th… | ON |
 | Toy reels: backup (finish unfinished batch) | 07:33 same days | ON |
+| CouchSarcasm sitcom: 9 episodes (`couch-batch`, `couchnew/PLAYBOOK.md`) | 02:17 on the 1st, 4th, 7th… | ON (30 Oct) |
+| CouchSarcasm sitcom: backup | 08:17 same days | ON (30 Oct) |
+| Gears POV: 9 episodes (`pov-batch`, `povreels/PLAYBOOK.md`) | 02:47 on the 2nd, 5th, 8th… | ON (30 Oct) |
+| Gears POV: backup | 08:47 same days | ON (30 Oct) |
 | CouchSarcasm 21 reels + backup (old `reels/` format, WEEKLY.md) | 2nd, 5th, 8th… | OFF — old format retired |
 | Dave 21 reels + backup | every 3rd day | OFF — Dave rejected |
 
@@ -227,9 +238,19 @@ a usage limit gets finished by the backup or by another account — never duplic
 > toyreels/config.json, style/, tools/, posted.json, posting.json or workflows. Never run posting workflows by hand.
 > Finish with a short plain-language report.
 
-**Still needed (nobody's doing it yet):** recurring batches for **couchnew** (`couch-batch`) and **povreels**
-(`pov-batch`) that keep each queue ≥ 2 days ahead. Use the same template shape with their own job name, folder,
-check tool and "add ids to `<series>/schedule.json` queue". Propose them to me before creating.
+**Couch and POV task templates** (create both main + backup for each; same prompt for main and backup):
+- Couch: cron `CRON_TZ=Asia/Kolkata 17 2 1-31/3 * *` (main), `CRON_TZ=Asia/Kolkata 17 8 1-31/3 * *` (backup). Prompt:
+> COUCH SITCOM BATCH. In a checkout of scienome/reel-autopilot (clone it if missing; push access needed) run
+> `git checkout main && git pull origin main`. FIRST run `python3 tools/claim.py start couch-batch`. If it exits 3 / prints
+> STOP, reply with that one line and stop. Otherwise follow couchnew/PLAYBOOK.md exactly (0, 0b, then 1-4) and
+> engagement/RULES.md: finish an unfinished batch or make 9 new episodes continuing the Sam / Maya / Mum story, check each
+> with couchnew/tools/check.py, push a few at a time, run `python3 tools/claim.py beat couch-batch --note "..."` after every
+> push (stop if it prints STOP), wait for every couchnew-<id> Release, check the MP4s, append the ids to
+> couchnew/schedule.json "queue", then `python3 tools/claim.py done couch-batch`. Never change voices, config.json,
+> style/, posting files or workflows. Never run posting workflows by hand. Finish with a short plain-language report.
+- POV: cron `CRON_TZ=Asia/Kolkata 47 2 2-31/3 * *` (main), `CRON_TZ=Asia/Kolkata 47 8 2-31/3 * *` (backup). Prompt: the
+  same text with "GEARS POV BATCH", `pov-batch`, povreels/PLAYBOOK.md, "9 new 'YOU are the only one' episodes with more
+  mixes (animals, birds, babies, people, objects)", povreels/tools/check.py, povreel-<id>, povreels/schedule.json.
 
 ---
 
@@ -306,21 +327,21 @@ playful vote; sometimes "Part 1/3" cliffhangers; `cover_t` on the most surprisin
 
 ## 12. KNOWN STALE DOCS (trust these facts over the files)
 
-- `couchnew/README.md` still describes the rejected pilots (t001, m001). The real format is the 2D sitcom (e001+).
-- `povreels/README.md` says "nothing is posted automatically yet" — it now posts via `ig_mech_post.py`.
 - `WEEKLY.md` + root `reels/` describe the retired 3D couple; `davereels/` docs describe a paused series.
 - `mechreels/README.md` says Instagram posts Dave; Dave is paused, POV took those slots.
 Fix these docs when you're next in those folders.
 
 ---
 
-## 13. STATUS SNAPSHOT (30 Oct 2026, 08:00 IST — re-check live, this goes stale)
+## 13. STATUS SNAPSHOT (30 Oct 2026, 13:00 IST — re-check live, this goes stale)
 
-- Toy: reels up to 55 written; last batch (34–55) `done` 29 Oct. Next auto-batch 3 Nov.
-- Couch queue: e001-the-ring, e002-thursday, e003-mum-moves-in, e004-sam-cooks, e005-the-birthday, e006-the-dress.
-- POV queue: 001-dog-thoughts, 007-search-history, 002-cat-thoughts, 008-lie-counter, 003-dog-loves-cat,
-  010-car-thoughts, 004-pets-home-alone, 009-baby-thoughts, 005-vet-visit, 006-shelter-dog.
-- Open from HANDOFF.md: confirm Releases exist for POV 001–010 and couch e002–e006 (fix/re-run any failed); confirm the
-  30 Oct 07:30 posts went out; send me each finished reel; then keep couch + POV ≥ 2 days ahead in the same styles.
+- Toy: reels 35–55 made and rendered 29–30 Oct (batch `done`); ~37 queued (about 12 days). Next auto-batch 3 Nov.
+- Couch: e001 + e002 posted 30 Oct; queued e003-mum-moves-in, e004-sam-cooks, e005-the-birthday, e006-the-dress
+  (runs out 31 Oct night) → more episodes being made now (e007+), per `couchnew/PLAYBOOK.md`.
+- POV: 001 + 007 posted 30 Oct; queued 002, 008, 003, 010, 004, 009, 005, 006 (runs out 2 Nov) → more being made
+  now (011+), per `povreels/PLAYBOOK.md`.
+- The owner may be without a Claude subscription for a few days: posting keeps running on GitHub by itself; only the
+  batch tasks pause. When you pick up, check queue days first (§0 step 7).
+- Open: owner to delete the duplicate couch Short `PDkoEk8xCxw` (e002, from a cancelled run) in YouTube Studio.
 
 Start now with §0.

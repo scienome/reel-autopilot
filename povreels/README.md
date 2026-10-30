@@ -1,16 +1,13 @@
-# POV reels: "YOU are the only one"
+# POV reels: "YOU are the only one" (povreels/)
 
-The new Gears & Glitches series (29 Oct 2026), replacing the Dave reels (paused in `davereels/schedule.json`).
-Second-person stories: the viewer is the hero ("You're the only person on Earth who can hear what dogs think").
-Every episode: an impossible premise in the first second, funny escalation (18+ edge allowed), one moment that
-actually lands emotionally, a twist, and "Part 2?". The camera is YOU: nobody plays the hero on screen; the other
-characters look into the lens and their thoughts pop up as clouds.
+The Gears & Glitches series since 29 Oct 2026 (Dave is paused). Second-person stories: the viewer is the hero
+("You're the only person on Earth who can hear what dogs think"); the camera is YOU, characters look into the lens and
+their thoughts pop up as clouds, each in their own voice.
 
-- Engine: the shared soft-3D Violet Room kit in the repo's `style/` (read-only from here) with makeCouch, the couple
-  hidden (`he` / `she` = `{ hide: true }`) and POV cameras. `reels/001-dog-thoughts/story.js` has the expressive `dog()`
-  and the `thought()` cloud.
-- Voice: `config.json` (ElevenLabs `s3TPKV1kjDlVtZbl4Ksh`). Music and sound effects: `reels/<id>/audio.json`
-  (see `tools/eleven_audio.py`), cached in `reels/<id>/eleven/`.
-- Render: push a reel folder to main, and the "Make POV reels" workflow publishes Release `povreel-<id>`. Nothing is
-  posted automatically yet.
-- Check locally: `python3 tools/check.py reels/<id> sheet.png` (estimated timing, no voice needed).
+- **How to make episodes:** [`PLAYBOOK.md`](PLAYBOOK.md) (story rules, file format, kit, checks, scheduling).
+- Engine: the shared soft-3D kit in the repo's `style/` (makeCouch with the couple hidden) + `lib/pov.js` (dog, cat,
+  thought clouds, cards, badges). Never edit `style/` from here: it re-renders other series.
+- Voices: `config.json` "cast" (narrator Adam, cute pets/babies, naughty characters, people) + `cast_fallback`.
+- Render: push `reels/<id>/` → "Make POV reels" (`make-povreels.yml`) → Release `povreel-<id>`.
+- Posting: `schedule.json` "queue", posted by `tools/ig_mech_post.py` at 07:30, 12:30, 20:30 IST to Instagram
+  @gearsandglitches and the Gears YouTube channel. Add `"paused": "reason"` to stop.
