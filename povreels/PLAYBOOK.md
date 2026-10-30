@@ -1,4 +1,4 @@
-# Gears & Glitches POV: the batch playbook
+# Thought Bubble: the batch playbook (formerly Gears & Glitches POV)
 
 Any Claude session (scheduled or asked in chat) follows this to make new **"YOU are the only one who..."** episodes with
 the same look, voices and quality every time. Folder: `povreels/`. Posts 07:30, 12:30, 20:30 IST (Instagram

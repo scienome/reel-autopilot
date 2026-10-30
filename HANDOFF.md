@@ -72,7 +72,7 @@ sync-videos.yml                   ->  copies every finished MP4 to the `videos` 
 |---|---|---|---|---|---|
 | **Toy reels** (Brick Toy dark comedy) | `toyreels/` | LEGO-like 3D bricks, `style/scenes.js` `makeComedy` | IG (toy account) + YT Shorts (toy channel) | 06:00, 12:30, 20:30 | LIVE, auto-batches every 3 days |
 | **CouchSarcasm** (new) | `couchnew/` | 2D adult cartoon sitcom (Sam, Maya, Mum), `toon/adult.js` + `toon/sitcom.js`, laugh track, one voice per character | IG (couch) + YT (couch channel) | 07:30, 13:30, 21:30 | Resumed 30 Oct with e001 |
-| **Gears & Glitches POV** | `povreels/` | soft-3D Violet kit (`style/` + makeCouch with couple hidden) + `povreels/lib/pov.js`; "YOU are the only one who…" | IG @gearsandglitches + YT | 07:30, 12:30, 20:30 | Resumed 30 Oct with 001 |
+| **Thought Bubble (POV)** | `povreels/` | soft-3D Violet kit (`style/` + makeCouch with couple hidden) + `povreels/lib/pov.js`; "YOU are the only one who…" | IG @gearsandglitches + YT | 07:30, 12:30, 20:30 | Resumed 30 Oct with 001 |
 | Mechanic Shorts | `mechreels/` | low-poly garage/x-ray, `style/mech_base.js`, 9:16 | YT (Gears channel); alternates with POV/Dave in the Gears slots | — | Shorts 01–25 made |
 | Mechanic long videos | `mechvideos/` | same engine, 16:9 1080p, 4–5 min, chapters | YT, root `schedule.json` (video 07:30, its 3 Shorts 12:30/17:30/21:30) | — | 001–008 made |
 | Dave reels | `davereels/` | crash-test dummy Dave | — | — | **PAUSED — I rejected Dave. Don't resume.** |
@@ -282,7 +282,7 @@ playful vote; sometimes "Part 1/3" cliffhangers; `cover_t` on the most surprisin
 - **CouchSarcasm (couchnew):** 2D adult sitcom, Sam / Maya / Mum, each in their own voice, laugh track. Approved model:
   **e001 "The Ring" ("perfect")** — copy its structure. Rejected: text-message format, "what she says vs means", the old
   3D couple reels.
-- **Gears POV (povreels):** "You're the only person on Earth who…". Camera = YOU; characters look into the lens, thoughts
+- **Thought Bubble POV (povreels):** "You're the only person on Earth who…". Camera = YOU; characters look into the lens, thoughts
   pop up as clouds. Impossible premise in second one, funny escalation, one moment that really lands emotionally, a twist,
   "Part 2?". I want MORE MIXES: dogs, cats, more animals, birds, babies, more humans; crazy, funny, make people feel
   something. `reels/001-dog-thoughts/story.js` has `dog()` and `thought()`.
@@ -341,5 +341,7 @@ Fix these docs when you're next in those folders.
 - The owner may be without a Claude subscription for a few days: posting keeps running on GitHub by itself; only the
   batch tasks pause. When you pick up, check queue days first (§0 step 7).
 - Open: owner to delete the duplicate couch Short `PDkoEk8xCxw` (e002, from a cancelled run) in YouTube Studio.
+- Channel rename (30 Oct): Gears & Glitches → **Thought Bubble** (owner renames the Instagram account and YouTube channel;
+  posting uses account IDs, so nothing in the repo depends on the name). Secrets keep their old names (`IG_GG_*`, `YT_*`).
 
 Start now with §0.

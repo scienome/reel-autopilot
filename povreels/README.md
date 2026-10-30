@@ -1,6 +1,6 @@
-# POV reels: "YOU are the only one" (povreels/)
+# Thought Bubble POV reels: "YOU are the only one" (povreels/)
 
-The Gears & Glitches series since 29 Oct 2026 (Dave is paused). Second-person stories: the viewer is the hero
+The Thought Bubble channel (renamed from Gears & Glitches on 30 Oct 2026; Dave is paused). Second-person stories: the viewer is the hero
 ("You're the only person on Earth who can hear what dogs think"); the camera is YOU, characters look into the lens and
 their thoughts pop up as clouds, each in their own voice.
 

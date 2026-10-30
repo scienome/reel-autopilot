@@ -106,7 +106,7 @@ def main():
         put(os.path.join(vids, folder, rid + '.mp4'), url=mp4['browser_download_url'], size=mp4['size'])
         rows[folder].append((rid, name, st))
 
-    names = {'couch-cartoon': 'CouchSarcasm cartoon sitcom (new)', 'gears-pov': 'Gears & Glitches POV stories (new)', 'couch-sarcasm': 'CouchSarcasm (old couple comedy)', 'dave-reels': 'Dave (Gears & Glitches)', 'toy-reels': 'Toy reels (Brick Toy)', 'mechanic-shorts': 'Mechanic Shorts (YouTube)', 'anatomy': 'Anatomy'}
+    names = {'couch-cartoon': 'CouchSarcasm cartoon sitcom (new)', 'gears-pov': 'Thought Bubble POV stories (formerly Gears & Glitches)', 'couch-sarcasm': 'CouchSarcasm (old couple comedy)', 'dave-reels': 'Dave (Gears & Glitches)', 'toy-reels': 'Toy reels (Brick Toy)', 'mechanic-shorts': 'Mechanic Shorts (YouTube)', 'anatomy': 'Anatomy'}
     md = ['# All videos', '', 'Every finished video, one folder per series. Click a folder, then a file, then **View raw** (or the download',
           'button) to play it. This page updates itself after every render.', '']
     for k, rs in rows.items():

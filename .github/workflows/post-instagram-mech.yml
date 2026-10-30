@@ -1,5 +1,5 @@
 name: Post Gears & Glitches reels (Instagram + YouTube)
-# Posts to the Gears & Glitches Instagram AND YouTube (same item, same minute) at 07:30, 12:30 and 20:30 IST (02:00, 07:00 and 15:00 UTC), alternating a Dave
+# Posts to the Thought Bubble (formerly Gears & Glitches) Instagram AND YouTube (same item, same minute) at 07:30, 12:30 and 20:30 IST (02:00, 07:00 and 15:00 UTC), alternating a Dave
 # reel (davereels, in davereels/schedule.json order) and a mechanic Short (mechreels, in folder order). GitHub starts scheduled runs late (90-125 minutes measured on this repo,
 # Oct 2026), so every slot has three runs, 4, 3 and 2 hours before it. The first to start uploads the MP4 from its
 # davereel-<id> Release so Instagram has it processed, then publishes on the exact minute; the later runs see the slot
