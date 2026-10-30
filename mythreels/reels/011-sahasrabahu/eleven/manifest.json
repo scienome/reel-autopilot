@@ -1,0 +1,28 @@
+{
+ "music-d2d926a93591.mp3": {
+  "prompt": "Dark epic Indian mythological cinematic underscore for a demon king saga: tanpura drone, deep war drums and taiko, menacing low brass, tabla, shehnai and choir swells, temple bells, peaceful river worship broken by a flood, a mighty thousand-armed king, defeat and humiliation, a wise sage, no vocals",
+  "music_length_ms": 42140,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-06c9caa927f5.mp3": {
+  "text": "rushing river flood wave",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-d6d3195bf147.mp3": {
+  "text": "heavy battle clash and impact",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-e43cd0fd20cd.mp3": {
+  "text": "ropes tightening and chains clanking",
+  "duration_seconds": 1.4,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
