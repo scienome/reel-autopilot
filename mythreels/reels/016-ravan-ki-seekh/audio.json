@@ -1,0 +1,30 @@
+{
+ "music": {
+  "prompt": "Dark epic Indian mythological cinematic underscore for a demon king saga: tanpura drone, deep war drums and taiko, menacing low brass, tabla, shehnai and choir swells, temple bells, quiet aftermath of war, solemn and wise, tender flute and tanpura, a gentle sad ending, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "b3",
+   "word": "शिष्य",
+   "prompt": "soft temple bell",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "end",
+   "word": "मूँद",
+   "prompt": "final soft gong fading into wind",
+   "dur": 2.5,
+   "gain": -5
+  },
+  {
+   "beat": "nx",
+   "word": "रावण",
+   "prompt": "deep suspense drum hit and rising whoosh",
+   "dur": 1.8,
+   "gain": -6
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "music": {
+  "prompt": "Dark epic Indian mythological cinematic underscore for a demon king saga: tanpura drone, deep war drums and taiko, menacing low brass, tabla, shehnai and choir swells, temple bells, serene divine Vaikuntha with flute and harp, a sudden curse, then a sad heavy choice, ending ominous, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "b3",
+   "word": "रोक",
+   "prompt": "heavy mace blocking a doorway, clang",
+   "dur": 1.2,
+   "gain": -5
+  },
+  {
+   "beat": "km",
+   "word": "असुर",
+   "prompt": "thunder curse boom",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "b4",
+   "word": "विष्णु",
+   "prompt": "divine conch and choir",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "nx",
+   "word": "अगले",
+   "prompt": "deep suspense drum hit and rising whoosh",
+   "dur": 1.8,
+   "gain": -6
+  }
+ ]
+}

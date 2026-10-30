@@ -1,0 +1,51 @@
+{
+ "music": {
+  "prompt": "Dark epic Indian mythological cinematic underscore for a demon king saga: tanpura drone, deep war drums and taiko, menacing low brass, tabla, shehnai and choir swells, temple bells, thunderous sky battle, dark sorcery, a divine name, ritual fire, a heroic finale, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "b1",
+   "word": "भयंकर",
+   "prompt": "massive battle clash with thunder",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "b2",
+   "word": "अदृश्य",
+   "prompt": "dark magic swirl and vanishing whoosh",
+   "dur": 1.6,
+   "gain": -5
+  },
+  {
+   "beat": "b2",
+   "word": "बाँध",
+   "prompt": "magical chains binding with a clank",
+   "dur": 1.4,
+   "gain": -5
+  },
+  {
+   "beat": "b4",
+   "word": "इंद्रजीत।",
+   "prompt": "divine choir and bell",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "end",
+   "word": "वध",
+   "prompt": "arrow release and powerful impact",
+   "dur": 1.6,
+   "gain": -5
+  },
+  {
+   "beat": "nx",
+   "word": "अगले",
+   "prompt": "deep suspense drum hit and rising whoosh",
+   "dur": 1.8,
+   "gain": -6
+  }
+ ]
+}
