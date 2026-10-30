@@ -1,0 +1,38 @@
+{
+ "music-0e6f4b5ad20d.mp3": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a tense western standoff showdown in the middle, no vocals",
+  "music_length_ms": 26660,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-360ff6211dd4.mp3": {
+  "text": "doorbell ding dong then heavy footsteps",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-889df60035f2.mp3": {
+  "text": "dramatic western whistle and a bell",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-78b363217217.mp3": {
+  "text": "loud table slam thud",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-c09040356bdb.mp3": {
+  "text": "short sitcom studio audience laugh burst",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-90d0cc896bd0.mp3": {
+  "text": "loud table slam and a crack",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-7eb3ebe304e8.mp3": {
+  "text": "sitcom studio audience big laugh and applause",
+  "duration_seconds": 2.2,
+  "prompt_influence": 0.5
+ }
+}
