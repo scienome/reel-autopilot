@@ -1,0 +1,28 @@
+{
+ "music-cd9c31ff2c41.mp3": {
+  "prompt": "Epic Indian Mahabharata cinematic underscore: dhol and war drums, conch shells, bansuri flute, sitar, tense strings and choir swells, temple bells, royal welcome turning into a father-son battle, tragedy, a glowing magical revival, warm reunion, no vocals",
+  "music_length_ms": 49960,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-e848b6d5b05c.mp3": {
+  "text": "sword drawn with a metallic ring",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-f462363015ad.mp3": {
+  "text": "arrow impact and a heavy fall",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-c3dd1a24d945.mp3": {
+  "text": "magical glowing gem hum and shimmer",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
