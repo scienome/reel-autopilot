@@ -1,0 +1,23 @@
+{
+ "music-ac1a574f3b54.mp3": {
+  "prompt": "Epic Indian Mahabharata cinematic underscore: dhol and war drums, conch shells, bansuri flute, sitar, tense strings and choir swells, temple bells, friendly royal march, a cunning trap, a secret pact, then tense taunting on the battlefield, no vocals",
+  "music_length_ms": 50560,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-70257ea59434.mp3": {
+  "text": "dramatic reveal sting",
+  "duration_seconds": 1.4,
+  "prompt_influence": 0.5
+ },
+ "sfx-d467ca03a2c7.mp3": {
+  "text": "chariot wheels rumbling in battle",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
