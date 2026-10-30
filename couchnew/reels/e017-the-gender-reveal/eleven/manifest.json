@@ -1,0 +1,38 @@
+{
+ "music-cf870412c3b8.mp3": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a frantic fire-alarm chaos section and a sweet music box ending, no vocals",
+  "music_length_ms": 20660,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-b3ffacc04218.mp3": {
+  "text": "party poppers",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-57098dae90c2.mp3": {
+  "text": "big whoosh of flames then a smoke alarm beeping",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-805aa201a558.mp3": {
+  "text": "crowd cheering",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-9594b8b584b1.mp3": {
+  "text": "fire extinguisher spraying",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-7fbd3c28ec7c.mp3": {
+  "text": "sitcom studio audience big laugh",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-edc8915c75eb.mp3": {
+  "text": "soft magical chime and baby giggle",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
