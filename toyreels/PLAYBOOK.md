@@ -3,7 +3,7 @@
 A scheduled Claude session runs this **every 3 days** (the 3rd, 6th, 9th... of each month; the other days belong to
 the Dave and CouchSarcasm batches). Each run writes **21 new toy reels** (a week at 3 a day; posting uses 9 every 3 days, so the queue grows, as intended), pushes
 them to `main`, and GitHub voices them with the ElevenLabs voice set in `toyreels/config.json`
-(`n1PvBOwxb8X6m7tahp2h`, a deep deadpan narrator; never change it) and renders them into `toyreel-<id>` Releases. The posting workflow
+(Adam `s3TPKV1kjDlVtZbl4Ksh` from reel 34 on; never change it without the owner) and renders them into `toyreel-<id>` Releases. The posting workflow
 (`.github/workflows/post-toyreels.yml`) then posts them in folder order, 3 a day (06:00, 12:30, 20:30 IST), to
 Instagram and YouTube at the same moment. Nothing else needs doing by hand.
 
@@ -15,6 +15,15 @@ Instagram and YouTube at the same moment. Nothing else needs doing by hand.
   from `toyreels/`. Copy `toyreels/fonts/*.ttf` into `~/.local/share/fonts` and run `fc-cache -f` first.
 - If the `/toystyle` skill is available, load it for the Brick Toy visual style and animation patterns. Its
   content advice (educational explainers) does NOT apply: the content rules are in section 2 below.
+
+## 0a. Claim the job FIRST (one run only, across every Claude account)
+The same scheduled job may exist on more than one Claude account. Before reading or writing anything else, from the
+repo root run `python3 tools/claim.py start toy-batch`.
+- Exit code 3 (`STOP ...`): another run (any account) owns it or already finished it. Reply with that one line and stop.
+- Exit code 0: you own it. Run `python3 tools/claim.py beat toy-batch --note "<what's pushed>"` after every push (and
+  at least every 30 minutes); if a beat prints `STOP`, another run took over: stop at once. At the very end run
+  `python3 tools/claim.py done toy-batch`.
+A run whose heartbeat is older than 90 minutes is treated as dead and the next run takes over and finishes it (0b).
 
 ## 0b. Resume an unfinished batch first (usage limits)
 A backup run fires 6 hours after each main run. Every run starts by reading `toyreels/batch_log.json`:

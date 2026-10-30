@@ -1,0 +1,161 @@
+<title>__TITLE__</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=block">
+<style>
+/* Layout: the 720x1280 reel fills the window (letterboxed); a slim control bar sits underneath. */
+:root {
+  --bg: #1a1c1b; --bar: #f2eee4; --wood: #d4473a; --fg: #23242a; --muted: #6a6a70; --chalk-y: #d4473a; --chalk-p: #2f7f78;
+  --hand: "Space Grotesk", system-ui, sans-serif; --mono: ui-monospace, "SFMono-Regular", Menlo, monospace;
+  color-scheme: dark;
+}
+.bar { color-scheme: light; }
+html, body { height: 100%; }
+body { background: var(--bg); color: var(--fg); display: flex; flex-direction: column; overflow: hidden; font: 16px var(--hand); }
+.stage { flex: 1; min-height: 0; display: grid; place-items: center; position: relative; padding-left: env(safe-area-inset-left, 0px); padding-right: env(safe-area-inset-right, 0px); }
+canvas#c { display: block; background: #dde3de; box-shadow: 0 10px 40px rgba(0,0,0,0.5); }
+.drop[hidden] { display: none; }
+.drop { position: absolute; inset: 12px; border: 3px dashed var(--chalk-y); border-radius: 10px; display: grid; place-items: center; font-size: 28px; color: var(--chalk-y); background: rgba(242,238,228,0.85); }
+.bar { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; background: var(--bar); border-top: 4px solid var(--wood); padding-block: 10px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-bottom: max(10px, env(safe-area-inset-bottom, 0px)); }
+button, .file { font: 700 15px/1 var(--hand); color: var(--fg); background: #fbf8f0; border: 1.5px solid #cfcabd; border-radius: 6px; padding: 8px 14px; cursor: pointer; }
+button:hover, .file:hover { border-color: var(--chalk-y); }
+button:focus-visible, .file:focus-within, input[type=range]:focus-visible { outline: 2px solid var(--chalk-y); outline-offset: 2px; }
+button[aria-pressed="false"] { color: var(--muted); }
+#play { min-width: 86px; }
+#scrub { flex: 1 1 200px; min-width: 120px; accent-color: var(--chalk-y); }
+#time { font: 14px var(--mono); color: var(--muted); font-variant-numeric: tabular-nums; min-width: 104px; }
+.file input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.file { position: relative; }
+#vo { font-size: 14px; color: var(--muted); max-width: 22ch; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#vo.on { color: var(--chalk-y); }
+</style>
+
+<div class="stage" id="stage">
+  <canvas id="c" width="720" height="1280" aria-label="__TITLE__"></canvas>
+  <div class="drop" id="drop" hidden>Drop the voiceover here</div>
+</div>
+<div class="bar">
+  <button id="play" type="button" aria-label="Play">▶ Play</button>
+  <input id="scrub" type="range" min="0" max="60" step="0.01" value="0" aria-label="Scrub">
+  <span id="time">00.0 / --</span>
+  <button id="snd" type="button" aria-pressed="true">Sound on</button>
+  <button id="loop" type="button" aria-pressed="true">Loop on</button>
+  <label class="file">Load voiceover<input id="file" type="file" accept="audio/*"></label>
+  <span id="vo">no voiceover loaded</span>
+</div>
+
+<script>
+/*__LIBS__*/
+</script>
+<script>
+(() => {
+  const W0 = 720, H0 = 1280; // vertical 9:16 reel
+  const DURATION = LESSON.DURATION;
+  window.DURATION = DURATION;
+  window.scoreSound = scoreSound;
+  const cv = document.getElementById('c'), ctx = cv.getContext('2d', { willReadFrequently: true });
+  const $ = (id) => document.getElementById(id);
+  const playB = $('play'), scrub = $('scrub'), timeL = $('time'), sndB = $('snd'), loopB = $('loop'), fileI = $('file'), voL = $('vo'), drop = $('drop');
+  const explainer = LESSON.explainer;
+
+  // ---- canvas scaled to fit with letterboxing (backing store follows the device pixel ratio, max 2x)
+  function fit() {
+    const st = $('stage').getBoundingClientRect(), s = Math.min(st.width / W0, st.height / H0);
+    const w = Math.floor(W0 * s), h = Math.floor(H0 * s);
+    cv.style.width = w + 'px'; cv.style.height = h + 'px';
+    const dpr = Math.min(2, window.devicePixelRatio || 1), bw = Math.max(320, Math.round(w * dpr)), bh = Math.round(bw * H0 / W0);
+    if (cv.width !== bw) { cv.width = bw; cv.height = bh; draw(playing || lastDrawn < 0 ? curT() : lastDrawn); } // keep the poster or paused frame on resize
+  }
+  // ---- one frame at time t (pure function of t)
+  let lastDrawn = -1;
+  function draw(t) {
+    ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha = 1; ctx.globalCompositeOperation = 'source-over'; ctx.filter = 'none';
+    if (cv.width === W0) explainer(ctx, W0, H0, t);
+    else { // draw at the logical W0 x H0 and scale onto the screen buffer
+      const L = draw.L || (draw.L = H.layer(W0, H0)), lc = L.getContext('2d', { willReadFrequently: true });
+      lc.setTransform(1, 0, 0, 1, 0, 0); explainer(lc, W0, H0, t);
+      ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = 'high'; ctx.drawImage(L, 0, 0, cv.width, cv.height);
+    }
+    lastDrawn = t;
+  }
+  window.seek = (t) => { const tt = Math.max(0, Math.min(DURATION, t)); const prev = cv.width; if (cv.width !== W0) { cv.width = W0; cv.height = H0; } draw(tt); return tt; };
+
+  // ---- clock: the voiceover audio when loaded, otherwise our own
+  let tail = null, audio = null, playing = false, clockT = 0, wallStart = 0, tStart = 0, stopSound = null, soundOn = true, loop = true;
+  const total = () => audio && isFinite(audio.duration) ? Math.max(DURATION, audio.duration) : DURATION;
+  function curT() {
+    if (tail) return playing ? tail.t0 + (performance.now() - tail.w) / 1000 : tail.t0;
+    if (audio) return audio.currentTime;
+    return playing ? tStart + (performance.now() - wallStart) / 1000 : clockT;
+  }
+  function startSound(t) { stopSoundNow(); if (soundOn && t < DURATION) stopSound = SOUND.live(scoreSound, t, { voiceover: true }); }
+  function stopSoundNow() { if (stopSound) { stopSound(); stopSound = null; } }
+  function play() {
+    let t = curT(); if (t >= total() - 0.02) t = 0;
+    tail = null; if (audio && isFinite(audio.duration) && t >= audio.duration) tail = { t0: t, w: performance.now() };
+    playing = true; playB.textContent = '❚❚ Pause'; playB.setAttribute('aria-label', 'Pause');
+    if (audio && !tail) { audio.currentTime = t; audio.play().catch(() => {}); }
+    tStart = t; wallStart = performance.now();
+    startSound(t);
+  }
+  function pause() {
+    clockT = curT(); if (tail) tail = { t0: clockT, w: 0 }; playing = false; playB.textContent = '▶ Play'; playB.setAttribute('aria-label', 'Play');
+    if (audio) audio.pause();
+    stopSoundNow();
+  }
+  function seekTo(t) {
+    t = Math.max(0, Math.min(total(), t)); clockT = t; tStart = t; wallStart = performance.now();
+    tail = null;
+    if (audio) { if (isFinite(audio.duration) && t >= audio.duration) { audio.pause(); tail = { t0: t, w: performance.now() }; } else { audio.currentTime = t; if (playing) audio.play().catch(() => {}); } }
+    stopSoundNow(); if (playing) startSound(t);
+    draw(Math.min(t, DURATION)); updateUI(t);
+  }
+  playB.onclick = () => (playing ? pause() : play());
+  scrub.oninput = () => seekTo(parseFloat(scrub.value));
+  sndB.onclick = () => { soundOn = !soundOn; sndB.setAttribute('aria-pressed', soundOn); sndB.textContent = soundOn ? 'Sound on' : 'Sound off'; if (!soundOn) stopSoundNow(); else if (playing) startSound(curT()); };
+  loopB.onclick = () => { loop = !loop; loopB.setAttribute('aria-pressed', loop); loopB.textContent = loop ? 'Loop on' : 'Loop off'; };
+  document.addEventListener('keydown', (e) => { if (e.code === 'Space' && e.target.tagName !== 'INPUT' && e.target.tagName !== 'BUTTON') { e.preventDefault(); playing ? pause() : play(); } });
+
+  // ---- voiceover: file input or drag-and-drop
+  function loadAudio(f) {
+    if (!f || !/^audio\//.test(f.type || 'audio/')) return;
+    loadAudioSrc(URL.createObjectURL(f), f.name);
+  }
+  function loadAudioSrc(src, name) {
+    const wasPlaying = playing; if (playing) pause();
+    if (audio) { audio.pause(); if (audio.src.startsWith('blob:')) URL.revokeObjectURL(audio.src); }
+    audio = new Audio(src); audio.preload = 'auto';
+    audio.addEventListener('loadedmetadata', () => { scrub.max = total().toFixed(2); updateUI(curT()); });
+    audio.addEventListener('ended', () => { if (playing && !tail) tail = { t0: audio.duration, w: performance.now() }; }); // hold the picture to the end after the voice stops
+    audio.currentTime = clockT;
+    voL.textContent = 'voiceover: ' + name; voL.classList.add('on');
+    if (wasPlaying) play();
+  }
+  fileI.onchange = () => loadAudio(fileI.files[0]);
+  let dragN = 0;
+  addEventListener('dragenter', (e) => { e.preventDefault(); dragN++; drop.hidden = false; });
+  addEventListener('dragleave', () => { if (--dragN <= 0) { dragN = 0; drop.hidden = true; } });
+  addEventListener('dragover', (e) => e.preventDefault());
+  addEventListener('drop', (e) => { e.preventDefault(); dragN = 0; drop.hidden = true; const f = [...(e.dataTransfer.files || [])].find((x) => /^audio\//.test(x.type)); if (f) loadAudio(f); });
+
+  // ---- UI + render loop
+  const fmtT = (t) => t.toFixed(1).padStart(4, '0');
+  function updateUI(t) { if (document.activeElement !== scrub) scrub.value = t.toFixed(2); timeL.textContent = fmtT(t) + ' / ' + total().toFixed(1); }
+  function tick() {
+    if (playing) {
+      let t = curT();
+      if (t >= total()) { if (loop) { seekTo(0); t = 0; } else { pause(); t = total(); clockT = t; tail = audio ? { t0: t, w: 0 } : null; } }
+      draw(Math.min(t, DURATION)); updateUI(t);
+    }
+    requestAnimationFrame(tick);
+  }
+
+  (async () => {
+    try { await Promise.all(['600 50px "Poppins"', '800 40px "Poppins"'].map((f) => document.fonts.load(f, 'AaZz09'))); await document.fonts.ready; } catch (e) {}
+    fit(); addEventListener('resize', fit);
+    scrub.max = DURATION.toFixed(2);
+    if (window.VO_DEFAULT) loadAudioSrc(window.VO_DEFAULT, 'ElevenLabs take (built in)');
+    draw(window.POSTER_T || 0); updateUI(0); // poster frame
+    requestAnimationFrame(tick);
+  })();
+})();
+</script>
