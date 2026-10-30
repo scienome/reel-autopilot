@@ -1,0 +1,57 @@
+{
+ "music": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a heroic mission-impossible style section that falls apart, no vocals",
+  "gain": -6,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "s2",
+   "word": "covered",
+   "offset": 0.0,
+   "prompt": "foam padding squeak",
+   "dur": 0.8,
+   "gain": -4
+  },
+  {
+   "beat": "s2",
+   "word": "locked",
+   "offset": 0.0,
+   "prompt": "padlock clicking shut",
+   "dur": 0.8,
+   "gain": -3
+  },
+  {
+   "beat": "mu1",
+   "word": "fridge",
+   "offset": 0.0,
+   "prompt": "fridge handle rattling, locked",
+   "dur": 1.2,
+   "gain": -4
+  },
+  {
+   "beat": "s3",
+   "word": "Babyproof",
+   "offset": 0.3,
+   "prompt": "short sitcom studio audience laugh burst",
+   "dur": 1.6,
+   "gain": -10
+  },
+  {
+   "beat": "m2",
+   "word": "Where",
+   "offset": 0.0,
+   "prompt": "muffled knocking from inside a cupboard",
+   "dur": 1.5,
+   "gain": -4
+  },
+  {
+   "beat": "mu2",
+   "word": "quieter",
+   "offset": 0.3,
+   "prompt": "sitcom studio audience big laugh",
+   "dur": 2.2,
+   "gain": -10
+  }
+ ]
+}

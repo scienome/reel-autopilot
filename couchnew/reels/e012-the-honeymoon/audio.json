@@ -1,0 +1,57 @@
+{
+ "music": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a dreamy romantic beach guitar that turns into a long-haul flight elevator jazz, no vocals",
+  "gain": -6,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "n1",
+   "word": "honeymoon",
+   "offset": 0.0,
+   "prompt": "airplane cabin chime and engine hum",
+   "dur": 2,
+   "gain": -6
+  },
+  {
+   "beat": "mu1",
+   "word": "Budge",
+   "offset": -0.2,
+   "prompt": "record scratch",
+   "dur": 1,
+   "gain": -3
+  },
+  {
+   "beat": "mu2",
+   "word": "hours",
+   "offset": 0.3,
+   "prompt": "short sitcom studio audience laugh burst",
+   "dur": 1.6,
+   "gain": -10
+  },
+  {
+   "beat": "n2",
+   "word": "eleven",
+   "offset": 0.0,
+   "prompt": "airplane engine drone and a baby crying far away",
+   "dur": 2,
+   "gain": -8
+  },
+  {
+   "beat": "s3",
+   "word": "arm",
+   "offset": 0.0,
+   "prompt": "loud old lady snoring",
+   "dur": 1.8,
+   "gain": -4
+  },
+  {
+   "beat": "m2",
+   "word": "likes",
+   "offset": 0.3,
+   "prompt": "sitcom studio audience aww then big laugh",
+   "dur": 2.2,
+   "gain": -10
+  }
+ ]
+}

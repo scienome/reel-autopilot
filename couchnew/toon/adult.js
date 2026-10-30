@@ -6,11 +6,11 @@
   //   who: 'maya' | 'sam' | 'mum', t (time, for blinks / talking / boil), flip (face left),
   //   pose: 'stand' | 'kneel' | 'sit' | 'bed' (from the waist up), lean (rad), bob (px),
   //   arms: 'down' | 'hips' | 'cross' | 'point' | 'shrug' | 'wave' | 'facepalm' | 'hold' | 'cheeks' | 'up' | [[ex, ey, hx, hy], [..]] (elbow + hand, relative to each shoulder),
-  //   hold: 'doughnut' | 'phone' | 'box' | 'ring' | 'tongs' | 'cake' | 'cakeout' | 'pan' | 'mug' | 'suitcase' | 'remote' (in the right hand),
+  //   hold: 'doughnut' | 'phone' | 'box' | 'ring' | 'paper' | 'tongs' | 'cake' | 'cakeout' | 'pan' | 'mug' | 'suitcase' | 'remote' (in the right hand),
   //   style: overrides for this shot's CAST traits, e.g. { outfit: 'gown', top: '#fff', veil: true },
   //   face: { eyes: 'open' | 'half' | 'wide' | 'angry' | 'sad' | 'closed' | 'happy', look: [dx, dy], brows: -1 (angry) .. 1 (worried),
   //           mouth: 'smile' | 'smirk' | 'flat' | 'frown' | 'open' | 'shout' | 'grin' | 'o' | 'chew', talk (true: the mouth flaps), tears, blush, sweat } }
-  // ADULT.sets[name](ctx, W, H_, t, o): painted backgrounds: 'living' | 'cafe' | 'hospital' (o.xray) | 'kitchen' (o.fire, o.smoke: start times; o.note).
+  // ADULT.sets[name](ctx, W, H_, t, o): painted backgrounds: 'living' | 'cafe' | 'hospital' (o.xray) | 'kitchen' (o.fire, o.smoke: start times; o.note) | 'plane' (o.night).
   const ADULT = (() => {
     const INK = '#17121c', LW = 5;
     // hs = hair style ('long' | 'spiky' | 'curls' | 'bald' | 'slick' | 'cap' | 'bun'), outfit ('crop' | 'hoodie' | 'cardigan' | 'suit' | 'tee'),
@@ -67,6 +67,7 @@
       else if (kind === 'mug') { poly(ctx, '#f2efe6', [[x - 26, y - 34], [x + 26, y - 34], [x + 22, y + 26], [x - 22, y + 26]], 113); ctx.lineWidth = 7; ctx.strokeStyle = INK; ctx.beginPath(); ctx.arc(x + 30, y - 4, 14, -1.2, 1.2); ctx.stroke(); for (let i = 0; i < 2; i++) curve(ctx, [x - 8 + i * 16, y - 44], [x - 18 + i * 16 + Math.sin(t * 3 + i) * 8, y - 70], [x - 6 + i * 16, y - 96], 4, 'rgba(255,255,255,0.6)', 114 + i); }
       else if (kind === 'suitcase') { poly(ctx, '#c0583a', [[x - 70, y - 20], [x + 70, y - 20], [x + 70, y + 130], [x - 70, y + 130]], 116); line(ctx, [[x - 24, y - 20], [x - 24, y - 40], [x + 24, y - 40], [x + 24, y - 20]], 8, INK, 117); line(ctx, [[x - 70, y + 50], [x + 70, y + 50]], 4, '#8a3a24', 118); }
       else if (kind === 'remote') { poly(ctx, '#2a2a30', [[x - 14, y - 50], [x + 14, y - 50], [x + 14, y + 40], [x - 14, y + 40]], 119); oval(ctx, '#e8384f', x, y - 34, 6, 6, 120, 2, 8); }
+      else if (kind === 'paper') { poly(ctx, '#fbf8ee', [[x - 50, y - 70], [x + 50, y - 70], [x + 50, y + 60], [x - 50, y + 60]], 121); for (let i = 0; i < 6; i++) line(ctx, [[x - 38, y - 50 + i * 18], [x + 38, y - 50 + i * 18]], 3, '#8a8a96', 122 + i); }
       else if (kind === 'ring') { ctx.lineWidth = 7; ctx.strokeStyle = '#f2c230'; ctx.beginPath(); ctx.arc(x, y + 6, 16, 0, Math.PI * 2); ctx.stroke(); blob(ctx, '#bfefff', [[x, y - 28], [x + 13, y - 14], [x, y - 4], [x - 13, y - 14]], 99, 3); }
     };
     const person = (ctx, x, y, s, o = {}) => {
@@ -195,6 +196,11 @@
         for (let i = 0; i < 6; i++) line(ctx, [[0, H_ * 0.7 + i * 64], [W, H_ * 0.7 + i * 64]], 3, 'rgba(0,0,0,0.12)', 430 + i);
         if (o.fire != null && t > o.fire) fire(ctx, 285, 700, Math.min(1, (t - o.fire) / 0.5) * (o.fireSize || 1), t);
         if (o.smoke != null && t > o.smoke) { ctx.save(); for (let i = 0; i < 9; i++) { const u = ((t - o.smoke) * 0.5 + i / 9) % 1; ctx.globalAlpha = 0.35 * (1 - u); ctx.fillStyle = '#5a5a62'; ctx.beginPath(); ctx.arc(285 + Math.sin(i * 2 + t) * 60, 680 - u * 560, 50 + u * 90, 0, Math.PI * 2); ctx.fill(); } ctx.restore(); } },
+      // plane cabin: curved wall with oval windows (sky or night), seat backs in a row
+      plane: (ctx, W, H_, t, o = {}) => { T = t; wall(ctx, W, H_, '#dfe2e8', '#5a6070', 0.72);
+        for (let i = 0; i < 3; i++) { const x = 120 + i * 240; oval(ctx, '#9aa4b4', x, 330, 62, 92, 440 + i); oval(ctx, o.night ? '#1a2048' : '#9fd4ff', x, 330, 48, 76, 444 + i, 4); if (!o.night) { ctx.fillStyle = 'rgba(255,255,255,0.8)'; ctx.beginPath(); ctx.ellipse(x - 10 + Math.sin(t * 0.5 + i) * 14, 350, 22, 9, 0, 0, Math.PI * 2); ctx.fill(); } }
+        poly(ctx, '#c8ccd6', [[0, 120], [720, 120], [720, 150], [0, 150]], 448);
+        for (let i = 0; i < 3; i++) { const x = 130 + i * 230; blob(ctx, '#3a5a9a', [[x - 105, 560], [x + 105, 560], [x + 110, 960], [x - 110, 960]], 450 + i); blob(ctx, '#f2f2f6', [[x - 70, 560], [x + 70, 560], [x + 70, 620], [x - 70, 620]], 454 + i, 3); } },
     };
     // cartoon flames, bottom centre at x, y; s = size (1 is about 200 px tall)
     const fire = (ctx, x, y, s, t) => { if (s <= 0) return; ctx.save(); ctx.translate(x, y); ctx.scale(s, s); for (const [col, k] of [['#e8382a', 1], ['#ff9a2a', 0.72], ['#ffe060', 0.42]]) { const pts = []; for (let i = 0; i <= 8; i++) { const a = (i / 8) * Math.PI, r = (i % 2 ? 0.55 : 1) * k; pts.push([Math.cos(a) * 110 * k, -Math.sin(a) * (120 + 90 * Math.abs(Math.sin(t * 9 + i * 1.7))) * r]); } pts.push([0, 10]); blob(ctx, col, pts, 700 + k * 10, k === 1 ? LW : 0); } ctx.restore(); };

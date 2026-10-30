@@ -1,0 +1,13 @@
+[
+ {"id": "n1", "who": "narrator", "phrases": ["First fight.", "As a married couple."]},
+ {"id": "m1", "who": "maya", "phrases": ["It's freezing in here."]},
+ {"id": "s1", "who": "sam", "phrases": ["It's boiling!"]},
+ {"id": "m2", "who": "maya", "phrases": ["Nineteen!"]},
+ {"id": "s2", "who": "sam", "phrases": ["Twenty two!"]},
+ {"id": "mu1", "who": "mum", "phrases": ["Give me that."]},
+ {"id": "mu2", "who": "mum", "phrases": ["Twenty."]},
+ {"id": "s3", "who": "sam", "phrases": ["Perfect."]},
+ {"id": "m3", "who": "maya", "phrases": ["Perfect."]},
+ {"id": "mu3", "who": "mum", "phrases": ["Fight's over.", "I'm keeping the remote."]},
+ {"id": "n3", "who": "narrator", "phrases": ["Part two?"]}
+]

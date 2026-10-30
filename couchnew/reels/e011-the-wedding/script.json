@@ -1,0 +1,12 @@
+[
+ {"id": "n1", "who": "narrator", "phrases": ["The wedding day.", "In a hospital."]},
+ {"id": "doc1", "who": "doc", "phrases": ["If anyone objects,", "speak now."]},
+ {"id": "mu1", "who": "mum", "phrases": ["I object."]},
+ {"id": "s1", "who": "sam", "phrases": ["What?!"]},
+ {"id": "mu2", "who": "mum", "phrases": ["To the cake.", "It's not doughnuts."]},
+ {"id": "doc2", "who": "doc", "phrases": ["Objection noted.", "You're married."]},
+ {"id": "m1", "who": "maya", "phrases": ["We did it!"]},
+ {"id": "s2", "who": "sam", "phrases": ["Wait.", "Where's the ring?"]},
+ {"id": "mu3", "who": "mum", "phrases": ["Mm.", "Crunchy."]},
+ {"id": "n3", "who": "narrator", "phrases": ["Part two?"]}
+]

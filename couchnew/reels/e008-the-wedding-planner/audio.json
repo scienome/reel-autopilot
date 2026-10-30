@@ -1,0 +1,49 @@
+{
+ "music": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a fake-romantic wedding harp that keeps getting interrupted, no vocals",
+  "gain": -6,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "mu1",
+   "word": "wedding",
+   "offset": 0.0,
+   "prompt": "paper flipping fast through a thick binder",
+   "dur": 1.2,
+   "gain": -4
+  },
+  {
+   "beat": "mu2",
+   "word": "hospital",
+   "offset": 0.0,
+   "prompt": "hospital heart monitor beep",
+   "dur": 1,
+   "gain": -8
+  },
+  {
+   "beat": "mu3",
+   "word": "socks",
+   "offset": 0.3,
+   "prompt": "short sitcom studio audience laugh burst",
+   "dur": 1.6,
+   "gain": -10
+  },
+  {
+   "beat": "mu4",
+   "word": "Wrong",
+   "offset": 0.0,
+   "prompt": "game show wrong answer buzzer",
+   "dur": 1,
+   "gain": -4
+  },
+  {
+   "beat": "mu5",
+   "word": "Tradition",
+   "offset": 0.0,
+   "prompt": "small sitcom audience groan then big laugh",
+   "dur": 2,
+   "gain": -8
+  }
+ ]
+}

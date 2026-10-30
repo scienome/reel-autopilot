@@ -1,0 +1,12 @@
+[
+ {"id": "s1", "who": "sam", "phrases": ["I wrote my wedding vows."]},
+ {"id": "mu1", "who": "mum", "phrases": ["Read them."]},
+ {"id": "s2", "who": "sam", "phrases": ["Maya, you are the doughnut of my life."]},
+ {"id": "mu2", "who": "mum", "phrases": ["Delete."]},
+ {"id": "s3", "who": "sam", "phrases": ["You light up my world.", "Like a kitchen fire."]},
+ {"id": "mu3", "who": "mum", "phrases": ["Delete."]},
+ {"id": "s4", "who": "sam", "phrases": ["I promise to never cook again."]},
+ {"id": "mu4", "who": "mum", "phrases": ["Keep that one."]},
+ {"id": "m1", "who": "maya", "phrases": ["That's the most romantic thing", "you've ever said."]},
+ {"id": "n3", "who": "narrator", "phrases": ["Part two?"]}
+]

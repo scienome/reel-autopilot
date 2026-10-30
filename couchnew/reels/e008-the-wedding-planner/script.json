@@ -1,0 +1,12 @@
+[
+ {"id": "mu1", "who": "mum", "phrases": ["I've planned the whole wedding."]},
+ {"id": "s1", "who": "sam", "phrases": ["But it's our wedding."]},
+ {"id": "mu2", "who": "mum", "phrases": ["Venue: the hospital.", "Ring bearer: the doctor."]},
+ {"id": "m1", "who": "maya", "phrases": ["Mum, can Sam choose one thing?"]},
+ {"id": "mu3", "who": "mum", "phrases": ["Of course.", "He can choose his socks."]},
+ {"id": "s2", "who": "sam", "phrases": ["Blue!"]},
+ {"id": "mu4", "who": "mum", "phrases": ["Wrong.", "Black."]},
+ {"id": "s3", "who": "sam", "phrases": ["Can I at least pick the cake?"]},
+ {"id": "mu5", "who": "mum", "phrases": ["Doughnuts.", "Ring inside.", "Tradition."]},
+ {"id": "n3", "who": "narrator", "phrases": ["Part two?"]}
+]

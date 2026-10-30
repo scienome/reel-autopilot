@@ -1,0 +1,12 @@
+[
+ {"id": "s1", "who": "sam", "phrases": ["I babyproofed the house."]},
+ {"id": "m1", "who": "maya", "phrases": ["The baby isn't born yet."]},
+ {"id": "s2", "who": "sam", "phrases": ["Corners covered.", "Drawers locked.", "Fridge locked."]},
+ {"id": "mu1", "who": "mum", "phrases": ["I can't open the fridge."]},
+ {"id": "s3", "who": "sam", "phrases": ["Exactly.", "Babyproof."]},
+ {"id": "n2", "who": "narrator", "phrases": ["One hour later."]},
+ {"id": "m2", "who": "maya", "phrases": ["Sam?", "Where are you?"]},
+ {"id": "s4", "who": "sam", "phrases": ["I locked myself in the cupboard."]},
+ {"id": "mu2", "who": "mum", "phrases": ["Leave him.", "It's quieter."]},
+ {"id": "n3", "who": "narrator", "phrases": ["Part two?"]}
+]

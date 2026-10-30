@@ -1,0 +1,12 @@
+[
+ {"id": "n1", "who": "narrator", "phrases": ["The honeymoon."]},
+ {"id": "m1", "who": "maya", "phrases": ["Just us.", "Finally."]},
+ {"id": "s1", "who": "sam", "phrases": ["No phones.", "No Mum."]},
+ {"id": "mu1", "who": "mum", "phrases": ["Budge up."]},
+ {"id": "s2", "who": "sam", "phrases": ["How are you here?!"]},
+ {"id": "mu2", "who": "mum", "phrases": ["I booked the middle seat.", "Twelve hours."]},
+ {"id": "n2", "who": "narrator", "phrases": ["Hour eleven."]},
+ {"id": "s3", "who": "sam", "phrases": ["She's asleep on me.", "I can't feel my arm."]},
+ {"id": "m2", "who": "maya", "phrases": ["Aww.", "She likes you."]},
+ {"id": "n3", "who": "narrator", "phrases": ["Part two?"]}
+]

@@ -1,0 +1,13 @@
+[
+ {"id": "m1", "who": "maya", "phrases": ["We need a baby name."]},
+ {"id": "s1", "who": "sam", "phrases": ["Doughnut."]},
+ {"id": "m2", "who": "maya", "phrases": ["No."]},
+ {"id": "s2", "who": "sam", "phrases": ["Thursday?"]},
+ {"id": "m3", "who": "maya", "phrases": ["No!"]},
+ {"id": "mu1", "who": "mum", "phrases": ["I've already chosen.", "My name."]},
+ {"id": "s3", "who": "sam", "phrases": ["What is your name?"]},
+ {"id": "mu2", "who": "mum", "phrases": ["You've known me a year."]},
+ {"id": "s4", "who": "sam", "phrases": ["I call you Mum!"]},
+ {"id": "mu3", "who": "mum", "phrases": ["Brenda."]},
+ {"id": "n3", "who": "narrator", "phrases": ["Part two?"]}
+]

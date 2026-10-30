@@ -1,0 +1,57 @@
+{
+ "music": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a tense western standoff showdown in the middle, no vocals",
+  "gain": -6,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "c1",
+   "word": "dad",
+   "offset": 0.0,
+   "prompt": "doorbell ding dong then heavy footsteps",
+   "dur": 1.5,
+   "gain": -4
+  },
+  {
+   "beat": "d2",
+   "word": "Now",
+   "offset": 0.0,
+   "prompt": "dramatic western whistle and a bell",
+   "dur": 1.5,
+   "gain": -5
+  },
+  {
+   "beat": "s2",
+   "word": "Easy",
+   "offset": 0.5,
+   "prompt": "loud table slam thud",
+   "dur": 1,
+   "gain": -2
+  },
+  {
+   "beat": "m1",
+   "word": "second",
+   "offset": 0.3,
+   "prompt": "short sitcom studio audience laugh burst",
+   "dur": 1.6,
+   "gain": -10
+  },
+  {
+   "beat": "mu1",
+   "word": "turn",
+   "offset": 0.6,
+   "prompt": "loud table slam and a crack",
+   "dur": 1,
+   "gain": -2
+  },
+  {
+   "beat": "d4",
+   "word": "Run",
+   "offset": 0.3,
+   "prompt": "sitcom studio audience big laugh and applause",
+   "dur": 2.2,
+   "gain": -10
+  }
+ ]
+}

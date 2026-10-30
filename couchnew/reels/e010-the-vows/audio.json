@@ -1,0 +1,49 @@
+{
+ "music": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a soppy romantic violin that keeps getting cut off by a pen scratch, no vocals",
+  "gain": -6,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "mu2",
+   "word": "Delete",
+   "offset": 0.0,
+   "prompt": "red marker pen scribbling fast",
+   "dur": 1,
+   "gain": -3
+  },
+  {
+   "beat": "s3",
+   "word": "fire",
+   "offset": 0.3,
+   "prompt": "short sitcom studio audience laugh burst",
+   "dur": 1.6,
+   "gain": -10
+  },
+  {
+   "beat": "mu3",
+   "word": "Delete",
+   "offset": 0.0,
+   "prompt": "paper tearing",
+   "dur": 1,
+   "gain": -3
+  },
+  {
+   "beat": "mu4",
+   "word": "Keep",
+   "offset": 0.0,
+   "prompt": "magical sparkle chime",
+   "dur": 1,
+   "gain": -5
+  },
+  {
+   "beat": "m1",
+   "word": "said",
+   "offset": 0.0,
+   "prompt": "small sitcom audience aww",
+   "dur": 1.8,
+   "gain": -8
+  }
+ ]
+}

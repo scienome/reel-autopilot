@@ -1,0 +1,57 @@
+{
+ "music": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a tender piano reveal moment and a big comedic thud, no vocals",
+  "gain": -6,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "m2",
+   "word": "pregnant",
+   "offset": 0.0,
+   "prompt": "magical sparkle and a soft choir aah",
+   "dur": 1.5,
+   "gain": -5
+  },
+  {
+   "beat": "s2",
+   "word": "Wow",
+   "offset": 0.5,
+   "prompt": "body falling on the floor with a big thud",
+   "dur": 1.2,
+   "gain": -2
+  },
+  {
+   "beat": "mu1",
+   "word": "weeks",
+   "offset": 0.0,
+   "prompt": "small sitcom audience ooh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "mu2",
+   "word": "history",
+   "offset": 0.3,
+   "prompt": "short sitcom studio audience laugh burst",
+   "dur": 1.6,
+   "gain": -10
+  },
+  {
+   "beat": "mu3",
+   "word": "baby",
+   "offset": 0.0,
+   "prompt": "heavy suitcase thump on the floor",
+   "dur": 1,
+   "gain": -4
+  },
+  {
+   "beat": "s3",
+   "word": "again",
+   "offset": 0.3,
+   "prompt": "sitcom studio audience big laugh and applause",
+   "dur": 2.2,
+   "gain": -10
+  }
+ ]
+}

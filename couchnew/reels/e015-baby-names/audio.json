@@ -1,0 +1,57 @@
+{
+ "music": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a cute lullaby music box that turns into a dramatic reveal sting, no vocals",
+  "gain": -6,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "s1",
+   "word": "Doughnut",
+   "offset": 0.3,
+   "prompt": "short sitcom studio audience laugh burst",
+   "dur": 1.6,
+   "gain": -10
+  },
+  {
+   "beat": "s2",
+   "word": "Thursday",
+   "offset": 0.3,
+   "prompt": "short sitcom studio audience laugh burst",
+   "dur": 1.6,
+   "gain": -10
+  },
+  {
+   "beat": "mu1",
+   "word": "name",
+   "offset": 0.0,
+   "prompt": "dramatic orchestra sting",
+   "dur": 1.2,
+   "gain": -5
+  },
+  {
+   "beat": "s3",
+   "word": "name",
+   "offset": 0.0,
+   "prompt": "awkward cricket chirps",
+   "dur": 1.5,
+   "gain": -6
+  },
+  {
+   "beat": "mu3",
+   "word": "Brenda",
+   "offset": 0.0,
+   "prompt": "big dramatic choir reveal aah",
+   "dur": 1.5,
+   "gain": -4
+  },
+  {
+   "beat": "mu3",
+   "word": "Brenda",
+   "offset": 0.8,
+   "prompt": "sitcom studio audience huge laugh and applause",
+   "dur": 2.4,
+   "gain": -10
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+[
+ {"id": "m1", "who": "maya", "phrases": ["Sam.", "Sit down."]},
+ {"id": "s1", "who": "sam", "phrases": ["Am I in trouble?"]},
+ {"id": "m2", "who": "maya", "phrases": ["I'm pregnant."]},
+ {"id": "s2", "who": "sam", "phrases": ["Wow."]},
+ {"id": "mu1", "who": "mum", "phrases": ["I knew three weeks ago."]},
+ {"id": "m3", "who": "maya", "phrases": ["How?!"]},
+ {"id": "mu2", "who": "mum", "phrases": ["Mother's instinct.", "And your search history."]},
+ {"id": "mu3", "who": "mum", "phrases": ["I'm moving in.", "For the baby."]},
+ {"id": "s3", "who": "sam", "phrases": ["Can I faint again?"]},
+ {"id": "n3", "who": "narrator", "phrases": ["Part two?"]}
+]

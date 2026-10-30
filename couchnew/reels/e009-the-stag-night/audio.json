@@ -1,0 +1,65 @@
+{
+ "music": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a wild party build-up that collapses into a sleepy bingo hall organ, no vocals",
+  "gain": -6,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "f1",
+   "word": "Stag",
+   "offset": 0.0,
+   "prompt": "party air horn blasts",
+   "dur": 1.2,
+   "gain": -4
+  },
+  {
+   "beat": "f2",
+   "word": "wild",
+   "offset": 0.0,
+   "prompt": "club music bass drop",
+   "dur": 1.5,
+   "gain": -6
+  },
+  {
+   "beat": "n2",
+   "word": "wild",
+   "offset": 0.2,
+   "prompt": "record scratch",
+   "dur": 1,
+   "gain": -3
+  },
+  {
+   "beat": "mu1",
+   "word": "seven",
+   "offset": 0.0,
+   "prompt": "bingo balls rattling in a cage",
+   "dur": 1.5,
+   "gain": -6
+  },
+  {
+   "beat": "f3",
+   "word": "chat",
+   "offset": 0.3,
+   "prompt": "short sitcom studio audience laugh burst",
+   "dur": 1.6,
+   "gain": -10
+  },
+  {
+   "beat": "s2",
+   "word": "bingo",
+   "offset": 0.0,
+   "prompt": "small crowd cheering",
+   "dur": 1.5,
+   "gain": -6
+  },
+  {
+   "beat": "mu3",
+   "word": "boys",
+   "offset": 0.3,
+   "prompt": "sitcom studio audience big laugh",
+   "dur": 2,
+   "gain": -10
+  }
+ ]
+}

@@ -8,13 +8,19 @@
     "narrator": "s3TPKV1kjDlVtZbl4Ksh",
     "sam": "IvUJKFyjVb5hItY9dJAT",
     "maya": "cgSgspJ2msm6clMCkdW9",
-    "mum": "Xb7hH8MSUJpSbSDYk0k2"
+    "mum": "Xb7hH8MSUJpSbSDYk0k2",
+    "dad": "JBFqnCBsd6RMkjVDRZzb",
+    "friend": "iP95p4xoKVk53GoZ742B",
+    "doc": "onwK4e9ZLuTAKqWW03F9"
   },
   "_cast_names": {
     "narrator": "Adam (the one voice for every channel)",
     "sam": "Stevie - The Living Cartoon (owner's My Voices)",
     "maya": "Jessica - Playful, Bright, Warm",
-    "mum": "Alice - Clear, Engaging Educator"
+    "mum": "Alice - Clear, Engaging Educator",
+    "dad": "George (Maya's dad)",
+    "friend": "Chris (Sam's friend)",
+    "doc": "Daniel (the doctor)"
   },
   "cast_settings": {
     "narrator": {
@@ -39,6 +45,27 @@
       "speed": 1.08
     },
     "mum": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.55,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "dad": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.55,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "friend": {
+      "stability": 0.25,
+      "similarity_boost": 0.75,
+      "style": 0.7,
+      "use_speaker_boost": true,
+      "speed": 1.1
+    },
+    "doc": {
       "stability": 0.35,
       "similarity_boost": 0.8,
       "style": 0.55,

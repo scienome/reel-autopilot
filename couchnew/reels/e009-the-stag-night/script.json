@@ -1,0 +1,12 @@
+[
+ {"id": "f1", "who": "friend", "phrases": ["Bro! Stag night!", "I planned everything!"]},
+ {"id": "s1", "who": "sam", "phrases": ["Where are we going?"]},
+ {"id": "f2", "who": "friend", "phrases": ["Somewhere wild."]},
+ {"id": "n2", "who": "narrator", "phrases": ["Somewhere wild."]},
+ {"id": "mu1", "who": "mum", "phrases": ["B seven.", "Concentrate, Samuel."]},
+ {"id": "f3", "who": "friend", "phrases": ["She found the group chat."]},
+ {"id": "s2", "who": "sam", "phrases": ["I won!", "I won bingo!"]},
+ {"id": "mu2", "who": "mum", "phrases": ["No you didn't.", "I let you."]},
+ {"id": "mu3", "who": "mum", "phrases": ["Bed by nine, boys."]},
+ {"id": "n3", "who": "narrator", "phrases": ["Part two?"]}
+]

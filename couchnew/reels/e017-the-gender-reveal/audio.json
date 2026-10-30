@@ -1,0 +1,57 @@
+{
+ "music": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a frantic fire-alarm chaos section and a sweet music box ending, no vocals",
+  "gain": -6,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "s1",
+   "word": "reveal",
+   "offset": 0.0,
+   "prompt": "party poppers",
+   "dur": 1,
+   "gain": -3
+  },
+  {
+   "beat": "n2",
+   "word": "later",
+   "offset": 0.0,
+   "prompt": "big whoosh of flames then a smoke alarm beeping",
+   "dur": 2.5,
+   "gain": -4
+  },
+  {
+   "beat": "s3",
+   "word": "girl",
+   "offset": 0.0,
+   "prompt": "crowd cheering",
+   "dur": 1.5,
+   "gain": -6
+  },
+  {
+   "beat": "mu2",
+   "word": "fire",
+   "offset": 0.0,
+   "prompt": "fire extinguisher spraying",
+   "dur": 1.5,
+   "gain": -4
+  },
+  {
+   "beat": "mu2",
+   "word": "fire",
+   "offset": 0.8,
+   "prompt": "sitcom studio audience big laugh",
+   "dur": 2,
+   "gain": -10
+  },
+  {
+   "beat": "m2",
+   "word": "girl",
+   "offset": 0.0,
+   "prompt": "soft magical chime and baby giggle",
+   "dur": 1.8,
+   "gain": -6
+  }
+ ]
+}

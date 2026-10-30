@@ -21,7 +21,7 @@
     // a character with the face defaults filled in: the mouth flaps on their lines, eyes on whoever talks (xs = x of each character in the shot)
     const char = (ctx, who, x, y, s, t, o = {}, xs) => ADULT.person(ctx, x, y, s, Object.assign({ who, t }, o, { face: Object.assign({ talk: talking(who, t), look: xs ? lookAt(who, t, xs) : [0, 0] }, o.face || {}) }));
     const h = { V, first, WORDS, talking, lookAt, pulse, spanOf, char, AP: ADULT.person, AT: ADULT.armsAt, timeCard, partTwo };
-    const SHOTS = build(h), SPK = Object.assign({ sam: ['SAM', '#e6b03a'], maya: ['MAYA', '#ff6a7a'], mum: ['MUM', '#7ad0b0'] }, o.spk || {}), noSub = o.noSub || [];
+    const SHOTS = build(h), SPK = Object.assign({ sam: ['SAM', '#e6b03a'], maya: ['MAYA', '#ff6a7a'], mum: ['MUM', '#7ad0b0'], dad: ['DAD', '#c8a07a'], friend: ['DANNY', '#4ad0a0'], doc: ['DOCTOR', '#8ab4ff'] }, o.spk || {}), noSub = o.noSub || [];
     const SH = BEATS.filter((b) => SHOTS[b.id]).map((b, i) => [b.id, i ? first(b.id) - 0.06 : 0]);
     const shotAt = makeShotAt(SH, DURATION);
     const shotCam = (ctx, a, b, u) => { const k = H.ease.inOut(u), cx = H.lerp(a[0], b[0], k), cy = H.lerp(a[1], b[1], k), z = H.lerp(a[2], b[2], k); ctx.translate(360, 640); ctx.scale(z, z); ctx.translate(-cx, -cy); };

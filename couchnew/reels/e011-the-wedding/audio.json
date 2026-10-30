@@ -1,0 +1,65 @@
+{
+ "music": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, starting as a grand wedding organ march, then a dramatic gasp sting, then cheeky again, no vocals",
+  "gain": -6,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "n1",
+   "word": "wedding",
+   "offset": 0.0,
+   "prompt": "church organ wedding march, a few notes",
+   "dur": 2,
+   "gain": -5
+  },
+  {
+   "beat": "mu1",
+   "word": "object",
+   "offset": 0.0,
+   "prompt": "crowd gasping loudly",
+   "dur": 1.5,
+   "gain": -3
+  },
+  {
+   "beat": "s1",
+   "word": "What",
+   "offset": 0.0,
+   "prompt": "dramatic orchestra sting",
+   "dur": 1.2,
+   "gain": -4
+  },
+  {
+   "beat": "mu2",
+   "word": "doughnuts",
+   "offset": 0.3,
+   "prompt": "short sitcom studio audience laugh burst",
+   "dur": 1.6,
+   "gain": -10
+  },
+  {
+   "beat": "m1",
+   "word": "did",
+   "offset": 0.0,
+   "prompt": "crowd cheering and applause",
+   "dur": 1.8,
+   "gain": -6
+  },
+  {
+   "beat": "mu3",
+   "word": "Crunchy",
+   "offset": 0.0,
+   "prompt": "loud cartoon crunch then a gulp",
+   "dur": 1.3,
+   "gain": -2
+  },
+  {
+   "beat": "mu3",
+   "word": "Crunchy",
+   "offset": 0.6,
+   "prompt": "sitcom studio audience huge laugh and applause",
+   "dur": 2.5,
+   "gain": -10
+  }
+ ]
+}

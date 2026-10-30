@@ -1,0 +1,12 @@
+[
+ {"id": "c1", "who": "narrator", "phrases": ["Maya's dad.", "First meeting."]},
+ {"id": "d1", "who": "dad", "phrases": ["So you're the one", "who proposed to my wife."]},
+ {"id": "s1", "who": "sam", "phrases": ["Technically, I asked permission."]},
+ {"id": "d2", "who": "dad", "phrases": ["Arm wrestle.", "Now."]},
+ {"id": "s2", "who": "sam", "phrases": ["Easy."]},
+ {"id": "m1", "who": "maya", "phrases": ["Babe.", "You lost in half a second."]},
+ {"id": "mu1", "who": "mum", "phrases": ["Move.", "My turn."]},
+ {"id": "d3", "who": "dad", "phrases": ["Forty years.", "She's never let me win."]},
+ {"id": "d4", "who": "dad", "phrases": ["Welcome to the family, son.", "Run."]},
+ {"id": "n3", "who": "narrator", "phrases": ["Part two?"]}
+]

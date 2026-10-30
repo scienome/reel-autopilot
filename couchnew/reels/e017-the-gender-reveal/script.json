@@ -1,0 +1,12 @@
+[
+ {"id": "s1", "who": "sam", "phrases": ["Gender reveal!", "I made the cake!"]},
+ {"id": "mu1", "who": "mum", "phrases": ["Did you use the oven?"]},
+ {"id": "s2", "who": "sam", "phrases": ["...Maybe?"]},
+ {"id": "n2", "who": "narrator", "phrases": ["Ten seconds later."]},
+ {"id": "m1", "who": "maya", "phrases": ["The smoke is pink!"]},
+ {"id": "s3", "who": "sam", "phrases": ["It's a girl!"]},
+ {"id": "mu2", "who": "mum", "phrases": ["No.", "That's my scarf.", "It's on fire."]},
+ {"id": "s4", "who": "sam", "phrases": ["So is it a girl?"]},
+ {"id": "m2", "who": "maya", "phrases": ["Yes. It's a girl."]},
+ {"id": "n3", "who": "narrator", "phrases": ["Part two?"]}
+]

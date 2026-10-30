@@ -1,0 +1,57 @@
+{
+ "music": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a boxing-match bell and fight drums in the middle, no vocals",
+  "gain": -6,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "n1",
+   "word": "fight",
+   "offset": 0.0,
+   "prompt": "boxing ring bell ding ding",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "m1",
+   "word": "freezing",
+   "offset": 0.0,
+   "prompt": "cold wind howling",
+   "dur": 1.2,
+   "gain": -8
+  },
+  {
+   "beat": "s1",
+   "word": "boiling",
+   "offset": 0.0,
+   "prompt": "kettle whistling",
+   "dur": 1.2,
+   "gain": -8
+  },
+  {
+   "beat": "mu1",
+   "word": "Give",
+   "offset": 0.0,
+   "prompt": "remote snatched whoosh",
+   "dur": 0.8,
+   "gain": -4
+  },
+  {
+   "beat": "mu2",
+   "word": "Twenty",
+   "offset": 0.0,
+   "prompt": "thermostat beep",
+   "dur": 0.8,
+   "gain": -4
+  },
+  {
+   "beat": "mu3",
+   "word": "remote",
+   "offset": 0.3,
+   "prompt": "sitcom studio audience big laugh",
+   "dur": 2,
+   "gain": -10
+  }
+ ]
+}
