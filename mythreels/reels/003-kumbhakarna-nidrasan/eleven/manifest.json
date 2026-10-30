@@ -1,0 +1,43 @@
+{
+ "music-1159069ce659.mp3": {
+  "prompt": "Playful yet epic Indian mythological underscore: tanpura drone, tabla, deep rakshasa drums, mysterious santoor and flute for the goddess, a comic sleepy bassoon moment, turning grim and heroic at the end, no vocals",
+  "music_length_ms": 53740,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-8c71a9cdad21.mp3": {
+  "text": "giant monster snoring loudly, deep rumbling snore",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-ad1b094a693c.mp3": {
+  "text": "giant footsteps shaking the ground, heavy boom",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-cee41d37f7f9.mp3": {
+  "text": "magical shimmering chime, divine sparkle",
+  "duration_seconds": 1.4,
+  "prompt_influence": 0.5
+ },
+ "sfx-248a04a222a1.mp3": {
+  "text": "comedic record scratch then a gasp",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-ed90eafaa9d5.mp3": {
+  "text": "divine bell and deep cosmic boom",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-ce7561efb6a5.mp3": {
+  "text": "deep slow snore, then yawning",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-15de2e4e0abe.mp3": {
+  "text": "war drums and conch shells, battle horns",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ }
+}
