@@ -336,10 +336,10 @@ Fix these docs when you're next in those folders.
 ## 13. STATUS SNAPSHOT (30 Oct 2026, 13:00 IST — re-check live, this goes stale)
 
 - Toy: reels 35–55 made and rendered 29–30 Oct (batch `done`); ~37 queued (about 12 days). Next auto-batch 3 Nov.
-- Couch: e001 + e002 posted 30 Oct; queued e003-mum-moves-in, e004-sam-cooks, e005-the-birthday, e006-the-dress
-  (runs out 31 Oct night) → more episodes being made now (e007+), per `couchnew/PLAYBOOK.md`.
-- POV: 001 + 007 posted 30 Oct; queued 002, 008, 003, 010, 004, 009, 005, 006 (runs out 2 Nov) → more being made
-  now (011+), per `povreels/PLAYBOOK.md`.
+- Couch: e001 + e002 posted 30 Oct; queued e003–e006, plus e007–e017 made 30 Oct (rendering; add to the queue once
+  their Releases exist) → about 5 days.
+- POV: 001 + 007 posted 30 Oct; queued 002, 008, 003, 010, 004, 009, 005, 006, plus 011–018 made 30 Oct (rendering;
+  add to the queue once rendered) → about 5 days.
 - The owner may be without a Claude subscription for a few days: posting keeps running on GitHub by itself; only the
   batch tasks pause. When you pick up, check queue days first (§0 step 7).
 - Open: owner to delete the duplicate couch Short `PDkoEk8xCxw` (e002, from a cancelled run) in YouTube Studio.

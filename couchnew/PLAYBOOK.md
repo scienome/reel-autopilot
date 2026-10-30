@@ -26,12 +26,17 @@ left: ids in `schedule.json` "queue" that are not in the root `posted.json`.
 ## 2. The show
 - **Cast** (2D adult cartoon, `toon/adult.js` CAST): **Sam** (yellow hoodie, spiky hair, stubble, a well-meaning idiot),
   **Maya** (his girlfriend, now fiancée: red crop top, hoops, sarcastic), **Mum** (Maya's mum: grey curls, glasses,
-  pearls, cardigan, deadpan, always wins). Guests available: `boss`, `date`, `dad`, `grandma`, `friend`, `sister`.
+  pearls, cardigan, deadpan, always wins). Guests available: `boss`, `date`, `dad`, `grandma`, `friend`, `sister`. Voiced guests (config "cast"): `dad` (Maya's dad, George), `friend` (Danny, Chris), `doc` (the doctor, Daniel; draw him as `boss` with a white-coat `style`).
 - **Continuity:** it's a running story. e001 The Ring (ring in a doughnut, Mum swallowed it, Sam proposed to Mum in
   hospital) → e002 Thursday (ring "arrived", tongs, wedding at the hospital) → e003 Mum Moves In (Day 40, wifi
   "SamPackYourBags") → e004 Sam Cooks (fire, "funeral") → e005 The Birthday (30 candles, sprinklers) → e006 The Dress
-  (Mum in the wedding dress, "something old"). Keep moving toward the wedding and married life; call back to earlier
-  jokes now and then. Never repeat a premise or punchline (read every `reels/e*/script.json` first).
+  (Mum in the wedding dress, "something old") → e007 The Dad (Maya's dad, Mum wins the arm wrestle) → e008 The Wedding
+  Planner (Mum plans it all, doughnut cake) → e009 The Stag Night (bingo with Mum) → e010 The Vows (Mum deletes them,
+  "I promise to never cook again") → e011 The Wedding (in the hospital, Mum objects to the cake, eats the ring AGAIN:
+  "Mm. Crunchy.") → e012 The Honeymoon (Mum in the middle seat) → e013 The First Fight (thermostat; Mum keeps the
+  remote) → e014 The Baby News (Sam faints, Mum moves in) → e015 Baby Names (Mum's name is Brenda) → e016 Sam Babyproofs
+  (locks himself in the cupboard) → e017 The Gender Reveal (Mum's scarf on fire; it's a girl). Next: the birth, baby
+  Brenda, Sam as a dad, Mum as grandma. Call back to earlier jokes now and then. Never repeat a premise or punchline (read every `reels/e*/script.json` first).
 - **Shape (20-35 s, 9-13 lines):** cold open or hook line in the first second → 2-4 escalating beats, each a short line
   (2-8 words) with a visible reaction → a twist → Mum's deadpan punchline (or Sam's disaster) → narrator "Part two?"
   (or "Part three?"). Lines are snappy; most beats are one speaker. The best jokes are Mum being calmly savage.

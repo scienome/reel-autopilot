@@ -29,7 +29,10 @@ Keep the queue **at least 2 days (6 episodes) ahead**; a scheduled batch makes *
   kids, grandparents, bosses, exes, objects with feelings (car, phone, fridge). Crazy, funny, 18+ edge allowed
   (no explicit sexual content, nothing about real people). Never repeat a premise (read every `reels/*/script.json`).
 - Made so far: 001 dog thoughts, 002 cat thoughts, 003 dog loves cat, 004 pets home alone, 005 vet visit, 006 shelter
-  dog, 007 search history, 008 lie counter, 009 baby thoughts, 010 car thoughts.
+  dog, 007 search history, 008 lie counter, 009 baby thoughts, 010 car thoughts, 011 parrot, 012 goldfish, 013 fridge,
+  014 pigeons, 015 phone, 016 grandpa, 017 cow, 018 boss. Kit extras in `lib/pov.js`: `bird()` (parrot/pigeon/any
+  bird), `fish()`, `cow()`, `objFace()` (cartoon eyes on any object). Reuse voices by cast key: parrot/pigeon `pug`,
+  fish `cat`, fridge `car`, phone `friend`, grandpa `dad`, cow `husky`.
 
 ## 3. Files per episode (`reels/NNN-slug/`)
 - `script.json`: `[ {"id": "hook", "who": "narrator" | <cast key>, "phrases": [...]}, ... ]`. Every character line
@@ -46,7 +49,8 @@ Keep the queue **at least 2 days (6 episodes) ahead**; a scheduled batch makes *
   `he: NOONE, she: NOONE` (the couple is hidden). Sets: `living | bedroom | kitchen | restaurant | car | mall | party |
   wedding | street`; cameras `[[eye0], [target0], [eye1], [target1]]` at eye height ~1.4-1.7 (the viewer's eyes).
   People: `extras: [{ who: 'mil' | 'dad' | 'bff' | 'bro' | 'ex' | 'exgirl' | 'delivery' | 'waiter' | 'cop' | 'boss' | 'kid', x, z, yaw, sit, arms, face, outfit, s }]`
-  (a baby = `kid` with `s: 0.55`). Animals and overlays from `lib/pov.js`: `dog(S, {...})`, `cat(S, {...})`,
+  (a baby = `kid` with `s: 0.55`). The 3D engine's box is `S.rbox(...)` (there is no `S.box`), and helper names must not
+  clash with kit globals (`phone`, `plane`, `cam`, `P`, `C`...): an "already declared" page error means rename yours. Animals and overlays from `lib/pov.js`: `dog(S, {...})`, `cat(S, {...})`,
   `thought(ctx, S, at, text, u)`, `floatCard(...)`, `badge(...)`. Copy the closest existing episode (001-006 animals,
   007-010 people/objects).
 - Make it move: a cut or a reaction every 2-3 s, thoughts pop on their line (`popU(t, first(beat), 0.3)`), `fx` (hearts,
