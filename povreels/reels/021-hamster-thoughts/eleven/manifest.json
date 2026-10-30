@@ -1,0 +1,38 @@
+{
+ "music-a846256720c3.mp3": {
+  "prompt": "Fast tiny-sports comedy music with snare rolls and kazoo, a tense heist section in the middle, then cosy, no vocals",
+  "music_length_ms": 32800,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-49f3a2712f04.mp3": {
+  "text": "squeaky hamster wheel spinning fast",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-09f5a2915fda.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-d632b6bdef51.mp3": {
+  "text": "loud squeaky wheel at night",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-72063feb0a3a.mp3": {
+  "text": "cat hiss",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-7b69e4e07e19.mp3": {
+  "text": "tiny metal door creaking open",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-b14d798f2a6a.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ }
+}
