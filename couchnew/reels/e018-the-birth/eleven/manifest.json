@@ -1,0 +1,43 @@
+{
+ "music-4d3f06dbdec6.mp3": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a frantic emergency dash in the middle and a tender lullaby music box at the end, no vocals",
+  "music_length_ms": 24860,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-aa628e0d0f38.mp3": {
+  "text": "loud alarm clock ringing",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-50a6d381bd2d.mp3": {
+  "text": "bag zip",
+  "duration_seconds": 0.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-c09040356bdb.mp3": {
+  "text": "short sitcom studio audience laugh burst",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-2254d05d5a52.mp3": {
+  "text": "ambulance siren passing",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-e8b423ff6a8e.mp3": {
+  "text": "knuckles cracking crunch",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-394c55342e16.mp3": {
+  "text": "newborn baby crying then soft music box",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-297b4947080e.mp3": {
+  "text": "sitcom studio audience aww then applause",
+  "duration_seconds": 2.2,
+  "prompt_influence": 0.5
+ }
+}
