@@ -1,0 +1,38 @@
+{
+ "music-d7e0f499665f.mp3": {
+  "prompt": "Corporate office comedy music with plucky marimba and light synth, a sad lonely piano moment in the middle, then upbeat, no vocals",
+  "music_length_ms": 32260,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-09f5a2915fda.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-4d3cecea3a73.mp3": {
+  "text": "coffee machine gurgling",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-0e7abc12b47d.mp3": {
+  "text": "printer jamming with beeps",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-29e0587c84b5.mp3": {
+  "text": "small audience ooh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-9862447211a5.mp3": {
+  "text": "door slam and confetti pop",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-e177fab26409.mp3": {
+  "text": "printer error beep three times",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
