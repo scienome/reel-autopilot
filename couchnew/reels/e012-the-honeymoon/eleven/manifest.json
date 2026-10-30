@@ -1,0 +1,38 @@
+{
+ "music-6398f4bdf9ba.mp3": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a dreamy romantic beach guitar that turns into a long-haul flight elevator jazz, no vocals",
+  "music_length_ms": 22980,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-5f03c79bdc4d.mp3": {
+  "text": "airplane cabin chime and engine hum",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-772d7102aa93.mp3": {
+  "text": "record scratch",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-c09040356bdb.mp3": {
+  "text": "short sitcom studio audience laugh burst",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-055bcdaa1432.mp3": {
+  "text": "airplane engine drone and a baby crying far away",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-3b4c1b597ab4.mp3": {
+  "text": "loud old lady snoring",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-8aae2bfeb12f.mp3": {
+  "text": "sitcom studio audience aww then big laugh",
+  "duration_seconds": 2.2,
+  "prompt_influence": 0.5
+ }
+}
