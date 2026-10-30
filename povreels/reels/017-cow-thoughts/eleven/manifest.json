@@ -1,0 +1,38 @@
+{
+ "music-8e29275db051.mp3": {
+  "prompt": "Country banjo and fiddle comedy music, turning into a dreamy starry music box in the middle, then a spacey synth ending, no vocals",
+  "music_length_ms": 34160,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-327d725ed29a.mp3": {
+  "text": "cow mooing in a field with birds",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-cdf35c5ddacc.mp3": {
+  "text": "phone camera shutter click",
+  "duration_seconds": 0.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-09f5a2915fda.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-0420859ee007.mp3": {
+  "text": "night crickets and soft wind",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-9475f86ebbf7.mp3": {
+  "text": "UFO landing hum and whoosh",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-d8947b4aadca.mp3": {
+  "text": "small audience laugh and applause",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ }
+}
