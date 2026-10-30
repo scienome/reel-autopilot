@@ -1,0 +1,28 @@
+{
+ "music-d03ed474ac3a.mp3": {
+  "prompt": "Dark epic Indian mythological cinematic underscore for a demon king saga: tanpura drone, deep war drums and taiko, menacing low brass, tabla, shehnai and choir swells, temple bells, festive wedding turning into brutal war, grief and exile, ending mysterious in the forest, no vocals",
+  "music_length_ms": 39340,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-6a058583de65.mp3": {
+  "text": "wedding shehnai and bells",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-f5f5ff2d2ee9.mp3": {
+  "text": "sword strike and a fall, gasp",
+  "duration_seconds": 1.4,
+  "prompt_influence": 0.5
+ },
+ "sfx-95e853a592a0.mp3": {
+  "text": "woman sobbing softly",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
