@@ -29,15 +29,45 @@ CANDIDATES = [
 ]
 
 
+# --lang hi: a Hindi mythology story line, read by the account's main voices plus the most-used Hindi narrators of the
+# ElevenLabs Voice Library (added to the account only if the API needs that before it will speak with them)
+LINES_HI = ("क्या आप जानते हैं, बचपन में हनुमान जी ने सूरज को एक पका हुआ फल समझकर निगल लिया था? "
+            "पूरी धरती पर अंधेरा छा गया। देवता घबरा गए। इंद्र ने क्रोध में अपना वज्र चलाया... "
+            "और फिर जो हुआ, उसने तीनों लोकों को हिला दिया। जय श्री राम। भाग दो देखना है?")
+HI_BASE = [('s3TPKV1kjDlVtZbl4Ksh', 'current main narrator (Adam), speaking Hindi'), ('nPczCjzI2devNBz1zQrb', 'Brian: deep narrator, speaking Hindi'),
+           ('JBFqnCBsd6RMkjVDRZzb', 'George: warm storyteller, speaking Hindi')]
+
+
+def library_hi(key, n):
+    """The most-used Hindi voices in the shared Voice Library, storytelling ones first."""
+    out, seen = [], set()
+    for uc in ('narrative_story', 'characters_animation', None):
+        ps = dict(language='hi', page_size=30, sort='usage_character_count_1y')
+        if uc: ps['use_cases'] = uc
+        try:
+            vs = get('shared-voices', key, **ps).get('voices', [])
+        except Exception as e:
+            print('::warning::voice library search failed:', e, flush=True); vs = []
+        for v in vs:
+            if v['voice_id'] in seen: continue
+            seen.add(v['voice_id']); out.append((v['voice_id'], v.get('public_owner_id'), f"Library: {v.get('name')} ({v.get('gender')}, {v.get('age')}, {v.get('accent')}, {v.get('use_case')}) {(v.get('description') or '')[:80]}"))
+    return out[:n]
+
+
 def get(path, key, **params):
     r = requests.get(f'{API}/{path}', headers={'xi-api-key': key}, params=params, timeout=60)
     r.raise_for_status(); return r.json()
 
 
-def tts(vid, key, model):
+def tts(vid, key, model, text=None, owner=None):
     for attempt in range(4):
         r = requests.post(f'{API}/text-to-speech/{vid}?output_format=mp3_44100_128', headers={'xi-api-key': key, 'Content-Type': 'application/json'},
-                          json={'text': LINES, 'model_id': model}, timeout=300)
+                          json={'text': text or LINES, 'model_id': model}, timeout=300)
+        if r.status_code in (400, 404) and owner:  # a library voice the account must add first (free, uses a voice slot)
+            a = requests.post(f'{API}/voices/add/{owner}/{vid}', headers={'xi-api-key': key}, json={'new_name': 'hi-' + vid[:6]}, timeout=60)
+            print(f'adding library voice {vid}: {a.status_code} {a.text[:150]}', flush=True); owner = None
+            if a.status_code == 200:
+                vid = a.json().get('voice_id', vid); continue
         if r.status_code == 200:
             return r.content
         print(f'::warning::{vid}: ElevenLabs {r.status_code} {r.text[:200]}', flush=True)
@@ -48,10 +78,14 @@ def tts(vid, key, model):
 
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument('out'); ap.add_argument('--voices', default=''); ap.add_argument('--mine', action='store_true')
-    ap.add_argument('--model', default='eleven_v4')
+    ap.add_argument('--model', default='eleven_v4'); ap.add_argument('--lang', default='')
     a = ap.parse_args(); key = os.environ.get('ELEVENLABS_API_KEY') or sys.exit('ELEVENLABS_API_KEY is not set')
     os.makedirs(a.out, exist_ok=True)
-    cands = [(v.strip(), 'requested') for v in a.voices.split(',') if v.strip()] or list(CANDIDATES)
+    cands = [(v.strip(), 'requested') for v in a.voices.split(',') if v.strip()] or list(HI_BASE if a.lang == 'hi' else CANDIDATES)
+    owners = {}
+    if a.lang == 'hi' and not a.voices.strip():
+        for vid, own, desc in library_hi(key, 9):
+            cands.append((vid, desc)); owners[vid] = own
     if a.mine:
         have = {v for v, _ in cands}
         for v in get('voices', key).get('voices', []):
@@ -65,7 +99,7 @@ def main():
             name = get(f'voices/{vid}', key).get('name', vid)
         except Exception:
             name = vid
-        audio = tts(vid, key, a.model)
+        audio = tts(vid, key, a.model, LINES_HI if a.lang == 'hi' else None, owners.get(vid))
         if not audio:
             rows.append(f'--  {name:28s} {vid}  FAILED  {desc}'); continue
         n = len(takes) + 1; f = os.path.join(a.out, f"{n:02d}-{''.join(c for c in name if c.isalnum() or c in '-_')[:30] or vid}.mp3")

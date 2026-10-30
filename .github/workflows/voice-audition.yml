@@ -8,6 +8,10 @@ on:
         description: 'Comma-separated voice IDs (empty = the built-in candidate list)'
         required: false
         default: ''
+      lang:
+        description: 'hi = Hindi audition (Hindi mythology line, top Hindi narrators from the Voice Library)'
+        required: false
+        default: ''
       mine:
         description: 'Also audition every voice saved in the ElevenLabs account (My Voices)'
         type: boolean
@@ -29,7 +33,7 @@ jobs:
       - name: Voice every candidate
         env:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
-        run: python tools/voice_audition.py audition --voices "${{ inputs.voices }}" ${{ inputs.mine && '--mine' || '' }}
+        run: python tools/voice_audition.py audition --voices "${{ inputs.voices }}" --lang "${{ inputs.lang }}" ${{ inputs.mine && '--mine' || '' }}
       - name: Publish the takes
         env:
           GH_TOKEN: ${{ github.token }}
