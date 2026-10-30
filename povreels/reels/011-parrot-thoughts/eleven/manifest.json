@@ -1,0 +1,43 @@
+{
+ "music-db98d11a503e.mp3": {
+  "prompt": "Cheeky tropical comedy underscore with marimba, plucky strings and whistles, turning tender with soft piano in the middle, then cheeky again, no vocals",
+  "music_length_ms": 32680,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-72fadc51bdf7.mp3": {
+  "text": "parrot squawk and wings flapping",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-29e0587c84b5.mp3": {
+  "text": "small audience ooh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-1c374bc50757.mp3": {
+  "text": "doorbell ding dong",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-b14d798f2a6a.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-d8fc14a6fab7.mp3": {
+  "text": "quiet night crickets and a clock ticking",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-6e3d7ae5227d.mp3": {
+  "text": "phone vibrating on a table",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-e2ff553fdc05.mp3": {
+  "text": "doorbell ringing many times in a row",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ }
+}
