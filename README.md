@@ -32,7 +32,7 @@ Folder: [`couch-cartoon/`](couch-cartoon/)
 | [m001-she-means](couch-cartoon/m001-she-means.mp4) | What she says vs what she means 💀 | Not scheduled |
 | [t001-dentist](couch-cartoon/t001-dentist.mp4) | Who's Jessica? 📱 | Not scheduled |
 
-## Gears & Glitches POV stories (new) (20)
+## Gears & Glitches POV stories (new) (21)
 Folder: [`gears-pov/`](gears-pov/)
 
 | Video | Title | Status |
@@ -57,6 +57,7 @@ Folder: [`gears-pov/`](gears-pov/)
 | [018-boss-thoughts](gears-pov/018-boss-thoughts.mp4) | You can hear what your boss thinks 💼 | Waiting to post |
 | [019-houseplant-thoughts](gears-pov/019-houseplant-thoughts.mp4) | You can hear what your houseplant thinks 🪴 | Waiting to post |
 | [020-mum-thoughts](gears-pov/020-mum-thoughts.mp4) | You can hear what your mum thinks 👩 | Waiting to post |
+| [021-hamster-thoughts](gears-pov/021-hamster-thoughts.mp4) | You can hear what your hamster thinks 🐹 | Waiting to post |
 
 ## CouchSarcasm (old couple comedy) (40)
 Folder: [`couch-sarcasm/`](couch-sarcasm/)
