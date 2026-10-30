@@ -1,0 +1,28 @@
+{
+ "music-15a83b0ebc27.mp3": {
+  "prompt": "Epic Indian Mahabharata cinematic underscore: dhol and war drums, conch shells, bansuri flute, sitar, tense strings and choir swells, temple bells, solemn heroic sacrifice, devotional and emotional, a magical transformation, ending sacred, no vocals",
+  "music_length_ms": 48120,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-0b93687fe9ab.mp3": {
+  "text": "deep temple drum and fire roar",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-ee1030e16743.mp3": {
+  "text": "magical shimmering transformation chime",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-da6f7b641b47.mp3": {
+  "text": "temple bells and festival drums",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
