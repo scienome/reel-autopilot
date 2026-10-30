@@ -1,0 +1,33 @@
+{
+ "music-ffbc612b1e87.mp3": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a soppy romantic violin that keeps getting cut off by a pen scratch, no vocals",
+  "music_length_ms": 22900,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-57be414979df.mp3": {
+  "text": "red marker pen scribbling fast",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-c09040356bdb.mp3": {
+  "text": "short sitcom studio audience laugh burst",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-42b802f72d37.mp3": {
+  "text": "paper tearing",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-a2162cdc530f.mp3": {
+  "text": "magical sparkle chime",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-92f4390c99f6.mp3": {
+  "text": "small sitcom audience aww",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
