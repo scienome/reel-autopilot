@@ -1,0 +1,38 @@
+{
+ "music-f9f828d07c0d.mp3": {
+  "prompt": "Sneaky late night jazz with upright bass and brushed drums, comedic, with a short tender piano moment, no vocals",
+  "music_length_ms": 34100,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-12349acaec97.mp3": {
+  "text": "fridge door opening with a hum and a bottle clink",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-8ee97bf9eef3.mp3": {
+  "text": "plastic wrapper crinkling",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-09f5a2915fda.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-b30fe2367055.mp3": {
+  "text": "fridge light click and a low hum",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-5984bf44ed31.mp3": {
+  "text": "loud burp",
+  "duration_seconds": 0.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-b14d798f2a6a.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ }
+}
