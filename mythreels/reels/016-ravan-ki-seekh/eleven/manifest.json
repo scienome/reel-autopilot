@@ -1,0 +1,23 @@
+{
+ "music-33eba309f53f.mp3": {
+  "prompt": "Dark epic Indian mythological cinematic underscore for a demon king saga: tanpura drone, deep war drums and taiko, menacing low brass, tabla, shehnai and choir swells, temple bells, quiet aftermath of war, solemn and wise, tender flute and tanpura, a gentle sad ending, no vocals",
+  "music_length_ms": 48440,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-2522e1a5c70f.mp3": {
+  "text": "soft temple bell",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-f7bff489ba44.mp3": {
+  "text": "final soft gong fading into wind",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
