@@ -68,7 +68,9 @@
       ctx.save(); const sh = sp.shake != null && t > sp.shake ? 16 * Math.max(0, 1 - (t - sp.shake) * 2.5) : 0; ctx.translate(sh * Math.sin(t * 70), sh * Math.cos(t * 53));
       shotCam(ctx, sp.cam[0], sp.cam[1] || sp.cam[0], u); MYTH.sets[sp.set](ctx, 720, 1280, t, sp.setOpt || {}); if (sp.draw) sp.draw(ctx, t); ctx.restore();
       MYTH.light(ctx, W, H_);
+      MYTH.folkFinish(ctx, W, H_);
       if (sp.over) sp.over(ctx, W, H_, t);
+      MYTH.folkBorder(ctx, W, H_);
       if (o.hook) hookCard(ctx, W, t); else if (o.title) MYTH.banner(ctx, W, t, o.title);
       nextCard(ctx, W, H_, t);
       subLine(ctx, t);

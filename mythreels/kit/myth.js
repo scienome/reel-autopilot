@@ -17,7 +17,7 @@
   //   heaven, forest (o.time), palace, kailash, ocean, battle, lanka, village, river (o.night).
   // FX: MYTH.aura, rays, petals, lightning, shock, speed, dark, sun, flame, om, card (gold title card), banner.
   const MYTH = (() => {
-    const INK = '#2b160c', GOLD = '#f4c03e', GOLD_D = '#c48a1c', GOLD_L = '#fff0a8', TAU = Math.PI * 2;
+    const INK = '#1a0c06', GOLD = '#f4c03e', GOLD_D = '#c48a1c', GOLD_L = '#fff0a8', TAU = Math.PI * 2;
     // skin, shade, hair, cloth (dhoti / saree), cloth2 (sash), and traits
     const CAST = {
       hanuman: { skin: '#e8763a', sh: '#c0552a', muzzle: '#f7cfa0', hair: '#7a3416', cloth: '#d8342c', cloth2: '#f4b23a', monkey: true, crown: 'small', tail: true, muscle: 1.15, tilak: 'vaishnav', h: 1.04 },
@@ -151,7 +151,9 @@
         ell(ctx, c.redEyes ? '#b02020' : '#3a1e10', ix, iy, ir, ir, 0, 0); ell(ctx, '#0e0806', ix, iy, ir * 0.5, ir * 0.5, 0, 0); ell(ctx, '#ffffff', ix - 2.4, iy - 2.6, 2.2, 2.2, 0, 0); ctx.restore();
         // upper lid (thick) and lashes
         path(ctx, null, () => { ctx.moveTo(x - w - 1, ey + 1); ctx.quadraticCurveTo(x - 2, ey - top * 1.5, x + w + 1, ey - 2); }, c.girl ? 5 : 4.2);
-        if (c.girl) line(ctx, INK, 2.4, [[x + sd * (w - 1), ey - 3], [x + sd * (w + 6), ey - 7]], false);
+        // folk (Pattachitra) eye: a long kajal wing to the outer corner and a lower kajal line
+        path(ctx, null, () => { ctx.moveTo(x + sd * (w - 2), ey - 1); ctx.quadraticCurveTo(x + sd * (w + 8), ey - 2, x + sd * (w + 15), ey - 7); }, 3.6);
+        path(ctx, null, () => { ctx.moveTo(x - sd * (w - 3), ey + 2); ctx.quadraticCurveTo(x, ey + bot * 1.35 + 1, x + sd * (w + 2), ey); }, 1.8);
         if (f.tears) { ctx.fillStyle = 'rgba(140,200,255,0.85)'; ctx.beginPath(); ctx.ellipse(x + 4, ey + 16 + ((t * 40) % 20), 3.5, 6, 0, 0, TAU); ctx.fill(); }
       }
       // brows
@@ -272,7 +274,7 @@
       } else if (c.girl) {
         const sw2 = Math.sin(t * 2 + seed) * 6;
         smooth(ctx, lg(ctx, -150, 150, c.cloth, shade(c.cloth)), [[-B.ww - 4, B.wy], [B.ww + 4, B.wy], [B.ww + 70, -20], [B.ww + 70 + sw2, 0], [-B.ww - 70 + sw2, 0], [-B.ww - 70, -20]], 5);
-        line(ctx, c.cloth2, 12, [[-B.ww - 60, -24], [B.ww + 60, -24]], false); for (let i = -2; i <= 2; i++) path(ctx, null, () => { ctx.moveTo(i * 22, B.wy + 30); ctx.quadraticCurveTo(i * 28 + sw2, -120, i * 36, -2); }, 2.5, 'rgba(0,0,0,0.18)');
+        hemBand(ctx, -B.ww - 62, B.ww + 62, -24, c.cloth2); ctx.fillStyle = 'rgba(255,240,200,0.6)'; for (let i = 0; i < 12; i++) { ctx.beginPath(); ctx.arc(-B.ww - 20 + (i % 4) * (B.ww * 0.7), B.wy + 60 + Math.floor(i / 4) * 70, 3.4, 0, TAU); ctx.fill(); } for (let i = -2; i <= 2; i++) path(ctx, null, () => { ctx.moveTo(i * 22, B.wy + 30); ctx.quadraticCurveTo(i * 28 + sw2, -120, i * 36, -2); }, 2.5, 'rgba(0,0,0,0.18)');
         ell(ctx, c.skin, -28, 0, 20, 9, 0, 4); ell(ctx, c.skin, 28, 0, 20, 9, 0, 4);
       } else {
         const legW = c.child ? 22 : 28 * (c.muscle || 1);
@@ -280,7 +282,8 @@
         if (c.tiger) { smooth(ctx, lg(ctx, -110, 110, c.cloth, shade(c.cloth)), [[-B.ww - 6, B.wy], [B.ww + 6, B.wy], [B.ww + 40, B.wy + 170], [0, B.wy + 196], [-B.ww - 40, B.wy + 170]], 5); for (let i = 0; i < 6; i++) line(ctx, '#2a1a10', 5, [[-B.ww + i * 22, B.wy + 40 + (i % 2) * 30], [-B.ww + i * 22 + 14, B.wy + 70 + (i % 2) * 30]], false); }
         else { const dh = c.child ? B.wy + 140 : B.dh - 40; smooth(ctx, lg(ctx, -120, 120, c.cloth, shade(c.cloth)), [[-B.ww - 6, B.wy], [B.ww + 6, B.wy], [B.ww + 34, dh], [12, dh + 14], [-B.ww - 34, dh]], 5);
           for (let i = -1; i <= 1; i++) path(ctx, null, () => { ctx.moveTo(i * 16, B.wy + 20); ctx.quadraticCurveTo(i * 20 + sway, (B.wy + dh) / 2, i * 26, dh); }, 2.5, 'rgba(0,0,0,0.2)');
-          poly(ctx, c.cloth2, [[-12, B.wy + 4], [12, B.wy + 4], [18 + sway, B.wy + 150], [-18 + sway, B.wy + 150]], 4); }
+          poly(ctx, c.cloth2, [[-12, B.wy + 4], [12, B.wy + 4], [18 + sway, B.wy + 150], [-18 + sway, B.wy + 150]], 4); hemBand(ctx, -B.ww - 26, B.ww + 26, dh - 4, c.cloth2);
+          ctx.fillStyle = 'rgba(255,248,232,0.55)'; for (let i = 0; i < 9; i++) { ctx.beginPath(); ctx.arc(-B.ww + 10 + (i % 3) * (B.ww * 0.75), B.wy + 40 + Math.floor(i / 3) * ((dh - B.wy - 60) / 3), 3, 0, TAU); ctx.fill(); } }
       }
       // torso
       const sk = lg(ctx, -B.sw - 20, B.sw + 20, c.skin, c.sh);
@@ -328,6 +331,9 @@
       const k = s * (o.flip ? -1 : 1), oy = sit ? -B.wy - 110 * B.arm - 30 : 0, tx = (p) => [x + p[0] * k, y + (o.bob || 0) + (p[1] + oy) * s];
       return { head: tx([0, hy]), mouth: tx([0, hy + 30]), hands: { r: tx(hands.r), l: tx(hands.l) }, chest: tx([0, B.sh + 60]) };
     };
+    // folk textile border: a contrasting band with white dots and a little zigzag
+    const hemBand = (ctx, x0, x1, y, col) => { line(ctx, col, 12, [[x0, y], [x1, y]], false); ctx.fillStyle = '#fff8e8'; for (let x = x0 + 8; x < x1 - 4; x += 14) { ctx.beginPath(); ctx.arc(x, y, 2.4, 0, TAU); ctx.fill(); }
+      ctx.strokeStyle = INK; ctx.lineWidth = 1.6; ctx.beginPath(); for (let x = x0; x <= x1; x += 10) ctx.lineTo(x, y - 9 + ((x - x0) / 10 % 2 ? 4 : 0)); ctx.stroke(); };
     const shade = (hex) => { const n = parseInt(hex.slice(1), 16), r = (n >> 16) & 255, g = (n >> 8) & 255, b = n & 255, d = (v) => Math.round(v * 0.78).toString(16).padStart(2, '0'); return '#' + d(r) + d(g) + d(b); };
 
     // ---------- FX ----------
@@ -336,7 +342,7 @@
       let g = ctx.createRadialGradient(0, 0, r * 0.2, 0, 0, r * 2.2); g.addColorStop(0, col + '0.55)'); g.addColorStop(1, col + '0)'); ctx.fillStyle = g; ctx.beginPath(); ctx.arc(0, 0, r * 2.2, 0, TAU); ctx.fill();
       ctx.rotate(t * 0.25); ctx.fillStyle = col + '0.22)'; for (let i = 0; i < 16; i++) { ctx.rotate(TAU / 16); ctx.beginPath(); ctx.moveTo(0, 0); ctx.lineTo(r * 2.1, -r * 0.12); ctx.lineTo(r * 2.1, r * 0.12); ctx.closePath(); ctx.fill(); }
       ctx.rotate(-t * 0.25); ctx.lineWidth = 6; ctx.strokeStyle = col + '0.9)'; ctx.beginPath(); ctx.arc(0, 0, r, 0, TAU); ctx.stroke(); ctx.lineWidth = 2.5; ctx.beginPath(); ctx.arc(0, 0, r - 12, 0, TAU); ctx.stroke(); ctx.restore(); };
-    const sun = (ctx, x, y, r, t, face = false) => {
+    const sun = (ctx, x, y, r, t, face = true) => {
       ctx.save(); ctx.translate(x, y);
       let g = ctx.createRadialGradient(0, 0, r * 0.5, 0, 0, r * 3); g.addColorStop(0, 'rgba(255,190,60,0.75)'); g.addColorStop(1, 'rgba(255,120,30,0)'); ctx.fillStyle = g; ctx.beginPath(); ctx.arc(0, 0, r * 3, 0, TAU); ctx.fill();
       ctx.save(); ctx.rotate(t * 0.3); ctx.fillStyle = 'rgba(255,170,40,0.85)'; for (let i = 0; i < 18; i++) { ctx.rotate(TAU / 18); ctx.beginPath(); ctx.moveTo(r * 0.9, -r * 0.16); ctx.lineTo(r * 1.45 + Math.sin(t * 4 + i) * r * 0.08, 0); ctx.lineTo(r * 0.9, r * 0.16); ctx.closePath(); ctx.fill(); } ctx.restore();
@@ -385,11 +391,20 @@
       ctx.lineWidth = 12; ctx.strokeStyle = 'rgba(60,10,6,0.95)'; ctx.lineJoin = 'round'; ctx.strokeText(txt, W / 2, 214); ctx.fillStyle = gold(ctx, 180, 250); ctx.fillText(txt, W / 2, 214); ctx.restore(); };
 
     // ---------- sets (720 x 1280 world) ----------
-    const sky = (ctx, W, H_, cols) => { const g = ctx.createLinearGradient(0, 0, 0, H_); cols.forEach((c, i) => g.addColorStop(i / (cols.length - 1), c)); ctx.fillStyle = g; ctx.fillRect(-200, -200, W + 400, H_ + 400); };
+    // painted folk sky: the gradient plus a faint grid of four-petal flowers and dots (Pattachitra / Madhubani fill)
+    const sky = (ctx, W, H_, cols) => { const g = ctx.createLinearGradient(0, 0, 0, H_); cols.forEach((c, i) => g.addColorStop(i / (cols.length - 1), c)); ctx.fillStyle = g; ctx.fillRect(-200, -200, W + 400, H_ + 400);
+      ctx.save(); ctx.globalAlpha = 0.16; ctx.fillStyle = '#fff4d8'; ctx.strokeStyle = '#fff4d8'; ctx.lineWidth = 2;
+      for (let r = 0; r < 26; r++) for (let k = 0; k < 9; k++) { const x = -160 + k * 120 + (r % 2) * 60, y = -160 + r * 70; ctx.save(); ctx.translate(x, y); for (let i = 0; i < 4; i++) { ctx.rotate(Math.PI / 2); ctx.beginPath(); ctx.ellipse(0, -9, 4.5, 9, 0, 0, TAU); ctx.fill(); } ctx.beginPath(); ctx.arc(30, 35, 2.5, 0, TAU); ctx.fill(); ctx.restore(); }
+      ctx.restore(); };
     const stars = (ctx, W, H_, t, n = 90, a = 1) => { for (let i = 0; i < n; i++) { const x = (i * 197) % (W + 300) - 150, y = (i * 113) % (H_ * 0.8) - 100, tw = 0.5 + 0.5 * Math.sin(t * 2 + i); ctx.fillStyle = `rgba(255,255,240,${a * (0.3 + 0.6 * tw)})`; ctx.beginPath(); ctx.arc(x, y, 1.2 + (i % 3), 0, TAU); ctx.fill(); } };
-    const cloud = (ctx, x, y, s, col = '#ffffff', a = 1) => { ctx.save(); ctx.globalAlpha = a; ctx.fillStyle = col; for (const [dx, dy, r] of [[-60, 10, 40], [-20, -14, 52], [32, -6, 46], [70, 14, 34], [0, 18, 46]]) { ctx.beginPath(); ctx.arc(x + dx * s, y + dy * s, r * s, 0, TAU); ctx.fill(); } ctx.restore(); };
-    const hills = (ctx, W, y, col, amp, seed) => { ctx.fillStyle = col; ctx.beginPath(); ctx.moveTo(-200, 1500); for (let x = -200; x <= W + 200; x += 40) ctx.lineTo(x, y - amp * (0.5 + 0.5 * Math.sin(x * 0.006 + seed) * Math.cos(x * 0.011 + seed * 2))); ctx.lineTo(W + 200, 1500); ctx.closePath(); ctx.fill(); };
-    const tree = (ctx, x, y, s, col = '#2f8a4a', col2 = '#22693a') => { line(ctx, '#6a4426', 26 * s, [[x, y], [x + 6 * s, y - 180 * s]]); for (const [dx, dy, r, cc] of [[-60, -200, 70, col2], [60, -210, 66, col2], [0, -260, 86, col], [-40, -170, 56, col], [46, -176, 56, col]]) ell(ctx, cc, x + dx * s, y + dy * s, r * s, r * s * 0.86, 0, 4 * s); };
+    const cloud = (ctx, x, y, s, col = '#ffffff', a = 1) => { ctx.save(); ctx.globalAlpha = a; const C = [[-60, 10, 40], [-20, -14, 52], [32, -6, 46], [70, 14, 34], [0, 18, 46]]; ctx.strokeStyle = INK; ctx.lineWidth = 7 * s; for (const [dx, dy, r] of C) { ctx.beginPath(); ctx.arc(x + dx * s, y + dy * s, r * s, 0, TAU); ctx.stroke(); } ctx.fillStyle = col; for (const [dx, dy, r] of C) { ctx.beginPath(); ctx.arc(x + dx * s, y + dy * s, r * s, 0, TAU); ctx.fill(); } ctx.strokeStyle = 'rgba(80,100,140,0.35)'; ctx.lineWidth = 2.5 * s; for (const [dx, dy, r] of C) { ctx.beginPath(); ctx.arc(x + dx * s, y + dy * s, r * s * 0.6, 3.6, 5.8); ctx.stroke(); } ctx.restore(); };
+    const hills = (ctx, W, y, col, amp, seed) => { const hy = (x) => y - amp * (0.5 + 0.5 * Math.sin(x * 0.006 + seed) * Math.cos(x * 0.011 + seed * 2)); ctx.beginPath(); ctx.moveTo(-200, 1500); for (let x = -200; x <= W + 200; x += 40) ctx.lineTo(x, hy(x)); ctx.lineTo(W + 200, 1500); ctx.closePath(); ctx.fillStyle = col; ctx.fill(); ctx.lineWidth = 4; ctx.strokeStyle = INK; ctx.stroke();
+      ctx.save(); ctx.clip(); ctx.strokeStyle = 'rgba(20,10,4,0.22)'; ctx.lineWidth = 2; for (let yy = y - amp; yy < 1500; yy += 34) { ctx.beginPath(); for (let x = -200; x <= W + 200; x += 24) ctx.lineTo(x, yy + ((x / 24) % 2 ? 8 : 0)); ctx.stroke(); } ctx.restore(); };
+    // Madhubani-style tree: striped trunk, round canopy filled with outlined leaves and a few flowers
+    const tree = (ctx, x, y, s, col = '#2f8a4a', col2 = '#22693a') => { line(ctx, '#6a4426', 26 * s, [[x, y], [x + 6 * s, y - 180 * s]]); for (let i = 1; i < 6; i++) line(ctx, '#3a2414', 2 * s, [[x - 9 * s, y - i * 30 * s], [x + 12 * s, y - i * 30 * s - 6 * s]], false);
+      ell(ctx, col2, x, y - 230 * s, 120 * s, 100 * s, 0, 5 * s);
+      for (let i = 0; i < 26; i++) { const a = i * 2.4, r = (20 + (i * 37) % 85) * s, lx = x + Math.cos(a) * r, ly = y - 230 * s + Math.sin(a) * r * 0.8; ctx.save(); ctx.translate(lx, ly); ctx.rotate(a + 1.57); smooth(ctx, col, [[0, -16 * s], [9 * s, 0], [0, 16 * s], [-9 * s, 0]], 2.2 * s); line(ctx, INK, 1.2 * s, [[0, -12 * s], [0, 12 * s]], false); ctx.restore(); }
+      for (let i = 0; i < 5; i++) ell(ctx, i % 2 ? '#e8402a' : '#f4c430', x + Math.cos(i * 1.9) * 70 * s, y - 230 * s + Math.sin(i * 1.9) * 55 * s, 6 * s, 6 * s, 0, 2 * s); };
     const SKIES = { dawn: ['#3a3a7a', '#e87a5a', '#ffc87a'], day: ['#5aa8e8', '#9ad0f4', '#e8f4fa'], dusk: ['#2a1a4a', '#b8445a', '#f49a4a'], night: ['#060a24', '#16204a', '#2a3466'] };
     const sets = {
       space(ctx, W, H_, t, o) { sky(ctx, W, H_, ['#05040f', '#120a2a', '#1c0e30']); const g = ctx.createRadialGradient(W * 0.7, H_ * 0.3, 10, W * 0.7, H_ * 0.3, 700); g.addColorStop(0, 'rgba(160,60,200,0.25)'); g.addColorStop(1, 'rgba(160,60,200,0)'); ctx.fillStyle = g; ctx.fillRect(-200, -200, W + 400, H_ + 400); stars(ctx, W, H_ * 1.3, t, 140);
@@ -415,6 +430,7 @@
         hills(ctx, W, 1000, '#3a4a6a', 60, 2); ctx.fillStyle = vg(ctx, 1020, H_, '#4a5a7a', '#2a3450'); ctx.fillRect(-200, 1030, W + 400, 500); for (let i = 0; i < 40; i++) ell(ctx, 'rgba(255,255,255,0.8)', (i * 97 + t * 20) % W, (i * 211 + t * 60) % H_, 2.5, 2.5, 0, 0); },
       ocean(ctx, W, H_, t, o) { const tm = o.time || 'day'; sky(ctx, W, H_, SKIES[tm]); if (tm === 'night') stars(ctx, W, H_, t); if (o.sun) sun(ctx, W * 0.5, 700, 90, t);
         for (let k = 0; k < 6; k++) { const y = 760 + k * 90; ctx.fillStyle = ['#2a6ab0', '#2860a0', '#225692', '#1c4c84', '#184276', '#143868'][k]; ctx.beginPath(); ctx.moveTo(-200, y); for (let x = -200; x <= W + 200; x += 20) ctx.lineTo(x, y + Math.sin(x * 0.02 + t * 2 + k) * 10); ctx.lineTo(W + 200, 1500); ctx.lineTo(-200, 1500); ctx.closePath(); ctx.fill(); }
+        ctx.strokeStyle = 'rgba(200,230,255,0.35)'; ctx.lineWidth = 3; for (let yy = 790; yy < 1300; yy += 34) for (let x = ((yy / 34) % 2) * 20 - 20; x < W + 40; x += 40) { ctx.beginPath(); ctx.arc(x, yy + Math.sin(t * 2 + x * 0.02) * 4, 18, Math.PI * 1.1, Math.PI * 1.9); ctx.stroke(); }
         if (o.lanka) { ctx.fillStyle = '#d8a030'; for (let i = 0; i < 7; i++) { const x = 420 + i * 40, hh = 60 + (i * 37) % 70; ctx.fillRect(x, 760 - hh, 30, hh); ctx.beginPath(); ctx.arc(x + 15, 760 - hh, 15, Math.PI, 0); ctx.fill(); } } },
       battle(ctx, W, H_, t, o) { sky(ctx, W, H_, ['#3a1410', '#a8441c', '#e89a4a']); sun(ctx, W * 0.3, 560, 60, t); hills(ctx, W, 900, '#6a3a20', 50, 4);
         for (let i = 0; i < 18; i++) { const x = (i * 53) % (W + 100) - 50, y = 900 + (i % 3) * 8; ctx.fillStyle = '#3a1a10'; ctx.fillRect(x, y - 40, 6, 40); line(ctx, '#3a1a10', 2, [[x + 3, y - 40], [x + 3, y - 80]], false); if (i % 4 === 0) { ctx.fillStyle = i % 8 ? '#f4c430' : '#d8283c'; ctx.beginPath(); ctx.moveTo(x + 3, y - 80); ctx.lineTo(x + 40 + Math.sin(t * 5 + i) * 6, y - 70); ctx.lineTo(x + 3, y - 60); ctx.fill(); } }
@@ -426,8 +442,25 @@
       river(ctx, W, H_, t, o) { const tm = o.night ? 'night' : 'dusk'; sky(ctx, W, H_, SKIES[tm]); if (tm === 'night') stars(ctx, W, H_, t); hills(ctx, W, 760, '#1a2a2a', 80, 5); tree(ctx, -20, 860, 1, '#1e4a30', '#163a26'); tree(ctx, W + 10, 870, 1.1, '#1e4a30', '#163a26');
         for (let k = 0; k < 8; k++) { const y = 860 + k * 60; ctx.fillStyle = `rgb(${20 + k * 4},${50 + k * 5},${80 + k * 6})`; ctx.beginPath(); ctx.moveTo(-200, y); for (let x = -200; x <= W + 200; x += 20) ctx.lineTo(x, y + Math.sin(x * 0.025 + t * 2.4 + k) * 8); ctx.lineTo(W + 200, 1500); ctx.lineTo(-200, 1500); ctx.closePath(); ctx.fill(); } },
     };
+    // folk painting finish: hand-made paper (fixed grain + fibres, tinted) and a Pattachitra border
+    let PAPER = null;
+    const paperTex = () => { if (PAPER) return PAPER; const c = document.createElement('canvas'); c.width = 360; c.height = 640; const g = c.getContext('2d'); let s = 7; const rnd = () => (s = (s * 16807) % 2147483647) / 2147483647;
+      g.fillStyle = '#f2ddb4'; g.fillRect(0, 0, 360, 640); for (let i = 0; i < 9000; i++) { const v = 150 + rnd() * 90; g.fillStyle = `rgba(${v},${v * 0.82},${v * 0.6},${0.18 + rnd() * 0.25})`; g.fillRect(rnd() * 360, rnd() * 640, 1 + rnd() * 1.5, 1 + rnd() * 1.5); }
+      g.strokeStyle = 'rgba(140,100,60,0.18)'; g.lineWidth = 0.7; for (let i = 0; i < 260; i++) { const x = rnd() * 360, y = rnd() * 640, a = rnd() * 6.3, l = 4 + rnd() * 14; g.beginPath(); g.moveTo(x, y); g.quadraticCurveTo(x + Math.cos(a + 1) * l * 0.5, y + Math.sin(a + 1) * l * 0.5, x + Math.cos(a) * l, y + Math.sin(a) * l); g.stroke(); }
+      PAPER = c; return c; };
+    const folkFinish = (ctx, W, H_) => { ctx.save(); ctx.globalCompositeOperation = 'multiply'; ctx.globalAlpha = 0.6; ctx.drawImage(paperTex(), 0, 0, W, H_); ctx.restore(); };
+    const BORDER = 30;
+    const folkBorder = (ctx, W, H_) => { ctx.save(); const b = BORDER;
+      ctx.fillStyle = '#8e1f12'; ctx.fillRect(0, 0, W, 13); ctx.fillRect(0, H_ - 13, W, 13); ctx.fillRect(0, 0, 13, H_); ctx.fillRect(W - 13, 0, 13, H_);
+      ctx.fillStyle = '#e2a83a'; ctx.fillRect(13, 13, W - 26, b - 15); ctx.fillRect(13, H_ - b + 2, W - 26, b - 15); ctx.fillRect(13, 13, b - 15, H_ - 26); ctx.fillRect(W - b + 2, 13, b - 15, H_ - 26);
+      ctx.fillStyle = MYTH.INK; const tri = (x, y, dx, dy) => { ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x + dx, y + dy); ctx.lineTo(x + (dy ? 0 : dx) + (dy ? 10 : 0) * 0, y + (dx ? 0 : dy)); };
+      for (let x = 16; x < W - 16; x += 16) { ctx.beginPath(); ctx.moveTo(x, 13); ctx.lineTo(x + 8, b - 3); ctx.lineTo(x + 16, 13); ctx.fill(); ctx.beginPath(); ctx.moveTo(x, H_ - 13); ctx.lineTo(x + 8, H_ - b + 3); ctx.lineTo(x + 16, H_ - 13); ctx.fill(); }
+      for (let y = 16; y < H_ - 16; y += 16) { ctx.beginPath(); ctx.moveTo(13, y); ctx.lineTo(b - 3, y + 8); ctx.lineTo(13, y + 16); ctx.fill(); ctx.beginPath(); ctx.moveTo(W - 13, y); ctx.lineTo(W - b + 3, y + 8); ctx.lineTo(W - 13, y + 16); ctx.fill(); }
+      ctx.strokeStyle = MYTH.INK; ctx.lineWidth = 3; ctx.strokeRect(b, b, W - 2 * b, H_ - 2 * b); ctx.lineWidth = 1.5; ctx.strokeRect(b + 5, b + 5, W - 2 * b - 10, H_ - 2 * b - 10);
+      for (const [x, y] of [[b, b], [W - b, b], [b, H_ - b], [W - b, H_ - b]]) { ctx.fillStyle = '#8e1f12'; ctx.beginPath(); ctx.arc(x, y, 16, 0, TAU); ctx.fill(); ctx.strokeStyle = '#e2a83a'; ctx.lineWidth = 3; ctx.stroke(); ctx.fillStyle = '#e2a83a'; for (let i = 0; i < 8; i++) { const a = i * TAU / 8; ctx.beginPath(); ctx.ellipse(x + Math.cos(a) * 8, y + Math.sin(a) * 8, 4, 2, a, 0, TAU); ctx.fill(); } }
+      ctx.restore(); };
     // warm storybook light + vignette over the frame
     const light = (ctx, W, H_) => { let g = ctx.createRadialGradient(W * 0.25, H_ * 0.12, 40, W * 0.25, H_ * 0.12, H_ * 0.9); g.addColorStop(0, 'rgba(255,214,150,0.16)'); g.addColorStop(1, 'rgba(255,214,150,0)'); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H_);
       g = ctx.createRadialGradient(W / 2, H_ / 2, H_ * 0.32, W / 2, H_ / 2, H_ * 0.78); g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(1, 'rgba(20,6,2,0.45)'); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H_); };
-    return { person, head, armsAt, grahas, chains, elephant, bull, chariot, vimana, ARM, ITEMS, CAST, sets, light, aura, sun, rays, petals, lightning, shock, speed, dark, flame, om, card, banner, cloud, tree, stars, INK, GOLD, ell, poly, smooth, line, curve };
+    return { person, head, armsAt, grahas, chains, folkFinish, folkBorder, elephant, bull, chariot, vimana, ARM, ITEMS, CAST, sets, light, aura, sun, rays, petals, lightning, shock, speed, dark, flame, om, card, banner, cloud, tree, stars, INK, GOLD, ell, poly, smooth, line, curve };
   })();
