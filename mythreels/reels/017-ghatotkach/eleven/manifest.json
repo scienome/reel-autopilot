@@ -1,0 +1,28 @@
+{
+ "music-9b1282b8d68d.mp3": {
+  "prompt": "Epic Indian Mahabharata cinematic underscore: dhol and war drums, conch shells, bansuri flute, sitar, tense strings and choir swells, temple bells, night battle chaos, desperate plea, divine weapon, a giant falling, then quiet relief, no vocals",
+  "music_length_ms": 51080,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-4dc626d8fa9e.mp3": {
+  "text": "giant monster roaring and an army screaming",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-8d11cf26b3a5.mp3": {
+  "text": "divine spear launch with thunder",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-44c75d8458ae.mp3": {
+  "text": "colossal body crashing onto the ground, earthquake",
+  "duration_seconds": 2.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
