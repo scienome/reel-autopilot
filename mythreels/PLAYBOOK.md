@@ -12,6 +12,9 @@ is creating the Instagram + YouTube accounts); when it is, 3 reels a day.
   the next part's hook. Same series = same morning/afternoon/evening slot on consecutive days.
 - **Scroll-stopping hook.** First line ≤ 8 words, a shocking claim or question; the frame-0 image is the most dramatic
   picture of the episode; the big hook card (`hook:`) is on screen from frame 0, readable with the sound off.
+- **Folk-art look (approved 30 Oct):** the kit draws it automatically (Pattachitra border, handmade-paper texture,
+  kajal fish-eyes, textile hems, Madhubani trees, flower-motif skies, fish-scale water, sun faces). Keep faces and cards
+  inside the 30 px border. Don't switch back to the plain look.
 - Respectful: gods are dignified (no jokes about them, no comic faces). Say "कहते हैं" for folk versions and list
   the source in `meta.json` `sources`.
 
