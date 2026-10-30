@@ -1,0 +1,48 @@
+{
+ "music-d3e2a144d1ea.mp3": {
+  "prompt": "Epic Indian Mahabharata cinematic underscore: war drums, dhol and taiko, conch shells, soaring bansuri flute for Krishna, tense strings during the test, turning deeply emotional and devotional with choir and soft sitar at the sacrifice, ending in a warm devotional glow, no vocals",
+  "music_length_ms": 58220,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-3f19322b8362.mp3": {
+  "text": "a single glowing arrow whooshing past at enormous speed",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-d4a2b48d23cd.mp3": {
+  "text": "magical divine chime, three arrows glowing",
+  "duration_seconds": 1.4,
+  "prompt_influence": 0.5
+ },
+ "sfx-bb893dbf584e.mp3": {
+  "text": "huge battlefield explosion fading to silence and wind",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-55e870716491.mp3": {
+  "text": "arrow zipping through hundreds of leaves rustling rapidly",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-db98d42ddf11.mp3": {
+  "text": "arrow circling and humming magically",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-5224a3f14995.mp3": {
+  "text": "deep emotional gong and a hushed silence",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-568f72ed73de.mp3": {
+  "text": "temple bells ringing and conch shell",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
