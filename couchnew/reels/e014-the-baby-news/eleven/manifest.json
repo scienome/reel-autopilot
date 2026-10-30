@@ -1,0 +1,38 @@
+{
+ "music-fad829cd356f.mp3": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a tender piano reveal moment and a big comedic thud, no vocals",
+  "music_length_ms": 20500,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-f4bb337ad5e4.mp3": {
+  "text": "magical sparkle and a soft choir aah",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-55f4cdc79702.mp3": {
+  "text": "body falling on the floor with a big thud",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-a843a7493bc5.mp3": {
+  "text": "small sitcom audience ooh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-c09040356bdb.mp3": {
+  "text": "short sitcom studio audience laugh burst",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-c8fb4bf9ccdb.mp3": {
+  "text": "heavy suitcase thump on the floor",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-7eb3ebe304e8.mp3": {
+  "text": "sitcom studio audience big laugh and applause",
+  "duration_seconds": 2.2,
+  "prompt_influence": 0.5
+ }
+}
