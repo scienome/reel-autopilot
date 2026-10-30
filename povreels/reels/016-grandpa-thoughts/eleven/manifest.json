@@ -1,0 +1,38 @@
+{
+ "music-ad823617270b.mp3": {
+  "prompt": "Gentle old-fashioned comedy music with clarinet and brushed drums, becoming a warm emotional piano and strings in the middle, no vocals",
+  "music_length_ms": 31460,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-668034dc8b0f.mp3": {
+  "text": "old man grumbling hmph",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-a0c31f4c7da6.mp3": {
+  "text": "washing machine spin cycle",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-29e0587c84b5.mp3": {
+  "text": "small audience ooh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-b2a996cb88fe.mp3": {
+  "text": "old film projector clicking softly",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-7476c8597ead.mp3": {
+  "text": "tea being poured into a cup",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-eb6cbaed7442.mp3": {
+  "text": "small audience warm laugh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
