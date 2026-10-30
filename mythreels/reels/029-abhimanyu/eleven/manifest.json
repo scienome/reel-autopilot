@@ -1,0 +1,33 @@
+{
+ "music-2b0a04a1b018.mp3": {
+  "prompt": "Epic Indian Mahabharata cinematic underscore: dhol and war drums, conch shells, bansuri flute, sitar, tense strings and choir swells, temple bells, tender lullaby-like mystery in the womb, then epic tragic battle with war drums, ending in heroic glory and choir, no vocals",
+  "music_length_ms": 54040,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-feb729d33cdb.mp3": {
+  "text": "soft lullaby hum fading",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-3e6dbbf2709f.mp3": {
+  "text": "heroic charge, war cry and drums",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-166f035f12f9.mp3": {
+  "text": "chariot wheel being torn off with a crack",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-3148372eba29.mp3": {
+  "text": "heroic choir swell and conch",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
