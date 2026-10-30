@@ -1,0 +1,38 @@
+{
+ "music-1e3822dea578.mp3": {
+  "prompt": "Quirky adult animated sitcom underscore: bouncy slap bass, playful muted brass stabs, light drums, cheeky and fast, with a serious bomb-disposal suspense section with ticking and low drums, no vocals",
+  "music_length_ms": 23360,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-04c80f3ffdc5.mp3": {
+  "text": "heroic action movie brass stab",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-c09040356bdb.mp3": {
+  "text": "short sitcom studio audience laugh burst",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-c9219b54286d.mp3": {
+  "text": "snap of rubber gloves",
+  "duration_seconds": 0.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-22bf10448433.mp3": {
+  "text": "hazard alarm siren",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-346af937ac9b.mp3": {
+  "text": "clock ticking fast",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-26e8636aaa03.mp3": {
+  "text": "sitcom studio audience huge laugh",
+  "duration_seconds": 2.2,
+  "prompt_influence": 0.5
+ }
+}
