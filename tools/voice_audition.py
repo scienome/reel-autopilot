@@ -78,15 +78,21 @@ def tts(vid, key, model, text=None, owner=None):
 
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument('out'); ap.add_argument('--voices', default=''); ap.add_argument('--mine', action='store_true')
-    ap.add_argument('--model', default='eleven_v4'); ap.add_argument('--lang', default='')
+    ap.add_argument('--model', default='eleven_v4'); ap.add_argument('--lang', default=''); ap.add_argument('--find', default='')
     a = ap.parse_args(); key = os.environ.get('ELEVENLABS_API_KEY') or sys.exit('ELEVENLABS_API_KEY is not set')
     os.makedirs(a.out, exist_ok=True)
     cands = [(v.strip(), 'requested') for v in a.voices.split(',') if v.strip()] or list(HI_BASE if a.lang == 'hi' else CANDIDATES)
     owners = {}
-    if a.lang == 'hi' and not a.voices.strip():
+    if a.find:  # only voices whose name matches: the account's own first, else the shared Voice Library
+        cands = [(v['voice_id'], f"My Voices: {v.get('name')} ({v.get('category')})") for v in get('voices', key).get('voices', []) if a.find.lower() in (v.get('name') or '').lower()]
+        if not cands:
+            for v in get('shared-voices', key, search=a.find, page_size=10, **({'language': a.lang} if a.lang else {})).get('voices', []):
+                cands.append((v['voice_id'], f"Library: {v.get('name')} ({v.get('gender')}, {v.get('age')}, {v.get('accent')}) {(v.get('description') or '')[:80]}")); owners[v['voice_id']] = v.get('public_owner_id')
+        print('matches:', *cands, sep='\n  ', flush=True)
+    if a.lang == 'hi' and not a.voices.strip() and not a.find:
         for vid, own, desc in library_hi(key, 9):
             cands.append((vid, desc)); owners[vid] = own
-    if a.mine:
+    if a.mine and not a.find:
         have = {v for v, _ in cands}
         for v in get('voices', key).get('voices', []):
             if v['voice_id'] not in have and v.get('category') != 'premade':
