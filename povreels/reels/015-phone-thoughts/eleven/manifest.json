@@ -1,0 +1,38 @@
+{
+ "music-7f1805d2bc53.mp3": {
+  "prompt": "Upbeat electronic comedy music with bleeps and a funky bass, turning into a soft sad piano in the middle, then playful, no vocals",
+  "music_length_ms": 33300,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-84d03b8a4163.mp3": {
+  "text": "phone notification chimes many times",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-09f5a2915fda.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-6ad0d7e0b77f.mp3": {
+  "text": "phone splashing into water",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-852c8dd79fed.mp3": {
+  "text": "low battery warning beep",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-00cbb034dc68.mp3": {
+  "text": "wooden drawer sliding shut",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-d8c85db78852.mp3": {
+  "text": "small audience aww",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ }
+}
