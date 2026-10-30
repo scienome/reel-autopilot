@@ -1,0 +1,28 @@
+{
+ "music-7f9965b9e19a.mp3": {
+  "prompt": "Epic Indian Mahabharata cinematic underscore: dhol and war drums, conch shells, bansuri flute, sitar, tense strings and choir swells, temple bells, forest determination and devotion, a dazzling archery feat, a painful request, ending in quiet sacrifice, no vocals",
+  "music_length_ms": 48060,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-e73e12b22dcb.mp3": {
+  "text": "dog barking loudly then a yelp",
+  "duration_seconds": 1.4,
+  "prompt_influence": 0.5
+ },
+ "sfx-bf510fb3edf3.mp3": {
+  "text": "rapid flurry of arrows whooshing",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-d122a48ff9fc.mp3": {
+  "text": "deep emotional gong",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
