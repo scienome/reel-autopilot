@@ -1,0 +1,28 @@
+{
+ "music-adb6fe897044.mp3": {
+  "prompt": "Dark epic Indian mythological cinematic underscore for a demon king saga: tanpura drone, deep war drums and taiko, menacing low brass, tabla, shehnai and choir swells, temple bells, playful heroic monkey king energy, fast flight over oceans, comic struggle, warm ending, no vocals",
+  "music_length_ms": 44300,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-e147670fbadc.mp3": {
+  "text": "quick grab whoosh and a muffled yelp",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-ddf3179d01ff.mp3": {
+  "text": "powerful whoosh flying over the ocean, wind",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-df2b75085461.mp3": {
+  "text": "struggling grunts muffled",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
