@@ -1,0 +1,28 @@
+{
+ "music-d779a9b35eb7.mp3": {
+  "prompt": "Sneaky comedic string pizzicato with harpsichord and tuba, 1940s Dutch heist caper, no vocals",
+  "music_length_ms": 31960,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-918bd71d0ad9.mp3": {
+  "text": "comedic record scratch",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-9374298c3670.mp3": {
+  "text": "sneaky pizzicato sting",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-58df5d8cd28f.mp3": {
+  "text": "handcuffs click",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-c8d29c552b23.mp3": {
+  "text": "dramatic orchestra hit",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
