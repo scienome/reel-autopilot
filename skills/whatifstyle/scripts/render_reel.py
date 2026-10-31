@@ -9,7 +9,7 @@ renderer may not reach Google Fonts. Needs playwright (chromium) and ffmpeg.
 """
 import argparse, asyncio, base64, math, os, shutil, struct, subprocess, tempfile
 from playwright.async_api import async_playwright
-ap = argparse.ArgumentParser(); ap.add_argument('page'); ap.add_argument('out'); ap.add_argument('--voice')
+ap = argparse.ArgumentParser(); ap.add_argument('page'); ap.add_argument('out'); ap.add_argument('--voice'); ap.add_argument('--music', action='store_true', help='keep the music and beds under the voice')
 ap.add_argument('--fps', type=int, default=30); ap.add_argument('--workers', type=int, default=4); ap.add_argument('--crf', type=int, default=20)
 a = ap.parse_args()
 work = tempfile.mkdtemp(); frames = os.path.join(work, 'frames'); os.makedirs(frames)
@@ -33,7 +33,7 @@ async def main():
     async with async_playwright() as p:
         b = await p.chromium.launch(); pg = await page(b)
         dur = await pg.evaluate('DURATION'); n = math.ceil(dur * a.fps); print(f'duration {dur}s, {n} frames')
-        r = await pg.evaluate('''async()=>{const s=await SOUND.renderOffline(window.scoreSound, DURATION, 48000, {voiceover:true});
+        r = await pg.evaluate('''async()=>{const s=await SOUND.renderOffline(window.scoreSound, DURATION, 48000, {voiceover:'''+('false' if a.music else 'true')+'''});
           const u=new Uint8Array(s.inter.buffer);let bin='';for(let i=0;i<u.length;i+=32768)bin+=String.fromCharCode.apply(null,u.subarray(i,i+32768));return {b:btoa(bin),peak:s.peak}}''')
         data = base64.b64decode(r['b']); print('effects peak', round(r['peak'], 3))
         with open(os.path.join(work, 'fx.wav'), 'wb') as f:
@@ -50,7 +50,7 @@ if a.voice:
     # voice on top, effects ducked under it; the voice is padded to the full length so nothing gets cut short
     ff('-i', a.voice, '-i', fx, '-filter_complex',
        f'[0:a]aresample=48000,apad=whole_dur={dur},loudnorm=I=-17:TP=-2,aresample=48000,asplit=2[v1][v2];'
-       '[1:a]loudnorm=I=-26:TP=-4:LRA=20,aresample=48000[fx0];[fx0][v1]sidechaincompress=threshold=0.05:ratio=3:attack=10:release=250[fx];'
+       f'[1:a]loudnorm=I={-24 if a.music else -26}:TP=-4:LRA=20,aresample=48000[fx0];[fx0][v1]sidechaincompress=threshold=0.05:ratio=3:attack=10:release=250[fx];'
        f'[v2][fx]amix=inputs=2:normalize=0:duration=longest,loudnorm=I=-16:TP=-1.5:LRA=11,aresample=48000,atrim=0:{dur}[a]', '-map', '[a]', mix)
 else:
     ff('-i', fx, '-af', f'loudnorm=I=-16:TP=-1.5,atrim=0:{dur}', '-ar', '48000', mix)

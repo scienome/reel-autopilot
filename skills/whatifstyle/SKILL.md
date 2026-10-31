@@ -84,6 +84,8 @@ Needs playwright with chromium, and ffmpeg. Leave out `--voice` for a sound-effe
 
 Cue effects in `window.scoreSound(k)` with `k.play(name, time, opts)`, from the same times as the picture: `whoosh` on zooms, `shutter` on flashes, `pop` on tags and `tick` on counters (both with `{ minor: true }`), `impact` on the worst moment, `ding` or `success` on the surprise, `sparkle` on the ending.
 
+For music and beds under the voice, add `--music` to `render_reel.py`, and score them with `k.music` and `k.bed`. Riddles want it: mystery under the setup, a tense pulse through the countdown, a bright tune after the answer, and many small effects. See `assets/example_court.js`.
+
 ## Using it in this repo
 
 For a real channel, make a new series folder following `mythreels/` (`reels/<id>/script.json`, `story.js`, `meta.json`), with this kit in `libs`. That needs its own workflow and poster, so confirm the channel with the owner before posting anything.
