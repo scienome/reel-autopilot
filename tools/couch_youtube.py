@@ -45,6 +45,8 @@ def main():
     a = ap.parse_args()
     log = json.load(open(LOG)) if os.path.exists(LOG) else {}
     todo = [p['id'] for p in json.load(open(POSTED)) if p.get('media_id') and p['id'] not in log]
+    if CFG.get('queue') == 'riddles':  # never put an old Couch reel on the riddle channel
+        todo = [r for r in todo if src.is_riddle(r)]
     print(f"on Instagram, not yet on YouTube: {', '.join(todo) or 'none'}")
     if not all(os.environ.get(k) for k in ('YT_CLIENT_ID', 'YT_CLIENT_SECRET', 'YT_REFRESH_TOKEN')):
         print('::notice::The couch YouTube channel is not connected (YT_COUCH_CLIENT_ID, YT_COUCH_CLIENT_SECRET, '
