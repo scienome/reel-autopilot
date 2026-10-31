@@ -1,0 +1,43 @@
+{
+ "music-c8a90de50e0a.mp3": {
+  "prompt": "Indian festive mythological cinematic underscore for Diwali: tabla, bansuri, shehnai, temple bells, warm strings, serene and reverent with soft flute and bells, deep silence in the middle, slowly glowing into peace, no vocals",
+  "music_length_ms": 50420,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-018205c2870f.mp3": {
+  "text": "many flames lighting with a deep temple bell",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-afca5113e9a0.mp3": {
+  "text": "calm low om drone",
+  "duration_seconds": 2.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-0def4d67ab56.mp3": {
+  "text": "single deep bell fading into silence",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-1bfd307c7f71.mp3": {
+  "text": "quiet night wind and silence",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-b47829cbf6e4.mp3": {
+  "text": "a wave of small flames igniting one after another",
+  "duration_seconds": 2.4,
+  "prompt_influence": 0.5
+ },
+ "sfx-d9eb9e56b432.mp3": {
+  "text": "soft choir swell and bells",
+  "duration_seconds": 2.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
