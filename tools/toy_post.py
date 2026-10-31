@@ -3,7 +3,7 @@
 
 Usage: python3 tools/toy_post.py [--dry-run] [--now] [--id 05-body-no-sleep]
 
-Reels go out in folder order (01-, 02-, ...), the next one not yet posted that has a Release "toyreel-<id>", at
+Reels go out strongest first (meta.json "potential", ties in folder order), the next one not yet posted that has a Release "toyreel-<id>", at
 the times in toyreels/posting.json (IST). A run looks for a slot between 3 hours ago and 4 h 15 min from now that
 has not been used yet (GitHub starts scheduled runs up to ~2 hours late, so runs are set 4, 3 and 2 hours early and
 the one that starts first waits for the exact minute). For that slot it:
@@ -24,7 +24,7 @@ import argparse, datetime as dt, json, os, sys, tempfile, time
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, 'tools'))
 import youtube_publish as yt  # noqa: E402
-from first_comment import first_comment, post_first_comment, guard_slot, best_for_slot, is_afternoon  # noqa: E402
+from first_comment import first_comment, post_first_comment, guard_slot  # noqa: E402
 
 TOY = os.path.join(ROOT, 'toyreels')
 REELS, LOG, CONF = os.path.join(TOY, 'reels'), os.path.join(TOY, 'posted.json'), os.path.join(TOY, 'posting.json')
@@ -175,7 +175,8 @@ def main():
 
     ids = sorted(d for d in os.listdir(REELS) if os.path.exists(os.path.join(REELS, d, 'meta.json')))
     half = [r for r in ids if r in log and not ('instagram' in log[r] and 'youtube' in log[r])]
-    queue = [r for r in ids if r not in log]
+    pot = lambda r: json.load(open(os.path.join(REELS, r, 'meta.json'))).get('potential', 5)
+    queue = sorted((r for r in ids if r not in log), key=lambda r: -pot(r))
 
     if a.id:
         if a.id not in ids:
@@ -193,11 +194,7 @@ def main():
             print(f'no slot due now; next slot {nxt:%Y-%m-%d %H:%M} UTC; {len(queue)} reel(s) waiting')
             return
 
-    ready = []
-    for r in queue:
-        if len(ready) == 3: break
-        if rendered(r): ready.append(r)
-    pick = a.id or best_for_slot(ready, lambda r: os.path.join(REELS, r, 'meta.json'), is_afternoon(slot))
+    pick = a.id or next((r for r in queue if rendered(r)), None)
     unrendered = [r for r in queue[:queue.index(pick)]] if pick in queue else []
     at = slot or t
     print(f'unfinished: {half or "none"}\nnext reel: {pick or "NONE - queue is empty"}'

@@ -5,23 +5,21 @@
   "002-cat-thoughts",
   "008-lie-counter",
   "003-dog-loves-cat",
-  "010-car-thoughts",
-  "004-pets-home-alone",
-  "009-baby-thoughts",
-  "005-vet-visit",
   "006-shelter-dog",
-  "011-parrot-thoughts",
   "016-grandpa-thoughts",
+  "020-mum-thoughts",
+  "005-vet-visit",
   "012-goldfish-memory",
-  "013-fridge-judges-you",
+  "004-pets-home-alone",
+  "010-car-thoughts",
   "015-phone-thoughts",
+  "009-baby-thoughts",
+  "011-parrot-thoughts",
   "019-houseplant-thoughts",
-  "020-mum-thoughts"
- ],
- "held_back": [
-  "014-pigeon-thoughts",
-  "017-cow-thoughts",
+  "013-fridge-judges-you",
   "018-boss-thoughts",
+  "017-cow-thoughts",
+  "014-pigeon-thoughts",
   "021-hamster-thoughts"
  ]
 }

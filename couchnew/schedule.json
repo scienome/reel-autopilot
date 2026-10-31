@@ -8,9 +8,11 @@
   "e006-the-dress",
   "e007-the-dad",
   "e008-the-wedding-planner",
+  "e009-the-stag-night",
   "e010-the-vows",
   "e011-the-wedding",
   "e012-the-honeymoon",
+  "e013-the-first-fight",
   "e014-the-baby-news",
   "e015-baby-names",
   "e016-sam-babyproofs",
@@ -19,9 +21,5 @@
   "e019-baby-brenda",
   "e020-the-first-nappy",
   "e021-grandma-moves-out"
- ],
- "held_back": [
-  "e009-the-stag-night",
-  "e013-the-first-fight"
  ]
 }
