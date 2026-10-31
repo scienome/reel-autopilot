@@ -158,7 +158,7 @@ Folder: [`dave-reels/`](dave-reels/)
 | [43-dave-grows-an-inch](dave-reels/43-dave-grows-an-inch.mp4) | What if you grew 1 inch every day? | Waiting to post |
 | [44-gimli-glider](dave-reels/44-gimli-glider.mp4) | The jet that ran out of fuel because of maths | Waiting to post |
 
-## Toy reels (Brick Toy) (57)
+## Toy reels (Brick Toy) (66)
 Folder: [`toy-reels/`](toy-reels/)
 
 | Video | Title | Status |
@@ -220,6 +220,15 @@ Folder: [`toy-reels/`](toy-reels/)
 | [55-pirate-map-parrot](toy-reels/55-pirate-map-parrot.mp4) | Pirate Tattooed The Treasure Map On His Back 🏴‍☠️ | Waiting to post |
 | [56-eiffel-tower-con](toy-reels/56-eiffel-tower-con.mp4) | The Man Who Sold The Eiffel Tower 🗼 | Waiting to post |
 | [57-emu-war](toy-reels/57-emu-war.mp4) | Australia Sent Machine Guns To Fight Birds 🐦 | Waiting to post |
+| [63-wojtek-soldier-bear](toy-reels/63-wojtek-soldier-bear.mp4) | Poland Enlisted A Bear As A Soldier 🐻 | Waiting to post |
+| [64-mike-headless-chicken](toy-reels/64-mike-headless-chicken.mp4) | The Chicken That Lived 18 Months Without A Head 🐔 | Waiting to post |
+| [65-microwave-chocolate-bar](toy-reels/65-microwave-chocolate-bar.mp4) | A Melted Chocolate Bar Invented The Microwave 🍫 | Waiting to post |
+| [66-play-doh-wallpaper](toy-reels/66-play-doh-wallpaper.mp4) | Play-Doh Started As Wallpaper Cleaner 🧽 | Waiting to post |
+| [67-pet-rock-millionaire](toy-reels/67-pet-rock-millionaire.mp4) | He Sold Rocks As Pets And Became A Millionaire 🪨 | Waiting to post |
+| [68-pepsi-harrier-jet](toy-reels/68-pepsi-harrier-jet.mp4) | Pepsi Offered A Fighter Jet. A Man Tried To Claim It ✈️ | Waiting to post |
+| [69-van-meegeren-forger](toy-reels/69-van-meegeren-forger.mp4) | He Sold A Fake Vermeer To Goering. Then Proved It. 🎨 | Waiting to post |
+| [70-great-stink-london](toy-reels/70-great-stink-london.mp4) | London Smelled So Bad Parliament Had To Act 🤢 | Waiting to post |
+| [71-bitcoin-pizza-day](toy-reels/71-bitcoin-pizza-day.mp4) | He Paid 10,000 Bitcoin For Two Pizzas 🍕 | Waiting to post |
 
 ## Mechanic Shorts (YouTube) (25)
 Folder: [`mechanic-shorts/`](mechanic-shorts/)
