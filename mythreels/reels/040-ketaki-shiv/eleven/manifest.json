@@ -1,0 +1,38 @@
+{
+ "music-a3755cc86529.mp3": {
+  "prompt": "Indian mythological cinematic underscore: tanpura drone, soft tabla, bansuri, temple bells, swelling shehnai at the climax, no vocals, fiery drums when the pillar of fire rises",
+  "music_length_ms": 57360,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-79dc9c98a66d.mp3": {
+  "text": "soft magical sparkle chime",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-78813b21807a.mp3": {
+  "text": "huge roaring fire pillar whoosh",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-031b501930c7.mp3": {
+  "text": "deep boar roar with wind",
+  "duration_seconds": 1.4,
+  "prompt_influence": 0.5
+ },
+ "sfx-d63f32c1ccdf.mp3": {
+  "text": "ominous low sting",
+  "duration_seconds": 1.4,
+  "prompt_influence": 0.5
+ },
+ "sfx-aa474d68bc8d.mp3": {
+  "text": "divine thunder boom with temple bell",
+  "duration_seconds": 2.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
