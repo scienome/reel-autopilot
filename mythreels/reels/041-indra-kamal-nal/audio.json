@@ -1,0 +1,58 @@
+{
+ "music": {
+  "prompt": "Indian mythological cinematic underscore: tanpura drone, soft tabla, bansuri, temple bells, swelling shehnai at the climax, no vocals, a mysterious hush over a still lake",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "h1",
+   "word": "कमल",
+   "prompt": "soft water drop and magical shimmer",
+   "dur": 1.4,
+   "gain": -8
+  },
+  {
+   "beat": "b1",
+   "word": "वृत्र",
+   "prompt": "distant thunder and a demon roar",
+   "dur": 1.6,
+   "gain": -7
+  },
+  {
+   "beat": "b2",
+   "word": "भागे",
+   "prompt": "fast footsteps and a splash",
+   "dur": 1.2,
+   "gain": -7
+  },
+  {
+   "beat": "b3",
+   "word": "घबराने",
+   "prompt": "uneasy wind whisper",
+   "dur": 1.5,
+   "gain": -9
+  },
+  {
+   "beat": "b5",
+   "word": "गद्दी",
+   "prompt": "royal gong strike",
+   "dur": 1.4,
+   "gain": -7
+  },
+  {
+   "beat": "b6",
+   "word": "उपश्रुति",
+   "prompt": "soft celestial chime",
+   "dur": 1.4,
+   "gain": -8
+  },
+  {
+   "beat": "nx",
+   "word": "अगले",
+   "prompt": "deep suspense drum hit and rising whoosh",
+   "dur": 1.8,
+   "gain": -7
+  }
+ ]
+}

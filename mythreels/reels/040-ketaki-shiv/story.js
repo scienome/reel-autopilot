@@ -1,0 +1,17 @@
+KATHA((h) => {
+  const { V, at, char, CAM, one, two, cardOn } = h;
+  const pillar = (ctx, x, t, a = 1) => { const g = ctx.createLinearGradient(x - 70, 0, x + 70, 0); g.addColorStop(0, 'rgba(255,120,30,0)'); g.addColorStop(0.5, `rgba(255,200,80,${0.9 * a})`); g.addColorStop(1, 'rgba(255,120,30,0)'); ctx.fillStyle = g; ctx.fillRect(x - 70, -200, 140, 1500); for (let i = 0; i < 4; i++) MYTH.flame(ctx, x - 30 + i * 20, 1000 - i * 120, 0.5, t + i); };
+  const kt = (ctx, x, y, s = 1, t = 0) => { ctx.save(); ctx.translate(x, y + Math.sin(t * 3) * 6); ctx.scale(s, s); for (let i = 0; i < 6; i++) { ctx.save(); ctx.rotate(i * Math.PI / 3); MYTH.ell(ctx, '#f6f0c0', 0, -22, 10, 24, 0, 3); ctx.restore(); } MYTH.ell(ctx, '#e8c050', 0, 0, 10, 10, 0, 2); ctx.restore(); };
+  return {
+    h1: { set: 'kailash', cam: CAM.mid, draw: (ctx, t) => { kt(ctx, 360, 640, 4.2, t); char(ctx, 'shiva', 360, 1180, 0.5, t, { arms: 'bless', halo: true, face: { eyes: 'calm', mouth: 'calm' } }); } },
+    b1: { set: 'heaven', cam: CAM.wide, draw: two('brahma', { arms: { r: 'point', l: 'hips' }, face: { eyes: 'angry', mouth: 'open' } }, 'vishnu', { arms: { r: 'point', l: 'hips' }, face: { eyes: 'angry', mouth: 'open' } }) },
+    b2: { set: 'space', setOpt: { sun: false }, cam: [[360, 760, 1.0], [360, 700, 1.15]], shake: V('b2', 'आग'), draw: (ctx, t) => { pillar(ctx, 360, t, H.clamp((t - V('b2', 'आग')) / 0.6)); } },
+    b3: { set: 'space', setOpt: { sun: false }, cam: [[360, 700, 1.0], [360, 660, 1.1]], draw: (ctx, t) => { pillar(ctx, 360, t); char(ctx, 'brahma', 150, 1120, 0.45, t, { arms: 'wide', face: { eyes: 'wide', mouth: 'o' } }); char(ctx, 'vishnu', 570, 1120, 0.45, t, { flip: true, arms: 'wide', face: { eyes: 'wide', mouth: 'o' } }); } },
+    b4: { set: 'space', setOpt: { sun: false }, cam: CAM.wide, draw: (ctx, t) => { const u = H.clamp((t - at('b4', 0)) / 3.5); pillar(ctx, 360, t); char(ctx, 'vishnu', 200, H.lerp(1000, 1350, u), 0.4, t, { lean: -0.5, pose: 'fly', arms: 'wide', face: { eyes: 'calm', mouth: 'calm' } }); char(ctx, 'brahma', 520, H.lerp(900, 400, u), 0.4, t, { pose: 'fly', arms: 'wide', face: { eyes: 'calm', mouth: 'calm' } }); } },
+    b5: { set: 'heaven', cam: CAM.mid, draw: one('vishnu', { arms: { r: 'open', l: 'down' }, face: { eyes: 'sad', mouth: 'calm' } }) },
+    b6: { set: 'sky', setOpt: { time: 'dusk' }, cam: [[360, 700, 1.0], [360, 700, 1.3]], draw: (ctx, t) => { const u = H.clamp((t - at('b6', 0)) / 3); kt(ctx, 330, H.lerp(300, 760, u), 1.8, t); char(ctx, 'brahma', 470, 1000, 0.5, t, { pose: 'fly', arms: 'wide', face: { eyes: 'wide', mouth: 'o' } }); } },
+    b7: { set: 'heaven', cam: CAM.mid, draw: (ctx, t) => { kt(ctx, 560, 700, 1.6, t); char(ctx, 'brahma', 250, 1170, 0.8, t, { arms: { r: 'point', l: 'hips' }, face: { eyes: 'wide', mouth: 'open' } }); }, over: cardOn('b7', 'झूठ', 'झूठ!', { y: 300, size: 80 }) },
+    b8: { set: 'space', setOpt: { sun: false }, cam: CAM.mid, shake: V('b8', 'महादेव'), draw: (ctx, t) => { pillar(ctx, 360, t, 0.6); char(ctx, 'shiva', 360, 1170, 0.85, t, { halo: true, arms: { r: 'point', l: 'down' }, hold: 'trishul', face: { eyes: 'angry', mouth: 'calm' } }); } },
+    end: { set: 'kailash', cam: CAM.close(), draw: (ctx, t) => { char(ctx, 'shiva', 360, 1170, 0.85, t, { halo: true, arms: { r: 'point', l: 'down' }, face: { eyes: 'angry', mouth: 'calm' } }); } },
+  };
+}, {series: 'पूजा के पीछे की कथा', part: 1, hook: 'शिव पर ये फूल\nचढ़ाना मना क्यों?', next: 'पुष्कर का मंदिर\nऔर एक श्राप!', nextAt: 'nx', gold: ['फूल', 'केतकी', 'महादेव', 'झूठ', 'ब्रह्मा', 'विष्णु']});

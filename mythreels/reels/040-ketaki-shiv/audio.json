@@ -1,0 +1,58 @@
+{
+ "music": {
+  "prompt": "Indian mythological cinematic underscore: tanpura drone, soft tabla, bansuri, temple bells, swelling shehnai at the climax, no vocals, fiery drums when the pillar of fire rises",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "h1",
+   "word": "फूल",
+   "prompt": "soft magical sparkle chime",
+   "dur": 1.2,
+   "gain": -8
+  },
+  {
+   "beat": "b2",
+   "word": "आग",
+   "prompt": "huge roaring fire pillar whoosh",
+   "dur": 2.0,
+   "gain": -6
+  },
+  {
+   "beat": "b4",
+   "word": "वराह",
+   "prompt": "deep boar roar with wind",
+   "dur": 1.4,
+   "gain": -8
+  },
+  {
+   "beat": "b7",
+   "word": "झूठ",
+   "prompt": "ominous low sting",
+   "dur": 1.4,
+   "gain": -8
+  },
+  {
+   "beat": "b8",
+   "word": "महादेव",
+   "prompt": "divine thunder boom with temple bell",
+   "dur": 2.2,
+   "gain": -5
+  },
+  {
+   "beat": "end",
+   "word": "श्राप",
+   "prompt": "dark magical curse sting",
+   "dur": 1.8,
+   "gain": -6
+  },
+  {
+   "beat": "nx",
+   "word": "अगले",
+   "prompt": "deep suspense drum hit and rising whoosh",
+   "dur": 1.8,
+   "gain": -7
+  }
+ ]
+}
