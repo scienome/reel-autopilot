@@ -1,0 +1,28 @@
+{
+ "music-a0675b94458a.mp3": {
+  "prompt": "Quirky 1940s country-western banjo and fiddle with silly slide whistle, comedic, no vocals",
+  "music_length_ms": 31800,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-e260f400c5ad.mp3": {
+  "text": "comedic cartoon boing",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-dad9c67513c1.mp3": {
+  "text": "water dripping plink",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-339eb6bef395.mp3": {
+  "text": "circus carnival jingle",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-143718da5de6.mp3": {
+  "text": "sad trombone wah wah",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
