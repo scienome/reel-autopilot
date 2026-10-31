@@ -1,0 +1,48 @@
+{
+ "music-10a5e56969b9.mp3": {
+  "prompt": "Indian festive mythological cinematic underscore for Diwali: tabla, bansuri, shehnai, temple bells, warm strings, joyful Himalayan festive feel with madal drums and flutes, playful and warm, a brief mysterious turn, then heartfelt, no vocals",
+  "music_length_ms": 52340,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-23ad3d47f922.mp3": {
+  "text": "a happy dog bark and temple bell",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-dc1bc1ede971.mp3": {
+  "text": "crow cawing twice",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-cde82b3730d5.mp3": {
+  "text": "cheerful dog barks and a bright festive chime",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-e0126233fbd1.mp3": {
+  "text": "soft flowers rustle and sparkly chime",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-2a9b83a3d05b.mp3": {
+  "text": "a metal medal clink and short brass fanfare",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-690f3354d51b.mp3": {
+  "text": "deep ominous gong",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-3f2c57e355b0.mp3": {
+  "text": "a gentle dog whimper of love and warm strings",
+  "duration_seconds": 2.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
