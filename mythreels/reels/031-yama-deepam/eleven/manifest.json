@@ -1,0 +1,48 @@
+{
+ "music-5ad599216b4b.mp3": {
+  "prompt": "Indian festive mythological cinematic underscore for Diwali: tabla, bansuri, shehnai, temple bells, warm strings, dark suspense in the night that turns tender and then triumphant at dawn, no vocals",
+  "music_length_ms": 50500,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-58374bf00ca0.mp3": {
+  "text": "deep ominous gong with a cold wind",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-adfcebd684e9.mp3": {
+  "text": "dark dramatic hit and silence",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-af56597a414a.mp3": {
+  "text": "gold coins and jewellery pouring in a pile",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-89cb629aea55.mp3": {
+  "text": "a soft female humming feel, gentle veena notes",
+  "duration_seconds": 2.4,
+  "prompt_influence": 0.5
+ },
+ "sfx-d0a93f016fa1.mp3": {
+  "text": "snake hissing slowly and menacingly",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-19c4e090fbfe.mp3": {
+  "text": "morning birds and a warm rising swell",
+  "duration_seconds": 2.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-23270e901f30.mp3": {
+  "text": "small flame igniting and temple bell",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
