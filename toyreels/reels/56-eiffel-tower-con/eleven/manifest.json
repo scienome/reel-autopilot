@@ -1,0 +1,33 @@
+{
+ "music-6b1888a48ecf.mp3": {
+  "prompt": "Sneaky comedic 1920s Paris heist music, playful accordion and pizzicato strings, jazzy upright bass, no vocals",
+  "music_length_ms": 32519,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-0357bdda72f2.mp3": {
+  "text": "heavy rubber stamp slam on paper",
+  "duration_seconds": 0.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-6c583b4e50a2.mp3": {
+  "text": "old printing press clunking",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-1cc612a5034a.mp3": {
+  "text": "cash register ding and coins pouring",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-3a945430ce10.mp3": {
+  "text": "sad comedic trombone wah wah",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-280ac446049c.mp3": {
+  "text": "comedic orchestral stinger hit",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
