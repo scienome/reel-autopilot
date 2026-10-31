@@ -1,0 +1,10 @@
+{
+ "music": {"prompt": "Sneaky comedic 1920s Paris heist music, playful accordion and pizzicato strings, jazzy upright bass, no vocals", "gain": 0, "tail": 3},
+ "sfx": [
+  {"beat": "hook", "word": "sold", "offset": 0.0, "prompt": "heavy rubber stamp slam on paper", "dur": 0.8, "gain": -3},
+  {"beat": "b2", "word": "faked", "offset": 0.0, "prompt": "old printing press clunking", "dur": 1.2, "gain": -5},
+  {"beat": "b4", "word": "cash", "offset": 0.0, "prompt": "cash register ding and coins pouring", "dur": 1.2, "gain": -3},
+  {"beat": "twist", "word": "embarrassed", "offset": 0.0, "prompt": "sad comedic trombone wah wah", "dur": 1.5, "gain": -4},
+  {"beat": "punch", "word": "again", "offset": 0.0, "prompt": "comedic orchestral stinger hit", "dur": 1.2, "gain": -2}
+ ]
+}

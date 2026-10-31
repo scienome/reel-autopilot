@@ -1,0 +1,10 @@
+[{"chapter": "The tower", "beats": [
+ {"id": "hook", "phrases": ["In nineteen twenty five, a con man sold the Eiffel Tower.", "For scrap metal."]},
+ {"id": "b1", "phrases": ["Victor Lustig read that Paris could barely afford to fix it."]},
+ {"id": "b2", "phrases": ["So he faked government papers,", "and called scrap dealers to a luxury hotel."]},
+ {"id": "b3", "phrases": ["He told them the tower was coming down.", "Keep it secret."]},
+ {"id": "b4", "phrases": ["One dealer handed over the cash."]},
+ {"id": "twist", "phrases": ["When he found out,", "he was too embarrassed to tell the police."]},
+ {"id": "punch", "phrases": ["So Lustig came back,", "and tried to sell it again."]},
+ {"id": "cta", "phrases": ["Would you have bought it?"]}
+]}]

@@ -74,6 +74,9 @@ if __name__ == '__main__':
     ap = argparse.ArgumentParser(); ap.add_argument('video'); ap.add_argument('--offline', action='store_true')
     a = ap.parse_args()
     cfg = json.load(open(os.path.join(ROOT, 'config.json')))['voice']
+    vo = os.path.join(a.video, 'voice.json')  # a reel may name its own voice (a test of a new voice)
+    if os.path.exists(vo):
+        cfg = dict(cfg, **json.load(open(vo)))
     script = json.load(open(os.path.join(a.video, 'script.json')))
     cdir = os.path.join(a.video, 'voice_chunks'); os.makedirs(cdir, exist_ok=True)
     tmp = tempfile.mkdtemp(); parts, words, chapters, offset = [], {}, [], 0.0
