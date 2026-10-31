@@ -1,9 +1,9 @@
 {
  "job": "myth-batch",
- "status": "in_progress",
+ "status": "done",
  "owner": "vm-d24510",
  "started": "2026-10-31T17:30:38Z",
- "updated": "2026-10-31T17:52:59Z",
+ "updated": "2026-10-31T17:53:01Z",
  "note": "queued 040-043",
  "history": []
 }
