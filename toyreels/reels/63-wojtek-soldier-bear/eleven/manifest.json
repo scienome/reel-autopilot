@@ -1,0 +1,28 @@
+{
+ "music-af13d601a495.mp3": {
+  "prompt": "Warm comedic military march with accordion and brass, heroic but playful, no vocals",
+  "music_length_ms": 26840,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-47af05148606.mp3": {
+  "text": "deep bear growl, comedic",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-7967d12590e6.mp3": {
+  "text": "heavy crates thumping",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-8a84fb00f4c0.mp3": {
+  "text": "triumphant brass fanfare short",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-ea616c66e04e.mp3": {
+  "text": "gentle cartoon sigh",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
