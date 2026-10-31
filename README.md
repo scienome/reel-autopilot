@@ -45,7 +45,7 @@ Folder: [`gears-pov/`](gears-pov/)
 | [003-dog-loves-cat](gears-pov/003-dog-loves-cat.mp4) | My dog is in love with the neighbour's cat 🐶❤️🐱 | Posted on Instagram · on YouTube |
 | [004-pets-home-alone](gears-pov/004-pets-home-alone.mp4) | What your pets do when you leave 🐶🐱 | Waiting to post |
 | [005-vet-visit](gears-pov/005-vet-visit.mp4) | What your pets think at the vet 🐶🐱🏥 | Waiting to post |
-| [006-shelter-dog](gears-pov/006-shelter-dog.mp4) | Nobody picks the old dog 🐶 | Waiting to post |
+| [006-shelter-dog](gears-pov/006-shelter-dog.mp4) | Nobody picks the old dog 🐶 | Posted on Instagram · on YouTube |
 | [007-search-history](gears-pov/007-search-history.mp4) | You can see everyone's search history 🔎 | Posted on Instagram · on YouTube |
 | [008-lie-counter](gears-pov/008-lie-counter.mp4) | You can see how many lies people told today 🤥 | Posted on Instagram · on YouTube |
 | [009-baby-thoughts](gears-pov/009-baby-thoughts.mp4) | You can understand babies 👶 | Waiting to post |
@@ -187,7 +187,7 @@ Folder: [`toy-reels/`](toy-reels/)
 | [22-devil-sues-billionaire](toy-reels/22-devil-sues-billionaire.mp4) | The Devil Sued A Billionaire And LOST 😈 | Waiting to post |
 | [23-last-man-spam-call](toy-reels/23-last-man-spam-call.mp4) | The Last Man On Earth Got A Phone Call. It Was Spam. ☠️ | Waiting to post |
 | [24-mummy-gift-shop](toy-reels/24-mummy-gift-shop.mp4) | A Mummy Woke Up Inside A Museum Gift Shop 🏺 | Waiting to post |
-| [25-summit-cooking-show](toy-reels/25-summit-cooking-show.mp4) | World Leaders Cooking Show: One Dish Is Poisoned 🍲 | Waiting to post |
+| [25-summit-cooking-show](toy-reels/25-summit-cooking-show.mp4) | World Leaders Cooking Show: One Dish Is Poisoned 🍲 | Posted (Instagram + YouTube) |
 | [26-aliens-read-reviews](toy-reels/26-aliens-read-reviews.mp4) | Aliens Invaded Earth, Read The Reviews, And Left 👽 | Waiting to post |
 | [27-kim-haircut-law](toy-reels/27-kim-haircut-law.mp4) | Kim Made His Haircut The Law. Then His Barber Escaped ✂️ | Waiting to post |
 | [28-superdude-parking-tickets](toy-reels/28-superdude-parking-tickets.mp4) | Super-Dude Saved The City 900 Times. 900 Parking Tickets. 🦸 | Waiting to post |
