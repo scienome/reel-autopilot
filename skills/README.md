@@ -1,14 +1,15 @@
 # Claude skills for this repo
 
-The three custom skills, so any Claude account can install them from here.
+The custom skills, so any Claude account can install them from here.
 
 | Skill | Use | Install file |
 |---|---|---|
 | `toystyle` | Brick Toy 9:16 reels (`toyreels/`, `youtube/`) | `zips/toystyle.zip` |
 | `violetstyle` | Violet Room soft-3D reels (root `style/`, `povreels/`) | `zips/violetstyle.zip` |
 | `mechanicskill` | Mechanic low-poly reels (`mechreels/`, `mechvideos/`, `davereels/`) | `zips/mechanicskill.zip` |
+| `whatifstyle` | Flat Science "What if" explainer reels (no channel yet) | `zips/whatifstyle.zip` |
 
-**Install on a new account (2 minutes):** download the three zips from `skills/zips/` (open each file on GitHub →
+**Install on a new account (2 minutes):** download the zips from `skills/zips/` (open each file on GitHub →
 "Download raw file"), then claude.ai → Settings → Capabilities → Skills → Upload skill, once per zip, and turn them on.
 
 **Without installing:** a Claude session that has this repo cloned can read `skills/<name>/SKILL.md` directly and use
