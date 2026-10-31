@@ -1,7 +1,7 @@
 KATHA((h) => {
   const { at, char, CAM, cardOn } = h;
   const kings = (ctx, t, eyes = 'sad', y = 1130, arms = 'namaste') => { for (let i = 0; i < 4; i++) char(ctx, 'king', 90 + i * 180, y, 0.5, t, { flip: i > 1, arms, face: { eyes, mouth: 'calm' } }); };
-  const light = (ctx, t, k = 1) => { DIWA.glow(ctx, 360, 640, 360, '255,235,170', 0.85 * k); MYTH.aura(ctx, 360, 640, 120 * k, t); };
+  const light = (ctx, t, k = 1) => { if (k < 0.25) return; DIWA.glow(ctx, 360, 640, 360, '255,235,170', 0.85 * k); MYTH.aura(ctx, 360, 640, 120 * k, t); };
   const lit = (t, a, d) => H.clamp((t - a) / d);
   return {
     h1: { set: 'ayodhya', cam: CAM.push, draw: (ctx, t) => { kings(ctx, t, 'calm', 1070); DIWA.row(ctx, 1170, t, 1, 7, 1.3, 90, 630); } },
