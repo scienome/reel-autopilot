@@ -3,7 +3,7 @@
 Every finished video, one folder per series. Click a folder, then a file, then **View raw** (or the download
 button) to play it. This page updates itself after every render.
 
-## CouchSarcasm cartoon sitcom (new) (23)
+## CouchSarcasm cartoon sitcom (new) (26)
 Folder: [`couch-cartoon/`](couch-cartoon/)
 
 | Video | Title | Status |
@@ -12,7 +12,7 @@ Folder: [`couch-cartoon/`](couch-cartoon/)
 | [e002-thursday](couch-cartoon/e002-thursday.mp4) | The ring came back... on Thursday 💍🚽 | Posted |
 | [e003-mum-moves-in](couch-cartoon/e003-mum-moves-in.mp4) | Mum said one week. It's day forty. 🧳 | Posted |
 | [e004-sam-cooks](couch-cartoon/e004-sam-cooks.mp4) | He cooked to impress her mum 🔥🍳 | Posted |
-| [e005-the-birthday](couch-cartoon/e005-the-birthday.mp4) | He didn't forget her birthday this time 🎂 | Waiting to post |
+| [e005-the-birthday](couch-cartoon/e005-the-birthday.mp4) | He didn't forget her birthday this time 🎂 | Posted |
 | [e006-the-dress](couch-cartoon/e006-the-dress.mp4) | He wasn't allowed to see the wedding dress 👰 | Waiting to post |
 | [e007-the-dad](couch-cartoon/e007-the-dad.mp4) | He met her dad. Then her mum arm-wrestled. 💪 | Waiting to post |
 | [e008-the-wedding-planner](couch-cartoon/e008-the-wedding-planner.mp4) | Her mum planned the WHOLE wedding 💒 | Waiting to post |
@@ -30,6 +30,9 @@ Folder: [`couch-cartoon/`](couch-cartoon/)
 | [e020-the-first-nappy](couch-cartoon/e020-the-first-nappy.mp4) | His first nappy change took 40 minutes 🧷 | Waiting to post |
 | [e021-grandma-moves-out](couch-cartoon/e021-grandma-moves-out.mp4) | Her mum moved out. Sort of. 🏡 | Waiting to post |
 | [m001-she-means](couch-cartoon/m001-she-means.mp4) | What she says vs what she means 💀 | Not scheduled |
+| [p001-faking-it](couch-cartoon/p001-faking-it.mp4) | "How many times have you faked it?" 😳 | Not scheduled |
+| [p002-the-ex](couch-cartoon/p002-the-ex.mp4) | "You said her name last night." 💔 | Not scheduled |
+| [p003-the-real-hurt](couch-cartoon/p003-the-real-hurt.mp4) | "When did you stop looking at me?" 💔 | Not scheduled |
 | [t001-dentist](couch-cartoon/t001-dentist.mp4) | Who's Jessica? 📱 | Not scheduled |
 
 ## Thought Bubble POV stories (formerly Gears & Glitches) (21)
