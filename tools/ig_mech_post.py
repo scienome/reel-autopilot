@@ -57,6 +57,9 @@ def dave_order():
 
 
 def mech_order():
+    s = json.load(open(os.path.join(ROOT, 'schedule.json')))
+    if s.get('paused'):  # the owner paused Mechanic (schedule.json "paused"): no more Shorts
+        print(f"::notice::Mechanic Shorts are paused: {s['paused']}"); return []
     return sorted(d for d in os.listdir(MECH) if d not in ANATOMY and os.path.exists(os.path.join(MECH, d, 'meta.json')))
 
 

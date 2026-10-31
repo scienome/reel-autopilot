@@ -140,6 +140,8 @@ def main():
     ap = argparse.ArgumentParser(); ap.add_argument('--dry-run', action='store_true'); ap.add_argument('--only')
     a = ap.parse_args()
     sched = json.load(open(SCHED)); off = sched.get('timezone_offset', '+05:30'); times = sched['times']
+    if sched.get('paused'):  # the owner paused Mechanic: upload nothing
+        print(f"::notice::Mechanic videos are paused: {sched['paused']}"); return
     log = json.load(open(LOG)) if os.path.exists(LOG) else {}
     have_keys = all(os.environ.get(k) for k in ('YT_CLIENT_ID', 'YT_CLIENT_SECRET', 'YT_REFRESH_TOKEN'))
     if not have_keys and not a.dry_run:
