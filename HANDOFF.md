@@ -223,7 +223,7 @@ Jobs: `toy-batch`, `couch-batch`, `pov-batch`, `mech-batch` (one name per schedu
 |---|---|---|
 | Toy reels: 21 new reels | 01:33 on the 3rd, 6th, 9th… | ON |
 | Toy reels: backup (finish unfinished batch) | 07:33 same days | ON |
-| CouchSarcasm sitcom: 9 episodes (`couch-batch`, `couchnew/PLAYBOOK.md`) | 02:17 on the 1st, 4th, 7th… | OFF (31 Oct, owner: no more new Couch episodes) |
+| CouchSarcasm sitcom: 9 episodes (`couch-batch`, `couchnew/PLAYBOOK.md`) | 02:17 on the 1st, 4th, 7th… | OFF (31 Oct, owner stopped new episodes and all Couch posting: root config.json "paused") |
 | CouchSarcasm sitcom: backup | 08:17 same days | OFF (31 Oct) |
 | Thought Bubble POV: 9 episodes (`pov-batch`, `povreels/PLAYBOOK.md`) | 02:47 on the 2nd, 5th, 8th… | ON (30 Oct) |
 | Thought Bubble POV: backup | 08:47 same days | ON (30 Oct) |
