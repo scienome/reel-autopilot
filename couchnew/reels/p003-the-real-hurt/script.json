@@ -1,0 +1,79 @@
+[
+ {
+  "id": "r1",
+  "who": "roxy",
+  "phrases": [
+   "When did you stop looking at me?"
+  ]
+ },
+ {
+  "id": "m1",
+  "who": "max",
+  "phrases": [
+   "I'm looking at you right now."
+  ]
+ },
+ {
+  "id": "r2",
+  "who": "roxy",
+  "phrases": [
+   "You're looking at your phone."
+  ]
+ },
+ {
+  "id": "m2",
+  "who": "max",
+  "phrases": [
+   "It's a work thing."
+  ]
+ },
+ {
+  "id": "r3",
+  "who": "roxy",
+  "phrases": [
+   "You used to come home early. Just to watch me get ready."
+  ]
+ },
+ {
+  "id": "r4",
+  "who": "roxy",
+  "phrases": [
+   "I bought this dress six months ago. You've never said a word."
+  ]
+ },
+ {
+  "id": "m3",
+  "who": "max",
+  "phrases": [
+   "I noticed."
+  ]
+ },
+ {
+  "id": "r5",
+  "who": "roxy",
+  "phrases": [
+   "Then why did you say nothing?"
+  ]
+ },
+ {
+  "id": "m4",
+  "who": "max",
+  "phrases": [
+   "Because I lost my job in March. And I didn't know how to look at you."
+  ]
+ },
+ {
+  "id": "r6",
+  "who": "roxy",
+  "phrases": [
+   "You idiot. Come here."
+  ]
+ },
+ {
+  "id": "end",
+  "who": "narrator",
+  "phrases": [
+   "Would you have forgiven him?"
+  ]
+ }
+]

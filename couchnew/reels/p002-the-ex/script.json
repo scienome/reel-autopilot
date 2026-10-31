@@ -1,0 +1,86 @@
+[
+ {
+  "id": "r1",
+  "who": "roxy",
+  "phrases": [
+   "You said her name last night."
+  ]
+ },
+ {
+  "id": "m1",
+  "who": "max",
+  "phrases": [
+   "Whose name?"
+  ]
+ },
+ {
+  "id": "r2",
+  "who": "roxy",
+  "phrases": [
+   "Hannah."
+  ]
+ },
+ {
+  "id": "m2",
+  "who": "max",
+  "phrases": [
+   "I said, Hannah, pass the salt. At dinner. To Hannah."
+  ]
+ },
+ {
+  "id": "r3",
+  "who": "roxy",
+  "phrases": [
+   "It was three in the morning, Max. You were smiling."
+  ]
+ },
+ {
+  "id": "m3",
+  "who": "max",
+  "phrases": [
+   "It was very good salt."
+  ]
+ },
+ {
+  "id": "m4",
+  "who": "max",
+  "phrases": [
+   "It's a dream, Rox. It means nothing."
+  ]
+ },
+ {
+  "id": "r4",
+  "who": "roxy",
+  "phrases": [
+   "Good. Then this means nothing either."
+  ]
+ },
+ {
+  "id": "r5",
+  "who": "roxy",
+  "phrases": [
+   "Daniel."
+  ]
+ },
+ {
+  "id": "m5",
+  "who": "max",
+  "phrases": [
+   "Who's Daniel?"
+  ]
+ },
+ {
+  "id": "r6",
+  "who": "roxy",
+  "phrases": [
+   "Exactly. Sleep well."
+  ]
+ },
+ {
+  "id": "end",
+  "who": "narrator",
+  "phrases": [
+   "Who gets the sofa? Him, or her?"
+  ]
+ }
+]

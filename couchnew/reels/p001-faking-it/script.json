@@ -1,0 +1,86 @@
+[
+ {
+  "id": "r1",
+  "who": "roxy",
+  "phrases": [
+   "How many times have you faked it?"
+  ]
+ },
+ {
+  "id": "m1",
+  "who": "max",
+  "phrases": [
+   "With you, or in general?"
+  ]
+ },
+ {
+  "id": "r2",
+  "who": "roxy",
+  "phrases": [
+   "Max."
+  ]
+ },
+ {
+  "id": "m2",
+  "who": "max",
+  "phrases": [
+   "Zero. Never. Not once."
+  ]
+ },
+ {
+  "id": "r3",
+  "who": "roxy",
+  "phrases": [
+   "You're sweating."
+  ]
+ },
+ {
+  "id": "m3",
+  "who": "max",
+  "phrases": [
+   "It's warm in here."
+  ]
+ },
+ {
+  "id": "r4",
+  "who": "roxy",
+  "phrases": [
+   "It's November."
+  ]
+ },
+ {
+  "id": "m4",
+  "who": "max",
+  "phrases": [
+   "Okay. Twice. But I was very convincing."
+  ]
+ },
+ {
+  "id": "r5",
+  "who": "roxy",
+  "phrases": [
+   "I know. I gave you a standing ovation."
+  ]
+ },
+ {
+  "id": "m5",
+  "who": "max",
+  "phrases": [
+   "Wait. How many times have you faked it?"
+  ]
+ },
+ {
+  "id": "r6",
+  "who": "roxy",
+  "phrases": [
+   "Goodnight, Max."
+  ]
+ },
+ {
+  "id": "end",
+  "who": "narrator",
+  "phrases": [
+   "Who was lying? Him, or her?"
+  ]
+ }
+]

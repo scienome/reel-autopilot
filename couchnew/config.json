@@ -11,7 +11,9 @@
     "mum": "Xb7hH8MSUJpSbSDYk0k2",
     "dad": "JBFqnCBsd6RMkjVDRZzb",
     "friend": "iP95p4xoKVk53GoZ742B",
-    "doc": "onwK4e9ZLuTAKqWW03F9"
+    "doc": "onwK4e9ZLuTAKqWW03F9",
+    "roxy": "cgSgspJ2msm6clMCkdW9",
+    "max": "IvUJKFyjVb5hItY9dJAT"
   },
   "_cast_names": {
     "narrator": "Adam (the one voice for every channel)",
@@ -20,7 +22,9 @@
     "mum": "Alice - Clear, Engaging Educator",
     "dad": "George (Maya's dad)",
     "friend": "Chris (Sam's friend)",
-    "doc": "Daniel (the doctor)"
+    "doc": "Daniel (the doctor)",
+    "roxy": "Jessica (Roxy, Pillow Talk pilots)",
+    "max": "Stevie (Max, Pillow Talk pilots)"
   },
   "cast_settings": {
     "narrator": {
@@ -71,6 +75,20 @@
       "style": 0.55,
       "use_speaker_boost": true,
       "speed": 1.0
+    },
+    "roxy": {
+      "stability": 0.3,
+      "similarity_boost": 0.8,
+      "style": 0.6,
+      "use_speaker_boost": true,
+      "speed": 1.08
+    },
+    "max": {
+      "stability": 0.25,
+      "similarity_boost": 0.75,
+      "style": 0.7,
+      "use_speaker_boost": true,
+      "speed": 1.1
     }
   }
 }

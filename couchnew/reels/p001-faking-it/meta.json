@@ -1,0 +1,22 @@
+{
+    "title":  "\"How many times have you faked it?\" 😳",
+    "caption":  "She asked. He panicked. Then she said the worst possible thing. 😳\nWho do you believe, him or her? 👇",
+    "hashtags":  [
+                     "relationships",
+                     "couples",
+                     "adulthumor",
+                     "18plus",
+                     "animation",
+                     "cartoon",
+                     "funny",
+                     "reels"
+                 ],
+    "first_comment":  "Be honest: would you actually want to know? 👀",
+    "cover_t":  1.2,
+    "libs":  [
+                 "toon/adult.js",
+                 "toon/sitcom.js",
+                 "toon/pillow.js"
+             ],
+    "series":  "Pillow Talk"
+}

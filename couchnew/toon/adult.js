@@ -98,12 +98,14 @@
       if (c.outfit === 'suit') { blob(ctx, '#f4f2ee', [[-40, -428], [40, -428], [0, -330]], seed + 12, 4); poly(ctx, c.tie, [[-10, -420], [10, -420], [16, -340], [0, -318], [-16, -340]], seed + 13, 4); line(ctx, [[-40, -428], [-6, -300]], 4, INK, seed + 14); line(ctx, [[40, -428], [6, -300]], 4, INK, seed + 15); }
       if (c.outfit === 'tee') blob(ctx, c.skin, [[-34, -428], [34, -428], [0, -400]], seed + 12, 4);
       if (c.outfit === 'crop') { blob(ctx, c.skin, [[-48, -428], [48, -428], [20, -392], [-20, -392]], seed + 12, 4); line(ctx, [[-60, -300], [60, -300]], 4, c.top2, seed + 13); }
+      if (c.outfit === 'slip') { blob(ctx, c.skin, [[-66, -428], [66, -428], [46, -362], [0, -340], [-46, -362]], seed + 12, 4); curve(ctx, [-2, -376], [0, -360], [0, -346], 4, c.sh, seed + 13); for (const sd of [-1, 1]) line(ctx, [[sd * 56, -372], [sd * 62, -430]], 5, c.top2, seed + 14 + sd); }
+      if (c.outfit === 'bare') { for (const sd of [-1, 1]) curve(ctx, [sd * 8, -352], [sd * 50, -336], [sd * 76, -372], 4, c.sh, seed + 13 + sd); line(ctx, [[0, -345], [0, -250]], 3, c.sh, seed + 16); }
       if (c.outfit === 'cardigan') { line(ctx, [[0, -425], [0, -228]], 4, INK, seed + 12); for (let i = 0; i < 4; i++) oval(ctx, '#f2efe6', -16, -395 + i * 42, 7, 7, seed + 13 + i, 3, 8); }
       if (c.pearls) for (let i = 0; i < 9; i++) oval(ctx, '#f4f0ea', -40 + i * 10, -418 + Math.abs(i - 4) * 4, 6, 6, seed + 20 + i, 2, 8);
       // arms
       const A = Array.isArray(o.arms) ? o.arms : ARMS[o.arms || 'down'];
       A.forEach((a, i) => { const sd = i ? 1 : -1, sh = [sd * 82, -405], el = [sh[0] + a[0], sh[1] + a[1]], hd = [sh[0] + a[2], sh[1] + a[3]];
-        noodle(ctx, sh, el, hd, 34, c.top); hand(ctx, hd[0], hd[1], c.skin, seed + 30 + i); if (i === 1 && o.hold) prop(ctx, o.hold, hd[0] + 6, hd[1] - 30, t); });
+        noodle(ctx, sh, el, hd, 34, c.armCol || c.top); hand(ctx, hd[0], hd[1], c.skin, seed + 30 + i); if (i === 1 && o.hold) prop(ctx, o.hold, hd[0] + 6, hd[1] - 30, t); });
       // neck + head
       blob(ctx, c.skin, [[-24, -440], [24, -440], [28, -470], [-28, -470]], seed + 40);
       ctx.save(); ctx.translate(0, -575 + (f.talk ? -Math.abs(Math.sin(t * 6.5 + seed)) * 6 : 0)); ctx.rotate((o.tilt || 0) + (f.talk ? Math.sin(t * 6.5 + seed) * 0.05 : Math.sin(t * 1.1 + seed) * 0.018));
