@@ -13,7 +13,7 @@
   };
   // origin at the feet, about 280 tall at s=1. o: mood ok|happy|shock|scared|hungry|sly|think, look [x,y], flip, hop, tilt, hold(c)
   function critter(c, kind, x, y, s, t, o = {}) {
-    const K = KIND[kind], br = Math.sin(t * 2 + (o.seed || 0)) * 2.5, m = o.mood || 'ok', hop = o.hop ? Math.abs(Math.sin(t * 6 + (o.seed || 0))) * 34 : 0, shake = m === 'scared' ? Math.sin(t * 40) * 2.5 : 0;
+    const K = o.colors || KIND[kind], br = Math.sin(t * 2 + (o.seed || 0)) * 2.5, m = o.mood || 'ok', hop = o.hop ? Math.abs(Math.sin(t * 6 + (o.seed || 0))) * 34 : 0, shake = m === 'scared' ? Math.sin(t * 40) * 2.5 : 0;
     c.save(); c.translate(x + shake, y); c.scale(s * (o.flip ? -1 : 1), s);
     if (!o.noShadow) oval(c, 0, 3, 74 - hop * 0.5, 11, 'rgba(10,6,40,.2)');
     c.translate(0, -hop);
