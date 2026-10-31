@@ -1,0 +1,28 @@
+{
+ "music-651f18f42b44.mp3": {
+  "prompt": "Groovy 1970s funk with wah guitar and bongos, playful, no vocals",
+  "music_length_ms": 28040,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-c60a40583cd8.mp3": {
+  "text": "stone clunk comedic",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-0dadef8ed954.mp3": {
+  "text": "coin clink",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-f0f00c0f2d27.mp3": {
+  "text": "cash register cha-ching",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-6545734352d0.mp3": {
+  "text": "air leaving a balloon",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
