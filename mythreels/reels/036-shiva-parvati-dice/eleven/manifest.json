@@ -1,0 +1,48 @@
+{
+ "music-aac641c62196.mp3": {
+  "prompt": "Indian festive mythological cinematic underscore for Diwali: tabla, bansuri, shehnai, temple bells, warm strings, playful and light with sitar and tabla, mischievous tension in the game, warm and witty at the end, no vocals",
+  "music_length_ms": 52100,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-3b779291274d.mp3": {
+  "text": "dice rolling on wood and a deep hit",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-dce9276a54b3.mp3": {
+  "text": "wooden pieces clicking on a board",
+  "duration_seconds": 1.4,
+  "prompt_influence": 0.5
+ },
+ "sfx-baba617b06f5.mp3": {
+  "text": "deep stone echo in a cave temple",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-aeebfca2bebb.mp3": {
+  "text": "rapid dice rolling and rising tension",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-784f6a29492c.mp3": {
+  "text": "bright divine chime and soft laughter of joy",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-1a6843b57b84.mp3": {
+  "text": "playing cards shuffling",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-08938ee677c6.mp3": {
+  "text": "sudden record stop and a tense sting",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
