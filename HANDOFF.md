@@ -398,6 +398,7 @@ Fix these docs when you're next in those folders.
 
 - **Toy:** live, switched 31 Oct to True Stories in Bricks with voice `c6SfcYrb2t09NHXiT80T`; first reel `56-eiffel-tower-con`. New-format reels post first, and about 30 older reels stay behind them, so with 21 made per batch and 9 posted they may never post. Next auto-batch 3 Nov.
 - **Thought Bubble POV:** live, queue reordered strongest first, covers about to 5–6 Nov. Next auto-batch 2 Nov, 02:47.
+- **Lokvara early result (owner):** `002-ravan-shani` got about 20,000 views and 800 likes on Instagram in 15 hours on 31 Oct. See `mythreels/PLAYBOOK.md` §1b.
 - **Lokvara (Hindi mythology):** live since 31 Oct. 002 skipped; 003 and 004 in the log. Mahabharat and Ravan alternate.
   **Diwali series** (दिवाली के रहस्य, 030–039, rendered) takes the 18:00 and 21:00 slots 4–8 Nov. Queue runs out about
   9 Nov. **Owner must pick the next two series**, then add a `myth-batch` routine.

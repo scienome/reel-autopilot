@@ -24,6 +24,16 @@ is creating the Instagram + YouTube accounts); when it is, 3 reels a day.
 - **Posting (31 Oct 2026):** `post-mythreels.yml` → `tools/myth_post.py`, 4 a day, one reel of each series in turn, strictly
   in `schedule.json` order. Log: `mythreels/posted.json`.
 
+## 1b. What has worked so far
+
+`002-ravan-shani`, posted by hand on Instagram on Saturday 31 Oct 2026: about 20,000 views and 800 likes in 15 hours, still growing (owner's
+numbers; one reel, so a clue, not proof). Likely reasons, to test in new reels:
+- A shocking image in the first line: a god used as a step on a throne.
+- A power clash with a clear villain and a rescue (Ravan, Shani, Hanuman).
+- It explains something people do today: why Hanuman is worshipped on Saturdays. That gives viewers a reason to share it.
+- It ran on the same day of the week the story is about. Try matching stories to their day where it fits.
+- The first comment asks devotees to take part ("'जय श्री राम' लिखें").
+
 ## 2. The series (owner, 30 Oct 2026: "1 week, 4 reels a day, 2 series in total")
 Both 14-part series are written (`schedule.json` "queue" alternates them: R, Y, R, Y each day). Never repeat a story:
 read every `reels/*/script.json` first.
