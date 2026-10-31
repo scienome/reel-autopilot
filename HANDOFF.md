@@ -403,8 +403,8 @@ Fix these docs when you're next in those folders.
 - **CouchSarcasm:** stopped (root `config.json` `paused`), batch routines off. The owner cancelled the waiting 21:30 run on
   31 Oct. Remaining episodes are kept, not deleted. **Check:** that run may have left a scheduled Short in YouTube Studio (§5).
 - **Mechanic:** stopped, no new videos, keep stopped.
-- **Riddle batches (owner, 31 Oct): 21 reels every third day**, first run 1 Nov 03:07 IST, needs `make-riddles.yml` (§8), not
-  yet added or tested on GitHub at this writing. It makes 21 per 3 days and posts 9, so the queue grows by 12 each batch; owner
+- **Riddle batches (owner, 31 Oct): 21 reels every third day**, first run 1 Nov 03:07 IST. `make-riddles.yml` was added by the
+  owner on 31 Oct (§8); it had not run on GitHub yet at this writing. It makes 21 per 3 days and posts 9, so the queue grows by 12 each batch; owner
   chose this. If quality or credits become a problem, tell the owner and suggest 9.
 - **Socho Zara (riddles), reuses the Couch accounts (owner, 31 Oct):** **LIVE from 31 Oct, 20:30 IST (owner said make it go live today).** First reel `riddle-monkeys`. Owner still to confirm old Couch reels are hidden (YT Private, IG archive) and both accounts renamed with `riddles/brand/` art. YouTube uploads are marked not made for kids. Couch stays stopped; old Couch reels are never uploaded in riddle mode. Skill `skills/whatifstyle` made from the owner's reference video (flat science explainer style).
   21 Hinglish reels rendered with voice, music and effects; MP4s in Release `riddle-week1`; plan, titles and captions in
