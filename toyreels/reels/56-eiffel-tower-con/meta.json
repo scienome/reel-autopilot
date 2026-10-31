@@ -1,9 +1,22 @@
 {
  "title": "The Man Who Sold The Eiffel Tower 🗼",
  "caption": "True story. In 1925 a con man sold the Eiffel Tower as scrap metal, and the buyer was too embarrassed to tell anyone. 🗼\nWould you have fallen for it? 👇",
- "hashtags": ["truestory", "history", "conman", "eiffeltower", "toybricks", "animation", "crime", "shorts"],
+ "hashtags": [
+  "truestory",
+  "history",
+  "conman",
+  "eiffeltower",
+  "toybricks",
+  "animation",
+  "crime",
+  "shorts"
+ ],
  "first_comment": "Then he came back and tried it AGAIN. Would you have bought it? 👇",
  "cover_t": 3.2,
  "potential": 8,
- "sources": ["https://en.wikipedia.org/wiki/Victor_Lustig", "https://www.mentalfloss.com/crime/smooth-operator-how-victor-lustig-sold-eiffel-tower"]
+ "sources": [
+  "https://en.wikipedia.org/wiki/Victor_Lustig",
+  "https://www.mentalfloss.com/crime/smooth-operator-how-victor-lustig-sold-eiffel-tower"
+ ],
+ "format": "true-story"
 }

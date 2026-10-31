@@ -70,7 +70,7 @@ sync-videos.yml                   ->  copies every finished MP4 to the `videos` 
 
 | Series | Folder | Style / engine | Platforms | Post times (IST) | Status |
 |---|---|---|---|---|---|
-| **Toy reels** (Brick Toy dark comedy) | `toyreels/` | LEGO-like 3D bricks, `style/scenes.js` `makeComedy` | IG (toy account) + YT Shorts (toy channel) | 06:00, 12:30, 20:30 | LIVE, auto-batches every 3 days |
+| **Toy reels** (True Stories in Bricks from reel 56; earlier: dark comedy) | `toyreels/` | LEGO-like 3D bricks, `style/scenes.js` `makeComedy` | IG (toy account) + YT Shorts (toy channel) | 06:00, 12:30, 20:30 | LIVE, auto-batches every 3 days |
 | **CouchSarcasm** (new) | `couchnew/` | 2D adult cartoon sitcom (Sam, Maya, Mum), `toon/adult.js` + `toon/sitcom.js`, laugh track, one voice per character | IG (couch) + YT (couch channel) | 07:30, 13:30, 21:30 | **STOPPED 31 Oct: owner called it a waste.** No posting, no new episodes |
 | **Thought Bubble (POV)** | `povreels/` | soft-3D Violet kit (`style/` + makeCouch with couple hidden) + `povreels/lib/pov.js`; "YOU are the only one who…" | IG @gearsandglitches + YT | 07:30, 12:30, 20:30 | Resumed 30 Oct with 001 |
 | **Hindi mythology** (working name; owner picks the final name) | `mythreels/` | 2D **folk-art** storybook (Pattachitra border, paper texture, kajal fish-eyes, Madhubani trees), `kit/myth.js` + `kit/katha.js`, Hindi subtitles, big hook card + "अगले भाग में" teaser | IG + YT, secrets `IG_MYTH_*`, `YT_MYTH_*` | 4 a day: 08:00, 13:00, 18:00, 21:00 | **LIVE since 31 Oct** (brand name Lokvara). 38 queued with Diwali |
@@ -116,7 +116,8 @@ videos `NNN-slug`.
 ## 4. VOICES (ElevenLabs, model `eleven_v4`)
 
 Source of truth = each folder's `config.json`. As of 30 Oct 2026:
-- **Narrator for every channel: Adam `s3TPKV1kjDlVtZbl4Ksh`** (toy from reel 34, dave from 44, pov, couchnew).
+- **Toy from reel 56: `c6SfcYrb2t09NHXiT80T`** (owner, 31 Oct).
+- **Narrator: Adam `s3TPKV1kjDlVtZbl4Ksh`** (toy reels 34-55, dave from 44, pov, couchnew).
   Older reels keep their saved takes; set `REVOICE=1` only to re-voice old reels on purpose.
 - Mechanic reels + videos: **Brian `nPczCjzI2devNBz1zQrb`**.
 - ToyBox long videos (`youtube/`): `IvUJKFyjVb5hItY9dJAT`.
@@ -137,7 +138,7 @@ Source of truth = each folder's `config.json`. As of 30 Oct 2026:
 
 | Series | Queue file | Poster | Posted log |
 |---|---|---|---|
-| Toy | folder order + `toyreels/posting.json` times | `post-toyreels.yml` → `tools/toy_post.py` | `toyreels/posted.json` |
+| Toy | `format: true-story` first, then `potential` (folder scan) + `toyreels/posting.json` times | `post-toyreels.yml` → `tools/toy_post.py` | `toyreels/posted.json` |
 | Socho Zara riddles (old CouchSarcasm accounts) | `riddles/schedule.json` (root `config.json` has `"queue": "riddles"`; post.py takes slots from `post_times_ist`, not the workflow's `--at`) | `post.yml` → `tools/post.py` + `tools/couch_youtube.py` | `posted.json`, `couch_youtube_posted.json` |
 | Hindi mythology (Lokvara) | `mythreels/schedule.json` (strict queue order) | `post-mythreels.yml` → `tools/myth_post.py` | `mythreels/posted.json` |
 | Thought Bubble POV (mech Shorts paused) | `povreels/schedule.json` | `post-instagram-mech.yml` → `tools/ig_mech_post.py` (kind "pov") | `ig_posted.json` |
@@ -246,13 +247,14 @@ a usage limit gets finished by the backup or by another account — never duplic
 `CRON_TZ=Asia/Kolkata 33 7 3-31/3 * *` backup). Both use the same prompt:
 > TOY REELS BATCH. In a checkout of scienome/reel-autopilot (clone it if missing; push access needed) run
 > `git checkout main && git pull origin main`. FIRST run `python3 tools/claim.py start toy-batch`. If it exits 3 / prints
-> STOP, reply with that one line and stop — do nothing else. Otherwise follow toyreels/PLAYBOOK.md exactly (sections 0a,
-> 0b, then 1-5) and engagement/RULES.md: finish an unfinished batch or make 21 new toy reels, check each with
-> toyreels/tools/check.py, push a few at a time, run `python3 tools/claim.py beat toy-batch --note "..."` after every push
+> STOP, reply with that one line and stop — do nothing else. Otherwise read HANDOFF.md section 7 for local checking, then follow
+> toyreels/PLAYBOOK.md exactly (its CURRENT FORMAT section first, then 0a, 0b, 1-5) and engagement/RULES.md: finish an unfinished batch
+> or make 21 new True Stories in Bricks reels, verify every fact from at least 2 sources, better fewer than weak, check each with
+> toyreels/tools/check.py, push a few at a time straight to main, run `python3 tools/claim.py beat toy-batch --note "..."` after every push
 > (stop at once if it prints STOP), wait for every toyreel-<id> Release, fix failed renders, then run
 > `python3 tools/claim.py done toy-batch`. Read skills/toystyle/SKILL.md for the visual style only. Never change
-> toyreels/config.json, style/, tools/, posted.json, posting.json or workflows. Never run posting workflows by hand.
-> Finish with a short plain-language report.
+> toyreels/config.json, style/, tools/, posted.json, posting.json or workflows. Never run posting workflows by hand. Commit messages
+> end with a Co-Authored-By line and contain no model names. Finish with a short plain-language report.
 
 **POV task template** (main + backup, same prompt): cron `CRON_TZ=Asia/Kolkata 47 2 2-31/3 * *` (main),
 `CRON_TZ=Asia/Kolkata 47 8 2-31/3 * *` (backup). Prompt:
@@ -280,8 +282,7 @@ a usage limit gets finished by the backup or by another account — never duplic
 > config.json, posting files or workflows. Never run posting workflows by hand. Commit messages end with a Co-Authored-By line
 > and contain no model names. Finish with a short plain-language report.
 
-The toy template above should also say "read HANDOFF.md section 7 for local checking", "push a few at a time straight to main",
-and end with the same Co-Authored-By sentence, as the live routine does. Couch templates are gone on purpose. To restart Couch
+Couch templates are gone on purpose. To restart Couch
 one day, read `couchnew/PLAYBOOK.md` and ask me first.
 
 **A new account: set all of this up from this file alone**
@@ -326,7 +327,7 @@ playful vote; sometimes "Part 1/3" cliffhangers; `cover_t` on the most surprisin
 - Fact-based content (mech, any "true story"): verify every fact and number with web search; list `sources`.
 
 **Series voice:**
-- **Toy:** FUNNY, dark, shocking brick stories. Formats to rotate: World Leaders in Bricks, Superhero Problems, History's
+- **Toy (from reel 56, owner 31 Oct):** True Stories in Bricks only, see the top of `toyreels/PLAYBOOK.md`. Old formats below are retired: World Leaders in Bricks, Superhero Problems, History's
   Dumbest Villains, The Illuminati Files, Heaven & Hell, Heists Gone Wrong, What If…?, plus new ones. Deadpan narration,
   3–6 famous characters dressed for the moment, ≥3 real scenes per reel (never the plain blue studio), explosion/sound
   hit on the punchline. Reels 01–10 (educational) stay untouched. Full kit list: `toyreels/PLAYBOOK.md` §3.
@@ -395,7 +396,7 @@ Fix these docs when you're next in those folders.
 
 ## 13. STATUS SNAPSHOT (31 Oct 2026, 19:00 IST — re-check live, this goes stale)
 
-- **Toy:** live. Next auto-batch 3 Nov. Poster picks by `potential`.
+- **Toy:** live, switched 31 Oct to True Stories in Bricks with voice `c6SfcYrb2t09NHXiT80T`; first reel `56-eiffel-tower-con`. New-format reels post first, and about 30 older reels stay behind them, so with 21 made per batch and 9 posted they may never post. Next auto-batch 3 Nov.
 - **Thought Bubble POV:** live, queue reordered strongest first, covers about to 5–6 Nov. Next auto-batch 2 Nov, 02:47.
 - **Lokvara (Hindi mythology):** live since 31 Oct. 002 skipped; 003 and 004 in the log. Mahabharat and Ravan alternate.
   **Diwali series** (दिवाली के रहस्य, 030–039, rendered) takes the 18:00 and 21:00 slots 4–8 Nov. Queue runs out about

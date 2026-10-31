@@ -1,5 +1,22 @@
 # Toy reels: the scheduled-run playbook
 
+## CURRENT FORMAT: TRUE STORIES IN BRICKS (owner, 31 Oct 2026). This overrides any older format below.
+
+The old formats (world leaders, superheroes, villains, Heaven & Hell) weren't working. Every new reel is now a **true, surprising
+story told in bricks**, in English, with the voice in `config.json`. Copy `reels/56-eiffel-tower-con`. Keep using this playbook for
+the batch steps, engine, checks and pushing.
+- **Stories:** cons, heists, absurd accidents, odd inventions, strange laws, survival stories, history's weirdest mistakes. People should
+  say "wait, that really happened?". No repeats: read every existing `meta.json` title first.
+- **Truth:** verify every fact with web search, from at least 2 sources, and list them in `sources`. If sources disagree, leave the detail
+  out or say so. Say nothing a source doesn't support. A wrong "true story" is worse than a missing reel: better fewer than weak.
+- **People:** real people from history only. No living people as targets. No jokes about real victims, recent tragedies, terror, abuse or
+  suicide. No gore. Never explain how to copy a crime.
+- **Shape:** 25-35 s. Most shocking fact in the first 2 s. Something new every 2-3 s. One short twist line at the end, then a two-sided question.
+- **Badge:** `TRUE STORY`. **`meta.json`:** add `"format": "true-story"`, so the poster sends it ahead of old reels. Score `potential` honestly.
+- **Sound:** every reel has `audio.json`: a music prompt matched to the story's era and mood, plus 4-6 sound effects on key words.
+- **Look:** at least 3 real scenes, with big props that show the story. Avoid plain one-figure shots and sets that contradict the story.
+  Numbers spoken as words go through captions `say`, including multi-word runs such as `'nineteen twenty five': '1925'`.
+
 A scheduled Claude session runs this **every 3 days** (the 3rd, 6th, 9th... of each month; the other days belong to
 the Dave and CouchSarcasm batches). Each run writes **21 new toy reels** (a week at 3 a day; posting uses 9 every 3 days, so the queue grows, as intended), pushes
 them to `main`, and GitHub voices them with the ElevenLabs voice set in `toyreels/config.json`
