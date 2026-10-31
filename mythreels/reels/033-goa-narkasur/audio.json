@@ -1,0 +1,58 @@
+{
+ "music": {
+  "prompt": "Indian festive mythological cinematic underscore for Diwali: tabla, bansuri, shehnai, temple bells, warm strings, energetic dhol and festival drums building through the night into a blazing climax, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "h1",
+   "word": "राक्षस",
+   "prompt": "huge bonfire whoosh and a deep drum hit",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "b3",
+   "word": "ढोल",
+   "prompt": "energetic festival dhol drums",
+   "dur": 2.4,
+   "gain": -5
+  },
+  {
+   "beat": "b4",
+   "word": "इनाम",
+   "prompt": "crowd cheering and a bright chime",
+   "dur": 1.8,
+   "gain": -5
+  },
+  {
+   "beat": "b6",
+   "word": "भोर",
+   "prompt": "early morning quiet with distant crowd murmur",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "b7",
+   "word": "चिंगारी",
+   "prompt": "a single match strike then a giant fire roar",
+   "dur": 2.5,
+   "gain": -5
+  },
+  {
+   "beat": "end",
+   "word": "दिवाली",
+   "prompt": "crackling fire and distant crowd cheering",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "nx",
+   "word": "अगले",
+   "prompt": "deep suspense drum hit and rising whoosh",
+   "dur": 1.8,
+   "gain": -5
+  }
+ ]
+}

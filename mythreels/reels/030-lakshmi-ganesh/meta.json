@@ -1,0 +1,31 @@
+{
+ "title": "राम लौटे... तो दिवाली पर पूजा लक्ष्मी जी की क्यों? 🪔 | दिवाली के रहस्य भाग 1",
+ "caption": "दिवाली पर दीये राम जी के लिए जले... फिर पूजा लक्ष्मी-गणेश की क्यों होती है? 🪔\nऔर लक्ष्मी जी के साथ विष्णु जी क्यों नहीं? मान्यताएँ चौंका देंगी 🙏\nआपके घर में क्या बताया जाता है? 👇",
+ "hashtags": [
+  "lakshmi",
+  "ganesh",
+  "ayodhya",
+  "diwali",
+  "deepavali",
+  "hindumythology",
+  "sanatandharma",
+  "animation",
+  "hindi",
+  "reels"
+ ],
+ "first_comment": "सच बताइए... आपको ये जवाब पहले से पता था? 🪔 हाँ या नहीं लिखिए 👇",
+ "cover_t": 1.5,
+ "libs": [
+  "kit/myth.js",
+  "kit/katha.js",
+  "kit/diwali.js"
+ ],
+ "potential": 10,
+ "sources": [
+  "Popular devotional tradition of Lakshmi adopting Ganesha (folk version; no single scriptural source)",
+  "The Statesman, why Lakshmi and Ganesha are revered on Diwali",
+  "Vishnu in yoga-nidra during Chaturmas (traditional explanation)"
+ ],
+ "series": "दिवाली के रहस्य",
+ "part": 1
+}

@@ -1,0 +1,65 @@
+{
+ "music": {
+  "prompt": "Indian festive mythological cinematic underscore for Diwali: tabla, bansuri, shehnai, temple bells, warm strings, dark suspense in the night that turns tender and then triumphant at dawn, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "h1",
+   "word": "यमराज",
+   "prompt": "deep ominous gong with a cold wind",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "b2",
+   "word": "मौत।",
+   "prompt": "dark dramatic hit and silence",
+   "dur": 1.8,
+   "gain": -5
+  },
+  {
+   "beat": "b4",
+   "word": "गहनों",
+   "prompt": "gold coins and jewellery pouring in a pile",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "b5",
+   "word": "गीत",
+   "prompt": "a soft female humming feel, gentle veena notes",
+   "dur": 2.4,
+   "gain": -5
+  },
+  {
+   "beat": "b6",
+   "word": "साँप",
+   "prompt": "snake hissing slowly and menacingly",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "b7",
+   "word": "सुबह",
+   "prompt": "morning birds and a warm rising swell",
+   "dur": 2.2,
+   "gain": -5
+  },
+  {
+   "beat": "end",
+   "word": "दीया",
+   "prompt": "small flame igniting and temple bell",
+   "dur": 1.8,
+   "gain": -5
+  },
+  {
+   "beat": "nx",
+   "word": "अगले",
+   "prompt": "deep suspense drum hit and rising whoosh",
+   "dur": 1.8,
+   "gain": -5
+  }
+ ]
+}

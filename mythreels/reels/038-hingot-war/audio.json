@@ -1,0 +1,65 @@
+{
+ "music": {
+  "prompt": "Indian festive mythological cinematic underscore for Diwali: tabla, bansuri, shehnai, temple bells, warm strings, intense war drums and fast tabla, rising danger, a sober ending, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "h1",
+   "word": "गोलों",
+   "prompt": "burning projectiles whooshing and a big explosion",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "b2",
+   "word": "आमने-सामने।",
+   "prompt": "two war cries from crowds and a drum hit",
+   "dur": 1.8,
+   "gain": -5
+  },
+  {
+   "beat": "b4",
+   "word": "हिंगोट।",
+   "prompt": "a dry fruit crack and a low sting",
+   "dur": 1.4,
+   "gain": -5
+  },
+  {
+   "beat": "b5",
+   "word": "उड़ने",
+   "prompt": "many fiery rockets whistling overhead",
+   "dur": 2.5,
+   "gain": -5
+  },
+  {
+   "beat": "b6",
+   "word": "घायल",
+   "prompt": "distant siren and a sudden hush",
+   "dur": 1.8,
+   "gain": -5
+  },
+  {
+   "beat": "b7",
+   "word": "मुग़ल-मराठा",
+   "prompt": "old war horn and hoofbeats",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "end",
+   "word": "ख़तरा",
+   "prompt": "dark warning sting",
+   "dur": 1.5,
+   "gain": -5
+  },
+  {
+   "beat": "nx",
+   "word": "आखिरी",
+   "prompt": "deep suspense drum hit and rising whoosh",
+   "dur": 1.8,
+   "gain": -5
+  }
+ ]
+}

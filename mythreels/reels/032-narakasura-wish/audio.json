@@ -1,0 +1,65 @@
+{
+ "music": {
+  "prompt": "Indian festive mythological cinematic underscore for Diwali: tabla, bansuri, shehnai, temple bells, warm strings, war drums and conch shells, heroic and tense, resolving into a tender devotional glow, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "h1",
+   "word": "असुर",
+   "prompt": "deep demonic roar and a low war drum",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "b1",
+   "word": "कैद",
+   "prompt": "iron chains rattling",
+   "dur": 1.8,
+   "gain": -5
+  },
+  {
+   "beat": "b2",
+   "word": "माँ",
+   "prompt": "mystic chime and a low gong",
+   "dur": 1.6,
+   "gain": -5
+  },
+  {
+   "beat": "b4",
+   "word": "मूर्च्छित",
+   "prompt": "heavy body fall with a sharp silence",
+   "dur": 1.6,
+   "gain": -5
+  },
+  {
+   "beat": "b5",
+   "word": "बाण",
+   "prompt": "arrow whooshing and a huge impact",
+   "dur": 1.8,
+   "gain": -5
+  },
+  {
+   "beat": "b7",
+   "word": "रोशनी",
+   "prompt": "warm choir swell with flames lighting",
+   "dur": 2.2,
+   "gain": -5
+  },
+  {
+   "beat": "end",
+   "word": "दीये",
+   "prompt": "many small flames lighting and temple bells",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "nx",
+   "word": "अगले",
+   "prompt": "deep suspense drum hit and rising whoosh",
+   "dur": 1.8,
+   "gain": -5
+  }
+ ]
+}

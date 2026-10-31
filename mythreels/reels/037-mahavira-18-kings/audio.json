@@ -1,0 +1,58 @@
+{
+ "music": {
+  "prompt": "Indian festive mythological cinematic underscore for Diwali: tabla, bansuri, shehnai, temple bells, warm strings, serene and reverent with soft flute and bells, deep silence in the middle, slowly glowing into peace, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "h1",
+   "word": "दीये",
+   "prompt": "many flames lighting with a deep temple bell",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "b2",
+   "word": "उपदेश",
+   "prompt": "calm low om drone",
+   "dur": 2.2,
+   "gain": -5
+  },
+  {
+   "beat": "b3",
+   "word": "निर्वाण",
+   "prompt": "single deep bell fading into silence",
+   "dur": 2.5,
+   "gain": -5
+  },
+  {
+   "beat": "b4",
+   "word": "सन्नाटा।",
+   "prompt": "quiet night wind and silence",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "b7",
+   "word": "जल",
+   "prompt": "a wave of small flames igniting one after another",
+   "dur": 2.4,
+   "gain": -5
+  },
+  {
+   "beat": "end",
+   "word": "दीपावली...",
+   "prompt": "soft choir swell and bells",
+   "dur": 2.2,
+   "gain": -5
+  },
+  {
+   "beat": "nx",
+   "word": "अगले",
+   "prompt": "deep suspense drum hit and rising whoosh",
+   "dur": 1.8,
+   "gain": -5
+  }
+ ]
+}

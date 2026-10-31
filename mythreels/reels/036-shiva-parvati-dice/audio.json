@@ -1,0 +1,65 @@
+{
+ "music": {
+  "prompt": "Indian festive mythological cinematic underscore for Diwali: tabla, bansuri, shehnai, temple bells, warm strings, playful and light with sitar and tabla, mischievous tension in the game, warm and witty at the end, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "h1",
+   "word": "पासे",
+   "prompt": "dice rolling on wood and a deep hit",
+   "dur": 1.6,
+   "gain": -5
+  },
+  {
+   "beat": "b1",
+   "word": "चौपड़",
+   "prompt": "wooden pieces clicking on a board",
+   "dur": 1.4,
+   "gain": -5
+  },
+  {
+   "beat": "b2",
+   "word": "पत्थर",
+   "prompt": "deep stone echo in a cave temple",
+   "dur": 1.8,
+   "gain": -5
+  },
+  {
+   "beat": "b3",
+   "word": "पलटते",
+   "prompt": "rapid dice rolling and rising tension",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "b4",
+   "word": "जीत",
+   "prompt": "bright divine chime and soft laughter of joy",
+   "dur": 1.8,
+   "gain": -5
+  },
+  {
+   "beat": "b6",
+   "word": "ताश",
+   "prompt": "playing cards shuffling",
+   "dur": 1.6,
+   "gain": -5
+  },
+  {
+   "beat": "b7",
+   "word": "रुकिए!",
+   "prompt": "sudden record stop and a tense sting",
+   "dur": 1.2,
+   "gain": -5
+  },
+  {
+   "beat": "nx",
+   "word": "अगले",
+   "prompt": "deep suspense drum hit and rising whoosh",
+   "dur": 1.8,
+   "gain": -5
+  }
+ ]
+}

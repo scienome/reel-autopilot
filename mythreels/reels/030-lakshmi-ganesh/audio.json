@@ -1,0 +1,58 @@
+{
+ "music": {
+  "prompt": "Indian festive mythological cinematic underscore for Diwali: tabla, bansuri, shehnai, temple bells, warm strings, a curious mysterious opening that turns warm and devotional, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "h1",
+   "word": "राम",
+   "prompt": "temple bells and a deep cinematic hit",
+   "dur": 1.8,
+   "gain": -5
+  },
+  {
+   "beat": "b2",
+   "word": "मूर्तियाँ।",
+   "prompt": "soft magical shimmer and bells",
+   "dur": 1.6,
+   "gain": -5
+  },
+  {
+   "beat": "b3",
+   "word": "सवाल",
+   "prompt": "tense suspense sting",
+   "dur": 1.4,
+   "gain": -5
+  },
+  {
+   "beat": "b4",
+   "word": "योगनिद्रा",
+   "prompt": "gentle ocean waves and a deep calm drone",
+   "dur": 2.2,
+   "gain": -5
+  },
+  {
+   "beat": "b6",
+   "word": "वचन",
+   "prompt": "deep temple gong",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "end",
+   "word": "दोनों",
+   "prompt": "warm divine choir swell and bells",
+   "dur": 2.2,
+   "gain": -5
+  },
+  {
+   "beat": "nx",
+   "word": "अगले",
+   "prompt": "deep suspense drum hit and rising whoosh",
+   "dur": 1.8,
+   "gain": -5
+  }
+ ]
+}

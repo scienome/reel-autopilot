@@ -1,0 +1,65 @@
+{
+ "music": {
+  "prompt": "Indian festive mythological cinematic underscore for Diwali: tabla, bansuri, shehnai, temple bells, warm strings, joyful Himalayan festive feel with madal drums and flutes, playful and warm, a brief mysterious turn, then heartfelt, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "h1",
+   "word": "कुत्तों",
+   "prompt": "a happy dog bark and temple bell",
+   "dur": 1.6,
+   "gain": -5
+  },
+  {
+   "beat": "b3",
+   "word": "कौओं",
+   "prompt": "crow cawing twice",
+   "dur": 1.6,
+   "gain": -5
+  },
+  {
+   "beat": "b4",
+   "word": "कुकुर",
+   "prompt": "cheerful dog barks and a bright festive chime",
+   "dur": 1.8,
+   "gain": -5
+  },
+  {
+   "beat": "b5",
+   "word": "माला",
+   "prompt": "soft flowers rustle and sparkly chime",
+   "dur": 1.6,
+   "gain": -5
+  },
+  {
+   "beat": "b6",
+   "word": "पदक",
+   "prompt": "a metal medal clink and short brass fanfare",
+   "dur": 1.6,
+   "gain": -5
+  },
+  {
+   "beat": "b7",
+   "word": "यमराज",
+   "prompt": "deep ominous gong",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "end",
+   "word": "वफ़ादारी",
+   "prompt": "a gentle dog whimper of love and warm strings",
+   "dur": 2.2,
+   "gain": -5
+  },
+  {
+   "beat": "nx",
+   "word": "अगले",
+   "prompt": "deep suspense drum hit and rising whoosh",
+   "dur": 1.8,
+   "gain": -5
+  }
+ ]
+}

@@ -1,0 +1,65 @@
+{
+ "music": {
+  "prompt": "Indian festive mythological cinematic underscore for Diwali: tabla, bansuri, shehnai, temple bells, warm strings, royal and majestic, growing into a vast cosmic awe, resolving into warm devotion, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "h1",
+   "word": "पाताल",
+   "prompt": "deep rumbling descent and a gong",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "b3",
+   "word": "तीन",
+   "prompt": "three soft footsteps with a mystic chime",
+   "dur": 1.8,
+   "gain": -5
+  },
+  {
+   "beat": "b5",
+   "word": "बढ़ने",
+   "prompt": "huge rising cosmic swell",
+   "dur": 2.5,
+   "gain": -5
+  },
+  {
+   "beat": "b5",
+   "word": "आकाश।",
+   "prompt": "massive thunder boom",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "b6",
+   "word": "सिर",
+   "prompt": "hushed silence and a single deep bell",
+   "dur": 1.8,
+   "gain": -5
+  },
+  {
+   "beat": "b7",
+   "word": "वर",
+   "prompt": "warm divine choir swell",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "end",
+   "word": "प्रजा",
+   "prompt": "joyful crowd and festive bells",
+   "dur": 2.2,
+   "gain": -5
+  },
+  {
+   "beat": "nx",
+   "word": "अगले",
+   "prompt": "deep suspense drum hit and rising whoosh",
+   "dur": 1.8,
+   "gain": -5
+  }
+ ]
+}

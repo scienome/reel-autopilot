@@ -1,0 +1,16 @@
+KATHA((h) => {
+  const { at, char, CAM, cardOn } = h;
+  const game = (ctx, t, spin = 0, n = 6) => { char(ctx, 'shiva', 170, 1130, 0.58, t, { pose: 'sit', arms: { r: 'open', l: 'rest' }, face: { eyes: 'open', mouth: 'smile' } }); char(ctx, 'parvati', 550, 1130, 0.58, t, { flip: true, pose: 'sit', arms: { r: 'open', l: 'rest' }, face: { eyes: 'happy', mouth: 'smile' } }); DIWA.board(ctx, 360, 1140, 0.48, t); DIWA.die(ctx, 330, 1100, 0.8, n, spin); DIWA.die(ctx, 400, 1120, 0.8, n === 6 ? 5 : 3, -spin); };
+  return {
+    h1: { set: 'kailash', cam: CAM.push, draw: (ctx, t) => game(ctx, t, t * 6) },
+    b1: { set: 'kailash', cam: [[360, 960, 1.0], [360, 960, 1.08]], draw: (ctx, t) => game(ctx, t, 0.3) },
+    b2: { set: 'kailash', cam: [[360, 900, 1.0], [360, 900, 1.05]], draw: (ctx, t) => { MYTH.poly(ctx, '#9a8468', [[60, 400], [660, 400], [660, 1120], [60, 1120]], 8); ctx.save(); ctx.globalAlpha = 0.9; game(ctx, 0, 0.3); ctx.restore(); ctx.fillStyle = 'rgba(120,100,76,0.42)'; ctx.fillRect(60, 400, 600, 720); }, over: cardOn('b2', 1, 'एलोरा', { y: 300, size: 92 }) },
+    b3: { set: 'kailash', cam: CAM.mid, draw: (ctx, t) => { DIWA.board(ctx, 360, 1040, 1.2, t); DIWA.die(ctx, 290, 1000, 2, 1 + (Math.floor(t * 6) % 6), t * 7); DIWA.die(ctx, 440, 1020, 2, 1 + (Math.floor(t * 5 + 2) % 6), -t * 6); } },
+    b4: { set: 'kailash', cam: CAM.mid, draw: (ctx, t) => char(ctx, 'parvati', 360, 1170, 0.82, t, { halo: true, arms: { r: 'up', l: 'hips' }, face: { eyes: 'happy', mouth: 'grin' } }), over: (ctx, W, H_, t) => MYTH.petals(ctx, W, t, at('b4', 1), 26) },
+    b5: { set: 'kailash', cam: CAM.close(), draw: (ctx, t) => char(ctx, 'parvati', 360, 1170, 0.84, t, { halo: true, arms: { r: 'bless', l: 'down' }, face: { eyes: 'calm', mouth: 'smile' } }), over: cardOn('b5', -3, 'साल शुभ!', { y: 300, size: 82 }) },
+    b6: { set: 'diwali', cam: CAM.wide, draw: (ctx, t) => { for (let i = 0; i < 3; i++) char(ctx, i % 2 ? 'bride' : 'gramin', 150 + i * 210, 1090, 0.52, t, { pose: 'sit', flip: i === 2, arms: { r: 'open', l: 'rest' }, face: { eyes: 'happy', mouth: 'grin' } }); for (let i = 0; i < 4; i++) { ctx.save(); ctx.translate(300 + i * 34, 1050); ctx.rotate(-0.3 + i * 0.2); MYTH.poly(ctx, '#fbf6e6', [[-22, -32], [22, -32], [22, 32], [-22, 32]], 3); MYTH.ell(ctx, '#c8283c', 0, 0, 8, 8, 0, 0); ctx.restore(); } } },
+    b7: { set: 'court', cam: CAM.mid, shake: at('b7', 0), draw: (ctx, t) => char(ctx, 'pandit', 360, 1120, 0.84, t, { arms: { r: 'up', l: 'down' }, face: { eyes: 'wide', mouth: 'open' } }), over: cardOn('b7', -3, 'अगले दिन!', { y: 300, size: 78 }) },
+    end: { set: 'diwali', cam: CAM.wide, draw: (ctx, t) => char(ctx, 'gramin', 360, 1100, 0.72, t, { arms: { r: 'wave', l: 'hips' }, face: { eyes: 'happy', mouth: 'grin' } }), over: cardOn('end', -3, 'बिना पैसे के!', { y: 300, size: 70 }) },
+    nx: { set: 'ayodhya', cam: CAM.wide, draw: (ctx, t) => { for (let i = 0; i < 4; i++) char(ctx, 'king', 90 + i * 180, 1080, 0.48, t, { flip: i > 1, arms: 'namaste', face: { eyes: 'closed', mouth: 'calm' } }); } },
+  };
+}, {"series": "दिवाली के रहस्य", "part": 7, "hook": "दिवाली की रात...\nमहादेव पासे में हार गए!", "gold": ["महादेव", "पार्वती", "पासे", "जीत", "एलोरा", "ताश", "रुकिए!", "जुआ"], "next": "18 राजाओं ने एक\nरात दीये क्यों जलाए?", "nextAt": "nx"});

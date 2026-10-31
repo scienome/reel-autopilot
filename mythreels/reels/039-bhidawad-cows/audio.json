@@ -1,0 +1,58 @@
+{
+ "music": {
+  "prompt": "Indian festive mythological cinematic underscore for Diwali: tabla, bansuri, shehnai, temple bells, warm strings, folk drums and shehnai building into a thrilling stampede, finishing in a warm joyful Diwali celebration, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "h1",
+   "word": "गायें।",
+   "prompt": "a herd of cows thundering on earth and cowbells",
+   "dur": 2.2,
+   "gain": -5
+  },
+  {
+   "beat": "b2",
+   "word": "गाय-गौरी",
+   "prompt": "temple bell and a cow lowing",
+   "dur": 1.8,
+   "gain": -5
+  },
+  {
+   "beat": "b4",
+   "word": "सजाया",
+   "prompt": "small bells jingling on cows",
+   "dur": 1.6,
+   "gain": -5
+  },
+  {
+   "beat": "b5",
+   "word": "ढोल",
+   "prompt": "village dhol drums rolling",
+   "dur": 2.2,
+   "gain": -5
+  },
+  {
+   "beat": "b6",
+   "word": "छोड़ी",
+   "prompt": "a stampede of hooves and bells rushing closer",
+   "dur": 2.8,
+   "gain": -5
+  },
+  {
+   "beat": "b7",
+   "word": "जश्न",
+   "prompt": "joyful crowd cheer and festive drums",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "end",
+   "word": "दीपावली!",
+   "prompt": "big festive fireworks and temple bells",
+   "dur": 2.5,
+   "gain": -5
+  }
+ ]
+}
