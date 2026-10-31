@@ -1,4 +1,4 @@
-  // ==================== True stories in bricks: the man who sold the Eiffel Tower ====================
+  // ==================== True stories in bricks: the man who sold the Eiffel Tower (voice in voice.json) ====================
   makeComedy({
     badge: 'TRUE STORY', badgeCol: '#1f4f8f',
     captions: { say: { 'nineteen twenty five': '1925' }, keys: { 'con': 'r', eiffel: 'y', sold: 'r', scrap: 'o', lustig: 'y', fix: 'r', faked: 'r', hotel: 'y', secret: 'r', dealer: 'b', cash: 'g', embarrassed: 'r', police: 'b', again: 'r', bought: 'y' } },

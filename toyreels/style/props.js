@@ -50,7 +50,7 @@
     ctx.restore();
   };
   // a series badge in the top band (e.g. "HEISTS 2/4"), below the reel app's own top overlay
-  const badge = (ctx, W, txt, col = '#e2402c') => { ctx.save(); ctx.font = FONT(800, 30); const w = ctx.measureText(txt).width + 44; ctx.translate((W - w) / 2, 196); ctx.fillStyle = col; ctx.beginPath(); ctx.roundRect(0, 0, w, 54, 14); ctx.fill(); ctx.fillStyle = 'rgba(0,0,0,0.18)'; ctx.fillRect(0, 44, w, 10); ctx.fillStyle = '#fffaf3'; ctx.textBaseline = 'middle'; ctx.fillText(txt, 22, 26); ctx.restore(); };
+  const badge = (ctx, W, txt, col = '#e2402c') => { ctx.save(); ctx.font = FONT(800, 30); const w = ctx.measureText(txt).width + 44; ctx.translate((W - w) / 2, 196); ctx.fillStyle = col; ctx.beginPath(); ctx.roundRect(0, 0, w, 54, 14); ctx.fill(); ctx.fillStyle = 'rgba(0,0,0,0.18)'; ctx.fillRect(0, 44, w, 10); ctx.fillStyle = '#fffaf3'; ctx.textAlign = 'left'; ctx.textBaseline = 'middle'; ctx.fillText(txt, 22, 26); ctx.restore(); };
 
   // ==================== sets ====================
   // a museum gallery: coloured wall with a dado rail (soft focus) and a polished wooden floor
