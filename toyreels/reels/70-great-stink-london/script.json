@@ -1,0 +1,56 @@
+[
+ {
+  "chapter": "The stink",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "In eighteen fifty eight, the Thames smelled so bad",
+     "that Parliament hung curtains soaked in chemicals."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "The river was full of raw sewage, in a very hot summer."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "Disraeli called it a stygian pool, reeking with intolerable horrors."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "Parliament quickly passed a bill for new sewers."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "Engineer Joseph Bazalgette built about eighty miles of them."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "Part of that system still serves London today."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "It took a terrible smell to make politicians act."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Would you have stayed in the room?"
+    ]
+   }
+  ]
+ }
+]

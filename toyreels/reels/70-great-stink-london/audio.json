@@ -1,0 +1,33 @@
+{
+ "music": {
+  "prompt": "Comedic Victorian music-hall piano with wobbly tuba and kazoo, playful, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "smelled",
+   "offset": 0.0,
+   "prompt": "comedic gag cough and retch",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "sewers",
+   "offset": 0.0,
+   "prompt": "water rushing through pipe",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "serves",
+   "offset": 0.0,
+   "prompt": "triumphant short fanfare",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

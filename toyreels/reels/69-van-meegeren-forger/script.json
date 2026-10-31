@@ -1,0 +1,58 @@
+[
+ {
+  "chapter": "The forger",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "A forger sold a fake Vermeer",
+     "to Hermann Goering."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "Han van Meegeren's fake fooled a Dutch museum in nineteen thirty six."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "During the war, he sold another to Goering."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "Goering paid with over a hundred looted paintings."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "After the war, van Meegeren was arrested for treason."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "His defense: he confessed he was a forger,",
+     "and painted a new fake in custody."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "He was sentenced to one year,",
+     "and died before serving it."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Would you have spotted the fake?"
+    ]
+   }
+  ]
+ }
+]

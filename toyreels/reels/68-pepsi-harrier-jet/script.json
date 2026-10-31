@@ -1,0 +1,59 @@
+[
+ {
+  "chapter": "The jet",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "In nineteen ninety six, a Pepsi ad",
+     "offered a Harrier jet."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "The price: seven million Pepsi Points."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "Points could be bought for ten cents each.",
+     "So, about seven hundred thousand dollars."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "John Leonard sent fifteen points,",
+     "and a check for the rest."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "Pepsi sent the check back."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "A judge ruled no reasonable person would think the offer was serious."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "Pepsi then changed the ad to seven hundred million points.",
+     "Just kidding."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Would you have tried it?"
+    ]
+   }
+  ]
+ }
+]

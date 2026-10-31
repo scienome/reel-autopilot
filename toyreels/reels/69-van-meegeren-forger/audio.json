@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Sneaky comedic string pizzicato with harpsichord and tuba, 1940s Dutch heist caper, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "fake",
+   "offset": 0.0,
+   "prompt": "comedic record scratch",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b2",
+   "word": "goering",
+   "offset": 0.0,
+   "prompt": "sneaky pizzicato sting",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b4",
+   "word": "arrested",
+   "offset": 0.0,
+   "prompt": "handcuffs click",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "confessed",
+   "offset": 0.0,
+   "prompt": "dramatic orchestra hit",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

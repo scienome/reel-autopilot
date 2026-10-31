@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Upbeat quirky electronic caper with bleeps and pizzicato, playful, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "pizzas",
+   "offset": 0.0,
+   "prompt": "pizza oven ding",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "coins",
+   "offset": 0.0,
+   "prompt": "coins dropping into a jar",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "first",
+   "offset": 0.0,
+   "prompt": "achievement unlocked chime",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "millions",
+   "offset": 0.0,
+   "prompt": "huge cash register cha-ching",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "music": {
+  "prompt": "Upbeat 90s commercial jingle with surf guitar and sassy brass, comedic, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "jet",
+   "offset": 0.0,
+   "prompt": "fighter jet flyby whoosh",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b2",
+   "word": "points",
+   "offset": 0.0,
+   "prompt": "cash register ding",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b4",
+   "word": "sent",
+   "offset": 0.0,
+   "prompt": "paper envelope swoosh",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "judge",
+   "offset": 0.0,
+   "prompt": "wooden gavel bang",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "kidding",
+   "offset": 0.0,
+   "prompt": "comedic rimshot",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

@@ -1,0 +1,56 @@
+[
+ {
+  "chapter": "The pizza",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "In twenty ten, a man paid",
+     "ten thousand bitcoin for two pizzas."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "His name was Laszlo Hanyecz."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "He offered it on a bitcoin forum."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "Someone ordered the pizzas for him and took the coins."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "At the time, the coins were worth about forty one dollars."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "It was the first known real-world purchase made with bitcoin."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "Those coins are now worth hundreds of millions of dollars."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Would you have kept the coins?"
+    ]
+   }
+  ]
+ }
+]
