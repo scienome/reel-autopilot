@@ -1,0 +1,43 @@
+{
+ "music-81ca45621005.mp3": {
+  "prompt": "Indian festive mythological cinematic underscore for Diwali: tabla, bansuri, shehnai, temple bells, warm strings, a curious mysterious opening that turns warm and devotional, no vocals",
+  "music_length_ms": 49880,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-aa72129046da.mp3": {
+  "text": "temple bells and a deep cinematic hit",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-b9b418d0c9c8.mp3": {
+  "text": "soft magical shimmer and bells",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-ba7c73dd5e61.mp3": {
+  "text": "tense suspense sting",
+  "duration_seconds": 1.4,
+  "prompt_influence": 0.5
+ },
+ "sfx-47848a3e024b.mp3": {
+  "text": "gentle ocean waves and a deep calm drone",
+  "duration_seconds": 2.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-219dab289337.mp3": {
+  "text": "deep temple gong",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-85eb46e2043c.mp3": {
+  "text": "warm divine choir swell and bells",
+  "duration_seconds": 2.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
