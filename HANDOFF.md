@@ -223,10 +223,10 @@ Jobs: `toy-batch`, `couch-batch`, `pov-batch`, `mech-batch` (one name per schedu
 |---|---|---|
 | Toy reels: 21 new reels | 01:33 on the 3rd, 6th, 9th… | ON |
 | Toy reels: backup (finish unfinished batch) | 07:33 same days | ON |
-| CouchSarcasm sitcom: 9 episodes (`couch-batch`, `couchnew/PLAYBOOK.md`) | 02:17 on the 1st, 4th, 7th… | ON (30 Oct) |
-| CouchSarcasm sitcom: backup | 08:17 same days | ON (30 Oct) |
-| Gears POV: 9 episodes (`pov-batch`, `povreels/PLAYBOOK.md`) | 02:47 on the 2nd, 5th, 8th… | ON (30 Oct) |
-| Gears POV: backup | 08:47 same days | ON (30 Oct) |
+| CouchSarcasm sitcom: 9 episodes (`couch-batch`, `couchnew/PLAYBOOK.md`) | 02:17 on the 1st, 4th, 7th… | OFF (31 Oct, owner: no more new Couch episodes) |
+| CouchSarcasm sitcom: backup | 08:17 same days | OFF (31 Oct) |
+| Thought Bubble POV: 9 episodes (`pov-batch`, `povreels/PLAYBOOK.md`) | 02:47 on the 2nd, 5th, 8th… | ON (30 Oct) |
+| Thought Bubble POV: backup | 08:47 same days | ON (30 Oct) |
 | CouchSarcasm 21 reels + backup (old `reels/` format, WEEKLY.md) | 2nd, 5th, 8th… | OFF — old format retired |
 | Dave 21 reels + backup | every 3rd day | OFF — Dave rejected |
 
@@ -256,7 +256,7 @@ a usage limit gets finished by the backup or by another account — never duplic
 > couchnew/schedule.json "queue", then `python3 tools/claim.py done couch-batch`. Never change voices, config.json,
 > style/, posting files or workflows. Never run posting workflows by hand. Finish with a short plain-language report.
 - POV: cron `CRON_TZ=Asia/Kolkata 47 2 2-31/3 * *` (main), `CRON_TZ=Asia/Kolkata 47 8 2-31/3 * *` (backup). Prompt: the
-  same text with "GEARS POV BATCH", `pov-batch`, povreels/PLAYBOOK.md, "9 new 'YOU are the only one' episodes with more
+  same text with "THOUGHT BUBBLE POV BATCH", `pov-batch`, povreels/PLAYBOOK.md, "9 new 'YOU are the only one' episodes with more
   mixes (animals, birds, babies, people, objects)", povreels/tools/check.py, povreel-<id>, povreels/schedule.json.
 
 ---
