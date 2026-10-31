@@ -1,0 +1,43 @@
+{
+ "music-26e1bb94646a.mp3": {
+  "prompt": "Indian festive mythological cinematic underscore for Diwali: tabla, bansuri, shehnai, temple bells, warm strings, energetic dhol and festival drums building through the night into a blazing climax, no vocals",
+  "music_length_ms": 54260,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-3e4e83290971.mp3": {
+  "text": "huge bonfire whoosh and a deep drum hit",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-d4755691092b.mp3": {
+  "text": "energetic festival dhol drums",
+  "duration_seconds": 2.4,
+  "prompt_influence": 0.5
+ },
+ "sfx-9fa2c7937c0e.mp3": {
+  "text": "crowd cheering and a bright chime",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-b6b06e8cfbb3.mp3": {
+  "text": "early morning quiet with distant crowd murmur",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-19510375cb4c.mp3": {
+  "text": "a single match strike then a giant fire roar",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-8880e16be66a.mp3": {
+  "text": "crackling fire and distant crowd cheering",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
