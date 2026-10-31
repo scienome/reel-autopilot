@@ -1,0 +1,48 @@
+{
+ "music-62950ccc7a85.mp3": {
+  "prompt": "Indian festive mythological cinematic underscore for Diwali: tabla, bansuri, shehnai, temple bells, warm strings, intense war drums and fast tabla, rising danger, a sober ending, no vocals",
+  "music_length_ms": 53700,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-4f7e1615f8ae.mp3": {
+  "text": "burning projectiles whooshing and a big explosion",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-b48752a576a8.mp3": {
+  "text": "two war cries from crowds and a drum hit",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-ede0c3579847.mp3": {
+  "text": "a dry fruit crack and a low sting",
+  "duration_seconds": 1.4,
+  "prompt_influence": 0.5
+ },
+ "sfx-2b23ddedf6b2.mp3": {
+  "text": "many fiery rockets whistling overhead",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-ef486f2eec84.mp3": {
+  "text": "distant siren and a sudden hush",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-e0648131d805.mp3": {
+  "text": "old war horn and hoofbeats",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-8e8094b9c9bb.mp3": {
+  "text": "dark warning sting",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
