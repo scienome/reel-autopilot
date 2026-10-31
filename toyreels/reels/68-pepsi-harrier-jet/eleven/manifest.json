@@ -1,0 +1,33 @@
+{
+ "music-324ef69f60d3.mp3": {
+  "prompt": "Upbeat 90s commercial jingle with surf guitar and sassy brass, comedic, no vocals",
+  "music_length_ms": 33160,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-3eaf27d86f80.mp3": {
+  "text": "fighter jet flyby whoosh",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-3abda190cedc.mp3": {
+  "text": "cash register ding",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-04f9fba9d68c.mp3": {
+  "text": "paper envelope swoosh",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-fd36963dbec7.mp3": {
+  "text": "wooden gavel bang",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-8ed42f3def75.mp3": {
+  "text": "comedic rimshot",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
