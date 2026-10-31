@@ -85,6 +85,7 @@
     c.fillStyle = L.skin; c.beginPath(); c.roundRect(-80, -68, 160, 150, [62, 62, 74, 74]); c.fill();
     c.save(); c.beginPath(); c.roundRect(-80, -68, 160, 150, [62, 62, 74, 74]); c.clip(); oval(c, 92, 34, 54, 100, rgb(L.skinD, 0.42)); c.restore();
     face(c, L, o, t); hair(c, L, true);
+    if (o.hat) o.hat(c);
   }
   // origin at the feet; the full figure stands about 610 tall at s=1
   function person(c, x, y, s, t, o = {}) {
