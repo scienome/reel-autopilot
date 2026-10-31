@@ -13,13 +13,15 @@
   "011-parrot-thoughts",
   "016-grandpa-thoughts",
   "012-goldfish-memory",
-  "018-boss-thoughts",
-  "014-pigeon-thoughts",
   "013-fridge-judges-you",
-  "017-cow-thoughts",
   "015-phone-thoughts",
   "019-houseplant-thoughts",
-  "020-mum-thoughts",
+  "020-mum-thoughts"
+ ],
+ "held_back": [
+  "014-pigeon-thoughts",
+  "017-cow-thoughts",
+  "018-boss-thoughts",
   "021-hamster-thoughts"
  ]
 }
