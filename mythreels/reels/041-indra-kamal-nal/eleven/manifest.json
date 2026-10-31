@@ -1,0 +1,43 @@
+{
+ "music-6ced75289067.mp3": {
+  "prompt": "Indian mythological cinematic underscore: tanpura drone, soft tabla, bansuri, temple bells, swelling shehnai at the climax, no vocals, a mysterious hush over a still lake",
+  "music_length_ms": 54600,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-0152a37e913a.mp3": {
+  "text": "soft water drop and magical shimmer",
+  "duration_seconds": 1.4,
+  "prompt_influence": 0.5
+ },
+ "sfx-9b642369f79f.mp3": {
+  "text": "distant thunder and a demon roar",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-975c646714bb.mp3": {
+  "text": "fast footsteps and a splash",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-d110b019fb56.mp3": {
+  "text": "uneasy wind whisper",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-d354d5ec8c73.mp3": {
+  "text": "royal gong strike",
+  "duration_seconds": 1.4,
+  "prompt_influence": 0.5
+ },
+ "sfx-732969695fc9.mp3": {
+  "text": "soft celestial chime",
+  "duration_seconds": 1.4,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
