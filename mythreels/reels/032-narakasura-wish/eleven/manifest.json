@@ -1,0 +1,48 @@
+{
+ "music-a6045543e3a3.mp3": {
+  "prompt": "Indian festive mythological cinematic underscore for Diwali: tabla, bansuri, shehnai, temple bells, warm strings, war drums and conch shells, heroic and tense, resolving into a tender devotional glow, no vocals",
+  "music_length_ms": 53380,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-f24f81b38bf0.mp3": {
+  "text": "deep demonic roar and a low war drum",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-e83670aa7b53.mp3": {
+  "text": "iron chains rattling",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-a594d3fc408b.mp3": {
+  "text": "mystic chime and a low gong",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-d0de0a50d2f5.mp3": {
+  "text": "heavy body fall with a sharp silence",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-24b90886d3c3.mp3": {
+  "text": "arrow whooshing and a huge impact",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-6e9f8df1fd10.mp3": {
+  "text": "warm choir swell with flames lighting",
+  "duration_seconds": 2.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-0adc47d92ede.mp3": {
+  "text": "many small flames lighting and temple bells",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
