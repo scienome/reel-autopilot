@@ -1,0 +1,23 @@
+{
+ "music-b7779ac7ef28.mp3": {
+  "prompt": "Comedic Victorian music-hall piano with wobbly tuba and kazoo, playful, no vocals",
+  "music_length_ms": 34840,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-b1b4a74d64ef.mp3": {
+  "text": "comedic gag cough and retch",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-5d9bb8e2b4e0.mp3": {
+  "text": "water rushing through pipe",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-25124ce890d4.mp3": {
+  "text": "triumphant short fanfare",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
