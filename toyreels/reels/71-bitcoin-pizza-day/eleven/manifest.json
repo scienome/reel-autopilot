@@ -1,0 +1,28 @@
+{
+ "music-70c8a80dc656.mp3": {
+  "prompt": "Upbeat quirky electronic caper with bleeps and pizzicato, playful, no vocals",
+  "music_length_ms": 29720,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-510fd56d087b.mp3": {
+  "text": "pizza oven ding",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-0296f6af04f2.mp3": {
+  "text": "coins dropping into a jar",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-99c05f6490f1.mp3": {
+  "text": "achievement unlocked chime",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-52991a133fe4.mp3": {
+  "text": "huge cash register cha-ching",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
