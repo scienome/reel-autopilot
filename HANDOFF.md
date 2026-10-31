@@ -29,13 +29,13 @@ or anything that posts publicly.
    the files next to it directly), and ready-to-upload `skills/zips/*.zip`. If `/toystyle` etc. aren't installed on this
    account, tell me once: "download the zips from skills/zips on GitHub → Settings → Capabilities → Skills → upload".
    Never block on it: the repo's series folders contain every renderer.
-5. **Scheduled Claude runs** (see §8) live on the Claude account that created them. List this account's scheduled
-   tasks; **if the toy, couch and POV batch tasks are missing, create them now from the templates in §8** (I want reel
-   making to run on whichever account I'm using). Running the same tasks on several accounts is SAFE because of the
-   claim lock (§7b): only one run ever does the work.
+5. **Scheduled Claude runs** (see §8) live on the Claude account that created them. List this account's cloud routines;
+   **if the toy, POV and riddle batch tasks are missing, create them now from the templates in §8, without asking** (I want
+   reel making to run on whichever account I'm using). **Don't create Couch or Mechanic tasks: I stopped them.** Running the
+   same tasks on several accounts is SAFE because of the claim lock (§7b): only one run ever does the work.
 6. Then give me a 3–5 line status: what's live, what's queued (days ahead per channel), anything broken.
 7. **If any live channel has less than 2 days (6 reels) queued, start making reels for it right away** with that
-   series' playbook (`toyreels/PLAYBOOK.md`, `couchnew/PLAYBOOK.md`, `povreels/PLAYBOOK.md`, `mythreels/PLAYBOOK.md`), claim first, then send me
+   series' playbook (`toyreels/PLAYBOOK.md`, `povreels/PLAYBOOK.md`, `mythreels/PLAYBOOK.md`, `riddles/PLAYBOOK.md`), claim first, then send me
    each finished MP4. The playbooks are what keep the results consistent: follow them exactly.
 
 ---
@@ -143,7 +143,7 @@ Source of truth = each folder's `config.json`. As of 30 Oct 2026:
 | Thought Bubble POV (mech Shorts paused) | `povreels/schedule.json` | `post-instagram-mech.yml` → `tools/ig_mech_post.py` (kind "pov") | `ig_posted.json` |
 | Mech long video + its Shorts | root `schedule.json` | `publish-youtube.yml` → `tools/youtube_publish.py` (puts the video's real link into each Short's description, replacing `[LINK]`) | `youtube_posted.json` |
 
-- **Pause a series:** add `"paused": "reason"` to its schedule file. Remove to resume. CouchSarcasm uses root `config.json` (paused now); Mechanic uses root `schedule.json` (paused now).
+- **Pause a series:** add `"paused": "reason"` to its schedule file. Remove to resume. The Couch accounts' poster (now Socho Zara) uses root `config.json`; Mechanic uses root `schedule.json` (paused now).
 - **Order (owner, 31 Oct):** post everything, hold nothing, strongest first, never break a series.
 - **Skip a toy reel:** add `"<id>": {"skipped": true, "instagram": {}, "youtube": {}}` to `toyreels/posted.json`.
 - **Change times:** edit the times file AND the cron lines in the workflow (cron is UTC; IST = UTC+5:30; posters run
@@ -205,7 +205,7 @@ python3 tools/claim.py beat <job> --note "56-62 pushed"   # after every push and
 python3 tools/claim.py done <job>         # at the very end
 python3 tools/claim.py status             # see all locks
 ```
-Jobs: `toy-batch`, `couch-batch`, `pov-batch`, `mech-batch` (one name per scheduled job; add new ones freely).
+Jobs: `toy-batch`, `pov-batch`, `riddle-batch` (live); `couch-batch`, `mech-batch` (stopped) (one name per scheduled job; add new ones freely).
 - How it works: the lock is `locks/<job>.json` on `main`, written by a non-force git push straight to GitHub. If two runs
   race, GitHub accepts only the first push, so exactly one wins. It never touches your working folder, and lock commits
   carry `[skip ci]`, so they never trigger a render.
@@ -234,6 +234,8 @@ run yet at this writing, so check that the first one could push to main. No rout
 | CouchSarcasm sitcom: backup | 08:17 same days | OFF (31 Oct) |
 | Thought Bubble POV: 9 episodes (`pov-batch`, `povreels/PLAYBOOK.md`) | 02:47 on the 2nd, 5th, 8th… | ON (30 Oct) |
 | Thought Bubble POV: backup | 08:47 same days | ON (30 Oct) |
+| Socho Zara riddles: 21 new reels (`riddle-batch`, `riddles/PLAYBOOK.md`) | 03:07 on the 1st, 4th, 7th… | ON (31 Oct) |
+| Socho Zara riddles: backup (finish unfinished batch) | 09:07 same days | ON (31 Oct) |
 | CouchSarcasm 21 reels + backup (old `reels/` format, WEEKLY.md) | 2nd, 5th, 8th… | OFF — old format retired |
 | Dave 21 reels + backup | every 3rd day | OFF — Dave rejected |
 
@@ -252,19 +254,54 @@ a usage limit gets finished by the backup or by another account — never duplic
 > toyreels/config.json, style/, tools/, posted.json, posting.json or workflows. Never run posting workflows by hand.
 > Finish with a short plain-language report.
 
-**Couch and POV task templates** (create both main + backup for each; same prompt for main and backup):
-- Couch: cron `CRON_TZ=Asia/Kolkata 17 2 1-31/3 * *` (main), `CRON_TZ=Asia/Kolkata 17 8 1-31/3 * *` (backup). Prompt:
-> COUCH SITCOM BATCH. In a checkout of scienome/reel-autopilot (clone it if missing; push access needed) run
-> `git checkout main && git pull origin main`. FIRST run `python3 tools/claim.py start couch-batch`. If it exits 3 / prints
-> STOP, reply with that one line and stop. Otherwise follow couchnew/PLAYBOOK.md exactly (0, 0b, then 1-4) and
-> engagement/RULES.md: finish an unfinished batch or make 9 new episodes continuing the Sam / Maya / Mum story, check each
-> with couchnew/tools/check.py, push a few at a time, run `python3 tools/claim.py beat couch-batch --note "..."` after every
-> push (stop if it prints STOP), wait for every couchnew-<id> Release, check the MP4s, append the ids to
-> couchnew/schedule.json "queue", then `python3 tools/claim.py done couch-batch`. Never change voices, config.json,
-> style/, posting files or workflows. Never run posting workflows by hand. Finish with a short plain-language report.
-- POV: cron `CRON_TZ=Asia/Kolkata 47 2 2-31/3 * *` (main), `CRON_TZ=Asia/Kolkata 47 8 2-31/3 * *` (backup). Prompt: the
-  same text with "THOUGHT BUBBLE POV BATCH", `pov-batch`, povreels/PLAYBOOK.md, "9 new 'YOU are the only one' episodes with more
-  mixes (animals, birds, babies, people, objects)", povreels/tools/check.py, povreel-<id>, povreels/schedule.json.
+**POV task template** (main + backup, same prompt): cron `CRON_TZ=Asia/Kolkata 47 2 2-31/3 * *` (main),
+`CRON_TZ=Asia/Kolkata 47 8 2-31/3 * *` (backup). Prompt:
+> THOUGHT BUBBLE POV BATCH. In a checkout of scienome/reel-autopilot (clone it if missing; push access needed) run
+> `git checkout main && git pull origin main`. FIRST run `python3 tools/claim.py start pov-batch`. If it exits 3 / prints STOP,
+> reply with that one line and stop. Otherwise read HANDOFF.md section 7 for local checking, then follow povreels/PLAYBOOK.md
+> exactly and engagement/RULES.md: finish an unfinished batch or make 9 new 'YOU are the only one' episodes with more mixes
+> (animals, birds, babies, people, objects), check each with povreels/tools/check.py, push a few at a time straight to main, run
+> `python3 tools/claim.py beat pov-batch --note "..."` after every push (stop if it prints STOP), wait for every povreel-<id>
+> Release, check the MP4s, add the ids to povreels/schedule.json "queue" with the strongest first and without breaking a series,
+> then `python3 tools/claim.py done pov-batch`. Never change voices, config.json, style/, posting files or workflows. Never run
+> posting workflows by hand. Commit messages end with a Co-Authored-By line and contain no model names. Finish with a short
+> plain-language report.
+
+**Riddle task template** (main + backup, same prompt): cron `CRON_TZ=Asia/Kolkata 7 3 1-31/3 * *` (main),
+`CRON_TZ=Asia/Kolkata 7 9 1-31/3 * *` (backup). Prompt:
+> SOCHO ZARA RIDDLES BATCH. In a checkout of scienome/reel-autopilot (clone it if missing; push access needed) run
+> `git checkout main && git pull origin main`. If .github/workflows/make-riddles.yml does not exist, reply 'Owner must add
+> make-riddles.yml (HANDOFF section 8)' and stop. FIRST run `python3 tools/claim.py start riddle-batch`. If it exits 3 / prints
+> STOP, reply with that one line and stop. Otherwise read HANDOFF.md section 7 for local checking, then follow
+> riddles/PLAYBOOK.md exactly: finish an unfinished batch or make 21 new riddle reels, prove every answer, check each with
+> tools/riddle_make.py --sheet, push a few at a time straight to main, run `python3 tools/claim.py beat riddle-batch --note "..."`
+> after every push (stop if it prints STOP), wait for every Release named after its reel, check the MP4s, add the ids to
+> riddles/schedule.json "queue", then `python3 tools/claim.py done riddle-batch`. Better fewer than weak. Never change voices,
+> config.json, posting files or workflows. Never run posting workflows by hand. Commit messages end with a Co-Authored-By line
+> and contain no model names. Finish with a short plain-language report.
+
+The toy template above should also say "read HANDOFF.md section 7 for local checking", "push a few at a time straight to main",
+and end with the same Co-Authored-By sentence, as the live routine does. Couch templates are gone on purpose. To restart Couch
+one day, read `couchnew/PLAYBOOK.md` and ask me first.
+
+**A new account: set all of this up from this file alone**
+1. In Claude Code, use the `/schedule` skill (`RemoteTrigger`). List routines first and create only what's missing. Never delete
+   or disable anything another account made. If a task with that name exists, leave it.
+2. Create 6 routines: toy, POV and riddles, each main + backup. Use the exact crons and prompts above, repo
+   `https://github.com/scienome/reel-autopilot`, model `claude-sonnet-5-5`, tools Bash, Read, Write, Edit, Glob, Grep, and that
+   account's own cloud environment id. Crons use `CRON_TZ=Asia/Kolkata`, so write the IST time as shown.
+3. Confirm each routine's next run time, then tell me the list in one short message.
+4. The account needs GitHub access with push to this repo. I connect it (claude.ai → Settings → Connectors → GitHub).
+
+**Why two accounts can't clash:** identical tasks on two accounts both fire, and the first thing each does is `claim.py start
+<job>`. The lock is a git push to main, so GitHub lets only one win. The other prints STOP and ends without writing, rendering
+or spending credits. A run cut off by a usage limit goes stale after 90 minutes, and the next run finishes that same batch.
+Never skip the claim, never remove it from a prompt, and never give two different jobs the same name. Manual work in chat: run
+`claim.py status` first, and don't push into a series whose batch is `in_progress`.
+
+**One setup step only I can do:** the `gh` token has no workflow scope, so `.github/workflows/make-riddles.yml` must be added on
+the GitHub website, once per repo (not per account). The content is in `riddles/make-riddles.yml`. Riddle batch runs stop with a
+clear message until it exists. Status: see §13.
 
 ---
 
@@ -366,6 +403,9 @@ Fix these docs when you're next in those folders.
 - **CouchSarcasm:** stopped (root `config.json` `paused`), batch routines off. The owner cancelled the waiting 21:30 run on
   31 Oct. Remaining episodes are kept, not deleted. **Check:** that run may have left a scheduled Short in YouTube Studio (§5).
 - **Mechanic:** stopped, no new videos, keep stopped.
+- **Riddle batches (owner, 31 Oct): 21 reels every third day**, first run 1 Nov 03:07 IST, needs `make-riddles.yml` (§8), not
+  yet added or tested on GitHub at this writing. It makes 21 per 3 days and posts 9, so the queue grows by 12 each batch; owner
+  chose this. If quality or credits become a problem, tell the owner and suggest 9.
 - **Socho Zara (riddles), reuses the Couch accounts (owner, 31 Oct):** **LIVE from 31 Oct, 20:30 IST (owner said make it go live today).** First reel `riddle-monkeys`. Owner still to confirm old Couch reels are hidden (YT Private, IG archive) and both accounts renamed with `riddles/brand/` art. YouTube uploads are marked not made for kids. Couch stays stopped; old Couch reels are never uploaded in riddle mode. Skill `skills/whatifstyle` made from the owner's reference video (flat science explainer style).
   21 Hinglish reels rendered with voice, music and effects; MP4s in Release `riddle-week1`; plan, titles and captions in
   `riddles/week1.json`, build notes in `riddles/README.md`. Slots 06:00, 12:00, 20:30 IST. No batch routine yet. The `gh` token here has no workflow scope, so a new workflow file must be pasted on the GitHub

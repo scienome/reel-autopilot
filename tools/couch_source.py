@@ -1,7 +1,7 @@
 """Where a CouchSarcasm post comes from: the old reels (reels/<id>, out/<id>.mp4 on main) or the new sitcom episodes
 (couchnew/reels/<id>, video in the Release couchnew-<id>). config.json "queue": "couchnew" makes the poster take the
 episodes in couchnew/schedule.json "queue" order instead of the old reels. "queue": "riddles" takes the riddle reels in
-riddles/schedule.json order (riddles/meta/<id>.json, video in that file's "release"); the riddle channel reuses these accounts."""
+riddles/schedule.json order (riddles/meta/<id>.json, video in the Release named after the reel); the riddle channel reuses these accounts."""
 import json, os, tempfile
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -40,7 +40,8 @@ def meta_path(rid):
 
 def release_url(rid):
     if is_riddle(rid):
-        tag = json.load(open(os.path.join(RIDDLES, 'schedule.json'), encoding='utf-8'))['release']
+        s = json.load(open(os.path.join(RIDDLES, 'schedule.json'), encoding='utf-8'))
+        tag = s['release'] if rid in s.get('release_ids', []) else rid  # week 1 shares a Release; later reels have their own
         return f'https://github.com/{REPO}/releases/download/{tag}/{rid}.mp4'
     return f'https://github.com/{REPO}/releases/download/couchnew-{rid}/{rid}.mp4'
 
