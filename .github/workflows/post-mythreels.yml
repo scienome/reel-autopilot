@@ -1,0 +1,98 @@
+name: Post myth reels (Instagram + YouTube)
+# Posts the Hindi mythology reels (mythreels/) to the Instagram account AND the YouTube channel at the same moment,
+# 4 a day at 08:00, 13:00, 18:00 and 21:00 IST (02:30, 07:30, 12:30, 15:30 UTC), strictly in mythreels/schedule.json
+# order, from their mythreel-<id> Releases. Every slot has three runs, 4, 3 and 2 hours before it, because GitHub starts
+# scheduled runs late; the first one uploads and waits for the exact minute. If you change the times, change
+# mythreels/schedule.json too. Needs the IG_MYTH_* and YT_MYTH_* secrets. The Instagram token is renewed every Monday.
+on:
+  schedule:
+    # 08:00 IST slot (02:30 UTC)
+    - cron: '27 22 * * *'
+    - cron: '27 23 * * *'
+    - cron: '27 0 * * *'
+    # 13:00 IST slot (07:30 UTC)
+    - cron: '27 3 * * *'
+    - cron: '27 4 * * *'
+    - cron: '27 5 * * *'
+    # 18:00 IST slot (12:30 UTC)
+    - cron: '27 8 * * *'
+    - cron: '27 9 * * *'
+    - cron: '27 10 * * *'
+    # 21:00 IST slot (15:30 UTC)
+    - cron: '27 11 * * *'
+    - cron: '27 12 * * *'
+    - cron: '27 13 * * *'
+    # Monday: renew the Instagram token
+    - cron: '45 3 * * 1'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Only show what would be posted (checks both sign-ins)'
+        type: boolean
+        default: true
+      reel:
+        description: 'Post this reel now on both, e.g. 002-ravan-shani (empty = the next one, if "post now" is ticked)'
+        required: false
+        default: ''
+      post_now:
+        description: 'Post the next reel straight away instead of waiting for its slot'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: post-mythreels
+  cancel-in-progress: false
+
+jobs:
+  post:
+    if: github.event.schedule != '45 3 * * 1'
+    runs-on: ubuntu-latest
+    timeout-minutes: 320
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install -q requests
+      - name: Post the mythology reel that is due
+        env:
+          IG_MYTH_ACCESS_TOKEN: ${{ secrets.IG_MYTH_ACCESS_TOKEN }}
+          IG_MYTH_USER_ID: ${{ secrets.IG_MYTH_USER_ID }}
+          YT_CLIENT_ID: ${{ secrets.YT_MYTH_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_MYTH_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_MYTH_REFRESH_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git pull -q --rebase || true
+          python tools/myth_post.py \
+            ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '--dry-run' || '' }} \
+            ${{ (github.event_name == 'workflow_dispatch' && inputs.post_now) && '--now' || '' }} \
+            ${{ (github.event_name == 'workflow_dispatch' && inputs.reel != '') && format('--id {0}', inputs.reel) || '' }}
+      - name: Record it in mythreels/posted.json
+        if: always()
+        run: |
+          git config user.name "mythreel-bot"; git config user.email "mythreel-bot@users.noreply.github.com"
+          git add mythreels/posted.json 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -q -m "Myth reel posted [skip ci]"
+            for i in 1 2 3 4; do git pull --rebase -q && git push -q && break; sleep $((i * 5)); done
+          fi
+
+  refresh-token:
+    if: github.event.schedule == '45 3 * * 1'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Renew and store the mythology Instagram token
+        env:
+          IG_MYTH_ACCESS_TOKEN: ${{ secrets.IG_MYTH_ACCESS_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          if [ -z "$IG_MYTH_ACCESS_TOKEN" ]; then echo "No IG_MYTH_ACCESS_TOKEN yet; nothing to renew."; exit 0; fi
+          NEW=$(curl -sf "https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${IG_MYTH_ACCESS_TOKEN}" | python3 -c "import sys,json; print(json.load(sys.stdin)['access_token'])")
+          echo "::add-mask::$NEW"
+          if [ -z "$GH_TOKEN" ]; then echo "::warning::Token renewed with Instagram but not saved: add a GH_PAT secret (Secrets: read and write)."; exit 0; fi
+          gh secret set IG_MYTH_ACCESS_TOKEN --body "$NEW" --repo "$GITHUB_REPOSITORY"
+          echo "Token renewed and saved."
