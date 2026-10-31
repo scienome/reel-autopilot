@@ -1,0 +1,28 @@
+{
+ "music-f6af7d55f9ad.mp3": {
+  "prompt": "Comedic marching band with snare drums and playful tuba, quirky military parody, no vocals",
+  "music_length_ms": 30760,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-3f186834a1c7.mp3": {
+  "text": "rapid toy machine gun burst, comedic",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-cc6d14f9b0f5.mp3": {
+  "text": "ammo crate clank",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-ded1225ff34a.mp3": {
+  "text": "fast comedic running footsteps",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-f54e8902c0e4.mp3": {
+  "text": "sad comedic trombone",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
