@@ -10,8 +10,8 @@ Folder: [`couch-cartoon/`](couch-cartoon/)
 |---|---|---|
 | [e001-the-ring](couch-cartoon/e001-the-ring.mp4) | He hid the ring in a doughnut 💍🍩 | Posted |
 | [e002-thursday](couch-cartoon/e002-thursday.mp4) | The ring came back... on Thursday 💍🚽 | Posted |
-| [e003-mum-moves-in](couch-cartoon/e003-mum-moves-in.mp4) | Mum said one week. It's day forty. 🧳 | Waiting to post |
-| [e004-sam-cooks](couch-cartoon/e004-sam-cooks.mp4) | He cooked to impress her mum 🔥🍳 | Waiting to post |
+| [e003-mum-moves-in](couch-cartoon/e003-mum-moves-in.mp4) | Mum said one week. It's day forty. 🧳 | Posted |
+| [e004-sam-cooks](couch-cartoon/e004-sam-cooks.mp4) | He cooked to impress her mum 🔥🍳 | Posted |
 | [e005-the-birthday](couch-cartoon/e005-the-birthday.mp4) | He didn't forget her birthday this time 🎂 | Waiting to post |
 | [e006-the-dress](couch-cartoon/e006-the-dress.mp4) | He wasn't allowed to see the wedding dress 👰 | Waiting to post |
 | [e007-the-dad](couch-cartoon/e007-the-dad.mp4) | He met her dad. Then her mum arm-wrestled. 💪 | Waiting to post |
@@ -32,19 +32,19 @@ Folder: [`couch-cartoon/`](couch-cartoon/)
 | [m001-she-means](couch-cartoon/m001-she-means.mp4) | What she says vs what she means 💀 | Not scheduled |
 | [t001-dentist](couch-cartoon/t001-dentist.mp4) | Who's Jessica? 📱 | Not scheduled |
 
-## Gears & Glitches POV stories (new) (21)
+## Thought Bubble POV stories (formerly Gears & Glitches) (21)
 Folder: [`gears-pov/`](gears-pov/)
 
 | Video | Title | Status |
 |---|---|---|
 | [001-dog-thoughts](gears-pov/001-dog-thoughts.mp4) | You can hear what dogs think 🐶 | Posted on Instagram · on YouTube |
-| [002-cat-thoughts](gears-pov/002-cat-thoughts.mp4) | You can hear what cats think 🐱 | Waiting to post |
-| [003-dog-loves-cat](gears-pov/003-dog-loves-cat.mp4) | My dog is in love with the neighbour's cat 🐶❤️🐱 | Waiting to post |
+| [002-cat-thoughts](gears-pov/002-cat-thoughts.mp4) | You can hear what cats think 🐱 | Posted on Instagram · on YouTube |
+| [003-dog-loves-cat](gears-pov/003-dog-loves-cat.mp4) | My dog is in love with the neighbour's cat 🐶❤️🐱 | Posted on Instagram · on YouTube |
 | [004-pets-home-alone](gears-pov/004-pets-home-alone.mp4) | What your pets do when you leave 🐶🐱 | Waiting to post |
 | [005-vet-visit](gears-pov/005-vet-visit.mp4) | What your pets think at the vet 🐶🐱🏥 | Waiting to post |
 | [006-shelter-dog](gears-pov/006-shelter-dog.mp4) | Nobody picks the old dog 🐶 | Waiting to post |
 | [007-search-history](gears-pov/007-search-history.mp4) | You can see everyone's search history 🔎 | Posted on Instagram · on YouTube |
-| [008-lie-counter](gears-pov/008-lie-counter.mp4) | You can see how many lies people told today 🤥 | Waiting to post |
+| [008-lie-counter](gears-pov/008-lie-counter.mp4) | You can see how many lies people told today 🤥 | Posted on Instagram · on YouTube |
 | [009-baby-thoughts](gears-pov/009-baby-thoughts.mp4) | You can understand babies 👶 | Waiting to post |
 | [010-car-thoughts](gears-pov/010-car-thoughts.mp4) | You can hear what your car thinks 🚗 | Waiting to post |
 | [011-parrot-thoughts](gears-pov/011-parrot-thoughts.mp4) | You can hear what your parrot thinks 🦜 | Waiting to post |
@@ -175,12 +175,12 @@ Folder: [`toy-reels/`](toy-reels/)
 | [13-hitler-hell-queue](toy-reels/13-hitler-hell-queue.mp4) | Hitler Went To Hell And Got Put On Hold 💀 | Posted (Instagram + YouTube) |
 | [14-death-replaced-by-ai](toy-reels/14-death-replaced-by-ai.mp4) | Death Got Replaced By AI. Nobody Has Died Since 💀 | Posted (Instagram + YouTube) |
 | [15-napoleon-sues-everyone](toy-reels/15-napoleon-sues-everyone.mp4) | Napoleon Came Back From The Dead To Sue Everyone 💀 | Waiting to post |
-| [16-robbers-rob-illuminati](toy-reels/16-robbers-rob-illuminati.mp4) | Two Robbers Robbed The Illuminati's Bank 👁️ | Waiting to post |
+| [16-robbers-rob-illuminati](toy-reels/16-robbers-rob-illuminati.mp4) | Two Robbers Robbed The Illuminati's Bank 👁️ | Posted (Instagram + YouTube) |
 | [17-einstein-art-school](toy-reels/17-einstein-art-school.mp4) | Einstein Went Back In Time To Get Hitler Into Art School 🎨 | Posted (Instagram + YouTube) |
 | [18-santa-layoffs](toy-reels/18-santa-layoffs.mp4) | Santa Replaced The Elves With Robots. Big Mistake. 🎅 | Posted (Instagram + YouTube) |
 | [19-batguy-electricity-bill](toy-reels/19-batguy-electricity-bill.mp4) | Bat-Guy's Worst Villain Was The Electricity Bill 🦇 | Waiting to post |
-| [20-illuminati-moon-landing](toy-reels/20-illuminati-moon-landing.mp4) | The Illuminati Faked The Moon Landing... ON THE MOON 🌕 | Waiting to post |
-| [21-zeus-wifi-down](toy-reels/21-zeus-wifi-down.mp4) | Zeus Unplugged Heaven's Wi-Fi 😇⚡ | Waiting to post |
+| [20-illuminati-moon-landing](toy-reels/20-illuminati-moon-landing.mp4) | The Illuminati Faked The Moon Landing... ON THE MOON 🌕 | Posted (Instagram + YouTube) |
+| [21-zeus-wifi-down](toy-reels/21-zeus-wifi-down.mp4) | Zeus Unplugged Heaven's Wi-Fi 😇⚡ | Posted (Instagram + YouTube) |
 | [22-devil-sues-billionaire](toy-reels/22-devil-sues-billionaire.mp4) | The Devil Sued A Billionaire And LOST 😈 | Waiting to post |
 | [23-last-man-spam-call](toy-reels/23-last-man-spam-call.mp4) | The Last Man On Earth Got A Phone Call. It Was Spam. ☠️ | Waiting to post |
 | [24-mummy-gift-shop](toy-reels/24-mummy-gift-shop.mp4) | A Mummy Woke Up Inside A Museum Gift Shop 🏺 | Waiting to post |
@@ -263,7 +263,7 @@ Too big for a GitHub folder (over 100 MB), so they live in Releases:
 | Why Plane Windows Are Round (3 Jets Fell Apart First) | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-002-plane-windows) | https://youtu.be/V0X6W1LDHek |
 | What Happens If an Elevator Cable Snaps? | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-003-elevator-cable) | https://youtu.be/grOypwsu3zk |
 | How the Titan Submarine Imploded | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-004-titan-submarine) | https://youtu.be/fWwk1ROjLsQ |
-| The Plane That Landed on a River (Miracle on the Hudson) | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-005-miracle-on-the-hudson) |  |
+| The Plane That Landed on a River (Miracle on the Hudson) | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-005-miracle-on-the-hudson) | https://youtu.be/BAAFbnWbN3U |
 | What Really Sank the Titanic (It Wasn't Just the Iceberg) | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-006-titanic) |  |
 | The Button That Blew Up Chernobyl | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-007-chernobyl) |  |
 | How 3 Astronauts Survived Apollo 13 With Duct Tape | [Release](https://github.com/scienome/reel-autopilot/releases/tag/mechvideo-008-apollo-13) |  |
