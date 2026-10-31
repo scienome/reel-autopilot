@@ -81,6 +81,19 @@ def main():
     ap.add_argument('--model', default='eleven_v4'); ap.add_argument('--lang', default=''); ap.add_argument('--find', default='')
     a = ap.parse_args(); key = os.environ.get('ELEVENLABS_API_KEY') or sys.exit('ELEVENLABS_API_KEY is not set')
     os.makedirs(a.out, exist_ok=True)
+    if a.lang.startswith('lines:'):  # one voice reads a script line by line: --lang lines:path.json, [{"id": ..., "text": ...}]
+        vid = a.voices.split(',')[0].strip(); owner = None
+        try:
+            for v in get('shared-voices', key, search=vid, page_size=5).get('voices', []):
+                if v['voice_id'] == vid: owner = v.get('public_owner_id')
+        except Exception as e:
+            print('::warning::voice library lookup failed:', e, flush=True)
+        rows = []
+        for i, ln in enumerate(json.load(open(a.lang[6:], encoding='utf-8'))):
+            audio = tts(vid, key, a.model, ln['text'], owner) or sys.exit(f"no audio for {ln['id']}")
+            open(os.path.join(a.out, f"{i:02d}-{ln['id']}.mp3"), 'wb').write(audio); rows.append(f"{i:02d} {ln['id']}")
+        open(os.path.join(a.out, 'voices.txt'), 'w').write(chr(10).join(rows + ['voice ' + vid, '']))
+        return
     cands = [(v.strip(), 'requested') for v in a.voices.split(',') if v.strip()] or list(HI_BASE if a.lang == 'hi' else CANDIDATES)
     owners = {}
     if a.find:  # only voices whose name matches: the account's own first, else the shared Voice Library
