@@ -1,0 +1,58 @@
+{
+ "music": {
+  "prompt": "Indian mythological cinematic underscore: tanpura drone, soft tabla, bansuri, temple bells, swelling shehnai at the climax, no vocals, regal then ominous, a snake-charmer been hint",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "h1",
+   "word": "पालकी",
+   "prompt": "royal palanquin bearers and bells",
+   "dur": 1.5,
+   "gain": -9
+  },
+  {
+   "beat": "b2",
+   "word": "रानी",
+   "prompt": "ominous low sting",
+   "dur": 1.4,
+   "gain": -8
+  },
+  {
+   "beat": "b5",
+   "word": "उठाकर",
+   "prompt": "shehnai short procession blast",
+   "dur": 1.6,
+   "gain": -8
+  },
+  {
+   "beat": "b6",
+   "word": "सर्प,",
+   "prompt": "angry shout and a snake hiss",
+   "dur": 1.5,
+   "gain": -6
+  },
+  {
+   "beat": "b7",
+   "word": "घमंडी,",
+   "prompt": "dark magical curse sting",
+   "dur": 1.8,
+   "gain": -5
+  },
+  {
+   "beat": "end",
+   "word": "गिरा",
+   "prompt": "heavy thud and snake hiss",
+   "dur": 1.6,
+   "gain": -5
+  },
+  {
+   "beat": "nx",
+   "word": "अगले",
+   "prompt": "deep suspense drum hit and rising whoosh",
+   "dur": 1.8,
+   "gain": -7
+  }
+ ]
+}

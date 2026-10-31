@@ -1,0 +1,65 @@
+{
+ "music": {
+  "prompt": "Indian mythological cinematic underscore: tanpura drone, soft tabla, bansuri, temple bells, swelling shehnai at the climax, no vocals, warm devotional temple feeling",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "h1",
+   "word": "मंदिर",
+   "prompt": "temple bell ringing",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "b1",
+   "word": "यज्ञ",
+   "prompt": "sacred fire crackling with chant hum",
+   "dur": 1.8,
+   "gain": -8
+  },
+  {
+   "beat": "b2",
+   "word": "मुहूर्त",
+   "prompt": "tick tock clock then a soft gong",
+   "dur": 1.4,
+   "gain": -9
+  },
+  {
+   "beat": "b4",
+   "word": "विवाह",
+   "prompt": "shehnai short celebratory blast",
+   "dur": 1.6,
+   "gain": -8
+  },
+  {
+   "beat": "b5",
+   "word": "पहुँचीं",
+   "prompt": "footsteps stopping and a gasp",
+   "dur": 1.2,
+   "gain": -7
+  },
+  {
+   "beat": "b6",
+   "word": "श्राप",
+   "prompt": "dark magical curse sting",
+   "dur": 1.8,
+   "gain": -6
+  },
+  {
+   "beat": "b7",
+   "word": "नरम",
+   "prompt": "gentle bells and a soft choir",
+   "dur": 1.8,
+   "gain": -8
+  },
+  {
+   "beat": "nx",
+   "word": "अगले",
+   "prompt": "deep suspense drum hit and rising whoosh",
+   "dur": 1.8,
+   "gain": -7
+  }
+ ]
+}

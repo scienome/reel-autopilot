@@ -1,0 +1,16 @@
+KATHA((h) => {
+  const { V, at, char, CAM, one, two, cardOn } = h;
+  const palki = (ctx, x, y, t, k = 1) => { ctx.save(); ctx.translate(x, y); MYTH.smooth(ctx, '#d83a2a', [[-150, 0], [150, 0], [160, -150], [-160, -150]], 4); MYTH.smooth(ctx, '#f4c03e', [[-170, -150], [170, -150], [0, -250]], 4); ctx.restore(); };
+  const snake = (ctx, x, y, t, s = 1) => { ctx.save(); ctx.strokeStyle = '#2a4a1a'; ctx.lineWidth = 40 * s; ctx.lineCap = 'round'; ctx.beginPath(); ctx.moveTo(x - 200 * s, y + 30); ctx.bezierCurveTo(x - 100 * s, y - 60, x - 40 * s, y + 80, x + 50 * s, y + 10); ctx.bezierCurveTo(x + 120 * s, y - 40, x + 170 * s, y, x + 200 * s, y - 50); ctx.stroke(); MYTH.ell(ctx, '#6a8a44', x + 220 * s, y - 60, 34 * s, 26 * s, 0, 4); ctx.restore(); };
+  return {
+    h1: { set: 'heaven', cam: [[360, 800, 1.0], [360, 800, 1.25]], draw: (ctx, t) => { for (let i = 0; i < 4; i++) char(ctx, 'sage', 110 + i * 165, 1180, 0.38, t, { bob: Math.abs(Math.sin(t * 5 + i)) * 6, arms: 'up', face: { eyes: 'calm', mouth: 'calm' } }); palki(ctx, 360, 1000, t); char(ctx, 'deva', 360, 940, 0.4, t, { pose: 'sit', arms: 'hips', face: { eyes: 'open', mouth: 'grin' } }); } },
+    b1: { set: 'palace', setOpt: { throne: 360 }, cam: CAM.mid, draw: (ctx, t) => char(ctx, 'deva', 360, 1130, 0.72, t, { halo: true, arms: 'hips', face: { eyes: 'open', mouth: 'grin' } }) },
+    b2: { set: 'palace', cam: CAM.wide, draw: two('deva', { arms: { r: 'point', l: 'hips' }, face: { eyes: 'open', mouth: 'grin' } }, 'parvati', { arms: 'cover', face: { eyes: 'sad', mouth: 'frown' } }) },
+    b3: { set: 'heaven', cam: CAM.wide, draw: two('parvati', { arms: 'namaste', face: { eyes: 'sad', mouth: 'calm' } }, 'sage', { arms: 'bless', face: { eyes: 'calm', mouth: 'calm' } }) },
+    b4: { set: 'heaven', cam: CAM.close(), draw: one('parvati', { arms: { r: 'point', l: 'down' }, face: { eyes: 'calm', mouth: 'open' } }) },
+    b5: { set: 'sky', setOpt: { time: 'dusk' }, cam: CAM.wide, draw: (ctx, t) => { for (let i = 0; i < 4; i++) char(ctx, 'sage', 110 + i * 165, 1180, 0.38, t, { bob: Math.abs(Math.sin(t * 5 + i)) * 6, arms: 'up', face: { eyes: 'calm', mouth: 'calm' } }); palki(ctx, 360, 1000, t); char(ctx, 'deva', 360, 940, 0.4, t, { pose: 'sit', arms: 'hips', face: { eyes: 'open', mouth: 'grin' } }); } },
+    b6: { set: 'sky', setOpt: { time: 'dusk' }, cam: CAM.mid, shake: V('b6', 'अगस्त्य'), draw: (ctx, t) => { char(ctx, 'sage', 220, 1170, 0.7, t, { arms: 'cover', face: { eyes: 'sad', mouth: 'calm' } }); char(ctx, 'deva', 520, 1050, 0.55, t, { flip: true, arms: { r: 'point', l: 'hips' }, face: { eyes: 'angry', mouth: 'shout' } }); }, over: cardOn('b6', 'सर्प,', 'सर्प! सर्प!', { y: 300, size: 76 }) },
+    b7: { set: 'heaven', cam: CAM.close(), shake: V('b7', 'सर्प') - 0.5, draw: one('sage', { arms: { r: 'point', l: 'fist' }, face: { eyes: 'angry', mouth: 'shout' } }) },
+    end: { set: 'forest', cam: CAM.wide, draw: (ctx, t) => { const u = H.clamp((t - at('end', 0)) / 1.2); snake(ctx, 330, 860, t, 1.2 * (0.5 + 0.5 * u)); }, over: cardOn('end', 'अजगर', 'अजगर', { y: 300, size: 90 }) },
+  };
+}, {series: 'जब देवता भी हारे', part: 2, hook: 'सात ऋषियों ने उठाई\nएक राजा की पालकी!', next: 'ऋषि के श्राप से\nदेवताओं की लक्ष्मी गई!', nextAt: 'nx', gold: ['पालकी', 'नहुष', 'शची', 'सर्प,', 'अगस्त्य', 'श्राप', 'घमंडी']});
