@@ -31,6 +31,10 @@ Follow this shape, whatever the topic. It is what makes people stay.
 
 **Script rules:** 110-150 words. Short sentences. Every line must be something you can show. Spell numbers as they should be spoken in the voice text. Check every fact, keep the sources in `FACTS`, and never state a health claim more strongly than the source does. Never present a dangerous stunt as something to try; end on the safe takeaway.
 
+## Riddle format
+
+For a riddle, copy `assets/example_riddle.js` instead. Shape: hook, the setup with every clue shown on screen, a 5-second "Socho" countdown with "pause karo, comment karo", the solution step by step, one reveal shot per case, the one-line "aha", then a closing card. Choose riddles with a real aha that a viewer can solve from the clues alone, not trick wording or a joke answer. Don't invent claims such as "only 1% can solve this". Keep the thing the riddle depends on visible; never let a character cover it.
+
 ## Workflow
 
 1. **Script.** Write it, or take the user's, and list the facts relied on.
