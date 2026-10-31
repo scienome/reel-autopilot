@@ -1,0 +1,28 @@
+{
+ "music-8c0579a31650.mp3": {
+  "prompt": "Playful 1940s science-lab jazz with bubbly synth bleeps and xylophone, comedic, no vocals",
+  "music_length_ms": 27640,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-e55358eb2334.mp3": {
+  "text": "squishy melting sound",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-bee80d85d582.mp3": {
+  "text": "popcorn popping rapid",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-24210a23e182.mp3": {
+  "text": "egg splat cartoon explosion",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-aa1f3feca143.mp3": {
+  "text": "paper stamp thunk",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
