@@ -25,7 +25,7 @@ or anything that posts publicly.
 3. **Check live state:** latest GitHub Actions runs (any failures?), Releases (which reels are rendered), each series'
    `schedule.json` (what's queued, what's paused), and the posted logs (`posted.json`, `ig_posted.json`,
    `toyreels/posted.json`, `youtube_posted.json`, `couch_youtube_posted.json`).
-4. **Skills are in the repo:** `skills/toystyle`, `skills/violetstyle`, `skills/mechanicskill`, `skills/whatifstyle` (read `SKILL.md` +
+4. **Skills are in the repo:** `skills/toystyle`, `skills/violetstyle`, `skills/mechanicskill`, `skills/whatifstyle`, `skills/lokvarastyle` (read `SKILL.md` +
    the files next to it directly), and ready-to-upload `skills/zips/*.zip`. If `/toystyle` etc. aren't installed on this
    account, tell me once: "download the zips from skills/zips on GitHub → Settings → Capabilities → Skills → upload".
    Never block on it: the repo's series folders contain every renderer.
