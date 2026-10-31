@@ -1,0 +1,23 @@
+{
+ "music-5e96370cad7e.mp3": {
+  "prompt": "Cheerful bouncy 1950s kids-TV xylophone and clarinet, playful, no vocals",
+  "music_length_ms": 25400,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-926fcc35b396.mp3": {
+  "text": "wet sponge squish",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-01b7e3710e03.mp3": {
+  "text": "cartoon crash and falling sales",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-fbe02432ca9a.mp3": {
+  "text": "cheerful school bell ding",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
