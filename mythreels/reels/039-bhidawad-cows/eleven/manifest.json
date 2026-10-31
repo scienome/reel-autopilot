@@ -1,0 +1,43 @@
+{
+ "music-42d9f710a8ab.mp3": {
+  "prompt": "Indian festive mythological cinematic underscore for Diwali: tabla, bansuri, shehnai, temple bells, warm strings, folk drums and shehnai building into a thrilling stampede, finishing in a warm joyful Diwali celebration, no vocals",
+  "music_length_ms": 56420,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-94028520258c.mp3": {
+  "text": "a herd of cows thundering on earth and cowbells",
+  "duration_seconds": 2.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-6524cff273fb.mp3": {
+  "text": "temple bell and a cow lowing",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-1a3a0ffa812f.mp3": {
+  "text": "small bells jingling on cows",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-6c6412a727ca.mp3": {
+  "text": "village dhol drums rolling",
+  "duration_seconds": 2.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-e554fa3b2a98.mp3": {
+  "text": "a stampede of hooves and bells rushing closer",
+  "duration_seconds": 2.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-33ccff7f5029.mp3": {
+  "text": "joyful crowd cheer and festive drums",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-3b754bd397d9.mp3": {
+  "text": "big festive fireworks and temple bells",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ }
+}
