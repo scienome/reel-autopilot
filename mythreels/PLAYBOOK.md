@@ -17,6 +17,12 @@ is creating the Instagram + YouTube accounts); when it is, 3 reels a day.
   inside the 30 px border. Don't switch back to the plain look.
 - Respectful: gods are dignified (no jokes about them, no comic faces). Say "कहते हैं" for folk versions and list
   the source in `meta.json` `sources`.
+- **Owner, 31 Oct 2026: stories must be interesting, lesser known and not obvious, and CONTINUOUS.** Before writing, reject
+  any story most Hindi viewers already know, even from a fresh angle. A series should build, so each part needs the one
+  before it and the viewer wants the next (recurring characters, an unanswered question carried across parts), not
+  separate stories joined only by an "अगले भाग में" line.
+- **Posting (31 Oct 2026):** `post-mythreels.yml` → `tools/myth_post.py`, 4 a day, one reel of each series in turn, strictly
+  in `schedule.json` order. Log: `mythreels/posted.json`.
 
 ## 2. The series (owner, 30 Oct 2026: "1 week, 4 reels a day, 2 series in total")
 Both 14-part series are written (`schedule.json` "queue" alternates them: R, Y, R, Y each day). Never repeat a story:
