@@ -158,7 +158,7 @@ Folder: [`dave-reels/`](dave-reels/)
 | [43-dave-grows-an-inch](dave-reels/43-dave-grows-an-inch.mp4) | What if you grew 1 inch every day? | Waiting to post |
 | [44-gimli-glider](dave-reels/44-gimli-glider.mp4) | The jet that ran out of fuel because of maths | Waiting to post |
 
-## Toy reels (Brick Toy) (55)
+## Toy reels (Brick Toy) (56)
 Folder: [`toy-reels/`](toy-reels/)
 
 | Video | Title | Status |
@@ -218,6 +218,7 @@ Folder: [`toy-reels/`](toy-reels/)
 | [53-caveman-wheel-lawsuit](toy-reels/53-caveman-wheel-lawsuit.mp4) | The Caveman Who Invented The Wheel Got Sued 🪨⚖️ | Waiting to post |
 | [54-elvis-alien-encore](toy-reels/54-elvis-alien-encore.mp4) | Elvis Didn't Die. Aliens Wanted An Encore. 👽🎤 | Waiting to post |
 | [55-pirate-map-parrot](toy-reels/55-pirate-map-parrot.mp4) | Pirate Tattooed The Treasure Map On His Back 🏴‍☠️ | Waiting to post |
+| [56-eiffel-tower-con](toy-reels/56-eiffel-tower-con.mp4) | The Man Who Sold The Eiffel Tower 🗼 | Skipped (never posted) |
 
 ## Mechanic Shorts (YouTube) (25)
 Folder: [`mechanic-shorts/`](mechanic-shorts/)
