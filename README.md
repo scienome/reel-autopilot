@@ -218,7 +218,7 @@ Folder: [`toy-reels/`](toy-reels/)
 | [53-caveman-wheel-lawsuit](toy-reels/53-caveman-wheel-lawsuit.mp4) | The Caveman Who Invented The Wheel Got Sued 🪨⚖️ | Waiting to post |
 | [54-elvis-alien-encore](toy-reels/54-elvis-alien-encore.mp4) | Elvis Didn't Die. Aliens Wanted An Encore. 👽🎤 | Waiting to post |
 | [55-pirate-map-parrot](toy-reels/55-pirate-map-parrot.mp4) | Pirate Tattooed The Treasure Map On His Back 🏴‍☠️ | Waiting to post |
-| [56-eiffel-tower-con](toy-reels/56-eiffel-tower-con.mp4) | The Man Who Sold The Eiffel Tower 🗼 | Skipped (never posted) |
+| [56-eiffel-tower-con](toy-reels/56-eiffel-tower-con.mp4) | The Man Who Sold The Eiffel Tower 🗼 | Waiting to post |
 
 ## Mechanic Shorts (YouTube) (25)
 Folder: [`mechanic-shorts/`](mechanic-shorts/)
