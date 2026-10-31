@@ -1,5 +1,5 @@
 {
- "_note": "4 reels a day (owner, 30 Oct 2026): Ravan ke Rahasya and Mahabharat ke Chhupe Yoddha alternate, one Mahabharat then one Ravan, in part order. 001 (Hanuman and the Sun) is held back as too well known. Posting starts 31 Oct 2026 at 18:00 IST via post-mythreels.yml.",
+ "_note": "4 reels a day (owner, 30 Oct 2026): Ravan ke Rahasya and Mahabharat ke Chhupe Yoddha alternate, one Mahabharat then one Ravan, in part order. 001 (Hanuman and the Sun) is held back as too well known. Posting starts 31 Oct 2026 at 18:00 IST via post-mythreels.yml. Diwali series (दिवाली के रहस्य) takes the 18:00 and 21:00 slots 4-8 Nov 2026.",
  "start_at": "2026-10-31T12:30Z",
  "times_ist": [
   "08:00",
@@ -26,14 +26,24 @@
   "011-sahasrabahu",
   "023-shikhandi",
   "012-pushpak-kuber",
+  "030-lakshmi-ganesh",
+  "031-yama-deepam",
   "024-bhagadatta",
   "013-jaya-vijaya",
+  "032-narakasura-wish",
+  "033-goa-narkasur",
   "025-jarasandha",
   "014-indrajit",
+  "034-kukur-tihar",
+  "035-bali-pratipada",
   "026-shalya",
   "015-shurpanakha",
+  "036-shiva-parvati-dice",
+  "037-mahavira-18-kings",
   "027-vidura-yamraj",
   "016-ravan-ki-seekh",
+  "038-hingot-war",
+  "039-bhidawad-cows",
   "028-ashwatthama",
   "029-abhimanyu"
  ]
