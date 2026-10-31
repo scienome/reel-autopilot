@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Comedic marching band with snare drums and playful tuba, quirky military parody, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "machine",
+   "offset": 0.0,
+   "prompt": "rapid toy machine gun burst, comedic",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b2",
+   "word": "bullets",
+   "offset": 0.0,
+   "prompt": "ammo crate clank",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "ran",
+   "offset": 0.0,
+   "prompt": "fast comedic running footsteps",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "failed",
+   "offset": 0.0,
+   "prompt": "sad comedic trombone",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

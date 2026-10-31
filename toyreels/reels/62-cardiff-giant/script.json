@@ -1,0 +1,57 @@
+[
+ {
+  "chapter": "The giant",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "In eighteen sixty nine, workers dug up",
+     "a ten foot stone giant."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "Crowds paid to see it. It was a fake."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "A cigar maker, George Hull, had it carved after a Bible argument."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "He buried it on a farm for nearly a year."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "P. T. Barnum offered a fortune. Hull said no."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "So Barnum made a copy of the fake."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "Many people preferred Barnum's.",
+     "A fake of a fake."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Would you have paid to see it?"
+    ]
+   }
+  ]
+ }
+]

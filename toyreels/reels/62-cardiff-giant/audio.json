@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Quirky circus calliope and tuba with playful strings, mock-mysterious, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "giant",
+   "offset": 0.0,
+   "prompt": "heavy stone thud with dust",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b2",
+   "word": "carved",
+   "offset": 0.0,
+   "prompt": "chisel tapping on stone",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b4",
+   "word": "fortune",
+   "offset": 0.0,
+   "prompt": "cash register ding",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "copy",
+   "offset": 0.0,
+   "prompt": "circus calliope sting",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

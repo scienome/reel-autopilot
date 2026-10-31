@@ -1,0 +1,57 @@
+[
+ {
+  "chapter": "The bucket",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "In thirteen twenty five, two Italian cities",
+     "went to war over a bucket."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "Soldiers from Modena stole a wooden bucket from a Bologna well."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "Bologna wanted it back. Modena said no."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "At Zappolino, Bologna brought far more men."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "Modena won anyway."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "About two thousand soldiers died."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "Historians say the bucket was an excuse.",
+     "It is still kept in Modena."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Would you fight over a bucket?"
+    ]
+   }
+  ]
+ }
+]

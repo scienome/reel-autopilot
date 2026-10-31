@@ -1,0 +1,57 @@
+[
+ {
+  "chapter": "The trial",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "In eight ninety seven, a pope",
+     "put a dead pope on trial."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "Pope Stephen had Pope Formosus dug up."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "The body was dressed in robes and propped in a chair."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "A young deacon had to speak for the corpse."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "The corpse was found guilty."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "Months later, Stephen was strangled in prison."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "The next popes cancelled the trial.",
+     "Formosus was buried again."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Would you defend the corpse?"
+    ]
+   }
+  ]
+ }
+]

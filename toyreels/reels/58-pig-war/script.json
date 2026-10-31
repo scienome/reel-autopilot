@@ -1,0 +1,57 @@
+[
+ {
+  "chapter": "The pig",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "In eighteen fifty nine, America and Britain",
+     "nearly went to war over a pig."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "A farmer shot a pig that was eating his potatoes."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "The pig belonged to a British company worker."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "Soldiers landed. British warships arrived."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "An admiral refused to go to war over a pig."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "The only casualty of the Pig War",
+     "was the pig."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "Both armies shared the island for twelve years."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Would you have shot the pig?"
+    ]
+   }
+  ]
+ }
+]

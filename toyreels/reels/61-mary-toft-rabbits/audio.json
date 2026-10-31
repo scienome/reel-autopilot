@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Silly baroque harpsichord with comedic bassoon and pizzicato, mock-serious, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "rabbits",
+   "offset": 0.0,
+   "prompt": "cute rabbit squeak pop",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b2",
+   "word": "real",
+   "offset": 0.0,
+   "prompt": "dramatic gasp stinger",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b4",
+   "word": "hoax",
+   "offset": 0.0,
+   "prompt": "comedic record scratch",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "cheat",
+   "offset": 0.0,
+   "prompt": "wooden gavel bang",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

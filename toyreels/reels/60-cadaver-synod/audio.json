@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Dark comedic gregorian-style organ with plucked strings and slapstick percussion, mock-solemn, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "trial",
+   "offset": 0.0,
+   "prompt": "wooden gavel bang",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b2",
+   "word": "chair",
+   "offset": 0.0,
+   "prompt": "comedic creaky chair",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b4",
+   "word": "guilty",
+   "offset": 0.0,
+   "prompt": "dramatic organ sting",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "prison",
+   "offset": 0.0,
+   "prompt": "heavy cell door slam",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

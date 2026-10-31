@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Comedic medieval lute and tambourine with silly horns, playful mock-epic, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "bucket",
+   "offset": 0.0,
+   "prompt": "wooden bucket clunk",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b1",
+   "word": "stole",
+   "offset": 0.0,
+   "prompt": "sneaky comedic pizzicato",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "zappolino",
+   "offset": 0.0,
+   "prompt": "medieval battle horns",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b4",
+   "word": "died",
+   "offset": 0.0,
+   "prompt": "sad low drum",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

@@ -1,0 +1,56 @@
+[
+ {
+  "chapter": "The rabbits",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "In seventeen twenty six, a woman fooled doctors",
+     "into thinking she gave birth to rabbits."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "Mary Toft said she delivered a rabbit a day."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "The king's surgeon examined them and called it real."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "A second doctor grew suspicious."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "In London, she admitted it was a hoax."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "She was charged as a notorious and vile cheat."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "She spent about four months in jail."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Would you have believed her?"
+    ]
+   }
+  ]
+ }
+]

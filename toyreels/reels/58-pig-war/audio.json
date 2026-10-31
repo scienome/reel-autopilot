@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Quirky comedic fife and snare drum, playful colonial marching theme, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "pig",
+   "offset": 0.0,
+   "prompt": "pig oink comedic",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b1",
+   "word": "shot",
+   "offset": 0.0,
+   "prompt": "single cartoon gunshot",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "warships",
+   "offset": 0.0,
+   "prompt": "ship horn blast",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "pig",
+   "offset": 0.0,
+   "prompt": "sad pig squeal comedic",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}
