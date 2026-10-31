@@ -1,4 +1,31 @@
 {
- "002-ravan-shani": {"skipped": true, "why": "posted by hand by the owner before autoposting", "instagram": {}, "youtube": {}},
- "003-kumbhakarna-nidrasan": {"why": "posted by hand on Instagram only; the poster finishes it on YouTube", "instagram": {}}
+ "002-ravan-shani": {
+  "skipped": true,
+  "why": "posted by hand by the owner before autoposting",
+  "instagram": {},
+  "youtube": {}
+ },
+ "003-kumbhakarna-nidrasan": {
+  "why": "posted by hand on Instagram only; the poster finishes it on YouTube",
+  "instagram": {},
+  "youtube": {
+   "id": "6JLTNCz58S0",
+   "url": "https://youtu.be/6JLTNCz58S0",
+   "publish_utc": "now",
+   "title": "1 \u0936\u092c\u094d\u0926 \u0915\u0940 \u0917\u0932\u0924\u0940... 6 \u092e\u0939\u0940\u0928\u0947 \u0915\u0940 \u0928\u0940\u0902\u0926 \ud83d\ude34 | \u0930\u093e\u0935\u0923 \u0915\u0947 \u0930\u0939\u0938\u094d\u092f \u092d\u093e\u0917 2 #shorts"
+  }
+ },
+ "004-barbarik-khatu-shyam": {
+  "slot": "2026-10-31T12:30Z",
+  "youtube": {
+   "id": "DGhG2jSwsGk",
+   "url": "https://youtu.be/DGhG2jSwsGk",
+   "publish_utc": "2026-10-31T12:30:00.000Z",
+   "title": "\u092e\u0939\u093e\u092d\u093e\u0930\u0924 1 \u092e\u093f\u0928\u091f \u092e\u0947\u0902 \u0916\u0924\u094d\u092e \u0939\u094b \u0938\u0915\u0924\u0940 \u0925\u0940 \ud83c\udff9 | \u091b\u0941\u092a\u0947 \u092f\u094b\u0926\u094d\u0927\u093e \u092d\u093e\u0917 1 #shorts"
+  },
+  "instagram": {
+   "media_id": "18568182760073241",
+   "posted_at": "2026-10-31T12:30:09+00:00"
+  }
+ }
 }
