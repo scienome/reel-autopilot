@@ -76,7 +76,7 @@ sync-videos.yml                   ->  copies every finished MP4 to the `videos` 
 | **Hindi mythology** (working name; owner picks the final name) | `mythreels/` | 2D **folk-art** storybook (Pattachitra border, paper texture, kajal fish-eyes, Madhubani trees), `kit/myth.js` + `kit/katha.js`, Hindi subtitles, big hook card + "अगले भाग में" teaser | IG + YT, secrets `IG_MYTH_*`, `YT_MYTH_*` | 4 a day: 08:00, 13:00, 18:00, 21:00 | **LIVE since 31 Oct** (brand name Lokvara). 38 queued with Diwali |
 | Mechanic Shorts | `mechreels/` | low-poly garage/x-ray, `style/mech_base.js`, 9:16 | YT (Gears channel) | — | **STOPPED 31 Oct by owner**, keep it stopped |
 | Mechanic long videos | `mechvideos/` | same engine, 16:9 1080p, 4–5 min, chapters | YT, root `schedule.json` | — | **STOPPED 31 Oct.** No new videos; 006–008 not posted |
-| **Riddle channel** (Hinglish animal riddles) | `riddles/` + `skills/whatifstyle` | flat vector 2D, code-drawn | **no accounts yet** | 06:00 quick, 12:00 mystery/visual, 20:30 harder | 21 reels ready (7 days). NOT posting yet |
+| **Socho Zara** (Hinglish animal riddles) | `riddles/` + `skills/whatifstyle` | flat vector 2D, code-drawn | **old Couch IG + YT accounts** | 06:00 quick, 12:00 mystery/visual, 20:30 harder | 21 reels ready (7 days). PAUSED until owner says go |
 | Dave reels | `davereels/` | crash-test dummy Dave | — | — | **PAUSED — I rejected Dave. Don't resume.** |
 | Old couch reels | `reels/` (root) | Violet Room 3D couple | — | — | **RETIRED** (0001–0040) |
 | ToyBox long videos | `youtube/` | Brick Toy 16:9 | manual upload | — | idle |
@@ -138,7 +138,7 @@ Source of truth = each folder's `config.json`. As of 30 Oct 2026:
 | Series | Queue file | Poster | Posted log |
 |---|---|---|---|
 | Toy | folder order + `toyreels/posting.json` times | `post-toyreels.yml` → `tools/toy_post.py` | `toyreels/posted.json` |
-| CouchSarcasm | `couchnew/schedule.json` (root `config.json` has `"queue": "couchnew"`) | `post.yml` → `tools/post.py` + `tools/couch_youtube.py` | `posted.json`, `couch_youtube_posted.json` |
+| Socho Zara riddles (old CouchSarcasm accounts) | `riddles/schedule.json` (root `config.json` has `"queue": "riddles"`; post.py takes slots from `post_times_ist`, not the workflow's `--at`) | `post.yml` → `tools/post.py` + `tools/couch_youtube.py` | `posted.json`, `couch_youtube_posted.json` |
 | Hindi mythology (Lokvara) | `mythreels/schedule.json` (strict queue order) | `post-mythreels.yml` → `tools/myth_post.py` | `mythreels/posted.json` |
 | Thought Bubble POV (mech Shorts paused) | `povreels/schedule.json` | `post-instagram-mech.yml` → `tools/ig_mech_post.py` (kind "pov") | `ig_posted.json` |
 | Mech long video + its Shorts | root `schedule.json` | `publish-youtube.yml` → `tools/youtube_publish.py` (puts the video's real link into each Short's description, replacing `[LINK]`) | `youtube_posted.json` |
@@ -366,11 +366,10 @@ Fix these docs when you're next in those folders.
 - **CouchSarcasm:** stopped (root `config.json` `paused`), batch routines off. The owner cancelled the waiting 21:30 run on
   31 Oct. Remaining episodes are kept, not deleted. **Check:** that run may have left a scheduled Short in YouTube Studio (§5).
 - **Mechanic:** stopped, no new videos, keep stopped.
-- **Riddle channel (new):** skill `skills/whatifstyle` made from the owner's reference video (flat science explainer style).
+- **Socho Zara (riddles), reuses the Couch accounts (owner, 31 Oct):** posters are switched to it but root `config.json` is `paused`. **Before go:** owner hides old Couch reels (YT Private, IG archive), renames both accounts, uploads `riddles/brand/`, decides YouTube "Made for Kids". Then remove the `paused` line. Skill `skills/whatifstyle` made from the owner's reference video (flat science explainer style).
   21 Hinglish reels rendered with voice, music and effects; MP4s in Release `riddle-week1`; plan, titles and captions in
-  `riddles/week1.json`, build notes in `riddles/README.md`. Slots 06:00, 12:00, 20:30 IST. **Next:** owner creates IG + YT
-  accounts → add secrets, a poster, a make workflow and a batch routine. The `gh` token here has no workflow scope, so a new
-  workflow file must be pasted on the GitHub website by the owner. Only the jungle court mix was heard and approved.
+  `riddles/week1.json`, build notes in `riddles/README.md`. Slots 06:00, 12:00, 20:30 IST. No batch routine yet. The `gh` token here has no workflow scope, so a new workflow file must be pasted on the GitHub
+  website by the owner. Only the jungle court mix was heard and approved.
 - **Adult couple idea (Pillow Talk):** pilots `couchnew/reels/p001`–`p003` exist, not queued, not approved. Style sheets were
   rejected. Hand-coded art can't match generated art there. Limits I set: no explicit sexual content, sex scenes or sex
   sounds, no body-focused pin-ups, characters clearly adult.

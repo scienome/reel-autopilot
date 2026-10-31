@@ -1,6 +1,6 @@
 {
-  "paused": "Owner stopped CouchSarcasm posting on 31 Oct 2026. Remove this line to resume.",
-  "queue": "couchnew",
+  "paused": "Couch stopped 31 Oct 2026. These accounts become the riddle channel Socho Zara. Remove this line only after the owner has hidden the old Couch reels, renamed the channels and said go.",
+  "queue": "riddles",
   "voice": {
     "voice_id": "s3TPKV1kjDlVtZbl4Ksh",
     "model_id": "eleven_v4",
@@ -8,7 +8,7 @@
   },
   "instagram": {
     "api_version": "v26.0",
-    "post_times_ist": ["07:30", "13:30", "21:30"],
-    "default_hashtags": ["couplegoals", "relatable", "couplehumor", "sarcasm", "animation", "reels"]
+    "post_times_ist": ["06:00", "12:00", "20:30"],
+    "default_hashtags": ["riddle", "paheli", "hindi", "brainteaser", "puzzle", "dimaag", "reels"]
   }
 }

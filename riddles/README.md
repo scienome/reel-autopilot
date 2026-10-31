@@ -1,4 +1,7 @@
-# Riddle channel (no account yet, nothing posts)
+# Riddle channel: Socho Zara (paused until the owner says go)
+
+Reuses the old CouchSarcasm Instagram and YouTube accounts and their posters (`post.yml`, `post-couch-youtube.yml`): root
+`config.json` has `"queue": "riddles"`. Queue: `schedule.json`. Captions: `meta/`. Picture and cover: `brand/`.
 
 Hinglish animal riddles in the `skills/whatifstyle` style. The owner approved the mix on 31 Oct 2026. Voice:
 `lOJWQNMBIzoU3N0EnOya`. MP4s of week 1 are in the Release `riddle-week1`. `week1.json` holds the 7-day plan, titles,

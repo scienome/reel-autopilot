@@ -22,6 +22,8 @@ LOG = os.path.join(ROOT, 'posted.json')
 
 def queue():
     done = {p['id'] for p in json.load(open(LOG))} if os.path.exists(LOG) else set()
+    if CFG.get('queue') == 'riddles':  # the riddle channel, in riddles/schedule.json order
+        return [i for i in src.riddle_queue() if i not in done and src.rendered(i)]
     if CFG.get('queue') == 'couchnew':  # the new sitcom episodes, in couchnew/schedule.json order, once rendered
         return [i for i in src.new_queue() if i not in done and src.rendered(i)]
     ids = [os.path.basename(p) for p in sorted(glob.glob(os.path.join(ROOT, 'reels', '*')))]
@@ -30,7 +32,7 @@ def queue():
 
 def caption_for(rid):
     mp = src.meta_path(rid)
-    meta = json.load(open(mp)) if os.path.exists(mp) else {}
+    meta = json.load(open(mp, encoding='utf-8')) if os.path.exists(mp) else {}
     tags = meta.get('hashtags') or CFG['instagram'].get('default_hashtags', [])
     cap = meta.get('caption', '').strip()
     return (cap + '\n\n' + ' '.join('#' + t.lstrip('#') for t in tags)).strip()
@@ -46,6 +48,11 @@ def api(method, path, **data):
     return j
 
 
+def riddle_slot(ist):
+    h, m = map(int, ist.split(':')); t = (h * 60 + m - 330) % 1440  # IST to UTC
+    return f'{t // 60:02d}:{t % 60:02d}'
+
+
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument('--dry-run', action='store_true'); ap.add_argument('--reel')
     ap.add_argument('--at', help='publish slots in UTC, e.g. 07:30,14:30: upload early, then publish exactly on the slot')
@@ -53,6 +60,8 @@ def main():
     if CFG.get('paused'):  # the owner paused CouchSarcasm (config.json "paused"): post nothing
         print(f"::notice::CouchSarcasm is paused: {CFG['paused']}"); return
     target = None
+    if a.at and CFG.get('queue') == 'riddles':  # riddle slots: config.json post_times_ist, not the workflow's old couch times
+        a.at = ','.join(riddle_slot(t) for t in CFG['instagram']['post_times_ist'])
     if a.at and not a.dry_run:
         now = datetime.datetime.now(datetime.timezone.utc)
         slots = []
@@ -72,7 +81,7 @@ def main():
         print(f'slot {target:%H:%M} UTC; publishing exactly then')
     q = queue()
     slot_utc = target.replace(tzinfo=None) if target else None
-    rid = a.reel or ((q[0] if q else None) if CFG.get('queue') == 'couchnew' else best_for_slot(q, src.meta_path, is_afternoon(slot_utc)))
+    rid = a.reel or ((q[0] if q else None) if CFG.get('queue') in ('couchnew', 'riddles') else best_for_slot(q, src.meta_path, is_afternoon(slot_utc)))
     if not rid:
         print('::error::The queue is empty: no rendered reels left to post. Merge the next weekly batch.')
         sys.exit(1)

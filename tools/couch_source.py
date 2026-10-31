@@ -1,15 +1,25 @@
 """Where a CouchSarcasm post comes from: the old reels (reels/<id>, out/<id>.mp4 on main) or the new sitcom episodes
 (couchnew/reels/<id>, video in the Release couchnew-<id>). config.json "queue": "couchnew" makes the poster take the
-episodes in couchnew/schedule.json "queue" order instead of the old reels."""
+episodes in couchnew/schedule.json "queue" order instead of the old reels. "queue": "riddles" takes the riddle reels in
+riddles/schedule.json order (riddles/meta/<id>.json, video in that file's "release"); the riddle channel reuses these accounts."""
 import json, os, tempfile
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 NEW = os.path.join(ROOT, 'couchnew')
+RIDDLES = os.path.join(ROOT, 'riddles')
 REPO = os.environ.get('GITHUB_REPOSITORY', 'scienome/reel-autopilot')
 
 
+def is_riddle(rid):
+    return os.path.exists(os.path.join(RIDDLES, 'meta', rid + '.json'))
+
+
+def riddle_queue():
+    return list(json.load(open(os.path.join(RIDDLES, 'schedule.json'), encoding='utf-8')).get('queue', []))
+
+
 def is_new(rid):
-    return os.path.isdir(os.path.join(NEW, 'reels', rid))
+    return is_riddle(rid) or os.path.isdir(os.path.join(NEW, 'reels', rid))
 
 
 def new_queue():
@@ -23,10 +33,15 @@ def new_queue():
 
 
 def meta_path(rid):
+    if is_riddle(rid):
+        return os.path.join(RIDDLES, 'meta', rid + '.json')
     return os.path.join(NEW if is_new(rid) else ROOT, 'reels', rid, 'meta.json')
 
 
 def release_url(rid):
+    if is_riddle(rid):
+        tag = json.load(open(os.path.join(RIDDLES, 'schedule.json'), encoding='utf-8'))['release']
+        return f'https://github.com/{REPO}/releases/download/{tag}/{rid}.mp4'
     return f'https://github.com/{REPO}/releases/download/couchnew-{rid}/{rid}.mp4'
 
 

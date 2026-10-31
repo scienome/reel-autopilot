@@ -7,7 +7,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 def first_comment(series, rid, meta_path=None):
     """The reel's own meta.json "first_comment", else engagement/<series>.json, else None."""
     if meta_path and os.path.exists(meta_path):
-        fc = json.load(open(meta_path)).get('first_comment')
+        fc = json.load(open(meta_path, encoding='utf-8')).get('first_comment')
         if fc:
             return fc
     p = os.path.join(ROOT, 'engagement', series + '.json')

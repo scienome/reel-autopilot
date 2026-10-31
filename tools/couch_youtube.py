@@ -20,12 +20,12 @@ import couch_source as src  # noqa: E402
 CFG = json.load(open(os.path.join(ROOT, 'config.json')))
 POSTED = os.path.join(ROOT, 'posted.json')
 LOG = os.path.join(ROOT, 'couch_youtube_posted.json')
-yt.CATEGORY = '23'  # Comedy
+yt.CATEGORY = '24' if CFG.get('queue') == 'riddles' else '23'  # Entertainment for riddles, else Comedy
 
 
 def texts(rid):
     mp = src.meta_path(rid)
-    meta = json.load(open(mp)) if os.path.exists(mp) else {}
+    meta = json.load(open(mp, encoding='utf-8')) if os.path.exists(mp) else {}
     tags = [t.lstrip('#') for t in (meta.get('hashtags') or CFG['instagram'].get('default_hashtags', []))]
     title = (meta.get('title') or rid.split('-', 1)[-1].replace('-', ' ').capitalize()).strip()
     if len(title) + 8 <= 100:
