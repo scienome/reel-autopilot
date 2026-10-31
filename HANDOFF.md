@@ -25,9 +25,9 @@ or anything that posts publicly.
 3. **Check live state:** latest GitHub Actions runs (any failures?), Releases (which reels are rendered), each series'
    `schedule.json` (what's queued, what's paused), and the posted logs (`posted.json`, `ig_posted.json`,
    `toyreels/posted.json`, `youtube_posted.json`, `couch_youtube_posted.json`).
-4. **Skills are in the repo:** `skills/toystyle`, `skills/violetstyle`, `skills/mechanicskill` (read `SKILL.md` +
+4. **Skills are in the repo:** `skills/toystyle`, `skills/violetstyle`, `skills/mechanicskill`, `skills/whatifstyle` (read `SKILL.md` +
    the files next to it directly), and ready-to-upload `skills/zips/*.zip`. If `/toystyle` etc. aren't installed on this
-   account, tell me once: "download the 3 zips from skills/zips on GitHub → Settings → Capabilities → Skills → upload".
+   account, tell me once: "download the zips from skills/zips on GitHub → Settings → Capabilities → Skills → upload".
    Never block on it: the repo's series folders contain every renderer.
 5. **Scheduled Claude runs** (see §8) live on the Claude account that created them. List this account's scheduled
    tasks; **if the toy, couch and POV batch tasks are missing, create them now from the templates in §8** (I want reel
@@ -71,11 +71,12 @@ sync-videos.yml                   ->  copies every finished MP4 to the `videos` 
 | Series | Folder | Style / engine | Platforms | Post times (IST) | Status |
 |---|---|---|---|---|---|
 | **Toy reels** (Brick Toy dark comedy) | `toyreels/` | LEGO-like 3D bricks, `style/scenes.js` `makeComedy` | IG (toy account) + YT Shorts (toy channel) | 06:00, 12:30, 20:30 | LIVE, auto-batches every 3 days |
-| **CouchSarcasm** (new) | `couchnew/` | 2D adult cartoon sitcom (Sam, Maya, Mum), `toon/adult.js` + `toon/sitcom.js`, laugh track, one voice per character | IG (couch) + YT (couch channel) | 07:30, 13:30, 21:30 | Resumed 30 Oct with e001 |
+| **CouchSarcasm** (new) | `couchnew/` | 2D adult cartoon sitcom (Sam, Maya, Mum), `toon/adult.js` + `toon/sitcom.js`, laugh track, one voice per character | IG (couch) + YT (couch channel) | 07:30, 13:30, 21:30 | **STOPPED 31 Oct: owner called it a waste.** No posting, no new episodes |
 | **Thought Bubble (POV)** | `povreels/` | soft-3D Violet kit (`style/` + makeCouch with couple hidden) + `povreels/lib/pov.js`; "YOU are the only one who…" | IG @gearsandglitches + YT | 07:30, 12:30, 20:30 | Resumed 30 Oct with 001 |
-| **Hindi mythology** (working name; owner picks the final name) | `mythreels/` | 2D **folk-art** storybook (Pattachitra border, paper texture, kajal fish-eyes, Madhubani trees), `kit/myth.js` + `kit/katha.js`, Hindi subtitles, big hook card + "अगले भाग में" teaser | IG + YT, **accounts not created yet** | 4 a day, proposed 08:00, 13:00, 18:00, 21:00 | 28 reels (1 week) written; NOT posting yet |
-| Mechanic Shorts | `mechreels/` | low-poly garage/x-ray, `style/mech_base.js`, 9:16 | YT (Gears channel); alternates with POV/Dave in the Gears slots | — | Shorts 01–25 made |
-| Mechanic long videos | `mechvideos/` | same engine, 16:9 1080p, 4–5 min, chapters | YT, root `schedule.json` (video 07:30, its 3 Shorts 12:30/17:30/21:30) | — | 001–008 made |
+| **Hindi mythology** (working name; owner picks the final name) | `mythreels/` | 2D **folk-art** storybook (Pattachitra border, paper texture, kajal fish-eyes, Madhubani trees), `kit/myth.js` + `kit/katha.js`, Hindi subtitles, big hook card + "अगले भाग में" teaser | IG + YT, secrets `IG_MYTH_*`, `YT_MYTH_*` | 4 a day: 08:00, 13:00, 18:00, 21:00 | **LIVE since 31 Oct** (brand name Lokvara). 38 queued with Diwali |
+| Mechanic Shorts | `mechreels/` | low-poly garage/x-ray, `style/mech_base.js`, 9:16 | YT (Gears channel) | — | **STOPPED 31 Oct by owner**, keep it stopped |
+| Mechanic long videos | `mechvideos/` | same engine, 16:9 1080p, 4–5 min, chapters | YT, root `schedule.json` | — | **STOPPED 31 Oct.** No new videos; 006–008 not posted |
+| **Riddle channel** (Hinglish animal riddles) | `riddles/` + `skills/whatifstyle` | flat vector 2D, code-drawn | **no accounts yet** | 06:00 quick, 12:00 mystery/visual, 20:30 harder | 21 reels ready (7 days). NOT posting yet |
 | Dave reels | `davereels/` | crash-test dummy Dave | — | — | **PAUSED — I rejected Dave. Don't resume.** |
 | Old couch reels | `reels/` (root) | Violet Room 3D couple | — | — | **RETIRED** (0001–0040) |
 | ToyBox long videos | `youtube/` | Brick Toy 16:9 | manual upload | — | idle |
@@ -123,9 +124,10 @@ Source of truth = each folder's `config.json`. As of 30 Oct 2026:
   Mum = Alice `Xb7hH8MSUJpSbSDYk0k2`, with per-character `cast_settings`.
 - POV cast (`povreels/config.json`): cute pets/babies `FgiNpTIapnCbaD6xiqIo`; naughty/bully characters
   `zJrRUu1KEcKH8qdpNaPJ`; plus Helen, George, Daniel, Chris, Jessica, Alice, Adam-Dominant. `cast_fallback` covers refused voices.
+- **Riddles: `lOJWQNMBIzoU3N0EnOya`** (owner's pick, 31 Oct; mix approved).
 - **Hindi mythology (`mythreels/config.json`): Sudhir `XNJDyPyJ8r4J7de0WJwB`** ("Sudhir - Warm & Expressive Hindi Voice", the
   owner's own ElevenLabs voice, picked 30 Oct). Every line uses it, character lines too, until the owner names character voices.
-- Tools: `voice-audition.yml` to try voices (`lang: hi` = Hindi audition with Voice Library narrators; `find: <name>`
+- Tools: `voice-audition.yml` to try voices, or voice a script line by line (`lang: lines:riddles/<file>.json`, see `riddles/README.md`; it replaces the `voice-audition` Release) (`lang: hi` = Hindi audition with Voice Library narrators; `find: <name>`
   = only voices whose name matches), `check-elevenlabs.yml` to check credits/key.
 - **Never change a voice without asking me.** Cost guide: reel ≈ 500–1,300 chars, long video ≈ 3,500.
 
@@ -137,10 +139,12 @@ Source of truth = each folder's `config.json`. As of 30 Oct 2026:
 |---|---|---|---|
 | Toy | folder order + `toyreels/posting.json` times | `post-toyreels.yml` → `tools/toy_post.py` | `toyreels/posted.json` |
 | CouchSarcasm | `couchnew/schedule.json` (root `config.json` has `"queue": "couchnew"`) | `post.yml` → `tools/post.py` + `tools/couch_youtube.py` | `posted.json`, `couch_youtube_posted.json` |
-| Gears POV (+ mech Shorts, alternating) | `povreels/schedule.json` | `post-instagram-mech.yml` → `tools/ig_mech_post.py` (kind "pov") | `ig_posted.json` |
+| Hindi mythology (Lokvara) | `mythreels/schedule.json` (strict queue order) | `post-mythreels.yml` → `tools/myth_post.py` | `mythreels/posted.json` |
+| Thought Bubble POV (mech Shorts paused) | `povreels/schedule.json` | `post-instagram-mech.yml` → `tools/ig_mech_post.py` (kind "pov") | `ig_posted.json` |
 | Mech long video + its Shorts | root `schedule.json` | `publish-youtube.yml` → `tools/youtube_publish.py` (puts the video's real link into each Short's description, replacing `[LINK]`) | `youtube_posted.json` |
 
-- **Pause a series:** add `"paused": "reason"` to its schedule file. Remove to resume.
+- **Pause a series:** add `"paused": "reason"` to its schedule file. Remove to resume. CouchSarcasm uses root `config.json` (paused now); Mechanic uses root `schedule.json` (paused now).
+- **Order (owner, 31 Oct):** post everything, hold nothing, strongest first, never break a series.
 - **Skip a toy reel:** add `"<id>": {"skipped": true, "instagram": {}, "youtube": {}}` to `toyreels/posted.json`.
 - **Change times:** edit the times file AND the cron lines in the workflow (cron is UTC; IST = UTC+5:30; posters run
   2–4 h before each slot).
@@ -160,7 +164,7 @@ Already set up — never print or ask me to paste them in chat. Names, so you kn
 `ELEVENLABS_API_KEY` · `GH_PAT` (saves renewed IG tokens) · Couch IG `IG_ACCESS_TOKEN`, `IG_USER_ID` ·
 Couch YT `YT_COUCH_CLIENT_ID/SECRET/REFRESH_TOKEN` · Toy IG `IG_TOY_ACCESS_TOKEN`, `IG_TOY_USER_ID` ·
 Toy YT `YT_TOY_CLIENT_ID/SECRET/REFRESH_TOKEN` · Gears IG `IG_GG_ACCESS_TOKEN`, `IG_GG_USER_ID` ·
-Gears/Mech YT `YT_CLIENT_ID/SECRET/REFRESH_TOKEN`.
+Gears/Mech YT `YT_CLIENT_ID/SECRET/REFRESH_TOKEN` · Lokvara `IG_MYTH_*`, `YT_MYTH_*`.
 Repo setting needed: Actions → Workflow permissions → Read and write.
 New YouTube channel = new Google Cloud project, YouTube Data API v3, OAuth consent **In production** (Testing tokens die
 in 7 days), Web client with redirect `https://developers.google.com/oauthplayground`, refresh token from OAuth Playground
@@ -218,6 +222,9 @@ Jobs: `toy-batch`, `couch-batch`, `pov-batch`, `mech-batch` (one name per schedu
 ---
 
 ## 8. SCHEDULED CLAUDE RUNS (on the owner's Claude account)
+
+Cloud routines, not on the owner's PC (owner: "dont run on this pc"). Model `claude-sonnet-5-5`. Recreated 31 Oct; none had
+run yet at this writing, so check that the first one could push to main. No routine for Lokvara week 2 or riddles yet.
 
 | Task | When (IST) | State |
 |---|---|---|
@@ -289,6 +296,9 @@ playful vote; sometimes "Part 1/3" cliffhangers; `cover_t` on the most surprisin
 - **CouchSarcasm (couchnew):** 2D adult sitcom, Sam / Maya / Mum, each in their own voice, laugh track. Approved model:
   **e001 "The Ring" ("perfect")** — copy its structure. Rejected: text-message format, "what she says vs means", the old
   3D couple reels.
+- **Riddles:** thinking riddles with a real aha, solvable from what's on screen. Big animal casts, many scene elements, music
+  plus many effects, a 5-second "Socho" countdown, then ask for a comment and a follow. No invented claims like "only 1% solve
+  this". Keep it fully separate from any adult content. YouTube may require "Made for Kids".
 - **Thought Bubble POV (povreels):** "You're the only person on Earth who…". Camera = YOU; characters look into the lens, thoughts
   pop up as clouds. Impossible premise in second one, funny escalation, one moment that really lands emotionally, a twist,
   "Part 2?". I want MORE MIXES: dogs, cats, more animals, birds, babies, more humans; crazy, funny, make people feel
@@ -299,7 +309,7 @@ playful vote; sometimes "Part 1/3" cliffhangers; `cover_t` on the most surprisin
 - **Hindi mythology (mythreels):** respectful story-time, **lesser-known stories only** (the owner rejected "everyone
   knows" ones like Hanuman swallowing the sun). Always in **numbered series** so people binge: big hook card from
   frame 0 (≤ 8-word shocking claim), series tag "<series> • भाग N", ending "अगले भाग में..." teasing the next part's
-  hook. 40-55 s, never over 60. Gods are dignified (no jokes about them). Folk versions say "कहते हैं"; `sources` in
+  hook. Owner: stories continuous, one Ravan and one Mahabharat in turn. 40-55 s, never over 60. Gods are dignified (no jokes about them). Folk versions say "कहते हैं"; `sources` in
   meta. **Folk-art look** is the approved style (owner, 30 Oct). Full rules: `mythreels/PLAYBOOK.md`.
 
 **Never repeat a premise, twist or punchline.** Read the existing `meta.json`/`script.json` titles in that series first.
@@ -346,20 +356,26 @@ Fix these docs when you're next in those folders.
 
 ---
 
-## 13. STATUS SNAPSHOT (30 Oct 2026, 18:30 IST — re-check live, this goes stale)
+## 13. STATUS SNAPSHOT (31 Oct 2026, 19:00 IST — re-check live, this goes stale)
 
-- Toy: reels 35–55 made and rendered 29–30 Oct (batch `done`); ~37 queued (about 12 days). Next auto-batch 3 Nov.
-- Couch: queue e001–e021 (e001, e002 posted 30 Oct). Everything rendered; covers every slot to 5 Nov night.
-- POV: queue 001–021 (001, 007 posted 30 Oct). Everything rendered; covers every slot to 5 Nov night.
-- **Hindi mythology (new, 30 Oct):** narrator Sudhir. Week 1 = 28 reels, 2 series × 14 parts: **रावण के रहस्य**
-  (002, 003, 005-016) and **महाभारत के छुपे योद्धा** (004, 017-029); `mythreels/schedule.json` queue alternates them
-  4 a day. `001-hanuman-sun` is held back (too well known). Then the owner asked for a **folk-art look** (kit updated
-  30 Oct, commit "folk-art look"): all 28 must be re-rendered with it (run "Make myth reels" with every id; voices,
-  music and SFX are cached, so it costs no credits). Next: owner creates the IG + YouTube accounts and picks the
-  channel name → add secrets, a posting workflow (copy `post-toyreels.yml` / `tools/toy_post.py` pattern) for
-  4 slots a day, and a scheduled batch task (`myth-batch`) for week 2 (ask the owner which two series next).
-- The owner may be without a Claude subscription for a few days: posting keeps running on GitHub by itself; only the
-  batch tasks pause. When you pick up, check queue days first (§0 step 7).
+- **Toy:** live. Next auto-batch 3 Nov. Poster picks by `potential`.
+- **Thought Bubble POV:** live, queue reordered strongest first, covers about to 5–6 Nov. Next auto-batch 2 Nov, 02:47.
+- **Lokvara (Hindi mythology):** live since 31 Oct. 002 skipped; 003 and 004 in the log. Mahabharat and Ravan alternate.
+  **Diwali series** (दिवाली के रहस्य, 030–039, rendered) takes the 18:00 and 21:00 slots 4–8 Nov. Queue runs out about
+  9 Nov. **Owner must pick the next two series**, then add a `myth-batch` routine.
+- **CouchSarcasm:** stopped (root `config.json` `paused`), batch routines off. The owner cancelled the waiting 21:30 run on
+  31 Oct. Remaining episodes are kept, not deleted. **Check:** that run may have left a scheduled Short in YouTube Studio (§5).
+- **Mechanic:** stopped, no new videos, keep stopped.
+- **Riddle channel (new):** skill `skills/whatifstyle` made from the owner's reference video (flat science explainer style).
+  21 Hinglish reels rendered with voice, music and effects; MP4s in Release `riddle-week1`; plan, titles and captions in
+  `riddles/week1.json`, build notes in `riddles/README.md`. Slots 06:00, 12:00, 20:30 IST. **Next:** owner creates IG + YT
+  accounts → add secrets, a poster, a make workflow and a batch routine. The `gh` token here has no workflow scope, so a new
+  workflow file must be pasted on the GitHub website by the owner. Only the jungle court mix was heard and approved.
+- **Adult couple idea (Pillow Talk):** pilots `couchnew/reels/p001`–`p003` exist, not queued, not approved. Style sheets were
+  rejected. Hand-coded art can't match generated art there. Limits I set: no explicit sexual content, sex scenes or sex
+  sounds, no body-focused pin-ups, characters clearly adult.
+- **Tried and rejected by the owner:** Blender/MPFB, canvas soft-3D, SDF shader 3D, filters.
+- **Windows PC notes:** clone at `C:\Users\amang\reel-autopilot`. Set `PYTHONUTF8=1`. Use `python`. ffmpeg came from winget.
 - Open: owner to delete the duplicate couch Short `PDkoEk8xCxw` (e002, from a cancelled run) in YouTube Studio.
 - Channel rename (30 Oct): Gears & Glitches → **Thought Bubble** (owner renames the Instagram account and YouTube channel;
   posting uses account IDs, so nothing in the repo depends on the name). Secrets keep their old names (`IG_GG_*`, `YT_*`).
