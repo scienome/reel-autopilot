@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Cheerful bouncy 1950s kids-TV xylophone and clarinet, playful, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "cleaner",
+   "offset": 0.0,
+   "prompt": "wet sponge squish",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "collapsed",
+   "offset": 0.0,
+   "prompt": "cartoon crash and falling sales",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b4",
+   "word": "teacher",
+   "offset": 0.0,
+   "prompt": "cheerful school bell ding",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "toy",
+   "offset": 0.0,
+   "prompt": "magical sparkle chime",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Quirky 1940s country-western banjo and fiddle with silly slide whistle, comedic, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "head",
+   "offset": 0.0,
+   "prompt": "comedic cartoon boing",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "eyedropper",
+   "offset": 0.0,
+   "prompt": "water dripping plink",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b4",
+   "word": "sideshow",
+   "offset": 0.0,
+   "prompt": "circus carnival jingle",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "died",
+   "offset": 0.0,
+   "prompt": "sad trombone wah wah",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

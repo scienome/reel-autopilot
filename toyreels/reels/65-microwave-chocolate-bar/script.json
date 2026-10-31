@@ -1,0 +1,56 @@
+[
+ {
+  "chapter": "The microwave",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "In nineteen forty five, a melted chocolate bar",
+     "invented the microwave oven."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "Percy Spencer was working on radar equipment at Raytheon."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "The chocolate bar in his pocket melted."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "So he tried popcorn kernels. They popped."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "Then he tried an egg. It exploded."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "He filed the patent that same year."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "Spencer never finished grammar school."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "What would you cook first?"
+    ]
+   }
+  ]
+ }
+]

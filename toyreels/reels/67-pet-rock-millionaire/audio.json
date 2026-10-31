@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Groovy 1970s funk with wah guitar and bongos, playful, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "rocks",
+   "offset": 0.0,
+   "prompt": "stone clunk comedic",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b2",
+   "word": "penny",
+   "offset": 0.0,
+   "prompt": "coin clink",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "million",
+   "offset": 0.0,
+   "prompt": "cash register cha-ching",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "fad",
+   "offset": 0.0,
+   "prompt": "air leaving a balloon",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

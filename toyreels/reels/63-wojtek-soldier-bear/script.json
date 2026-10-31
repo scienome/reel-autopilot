@@ -1,0 +1,56 @@
+[
+ {
+  "chapter": "The bear",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "Poland's army enlisted a bear",
+     "as a soldier."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "Soldiers found an orphan cub in Iran in nineteen forty two."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "He went on the payroll as a private, so he could travel with the unit."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "At Monte Cassino, he carried crates of artillery shells."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "Soldiers said he never dropped one."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "He was promoted to corporal."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "After the war, he retired to Edinburgh Zoo."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Would you salute him?"
+    ]
+   }
+  ]
+ }
+]

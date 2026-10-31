@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Playful 1940s science-lab jazz with bubbly synth bleeps and xylophone, comedic, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "melted",
+   "offset": 0.0,
+   "prompt": "squishy melting sound",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "popcorn",
+   "offset": 0.0,
+   "prompt": "popcorn popping rapid",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b4",
+   "word": "exploded",
+   "offset": 0.0,
+   "prompt": "egg splat cartoon explosion",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "patent",
+   "offset": 0.0,
+   "prompt": "paper stamp thunk",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

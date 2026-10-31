@@ -1,0 +1,57 @@
+[
+ {
+  "chapter": "The chicken",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "In nineteen forty five, a chicken lost his head",
+     "and lived eighteen more months."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "Farmer Lloyd Olsen of Colorado chopped it off."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "The axe missed part of the brain stem, and one ear."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "Mike kept walking, and the Olsens fed him with an eyedropper."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "Scientists studied him, and he toured as a sideshow star."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "He died in nineteen forty seven, after choking."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "Today, the town of Fruita",
+     "still holds a festival for him."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Would you have named him Mike?"
+    ]
+   }
+  ]
+ }
+]

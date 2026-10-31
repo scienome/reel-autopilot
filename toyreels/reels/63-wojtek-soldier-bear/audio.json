@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Warm comedic military march with accordion and brass, heroic but playful, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "bear",
+   "offset": 0.0,
+   "prompt": "deep bear growl, comedic",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "shells",
+   "offset": 0.0,
+   "prompt": "heavy crates thumping",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "corporal",
+   "offset": 0.0,
+   "prompt": "triumphant brass fanfare short",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "zoo",
+   "offset": 0.0,
+   "prompt": "gentle cartoon sigh",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}
