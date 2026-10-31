@@ -1,0 +1,48 @@
+{
+ "music-8209dbb5bfdd.mp3": {
+  "prompt": "Indian festive mythological cinematic underscore for Diwali: tabla, bansuri, shehnai, temple bells, warm strings, royal and majestic, growing into a vast cosmic awe, resolving into warm devotion, no vocals",
+  "music_length_ms": 53460,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-20dd5583abc7.mp3": {
+  "text": "deep rumbling descent and a gong",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-8d42a51013fb.mp3": {
+  "text": "three soft footsteps with a mystic chime",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-91a6203d5986.mp3": {
+  "text": "huge rising cosmic swell",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-ab0b09c4f450.mp3": {
+  "text": "massive thunder boom",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-73a31e29e62d.mp3": {
+  "text": "hushed silence and a single deep bell",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-d1f57a532809.mp3": {
+  "text": "warm divine choir swell",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-52eb9a5e11b0.mp3": {
+  "text": "joyful crowd and festive bells",
+  "duration_seconds": 2.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
