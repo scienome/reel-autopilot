@@ -206,7 +206,7 @@ python3 tools/claim.py beat <job> --note "56-62 pushed"   # after every push and
 python3 tools/claim.py done <job>         # at the very end
 python3 tools/claim.py status             # see all locks
 ```
-Jobs: `toy-batch`, `pov-batch`, `riddle-batch` (live); `couch-batch`, `mech-batch` (stopped) (one name per scheduled job; add new ones freely).
+Jobs: `toy-batch`, `pov-batch`, `riddle-batch`, `myth-batch` (live); `couch-batch`, `mech-batch` (stopped) (one name per scheduled job; add new ones freely).
 - How it works: the lock is `locks/<job>.json` on `main`, written by a non-force git push straight to GitHub. If two runs
   race, GitHub accepts only the first push, so exactly one wins. It never touches your working folder, and lock commits
   carry `[skip ci]`, so they never trigger a render.
@@ -237,6 +237,7 @@ run yet at this writing, so check that the first one could push to main. No rout
 | Thought Bubble POV: backup | 08:47 same days | ON (30 Oct) |
 | Socho Zara riddles: 21 new reels (`riddle-batch`, `riddles/PLAYBOOK.md`) | 03:07 on the 1st, 4th, 7th… | ON (31 Oct) |
 | Socho Zara riddles: backup (finish unfinished batch) | 09:07 same days | ON (31 Oct) |
+| Lokvara week 2: 28 reels (`myth-batch`, `mythreels/PLAYBOOK.md` §2) | once: 31 Oct 23:00, backup 1 Nov 06:00 | ONE-OFF. Recreate only for a new week, after I name the series |
 | CouchSarcasm 21 reels + backup (old `reels/` format, WEEKLY.md) | 2nd, 5th, 8th… | OFF — old format retired |
 | Dave 21 reels + backup | every 3rd day | OFF — Dave rejected |
 
@@ -293,6 +294,9 @@ one day, read `couchnew/PLAYBOOK.md` and ask me first.
    account's own cloud environment id. Crons use `CRON_TZ=Asia/Kolkata`, so write the IST time as shown.
 3. Confirm each routine's next run time, then tell me the list in one short message.
 4. The account needs GitHub access with push to this repo. I connect it (claude.ai → Settings → Connectors → GitHub).
+
+**Lokvara task prompt** (run once per week of series, main + backup 7 hours apart, `run_once_at` in UTC; I choose the series first):
+> LOKVARA BATCH. In a checkout of scienome/reel-autopilot (clone it if missing; push access needed) run `git checkout main && git pull origin main`. FIRST run `python3 tools/claim.py start myth-batch`. If it exits 3 / prints STOP, reply with that one line and stop. Otherwise read HANDOFF.md section 7 for local checking, then follow mythreels/PLAYBOOK.md exactly: finish an unfinished batch or make the 2 new series it names, 14 parts each. Check every story with web search and list sources. Better fewer than weak. Check each with mythreels/tools/check.py, push a few at a time straight to main, run `python3 tools/claim.py beat myth-batch --note "..."` after every push (stop if it prints STOP), wait for every mythreel-<id> Release, check the MP4s, append the ids to mythreels/schedule.json "queue" as the playbook says, then `python3 tools/claim.py done myth-batch`. Never change voices, config.json, kit behaviour for old reels, posting files or workflows. Never run posting workflows by hand. Commit messages end with a Co-Authored-By line and contain no model names. Finish with a short plain-language report.
 
 **Why two accounts can't clash:** identical tasks on two accounts both fire, and the first thing each does is `claim.py start
 <job>`. The lock is a git push to main, so GitHub lets only one win. The other prints STOP and ends without writing, rendering
@@ -401,7 +405,7 @@ Fix these docs when you're next in those folders.
 - **Lokvara early result (owner):** `002-ravan-shani` got about 20,000 views and 800 likes on Instagram in 15 hours on 31 Oct. See `mythreels/PLAYBOOK.md` §1b.
 - **Lokvara (Hindi mythology):** live since 31 Oct. 002 skipped; 003 and 004 in the log. Mahabharat and Ravan alternate.
   **Diwali series** (दिवाली के रहस्य, 030–039, rendered) takes the 18:00 and 21:00 slots 4–8 Nov. Queue runs out about
-  9 Nov. **Owner must pick the next two series**, then add a `myth-batch` routine.
+  9 Nov. **Week 2 chosen by owner 31 Oct:** पूजा के पीछे की कथा + जब देवता भी हारे, from one-off `myth-batch` tasks. Ask the owner for week 3's series by about 12 Nov.
 - **CouchSarcasm:** stopped (root `config.json` `paused`), batch routines off. The owner cancelled the waiting 21:30 run on
   31 Oct. Remaining episodes are kept, not deleted. **Check:** that run may have left a scheduled Short in YouTube Studio (§5).
 - **Mechanic:** stopped, no new videos, keep stopped.

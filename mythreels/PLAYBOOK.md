@@ -1,8 +1,7 @@
 # Hindi mythology channel: the batch playbook
 
 Any Claude session follows this to make new episodes with the same look, voice and quality. Folder: `mythreels/`.
-Render: push `reels/<id>/` → "Make myth reels" workflow → Release `mythreel-<id>`. Posting is NOT set up yet (the owner
-is creating the Instagram + YouTube accounts); when it is, 3 reels a day.
+Render: push `reels/<id>/` → "Make myth reels" workflow → Release `mythreel-<id>`. Posting is live: 4 reels a day (§1).
 
 ## 1. What the owner wants (30 Oct 2026)
 - **Lesser-known stories only.** "Everyone knows" stories are rejected (e.g. Hanuman swallowing the sun, `001`, is
@@ -41,7 +40,17 @@ read every `reels/*/script.json` first.
 |---|---|
 | रावण के रहस्य | 1 Shani as a step (002), 2 Kumbhakarna's Nidrasan (003), 3 nine heads (005), 4 the name "Ravana" (006), 5 Nandi's curse (007), 6 Vedavati (008), 7 Rambha's curse (009), 8 Vali (010), 9 Sahasrabahu (011), 10 Pushpak / Kuber (012), 11 Jaya-Vijaya (013), 12 Indrajit (014), 13 Shurpanakha's husband (015), 14 last lessons (016) — series ends |
 | महाभारत के छुपे योद्धा | 1 Barbarik (004), 2 Ghatotkach (017), 3 Iravan (018), 4 Ekalavya (019), 5 Yuyutsu (020), 6 Vikarna (021), 7 Babruvahana (022), 8 Shikhandi (023), 9 Bhagadatta (024), 10 Jarasandha (025), 11 Shalya (026), 12 Vidura = Yama (027), 13 Ashwatthama (028), 14 Abhimanyu (029) — series ends |
-Next week: ask the owner which two series to run next (ideas: श्राप जिन्होंने इतिहास बदला; ऐसा क्यों?; देवियों के रहस्य;
+**Week 2 (owner, 31 Oct 2026): 2 new series, 14 parts each, ids from 040.** Claim job: `myth-batch`. Copy the shape of `002-ravan-shani` (§1b).
+- **पूजा के पीछे की कथा:** each reel explains a real practice through its story. Hook form: a question about what people do. Starting list:
+  केतकी शिव पर क्यों नहीं चढ़ती; शिव को तुलसी क्यों नहीं; गणेश को तुलसी क्यों नहीं; शंख से शिव को जल क्यों नहीं; शिवलिंग की आधी परिक्रमा क्यों;
+  नंदी के कान में मनोकामना क्यों; शनिवार को पीपल की पूजा क्यों; हनुमान जी को सिंदूर क्यों; ब्रह्मा जी के मंदिर इतने कम क्यों; जगन्नाथ की मूर्ति अधूरी क्यों;
+  गुरुवार को केले की पूजा क्यों; नारियल क्यों फोड़ते हैं; सोमवार का व्रत शिव के लिए क्यों; एकादशी पर चावल क्यों नहीं.
+- **जब देवता भी हारे:** a god trapped, cursed or defeated. Hook form: a shocking claim. Starting list: इंद्र कमल की नाल में छिपे; दुर्वासा के श्राप से देवता श्रीहीन;
+  नहुष बना इंद्र; भृगु ने अग्नि देव को श्राप दिया; भृगु की लात विष्णु की छाती पर; शिव ने ब्रह्मा का पाँचवाँ सिर काटा; दक्ष के श्राप से चंद्रमा का क्षय; विश्वकर्मा ने सूर्य का तेज छाँटा;
+  सावित्री के आगे यमराज हारे; मार्कंडेय के लिए यम पर शिव का क्रोध; भस्मासुर से भागे शिव; बाणासुर के द्वार पर शिव और कृष्ण; तारकासुर से हारे देवता; गणेश से युद्ध में हारे शिव के गण.
+Swap out anything already told in `reels/` or too well known. **Check every story with web search first and list `sources`: name the text or say it is folk tradition, and use "कहते हैं" for folk versions. Never state as fact a reason a source doesn't give, and leave out anything that insults a tradition or a deity.** Gods stay dignified even in defeat: the story is about the lesson, no jokes. Better fewer than weak.
+Queue: append after the last id, alternating पूजा, देवता, in part order. Part 1s need no teaser from the old series. Where it fits without breaking part order, plan stories for their day (Shani or Hanuman on Saturday, Shiva on Monday). Batch log: `mythreels/batch_log.json`, as in the other playbooks.
+Weeks after this: ask the owner which two series next (ideas: श्राप जिन्होंने इतिहास बदला; ऐसा क्यों?; देवियों के रहस्य;
 हनुमान जी के अनसुने किस्से). A new series' part 1 needs no teaser from the old one; the last part of a series ends
 "... यहीं समाप्त। पूरी सीरीज़ प्रोफ़ाइल पर देखें।".
 Writing helper: episodes 005-029 were generated with a small Python helper (beats + shots), see any of them for the
