@@ -1,0 +1,43 @@
+{
+ "music-9e124c4fb0db.mp3": {
+  "prompt": "Indian mythological cinematic underscore: tanpura drone, soft tabla, bansuri, temple bells, swelling shehnai at the climax, no vocals, regal then ominous, a snake-charmer been hint",
+  "music_length_ms": 57140,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-4e5645c2d6e7.mp3": {
+  "text": "royal palanquin bearers and bells",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-d63f32c1ccdf.mp3": {
+  "text": "ominous low sting",
+  "duration_seconds": 1.4,
+  "prompt_influence": 0.5
+ },
+ "sfx-7f1948667370.mp3": {
+  "text": "shehnai short procession blast",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-e5014b404e14.mp3": {
+  "text": "angry shout and a snake hiss",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-06902e6f8aec.mp3": {
+  "text": "dark magical curse sting",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-ad273e7fd374.mp3": {
+  "text": "heavy thud and snake hiss",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
