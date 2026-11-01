@@ -1,0 +1,57 @@
+{
+ "music": {
+  "prompt": "Upbeat scooter-city comedy music with funky bass, a sad trombone moment in the middle, then a happy finish, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "v1",
+   "word": "Four",
+   "offset": 0.0,
+   "prompt": "tired sigh",
+   "dur": 1,
+   "gain": -7
+  },
+  {
+   "beat": "v2",
+   "word": "judgement",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "n2",
+   "word": "door",
+   "offset": 0.0,
+   "prompt": "door opening creak",
+   "dur": 1,
+   "gain": -8
+  },
+  {
+   "beat": "v4",
+   "word": "tip",
+   "offset": 0.0,
+   "prompt": "sad trombone short",
+   "dur": 1.5,
+   "gain": -7
+  },
+  {
+   "beat": "n4",
+   "word": "run",
+   "offset": 0.0,
+   "prompt": "fast footsteps running down stairs",
+   "dur": 1.5,
+   "gain": -6
+  },
+  {
+   "beat": "v6",
+   "word": "life",
+   "offset": 0.0,
+   "prompt": "small party horn",
+   "dur": 1,
+   "gain": -7
+  }
+ ]
+}

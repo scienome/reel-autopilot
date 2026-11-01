@@ -1,0 +1,100 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what the delivery guy thinks."
+  ]
+ },
+ {
+  "id": "v1",
+  "who": "friend",
+  "phrases": [
+   "Four flights of stairs.",
+   "No lift.",
+   "Of course."
+  ]
+ },
+ {
+  "id": "v2",
+  "who": "friend",
+  "phrases": [
+   "Nine pizzas.",
+   "For one person.",
+   "No judgement.",
+   "Okay, a little."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "You open the door in your pyjamas."
+  ]
+ },
+ {
+  "id": "v3",
+  "who": "friend",
+  "phrases": [
+   "Third night this week.",
+   "I know your order.",
+   "We are basically friends."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "You forget the tip."
+  ]
+ },
+ {
+  "id": "v4",
+  "who": "friend",
+  "phrases": [
+   "No tip.",
+   "It's fine.",
+   "I'm fine.",
+   "I'm going to cry on the stairs."
+  ]
+ },
+ {
+  "id": "n4",
+  "who": "narrator",
+  "phrases": [
+   "Then you run down four flights."
+  ]
+ },
+ {
+  "id": "v5",
+  "who": "friend",
+  "phrases": [
+   "Wait, what?",
+   "He's running?",
+   "Is this a robbery?"
+  ]
+ },
+ {
+  "id": "n5",
+  "who": "narrator",
+  "phrases": [
+   "You hand him ten dollars."
+  ]
+ },
+ {
+  "id": "v6",
+  "who": "friend",
+  "phrases": [
+   "Best day of my life.",
+   "Same time tomorrow?"
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "Do you tip?",
+   "Part two?"
+  ]
+ }
+]

@@ -1,0 +1,57 @@
+{
+ "music": {
+  "prompt": "Tender cute puppy music with soft music box and ukulele, sad in the middle, then bright and bouncy at the end, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "p1",
+   "word": "mum",
+   "offset": 0.0,
+   "prompt": "tiny puppy whimper",
+   "dur": 1.5,
+   "gain": -5
+  },
+  {
+   "beat": "p2",
+   "word": "smells",
+   "offset": 0.0,
+   "prompt": "soft sad piano note",
+   "dur": 2,
+   "gain": -9
+  },
+  {
+   "beat": "p3",
+   "word": "cry",
+   "offset": 0.0,
+   "prompt": "puppy howl small cute",
+   "dur": 1.5,
+   "gain": -6
+  },
+  {
+   "beat": "n3",
+   "word": "pick",
+   "offset": 0.0,
+   "prompt": "soft whoosh",
+   "dur": 0.8,
+   "gain": -8
+  },
+  {
+   "beat": "p4",
+   "word": "home",
+   "offset": 0.0,
+   "prompt": "puppy happy bark small",
+   "dur": 1.2,
+   "gain": -6
+  },
+  {
+   "beat": "p5",
+   "word": "shoe",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  }
+ ]
+}

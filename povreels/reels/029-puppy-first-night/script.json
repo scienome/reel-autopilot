@@ -1,0 +1,83 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what your puppy thinks on night one."
+  ]
+ },
+ {
+  "id": "p1",
+  "who": "dog",
+  "phrases": [
+   "Where am I?",
+   "Who are you?",
+   "Where is my mum?"
+  ]
+ },
+ {
+  "id": "p2",
+  "who": "dog",
+  "phrases": [
+   "This bed is too big.",
+   "It smells like nobody."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "Two a.m."
+  ]
+ },
+ {
+  "id": "p3",
+  "who": "dog",
+  "phrases": [
+   "I will cry.",
+   "Not because I'm sad.",
+   "Because I'm checking if you love me."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "You pick her up. Just for a minute."
+  ]
+ },
+ {
+  "id": "p4",
+  "who": "dog",
+  "phrases": [
+   "You smell like home.",
+   "I live here now.",
+   "I'm never leaving."
+  ]
+ },
+ {
+  "id": "n4",
+  "who": "narrator",
+  "phrases": [
+   "Six months later."
+  ]
+ },
+ {
+  "id": "p5",
+  "who": "dog",
+  "phrases": [
+   "I ate your shoe.",
+   "Your other shoe.",
+   "And the sofa.",
+   "Still love you."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "Remember your first night with your dog?",
+   "Part two?"
+  ]
+ }
+]

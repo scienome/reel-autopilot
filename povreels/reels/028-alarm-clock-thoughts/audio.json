@@ -1,0 +1,57 @@
+{
+ "music": {
+  "prompt": "Sleepy-then-bouncy morning comedy music with a ticking clock beat and glockenspiel, a tender middle, then upbeat again, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "a1",
+   "word": "Six",
+   "offset": 0.0,
+   "prompt": "alarm clock ringing loud short",
+   "dur": 2,
+   "gain": -5
+  },
+  {
+   "beat": "n2",
+   "word": "snooze",
+   "offset": 0.0,
+   "prompt": "alarm button thump",
+   "dur": 0.8,
+   "gain": -4
+  },
+  {
+   "beat": "a2",
+   "word": "Rude",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "a3",
+   "word": "believe",
+   "offset": 0.0,
+   "prompt": "soft hopeful chime",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "a4",
+   "word": "What",
+   "offset": 0.0,
+   "prompt": "record scratch",
+   "dur": 1,
+   "gain": -6
+  },
+  {
+   "beat": "a5",
+   "word": "phone",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  }
+ ]
+}

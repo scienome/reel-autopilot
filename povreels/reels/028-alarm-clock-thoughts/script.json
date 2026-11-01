@@ -1,0 +1,90 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what your alarm clock thinks."
+  ]
+ },
+ {
+  "id": "a1",
+  "who": "car",
+  "phrases": [
+   "Six a.m.",
+   "Time to ring.",
+   "I love my job."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "You hit snooze."
+  ]
+ },
+ {
+  "id": "a2",
+  "who": "car",
+  "phrases": [
+   "Rude.",
+   "Seven more minutes.",
+   "That's what you always say."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "Snooze. Snooze. Snooze."
+  ]
+ },
+ {
+  "id": "a3",
+  "who": "car",
+  "phrases": [
+   "I've known you six years.",
+   "You've never once woken up on the first ring.",
+   "I still believe in you."
+  ]
+ },
+ {
+  "id": "n4",
+  "who": "narrator",
+  "phrases": [
+   "Then one morning, you wake up before him."
+  ]
+ },
+ {
+  "id": "a4",
+  "who": "car",
+  "phrases": [
+   "What?",
+   "You're early.",
+   "Are you sick?",
+   "Is this a dream?"
+  ]
+ },
+ {
+  "id": "n5",
+  "who": "narrator",
+  "phrases": [
+   "You turn him off gently."
+  ]
+ },
+ {
+  "id": "a5",
+  "who": "car",
+  "phrases": [
+   "Thank you.",
+   "Please never replace me with your phone."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "Do you snooze or jump up?",
+   "Part two?"
+  ]
+ }
+]
