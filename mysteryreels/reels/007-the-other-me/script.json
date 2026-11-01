@@ -1,0 +1,49 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "I *RAN HOME.",
+   "say": "I ignored the old man. I ran home."
+  },
+  {
+   "shot": "hook",
+   "cap": "THE LIGHTS *WERE ON.",
+   "say": "The kitchen light was on. I looked through the window."
+  },
+  {
+   "shot": "table",
+   "cap": "A MAN AT *MY TABLE.",
+   "say": "A man sat at my table. In my chair. Eating my wife's cooking."
+  },
+  {
+   "shot": "table",
+   "cap": "*MY SHIRT.|MY WATCH.",
+   "say": "My shirt. My watch. My scar on his hand."
+  },
+  {
+   "shot": "look",
+   "cap": "HE *LOOKED UP.",
+   "say": "He looked up, straight at the window."
+  },
+  {
+   "shot": "look",
+   "cap": "HE *SMILED.",
+   "say": "And he smiled, like he had been waiting."
+  },
+  {
+   "shot": "finger",
+   "cap": "HE RAISED *A FINGER.",
+   "say": "He lifted one finger to his lips."
+  },
+  {
+   "shot": "end",
+   "cap": "MY *PHONE RANG.",
+   "say": "Then my phone rang in my pocket."
+  },
+  {
+   "shot": "end",
+   "cap": "IT WAS THE *OLD MAN.",
+   "say": "The screen said, Room Four."
+  }
+ ]
+}
