@@ -1,0 +1,34 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "THE *OTHER ROOM.",
+   "say": "Behind the wall panel, a narrow room. On a cot, a man my age. Me."
+  },
+  {
+   "shot": "a",
+   "cap": "THE REAL *ME.",
+   "say": "He said, do not trust the old man. I am the original. I have been here a year."
+  },
+  {
+   "shot": "a",
+   "cap": "HE'S *LYING.",
+   "say": "The old man said, he is the failed copy."
+  },
+  {
+   "shot": "b",
+   "cap": "ONE *QUESTION.",
+   "say": "I asked each one, what did we promise Dad?"
+  },
+  {
+   "shot": "c",
+   "cap": "SAME *WORDS.",
+   "say": "Both answered at once. Same words. Same breath."
+  },
+  {
+   "shot": "end",
+   "cap": "THEN *WHO AM I?",
+   "say": "Neither of them was lying. So who am I?"
+  }
+ ]
+}
