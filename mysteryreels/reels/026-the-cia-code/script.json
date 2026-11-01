@@ -1,0 +1,34 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "THE CIA HAS A *CODE",
+   "say": "At CIA headquarters, there is a sculpture nobody can fully read."
+  },
+  {
+   "shot": "year",
+   "cap": "PUT UP IN *1990",
+   "say": "It went up in nineteen ninety, covered in secret letters."
+  },
+  {
+   "shot": "three",
+   "cap": "THREE *CRACKED",
+   "say": "Three of its four messages have been cracked."
+  },
+  {
+   "shot": "last",
+   "cap": "ONE *LEFT",
+   "say": "The last one, ninety-seven letters, is still unsolved as far as anyone has said."
+  },
+  {
+   "shot": "end",
+   "cap": "CAN *YOU?",
+   "say": "Could you crack it?"
+  },
+  {
+   "shot": "end",
+   "cap": "COMMENT YOUR *GUESS",
+   "say": "Comment your best guess."
+  }
+ ]
+}
