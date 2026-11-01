@@ -1,0 +1,33 @@
+{
+ "music-2af500833d96.mp3": {
+  "prompt": "Warm dad-rock comedy guitar, tender emotional piano in the middle, then upbeat again, no vocals",
+  "music_length_ms": 36580,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-09f5a2915fda.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-d752d4453bad.mp3": {
+  "text": "car horn beep short",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-31ce219abb41.mp3": {
+  "text": "soft emotional piano note",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-a07ad68181ce.mp3": {
+  "text": "sniff",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-238f2b9e654b.mp3": {
+  "text": "warm soft whoosh",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ }
+}
