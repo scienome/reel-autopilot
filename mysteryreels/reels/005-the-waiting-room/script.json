@@ -1,0 +1,49 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "I WENT BACK|TO *LEVEL NINE.",
+   "say": "Last night, I went back to Level Nine."
+  },
+  {
+   "shot": "hook",
+   "cap": "THE DOOR *OPENED.",
+   "say": "The door opened before I touched it."
+  },
+  {
+   "shot": "room",
+   "cap": "ROWS OF *EMPTY CHAIRS.",
+   "say": "Inside, a waiting room. Rows of empty chairs."
+  },
+  {
+   "shot": "room",
+   "cap": "ONE HAD *MY NAME.",
+   "say": "Every chair had a name on it. Mine was in the front row."
+  },
+  {
+   "shot": "wall",
+   "cap": "A THOUSAND *BADGES.",
+   "say": "On the wall, a thousand badges. All blinking."
+  },
+  {
+   "shot": "wall",
+   "cap": "MINE BLINKED *TOO.",
+   "say": "Mine blinked in time with them. Like one heartbeat."
+  },
+  {
+   "shot": "guard",
+   "cap": "\"YOU'RE *LATE.\"",
+   "say": "The guard stood beside me. He did not hurt me. He said, you're late."
+  },
+  {
+   "shot": "guard",
+   "cap": "\"WE'VE WAITED *YEARS.\"",
+   "say": "We have been waiting years for you."
+  },
+  {
+   "shot": "end",
+   "cap": "YOU WERE NEVER|AN *EMPLOYEE.",
+   "say": "Then he said, you were never an employee. You were chosen."
+  }
+ ]
+}
