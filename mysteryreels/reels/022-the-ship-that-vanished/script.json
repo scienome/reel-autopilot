@@ -1,0 +1,34 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "THE SHIP THAT *VANISHED?",
+   "say": "The story says a US Navy warship vanished in nineteen forty three."
+  },
+  {
+   "shot": "letters",
+   "cap": "IT STARTED WITH *LETTERS.",
+   "say": "It began with letters, sent to an author in the nineteen fifties."
+  },
+  {
+   "shot": "letters",
+   "cap": "A *MAN CALLED ALLENDE.",
+   "say": "A man calling himself Carlos Allende claimed he saw it happen."
+  },
+  {
+   "shot": "fact",
+   "cap": "NO *PROOF.",
+   "say": "No proof was ever found."
+  },
+  {
+   "shot": "fact",
+   "cap": "THE NAVY: *NEVER HAPPENED.",
+   "say": "The Navy says it never happened."
+  },
+  {
+   "shot": "end",
+   "cap": "SO WHY DOES *IT SPREAD?",
+   "say": "So why does the story still spread?"
+  }
+ ]
+}
