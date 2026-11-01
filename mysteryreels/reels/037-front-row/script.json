@@ -1,0 +1,34 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "NO ONE *ANSWERED.",
+   "say": "My sister did not know my name. Neither did my boss."
+  },
+  {
+   "shot": "fade",
+   "cap": "HANDS *GOING GREY.",
+   "say": "My badge blinked faster. The edges of my hands went grey."
+  },
+  {
+   "shot": "phone",
+   "cap": "THE *RED PHONE.",
+   "say": "I ran to the red phone. The Registrar answered before it rang."
+  },
+  {
+   "shot": "phone",
+   "cap": "ONE *DEAL.",
+   "say": "He said, I can keep you seen. Sit in the front row. Be my witness."
+  },
+  {
+   "shot": "end",
+   "cap": "WHAT *DO I WATCH?",
+   "say": "I asked what I would have to watch."
+  },
+  {
+   "shot": "end",
+   "cap": "THE ONES WHO *RUN IT.",
+   "say": "The ones who run Level Nine, he said. They have forgotten what they built."
+  }
+ ]
+}
