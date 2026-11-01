@@ -1,0 +1,39 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "NEW *POST.",
+   "say": "The Registrar sent me to Cheyenne Mountain. A bunker inside solid granite."
+  },
+  {
+   "shot": "guard",
+   "cap": "A GUARD, *NO FACE.",
+   "say": "A guard stood at the blast door. Helmet, mask, no face."
+  },
+  {
+   "shot": "guard",
+   "cap": "BADGE: *WITNESS 9.",
+   "say": "His badge said, witness nine. My title."
+  },
+  {
+   "shot": "guard",
+   "cap": "*BEFORE YOU.",
+   "say": "I said, that is me. He said, it was me. Before you."
+  },
+  {
+   "shot": "who",
+   "cap": "THE *GUARDS.",
+   "say": "Every guard here was a witness once. When nobody remembered them, they became guards."
+  },
+  {
+   "shot": "who",
+   "cap": "WHO *REMEMBERS YOU?",
+   "say": "He asked, who remembers you, Daniel?"
+  },
+  {
+   "shot": "end",
+   "cap": "*WHO IS THIS?",
+   "say": "I called my sister. She said, sorry. Who is this?"
+  }
+ ]
+}
