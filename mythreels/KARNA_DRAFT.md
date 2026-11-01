@@ -5,14 +5,7 @@ Source to check line by line before voicing: Mahabharata (Adi, Vana, Shanti Parv
 Story order after Karna (owner, 1 Nov 2026): Parshuram, Bhishma, Ashwatthama.
 
 ## भाग 1
-मेरी माँ ने... मुझे जन्म देते ही नदी में बहा दिया।
-मैं कर्ण हूँ। और ये मेरी कहानी है।
-मेरी माँ का नाम था कुंती। तब वो बहुत छोटी थी। ऋषि दुर्वासा ने उन्हें एक मंत्र दिया था। जिस देवता को बुलाओ, वो आएगा।
-उन्होंने बस परखने के लिए... सूर्य देव को पुकारा।
-और मैं पैदा हुआ। सोने का कवच, कानों में कुंडल।
-पर बिन ब्याही माँ को दुनिया क्या कहती?
-उन्होंने रोते हुए मुझे एक पेटी में रखा... और छोड़ दिया।
-अगले भाग में... मुझे किसने उठाया?
+Done: `reels/101-karna-janm`. House rule for this series (owner, 1 Nov): emotional first; no "अगले भाग में" line or card. End on a line that makes people want the next part without saying so. Karna's signature line in every part: "ये है मेरी कहानी". Rewrite parts 2-3 the same way.
 
 ## भाग 2
 मैं सूर्य का बेटा था... पर बड़ा हुआ सारथी के घर।
