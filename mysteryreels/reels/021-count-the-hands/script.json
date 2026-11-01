@@ -1,0 +1,34 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "LOOK *CLOSER.",
+   "say": "Look closer at this family photo."
+  },
+  {
+   "shot": "hook",
+   "cap": "FOUR *PEOPLE.",
+   "say": "Four people at dinner. Everyone is smiling."
+  },
+  {
+   "shot": "count",
+   "cap": "COUNT THE *HANDS.",
+   "say": "Now count the hands on the table."
+  },
+  {
+   "shot": "count",
+   "cap": "THERE ARE *NINE.",
+   "say": "Nine hands. Only four people."
+  },
+  {
+   "shot": "end",
+   "cap": "WHOSE *IS THE NINTH?",
+   "say": "Whose is the ninth?"
+  },
+  {
+   "shot": "end",
+   "cap": "COMMENT *WHAT YOU COUNTED.",
+   "say": "Comment what you counted first."
+  }
+ ]
+}
