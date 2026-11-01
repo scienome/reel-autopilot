@@ -1,0 +1,39 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "I TOOK *THE KEY.",
+   "say": "I took the key, and I stood up."
+  },
+  {
+   "shot": "a",
+   "cap": "NOBODY *MOVED.",
+   "say": "Nine hundred masks watched. Nobody stopped me."
+  },
+  {
+   "shot": "b",
+   "cap": "THE KITCHEN *DOOR.",
+   "say": "The key turned. Beyond it, a kitchen. Clean. Cold."
+  },
+  {
+   "shot": "c",
+   "cap": "A *LIST.",
+   "say": "On the wall, every name that ever sat in my chair. All crossed out."
+  },
+  {
+   "shot": "c",
+   "cap": "ONE *NOT CROSSED.",
+   "say": "Except one. The young waiter."
+  },
+  {
+   "shot": "d",
+   "cap": "HE HANDED ME *A TRAY.",
+   "say": "He stood behind me, shaking. He handed me a tray. Seven bowls. Cold. Moving."
+  },
+  {
+   "shot": "end",
+   "cap": "THE DINNER *MOVED.",
+   "say": "The dinner had only moved rooms."
+  }
+ ]
+}
