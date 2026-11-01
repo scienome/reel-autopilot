@@ -1,0 +1,49 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "I WAS THE *NINTH.",
+   "say": "The guard said I was the ninth witness."
+  },
+  {
+   "shot": "hook",
+   "cap": "WHAT HAPPENED *TO EIGHT?",
+   "say": "I asked about the first eight."
+  },
+  {
+   "shot": "door",
+   "cap": "HE TOOK ME *DOWN.",
+   "say": "He took me down to level ten."
+  },
+  {
+   "shot": "door",
+   "cap": "ONE *DOOR.",
+   "say": "One steel door. No handle."
+  },
+  {
+   "shot": "job",
+   "cap": "YOUR *JOB.",
+   "say": "Your job, he said. Watch the door."
+  },
+  {
+   "shot": "job",
+   "cap": "WHATEVER COMES *THROUGH.",
+   "say": "Whatever comes through, you must see it. Unseen things cannot stay."
+  },
+  {
+   "shot": "glass",
+   "cap": "A MAN *BEHIND GLASS.",
+   "say": "Behind the glass sat an old man in a guard's jacket."
+  },
+  {
+   "shot": "glass",
+   "cap": "THE *EIGHTH.",
+   "say": "The eighth witness. Thirty years in that chair."
+  },
+  {
+   "shot": "end",
+   "cap": "HE *MOUTHED...",
+   "say": "He pressed his face to the glass and mouthed one word. Run."
+  }
+ ]
+}
