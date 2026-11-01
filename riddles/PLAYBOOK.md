@@ -10,6 +10,8 @@ Claim the job first (HANDOFF §7b). Read `riddles/batch_log.json` (create it as 
 `in_progress`, finish its missing reels instead of starting new ones. Otherwise append
 `{"batch": N, "ids": [...], "status": "in_progress"}` and push it with `[skip ci]` before writing reels.
 
+**How many to make:** "better fewer than weak" only means dropping a story that fails its checks. It is not a reason to stop early. Keep going until the batch target is met. If you run out of time or usage, or are stopping for any other reason, leave the batch `in_progress` (don't run `claim.py done`) so the next run finishes it, and say how many are left. Run `done` with fewer than the target only if good stories have really run out, and name what you rejected and why.
+
 ## 1. Choose riddles: they must be good
 
 The owner's rule: riddles that make people think, so they stay, comment and follow.

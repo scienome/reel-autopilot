@@ -9,6 +9,7 @@ the batch steps, engine, checks and pushing.
   say "wait, that really happened?". No repeats: read every existing `meta.json` title first.
 - **Truth:** verify every fact with web search, from at least 2 sources, and list them in `sources`. If sources disagree, leave the detail
   out or say so. Say nothing a source doesn't support. A wrong "true story" is worse than a missing reel: better fewer than weak.
+- **How many to make:** "better fewer than weak" only means dropping a story that fails its checks. It is not a reason to stop early. Keep going until the batch target is met. If you run out of time or usage, or are stopping for any other reason, leave the batch `in_progress` (don't run `claim.py done`) so the next run finishes it, and say how many are left. Run `done` with fewer than the target only if good stories have really run out, and name what you rejected and why.
 - **People:** real people from history only. No living people as targets. No jokes about real victims, recent tragedies, terror, abuse or
   suicide. No gore. Never explain how to copy a crime.
 - **Shape:** 25-35 s. Most shocking fact in the first 2 s. Something new every 2-3 s. One short twist line at the end, then a two-sided question.

@@ -50,11 +50,14 @@ read every `reels/*/script.json` first.
   सावित्री के आगे यमराज हारे; मार्कंडेय के लिए यम पर शिव का क्रोध; भस्मासुर से भागे शिव; बाणासुर के द्वार पर शिव और कृष्ण; तारकासुर से हारे देवता; गणेश से युद्ध में हारे शिव के गण.
 Swap out anything already told in `reels/` or too well known. **Check every story with web search first and list `sources`: name the text or say it is folk tradition, and use "कहते हैं" for folk versions. Never state as fact a reason a source doesn't give, and leave out anything that insults a tradition or a deity.** Gods stay dignified even in defeat: the story is about the lesson, no jokes. Better fewer than weak.
 Queue: append after the last id, alternating पूजा, देवता, in part order. Part 1s need no teaser from the old series. Where it fits without breaking part order, plan stories for their day (Shani or Hanuman on Saturday, Shiva on Monday). Batch log: `mythreels/batch_log.json`, as in the other playbooks.
+**Status 1 Nov 2026:** only parts 1-2 of each are made (040-043). The next run must make parts 3-14 of both, from `batch_log.json` `next_plan`. Don't start new series first.
 Weeks after this: ask the owner which two series next (ideas: श्राप जिन्होंने इतिहास बदला; ऐसा क्यों?; देवियों के रहस्य;
 हनुमान जी के अनसुने किस्से). A new series' part 1 needs no teaser from the old one; the last part of a series ends
 "... यहीं समाप्त। पूरी सीरीज़ प्रोफ़ाइल पर देखें।".
 Writing helper: episodes 005-029 were generated with a small Python helper (beats + shots), see any of them for the
 compact style (`one`, `two`, `CAM`, `cardOn` from the harness).
+
+**How many to make:** "better fewer than weak" only means dropping a story that fails its checks. It is not a reason to stop early. Keep going until the batch target is met. If you run out of time or usage, or are stopping for any other reason, leave the batch `in_progress` (don't run `claim.py done`) so the next run finishes it, and say how many are left. Run `done` with fewer than the target only if good stories have really run out, and name what you rejected and why.
 
 ## 3. Files per episode (`reels/NNN-slug/`)
 - `script.json`: Hindi, `[{ "id", "who": "narrator" | <CAST key>, "phrases": [...] }]`. Simple spoken Hindi (not

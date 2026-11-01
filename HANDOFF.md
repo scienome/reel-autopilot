@@ -70,9 +70,9 @@ sync-videos.yml                   ->  copies every finished MP4 to the `videos` 
 
 | Series | Folder | Style / engine | Platforms | Post times (IST) | Status |
 |---|---|---|---|---|---|
-| **Toy reels** (True Stories in Bricks from reel 56; earlier: dark comedy) | `toyreels/` | LEGO-like 3D bricks, `style/scenes.js` `makeComedy` | IG (toy account) + YT Shorts (toy channel) | 06:00, 12:30, 20:30 | LIVE, auto-batches every 3 days |
+| **Toy reels** (True Stories in Bricks from reel 56; earlier: dark comedy) | `toyreels/` | LEGO-like 3D bricks, `style/scenes.js` `makeComedy` | IG (toy account) + YT Shorts (toy channel) | 06:00, 12:30, 20:30 | LIVE. Auto-batches every 3 days |
 | **CouchSarcasm** (new) | `couchnew/` | 2D adult cartoon sitcom (Sam, Maya, Mum), `toon/adult.js` + `toon/sitcom.js`, laugh track, one voice per character | IG (couch) + YT (couch channel) | 07:30, 13:30, 21:30 | **STOPPED 31 Oct: owner called it a waste.** No posting, no new episodes |
-| **Thought Bubble (POV)** | `povreels/` | soft-3D Violet kit (`style/` + makeCouch with couple hidden) + `povreels/lib/pov.js`; "YOU are the only one who…" | IG @gearsandglitches + YT | 07:30, 12:30, 20:30 | Resumed 30 Oct with 001 |
+| **Thought Bubble (POV)** | `povreels/` | soft-3D Violet kit (`style/` + makeCouch with couple hidden) + `povreels/lib/pov.js`; "YOU are the only one who…" | IG @gearsandglitches + YT | 07:30, 12:30, 20:30 | LIVE. Auto-batches every 3 days |
 | **Hindi mythology** (working name; owner picks the final name) | `mythreels/` | 2D **folk-art** storybook (Pattachitra border, paper texture, kajal fish-eyes, Madhubani trees), `kit/myth.js` + `kit/katha.js`, Hindi subtitles, big hook card + "अगले भाग में" teaser | IG + YT, secrets `IG_MYTH_*`, `YT_MYTH_*` | 4 a day: 06:00, 11:30, 18:00, 23:00 (owner). Workflow comments still show the old times. Crons '27 13', '27 14' and '27 15' reach the 23:00 slot | **LIVE since 31 Oct** (brand name Lokvara). 38 queued with Diwali |
 | Mechanic Shorts | `mechreels/` | low-poly garage/x-ray, `style/mech_base.js`, 9:16 | YT (Gears channel) | — | **STOPPED 31 Oct by owner**, keep it stopped |
 | Mechanic long videos | `mechvideos/` | same engine, 16:9 1080p, 4–5 min, chapters | YT, root `schedule.json` | — | **STOPPED 31 Oct.** No new videos; 006–008 not posted |
@@ -225,8 +225,9 @@ Jobs: `toy-batch`, `pov-batch`, `riddle-batch`, `myth-batch` (live); `couch-batc
 
 ## 8. SCHEDULED CLAUDE RUNS (on the owner's Claude account)
 
-Cloud routines, not on the owner's PC (owner: "dont run on this pc"). Model `claude-sonnet-5-5`. Recreated 31 Oct; none had
-run yet at this writing, so check that the first one could push to main. No routine for Lokvara week 2 or riddles yet.
+Cloud routines, not on the owner's PC (owner: "dont run on this pc"). Model `claude-sonnet-5-5`. Cloud runs can push to main: proven 31 Oct.
+The routine list can't be deleted through the tool; the owner deletes at claude.ai/code/routines. Off and safe to delete: Couch (2), Weekly couple, Check PR #1, and fired one-offs.
+**Read the run's result, not just the lock:** `RemoteTrigger` `list_runs`, then `get_run_log`. A run can say `done` having made far fewer than asked. Cloud runs could not open web pages on 31 Oct, so their facts rest on search summaries.
 
 | Task | When (IST) | State |
 |---|---|---|
@@ -238,7 +239,7 @@ run yet at this writing, so check that the first one could push to main. No rout
 | Thought Bubble POV: backup | 08:47 same days | ON (30 Oct) |
 | Socho Zara riddles: 21 new reels (`riddle-batch`, `riddles/PLAYBOOK.md`) | 03:07 on the 1st, 4th, 7th… | ON (31 Oct) |
 | Socho Zara riddles: backup (finish unfinished batch) | 09:07 same days | ON (31 Oct) |
-| Lokvara week 2: 28 reels (`myth-batch`, `mythreels/PLAYBOOK.md` §2) | once: 31 Oct 23:00, backup 1 Nov 06:00 | ONE-OFF. Recreate only for a new week, after I name the series |
+| Lokvara week 2 (`myth-batch`, `mythreels/PLAYBOOK.md` §2) | one-off, fired 31 Oct and 1 Nov | FINISHED with only 4 of 28. **No Lokvara task is scheduled now**: create a new one-off from the prompt below to make the other 24 |
 | CouchSarcasm 21 reels + backup (old `reels/` format, WEEKLY.md) | 2nd, 5th, 8th… | OFF — old format retired |
 | Dave 21 reels + backup | every 3rd day | OFF — Dave rejected |
 
@@ -399,32 +400,41 @@ Fix these docs when you're next in those folders.
 
 ---
 
-## 13. STATUS SNAPSHOT (31 Oct 2026, 19:00 IST — re-check live, this goes stale)
+## 13. STATUS SNAPSHOT (1 Nov 2026, about 15:30 IST — re-check live, this goes stale)
 
-- **Toy:** live, switched 31 Oct to True Stories in Bricks with voice `c6SfcYrb2t09NHXiT80T`; first reel `56-eiffel-tower-con`. New-format reels post first, and about 30 older reels stay behind them, so with 21 made per batch and 9 posted they may never post. Next auto-batch 3 Nov.
-- **Thought Bubble POV:** live, queue reordered strongest first, covers about to 5–6 Nov. Next auto-batch 2 Nov, 02:47.
-- **Lokvara early result (owner):** `002-ravan-shani` got about 20,000 views and 800 likes on Instagram in 15 hours on 31 Oct. See `mythreels/PLAYBOOK.md` §1b.
-- **Lokvara (Hindi mythology):** live since 31 Oct. 002 skipped; 003 and 004 in the log. Mahabharat and Ravan alternate.
-  **Diwali series** (दिवाली के रहस्य, 030–039, rendered) takes the 18:00 and 21:00 slots 4–8 Nov. Queue runs out about
-  9 Nov. **Week 2 chosen by owner 31 Oct:** पूजा के पीछे की कथा + जब देवता भी हारे, from one-off `myth-batch` tasks. Ask the owner for week 3's series by about 12 Nov.
-- **CouchSarcasm:** stopped (root `config.json` `paused`), batch routines off. The owner cancelled the waiting 21:30 run on
-  31 Oct. Remaining episodes are kept, not deleted. **Check:** that run may have left a scheduled Short in YouTube Studio (§5).
-- **Mechanic:** stopped, no new videos, keep stopped.
-- **Riddle batches (owner, 31 Oct): 21 reels every third day**, first run 1 Nov 03:07 IST. `make-riddles.yml` was added by the
-  owner on 31 Oct (§8); it had not run on GitHub yet at this writing. It makes 21 per 3 days and posts 9, so the queue grows by 12 each batch; owner
-  chose this. If quality or credits become a problem, tell the owner and suggest 9.
-- **Socho Zara (riddles), reuses the Couch accounts (owner, 31 Oct):** **LIVE from 31 Oct, 20:30 IST (owner said make it go live today).** First reel `riddle-monkeys`. Owner still to confirm old Couch reels are hidden (YT Private, IG archive) and both accounts renamed with `riddles/brand/` art. YouTube uploads are marked not made for kids. Couch stays stopped; old Couch reels are never uploaded in riddle mode. Skill `skills/whatifstyle` made from the owner's reference video (flat science explainer style).
-  21 Hinglish reels rendered with voice, music and effects; MP4s in Release `riddle-week1`; plan, titles and captions in
-  `riddles/week1.json`, build notes in `riddles/README.md`. Slots 06:00, 12:00, 20:30 IST. No batch routine yet. The `gh` token here has no workflow scope, so a new workflow file must be pasted on the GitHub
-  website by the owner. Only the jungle court mix was heard and approved.
-- **Adult couple idea (Pillow Talk):** pilots `couchnew/reels/p001`–`p003` exist, not queued, not approved. Style sheets were
-  rejected. Hand-coded art can't match generated art there. Limits I set: no explicit sexual content, sex scenes or sex
-  sounds, no body-focused pin-ups, characters clearly adult.
-- **Tried and rejected by the owner:** Blender/MPFB, canvas soft-3D, SDF shader 3D, filters.
-- **Windows PC notes:** clone at `C:\Users\amang\reel-autopilot`. Set `PYTHONUTF8=1`. Use `python`. ffmpeg came from winget.
-- Open: owner to delete duplicate riddle Shorts `uPfy4TF_H9g` (amavasya) and `PdShMzUgspA` (bridge). Cause fixed 1 Nov in `tools/post.py`: a queued backup run used an old posted.json.
-- Open: owner to delete the duplicate couch Short `PDkoEk8xCxw` (e002, from a cancelled run) in YouTube Studio.
-- Channel rename (30 Oct): Gears & Glitches → **Thought Bubble** (owner renames the Instagram account and YouTube channel;
-  posting uses account IDs, so nothing in the repo depends on the name). Secrets keep their old names (`IG_GG_*`, `YT_*`).
+**Live channels and queues**
+
+| Channel | Posts (IST) | Left to post | Next batch |
+|---|---|---|---|
+| Toy (True Stories in Bricks) | 06:00, 12:30, 20:30 | 47 reels, 14 of them new format but only 9 of those rendered | 3 Nov 01:33 |
+| Thought Bubble POV | 07:30, 12:30, 20:30 | 13 reels, about 4 days | 2 Nov 02:47 |
+| Lokvara | 06:00, 11:30, 18:00, 23:00 | 36 reels, about 9 days, to about 10 Nov | **None scheduled** |
+| Socho Zara riddles | 06:00, 12:00, 20:30 | 24 reels, about 8 days | 4 Nov 03:07 |
+
+**Stopped:** CouchSarcasm (16 episodes unposted, kept, not deleted; its accounts are now Socho Zara), Mechanic, Dave, old couch reels.
+
+**Problems to fix first**
+1. **Lokvara week 2 is short.** The 31 Oct run made 040-043 (parts 1-2 of both new series) and marked `done`, so the backup stopped. 24 reels are left. Create a new one-off `myth-batch` before about 7 Nov. Plan: `mythreels/batch_log.json`.
+2. **Riddle batch made 6, not 21** (`riddle-goliyan`, `riddle-namaste`, `riddle-roti`, `riddle-tota-udaan`, `riddle-nadi-paar`, `riddle-laddoo-chor`). All 6 are queued. Nobody has reviewed them; check their answers. The owner wants 21 a batch.
+3. **Toy batch is unfinished.** Lock `toy-batch` is `in_progress`. Reels 57-71 are pushed and at last check 11 of the 16 reels numbered 56-71 had Releases; the render was very slow on 31 Oct. Check run state; if it hung, the owner cancels it and "Make toy reels" runs with an empty box. The 3 Nov run resumes this batch rather than starting a new one. These reels post without owner review. Their sources were not opened, only search summaries.
+4. **Eiffel Tower reel (56) hadn't posted** at this writing, though it was promised next: reels 57 and 63 went first, because the poster ranks new-format reels by `potential`. Tell the owner.
+5. **Owner to delete in YouTube Studio:** duplicate riddle Shorts `uPfy4TF_H9g`, `PdShMzUgspA`, and couch `PDkoEk8xCxw`. Also check for a Couch Short (e006, "He wasn't allowed to see the wedding dress") left by the run cancelled on 31 Oct, and set old Couch reels Private / archive them on Instagram. Whether the owner has done this, and renamed the accounts and uploaded `riddles/brand/`, is not known.
+6. **Check the duplicate-Short fix** (`tools/post.py`, 1 Nov): it was first live for the 1 Nov 20:30 riddle. Other posters already pulled the latest log.
+
+**Owner decisions on record**
+- **Riddles:** Hinglish animal riddles on the old Couch accounts, name Socho Zara (my suggestion, used; final username unknown). 21 reels every third day. Week 1 plan in `riddles/week1.json`; MP4s in Release `riddle-week1`.
+- **Toy:** switched 31 Oct to True Stories in Bricks with voice `c6SfcYrb2t09NHXiT80T`. New-format reels post first; about 30 old reels wait behind them and may never post.
+- **Lokvara:** week 2 series पूजा के पीछे की कथा + जब देवता भी हारे. Ask for week 3's series by about 12 Nov. Best result so far: `002-ravan-shani`, about 20,000 views and 800 likes in 15 hours (`mythreels/PLAYBOOK.md` §1b).
+- **Credits:** new ElevenLabs account, 131,000 characters a month. Owner keeps 21-reel batches despite my estimate of about 440,000 a month (§4). Expect batches to fail when it runs out; check with `check-elevenlabs.yml` and tell the owner.
+- **Order:** post everything, hold nothing, strongest first, never break a series. Times follow the Indian day.
+- **Rejected:** Blender/MPFB, canvas soft-3D, SDF shader 3D, filters. **Pillow Talk adult pilots** `couchnew/reels/p001`-`p003` exist, unapproved and unqueued. Limits I set there: no explicit sexual content, sex scenes or sex sounds, no body-focused pin-ups, characters clearly adult. Never mix with the riddle channel.
+
+**Skills:** `skills/whatifstyle` (flat art, riddles), `skills/lokvarastyle` (zip tested for frames; a voiced render from the zip was not tested). Zips in `skills/zips/`.
+
+**Riddle pipeline:** `riddles/PLAYBOOK.md`, `riddles/README.md`, `tools/riddle_make.py`, `make-riddles.yml`. Secrets and logins are never asked for in chat. The `gh` token here has no workflow scope, so workflow edits are pasted on GitHub by the owner.
+
+**Windows PC notes:** clone at `C:\Users\amang\reel-autopilot`. Set `PYTHONUTF8=1`. Use `python`. ffmpeg came from winget. Git can be slow; verify a push on GitHub before saying it's done.
+
+**Names:** Gears & Glitches was renamed **Thought Bubble**, and posting uses account IDs. Secrets keep old names (`IG_GG_*`, `YT_*`). Socho Zara uses `IG_ACCESS_TOKEN`, `IG_USER_ID`, `YT_COUCH_*`.
 
 Start now with §0.
