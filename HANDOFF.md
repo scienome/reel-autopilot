@@ -241,6 +241,7 @@ The routine list can't be deleted through the tool; the owner deletes at claude.
 | Socho Zara riddles: 21 new reels (`riddle-batch`, `riddles/PLAYBOOK.md`) | 03:07 on the 1st, 4th, 7th… | ON (31 Oct) |
 | Socho Zara riddles: backup (finish unfinished batch) | 09:07 same days | ON (31 Oct) |
 | Lokvara week 2 (`myth-batch`, `mythreels/PLAYBOOK.md` §2) | one-off, fired 31 Oct and 1 Nov | FINISHED with only 4 of 28. One-offs "Lokvara week 2 remaining 24" run 2 Nov 00:30 IST, backup 09:30 IST, on the plan in PLAYBOOK §2b |
+| elitesendgame: 3 episodes a day (job `elite-<IST date>`, `mysteryreels/PLAYBOOK.md`) | 09:00, backup 13:00, daily | ON (1 Nov). Renders with `make-elite.yml` |
 | CouchSarcasm 21 reels + backup (old `reels/` format, WEEKLY.md) | 2nd, 5th, 8th… | OFF — old format retired |
 | Dave 21 reels + backup | every 3rd day | OFF — Dave rejected |
 
