@@ -1,0 +1,38 @@
+{
+ "music-651872f2e318.mp3": {
+  "prompt": "Dramatic cheeky breakup comedy music with strings and a sassy beat, a sad piano middle, then sly again, no vocals",
+  "music_length_ms": 30120,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-a6a1112d401c.mp3": {
+  "text": "sassy hair flip whoosh",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-462e685d436b.mp3": {
+  "text": "tiny party horn",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-ecf174855322.mp3": {
+  "text": "phone buzz vibration",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-ae7f09155c0a.mp3": {
+  "text": "dramatic string sting",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-070c20ef0ce5.mp3": {
+  "text": "soft sad piano note",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-09f5a2915fda.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ }
+}
