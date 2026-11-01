@@ -239,7 +239,7 @@ The routine list can't be deleted through the tool; the owner deletes at claude.
 | Thought Bubble POV: backup | 08:47 same days | ON (30 Oct) |
 | Socho Zara riddles: 21 new reels (`riddle-batch`, `riddles/PLAYBOOK.md`) | 03:07 on the 1st, 4th, 7th… | ON (31 Oct) |
 | Socho Zara riddles: backup (finish unfinished batch) | 09:07 same days | ON (31 Oct) |
-| Lokvara week 2 (`myth-batch`, `mythreels/PLAYBOOK.md` §2) | one-off, fired 31 Oct and 1 Nov | FINISHED with only 4 of 28. **No Lokvara task is scheduled now**: create a new one-off from the prompt below to make the other 24 |
+| Lokvara week 2 (`myth-batch`, `mythreels/PLAYBOOK.md` §2) | one-off, fired 31 Oct and 1 Nov | FINISHED with only 4 of 28. One-offs "Lokvara week 2 remaining 24" run 2 Nov 00:30 IST, backup 09:30 IST, for the other 24 |
 | CouchSarcasm 21 reels + backup (old `reels/` format, WEEKLY.md) | 2nd, 5th, 8th… | OFF — old format retired |
 | Dave 21 reels + backup | every 3rd day | OFF — Dave rejected |
 
@@ -408,13 +408,13 @@ Fix these docs when you're next in those folders.
 |---|---|---|---|
 | Toy (True Stories in Bricks) | 06:00, 12:30, 20:30 | 47 reels, 14 of them new format but only 9 of those rendered | 3 Nov 01:33 |
 | Thought Bubble POV | 07:30, 12:30, 20:30 | 13 reels, about 4 days | 2 Nov 02:47 |
-| Lokvara | 06:00, 11:30, 18:00, 23:00 | 36 reels, about 9 days, to about 10 Nov | **None scheduled** |
+| Lokvara | 06:00, 11:30, 18:00, 23:00 | 36 reels, about 9 days, to about 10 Nov | 2 Nov 00:30 (one-off, 24 reels) |
 | Socho Zara riddles | 06:00, 12:00, 20:30 | 24 reels, about 8 days | 4 Nov 03:07 |
 
 **Stopped:** CouchSarcasm (16 episodes unposted, kept, not deleted; its accounts are now Socho Zara), Mechanic, Dave, old couch reels.
 
 **Problems to fix first**
-1. **Lokvara week 2 is short.** The 31 Oct run made 040-043 (parts 1-2 of both new series) and marked `done`, so the backup stopped. 24 reels are left. Create a new one-off `myth-batch` before about 7 Nov. Plan: `mythreels/batch_log.json`.
+1. **Lokvara week 2 is short.** The 31 Oct run made 040-043 (parts 1-2 of both new series) and marked `done`, so the backup stopped. 24 reels are left, scheduled for 2 Nov 00:30 IST, backup 09:30. Read that run's log and confirm the count. A `done` lock blocks a new run for that IST day and the next. Plan: `mythreels/batch_log.json`.
 2. **Riddle batch made 6, not 21** (`riddle-goliyan`, `riddle-namaste`, `riddle-roti`, `riddle-tota-udaan`, `riddle-nadi-paar`, `riddle-laddoo-chor`). All 6 are queued. Nobody has reviewed them; check their answers. The owner wants 21 a batch.
 3. **Toy batch is unfinished.** Lock `toy-batch` is `in_progress`. Reels 57-71 are pushed and at last check 11 of the 16 reels numbered 56-71 had Releases; the render was very slow on 31 Oct. Check run state; if it hung, the owner cancels it and "Make toy reels" runs with an empty box. The 3 Nov run resumes this batch rather than starting a new one. These reels post without owner review. Their sources were not opened, only search summaries.
 4. **Eiffel Tower reel (56) hadn't posted** at this writing, though it was promised next: reels 57 and 63 went first, because the poster ranks new-format reels by `potential`. Tell the owner.
