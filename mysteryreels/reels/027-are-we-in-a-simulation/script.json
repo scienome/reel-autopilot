@@ -1,0 +1,29 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "ARE WE IN A *SIMULATION?",
+   "say": "Where did the idea that we live in a simulation start?"
+  },
+  {
+   "shot": "year",
+   "cap": "ONE PAPER. *2003.",
+   "say": "In two thousand three, a philosopher named Nick Bostrom published a paper."
+  },
+  {
+   "shot": "opts",
+   "cap": "THREE *OPTIONS",
+   "say": "He never said we are in one. He said one of three things must be true."
+  },
+  {
+   "shot": "opts",
+   "cap": "1 DIE OUT. 2 NEVER BUILT. 3 *INSIDE.",
+   "say": "We die out first. Or nobody ever builds such worlds. Or we are probably inside one."
+  },
+  {
+   "shot": "end",
+   "cap": "WOULD IT *CHANGE ANYTHING?",
+   "say": "Would it change how you live? Comment yes or no."
+  }
+ ]
+}
