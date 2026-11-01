@@ -8,13 +8,15 @@ posted.json. The video must be publicly reachable, so the repo is public and the
 Environment: IG_ACCESS_TOKEN, IG_USER_ID, GITHUB_REPOSITORY (set by Actions), POST_BRANCH (default main).
 Caption: reels/<id>/meta.json -> caption + hashtags. Appends the result to posted.json.
 """
-import argparse, datetime, glob, json, os, sys, time
+import argparse, datetime, glob, json, os, subprocess, sys, time
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from first_comment import first_comment, post_first_comment, guard_slot, SlotTaken, best_for_slot, is_afternoon  # noqa: E402
 import couch_source as src  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if os.environ.get('GITHUB_ACTIONS'):  # a queued run checks out the commit from when it was queued; without this it can't see the post the run before it made
+    subprocess.run(['git', 'pull', '-q', '--rebase'], cwd=ROOT, check=False)
 CFG = json.load(open(os.path.join(ROOT, 'config.json')))
 API = 'https://graph.instagram.com/' + CFG['instagram'].get('api_version', 'v26.0')
 LOG = os.path.join(ROOT, 'posted.json')
@@ -103,6 +105,10 @@ def main():
             sys.exit('the video link does not download')
         return
     ig = os.environ['IG_USER_ID']
+    try:  # also before any upload: otherwise a late backup run puts a second copy on YouTube before the later guard stops it on Instagram
+        guard_slot(api, ig)
+    except SlotTaken as e:
+        print(f'::warning::{e}'); return
     c = api('POST', f'/{ig}/media', media_type='REELS', video_url=url, caption=cap, share_to_feed=True)
     cid = c['id']; print('container', cid)
     for _ in range(30):  # up to ~10 minutes

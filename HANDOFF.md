@@ -422,6 +422,7 @@ Fix these docs when you're next in those folders.
   sounds, no body-focused pin-ups, characters clearly adult.
 - **Tried and rejected by the owner:** Blender/MPFB, canvas soft-3D, SDF shader 3D, filters.
 - **Windows PC notes:** clone at `C:\Users\amang\reel-autopilot`. Set `PYTHONUTF8=1`. Use `python`. ffmpeg came from winget.
+- Open: owner to delete duplicate riddle Shorts `uPfy4TF_H9g` (amavasya) and `PdShMzUgspA` (bridge). Cause fixed 1 Nov in `tools/post.py`: a queued backup run used an old posted.json.
 - Open: owner to delete the duplicate couch Short `PDkoEk8xCxw` (e002, from a cancelled run) in YouTube Studio.
 - Channel rename (30 Oct): Gears & Glitches → **Thought Bubble** (owner renames the Instagram account and YouTube channel;
   posting uses account IDs, so nothing in the repo depends on the name). Secrets keep their old names (`IG_GG_*`, `YT_*`).
