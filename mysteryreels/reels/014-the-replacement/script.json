@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "I PAID *COURSE ONE.",
+   "say": "I paid course one. My name."
+  },
+  {
+   "shot": "hook",
+   "cap": "I *FORGOT IT.",
+   "say": "Gone. I could not remember it."
+  },
+  {
+   "shot": "list",
+   "cap": "THE LIST *CHANGED.",
+   "say": "On the table, the list moved. My line crossed itself out."
+  },
+  {
+   "shot": "list",
+   "cap": "THE MASKS *CLAPPED.",
+   "say": "The masks applauded, slowly."
+  },
+  {
+   "shot": "door",
+   "cap": "THE KITCHEN *DOOR OPENED.",
+   "say": "The kitchen door opened. A young waiter walked in, shaking."
+  },
+  {
+   "shot": "door",
+   "cap": "SEVEN BOWLS. *COLD.",
+   "say": "He carried seven bowls of soup. Cold."
+  },
+  {
+   "shot": "end",
+   "cap": "\"YOUR *REPLACEMENT.\"",
+   "say": "Your replacement, said the first mask."
+  },
+  {
+   "shot": "end",
+   "cap": "TO STAND, *HE MUST SIT.",
+   "say": "To stand up, I had to seat him in my chair."
+  }
+ ]
+}
