@@ -77,7 +77,7 @@ sync-videos.yml                   ->  copies every finished MP4 to the `videos` 
 | Mechanic Shorts | `mechreels/` | low-poly garage/x-ray, `style/mech_base.js`, 9:16 | YT (Gears channel) | — | **STOPPED 31 Oct by owner**, keep it stopped |
 | Mechanic long videos | `mechvideos/` | same engine, 16:9 1080p, 4–5 min, chapters | YT, root `schedule.json` | — | **STOPPED 31 Oct.** No new videos; 006–008 not posted |
 | **Socho Zara** (Hinglish animal riddles) | `riddles/` + `skills/whatifstyle` | flat vector 2D, code-drawn | **old Couch IG + YT accounts** | 06:00 quick, 12:00 mystery/visual, 20:30 harder | LIVE from 31 Oct 20:30, 21 reels queued (7 days) |
-| **elitesendgame** (fictional first-person mysteries: The Witness, The Last Dinner, Room Four) | `mysteryreels/` | noir comic, `mysteryreels/kit/`; voice `eCGXfCpGinKGrwYNoBuo`. Voiced with `voice-audition.yml` (`lang=lines:<file>`), joined and rendered locally | IG @elitesendgame (`IG_ELITE_*`), no YouTube yet; `post-elitesendgame.yml`, `tools/elite_post.py` (`post-elite.yml` is disabled and unused) | One story per slot: The Witness 06:00, The Last Dinner 20:30, Room Four 01:00 | **LIVE since 1 Nov.** Queue in `mysteryreels/schedule.json`. No automatic episode making yet. Always labelled fiction; no real group or living person as the enemy |
+| **elitesendgame** (fictional first-person mysteries: The Witness, The Last Dinner, Room Four) | `mysteryreels/` | noir comic, `mysteryreels/kit/`; voice `eCGXfCpGinKGrwYNoBuo`. Voiced with `voice-audition.yml` (`lang=lines:<file>`), joined and rendered locally | IG @elitesendgame (`IG_ELITE_*`), no YouTube yet; `post-elitesendgame.yml`, `tools/elite_post.py` (`post-elite.yml` is disabled and unused) | The Witness 06:00, The Last Dinner 20:30, Room Four 01:00, wildcards 13:00 and 18:30 | **LIVE since 1 Nov.** Queue in `mysteryreels/schedule.json`. No automatic episode making yet. Always labelled fiction; no real group or living person as the enemy |
 | Dave reels | `davereels/` | crash-test dummy Dave | — | — | **PAUSED — I rejected Dave. Don't resume.** |
 | Old couch reels | `reels/` (root) | Violet Room 3D couple | — | — | **RETIRED** (0001–0040) |
 | ToyBox long videos | `youtube/` | Brick Toy 16:9 | manual upload | — | idle |
@@ -241,7 +241,7 @@ The routine list can't be deleted through the tool; the owner deletes at claude.
 | Socho Zara riddles: 21 new reels (`riddle-batch`, `riddles/PLAYBOOK.md`) | 03:07 on the 1st, 4th, 7th… | ON (31 Oct) |
 | Socho Zara riddles: backup (finish unfinished batch) | 09:07 same days | ON (31 Oct) |
 | Lokvara week 2 (`myth-batch`, `mythreels/PLAYBOOK.md` §2) | one-off, fired 31 Oct and 1 Nov | FINISHED with only 4 of 28. One-offs "Lokvara week 2 remaining 24" run 2 Nov 00:30 IST, backup 09:30 IST, on the plan in PLAYBOOK §2b |
-| elitesendgame: 3 episodes a day (job `elite-<IST date>`, `mysteryreels/PLAYBOOK.md`) | 09:00, backup 13:00, daily | ON (1 Nov). Renders with `make-elite.yml` |
+| elitesendgame: 21 reels, 12 story + 9 wildcards (job `elite-batch`, `mysteryreels/PLAYBOOK.md`) | 09:00, backup 13:00, on the 2nd, 6th, 10th… | ON (2 Nov). Renders with `make-elite.yml` |
 | CouchSarcasm 21 reels + backup (old `reels/` format, WEEKLY.md) | 2nd, 5th, 8th… | OFF — old format retired |
 | Dave 21 reels + backup | every 3rd day | OFF — Dave rejected |
 
