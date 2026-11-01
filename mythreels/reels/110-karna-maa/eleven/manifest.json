@@ -1,0 +1,23 @@
+{
+ "music-8a8efaaffc34.mp3": {
+  "prompt": "Indian mythological cinematic underscore, emotional and intimate: solo bansuri over tanpura drone, soft tabla, low strings, shehnai swell, no vocals",
+  "music_length_ms": 33860,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-f41796302cd8.mp3": {
+  "text": "river water at dawn and a soft temple bell",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-f14c7b2ef7fa.mp3": {
+  "text": "sharp soft string sting",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-e659e365795e.mp3": {
+  "text": "a mother softly crying",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ }
+}
