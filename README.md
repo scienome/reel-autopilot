@@ -35,7 +35,7 @@ Folder: [`couch-cartoon/`](couch-cartoon/)
 | [p003-the-real-hurt](couch-cartoon/p003-the-real-hurt.mp4) | "When did you stop looking at me?" 💔 | Not scheduled |
 | [t001-dentist](couch-cartoon/t001-dentist.mp4) | Who's Jessica? 📱 | Not scheduled |
 
-## Thought Bubble POV stories (formerly Gears & Glitches) (27)
+## Thought Bubble POV stories (formerly Gears & Glitches) (30)
 Folder: [`gears-pov/`](gears-pov/)
 
 | Video | Title | Status |
@@ -67,6 +67,9 @@ Folder: [`gears-pov/`](gears-pov/)
 | [025-dad-thoughts](gears-pov/025-dad-thoughts.mp4) | You can hear what your dad thinks 👨 | Not scheduled |
 | [026-cop-thoughts](gears-pov/026-cop-thoughts.mp4) | You can hear what the police officer thinks 🚓 | Not scheduled |
 | [027-ex-thoughts](gears-pov/027-ex-thoughts.mp4) | You can hear what your ex thinks 💔 | Not scheduled |
+| [028-alarm-clock-thoughts](gears-pov/028-alarm-clock-thoughts.mp4) | You can hear what your alarm clock thinks ⏰ | Not scheduled |
+| [029-puppy-first-night](gears-pov/029-puppy-first-night.mp4) | You can hear what your puppy thinks on night one 🐶 | Not scheduled |
+| [030-delivery-guy-thoughts](gears-pov/030-delivery-guy-thoughts.mp4) | You can hear what the delivery guy thinks 🍕 | Not scheduled |
 
 ## CouchSarcasm (old couple comedy) (40)
 Folder: [`couch-sarcasm/`](couch-sarcasm/)
