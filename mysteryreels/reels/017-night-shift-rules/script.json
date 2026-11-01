@@ -1,0 +1,34 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "3 RULES FOR THE|*NIGHT SHIFT.",
+   "say": "Three rules for the night shift at the old lighthouse."
+  },
+  {
+   "shot": "one",
+   "cap": "RULE *ONE.",
+   "say": "One. Keep the lamp lit, even when the sea goes quiet."
+  },
+  {
+   "shot": "two",
+   "cap": "RULE *TWO.",
+   "say": "Two. If someone knocks, count. Only answer three."
+  },
+  {
+   "shot": "three",
+   "cap": "RULE *THREE.",
+   "say": "Three. Never answer when your name is called from the water."
+  },
+  {
+   "shot": "end",
+   "cap": "TONIGHT IT USED *MY NAME.",
+   "say": "Tonight, it called me by name. In my mother's voice."
+  },
+  {
+   "shot": "end",
+   "cap": "WOULD YOU *ANSWER?",
+   "say": "Would you answer?"
+  }
+ ]
+}
