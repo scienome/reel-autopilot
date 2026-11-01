@@ -3,9 +3,9 @@
 Instagram @elitesendgame. Noir comic style, English, first person. Voice `eCGXfCpGinKGrwYNoBuo` in `config.json`: never change it.
 Read `kit/SKILL.md` for the look and the engine, and copy the structure of the newest reel of the same story.
 
-## Batch job, every 4th day: exactly 21 reels
+## Batch job, every 5th day: exactly 35 reels
 
-**12 story episodes (4 of each story) and 9 wildcards.** Do not stop early: earlier batches in this repo marked done with a fraction made. If a run is cut off, the next run counts the reels already made since the last batch's end (ids in `schedule.json` without posts, and any folder without a Release) and finishes to 21.
+**21 story episodes (7 of each story) and 14 wildcards**, which is one week of posts. Do not stop early: earlier batches in this repo marked done with a fraction made. If a run is cut off, the next run counts the reels already made since the last batch's end (ids in `schedule.json` without posts, and any folder without a Release) and finishes to 35.
 
 1. Read every `script.json` of a story, in order, before writing its next part. Continuity is the whole point.
 2. Next id = highest number in `reels/` + 1, as `NNN-slug`. Each folder has `script.json`, `reel.js`, `meta.json`.

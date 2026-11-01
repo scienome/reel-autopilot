@@ -241,7 +241,8 @@ The routine list can't be deleted through the tool; the owner deletes at claude.
 | Socho Zara riddles: 21 new reels (`riddle-batch`, `riddles/PLAYBOOK.md`) | 03:07 on the 1st, 4th, 7th… | ON (31 Oct) |
 | Socho Zara riddles: backup (finish unfinished batch) | 09:07 same days | ON (31 Oct) |
 | Lokvara week 2 (`myth-batch`, `mythreels/PLAYBOOK.md` §2) | one-off, fired 31 Oct and 1 Nov | FINISHED with only 4 of 28. One-offs "Lokvara week 2 remaining 24" run 2 Nov 00:30 IST, backup 09:30 IST, on the plan in PLAYBOOK §2b |
-| elitesendgame: 21 reels, 12 story + 9 wildcards (job `elite-batch`, `mysteryreels/PLAYBOOK.md`) | 09:00, backup 13:00, on the 2nd, 6th, 10th… | ON (2 Nov). Renders with `make-elite.yml` |
+| elitesendgame: 35 reels, 21 story + 14 wildcards (job `elite-batch`, `mysteryreels/PLAYBOOK.md`) | 09:00, backup 13:00, on the 2nd, 7th, 12th, 17th, 22nd, 27th | ON (2 Nov). Renders with `make-elite.yml`. Makes 7 a day against 5 posted, so the queue grows by about 10 per batch, at about 95,000 ElevenLabs characters a month: owner's choice, 2 Nov |
+| elitesendgame first batch top-up (job `elite-first-35`) | one-off, 2 Nov 16:00 | The first batch began as 21; this finishes it to 35 if it stopped short |
 | CouchSarcasm 21 reels + backup (old `reels/` format, WEEKLY.md) | 2nd, 5th, 8th… | OFF — old format retired |
 | Dave 21 reels + backup | every 3rd day | OFF — Dave rejected |
 
@@ -399,6 +400,21 @@ playful vote; sometimes "Part 1/3" cliffhangers; `cover_t` on the most surprisin
 - `WEEKLY.md` + root `reels/` describe the retired 3D couple; `davereels/` docs describe a paused series.
 - `mechreels/README.md` says Instagram posts Dave; Dave is paused, POV took those slots.
 Fix these docs when you're next in those folders.
+
+---
+
+## 12b. ELITESENDGAME (new channel, 1-2 Nov 2026)
+
+Owner's fictional mystery channel: narrators who were personally there, not facts-versus-myth explainers. Instagram @elitesendgame only; no YouTube yet. Full rules: `mysteryreels/PLAYBOOK.md`; look and engine: `mysteryreels/kit/SKILL.md`. Voice `eCGXfCpGinKGrwYNoBuo`, `eleven_v4`, chosen by the owner.
+
+- **Stories and slots (IST):** The Witness 06:00 (US evening), The Last Dinner 20:30 (India evening), Room Four 01:00 (UK evening), wildcards 13:00 and 18:30. Each slot is about 30 minutes before peak by general estimate, not account data: check Insights after a week and tell the owner.
+- **Pipeline:** push a reel folder to main; `make-elite.yml` runs `tools/elite_make.py`, keeps the takes in `voice_lines/` and publishes Release `elite-<id>`. `post-elitesendgame.yml` runs `tools/elite_post.py`, which posts from `mysteryreels/schedule.json` "series" and records `mysteryreels/posted.json`. Add `"paused": "reason"` to stop. `post-elite.yml` is disabled and unused. `mysteryreels/post-elite.yml.txt` is a reference copy, not live.
+- **Secrets:** `IG_ELITE_ACCESS_TOKEN`, `IG_ELITE_USER_ID`; token renewed on Mondays. Meta app "Reel Autopilot".
+- **Batches:** 35 reels (21 story + 14 wildcards) on the 2nd, 7th, 12th, 17th, 22nd and 27th at 09:00, backup 13:00, job `elite-batch`. Routines `trig_017LD4a4QFhugTwNVaW8HdYk`, `trig_01VwLmhjvgduG44iUcFu2Ujw`. The first run started 1 Nov 23:51 IST with a 21-reel prompt; one-off `trig_01EymxSsHpT8oQnLC5Szxn9U` on 2 Nov 16:00 IST tops it up to 35, but stops if `elite-batch` is still in progress, so check the count that evening.
+- **Posted so far:** The Witness File 1, 1 Nov 23:40 IST by hand-triggered run. The first scheduled post is 2 Nov 06:00; not yet confirmed.
+- **Limits:** always labelled fiction except verified "real and strange" wildcards. Invented groups only, never a real religion, community or living person as the enemy, and no coded versions. Lizard-people and "secret rulers" stories have been used to target Jewish people.
+- **Open risks:** about 95,000 ElevenLabs characters a month on a 131,000 plan shared with other channels; 5 posts a day from a new account may reduce reach; 7 reels a day are made against 5 posted, so the queue grows; reels go live without review; visual quality of cloud reels is unproven.
+- **Workflow files:** the `gh` token has no workflow scope. In the desktop browser pane, signed in as the owner, open `github.com/<repo>/new/main?filename=...&value=<url-encoded file>` and commit. The owner signs in and handles tokens themselves.
 
 ---
 
