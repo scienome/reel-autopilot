@@ -424,6 +424,7 @@ Fix these docs when you're next in those folders.
 **Owner decisions on record**
 - **Riddles:** Hinglish animal riddles on the old Couch accounts, name Socho Zara (my suggestion, used; final username unknown). 21 reels every third day. Week 1 plan in `riddles/week1.json`; MP4s in Release `riddle-week1`.
 - **Toy:** switched 31 Oct to True Stories in Bricks with voice `c6SfcYrb2t09NHXiT80T`. New-format reels post first; about 30 old reels wait behind them and may never post.
+- **Lokvara direction (owner, 1 Nov): continuing stories (kahaniya) are the main point of the channel; "why" reels are there too, but second.** Flagship chosen: Karna's full life (कर्ण), about 30 parts, one a day, proposed at 21:00 IST as a fifth daily post. Not started; write parts 1-3 for owner approval first.
 - **Lokvara formula (owner, 1 Nov):** only the best stories, and **people must already know the thing but not why** ("आपने हज़ार बार देखा है... पर क्यों?"). He rejected unheard-of stories. Plan and 5-point test: `mythreels/PLAYBOOK.md` §2b; 24 reels is a ceiling.
 - **Lokvara:** series पूजा के पीछे की कथा + देवताओं के रूप का रहस्य. जब देवता भी हारे stops at 2 parts. Ask for week 3's series by about 12 Nov. Best result so far: `002-ravan-shani`, about 20,000 views and 800 likes in 15 hours (`mythreels/PLAYBOOK.md` §1b).
 - **Credits:** new ElevenLabs account, 131,000 characters a month. Owner keeps 21-reel batches despite my estimate of about 440,000 a month (§4). Expect batches to fail when it runs out; check with `check-elevenlabs.yml` and tell the owner.
