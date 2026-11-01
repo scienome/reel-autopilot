@@ -1,0 +1,34 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "THREE *ENVELOPES.",
+   "say": "A stranger hands you three envelopes. You may open one."
+  },
+  {
+   "shot": "one",
+   "cap": "*ENVELOPE 1.",
+   "say": "One tells you who is lying to you."
+  },
+  {
+   "shot": "two",
+   "cap": "*ENVELOPE 2.",
+   "say": "Two tells you what you will lose."
+  },
+  {
+   "shot": "three",
+   "cap": "*ENVELOPE 3.",
+   "say": "Three tells you where you will be in ten years."
+  },
+  {
+   "shot": "end",
+   "cap": "WHICH *DO YOU OPEN?",
+   "say": "Which do you open?"
+  },
+  {
+   "shot": "end",
+   "cap": "COMMENT *1, 2 OR 3.",
+   "say": "Comment one, two or three."
+  }
+ ]
+}
