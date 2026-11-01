@@ -1,0 +1,28 @@
+{
+ "music-f7da4a3c7937.mp3": {
+  "prompt": "Indian mythological cinematic underscore, emotional and intimate: solo bansuri over tanpura drone, soft tabla, low strings, shehnai swell, no vocals",
+  "music_length_ms": 36180,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-e56d070d8b3a.mp3": {
+  "text": "slow heartbeat and insect chewing",
+  "duration_seconds": 3.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-e1fcde23e2df.mp3": {
+  "text": "sudden gasp",
+  "duration_seconds": 1.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-913aa8f32d14.mp3": {
+  "text": "thunder crack",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-058cb6f44c38.mp3": {
+  "text": "lonely flute",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ }
+}
