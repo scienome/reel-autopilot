@@ -1,0 +1,23 @@
+{
+ "music-c7a7c72fa0dc.mp3": {
+  "prompt": "Indian mythological cinematic underscore, emotional and intimate: solo bansuri over tanpura drone, soft tabla, low strings, shehnai swell, no vocals",
+  "music_length_ms": 35160,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-a76ac1238971.mp3": {
+  "text": "chariot rolling slowly",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-67f499b66a62.mp3": {
+  "text": "heart thump and low swell",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-c6a3271fcc36.mp3": {
+  "text": "quiet sad bansuri",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ }
+}
