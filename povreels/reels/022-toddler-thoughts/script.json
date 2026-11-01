@@ -1,0 +1,81 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what your toddler thinks."
+  ]
+ },
+ {
+  "id": "t1",
+  "who": "baby",
+  "phrases": [
+   "Banana.",
+   "Not that banana.",
+   "The other banana."
+  ]
+ },
+ {
+  "id": "t2",
+  "who": "baby",
+  "phrases": [
+   "You cut it wrong.",
+   "I will scream until you fix it."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "Bedtime."
+  ]
+ },
+ {
+  "id": "t3",
+  "who": "baby",
+  "phrases": [
+   "I'm not tired.",
+   "I've been awake for nine hundred years."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "Then the lights go off."
+  ]
+ },
+ {
+  "id": "t4",
+  "who": "baby",
+  "phrases": [
+   "Stay.",
+   "Just till I'm asleep.",
+   "I like it when you're here."
+  ]
+ },
+ {
+  "id": "n4",
+  "who": "narrator",
+  "phrases": [
+   "Five a.m."
+  ]
+ },
+ {
+  "id": "t5",
+  "who": "baby",
+  "phrases": [
+   "Wake up!",
+   "I love you!",
+   "Where's my banana?"
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "Is your toddler an angel or a boss?",
+   "Part two?"
+  ]
+ }
+]

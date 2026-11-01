@@ -1,0 +1,95 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what seagulls think."
+  ]
+ },
+ {
+  "id": "g1",
+  "who": "pug",
+  "phrases": [
+   "Nice chips.",
+   "I'm not asking."
+  ]
+ },
+ {
+  "id": "g2",
+  "who": "pug",
+  "phrases": [
+   "I have no plan.",
+   "I have no shame.",
+   "I have no fear."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "A man guards his chips."
+  ]
+ },
+ {
+  "id": "g3",
+  "who": "pug",
+  "phrases": [
+   "Dave.",
+   "Dave, I know where you live.",
+   "I live on your roof."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "He looks away for one second."
+  ]
+ },
+ {
+  "id": "g4",
+  "who": "pug",
+  "phrases": [
+   "Thank you for your service.",
+   "Delicious."
+  ]
+ },
+ {
+  "id": "n4",
+  "who": "narrator",
+  "phrases": [
+   "Later. Alone on the wall."
+  ]
+ },
+ {
+  "id": "g5",
+  "who": "pug",
+  "phrases": [
+   "Nobody has ever just given me one.",
+   "Not once."
+  ]
+ },
+ {
+  "id": "n5",
+  "who": "narrator",
+  "phrases": [
+   "Then Dave throws him a chip."
+  ]
+ },
+ {
+  "id": "g6",
+  "who": "pug",
+  "phrases": [
+   "Dave.",
+   "I'll leave your car alone."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "Would you share your chips?",
+   "Part two?"
+  ]
+ }
+]

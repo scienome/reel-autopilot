@@ -1,0 +1,83 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what your wifi router thinks."
+  ]
+ },
+ {
+  "id": "r1",
+  "who": "friend",
+  "phrases": [
+   "Eleven devices.",
+   "One router.",
+   "Nobody says thank you."
+  ]
+ },
+ {
+  "id": "r2",
+  "who": "friend",
+  "phrases": [
+   "I know everything you searched.",
+   "I'm not saying a word."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "Friday night. Everyone's home."
+  ]
+ },
+ {
+  "id": "r3",
+  "who": "friend",
+  "phrases": [
+   "Four video calls.",
+   "Three games.",
+   "One man streaming a cat."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "Then the power goes out."
+  ]
+ },
+ {
+  "id": "r4",
+  "who": "friend",
+  "phrases": [
+   "I'm so sorry.",
+   "I'm trying.",
+   "Please turn me off and on again.",
+   "It's the only thing that helps."
+  ]
+ },
+ {
+  "id": "n4",
+  "who": "narrator",
+  "phrases": [
+   "Someone gently presses the button."
+  ]
+ },
+ {
+  "id": "r5",
+  "who": "friend",
+  "phrases": [
+   "Oh.",
+   "That feels so good.",
+   "Thank you."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "What would your router say about you?",
+   "Part two?"
+  ]
+ }
+]

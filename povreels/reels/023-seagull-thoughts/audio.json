@@ -1,0 +1,57 @@
+{
+ "music": {
+  "prompt": "Cheeky seaside comedy music with accordion and tuba, a sneaky heist section, then tender and sweet, then jaunty again, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "g1",
+   "word": "Nice",
+   "offset": 0.0,
+   "prompt": "seagull squawk",
+   "dur": 1.2,
+   "gain": -6
+  },
+  {
+   "beat": "g2",
+   "word": "fear",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "g3",
+   "word": "roof",
+   "offset": 0.0,
+   "prompt": "seagull laugh call",
+   "dur": 1.5,
+   "gain": -6
+  },
+  {
+   "beat": "g4",
+   "word": "Delicious",
+   "offset": 0.0,
+   "prompt": "quick wing flap and crunch",
+   "dur": 1.2,
+   "gain": -6
+  },
+  {
+   "beat": "g5",
+   "word": "Nobody",
+   "offset": 0.0,
+   "prompt": "soft sad violin note",
+   "dur": 2,
+   "gain": -9
+  },
+  {
+   "beat": "g6",
+   "word": "car",
+   "offset": 0.0,
+   "prompt": "seagull squawk",
+   "dur": 1.2,
+   "gain": -6
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+{
+ "music": {
+  "prompt": "Cheeky playful toddler comedy music with kazoo and xylophone, then a tender lullaby middle, then bouncy again, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "t1",
+   "word": "Banana",
+   "offset": 0.0,
+   "prompt": "cute baby giggle",
+   "dur": 1.2,
+   "gain": -6
+  },
+  {
+   "beat": "t2",
+   "word": "scream",
+   "offset": 0.0,
+   "prompt": "toddler tantrum scream short comedic",
+   "dur": 1.5,
+   "gain": -7
+  },
+  {
+   "beat": "n2",
+   "word": "Bedtime",
+   "offset": 0.0,
+   "prompt": "soft music box chime",
+   "dur": 1.5,
+   "gain": -6
+  },
+  {
+   "beat": "t3",
+   "word": "hundred",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "t4",
+   "word": "Stay",
+   "offset": 0.0,
+   "prompt": "soft sleepy sigh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "t5",
+   "word": "Wake",
+   "offset": 0.0,
+   "prompt": "cartoon boing",
+   "dur": 1,
+   "gain": -6
+  }
+ ]
+}

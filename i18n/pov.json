@@ -264,5 +264,131 @@
    "title": "Você ouve o que seu hamster pensa 🐹",
    "caption": "Quatro mil milhas na rodinha. Ainda na gaiola. 🐹\nAí a porta abriu... 👇"
   }
+ },
+ "022-toddler-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं आपका छोटा बच्चा क्या सोचता है 🧒",
+   "caption": "केला। वो वाला केला नहीं! 🍌\nफिर सोने का समय... और एक लाइन जो दिल पिघला दे। एंजल या बॉस? 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa tu niño pequeño 🧒",
+   "caption": "Plátano. No ESE plátano. 🍌\nLuego la hora de dormir... y una frase que te derrite. ¿Ángel o jefe? 👇"
+  },
+  "pt": {
+   "title": "Você ouve o que seu bebê pensa 🧒",
+   "caption": "Banana. Não ESSA banana. 🍌\nDepois a hora de dormir... e uma frase que derrete o coração. Anjo ou chefe? 👇"
+  }
+ },
+ "023-seagull-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं सीगल क्या सोचते हैं 🐦",
+   "caption": "\"डेव, मुझे पता है तुम कहाँ रहते हो। मैं तुम्हारी छत पर रहता हूँ।\" 🐦🍟\nफिर उसने कुछ अनोखा किया। क्या आप अपनी चिप्स शेयर करेंगे? 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensan las gaviotas 🐦",
+   "caption": "\"Dave, sé dónde vives. Vivo en tu tejado.\" 🐦🍟\nLuego hizo algo inesperado. ¿Compartirías tus patatas? 👇"
+  },
+  "pt": {
+   "title": "Você ouve o que as gaivotas pensam 🐦",
+   "caption": "\"Dave, eu sei onde você mora. Eu moro no seu telhado.\" 🐦🍟\nDepois ele fez algo inesperado. Você dividiria suas batatas? 👇"
+  }
+ },
+ "024-wifi-router-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं आपका वाईफाई राउटर क्या सोचता है 📶",
+   "caption": "ग्यारह डिवाइस। एक राउटर। किसी ने शुक्रिया नहीं कहा। 📶\nफिर बिजली गई... राउटर या फ्रिज, कौन ज़्यादा मेहनत करता है? 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa tu router wifi 📶",
+   "caption": "Once dispositivos. Un router. Nadie da las gracias. 📶\nLuego se fue la luz... ¿Router o nevera, quién trabaja más? 👇"
+  },
+  "pt": {
+   "title": "Você ouve o que seu roteador wifi pensa 📶",
+   "caption": "Onze aparelhos. Um roteador. Ninguém diz obrigado. 📶\nDepois acabou a luz... Roteador ou geladeira, quem trabalha mais? 👇"
+  }
+ },
+ "025-dad-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं आपके पापा क्या सोचते हैं 👨",
+   "caption": "\"मैं ठीक हूँ।\" \"मुझे रास्ता पूछने की ज़रूरत नहीं।\" 👨\nफिर वो बात जो वो कभी बोल नहीं पाते... क्या आपके पापा I love you कहते हैं? 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa tu padre 👨",
+   "caption": "\"Estoy bien.\" \"No necesito indicaciones.\" 👨\nLuego la frase que nunca puede decir en voz alta... ¿Tu padre dice te quiero? 👇"
+  },
+  "pt": {
+   "title": "Você ouve o que seu pai pensa 👨",
+   "caption": "\"Estou bem.\" \"Não preciso de direções.\" 👨\nDepois a frase que ele nunca consegue dizer em voz alta... Seu pai diz eu te amo? 👇"
+  }
+ },
+ "026-cop-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं पुलिस वाला क्या सोचता है 🚓",
+   "caption": "\"प्लीज़ बस सॉरी बोल दो। मुझे घर जाना है।\" 🚓\nफिर उसने कुछ अनोखा किया। आप सॉरी बोलेंगे या बहस करेंगे? 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa el policía 🚓",
+   "caption": "\"Por favor, di perdón. Quiero irme a casa.\" 🚓\nLuego hizo algo inesperado. ¿Pedirías perdón o discutirías? 👇"
+  },
+  "pt": {
+   "title": "Você ouve o que o policial pensa 🚓",
+   "caption": "\"Por favor, peça desculpa. Quero ir para casa.\" 🚓\nDepois ele fez algo inesperado. Você pediria desculpa ou discutiria? 👇"
+  }
+ },
+ "027-ex-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं आपकी एक्स क्या सोचती है 💔",
+   "caption": "\"मैं बिल्कुल ठीक हूँ।\" (वो ठीक नहीं है।) 💔\nहुडी वाला हिस्सा सुनिए... क्या आपके पास भी एक्स की कोई चीज़ है? 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa tu ex 💔",
+   "caption": "\"Estoy perfectamente bien.\" (No lo está.) 💔\nEspera lo de la sudadera... ¿Aún guardas algo de tu ex? 👇"
+  },
+  "pt": {
+   "title": "Você ouve o que sua ex pensa 💔",
+   "caption": "\"Estou super bem.\" (Não está.) 💔\nEspere pelo moletom... Você ainda guarda algo da sua ex? 👇"
+  }
+ },
+ "028-alarm-clock-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं आपकी अलार्म घड़ी क्या सोचती है ⏰",
+   "caption": "\"मैं तुम्हें छह साल से जानती हूँ। तुम पहली घंटी पर कभी नहीं उठे।\" ⏰\nअंत देखिए। आप स्नूज़ दबाते हैं या झटपट उठते हैं? 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa tu despertador ⏰",
+   "caption": "\"Te conozco hace seis años. Nunca te has levantado a la primera.\" ⏰\nMira el final. ¿Posponer o levantarte de un salto? 👇"
+  },
+  "pt": {
+   "title": "Você ouve o que seu despertador pensa ⏰",
+   "caption": "\"Te conheço há seis anos. Você nunca acordou no primeiro toque.\" ⏰\nVeja o final. Soneca ou levantar na hora? 👇"
+  }
+ },
+ "029-puppy-first-night": {
+  "hi": {
+   "title": "आप सुन सकते हैं आपका पिल्ला पहली रात क्या सोचता है 🐶",
+   "caption": "\"मेरी माँ कहाँ है?\" 🥺🐶\nपिल्ले के साथ पहली रात... और जब आपने उसे गोद में उठाया। आपको अपनी याद है? 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa tu cachorro la primera noche 🐶",
+   "caption": "\"¿Dónde está mi mamá?\" 🥺🐶\nLa primera noche con tu cachorro... y lo que pasa al cogerlo en brazos. ¿Recuerdas la tuya? 👇"
+  },
+  "pt": {
+   "title": "Você ouve o que seu filhote pensa na primeira noite 🐶",
+   "caption": "\"Cadê minha mãe?\" 🥺🐶\nA primeira noite com o filhote... e o que acontece quando você o pega no colo. Lembra da sua? 👇"
+  }
+ },
+ "030-delivery-guy-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं डिलीवरी वाला क्या सोचता है 🍕",
+   "caption": "नौ पिज़्ज़ा। एक इंसान। \"कोई जजमेंट नहीं। ठीक है, थोड़ा सा।\" 🍕\nफिर आप उसके पीछे दौड़े... क्या आप टिप देते हैं? 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa el repartidor 🍕",
+   "caption": "Nueve pizzas. Una persona. \"Sin juzgar. Vale, un poquito.\" 🍕\nLuego corriste tras él... ¿Dejas propina? 👇"
+  },
+  "pt": {
+   "title": "Você ouve o que o entregador pensa 🍕",
+   "caption": "Nove pizzas. Uma pessoa. \"Sem julgamento. Tá, um pouquinho.\" 🍕\nDepois você correu atrás dele... Você dá gorjeta? 👇"
+  }
  }
 }

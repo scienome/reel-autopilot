@@ -1,0 +1,57 @@
+{
+ "music": {
+  "prompt": "Quirky electronic comedy music with beeps and blips, getting stressed in the middle, then a soft gentle ending, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "r1",
+   "word": "Eleven",
+   "offset": 0.0,
+   "prompt": "computer modem dial-up beeps",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "r2",
+   "word": "saying",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "r3",
+   "word": "Four",
+   "offset": 0.0,
+   "prompt": "many phone notification pings",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "n3",
+   "word": "power",
+   "offset": 0.0,
+   "prompt": "power outage electric shutdown",
+   "dur": 1.5,
+   "gain": -5
+  },
+  {
+   "beat": "n4",
+   "word": "presses",
+   "offset": 0.0,
+   "prompt": "soft button click",
+   "dur": 0.8,
+   "gain": -4
+  },
+  {
+   "beat": "r5",
+   "word": "good",
+   "offset": 0.0,
+   "prompt": "happy electronic chime",
+   "dur": 1.2,
+   "gain": -7
+  }
+ ]
+}
