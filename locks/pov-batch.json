@@ -1,9 +1,9 @@
 {
  "job": "pov-batch",
- "status": "in_progress",
+ "status": "done",
  "owner": "vm-e8353e",
  "started": "2026-11-01T21:18:03Z",
- "updated": "2026-11-01T21:46:34Z",
+ "updated": "2026-11-01T21:56:58Z",
  "note": "028-030 pushed",
  "history": []
 }
