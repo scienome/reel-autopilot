@@ -1,0 +1,28 @@
+{
+ "music-e60dfaef88f9.mp3": {
+  "prompt": "Indian mythological cinematic underscore, emotional and intimate: solo bansuri over tanpura drone, soft tabla, low strings, shehnai swell, no vocals",
+  "music_length_ms": 41680,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-cf62cc72be61.mp3": {
+  "text": "wooden wheel sinking into thick mud",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-a6a2aa020284.mp3": {
+  "text": "echoing silence and a broken chant",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-9cb7df1d62ed.mp3": {
+  "text": "arrow flying then a heavy impact",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-76b7a3098709.mp3": {
+  "text": "women weeping over a battlefield",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ }
+}
