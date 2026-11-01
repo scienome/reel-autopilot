@@ -1,0 +1,39 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "*72 SECONDS.",
+   "say": "In 1977, a telescope in Ohio heard something for seventy two seconds."
+  },
+  {
+   "shot": "wow",
+   "cap": "HE WROTE *\"WOW!\"",
+   "say": "An astronomer circled it on a printout and wrote one word. Wow."
+  },
+  {
+   "shot": "known",
+   "cap": "A STRONG, *NARROW SIGNAL.",
+   "say": "A strong, narrow radio signal, near the hydrogen frequency."
+  },
+  {
+   "shot": "known",
+   "cap": "NEVER *HEARD AGAIN.",
+   "say": "Searches since have not found it again."
+  },
+  {
+   "shot": "unknown",
+   "cap": "WHAT *WE KNOW.",
+   "say": "What we know: it was real in the data."
+  },
+  {
+   "shot": "unknown",
+   "cap": "WHAT *WE DON'T.",
+   "say": "What we don't know: what made it."
+  },
+  {
+   "shot": "end",
+   "cap": "*WHAT SENT IT?",
+   "say": "What do you think sent it?"
+  }
+ ]
+}
