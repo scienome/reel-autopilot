@@ -1,0 +1,39 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "COURSE *SEVEN.",
+   "say": "Course seven came under a silver dome. The first mask lifted it."
+  },
+  {
+   "shot": "key",
+   "cap": "ONE *KEY.",
+   "say": "Inside, one small brass key."
+  },
+  {
+   "shot": "key",
+   "cap": "NO *PRICE.",
+   "say": "Course seven has no price, he said. It is the exit."
+  },
+  {
+   "shot": "masks",
+   "cap": "THEY GAVE IT *BACK.",
+   "say": "Every mask at the table had held this key before. Every one gave it back."
+  },
+  {
+   "shot": "masks",
+   "cap": "WHY?",
+   "say": "I asked why."
+  },
+  {
+   "shot": "door",
+   "cap": "THE NEXT *DINNER.",
+   "say": "The door does not open to the street, he said. It opens to the next dinner."
+  },
+  {
+   "shot": "end",
+   "cap": "THE *KEY.",
+   "say": "I held the key. The whole table held its breath."
+  }
+ ]
+}
