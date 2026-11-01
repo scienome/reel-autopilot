@@ -3,7 +3,7 @@
   "times_ist": ["01:00", "06:00", "13:00", "18:30", "20:30"],
   "first": "001-denver-airport",
   "series": {
-    "06:00": ["001-denver-airport", "002-the-knock", "005-the-waiting-room", "008-the-ninth-witness", "012-the-registrar"],
+    "06:00": ["001-denver-airport", "002-the-knock", "005-the-waiting-room", "008-the-ninth-witness", "012-the-registrar", "016-the-vault"],
     "20:30": ["003-the-last-dinner", "006-the-first-rule", "010-the-price", "014-the-replacement"],
     "01:00": ["004-room-four", "007-the-other-me"],
     "13:00": [],
