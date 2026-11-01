@@ -77,6 +77,7 @@ sync-videos.yml                   ->  copies every finished MP4 to the `videos` 
 | Mechanic Shorts | `mechreels/` | low-poly garage/x-ray, `style/mech_base.js`, 9:16 | YT (Gears channel) | — | **STOPPED 31 Oct by owner**, keep it stopped |
 | Mechanic long videos | `mechvideos/` | same engine, 16:9 1080p, 4–5 min, chapters | YT, root `schedule.json` | — | **STOPPED 31 Oct.** No new videos; 006–008 not posted |
 | **Socho Zara** (Hinglish animal riddles) | `riddles/` + `skills/whatifstyle` | flat vector 2D, code-drawn | **old Couch IG + YT accounts** | 06:00 quick, 12:00 mystery/visual, 20:30 harder | LIVE from 31 Oct 20:30, 21 reels queued (7 days) |
+| **elitesendgame** (fictional first-person mysteries: The Witness, The Last Dinner, Room Four) | `mysteryreels/` | noir comic, `mysteryreels/kit/`; voice `eCGXfCpGinKGrwYNoBuo`. Voiced with `voice-audition.yml` (`lang=lines:<file>`), joined and rendered locally | no accounts yet | — | 4 reels made 1 Nov, nothing posted. Always labelled fiction; no real group or living person as the enemy |
 | Dave reels | `davereels/` | crash-test dummy Dave | — | — | **PAUSED — I rejected Dave. Don't resume.** |
 | Old couch reels | `reels/` (root) | Violet Room 3D couple | — | — | **RETIRED** (0001–0040) |
 | ToyBox long videos | `youtube/` | Brick Toy 16:9 | manual upload | — | idle |
