@@ -1,0 +1,39 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "LEVEL *TEN.",
+   "say": "I went back down to level ten, to watch the eighth chair."
+  },
+  {
+   "shot": "glass",
+   "cap": "THE GLASS IS *EMPTY.",
+   "say": "The room behind the glass was empty. But the chair was warm."
+  },
+  {
+   "shot": "voice",
+   "cap": "*THIRTY YEARS.",
+   "say": "A voice behind me said, thirty years I watched that door."
+  },
+  {
+   "shot": "voice",
+   "cap": "NOTHING *CAME IN.",
+   "say": "Nothing ever came through it. Not once."
+  },
+  {
+   "shot": "door",
+   "cap": "KEEPING IT *IN.",
+   "say": "It was never keeping something out. It was keeping something in."
+  },
+  {
+   "shot": "door",
+   "cap": "THE *FORGOTTEN.",
+   "say": "The door is where Level Nine puts the people we forget."
+  },
+  {
+   "shot": "end",
+   "cap": "IT *CLICKED.",
+   "say": "Then the lock clicked. From the inside."
+  }
+ ]
+}
