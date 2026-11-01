@@ -1,50 +1,46 @@
 [
  {
   "id": "hook00",
-  "text": "I am Denver Airport."
+  "text": "I worked under Denver Airport. Night shift."
  },
  {
-  "id": "hook01",
-  "text": "And people say I'm hiding something."
+  "id": "door01",
+  "text": "They told us the tunnels were for luggage."
  },
  {
-  "id": "stone02",
-  "text": "Look at my dedication stone. A Masonic symbol, right there."
+  "id": "door02",
+  "text": "But no suitcase needs a door this thick."
  },
  {
-  "id": "stone03",
-  "text": "And a strange name beside it. The New World Airport Commission."
+  "id": "nine03",
+  "text": "One night, it was open."
  },
  {
-  "id": "horse04",
-  "text": "Outside stands my blue horse. Thirty two feet tall, with glowing red eyes."
+  "id": "nine04",
+  "text": "Level nine. There is no level nine on any map."
  },
  {
-  "id": "horse05",
-  "text": "A piece of it fell on the man who made it. He died."
+  "id": "thing05",
+  "text": "A guard stood at the end of the tunnel."
  },
  {
-  "id": "tunnels06",
-  "text": "Under my floors, there are tunnels."
+  "id": "thing06",
+  "text": "He turned. My torch hit his eyes. They were not human."
  },
  {
-  "id": "tunnels07",
-  "text": "Some say they lead to a bunker. Some say lizard people."
+  "id": "name07",
+  "text": "Then he said my name."
  },
  {
-  "id": "late08",
-  "text": "Here is what I can show you. I opened sixteen months late."
+  "id": "gone08",
+  "text": "I ran. Next morning, they said I never worked there."
  },
  {
-  "id": "late09",
-  "text": "My tunnels carried a baggage system that failed. It was switched off in two thousand five."
+  "id": "end09",
+  "text": "But I kept my badge."
  },
  {
   "id": "end10",
-  "text": "Nobody has ever proved a bunker. And nobody stops asking."
- },
- {
-  "id": "end11",
-  "text": "So tell me. Truth, or just a good story?"
+  "text": "And last night, someone knocked."
  }
 ]

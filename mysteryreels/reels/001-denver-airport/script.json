@@ -1,14 +1,13 @@
 { "lines": [
-  { "shot": "hook", "cap": "I AM *DENVER AIRPORT.", "say": "I am Denver Airport." },
-  { "shot": "hook", "cap": "THEY SAY I'M|*HIDING SOMETHING.", "say": "And people say I'm hiding something." },
-  { "shot": "stone", "cap": "A *MASONIC SYMBOL|ON MY STONE.", "say": "Look at my dedication stone. A Masonic symbol, right there." },
-  { "shot": "stone", "cap": "THE NEW WORLD|*AIRPORT COMMISSION.", "say": "And a strange name beside it. The New World Airport Commission." },
-  { "shot": "horse", "cap": "32 FEET. *RED EYES.", "say": "Outside stands my blue horse. Thirty two feet tall, with glowing red eyes." },
-  { "shot": "horse", "cap": "IT *KILLED|ITS MAKER.", "say": "A piece of it fell on the man who made it. He died." },
-  { "shot": "tunnels", "cap": "TUNNELS *UNDER ME.", "say": "Under my floors, there are tunnels." },
-  { "shot": "tunnels", "cap": "A BUNKER?|*LIZARD PEOPLE?", "say": "Some say they lead to a bunker. Some say lizard people." },
-  { "shot": "late", "cap": "*16 MONTHS LATE.", "say": "Here is what I can show you. I opened sixteen months late." },
-  { "shot": "late", "cap": "MY BAGGAGE SYSTEM|*FAILED.", "say": "My tunnels carried a baggage system that failed. It was switched off in two thousand five." },
-  { "shot": "end", "cap": "NO PROOF OF|*A BUNKER.", "say": "Nobody has ever proved a bunker. And nobody stops asking." },
-  { "shot": "end", "cap": "TRUTH, OR *A GOOD STORY?", "say": "So tell me. Truth, or just a good story?" }
+  { "shot": "hook", "cap": "I WORKED *UNDER|DENVER AIRPORT.", "say": "I worked under Denver Airport. Night shift." },
+  { "shot": "door", "cap": "\"IT'S FOR *LUGGAGE.\"", "say": "They told us the tunnels were for luggage." },
+  { "shot": "door", "cap": "THEN WHY *THIS DOOR?", "say": "But no suitcase needs a door this thick." },
+  { "shot": "nine", "cap": "ONE NIGHT|IT WAS *OPEN.", "say": "One night, it was open." },
+  { "shot": "nine", "cap": "*LEVEL NINE.", "say": "Level nine. There is no level nine on any map." },
+  { "shot": "thing", "cap": "SOMEONE WAS *THERE.", "say": "A guard stood at the end of the tunnel." },
+  { "shot": "thing", "cap": "HIS *EYES.", "say": "He turned. My torch hit his eyes. They were not human." },
+  { "shot": "name", "cap": "HE SAID *MY NAME.", "say": "Then he said my name." },
+  { "shot": "gone", "cap": "\"YOU *NEVER|WORKED HERE.\"", "say": "I ran. Next morning, they said I never worked there." },
+  { "shot": "end", "cap": "BUT I *KEPT THIS.", "say": "But I kept my badge." },
+  { "shot": "end", "cap": "LAST NIGHT...|*SOMEONE KNOCKED.", "say": "And last night, someone knocked." }
 ] }
