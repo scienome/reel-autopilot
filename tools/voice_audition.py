@@ -31,9 +31,8 @@ CANDIDATES = [
 
 # --lang hi: a Hindi mythology story line, read by the account's main voices plus the most-used Hindi narrators of the
 # ElevenLabs Voice Library (added to the account only if the API needs that before it will speak with them)
-LINES_HI = ("क्या आप जानते हैं, बचपन में हनुमान जी ने सूरज को एक पका हुआ फल समझकर निगल लिया था? "
-            "पूरी धरती पर अंधेरा छा गया। देवता घबरा गए। इंद्र ने क्रोध में अपना वज्र चलाया... "
-            "और फिर जो हुआ, उसने तीनों लोकों को हिला दिया। जय श्री राम। भाग दो देखना है?")
+LINES_HI = ("शादी से पहले... एक राजकुमारी माँ बन गई। नाम था कुंती। उसने बस परखने के लिए... सूर्य देव को पुकारा। और सूर्य देव सचमुच आ गए। "
+            "रोते हुए कुंती ने अपने बच्चे को एक पेटी में रखा... और नदी में बहा दिया। अगले भाग में... उस बच्चे को किसने उठाया?")
 HI_BASE = [('s3TPKV1kjDlVtZbl4Ksh', 'current main narrator (Adam), speaking Hindi'), ('nPczCjzI2devNBz1zQrb', 'Brian: deep narrator, speaking Hindi'),
            ('JBFqnCBsd6RMkjVDRZzb', 'George: warm storyteller, speaking Hindi')]
 
