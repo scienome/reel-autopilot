@@ -1,0 +1,39 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "A BOOK *NO ONE CAN READ.",
+   "say": "There is a book that nobody on Earth can read."
+  },
+  {
+   "shot": "pages",
+   "cap": "*STRANGE PLANTS.",
+   "say": "Page after page of drawings of plants experts cannot identify."
+  },
+  {
+   "shot": "pages",
+   "cap": "*UNKNOWN WRITING.",
+   "say": "And a writing no one has ever decoded."
+  },
+  {
+   "shot": "real",
+   "cap": "IT'S *REAL.",
+   "say": "It is real. Tests dated the parchment to the early fourteen hundreds."
+  },
+  {
+   "shot": "real",
+   "cap": "YALE *HAS IT.",
+   "say": "It sits in a library at Yale."
+  },
+  {
+   "shot": "end",
+   "cap": "HOAX? CODE? *LOST LANGUAGE?",
+   "say": "Hoax, code, or lost language? Nobody has proved any answer."
+  },
+  {
+   "shot": "end",
+   "cap": "WHAT DO *YOU THINK?",
+   "say": "What do you think it says?"
+  }
+ ]
+}
