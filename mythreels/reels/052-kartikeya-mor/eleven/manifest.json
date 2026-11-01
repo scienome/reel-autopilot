@@ -1,0 +1,38 @@
+{
+ "music-079f403df408.mp3": {
+  "prompt": "Indian mythological cinematic underscore: tanpura drone, soft tabla, bansuri, temple bells, swelling shehnai at the climax, no vocals, warm devotional temple feeling",
+  "music_length_ms": 51000,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-4dd9d7c5e854.mp3": {
+  "text": "clash of weapons and war drum",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-fad560c181a1.mp3": {
+  "text": "magic shape-shifting whoosh",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-73f26f6242fd.mp3": {
+  "text": "wood splitting crack with a magical flash",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-7c2324d6a061.mp3": {
+  "text": "peacock call",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-9226f0100d85.mp3": {
+  "text": "gentle bells and a soft choir",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
