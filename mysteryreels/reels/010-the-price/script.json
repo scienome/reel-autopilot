@@ -1,0 +1,49 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "I *DIDN'T EAT.",
+   "say": "I did not touch the soup."
+  },
+  {
+   "shot": "hook",
+   "cap": "THE FIRST MASK *SIGHED.",
+   "say": "The first mask sighed. Then eat something else, he said."
+  },
+  {
+   "shot": "menu",
+   "cap": "A *MENU.",
+   "say": "A menu slid across the table. Seven courses."
+  },
+  {
+   "shot": "menu",
+   "cap": "EACH COURSE *HAS A PRICE.",
+   "say": "Next to each course, a price. Not money."
+  },
+  {
+   "shot": "price",
+   "cap": "YOUR *NAME.",
+   "say": "Course one. Your name."
+  },
+  {
+   "shot": "price",
+   "cap": "YOUR *FIRST MEMORY.",
+   "say": "Course two. Your first memory."
+  },
+  {
+   "shot": "price",
+   "cap": "THE *LAST ONE...",
+   "say": "Course seven was left blank."
+  },
+  {
+   "shot": "end",
+   "cap": "\"WHAT'S *THE LAST?\"",
+   "say": "I asked what the last course costs."
+  },
+  {
+   "shot": "end",
+   "cap": "\"YOU'LL *KNOW.\"",
+   "say": "He said, you'll know. When someone sits where you are now."
+  }
+ ]
+}
