@@ -1,0 +1,39 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "LOOK AT *MY HANDS.",
+   "say": "I looked at my own hands. No scar."
+  },
+  {
+   "shot": "a",
+   "cap": "NO *SCAR.",
+   "say": "The original had a scar. Neither of those two had it. Neither did I."
+  },
+  {
+   "shot": "b",
+   "cap": "COPIES *OF COPIES.",
+   "say": "The old man said, we were copied from a copy, years ago."
+  },
+  {
+   "shot": "b",
+   "cap": "THE *LOG.",
+   "say": "In the log, one name. The man who ordered the first copy."
+  },
+  {
+   "shot": "c",
+   "cap": "HIS *HANDWRITING.",
+   "say": "He signed it with my name. In my handwriting."
+  },
+  {
+   "shot": "c",
+   "cap": "TODAY'S *DATE.",
+   "say": "Dated today."
+  },
+  {
+   "shot": "end",
+   "cap": "HE NEVER *LEFT.",
+   "say": "The original never left. He runs this room."
+  }
+ ]
+}
