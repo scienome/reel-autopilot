@@ -44,5 +44,26 @@
   "text": "suspense hit with a low boom",
   "duration_seconds": 1,
   "prompt_influence": 0.5
+ },
+ "music-0d5b747ca06f.mp3": {
+  "prompt": "Indian mythological cinematic underscore, sorrowful and intimate: solo bansuri over tanpura drone, soft tabla, low strings, swelling shehnai at the river farewell, no vocals",
+  "music_length_ms": 57460,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-92fe80d5f06c.mp3": {
+  "text": "a mother's soft breath and a quiet sob",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-a5ee15ec5cfb.mp3": {
+  "text": "wooden box sliding gently into water",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-1da10d8be10d.mp3": {
+  "text": "distant flute note fading over water",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
  }
 }
