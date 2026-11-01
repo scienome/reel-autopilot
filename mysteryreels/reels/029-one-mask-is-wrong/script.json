@@ -1,0 +1,29 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "LOOK *CLOSER.",
+   "say": "Look closer. Twelve masks. One of them is wrong."
+  },
+  {
+   "shot": "find",
+   "cap": "FOUND *IT?",
+   "say": "Take your time."
+  },
+  {
+   "shot": "rev",
+   "cap": "ITS EYES ARE *OPEN.",
+   "say": "One of them has its eyes open."
+  },
+  {
+   "shot": "end",
+   "cap": "WHICH *ONE?",
+   "say": "Which one was it?"
+  },
+  {
+   "shot": "end",
+   "cap": "COMMENT *ROW AND COLUMN.",
+   "say": "Comment the row and the column."
+  }
+ ]
+}
