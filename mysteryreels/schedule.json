@@ -4,7 +4,7 @@
   "first": "001-denver-airport",
   "series": {
     "06:00": ["001-denver-airport", "002-the-knock", "005-the-waiting-room"],
-    "20:30": ["003-the-last-dinner"],
+    "20:30": ["003-the-last-dinner", "006-the-first-rule"],
     "01:00": ["004-room-four"],
     "13:00": [],
     "18:30": []

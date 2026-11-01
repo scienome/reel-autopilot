@@ -1,0 +1,49 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "I *SAT DOWN.",
+   "say": "I sat down in the eighth chair."
+  },
+  {
+   "shot": "hook",
+   "cap": "SEVEN MASKS|*LEANED IN.",
+   "say": "Seven masks leaned toward me."
+  },
+  {
+   "shot": "masks",
+   "cap": "\"WE WERE *WAITERS.\"",
+   "say": "The first said, we were waiters once. Like you."
+  },
+  {
+   "shot": "masks",
+   "cap": "EVERY NAME *SAT HERE.",
+   "say": "Every crossed out name sat in this chair."
+  },
+  {
+   "shot": "masks",
+   "cap": "NOBODY *LEFT.",
+   "say": "Nobody has ever stood up."
+  },
+  {
+   "shot": "rule",
+   "cap": "ONE *RULE.",
+   "say": "One rule. Whatever is served, do not eat."
+  },
+  {
+   "shot": "rule",
+   "cap": "THE LAST WAITER *ATE.",
+   "say": "The last waiter ate. Look where he is now."
+  },
+  {
+   "shot": "end",
+   "cap": "A BOWL OF *SOUP.",
+   "say": "A bell rang. A bowl was placed before me."
+  },
+  {
+   "shot": "end",
+   "cap": "IT WAS *COLD.|BUT IT MOVED.",
+   "say": "The soup was cold. But it was moving."
+  }
+ ]
+}
