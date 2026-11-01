@@ -1,0 +1,44 @@
+{
+ "music": {
+  "prompt": "Indian mythological cinematic underscore: tanpura drone, soft tabla, bansuri, temple bells, swelling shehnai at the climax, no vocals, warm devotional temple feeling",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "b1",
+   "word": "अनलासुर",
+   "prompt": "dark menacing drum and growl",
+   "dur": 1.6,
+   "gain": -8
+  },
+  {
+   "beat": "b2",
+   "word": "निगल",
+   "prompt": "gulp and a heavy thud",
+   "dur": 1.6,
+   "gain": -8
+  },
+  {
+   "beat": "b3",
+   "word": "जलन",
+   "prompt": "fire crackle",
+   "dur": 1.6,
+   "gain": -8
+  },
+  {
+   "beat": "b6",
+   "word": "शांत",
+   "prompt": "soft cooling chime and gentle wind",
+   "dur": 1.6,
+   "gain": -8
+  },
+  {
+   "beat": "nx",
+   "word": "समाप्त",
+   "prompt": "soft temple bell and a gentle closing chord",
+   "dur": 1.8,
+   "gain": -7
+  }
+ ]
+}
