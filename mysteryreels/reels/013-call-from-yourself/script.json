@@ -1,0 +1,34 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "POV: YOUR PHONE|*CALLS YOU.",
+   "say": "POV. Your phone shows a call. From you."
+  },
+  {
+   "shot": "hook",
+   "cap": "YOU *ANSWER.",
+   "say": "You answer. It's your voice. Out of breath."
+  },
+  {
+   "shot": "voice",
+   "cap": "\"DON'T *TURN AROUND.\"",
+   "say": "Don't turn around, it whispers."
+  },
+  {
+   "shot": "voice",
+   "cap": "\"IT'S *BEHIND YOU.\"",
+   "say": "I tried that. It's already behind you."
+  },
+  {
+   "shot": "end",
+   "cap": "*ANSWER OR HANG UP?",
+   "say": "Would you answer? Or hang up?"
+  },
+  {
+   "shot": "end",
+   "cap": "COMMENT *YOUR CHOICE.",
+   "say": "Comment which one."
+  }
+ ]
+}
