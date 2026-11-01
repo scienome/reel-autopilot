@@ -1,0 +1,54 @@
+name: Make elitesendgame reels
+# When a reel's script.json or reel.js changes on main, or by hand: voices it, renders it and publishes the Release elite-<id>. It never posts.
+on:
+  push:
+    branches: [main]
+    paths: ['mysteryreels/reels/**/script.json', 'mysteryreels/reels/**/reel.js']
+  workflow_dispatch:
+    inputs:
+      reel:
+        description: 'Reel ids, space separated'
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: make-elite
+  cancel-in-progress: false
+
+jobs:
+  make:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Install tools
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install -q playwright
+          python -m playwright install --with-deps chromium
+      - name: Voice, render, release
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          GH_TOKEN: ${{ github.token }}
+          REELS: ${{ inputs.reel }}
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
+        run: |
+          git config user.name "elite-bot"; git config user.email "elite-bot@users.noreply.github.com"
+          LIST="$REELS"
+          if [ -z "$LIST" ]; then LIST=$(git diff --name-only "$BEFORE" "$AFTER" -- mysteryreels/reels | grep -E '/(script\.json|reel\.js)$' | cut -d/ -f3 | sort -u); fi
+          for id in $LIST; do
+            [ -f "mysteryreels/reels/$id/reel.js" ] || continue
+            python tools/elite_make.py "$id"
+            git add "mysteryreels/reels/$id/voice_lines"
+            git diff --cached --quiet || (git commit -q -m "Voice for $id [skip ci]" && git pull --rebase -q && git push -q)
+            gh release delete "elite-$id" --yes --cleanup-tag >/dev/null 2>&1 || true
+            gh release create "elite-$id" "out/$id/$id.mp4" --title "elitesendgame $id" --notes "Made by the daily job."
+          done
