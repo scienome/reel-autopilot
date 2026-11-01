@@ -1,0 +1,23 @@
+{
+ "music-81f14d3a0802.mp3": {
+  "prompt": "Indian mythological cinematic underscore, emotional and intimate: solo bansuri over tanpura drone, soft tabla, low strings, shehnai swell, no vocals",
+  "music_length_ms": 31880,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-4eb8305bd729.mp3": {
+  "text": "soft river water and a surprised gasp",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-5d469a1e2edd.mp3": {
+  "text": "a woman sobbing with joy",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-60cd4c80050a.mp3": {
+  "text": "mocking crowd laughter, distant",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ }
+}
