@@ -1,0 +1,28 @@
+{
+ "music-ce549d873ed1.mp3": {
+  "prompt": "Indian mythological cinematic underscore, emotional and intimate: solo bansuri over tanpura drone, soft tabla, low strings, shehnai swell, no vocals",
+  "music_length_ms": 32900,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-5d5415583350.mp3": {
+  "text": "divine warm swell",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-d9e984fc2639.mp3": {
+  "text": "soft knock at a door",
+  "duration_seconds": 1.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-94df348afe02.mp3": {
+  "text": "sharp blade through metal, painful",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-cde1afdb6c9c.mp3": {
+  "text": "magical power hum",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ }
+}
