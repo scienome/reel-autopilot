@@ -1,0 +1,12 @@
+{ "lines": [
+  { "shot": "hook", "cap": "ONE DINNER.|*ONE MILLION DOLLARS.", "say": "I was a waiter. One dinner, one million dollars." },
+  { "shot": "hook", "cap": "*DON'T LOOK UP.", "say": "The only rule. Don't look up." },
+  { "shot": "table", "cap": "SEVEN *MASKS.", "say": "Seven guests. Seven masks." },
+  { "shot": "table", "cap": "ONE *EMPTY CHAIR.", "say": "And one empty chair." },
+  { "shot": "food", "cap": "I *LOOKED UP.", "say": "I looked up." },
+  { "shot": "food", "cap": "NOBODY *ATE.", "say": "Not one of them touched the food." },
+  { "shot": "list", "cap": "A LIST OF *NAMES.", "say": "On the table, a list of names. Every name crossed out." },
+  { "shot": "list", "cap": "EXCEPT *MINE.", "say": "Except the last one. Mine." },
+  { "shot": "end", "cap": "THE FIRST MASK *SMILED.", "say": "The first mask turned to me." },
+  { "shot": "end", "cap": "\"THAT CHAIR|IS *YOURS.\"", "say": "Sit down, he said. That chair is yours." }
+] }

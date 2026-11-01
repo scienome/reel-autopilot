@@ -1,0 +1,11 @@
+{ "lines": [
+  { "shot": "hook", "cap": "SOMEONE *KNOCKED.", "say": "Last night, someone knocked." },
+  { "shot": "hook", "cap": "I OPENED IT.|*NOBODY.", "say": "I opened the door. Nobody." },
+  { "shot": "photo", "cap": "A PHOTO *OF ME.", "say": "Just an envelope. Inside, a photo of me." },
+  { "shot": "photo", "cap": "*ASLEEP.|TAKEN LAST NIGHT.", "say": "Asleep. Taken last night." },
+  { "shot": "back", "cap": "ON THE *BACK...", "say": "On the back, four words." },
+  { "shot": "back", "cap": "*LEVEL NINE|NEEDS YOU.", "say": "Level nine needs you." },
+  { "shot": "badge", "cap": "MY BADGE *BLINKED.", "say": "Then my old badge started to blink." },
+  { "shot": "badge", "cap": "IT HAS *NO BATTERY.", "say": "It has no battery." },
+  { "shot": "end", "cap": "TONIGHT...|I'M *GOING BACK.", "say": "So tonight, I'm going back." }
+] }

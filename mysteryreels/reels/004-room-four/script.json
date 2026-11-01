@@ -1,0 +1,11 @@
+{ "lines": [
+  { "shot": "hook", "cap": "I CLEANED FLOORS|AT *AREA 51.", "say": "I cleaned floors at Area fifty one." },
+  { "shot": "hook", "cap": "NEVER OPEN|*ROOM FOUR.", "say": "One rule. Never open Room Four." },
+  { "shot": "tap", "cap": "*THREE TAPS.", "say": "Every night, something tapped on that door. Three taps." },
+  { "shot": "tap", "cap": "I *TAPPED BACK.", "say": "One night, I tapped back." },
+  { "shot": "face", "cap": "THE WINDOW *SLID OPEN.", "say": "The window slid open. An old man looked out." },
+  { "shot": "face", "cap": "HE HAD *MY FACE.", "say": "He had my face." },
+  { "shot": "sign", "cap": "\"DON'T *GO HOME.\"", "say": "He held up a paper. Don't go home." },
+  { "shot": "end", "cap": "MY WIFE *CALLED.", "say": "Then my phone rang. My wife." },
+  { "shot": "end", "cap": "\"YOU JUST|*WALKED IN.\"", "say": "She said, why are you calling? You just walked in." }
+] }
