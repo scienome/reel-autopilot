@@ -1,0 +1,12 @@
+{
+ "title": "मेरी माँ ने मुझे नदी में बहा दिया 💔 | कर्ण की गाथा भाग 1",
+ "caption": "मैं कर्ण हूँ। ये मेरी अपनी कहानी है। 💔\nजन्म लेते ही मेरी माँ ने मुझे क्यों छोड़ दिया?\nक्या आप कुंती को दोष देंगे? 👇",
+ "hashtags": ["karna", "kunti", "mahabharat", "suryaputra", "hindumythology", "sanatandharma", "animation", "hindi", "reels", "kahani"],
+ "first_comment": "अगला भाग देखना है तो 'जय सूर्य देव' लिखें 🙏",
+ "cover_t": 1.5,
+ "series": "कर्ण की गाथा",
+ "part": 1,
+ "potential": 10,
+ "libs": ["kit/myth.js", "kit/katha.js"],
+ "sources": ["Mahabharata tradition, as retold in https://mahabharataonline.com/stories/mahabharata_character.php?id=75 and https://www.wikipedia.com/wiki/Karna (secondary retellings; the original passage was not read)"]
+}

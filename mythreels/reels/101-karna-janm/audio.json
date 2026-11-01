@@ -1,0 +1,13 @@
+{
+ "music": {"prompt": "Indian mythological cinematic underscore, sorrowful and intimate: solo bansuri over tanpura drone, soft tabla, low strings, swelling shehnai at the river farewell, no vocals", "gain": -7, "tail": 3},
+ "sfx": [
+  {"beat": "h1", "word": "नदी", "prompt": "gentle night river water flowing", "dur": 2.5, "gain": -8},
+  {"beat": "b3", "word": "मंत्र", "prompt": "magical shimmer and a soft temple bell", "dur": 1.5, "gain": -7},
+  {"beat": "b4", "word": "सूर्य", "prompt": "divine rising brass swell with bright light", "dur": 2, "gain": -5},
+  {"beat": "b5", "word": "पैदा", "prompt": "soft newborn cry with a warm golden chime", "dur": 1.5, "gain": -6},
+  {"beat": "b6", "word": "बिन", "prompt": "low ominous drum hit", "dur": 1, "gain": -6},
+  {"beat": "b7", "word": "रोते", "prompt": "a woman softly sobbing at night", "dur": 2, "gain": -9},
+  {"beat": "b7", "word": "छोड़", "prompt": "wooden box sliding into water", "dur": 1.5, "gain": -6},
+  {"beat": "nx", "word": "अगले", "prompt": "suspense hit with a low boom", "dur": 1, "gain": -3}
+ ]
+}

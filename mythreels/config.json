@@ -1,6 +1,16 @@
 {
- "voice": {"voice_id": "XNJDyPyJ8r4J7de0WJwB", "model_id": "eleven_v4", "voice_settings": null},
- "cast": {"narrator": "XNJDyPyJ8r4J7de0WJwB"},
- "_cast_names": {"narrator": "Sudhir - Warm & Expressive Hindi Voice (owner's pick, 30 Oct 2026; also voices character lines for now)"},
+ "voice": {
+  "voice_id": "XNJDyPyJ8r4J7de0WJwB",
+  "model_id": "eleven_v4",
+  "voice_settings": null
+ },
+ "cast": {
+  "narrator": "XNJDyPyJ8r4J7de0WJwB",
+  "karna": "6EphsklDopDQ6eRkwNHT"
+ },
+ "_cast_names": {
+  "narrator": "Sudhir - Warm & Expressive Hindi Voice (owner's pick, 30 Oct 2026; also voices character lines for now)",
+  "karna": "Owner's voice for Karna telling his own story, कर्ण की गाथा (1 Nov 2026)"
+ },
  "cast_settings": {}
 }
