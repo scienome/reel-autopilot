@@ -118,7 +118,7 @@ def main():
             name = get(f'voices/{vid}', key).get('name', vid)
         except Exception:
             name = vid
-        audio = tts(vid, key, a.model, LINES_HI if a.lang == 'hi' else None, owners.get(vid))
+        audio = tts(vid, key, a.model, 'Test.' if a.lang == 'check' else LINES_HI if a.lang == 'hi' else None, owners.get(vid))  # lang check: does each voice work, for almost no credits
         if not audio:
             rows.append(f'--  {name:28s} {vid}  FAILED  {desc}'); continue
         n = len(takes) + 1; f = os.path.join(a.out, f"{n:02d}-{''.join(c for c in name if c.isalnum() or c in '-_')[:30] or vid}.mp3")
