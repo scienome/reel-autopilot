@@ -10,10 +10,81 @@
    "042",
    "043"
   ],
-  "next_plan": {
-   "पूजा": "3 शिव पर तुलसी (Jalandhar/Shankhchud, check sources), 4 शंख से शिव को जल नहीं, 5 गणेश को तुलसी नहीं",
-   "देवता": "3 दुर्वासा का श्राप, देवता श्रीहीन; then भृगु/अग्नि, भृगु की लात"
+  "note": "Plan replaced 1 Nov 2026 by PLAYBOOK §2b (familiar thing, unknown reason). जब देवता भी हारे ended at part 2 (041, 043); teasers fixed on 042 and 043."
+ },
+ "plan_2b": {
+  "run": "myth-batch, 1 Nov 2026",
+  "series": {
+   "पूजा के पीछे की कथा": "parts 3-11",
+   "देवताओं के रूप का रहस्य": "parts 1-12 (final: 058 डमरू)"
   },
-  "note": "Only 4 of 28 made on 31 Oct 2026; stories web-checked, parts 1-2 of each series. Part 2 of पूजा teases तुलसी; part 2 of देवता teases दुर्वासा."
+  "made": {
+   "पूजा": {
+    "3": "045-shiv-shankh-tulsi",
+    "4": "047-kalava-bali",
+    "5": "049-jagannath-adhuri",
+    "6": "051-nariyal-trishanku",
+    "7": "053-shivling-jal",
+    "8": "055-rudraksha-aansu",
+    "9": "063-tulsi-shaligram",
+    "10": "064-ganesh-tulsi",
+    "11": "059-durva-ganesh (series end)"
+   },
+   "रूप": {
+    "1": "044-shiv-chandra",
+    "2": "046-ekdant-parshuram",
+    "3": "048-ardhanarishvara",
+    "4": "050-shrivatsa-bhrigu",
+    "5": "052-kartikeya-mor",
+    "6": "054-ganesh-mushak",
+    "7": "056-hanuman-sindoor",
+    "8": "057-vishnu-garuda",
+    "9": "060-sudarshan-chakra",
+    "10": "061-durga-astra",
+    "11": "062-balram-hal",
+    "12": "058-shiv-damru (series end)"
+   }
+  },
+  "passed_story_test": {
+   "044": "Chandra's curse by Daksha, Shiva wears him (Shiva Purana / Somnath legend)",
+   "045": "Shankhachuda, conch and tulsi not offered to Shiva (Shiva Purana Rudra Samhita Yuddha Khanda)",
+   "046": "Parashurama breaks Ganesha's tusk (Brahmanda / Brahmavaivarta Puranas)",
+   "047": "Raksha mantra names Bali (Bhagavata 8.18-22; mantra tradition)",
+   "048": "Ardhanarishvara (Shiva Purana Rudra Samhita; Britannica)",
+   "049": "Jagannath idols unfinished (Skanda Purana Utkala Khanda; Orissa Review)",
+   "050": "Shrivatsa and Bhrigu (Bhagavata 10.89; Vaishnava tradition, told with कहते हैं)",
+   "051": "Coconut as Trishanku's head (Ramayana for Trishanku; coconut link is folk, told as लोक-कथा)",
+   "052": "Murugan peacock and rooster (Kanda Puranam, Tamil tradition)",
+   "053": "Water on Shivling after Halahala (Bhagavata 8.7; the cooling link is tradition)",
+   "054": "Mushak is Krauncha (Ganesha Purana, told with कहते हैं)",
+   "055": "Rudraksha from Shiva's tears (Devi Bhagavata / Shiva Purana; chapter not verified)",
+   "056": "Hanuman and sindoor (folk tradition, stated as such; no text named)",
+   "057": "Garuda as Vishnu's vahana (Mahabharata Adi Parva 29-33)",
+   "058": "Damaru and the Maheshvara Sutras (Nandikeshvara Kashika; tradition)",
+   "059": "Durva and Analasura (popular tradition, no text named)",
+   "060": "Sudarshana chakra from Shiva (Shiva Purana; Linga Purana)",
+   "061": "Durga's weapons from the gods (Devi Mahatmya ch. 2)",
+   "062": "Balarama's plough (Bhagavata 10.65 and 10.68; outline only)",
+   "063": "Tulsi and Shaligram (Brahmavaivarta Purana tradition; kept consistent with 045)",
+   "064": "Ganesha and Tulsi curse each other (Brahmavaivarta Purana, Ganesha Khanda; told with कहते हैं)"
+  },
+  "rejected": {
+   "मंदिर में घंटी क्यों": "no story and no scriptural source found, only modern explanations",
+   "परिक्रमा दाएँ से क्यों": "no story source; the Ganesha-parikrama tale is too well known and does not explain the direction",
+   "माला में 108 दाने": "a number with competing explanations, no story",
+   "लक्ष्मी का वाहन उल्लू": "only folk versions, one makes Indra the owl, which is disrespectful to a deity",
+   "विष्णु का शेषनाग पर सोना": "no story source found, only symbolism",
+   "कृष्ण के मुकुट पर मोरपंख": "only Braj folk belief, nothing sourceable and no real payoff",
+   "काली की जीभ बाहर क्यों": "the shame story is a later popular tradition, not in the Puranas, and it could be read as insulting; competing readings",
+   "नंदी के कान में मन्नत": "no source found for the practice",
+   "शनिवार पीपल की पूजा": "Pippalada defeating Shani is in the Shiva Purana, but the Saturday-and-peepal link was not found in any source",
+   "एकादशी पर चावल क्यों नहीं": "only blogs; the Medha story was not traced to any text (kept as a spare, not made)",
+   "शिव की तीसरी आँख": "no sourced origin; only the Kamadeva burning, which is a different story",
+   "दुर्गा का शेर (as a separate reel)": "folded into 061, since Devi Mahatmya says Himavan gave the lion",
+   "छप्पन भोग क्यों": "the 7 days x 8 meals story could not be confirmed in any source I could reach",
+   "विष्णु का पाञ्चजन्य शंख": "valid (Bhagavata/Harivamsha) but overlaps 045 on conch; spare for later",
+   "कार्तिकेय के छह मुख": "valid but not run yet; spare for later (series already at 12)"
+  },
+  "status": "See PLAYBOOK. All teasers chain 042 -> 045 ... 059/058 end the series."
  }
 }
