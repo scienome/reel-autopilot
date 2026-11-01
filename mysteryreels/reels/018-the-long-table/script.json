@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "I *REFUSED.",
+   "say": "I refused. I would not seat him."
+  },
+  {
+   "shot": "hook",
+   "cap": "THE MASKS *WENT STILL.",
+   "say": "The masks went perfectly still."
+  },
+  {
+   "shot": "dark",
+   "cap": "LIGHTS *OUT.",
+   "say": "The lights went out. A bell rang seven times."
+  },
+  {
+   "shot": "dark",
+   "cap": "THE TABLE *GREW.",
+   "say": "When they came back, the table was longer."
+  },
+  {
+   "shot": "long",
+   "cap": "CHAIRS INTO *THE DARK.",
+   "say": "Chairs stretched into the dark. Every one full."
+  },
+  {
+   "shot": "long",
+   "cap": "ALL *MASKED.",
+   "say": "Hundreds of masks. All turned toward me."
+  },
+  {
+   "shot": "end",
+   "cap": "\"YOU WERE NEVER *THE EIGHTH.\"",
+   "say": "You were never the eighth, said the first mask."
+  },
+  {
+   "shot": "end",
+   "cap": "YOU ARE THE|*EIGHT HUNDREDTH.",
+   "say": "You are the eight hundredth."
+  }
+ ]
+}
