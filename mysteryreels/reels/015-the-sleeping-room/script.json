@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "I WENT *BACK IN.",
+   "say": "I went back to the base. Room Four was waiting."
+  },
+  {
+   "shot": "hook",
+   "cap": "THREE *TAPS.",
+   "say": "I tapped three times. The door unlocked itself."
+  },
+  {
+   "shot": "cots",
+   "cap": "ROWS OF *COTS.",
+   "say": "Rows of cots. Old men asleep on every one."
+  },
+  {
+   "shot": "cots",
+   "cap": "EVERY ONE *HAD MY FACE.",
+   "say": "Every one had my face. Every one, a different age."
+  },
+  {
+   "shot": "label",
+   "cap": "A *YEAR ON EACH TAG.",
+   "say": "Each cot had a tag. A year."
+  },
+  {
+   "shot": "label",
+   "cap": "ONE *EMPTY.",
+   "say": "One cot was empty. The tag had my name."
+  },
+  {
+   "shot": "end",
+   "cap": "\"THAT ONE'S *YOURS.\"",
+   "say": "The old man stood behind me. That one is yours."
+  },
+  {
+   "shot": "end",
+   "cap": "\"DON'T *SLEEP.\"",
+   "say": "Don't sleep, he said. Not for one second."
+  }
+ ]
+}
