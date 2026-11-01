@@ -1,0 +1,33 @@
+{
+ "music-1ac48d37caa9.mp3": {
+  "prompt": "Cheeky seaside comedy music with accordion and tuba, a sneaky heist section, then tender and sweet, then jaunty again, no vocals",
+  "music_length_ms": 39100,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-ae17079b81e1.mp3": {
+  "text": "seagull squawk",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-09f5a2915fda.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-3557353c821b.mp3": {
+  "text": "seagull laugh call",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-e067edd25879.mp3": {
+  "text": "quick wing flap and crunch",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-79a821b8a80d.mp3": {
+  "text": "soft sad violin note",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ }
+}
