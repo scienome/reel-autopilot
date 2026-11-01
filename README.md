@@ -55,11 +55,11 @@ Folder: [`gears-pov/`](gears-pov/)
 | [013-fridge-judges-you](gears-pov/013-fridge-judges-you.mp4) | You can hear what your fridge thinks 🧀 | Waiting to post |
 | [014-pigeon-thoughts](gears-pov/014-pigeon-thoughts.mp4) | You can hear what pigeons think 🐦 | Waiting to post |
 | [015-phone-thoughts](gears-pov/015-phone-thoughts.mp4) | You can hear what your phone thinks 📱 | Waiting to post |
-| [016-grandpa-thoughts](gears-pov/016-grandpa-thoughts.mp4) | You can hear what your grandpa thinks 👴 | Waiting to post |
+| [016-grandpa-thoughts](gears-pov/016-grandpa-thoughts.mp4) | You can hear what your grandpa thinks 👴 | Posted on Instagram · on YouTube |
 | [017-cow-thoughts](gears-pov/017-cow-thoughts.mp4) | You can hear what cows think 🐄 | Waiting to post |
 | [018-boss-thoughts](gears-pov/018-boss-thoughts.mp4) | You can hear what your boss thinks 💼 | Waiting to post |
 | [019-houseplant-thoughts](gears-pov/019-houseplant-thoughts.mp4) | You can hear what your houseplant thinks 🪴 | Waiting to post |
-| [020-mum-thoughts](gears-pov/020-mum-thoughts.mp4) | You can hear what your mum thinks 👩 | Waiting to post |
+| [020-mum-thoughts](gears-pov/020-mum-thoughts.mp4) | You can hear what your mum thinks 👩 | Posted on Instagram · on YouTube |
 | [021-hamster-thoughts](gears-pov/021-hamster-thoughts.mp4) | You can hear what your hamster thinks 🐹 | Waiting to post |
 
 ## CouchSarcasm (old couple comedy) (40)
@@ -219,8 +219,8 @@ Folder: [`toy-reels/`](toy-reels/)
 | [54-elvis-alien-encore](toy-reels/54-elvis-alien-encore.mp4) | Elvis Didn't Die. Aliens Wanted An Encore. 👽🎤 | Waiting to post |
 | [55-pirate-map-parrot](toy-reels/55-pirate-map-parrot.mp4) | Pirate Tattooed The Treasure Map On His Back 🏴‍☠️ | Waiting to post |
 | [56-eiffel-tower-con](toy-reels/56-eiffel-tower-con.mp4) | The Man Who Sold The Eiffel Tower 🗼 | Waiting to post |
-| [57-emu-war](toy-reels/57-emu-war.mp4) | Australia Sent Machine Guns To Fight Birds 🐦 | Waiting to post |
-| [63-wojtek-soldier-bear](toy-reels/63-wojtek-soldier-bear.mp4) | Poland Enlisted A Bear As A Soldier 🐻 | Waiting to post |
+| [57-emu-war](toy-reels/57-emu-war.mp4) | Australia Sent Machine Guns To Fight Birds 🐦 | Posted (Instagram + YouTube) |
+| [63-wojtek-soldier-bear](toy-reels/63-wojtek-soldier-bear.mp4) | Poland Enlisted A Bear As A Soldier 🐻 | Posted (Instagram + YouTube) |
 | [64-mike-headless-chicken](toy-reels/64-mike-headless-chicken.mp4) | The Chicken That Lived 18 Months Without A Head 🐔 | Waiting to post |
 | [65-microwave-chocolate-bar](toy-reels/65-microwave-chocolate-bar.mp4) | A Melted Chocolate Bar Invented The Microwave 🍫 | Waiting to post |
 | [66-play-doh-wallpaper](toy-reels/66-play-doh-wallpaper.mp4) | Play-Doh Started As Wallpaper Cleaner 🧽 | Waiting to post |
