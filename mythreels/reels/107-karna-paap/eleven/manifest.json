@@ -1,0 +1,23 @@
+{
+ "music-e0e098f9ad42.mp3": {
+  "prompt": "Indian mythological cinematic underscore, emotional and intimate: solo bansuri over tanpura drone, soft tabla, low strings, shehnai swell, no vocals",
+  "music_length_ms": 32360,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-8afddbd8031e.mp3": {
+  "text": "dice rolling on wood",
+  "duration_seconds": 1.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-0851d564492e.mp3": {
+  "text": "a woman crying in a silent hall",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-25da86857d72.mp3": {
+  "text": "cold low drone",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ }
+}
