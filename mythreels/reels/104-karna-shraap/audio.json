@@ -1,0 +1,37 @@
+{
+ "music": {
+  "prompt": "Indian mythological cinematic underscore, emotional and intimate: solo bansuri over tanpura drone, soft tabla, low strings, shehnai swell, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "h1",
+   "word": "खून",
+   "prompt": "slow heartbeat and insect chewing",
+   "dur": 3.0,
+   "gain": -8
+  },
+  {
+   "beat": "b2",
+   "word": "जागे",
+   "prompt": "sudden gasp",
+   "dur": 1.0,
+   "gain": -6
+  },
+  {
+   "beat": "b4",
+   "word": "भूल",
+   "prompt": "thunder crack",
+   "dur": 1.5,
+   "gain": -3
+  },
+  {
+   "beat": "nx",
+   "word": "चला",
+   "prompt": "lonely flute",
+   "dur": 2.0,
+   "gain": -9
+  }
+ ]
+}

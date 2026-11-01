@@ -1,0 +1,30 @@
+{
+ "music": {
+  "prompt": "Indian mythological cinematic underscore, emotional and intimate: solo bansuri over tanpura drone, soft tabla, low strings, shehnai swell, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "b1",
+   "word": "तालियाँ",
+   "prompt": "large crowd cheering and arrows",
+   "dur": 2.0,
+   "gain": -7
+  },
+  {
+   "beat": "b2",
+   "word": "ललकारा",
+   "prompt": "crowd gasps",
+   "dur": 1.5,
+   "gain": -6
+  },
+  {
+   "beat": "b3",
+   "word": "कुल",
+   "prompt": "crowd falls silent, low drum",
+   "dur": 1.5,
+   "gain": -5
+  }
+ ]
+}

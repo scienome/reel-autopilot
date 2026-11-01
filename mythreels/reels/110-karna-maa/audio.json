@@ -1,0 +1,30 @@
+{
+ "music": {
+  "prompt": "Indian mythological cinematic underscore, emotional and intimate: solo bansuri over tanpura drone, soft tabla, low strings, shehnai swell, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "b1",
+   "word": "गंगा",
+   "prompt": "river water at dawn and a soft temple bell",
+   "dur": 2.0,
+   "gain": -8
+  },
+  {
+   "beat": "b2",
+   "word": "बेटा",
+   "prompt": "sharp soft string sting",
+   "dur": 1.5,
+   "gain": -6
+  },
+  {
+   "beat": "nx",
+   "word": "गले",
+   "prompt": "a mother softly crying",
+   "dur": 2.5,
+   "gain": -9
+  }
+ ]
+}

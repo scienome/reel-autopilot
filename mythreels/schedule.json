@@ -5,6 +5,7 @@
   "06:00",
   "11:30",
   "18:00",
+  "21:00",
   "23:00"
  ],
  "queue": [
@@ -50,5 +51,21 @@
   "041-indra-kamal-nal",
   "042-pushkar-brahma-mandir",
   "043-nahush-palki"
- ]
+ ],
+ "reserved": {
+  "21:00": [
+   "101-karna-janm",
+   "102-karna-sutaputra",
+   "103-karna-jhooth",
+   "104-karna-shraap",
+   "105-karna-apmaan",
+   "106-karna-dost",
+   "107-karna-paap",
+   "108-karna-daan",
+   "109-karna-sach",
+   "110-karna-maa",
+   "111-karna-yuddh",
+   "112-karna-pahiya"
+  ]
+ }
 }

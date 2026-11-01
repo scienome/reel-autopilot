@@ -1,0 +1,29 @@
+{
+ "title": "सूर्य का बेटा... सारथी के घर पला 💔 | कर्ण की गाथा भाग 2",
+ "caption": "एक सारथी के घर पला सूर्य का बेटा। दुनिया ने नाम दिया, सूतपुत्र। 💔\nक्या जन्म से इंसान की कीमत तय होती है? 👇",
+ "hashtags": [
+  "karna",
+  "mahabharat",
+  "suryaputra",
+  "danveer",
+  "hindumythology",
+  "sanatandharma",
+  "animation",
+  "hindi",
+  "reels",
+  "kahani"
+ ],
+ "first_comment": "राधा माँ के लिए एक 🙏 लिखें",
+ "cover_t": 1.5,
+ "series": "कर्ण की गाथा",
+ "part": 2,
+ "potential": 10,
+ "libs": [
+  "kit/myth.js",
+  "kit/katha.js",
+  "kit/karna.js"
+ ],
+ "sources": [
+  "Mahabharata tradition, as retold in https://www.mahabharataonline.com/stories/mahabharata_character.php?id=75 and https://r-astro.com/journey/mahabharata/character/karna (secondary retellings; the original passages were not read)"
+ ]
+}

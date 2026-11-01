@@ -1,0 +1,30 @@
+{
+ "music": {
+  "prompt": "Indian mythological cinematic underscore, emotional and intimate: solo bansuri over tanpura drone, soft tabla, low strings, shehnai swell, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "h1",
+   "word": "नदी",
+   "prompt": "soft river water and a surprised gasp",
+   "dur": 2.0,
+   "gain": -8
+  },
+  {
+   "beat": "b2",
+   "word": "राधा",
+   "prompt": "a woman sobbing with joy",
+   "dur": 2.0,
+   "gain": -9
+  },
+  {
+   "beat": "b3",
+   "word": "सूतपुत्र",
+   "prompt": "mocking crowd laughter, distant",
+   "dur": 1.5,
+   "gain": -7
+  }
+ ]
+}

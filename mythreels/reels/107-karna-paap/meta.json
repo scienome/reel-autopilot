@@ -1,0 +1,29 @@
+{
+ "title": "मेरा सबसे बड़ा पाप, मेरी ज़ुबान 😔 | कर्ण की गाथा भाग 7",
+ "caption": "उस सभा में मैंने जो कहा, वो मेरा सबसे बड़ा पाप था। 😔\nक्या एक पाप सारे पुण्य मिटा देता है? 👇",
+ "hashtags": [
+  "karna",
+  "mahabharat",
+  "suryaputra",
+  "danveer",
+  "hindumythology",
+  "sanatandharma",
+  "animation",
+  "hindi",
+  "reels",
+  "kahani"
+ ],
+ "first_comment": "क्या कर्ण को माफ़ी मिलनी चाहिए? 👇",
+ "cover_t": 1.5,
+ "series": "कर्ण की गाथा",
+ "part": 7,
+ "potential": 10,
+ "libs": [
+  "kit/myth.js",
+  "kit/katha.js",
+  "kit/karna.js"
+ ],
+ "sources": [
+  "Mahabharata tradition, as retold in https://www.mahabharataonline.com/stories/mahabharata_character.php?id=75 and https://r-astro.com/journey/mahabharata/character/karna (secondary retellings; the original passages were not read)"
+ ]
+}

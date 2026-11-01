@@ -1,0 +1,37 @@
+{
+ "music": {
+  "prompt": "Indian mythological cinematic underscore, emotional and intimate: solo bansuri over tanpura drone, soft tabla, low strings, shehnai swell, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "h1",
+   "word": "सूर्य",
+   "prompt": "divine warm swell",
+   "dur": 2.0,
+   "gain": -7
+  },
+  {
+   "beat": "b3",
+   "word": "ब्राह्मण",
+   "prompt": "soft knock at a door",
+   "dur": 1.0,
+   "gain": -6
+  },
+  {
+   "beat": "b4",
+   "word": "काटकर",
+   "prompt": "sharp blade through metal, painful",
+   "dur": 1.5,
+   "gain": -5
+  },
+  {
+   "beat": "nx",
+   "word": "शक्ति",
+   "prompt": "magical power hum",
+   "dur": 2.0,
+   "gain": -6
+  }
+ ]
+}

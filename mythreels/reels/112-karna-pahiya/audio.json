@@ -1,0 +1,37 @@
+{
+ "music": {
+  "prompt": "Indian mythological cinematic underscore, emotional and intimate: solo bansuri over tanpura drone, soft tabla, low strings, shehnai swell, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "b1",
+   "word": "पहिया",
+   "prompt": "wooden wheel sinking into thick mud",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "b2",
+   "word": "याद",
+   "prompt": "echoing silence and a broken chant",
+   "dur": 2.0,
+   "gain": -6
+  },
+  {
+   "beat": "b4",
+   "word": "तीर",
+   "prompt": "arrow flying then a heavy impact",
+   "dur": 1.5,
+   "gain": -2
+  },
+  {
+   "beat": "b5",
+   "word": "रोईं",
+   "prompt": "women weeping over a battlefield",
+   "dur": 2.5,
+   "gain": -8
+  }
+ ]
+}

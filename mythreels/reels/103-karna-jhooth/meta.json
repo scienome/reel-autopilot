@@ -1,0 +1,29 @@
+{
+ "title": "धनुष के लिए मैंने गुरु से झूठ बोला 😔 | कर्ण की गाथा भाग 3",
+ "caption": "ब्रह्मास्त्र सीखने के लिए मुझे झूठ बोलना पड़ा। 😔\nक्या मेरा झूठ सही था? 👇",
+ "hashtags": [
+  "karna",
+  "mahabharat",
+  "suryaputra",
+  "danveer",
+  "hindumythology",
+  "sanatandharma",
+  "animation",
+  "hindi",
+  "reels",
+  "kahani"
+ ],
+ "first_comment": "आप मेरी जगह होते तो क्या करते? 👇",
+ "cover_t": 1.5,
+ "series": "कर्ण की गाथा",
+ "part": 3,
+ "potential": 10,
+ "libs": [
+  "kit/myth.js",
+  "kit/katha.js",
+  "kit/karna.js"
+ ],
+ "sources": [
+  "Mahabharata tradition, as retold in https://www.mahabharataonline.com/stories/mahabharata_character.php?id=75 and https://r-astro.com/journey/mahabharata/character/karna (secondary retellings; the original passages were not read)"
+ ]
+}

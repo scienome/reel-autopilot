@@ -1,0 +1,30 @@
+{
+ "music": {
+  "prompt": "Indian mythological cinematic underscore, emotional and intimate: solo bansuri over tanpura drone, soft tabla, low strings, shehnai swell, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "h1",
+   "word": "युद्ध",
+   "prompt": "chariot rolling slowly",
+   "dur": 2.0,
+   "gain": -8
+  },
+  {
+   "beat": "b1",
+   "word": "पहले",
+   "prompt": "heart thump and low swell",
+   "dur": 1.5,
+   "gain": -5
+  },
+  {
+   "beat": "b3",
+   "word": "राधा",
+   "prompt": "quiet sad bansuri",
+   "dur": 2.5,
+   "gain": -9
+  }
+ ]
+}

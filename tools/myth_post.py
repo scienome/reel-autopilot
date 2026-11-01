@@ -173,9 +173,11 @@ def main():
         print(f'paused: {conf["paused"]}')
         return
 
-    ids = conf['queue']
+    reserved = conf.get('reserved', {})  # { 'HH:MM' IST: [ids] }: a daily slot kept for one series, separate from the main queue
+    res_ids = [r for v in reserved.values() for r in v]
+    ids = conf['queue'] + res_ids
     half = [r for r in ids if r in log and not ('instagram' in log[r] and 'youtube' in log[r])]
-    queue = [r for r in ids if r not in log]
+    queue = [r for r in conf['queue'] if r not in log]
 
     slot = None
     if a.id:
@@ -192,6 +194,10 @@ def main():
             return
 
     pick = a.id or (queue[0] if queue else None)
+    if slot and not a.id:
+        ist = (slot + dt.timedelta(hours=5, minutes=30)).strftime('%H:%M')
+        if ist in reserved:  # only this series uses this slot, and it never uses another
+            pick = next((r for r in reserved[ist] if r not in log), None)
     held = bool(pick and not a.id and not rendered(pick))  # keeps the parts in order
     at = slot or t
     print(f'unfinished: {half or "none"}\nnext reel: {pick or "NONE - queue is empty"}{" (HELD: no Release yet)" if held else ""}\n'

@@ -1,0 +1,37 @@
+{
+ "music": {
+  "prompt": "Indian mythological cinematic underscore, emotional and intimate: solo bansuri over tanpura drone, soft tabla, low strings, shehnai swell, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "h1",
+   "word": "गुरु",
+   "prompt": "soft temple bell and forest birds",
+   "dur": 1.5,
+   "gain": -9
+  },
+  {
+   "beat": "b1",
+   "word": "सूतपुत्र",
+   "prompt": "heavy door closing",
+   "dur": 1.0,
+   "gain": -6
+  },
+  {
+   "beat": "b3",
+   "word": "ब्रह्मास्त्र",
+   "prompt": "bow string twang and arrow",
+   "dur": 1.2,
+   "gain": -6
+  },
+  {
+   "beat": "nx",
+   "word": "कीड़ा",
+   "prompt": "tiny insect buzz, ominous",
+   "dur": 1.5,
+   "gain": -7
+  }
+ ]
+}

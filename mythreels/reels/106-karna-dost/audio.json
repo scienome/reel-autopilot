@@ -1,0 +1,30 @@
+{
+ "music": {
+  "prompt": "Indian mythological cinematic underscore, emotional and intimate: solo bansuri over tanpura drone, soft tabla, low strings, shehnai swell, no vocals",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "b1",
+   "word": "राजा",
+   "prompt": "royal horns and drums",
+   "dur": 2.0,
+   "gain": -5
+  },
+  {
+   "beat": "b2",
+   "word": "दोस्ती",
+   "prompt": "warm string swell",
+   "dur": 2.0,
+   "gain": -8
+  },
+  {
+   "beat": "nx",
+   "word": "हँसी",
+   "prompt": "crowd mocking laughter",
+   "dur": 1.5,
+   "gain": -6
+  }
+ ]
+}
