@@ -102,21 +102,33 @@ def main():
         return
     me = ig_api('GET', '/me', fields='user_id,username')
     print(f"Instagram: posting as @{me.get('username')}")
-    queue = [r for r in conf['queue'] if r not in log]
-    print(f'next reel: {queue[0] if queue else "NONE"}; waiting after it: {max(len(queue) - 1, 0)}')
-    if a.dry_run or not queue:
-        print('dry run: nothing posted' if a.dry_run else 'queue is empty')
+    series = conf['series']  # { 'HH:MM' IST: [ids] }: each slot belongs to one story, in episode order
+    for hhmm, ids in series.items():
+        waiting = [r for r in ids if r not in log]
+        print(f'{hhmm} IST: next {waiting[0] if waiting else "NONE"}; {len(waiting)} waiting')
+    if a.dry_run:
+        print('dry run: nothing posted')
         return
     t = now()
+    if a.now:
+        rid = next(r for ids in series.values() for r in ids if r not in log) if not conf.get('first') or conf['first'] in log else conf['first']
+        log[rid] = post(rid, t)
+        json.dump(log, open(LOG, 'w'), indent=1)
+        return
     used = {e.get('slot') for e in log.values()}
     due = [s for s in slots(t, conf) if t - dt.timedelta(hours=3) <= s <= t + dt.timedelta(minutes=255) and s.strftime('%Y-%m-%dT%H:%MZ') not in used]
-    if not due and not a.now:
+    if not due:
         print('no slot due now')
         return
-    at = t if a.now else due[0]
-    e = post(queue[0], at)
-    e['slot'] = None if a.now else at.strftime('%Y-%m-%dT%H:%MZ')
-    log[queue[0]] = e
+    at = due[0]
+    ist = (at + dt.timedelta(hours=5, minutes=30)).strftime('%H:%M')
+    rid = next((r for r in series.get(ist, []) if r not in log), None)
+    if not rid:
+        print(f'::warning::the {ist} IST story has no episode left to post.')
+        return
+    e = post(rid, at)
+    e['slot'] = at.strftime('%Y-%m-%dT%H:%MZ')
+    log[rid] = e
     json.dump(log, open(LOG, 'w'), indent=1)
 
 

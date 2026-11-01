@@ -1,6 +1,10 @@
 {
-  "paused": "owner has not approved going live yet",
-  "start_at": "2026-11-02T14:30Z",
-  "times_ist": ["20:00"],
-  "queue": ["001-denver-airport", "003-the-last-dinner", "004-room-four", "002-the-knock"]
+  "start_at": "2026-11-01T18:30Z",
+  "times_ist": ["01:00", "06:00", "20:30"],
+  "first": "001-denver-airport",
+  "series": {
+    "06:00": ["001-denver-airport", "002-the-knock"],
+    "20:30": ["003-the-last-dinner"],
+    "01:00": ["004-room-four"]
+  }
 }

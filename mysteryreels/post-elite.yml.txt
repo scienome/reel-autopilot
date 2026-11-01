@@ -1,11 +1,20 @@
 name: Post elitesendgame reels (Instagram)
-# Posts mysteryreels/ reels to Instagram at 20:00 IST (14:30 UTC) in mysteryreels/schedule.json order. Nothing goes out
+# Posts mysteryreels/ reels to Instagram: one story per slot, 01:00, 06:00 and 20:30 IST (19:30, 00:30, 15:00 UTC), from mysteryreels/schedule.json. Nothing goes out
 # while schedule.json has "paused". Needs IG_ELITE_ACCESS_TOKEN and IG_ELITE_USER_ID. The token is renewed every Monday.
 on:
   schedule:
-    - cron: '27 10 * * *'
-    - cron: '27 11 * * *'
+    # 01:00 IST slot
+    - cron: '27 16 * * *'
+    - cron: '27 17 * * *'
+    - cron: '27 18 * * *'
+    # 06:00 IST slot
+    - cron: '27 21 * * *'
+    - cron: '27 22 * * *'
+    - cron: '27 23 * * *'
+    # 20:30 IST slot
     - cron: '27 12 * * *'
+    - cron: '27 13 * * *'
+    - cron: '27 14 * * *'
     - cron: '45 3 * * 1'
   workflow_dispatch:
     inputs:
@@ -13,6 +22,10 @@ on:
         description: 'Only check the sign-in and show the next reel'
         type: boolean
         default: true
+      post_now:
+        description: 'Post the next reel straight away instead of waiting for its slot'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -38,7 +51,7 @@ jobs:
           IG_ELITE_USER_ID: ${{ secrets.IG_ELITE_USER_ID }}
         run: |
           git pull -q --rebase || true
-          python tools/elite_post.py ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '--dry-run' || '' }}
+          python tools/elite_post.py ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '--dry-run' || '' }} ${{ (github.event_name == 'workflow_dispatch' && inputs.post_now) && '--now' || '' }}
       - name: Record it
         if: always()
         run: |
