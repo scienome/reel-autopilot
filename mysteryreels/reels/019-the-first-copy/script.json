@@ -1,0 +1,39 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "HE SHOWED *HIS HANDS.",
+   "say": "The old man held up his hands. No fingerprints."
+  },
+  {
+   "shot": "hook",
+   "cap": "\"I'M THE *FIRST COPY.\"",
+   "say": "I'm the first copy, he said. The one that failed."
+  },
+  {
+   "shot": "why",
+   "cap": "THEY KEEP *THE FAILURES.",
+   "say": "They keep the failures here. Asleep."
+  },
+  {
+   "shot": "why",
+   "cap": "\"THEY GET *BETTER.\"",
+   "say": "Every copy gets better. Yours is the best yet."
+  },
+  {
+   "shot": "why",
+   "cap": "\"HE REMEMBERS YOU *BETTER.\"",
+   "say": "He remembers your life better than you do."
+  },
+  {
+   "shot": "end",
+   "cap": "MY *PHONE BUZZED.",
+   "say": "My phone buzzed. A text from my wife."
+  },
+  {
+   "shot": "end",
+   "cap": "\"OPEN THE *DOOR.\"",
+   "say": "It said, open the door. It's me."
+  }
+ ]
+}
