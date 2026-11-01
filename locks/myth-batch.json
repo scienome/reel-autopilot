@@ -1,9 +1,9 @@
 {
  "job": "myth-batch",
- "status": "in_progress",
+ "status": "done",
  "owner": "vm-36799d",
  "started": "2026-11-01T19:00:39Z",
- "updated": "2026-11-01T20:04:57Z",
+ "updated": "2026-11-01T20:05:00Z",
  "note": "queued 21 reels",
  "history": []
 }
