@@ -44,7 +44,7 @@
     }),
     shot('horse', (ctx, t) => {
       const l2 = line('horse', 1); N.bg(ctx); N.stripes(ctx, -18, { band: 70, gap: 66, offset: t * 4, seed: 12 }); N.floor(ctx, 900, 1270, { rows: 18 }); horse(ctx, t);
-      ctx.fillStyle = INK; ctx.fillRect(40, 92, 240, 118); N.stat(ctx, '32 FT', 160, 170, 100, { u: back(t, line('horse').t0 + 0.6, 0.22) });
+      if (t >= line('horse').t0 + 0.6) { ctx.fillStyle = INK; ctx.fillRect(40, 92, 240, 118); } N.stat(ctx, '32 FT', 160, 170, 100, { u: back(t, line('horse').t0 + 0.6, 0.22) });
       N.stamp(ctx, 'R.I.P. 2006', 468, 830, back(t, l2.t0 + 0.5, 0.18), { px: 64, rot: -0.07 });
       N.rain(ctx, t, 90, 0.34); N.finish(ctx, t); captionNow(ctx, t, 'horse');
     }),
