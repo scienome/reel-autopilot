@@ -1,0 +1,23 @@
+{
+ "music-dbdeaf290f51.mp3": {
+  "prompt": "Indian mythological cinematic underscore, emotional and intimate: solo bansuri over tanpura drone, soft tabla, low strings, shehnai swell, no vocals",
+  "music_length_ms": 36040,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-e2f625fe1012.mp3": {
+  "text": "royal horns and drums",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-90dcaccabb94.mp3": {
+  "text": "warm string swell",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-fc48dc4d9ffd.mp3": {
+  "text": "crowd mocking laughter",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ }
+}
