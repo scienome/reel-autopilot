@@ -12,4 +12,4 @@ KATHA((h) => {
     b7: { set: 'heaven', cam: CAM.mid, draw: (ctx, t) => { char(ctx, 'sita', 360, 1170, 0.8, t, { halo: true, arms: 'bless', face: { eyes: 'calm', mouth: 'smile' } }); }, over: (ctx, W, H_, t) => MYTH.petals(ctx, W, t, at('b7', 3), 22) },
     end: { set: 'kailash', cam: CAM.wide, draw: (ctx, t) => { char(ctx, 'brahma', 210, 1170, 0.55, t, { arms: 'bless', halo: true, face: { eyes: 'calm', mouth: 'smile' } }); char(ctx, 'sita', 330, 1170, 0.5, t, { arms: 'namaste', face: { eyes: 'calm', mouth: 'smile' } }); char(ctx, 'saraswati', 600, 960, 0.4, t, { flip: true, arms: 'namaste', face: { eyes: 'calm', mouth: 'calm' } }); } },
   };
-}, {series: 'पूजा के पीछे की कथा', part: 2, hook: 'ब्रह्मा जी के मंदिर\nगिने-चुने क्यों?', next: 'शिव पर तुलसी\nक्यों नहीं चढ़ती?', nextAt: 'nx', gold: ['मंदिर', 'पुष्कर', 'सावित्री', 'गायत्री', 'श्राप', 'यज्ञ']});
+}, {series: 'पूजा के पीछे की कथा', part: 2, hook: 'ब्रह्मा जी के मंदिर\nगिने-चुने क्यों?', next: 'शिव को शंख और\nतुलसी क्यों नहीं?', nextAt: 'nx', gold: ['मंदिर', 'पुष्कर', 'सावित्री', 'गायत्री', 'श्राप', 'यज्ञ']});

@@ -13,4 +13,4 @@ KATHA((h) => {
     b7: { set: 'heaven', cam: CAM.close(), shake: V('b7', 'सर्प') - 0.5, draw: one('sage', { arms: { r: 'point', l: 'fist' }, face: { eyes: 'angry', mouth: 'shout' } }) },
     end: { set: 'forest', cam: CAM.wide, draw: (ctx, t) => { const u = H.clamp((t - at('end', 0)) / 1.2); snake(ctx, 330, 860, t, 1.2 * (0.5 + 0.5 * u)); }, over: cardOn('end', 'अजगर', 'अजगर', { y: 300, size: 90 }) },
   };
-}, {series: 'जब देवता भी हारे', part: 2, hook: 'सात ऋषियों ने उठाई\nएक राजा की पालकी!', next: 'ऋषि के श्राप से\nदेवताओं की लक्ष्मी गई!', nextAt: 'nx', gold: ['पालकी', 'नहुष', 'शची', 'सर्प,', 'अगस्त्य', 'श्राप', 'घमंडी']});
+}, {series: 'जब देवता भी हारे', part: 2, hook: 'सात ऋषियों ने उठाई\nएक राजा की पालकी!', next: 'पूरी सीरीज़\nप्रोफ़ाइल पर', nextAt: 'nx', gold: ['पालकी', 'नहुष', 'शची', 'सर्प,', 'अगस्त्य', 'श्राप', 'घमंडी']});
