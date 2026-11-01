@@ -1,0 +1,49 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "I *ANSWERED.",
+   "say": "I answered. The old man's voice shook."
+  },
+  {
+   "shot": "hook",
+   "cap": "\"DON'T *SPEAK.\"",
+   "say": "Don't speak. He's listening."
+  },
+  {
+   "shot": "rules",
+   "cap": "\"EVERY *YEAR.\"",
+   "say": "Every year, they make one copy of one worker."
+  },
+  {
+   "shot": "rules",
+   "cap": "\"THE COPY *GOES HOME.\"",
+   "say": "The copy goes home. The original goes to Room Four."
+  },
+  {
+   "shot": "rules",
+   "cap": "\"I WAS *THE LAST.\"",
+   "say": "I was the last original."
+  },
+  {
+   "shot": "proof",
+   "cap": "\"TELL ME *ONE THING.\"",
+   "say": "Tell me one thing only you know, he said."
+  },
+  {
+   "shot": "proof",
+   "cap": "\"HE *ALREADY KNOWS IT.\"",
+   "say": "No. Whatever you say, the copy already has."
+  },
+  {
+   "shot": "end",
+   "cap": "THE MAN *STOOD UP.",
+   "say": "Inside, the man at my table stood up."
+  },
+  {
+   "shot": "end",
+   "cap": "HE OPENED *THE DOOR.",
+   "say": "He walked to the front door. And opened it."
+  }
+ ]
+}
