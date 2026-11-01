@@ -1,0 +1,38 @@
+{
+ "music-38dae6f76c7d.mp3": {
+  "prompt": "Tender cute puppy music with soft music box and ukulele, sad in the middle, then bright and bouncy at the end, no vocals",
+  "music_length_ms": 38660,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-3186a0777fce.mp3": {
+  "text": "tiny puppy whimper",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-070c20ef0ce5.mp3": {
+  "text": "soft sad piano note",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-9085457fefdb.mp3": {
+  "text": "puppy howl small cute",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-82ab8e5122f1.mp3": {
+  "text": "soft whoosh",
+  "duration_seconds": 0.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-70ebcc9287fc.mp3": {
+  "text": "puppy happy bark small",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-09f5a2915fda.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ }
+}
