@@ -1,0 +1,23 @@
+{
+  "title": "The real Illuminati",
+  "lines": [
+    { "shot": "hook", "cap": "THE ILLUMINATI *WERE REAL.", "say": "The Illuminati were real." },
+    { "shot": "hook", "cap": "BUT NOT THE WAY|*YOU'VE HEARD.", "say": "But not the way you've heard." },
+    { "shot": "date", "cap": "*MAY 1, 1776. BAVARIA.", "say": "May first, seventeen seventy-six. Bavaria." },
+    { "shot": "date", "cap": "ONE PROFESSOR.|ONE *SMALL GROUP.", "say": "One professor. One small, secret group." },
+    { "shot": "spread", "cap": "AT THEIR PEAK:|ITALY TO *DENMARK.", "say": "At their peak, they stretched from Italy to Denmark." },
+    { "shot": "spread", "cap": "WARSAW TO *PARIS.", "say": "From Warsaw to Paris." },
+    { "shot": "ban", "cap": "1784: SECRET SOCIETIES|GET *BANNED.", "say": "Then, in seventeen eighty-four, secret societies were banned." },
+    { "shot": "ban", "cap": "AFTER 1785, THE RECORD|GOES *SILENT.", "say": "After seventeen eighty-five, the record goes silent." },
+    { "shot": "nine", "cap": "*NINE YEARS.", "say": "Nine years." },
+    { "shot": "nine", "cap": "THAT'S ALL THE|RECORD *SHOWS.", "say": "That's all the record shows." },
+    { "shot": "book", "cap": "1797: A *BOOK APPEARS.", "say": "Then, in seventeen ninety-seven, a book appeared." },
+    { "shot": "book", "cap": "IT CLAIMED THEY|*NEVER DIED.", "say": "It claimed they never died." },
+    { "shot": "rev", "cap": "WRITERS BLAMED THEM FOR|THE *FRENCH REVOLUTION.", "say": "Writers even blamed them for the French Revolution." },
+    { "shot": "rev", "cap": "MOST HISTORIANS|*DISAGREE.", "say": "Most historians disagree." },
+    { "shot": "today", "cap": "240 YEARS LATER,", "say": "Two hundred and forty years later," },
+    { "shot": "today", "cap": "WE'RE STILL *LOOKING|FOR THEM.", "say": "we're still looking for them." },
+    { "shot": "end", "cap": "TRUTH, OR JUST|*A GOOD STORY?", "say": "Truth, or just a good story?" },
+    { "shot": "end", "cap": "NEXT SECRET:|THE *LIZARD PEOPLE.", "say": "Next secret: the lizard people." }
+  ]
+}
