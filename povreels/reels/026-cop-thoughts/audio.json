@@ -1,0 +1,57 @@
+{
+ "music": {
+  "prompt": "Cheeky cop-show comedy music with funky bass and brass stabs, a soft moment in the middle, then jaunty again, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "c1",
+   "word": "Friday",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "c2",
+   "word": "home",
+   "offset": 0.0,
+   "prompt": "police radio static chatter",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "c3",
+   "word": "Wow",
+   "offset": 0.0,
+   "prompt": "tiny party horn",
+   "dur": 1,
+   "gain": -8
+  },
+  {
+   "beat": "n3",
+   "word": "lets",
+   "offset": 0.0,
+   "prompt": "car door closing",
+   "dur": 1,
+   "gain": -8
+  },
+  {
+   "beat": "n4",
+   "word": "siren",
+   "offset": 0.0,
+   "prompt": "police siren whoop short",
+   "dur": 1.2,
+   "gain": -5
+  },
+  {
+   "beat": "c5",
+   "word": "Oops",
+   "offset": 0.0,
+   "prompt": "cartoon boing",
+   "dur": 1,
+   "gain": -6
+  }
+ ]
+}

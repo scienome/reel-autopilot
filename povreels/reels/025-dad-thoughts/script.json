@@ -1,0 +1,83 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what your dad thinks."
+  ]
+ },
+ {
+  "id": "d1",
+  "who": "dad",
+  "phrases": [
+   "I'm fine.",
+   "I'm not tired.",
+   "I don't need directions."
+  ]
+ },
+ {
+  "id": "d2",
+  "who": "dad",
+  "phrases": [
+   "The sat nav is wrong.",
+   "It's been wrong for forty minutes.",
+   "I'm going the scenic way."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "You get your first job."
+  ]
+ },
+ {
+  "id": "d3",
+  "who": "dad",
+  "phrases": [
+   "Great.",
+   "Be careful.",
+   "Wear a jacket.",
+   "I am so proud I could cry."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "He says nothing. He just nods."
+  ]
+ },
+ {
+  "id": "d4",
+  "who": "dad",
+  "phrases": [
+   "Don't cry.",
+   "Don't cry.",
+   "Dads don't cry."
+  ]
+ },
+ {
+  "id": "n4",
+  "who": "narrator",
+  "phrases": [
+   "Then he hugs you for one second."
+  ]
+ },
+ {
+  "id": "d5",
+  "who": "dad",
+  "phrases": [
+   "That's enough.",
+   "Let's go check the tyres."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "Does your dad say I love you?",
+   "Part two?"
+  ]
+ }
+]

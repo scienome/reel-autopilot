@@ -1,0 +1,57 @@
+{
+ "music": {
+  "prompt": "Warm dad-rock comedy guitar, tender emotional piano in the middle, then upbeat again, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "d1",
+   "word": "directions",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "d2",
+   "word": "wrong",
+   "offset": 0.0,
+   "prompt": "car horn beep short",
+   "dur": 1,
+   "gain": -8
+  },
+  {
+   "beat": "d3",
+   "word": "proud",
+   "offset": 0.0,
+   "prompt": "soft emotional piano note",
+   "dur": 2,
+   "gain": -9
+  },
+  {
+   "beat": "d4",
+   "word": "cry",
+   "offset": 0.0,
+   "prompt": "sniff",
+   "dur": 1,
+   "gain": -6
+  },
+  {
+   "beat": "n4",
+   "word": "hugs",
+   "offset": 0.0,
+   "prompt": "warm soft whoosh",
+   "dur": 1,
+   "gain": -8
+  },
+  {
+   "beat": "d5",
+   "word": "tyres",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  }
+ ]
+}

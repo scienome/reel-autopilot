@@ -1,0 +1,82 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what the police officer thinks."
+  ]
+ },
+ {
+  "id": "c1",
+  "who": "boss",
+  "phrases": [
+   "Do I look like I want to do this?",
+   "It's Friday."
+  ]
+ },
+ {
+  "id": "c2",
+  "who": "boss",
+  "phrases": [
+   "Please say sorry.",
+   "Please just say sorry.",
+   "I want to go home."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "You say sorry. And you mean it."
+  ]
+ },
+ {
+  "id": "c3",
+  "who": "boss",
+  "phrases": [
+   "Wow.",
+   "Nobody says sorry.",
+   "It's my best day this year."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "He lets you go."
+  ]
+ },
+ {
+  "id": "c4",
+  "who": "boss",
+  "phrases": [
+   "Drive safe.",
+   "Someone is waiting for you.",
+   "Someone is always waiting."
+  ]
+ },
+ {
+  "id": "n4",
+  "who": "narrator",
+  "phrases": [
+   "Then he hits the siren by mistake."
+  ]
+ },
+ {
+  "id": "c5",
+  "who": "boss",
+  "phrases": [
+   "Oops.",
+   "Wrong button.",
+   "Don't tell anyone."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "Would you say sorry or argue?",
+   "Part two?"
+  ]
+ }
+]

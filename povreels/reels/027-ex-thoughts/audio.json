@@ -1,0 +1,57 @@
+{
+ "music": {
+  "prompt": "Dramatic cheeky breakup comedy music with strings and a sassy beat, a sad piano middle, then sly again, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "x1",
+   "word": "amazing",
+   "offset": 0.0,
+   "prompt": "sassy hair flip whoosh",
+   "dur": 1,
+   "gain": -8
+  },
+  {
+   "beat": "x2",
+   "word": "Yes",
+   "offset": 0.0,
+   "prompt": "tiny party horn",
+   "dur": 1,
+   "gain": -8
+  },
+  {
+   "beat": "n3",
+   "word": "phone",
+   "offset": 0.0,
+   "prompt": "phone buzz vibration",
+   "dur": 1,
+   "gain": -6
+  },
+  {
+   "beat": "x3",
+   "word": "nicer",
+   "offset": 0.0,
+   "prompt": "dramatic string sting",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "x4",
+   "word": "hoodie",
+   "offset": 0.0,
+   "prompt": "soft sad piano note",
+   "dur": 2,
+   "gain": -9
+  },
+  {
+   "beat": "x4",
+   "word": "returning",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  }
+ ]
+}

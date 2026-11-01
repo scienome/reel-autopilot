@@ -1,0 +1,74 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what your ex thinks."
+  ]
+ },
+ {
+  "id": "x1",
+  "who": "date",
+  "phrases": [
+   "I'm totally fine.",
+   "I look amazing.",
+   "I spent two hours on this hair."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "You say, you look great."
+  ]
+ },
+ {
+  "id": "x2",
+  "who": "date",
+  "phrases": [
+   "Yes!",
+   "Remember this for the group chat."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "Then your phone buzzes."
+  ]
+ },
+ {
+  "id": "x3",
+  "who": "date",
+  "phrases": [
+   "Who is she?",
+   "Is she prettier?",
+   "Is she nicer?",
+   "Please say no."
+  ]
+ },
+ {
+  "id": "n4",
+  "who": "narrator",
+  "phrases": [
+   "You say nothing."
+  ]
+ },
+ {
+  "id": "x4",
+  "who": "date",
+  "phrases": [
+   "I still have your hoodie.",
+   "I sleep in it.",
+   "I'm not returning it."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "Do you still keep something of your ex's?",
+   "Part two?"
+  ]
+ }
+]
