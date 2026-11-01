@@ -1,0 +1,38 @@
+{
+ "music-5dbde58eb8ac.mp3": {
+  "prompt": "Indian mythological cinematic underscore: tanpura drone, soft tabla, bansuri, temple bells, swelling shehnai at the climax, no vocals, warm devotional temple feeling",
+  "music_length_ms": 50840,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-d752dfc9611d.mp3": {
+  "text": "conch shell blow",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-1d276b5224b3.mp3": {
+  "text": "heavy drum hit and a defeat sting",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-b45ff4c67887.mp3": {
+  "text": "metal trident ring",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-d5ecc80e6858.mp3": {
+  "text": "clash of weapons and a thunder crack",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-9226f0100d85.mp3": {
+  "text": "gentle bells and a soft choir",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
