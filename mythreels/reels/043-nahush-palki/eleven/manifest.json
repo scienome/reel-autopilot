@@ -39,5 +39,16 @@
   "text": "deep suspense drum hit and rising whoosh",
   "duration_seconds": 1.8,
   "prompt_influence": 0.5
+ },
+ "music-46c380bdf935.mp3": {
+  "prompt": "Indian mythological cinematic underscore: tanpura drone, soft tabla, bansuri, temple bells, swelling shehnai at the climax, no vocals, regal then ominous, a snake-charmer been hint",
+  "music_length_ms": 56980,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-b6f2bb98af57.mp3": {
+  "text": "soft temple bell and a gentle closing chord",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
  }
 }
