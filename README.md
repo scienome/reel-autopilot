@@ -35,7 +35,7 @@ Folder: [`couch-cartoon/`](couch-cartoon/)
 | [p003-the-real-hurt](couch-cartoon/p003-the-real-hurt.mp4) | "When did you stop looking at me?" 💔 | Not scheduled |
 | [t001-dentist](couch-cartoon/t001-dentist.mp4) | Who's Jessica? 📱 | Not scheduled |
 
-## Thought Bubble POV stories (formerly Gears & Glitches) (21)
+## Thought Bubble POV stories (formerly Gears & Glitches) (24)
 Folder: [`gears-pov/`](gears-pov/)
 
 | Video | Title | Status |
@@ -44,7 +44,7 @@ Folder: [`gears-pov/`](gears-pov/)
 | [002-cat-thoughts](gears-pov/002-cat-thoughts.mp4) | You can hear what cats think 🐱 | Posted on Instagram · on YouTube |
 | [003-dog-loves-cat](gears-pov/003-dog-loves-cat.mp4) | My dog is in love with the neighbour's cat 🐶❤️🐱 | Posted on Instagram · on YouTube |
 | [004-pets-home-alone](gears-pov/004-pets-home-alone.mp4) | What your pets do when you leave 🐶🐱 | Waiting to post |
-| [005-vet-visit](gears-pov/005-vet-visit.mp4) | What your pets think at the vet 🐶🐱🏥 | Waiting to post |
+| [005-vet-visit](gears-pov/005-vet-visit.mp4) | What your pets think at the vet 🐶🐱🏥 | Posted on Instagram · on YouTube |
 | [006-shelter-dog](gears-pov/006-shelter-dog.mp4) | Nobody picks the old dog 🐶 | Posted on Instagram · on YouTube |
 | [007-search-history](gears-pov/007-search-history.mp4) | You can see everyone's search history 🔎 | Posted on Instagram · on YouTube |
 | [008-lie-counter](gears-pov/008-lie-counter.mp4) | You can see how many lies people told today 🤥 | Posted on Instagram · on YouTube |
@@ -61,6 +61,9 @@ Folder: [`gears-pov/`](gears-pov/)
 | [019-houseplant-thoughts](gears-pov/019-houseplant-thoughts.mp4) | You can hear what your houseplant thinks 🪴 | Waiting to post |
 | [020-mum-thoughts](gears-pov/020-mum-thoughts.mp4) | You can hear what your mum thinks 👩 | Posted on Instagram · on YouTube |
 | [021-hamster-thoughts](gears-pov/021-hamster-thoughts.mp4) | You can hear what your hamster thinks 🐹 | Waiting to post |
+| [022-toddler-thoughts](gears-pov/022-toddler-thoughts.mp4) | You can hear what your toddler thinks 🧒 | Not scheduled |
+| [023-seagull-thoughts](gears-pov/023-seagull-thoughts.mp4) | You can hear what seagulls think 🐦 | Not scheduled |
+| [024-wifi-router-thoughts](gears-pov/024-wifi-router-thoughts.mp4) | You can hear what your wifi router thinks 📶 | Not scheduled |
 
 ## CouchSarcasm (old couple comedy) (40)
 Folder: [`couch-sarcasm/`](couch-sarcasm/)
@@ -108,7 +111,7 @@ Folder: [`couch-sarcasm/`](couch-sarcasm/)
 | [0039-crop-her-out](couch-sarcasm/0039-crop-her-out.mp4) | Crop her out. | Waiting to post |
 | [0040-snore-gets-louder](couch-sarcasm/0040-snore-gets-louder.mp4) | What if his snoring got twice as loud every night? | Waiting to post |
 
-## Dave (Gears & Glitches) (44)
+## Dave (Gears & Glitches) (45)
 Folder: [`dave-reels/`](dave-reels/)
 
 | Video | Title | Status |
@@ -119,6 +122,7 @@ Folder: [`dave-reels/`](dave-reels/)
 | [04-gates-blue-screen](dave-reels/04-gates-blue-screen.mp4) | Bill Gates' live blue screen | Skipped (older kind, never posted) |
 | [05-demon-core](dave-reels/05-demon-core.mp4) | The Demon Core's screwdriver | Skipped (older kind, never posted) |
 | [06-apollo10-turd](dave-reels/06-apollo10-turd.mp4) | Apollo 10's floating turd | Skipped (older kind, never posted) |
+| [07-jobs-antenna](dave-reels/07-jobs-antenna.mp4) | Steve Jobs: "Just avoid holding it that way" | Skipped (older kind, never posted) |
 | [07-jobs-antenna](dave-reels/07-jobs-antenna.mp4) | Steve Jobs: "Just avoid holding it that way" | Skipped (older kind, never posted) |
 | [08-tsar-bomba](dave-reels/08-tsar-bomba.mp4) | The bomb they made smaller to be safe | Skipped (older kind, never posted) |
 | [09-exploding-whale](dave-reels/09-exploding-whale.mp4) | The exploding whale | Skipped (older kind, never posted) |
@@ -225,7 +229,7 @@ Folder: [`toy-reels/`](toy-reels/)
 | [65-microwave-chocolate-bar](toy-reels/65-microwave-chocolate-bar.mp4) | A Melted Chocolate Bar Invented The Microwave 🍫 | Waiting to post |
 | [66-play-doh-wallpaper](toy-reels/66-play-doh-wallpaper.mp4) | Play-Doh Started As Wallpaper Cleaner 🧽 | Waiting to post |
 | [67-pet-rock-millionaire](toy-reels/67-pet-rock-millionaire.mp4) | He Sold Rocks As Pets And Became A Millionaire 🪨 | Waiting to post |
-| [68-pepsi-harrier-jet](toy-reels/68-pepsi-harrier-jet.mp4) | Pepsi Offered A Fighter Jet. A Man Tried To Claim It ✈️ | Waiting to post |
+| [68-pepsi-harrier-jet](toy-reels/68-pepsi-harrier-jet.mp4) | Pepsi Offered A Fighter Jet. A Man Tried To Claim It ✈️ | Posted (Instagram + YouTube) |
 | [69-van-meegeren-forger](toy-reels/69-van-meegeren-forger.mp4) | He Sold A Fake Vermeer To Goering. Then Proved It. 🎨 | Waiting to post |
 | [70-great-stink-london](toy-reels/70-great-stink-london.mp4) | London Smelled So Bad Parliament Had To Act 🤢 | Waiting to post |
 | [71-bitcoin-pizza-day](toy-reels/71-bitcoin-pizza-day.mp4) | He Paid 10,000 Bitcoin For Two Pizzas 🍕 | Waiting to post |
