@@ -1,0 +1,48 @@
+{
+ "music-bca59757eb8f.mp3": {
+  "prompt": "Indian mythological cinematic underscore, sorrowful and intimate: solo bansuri over tanpura drone, soft tabla, low strings, swelling shehnai at the river farewell, no vocals",
+  "music_length_ms": 41800,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-653c700d2fc9.mp3": {
+  "text": "gentle night river water flowing",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-6fcde1a1849d.mp3": {
+  "text": "magical shimmer and a soft temple bell",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-9af005e2c9d5.mp3": {
+  "text": "divine rising brass swell with bright light",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-efb6cbaa2111.mp3": {
+  "text": "soft newborn cry with a warm golden chime",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-f0bcce30ab3c.mp3": {
+  "text": "low ominous drum hit",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-951c8131ef76.mp3": {
+  "text": "a woman softly sobbing at night",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-94a56069e1ae.mp3": {
+  "text": "wooden box sliding into water",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-8650724d736c.mp3": {
+  "text": "suspense hit with a low boom",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ }
+}
