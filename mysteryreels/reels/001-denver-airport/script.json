@@ -1,0 +1,14 @@
+{ "lines": [
+  { "shot": "hook", "cap": "I AM *DENVER AIRPORT.", "say": "I am Denver Airport." },
+  { "shot": "hook", "cap": "THEY SAY I'M|*HIDING SOMETHING.", "say": "And people say I'm hiding something." },
+  { "shot": "stone", "cap": "A *MASONIC SYMBOL|ON MY STONE.", "say": "Look at my dedication stone. A Masonic symbol, right there." },
+  { "shot": "stone", "cap": "THE NEW WORLD|*AIRPORT COMMISSION.", "say": "And a strange name beside it. The New World Airport Commission." },
+  { "shot": "horse", "cap": "32 FEET. *RED EYES.", "say": "Outside stands my blue horse. Thirty two feet tall, with glowing red eyes." },
+  { "shot": "horse", "cap": "IT *KILLED|ITS MAKER.", "say": "A piece of it fell on the man who made it. He died." },
+  { "shot": "tunnels", "cap": "TUNNELS *UNDER ME.", "say": "Under my floors, there are tunnels." },
+  { "shot": "tunnels", "cap": "A BUNKER?|*LIZARD PEOPLE?", "say": "Some say they lead to a bunker. Some say lizard people." },
+  { "shot": "late", "cap": "*16 MONTHS LATE.", "say": "Here is what I can show you. I opened sixteen months late." },
+  { "shot": "late", "cap": "MY BAGGAGE SYSTEM|*FAILED.", "say": "My tunnels carried a baggage system that failed. It was switched off in two thousand five." },
+  { "shot": "end", "cap": "NO PROOF OF|*A BUNKER.", "say": "Nobody has ever proved a bunker. And nobody stops asking." },
+  { "shot": "end", "cap": "TRUTH, OR *A GOOD STORY?", "say": "So tell me. Truth, or just a good story?" }
+] }
