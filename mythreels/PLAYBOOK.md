@@ -4,7 +4,7 @@ Any Claude session follows this to make new episodes with the same look, voice a
 Render: push `reels/<id>/` → "Make myth reels" workflow → Release `mythreel-<id>`. Posting is live: 4 reels a day (§1).
 
 ## 1. What the owner wants (30 Oct 2026)
-- **Lesser-known stories only.** "Everyone knows" stories are rejected (e.g. Hanuman swallowing the sun, `001`, is
+- **See §2b first (1 Nov 2026): a familiar thing with an unknown reason.** Earlier rule: **lesser-known stories only.** "Everyone knows" stories are rejected (e.g. Hanuman swallowing the sun, `001`, is
   kept out of the queue). Think "रावण ने शनि देव को बंदी क्यों बनाया?" level: true to the tradition, but most people have
   never heard it.
 - **Series, so people binge.** Every episode belongs to a numbered series and ends with "अगले भाग में..." teasing
@@ -50,15 +50,25 @@ read every `reels/*/script.json` first.
   सावित्री के आगे यमराज हारे; मार्कंडेय के लिए यम पर शिव का क्रोध; भस्मासुर से भागे शिव; बाणासुर के द्वार पर शिव और कृष्ण; तारकासुर से हारे देवता; गणेश से युद्ध में हारे शिव के गण.
 Swap out anything already told in `reels/` or too well known. **Check every story with web search first and list `sources`: name the text or say it is folk tradition, and use "कहते हैं" for folk versions. Never state as fact a reason a source doesn't give, and leave out anything that insults a tradition or a deity.** Gods stay dignified even in defeat: the story is about the lesson, no jokes. Better fewer than weak.
 Queue: append after the last id, alternating पूजा, देवता, in part order. Part 1s need no teaser from the old series. Where it fits without breaking part order, plan stories for their day (Shani or Hanuman on Saturday, Shiva on Monday). Batch log: `mythreels/batch_log.json`, as in the other playbooks.
-**The story test (owner, 1 Nov 2026: "only the best stories that can actually stand").** The lists above are only candidates. Research at least twice as many stories as you need, then make only those that pass all five. Write the result for every candidate, passed or rejected, in `batch_log.json`.
-1. **Sourced:** you can name where it comes from (a named Purana, epic or temple tradition), and at least 2 independent sources agree on the main events. Sources that merely repeat each other don't count. Folk versions are allowed only if labelled "कहते हैं", and only if the practice or tradition itself is documented.
-2. **Not well known:** a regular Hindi devotional viewer probably hasn't heard it. Reject the familiar ones (Bhasmasur, Savitri and Yamraj, and similar) unless you have a truly unfamiliar angle that is also sourced.
-3. **Shocking in 8 words or fewer:** the hook stops a scroll, and it is true to the source. If the hook needs exaggeration, reject the story.
-4. **A real payoff:** a twist, a reversal, or a reason behind something people do today. For पूजा के पीछे की कथा, the practice must really exist, and the story must really be the traditional reason given for it. Don't invent the link.
-5. **Respectful and showable:** it doesn't insult a deity or tradition, doesn't attack a community, and works with the kit's characters and sets.
-**Quality comes before the count for Lokvara.** The target is a ceiling. Replace rejects from the same theme until you hit it or good stories truly run out. Run `done` with fewer only after doing that work, and list what you rejected and why. Running out of time is different: leave the batch `in_progress`. A shorter series is fine; end it with the last-part line, and don't pad it.
+## 2b. CURRENT PLAN (owner approved, 1 Nov 2026). This overrides the week 2 lists above.
 
-**Status 1 Nov 2026:** only parts 1-2 of each are made (040-043). The next run must make parts 3-14 of both, from `batch_log.json` `next_plan`. Don't start new series first.
+**The idea: start with something everyone already knows, then reveal the "why" they never asked.** "आपने हज़ार बार देखा है... पर क्यों?" Viewers already know the thing. They don't know the reason. Not stories nobody has heard of: the owner rejected those lists.
+
+- **पूजा के पीछे की कथा** (continues from part 3): things people do. मंदिर में घंटी क्यों; परिक्रमा हमेशा दाएँ से क्यों; नारियल क्यों फोड़ते हैं; माला में 108 दाने क्यों; लाल कलावा क्यों; शिवलिंग पर जल क्यों; नंदी के कान में मन्नत क्यों.
+- **देवताओं के रूप का रहस्य** (new series, part 1, replaces जब देवता भी हारे): things people see in every picture. शिव के सिर पर चाँद क्यों; काली की जीभ बाहर क्यों; हनुमान जी का रंग सिंदूरी क्यों; गणेश जी का एक दाँत क्यों टूटा; लक्ष्मी का वाहन उल्लू क्यों; कृष्ण के मुकुट पर मोरपंख क्यों; विष्णु साँप पर क्यों सोते हैं.
+- More ideas of the same kind may be added up to 24 reels, 12 per series. Don't reuse anything in `reels/`. Alternate the two series in the queue.
+- **जब देवता भी हारे ends at part 2.** Reel 043 teases Durvasa and reel 042 teases Tulsi, stories that are no longer coming. Before anything else, change 043's `nx` to the series-ending line and 042's `nx` to tease the real next part, and push them. They post around 10 Nov.
+
+**The story test.** Make only ideas that pass all five, and log each passed or rejected idea and why in `batch_log.json`.
+1. **Familiar thing, unknown reason:** most Hindi devotional viewers see or do this, and most can't say why.
+2. **Sourced:** the practice or image is documented, and you can name where the reason comes from (a Purana, epic or temple tradition). Many have more than one reason: say "कहते हैं" or give the most-told version, and never claim it is the one true answer. Never invent a reason. Don't present modern "science behind it" claims as fact.
+3. **Hook in 8 words or fewer:** usually the familiar thing plus "क्यों?". It must not exaggerate the source.
+4. **A real payoff:** a satisfying reason that makes people want to tell someone, not a dry definition.
+5. **Respectful and showable:** no insult to a deity, tradition or community, and it works with the kit.
+
+**Quality comes before the count.** 24 is a ceiling. Replace rejects with other familiar things until you hit it or good ideas truly run out. Run `done` with fewer only after doing that work. Running out of time is different: leave the batch `in_progress`. End a short series with its last-part line, and don't pad it.
+
+**Status 1 Nov 2026:** made so far: पूजा parts 1-2 (040, 042), जब देवता भी हारे parts 1-2 (041, 043). The old `batch_log.json` `next_plan` is replaced by this plan.
 Weeks after this: ask the owner which two series next (ideas: श्राप जिन्होंने इतिहास बदला; ऐसा क्यों?; देवियों के रहस्य;
 हनुमान जी के अनसुने किस्से). A new series' part 1 needs no teaser from the old one; the last part of a series ends
 "... यहीं समाप्त। पूरी सीरीज़ प्रोफ़ाइल पर देखें।".

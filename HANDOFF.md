@@ -239,7 +239,7 @@ The routine list can't be deleted through the tool; the owner deletes at claude.
 | Thought Bubble POV: backup | 08:47 same days | ON (30 Oct) |
 | Socho Zara riddles: 21 new reels (`riddle-batch`, `riddles/PLAYBOOK.md`) | 03:07 on the 1st, 4th, 7th… | ON (31 Oct) |
 | Socho Zara riddles: backup (finish unfinished batch) | 09:07 same days | ON (31 Oct) |
-| Lokvara week 2 (`myth-batch`, `mythreels/PLAYBOOK.md` §2) | one-off, fired 31 Oct and 1 Nov | FINISHED with only 4 of 28. One-offs "Lokvara week 2 remaining 24" run 2 Nov 00:30 IST, backup 09:30 IST, for the other 24 |
+| Lokvara week 2 (`myth-batch`, `mythreels/PLAYBOOK.md` §2) | one-off, fired 31 Oct and 1 Nov | FINISHED with only 4 of 28. One-offs "Lokvara week 2 remaining 24" run 2 Nov 00:30 IST, backup 09:30 IST, on the plan in PLAYBOOK §2b |
 | CouchSarcasm 21 reels + backup (old `reels/` format, WEEKLY.md) | 2nd, 5th, 8th… | OFF — old format retired |
 | Dave 21 reels + backup | every 3rd day | OFF — Dave rejected |
 
@@ -350,7 +350,7 @@ playful vote; sometimes "Part 1/3" cliffhangers; `cover_t` on the most surprisin
 - **Mechanic:** "wait, what?" true engineering stories (not generic explainers — I said "everyone's doing the same
   videos"). Each long video gets 3 Shorts that open on its most shocking moment and end on a cliffhanger pointing to the video.
 
-- **Hindi mythology (mythreels):** respectful story-time, **lesser-known stories only** (the owner rejected "everyone
+- **Hindi mythology (mythreels):** respectful story-time. From 1 Nov: **a familiar thing with an unknown reason** (`mythreels/PLAYBOOK.md` §2b). Earlier rule: lesser-known stories (the owner rejected "everyone
   knows" ones like Hanuman swallowing the sun). Always in **numbered series** so people binge: big hook card from
   frame 0 (≤ 8-word shocking claim), series tag "<series> • भाग N", ending "अगले भाग में..." teasing the next part's
   hook. Owner: stories continuous, one Ravan and one Mahabharat in turn. 40-55 s, never over 60. Gods are dignified (no jokes about them). Folk versions say "कहते हैं"; `sources` in
@@ -414,7 +414,7 @@ Fix these docs when you're next in those folders.
 **Stopped:** CouchSarcasm (16 episodes unposted, kept, not deleted; its accounts are now Socho Zara), Mechanic, Dave, old couch reels.
 
 **Problems to fix first**
-1. **Lokvara week 2 is short.** The 31 Oct run made 040-043 (parts 1-2 of both new series) and marked `done`, so the backup stopped. 24 reels are left, scheduled for 2 Nov 00:30 IST, backup 09:30. Read that run's log and confirm the count. A `done` lock blocks a new run for that IST day and the next. Plan: `mythreels/batch_log.json`.
+1. **Lokvara week 2 is short.** The 31 Oct run made 040-043 (parts 1-2 of both new series) and marked `done`, so the backup stopped. Up to 24 more on a new plan (§2b), scheduled for 2 Nov 00:30 IST, backup 09:30. Read that run's log and confirm the count. A `done` lock blocks a new run for that IST day and the next. Plan: `mythreels/batch_log.json`.
 2. **Riddle batch made 6, not 21** (`riddle-goliyan`, `riddle-namaste`, `riddle-roti`, `riddle-tota-udaan`, `riddle-nadi-paar`, `riddle-laddoo-chor`). All 6 are queued. Nobody has reviewed them; check their answers. The owner wants 21 a batch.
 3. **Toy batch is unfinished.** Lock `toy-batch` is `in_progress`. Reels 57-71 are pushed and at last check 11 of the 16 reels numbered 56-71 had Releases; the render was very slow on 31 Oct. Check run state; if it hung, the owner cancels it and "Make toy reels" runs with an empty box. The 3 Nov run resumes this batch rather than starting a new one. These reels post without owner review. Their sources were not opened, only search summaries.
 4. **Eiffel Tower reel (56) hadn't posted** at this writing, though it was promised next: reels 57 and 63 went first, because the poster ranks new-format reels by `potential`. Tell the owner.
@@ -424,8 +424,8 @@ Fix these docs when you're next in those folders.
 **Owner decisions on record**
 - **Riddles:** Hinglish animal riddles on the old Couch accounts, name Socho Zara (my suggestion, used; final username unknown). 21 reels every third day. Week 1 plan in `riddles/week1.json`; MP4s in Release `riddle-week1`.
 - **Toy:** switched 31 Oct to True Stories in Bricks with voice `c6SfcYrb2t09NHXiT80T`. New-format reels post first; about 30 old reels wait behind them and may never post.
-- **Lokvara quality (owner, 1 Nov):** only the best stories that can stand. Strict 5-point test in `mythreels/PLAYBOOK.md`; the count is a ceiling, not a target.
-- **Lokvara:** week 2 series पूजा के पीछे की कथा + जब देवता भी हारे. Ask for week 3's series by about 12 Nov. Best result so far: `002-ravan-shani`, about 20,000 views and 800 likes in 15 hours (`mythreels/PLAYBOOK.md` §1b).
+- **Lokvara formula (owner, 1 Nov):** only the best stories, and **people must already know the thing but not why** ("आपने हज़ार बार देखा है... पर क्यों?"). He rejected unheard-of stories. Plan and 5-point test: `mythreels/PLAYBOOK.md` §2b; 24 reels is a ceiling.
+- **Lokvara:** series पूजा के पीछे की कथा + देवताओं के रूप का रहस्य. जब देवता भी हारे stops at 2 parts. Ask for week 3's series by about 12 Nov. Best result so far: `002-ravan-shani`, about 20,000 views and 800 likes in 15 hours (`mythreels/PLAYBOOK.md` §1b).
 - **Credits:** new ElevenLabs account, 131,000 characters a month. Owner keeps 21-reel batches despite my estimate of about 440,000 a month (§4). Expect batches to fail when it runs out; check with `check-elevenlabs.yml` and tell the owner.
 - **Order:** post everything, hold nothing, strongest first, never break a series. Times follow the Indian day.
 - **Rejected:** Blender/MPFB, canvas soft-3D, SDF shader 3D, filters. **Pillow Talk adult pilots** `couchnew/reels/p001`-`p003` exist, unapproved and unqueued. Limits I set there: no explicit sexual content, sex scenes or sex sounds, no body-focused pin-ups, characters clearly adult. Never mix with the riddle channel.
