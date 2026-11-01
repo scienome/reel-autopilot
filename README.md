@@ -35,7 +35,7 @@ Folder: [`couch-cartoon/`](couch-cartoon/)
 | [p003-the-real-hurt](couch-cartoon/p003-the-real-hurt.mp4) | "When did you stop looking at me?" 💔 | Not scheduled |
 | [t001-dentist](couch-cartoon/t001-dentist.mp4) | Who's Jessica? 📱 | Not scheduled |
 
-## Thought Bubble POV stories (formerly Gears & Glitches) (24)
+## Thought Bubble POV stories (formerly Gears & Glitches) (27)
 Folder: [`gears-pov/`](gears-pov/)
 
 | Video | Title | Status |
@@ -64,6 +64,9 @@ Folder: [`gears-pov/`](gears-pov/)
 | [022-toddler-thoughts](gears-pov/022-toddler-thoughts.mp4) | You can hear what your toddler thinks 🧒 | Not scheduled |
 | [023-seagull-thoughts](gears-pov/023-seagull-thoughts.mp4) | You can hear what seagulls think 🐦 | Not scheduled |
 | [024-wifi-router-thoughts](gears-pov/024-wifi-router-thoughts.mp4) | You can hear what your wifi router thinks 📶 | Not scheduled |
+| [025-dad-thoughts](gears-pov/025-dad-thoughts.mp4) | You can hear what your dad thinks 👨 | Not scheduled |
+| [026-cop-thoughts](gears-pov/026-cop-thoughts.mp4) | You can hear what the police officer thinks 🚓 | Not scheduled |
+| [027-ex-thoughts](gears-pov/027-ex-thoughts.mp4) | You can hear what your ex thinks 💔 | Not scheduled |
 
 ## CouchSarcasm (old couple comedy) (40)
 Folder: [`couch-sarcasm/`](couch-sarcasm/)
@@ -111,7 +114,7 @@ Folder: [`couch-sarcasm/`](couch-sarcasm/)
 | [0039-crop-her-out](couch-sarcasm/0039-crop-her-out.mp4) | Crop her out. | Waiting to post |
 | [0040-snore-gets-louder](couch-sarcasm/0040-snore-gets-louder.mp4) | What if his snoring got twice as loud every night? | Waiting to post |
 
-## Dave (Gears & Glitches) (45)
+## Dave (Gears & Glitches) (44)
 Folder: [`dave-reels/`](dave-reels/)
 
 | Video | Title | Status |
@@ -122,7 +125,6 @@ Folder: [`dave-reels/`](dave-reels/)
 | [04-gates-blue-screen](dave-reels/04-gates-blue-screen.mp4) | Bill Gates' live blue screen | Skipped (older kind, never posted) |
 | [05-demon-core](dave-reels/05-demon-core.mp4) | The Demon Core's screwdriver | Skipped (older kind, never posted) |
 | [06-apollo10-turd](dave-reels/06-apollo10-turd.mp4) | Apollo 10's floating turd | Skipped (older kind, never posted) |
-| [07-jobs-antenna](dave-reels/07-jobs-antenna.mp4) | Steve Jobs: "Just avoid holding it that way" | Skipped (older kind, never posted) |
 | [07-jobs-antenna](dave-reels/07-jobs-antenna.mp4) | Steve Jobs: "Just avoid holding it that way" | Skipped (older kind, never posted) |
 | [08-tsar-bomba](dave-reels/08-tsar-bomba.mp4) | The bomb they made smaller to be safe | Skipped (older kind, never posted) |
 | [09-exploding-whale](dave-reels/09-exploding-whale.mp4) | The exploding whale | Skipped (older kind, never posted) |
