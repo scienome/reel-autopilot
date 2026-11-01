@@ -1,0 +1,29 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "TWO *DOORS.",
+   "say": "You wake up in a hallway. Two doors."
+  },
+  {
+   "shot": "a",
+   "cap": "DOOR *A.",
+   "say": "Door A. Everyone you love is safe forever. But they forget you."
+  },
+  {
+   "shot": "b",
+   "cap": "DOOR *B.",
+   "say": "Door B. Everyone remembers you forever. But no one you love is safe."
+  },
+  {
+   "shot": "end",
+   "cap": "*A OR B?",
+   "say": "You have ten seconds. Which door?"
+  },
+  {
+   "shot": "end",
+   "cap": "COMMENT *YOUR LETTER.",
+   "say": "Comment your letter. No take backs."
+  }
+ ]
+}
