@@ -13,6 +13,6 @@
     const shaft = (ctx, x0, y0, x1, y1, u) => { const x = x0 + (x1 - x0) * u, y = y0 + (y1 - y0) * u; glow(ctx, x, y, 90, 'rgba(255,240,170,0.9)'); ctx.strokeStyle = '#fff4c0'; ctx.lineWidth = 7; ctx.lineCap = 'round'; ctx.beginPath(); ctx.moveTo(x - (x1 - x0) * 0.12, y - (y1 - y0) * 0.12); ctx.lineTo(x, y); ctx.stroke(); };
     const k = Object.assign({}, h, { char, disc, glow, baby, blood, wheel, mud, armour, shaft });
     const S = shots(k);
-    if (o.next !== false) S.nx.over = h.cardOn('nx', o.nextWord || 'ये', 'भाग ' + (part + 1), { y: 340, size: 64 });
+    if (o.next !== false) S.nx.over = h.cardOn('nx', o.nextWord || 'ये', 'आगे की कहानी: भाग ' + (part + 1), { y: 340, size: 50 });
     return S;
   }, Object.assign({ series: 'कर्ण की गाथा', part, hook, spk: { karna: ['', '#ffffff'] } }, o));
