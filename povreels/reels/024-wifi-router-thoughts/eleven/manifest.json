@@ -1,0 +1,38 @@
+{
+ "music-4c01bdedde4e.mp3": {
+  "prompt": "Quirky electronic comedy music with beeps and blips, getting stressed in the middle, then a soft gentle ending, no vocals",
+  "music_length_ms": 37620,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-8431cdee5908.mp3": {
+  "text": "computer modem dial-up beeps",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-09f5a2915fda.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-c38f38999c2a.mp3": {
+  "text": "many phone notification pings",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-92bdb194c741.mp3": {
+  "text": "power outage electric shutdown",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-22084cc84c89.mp3": {
+  "text": "soft button click",
+  "duration_seconds": 0.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-14e638374ddd.mp3": {
+  "text": "happy electronic chime",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
