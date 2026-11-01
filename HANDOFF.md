@@ -130,6 +130,7 @@ Source of truth = each folder's `config.json`. As of 30 Oct 2026:
   owner's own ElevenLabs voice, picked 30 Oct). Every line uses it, character lines too, until the owner names character voices.
 - Tools: `voice-audition.yml` to try voices, or voice a script line by line (`lang: lines:riddles/<file>.json`, see `riddles/README.md`; it replaces the `voice-audition` Release) (`lang: hi` = Hindi audition with Voice Library narrators; `find: <name>`
   = only voices whose name matches), `check-elevenlabs.yml` to check credits/key.
+- **ElevenLabs account (1 Nov 2026):** owner moved to a new account, Creator plan, 131,000 characters a month. All 16 live and backup voices were tested on it and work with the same IDs. Names: Toy = Jarnathan, Riddles = Bismil. Check credits with `check-elevenlabs.yml`. Owner chose to keep 21-reel Toy and riddle batches although the estimated need is about 440,000 characters a month, so batches may fail when credits run out: tell the owner plainly if they do. Fewer reels or a bigger plan is the owner's call. To test voices cheaply: `voice-audition.yml` with `lang: check`.
 - **Never change a voice without asking me.** Cost guide: reel ≈ 500–1,300 chars, long video ≈ 3,500.
 
 ---
