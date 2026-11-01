@@ -1,0 +1,39 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "FROM *MY NUMBER.",
+   "say": "The text said, open the door, it is me. It came from my own number."
+  },
+  {
+   "shot": "old",
+   "cap": "HE WENT *PALE.",
+   "say": "The old man read it and went pale."
+  },
+  {
+   "shot": "old",
+   "cap": "NEVER *MY NUMBER.",
+   "say": "He said, your wife never texts from your number."
+  },
+  {
+   "shot": "door",
+   "cap": "ONE DOOR *OUTWARD.",
+   "say": "There is only one door here that opens from the outside."
+  },
+  {
+   "shot": "cot",
+   "cap": "THE *EMPTY COT.",
+   "say": "I turned. The cot with my name had its blanket pulled back. Still warm."
+  },
+  {
+   "shot": "end",
+   "cap": "THREE *TAPS.",
+   "say": "Three taps came from inside the wall."
+  },
+  {
+   "shot": "end",
+   "cap": "OPEN *THE DOOR.",
+   "say": "Then a voice. Mine. Open the door."
+  }
+ ]
+}
