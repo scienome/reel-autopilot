@@ -1,0 +1,78 @@
+name: Post elitesendgame reels (Instagram)
+# Posts mysteryreels/ reels to Instagram: one story per slot, 01:00, 06:00 and 20:30 IST (19:30, 00:30, 15:00 UTC), from mysteryreels/schedule.json. Nothing goes out
+# while schedule.json has "paused". Needs IG_ELITE_ACCESS_TOKEN and IG_ELITE_USER_ID. The token is renewed every Monday.
+on:
+  schedule:
+    # 01:00 IST slot
+    - cron: '27 16 * * *'
+    - cron: '27 17 * * *'
+    - cron: '27 18 * * *'
+    # 06:00 IST slot
+    - cron: '27 21 * * *'
+    - cron: '27 22 * * *'
+    - cron: '27 23 * * *'
+    # 20:30 IST slot
+    - cron: '27 12 * * *'
+    - cron: '27 13 * * *'
+    - cron: '27 14 * * *'
+    - cron: '45 3 * * 1'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Only check the sign-in and show the next reel'
+        type: boolean
+        default: true
+      post_now:
+        description: 'Post the next reel straight away instead of waiting for its slot'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: post-elite
+  cancel-in-progress: false
+
+jobs:
+  post:
+    if: github.event.schedule != '45 3 * * 1'
+    runs-on: ubuntu-latest
+    timeout-minutes: 320
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install -q requests
+      - name: Post the reel that is due
+        env:
+          IG_ELITE_ACCESS_TOKEN: ${{ secrets.IG_ELITE_ACCESS_TOKEN }}
+          IG_ELITE_USER_ID: ${{ secrets.IG_ELITE_USER_ID }}
+        run: |
+          git pull -q --rebase || true
+          python tools/elite_post.py ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '--dry-run' || '' }} ${{ (github.event_name == 'workflow_dispatch' && inputs.post_now) && '--now' || '' }}
+      - name: Record it
+        if: always()
+        run: |
+          git config user.name "elite-bot"; git config user.email "elite-bot@users.noreply.github.com"
+          git add mysteryreels/posted.json 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -q -m "elitesendgame reel posted [skip ci]"
+            for i in 1 2 3 4; do git pull --rebase -q && git push -q && break; sleep $((i * 5)); done
+          fi
+
+  refresh-token:
+    if: github.event.schedule == '45 3 * * 1'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Renew and store the Instagram token
+        env:
+          IG_ELITE_ACCESS_TOKEN: ${{ secrets.IG_ELITE_ACCESS_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          if [ -z "$IG_ELITE_ACCESS_TOKEN" ]; then echo "No token yet; nothing to renew."; exit 0; fi
+          NEW=$(curl -sf "https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${IG_ELITE_ACCESS_TOKEN}" | python3 -c "import sys,json; print(json.load(sys.stdin)['access_token'])")
+          echo "::add-mask::$NEW"
+          if [ -z "$GH_TOKEN" ]; then echo "::warning::Token renewed but not saved: add a GH_PAT secret."; exit 0; fi
+          gh secret set IG_ELITE_ACCESS_TOKEN --body "$NEW" --repo "$GITHUB_REPOSITORY"
