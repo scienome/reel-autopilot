@@ -1,0 +1,39 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "EIGHT *HUNDRED.",
+   "say": "Eight hundred chairs, and every mask was turned to me."
+  },
+  {
+   "shot": "a",
+   "cap": "WE ALL *REFUSED.",
+   "say": "The first mask said, every one of us refused to seat a replacement."
+  },
+  {
+   "shot": "a",
+   "cap": "THE TABLE *GROWS.",
+   "say": "Each refusal adds a chair."
+  },
+  {
+   "shot": "b",
+   "cap": "I LIFTED A *MASK.",
+   "say": "I lifted the nearest mask. Behind it, a waiter. Eyes closed. Asleep."
+  },
+  {
+   "shot": "c",
+   "cap": "ONE *EMPTY.",
+   "say": "At the far end, one chair stood empty."
+  },
+  {
+   "shot": "c",
+   "cap": "THE CARD: *MARLOW.",
+   "say": "A card on it, in my handwriting. Marlow. Course seven."
+  },
+  {
+   "shot": "end",
+   "cap": "COURSE *SEVEN.",
+   "say": "The bell rang. Course seven was served."
+  }
+ ]
+}
