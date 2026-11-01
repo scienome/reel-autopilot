@@ -1,0 +1,28 @@
+{
+ "music-b91651498df6.mp3": {
+  "prompt": "Indian mythological cinematic underscore, emotional and intimate: solo bansuri over tanpura drone, soft tabla, low strings, shehnai swell, no vocals",
+  "music_length_ms": 32980,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-f9fc9349e395.mp3": {
+  "text": "war drums and clashing weapons",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-8b428c58f1d9.mp3": {
+  "text": "magical power hum building",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-882e4684dc95.mp3": {
+  "text": "demon roar over night battle",
+  "duration_seconds": 2.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-87fc711c8861.mp3": {
+  "text": "huge lightning spear impact",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
