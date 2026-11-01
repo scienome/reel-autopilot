@@ -1,0 +1,34 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "MUM: *WHERE ARE YOU?",
+   "say": "Mum texts, where are you?"
+  },
+  {
+   "shot": "b",
+   "cap": "YOU: *HOME. ALONE.",
+   "say": "You reply, home. Alone."
+  },
+  {
+   "shot": "c",
+   "cap": "MUM: *I'M OUTSIDE.",
+   "say": "She says, I am outside your window."
+  },
+  {
+   "shot": "d",
+   "cap": "WHO'S *BEHIND YOU?",
+   "say": "Then she says, who is that standing behind you?"
+  },
+  {
+   "shot": "end",
+   "cap": "DO YOU *TURN AROUND?",
+   "say": "Do you turn around?"
+  },
+  {
+   "shot": "end",
+   "cap": "COMMENT *YES OR NO.",
+   "say": "Comment yes or no."
+  }
+ ]
+}
