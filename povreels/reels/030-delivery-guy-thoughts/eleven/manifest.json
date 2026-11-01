@@ -1,0 +1,38 @@
+{
+ "music-d570f20a5349.mp3": {
+  "prompt": "Upbeat scooter-city comedy music with funky bass, a sad trombone moment in the middle, then a happy finish, no vocals",
+  "music_length_ms": 40940,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-75d7fe7feef3.mp3": {
+  "text": "tired sigh",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-09f5a2915fda.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-1c7f2142fcf0.mp3": {
+  "text": "door opening creak",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-0016e15b46e2.mp3": {
+  "text": "sad trombone short",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-bd7ebda8f969.mp3": {
+  "text": "fast footsteps running down stairs",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-f4963b1da067.mp3": {
+  "text": "small party horn",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ }
+}
