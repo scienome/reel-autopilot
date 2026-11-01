@@ -1,0 +1,33 @@
+{
+ "music-0ab16ab38585.mp3": {
+  "prompt": "Sleepy-then-bouncy morning comedy music with a ticking clock beat and glockenspiel, a tender middle, then upbeat again, no vocals",
+  "music_length_ms": 41280,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-684371a0388b.mp3": {
+  "text": "alarm clock ringing loud short",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-c0418fa4aca2.mp3": {
+  "text": "alarm button thump",
+  "duration_seconds": 0.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-09f5a2915fda.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-fb6f4b46c3fb.mp3": {
+  "text": "soft hopeful chime",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-772d7102aa93.mp3": {
+  "text": "record scratch",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ }
+}
