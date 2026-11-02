@@ -1,0 +1,28 @@
+{
+ "music-dc1b5ff956ca.mp3": {
+  "prompt": "Dark comedic gregorian-style organ with plucked strings and slapstick percussion, mock-solemn, no vocals",
+  "music_length_ms": 28760,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-fd36963dbec7.mp3": {
+  "text": "wooden gavel bang",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-2d63665c50b4.mp3": {
+  "text": "comedic creaky chair",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-d0a298b93f28.mp3": {
+  "text": "dramatic organ sting",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-6354be39e9c0.mp3": {
+  "text": "heavy cell door slam",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
