@@ -1,0 +1,28 @@
+{
+ "music-d1b53bf78d6c.mp3": {
+  "prompt": "Quirky comedic fife and snare drum, playful colonial marching theme, no vocals",
+  "music_length_ms": 30280,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-c8babe322f1d.mp3": {
+  "text": "pig oink comedic",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-09c3474e436a.mp3": {
+  "text": "single cartoon gunshot",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-cb95b8e0c087.mp3": {
+  "text": "ship horn blast",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-ef3f3c616f65.mp3": {
+  "text": "sad pig squeal comedic",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
