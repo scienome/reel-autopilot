@@ -1,0 +1,28 @@
+{
+ "music-6a424c20a365.mp3": {
+  "prompt": "Medieval lute and tambourine getting faster and faster, playful and eerie, no vocals",
+  "music_length_ms": 26680,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-fc624befba94.mp3": {
+  "text": "stomping feet on cobblestones",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-fe76a661105c.mp3": {
+  "text": "crowd murmuring excitedly",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-c34e54a80384.mp3": {
+  "text": "mysterious wind chime",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-fb7b5b13e367.mp3": {
+  "text": "short dramatic sting",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
