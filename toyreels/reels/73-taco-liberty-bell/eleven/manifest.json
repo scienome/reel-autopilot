@@ -1,0 +1,28 @@
+{
+ "music-8e7891bb483b.mp3": {
+  "prompt": "Cheeky retro 90s commercial jingle, brass stabs, comic, no vocals",
+  "music_length_ms": 26360,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-69a3036c07bf.mp3": {
+  "text": "newspaper slap on a table",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-3abda190cedc.mp3": {
+  "text": "cash register ding",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-a49a523f47dd.mp3": {
+  "text": "phone ringing repeatedly",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-e3fc269733cb.mp3": {
+  "text": "party horn blast",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
