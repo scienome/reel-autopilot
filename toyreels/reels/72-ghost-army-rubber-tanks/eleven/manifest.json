@@ -1,0 +1,28 @@
+{
+ "music-5dc3a68f918d.mp3": {
+  "prompt": "Tense playful 1940s wartime caper, brass and snare, comic, no vocals",
+  "music_length_ms": 30280,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-17354fd11968.mp3": {
+  "text": "air pump inflating balloon",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-91a2ef331602.mp3": {
+  "text": "distant tank engines rumbling",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-5f44497f0573.mp3": {
+  "text": "achievement chime",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-24f308c1d743.mp3": {
+  "text": "classified stamp thud",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
