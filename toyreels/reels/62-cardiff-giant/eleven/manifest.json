@@ -1,0 +1,28 @@
+{
+ "music-1cf40fdbb673.mp3": {
+  "prompt": "Quirky circus calliope and tuba with playful strings, mock-mysterious, no vocals",
+  "music_length_ms": 30600,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-407f8f553310.mp3": {
+  "text": "heavy stone thud with dust",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-b23ada7e1ff3.mp3": {
+  "text": "chisel tapping on stone",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-3abda190cedc.mp3": {
+  "text": "cash register ding",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-b90595cef153.mp3": {
+  "text": "circus calliope sting",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
