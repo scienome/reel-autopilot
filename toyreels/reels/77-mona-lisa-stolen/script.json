@@ -1,0 +1,63 @@
+[
+ {
+  "chapter": "The Man Who Stole The Mona Lisa 🖼️",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "In nineteen eleven,",
+     "someone stole the Mona Lisa."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "The thief was Vincenzo Peruggia,",
+     "who had worked at the Louvre."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "Nobody noticed it was gone",
+     "until the next day."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "The painting stayed missing",
+     "for over two years."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "Then he tried to sell it",
+     "to an art dealer in Florence."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "The dealer called",
+     "the police."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "The theft made the Mona Lisa",
+     "world famous."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Would you have noticed",
+     "it was gone?"
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Tense playful 1940s wartime caper, brass and snare, comic, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "rubber",
+   "offset": 0.0,
+   "prompt": "air pump inflating balloon",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "sound",
+   "offset": 0.0,
+   "prompt": "distant tank engines rumbling",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "twenty",
+   "offset": 0.0,
+   "prompt": "achievement chime",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "secret",
+   "offset": 0.0,
+   "prompt": "classified stamp thud",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Medieval lute and tambourine getting faster and faster, playful and eerie, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "dancing",
+   "offset": 0.0,
+   "prompt": "stomping feet on cobblestones",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "four",
+   "offset": 0.0,
+   "prompt": "crowd murmuring excitedly",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "why",
+   "offset": 0.0,
+   "prompt": "mysterious wind chime",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "hysteria",
+   "offset": 0.0,
+   "prompt": "short dramatic sting",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Sneaky jazzy heist caper with double bass and brushed drums, playful, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "mona",
+   "offset": 0.0,
+   "prompt": "alarm bell ringing",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b2",
+   "word": "next",
+   "offset": 0.0,
+   "prompt": "gasp from a crowd",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "police",
+   "offset": 0.0,
+   "prompt": "police siren short",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "famous",
+   "offset": 0.0,
+   "prompt": "camera flashes clicking",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

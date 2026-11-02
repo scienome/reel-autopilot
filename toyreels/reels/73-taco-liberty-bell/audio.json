@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Cheeky retro 90s commercial jingle, brass stabs, comic, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "shocking",
+   "offset": 0.0,
+   "prompt": "newspaper slap on a table",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b1",
+   "word": "bought",
+   "offset": 0.0,
+   "prompt": "cash register ding",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b4",
+   "word": "angry",
+   "offset": 0.0,
+   "prompt": "phone ringing repeatedly",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "prank",
+   "offset": 0.0,
+   "prompt": "party horn blast",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

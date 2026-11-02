@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Pompous baroque harpsichord and drums, comic and dramatic, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "ear",
+   "offset": 0.0,
+   "prompt": "cartoon boing",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "furious",
+   "offset": 0.0,
+   "prompt": "crowd shouting in a hall",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b4",
+   "word": "declared",
+   "offset": 0.0,
+   "prompt": "cannon shot",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "jenkins",
+   "offset": 0.0,
+   "prompt": "achievement chime",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

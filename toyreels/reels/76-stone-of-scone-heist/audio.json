@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Sneaky heist caper with pizzicato strings and bagpipe hint, playful, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "students",
+   "offset": 0.0,
+   "prompt": "sneaky footsteps",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b2",
+   "word": "eighteen",
+   "offset": 0.0,
+   "prompt": "old car engine puttering",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "scotland",
+   "offset": 0.0,
+   "prompt": "heavy stone dragging",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "home",
+   "offset": 0.0,
+   "prompt": "triumphant fanfare",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}
