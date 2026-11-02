@@ -1,0 +1,23 @@
+{
+ "music-7f42878d3186.mp3": {
+  "prompt": "Pompous baroque harpsichord and drums, comic and dramatic, no vocals",
+  "music_length_ms": 31560,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-196cd52726ad.mp3": {
+  "text": "cartoon boing",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-af406e5ee63f.mp3": {
+  "text": "crowd shouting in a hall",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-dc5aaa2d84d1.mp3": {
+  "text": "cannon shot",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
