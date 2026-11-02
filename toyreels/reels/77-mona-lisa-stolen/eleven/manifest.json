@@ -1,0 +1,28 @@
+{
+ "music-bb7a2bca6b60.mp3": {
+  "prompt": "Sneaky jazzy heist caper with double bass and brushed drums, playful, no vocals",
+  "music_length_ms": 27560,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-343ab1e5bab3.mp3": {
+  "text": "alarm bell ringing",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-a1faa08e6c0a.mp3": {
+  "text": "gasp from a crowd",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-45131bd39fc9.mp3": {
+  "text": "police siren short",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-656ee88e757b.mp3": {
+  "text": "camera flashes clicking",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
