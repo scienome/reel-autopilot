@@ -1,0 +1,28 @@
+{
+ "music-de73ff48cd4e.mp3": {
+  "prompt": "Sneaky heist caper with pizzicato strings and bagpipe hint, playful, no vocals",
+  "music_length_ms": 31320,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-57b0b66117e9.mp3": {
+  "text": "sneaky footsteps",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-329f0bc6535e.mp3": {
+  "text": "old car engine puttering",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-9684ca4885cd.mp3": {
+  "text": "heavy stone dragging",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-6371193660ca.mp3": {
+  "text": "triumphant fanfare",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
