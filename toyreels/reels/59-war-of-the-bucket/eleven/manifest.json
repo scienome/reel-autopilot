@@ -1,0 +1,28 @@
+{
+ "music-717a04b3e92c.mp3": {
+  "prompt": "Comedic medieval lute and tambourine with silly horns, playful mock-epic, no vocals",
+  "music_length_ms": 31720,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-42d69aab9e54.mp3": {
+  "text": "wooden bucket clunk",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-5417f5b10505.mp3": {
+  "text": "sneaky comedic pizzicato",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-fd27408c3926.mp3": {
+  "text": "medieval battle horns",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-cde05ab5f1a2.mp3": {
+  "text": "sad low drum",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
