@@ -1,0 +1,28 @@
+{
+ "music-0346cdc51933.mp3": {
+  "prompt": "Silly baroque harpsichord with comedic bassoon and pizzicato, mock-serious, no vocals",
+  "music_length_ms": 28120,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-084d5bbdbb93.mp3": {
+  "text": "cute rabbit squeak pop",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-72ae3aa854e2.mp3": {
+  "text": "dramatic gasp stinger",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-918bd71d0ad9.mp3": {
+  "text": "comedic record scratch",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-fd36963dbec7.mp3": {
+  "text": "wooden gavel bang",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
