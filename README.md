@@ -49,7 +49,7 @@ Folder: [`gears-pov/`](gears-pov/)
 | [007-search-history](gears-pov/007-search-history.mp4) | You can see everyone's search history 🔎 | Posted on Instagram · on YouTube |
 | [008-lie-counter](gears-pov/008-lie-counter.mp4) | You can see how many lies people told today 🤥 | Posted on Instagram · on YouTube |
 | [009-baby-thoughts](gears-pov/009-baby-thoughts.mp4) | You can understand babies 👶 | Waiting to post |
-| [010-car-thoughts](gears-pov/010-car-thoughts.mp4) | You can hear what your car thinks 🚗 | Waiting to post |
+| [010-car-thoughts](gears-pov/010-car-thoughts.mp4) | You can hear what your car thinks 🚗 | Posted on Instagram · on YouTube |
 | [011-parrot-thoughts](gears-pov/011-parrot-thoughts.mp4) | You can hear what your parrot thinks 🦜 | Waiting to post |
 | [012-goldfish-memory](gears-pov/012-goldfish-memory.mp4) | You can hear what your goldfish thinks 🐠 | Posted on Instagram · on YouTube |
 | [013-fridge-judges-you](gears-pov/013-fridge-judges-you.mp4) | You can hear what your fridge thinks 🧀 | Waiting to post |
@@ -167,7 +167,7 @@ Folder: [`dave-reels/`](dave-reels/)
 | [43-dave-grows-an-inch](dave-reels/43-dave-grows-an-inch.mp4) | What if you grew 1 inch every day? | Waiting to post |
 | [44-gimli-glider](dave-reels/44-gimli-glider.mp4) | The jet that ran out of fuel because of maths | Waiting to post |
 
-## Toy reels (Brick Toy) (66)
+## Toy reels (Brick Toy) (71)
 Folder: [`toy-reels/`](toy-reels/)
 
 | Video | Title | Status |
@@ -227,8 +227,13 @@ Folder: [`toy-reels/`](toy-reels/)
 | [53-caveman-wheel-lawsuit](toy-reels/53-caveman-wheel-lawsuit.mp4) | The Caveman Who Invented The Wheel Got Sued 🪨⚖️ | Waiting to post |
 | [54-elvis-alien-encore](toy-reels/54-elvis-alien-encore.mp4) | Elvis Didn't Die. Aliens Wanted An Encore. 👽🎤 | Waiting to post |
 | [55-pirate-map-parrot](toy-reels/55-pirate-map-parrot.mp4) | Pirate Tattooed The Treasure Map On His Back 🏴‍☠️ | Waiting to post |
-| [56-eiffel-tower-con](toy-reels/56-eiffel-tower-con.mp4) | The Man Who Sold The Eiffel Tower 🗼 | Waiting to post |
+| [56-eiffel-tower-con](toy-reels/56-eiffel-tower-con.mp4) | The Man Who Sold The Eiffel Tower 🗼 | Posted (Instagram + YouTube) |
 | [57-emu-war](toy-reels/57-emu-war.mp4) | Australia Sent Machine Guns To Fight Birds 🐦 | Posted (Instagram + YouTube) |
+| [58-pig-war](toy-reels/58-pig-war.mp4) | America & Britain Nearly Went To War Over A Pig 🐖 | Waiting to post |
+| [59-war-of-the-bucket](toy-reels/59-war-of-the-bucket.mp4) | Two Cities Fought A War Over A Bucket 🪣 | Waiting to post |
+| [60-cadaver-synod](toy-reels/60-cadaver-synod.mp4) | A Pope Put A Dead Pope On Trial ⚖️ | Waiting to post |
+| [61-mary-toft-rabbits](toy-reels/61-mary-toft-rabbits.mp4) | She Fooled Royal Doctors Into Believing She Birthed Rabbits 🐇 | Waiting to post |
+| [62-cardiff-giant](toy-reels/62-cardiff-giant.mp4) | The 10-Foot Giant That Was A Fake Of A Fake 🗿 | Waiting to post |
 | [63-wojtek-soldier-bear](toy-reels/63-wojtek-soldier-bear.mp4) | Poland Enlisted A Bear As A Soldier 🐻 | Posted (Instagram + YouTube) |
 | [64-mike-headless-chicken](toy-reels/64-mike-headless-chicken.mp4) | The Chicken That Lived 18 Months Without A Head 🐔 | Waiting to post |
 | [65-microwave-chocolate-bar](toy-reels/65-microwave-chocolate-bar.mp4) | A Melted Chocolate Bar Invented The Microwave 🍫 | Waiting to post |
