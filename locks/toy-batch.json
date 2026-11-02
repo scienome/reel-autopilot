@@ -1,9 +1,17 @@
 {
  "job": "toy-batch",
  "status": "in_progress",
- "owner": "vm-dcbd4e",
- "started": "2026-10-31T17:12:10Z",
- "updated": "2026-10-31T18:12:16Z",
+ "owner": "vm-10526c",
+ "started": "2026-11-02T20:04:43Z",
+ "updated": "2026-11-02T20:04:43Z",
  "note": "57-71 pushed, render slow",
- "history": []
+ "history": [
+  {
+   "owner": "vm-dcbd4e",
+   "started": "2026-10-31T17:12:10Z",
+   "updated": "2026-10-31T18:12:16Z",
+   "status": "in_progress",
+   "note": "57-71 pushed, render slow"
+  }
+ ]
 }
