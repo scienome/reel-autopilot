@@ -43,7 +43,7 @@ Folder: [`gears-pov/`](gears-pov/)
 | [001-dog-thoughts](gears-pov/001-dog-thoughts.mp4) | You can hear what dogs think 🐶 | Posted on Instagram · on YouTube |
 | [002-cat-thoughts](gears-pov/002-cat-thoughts.mp4) | You can hear what cats think 🐱 | Posted on Instagram · on YouTube |
 | [003-dog-loves-cat](gears-pov/003-dog-loves-cat.mp4) | My dog is in love with the neighbour's cat 🐶❤️🐱 | Posted on Instagram · on YouTube |
-| [004-pets-home-alone](gears-pov/004-pets-home-alone.mp4) | What your pets do when you leave 🐶🐱 | Waiting to post |
+| [004-pets-home-alone](gears-pov/004-pets-home-alone.mp4) | What your pets do when you leave 🐶🐱 | Posted on Instagram · on YouTube |
 | [005-vet-visit](gears-pov/005-vet-visit.mp4) | What your pets think at the vet 🐶🐱🏥 | Posted on Instagram · on YouTube |
 | [006-shelter-dog](gears-pov/006-shelter-dog.mp4) | Nobody picks the old dog 🐶 | Posted on Instagram · on YouTube |
 | [007-search-history](gears-pov/007-search-history.mp4) | You can see everyone's search history 🔎 | Posted on Instagram · on YouTube |
@@ -51,7 +51,7 @@ Folder: [`gears-pov/`](gears-pov/)
 | [009-baby-thoughts](gears-pov/009-baby-thoughts.mp4) | You can understand babies 👶 | Waiting to post |
 | [010-car-thoughts](gears-pov/010-car-thoughts.mp4) | You can hear what your car thinks 🚗 | Waiting to post |
 | [011-parrot-thoughts](gears-pov/011-parrot-thoughts.mp4) | You can hear what your parrot thinks 🦜 | Waiting to post |
-| [012-goldfish-memory](gears-pov/012-goldfish-memory.mp4) | You can hear what your goldfish thinks 🐠 | Waiting to post |
+| [012-goldfish-memory](gears-pov/012-goldfish-memory.mp4) | You can hear what your goldfish thinks 🐠 | Posted on Instagram · on YouTube |
 | [013-fridge-judges-you](gears-pov/013-fridge-judges-you.mp4) | You can hear what your fridge thinks 🧀 | Waiting to post |
 | [014-pigeon-thoughts](gears-pov/014-pigeon-thoughts.mp4) | You can hear what pigeons think 🐦 | Waiting to post |
 | [015-phone-thoughts](gears-pov/015-phone-thoughts.mp4) | You can hear what your phone thinks 📱 | Waiting to post |
@@ -61,15 +61,15 @@ Folder: [`gears-pov/`](gears-pov/)
 | [019-houseplant-thoughts](gears-pov/019-houseplant-thoughts.mp4) | You can hear what your houseplant thinks 🪴 | Waiting to post |
 | [020-mum-thoughts](gears-pov/020-mum-thoughts.mp4) | You can hear what your mum thinks 👩 | Posted on Instagram · on YouTube |
 | [021-hamster-thoughts](gears-pov/021-hamster-thoughts.mp4) | You can hear what your hamster thinks 🐹 | Waiting to post |
-| [022-toddler-thoughts](gears-pov/022-toddler-thoughts.mp4) | You can hear what your toddler thinks 🧒 | Not scheduled |
-| [023-seagull-thoughts](gears-pov/023-seagull-thoughts.mp4) | You can hear what seagulls think 🐦 | Not scheduled |
-| [024-wifi-router-thoughts](gears-pov/024-wifi-router-thoughts.mp4) | You can hear what your wifi router thinks 📶 | Not scheduled |
-| [025-dad-thoughts](gears-pov/025-dad-thoughts.mp4) | You can hear what your dad thinks 👨 | Not scheduled |
-| [026-cop-thoughts](gears-pov/026-cop-thoughts.mp4) | You can hear what the police officer thinks 🚓 | Not scheduled |
-| [027-ex-thoughts](gears-pov/027-ex-thoughts.mp4) | You can hear what your ex thinks 💔 | Not scheduled |
-| [028-alarm-clock-thoughts](gears-pov/028-alarm-clock-thoughts.mp4) | You can hear what your alarm clock thinks ⏰ | Not scheduled |
-| [029-puppy-first-night](gears-pov/029-puppy-first-night.mp4) | You can hear what your puppy thinks on night one 🐶 | Not scheduled |
-| [030-delivery-guy-thoughts](gears-pov/030-delivery-guy-thoughts.mp4) | You can hear what the delivery guy thinks 🍕 | Not scheduled |
+| [022-toddler-thoughts](gears-pov/022-toddler-thoughts.mp4) | You can hear what your toddler thinks 🧒 | Waiting to post |
+| [023-seagull-thoughts](gears-pov/023-seagull-thoughts.mp4) | You can hear what seagulls think 🐦 | Waiting to post |
+| [024-wifi-router-thoughts](gears-pov/024-wifi-router-thoughts.mp4) | You can hear what your wifi router thinks 📶 | Waiting to post |
+| [025-dad-thoughts](gears-pov/025-dad-thoughts.mp4) | You can hear what your dad thinks 👨 | Waiting to post |
+| [026-cop-thoughts](gears-pov/026-cop-thoughts.mp4) | You can hear what the police officer thinks 🚓 | Waiting to post |
+| [027-ex-thoughts](gears-pov/027-ex-thoughts.mp4) | You can hear what your ex thinks 💔 | Waiting to post |
+| [028-alarm-clock-thoughts](gears-pov/028-alarm-clock-thoughts.mp4) | You can hear what your alarm clock thinks ⏰ | Waiting to post |
+| [029-puppy-first-night](gears-pov/029-puppy-first-night.mp4) | You can hear what your puppy thinks on night one 🐶 | Waiting to post |
+| [030-delivery-guy-thoughts](gears-pov/030-delivery-guy-thoughts.mp4) | You can hear what the delivery guy thinks 🍕 | Waiting to post |
 
 ## CouchSarcasm (old couple comedy) (40)
 Folder: [`couch-sarcasm/`](couch-sarcasm/)
@@ -235,9 +235,9 @@ Folder: [`toy-reels/`](toy-reels/)
 | [66-play-doh-wallpaper](toy-reels/66-play-doh-wallpaper.mp4) | Play-Doh Started As Wallpaper Cleaner 🧽 | Waiting to post |
 | [67-pet-rock-millionaire](toy-reels/67-pet-rock-millionaire.mp4) | He Sold Rocks As Pets And Became A Millionaire 🪨 | Waiting to post |
 | [68-pepsi-harrier-jet](toy-reels/68-pepsi-harrier-jet.mp4) | Pepsi Offered A Fighter Jet. A Man Tried To Claim It ✈️ | Posted (Instagram + YouTube) |
-| [69-van-meegeren-forger](toy-reels/69-van-meegeren-forger.mp4) | He Sold A Fake Vermeer To Goering. Then Proved It. 🎨 | Waiting to post |
+| [69-van-meegeren-forger](toy-reels/69-van-meegeren-forger.mp4) | He Sold A Fake Vermeer To Goering. Then Proved It. 🎨 | Posted (Instagram + YouTube) |
 | [70-great-stink-london](toy-reels/70-great-stink-london.mp4) | London Smelled So Bad Parliament Had To Act 🤢 | Waiting to post |
-| [71-bitcoin-pizza-day](toy-reels/71-bitcoin-pizza-day.mp4) | He Paid 10,000 Bitcoin For Two Pizzas 🍕 | Waiting to post |
+| [71-bitcoin-pizza-day](toy-reels/71-bitcoin-pizza-day.mp4) | He Paid 10,000 Bitcoin For Two Pizzas 🍕 | Posted (Instagram + YouTube) |
 
 ## Mechanic Shorts (YouTube) (25)
 Folder: [`mechanic-shorts/`](mechanic-shorts/)
