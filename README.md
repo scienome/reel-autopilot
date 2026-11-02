@@ -167,7 +167,7 @@ Folder: [`dave-reels/`](dave-reels/)
 | [43-dave-grows-an-inch](dave-reels/43-dave-grows-an-inch.mp4) | What if you grew 1 inch every day? | Waiting to post |
 | [44-gimli-glider](dave-reels/44-gimli-glider.mp4) | The jet that ran out of fuel because of maths | Waiting to post |
 
-## Toy reels (Brick Toy) (71)
+## Toy reels (Brick Toy) (77)
 Folder: [`toy-reels/`](toy-reels/)
 
 | Video | Title | Status |
@@ -243,6 +243,12 @@ Folder: [`toy-reels/`](toy-reels/)
 | [69-van-meegeren-forger](toy-reels/69-van-meegeren-forger.mp4) | He Sold A Fake Vermeer To Goering. Then Proved It. 🎨 | Posted (Instagram + YouTube) |
 | [70-great-stink-london](toy-reels/70-great-stink-london.mp4) | London Smelled So Bad Parliament Had To Act 🤢 | Waiting to post |
 | [71-bitcoin-pizza-day](toy-reels/71-bitcoin-pizza-day.mp4) | He Paid 10,000 Bitcoin For Two Pizzas 🍕 | Posted (Instagram + YouTube) |
+| [72-ghost-army-rubber-tanks](toy-reels/72-ghost-army-rubber-tanks.mp4) | America's Army Made Of Rubber Fooled The Nazis 🎈 | Waiting to post |
+| [73-taco-liberty-bell](toy-reels/73-taco-liberty-bell.mp4) | Taco Bell 'Bought' The Liberty Bell 🔔🌮 | Waiting to post |
+| [74-dancing-plague-1518](toy-reels/74-dancing-plague-1518.mp4) | Hundreds Danced Non-Stop In 1518. Nobody Knows Why 💃 | Waiting to post |
+| [75-war-of-jenkins-ear](toy-reels/75-war-of-jenkins-ear.mp4) | Britain Went To War Over One Ear 👂⚔️ | Waiting to post |
+| [76-stone-of-scone-heist](toy-reels/76-stone-of-scone-heist.mp4) | Four Students Stole Britain's Coronation Stone 🪨 | Waiting to post |
+| [77-mona-lisa-stolen](toy-reels/77-mona-lisa-stolen.mp4) | The Man Who Stole The Mona Lisa 🖼️ | Waiting to post |
 
 ## Mechanic Shorts (YouTube) (25)
 Folder: [`mechanic-shorts/`](mechanic-shorts/)
