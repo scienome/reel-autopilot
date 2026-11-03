@@ -1,5 +1,7 @@
 # Pulse reels — bodybuilding / fitness science channel (new, 3 Nov 2026)
 
+Channel name: **Musclyth** (owner's pick, 3 Nov). The folder, kit and secrets keep the working name "Pulse".
+
 Flat-vector "what happens inside your body" explainers, 9:16, about 35-50 s. Style skill: `skills/pulsestyle` (claude.ai
 skill /pulsestyle; its reference files live on the "Pulse Sample" artifact). Everything this series needs is in this folder.
 

@@ -1,4 +1,6 @@
-# Pulse channel — profile text (made 3 Nov 2026)
+# Musclyth — profile text (made 3 Nov 2026)
+
+Channel name: **Musclyth** (Instagram + YouTube).
 
 Art in this folder has NO channel name on it, so it fits any handle. Re-draw: `python3 pulsereels/brand/make_brand.py`.
 - `profile.png` (1080x1080): Instagram + YouTube profile picture (both crop it to a circle).
@@ -7,7 +9,7 @@ Art in this folder has NO channel name on it, so it fits any handle. Re-draw: `p
 
 ## Instagram
 
-**Name field** (searchable, up to 64 chars): `<Channel Name> | Gym Science`
+**Name field** (searchable, up to 64 chars): `Musclyth | Gym Science`
 
 **Bio** (under 150 characters):
 ```

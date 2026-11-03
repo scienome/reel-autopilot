@@ -16,7 +16,7 @@ Never print a secret in chat, in logs, in a commit or in a file that stays on di
 0. Run `git checkout main && git pull origin main` and set PYTHONUTF8=1. Read HANDOFF.md (sections 0, 1, 5, 6, 7b, 8, 11),
    then pulsereels/README.md. Run `python tools/claim.py status`. Reels render already: pushing pulsereels/reels/<id>/
    runs make-pulse.yml and publishes Release pulse-<id> (voice cBTYF7NiJbR8Bvmdeuse; never change it).
-1. Ask me for the new Instagram handle and YouTube channel name. Use exactly what I give you.
+1. The channel name is Musclyth. Ask me for the exact Instagram handle and YouTube @handle I got (it may have dots or underscores) and use exactly those.
 2. INSTAGRAM (new account), in the built-in browser. Switch it to a Professional (Creator) account, add it to the Meta app
    "Reel Autopilot" (developers.facebook.com → Instagram API setup with Instagram login), generate a long-lived token with
    instagram_business_content_publish and instagram_business_manage_comments. Save them as secrets
