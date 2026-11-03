@@ -632,3 +632,26 @@
     return P.slideCut(ctx, W, H_, t, cur.t, d, prev.draw, cur.draw);
   };
 })();
+
+// ---- props, part 3: organs, ions, meters, posters, batteries, nuclei ----
+(function () {
+  const TAU = Math.PI * 2, cl = P.cl, lerp = P.lerp, PAL = P.PAL;
+  // a heart (flat, two-lobed) that beats with t
+  P.heart = (ctx, x, y, r, t = 0) => { const b = 1 + 0.06 * Math.max(0, Math.sin(t * 7)); ctx.save(); ctx.translate(x, y); ctx.scale(b, b); P.flat(ctx, (c) => { c.beginPath(); c.moveTo(0, r * 0.95); c.bezierCurveTo(-r * 1.4, r * 0.1, -r * 0.9, -r * 1.05, 0, -r * 0.45); c.bezierCurveTo(r * 0.9, -r * 1.05, r * 1.4, r * 0.1, 0, r * 0.95); c.closePath(); }, PAL.red, { off: r * 0.1 }); P.fill(ctx, P.ell(-r * 0.4, -r * 0.35, r * 0.18, r * 0.12, -0.6), 'rgba(255,255,255,0.5)'); ctx.restore(); };
+  // a brain: pink blob with wiggly folds
+  P.brain = (ctx, x, y, r) => { P.flat(ctx, P.blob([[x - r, y], [x - r * 0.8, y - r * 0.7], [x - r * 0.1, y - r * 0.95], [x + r * 0.7, y - r * 0.75], [x + r, y - r * 0.1], [x + r * 0.8, y + r * 0.6], [x, y + r * 0.7], [x - r * 0.7, y + r * 0.6]]), '#ff9fc8', { off: r * 0.1 }); ctx.save(); ctx.strokeStyle = P.shade('#ff9fc8', 0.3); ctx.lineWidth = r * 0.08; ctx.lineCap = 'round'; for (const [a, b, c2] of [[-0.6, -0.4, 0.2], [0.1, -0.6, 0.3], [-0.3, 0.2, 0.5], [0.4, 0.1, 0.4]]) { ctx.beginPath(); ctx.moveTo(x + a * r, y + b * r); ctx.quadraticCurveTo(x + (a + 0.2) * r, y + (b + c2) * r, x + (a + 0.4) * r, y + b * r); ctx.stroke(); } ctx.restore(); };
+  // a liver: dark-red wedge
+  P.liver = (ctx, x, y, r) => P.flat(ctx, P.blob([[x - r * 1.2, y - r * 0.3], [x - r * 0.2, y - r * 0.7], [x + r * 1.1, y - r * 0.5], [x + r * 0.6, y + r * 0.2], [x - r * 0.4, y + r * 0.6]]), '#c2274f', { off: r * 0.1 });
+  // a hydrogen ion: small red ball with a "+"
+  P.ion = (ctx, x, y, r = 16, k = 1) => { if (k <= 0) return; ctx.save(); ctx.translate(x, y); ctx.scale(k, k); P.flat(ctx, P.circ(0, 0, r), PAL.red, { off: r * 0.18, lo: r * 0.08 }); ctx.strokeStyle = '#fff'; ctx.lineWidth = r * 0.22; ctx.lineCap = 'round'; ctx.beginPath(); ctx.moveTo(-r * 0.45, 0); ctx.lineTo(r * 0.45, 0); ctx.moveTo(0, -r * 0.45); ctx.lineTo(0, r * 0.45); ctx.stroke(); ctx.restore(); };
+  // lactate: a small cyan three-ball molecule
+  P.lactate = (ctx, x, y, s = 1, rot = 0, k = 1) => { if (k <= 0) return; ctx.save(); ctx.translate(x, y); ctx.rotate(rot); ctx.scale(s * k, s * k); for (const [ax, ay, r, c] of [[-20, 6, 12, PAL.cyan], [20, 6, 12, PAL.cyan], [0, -10, 15, P.shade(PAL.cyan, 0.15)]]) P.flat(ctx, P.circ(ax, ay, r), c, { off: r * 0.18, lo: r * 0.08 }); ctx.restore(); };
+  // a vertical meter bar with a label underneath; k 0..1 fill
+  P.meter = (ctx, x, y, w, h, k, color, label) => { P.fill(ctx, P.rr(x - w / 2, y - h, w, h, 14), 'rgba(255,255,255,0.12)'); const fh = Math.max(0, h * cl(k)); if (fh > 2) P.flat(ctx, P.rr(x - w / 2, y - fh, w, fh, 14), color, { off: 6 }); if (label) P.label(ctx, label, x, y + 46, 1, { color, size: 26 }); };
+  // a WANTED poster around a drawing callback
+  P.wanted = (ctx, x, y, s, k, draw, stamp = 0) => { if (k <= 0) return; ctx.save(); ctx.translate(x, y); const pk = H.ease.back(cl(k)); ctx.scale(s * pk, s * pk); ctx.rotate(-0.04); P.flat(ctx, P.rr(-150, -200, 300, 400, 10), '#ffe9b8', { off: 8 }); ctx.fillStyle = '#7a3b16'; ctx.font = `900 54px ${P.FONT}`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText('WANTED', 0, -140); draw(ctx); ctx.font = `900 30px ${P.FONT}`; ctx.fillText('LACTIC ACID', 0, 150); ctx.restore(); if (stamp > 0) { ctx.save(); ctx.translate(x, y); ctx.rotate(-0.25); const sk = lerp(1.6, 1, H.ease.out(cl(stamp))); ctx.scale(s * sk, s * sk); ctx.globalAlpha = cl(stamp * 3); ctx.strokeStyle = PAL.green; ctx.lineWidth = 10; P.rr(-170, -48, 340, 96, 16)(ctx); ctx.stroke(); ctx.fillStyle = PAL.green; ctx.font = `900 64px ${P.FONT}`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText('INNOCENT', 0, 4); ctx.restore(); } };
+  // a battery that charges with k
+  P.battery = (ctx, x, y, s, k, color = PAL.mint) => { ctx.save(); ctx.translate(x, y); ctx.scale(s, s); P.flat(ctx, P.rr(-90, -50, 180, 100, 20), '#e8ecff', { off: 6 }); P.fill(ctx, P.rr(90, -20, 18, 40, 6), '#c9d2f2'); P.fill(ctx, P.rr(-76, -36, 152, 72, 12), '#1d1660'); const n = Math.round(cl(k) * 4); for (let i = 0; i < n; i++) P.fill(ctx, P.rr(-70 + i * 36, -30, 30, 60, 8), color); ctx.restore(); };
+  // nuclei along a fibre drawn with P.fiber at (x,y,len,r,ang): n nuclei, k reveal, hold 0..1 brightness
+  P.nuclei = (ctx, x, y, len, r, ang, n, k = 1, t = 0, seed = 0) => { const rr = H.rng('nuc' + seed); ctx.save(); ctx.translate(x, y); ctx.rotate(ang); for (let i = 0; i < n; i++) { const kk = cl(k * n - i); if (kk <= 0) continue; const px = len * (0.12 + 0.8 * ((i + 0.5) / n)) + (rr() - 0.5) * 20, py = (rr() - 0.5) * r * 1.1; ctx.save(); ctx.translate(px, py); const s = H.ease.back(kk) * (1 + 0.05 * Math.sin(t * 4 + i)); ctx.scale(s, s); P.glow(ctx, 0, 0, r * 0.5, PAL.grape, 0.4); P.flat(ctx, P.ell(0, 0, r * 0.24, r * 0.15), PAL.grape, { off: 3, lo: 1 }); P.fill(ctx, P.circ(-r * 0.06, -r * 0.03, r * 0.05), P.light(PAL.grape, 0.5)); ctx.restore(); } ctx.restore(); };
+})();

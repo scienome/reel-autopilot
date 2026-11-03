@@ -19,3 +19,4 @@ never a blocker.
 
 **Updating a skill:** edit the folder, then rebuild its zip from inside `skills/`:
 `rm zips/<name>.zip && zip -qr zips/<name>.zip <name>` and commit both. Re-upload the zip on each Claude account.
+- `pulsestyle` — Pulse bodybuilding / fitness-science channel (flat vector, lifter, zoom-through to cells). Live series: `pulsereels/`. Zip: `zips/pulsestyle.zip`.

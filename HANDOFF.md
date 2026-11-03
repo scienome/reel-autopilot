@@ -25,7 +25,7 @@ or anything that posts publicly.
 3. **Check live state:** latest GitHub Actions runs (any failures?), Releases (which reels are rendered), each series'
    `schedule.json` (what's queued, what's paused), and the posted logs (`posted.json`, `ig_posted.json`,
    `toyreels/posted.json`, `youtube_posted.json`, `couch_youtube_posted.json`).
-4. **Skills are in the repo:** `skills/toystyle`, `skills/violetstyle`, `skills/mechanicskill`, `skills/whatifstyle`, `skills/lokvarastyle` (read `SKILL.md` +
+4. **Skills are in the repo:** `skills/toystyle`, `skills/violetstyle`, `skills/mechanicskill`, `skills/whatifstyle`, `skills/lokvarastyle`, `skills/pulsestyle` (read `SKILL.md` +
    the files next to it directly), and ready-to-upload `skills/zips/*.zip`. If `/toystyle` etc. aren't installed on this
    account, tell me once: "download the zips from skills/zips on GitHub → Settings → Capabilities → Skills → upload".
    Never block on it: the repo's series folders contain every renderer.
@@ -78,7 +78,7 @@ sync-videos.yml                   ->  copies every finished MP4 to the `videos` 
 | Mechanic long videos | `mechvideos/` | same engine, 16:9 1080p, 4–5 min, chapters | YT, root `schedule.json` | — | **STOPPED 31 Oct.** No new videos; 006–008 not posted |
 | **Socho Zara** (Hinglish animal riddles) | `riddles/` + `skills/whatifstyle` | flat vector 2D, code-drawn | **old Couch IG + YT accounts** | 06:00 quick, 12:00 mystery/visual, 20:30 harder | LIVE from 31 Oct 20:30, 21 reels queued (7 days) |
 | **elitesendgame** (fictional first-person mysteries: The Witness, The Last Dinner, Room Four) | `mysteryreels/` | noir comic, `mysteryreels/kit/`; voice `eCGXfCpGinKGrwYNoBuo`. Voiced with `voice-audition.yml` (`lang=lines:<file>`), joined and rendered locally | IG @elitesendgame (`IG_ELITE_*`), no YouTube yet; `post-elitesendgame.yml`, `tools/elite_post.py` (`post-elite.yml` is disabled and unused) | The Witness 06:00, The Last Dinner 20:30, Room Four 01:00, wildcards 13:00 and 18:30 | **LIVE since 1 Nov.** Queue in `mysteryreels/schedule.json`. No automatic episode making yet. Always labelled fiction; no real group or living person as the enemy |
-| **Pulse** (bodybuilding / fitness science, new 3 Nov) | `pulsereels/` | flat-vector body science, `pulsereels/kit/pulse.js`, skill /pulsestyle; voice `cBTYF7NiJbR8Bvmdeuse`; `make-pulse.yml` → Release `pulse-<id>` | none yet (owner picking a handle) | — | **Rendering only, no posting.** 001-where-fat-goes made 3 Nov. Read `pulsereels/README.md` |
+| **Pulse** (bodybuilding / fitness science, new 3 Nov) | `pulsereels/` | flat-vector body science, `pulsereels/kit/pulse.js`, skill `skills/pulsestyle`; voice `cBTYF7NiJbR8Bvmdeuse`; `make-pulse.yml` → Release `pulse-<id>` | none yet: owner is creating new IG + YT accounts (setup: `pulsereels/SETUP_PROMPT.md`) | — (proposed 06:30, 18:30, 23:30) | **Rendering only, no posting yet.** 001-004 made 3 Nov. See §12c |
 | Dave reels | `davereels/` | crash-test dummy Dave | — | — | **PAUSED — I rejected Dave. Don't resume.** |
 | Old couch reels | `reels/` (root) | Violet Room 3D couple | — | — | **RETIRED** (0001–0040) |
 | ToyBox long videos | `youtube/` | Brick Toy 16:9 | manual upload | — | idle |
@@ -127,6 +127,7 @@ Source of truth = each folder's `config.json`. As of 30 Oct 2026:
   Mum = Alice `Xb7hH8MSUJpSbSDYk0k2`, with per-character `cast_settings`.
 - POV cast (`povreels/config.json`): cute pets/babies `FgiNpTIapnCbaD6xiqIo`; naughty/bully characters
   `zJrRUu1KEcKH8qdpNaPJ`; plus Helen, George, Daniel, Chris, Jessica, Alice, Adam-Dominant. `cast_fallback` covers refused voices.
+- **Pulse (bodybuilding science, `pulsereels/config.json`): `cBTYF7NiJbR8Bvmdeuse`** (owner's pick, 3 Nov).
 - **Riddles: `lOJWQNMBIzoU3N0EnOya`** (owner's pick, 31 Oct; mix approved).
 - **Hindi mythology (`mythreels/config.json`): Sudhir `XNJDyPyJ8r4J7de0WJwB`** ("Sudhir - Warm & Expressive Hindi Voice", the
   owner's own ElevenLabs voice, picked 30 Oct). Every line uses it, character lines too, until the owner names character voices.
@@ -417,6 +418,36 @@ Owner's fictional mystery channel: narrators who were personally there, not fact
 - **Limits:** always labelled fiction except verified "real and strange" wildcards. Invented groups only, never a real religion, community or living person as the enemy, and no coded versions. Lizard-people and "secret rulers" stories have been used to target Jewish people.
 - **Open risks:** about 95,000 ElevenLabs characters a month on a 131,000 plan shared with other channels; 5 posts a day from a new account may reduce reach; 7 reels a day are made against 5 posted, so the queue grows; reels go live without review; visual quality of cloud reels is unproven.
 - **Workflow files:** the `gh` token has no workflow scope. In the desktop browser pane, signed in as the owner, open `github.com/<repo>/new/main?filename=...&value=<url-encoded file>` and commit. The owner signs in and handles tokens themselves.
+
+---
+
+## 12c. PULSE (bodybuilding / fitness science channel, new 3 Nov 2026)
+
+Owner's English channel: flat-vector "what happens inside your body when you train" Shorts, 35-50 s, worldwide audience.
+**Start here:** `pulsereels/README.md` (formats, rules, topic backlog), `skills/pulsestyle/SKILL.md` (the look and the kit),
+`pulsereels/SETUP_PROMPT.md` (posting setup, still to do), `pulsereels/brand/BIO.md` (profile text and art).
+
+- **Voice:** `cBTYF7NiJbR8Bvmdeuse`, `eleven_v4`, in `pulsereels/config.json`. Never change without asking. About 600 characters a reel.
+- **Pipeline:** push `pulsereels/reels/<id>/` (script.json, story.js, meta.json) to main → `.github/workflows/make-pulse.yml`
+  runs `tools/pulse_make.py <id>`: voices each line (takes cached in `voice_lines/`), joins them, renders with
+  `pulsereels/kit/render_reel.py` (playwright + ffmpeg, Nunito from `pulsereels/fonts/`), publishes Release `pulse-<id>`
+  (mp4, cover.jpg, caption.txt, player.html). One push with several reels renders them all in one run. Run by hand with an
+  empty box = render every reel without a Release.
+- **Local check:** `python3 tools/pulse_make.py <id> --sheet [times]` → `out/<id>/sheet.png`; `--no-voice` = silent MP4.
+- **Made so far (3 Nov):** 001-where-fat-goes (BMJ 2014: 84% leaves as CO2), 002-muscle-memory (myonuclei stay, mouse
+  studies; women regained strength in 6 weeks after 7 months off), 003-lactic-acid-myth (lactate is fuel; the burn is H+),
+  004-soreness-not-growth (Schoenfeld & Contreras 2013, repeated bout effect). All have Releases. None posted.
+- **Brand:** `pulsereels/brand/` profile.png, yt_banner.png (2560x1440), 4 IG highlight covers, BIO.md. No name on the
+  art. Handle not chosen yet: the owner found common names taken; suggested coined names: Sarkora, Myonaut, Fibrexa, Myofyx, Liftora.
+- **Still to do:** new IG + YT accounts → secrets `IG_PULSE_ACCESS_TOKEN`, `IG_PULSE_USER_ID`, `YT_PULSE_CLIENT_ID`,
+  `YT_PULSE_CLIENT_SECRET`, `YT_PULSE_REFRESH_TOKEN` → `tools/pulse_post.py` + `post-pulse.yml` + `pulsereels/schedule.json`
+  (copy the Lokvara poster pattern) → owner confirms post times → first post → `pulse-batch` routines (main + backup, every
+  3rd day, 9 reels each). All of it is written step by step in `pulsereels/SETUP_PROMPT.md`; the owner wants Claude to do
+  the website steps in the built-in browser and only stop for passwords, codes and "Allow" clicks.
+- **Skill on claude.ai:** `/pulsestyle` (upload `skills/zips/pulsestyle.zip` on a new account). Its reference files also live
+  on the owner's "Pulse Sample" artifact; the repo copy in `skills/pulsestyle/` is newer (more props) and is the one to use.
+- **Rules:** real science, 2 sources per fact, `sources` in meta.json, flag limited evidence; no steroids, crash diets,
+  extreme cutting or body shaming; the lifter is the channel's own character, never another channel's mascots or scenes.
 
 ---
 

@@ -27,7 +27,11 @@ skill /pulsestyle; its reference files live on the "Pulse Sample" artifact). Eve
 - The lifter is the channel's own character; never add another channel's mascots, names or scenes.
 
 ## Topic backlog (owner liked the list, 3 Nov)
-001 where fat goes (done) · stop training 30 days / muscle memory · lactic acid isn't the burn · soreness ≠ growth ·
+001 where fat goes · 002 muscle memory · 003 lactic acid myth · 004 soreness ≠ growth (all done 3 Nov) ·
 skipping sleep after leg day · why the last rep shakes · what creatine does · what a pump is · myostatin / Belgian Blue ·
 100 push-ups a day for a month · protein window myth · muscle can't turn into fat · only-protein diet (rabbit starvation) ·
 lifting on an empty stomach · the heart never rests.
+
+## Brand and setup
+- Profile picture, YouTube banner, highlight covers, bio text: `brand/` (see `brand/BIO.md`).
+- Posting setup, step by step (built-in browser): `SETUP_PROMPT.md`.
