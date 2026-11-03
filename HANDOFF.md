@@ -78,7 +78,7 @@ sync-videos.yml                   ->  copies every finished MP4 to the `videos` 
 | Mechanic long videos | `mechvideos/` | same engine, 16:9 1080p, 4–5 min, chapters | YT, root `schedule.json` | — | **STOPPED 31 Oct.** No new videos; 006–008 not posted |
 | **Socho Zara** (Hinglish animal riddles) | `riddles/` + `skills/whatifstyle` | flat vector 2D, code-drawn | **old Couch IG + YT accounts** | 06:00 quick, 12:00 mystery/visual, 20:30 harder | LIVE from 31 Oct 20:30, 21 reels queued (7 days) |
 | **elitesendgame** (fictional first-person mysteries: The Witness, The Last Dinner, Room Four) | `mysteryreels/` | noir comic, `mysteryreels/kit/`; voice `eCGXfCpGinKGrwYNoBuo`. Voiced with `voice-audition.yml` (`lang=lines:<file>`), joined and rendered locally | IG @elitesendgame (`IG_ELITE_*`), no YouTube yet; `post-elitesendgame.yml`, `tools/elite_post.py` (`post-elite.yml` is disabled and unused) | The Witness 06:00, The Last Dinner 20:30, Room Four 01:00, wildcards 13:00 and 18:30 | **LIVE since 1 Nov.** Queue in `mysteryreels/schedule.json`. No automatic episode making yet. Always labelled fiction; no real group or living person as the enemy |
-| **Pulse** (bodybuilding / fitness science, new 3 Nov) | `pulsereels/` | flat-vector body science, `pulsereels/kit/pulse.js`, skill `skills/pulsestyle`; voice `cBTYF7NiJbR8Bvmdeuse`; `make-pulse.yml` → Release `pulse-<id>` | none yet: owner is creating new IG + YT accounts (setup: `pulsereels/SETUP_PROMPT.md`) | — (proposed 06:30, 18:30, 23:30) | **Rendering only, no posting yet.** 001-004 made 3 Nov. See §12c |
+| **Musclyth** (Pulse series: bodybuilding / fitness science, new 3 Nov) | `pulsereels/` | flat-vector body science, `pulsereels/kit/pulse.js`, skill `skills/pulsestyle`; voice `cBTYF7NiJbR8Bvmdeuse`; `make-pulse.yml` → Release `pulse-<id>` | IG + YT **Musclyth** (accounts being created 3 Nov; setup: `pulsereels/SETUP_PROMPT.md`) | — (proposed 06:30, 18:30, 23:30) | **Rendering only, no posting yet.** 001-004 made 3 Nov. See §12c |
 | Dave reels | `davereels/` | crash-test dummy Dave | — | — | **PAUSED — I rejected Dave. Don't resume.** |
 | Old couch reels | `reels/` (root) | Violet Room 3D couple | — | — | **RETIRED** (0001–0040) |
 | ToyBox long videos | `youtube/` | Brick Toy 16:9 | manual upload | — | idle |
@@ -421,7 +421,7 @@ Owner's fictional mystery channel: narrators who were personally there, not fact
 
 ---
 
-## 12c. PULSE (bodybuilding / fitness science channel, new 3 Nov 2026)
+## 12c. MUSCLYTH — the Pulse series (bodybuilding / fitness science channel, new 3 Nov 2026)
 
 Owner's English channel: flat-vector "what happens inside your body when you train" Shorts, 35-50 s, worldwide audience.
 **Start here:** `pulsereels/README.md` (formats, rules, topic backlog), `skills/pulsestyle/SKILL.md` (the look and the kit),
@@ -438,7 +438,7 @@ Owner's English channel: flat-vector "what happens inside your body when you tra
   studies; women regained strength in 6 weeks after 7 months off), 003-lactic-acid-myth (lactate is fuel; the burn is H+),
   004-soreness-not-growth (Schoenfeld & Contreras 2013, repeated bout effect). All have Releases. None posted.
 - **Brand:** `pulsereels/brand/` profile.png, yt_banner.png (2560x1440), 4 IG highlight covers, BIO.md. No name on the
-  art. Handle not chosen yet: the owner found common names taken; suggested coined names: Sarkora, Myonaut, Fibrexa, Myofyx, Liftora.
+  art. **Channel name: Musclyth** (owner's pick, 3 Nov; muscle + myth). Folder and secrets keep the name Pulse (`pulsereels/`, `IG_PULSE_*`, `YT_PULSE_*`).
 - **Still to do:** new IG + YT accounts → secrets `IG_PULSE_ACCESS_TOKEN`, `IG_PULSE_USER_ID`, `YT_PULSE_CLIENT_ID`,
   `YT_PULSE_CLIENT_SECRET`, `YT_PULSE_REFRESH_TOKEN` → `tools/pulse_post.py` + `post-pulse.yml` + `pulsereels/schedule.json`
   (copy the Lokvara poster pattern) → owner confirms post times → first post → `pulse-batch` routines (main + backup, every
