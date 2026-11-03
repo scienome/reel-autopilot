@@ -48,13 +48,13 @@ Folder: [`gears-pov/`](gears-pov/)
 | [006-shelter-dog](gears-pov/006-shelter-dog.mp4) | Nobody picks the old dog 🐶 | Posted on Instagram · on YouTube |
 | [007-search-history](gears-pov/007-search-history.mp4) | You can see everyone's search history 🔎 | Posted on Instagram · on YouTube |
 | [008-lie-counter](gears-pov/008-lie-counter.mp4) | You can see how many lies people told today 🤥 | Posted on Instagram · on YouTube |
-| [009-baby-thoughts](gears-pov/009-baby-thoughts.mp4) | You can understand babies 👶 | Waiting to post |
+| [009-baby-thoughts](gears-pov/009-baby-thoughts.mp4) | You can understand babies 👶 | Posted on Instagram · on YouTube |
 | [010-car-thoughts](gears-pov/010-car-thoughts.mp4) | You can hear what your car thinks 🚗 | Posted on Instagram · on YouTube |
 | [011-parrot-thoughts](gears-pov/011-parrot-thoughts.mp4) | You can hear what your parrot thinks 🦜 | Waiting to post |
 | [012-goldfish-memory](gears-pov/012-goldfish-memory.mp4) | You can hear what your goldfish thinks 🐠 | Posted on Instagram · on YouTube |
 | [013-fridge-judges-you](gears-pov/013-fridge-judges-you.mp4) | You can hear what your fridge thinks 🧀 | Waiting to post |
 | [014-pigeon-thoughts](gears-pov/014-pigeon-thoughts.mp4) | You can hear what pigeons think 🐦 | Waiting to post |
-| [015-phone-thoughts](gears-pov/015-phone-thoughts.mp4) | You can hear what your phone thinks 📱 | Waiting to post |
+| [015-phone-thoughts](gears-pov/015-phone-thoughts.mp4) | You can hear what your phone thinks 📱 | Posted on Instagram · on YouTube |
 | [016-grandpa-thoughts](gears-pov/016-grandpa-thoughts.mp4) | You can hear what your grandpa thinks 👴 | Posted on Instagram · on YouTube |
 | [017-cow-thoughts](gears-pov/017-cow-thoughts.mp4) | You can hear what cows think 🐄 | Waiting to post |
 | [018-boss-thoughts](gears-pov/018-boss-thoughts.mp4) | You can hear what your boss thinks 💼 | Waiting to post |
@@ -231,7 +231,7 @@ Folder: [`toy-reels/`](toy-reels/)
 | [57-emu-war](toy-reels/57-emu-war.mp4) | Australia Sent Machine Guns To Fight Birds 🐦 | Posted (Instagram + YouTube) |
 | [58-pig-war](toy-reels/58-pig-war.mp4) | America & Britain Nearly Went To War Over A Pig 🐖 | Waiting to post |
 | [59-war-of-the-bucket](toy-reels/59-war-of-the-bucket.mp4) | Two Cities Fought A War Over A Bucket 🪣 | Waiting to post |
-| [60-cadaver-synod](toy-reels/60-cadaver-synod.mp4) | A Pope Put A Dead Pope On Trial ⚖️ | Waiting to post |
+| [60-cadaver-synod](toy-reels/60-cadaver-synod.mp4) | A Pope Put A Dead Pope On Trial ⚖️ | Posted (Instagram + YouTube) |
 | [61-mary-toft-rabbits](toy-reels/61-mary-toft-rabbits.mp4) | She Fooled Royal Doctors Into Believing She Birthed Rabbits 🐇 | Waiting to post |
 | [62-cardiff-giant](toy-reels/62-cardiff-giant.mp4) | The 10-Foot Giant That Was A Fake Of A Fake 🗿 | Waiting to post |
 | [63-wojtek-soldier-bear](toy-reels/63-wojtek-soldier-bear.mp4) | Poland Enlisted A Bear As A Soldier 🐻 | Posted (Instagram + YouTube) |
@@ -243,7 +243,7 @@ Folder: [`toy-reels/`](toy-reels/)
 | [69-van-meegeren-forger](toy-reels/69-van-meegeren-forger.mp4) | He Sold A Fake Vermeer To Goering. Then Proved It. 🎨 | Posted (Instagram + YouTube) |
 | [70-great-stink-london](toy-reels/70-great-stink-london.mp4) | London Smelled So Bad Parliament Had To Act 🤢 | Waiting to post |
 | [71-bitcoin-pizza-day](toy-reels/71-bitcoin-pizza-day.mp4) | He Paid 10,000 Bitcoin For Two Pizzas 🍕 | Posted (Instagram + YouTube) |
-| [72-ghost-army-rubber-tanks](toy-reels/72-ghost-army-rubber-tanks.mp4) | America's Army Made Of Rubber Fooled The Nazis 🎈 | Waiting to post |
+| [72-ghost-army-rubber-tanks](toy-reels/72-ghost-army-rubber-tanks.mp4) | America's Army Made Of Rubber Fooled The Nazis 🎈 | Posted (Instagram + YouTube) |
 | [73-taco-liberty-bell](toy-reels/73-taco-liberty-bell.mp4) | Taco Bell 'Bought' The Liberty Bell 🔔🌮 | Waiting to post |
 | [74-dancing-plague-1518](toy-reels/74-dancing-plague-1518.mp4) | Hundreds Danced Non-Stop In 1518. Nobody Knows Why 💃 | Waiting to post |
 | [75-war-of-jenkins-ear](toy-reels/75-war-of-jenkins-ear.mp4) | Britain Went To War Over One Ear 👂⚔️ | Waiting to post |
