@@ -1,25 +1,36 @@
 PULSE CHANNEL — POSTING SETUP (paste into Claude Code on the owner's PC, in C:\Users\amang\reel-autopilot)
 
 You are setting up automatic posting for my new bodybuilding / fitness-science channel "Pulse" (folder pulsereels/).
-Talk to me in simple, short English; I'll do every sign-in and "Allow" click myself.
+Talk to me in simple, short English.
+
+BROWSER: do the website work yourself in the built-in browser (the browser pane in the Claude desktop app). Load the
+built-in-browser skill first if it is listed. Open each page, click through the menus and fill the forms yourself. Stop and
+hand over to me ONLY for: typing passwords, 2-step codes, captchas, and final "Allow"/consent clicks on Meta and Google
+screens — tell me exactly what to click, wait for me to say "done", then continue. If the built-in browser is not
+available, tell me how to turn it on and wait; don't switch to my Chrome without asking.
+
+SECRETS: when a page shows a token, client id/secret or refresh token, copy it straight from the page into
+`gh secret set <NAME> --repo scienome/reel-autopilot` (pipe it in, e.g. via a temp file you delete right after).
+Never print a secret in chat, in logs, in a commit or in a file that stays on disk.
 
 0. Run `git checkout main && git pull origin main` and set PYTHONUTF8=1. Read HANDOFF.md (sections 0, 1, 5, 6, 7b, 8, 11),
    then pulsereels/README.md. Run `python tools/claim.py status`. Reels render already: pushing pulsereels/reels/<id>/
    runs make-pulse.yml and publishes Release pulse-<id> (voice cBTYF7NiJbR8Bvmdeuse; never change it).
 1. Ask me for the new Instagram handle and YouTube channel name. Use exactly what I give you.
-2. INSTAGRAM (new account): guide me step by step. Switch it to a Professional (Creator) account, add it to the Meta app
+2. INSTAGRAM (new account), in the built-in browser. Switch it to a Professional (Creator) account, add it to the Meta app
    "Reel Autopilot" (developers.facebook.com → Instagram API setup with Instagram login), generate a long-lived token with
-   instagram_business_content_publish and instagram_business_manage_comments. I paste the token and user id into
-   `gh secret set IG_PULSE_ACCESS_TOKEN` / `gh secret set IG_PULSE_USER_ID` in the terminal myself — never ask me to paste
-   secrets in chat, never print them.
-3. YOUTUBE (new channel): follow HANDOFF section 6 exactly. New Google Cloud project, YouTube Data API v3, OAuth consent
+   instagram_business_content_publish and instagram_business_manage_comments. Save them as secrets
+   IG_PULSE_ACCESS_TOKEN and IG_PULSE_USER_ID (see SECRETS). If the account must first be switched to Professional in the
+   Instagram app on my phone, tell me the taps and wait.
+3. YOUTUBE (new channel), in the built-in browser: follow HANDOFF section 6 exactly. New Google Cloud project, YouTube Data API v3, OAuth consent
    screen set to "In production" (Testing tokens die in 7 days), Web client with redirect
    https://developers.google.com/oauthplayground, refresh token from OAuth Playground with scope youtube.upload, signed in as
-   the NEW channel. I set YT_PULSE_CLIENT_ID, YT_PULSE_CLIENT_SECRET, YT_PULSE_REFRESH_TOKEN with `gh secret set` myself.
-   Then check the three secrets exist with `gh secret list`.
+   the NEW channel (I pick the channel on Google's account chooser). Save YT_PULSE_CLIENT_ID, YT_PULSE_CLIENT_SECRET and
+   YT_PULSE_REFRESH_TOKEN as secrets (see SECRETS). Then check all five Pulse secrets exist with `gh secret list`.
 4. POSTER: copy the Lokvara pattern (post-mythreels.yml + tools/myth_post.py), which posts the next rendered reel to
    Instagram AND YouTube Shorts at the same minute, posts the first comment and renews the Instagram token.
-   Make tools/pulse_post.py + .github/workflows/post-pulse.yml + pulsereels/schedule.json ({"queue": [...], "post_times_ist": [...]})
+   The gh token may lack workflow scope: if pushing the workflow fails, add it on github.com in the built-in browser
+   (HANDOFF section 12b, "Workflow files"). Make tools/pulse_post.py + .github/workflows/post-pulse.yml + pulsereels/schedule.json ({"queue": [...], "post_times_ist": [...]})
    + pulsereels/posted.json. It must: post only reels whose Release pulse-<id> exists, in queue order; read title, caption,
    hashtags, first_comment from meta.json; use cover.jpg; skip a slot with nothing rendered; honour "paused" in
    schedule.json; never post the same reel twice (check posted.json and YouTube before uploading). Do not change any other
