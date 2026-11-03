@@ -1,0 +1,8 @@
+{
+  "voice": {
+    "voice_id": "cBTYF7NiJbR8Bvmdeuse",
+    "model_id": "eleven_v4"
+  },
+  "release_prefix": "pulse",
+  "fps": 30
+}

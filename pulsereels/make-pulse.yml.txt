@@ -1,0 +1,58 @@
+name: Make pulse reels
+# Bodybuilding science channel (pulsereels/). When a reel's script.json, story.js or meta.json changes on main, or by hand:
+# voices it with the voice in pulsereels/config.json, renders it and publishes the Release pulse-<id>. It never posts.
+on:
+  push:
+    branches: [main]
+    paths: ['pulsereels/reels/**/script.json', 'pulsereels/reels/**/story.js', 'pulsereels/reels/**/meta.json']
+  workflow_dispatch:
+    inputs:
+      reel:
+        description: 'Reel ids, space separated (empty = every reel without a Release)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: make-pulse
+  cancel-in-progress: false
+
+jobs:
+  make:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Install tools
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fontconfig
+          pip install -q playwright pillow
+          python -m playwright install --with-deps chromium
+      - name: Voice, render, release
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          GH_TOKEN: ${{ github.token }}
+          REELS: ${{ inputs.reel }}
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
+          EVENT: ${{ github.event_name }}
+        run: |
+          git config user.name "pulse-bot"; git config user.email "pulse-bot@users.noreply.github.com"
+          LIST="$REELS"
+          if [ -z "$LIST" ] && [ "$EVENT" = "push" ]; then LIST=$(git diff --name-only "$BEFORE" "$AFTER" -- pulsereels/reels | cut -d/ -f3 | sort -u); fi
+          if [ -z "$LIST" ]; then for d in pulsereels/reels/*/; do id=$(basename "$d"); gh release view "pulse-$id" >/dev/null 2>&1 || LIST="$LIST $id"; done; fi
+          for id in $LIST; do
+            [ -f "pulsereels/reels/$id/story.js" ] || continue
+            python tools/pulse_make.py "$id"
+            git add "pulsereels/reels/$id/voice_lines"
+            git diff --cached --quiet || (git commit -q -m "Voice for pulse $id [skip ci]" && git pull --rebase -q && git push -q)
+            gh release delete "pulse-$id" --yes --cleanup-tag >/dev/null 2>&1 || true
+            gh release create "pulse-$id" "out/$id/$id.mp4" "out/$id/cover.jpg" "out/$id/caption.txt" "out/$id/player.html" --title "pulse $id" --notes-file "out/$id/caption.txt"
+          done

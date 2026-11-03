@@ -4,3 +4,4 @@ __pycache__/
 *.pyc
 out/invites/
 out/myth/
+out/[0-9]*/
