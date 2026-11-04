@@ -19,5 +19,11 @@
   "text": "triumphant short fanfare",
   "duration_seconds": 1.2,
   "prompt_influence": 0.5
+ },
+ "music-30963ce83b0e.mp3": {
+  "prompt": "Comedic Victorian music-hall piano with wobbly tuba and kazoo, playful, no vocals",
+  "music_length_ms": 35160,
+  "model_id": "music_v1",
+  "force_instrumental": true
  }
 }
