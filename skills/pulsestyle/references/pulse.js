@@ -22,7 +22,7 @@
     cyan: '#3fe0ff', aqua: '#86f7e2', mint: '#3ddc97', teal: '#13b5a8', green: '#2fd16a',
     skin: '#f6a37d', skinD: '#d97b5b', hair: '#2a1650', grey: '#a9b3d6', steel: '#d7defa', white: '#ffffff',
   };
-  const hex = (h) => { h = h.replace('#', ''); const n = parseInt(h, 16); return [(n >> 16) & 255, (n >> 8) & 255, n & 255]; };
+  const hex = (h) => { if (h.startsWith('rgb')) return h.replace(/[^\d.,]/g, '').split(',').slice(0, 3).map(Number); h = h.replace('#', ''); const n = parseInt(h, 16); return [(n >> 16) & 255, (n >> 8) & 255, n & 255]; };
   const rgb = (a, al = 1) => `rgba(${a[0] | 0},${a[1] | 0},${a[2] | 0},${al})`;
   const mixc = (c1, c2, t) => { const a = hex(c1), b = hex(c2); return rgb([0, 1, 2].map((i) => a[i] + (b[i] - a[i]) * t)); };
   P.shade = (c, k = 0.28) => mixc(c, '#1a0b5e', k);   // shade toward indigo, never toward grey/black
@@ -914,4 +914,159 @@
   P.reps = (ctx, x, y, n, total, col = PAL.amber, r = 18) => { const gap = r * 2.6, x0 = x - (total - 1) * gap / 2; for (let i = 0; i < total; i++) { const on = i < n; P.flat(ctx, P.circ(x0 + i * gap, y, on ? r : r * 0.7), on ? col : 'rgba(255,255,255,0.18)', { off: on ? 3 : 0, light: on ? 0.22 : 0 }); } };
   // series badge for frame 0: "WHY DOES THIS HAPPEN? #1" style pill with an icon dot
   P.seriesTag = (ctx, x, y, text, k = 1, col = PAL.magenta) => P.label(ctx, text, x, y, k, { color: col, size: 28 });
+})();
+
+// ======================= PROPS PACK 3 (4 Nov 2026): week-1 topics + the P.reel builder =======================
+(function () {
+  const P = window.P, PAL = P.PAL, TAU = Math.PI * 2, cl = P.cl, lerp = P.lerp;
+  const at = (ctx, x, y, s, rot = 0) => { ctx.save(); ctx.translate(x, y); if (rot) ctx.rotate(rot); ctx.scale(s, s); };
+  const txt = (ctx, s, x, y, size, color = PAL.white, w = 900) => { ctx.font = `${w} ${size}px ${P.FONT}`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillStyle = color; ctx.fillText(s, x, y); };
+
+  // big close-up head of the lifter. o: { red 0..1, puff 0..1 (held breath cheeks), sweat, sleepy, shock, smile, wince, look, blink, t }
+  P.face = (ctx, x, y, s = 1, o = {}) => { at(ctx, x, y, s); const red = cl(o.red || 0), t = o.t || 0;
+    P.flat(ctx, P.rr(-50, 120, 100, 90, 30), PAL.skinD, { light: 0, off: 0 });
+    P.flat(ctx, P.rr(-180, 190, 360, 120, 60), PAL.teal, { off: 8 });
+    const skin = PAL.skin, r = 150 + (o.puff || 0) * 8;
+    P.flat(ctx, P.ell(0, 0, r + (o.puff || 0) * 14, r), skin, { off: 14 });
+    if (red > 0) { P.fill(ctx, P.ell(0, 30, (r + (o.puff || 0) * 14) * 0.92, r * 0.8), P.alpha('#ff6f7d', 0.32 * red)); P.glow(ctx, 0, 40, r * 1.2, '#ff5a6a', 0.25 * red); }
+    P.flat(ctx, P.blob([[-150, -20], [-140, -110], [-70, -170], [-20, -150], [30, -190], [80, -150], [140, -140], [154, -40], [110, -70], [-110, -70]]), PAL.hair, { off: 10, light: 0.15 });
+    P.fill(ctx, P.rr(-152, -78, 304, 40, 20), PAL.orange);
+    const look = (o.look || 0) * 18, bl = o.blink || 0, sl = o.sleepy ? 0.55 : 0, w = o.wince || 0;
+    for (const sd of [-1, 1]) { const ex = sd * 56 + look, ey = 10, sk = 1 + (o.shock || 0) * 0.35;
+      P.fill(ctx, P.ell(ex, ey, 30 * sk, Math.max(2, 36 * sk * (1 - bl) * (1 - sl) * (1 - w * 0.6))), PAL.white);
+      if (bl < 0.8) P.fill(ctx, P.circ(ex + look * 0.3, ey + 6, 15 / Math.sqrt(sk)), PAL.ink);
+      if (w > 0.1 || sl) { ctx.save(); ctx.strokeStyle = PAL.hair; ctx.lineWidth = 12; ctx.lineCap = 'round'; ctx.beginPath(); ctx.moveTo(ex - sd * 34, ey - 42 + (sl ? 14 : 0)); ctx.lineTo(ex + sd * 30, ey - 34 + w * 12); ctx.stroke(); ctx.restore(); } }
+    P.fill(ctx, P.circ(-96, 64, 22), `rgba(255,70,100,${0.35 + red * 0.4})`); P.fill(ctx, P.circ(96, 64, 22), `rgba(255,70,100,${0.35 + red * 0.4})`);
+    ctx.save(); ctx.strokeStyle = PAL.ink; ctx.fillStyle = PAL.ink; ctx.lineWidth = 11; ctx.lineCap = 'round';
+    if (o.puff) { P.fill(ctx, P.ell(0, 90, 30, 10), P.shade(PAL.red, 0.2)); }
+    else if (o.shock) { P.fill(ctx, P.ell(0, 92, 26, 32), PAL.ink); }
+    else if (o.smile) { ctx.beginPath(); ctx.arc(0, 66, 36, 0.15 * Math.PI, 0.85 * Math.PI); ctx.stroke(); }
+    else if (w > 0.3) { ctx.beginPath(); ctx.moveTo(-34, 92); for (let i = 1; i <= 6; i++) ctx.lineTo(-34 + i * 11.3, 92 + (i % 2 ? -10 : 0)); ctx.stroke(); }
+    else { ctx.beginPath(); ctx.moveTo(-22, 92); ctx.lineTo(22, 92); ctx.stroke(); }
+    ctx.restore();
+    if (o.sweat) P.sweat(ctx, 120, -60, t, 1, 3);
+    if (o.puff) for (const sd of [-1, 1]) P.fill(ctx, P.circ(sd * 120, 70, 30 * o.puff), 'rgba(255,140,150,0.65)');
+    ctx.restore(); };
+
+  // dial gauge: k 0..1 needle, zones low/high coloured, label + value text
+  P.gauge = (ctx, x, y, r, k, label = '', value = '', col = PAL.red) => {
+    P.flat(ctx, P.circ(x, y, r), PAL.ink, { off: r * 0.06, light: 0.15 });
+    ctx.save(); ctx.lineWidth = r * 0.16; ctx.lineCap = 'round';
+    [[0, 0.5, PAL.mint], [0.5, 0.8, PAL.amber], [0.8, 1, PAL.red]].forEach(([a, b, c]) => { ctx.strokeStyle = c; ctx.beginPath(); ctx.arc(x, y, r * 0.74, Math.PI * (0.8 + a * 1.4), Math.PI * (0.8 + b * 1.4)); ctx.stroke(); });
+    const a = Math.PI * (0.8 + cl(k) * 1.4); ctx.strokeStyle = PAL.white; ctx.lineWidth = r * 0.07; ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x + Math.cos(a) * r * 0.66, y + Math.sin(a) * r * 0.66); ctx.stroke(); ctx.restore();
+    P.fill(ctx, P.circ(x, y, r * 0.1), PAL.white);
+    if (value) { ctx.save(); txt(ctx, value, x, y + r * 0.42, r * 0.3, PAL.yellow); ctx.restore(); }
+    if (label) P.label(ctx, label, x, y + r + 40, 1, { color: col, size: 24 }); };
+
+  // skin cross-section: surface, sweat glands that pump drops out (k = sweat rate), blood vessel that widens (flush)
+  P.skinLayer = (ctx, x, y, w, t, k = 0, flush = 0) => { const h = 380;
+    P.flat(ctx, P.rr(x - w / 2, y, w, h, 30), '#f2b38f', { off: 8 }); P.fill(ctx, P.rr(x - w / 2, y, w, 40, 20), PAL.skin);
+    P.vessel(ctx, x - w / 2 + 10, y + h - 70, w - 20, 34 + flush * 26, t, { speed: 80 + flush * 120, seed: 9 });
+    for (let i = 0; i < 4; i++) { const gx = x - w / 2 + (i + 0.5) * w / 4;
+      ctx.save(); ctx.strokeStyle = '#d98d6c'; ctx.lineWidth = 12; ctx.lineCap = 'round'; ctx.beginPath(); ctx.moveTo(gx, y + 20); ctx.lineTo(gx, y + 180); ctx.stroke(); ctx.restore();
+      P.flat(ctx, P.circ(gx, y + 200, 30), '#e79a7a', { off: 5 });
+      if (k > 0) { for (let j = 0; j < 2; j++) { const ph = ((t * (0.6 + k) + j / 2 + i * 0.3) % 1); if (ph < k + 0.2) P.drop(ctx, gx, y + 180 - ph * 220, 10 + 6 * k, PAL.cyan); } } } };
+
+  // joint close-up: two bone ends with fluid between; bubble forms with k (0..1) and pops at k>=1 (flash)
+  P.jointBubble = (ctx, x, y, s, k, gap = 0) => { at(ctx, x, y, s);
+    P.fill(ctx, P.ell(0, 0, 150, 110 + gap * 20), P.alpha(PAL.aqua, 0.45));
+    P.flat(ctx, P.rr(-60, -360 - gap * 20, 120, 300, 50), PAL.bone, { off: 8 }); P.flat(ctx, P.ell(0, -70 - gap * 20, 90, 46), PAL.bone, { off: 8 });
+    P.flat(ctx, P.rr(-56, 60 + gap * 20, 112, 300, 50), PAL.bone, { off: 8 }); P.flat(ctx, P.ell(0, 72 + gap * 20, 84, 40), PAL.bone, { off: 8 });
+    P.fill(ctx, P.ell(0, -44 - gap * 20, 80, 12), PAL.aqua); P.fill(ctx, P.ell(0, 48 + gap * 20, 76, 10), PAL.aqua);
+    if (k > 0 && k < 1) { P.flat(ctx, P.circ(30, 0, 8 + 40 * k), P.alpha(PAL.white, 0.85), { off: 4 }); }
+    if (k >= 1 && k < 1.4) { const e = (k - 1) / 0.4; P.glow(ctx, 30, 0, 200 * e, PAL.white, 0.8 * (1 - e)); for (let i = 0; i < 8; i++) { const a = i / 8 * TAU; P.fill(ctx, P.circ(30 + Math.cos(a) * 60 * (1 + e), Math.sin(a) * 60 * (1 + e), 8 * (1 - e)), PAL.white); } }
+    ctx.restore(); };
+
+  // analog clock: h, m (numbers), optional label
+  P.clock = (ctx, x, y, r, h, m, label = '') => { P.flat(ctx, P.circ(x, y, r), PAL.white, { off: r * 0.06 }); P.fill(ctx, P.circ(x, y, r * 0.86), '#eef1ff');
+    for (let i = 0; i < 12; i++) { const a = i / 12 * TAU; P.fill(ctx, P.circ(x + Math.cos(a) * r * 0.72, y + Math.sin(a) * r * 0.72, i % 3 ? r * 0.03 : r * 0.055), PAL.ink); }
+    const hand = (a, l, w, c) => { ctx.save(); ctx.strokeStyle = c; ctx.lineWidth = w; ctx.lineCap = 'round'; ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x + Math.cos(a) * l, y + Math.sin(a) * l); ctx.stroke(); ctx.restore(); };
+    hand(-Math.PI / 2 + ((h % 12) + m / 60) / 12 * TAU, r * 0.45, r * 0.09, PAL.ink); hand(-Math.PI / 2 + m / 60 * TAU, r * 0.66, r * 0.06, PAL.red); P.fill(ctx, P.circ(x, y, r * 0.07), PAL.ink);
+    if (label) P.label(ctx, label, x, y + r + 40, 1, { color: PAL.blue, size: 26 }); };
+
+  // receptor on a cell membrane with a key that docks: key 'adenosine' (sleepy, purple) or 'caffeine' (blocker, brown); k 0..1 docking
+  P.receptor = (ctx, x, y, s, key = 'adenosine', k = 0, blocked = 0) => { at(ctx, x, y, s);
+    P.flat(ctx, P.rr(-200, 40, 400, 60, 30), PAL.pink, { off: 5 });
+    P.flat(ctx, P.poly([[-60, 40], [-60, -40], [-24, -40], [-24, 0], [24, 0], [24, -40], [60, -40], [60, 40]]), PAL.magenta, { off: 6 });
+    const ky = lerp(-260, -40, cl(k)), col = key === 'caffeine' ? '#7a4a2a' : PAL.grape;
+    P.flat(ctx, P.rr(-22, ky - 70, 44, 70, 12), col, { off: 4 }); P.flat(ctx, P.circ(0, ky - 92, 40), col, { off: 5 });
+    txt(ctx, key === 'caffeine' ? 'C' : 'A', 0, ky - 92, 40);
+    if (blocked > 0) P.stampX(ctx, 150, -170, 60, blocked);
+    ctx.restore(); };
+
+  // the 9 essential amino acids as beads; hi = indices to highlight (BCAAs are 0, 1, 2: leucine, isoleucine, valine)
+  P.aminos = (ctx, x, y, r, t, hi = [], k = 1, labels = false) => { const n = 9, names = ['LEU', 'ILE', 'VAL', 'LYS', 'MET', 'PHE', 'THR', 'TRP', 'HIS'];
+    for (let i = 0; i < n; i++) { const kk = cl(k * n - i); if (kk <= 0) break; const a = i / n * TAU - Math.PI / 2 + t * 0.2, bx = x + Math.cos(a) * r, by = y + Math.sin(a) * r, on = hi.includes(i);
+      if (on) P.glow(ctx, bx, by, 70, PAL.amber, 0.6); P.flat(ctx, P.circ(bx, by, (on ? 34 : 26) * (kk < 1 ? H.ease.back(kk) : 1)), on ? PAL.amber : [PAL.mint, PAL.cyan, PAL.pink][i % 3], { off: 4 });
+      if (labels) { ctx.save(); txt(ctx, names[i], bx, by + 1, 16, PAL.ink); ctx.restore(); } } };
+
+  // close-up flexed upper arm: pump 0..1 swells it and pops veins
+  P.arm = (ctx, x, y, s, pump = 0, t = 0) => { at(ctx, x, y, s); const sw = 1 + pump * 0.22;
+    P.flat(ctx, P.capsule(-220, 120, 40, 120, 70, 64), PAL.skin, { off: 10 });
+    P.flat(ctx, P.capsule(40, 120, 120, -150, 62, 52), PAL.skin, { off: 10 }); P.flat(ctx, P.circ(130, -200, 62), PAL.skin, { off: 8 });
+    P.flat(ctx, P.ell(-80, 60 - pump * 16, 120 * sw, 92 * sw, -0.05), PAL.skin, { off: 12 });
+    if (pump > 0.2) { ctx.save(); ctx.globalAlpha = (pump - 0.2) / 0.8; ctx.strokeStyle = '#5a7bd8'; ctx.lineWidth = 9; ctx.lineCap = 'round'; ctx.beginPath(); ctx.moveTo(-180, 110); ctx.bezierCurveTo(-120, 70, -60, 120, -10, 70); ctx.moveTo(-90, 100); ctx.quadraticCurveTo(-60, 40, -30, 20); ctx.moveTo(60, 100); ctx.quadraticCurveTo(80, 0, 100, -100); ctx.stroke(); ctx.restore(); }
+    P.flat(ctx, P.rr(-300, 60, 120, 140, 40), PAL.teal, { off: 8 }); ctx.restore(); };
+
+  // a 7-day week strip: marks = array of 7 values (0 rest, n = sets shown as dots); k reveal
+  P.week = (ctx, x, y, w, marks, k = 1, col = PAL.amber) => { const d = ['M', 'T', 'W', 'T', 'F', 'S', 'S'], cw = w / 7;
+    for (let i = 0; i < 7; i++) { const kk = cl(k * 7 - i); if (kk <= 0) break; const cx = x - w / 2 + cw * (i + 0.5);
+      P.flat(ctx, P.rr(cx - cw / 2 + 5, y - 70, cw - 10, 160, 18), marks[i] ? P.alpha(col, 0.9) : 'rgba(255,255,255,0.12)', { off: marks[i] ? 4 : 0, light: marks[i] ? 0.2 : 0 });
+      ctx.save(); txt(ctx, d[i], cx, y - 40, 28, marks[i] ? PAL.ink : PAL.white); ctx.restore();
+      for (let j = 0; j < (marks[i] || 0); j++) P.fill(ctx, P.circ(cx, y + 2 + j * 16, 6), PAL.ink); } };
+
+  // curved motion arrow from angle a0 to a1 around (x, y) radius r
+  P.arcArrow = (ctx, x, y, r, a0, a1, k = 1, col = PAL.yellow, w = 14) => { if (k <= 0) return; const a = lerp(a0, a1, cl(k));
+    ctx.save(); ctx.strokeStyle = col; ctx.lineWidth = w; ctx.lineCap = 'round'; ctx.beginPath(); ctx.arc(x, y, r, Math.min(a0, a), Math.max(a0, a)); ctx.stroke();
+    const dir = a1 > a0 ? 1 : -1, hx = x + Math.cos(a) * r, hy = y + Math.sin(a) * r, ta = a + dir * Math.PI / 2; ctx.fillStyle = col; ctx.beginPath();
+    ctx.moveTo(hx + Math.cos(ta) * w * 1.8, hy + Math.sin(ta) * w * 1.8); ctx.lineTo(hx + Math.cos(ta + 2.3) * w * 1.6, hy + Math.sin(ta + 2.3) * w * 1.6); ctx.lineTo(hx + Math.cos(ta - 2.3) * w * 1.6, hy + Math.sin(ta - 2.3) * w * 1.6); ctx.closePath(); ctx.fill(); ctx.restore(); };
+
+  // lying / bridging side-view poses built on a bench: 'bench' (press, k = bar down) and 'hipthrust' (k = hips up)
+  P.lifterBench = (ctx, x, y, s, pose = 'bench', o = {}) => { const k = cl(o.k == null ? 1 : o.k); at(ctx, x, y, s); const SK = PAL.skin;
+    P.bench(ctx, pose === 'bench' ? 0 : -150, 0, 1);
+    if (pose === 'bench') { const by = -110, shX = -110, hipX = 70;
+      P.flat(ctx, P.capsule(hipX, by, 150, -60, 24, 21), '#272a8f', { off: 5 }); P.flat(ctx, P.capsule(150, -60, 170, -8, 18, 15), SK, { off: 4 }); P.flat(ctx, P.rr(150, -16, 50, 20, 8), '#f4f4ff', { off: 3 });
+      P.flat(ctx, P.capsule(shX, by - 8, hipX, by, 33, 30), PAL.teal, { off: 7 });
+      const barY = lerp(by - 230, by - 60, k), handX = shX + 30, elb = [shX + 60, lerp(by - 120, by - 20, k)];
+      P.flat(ctx, P.capsule(shX + 10, by - 20, elb[0], elb[1], 16), SK, { off: 4 }); P.flat(ctx, P.capsule(elb[0], elb[1], handX, barY, 14), SK, { off: 4 });
+      P.flat(ctx, P.circ(shX - 62, by - 30, 38), SK, { off: 6 }); P.fill(ctx, P.rr(shX - 100, by - 74, 76, 18, 8), PAL.hair); P.fill(ctx, P.rr(shX - 100, by - 58, 76, 10, 5), PAL.orange);
+      P.fill(ctx, P.ell(shX - 62, by - 52, 9, 7), PAL.white); P.fill(ctx, P.circ(shX - 62, by - 54, 4), PAL.ink);
+      P.flat(ctx, P.circ(handX, barY, 58), PAL.orange, { off: 6 }); P.fill(ctx, P.circ(handX, barY, 12), PAL.steel);
+    } else { const lift = k, shX = -200, shY = -120, kneeX = 140;
+      const hipY = lerp(-30, -150, lift), hipX = 10;
+      P.flat(ctx, P.capsule(kneeX, lerp(-110, -150, lift), 170, -10, 18, 15), SK, { off: 4 }); P.flat(ctx, P.rr(150, -16, 52, 20, 8), '#f4f4ff', { off: 3 });
+      P.flat(ctx, P.capsule(hipX, hipY, kneeX, lerp(-110, -150, lift), 26, 21), '#272a8f', { off: 6 });
+      P.flat(ctx, P.capsule(shX, shY, hipX, hipY, 33, 29), PAL.teal, { off: 7 });
+      P.flat(ctx, P.circ(hipX, hipY - 40, 54), PAL.orange, { off: 6 }); P.fill(ctx, P.circ(hipX, hipY - 40, 12), PAL.steel);
+      P.flat(ctx, P.circ(shX - 50, shY - 34, 38), SK, { off: 6 }); P.fill(ctx, P.rr(shX - 88, shY - 76, 76, 18, 8), PAL.hair); P.fill(ctx, P.rr(shX - 88, shY - 60, 76, 10, 5), PAL.orange);
+      P.fill(ctx, P.ell(shX - 36, shY - 36, 9, 7), PAL.white); P.fill(ctx, P.circ(shX - 34, shY - 36, 4), PAL.ink);
+      if (o.glow) P.glow(ctx, hipX + 10, hipY + 10, 140, PAL.magenta, 0.6 * o.glow);
+    }
+    ctx.restore(); };
+
+  // ---------------- P.reel: shared builder so a reel is just scenes + sounds ----------------
+  // P.reel({ merge: [[spoken, caption]], scenes: (A) => [{ at, name, tr, focus, draw: (ctx, t) => {} }], sfx: (A) => [[name, time, opts]] })
+  // A = { wt, L, pop, ramp, W, H, PAL, blink, last } ; at = start time (use A.L(i) - 0.2); first scene at 0.
+  P.reel = (cfg) => {
+    const W = 720, H_ = 1280, SCRIPT = P.reelScript();
+    const WORDS = P.mergeWords(P.words(SCRIPT), cfg.merge || []);
+    const CHUNKS = P.chunks(WORDS.map((w) => ({ ...w, w: w.cap || w.w })), 3);
+    const wt = (k, n) => P.wt(WORDS, k, n), L = (i) => SCRIPT[i][1][0][0];
+    const DURATION = +((window.TIMING && window.TIMING.duration) || WORDS[WORDS.length - 1].end + 1.4).toFixed(2);
+    const A = { wt, L, pop: P.pop, ramp: P.ramp, W, H: H_, PAL, last: SCRIPT.length - 1, blink: (t, s = 0) => (Math.sin(t * 1.7 + s) > 0.985 ? 1 : 0), dur: DURATION };
+    // standard pieces
+    A.hookTitle = (ctx, lines, tag, tagCol = PAL.magenta, size = 76) => { P.title(ctx, lines, W / 2, 150, 1, { size }); P.label(ctx, tag, W / 2, 150 + lines.length * size * 1.02 + 20, 1, { color: tagCol, size: 26 }); };
+    A.next = (ctx, t, what, col = PAL.mint) => P.title(ctx, ['Next:', what], W / 2, 190, P.pop(t, L(SCRIPT.length - 1) - 0.1, 0.6), { size: what.length > 14 ? 54 : 66, color: col });
+    let CUR = 0; const scenes = cfg.scenes(A);
+    const SEQ = scenes.map((s) => ({ t: s.at, draw: (c) => s.draw(c, CUR), tr: s.tr, focus: s.focus }));
+    function explainer(ctx, W_, H2, t) { CUR = t; ctx.save(); P.sequence(ctx, W, H_, t, SEQ); ctx.restore(); P.finish(ctx, W, H_); P.caption(ctx, W, H_, P.captionAt(CHUNKS, t)); }
+    const BEATS = scenes.map((s, i) => ({ t: s.at, name: s.name || 's' + i }));
+    window.LESSON = { BEATS, DURATION, explainer, WORDS, CHUNKS };
+    window.scoreSound = (k) => {
+      k.play('riser', 0, { dur: 0.6, gain: 0.5 }); k.play('pop', 0.05, { f: 760 });
+      SEQ.slice(1).forEach((s) => k.play(s.tr === 'zoom' ? 'whoosh' : 'swish', s.t, s.tr === 'zoom' ? { dur: 0.8, top: 3200 } : { dur: 0.3 }));
+      (cfg.sfx ? cfg.sfx(A) : []).forEach(([n, tt, o]) => k.play(n, tt, o || {}));
+      k.play('success', L(SCRIPT.length - 1)); k.play('sparkle', L(SCRIPT.length - 1) + 0.3, { n: 10 });
+    };
+  };
 })();

@@ -1,0 +1,15 @@
+// 025 Supplements 4: BCAAs (Wolfe 2017; Plotkin 2021; Jackman 2017)
+(function () {
+P.reel({ scenes: (A) => { const { L, pop, ramp, W, H, PAL } = A; return [
+  { at: 0, name: 'hook', draw: (c, t) => { P.bg(c, W, H, 'violet', t); P.bgCells(c, W, H, t, '#ffffff', 5, 0.05); P.tub(c, W / 2, 760 + Math.sin(t * 2) * 8, 1.5, '#3a1460', 'BCAA', 'amino acids', PAL.pink); for (let i = 0; i < 3; i++) P.pill(c, 170 + i * 190, 1050, 0.9, 0.3 + i * 0.4, PAL.amber, PAL.white);
+    A.hookTitle(c, ['Are BCAAs', 'WORTH IT?'], 'Supplement Series · Part 4'); } },
+  { at: L(2) - 0.2, name: 'three', tr: 'zoom', focus: [W / 2, 640], draw: (c, t) => { P.bg(c, W, H, 'deep', t); P.bgCells(c, W, H, t, PAL.cyan, 3, 0.05); P.aminos(c, W / 2, 640, 230, t * 0.3, pop(t, L(2) + 2) > 0 ? [0, 1, 2] : [], ramp(t, L(2), L(2) + 1.5), true);
+    P.label(c, '9 essential amino acids', W / 2, 220, pop(t, L(2)) * (1 - pop(t, L(2) + 2)), { color: PAL.cyan }); P.label(c, 'BCAAs = 3 of them', W / 2, 220, pop(t, L(2) + 2) * (1 - pop(t, L(3) - 0.2)), { color: PAL.amber });
+    P.label(c, 'Leucine flips the switch', W / 2, 220, pop(t, L(3)), { color: PAL.amber }); P.bulb(c, W / 2, 640, 44, pop(t, L(3) + 0.5)); } },
+  { at: L(4) - 0.2, name: 'cement', tr: 'slide', draw: (c, t) => { P.bg(c, W, H, 'plum', t); P.label(c, 'You need ALL 9', W / 2, 200, pop(t, L(4)), { color: PAL.mint });
+    const bricks = (x, y, n, cem) => { for (let i = 0; i < n; i++) { const bx = x + (i % 3) * 70 - 70, by = y - Math.floor(i / 3) * 44; P.flat(c, P.rr(bx - 32, by - 18, 64, 36, 6), PAL.orange, { off: 4 }); if (cem) P.fill(c, P.rr(bx - 34, by + 18, 68, 8, 3), PAL.grey); } };
+    if (pop(t, L(5)) > 0) { bricks(200, 700, 9, false); P.label(c, 'Bricks only', 200, 820, pop(t, L(5)), { color: PAL.amber, size: 24 }); bricks(520, 700, 9, true); P.label(c, '+ cement', 520, 820, pop(t, L(5) + 1.2), { color: PAL.mint, size: 24 }); P.stampX(c, 200, 620, 80, pop(t, L(5) + 1.8)); } } },
+  { at: L(6) - 0.2, name: 'reviews', tr: 'slide', draw: (c, t) => { P.bg(c, W, H, 'violet', t); P.evidence(c, W / 2, 500, 1, pop(t, L(6) + 0.6)); P.label(c, 'If you already eat enough protein', W / 2, 260, pop(t, L(6)), { color: PAL.amber, size: 28 }); } },
+  { at: L(7) - 0.2, name: 'food', tr: 'slide', draw: (c, t) => { P.bg(c, W, H, 'deep', t); [[(x, y) => P.chicken(c, x, y, 0.8)], [(x, y) => P.egg(c, x, y, 50)], [(x, y) => P.milk(c, x, y, 0.8)], [(x, y) => P.tub(c, x, y, 0.6, PAL.ink, 'WHEY')]].forEach(([f], i) => { if (pop(t, L(7) + i * 0.3) > 0) f(150 + i * 140, 620); });
+    P.label(c, 'Already full of BCAAs', W / 2, 380, pop(t, L(7) + 1), { color: PAL.mint }); P.check(c, 'Spend on food first', W / 2, 1070, true, pop(t, L(8)) * (1 - pop(t, L(9) - 0.2)), 30); A.next(c, t, 'FISH OIL'); } },
+]; }, sfx: (A) => [['pop', A.L(2) + 2, { f: 760 }], ['powerup', A.L(3) + 0.5, { gain: 0.5 }], ['thud', A.L(5), { gain: 0.4 }], ['stamp', A.L(5) + 1.8, { gain: 0.5 }], ['error', A.L(6) + 0.6, { gain: 0.3 }], ['ding', A.L(7) + 1, { f: 'E6' }], ['pop', A.L(8), { f: 820 }]] });

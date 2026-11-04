@@ -1,0 +1,13 @@
+// 028 Muscle Building 5: training to failure (Grgic 2022; Refalo 2023; Moran-Navarro 2017)
+(function () {
+P.reel({ merge: [['one to three reps', '1-3 reps']], scenes: (A) => { const { L, pop, ramp, W, H, PAL } = A; return [
+  { at: 0, name: 'hook', draw: (c, t) => { P.gym(c, W, H, t); const rep = 0.5 - 0.5 * Math.cos(t * 2.2); c.save(); P.shake(c, t, 1.2, 0.6, 1.5); P.lifter(c, W / 2, H * 0.86, 1.35, { arms: 'down', arms2: 'curl', mix: rep * 0.8, wince: 1, blink: A.blink(t) }); c.restore();
+    P.reps(c, W / 2, 470, Math.min(10, Math.floor(t * 3)), 10, PAL.red); A.hookTitle(c, ['Train To', 'FAILURE?'], 'Muscle Building · Part 5'); } },
+  { at: L(2) - 0.2, name: 'define', tr: 'slide', draw: (c, t) => { P.bg(c, W, H, 'night', t); P.reps(c, W / 2, 600, 8, 9, PAL.amber, 24); P.stampX(c, W / 2 + 4 * 62, 600, 50, pop(t, L(2) + 1.2)); P.label(c, "Failure = can't do one more", W / 2, 260, pop(t, L(2)), { color: PAL.red, size: 30 }); } },
+  { at: L(3) - 0.2, name: 'review', tr: 'slide', draw: (c, t) => { P.bg(c, W, H, 'violet', t); P.versus(c, W / 2, 560, 660, 400, 'To failure', 'Few short', pop(t, L(3)), 0, (cc) => P.reps(cc, 0, 40, 10, 10, PAL.red, 12), (cc) => P.reps(cc, 0, 40, 8, 10, PAL.mint, 12));
+    P.counter(c, '= growth', W / 2, 870, 76, pop(t, L(4)), PAL.mint); P.label(c, 'as long as sets are close', W / 2, 980, pop(t, L(4) + 1.4), { color: PAL.amber, size: 26 }); } },
+  { at: L(5) - 0.2, name: 'fatigue', tr: 'slide', draw: (c, t) => { P.bg(c, W, H, 'plum', t); P.battery(c, 200, 600, 1.2, 0.15, PAL.red); P.battery(c, 520, 600, 1.2, 0.6, PAL.mint); P.label(c, 'Failure', 200, 720, 1, { color: PAL.red, size: 26 }); P.label(c, '1-3 short', 520, 720, 1, { color: PAL.mint, size: 26 });
+    P.label(c, 'Failure = more tired, slower recovery', W / 2, 260, pop(t, L(5)), { color: PAL.amber, size: 28 }); } },
+  { at: L(6) - 0.2, name: 'rule', tr: 'slide', draw: (c, t) => { P.gym(c, W, H, t); const rep = 0.5 - 0.5 * Math.cos(t * 2.4); P.lifter(c, W / 2, H * 0.86, 1.2, { arms: 'down', arms2: 'curl', mix: rep, wince: 0.5, blink: A.blink(t) }); const e = pop(t, L(8) - 0.2);
+    P.counter(c, 'Stop 1-3 reps short', W / 2, 200, 54, pop(t, L(6)) * (1 - e), PAL.mint); P.bubble(c, 'How many more could I do?', W / 2, 330, pop(t, L(7)) * (1 - e), { color: PAL.blue }); P.check(c, 'More than 3? Too easy', W / 2, 440, false, pop(t, L(7) + 2.5) * (1 - e), 26); A.next(c, t, 'SLEEP + GROWTH'); } },
+]; }, sfx: (A) => [['hurt', 1.4, { gain: 0.4 }], ['stamp', A.L(2) + 1.2, { gain: 0.6 }], ['paper', A.L(3), { dur: 0.3 }], ['ding', A.L(4), { f: 'E6' }], ['error', A.L(5) + 0.5, { gain: 0.3 }], ['pop', A.L(6), { f: 760 }], ['pop', A.L(7), { f: 820 }], ['error', A.L(7) + 2.5, { gain: 0.3 }]] });

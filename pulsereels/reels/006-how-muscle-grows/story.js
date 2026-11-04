@@ -28,7 +28,7 @@
     ctx.save(); P.push(ctx, W, H_, t - L(2), W / 2, cy, 0.02);
     P.fiber(ctx, 60 - pull * 14, cy, 600 + pull * 28, 70, 0, { color: '#ff4a5c', seed: 6, slide: t * 10 });
     P.zap(ctx, W / 2, cy, 280, t, 3, 5);
-    for (const sd of [-1, 1]) P.arrowFlat && P.arrowFlat(ctx, W / 2 + sd * 300, cy, W / 2 + sd * 350, cy, PAL.yellow);
+    for (const sd of [-1, 1]) P.arrowFlat(ctx, W / 2 + sd * 300, cy, W / 2 + sd * 350, cy, 1, PAL.yellow);
     ctx.restore();
     P.title(ctx, ['TENSION'], W / 2, 220, P.pop(t, wt('tension') - 0.3, 0.5), { size: 86, color: PAL.yellow });
     P.bubble(ctx, 'We need to be BIGGER!', W / 2, 820, P.pop(t, wt('signal') - 0.2, 0.4), { color: PAL.blue });

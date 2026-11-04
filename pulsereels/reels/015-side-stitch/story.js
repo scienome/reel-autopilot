@@ -1,0 +1,15 @@
+// 015 Why #4: side stitch (Morton & Callister 2015, 2000)
+(function () {
+P.reel({ merge: [['seven in ten', '7 in 10']], scenes: (A) => { const { L, pop, ramp, W, H, PAL } = A; return [
+  { at: 0, name: 'hook', draw: (c, t) => { P.gym(c, W, H, t); P.treadmill && P.treadmill(c, W / 2, H * 0.9, 1.3, t); const p = P.lifter(c, W / 2, H * 0.86, 1.35, { run: t * 9, wince: 0.9, blink: A.blink(t) });
+    P.zap(c, W / 2 + 40, p.hipY - 60, 70, t, 2, 4, PAL.red); P.glow(c, W / 2 + 40, p.hipY - 60, 90, PAL.red, 0.5); A.hookTitle(c, ['That SIDE', 'STITCH?'], 'Why Does This Happen? #4'); } },
+  { at: L(1) - 0.15, name: 'unknown', tr: 'slide', draw: (c, t) => { P.bg(c, W, H, 'night', t); P.qmarks(c, W / 2, 600, t, pop(t, L(1))); P.title(c, ['Still Not', 'Fully Known'], W / 2, 300, pop(t, L(1) + 1), { size: 68, color: PAL.cyan }); } },
+  { at: L(2) - 0.2, name: 'survey', tr: 'slide', draw: (c, t) => { P.bg(c, W, H, 'violet', t); P.counter(c, '7 in 10', W / 2, 300, 120, pop(t, L(2) + 0.6), PAL.yellow); P.label(c, 'runners, in one year', W / 2, 430, pop(t, L(2) + 1), { color: PAL.amber });
+    for (let i = 0; i < 10; i++) { const on = i < 7 && pop(t, L(2) + 0.6 + i * 0.12) > 0; P.lifter(c, 110 + (i % 5) * 125, 820 + Math.floor(i / 5) * 270, 0.45, { run: t * 9 + i, wince: on ? 0.9 : 0, blink: 0 }); if (on) P.glow(c, 110 + (i % 5) * 125 + 18, 820 + Math.floor(i / 5) * 270 - 80, 40, PAL.red, 0.7); } } },
+  { at: L(3) - 0.2, name: 'theory', tr: 'zoom', focus: [W / 2, 640], draw: (c, t) => { P.bg(c, W, H, 'plum', t); P.bgCells(c, W, H, t, PAL.pink, 3, 0.05); const b = Math.sin(t * 9) * 18 * pop(t, L(4));
+    P.flat(c, P.rr(80, 420, 120, 520, 40), P.light(PAL.pink, 0.2), { off: 6 }); P.label(c, 'Belly wall lining', 140, 380, pop(t, L(3)), { color: PAL.pink, size: 24 });
+    P.stomach(c, 400, 660 + b, 1.4, 0.2 + 0.6 * ramp(t, L(5), L(5) + 1.5)); P.zap(c, 210, 640, 90, t, 4, 5, PAL.yellow);
+    P.label(c, 'Irritated?', W / 2, 200, pop(t, L(3) + 1), { color: PAL.red }); P.label(c, 'Full stomach bounces', W / 2, 200, pop(t, L(4)) * (1 - pop(t, L(5) - 0.2)), { color: PAL.amber }); P.label(c, 'Big meal or drink = worse', W / 2, 200, pop(t, L(5)), { color: PAL.amber, size: 30 }); } },
+  { at: L(6) - 0.2, name: 'tips', tr: 'slide', draw: (c, t) => { P.gym(c, W, H, t); P.lifter(c, W / 2, H * 0.86, 1.2, { run: t * 5, smile: true, blink: A.blink(t) }); const e = pop(t, L(8) - 0.2);
+    P.stopwatch(c, 600, 430, 60, 1, '2 h'); ['Eat or drink light 2 h before', 'Slow down', 'Breathe deeply', 'Press on the spot'].forEach((s, i) => P.check(c, s, W / 2 - 40, 170 + i * 90, true, pop(t, i ? L(7) + (i - 1) * 0.9 : L(6)) * (1 - e), 26)); A.next(c, t, 'RED FACE'); } },
+]; }, sfx: (A) => [['hurt', 0.6, { gain: 0.4 }], ['error', A.L(1) + 0.2, { gain: 0.3 }], ['pop', A.L(2) + 0.6, { f: 800 }], ['buzz', A.L(3) + 1, { dur: 0.4, f: 130, gain: 0.3 }], ['tock', A.L(4), { f: 500 }], ['pop', A.L(6), { f: 700 }], ['pop', A.L(7), { f: 760 }], ['pop', A.L(7) + 0.9, { f: 820 }], ['pop', A.L(7) + 1.8, { f: 880 }]] });

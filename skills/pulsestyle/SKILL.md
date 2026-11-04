@@ -96,6 +96,15 @@ ElevenLabs voice **`cBTYF7NiJbR8Bvmdeuse`**, model `eleven_v4` (owner's pick, 3 
   - *Charts and UI:* `P.check(ctx, text, x, y, ok, k)` (tick / cross rows), `P.verdict` (MYTH / FACT badge), `P.versus` (A vs B
     panels with draw callbacks, `win`), `P.lineChart` (values 0..1, k draws it), `P.progress`, `P.ring` (rest timer),
     `P.reps(ctx, x, y, done, total)`, `P.seriesTag` (frame-0 series pill).
+- **Props pack 3 (4 Nov):** `P.face` (big close-up head: `red` flush, `puff` held breath, `sleepy`, `shock`, `smile`, `wince`, `sweat`),
+  `P.gauge` (dial with green/amber/red zones), `P.skinLayer` (skin cross-section: sweat glands pumping drops, vessel that widens),
+  `P.jointBubble` (joint fluid; bubble forms and pops, `gap` opens the joint), `P.clock` (analog, h:m), `P.receptor` (lock-and-key:
+  `adenosine` / `caffeine`, `blocked`), `P.aminos` (9 essential amino acids, `hi` = [0,1,2] for the BCAAs), `P.arm` (flexed arm
+  close-up, `pump` swells it and pops veins), `P.week` (7-day strip with set dots), `P.arcArrow` (curved motion arrow),
+  `P.lifterBench` (`bench` press and `hipthrust`, k = depth).
+- **`P.reel({ merge, scenes: (A) => [...], sfx: (A) => [...] })`** builds the whole reel: captions, sequence, beats and a base sound score.
+  Each scene is `{ at, name, tr, focus, draw(ctx, t) }`; `A` has `L(i)` line starts, `wt`, `pop`, `ramp`, `blink`, `W`, `H`, `PAL`,
+  `A.hookTitle(ctx, lines, seriesTag)` for frame 0 and `A.next(ctx, t, 'TOPIC')` for the "Next:" card.
 - **Text:** `P.title` (hook title, amber fill / white rim / indigo outline, on screen from frame 0), `P.label` (pill tags,
   colour-coded, optional `sub` and `stem`), `P.counter` + `P.countTo` (big counting numbers), `P.bubble`, `P.qmarks`,
   `P.stampX` (myth busted), `P.meter` (bar charts), `P.arrowFlat`, `P.caption` (2-3 words, white, 73% height, last).

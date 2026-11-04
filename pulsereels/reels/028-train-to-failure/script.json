@@ -1,0 +1,31 @@
+{
+ "lines": [
+  {
+   "say": "Do you need to train every set to failure?"
+  },
+  {
+   "say": "Muscle building, part five."
+  },
+  {
+   "say": "Failure means you can't do one more rep."
+  },
+  {
+   "say": "Big reviews compared training to failure with stopping a few reps short."
+  },
+  {
+   "say": "Muscle growth was about the same, as long as sets got close to failure."
+  },
+  {
+   "say": "But failure makes you more tired, so you recover slower."
+  },
+  {
+   "say": "So on most sets, stop one to three reps before failure."
+  },
+  {
+   "say": "Ask yourself: how many more could I do? If the answer is more than three, it was too easy."
+  },
+  {
+   "say": "Next: how important is sleep for growth?"
+  }
+ ]
+}

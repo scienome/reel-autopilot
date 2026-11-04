@@ -42,6 +42,21 @@ most because curiosity hooks travel furthest; supplements at most every other da
 - Exercise: deadlift · bench press · pull-up · overhead press · hip thrust · barbell row · lunges · push-up · plank · dips · Romanian deadlift · calf raise.
 - Supplements: protein powder · caffeine · beta-alanine · fish oil · vitamin D · BCAAs (mostly not needed) · pre-workout · electrolytes · collagen · fat burners (what the evidence says).
 
+**Week 1 (made 4 Nov, 21 reels, 3 a day in this order):**
+| Day | Why Does This Happen? | Muscle Building / Supplements | Exercise |
+|---|---|---|---|
+| 1 | 009-the-pump (#2) | 010-how-much-protein (MB 2) | 011-the-deadlift (Ex 2) |
+| 2 | 012-knees-crack (#3) | 013-protein-powder (Supp 2) | 014-bench-press (Ex 3) |
+| 3 | 015-side-stitch (#4) | 016-sets-per-week (MB 3) | 017-pull-up (Ex 4) |
+| 4 | 018-red-face (#5) | 019-caffeine (Supp 3) | 020-overhead-press (Ex 5) |
+| 5 | 021-sweat-when-fit (#6) | 022-heavy-or-light (MB 4) | 023-hip-thrust (Ex 6) |
+| 6 | 024-evening-workout-sleep (#7) | 025-bcaas (Supp 4) | 026-barbell-row (Ex 7) |
+| 7 | 027-heart-keeps-racing (#8) | 028-train-to-failure (MB 5) | 029-push-ups (Ex 8) |
+Pilots 005-008 are part 1 of each series and post first. Next up: Why #9 one side stronger, MB 6 sleep and growth,
+Supp 5 fish oil, Ex 9 Romanian deadlift (each reel's "Next:" card already promises these).
+**How a reel is built now:** `story.js` calls `P.reel({ merge, scenes, sfx })` (kit/pulse.js, props pack 3), so a reel is
+just its scenes; see any of 009-029. Check with `python3 tools/pulse_make.py <id> --sheet`.
+
 **Supplement rules:** evidence only, say how strong it is, give the dose used in studies, add "Ask a doctor first" for
 any group at risk, and put "General information, not medical advice." in the caption. No brand names, no buying links,
 nothing banned or prescription-only.
