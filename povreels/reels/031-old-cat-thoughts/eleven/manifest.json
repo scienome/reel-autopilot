@@ -1,0 +1,38 @@
+{
+ "music-8b197bfed038.mp3": {
+  "prompt": "Tender nostalgic music with soft piano and music box, warm and a little sad, gentle and hopeful at the end, no vocals",
+  "music_length_ms": 39460,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-070c20ef0ce5.mp3": {
+  "text": "soft sad piano note",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-09f5a2915fda.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-91556cb5fcc9.mp3": {
+  "text": "cat purring softly",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-cfa4a33fed12.mp3": {
+  "text": "clock ticking slowly",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-e9bd1d6f94b9.mp3": {
+  "text": "door opening and keys",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-f304b05f41be.mp3": {
+  "text": "small audience aww",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
