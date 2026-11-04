@@ -24,5 +24,11 @@
   "text": "sad trombone wah wah",
   "duration_seconds": 1.2,
   "prompt_influence": 0.5
+ },
+ "music-5e80a8b6d7f2.mp3": {
+  "prompt": "Quirky 1940s country-western banjo and fiddle with silly slide whistle, comedic, no vocals",
+  "music_length_ms": 32360,
+  "model_id": "music_v1",
+  "force_instrumental": true
  }
 }
