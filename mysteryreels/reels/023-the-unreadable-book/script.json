@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "NOBODY CAN *READ IT.",
+   "say": "Nobody alive can read this book. Nobody ever could.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "A BOOK *NO ONE CAN READ.",
    "say": "There is a book that nobody on Earth can read."
   },

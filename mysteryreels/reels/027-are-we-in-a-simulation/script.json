@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "NOT *REAL?.",
+   "say": "What if none of this is real? Here is where that idea came from.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "ARE WE IN A *SIMULATION?",
    "say": "Where did the idea that we live in a simulation start?"
   },

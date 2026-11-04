@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "FILE *ONE.",
+   "say": "I found file one. The first witness was the man giving me orders.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "THE *ARCHIVE.",
    "say": "To remember what Level Nine was for, I went to the archive."
   },

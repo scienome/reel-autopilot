@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "SOMEONE *ELSE PAYS.",
+   "say": "You can get your name back. Someone else pays for it.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "THE *MENU.",
    "say": "On the back of the menu, small print. Courses can be returned."
   },

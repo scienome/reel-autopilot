@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "COURSE 7: *A KEY.",
+   "say": "Course seven was a key. To the room I swore I'd never open.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "COURSE *SEVEN.",
    "say": "Course seven came under a silver dome. The first mask lifted it."
   },

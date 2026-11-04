@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "THE REAL *ME.",
+   "say": "I met the real me. He made me for his wife.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "AN *OFFICE.",
    "say": "An office under Room Four. An old man at a desk."
   },

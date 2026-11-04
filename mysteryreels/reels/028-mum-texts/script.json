@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "WHO IS *TEXTING?.",
+   "say": "Your mum texts you. But she is sitting right next to you.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "MUM: *WHERE ARE YOU?",
    "say": "Mum texts, where are you?"
   },

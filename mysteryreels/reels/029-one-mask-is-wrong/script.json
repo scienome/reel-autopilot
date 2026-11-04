@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "ONE IS *A FACE.",
+   "say": "Twelve masks. One of them is a real face.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "LOOK *CLOSER.",
    "say": "Look closer. Twelve masks. One of them is wrong."
   },

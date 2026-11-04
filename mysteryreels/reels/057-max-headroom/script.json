@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "NEVER *FOUND.",
+   "say": "A masked man hijacked two TV channels. Nobody ever found him.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "TRUE *STORY.",
    "say": "November nineteen eighty seven. Chicago. A sports show suddenly cut to static."
   },

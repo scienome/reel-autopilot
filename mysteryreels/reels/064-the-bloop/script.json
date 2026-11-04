@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "MONSTER *OR ICE?.",
+   "say": "In nineteen ninety seven the ocean made a sound so loud people said: monster.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "TRUE *STORY.",
    "say": "In nineteen ninety seven, underwater microphones caught one huge, deep sound."
   },

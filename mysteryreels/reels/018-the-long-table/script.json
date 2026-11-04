@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "SEAT THE *DEAD MAN.",
+   "say": "They asked me to seat a man I knew was already dead.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "I *REFUSED.",
    "say": "I refused. I would not seat him."
   },

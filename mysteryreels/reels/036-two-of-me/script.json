@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "HE HAD *MY FACE.",
+   "say": "Behind the wall, a man was sleeping. He had my face.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "THE *OTHER ROOM.",
    "say": "Behind the wall panel, a narrow room. On a cot, a man my age. Me."
   },

@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "PICK *ONE.",
+   "say": "One envelope saves your life. You get one guess.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "THREE *ENVELOPES.",
    "say": "A stranger hands you three envelopes. You may open one."
   },

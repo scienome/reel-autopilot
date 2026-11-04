@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "ONE MASK *FACING ME.",
+   "say": "Nine hundred chairs. Every guest gone. One mask facing me.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "THE *HALL.",
    "say": "I refused his name. I went back to the hall."
   },

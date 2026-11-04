@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "ROOM 13 *IS FREE.",
+   "say": "Room thirteen is free. Everyone leaves it happier. Nobody says why.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "ONE *NIGHT.",
    "say": "A hotel at midnight. Two keys on the desk."
   },

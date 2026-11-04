@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "HE’S STILL *INSIDE.",
+   "say": "three a.m. Your smart speaker says: yes, he's still inside.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "POV.",
    "say": "Pov. Three a.m. Your smart speaker lights up and says, yes. He is still inside."
   },

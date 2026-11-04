@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "NO *FINGERPRINTS.",
+   "say": "The old man had no fingerprints. None at all.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "HE SHOWED *HIS HANDS.",
    "say": "The old man held up his hands. No fingerprints."
   },

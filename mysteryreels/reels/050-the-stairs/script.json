@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "THE FLOOR *OPENED.",
+   "say": "Three taps on the floor, and the floor opened.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "THE *ORIGINAL.",
    "say": "The original runs this room. So where is he?"
   },

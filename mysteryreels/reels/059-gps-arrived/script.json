@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "YOU HAVE *ARRIVED.",
+   "say": "Your GPS says you've arrived. You're in the middle of nowhere.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "POV.",
    "say": "Pov. Midnight, on a road with no lights. Your GPS says, you have arrived."
   },

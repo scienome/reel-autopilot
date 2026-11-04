@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "RECIPE: *NAMES.",
+   "say": "The cook at the last dinner uses names, not food.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "THE *KITCHEN.",
    "say": "In the kitchen, one man stood over a pot. No mask."
   },

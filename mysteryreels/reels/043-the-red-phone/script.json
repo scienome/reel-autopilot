@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "OR I *ERASE YOU.",
+   "say": "Close that door, or I erase you. Not even a name.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "THE *PHONE.",
    "say": "The red phone rang. The Registrar was shouting."
   },

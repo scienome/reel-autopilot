@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "ONLY 5 IN *THE MIRROR.",
+   "say": "Six people in this lift. Only five in the mirror.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "LOOK *CLOSER.",
    "say": "Look closer. Six people in a lift."
   },

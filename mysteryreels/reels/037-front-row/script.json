@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "SHE FORGOT *ME.",
+   "say": "My own sister looked at me like a stranger.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "NO ONE *ANSWERED.",
    "say": "My sister did not know my name. Neither did my boss."
   },

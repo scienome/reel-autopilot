@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "THE OTHER *ME.",
+   "say": "Room Four is where they keep the other me.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "I WENT *BACK IN.",
    "say": "I went back to the base. Room Four was waiting."
   },

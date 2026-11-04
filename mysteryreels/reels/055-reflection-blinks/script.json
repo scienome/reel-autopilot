@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "IT *BLINKED.",
+   "say": "Your reflection just blinked. You didn't.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "POV.",
    "say": "Pov. You are brushing your teeth. You look in the mirror."
   },

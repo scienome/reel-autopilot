@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "$1,000,000 *FOR 1 YEAR.",
+   "say": "One million dollars. You forget one year of your life.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "THE *OFFER.",
    "say": "A stranger offers you one million dollars."
   },

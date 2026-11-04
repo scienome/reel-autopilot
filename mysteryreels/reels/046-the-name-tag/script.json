@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "HIS TAG: *MY NAME.",
+   "say": "The new waiter's name tag had my name on it.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "I *WARNED HIM.",
    "say": "I told the young waiter to run. Now, before the bell."
   },

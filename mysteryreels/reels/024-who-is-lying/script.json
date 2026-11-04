@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "ONE IS *LYING.",
+   "say": "One of these two guards is lying. Can you tell which?",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "ONE NIGHT. *ONE LIE.",
    "say": "Two guards. One night. One of them is lying."
   },

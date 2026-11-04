@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "ONE HAND *TOO MANY.",
+   "say": "This family photo has one hand too many.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "LOOK *CLOSER.",
    "say": "Look closer at this family photo."
   },

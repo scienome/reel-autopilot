@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "MY *HANDWRITING.",
+   "say": "Tomorrow's guest list was in my handwriting.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "A *LIST.",
    "say": "Under the first mask, a list. Tomorrow’s dinner."
   },

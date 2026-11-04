@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "NOT *CRACKED.",
+   "say": "There is a code inside the CIA nobody has fully cracked.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "THE CIA HAS A *CODE",
    "say": "At CIA headquarters, there is a sculpture nobody can fully read."
   },

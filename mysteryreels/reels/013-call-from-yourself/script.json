@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "CALLER: *YOU.",
+   "say": "Your phone rings. The caller ID is your own name.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "POV: YOUR PHONE|*CALLS YOU.",
    "say": "POV. Your phone shows a call. From you."
   },

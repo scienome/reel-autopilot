@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "I STOOD *UP.",
+   "say": "I stood up at the last dinner. Nobody ever stands up.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "I TOOK *THE KEY.",
    "say": "I took the key, and I stood up."
   },

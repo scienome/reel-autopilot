@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "IT’S *ME.",
+   "say": "A text from my own number: open the door, it's me.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "FROM *MY NUMBER.",
    "say": "The text said, open the door, it is me. It came from my own number."
   },

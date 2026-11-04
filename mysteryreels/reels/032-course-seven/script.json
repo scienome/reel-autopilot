@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "800 *MASKS.",
+   "say": "Eight hundred masks turned to look at me at once.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "EIGHT *HUNDRED.",
    "say": "Eight hundred chairs, and every mask was turned to me."
   },

@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "4 *SHADOWS.",
+   "say": "Three people. Four shadows. One is moving.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "LOOK *CLOSER.",
    "say": "Look closer. Three people at a bus stop."
   },

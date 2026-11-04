@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "NEVER OPEN *MACHINE 9.",
+   "say": "Never open machine nine. Here's why.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "NIGHT *SHIFT.",
    "say": "Three rules for the night shift at the twenty four hour laundromat."
   },

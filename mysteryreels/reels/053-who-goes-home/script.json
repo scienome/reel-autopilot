@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "ONLY ONE *GOES HOME.",
+   "say": "Three men. One life. Only one goes home.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "THE *CHOICE.",
    "say": "Three of us in the office. Three men with one life."
   },

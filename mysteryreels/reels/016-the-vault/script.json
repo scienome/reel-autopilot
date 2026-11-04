@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "UNDER THE *ICE.",
+   "say": "They sent me to a vault under the Arctic ice.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "I STOOD *UNDER THE ICE.",
    "say": "Svalbard. The vault under the ice. I stood in the cold."
   },

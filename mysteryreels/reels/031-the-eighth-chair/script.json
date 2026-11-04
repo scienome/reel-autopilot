@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "STILL *WARM.",
+   "say": "The eighth chair is empty. Every night it is warm.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "LEVEL *TEN.",
    "say": "I went back down to level ten, to watch the eighth chair."
   },

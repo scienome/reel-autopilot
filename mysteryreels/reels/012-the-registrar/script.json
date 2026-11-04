@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "HE ERASES *PEOPLE.",
+   "say": "There is a man whose job is to erase people.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "I RAN. *NOBODY CHASED.",
    "say": "I ran. Nobody chased me."
   },

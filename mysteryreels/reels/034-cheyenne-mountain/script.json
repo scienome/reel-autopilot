@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "INSIDE THE *MOUNTAIN.",
+   "say": "They sent me inside a mountain to find a missing witness.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "NEW *POST.",
    "say": "The Registrar sent me to Cheyenne Mountain. A bunker inside solid granite."
   },

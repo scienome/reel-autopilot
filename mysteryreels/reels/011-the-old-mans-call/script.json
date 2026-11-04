@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "HE *CALLED BACK.",
+   "say": "The man who said I would die called me again.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "I *ANSWERED.",
    "say": "I answered. The old man's voice shook."
   },

@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "STILL *UNEXPLAINED.",
+   "say": "There's a valley where lights float in the sky. Still unexplained.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "TRUE *STORY.",
    "say": "In a quiet valley in Norway, lights float in the night sky."
   },

@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "PAID WITH *MY NAME.",
+   "say": "I paid for dinner with my own name.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "I PAID *COURSE ONE.",
    "say": "I paid course one. My name."
   },

@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "3 A.M. *SHE CALLED.",
+   "say": "three a.m. My wife calls. I'm at home, leaving her. But I'm here.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "MY *WIFE.",
    "say": "My phone rang. My wife. She was crying."
   },

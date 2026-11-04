@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "NO *SCAR.",
+   "say": "My scar was gone. So who am I?",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "LOOK AT *MY HANDS.",
    "say": "I looked at my own hands. No scar."
   },

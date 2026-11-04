@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "SOMEONE *REMEMBERED.",
+   "say": "I was fading out of the world. Then someone said my name.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "I *OPENED IT.",
    "say": "I opened the door wide. The dark poured out."
   },

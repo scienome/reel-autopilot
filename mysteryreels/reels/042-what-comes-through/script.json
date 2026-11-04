@@ -3,6 +3,12 @@
   {
    "shot": "hook",
    "cap": "IT *OPENED.",
+   "say": "The door with no handle just opened.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
+   "cap": "IT *OPENED.",
    "say": "Level ten. The door with no handle opened. And I watched."
   },
   {

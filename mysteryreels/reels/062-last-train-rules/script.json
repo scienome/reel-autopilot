@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "HE KNOWS *YOUR STOP.",
+   "say": "If a stranger knows your stop, get off early.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "LAST *TRAIN.",
    "say": "Three rules for the last train home."
   },

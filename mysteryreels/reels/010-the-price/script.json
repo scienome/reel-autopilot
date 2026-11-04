@@ -2,6 +2,12 @@
  "lines": [
   {
    "shot": "hook",
+   "cap": "ONE COURSE *ONE MEMORY.",
+   "say": "A dinner where every course costs you a memory.",
+   "cold": true
+  },
+  {
+   "shot": "hook",
    "cap": "I *DIDN'T EAT.",
    "say": "I did not touch the soup."
   },
