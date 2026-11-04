@@ -24,5 +24,11 @@
   "text": "wooden gavel bang",
   "duration_seconds": 1.2,
   "prompt_influence": 0.5
+ },
+ "music-72f34671c146.mp3": {
+  "prompt": "Silly baroque harpsichord with comedic bassoon and pizzicato, mock-serious, no vocals",
+  "music_length_ms": 28520,
+  "model_id": "music_v1",
+  "force_instrumental": true
  }
 }
