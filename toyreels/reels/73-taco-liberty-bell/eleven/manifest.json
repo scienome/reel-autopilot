@@ -24,5 +24,11 @@
   "text": "party horn blast",
   "duration_seconds": 1.2,
   "prompt_influence": 0.5
+ },
+ "music-8745f68a6690.mp3": {
+  "prompt": "Cheeky retro 90s commercial jingle, brass stabs, comic, no vocals",
+  "music_length_ms": 26920,
+  "model_id": "music_v1",
+  "force_instrumental": true
  }
 }
