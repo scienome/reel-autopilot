@@ -1,0 +1,67 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what your TV remote thinks."
+  ]
+ },
+ {
+  "id": "r1",
+  "who": "pug",
+  "phrases": [
+   "They're looking for me again.",
+   "I'm in the sofa.",
+   "I've always been in the sofa."
+  ]
+ },
+ {
+  "id": "r2",
+  "who": "pug",
+  "phrases": [
+   "You pressed me so hard for one episode.",
+   "It was a thirty minute show.",
+   "You watched eight."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "Your batteries die mid-episode."
+  ]
+ },
+ {
+  "id": "r3",
+  "who": "pug",
+  "phrases": [
+   "Not me.",
+   "I'm just resting.",
+   "Shake me. Harder."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "You put in fresh batteries."
+  ]
+ },
+ {
+  "id": "r4",
+  "who": "pug",
+  "phrases": [
+   "Power.",
+   "Unlimited power.",
+   "Next episode? Obviously."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "How many episodes is 'just one'?",
+   "Part two?"
+  ]
+ }
+]

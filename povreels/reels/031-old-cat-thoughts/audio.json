@@ -1,0 +1,57 @@
+{
+ "music": {
+  "prompt": "Tender nostalgic music with soft piano and music box, warm and a little sad, gentle and hopeful at the end, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "c1",
+   "word": "heartbreak",
+   "offset": 0.0,
+   "prompt": "soft sad piano note",
+   "dur": 2,
+   "gain": -9
+  },
+  {
+   "beat": "c2",
+   "word": "welcome",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "n2",
+   "word": "sleeps",
+   "offset": 0.0,
+   "prompt": "cat purring softly",
+   "dur": 2,
+   "gain": -6
+  },
+  {
+   "beat": "c3",
+   "word": "door",
+   "offset": 0.0,
+   "prompt": "clock ticking slowly",
+   "dur": 2,
+   "gain": -10
+  },
+  {
+   "beat": "n3",
+   "word": "late",
+   "offset": 0.0,
+   "prompt": "door opening and keys",
+   "dur": 1.5,
+   "gain": -5
+  },
+  {
+   "beat": "c4",
+   "word": "worried",
+   "offset": 0.0,
+   "prompt": "small audience aww",
+   "dur": 1.8,
+   "gain": -8
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "music": {
+  "prompt": "Quirky mischievous comedy music with tuba, bassoon and a spin-cycle rhythm, sneaky in the middle, then silly, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "washing",
+   "offset": 0.0,
+   "prompt": "washing machine spinning and rumbling",
+   "dur": 1.8,
+   "gain": -6
+  },
+  {
+   "beat": "w2",
+   "word": "children",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "n2",
+   "word": "red",
+   "offset": 0.0,
+   "prompt": "dramatic suspense sting",
+   "dur": 1.2,
+   "gain": -5
+  },
+  {
+   "beat": "w3",
+   "word": "pink",
+   "offset": 0.0,
+   "prompt": "sparkle chime",
+   "dur": 1.2,
+   "gain": -6
+  },
+  {
+   "beat": "w4",
+   "word": "holiday",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  }
+ ]
+}

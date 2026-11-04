@@ -1,0 +1,49 @@
+{
+ "music": {
+  "prompt": "Playful sibling rivalry music with plucky strings and kazoo, an action sting, then warm and heartfelt, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "b1",
+   "word": "stopped",
+   "offset": 0.0,
+   "prompt": "villain sting short",
+   "dur": 1.2,
+   "gain": -6
+  },
+  {
+   "beat": "b2",
+   "word": "favourite",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "n2",
+   "word": "bike",
+   "offset": 0.0,
+   "prompt": "bicycle crash clatter",
+   "dur": 1.2,
+   "gain": -5
+  },
+  {
+   "beat": "b3",
+   "word": "fight",
+   "offset": 0.0,
+   "prompt": "dramatic orchestra hit",
+   "dur": 1.2,
+   "gain": -5
+  },
+  {
+   "beat": "b4",
+   "word": "chips",
+   "offset": 0.0,
+   "prompt": "small audience aww",
+   "dur": 1.8,
+   "gain": -8
+  }
+ ]
+}

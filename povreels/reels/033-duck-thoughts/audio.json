@@ -1,0 +1,49 @@
+{
+ "music": {
+  "prompt": "Bouncy cartoon park comedy music with bassoon, pizzicato and whistles, a sad violin moment, then warm, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "ducks",
+   "offset": 0.0,
+   "prompt": "ducks quacking at a pond",
+   "dur": 1.5,
+   "gain": -5
+  },
+  {
+   "beat": "d2",
+   "word": "mine",
+   "offset": 0.0,
+   "prompt": "angry duck quack",
+   "dur": 1,
+   "gain": -5
+  },
+  {
+   "beat": "n2",
+   "word": "bread",
+   "offset": 0.0,
+   "prompt": "empty paper bag crumpling",
+   "dur": 1,
+   "gain": -6
+  },
+  {
+   "beat": "d3",
+   "word": "bite",
+   "offset": 0.0,
+   "prompt": "dramatic sting and angry quacks",
+   "dur": 1.5,
+   "gain": -5
+  },
+  {
+   "beat": "d4",
+   "word": "warm",
+   "offset": 0.0,
+   "prompt": "small audience aww",
+   "dur": 1.8,
+   "gain": -8
+  }
+ ]
+}

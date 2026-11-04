@@ -1,0 +1,65 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what your mirror thinks."
+  ]
+ },
+ {
+  "id": "m1",
+  "who": "husky",
+  "phrases": [
+   "Seven a.m.",
+   "Oh no.",
+   "Not the hair."
+  ]
+ },
+ {
+  "id": "m2",
+  "who": "husky",
+  "phrases": [
+   "You practise your Oscar speech in here.",
+   "I've heard it four hundred times."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "Tonight you have a big date."
+  ]
+ },
+ {
+  "id": "m3",
+  "who": "husky",
+  "phrases": [
+   "Turn left.",
+   "No, the other left.",
+   "Stop. Perfect."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "You smile at yourself."
+  ]
+ },
+ {
+  "id": "m4",
+  "who": "husky",
+  "phrases": [
+   "Finally.",
+   "I've waited years for you to like what you see."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "What do you say to your mirror?",
+   "Part two?"
+  ]
+ }
+]

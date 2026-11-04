@@ -1,0 +1,66 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what your big brother thinks."
+  ]
+ },
+ {
+  "id": "b1",
+  "who": "friend",
+  "phrases": [
+   "Small human ate my chips.",
+   "Small human must be stopped."
+  ]
+ },
+ {
+  "id": "b2",
+  "who": "friend",
+  "phrases": [
+   "I'll tell Mum you broke it.",
+   "Mum believes me.",
+   "I'm the favourite."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "Then you fall off your bike."
+  ]
+ },
+ {
+  "id": "b3",
+  "who": "friend",
+  "phrases": [
+   "Hey.",
+   "Who did this.",
+   "I'll fight the bike."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "He carries you home on his back."
+  ]
+ },
+ {
+  "id": "b4",
+  "who": "friend",
+  "phrases": [
+   "Don't tell anyone I was nice.",
+   "I have a reputation.",
+   "You still owe me chips."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "Tag your big brother.",
+   "Part two?"
+  ]
+ }
+]

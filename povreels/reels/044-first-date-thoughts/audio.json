@@ -1,0 +1,49 @@
+{
+ "music": {
+  "prompt": "Romantic comedy music with jazzy piano, light swing drums and pizzicato, a clumsy disaster sting, then sweet and warm, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "d1",
+   "word": "counting",
+   "offset": 0.0,
+   "prompt": "clock ticking",
+   "dur": 1.2,
+   "gain": -8
+  },
+  {
+   "beat": "d2",
+   "word": "one",
+   "offset": 0.0,
+   "prompt": "small audience ooh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "n2",
+   "word": "water",
+   "offset": 0.0,
+   "prompt": "water splash and glass clink",
+   "dur": 1.2,
+   "gain": -5
+  },
+  {
+   "beat": "d3",
+   "word": "laugh",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "d4",
+   "word": "paying",
+   "offset": 0.0,
+   "prompt": "small audience aww",
+   "dur": 1.8,
+   "gain": -8
+  }
+ ]
+}

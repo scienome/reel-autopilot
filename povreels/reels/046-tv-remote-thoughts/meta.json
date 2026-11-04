@@ -1,0 +1,20 @@
+{
+ "title": "You can hear what your TV remote thinks 📺",
+ "caption": "\"I've always been in the sofa.\" 📺\nHow many episodes is \"just one\" for you? 👇",
+ "hashtags": [
+  "tv",
+  "bingewatching",
+  "netflix",
+  "pov",
+  "funny",
+  "animation",
+  "relatable",
+  "whatif",
+  "reels"
+ ],
+ "first_comment": "Be honest: how many episodes did you watch last night? 📺👇",
+ "cover_t": 3.0,
+ "libs": [
+  "lib/pov.js"
+ ]
+}

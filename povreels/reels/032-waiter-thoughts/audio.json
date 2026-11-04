@@ -1,0 +1,49 @@
+{
+ "music": {
+  "prompt": "Jazzy cheeky restaurant comedy music with upright bass, brushes and muted trumpet, warm at the end, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "w1",
+   "word": "twenty",
+   "offset": 0.0,
+   "prompt": "clock ticking",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "w2",
+   "word": "burger",
+   "offset": 0.0,
+   "prompt": "sizzling grill",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "n2",
+   "word": "salad",
+   "offset": 0.0,
+   "prompt": "record scratch",
+   "dur": 1,
+   "gain": -5
+  },
+  {
+   "beat": "n3",
+   "word": "tip",
+   "offset": 0.0,
+   "prompt": "cash register cha-ching",
+   "dur": 1.2,
+   "gain": -5
+  },
+  {
+   "beat": "w4",
+   "word": "mum",
+   "offset": 0.0,
+   "prompt": "small audience aww",
+   "dur": 1.8,
+   "gain": -8
+  }
+ ]
+}

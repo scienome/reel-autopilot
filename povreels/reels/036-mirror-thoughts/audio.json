@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Playful bathroom comedy music with ukulele and finger snaps, a glamorous moment, then warm and uplifting, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "m1",
+   "word": "hair",
+   "offset": 0.0,
+   "prompt": "record scratch",
+   "dur": 1,
+   "gain": -6
+  },
+  {
+   "beat": "m2",
+   "word": "hundred",
+   "offset": 0.0,
+   "prompt": "applause small crowd",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "m3",
+   "word": "Perfect",
+   "offset": 0.0,
+   "prompt": "sparkle chime",
+   "dur": 1.2,
+   "gain": -6
+  },
+  {
+   "beat": "m4",
+   "word": "see",
+   "offset": 0.0,
+   "prompt": "soft warm choir aww",
+   "dur": 2,
+   "gain": -8
+  }
+ ]
+}

@@ -1,0 +1,65 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what your sister thinks."
+  ]
+ },
+ {
+  "id": "s1",
+  "who": "date",
+  "phrases": [
+   "He took my charger.",
+   "Again.",
+   "He will pay."
+  ]
+ },
+ {
+  "id": "s2",
+  "who": "date",
+  "phrases": [
+   "I told Mum he broke the vase.",
+   "He didn't.",
+   "I did. In twenty fifteen."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "Then someone at school is mean to you."
+  ]
+ },
+ {
+  "id": "s3",
+  "who": "date",
+  "phrases": [
+   "Nobody touches my brother.",
+   "Except me."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "Next day, they apologise to you. Shaking."
+  ]
+ },
+ {
+  "id": "s4",
+  "who": "date",
+  "phrases": [
+   "Don't ask what I did.",
+   "Now give me my charger back."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "Tag your sibling.",
+   "Part two?"
+  ]
+ }
+]

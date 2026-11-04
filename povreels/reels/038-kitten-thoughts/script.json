@@ -1,0 +1,68 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what your new kitten thinks."
+  ]
+ },
+ {
+  "id": "k1",
+  "who": "cat",
+  "phrases": [
+   "Everything is mine.",
+   "The sofa.",
+   "Your face.",
+   "Your sandwich."
+  ]
+ },
+ {
+  "id": "k2",
+  "who": "cat",
+  "phrases": [
+   "Three a.m.",
+   "Time to run.",
+   "Very fast. Nowhere."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "She climbs the curtain. And gets stuck."
+  ]
+ },
+ {
+  "id": "k3",
+  "who": "cat",
+  "phrases": [
+   "I meant to do this.",
+   "I live up here now.",
+   "Help."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "You rescue her."
+  ]
+ },
+ {
+  "id": "k4",
+  "who": "cat",
+  "phrases": [
+   "You saved me.",
+   "I will love you forever.",
+   "Starting after my nap."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "What did your kitten destroy first?",
+   "Part two?"
+  ]
+ }
+]

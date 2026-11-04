@@ -1,0 +1,49 @@
+{
+ "music": {
+  "prompt": "Festive Indian wedding comedy music with dhol, shehnai and brass band, a dramatic dance break, then a comic slowdown, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "u1",
+   "word": "girlfriend",
+   "offset": 0.0,
+   "prompt": "small audience ooh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "u2",
+   "word": "scooter",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "n2",
+   "word": "music",
+   "offset": 0.0,
+   "prompt": "dhol drum roll starting a dance beat",
+   "dur": 2,
+   "gain": -4
+  },
+  {
+   "beat": "n3",
+   "word": "back",
+   "offset": 0.0,
+   "prompt": "loud back crack sound effect",
+   "dur": 1,
+   "gain": -4
+  },
+  {
+   "beat": "u4",
+   "word": "slowly",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  }
+ ]
+}

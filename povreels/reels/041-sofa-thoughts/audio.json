@@ -1,0 +1,49 @@
+{
+ "music": {
+  "prompt": "Cosy lazy comedy music with tuba, soft brushes and a lounge groove, a jealous dramatic sting, then warm, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "s1",
+   "word": "Coins",
+   "offset": 0.0,
+   "prompt": "coins jingling",
+   "dur": 1.2,
+   "gain": -6
+  },
+  {
+   "beat": "s2",
+   "word": "hours",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "n2",
+   "word": "new",
+   "offset": 0.0,
+   "prompt": "delivery truck door opening",
+   "dur": 1.5,
+   "gain": -6
+  },
+  {
+   "beat": "s3",
+   "word": "softer",
+   "offset": 0.0,
+   "prompt": "dramatic jealous sting",
+   "dur": 1.2,
+   "gain": -5
+  },
+  {
+   "beat": "s4",
+   "word": "safe",
+   "offset": 0.0,
+   "prompt": "small audience aww",
+   "dur": 1.8,
+   "gain": -8
+  }
+ ]
+}

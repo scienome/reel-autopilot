@@ -1,0 +1,66 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what ducks think."
+  ]
+ },
+ {
+  "id": "d1",
+  "who": "pug",
+  "phrases": [
+   "Bread man is here.",
+   "Look cute.",
+   "Look hungry."
+  ]
+ },
+ {
+  "id": "d2",
+  "who": "pug",
+  "phrases": [
+   "Kevin, back off.",
+   "This one is mine."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "You run out of bread."
+  ]
+ },
+ {
+  "id": "d3",
+  "who": "pug",
+  "phrases": [
+   "No bread?",
+   "Then why are you here?",
+   "Kevin, bite him."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "You sit on the bench. Sad."
+  ]
+ },
+ {
+  "id": "d4",
+  "who": "pug",
+  "phrases": [
+   "Fine.",
+   "I'll sit with you.",
+   "But only because the bench is warm."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "Are ducks friends or criminals?",
+   "Part two?"
+  ]
+ }
+]

@@ -1,0 +1,67 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what crows think.",
+   "And crows remember faces."
+  ]
+ },
+ {
+  "id": "k1",
+  "who": "chihuahua",
+  "phrases": [
+   "I know you.",
+   "You gave me a chip in March."
+  ]
+ },
+ {
+  "id": "k2",
+  "who": "chihuahua",
+  "phrases": [
+   "I told my family.",
+   "Now all forty of us love you."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "The next day, you shoo one away."
+  ]
+ },
+ {
+  "id": "k3",
+  "who": "chihuahua",
+  "phrases": [
+   "Oh.",
+   "Oh, I see.",
+   "I'll tell my family about that too."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "Every morning, forty crows watch you."
+  ]
+ },
+ {
+  "id": "k4",
+  "who": "chihuahua",
+  "phrases": [
+   "Bring chips.",
+   "And nobody gets hurt.",
+   "Just kidding.",
+   "Bring chips."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "Would you rather have crows as friends or enemies?",
+   "Part two?"
+  ]
+ }
+]

@@ -1,0 +1,67 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what your taxi driver thinks."
+  ]
+ },
+ {
+  "id": "t1",
+  "who": "friend",
+  "phrases": [
+   "Airport? Easy.",
+   "I know a short cut.",
+   "There is no short cut."
+  ]
+ },
+ {
+  "id": "t2",
+  "who": "friend",
+  "phrases": [
+   "He's on the phone.",
+   "He's going to ask me to turn the music down.",
+   "He won't."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "You start crying in the back seat."
+  ]
+ },
+ {
+  "id": "t3",
+  "who": "friend",
+  "phrases": [
+   "Oh no.",
+   "Okay. Tissues in the door.",
+   "Volume down."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "He drives you all the way. Doesn't charge the extra."
+  ]
+ },
+ {
+  "id": "t4",
+  "who": "friend",
+  "phrases": [
+   "Twenty years of driving.",
+   "You never forget the sad ones.",
+   "Hope you got there."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "Ever had a stranger be this kind?",
+   "Part two?"
+  ]
+ }
+]

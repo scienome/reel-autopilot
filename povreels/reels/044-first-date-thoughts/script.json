@@ -1,0 +1,67 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what your first date thinks."
+  ]
+ },
+ {
+  "id": "d1",
+  "who": "date",
+  "phrases": [
+   "He's late.",
+   "Two minutes late.",
+   "I'm counting."
+  ]
+ },
+ {
+  "id": "d2",
+  "who": "date",
+  "phrases": [
+   "He ordered for himself first.",
+   "Okay.",
+   "Strike one."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "You spill water on yourself. Everywhere."
+  ]
+ },
+ {
+  "id": "d3",
+  "who": "date",
+  "phrases": [
+   "Oh no.",
+   "Oh, that's actually cute.",
+   "Don't laugh. Don't laugh."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "You laugh it off. You make her laugh too."
+  ]
+ },
+ {
+  "id": "d4",
+  "who": "date",
+  "phrases": [
+   "Okay.",
+   "Second date.",
+   "But you're paying."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "Best or worst first date story?",
+   "Part two?"
+  ]
+ }
+]

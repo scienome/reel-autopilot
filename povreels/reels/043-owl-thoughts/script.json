@@ -1,0 +1,66 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what the owl outside your window thinks."
+  ]
+ },
+ {
+  "id": "o1",
+  "who": "husky",
+  "phrases": [
+   "Two a.m.",
+   "You're still on your phone.",
+   "Interesting."
+  ]
+ },
+ {
+  "id": "o2",
+  "who": "husky",
+  "phrases": [
+   "I've watched you for three years.",
+   "You've said 'one more video' nine thousand times."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "One night, you can't sleep. You're sad."
+  ]
+ },
+ {
+  "id": "o3",
+  "who": "husky",
+  "phrases": [
+   "I see you.",
+   "I'm up too.",
+   "We can be awake together."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "You open the window. Just to listen."
+  ]
+ },
+ {
+  "id": "o4",
+  "who": "husky",
+  "phrases": [
+   "Hoo.",
+   "That means goodnight.",
+   "Now put your phone down."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "What time did you sleep last night?",
+   "Part two?"
+  ]
+ }
+]

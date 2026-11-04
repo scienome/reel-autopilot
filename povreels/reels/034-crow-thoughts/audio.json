@@ -1,0 +1,49 @@
+{
+ "music": {
+  "prompt": "Mysterious cheeky noir comedy music with pizzicato strings, clarinet and a suspicious bassline, ominous in the middle, then playful, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "faces",
+   "offset": 0.0,
+   "prompt": "crows cawing",
+   "dur": 1.5,
+   "gain": -5
+  },
+  {
+   "beat": "k2",
+   "word": "forty",
+   "offset": 0.0,
+   "prompt": "flock of crows flapping wings",
+   "dur": 2,
+   "gain": -6
+  },
+  {
+   "beat": "n2",
+   "word": "shoo",
+   "offset": 0.0,
+   "prompt": "single angry caw",
+   "dur": 1,
+   "gain": -5
+  },
+  {
+   "beat": "n3",
+   "word": "forty",
+   "offset": 0.0,
+   "prompt": "ominous low drone and many crows cawing",
+   "dur": 2.5,
+   "gain": -6
+  },
+  {
+   "beat": "k4",
+   "word": "kidding",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  }
+ ]
+}

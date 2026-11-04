@@ -1,0 +1,67 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what your washing machine thinks."
+  ]
+ },
+ {
+  "id": "w1",
+  "who": "car",
+  "phrases": [
+   "Forty socks went in.",
+   "Thirty nine came out.",
+   "You'll never know why."
+  ]
+ },
+ {
+  "id": "w2",
+  "who": "car",
+  "phrases": [
+   "I have a collection.",
+   "Two hundred socks.",
+   "I call them my children."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "You put in a red shirt with the whites."
+  ]
+ },
+ {
+  "id": "w3",
+  "who": "car",
+  "phrases": [
+   "Oh no.",
+   "Oh, this is my art.",
+   "Everything is pink now."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "Then you forget the wet clothes for three days."
+  ]
+ },
+ {
+  "id": "w4",
+  "who": "car",
+  "phrases": [
+   "The smell.",
+   "I've seen things.",
+   "I need a holiday."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "Where do your socks go?",
+   "Part two?"
+  ]
+ }
+]

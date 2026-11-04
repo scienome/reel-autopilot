@@ -1,0 +1,49 @@
+{
+ "music": {
+  "prompt": "Tender nostalgic music with soft piano, warm strings and a music box, playful in the middle, deeply warm at the end, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "g1",
+   "word": "cheese",
+   "offset": 0.0,
+   "prompt": "fridge door opening",
+   "dur": 1.2,
+   "gain": -7
+  },
+  {
+   "beat": "g2",
+   "word": "peas",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -9
+  },
+  {
+   "beat": "n2",
+   "word": "door",
+   "offset": 0.0,
+   "prompt": "slow old dog sigh",
+   "dur": 1.5,
+   "gain": -6
+  },
+  {
+   "beat": "g3",
+   "word": "closed",
+   "offset": 0.0,
+   "prompt": "soft snore",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "g4",
+   "word": "Here",
+   "offset": 0.0,
+   "prompt": "soft warm choir aww",
+   "dur": 2,
+   "gain": -9
+  }
+ ]
+}

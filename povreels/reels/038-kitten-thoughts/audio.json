@@ -1,0 +1,49 @@
+{
+ "music": {
+  "prompt": "Bouncy cute kitten music with glockenspiel, pizzicato and xylophone runs, a silly cliffhanger, then tender, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "k1",
+   "word": "sandwich",
+   "offset": 0.0,
+   "prompt": "cute kitten meow",
+   "dur": 1,
+   "gain": -6
+  },
+  {
+   "beat": "k2",
+   "word": "run",
+   "offset": 0.0,
+   "prompt": "cartoon running feet scramble",
+   "dur": 1.5,
+   "gain": -6
+  },
+  {
+   "beat": "n2",
+   "word": "stuck",
+   "offset": 0.0,
+   "prompt": "curtain rip and tiny meow",
+   "dur": 1.5,
+   "gain": -5
+  },
+  {
+   "beat": "k3",
+   "word": "Help",
+   "offset": 0.0,
+   "prompt": "tiny desperate meow",
+   "dur": 1,
+   "gain": -5
+  },
+  {
+   "beat": "k4",
+   "word": "nap",
+   "offset": 0.0,
+   "prompt": "small audience aww",
+   "dur": 1.8,
+   "gain": -8
+  }
+ ]
+}

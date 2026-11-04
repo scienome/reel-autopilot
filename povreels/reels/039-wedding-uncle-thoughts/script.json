@@ -1,0 +1,66 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what the uncle at every wedding thinks."
+  ]
+ },
+ {
+  "id": "u1",
+  "who": "dad",
+  "phrases": [
+   "Ah, there he is.",
+   "Still no job?",
+   "Still no girlfriend?"
+  ]
+ },
+ {
+  "id": "u2",
+  "who": "dad",
+  "phrases": [
+   "When I was your age,",
+   "I had a house, two cows and a scooter."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "Then the music starts."
+  ]
+ },
+ {
+  "id": "u3",
+  "who": "dad",
+  "phrases": [
+   "My song.",
+   "Clear the floor.",
+   "Nobody stops this uncle."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "Ten minutes later. His back."
+  ]
+ },
+ {
+  "id": "u4",
+  "who": "dad",
+  "phrases": [
+   "I'm fine.",
+   "Don't tell your aunty.",
+   "Help me up slowly."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "Tag the uncle who does this.",
+   "Part two?"
+  ]
+ }
+]

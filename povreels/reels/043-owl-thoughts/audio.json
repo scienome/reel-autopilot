@@ -1,0 +1,49 @@
+{
+ "music": {
+  "prompt": "Soft magical night music with celesta, harp and gentle strings, a cheeky middle, then tender and sleepy, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "owl",
+   "offset": 0.0,
+   "prompt": "owl hooting at night",
+   "dur": 1.8,
+   "gain": -5
+  },
+  {
+   "beat": "o1",
+   "word": "phone",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -9
+  },
+  {
+   "beat": "n2",
+   "word": "sleep",
+   "offset": 0.0,
+   "prompt": "quiet night crickets",
+   "dur": 2.5,
+   "gain": -10
+  },
+  {
+   "beat": "o3",
+   "word": "together",
+   "offset": 0.0,
+   "prompt": "soft warm choir aww",
+   "dur": 2,
+   "gain": -9
+  },
+  {
+   "beat": "o4",
+   "word": "Hoo",
+   "offset": 0.0,
+   "prompt": "owl hoot",
+   "dur": 1.2,
+   "gain": -5
+  }
+ ]
+}

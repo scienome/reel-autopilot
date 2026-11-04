@@ -1,0 +1,49 @@
+{
+ "music": {
+  "prompt": "Lively city driving comedy music with funky guitar and horns, turning soft and emotional with piano, then warm, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "taxi",
+   "offset": 0.0,
+   "prompt": "car engine and indicator ticking",
+   "dur": 1.5,
+   "gain": -7
+  },
+  {
+   "beat": "t1",
+   "word": "short",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "n2",
+   "word": "crying",
+   "offset": 0.0,
+   "prompt": "soft sad piano note",
+   "dur": 2,
+   "gain": -9
+  },
+  {
+   "beat": "t3",
+   "word": "down",
+   "offset": 0.0,
+   "prompt": "car radio turning off click",
+   "dur": 0.8,
+   "gain": -6
+  },
+  {
+   "beat": "t4",
+   "word": "there",
+   "offset": 0.0,
+   "prompt": "small audience aww",
+   "dur": 1.8,
+   "gain": -8
+  }
+ ]
+}

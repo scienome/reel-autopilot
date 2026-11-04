@@ -1,0 +1,65 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what your waiter thinks."
+  ]
+ },
+ {
+  "id": "w1",
+  "who": "friend",
+  "phrases": [
+   "Table six.",
+   "Still reading the menu.",
+   "For twenty minutes."
+  ]
+ },
+ {
+  "id": "w2",
+  "who": "friend",
+  "phrases": [
+   "You'll order the burger.",
+   "Everyone orders the burger."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "You order the salad."
+  ]
+ },
+ {
+  "id": "w3",
+  "who": "friend",
+  "phrases": [
+   "Respect.",
+   "You'll be jealous of table four in ten minutes."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "You leave a big tip."
+  ]
+ },
+ {
+  "id": "w4",
+  "who": "friend",
+  "phrases": [
+   "Wait.",
+   "Nobody tips on a Monday.",
+   "I'm telling my mum about you."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "What's the most you've ever tipped?",
+   "Part two?"
+  ]
+ }
+]

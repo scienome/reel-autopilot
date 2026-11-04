@@ -1,0 +1,66 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what your sofa thinks."
+  ]
+ },
+ {
+  "id": "s1",
+  "who": "poodle",
+  "phrases": [
+   "Coins: forty two.",
+   "Remotes: three.",
+   "Chips: too many to count."
+  ]
+ },
+ {
+  "id": "s2",
+  "who": "poodle",
+  "phrases": [
+   "You said you'd only sit for five minutes.",
+   "That was four hours ago."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "You buy a new sofa."
+  ]
+ },
+ {
+  "id": "s3",
+  "who": "poodle",
+  "phrases": [
+   "What.",
+   "Who is that.",
+   "Is she softer than me?"
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "The new one is too hard. You come back."
+  ]
+ },
+ {
+  "id": "s4",
+  "who": "poodle",
+  "phrases": [
+   "I knew it.",
+   "Nobody holds you like I do.",
+   "Your coins are safe with me."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "What's hiding in your sofa?",
+   "Part two?"
+  ]
+ }
+]

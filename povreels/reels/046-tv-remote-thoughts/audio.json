@@ -1,0 +1,49 @@
+{
+ "music": {
+  "prompt": "Cheeky sneaky comedy music with pizzicato strings and a funky bass, a dramatic power-up moment, then playful, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "r1",
+   "word": "sofa",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "r2",
+   "word": "eight",
+   "offset": 0.0,
+   "prompt": "small audience ooh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "n2",
+   "word": "batteries",
+   "offset": 0.0,
+   "prompt": "power down electronic sound",
+   "dur": 1.2,
+   "gain": -5
+  },
+  {
+   "beat": "r3",
+   "word": "Harder",
+   "offset": 0.0,
+   "prompt": "shaking rattling plastic",
+   "dur": 1,
+   "gain": -5
+  },
+  {
+   "beat": "r4",
+   "word": "power",
+   "offset": 0.0,
+   "prompt": "electric power up surge",
+   "dur": 1.5,
+   "gain": -5
+  }
+ ]
+}

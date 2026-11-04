@@ -1,0 +1,66 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what your old dog thinks."
+  ]
+ },
+ {
+  "id": "g1",
+  "who": "dog",
+  "phrases": [
+   "I don't run anymore.",
+   "But I still hear you open the cheese."
+  ]
+ },
+ {
+  "id": "g2",
+  "who": "dog",
+  "phrases": [
+   "I remember when you were small.",
+   "You hid peas under the table.",
+   "I ate them. For you."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "Now he sleeps by the door all day."
+  ]
+ },
+ {
+  "id": "g3",
+  "who": "dog",
+  "phrases": [
+   "I'm not sleeping.",
+   "I'm guarding.",
+   "With my eyes closed."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "You sit with him on the floor."
+  ]
+ },
+ {
+  "id": "g4",
+  "who": "dog",
+  "phrases": [
+   "This.",
+   "This is my favourite thing.",
+   "You. Here."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "Hug your dog today.",
+   "Part two?"
+  ]
+ }
+]
