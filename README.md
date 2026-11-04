@@ -35,7 +35,7 @@ Folder: [`couch-cartoon/`](couch-cartoon/)
 | [p003-the-real-hurt](couch-cartoon/p003-the-real-hurt.mp4) | "When did you stop looking at me?" 💔 | Not scheduled |
 | [t001-dentist](couch-cartoon/t001-dentist.mp4) | Who's Jessica? 📱 | Not scheduled |
 
-## Thought Bubble POV stories (formerly Gears & Glitches) (30)
+## Thought Bubble POV stories (formerly Gears & Glitches) (45)
 Folder: [`gears-pov/`](gears-pov/)
 
 | Video | Title | Status |
@@ -50,15 +50,15 @@ Folder: [`gears-pov/`](gears-pov/)
 | [008-lie-counter](gears-pov/008-lie-counter.mp4) | You can see how many lies people told today 🤥 | Posted on Instagram · on YouTube |
 | [009-baby-thoughts](gears-pov/009-baby-thoughts.mp4) | You can understand babies 👶 | Posted on Instagram · on YouTube |
 | [010-car-thoughts](gears-pov/010-car-thoughts.mp4) | You can hear what your car thinks 🚗 | Posted on Instagram · on YouTube |
-| [011-parrot-thoughts](gears-pov/011-parrot-thoughts.mp4) | You can hear what your parrot thinks 🦜 | Waiting to post |
+| [011-parrot-thoughts](gears-pov/011-parrot-thoughts.mp4) | You can hear what your parrot thinks 🦜 | Posted on Instagram · on YouTube |
 | [012-goldfish-memory](gears-pov/012-goldfish-memory.mp4) | You can hear what your goldfish thinks 🐠 | Posted on Instagram · on YouTube |
-| [013-fridge-judges-you](gears-pov/013-fridge-judges-you.mp4) | You can hear what your fridge thinks 🧀 | Waiting to post |
+| [013-fridge-judges-you](gears-pov/013-fridge-judges-you.mp4) | You can hear what your fridge thinks 🧀 | Posted on Instagram · on YouTube |
 | [014-pigeon-thoughts](gears-pov/014-pigeon-thoughts.mp4) | You can hear what pigeons think 🐦 | Waiting to post |
 | [015-phone-thoughts](gears-pov/015-phone-thoughts.mp4) | You can hear what your phone thinks 📱 | Posted on Instagram · on YouTube |
 | [016-grandpa-thoughts](gears-pov/016-grandpa-thoughts.mp4) | You can hear what your grandpa thinks 👴 | Posted on Instagram · on YouTube |
 | [017-cow-thoughts](gears-pov/017-cow-thoughts.mp4) | You can hear what cows think 🐄 | Waiting to post |
 | [018-boss-thoughts](gears-pov/018-boss-thoughts.mp4) | You can hear what your boss thinks 💼 | Waiting to post |
-| [019-houseplant-thoughts](gears-pov/019-houseplant-thoughts.mp4) | You can hear what your houseplant thinks 🪴 | Waiting to post |
+| [019-houseplant-thoughts](gears-pov/019-houseplant-thoughts.mp4) | You can hear what your houseplant thinks 🪴 | Posted on Instagram · on YouTube |
 | [020-mum-thoughts](gears-pov/020-mum-thoughts.mp4) | You can hear what your mum thinks 👩 | Posted on Instagram · on YouTube |
 | [021-hamster-thoughts](gears-pov/021-hamster-thoughts.mp4) | You can hear what your hamster thinks 🐹 | Waiting to post |
 | [022-toddler-thoughts](gears-pov/022-toddler-thoughts.mp4) | You can hear what your toddler thinks 🧒 | Waiting to post |
@@ -70,6 +70,21 @@ Folder: [`gears-pov/`](gears-pov/)
 | [028-alarm-clock-thoughts](gears-pov/028-alarm-clock-thoughts.mp4) | You can hear what your alarm clock thinks ⏰ | Waiting to post |
 | [029-puppy-first-night](gears-pov/029-puppy-first-night.mp4) | You can hear what your puppy thinks on night one 🐶 | Waiting to post |
 | [030-delivery-guy-thoughts](gears-pov/030-delivery-guy-thoughts.mp4) | You can hear what the delivery guy thinks 🍕 | Waiting to post |
+| [031-old-cat-thoughts](gears-pov/031-old-cat-thoughts.mp4) | You can hear what your 15-year-old cat thinks 🐱 | Not scheduled |
+| [032-waiter-thoughts](gears-pov/032-waiter-thoughts.mp4) | You can hear what your waiter thinks 🍽️ | Not scheduled |
+| [033-duck-thoughts](gears-pov/033-duck-thoughts.mp4) | You can hear what ducks think 🦆 | Not scheduled |
+| [034-crow-thoughts](gears-pov/034-crow-thoughts.mp4) | You can hear what crows think. And they remember your face 🐦‍⬛ | Not scheduled |
+| [035-sister-thoughts](gears-pov/035-sister-thoughts.mp4) | You can hear what your sister thinks 👧 | Not scheduled |
+| [036-mirror-thoughts](gears-pov/036-mirror-thoughts.mp4) | You can hear what your mirror thinks 🪞 | Not scheduled |
+| [037-washing-machine-thoughts](gears-pov/037-washing-machine-thoughts.mp4) | You can hear what your washing machine thinks 🧦 | Not scheduled |
+| [038-kitten-thoughts](gears-pov/038-kitten-thoughts.mp4) | You can hear what your new kitten thinks 🐱 | Not scheduled |
+| [039-wedding-uncle-thoughts](gears-pov/039-wedding-uncle-thoughts.mp4) | You can hear what the uncle at every wedding thinks 🕺 | Not scheduled |
+| [040-taxi-driver-thoughts](gears-pov/040-taxi-driver-thoughts.mp4) | You can hear what your taxi driver thinks 🚕 | Not scheduled |
+| [041-sofa-thoughts](gears-pov/041-sofa-thoughts.mp4) | You can hear what your sofa thinks 🛋️ | Not scheduled |
+| [042-big-brother-thoughts](gears-pov/042-big-brother-thoughts.mp4) | You can hear what your big brother thinks 👦 | Not scheduled |
+| [043-owl-thoughts](gears-pov/043-owl-thoughts.mp4) | You can hear what the owl outside your window thinks 🦉 | Not scheduled |
+| [044-first-date-thoughts](gears-pov/044-first-date-thoughts.mp4) | You can hear what your first date thinks 💘 | Not scheduled |
+| [045-old-dog-thoughts](gears-pov/045-old-dog-thoughts.mp4) | You can hear what your old dog thinks 🐕 | Not scheduled |
 
 ## CouchSarcasm (old couple comedy) (40)
 Folder: [`couch-sarcasm/`](couch-sarcasm/)
@@ -245,10 +260,10 @@ Folder: [`toy-reels/`](toy-reels/)
 | [71-bitcoin-pizza-day](toy-reels/71-bitcoin-pizza-day.mp4) | He Paid 10,000 Bitcoin For Two Pizzas 🍕 | Posted (Instagram + YouTube) |
 | [72-ghost-army-rubber-tanks](toy-reels/72-ghost-army-rubber-tanks.mp4) | America's Army Made Of Rubber Fooled The Nazis 🎈 | Posted (Instagram + YouTube) |
 | [73-taco-liberty-bell](toy-reels/73-taco-liberty-bell.mp4) | Taco Bell 'Bought' The Liberty Bell 🔔🌮 | Waiting to post |
-| [74-dancing-plague-1518](toy-reels/74-dancing-plague-1518.mp4) | Hundreds Danced Non-Stop In 1518. Nobody Knows Why 💃 | Waiting to post |
+| [74-dancing-plague-1518](toy-reels/74-dancing-plague-1518.mp4) | Hundreds Danced Non-Stop In 1518. Nobody Knows Why 💃 | Posted (Instagram + YouTube) |
 | [75-war-of-jenkins-ear](toy-reels/75-war-of-jenkins-ear.mp4) | Britain Went To War Over One Ear 👂⚔️ | Waiting to post |
-| [76-stone-of-scone-heist](toy-reels/76-stone-of-scone-heist.mp4) | Four Students Stole Britain's Coronation Stone 🪨 | Waiting to post |
-| [77-mona-lisa-stolen](toy-reels/77-mona-lisa-stolen.mp4) | The Man Who Stole The Mona Lisa 🖼️ | Waiting to post |
+| [76-stone-of-scone-heist](toy-reels/76-stone-of-scone-heist.mp4) | Four Students Stole Britain's Coronation Stone 🪨 | Posted (Instagram + YouTube) |
+| [77-mona-lisa-stolen](toy-reels/77-mona-lisa-stolen.mp4) | The Man Who Stole The Mona Lisa 🖼️ | Posted (Instagram + YouTube) |
 
 ## Mechanic Shorts (YouTube) (25)
 Folder: [`mechanic-shorts/`](mechanic-shorts/)
