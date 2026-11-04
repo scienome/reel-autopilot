@@ -1,0 +1,14 @@
+// 034 Supplements 7: beta-alanine (Trexler 2015 ISSN; Saunders 2017)
+(function () {
+P.reel({ merge: [['beta alanine', 'beta-alanine'], ['one to four minutes', '1-4 minutes'], ['four to six grams', '4-6 g'], ['two to four weeks', '2-4 weeks']], scenes: (A) => { const { L, pop, ramp, W, H, PAL } = A; return [
+  { at: 0, name: 'hook', draw: (c, t) => { P.bg(c, W, H, 'violet', t); P.bgCells(c, W, H, t, '#ffffff', 5, 0.05); P.face(c, W / 2, 800, 1.3, { shock: 0.7, t }); for (let i = 0; i < 4; i++) P.zap(c, W / 2 + (i % 2 ? 1 : -1) * 220, 700 + i * 60, 50, t, i, 3, PAL.yellow);
+    A.hookTitle(c, ['Why The', 'TINGLE?'], 'Supplement Series · Part 7'); } },
+  { at: L(2) - 0.2, name: 'carnosine', tr: 'zoom', focus: [W / 2, 700], draw: (c, t) => { P.bg(c, W, H, 'deep', t); P.bgCells(c, W, H, t, PAL.cyan, 3, 0.05); P.fiber(c, 60, 620, 600, 110, 0, { color: '#ff4a5c', seed: 5, slide: t * 8 });
+    const k = ramp(t, L(2) + 0.6, L(3)); for (let i = 0; i < 8; i++) P.flat(c, P.circ(110 + i * 70, 620 + Math.sin(t * 2 + i) * 30, 18 * k + 1), PAL.mint, { off: 3 });
+    P.label(c, 'Raises CARNOSINE', W / 2, 220, pop(t, L(2) + 0.6), { color: PAL.mint }); const a = pop(t, L(3)); if (a > 0) { for (let i = 0; i < 10; i++) P.ion(c, 100 + i * 55, 860 + Math.sin(t * 3 + i) * 20, 14, 1 - ramp(t, L(3) + 0.8, L(4))); P.label(c, 'Soaks up the acid', W / 2, 1080, a, { color: PAL.red }); } } },
+  { at: L(4) - 0.2, name: 'when', tr: 'slide', draw: (c, t) => { P.bg(c, W, H, 'violet', t); P.stopwatch(c, W / 2, 420, 140, ramp(t, L(4), L(4) + 2), '1-4 min'); P.check(c, 'High-rep sets, rowing, sprints', W / 2, 700, true, pop(t, L(4) + 2), 26);
+    P.check(c, 'One heavy set of 5', W / 2, 820, false, pop(t, L(5)), 28); } },
+  { at: L(6) - 0.2, name: 'dose', tr: 'slide', draw: (c, t) => { P.bg(c, W, H, 'deep', t); P.scoop(c, 200, 560, 1.4); P.counter(c, '4-6 g / day', 480, 520, 64, pop(t, L(6) + 0.6), PAL.cyan); P.week(c, W / 2, 860, 600, [1, 1, 1, 1, 1, 1, 1], ramp(t, L(6) + 1.5, L(6) + 2.5), PAL.mint); P.label(c, 'for 2-4+ weeks', W / 2, 1010, pop(t, L(6) + 2.5), { color: PAL.mint }); } },
+  { at: L(7) - 0.2, name: 'tingle', tr: 'slide', draw: (c, t) => { P.bg(c, W, H, 'violet', t); P.face(c, W / 2, 760, 1.0, { smile: true, t }); const e = pop(t, L(8) - 0.2);
+    P.check(c, 'Tingle = harmless', W / 2, 200, true, pop(t, L(7)) * (1 - e), 30); P.check(c, 'Split the dose to reduce it', W / 2, 300, true, pop(t, L(7) + 1.6) * (1 - e), 26); A.next(c, t, 'PRE-WORKOUT'); } },
+]; }, sfx: (A) => [['glitch', 0.4, { gain: 0.4 }], ['buzz', 0.9, { dur: 0.5, f: 300, gain: 0.2 }], ['powerup', A.L(2) + 0.6, { gain: 0.4 }], ['sparkle', A.L(3) + 0.8, { n: 6 }], ['tock', A.L(4), { f: 600 }], ['ding', A.L(4) + 2, { f: 'E6' }], ['error', A.L(5), { gain: 0.3 }], ['pop', A.L(6) + 0.6, { f: 800 }], ['ding', A.L(7), { f: 'G6' }]] });

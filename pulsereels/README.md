@@ -33,8 +33,7 @@ One channel, four numbered series that rotate, so every day has a mix. Each reel
 | **Exercise Series** | `Exercise Series · Part N` | One lift per episode: what it really works, one myth or mistake, form cues. | 007-the-squat |
 | **Supplement Series** | `Supplement Series · Part N` | One supplement per episode: what it does, what the evidence says, usual dose, who should be careful. | 008-creatine |
 
-**Rotation (3 posts a day):** Why → Muscle Building → Exercise, then Why → Supplements → Exercise, and so on. "Why" posts
-most because curiosity hooks travel furthest; supplements at most every other day.
+**Rotation (owner, 4 Nov): 4 posts a day, one from each series every day** (28 reels a week, 7 per series).
 
 **Next topics, in order:**
 - Why: the pump · knees cracking · side stitch when running · red face when lifting · hungrier on rest days · why you can't sleep after evening training · morning stiffness · why one side is stronger · goosebumps/shivers after a hard set · why you feel sick after leg day · why muscles twitch at night · why you sweat more as you get fitter.
@@ -42,18 +41,18 @@ most because curiosity hooks travel furthest; supplements at most every other da
 - Exercise: deadlift · bench press · pull-up · overhead press · hip thrust · barbell row · lunges · push-up · plank · dips · Romanian deadlift · calf raise.
 - Supplements: protein powder · caffeine · beta-alanine · fish oil · vitamin D · BCAAs (mostly not needed) · pre-workout · electrolytes · collagen · fat burners (what the evidence says).
 
-**Week 1 (made 4 Nov, 21 reels, 3 a day in this order):**
-| Day | Why Does This Happen? | Muscle Building / Supplements | Exercise |
-|---|---|---|---|
-| 1 | 009-the-pump (#2) | 010-how-much-protein (MB 2) | 011-the-deadlift (Ex 2) |
-| 2 | 012-knees-crack (#3) | 013-protein-powder (Supp 2) | 014-bench-press (Ex 3) |
-| 3 | 015-side-stitch (#4) | 016-sets-per-week (MB 3) | 017-pull-up (Ex 4) |
-| 4 | 018-red-face (#5) | 019-caffeine (Supp 3) | 020-overhead-press (Ex 5) |
-| 5 | 021-sweat-when-fit (#6) | 022-heavy-or-light (MB 4) | 023-hip-thrust (Ex 6) |
-| 6 | 024-evening-workout-sleep (#7) | 025-bcaas (Supp 4) | 026-barbell-row (Ex 7) |
-| 7 | 027-heart-keeps-racing (#8) | 028-train-to-failure (MB 5) | 029-push-ups (Ex 8) |
-Pilots 005-008 are part 1 of each series and post first. Next up: Why #9 one side stronger, MB 6 sleep and growth,
-Supp 5 fish oil, Ex 9 Romanian deadlift (each reel's "Next:" card already promises these).
+**Week 1 (made 4 Nov, 28 reels: 4 a day, one from each series, in this order):**
+| Day | Why Does This Happen? | Muscle Building | Exercise | Supplements |
+|---|---|---|---|---|
+| 1 | 009-the-pump (#2) | 010-how-much-protein (2) | 011-the-deadlift (2) | 013-protein-powder (2) |
+| 2 | 012-knees-crack (#3) | 016-sets-per-week (3) | 014-bench-press (3) | 019-caffeine (3) |
+| 3 | 015-side-stitch (#4) | 022-heavy-or-light (4) | 017-pull-up (4) | 025-bcaas (4) |
+| 4 | 018-red-face (#5) | 028-train-to-failure (5) | 020-overhead-press (5) | 030-fish-oil (5) |
+| 5 | 021-sweat-when-fit (#6) | 031-sleep-and-growth (6) | 023-hip-thrust (6) | 032-vitamin-d (6) |
+| 6 | 024-evening-workout-sleep (#7) | 033-eat-more-to-grow (7) | 026-barbell-row (7) | 034-beta-alanine (7) |
+| 7 | 027-heart-keeps-racing (#8) | 035-progressive-overload (8) | 029-push-ups (8) | 036-pre-workout (8) |
+Pilots 005-008 are part 1 of each series and post first. Next up: Why #9 one side stronger, MB 9 build muscle and lose fat at once,
+Supp 9 electrolytes, Ex 9 Romanian deadlift (each reel's "Next:" card already promises these).
 **How a reel is built now:** `story.js` calls `P.reel({ merge, scenes, sfx })` (kit/pulse.js, props pack 3), so a reel is
 just its scenes; see any of 009-029. Check with `python3 tools/pulse_make.py <id> --sheet`.
 

@@ -1,0 +1,14 @@
+// 031 Muscle Building 6: sleep and growth (Lamon 2021; Watson 2015; Dattilo 2011)
+(function () {
+P.reel({ merge: [['eighteen percent', '18%']], scenes: (A) => { const { L, pop, ramp, W, H, PAL } = A; return [
+  { at: 0, name: 'hook', draw: (c, t) => { P.bg(c, W, H, 'night', t); P.moon(c, 580, 470, 60); P.face(c, W / 2, 860, 1.0, { sleepy: true, t }); A.hookTitle(c, ['Bad Sleep', '= NO GAINS?'], 'Muscle Building · Part 6'); } },
+  { at: L(2) - 0.2, name: 'study', tr: 'slide', draw: (c, t) => { P.bg(c, W, H, 'violet', t); P.clock(c, W / 2, 520, 140, (t * 3) % 12, (t * 180) % 60, 'one night, no sleep'); P.label(c, 'Healthy young adults', W / 2, 200, pop(t, L(2)), { color: PAL.blue }); } },
+  { at: L(3) - 0.2, name: 'drop', tr: 'slide', draw: (c, t) => { P.bg(c, W, H, 'deep', t); const d = ramp(t, L(3), L(3) + 1.8);
+    P.meter(c, 230, 780, 150, 440, 0.8, PAL.mint, 'Normal sleep'); P.meter(c, 490, 780, 150, 440, 0.8 * (1 - 0.18 * d), PAL.red, 'No sleep'); P.counter(c, '-18%', 490, 260, 90, pop(t, L(3) + 1.6), PAL.red); P.label(c, 'Muscle building', W / 2, 1070, pop(t, L(3)), { color: PAL.mint }); } },
+  { at: L(4) - 0.2, name: 'hormones', tr: 'slide', draw: (c, t) => { P.bg(c, W, H, 'plum', t); P.gauge(c, 200, 560, 130, 0.35 + 0.4 * ramp(t, L(4), L(4) + 1.5), 'Cortisol', '↑'); P.gauge(c, 520, 560, 130, 0.7 - 0.35 * ramp(t, L(5), L(5) + 1.2), 'Testosterone', pop(t, L(5)) > 0 ? '↓' : '', PAL.blue);
+    P.label(c, 'Stress hormone up', W / 2, 220, pop(t, L(4)) * (1 - pop(t, L(5) - 0.2)), { color: PAL.red }); P.label(c, 'Testosterone down', W / 2, 220, pop(t, L(5)), { color: PAL.blue }); } },
+  { at: L(6) - 0.2, name: 'repair', tr: 'zoom', focus: [W / 2, 900], draw: (c, t) => { P.bg(c, W, H, 'night', t); P.bed(c, W / 2, 900, 1.2, t); P.protein(c, W / 2, 450, 520, t, ramp(t, L(6), L(7))); P.label(c, 'Repair happens while you sleep', W / 2, 200, pop(t, L(6)), { color: PAL.cyan, size: 28 });
+    P.counter(c, '7+ hours', W / 2, 620, 90, pop(t, L(7) + 0.5), PAL.yellow); } },
+  { at: L(8) - 0.2, name: 'tips', tr: 'slide', draw: (c, t) => { P.bg(c, W, H, 'night', t); P.bed(c, W / 2, 1000, 1.0, t); const e = pop(t, L(9) - 0.2);
+    ['Dark room', 'Cool room', 'Same bedtime'].forEach((s, i) => P.check(c, s, W / 2, 200 + i * 100, true, pop(t, L(8) + i * 0.6) * (1 - e), 30)); P.label(c, 'Treat sleep like a set', W / 2, 520, pop(t, L(8) + 2.2) * (1 - e), { color: PAL.amber }); A.next(c, t, 'EAT MORE TO GROW?'); } },
+]; }, sfx: (A) => [['tock', 0.5, { f: 600 }], ['tock', 1.5, { f: 600 }], ['tock', A.L(2) + 0.5, { f: 700 }], ['buzz', A.L(3) + 1, { dur: 0.5, f: 120, gain: 0.3 }], ['stamp', A.L(3) + 1.6, { gain: 0.5 }], ['error', A.L(4) + 0.5, { gain: 0.3 }], ['error', A.L(5) + 0.4, { gain: 0.3 }], ['sparkle', A.L(6) + 0.5, { n: 6 }], ['ding', A.L(7) + 0.5, { f: 'E6' }], ['pop', A.L(8), { f: 700 }], ['pop', A.L(8) + 0.6, { f: 780 }], ['pop', A.L(8) + 1.2, { f: 860 }]] });

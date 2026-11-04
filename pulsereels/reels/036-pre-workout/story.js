@@ -1,0 +1,17 @@
+// 036 Supplements 8: pre-workout (Jagim 2019; Cohen 2016; FDA/DSHEA)
+(function () {
+P.reel({ merge: [['two hundred fifty milligrams', '250 mg'], ['under eighteen', 'under 18']], scenes: (A) => { const { L, pop, ramp, W, H, PAL } = A; return [
+  { at: 0, name: 'hook', draw: (c, t) => { P.bg(c, W, H, 'violet', t); P.bgCells(c, W, H, t, '#ffffff', 5, 0.05); P.glow(c, W / 2, 760, 320, PAL.magenta, 0.4); P.tub(c, W / 2, 760 + Math.sin(t * 2) * 8, 1.6, '#1d0d4f', 'PRE', 'workout', PAL.magenta); P.qmarks(c, W / 2, 520, t, 1);
+    A.hookTitle(c, ["What's In Your", 'PRE-WORKOUT?'], 'Supplement Series · Part 8', PAL.magenta, 60); } },
+  { at: L(2) - 0.2, name: 'study', tr: 'slide', draw: (c, t) => { P.bg(c, W, H, 'deep', t); for (let i = 0; i < 6; i++) P.tub(c, 130 + (i % 3) * 230, 420 + Math.floor(i / 3) * 260, 0.55, ['#1d0d4f', '#3a1460', '#13304a'][i % 3], 'PRE', '', [PAL.magenta, PAL.cyan, PAL.amber][i % 3]);
+    P.label(c, 'Top-selling pre-workouts', W / 2, 200, pop(t, L(2)), { color: PAL.blue }); P.counter(c, '≈250 mg caffeine', W / 2, 1090, 64, pop(t, L(3) + 0.6), PAL.yellow); } },
+  { at: L(3) + 2.2, name: 'coffees', tr: 'slide', draw: (c, t) => { P.bg(c, W, H, 'night', t); for (let i = 0; i < 3; i++) if (pop(t, L(3) + 2.4 + i * 0.3) > 0) P.coffee(c, 160 + i * 200, 620, 1.0, t + i); P.label(c, '= 2-3 coffees in one scoop', W / 2, 220, pop(t, L(3) + 2.4), { color: PAL.amber, size: 30 });
+    P.label(c, 'Caffeine does most of the work', W / 2, 1070, pop(t, L(4)), { color: PAL.mint, size: 30 }); } },
+  { at: L(5) - 0.2, name: 'blend', tr: 'slide', draw: (c, t) => { P.bg(c, W, H, 'plum', t); P.flat(c, P.rr(110, 320, 500, 520, 24), PAL.white, { off: 8 });
+    c.save(); c.font = `900 34px ${P.FONT}`; c.fillStyle = PAL.ink; c.textAlign = 'center'; c.fillText('PROPRIETARY BLEND', W / 2, 390); c.font = `800 26px ${P.FONT}`; ['Caffeine ??? mg', 'Beta-alanine ??? g', 'Citrulline ??? g', 'Other ???'].forEach((s, i) => c.fillText(s, W / 2, 470 + i * 70)); c.restore();
+    P.qmarks(c, W / 2, 900, t, pop(t, L(5) + 1)); P.label(c, "Can't see the doses", W / 2, 220, pop(t, L(5)), { color: PAL.red }); } },
+  { at: L(6) - 0.2, name: 'unchecked', tr: 'slide', draw: (c, t) => { P.bg(c, W, H, 'night', t); P.tub(c, W / 2, 620, 1.2, '#1d0d4f', 'PRE', '', PAL.magenta); P.stampX(c, W / 2, 620, 160, pop(t, L(6) + 2.4));
+    P.label(c, 'Not safety-checked before sale', W / 2, 220, pop(t, L(6)), { color: PAL.amber, size: 30 }); P.label(c, 'Banned stimulants found in some', W / 2, 980, pop(t, L(6) + 2.4), { color: PAL.red, size: 28 }); } },
+  { at: L(7) - 0.2, name: 'rules', tr: 'slide', draw: (c, t) => { P.gym(c, W, H, t); P.lifter(c, W / 2, H * 0.86, 1.1, { arms: 'flex', smile: true, blink: A.blink(t) }); const e = pop(t, L(8) - 0.2);
+    P.check(c, 'Third-party tested', W / 2, 190, true, pop(t, L(7)) * (1 - e), 28); P.check(c, 'Count the caffeine', W / 2, 290, true, pop(t, L(7) + 1.6) * (1 - e), 28); P.check(c, 'Under 18, pregnant, heart issues: skip', W / 2, 390, false, pop(t, L(7) + 3.2) * (1 - e), 24); A.next(c, t, 'ELECTROLYTES'); } },
+]; }, sfx: (A) => [['riser', 0, { dur: 0.6, gain: 0.3 }], ['paper', A.L(2), { dur: 0.3 }], ['stamp', A.L(3) + 0.6, { gain: 0.5 }], ['pop', A.L(3) + 2.4, { f: 700 }], ['pop', A.L(3) + 2.7, { f: 800 }], ['pop', A.L(3) + 3, { f: 900 }], ['error', A.L(5), { gain: 0.3 }], ['stamp', A.L(6) + 2.4, { gain: 0.6 }], ['pop', A.L(7), { f: 700 }], ['pop', A.L(7) + 1.6, { f: 800 }], ['error', A.L(7) + 3.2, { gain: 0.3 }]] });
