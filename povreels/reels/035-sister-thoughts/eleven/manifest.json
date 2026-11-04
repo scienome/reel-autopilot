@@ -1,0 +1,28 @@
+{
+ "music-2dcadef49dfa.mp3": {
+  "prompt": "Cheeky sibling rivalry comedy music with pizzicato and kazoo, turning into a heroic action sting, then playful, no vocals",
+  "music_length_ms": 29660,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-acece586dd7c.mp3": {
+  "text": "villain laugh short",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-09f5a2915fda.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-c8d29c552b23.mp3": {
+  "text": "dramatic orchestra hit",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-29e0587c84b5.mp3": {
+  "text": "small audience ooh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ }
+}
