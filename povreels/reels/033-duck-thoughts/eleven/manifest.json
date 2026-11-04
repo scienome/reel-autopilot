@@ -1,0 +1,33 @@
+{
+ "music-aa673c946c0a.mp3": {
+  "prompt": "Bouncy cartoon park comedy music with bassoon, pizzicato and whistles, a sad violin moment, then warm, no vocals",
+  "music_length_ms": 28620,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-6a08b9567f86.mp3": {
+  "text": "ducks quacking at a pond",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-3b82f552da80.mp3": {
+  "text": "angry duck quack",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-df9ac5e303d3.mp3": {
+  "text": "empty paper bag crumpling",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-85bc8d2e3d0e.mp3": {
+  "text": "dramatic sting and angry quacks",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-f304b05f41be.mp3": {
+  "text": "small audience aww",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
