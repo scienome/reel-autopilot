@@ -3,7 +3,7 @@
 P.reel({ scenes: (A) => { const { L, pop, ramp, W, H, PAL } = A; return [
   { at: 0, name: 'hook', draw: (c, t) => { P.gym(c, W, H, t); const k = 0.5 - 0.5 * Math.cos(t * 3); P.lifterSide(c, W / 2 - 60, H * 0.84, 1.3, 'pushup', { k, wince: k > 0.7 }); A.hookTitle(c, ['PUSH-UPS', 'vs BENCH?'], 'Exercise Series · Part 8'); } },
   { at: L(2) - 0.2, name: 'map', tr: 'zoom', focus: [W / 2, 700], draw: (c, t) => { P.bg(c, W, H, 'deep', t); P.bgCells(c, W, H, t, PAL.cyan, 3, 0.05); const core = pop(t, L(3));
-    P.musclemap(c, W / 2, 760, 1.5, 'front', { chest: pop(t, L(2)), shoulders: pop(t, L(2) + 1), abs: core, obliques: core });
+    A.xrayRep(c, t, 'pushup', { chest: pop(t, L(2)), shoulders: pop(t, L(2) + 1), triceps: pop(t, L(2) + 1.5), abs: core, obliques: core }, { x: W / 2 - 40, y: H * 0.62, s: 1.3, speed: 3, map: 'front' });
     P.label(c, 'Chest, shoulders, triceps', W / 2, 170, pop(t, L(2)) * (1 - core), { color: PAL.red }); P.label(c, '+ CORE holds you straight', W / 2, 170, core, { color: PAL.amber }); } },
   { at: L(4) - 0.2, name: 'study', tr: 'slide', draw: (c, t) => { P.bg(c, W, H, 'violet', t); P.versus(c, W / 2, 560, 660, 400, 'Push-up', 'Bench', pop(t, L(4)), 0, (cc) => P.lifterSide(cc, 20, 120, 0.4, 'pushup', { k: 0.5 }), (cc) => P.lifterBench(cc, 20, 120, 0.4, 'bench', { k: 0.5 }));
     P.counter(c, '= strength', W / 2, 860, 70, pop(t, L(4) + 2.6), PAL.mint); P.counter(c, '= growth', W / 2, 1070, 70, pop(t, L(5)), PAL.mint); } },

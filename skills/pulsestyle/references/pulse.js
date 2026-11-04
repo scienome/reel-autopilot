@@ -131,7 +131,7 @@
     curl: (sw, sy) => ({ e: [sw + 8, sy + 54], h: [sw + 30, sy + 10] }),
   };
   P.lifter = (ctx, x, y, s = 1, pose = {}) => {
-    const PAL = P.PAL, sq = pose.squat || 0, bulk = pose.bulk || 0, bw = 1 + bulk * 0.28;
+    const PAL = P.PAL, sq = pose.squat || 0, bulk = pose.bulk || 0, bw = 1 + bulk * 0.28, J = { legs: [], arms: [] };
     ctx.save(); ctx.translate(x, y); ctx.scale(s, s);
     P.shadow(ctx, 0, 4, 120, 18, 0.22);
     const hipY = -150 + sq * 58, shY = hipY - 104 - bulk * 6, sw = 46 * bw;
@@ -139,6 +139,7 @@
     for (const sd of [-1, 1]) {
       const lift = pose.run == null ? 0 : Math.max(0, Math.sin(pose.run + (sd > 0 ? 0 : Math.PI)));
       const hx = sd * 24, fx = sd * (44 + sq * 14 - lift * 14), kx = sd * (40 + sq * 46 - lift * 16), ky = lerp(-78, -66, sq) - lift * 52, fy = -lift * 46;
+      J.legs.push([[hx, hipY + 10], [kx, ky], [fx, fy - 16]]);
       P.flat(ctx, P.capsule(hx, hipY + 10, kx, ky, 21 * bw, 19 * bw), PAL.skin, { off: 6 });
       P.flat(ctx, P.capsule(kx, ky, fx, fy - 16, 18 * bw, 14), PAL.skin, { off: 6 });
       P.flat(ctx, P.rr(fx - 22 + sd * 6, fy - 24, 44, 24, 11), '#f4f4ff', { off: 4, lo: 2 }); // shoes
@@ -151,6 +152,7 @@
     P.flat(ctx, torso, PAL.skin, { off: 7 });
     P.flat(ctx, P.blob([[-sw * 0.62, shY + 6], [-sw * 0.3, shY - 4], [0, shY + 22], [sw * 0.3, shY - 4], [sw * 0.62, shY + 6], [sw * 0.8, shY + 54], [36 * bw, hipY - 12], [-36 * bw, hipY - 12], [-sw * 0.8, shY + 54]]), PAL.teal, { off: 7 });
     P.fill(ctx, P.rr(-36 * bw, hipY - 26, 72 * bw, 12, 6), P.shade(PAL.teal, 0.2));
+    if (pose.coat) { for (const sd of [-1, 1]) P.flat(ctx, P.poly([[sd * sw * 0.95, shY + 2], [sd * sw * 0.3, shY - 2], [sd * 10, hipY + 30], [sd * (50 * bw), hipY + 40]]), '#f3f6ff', { off: 5 }); }
     const bel = pose.belly || 0;
     if (bel > 0.02) { P.flat(ctx, P.ell(0, hipY - 30 - bel * 6, 36 + bel * 38, 26 + bel * 30), PAL.teal, { off: 8, light: 0.18 }); P.fill(ctx, P.ell(0, hipY - 8 + bel * 6, 14 + bel * 20, 5 + bel * 3), 'rgba(18,8,70,0.18)'); }
     // arms
@@ -165,7 +167,7 @@
       if (bulk > 0.05 && (pose.arms2 === 'flex' || pose.arms === 'flex')) P.flat(ctx, P.circ(lerp(sx, e[0], 0.55), lerp(sy, e[1], 0.55) - 10 * bw, 15 * bw * (0.6 + bulk * 0.6)), PAL.skin, { off: 5 });
       P.flat(ctx, P.capsule(e[0], e[1], h[0], h[1], 14 * bw, 12 * bw), PAL.skin, { off: 6 });
       P.flat(ctx, P.circ(h[0], h[1], 14 * bw), PAL.skin, { off: 4, lo: 2 });
-      hands.push(h);
+      hands.push(h); J.arms.push([[sx, sy], e, h]);
     }
     // head
     const hy = shY - 46, look = (pose.look || 0) * 6, w = pose.wince || 0;
@@ -186,13 +188,20 @@
     }
     // mouth
     ctx.fillStyle = PAL.ink; ctx.strokeStyle = PAL.ink; ctx.lineWidth = 3.5; ctx.lineCap = 'round';
-    if ((pose.shock || 0) > 0.3 || pose.pant) { const oy = pose.pant ? 0.6 + 0.4 * Math.abs(Math.sin(pose.pant)) : 1; P.fill(ctx, P.ell(0, hy + 24, 9, 11 * oy), PAL.ink); P.fill(ctx, P.ell(0, hy + 29 * (0.85 + 0.15 * oy), 6, 3.5 * oy), PAL.pink); }
+    if ((pose.talk || 0) > 0.05) { P.fill(ctx, P.ell(0, hy + 24, 10, 3 + 10 * pose.talk), PAL.ink); P.fill(ctx, P.ell(0, hy + 27 + 4 * pose.talk, 6, 2.5 * pose.talk), PAL.pink); }
+    else if ((pose.shock || 0) > 0.3 || pose.pant) { const oy = pose.pant ? 0.6 + 0.4 * Math.abs(Math.sin(pose.pant)) : 1; P.fill(ctx, P.ell(0, hy + 24, 9, 11 * oy), PAL.ink); P.fill(ctx, P.ell(0, hy + 29 * (0.85 + 0.15 * oy), 6, 3.5 * oy), PAL.pink); }
     else if (w > 0.3) { ctx.beginPath(); ctx.moveTo(-9, hy + 24); for (let i = 1; i <= 4; i++) ctx.lineTo(-9 + i * 4.5, hy + 24 + (i % 2 ? -3 : 0)); ctx.stroke(); }
     else if (pose.smile) { ctx.beginPath(); ctx.arc(0, hy + 18, 10, 0.15 * Math.PI, 0.85 * Math.PI); ctx.stroke(); }
     else { ctx.beginPath(); ctx.moveTo(-6, hy + 24); ctx.lineTo(6, hy + 24); ctx.stroke(); }
     P.fill(ctx, P.circ(-26, hy + 16, 6), 'rgba(255,90,120,0.35)'); P.fill(ctx, P.circ(26, hy + 16, 6), 'rgba(255,90,120,0.35)');
     // barbell between the hands
+    if (pose.glasses) { ctx.save(); ctx.strokeStyle = PAL.ink; ctx.lineWidth = 4; for (const sd of [-1, 1]) { ctx.beginPath(); ctx.arc(sd * 15 + look, hy + 4, 13, 0, Math.PI * 2); ctx.stroke(); } ctx.beginPath(); ctx.moveTo(-2 + look, hy + 2); ctx.lineTo(2 + look, hy + 2); ctx.stroke(); ctx.restore(); }
+    if (pose.cap) { P.flat(ctx, P.blob([[-42, hy - 8], [-36, hy - 40], [0, hy - 54], [36, hy - 40], [42, hy - 8]]), pose.cap, { off: 5 }); P.flat(ctx, P.rr(10, hy - 16, 62, 14, 7), P.shade(pose.cap, 0.15), { off: 3 }); }
+    if (pose.ponytail) P.flat(ctx, P.blob([[-30, hy - 30], [-58, hy - 10], [-66, hy + 40], [-48, hy + 50], [-38, hy + 6]]), PAL.hair, { off: 4 });
+    if (pose.whistle) { ctx.save(); ctx.strokeStyle = PAL.white; ctx.lineWidth = 2.5; ctx.beginPath(); ctx.moveTo(-14, shY - 8); ctx.lineTo(0, shY + 40); ctx.lineTo(14, shY - 8); ctx.stroke(); ctx.restore(); P.flat(ctx, P.rr(-10, shY + 36, 22, 14, 6), PAL.steel, { off: 2 }); }
+    if (pose.clipboard) { P.flat(ctx, P.rr(hands[1][0] - 26, hands[1][1] - 60, 52, 70, 6), PAL.amber, { off: 3 }); P.fill(ctx, P.rr(hands[1][0] - 20, hands[1][1] - 50, 40, 52, 3), PAL.white); }
     if (pose.bar) P.barbell(ctx, (hands[0][0] + hands[1][0]) / 2, (hands[0][1] + hands[1][1]) / 2, 1, pose.plate);
+    if (pose.xray) P._xbones(ctx, J, shY, hipY, hy, pose.work || {}, pose.t || 0, bw);
     ctx.restore();
     return { hipY: y + hipY * s, shY: y + shY * s, thigh: [x + 46 * s, y + (hipY + 40) * s], hands: hands.map(([a, b]) => [x + a * s, y + b * s]) };
   };
@@ -629,6 +638,8 @@
     const cur = SEQ[i], prev = SEQ[i - 1], d = cur.d || (cur.tr === 'slide' ? 0.55 : 0.8);
     if (!prev || !cur.tr || cur.tr === 'cut' || t >= cur.t + d) return cur.draw(ctx);
     if (cur.tr === 'zoom') return P.zoomThrough(ctx, W, H_, t, cur.t, d, cur.focus[0], cur.focus[1], prev.draw, cur.draw);
+    if (cur.tr === 'whip' && P.whipCut) return P.whipCut(ctx, W, H_, t, cur.t, 0.45, prev.draw, cur.draw, cur.dir || 1);
+    if (cur.tr === 'flash' && P.flashCut) return P.flashCut(ctx, W, H_, t, cur.t, 0.5, prev.draw, cur.draw);
     return P.slideCut(ctx, W, H_, t, cur.t, d, prev.draw, cur.draw);
   };
 })();
@@ -839,6 +850,7 @@
       P.flat(ctx, P.capsule(hipP[0], hipP[1], sh[0], sh[1], 30 * bw, 34 * bw), PAL.teal, { off: 7 });
       P.flat(ctx, P.capsule(sh[0], sh[1], elbow[0], elbow[1], 15 * bw), PAL.skin, { off: 5 }); P.flat(ctx, P.capsule(elbow[0], elbow[1], hand[0], hand[1], 13 * bw), PAL.skin, { off: 5 });
       head(ctx, sh[0] + 52, sh[1] - 18, o, 0.35);
+      if (o.xray) P._xside(ctx, { ank: ankP, knee: kneeP, hip: hipP, sh, elbow, hand, head: [sh[0] + 52, sh[1] - 18] }, o.work || {}, o.t || 0);
       ctx.restore(); return { hip: hipP, shoulder: sh };
     }
     ankP = [0, -14]; ctx.translate(0, lift);
@@ -866,6 +878,7 @@
     head(ctx, hx, hy, o, torso);
     if (o.bar && pose !== 'squat') { const bp = hand; P.fill(ctx, P.rr(bp[0] - 6, bp[1] - 6, 12, 12, 6), PAL.steel); P.flat(ctx, P.circ(bp[0], bp[1], 46), PAL.orange, { off: 5 }); P.fill(ctx, P.circ(bp[0], bp[1], 10), PAL.steel); }
     if (pose === 'hang') P.flat(ctx, P.rr(hand[0] - 220, hand[1] - 24, 440, 22, 11), PAL.steel, { off: 3 });
+    if (o.xray) P._xside(ctx, { ank: ankP, knee: kneeP, hip: hipP, sh, elbow, hand, head: [hx, hy] }, o.work || {}, o.t || 0);
     ctx.restore(); return { hip: [x + hipP[0] * s * f, y + (hipP[1] + lift) * s], shoulder: [x + sh[0] * s * f, y + (sh[1] + lift) * s], hand: [x + hand[0] * s * f, y + (hand[1] + lift) * s], knee: [x + kneeP[0] * s * f, y + (kneeP[1] + lift) * s] };
   };
   function head(ctx, hx, hy, o, tilt) {
@@ -1059,7 +1072,7 @@
     A.next = (ctx, t, what, col = PAL.mint) => P.title(ctx, ['Next:', what], W / 2, 190, P.pop(t, L(SCRIPT.length - 1) - 0.1, 0.6), { size: what.length > 14 ? 54 : 66, color: col });
     let CUR = 0; const scenes = cfg.scenes(A);
     const SEQ = scenes.map((s) => ({ t: s.at, draw: (c) => s.draw(c, CUR), tr: s.tr, focus: s.focus }));
-    function explainer(ctx, W_, H2, t) { CUR = t; ctx.save(); P.sequence(ctx, W, H_, t, SEQ); ctx.restore(); P.finish(ctx, W, H_); P.caption(ctx, W, H_, P.captionAt(CHUNKS, t)); }
+    function explainer(ctx, W_, H2, t) { CUR = t; P._now = t; ctx.save(); P.sequence(ctx, W, H_, t, SEQ); ctx.restore(); P.finish(ctx, W, H_); P.caption(ctx, W, H_, P.captionAt(CHUNKS, t)); }
     const BEATS = scenes.map((s, i) => ({ t: s.at, name: s.name || 's' + i }));
     window.LESSON = { BEATS, DURATION, explainer, WORDS, CHUNKS };
     window.scoreSound = (k) => {
@@ -1067,6 +1080,156 @@
       SEQ.slice(1).forEach((s) => k.play(s.tr === 'zoom' ? 'whoosh' : 'swish', s.t, s.tr === 'zoom' ? { dur: 0.8, top: 3200 } : { dur: 0.3 }));
       (cfg.sfx ? cfg.sfx(A) : []).forEach(([n, tt, o]) => k.play(n, tt, o || {}));
       k.play('success', L(SCRIPT.length - 1)); k.play('sparkle', L(SCRIPT.length - 1) + 0.3, { n: 10 });
+    };
+  };
+})();
+
+// ======================= MOTION PACK 4 (4 Nov 2026): x-ray, muscle dives, characters, living camera =======================
+// Owner: "it's like a person is speaking and nothing is moving". Everything here adds motion or depth.
+(function () {
+  const P = window.P, PAL = P.PAL, TAU = Math.PI * 2, cl = P.cl, lerp = P.lerp;
+  const XR = { skin: '#3a6fd8', skinD: '#2a52a8', teal: '#2b4aa8', hair: '#1b2f78', orange: '#2f5cc0' };
+  P.CHAR = {
+    doc: { skin: '#c98b62', skinD: '#a96d48', hair: '#2b1a10', teal: '#3f53f0', orange: '#2b1a10', pose: { coat: true, glasses: true }, name: 'Doc' },
+    coach: { skin: '#8d5a3b', skinD: '#6e4229', hair: '#1a0f08', teal: '#e2384a', orange: '#e2384a', pose: { cap: '#1a1f5c', whistle: true }, name: 'Coach' },
+    mia: { skin: '#f2c4a0', skinD: '#d9a07a', hair: '#5b2c12', teal: '#9b2fe0', orange: '#ffb52e', pose: { ponytail: true }, name: 'Mia' },
+  };
+  const swap = (o, fn) => { const set = o && o.xray ? XR : o && o.char && P.CHAR[o.char]; if (!set) return fn(); const keep = {}; for (const k of ['skin', 'skinD', 'teal', 'hair', 'orange']) if (set[k]) { keep[k] = PAL[k]; PAL[k] = set[k]; } try { return fn(); } finally { Object.assign(PAL, keep); } };
+  const baseL = P.lifter, baseS = P.lifterSide;
+  const idle = (ctx, x, y, s, fn) => { const tt = P._now; if (tt == null) return fn(); const b = Math.sin(tt * 2.6 + x * 0.013), sy = 1 + 0.012 * b; ctx.save(); ctx.translate(x, y); ctx.scale(1 - 0.006 * b, sy); ctx.translate(-x, -y); try { return fn(); } finally { ctx.restore(); } };
+  P.lifter = (ctx, x, y, s = 1, pose = {}) => swap(pose, () => pose.idle === false ? baseL(ctx, x, y, s, pose) : idle(ctx, x, y, s, () => baseL(ctx, x, y, s, pose)));
+  P.lifterSide = (ctx, x, y, s = 1, pose = 'stand', o = {}) => swap(o, () => baseS(ctx, x, y, s, pose, o));
+  P.person = (ctx, x, y, s, who = 'doc', pose = {}) => P.lifter(ctx, x, y, s, Object.assign({}, (P.CHAR[who] || {}).pose, pose, { char: who }));
+  P.personSide = (ctx, x, y, s, who = 'coach', p = 'stand', o = {}) => P.lifterSide(ctx, x, y, s, p, Object.assign({}, o, { char: who }));
+
+  // ---- x-ray passes (called from inside the lifters, in their local space) ----
+  const bone = (ctx, pts, w = 9) => { ctx.save(); ctx.strokeStyle = '#e8fbff'; ctx.lineWidth = w; ctx.lineCap = 'round'; ctx.lineJoin = 'round'; ctx.shadowColor = '#7fe3ff'; ctx.shadowBlur = 14; ctx.beginPath(); pts.forEach(([a, b], i) => (i ? ctx.lineTo(a, b) : ctx.moveTo(a, b))); ctx.stroke(); ctx.restore(); };
+  const knob = (ctx, x, y, r = 7) => { ctx.save(); ctx.shadowColor = '#7fe3ff'; ctx.shadowBlur = 10; P.fill(ctx, P.circ(x, y, r), '#e8fbff'); ctx.restore(); };
+  const mglow = (ctx, x, y, r, k, t, ph = 0) => { if (!(k > 0)) return; const pulse = 0.7 + 0.3 * Math.sin(t * 7 + ph); P.glow(ctx, x, y, r, PAL.red, 0.85 * k * pulse); P.glow(ctx, x, y, r * 0.45, PAL.amber, 0.7 * k * pulse); };
+  P._xbones = (ctx, J, shY, hipY, hy, work, t, bw = 1) => {
+    J.legs.forEach(([h, k, f]) => { bone(ctx, [h, k]); bone(ctx, [k, f]); knob(ctx, k[0], k[1], 9); });
+    J.arms.forEach(([s, e, h]) => { bone(ctx, [s, e], 8); bone(ctx, [e, h], 7); knob(ctx, e[0], e[1]); });
+    for (let i = 0; i < 7; i++) { const y = lerp(hy + 44, hipY - 14, i / 6); ctx.save(); ctx.shadowColor = '#7fe3ff'; ctx.shadowBlur = 8; P.fill(ctx, P.rr(-7, y - 6, 14, 12, 4), '#e8fbff'); ctx.restore(); }
+    ctx.save(); ctx.strokeStyle = 'rgba(232,251,255,0.85)'; ctx.lineWidth = 5; ctx.shadowColor = '#7fe3ff'; ctx.shadowBlur = 8; for (let i = 0; i < 4; i++) { ctx.beginPath(); ctx.ellipse(0, shY + 26 + i * 18, 36 * bw - i * 3, 10, 0, Math.PI * 0.05, Math.PI * 0.95); ctx.stroke(); }
+    ctx.beginPath(); ctx.ellipse(0, hipY - 6, 40, 16, 0, 0, Math.PI); ctx.stroke(); ctx.beginPath(); ctx.arc(0, hy - 2, 30, 0, TAU); ctx.stroke(); ctx.restore();
+    const L = J.legs, A = J.arms, mid = (a, b, u = 0.5) => [lerp(a[0], b[0], u), lerp(a[1], b[1], u)];
+    L.forEach(([h, k, f], i) => { const q = mid(h, k); mglow(ctx, q[0], q[1], 46, work.quads, t, i); mglow(ctx, q[0], q[1], 40, work.hamstrings, t, i + 1); mglow(ctx, q[0], q[1] - 10, 34, work.adductors, t, i); const c = mid(k, f, 0.4); mglow(ctx, c[0], c[1], 32, work.calves, t, i); mglow(ctx, h[0], h[1] - 4, 44, work.glutes, t, i); });
+    A.forEach(([s, e, h], i) => { const u = mid(s, e); mglow(ctx, u[0], u[1], 32, Math.max(work.biceps || 0, work.triceps || 0), t, i); mglow(ctx, s[0], s[1], 34, Math.max(work.shoulders || 0, work.rear || 0), t, i); const fo = mid(e, h); mglow(ctx, fo[0], fo[1], 26, work.forearms, t, i); });
+    for (const sd of [-1, 1]) { mglow(ctx, sd * 24, shY + 34, 40, work.chest, t, sd); mglow(ctx, sd * 40, shY + 66, 40, work.lats, t, sd); mglow(ctx, sd * 18, (shY + hipY) / 2 + 20, 30, work.obliques, t, sd); }
+    mglow(ctx, 0, (shY + hipY) / 2 + 14, 46, work.abs, t); mglow(ctx, 0, shY - 4, 40, work.traps, t); mglow(ctx, 0, hipY - 30, 40, work.lowback, t);
+    if (work.heart) { const b = 1 + 0.15 * Math.max(0, Math.sin(t * 8)); P.glow(ctx, 12, shY + 44, 60 * b, PAL.red, 0.9 * work.heart); P.heart(ctx, 12, shY + 44, 20 * b, t); }
+  };
+  P._xside = (ctx, j, work, t) => {
+    const { ank, knee, hip, sh, elbow, hand, head } = j, mid = (a, b, u = 0.5) => [lerp(a[0], b[0], u), lerp(a[1], b[1], u)];
+    bone(ctx, [ank, knee]); bone(ctx, [knee, hip], 10); bone(ctx, [sh, elbow], 8); bone(ctx, [elbow, hand], 7); knob(ctx, knee[0], knee[1], 9); knob(ctx, elbow[0], elbow[1]); knob(ctx, hip[0], hip[1], 10);
+    for (let i = 0; i <= 7; i++) { const p = mid(hip, sh, i / 7); ctx.save(); ctx.shadowColor = '#7fe3ff'; ctx.shadowBlur = 8; P.fill(ctx, P.circ(p[0] - 6, p[1], 7), '#e8fbff'); ctx.restore(); }
+    ctx.save(); ctx.strokeStyle = 'rgba(232,251,255,0.85)'; ctx.lineWidth = 5; ctx.shadowColor = '#7fe3ff'; ctx.shadowBlur = 8; ctx.beginPath(); ctx.arc(head[0], head[1], 28, 0, TAU); ctx.stroke(); ctx.restore();
+    const v = [sh[0] - hip[0], sh[1] - hip[1]], n = Math.hypot(v[0], v[1]) || 1, fr = [-v[1] / n, v[0] / n]; // front of the trunk
+    const off = (p, d) => [p[0] + fr[0] * d, p[1] + fr[1] * d];
+    const th = mid(knee, hip), sn = mid(ank, knee, 0.55), ua = mid(sh, elbow), fa = mid(elbow, hand);
+    const tv = [hip[0] - knee[0], hip[1] - knee[1]], tn = Math.hypot(tv[0], tv[1]) || 1, tf = [-tv[1] / tn, tv[0] / tn];
+    mglow(ctx, th[0] + tf[0] * 16, th[1] + tf[1] * 16, 48, work.quads, t); mglow(ctx, th[0] - tf[0] * 16, th[1] - tf[1] * 16, 44, work.hamstrings, t, 1); mglow(ctx, th[0], th[1], 34, work.adductors, t, 2);
+    mglow(ctx, hip[0] - fr[0] * 22, hip[1] - fr[1] * 22, 48, work.glutes, t, 3); mglow(ctx, sn[0] - 10, sn[1], 32, work.calves, t, 4);
+    const c = off(mid(hip, sh, 0.82), 20), ab = off(mid(hip, sh, 0.42), 18), la = off(mid(hip, sh, 0.62), -20), lb = off(mid(hip, sh, 0.22), -20);
+    mglow(ctx, c[0], c[1], 44, work.chest, t, 5); mglow(ctx, ab[0], ab[1], 44, Math.max(work.abs || 0, work.obliques || 0), t, 6); mglow(ctx, la[0], la[1], 48, work.lats, t, 7); mglow(ctx, lb[0], lb[1], 40, work.lowback, t, 8);
+    mglow(ctx, sh[0] - fr[0] * 10, sh[1] - fr[1] * 10 - 8, 40, work.traps, t, 9); mglow(ctx, sh[0], sh[1], 38, Math.max(work.shoulders || 0, work.rear || 0), t, 10);
+    mglow(ctx, ua[0], ua[1], 34, Math.max(work.biceps || 0, work.triceps || 0), t, 11); mglow(ctx, fa[0], fa[1], 26, work.forearms, t, 12);
+  };
+
+  // ---- x-ray lens and scan reveal ----
+  P.xrayLens = (ctx, x, y, r, t, drawA, drawB, k = 1) => { drawA(ctx); if (k <= 0) return; const rr = r * (k < 1 ? H.ease.back(cl(k)) : 1);
+    ctx.save(); P.circ(x, y, rr)(ctx); ctx.clip(); ctx.fillStyle = '#04122e'; ctx.fillRect(x - rr, y - rr, rr * 2, rr * 2);
+    ctx.strokeStyle = 'rgba(127,227,255,0.12)'; ctx.lineWidth = 2; for (let g = -rr; g <= rr; g += 34) { ctx.beginPath(); ctx.moveTo(x + g, y - rr); ctx.lineTo(x + g, y + rr); ctx.moveTo(x - rr, y + g); ctx.lineTo(x + rr, y + g); ctx.stroke(); }
+    drawB(ctx); const sy = y - rr + ((t * 0.6) % 1) * rr * 2; const g = ctx.createLinearGradient(0, sy - 30, 0, sy + 30); g.addColorStop(0, 'rgba(127,227,255,0)'); g.addColorStop(0.5, 'rgba(127,227,255,0.35)'); g.addColorStop(1, 'rgba(127,227,255,0)'); ctx.fillStyle = g; ctx.fillRect(x - rr, sy - 30, rr * 2, 60); ctx.restore();
+    ctx.save(); ctx.strokeStyle = '#7fe3ff'; ctx.lineWidth = 12; ctx.shadowColor = '#7fe3ff'; ctx.shadowBlur = 24; ctx.beginPath(); ctx.arc(x, y, rr, 0, TAU); ctx.stroke(); ctx.restore();
+    P.flat(ctx, P.capsule(x + rr * 0.72, y + rr * 0.72, x + rr * 1.15, y + rr * 1.15, 18), PAL.ink, { off: 4, light: 0.25 });
+    P.label(ctx, 'X-RAY', x, y - rr - 30, k, { color: PAL.cyan, size: 24 }); };
+  P.scanReveal = (ctx, W, H_, t, t0, d, drawA, drawB) => { const p = cl((t - t0) / d), yb = H.ease.inOut(p) * H_; drawA(ctx); if (p <= 0) return;
+    ctx.save(); ctx.beginPath(); ctx.rect(0, 0, W, yb); ctx.clip(); ctx.fillStyle = '#04122e'; ctx.fillRect(0, 0, W, yb); drawB(ctx); ctx.restore();
+    if (p < 1) { const g = ctx.createLinearGradient(0, yb - 40, 0, yb + 10); g.addColorStop(0, 'rgba(127,227,255,0)'); g.addColorStop(1, 'rgba(127,227,255,0.9)'); ctx.fillStyle = g; ctx.fillRect(0, yb - 40, W, 50); } };
+  // a dark x-ray stage: blue grid floor, cyan vignette
+  P.xrayBg = (ctx, W, H_, t) => { const g = ctx.createRadialGradient(W / 2, H_ * 0.5, 50, W / 2, H_ * 0.5, H_ * 0.75); g.addColorStop(0, '#0b2a5e'); g.addColorStop(1, '#020a1e'); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H_);
+    ctx.save(); ctx.strokeStyle = 'rgba(127,227,255,0.08)'; ctx.lineWidth = 2; for (let x = ((t * 20) % 60) - 60; x < W; x += 60) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H_); ctx.stroke(); } for (let y = 0; y < H_; y += 60) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke(); } ctx.restore(); };
+
+  // ---- anatomical muscle that contracts (k 0..1); o: { bones, label, col } ----
+  P.muscleBelly = (ctx, x, y, len, w, ang, k, t, o = {}) => { ctx.save(); ctx.translate(x, y); ctx.rotate(ang); const L = len * (1 - 0.2 * k), Wd = w * (1 + 0.45 * k), col = o.col || '#e8475b';
+    if (o.bones) for (const sd of [-1, 1]) { P.flat(ctx, P.rr(sd * (L / 2 + 70) - 22, -w * 0.9, 44, w * 1.8, 20), PAL.bone, { off: 5 }); }
+    for (const sd of [-1, 1]) P.flat(ctx, P.rr(sd > 0 ? L / 2 - 6 : -L / 2 - 64, -w * 0.13, 70, w * 0.26, w * 0.13), '#f2e8dc', { off: 3 });
+    const path = P.blob([[-L / 2, 0], [-L / 3, -Wd / 2], [0, -Wd * 0.56], [L / 3, -Wd / 2], [L / 2, 0], [L / 3, Wd / 2], [0, Wd * 0.56], [-L / 3, Wd / 2]]);
+    if (k > 0.2) P.glow(ctx, 0, 0, L * 0.7, PAL.red, 0.5 * k);
+    P.flat(ctx, path, col, { off: 8 }); ctx.save(); path(ctx); ctx.clip(); ctx.strokeStyle = 'rgba(255,255,255,0.22)'; ctx.lineWidth = 3;
+    for (let i = -3; i <= 3; i++) { const yy = i * Wd * 0.13, wob = Math.sin(t * 6 + i) * 2 * k; ctx.beginPath(); ctx.moveTo(-L / 2, yy * 0.3); ctx.quadraticCurveTo(0, yy * 1.25 + wob, L / 2, yy * 0.3); ctx.stroke(); } ctx.restore();
+    ctx.restore(); if (o.label) P.label(ctx, o.label, x, y - w - 40, 1, { color: PAL.red, size: 26 }); };
+
+  // ---- FX ----
+  P.burst = (ctx, x, y, r, t, k = 1, col = PAL.yellow) => { if (k <= 0) return; const n = 14, s = H.ease.back(cl(k)); ctx.save(); ctx.translate(x, y); ctx.rotate(t * 0.4); ctx.scale(s, s);
+    const pts = []; for (let i = 0; i < n * 2; i++) { const a = i / (n * 2) * TAU, rr = i % 2 ? r * 0.72 : r; pts.push([Math.cos(a) * rr, Math.sin(a) * rr]); } P.flat(ctx, P.poly(pts), col, { off: 6 }); ctx.restore(); };
+  P.speedLines = (ctx, W, H_, t, k = 1, cx = W / 2, cy = H_ / 2) => { if (k <= 0) return; ctx.save(); ctx.strokeStyle = `rgba(255,255,255,${0.35 * k})`; ctx.lineCap = 'round';
+    for (let i = 0; i < 26; i++) { const a = i / 26 * TAU + Math.sin(i * 7.3) * 0.1, ph = ((t * 2.2 + i * 0.37) % 1), r0 = 380 + ph * 300, r1 = r0 + 120 + (i % 3) * 60; ctx.lineWidth = 3 + (i % 4); ctx.beginPath(); ctx.moveTo(cx + Math.cos(a) * r0, cy + Math.sin(a) * r0); ctx.lineTo(cx + Math.cos(a) * r1, cy + Math.sin(a) * r1); ctx.stroke(); } ctx.restore(); };
+  P.whipCut = (ctx, W, H_, t, t0, d, drawA, drawB, dir = 1) => { const p = cl((t - t0) / d), e = H.ease.inOut(p); if (p <= 0) return drawA(ctx); if (p >= 1) return drawB(ctx);
+    ctx.save(); ctx.translate(-e * W * dir, 0); drawA(ctx); ctx.restore(); ctx.save(); ctx.translate((1 - e) * W * dir, 0); drawB(ctx); ctx.restore();
+    const a = Math.sin(p * Math.PI); ctx.save(); ctx.fillStyle = `rgba(255,255,255,${0.5 * a})`; for (let i = 0; i < 18; i++) { const y = (i * 71) % H_, l = 200 + (i * 37) % 300; ctx.fillRect(((i * 113) % W) - l / 2, y, l, 4 + (i % 3) * 3); } ctx.restore(); };
+  P.flashCut = (ctx, W, H_, t, t0, d, drawA, drawB) => { const p = cl((t - t0) / d); if (p <= 0) return drawA(ctx); if (p >= 1) return drawB(ctx);
+    ctx.save(); if (p < 0.5) { const s = 1 + p * 0.5; ctx.translate(W / 2, H_ / 2); ctx.scale(s, s); ctx.translate(-W / 2, -H_ / 2); drawA(ctx); } else { const s = 1.2 - (p - 0.5) * 0.4; ctx.translate(W / 2, H_ / 2); ctx.scale(s, s); ctx.translate(-W / 2, -H_ / 2); drawB(ctx); } ctx.restore();
+    ctx.fillStyle = `rgba(255,255,255,${0.85 * (1 - Math.abs(p - 0.5) * 2)})`; ctx.fillRect(0, 0, W, H_); };
+
+  // ---- picture-in-picture host who talks with the voice ----
+  P.pip = (ctx, x, y, r, who, talk, t, k = 1) => { if (k <= 0) return; const s = H.ease.back(cl(k)); ctx.save(); ctx.translate(x, y); ctx.scale(s, s);
+    P.glow(ctx, 0, 0, r * 1.5, PAL.cyan, 0.25); ctx.save(); P.circ(0, 0, r)(ctx); ctx.clip(); const g = ctx.createLinearGradient(0, -r, 0, r); g.addColorStop(0, '#22b8e8'); g.addColorStop(1, '#8ff3e0'); ctx.fillStyle = g; ctx.fillRect(-r, -r, r * 2, r * 2);
+    const sc = r / 62; P.person(ctx, 0, 340 * sc - 14 * sc, sc, who, { arms: 'down', talk, blink: Math.sin(t * 1.7 + 2) > 0.985 ? 1 : 0, look: Math.sin(t * 0.7) * 0.4 }); ctx.restore();
+    ctx.strokeStyle = '#ffffff'; ctx.lineWidth = 7; ctx.beginPath(); ctx.arc(0, 0, r, 0, TAU); ctx.stroke();
+    P.label(ctx, (P.CHAR[who] || {}).name || who, 0, r + 6, 1, { color: who === 'coach' ? PAL.red : PAL.blue, size: 20 }); ctx.restore(); };
+
+  P.dust = (ctx, t, W, H_) => { ctx.save(); for (let i = 0; i < 14; i++) { const x = (i * 97 + Math.sin(t * 0.5 + i) * 30) % W, y = H_ - (((t * (18 + (i % 5) * 6)) + i * 211) % (H_ + 40)); ctx.fillStyle = `rgba(255,255,255,${0.08 + (i % 4) * 0.04})`; P.circ(x, y, 2 + (i % 3) * 1.5)(ctx); ctx.fill(); } ctx.restore(); };
+  // karaoke caption: the chunk pops in, the word being spoken is yellow and slightly bigger
+  P.kcap = (ctx, t, W, H_, WORDS, CHUNKS) => { const ch = CHUNKS.find((c) => t >= c.t0 - 0.02 && t < c.t1); if (!ch) return; const ws = WORDS.filter((w) => w.t >= ch.t0 - 0.03 && w.t < ch.t1 - 0.01);
+    const s = 32, pk = 1 + 0.18 * Math.max(0, 1 - (t - ch.t0) / 0.14), y = H_ * 0.73; ctx.save(); ctx.font = `900 ${s}px ${P.FONT}`; ctx.textBaseline = 'middle'; ctx.lineJoin = 'round';
+    const parts = ws.length ? ws.map((w) => ({ txt: (w.cap || w.w), on: t >= w.t })) : [{ txt: ch.text, on: true }], sp = ctx.measureText(' ').width * 1.4 + 6, widths = parts.map((p) => ctx.measureText(p.txt).width), tot = widths.reduce((a, b) => a + b, 0) + sp * (parts.length - 1);
+    ctx.translate(W / 2, y); ctx.scale(pk, pk); let x = -tot / 2; const curI = parts.map((p) => p.on).lastIndexOf(true);
+    parts.forEach((p, i) => { ctx.save(); ctx.translate(x + widths[i] / 2, 0); if (i === curI) ctx.scale(1.1, 1.1); ctx.textAlign = 'center'; ctx.strokeStyle = 'rgba(14,6,60,0.9)'; ctx.lineWidth = 9; ctx.strokeText(p.txt, 0, 0); ctx.fillStyle = i === curI ? PAL.yellow : '#ffffff'; ctx.fillText(p.txt, 0, 0); ctx.restore(); x += widths[i] + sp; });
+    ctx.restore(); };
+  // ---- P.reel v2: living camera, varied transitions, karaoke captions, particles, talking host, dives and x-ray helpers ----
+  P.reel = (cfg) => {
+    const W = 720, H_ = 1280, SCRIPT = P.reelScript();
+    const WORDS = P.mergeWords(P.words(SCRIPT), cfg.merge || []);
+    const CHUNKS = P.chunks(WORDS.map((w) => ({ ...w, w: w.cap || w.w })), 3);
+    const wt = (k, n) => P.wt(WORDS, k, n), L = (i) => SCRIPT[i][1][0][0], last = SCRIPT.length - 1;
+    const DURATION = +((window.TIMING && window.TIMING.duration) || WORDS[WORDS.length - 1].end + 1.4).toFixed(2);
+    const host = cfg.host === undefined ? (/exercise|muscle building/i.test((SCRIPT[1] || [''])[0]) ? 'coach' : 'doc') : cfg.host;
+    const talk = (t) => { for (const w of WORDS) if (t >= w.t && t < (w.end || w.t + 0.3)) return 0.35 + 0.65 * Math.abs(Math.sin((t - w.t) * 16)); return 0; };
+    const A = { wt, L, pop: P.pop, ramp: P.ramp, W, H: H_, PAL, last, talk, blink: (t, s = 0) => (Math.sin(t * 1.7 + s) > 0.985 ? 1 : 0), dur: DURATION };
+    A.hookTitle = (ctx, lines, tag, tagCol = PAL.magenta, size = 76) => { const t = A._t || 0, bob = Math.sin(t * 2.4) * 4; P.title(ctx, lines, W / 2, 150 + bob, 1, { size }); P.label(ctx, tag, W / 2, 150 + lines.length * size * 1.02 + 20, 1, { color: tagCol, size: 26 }); };
+    A.next = (ctx, t, what, col = PAL.mint) => { const k = P.pop(t, L(last) - 0.1, 0.6); if (k > 0) P.burst(ctx, W / 2, 230, 260, t, k * 0.9, P.alpha(col, 0.25)); P.title(ctx, ['Next:', what], W / 2, 190, k, { size: what.length > 14 ? 54 : 66, color: col }); };
+    // dive: camera zooms from outer into focus, crossfades into inner (muscle close-up)
+    A.dive = (ctx, t, t0, focus, drawOuter, drawInner, d = 1.0) => { const p = cl((t - t0) / d), e = H.ease.inOut(p);
+      if (p < 1) { ctx.save(); const s = Math.exp(e * Math.log(6)); ctx.translate(focus[0], focus[1]); ctx.scale(s, s); ctx.translate(-focus[0], -focus[1]); drawOuter(ctx); ctx.restore(); }
+      if (p > 0.45) { ctx.save(); ctx.globalAlpha = cl((p - 0.45) / 0.4); const s2 = 0.7 + 0.3 * e; ctx.translate(W / 2, H_ / 2); ctx.scale(s2, s2); ctx.translate(-W / 2, -H_ / 2); drawInner(ctx); ctx.restore(); } };
+    // x-ray rep: the side lifter doing the lift on an x-ray stage with working muscles glowing, small muscle map inset
+    A.xrayRep = (ctx, t, pose, work, o = {}) => { P.xrayBg(ctx, W, H_, t); const k = o.k != null ? o.k : 0.5 - 0.5 * Math.cos(t * (o.speed || 2.4));
+      if (pose === 'frontpress' || pose === 'curl' || pose === 'squatfront' || pose === 'flex' || pose === 'run') { const fp = { frontpress: { arms: 'bar', arms2: 'press', mix: k, bar: true }, curl: { arms: 'down', arms2: 'curl', mix: k }, squatfront: { arms: 'bar', squat: k, bar: true }, flex: { arms: 'flex', bulk: 0.5 }, run: { run: t * 9 } }[pose];
+        P.lifter(ctx, o.x || W / 2, o.y || H_ * 0.84, o.s || 1.45, Object.assign(fp, { xray: true, work, t, wince: k > 0.7 ? 0.6 : 0 })); }
+      else if (pose === 'bench' || pose === 'hipthrust') { P.lifterBench(ctx, o.x || W / 2 + 40, o.y || H_ * 0.62, o.s || 1.25, pose, { k, glow: pose === 'hipthrust' ? 1 : 0 }); }
+      else P.lifterSide(ctx, o.x || W / 2, o.y || H_ * 0.66, o.s || 1.45, pose, { k, bar: o.bar !== false && pose !== 'hang' && pose !== 'pushup' && pose !== 'plank', xray: true, work, t });
+      if (o.map) P.musclemap(ctx, 600, 1110, 0.42, o.map, work); };
+    let CUR = 0; const scenes = cfg.scenes(A); const kinds = ['slide', 'whip', 'flash'];
+    const lineStarts = SCRIPT.map((_, i) => L(i));
+    const SEQ = scenes.map((s, i) => ({ t: s.at, tr: s.tr === 'slide' ? kinds[i % 3] : s.tr, dir: i % 2 ? -1 : 1, focus: s.focus, draw: (c) => {
+      const t = CUR; A._t = t; if (s.cam === false) return s.draw(c, t);
+      const loc = Math.max(0, t - s.at), ls = lineStarts.filter((x) => x <= t + 0.05 && x > s.at + 0.2).pop(), punch = ls == null ? 0 : 0.035 * Math.exp(-(t - ls) * 7);
+      const sc = 1 + Math.min(loc, 6) * 0.007 + punch, rot = Math.sin(t * 0.6 + i) * 0.006, dx = Math.sin(t * 0.37 + i * 2) * 6, dy = Math.cos(t * 0.29 + i) * 5;
+      c.save(); c.translate(W / 2 + dx, H_ * 0.5 + dy); c.rotate(rot); c.scale(sc, sc); c.translate(-W / 2, -H_ * 0.5); s.draw(c, t); c.restore(); } }));
+    const dust = (ctx, t) => P.dust(ctx, t, W, H_), kcap = (ctx, t) => P.kcap(ctx, t, W, H_, WORDS, CHUNKS);
+    function explainer(ctx, W_, H2, t) { CUR = t; ctx.save(); P.sequence(ctx, W, H_, t, SEQ); ctx.restore(); dust(ctx, t);
+      let si = 0; while (si + 1 < scenes.length && t >= scenes[si + 1].at) si++; const sc = scenes[si];
+      if (host && si > 0 && si < scenes.length - 1 && sc.host !== false) P.pip(ctx, 96, 1150, 66, sc.host || host, talk(t), t, P.pop(t, sc.at + 0.3, 0.35));
+      P.finish(ctx, W, H_); kcap(ctx, t); }
+    const BEATS = scenes.map((s, i) => ({ t: s.at, name: s.name || 's' + i }));
+    window.LESSON = { BEATS, DURATION, explainer, WORDS, CHUNKS };
+    window.scoreSound = (k) => {
+      k.play('riser', 0, { dur: 0.6, gain: 0.5 }); k.play('pop', 0.05, { f: 760 });
+      SEQ.slice(1).forEach((s) => { if (s.tr === 'zoom') k.play('whoosh', s.t, { dur: 0.8, top: 3200 }); else if (s.tr === 'whip') k.play('whoosh', s.t, { dur: 0.4, top: 5000, gain: 0.6 }); else if (s.tr === 'flash') { k.play('swish', s.t, { dur: 0.3 }); k.play('pop', s.t + 0.25, { f: 900, gain: 0.4 }); } else k.play('swish', s.t, { dur: 0.3 }); });
+      (cfg.sfx ? cfg.sfx(A) : []).forEach(([n, tt, o]) => k.play(n, tt, o || {}));
+      k.play('success', L(last)); k.play('sparkle', L(last) + 0.3, { n: 10 });
     };
   };
 })();

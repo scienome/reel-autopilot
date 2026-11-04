@@ -3,8 +3,7 @@
 P.reel({ scenes: (A) => { const { L, pop, ramp, W, H, PAL } = A; return [
   { at: 0, name: 'hook', draw: (c, t) => { P.gym(c, W, H, t); const k = 0.5 - 0.5 * Math.cos(t * 2.4); P.lifterSide(c, W / 2 - 20, H * 0.9, 1.5, 'press', { k, bar: true, wince: k > 0.7 }); A.hookTitle(c, ['OVERHEAD', 'PRESS'], 'Exercise Series · Part 5'); } },
   { at: L(2) - 0.2, name: 'map', tr: 'zoom', focus: [W / 2, 700], draw: (c, t) => { P.bg(c, W, H, 'deep', t); P.bgCells(c, W, H, t, PAL.cyan, 3, 0.05); const s = pop(t, L(2)), tr = pop(t, L(3)), u = pop(t, L(4)), core = pop(t, L(5));
-    const back = tr > 0 && core < 1 && u < 1; c.save(); c.globalAlpha = back ? 1 : 1; if (back) P.musclemap(c, W / 2, 760, 1.5, 'back', { triceps: 1, rear: 0.4 });
-    else P.musclemap(c, W / 2, 760, 1.5, 'front', { shoulders: s, chest: u * 0.6, abs: core, obliques: core }); c.restore();
+    A.xrayRep(c, t, 'press', { shoulders: s, triceps: tr, chest: u * 0.6, traps: u * 0.6, abs: core, obliques: core }, { map: 'front' });
     P.label(c, 'Shoulders: front + side', W / 2, 170, s * (1 - tr), { color: PAL.red }); P.label(c, 'Triceps: lockout', W / 2, 170, tr * (1 - u), { color: PAL.red }); P.label(c, 'Upper chest + back steady it', W / 2, 170, u * (1 - core), { color: PAL.red, size: 28 }); P.label(c, 'Standing: core works hard', W / 2, 170, core, { color: PAL.red, size: 30 }); } },
   { at: L(6) - 0.2, name: 'study', tr: 'slide', draw: (c, t) => { P.bg(c, W, H, 'violet', t); P.versus(c, W / 2, 600, 660, 400, 'Standing', 'Seated', pop(t, L(6)), 0, (cc) => P.lifterSide(cc, 0, 140, 0.42, 'press', { k: 1, bar: true }), (cc) => P.lifterSide(cc, 0, 140, 0.42, 'press', { k: 1, bar: true }));
     P.label(c, 'More shoulder work', 190, 880, pop(t, L(6) + 1.6), { color: PAL.blue, size: 24 }); P.label(c, 'More weight lifted', 530, 880, pop(t, L(6) + 3), { color: PAL.magenta, size: 24 }); } },

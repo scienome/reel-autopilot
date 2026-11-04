@@ -75,7 +75,7 @@
     { t: L(5) - 0.2, draw: (c) => balance(c, CUR), tr: 'slide' },
     { t: L(7) - 0.2, draw: (c) => rest(c, CUR), tr: 'slide' },
   ];
-  function explainer(ctx, W_, H2, t) { CUR = t; ctx.save(); P.sequence(ctx, W, H_, t, SEQ); ctx.restore(); P.finish(ctx, W, H_); P.caption(ctx, W, H_, P.captionAt(CHUNKS, t)); }
+  function explainer(ctx, W_, H2, t) { CUR = t; P._now = t; ctx.save(); P.sequence(ctx, W, H_, t, SEQ); ctx.restore(); P.finish(ctx, W, H_); P.dust(ctx, t, W, H_); P.kcap(ctx, t, W, H_, WORDS, CHUNKS); }
   const BEATS = [{ t: 0, name: 'hook' }, { t: SEQ[1].t, name: 'tension' }, { t: wt('signal'), name: 'signal' }, { t: SEQ[2].t, name: 'mTOR' }, { t: SEQ[3].t, name: 'build' }, { t: wt('twice'), name: '2x' }, { t: SEQ[4].t, name: 'rest' }, { t: wt('repeat'), name: 'repeat' }, { t: L(9), name: 'next' }];
   window.LESSON = { BEATS, DURATION, explainer, WORDS, CHUNKS };
 

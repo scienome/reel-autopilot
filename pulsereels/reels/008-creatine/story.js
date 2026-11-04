@@ -69,7 +69,7 @@
     { t: L(7) - 0.2, draw: (c) => dose(c, CUR), tr: 'slide' },
     { t: L(9) - 0.2, draw: (c) => finale(c, CUR), tr: 'slide' },
   ];
-  function explainer(ctx, W_, H2, t) { CUR = t; ctx.save(); P.sequence(ctx, W, H_, t, SEQ); ctx.restore(); P.finish(ctx, W, H_); P.caption(ctx, W, H_, P.captionAt(CHUNKS, t)); }
+  function explainer(ctx, W_, H2, t) { CUR = t; P._now = t; ctx.save(); P.sequence(ctx, W, H_, t, SEQ); ctx.restore(); P.finish(ctx, W, H_); P.dust(ctx, t, W, H_); P.kcap(ctx, t, W, H_, WORDS, CHUNKS); }
   const BEATS = [{ t: 0, name: 'hook' }, { t: SEQ[1].t, name: 'ATP' }, { t: wt('seconds'), name: 'drain' }, { t: wt('rebuild'), name: 'refill' }, { t: SEQ[2].t, name: 'stores' }, { t: L(6), name: 'reps' }, { t: SEQ[3].t, name: 'dose' }, { t: wt('kidney'), name: 'kidney' }, { t: SEQ[4].t, name: 'next' }];
   window.LESSON = { BEATS, DURATION, explainer, WORDS, CHUNKS };
 

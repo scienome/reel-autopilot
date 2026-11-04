@@ -105,6 +105,15 @@ ElevenLabs voice **`cBTYF7NiJbR8Bvmdeuse`**, model `eleven_v4` (owner's pick, 3 
 - **`P.reel({ merge, scenes: (A) => [...], sfx: (A) => [...] })`** builds the whole reel: captions, sequence, beats and a base sound score.
   Each scene is `{ at, name, tr, focus, draw(ctx, t) }`; `A` has `L(i)` line starts, `wt`, `pop`, `ramp`, `blink`, `W`, `H`, `PAL`,
   `A.hookTitle(ctx, lines, seriesTag)` for frame 0 and `A.next(ctx, t, 'TOPIC')` for the "Next:" card.
+- **Motion pack 4 (4 Nov, owner: "nothing is moving"):** `xray: true` + `work: { zone: 0..1 }` + `t` on `P.lifter` / `P.lifterSide`
+  draws glowing bones and pulsing working muscles (zones as in the muscle map, plus `heart`); `P.xrayLens(ctx, x, y, r, t, drawNormal, drawXray, k)`
+  (magnifier that shows the x-ray inside), `P.scanReveal`, `P.xrayBg`; `P.muscleBelly(ctx, x, y, len, w, ang, k, t, { bones, label })`
+  (anatomical muscle that contracts and thickens); characters `P.person(ctx, x, y, s, 'doc' | 'coach' | 'mia', pose)` and `P.personSide`
+  (pose `talk` 0..1 opens the mouth); `P.pip` (round talking-host bubble); FX `P.burst`, `P.speedLines`, transitions `whip` and `flash`.
+  `P.reel` v2 adds all of this automatically: a drifting camera with a punch-zoom on every new line, varied transitions, karaoke captions
+  (`P.kcap`), floating dust (`P.dust`), idle breathing on every character, and a talking host in the corner (Doc for Why / Supplements,
+  Coach for Muscle Building / Exercise; scene `host: false` hides it). Helpers: `A.talk(t)`, `A.dive(ctx, t, t0, focus, outer, inner)`
+  (camera dives into a muscle), `A.xrayRep(ctx, t, pose, work, { map })` (the lift on an x-ray stage). Use at least one x-ray or dive per reel.
 - **Text:** `P.title` (hook title, amber fill / white rim / indigo outline, on screen from frame 0), `P.label` (pill tags,
   colour-coded, optional `sub` and `stem`), `P.counter` + `P.countTo` (big counting numbers), `P.bubble`, `P.qmarks`,
   `P.stampX` (myth busted), `P.meter` (bar charts), `P.arrowFlat`, `P.caption` (2-3 words, white, 73% height, last).

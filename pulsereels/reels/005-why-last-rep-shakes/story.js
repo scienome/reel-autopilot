@@ -94,7 +94,7 @@
     { t: L(7) - 0.2, draw: (c) => wobble(c, CUR), tr: 'slide' },
     { t: L(8) - 0.2, draw: (c) => finale(c, CUR), tr: 'slide' },
   ];
-  function explainer(ctx, W_, H2, t) { CUR = t; ctx.save(); P.sequence(ctx, W, H_, t, SEQ); ctx.restore(); P.finish(ctx, W, H_); P.caption(ctx, W, H_, P.captionAt(CHUNKS, t)); }
+  function explainer(ctx, W_, H2, t) { CUR = t; P._now = t; ctx.save(); P.sequence(ctx, W, H_, t, SEQ); ctx.restore(); P.finish(ctx, W, H_); P.dust(ctx, t, W, H_); P.kcap(ctx, t, W, H_, WORDS, CHUNKS); }
   const BEATS = [{ t: 0, name: 'hook' }, { t: SEQ[1].t, name: 'brain' }, { t: SEQ[2].t, name: 'units' }, { t: wt('fresh'), name: 'small' }, { t: wt('bigger'), name: 'big' }, { t: wt('unevenly'), name: 'uneven' }, { t: SEQ[3].t, name: 'wobble' }, { t: SEQ[4].t, name: 'finale' }, { t: wt('pump'), name: 'next' }];
   window.LESSON = { BEATS, DURATION, explainer, WORDS, CHUNKS };
 

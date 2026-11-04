@@ -1,7 +1,7 @@
 // 035 Muscle Building 8: progressive overload (Plotkin 2022; ACSM 2009)
 (function () {
 P.reel({ merge: [['eight to twelve', '8-12']], scenes: (A) => { const { L, pop, ramp, W, H, PAL } = A; return [
-  { at: 0, name: 'hook', draw: (c, t) => { P.gym(c, W, H, t); P.lifter(c, W / 2, H * 0.86, 1.3, { arms: 'bar', arms2: 'press', mix: 0.5 - 0.5 * Math.cos(t * 3), bar: true, plate: PAL.red, blink: A.blink(t) });
+  { at: 0, name: 'hook', draw: (c, t) => { P.gym(c, W, H, t); const dr = (cc, xr) => P.lifter(cc, W / 2, H * 0.86, 1.3, { arms: 'bar', arms2: 'press', mix: 0.5 - 0.5 * Math.cos(t * 3), bar: true, plate: PAL.red, blink: A.blink(t), xray: xr, work: { shoulders: 1, triceps: 0.7 }, t }); P.xrayLens(c, W / 2, 780, 160, t, (cc) => dr(cc, false), (cc) => dr(cc, true), pop(t, 1.0, 0.4));
     A.hookTitle(c, ['The ONE', 'RULE'], 'Muscle Building · Part 8'); P.arcArrow(c, 600, 520, 60, 2.6, 0.3, ramp(t, 0.5, 2)); } },
   { at: L(2) - 0.2, name: 'adapt', tr: 'slide', draw: (c, t) => { P.bg(c, W, H, 'violet', t); P.lineChart(c, 70, 820, 580, 460, [0.2, 0.45, 0.6, 0.66, 0.68, 0.68, 0.68], ramp(t, L(2), L(3) + 1.5), PAL.amber, 'same weight, same reps');
     P.label(c, 'Your body adapts', W / 2, 220, pop(t, L(2)), { color: PAL.cyan }); P.label(c, 'Growth signal fades', 470, 300, pop(t, L(3) + 1.5), { color: PAL.red, size: 26 }); } },

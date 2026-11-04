@@ -1,7 +1,7 @@
 // 027 Why #8: heart keeps racing after exercise (Borsheim & Bahr 2003; Cole 1999; Imai 1994)
 (function () {
 P.reel({ scenes: (A) => { const { L, pop, ramp, W, H, PAL } = A; return [
-  { at: 0, name: 'hook', draw: (c, t) => { P.gym(c, W, H, t); P.lifter(c, 220, H * 0.86, 1.2, { arms: 'down', pant: t * 6, wince: 0.3, blink: A.blink(t) }); P.heart(c, 540, 640, 90, t * 2.2); P.ecg(c, 380, 880, 320, 140, t, 160, PAL.red);
+  { at: 0, name: 'hook', draw: (c, t) => { P.gym(c, W, H, t); const dr = (cc, xr) => P.lifter(cc, 230, H * 0.86, 1.25, { arms: 'down', pant: t * 6, wince: 0.3, blink: A.blink(t), xray: xr, work: { heart: 1 }, t }); P.xrayLens(c, 230, 830, 130, t, (cc) => dr(cc, false), (cc) => dr(cc, true), pop(t, 0.8, 0.4)); P.heart(c, 540, 640, 90, t * 2.2); P.ecg(c, 380, 880, 320, 140, t, 160, PAL.red);
     A.hookTitle(c, ['Why Does Your', 'HEART RACE?'], 'Why Does This Happen? #8', PAL.magenta, 64); } },
   { at: L(1) - 0.15, name: 'notover', tr: 'slide', draw: (c, t) => { P.bg(c, W, H, 'night', t); P.title(c, ['Workout', "Isn't Over"], W / 2, 400, pop(t, L(1)), { size: 74, color: PAL.cyan }); P.heart(c, W / 2, 800, 110, t * 2); } },
   { at: L(2) - 0.2, name: 'refill', tr: 'zoom', focus: [W / 2, 600], draw: (c, t) => { P.bg(c, W, H, 'deep', t); P.bgCells(c, W, H, t, PAL.cyan, 3, 0.05); const d = ramp(t, L(2), L(3)), r = ramp(t, L(3) + 0.5, L(4));

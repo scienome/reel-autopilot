@@ -12,7 +12,7 @@ P.reel({ scenes: (A) => { const { L, pop, ramp, W, H, PAL } = A; return [
     for (let i = 0; i < 9; i++) { const ph = (t * 0.8 + i / 9) % 1; if (sw > 0) P.drop(c, 60 + i * 70, 240 + ph * 120, 12, PAL.cyan); }
     P.label(c, 'Waste products', W / 2, 200, pop(t, L(4)) * (1 - pop(t, L(5) - 0.2)), { color: PAL.amber }); P.label(c, 'Water rushes in = SWELL', W / 2, 200, pop(t, L(5) - 0.1), { color: PAL.cyan }); } },
   { at: L(6) - 0.2, name: 'fade', tr: 'slide', draw: (c, t) => { P.bg(c, W, H, 'violet', t); const f = 1 - ramp(t, L(6), L(7) - 0.3); P.arm(c, W / 2 + 30, 760, 1.2, f, t); P.stopwatch(c, 560, 260, 80, ramp(t, L(6), L(7)), 'rest'); } },
-  { at: L(7) - 0.2, name: 'debate', tr: 'slide', draw: (c, t) => { P.gym(c, W, H, t); P.lifter(c, W / 2, H * 0.86, 1.25, { arms: 'flex', bulk: 0.5, smile: true, blink: A.blink(t) });
+  { at: L(7) - 0.2, name: 'debate', tr: 'slide', draw: (c, t) => { P.gym(c, W, H, t); P.person(c, W / 2 + 175, H * 0.86, 0.95, 'doc', { talk: A.talk(t), arms: 'down', look: -0.5 }); P.lifter(c, W / 2 - 95, H * 0.86, 1.15, { arms: 'flex', bulk: 0.5, smile: true, blink: A.blink(t) });
     P.label(c, 'Pump = growth? DEBATED', W / 2, 180, pop(t, L(7)) * (1 - pop(t, L(8) - 0.2)), { color: PAL.amber, size: 32 }); P.qmarks(c, W / 2, 400, t, pop(t, L(7)) * (1 - pop(t, L(8) - 0.2)));
     P.label(c, 'Sign of HARD WORK', W / 2, 180, pop(t, L(8)) * (1 - pop(t, L(9) - 0.2)), { color: PAL.mint, size: 34 }); A.next(c, t, 'KNEE CRACKS'); } },
 ]; }, sfx: (A) => [['buzz', A.L(3), { dur: 0.4, f: 140, gain: 0.3 }], ['pop', A.L(5), { f: 700 }], ['sparkle', A.L(5) + 0.4, { n: 6 }], ['swish', A.L(6) + 0.6, { dur: 0.4 }], ['error', A.L(7) + 0.3, { gain: 0.3 }], ['ding', A.L(8), { f: 'E6' }]] });

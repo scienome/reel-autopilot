@@ -70,7 +70,7 @@
     { t: L(5) - 0.2, draw: (c) => myth(c, CUR), tr: 'slide' },
     { t: L(8) - 0.2, draw: (c) => finale(c, CUR), tr: 'slide' },
   ];
-  function explainer(ctx, W_, H2, t) { CUR = t; ctx.save(); P.sequence(ctx, W, H_, t, SEQ); ctx.restore(); P.finish(ctx, W, H_); P.caption(ctx, W, H_, P.captionAt(CHUNKS, t)); }
+  function explainer(ctx, W_, H2, t) { CUR = t; P._now = t; ctx.save(); P.sequence(ctx, W, H_, t, SEQ); ctx.restore(); P.finish(ctx, W, H_); P.dust(ctx, t, W, H_); P.kcap(ctx, t, W, H_, WORDS, CHUNKS); }
   const BEATS = [{ t: 0, name: 'hook' }, { t: SEQ[1].t, name: 'quads' }, { t: wt('glutes'), name: 'glutes' }, { t: wt('adductors'), name: 'adductors' }, { t: SEQ[2].t, name: 'myth' }, { t: L(6), name: 'study' }, { t: wt('shot'), name: 'hip strain' }, { t: SEQ[3].t, name: 'fine' }, { t: L(9), name: 'next' }];
   window.LESSON = { BEATS, DURATION, explainer, WORDS, CHUNKS };
 
