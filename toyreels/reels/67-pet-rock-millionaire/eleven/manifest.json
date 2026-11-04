@@ -24,5 +24,11 @@
   "text": "air leaving a balloon",
   "duration_seconds": 1.2,
   "prompt_influence": 0.5
+ },
+ "music-b1c8fc86ecca.mp3": {
+  "prompt": "Groovy 1970s funk with wah guitar and bongos, playful, no vocals",
+  "music_length_ms": 29080,
+  "model_id": "music_v1",
+  "force_instrumental": true
  }
 }
