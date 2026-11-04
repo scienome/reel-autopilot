@@ -3,6 +3,17 @@
 Instagram @elitesendgame. Noir comic style, English, first person. Voice `eCGXfCpGinKGrwYNoBuo` in `config.json`: never change it.
 Read `kit/SKILL.md` for the look and the engine, and copy the structure of the newest reel of the same story.
 
+## HOOK RULES (4 Nov 2026, from stats; these override anything older below)
+Stats on 4 Nov (`engagement/stats/elite.json`, updated daily by `ig-stats.yml`): every reel gets about 100-150 views with 5-9 s
+average watch. The episodes opened mid-story ("I did not touch the soup."), so a viewer who has never seen Part 1 had no reason to stay.
+- **Line 1 is a cold open that works for someone who never saw the series:** the strangest fact of the episode in one short sentence
+  ("Your phone rings. The caller ID is your own name."). Mark it `"cold": true` in script.json. Only then the episode itself.
+- **Frame 0 is a big readable card with that hook in 2-4 words** (`paper` item in the first shot, `at: 0`), not the series name.
+  The series tag stays small in `hook.tag`.
+- **Caption:** first line is the cold-open sentence. Then a blank line, `Fiction.` (or `Real story.`), the series and part, and the question.
+  The fiction label stays in every caption and on screen, just not as the first words.
+- Keep each reel under about 30 s. Re-check the stats a week after a change and tell the owner what moved.
+
 ## Batch job, every 5th day: exactly 35 reels
 
 **21 story episodes (7 of each story) and 14 wildcards**, which is one week of posts. Do not stop early: earlier batches in this repo marked done with a fraction made. If a run is cut off, the next run counts the reels already made since the last batch's end (ids in `schedule.json` without posts, and any folder without a Release) and finishes to 35.

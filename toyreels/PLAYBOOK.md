@@ -13,6 +13,11 @@ the batch steps, engine, checks and pushing.
 - **People:** real people from history only. No living people as targets. No jokes about real victims, recent tragedies, terror, abuse or
   suicide. No gore. Never explain how to copy a crime.
 - **Shape:** 25-35 s. Most shocking fact in the first 2 s. Something new every 2-3 s. One short twist line at the end, then a two-sided question.
+- **Hook and caption rules from the 4 Nov stats (`engagement/stats/toy.json`):** the reels that kept people longest (Emu War, Pepsi jet,
+  Cadaver Synod) open with the absurd outcome as a plain claim. Reels that open with a date ("In 1518...", "In 1950...") lost viewers
+  in the first seconds (30-34% of the reel watched against 50-60%). So the first line is the outcome, never a date or a name; the date
+  goes in the second line. The caption's first line is the same hook without the answer, plus "Wait for the ending 👀"; the
+  "True story." summary comes after a blank line. Re-check `engagement/stats/toy.json` (the `ig-stats.yml` job updates it daily) before each batch.
 - **Badge:** `TRUE STORY`. **`meta.json`:** add `"format": "true-story"`, so the poster sends it ahead of old reels. Score `potential` honestly.
 - **Sound:** every reel has `audio.json`: a music prompt matched to the story's era and mood, plus 4-6 sound effects on key words.
 - **Look:** at least 3 real scenes, with big props that show the story. Avoid plain one-figure shots and sets that contradict the story.
