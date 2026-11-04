@@ -24,5 +24,11 @@
   "text": "circus calliope sting",
   "duration_seconds": 1.2,
   "prompt_influence": 0.5
+ },
+ "music-ac8c06c67584.mp3": {
+  "prompt": "Quirky circus calliope and tuba with playful strings, mock-mysterious, no vocals",
+  "music_length_ms": 31800,
+  "model_id": "music_v1",
+  "force_instrumental": true
  }
 }
