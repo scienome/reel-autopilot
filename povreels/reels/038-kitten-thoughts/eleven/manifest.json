@@ -1,0 +1,33 @@
+{
+ "music-79559c9795ec.mp3": {
+  "prompt": "Bouncy cute kitten music with glockenspiel, pizzicato and xylophone runs, a silly cliffhanger, then tender, no vocals",
+  "music_length_ms": 33340,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-4e65211f5111.mp3": {
+  "text": "cute kitten meow",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-15c280a31553.mp3": {
+  "text": "cartoon running feet scramble",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-6d90034191b9.mp3": {
+  "text": "curtain rip and tiny meow",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-5cb1ad19b557.mp3": {
+  "text": "tiny desperate meow",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-f304b05f41be.mp3": {
+  "text": "small audience aww",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
