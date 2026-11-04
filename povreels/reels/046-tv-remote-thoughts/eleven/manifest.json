@@ -1,0 +1,33 @@
+{
+ "music-a2dbba8e2e90.mp3": {
+  "prompt": "Cheeky sneaky comedy music with pizzicato strings and a funky bass, a dramatic power-up moment, then playful, no vocals",
+  "music_length_ms": 35820,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-09f5a2915fda.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-29e0587c84b5.mp3": {
+  "text": "small audience ooh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-e747a7d221b6.mp3": {
+  "text": "power down electronic sound",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-8f301ae7bdcd.mp3": {
+  "text": "shaking rattling plastic",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-a6de5c7bc9cf.mp3": {
+  "text": "electric power up surge",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ }
+}
