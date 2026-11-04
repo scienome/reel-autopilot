@@ -24,5 +24,11 @@
   "text": "sad pig squeal comedic",
   "duration_seconds": 1.2,
   "prompt_influence": 0.5
+ },
+ "music-aa4c4bbc4777.mp3": {
+  "prompt": "Quirky comedic fife and snare drum, playful colonial marching theme, no vocals",
+  "music_length_ms": 30680,
+  "model_id": "music_v1",
+  "force_instrumental": true
  }
 }
