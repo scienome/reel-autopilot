@@ -1,0 +1,33 @@
+{
+ "music-78b3e21a4d37.mp3": {
+  "prompt": "Mysterious cheeky noir comedy music with pizzicato strings, clarinet and a suspicious bassline, ominous in the middle, then playful, no vocals",
+  "music_length_ms": 34220,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-4cb06da50dd3.mp3": {
+  "text": "crows cawing",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-d505baa29944.mp3": {
+  "text": "flock of crows flapping wings",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-58a8026c2234.mp3": {
+  "text": "single angry caw",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-81ff02bc73db.mp3": {
+  "text": "ominous low drone and many crows cawing",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-09f5a2915fda.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ }
+}
