@@ -451,6 +451,20 @@ Owner's English channel: flat-vector "what happens inside your body when you tra
 
 ---
 
+## 12d. 4 Nov 2026 — views fixes and the Musclyth fitness pack
+
+- **Stats job:** `ig-stats.yml` + `tools/ig_stats.py` (read-only, daily 02:41 UTC and by hand) writes `engagement/stats/<elite|toy|myth|gg>.json`
+  with views, reach, average watch time, likes, shares, saves per reel. Read it before changing a format.
+- **elitesendgame (noir):** about 100-150 views a reel, 5-9 s average watch, 3 followers: episodes opened mid-story. All 53 unposted
+  reels (010-065) now start with a cold-open line (`"cold": true` in script.json), a big frame-0 hook card, and a hook-first caption
+  with "Fiction." after it. Re-rendering with `make-elite.yml`. Rules at the top of `mysteryreels/PLAYBOOK.md`. Episodes 040-065 are new today (queued in schedule.json).
+- **Toy:** true stories average about 2,300 views; date-first openers ("In 1518...") kept only 30-34% of the reel watched. The 9 unposted
+  date-first reels now open with the outcome (date moved to line 2) and have hook-first captions; re-voiced and re-rendered.
+  Rule added to `toyreels/PLAYBOOK.md`. Toy queue is short: 11 new-format reels left on 4 Nov; the 6 Nov batch must run.
+- **Musclyth:** the owner wants one channel with four series: Why Does This Happen?, Muscle Building, Exercise, Supplements. Plan,
+  rotation and topic lists in `pulsereels/README.md` (CHANNEL PLAN). Pilots 005-008 pushed. Still no posting accounts.
+- **Lokvara** is the best performer (1,500-70,000 views, 15-25 s watch): no change needed.
+
 ## 13. STATUS SNAPSHOT (1 Nov 2026, about 15:30 IST — re-check live, this goes stale)
 
 **Live channels and queues**
