@@ -1,0 +1,29 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "MY *WIFE.",
+   "say": "My phone rang. My wife. She was crying."
+  },
+  {
+   "shot": "a",
+   "cap": "HE’S *LEAVING.",
+   "say": "She said, you packed a bag. You’re leaving. Why?"
+  },
+  {
+   "shot": "b",
+   "cap": "THE *TIME.",
+   "say": "It was three a.m. The copy at home was walking out."
+  },
+  {
+   "shot": "c",
+   "cap": "HIS *WORDS.",
+   "say": "She said, you told me to find the real one. Who is the real one?"
+  },
+  {
+   "shot": "end",
+   "cap": "SHE *KNEW.",
+   "say": "She had known all along there was more than one of me."
+  }
+ ]
+}

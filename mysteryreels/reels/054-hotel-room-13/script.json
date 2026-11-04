@@ -1,0 +1,24 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "ONE *NIGHT.",
+   "say": "A hotel at midnight. Two keys on the desk."
+  },
+  {
+   "shot": "a",
+   "cap": "ROOM *12.",
+   "say": "Room twelve. Five hundred dollars. Nothing strange has ever happened there."
+  },
+  {
+   "shot": "b",
+   "cap": "ROOM *13.",
+   "say": "Room thirteen. Free. Every guest checks out happier than they came. Nobody says why."
+  },
+  {
+   "shot": "end",
+   "cap": "YOUR *KEY?",
+   "say": "Which key do you take?"
+  }
+ ]
+}

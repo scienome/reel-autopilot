@@ -1,0 +1,29 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "LAST *TRAIN.",
+   "say": "Three rules for the last train home."
+  },
+  {
+   "shot": "a",
+   "cap": "RULE *ONE.",
+   "say": "If the carriage is empty, sit by the door. Never in the middle."
+  },
+  {
+   "shot": "b",
+   "cap": "RULE *TWO.",
+   "say": "If the train stops between stations, do not look out of the window."
+  },
+  {
+   "shot": "c",
+   "cap": "RULE *THREE.",
+   "say": "If someone sits next to you and knows your stop, get off one early."
+  },
+  {
+   "shot": "end",
+   "cap": "WHICH *ONE?",
+   "say": "Which rule would you break?"
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "THE *MENU.",
+   "say": "On the back of the menu, small print. Courses can be returned."
+  },
+  {
+   "shot": "a",
+   "cap": "COURSE *ONE.",
+   "say": "Return course one, and your name comes back."
+  },
+  {
+   "shot": "b",
+   "cap": "THE *PRICE.",
+   "say": "The price of a return, it said, is another name."
+  },
+  {
+   "shot": "c",
+   "cap": "NOT *MINE.",
+   "say": "Someone else would have to forget themselves for me."
+  },
+  {
+   "shot": "end",
+   "cap": "HIS *OFFER.",
+   "say": "The young waiter took my pen. He said, take mine. I don’t need it."
+  }
+ ]
+}

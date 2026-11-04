@@ -1,0 +1,24 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "POV.",
+   "say": "Pov. Midnight, on a road with no lights. Your GPS says, you have arrived."
+  },
+  {
+   "shot": "a",
+   "cap": "NOTHING *HERE.",
+   "say": "There is nothing here. No house. No road sign."
+  },
+  {
+   "shot": "b",
+   "cap": "SOMEONE *WAITING.",
+   "say": "Then a man steps out of the trees. He says, you’re early."
+  },
+  {
+   "shot": "end",
+   "cap": "GET *OUT?",
+   "say": "Do you get out of the car?"
+  }
+ ]
+}

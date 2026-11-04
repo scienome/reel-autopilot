@@ -1,0 +1,29 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "THE *KITCHEN.",
+   "say": "In the kitchen, one man stood over a pot. No mask."
+  },
+  {
+   "shot": "a",
+   "cap": "THE *CHEF.",
+   "say": "He said, every dinner needs a cook. And a waiter."
+  },
+  {
+   "shot": "b",
+   "cap": "THE *RECIPE.",
+   "say": "On the wall, the recipe. Not food. Nine hundred names."
+  },
+  {
+   "shot": "c",
+   "cap": "HIS *FACE.",
+   "say": "He turned. He had the first mask in his hand."
+  },
+  {
+   "shot": "end",
+   "cap": "A *WAITER.",
+   "say": "He said, the dinner cannot move without a waiter who stands up. Thank you, Marlow."
+  }
+ ]
+}

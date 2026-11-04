@@ -1,0 +1,29 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "TRUE *STORY.",
+   "say": "In a quiet valley in Norway, lights float in the night sky."
+  },
+  {
+   "shot": "a",
+   "cap": "HESSDALEN.",
+   "say": "The valley is called Hessdalen."
+  },
+  {
+   "shot": "b",
+   "cap": "SO *MANY.",
+   "say": "In the early nineteen eighties, people reported them almost every week."
+  },
+  {
+   "shot": "c",
+   "cap": "NO *ANSWER.",
+   "say": "Scientists set up cameras and still study them. There is no final answer."
+  },
+  {
+   "shot": "end",
+   "cap": "YOUR *GUESS?",
+   "say": "What do you think they are?"
+  }
+ ]
+}

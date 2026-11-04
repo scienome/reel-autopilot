@@ -1,0 +1,29 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "IT *OPENED.",
+   "say": "Level ten. The door with no handle opened. And I watched."
+  },
+  {
+   "shot": "a",
+   "cap": "I *WATCHED.",
+   "say": "Something came through, slow. I did not look away."
+  },
+  {
+   "shot": "b",
+   "cap": "AN OLD *MAN.",
+   "say": "An old man in a guard jacket. The eighth witness."
+  },
+  {
+   "shot": "c",
+   "cap": "HE *RETURNED.",
+   "say": "Because I saw him, he was solid again. He said my name."
+  },
+  {
+   "shot": "end",
+   "cap": "BEHIND *HIM.",
+   "say": "Behind him, in the dark, a thousand more. Waiting to be seen."
+  }
+ ]
+}

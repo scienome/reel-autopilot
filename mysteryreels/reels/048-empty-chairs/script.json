@@ -1,0 +1,29 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "THE *HALL.",
+   "say": "I refused his name. I went back to the hall."
+  },
+  {
+   "shot": "a",
+   "cap": "NOBODY *THERE.",
+   "say": "Nine hundred chairs. Empty. A mask on every seat."
+  },
+  {
+   "shot": "b",
+   "cap": "ONE *MASK.",
+   "say": "Only the first chair had a mask turned toward me."
+  },
+  {
+   "shot": "c",
+   "cap": "THE *FIRST.",
+   "say": "A card beside it. The first mask. Marlow."
+  },
+  {
+   "shot": "end",
+   "cap": "IT *FITS.",
+   "say": "I did not put it on. But I knew it would fit."
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "LOOK *CLOSER.",
+   "say": "Look closer. Three people at a bus stop."
+  },
+  {
+   "shot": "a",
+   "cap": "THREE.",
+   "say": "Three people."
+  },
+  {
+   "shot": "b",
+   "cap": "FOUR *SHADOWS.",
+   "say": "Four shadows. And the fourth one is moving."
+  },
+  {
+   "shot": "end",
+   "cap": "WHOSE?",
+   "say": "Whose shadow is it? Comment what you think."
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "AN *OFFICE.",
+   "say": "An office under Room Four. An old man at a desk."
+  },
+  {
+   "shot": "a",
+   "cap": "THE *SCAR.",
+   "say": "He had the scar. The real one. The original."
+  },
+  {
+   "shot": "b",
+   "cap": "WHY.",
+   "say": "I asked why. He said, so my wife would never be alone."
+  },
+  {
+   "shot": "c",
+   "cap": "TOO *LONG.",
+   "say": "Twenty years of copies. Every time one wore out, he made another."
+  },
+  {
+   "shot": "end",
+   "cap": "ONE *GOES HOME.",
+   "say": "He said, tonight, one of us goes home for good."
+  }
+ ]
+}

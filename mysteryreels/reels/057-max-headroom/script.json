@@ -1,0 +1,29 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "TRUE *STORY.",
+   "say": "November nineteen eighty seven. Chicago. A sports show suddenly cut to static."
+  },
+  {
+   "shot": "a",
+   "cap": "A *MASK.",
+   "say": "A man in a Max Headroom mask appeared, against a moving metal background."
+  },
+  {
+   "shot": "b",
+   "cap": "AGAIN.",
+   "say": "Two hours later he hijacked another station, for about ninety seconds."
+  },
+  {
+   "shot": "c",
+   "cap": "UNSOLVED.",
+   "say": "The investigators never found him."
+  },
+  {
+   "shot": "end",
+   "cap": "WHO?",
+   "say": "Who do you think it was?"
+  }
+ ]
+}

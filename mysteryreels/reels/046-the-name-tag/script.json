@@ -1,0 +1,29 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "I *WARNED HIM.",
+   "say": "I told the young waiter to run. Now, before the bell."
+  },
+  {
+   "shot": "a",
+   "cap": "NO *NAME.",
+   "say": "He said, I cannot. I cannot remember my name."
+  },
+  {
+   "shot": "b",
+   "cap": "HIS *TAG.",
+   "say": "I looked at his name tag. It said Marlow."
+  },
+  {
+   "shot": "c",
+   "cap": "MY *NAME.",
+   "say": "The name I paid for course one. They gave it to him."
+  },
+  {
+   "shot": "end",
+   "cap": "NEXT *ME.",
+   "say": "He was not my replacement. He was the next me."
+  }
+ ]
+}

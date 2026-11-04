@@ -1,0 +1,29 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "I *OPENED IT.",
+   "say": "I opened the door wide. The dark poured out."
+  },
+  {
+   "shot": "a",
+   "cap": "A *VOICE.",
+   "say": "Then a voice from far away said one word. Daniel."
+  },
+  {
+   "shot": "b",
+   "cap": "SHE *REMEMBERED.",
+   "say": "My sister. She remembered my name."
+  },
+  {
+   "shot": "c",
+   "cap": "COLOUR *BACK.",
+   "say": "The grey left my hands. I was seen again."
+  },
+  {
+   "shot": "end",
+   "cap": "BEHIND *ME.",
+   "say": "Behind me, twelve grey suits stood in the corridor. Watching."
+  }
+ ]
+}

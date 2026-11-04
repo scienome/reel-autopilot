@@ -1,0 +1,29 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "A *LIST.",
+   "say": "Under the first mask, a list. Tomorrow’s dinner."
+  },
+  {
+   "shot": "a",
+   "cap": "SEVEN *GUESTS.",
+   "say": "Seven guests. All of them waiters I had served with."
+  },
+  {
+   "shot": "b",
+   "cap": "THE *EIGHTH.",
+   "say": "And an eighth line. The new waiter."
+  },
+  {
+   "shot": "c",
+   "cap": "THE *BOY.",
+   "say": "The young waiter from the kitchen. Again."
+  },
+  {
+   "shot": "end",
+   "cap": "WHO *WROTE IT.",
+   "say": "The list was written in my handwriting. And I did not remember writing it."
+  }
+ ]
+}

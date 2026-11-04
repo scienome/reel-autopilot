@@ -1,0 +1,24 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "POV.",
+   "say": "Pov. Three a.m. Your smart speaker lights up and says, yes. He is still inside."
+  },
+  {
+   "shot": "a",
+   "cap": "NOBODY *ASKED.",
+   "say": "You live alone. Nobody asked it anything."
+  },
+  {
+   "shot": "b",
+   "cap": "AGAIN.",
+   "say": "Then it says, quietly, don’t worry. He’s friendly."
+  },
+  {
+   "shot": "end",
+   "cap": "YOUR *QUESTION?",
+   "say": "What do you ask it back?"
+  }
+ ]
+}

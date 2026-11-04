@@ -1,0 +1,29 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "NIGHT *SHIFT.",
+   "say": "Three rules for the night shift at the twenty four hour laundromat."
+  },
+  {
+   "shot": "a",
+   "cap": "RULE *ONE.",
+   "say": "Machine nine is always spinning. Never open it."
+  },
+  {
+   "shot": "b",
+   "cap": "RULE *TWO.",
+   "say": "If a customer brings wet clothes at three a.m., don’t ask whose they are."
+  },
+  {
+   "shot": "c",
+   "cap": "RULE *THREE.",
+   "say": "If the dryer says your name, say thank you. And leave."
+  },
+  {
+   "shot": "end",
+   "cap": "WHICH *ONE?",
+   "say": "Which rule would you break first?"
+  }
+ ]
+}

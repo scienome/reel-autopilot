@@ -1,0 +1,24 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "POV.",
+   "say": "Pov. You are brushing your teeth. You look in the mirror."
+  },
+  {
+   "shot": "a",
+   "cap": "IT *BLINKED.",
+   "say": "Your reflection blinks. You didn’t."
+  },
+  {
+   "shot": "b",
+   "cap": "IT *SPOKE.",
+   "say": "It leans closer to the glass and whispers, don’t blink. Not tonight."
+  },
+  {
+   "shot": "end",
+   "cap": "WHAT *NOW?",
+   "say": "What do you do?"
+  }
+ ]
+}

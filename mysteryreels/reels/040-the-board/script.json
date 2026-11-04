@@ -1,0 +1,34 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "THE *BOARD.",
+   "say": "The Registrar took me to the room where Level Nine is run."
+  },
+  {
+   "shot": "a",
+   "cap": "TWELVE *CHAIRS.",
+   "say": "Twelve chairs. Twelve people in grey suits. No names on the doors."
+  },
+  {
+   "shot": "b",
+   "cap": "WHAT IS *IT FOR?",
+   "say": "The one at the head of the table asked me, what is Level Nine for?"
+  },
+  {
+   "shot": "b",
+   "cap": "THEY *FORGOT.",
+   "say": "They built it. And none of them could remember why."
+  },
+  {
+   "shot": "c",
+   "cap": "THEIR *HANDS.",
+   "say": "Then I saw their hands. Grey at the edges. Like mine."
+  },
+  {
+   "shot": "end",
+   "cap": "NOBODY *WATCHES THEM.",
+   "say": "Nobody had been watching them. Not for years."
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "THE *ORIGINAL.",
+   "say": "The original runs this room. So where is he?"
+  },
+  {
+   "shot": "a",
+   "cap": "THREE *TAPS.",
+   "say": "I tapped three times on the floor. Like the door."
+  },
+  {
+   "shot": "b",
+   "cap": "THE *FLOOR.",
+   "say": "The tiles slid apart. Stairs. Going down."
+  },
+  {
+   "shot": "c",
+   "cap": "WATCHING.",
+   "say": "The old man grabbed my arm. Don’t. He’s been waiting for you to find them."
+  },
+  {
+   "shot": "end",
+   "cap": "BELOW.",
+   "say": "At the bottom, a light was on. Someone was awake."
+  }
+ ]
+}

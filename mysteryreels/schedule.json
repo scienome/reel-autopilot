@@ -1,49 +1,88 @@
 {
-  "start_at": "2026-11-02T00:00Z",
-  "times_ist": [
-    "01:00",
-    "06:00",
-    "13:00",
-    "18:30",
-    "20:30"
+ "start_at": "2026-11-02T00:00Z",
+ "times_ist": [
+  "01:00",
+  "06:00",
+  "13:00",
+  "18:30",
+  "20:30"
+ ],
+ "first": "001-denver-airport",
+ "series": {
+  "06:00": [
+   "001-denver-airport",
+   "002-the-knock",
+   "005-the-waiting-room",
+   "008-the-ninth-witness",
+   "012-the-registrar",
+   "016-the-vault",
+   "031-the-eighth-chair",
+   "034-cheyenne-mountain",
+   "037-front-row",
+   "040-the-board",
+   "041-the-first-file",
+   "042-what-comes-through",
+   "043-the-red-phone",
+   "044-someone-remembers"
   ],
-  "first": "001-denver-airport",
-  "series": {
-    "06:00": [
-      "001-denver-airport",
-      "002-the-knock",
-      "005-the-waiting-room",
-      "008-the-ninth-witness",
-      "012-the-registrar",
-      "016-the-vault", "031-the-eighth-chair", "034-cheyenne-mountain", "037-front-row"
-    ],
-    "20:30": [
-      "003-the-last-dinner",
-      "006-the-first-rule",
-      "010-the-price",
-      "014-the-replacement",
-      "018-the-long-table", "032-course-seven", "035-the-brass-key", "038-the-kitchen"
-    ],
-    "01:00": [
-      "004-room-four",
-      "007-the-other-me",
-      "011-the-old-mans-call",
-      "015-the-sleeping-room",
-      "019-the-first-copy", "033-the-door-that-opens-out", "036-two-of-me", "039-no-scar"
-    ],
-    "13:00": [
-      "009-two-doors",
-      "017-night-shift-rules",
-      "023-the-unreadable-book",
-      "026-the-cia-code", "028-mum-texts", "030-the-note-in-the-book"
-    ],
-    "18:30": [
-      "020-the-wow-signal",
-      "022-the-ship-that-vanished",
-      "024-who-is-lying",
-      "013-call-from-yourself",
-      "021-count-the-hands",
-      "025-three-envelopes", "027-are-we-in-a-simulation", "029-one-mask-is-wrong"
-    ]
-  }
+  "20:30": [
+   "003-the-last-dinner",
+   "006-the-first-rule",
+   "010-the-price",
+   "014-the-replacement",
+   "018-the-long-table",
+   "032-course-seven",
+   "035-the-brass-key",
+   "038-the-kitchen",
+   "045-the-chef",
+   "046-the-name-tag",
+   "047-return-the-course",
+   "048-empty-chairs",
+   "049-tomorrows-list"
+  ],
+  "01:00": [
+   "004-room-four",
+   "007-the-other-me",
+   "011-the-old-mans-call",
+   "015-the-sleeping-room",
+   "019-the-first-copy",
+   "033-the-door-that-opens-out",
+   "036-two-of-me",
+   "039-no-scar",
+   "050-the-stairs",
+   "051-the-office",
+   "052-the-call",
+   "053-who-goes-home"
+  ],
+  "13:00": [
+   "009-two-doors",
+   "017-night-shift-rules",
+   "023-the-unreadable-book",
+   "026-the-cia-code",
+   "028-mum-texts",
+   "030-the-note-in-the-book",
+   "054-hotel-room-13",
+   "055-reflection-blinks",
+   "056-laundromat-rules",
+   "057-max-headroom",
+   "058-lift-reflection",
+   "059-gps-arrived",
+   "060-hessdalen-lights"
+  ],
+  "18:30": [
+   "020-the-wow-signal",
+   "022-the-ship-that-vanished",
+   "024-who-is-lying",
+   "013-call-from-yourself",
+   "021-count-the-hands",
+   "025-three-envelopes",
+   "027-are-we-in-a-simulation",
+   "029-one-mask-is-wrong",
+   "061-a-year-for-a-million",
+   "062-last-train-rules",
+   "063-one-shadow-too-many",
+   "064-the-bloop",
+   "065-smart-speaker"
+  ]
+ }
 }

@@ -1,0 +1,29 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "THE *PHONE.",
+   "say": "The red phone rang. The Registrar was shouting."
+  },
+  {
+   "shot": "a",
+   "cap": "THE *RECORD.",
+   "say": "If the forgotten come back, he said, the record breaks. Level Nine breaks."
+  },
+  {
+   "shot": "b",
+   "cap": "OR *ELSE.",
+   "say": "Close that door, or I erase you. Fully. Not even a name."
+  },
+  {
+   "shot": "c",
+   "cap": "THE *DOOR.",
+   "say": "I looked at the door. A thousand faces behind it."
+  },
+  {
+   "shot": "end",
+   "cap": "I *DECIDED.",
+   "say": "I put the phone down. And I walked to the door."
+  }
+ ]
+}

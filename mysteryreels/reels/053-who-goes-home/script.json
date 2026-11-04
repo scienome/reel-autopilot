@@ -1,0 +1,29 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "THE *CHOICE.",
+   "say": "Three of us in the office. Three men with one life."
+  },
+  {
+   "shot": "a",
+   "cap": "THREE *OF US.",
+   "say": "The original. The old copy. And me."
+  },
+  {
+   "shot": "b",
+   "cap": "NO *SCAR.",
+   "say": "Only one had the scar. She always kissed that scar."
+  },
+  {
+   "shot": "c",
+   "cap": "HER *EYES.",
+   "say": "Then the office door opened. My wife walked in."
+  },
+  {
+   "shot": "end",
+   "cap": "SHE *CHOSE.",
+   "say": "She looked at all three of us. And she took my hand."
+  }
+ ]
+}

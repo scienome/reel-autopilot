@@ -1,0 +1,24 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "LOOK *CLOSER.",
+   "say": "Look closer. Six people in a lift."
+  },
+  {
+   "shot": "a",
+   "cap": "COUNT.",
+   "say": "Count them in the mirror."
+  },
+  {
+   "shot": "b",
+   "cap": "ONE *MISSING.",
+   "say": "Five. One of them has no reflection."
+  },
+  {
+   "shot": "end",
+   "cap": "WHICH *ONE?",
+   "say": "Which number was it? Comment it."
+  }
+ ]
+}

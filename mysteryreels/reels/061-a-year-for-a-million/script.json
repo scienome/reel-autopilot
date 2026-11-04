@@ -1,0 +1,24 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "THE *OFFER.",
+   "say": "A stranger offers you one million dollars."
+  },
+  {
+   "shot": "a",
+   "cap": "THE *PRICE.",
+   "say": "The price is one year of your memories. Gone."
+  },
+  {
+   "shot": "b",
+   "cap": "YOUR *CHOICE.",
+   "say": "You choose which year. Nobody else forgets it. Only you."
+  },
+  {
+   "shot": "end",
+   "cap": "WOULD *YOU?",
+   "say": "Would you take it? And which year?"
+  }
+ ]
+}

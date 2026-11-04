@@ -1,0 +1,29 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "TRUE *STORY.",
+   "say": "In nineteen ninety seven, underwater microphones caught one huge, deep sound."
+  },
+  {
+   "shot": "a",
+   "cap": "THE *BLOOP.",
+   "say": "They called it the Bloop. Heard across thousands of kilometres."
+  },
+  {
+   "shot": "b",
+   "cap": "THE *THEORY.",
+   "say": "People said only a giant animal could be that loud."
+  },
+  {
+   "shot": "c",
+   "cap": "THE *ANSWER.",
+   "say": "Scientists later said it matched ice breaking off in Antarctica. An icequake."
+  },
+  {
+   "shot": "end",
+   "cap": "YOUR *PICK?",
+   "say": "Monster or ice? What do you believe?"
+  }
+ ]
+}
