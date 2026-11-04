@@ -1,0 +1,28 @@
+{
+ "music-705a45908e0e.mp3": {
+  "prompt": "Quirky mischievous comedy music with tuba, bassoon and a spin-cycle rhythm, sneaky in the middle, then silly, no vocals",
+  "music_length_ms": 33420,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-a78652d8b6bc.mp3": {
+  "text": "washing machine spinning and rumbling",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-09f5a2915fda.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-2b24e430c403.mp3": {
+  "text": "dramatic suspense sting",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-cb591854d208.mp3": {
+  "text": "sparkle chime",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
