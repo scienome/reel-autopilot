@@ -1,0 +1,41 @@
+name: Read Instagram stats (read-only)
+# Fetches views, reach, watch time, shares and saves for recent reels and commits engagement/stats/<account>.json.
+# Posts nothing. Safe to run by hand any time.
+on:
+  workflow_dispatch:
+    inputs:
+      accounts:
+        description: 'Space-separated: ELITE TOY GG MYTH'
+        default: 'ELITE TOY'
+  schedule:
+    - cron: '41 2 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: ig-stats
+  cancel-in-progress: false
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install requests
+      - name: Fetch
+        env:
+          IG_ELITE_ACCESS_TOKEN: ${{ secrets.IG_ELITE_ACCESS_TOKEN }}
+          IG_ELITE_USER_ID: ${{ secrets.IG_ELITE_USER_ID }}
+          IG_TOY_ACCESS_TOKEN: ${{ secrets.IG_TOY_ACCESS_TOKEN }}
+          IG_TOY_USER_ID: ${{ secrets.IG_TOY_USER_ID }}
+          IG_GG_ACCESS_TOKEN: ${{ secrets.IG_GG_ACCESS_TOKEN }}
+          IG_GG_USER_ID: ${{ secrets.IG_GG_USER_ID }}
+          IG_MYTH_ACCESS_TOKEN: ${{ secrets.IG_MYTH_ACCESS_TOKEN }}
+          IG_MYTH_USER_ID: ${{ secrets.IG_MYTH_USER_ID }}
+        run: |
+          for a in ${{ github.event.inputs.accounts || 'ELITE TOY GG MYTH' }}; do echo "== $a"; python3 tools/ig_stats.py $a || true; done
+      - name: Commit
+        run: |
+          git config user.name "reel-autopilot"; git config user.email "actions@github.com"
+          git add engagement/stats || true
+          git diff --cached --quiet && exit 0
+          git commit -m "Instagram stats [skip ci]"
+          for i in 1 2 3 4; do git pull --rebase origin main && git push && break; sleep 5; done
