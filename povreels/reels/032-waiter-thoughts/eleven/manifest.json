@@ -1,0 +1,33 @@
+{
+ "music-4ad31255cd9d.mp3": {
+  "prompt": "Jazzy cheeky restaurant comedy music with upright bass, brushes and muted trumpet, warm at the end, no vocals",
+  "music_length_ms": 27660,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-31f540eb4b7f.mp3": {
+  "text": "clock ticking",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-e38ea08f71a6.mp3": {
+  "text": "sizzling grill",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-772d7102aa93.mp3": {
+  "text": "record scratch",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-f0f00c0f2d27.mp3": {
+  "text": "cash register cha-ching",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-f304b05f41be.mp3": {
+  "text": "small audience aww",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
