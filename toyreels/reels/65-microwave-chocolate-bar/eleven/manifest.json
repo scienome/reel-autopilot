@@ -24,5 +24,11 @@
   "text": "paper stamp thunk",
   "duration_seconds": 1.2,
   "prompt_influence": 0.5
+ },
+ "music-b48a9b44ebc8.mp3": {
+  "prompt": "Playful 1940s science-lab jazz with bubbly synth bleeps and xylophone, comedic, no vocals",
+  "music_length_ms": 27240,
+  "model_id": "music_v1",
+  "force_instrumental": true
  }
 }
