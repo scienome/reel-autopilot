@@ -463,6 +463,7 @@ Owner's English channel: flat-vector "what happens inside your body when you tra
   Rule added to `toyreels/PLAYBOOK.md`. Toy queue is short: 11 new-format reels left on 4 Nov; the 6 Nov batch must run.
 - **Musclyth:** the owner wants one channel with four series: Why Does This Happen?, Muscle Building, Exercise, Supplements. Plan,
   rotation and topic lists in `pulsereels/README.md` (CHANNEL PLAN). Pilots 005-008 pushed. **Owner, 4 Nov: 28 reels a week, 4 a day, one from each series every day.** Week 1 = 009-036 (order table in the README); with the pilots that is 32 reels ready. Post times for 4 a day still to agree (earlier proposal was 3: 06:30, 18:30, 23:30). Kit: props packs 2-3 and the `P.reel` builder. Still no posting accounts.
+- **Render check (4 Nov, 07:55 UTC):** every POV 031-046, riddle batch 2 and noir 010-065 reel has a Release; samples checked (sound about -15 to -18 dB, new hooks visible). POV 031-046 and riddles batch 2 queued; pov-batch, riddle-batch and elite-batch claims done. Unposted: POV 29, riddles 30, noir 10-11 per slot (about 10 days each). Render workflows now retry the voice push 5 times (two toy runs lost paid voices to a push race).
 - **Lokvara** is the best performer (1,500-70,000 views, 15-25 s watch): no change needed.
 
 ## 13. STATUS SNAPSHOT (1 Nov 2026, about 15:30 IST — re-check live, this goes stale)
