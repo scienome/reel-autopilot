@@ -1,1 +1,36 @@
-[{"batch": 1, "ids": ["riddle-goliyan", "riddle-namaste", "riddle-roti", "riddle-tota-udaan", "riddle-nadi-paar", "riddle-laddoo-chor"], "status": "done"}]
+[
+ {
+  "batch": 1,
+  "ids": [
+   "riddle-goliyan",
+   "riddle-namaste",
+   "riddle-roti",
+   "riddle-tota-udaan",
+   "riddle-nadi-paar",
+   "riddle-laddoo-chor"
+  ],
+  "status": "done"
+ },
+ {
+  "batch": 2,
+  "ids": [
+   "riddle-bakriyan",
+   "riddle-teen-haathi",
+   "riddle-nau-laddoo",
+   "riddle-28-din",
+   "riddle-rui-loha",
+   "riddle-chhata-chor",
+   "riddle-bijli-gul",
+   "riddle-dopahar-parchhai",
+   "riddle-kitne-trikon",
+   "riddle-pahiye",
+   "riddle-sher-umar",
+   "riddle-agla-number",
+   "riddle-72-ghante",
+   "riddle-sikke-35",
+   "riddle-kitne-nau"
+  ],
+  "status": "in_progress",
+  "note": "owner 4 Nov: 10 days for every account; answers proved by script"
+ }
+]
