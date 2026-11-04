@@ -1,9 +1,9 @@
 {
  "job": "elite-batch",
- "status": "done",
- "owner": "vm-5e3f12",
- "started": "2026-11-01T18:21:49Z",
- "updated": "2026-11-01T19:30:34Z",
- "note": "pushed 025-three-envelopes",
+ "status": "in_progress",
+ "owner": "vm-8de09d",
+ "started": "2026-11-04T07:01:48Z",
+ "updated": "2026-11-04T07:01:48Z",
+ "note": "",
  "history": []
 }
