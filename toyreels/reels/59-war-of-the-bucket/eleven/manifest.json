@@ -24,5 +24,11 @@
   "text": "sad low drum",
   "duration_seconds": 1.2,
   "prompt_influence": 0.5
+ },
+ "music-1a2bc388b50b.mp3": {
+  "prompt": "Comedic medieval lute and tambourine with silly horns, playful mock-epic, no vocals",
+  "music_length_ms": 30440,
+  "model_id": "music_v1",
+  "force_instrumental": true
  }
 }
