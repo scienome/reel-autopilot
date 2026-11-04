@@ -21,6 +21,31 @@ skill /pulsestyle; its reference files live on the "Pulse Sample" artifact). Eve
 - **Posting:** NOT set up. The channel has no Instagram/YouTube accounts yet (owner is choosing a handle). When they
   exist: add `IG_PULSE_*` / `YT_PULSE_*` secrets, a schedule file and a poster, and ask the owner for post times.
 
+## CHANNEL PLAN: the complete fitness pack (owner, 4 Nov 2026). This overrides the backlog below.
+
+One channel, four numbered series that rotate, so every day has a mix. Each reel says its series and part on frame 0
+(`P.label` under the title) and ends with "Next: <next topic>" so people follow the series.
+
+| Series | Tag on screen | What it is | Pilot |
+|---|---|---|---|
+| **Why Does This Happen?** | `Why Does This Happen? #N` | Things everyone notices in the gym or body but nobody knows why. Hook = the question. | 005-why-last-rep-shakes |
+| **Muscle Building** | `Muscle Building · Part N` | A step-by-step course in how to grow muscle: signal, protein, volume, rest, progress. | 006-how-muscle-grows |
+| **Exercise Series** | `Exercise Series · Part N` | One lift per episode: what it really works, one myth or mistake, form cues. | 007-the-squat |
+| **Supplement Series** | `Supplement Series · Part N` | One supplement per episode: what it does, what the evidence says, usual dose, who should be careful. | 008-creatine |
+
+**Rotation (3 posts a day):** Why → Muscle Building → Exercise, then Why → Supplements → Exercise, and so on. "Why" posts
+most because curiosity hooks travel furthest; supplements at most every other day.
+
+**Next topics, in order:**
+- Why: the pump · knees cracking · side stitch when running · red face when lifting · hungrier on rest days · why you can't sleep after evening training · morning stiffness · why one side is stronger · goosebumps/shivers after a hard set · why you feel sick after leg day · why muscles twitch at night · why you sweat more as you get fitter.
+- Muscle Building: how much protein (2) · how many sets a week (3) · how heavy and how many reps (4) · how close to failure (5) · rest between sets (6) · progressive overload (7) · sleep and growth (8) · eating in a surplus (9) · beginner gains and why they slow (10) · can you build muscle and lose fat at once (11) · deload weeks (12).
+- Exercise: deadlift · bench press · pull-up · overhead press · hip thrust · barbell row · lunges · push-up · plank · dips · Romanian deadlift · calf raise.
+- Supplements: protein powder · caffeine · beta-alanine · fish oil · vitamin D · BCAAs (mostly not needed) · pre-workout · electrolytes · collagen · fat burners (what the evidence says).
+
+**Supplement rules:** evidence only, say how strong it is, give the dose used in studies, add "Ask a doctor first" for
+any group at risk, and put "General information, not medical advice." in the caption. No brand names, no buying links,
+nothing banned or prescription-only.
+
 ## Content rules
 - Hook in the first second (title card + something moving on frame 0), a scene change every 3-4 s, zoom-through whenever
   the story goes deeper, numbers as counting pop-ups, loop-friendly ending.
