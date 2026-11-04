@@ -1,0 +1,33 @@
+{
+ "music-a107a3135625.mp3": {
+  "prompt": "Cosy lazy comedy music with tuba, soft brushes and a lounge groove, a jealous dramatic sting, then warm, no vocals",
+  "music_length_ms": 32940,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-f096ee5c7f23.mp3": {
+  "text": "coins jingling",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-09f5a2915fda.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-414781f95140.mp3": {
+  "text": "delivery truck door opening",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-b01de3f6b2e8.mp3": {
+  "text": "dramatic jealous sting",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-f304b05f41be.mp3": {
+  "text": "small audience aww",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
