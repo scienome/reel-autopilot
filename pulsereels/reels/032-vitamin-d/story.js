@@ -1,7 +1,7 @@
 // 032 Supplements 6: vitamin D (Beaudart 2014; Holick 2007; IOM 2011)
 (function () {
 P.reel({ merge: [['beta alanine', 'beta-alanine']], scenes: (A) => { const { L, pop, ramp, W, H, PAL } = A; return [
-  { at: 0, name: 'hook', draw: (c, t) => { P.gym(c, W, H, t); P.sun(c, 560, 470, 70, t); P.lifter(c, W / 2 - 60, H * 0.86, 1.3, { arms: 'flex', bulk: 0.3, wince: 0.4, blink: A.blink(t) }); A.hookTitle(c, ['VITAMIN D', 'And Strength?'], 'Supplement Series · Part 6'); } },
+  { at: 0, name: 'hook', draw: (c, t) => { P.gym(c, W, H, t); P.sun(c, 560, 470, 70, t); const dr = (cc, xr) => P.lifter(cc, W / 2 - 60, H * 0.86, 1.3, { arms: 'flex', bulk: 0.3, wince: 0.4, blink: A.blink(t), xray: xr, work: { biceps: 1, shoulders: 0.6 }, t }); P.xrayLens(c, W / 2 - 60, 760, 160, t, (cc) => dr(cc, false), (cc) => dr(cc, true), pop(t, 1.0, 0.4)); A.hookTitle(c, ['VITAMIN D', 'And Strength?'], 'Supplement Series · Part 6'); } },
   { at: L(2) - 0.2, name: 'sun', tr: 'slide', draw: (c, t) => { P.bg(c, W, H, 'violet', t); P.sun(c, W / 2, 360, 90, t); P.flow(c, W / 2, 460, W / 2, 760, t, 1, PAL.yellow, 10); P.skinLayer(c, W / 2, 780, 600, t, 0, 0); P.label(c, 'Skin makes vitamin D', W / 2, 200, pop(t, L(2)), { color: PAL.amber }); } },
   { at: L(3) - 0.2, name: 'low', tr: 'slide', draw: (c, t) => { P.bg(c, W, H, 'night', t); P.moon(c, 590, 200, 44); P.progress(c, W / 2, 700, 520, 0.85 - 0.6 * ramp(t, L(3), L(3) + 2.5), PAL.amber, 'vitamin D');
     ['Winter', 'Far from the equator', 'Indoors all day'].forEach((s, i) => P.label(c, s, W / 2, 330 + i * 80, pop(t, L(3) + i * 0.8), { color: PAL.blue, size: 26 })); } },

@@ -1,7 +1,7 @@
 // 021 Why #6: fit people sweat more (Buono & Sjoholm 1988; Nadel 1974; Sawka 2007)
 (function () {
 P.reel({ scenes: (A) => { const { L, pop, ramp, W, H, PAL } = A; return [
-  { at: 0, name: 'hook', draw: (c, t) => { P.gym(c, W, H, t); const p = P.lifter(c, W / 2, H * 0.86, 1.35, { run: t * 9, pant: t * 6, bulk: 0.4, blink: A.blink(t) }); P.sweat(c, W / 2 - 60, p.shY - 90, t, 1, 1); P.sweat(c, W / 2 + 60, p.shY - 70, t, 1, 2);
+  { at: 0, name: 'hook', draw: (c, t) => { P.gym(c, W, H, t); const dr = (cc, xr) => P.lifter(cc, W / 2, H * 0.86, 1.35, { run: t * 9, pant: t * 6, bulk: 0.4, blink: A.blink(t), xray: xr, work: { heart: 1, quads: 0.8, calves: 0.6 }, t }); P.xrayLens(c, W / 2, 820, 150, t, (cc) => dr(cc, false), (cc) => dr(cc, true), pop(t, 1.0, 0.4)); P.sweat(c, W / 2 - 160, 700, t, 1, 1); P.sweat(c, W / 2 + 160, 720, t, 1, 2);
     A.hookTitle(c, ['Fit People', 'SWEAT MORE?'], 'Why Does This Happen? #6'); } },
   { at: L(2) - 0.2, name: 'heat', tr: 'zoom', focus: [W / 2, 600], draw: (c, t) => { P.bg(c, W, H, 'plum', t); P.bgCells(c, W, H, t, PAL.pink, 3, 0.05); const h = ramp(t, L(2), L(3));
     P.fiber(c, 60, 560, 420, 70, 0, { color: '#ff4a5c', seed: 3, slide: t * 12 }); P.glow(c, 270, 560, 300 * h, PAL.orange, 0.6 * h); P.thermometer(c, 600, 620, 1.0, 0.3 + 0.6 * h); P.label(c, 'Muscles make HEAT', W / 2, 200, pop(t, L(2)), { color: PAL.orange }); } },

@@ -7,7 +7,7 @@ P.reel({ scenes: (A) => { const { L, pop, ramp, W, H, PAL } = A; return [
     P.flat(c, P.poly([[360, 640], [480, 520], [480, 640]]), PAL.yellow, { off: 6 }); P.arrowFlat(c, 500, 600, 560, 600, pop(t, L(3)), PAL.yellow); if (pop(t, L(3)) > 0) P.tub(c, 620, 600, 0.6, PAL.ink, 'WHEY');
     P.label(c, 'Whey = leftover from cheese', W / 2, 200, pop(t, L(2)) * (1 - pop(t, L(3) + 1)), { color: PAL.amber, size: 30 }); P.label(c, 'Food, not magic', W / 2, 200, pop(t, L(3) + 1), { color: PAL.mint }); } },
   { at: L(4) - 0.2, name: 'leucine', tr: 'zoom', focus: [W / 2, 600], draw: (c, t) => { P.bg(c, W, H, 'deep', t); P.bgCells(c, W, H, t, PAL.cyan, 3, 0.05); P.aminos(c, W / 2, 620, 220, t, [0], 1, true);
-    P.label(c, 'Fast + leucine-rich', W / 2, 200, pop(t, L(4)), { color: PAL.amber }); P.bulb(c, W / 2, 620, 50, pop(t, L(4) + 1.5)); } },
+    P.label(c, 'Fast + leucine-rich', W / 2, 200, pop(t, L(4)), { color: PAL.amber }); P.bulb(c, W / 2, 620, 50, pop(t, L(4) + 1.5)); if (pop(t, L(4) + 1.5) > 0) P.muscleBelly(c, W / 2 + 70, 1090, 300, 100, 0, 0.5 + 0.5 * Math.sin(t * 5), t, { label: 'Building ON' }); } },
   { at: L(5) - 0.2, name: 'versus', tr: 'slide', draw: (c, t) => { P.bg(c, W, H, 'violet', t); P.versus(c, W / 2, 560, 660, 380, 'Shake', 'Chicken', pop(t, L(5)), 0, (cc) => P.scoop(cc, 0, 40, 0.9), (cc) => P.chicken(cc, 0, 50, 0.8));
     P.counter(c, '=', W / 2, 820, 120, pop(t, L(5) + 1.2), PAL.yellow); P.label(c, 'TOTAL per day matters', W / 2, 1000, pop(t, L(6)), { color: PAL.mint, size: 32 }); } },
   { at: L(7) - 0.2, name: 'choice', tr: 'slide', draw: (c, t) => { P.gym(c, W, H, t); P.lifter(c, W / 2 - 100, H * 0.86, 1.2, { arms: 'flex', bulk: 0.5, smile: true, blink: A.blink(t) }); P.shaker(c, W / 2 + 190, H * 0.62, 2);
