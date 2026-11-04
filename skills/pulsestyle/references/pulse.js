@@ -655,3 +655,263 @@
   // nuclei along a fibre drawn with P.fiber at (x,y,len,r,ang): n nuclei, k reveal, hold 0..1 brightness
   P.nuclei = (ctx, x, y, len, r, ang, n, k = 1, t = 0, seed = 0) => { const rr = H.rng('nuc' + seed); ctx.save(); ctx.translate(x, y); ctx.rotate(ang); for (let i = 0; i < n; i++) { const kk = cl(k * n - i); if (kk <= 0) continue; const px = len * (0.12 + 0.8 * ((i + 0.5) / n)) + (rr() - 0.5) * 20, py = (rr() - 0.5) * r * 1.1; ctx.save(); ctx.translate(px, py); const s = H.ease.back(kk) * (1 + 0.05 * Math.sin(t * 4 + i)); ctx.scale(s, s); P.glow(ctx, 0, 0, r * 0.5, PAL.grape, 0.4); P.flat(ctx, P.ell(0, 0, r * 0.24, r * 0.15), PAL.grape, { off: 3, lo: 1 }); P.fill(ctx, P.circ(-r * 0.06, -r * 0.03, r * 0.05), P.light(PAL.grape, 0.5)); ctx.restore(); } ctx.restore(); };
 })();
+
+// ======================= PROPS PACK 2 (4 Nov 2026): the Musclyth fitness pack =======================
+// Gym kit, a front/back muscle map, a side-view lifter for exercise form, supplements, food, body parts, and chart/UI pieces.
+// All flat two-tone, no outlines, drawn around (x, y) and scaled by s. k = 0..1 reveal where given. Gallery: kit/props_gallery.js.
+(function () {
+  const P = window.P, PAL = P.PAL, TAU = Math.PI * 2, cl = P.cl, lerp = P.lerp;
+  const at = (ctx, x, y, s, rot = 0) => { ctx.save(); ctx.translate(x, y); if (rot) ctx.rotate(rot); ctx.scale(s, s); };
+  const txt = (ctx, s, x, y, size, color = PAL.white, w = 900) => { ctx.font = `${w} ${size}px ${P.FONT}`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillStyle = color; ctx.fillText(s, x, y); };
+  const pop = (k) => (k < 1 ? H.ease.back(cl(k)) : 1);
+
+  // ---------------- gym equipment ----------------
+  P.dumbbell = (ctx, x, y, s = 1, rot = 0, col = PAL.indigo) => { at(ctx, x, y, s, rot);
+    P.flat(ctx, P.rr(-60, -9, 120, 18, 9), PAL.steel, { off: 3 });
+    for (const sd of [-1, 1]) { P.flat(ctx, P.rr(sd * 62 - 20, -38, 40, 76, 12), col, { off: 5 }); P.flat(ctx, P.rr(sd * 88 - 9, -26, 18, 52, 8), P.shade(col, 0.15), { off: 3 }); }
+    ctx.restore(); };
+  P.kettlebell = (ctx, x, y, s = 1, col = PAL.ink, label = '') => { at(ctx, x, y, s);
+    ctx.save(); ctx.lineWidth = 22; ctx.strokeStyle = P.shade(col, 0.1); ctx.lineCap = 'round'; ctx.beginPath(); ctx.arc(0, -52, 46, Math.PI * 1.05, Math.PI * 1.95); ctx.stroke(); ctx.restore();
+    P.flat(ctx, P.blob([[-70, -20], [-40, -62], [40, -62], [70, -20], [74, 40], [40, 74], [-40, 74], [-74, 40]]), col, { off: 9, light: 0.18 });
+    if (label) txt(ctx, label, 0, 18, 34, PAL.yellow); ctx.restore(); };
+  P.plate = (ctx, x, y, r = 80, col = PAL.red, label = '20') => {
+    P.flat(ctx, P.circ(x, y, r), col, { off: r * 0.08 }); P.fill(ctx, P.circ(x, y, r * 0.72), P.shade(col, 0.18)); P.fill(ctx, P.circ(x, y, r * 0.62), col);
+    P.fill(ctx, P.circ(x, y, r * 0.16), PAL.steel); P.fill(ctx, P.circ(x, y, r * 0.09), PAL.ink); if (label) { ctx.save(); txt(ctx, label, x, y - r * 0.38, r * 0.26); ctx.restore(); } };
+  P.bench = (ctx, x, y, s = 1, incline = 0) => { at(ctx, x, y, s);
+    P.shadow(ctx, 0, 4, 190, 16, 0.2);
+    for (const lx of [-130, 130]) { P.flat(ctx, P.rr(lx - 10, -70, 20, 72, 6), PAL.steel, { off: 3 }); P.flat(ctx, P.rr(lx - 40, -8, 80, 14, 6), PAL.grey, { off: 2 }); }
+    ctx.save(); ctx.translate(-30, -86); ctx.rotate(-incline); P.flat(ctx, P.rr(-150, -18, 300, 36, 16), PAL.ink, { off: 5, light: 0.25 }); ctx.restore();
+    ctx.restore(); };
+  P.pullupBar = (ctx, x, y, w = 420, s = 1) => { at(ctx, x, y, s);
+    for (const sd of [-1, 1]) P.flat(ctx, P.rr(sd * w / 2 - 14, -10, 28, 600, 8), PAL.grey, { off: 4 });
+    P.flat(ctx, P.rr(-w / 2 - 20, -14, w + 40, 28, 14), PAL.steel, { off: 4 }); ctx.restore(); };
+  P.rope = (ctx, x, y, w, t, k = 1) => { // jump rope swinging around two handles
+    const ph = t * 8, sw = Math.cos(ph) * 180 * k; ctx.save(); ctx.strokeStyle = PAL.cyan; ctx.lineWidth = 6; ctx.beginPath(); ctx.moveTo(x - w / 2, y); ctx.quadraticCurveTo(x, y + sw, x + w / 2, y); ctx.stroke(); ctx.restore();
+    for (const sd of [-1, 1]) P.flat(ctx, P.capsule(x + sd * w / 2, y - 26, x + sd * w / 2, y + 10, 10), PAL.orange, { off: 3 }); };
+  P.stopwatch = (ctx, x, y, r, frac = 0, label = '', col = PAL.amber) => { // frac 0..1 sweeps the hand once
+    P.flat(ctx, P.rr(x - r * 0.2, y - r * 1.32, r * 0.4, r * 0.3, r * 0.08), PAL.grey, { off: 3 });
+    P.flat(ctx, P.circ(x, y, r), PAL.steel, { off: r * 0.08 }); P.fill(ctx, P.circ(x, y, r * 0.84), PAL.white);
+    if (frac > 0) { ctx.save(); ctx.fillStyle = P.alpha(col, 0.35); ctx.beginPath(); ctx.moveTo(x, y); ctx.arc(x, y, r * 0.84, -Math.PI / 2, -Math.PI / 2 + TAU * cl(frac)); ctx.closePath(); ctx.fill(); ctx.restore(); }
+    const a = -Math.PI / 2 + TAU * frac; ctx.save(); ctx.strokeStyle = PAL.red; ctx.lineWidth = r * 0.07; ctx.lineCap = 'round'; ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x + Math.cos(a) * r * 0.7, y + Math.sin(a) * r * 0.7); ctx.stroke(); ctx.restore();
+    P.fill(ctx, P.circ(x, y, r * 0.08), PAL.ink); if (label) { ctx.save(); txt(ctx, label, x, y + r * 0.42, r * 0.28, PAL.ink); ctx.restore(); } };
+  P.bottle = (ctx, x, y, s = 1, col = PAL.blue, level = 0.7) => { at(ctx, x, y, s);
+    P.flat(ctx, P.rr(-36, -110, 72, 200, 24), P.alpha(PAL.white, 0.9), { off: 5 });
+    const h = 180 * cl(level); P.fill(ctx, P.rr(-30, 84 - h, 60, h, 18), P.alpha(PAL.cyan, 0.75));
+    P.flat(ctx, P.rr(-22, -140, 44, 34, 10), col, { off: 4 }); P.fill(ctx, P.rr(-36, -40, 72, 40, 4), col); ctx.restore(); };
+
+  // ---------------- supplements ----------------
+  P.tub = (ctx, x, y, s = 1, col = PAL.ink, label = 'WHEY', sub = '', accent = PAL.amber) => { at(ctx, x, y, s);
+    P.shadow(ctx, 0, 112, 100, 16, 0.2);
+    P.flat(ctx, P.rr(-92, -96, 184, 206, 26), col, { off: 8, light: 0.2 }); P.flat(ctx, P.rr(-100, -130, 200, 46, 16), P.shade(col, 0.2), { off: 5 });
+    P.fill(ctx, P.rr(-80, -60, 160, 100, 14), accent); txt(ctx, label, 0, -18, label.length > 6 ? 30 : 40, PAL.ink);
+    if (sub) txt(ctx, sub, 0, 70, 22, P.light(accent, 0.3), 800); ctx.restore(); };
+  P.scoop = (ctx, x, y, s = 1, powder = PAL.cream, rot = 0) => { at(ctx, x, y, s, rot);
+    P.flat(ctx, P.capsule(30, 0, 120, 0, 10), PAL.white, { off: 3 }); P.flat(ctx, P.rr(-46, -38, 80, 62, 16), PAL.white, { off: 5 });
+    P.flat(ctx, P.ell(-6, -38, 40, 16), powder, { off: 3 }); ctx.restore(); };
+  P.pill = (ctx, x, y, s = 1, rot = 0, c1 = PAL.red, c2 = PAL.white) => { at(ctx, x, y, s, rot);
+    ctx.save(); P.capsule(-40, 0, 40, 0, 20)(ctx); ctx.clip(); P.flat(ctx, P.rr(-70, -30, 70, 60, 0), c1, { off: 4 }); P.flat(ctx, P.rr(0, -30, 70, 60, 0), c2, { off: 4 }); ctx.restore();
+    P.fill(ctx, P.rr(-30, -13, 26, 6, 3), P.alpha(PAL.white, 0.5)); ctx.restore(); };
+  P.softgel = (ctx, x, y, s = 1, rot = 0, col = PAL.amber) => { at(ctx, x, y, s, rot); P.glow(ctx, 0, 0, 60, col, 0.3); P.flat(ctx, P.ell(0, 0, 44, 24), col, { off: 5, light: 0.4 }); P.fill(ctx, P.ell(-14, -9, 12, 5, -0.2), P.alpha(PAL.white, 0.6)); ctx.restore(); };
+  P.coffee = (ctx, x, y, s = 1, t = 0) => { at(ctx, x, y, s);
+    for (let i = 0; i < 3; i++) { const ph = (t * 0.7 + i / 3) % 1; ctx.save(); ctx.globalAlpha = (1 - ph) * 0.5; ctx.strokeStyle = PAL.white; ctx.lineWidth = 6; ctx.lineCap = 'round'; ctx.beginPath(); const bx = -24 + i * 24; ctx.moveTo(bx, -70 - ph * 60); ctx.quadraticCurveTo(bx + 14, -90 - ph * 60, bx, -110 - ph * 60); ctx.stroke(); ctx.restore(); }
+    ctx.save(); ctx.lineWidth = 14; ctx.strokeStyle = PAL.white; ctx.beginPath(); ctx.arc(64, 4, 26, -1.2, 1.2); ctx.stroke(); ctx.restore();
+    P.flat(ctx, P.poly([[-66, -58], [66, -58], [52, 62], [-52, 62]]), PAL.white, { off: 6 }); P.fill(ctx, P.ell(0, -58, 66, 12), '#6b3a1e'); P.fill(ctx, P.rr(-60, -14, 118, 24, 4), PAL.orange); ctx.restore(); };
+  P.sun = (ctx, x, y, r, t = 0) => { P.glow(ctx, x, y, r * 2.6, PAL.yellow, 0.5);
+    for (let i = 0; i < 12; i++) { const a = i / 12 * TAU + t * 0.3; ctx.save(); ctx.translate(x + Math.cos(a) * r * 1.35, y + Math.sin(a) * r * 1.35); ctx.rotate(a); P.fill(ctx, P.rr(-r * 0.18, -r * 0.07, r * 0.36, r * 0.14, r * 0.07), PAL.amber); ctx.restore(); }
+    P.flat(ctx, P.circ(x, y, r), PAL.yellow, { off: r * 0.08 }); };
+  // evidence badge: level 0..3 (none, weak, moderate, strong)
+  P.evidence = (ctx, x, y, level, k = 1) => { if (k <= 0) return; const names = ['NO EVIDENCE', 'WEAK', 'MODERATE', 'STRONG'], cols = [PAL.grey, PAL.red, PAL.amber, PAL.mint];
+    ctx.save(); ctx.translate(x, y); const pk = pop(k); ctx.scale(pk, pk);
+    P.flat(ctx, P.rr(-190, -70, 380, 140, 30), PAL.ink, { off: 6, light: 0.15 }); txt(ctx, 'EVIDENCE', 0, -38, 22, PAL.grey, 800);
+    for (let i = 0; i < 3; i++) P.flat(ctx, P.rr(-150 + i * 104, -14, 92, 26, 13), i < level ? cols[level] : P.alpha(PAL.white, 0.15), { off: i < level ? 3 : 0, light: i < level ? 0.22 : 0 });
+    txt(ctx, names[level], 0, 44, 30, cols[level]); ctx.restore(); };
+
+  // ---------------- food ----------------
+  P.chicken = (ctx, x, y, s = 1, rot = 0) => { at(ctx, x, y, s, rot); P.flat(ctx, P.blob([[-80, -10], [-40, -50], [40, -46], [86, -6], [60, 40], [-50, 44]]), '#f1c07a', { off: 7 }); for (let i = -1; i <= 1; i++) P.fill(ctx, P.rr(-40 + i * 34, -24, 8, 44, 4), P.alpha('#b06a2a', 0.5)); ctx.restore(); };
+  P.steak = (ctx, x, y, s = 1, rot = 0) => { at(ctx, x, y, s, rot); P.flat(ctx, P.blob([[-90, -20], [-50, -56], [40, -50], [92, -10], [70, 44], [-20, 52], [-84, 30]]), '#b8423a', { off: 7 }); P.fill(ctx, P.blob([[-60, -30], [-30, -44], [10, -36], [-20, -20]]), '#f6d6c8'); ctx.restore(); };
+  P.rice = (ctx, x, y, s = 1) => { at(ctx, x, y, s); P.flat(ctx, P.blob([[-80, -40], [-40, -76], [40, -76], [80, -40]]), PAL.bone, { off: 6 }); P.flat(ctx, P.poly([[-100, -40], [100, -40], [70, 40], [-70, 40]]), PAL.blue, { off: 7 }); ctx.restore(); };
+  P.banana = (ctx, x, y, s = 1, rot = 0) => { at(ctx, x, y, s, rot); ctx.save(); ctx.lineCap = 'round'; ctx.lineWidth = 34; ctx.strokeStyle = PAL.yellow; ctx.beginPath(); ctx.arc(0, -70, 90, 0.35 * Math.PI, 0.9 * Math.PI); ctx.stroke(); ctx.lineWidth = 12; ctx.strokeStyle = PAL.amber; ctx.beginPath(); ctx.arc(0, -70, 104, 0.4 * Math.PI, 0.85 * Math.PI); ctx.stroke(); ctx.restore(); ctx.restore(); };
+  P.broccoli = (ctx, x, y, s = 1) => { at(ctx, x, y, s); P.flat(ctx, P.rr(-14, -10, 28, 70, 12), '#8fd16a', { off: 4 }); for (const [bx, by, r] of [[-34, -26, 30], [0, -50, 36], [34, -26, 30], [0, -14, 28]]) P.flat(ctx, P.circ(bx, by, r), PAL.green, { off: 5 }); ctx.restore(); };
+  P.milk = (ctx, x, y, s = 1) => { at(ctx, x, y, s); P.flat(ctx, P.poly([[-44, -90], [44, -90], [50, 96], [-50, 96]]), P.alpha(PAL.white, 0.95), { off: 6 }); P.fill(ctx, P.poly([[-46, -40], [46, -40], [50, 92], [-50, 92]]), PAL.bone); ctx.restore(); };
+  // a plate split into portions: parts = [[fraction, colour, label], ...]
+  P.platePie = (ctx, x, y, r, parts, k = 1) => { P.flat(ctx, P.circ(x, y, r * 1.12), PAL.white, { off: r * 0.06 }); let a = -Math.PI / 2;
+    parts.forEach(([f, c, lab], i) => { const kk = cl(k * parts.length - i); if (kk <= 0) return; const a1 = a + TAU * f * kk; ctx.save(); ctx.fillStyle = c; ctx.beginPath(); ctx.moveTo(x, y); ctx.arc(x, y, r, a, a1); ctx.closePath(); ctx.fill(); ctx.restore();
+      if (lab && kk >= 1) { const m = (a + a1) / 2; ctx.save(); txt(ctx, lab, x + Math.cos(m) * r * 0.58, y + Math.sin(m) * r * 0.58, r * 0.16, PAL.ink); ctx.restore(); } a = a + TAU * f; }); };
+
+  // ---------------- body parts ----------------
+  P.bone = (ctx, x, y, len, s = 1, rot = 0, col = PAL.bone) => { at(ctx, x, y, s, rot); P.flat(ctx, P.rr(-len / 2, -16, len, 32, 16), col, { off: 4 }); for (const sd of [-1, 1]) for (const dy of [-1, 1]) P.flat(ctx, P.circ(sd * len / 2, dy * 22, 26), col, { off: 4 }); ctx.restore(); };
+  // knee joint, side view: thigh bone over shin bone, cartilage pads, kneecap; bend 0..1
+  P.knee = (ctx, x, y, s = 1, bend = 0, glow = 0) => { at(ctx, x, y, s); const a = bend * 1.4;
+    if (glow > 0) P.glow(ctx, 0, 0, 160, PAL.red, 0.6 * glow);
+    ctx.save(); ctx.rotate(-0.1); P.flat(ctx, P.rr(-26, -260, 52, 250, 26), PAL.bone, { off: 6 }); P.flat(ctx, P.ell(0, -14, 50, 34), PAL.bone, { off: 6 }); ctx.restore();
+    P.fill(ctx, P.ell(0, 22, 48, 9), PAL.aqua);
+    ctx.save(); ctx.rotate(a); P.flat(ctx, P.ell(0, 44, 46, 22), PAL.bone, { off: 5 }); P.flat(ctx, P.rr(-22, 44, 44, 240, 22), PAL.bone, { off: 6 }); ctx.restore();
+    P.flat(ctx, P.ell(46 + bend * 10, -4 + bend * 20, 18, 26), P.light(PAL.amber, 0.4), { off: 3 }); ctx.restore(); };
+  // spine: n vertebrae from (x, y) downward; curve -1..1 rounds the back; hi = index to light up
+  P.spine = (ctx, x, y, s = 1, curve = 0, hi = -1, n = 9) => { at(ctx, x, y, s);
+    for (let i = 0; i < n; i++) { const u = i / (n - 1), bx = Math.sin(u * Math.PI) * curve * 60, by = i * 44; const c = i === hi ? PAL.red : PAL.bone; if (i === hi) P.glow(ctx, bx, by, 80, PAL.red, 0.6);
+      P.flat(ctx, P.rr(bx - 34, by - 15, 68, 30, 12), c, { off: 4 }); P.flat(ctx, P.rr(bx + 26, by - 6, 30, 12, 6), c, { off: 2 }); if (i < n - 1) P.fill(ctx, P.rr(bx - 26, by + 15, 52, 12, 6), PAL.aqua); }
+    ctx.restore(); };
+  // motor neuron: cell body at (x, y), axon to (x2, y2) that splits into n endings; k = signal travelling along it
+  P.neuron = (ctx, x, y, x2, y2, t, k = 0, n = 4, col = PAL.yellow) => {
+    ctx.save(); ctx.strokeStyle = P.shade(col, 0.1); ctx.lineWidth = 10; ctx.lineCap = 'round'; ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x2, y2); ctx.stroke();
+    for (let i = 0; i < n; i++) { const a = (i - (n - 1) / 2) * 0.35 + Math.atan2(y2 - y, x2 - x); ctx.beginPath(); ctx.moveTo(x2, y2); ctx.lineTo(x2 + Math.cos(a) * 70, y2 + Math.sin(a) * 70); ctx.lineWidth = 6; ctx.stroke(); P.fill(ctx, P.circ(x2 + Math.cos(a) * 70, y2 + Math.sin(a) * 70, 9), col); }
+    ctx.restore();
+    for (let i = 0; i < 6; i++) { const a = i / 6 * TAU + 0.3; ctx.save(); ctx.strokeStyle = col; ctx.lineWidth = 7; ctx.lineCap = 'round'; ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x + Math.cos(a) * 62, y + Math.sin(a) * 62); ctx.stroke(); ctx.restore(); }
+    P.flat(ctx, P.circ(x, y, 40), col, { off: 5 }); P.fill(ctx, P.circ(x, y, 16), PAL.orange);
+    if (k > 0 && k < 1) { const px = lerp(x, x2, k), py = lerp(y, y2, k); P.glow(ctx, px, py, 60, PAL.white, 0.9); P.fill(ctx, P.circ(px, py, 10), PAL.white); } };
+  P.kidney = (ctx, x, y, s = 1, col = '#c94a5a') => { at(ctx, x, y, s); P.flat(ctx, P.blob([[-30, -80], [30, -86], [60, -30], [56, 40], [24, 86], [-30, 80], [-50, 30], [-10, 0], [-50, -30]]), col, { off: 7 }); ctx.restore(); };
+  P.stomach = (ctx, x, y, s = 1, full = 0.4) => { at(ctx, x, y, s); const path = P.blob([[-30, -110], [10, -100], [20, -50], [80, -10], [90, 60], [30, 100], [-60, 80], [-70, 20], [-30, -20], [-40, -80]]);
+    P.flat(ctx, path, PAL.pink, { off: 7 }); ctx.save(); path(ctx); ctx.clip(); P.fill(ctx, P.rr(-100, 100 - 200 * cl(full), 200, 200, 0), P.alpha(PAL.amber, 0.6)); ctx.restore(); ctx.restore(); };
+  // amino-acid chain (a protein): n beads along a wave; k builds it bead by bead
+  P.protein = (ctx, x, y, len, t, k = 1, n = 12) => { for (let i = 0; i < n; i++) { const kk = cl(k * n - i); if (kk <= 0) break; const u = i / (n - 1), bx = x - len / 2 + u * len, by = y + Math.sin(u * 6 + t * 2) * 26;
+      if (i > 0) { const pu = (i - 1) / (n - 1), px = x - len / 2 + pu * len, py = y + Math.sin(pu * 6 + t * 2) * 26; ctx.save(); ctx.strokeStyle = P.alpha(PAL.white, 0.6); ctx.lineWidth = 5; ctx.beginPath(); ctx.moveTo(px, py); ctx.lineTo(bx, by); ctx.stroke(); ctx.restore(); }
+      P.flat(ctx, P.circ(bx, by, 16 * pop(kk)), [PAL.mint, PAL.amber, PAL.pink, PAL.cyan][i % 4], { off: 3 }); } };
+  // heart-rate trace across a box; bpm controls spacing
+  P.ecg = (ctx, x, y, w, h, t, bpm = 70, col = PAL.mint) => { P.fill(ctx, P.rr(x, y - h / 2, w, h, 18), 'rgba(255,255,255,0.08)'); ctx.save(); ctx.beginPath(); P.rr(x, y - h / 2, w, h, 18)(ctx); ctx.clip();
+    ctx.strokeStyle = col; ctx.lineWidth = 5; ctx.lineJoin = 'round'; ctx.beginPath(); const per = 60 / bpm;
+    for (let px = 0; px <= w; px += 3) { const tt = t - (w - px) / w * 3, ph = ((tt % per) + per) % per / per; let v = 0; if (ph > 0.3 && ph < 0.34) v = -0.9; else if (ph >= 0.34 && ph < 0.38) v = 0.5; else if (ph > 0.6 && ph < 0.72) v = -0.18 * Math.sin((ph - 0.6) / 0.12 * Math.PI);
+      const py = y + v * h * 0.42; if (px === 0) ctx.moveTo(x + px, py); else ctx.lineTo(x + px, py); } ctx.stroke(); ctx.restore(); };
+  P.thermometer = (ctx, x, y, s = 1, k = 0.5) => { at(ctx, x, y, s); P.flat(ctx, P.rr(-20, -150, 40, 190, 20), PAL.white, { off: 4 }); P.flat(ctx, P.circ(0, 60, 36), PAL.white, { off: 4 }); P.fill(ctx, P.circ(0, 60, 26), PAL.red); P.fill(ctx, P.rr(-10, 40 - 170 * cl(k), 20, 170 * cl(k) + 20, 10), PAL.red); ctx.restore(); };
+  P.bed = (ctx, x, y, s = 1, t = 0, who = true) => { at(ctx, x, y, s); P.shadow(ctx, 0, 70, 230, 18, 0.2);
+    P.flat(ctx, P.rr(-230, -10, 460, 70, 18), PAL.hair, { off: 5 }); P.flat(ctx, P.rr(-250, -110, 34, 190, 14), P.shade(PAL.hair, 0.1), { off: 4 });
+    P.flat(ctx, P.rr(-210, -54, 100, 46, 20), PAL.white, { off: 4 });
+    if (who) { P.flat(ctx, P.circ(-150, -62, 40), PAL.skin, { off: 6 }); P.fill(ctx, P.rr(-190, -100, 80, 26, 12), PAL.hair); ctx.save(); ctx.strokeStyle = PAL.ink; ctx.lineWidth = 3.5; ctx.lineCap = 'round'; for (const sd of [-1, 1]) { ctx.beginPath(); ctx.arc(-150 + sd * 14, -60, 6, 0.2, Math.PI - 0.2); ctx.stroke(); } ctx.restore(); }
+    P.flat(ctx, P.blob([[-130, -40], [210, -40], [224, 10], [-130, 14]]), PAL.blue, { off: 6 });
+    for (let i = 0; i < 3; i++) { const ph = (t * 0.5 + i / 3) % 1; ctx.save(); ctx.globalAlpha = 1 - ph; txt(ctx, 'z', -110 + i * 18 + ph * 40, -110 - ph * 120, 30 + i * 10, PAL.white); ctx.restore(); }
+    ctx.restore(); };
+
+  // ---------------- muscle map ----------------
+  // front or back body silhouette with named zones that light up: hi = { chest: 1, quads: 0.5, ... } (0..1 each)
+  // zones front: shoulders, chest, biceps, forearms, abs, obliques, quads, adductors, calves; back: traps, lats, rear, triceps, lowback, glutes, hamstrings, calves
+  P.musclemap = (ctx, x, y, s = 1, side = 'front', hi = {}, col = PAL.red) => { at(ctx, x, y, s);
+    const base = '#5b5fd6', Z = (name, path) => { const k = cl(hi[name] || 0); P.flat(ctx, path, k > 0 ? (k >= 1 ? col : P.alpha(col, 0.35 + 0.65 * k)) : P.light(base, 0.12), { off: 3, light: 0.15 }); if (k > 0) ctx.save(), path(ctx), ctx.restore(); };
+    // body base
+    P.flat(ctx, P.circ(0, -330, 42), base, { off: 5 }); P.flat(ctx, P.rr(-16, -296, 32, 30, 10), base, { off: 2 });
+    P.flat(ctx, P.blob([[-96, -262], [96, -262], [86, -120], [60, -10], [-60, -10], [-86, -120]]), base, { off: 6 });
+    for (const sd of [-1, 1]) { P.flat(ctx, P.capsule(sd * 104, -240, sd * 126, -100, 24, 20), base, { off: 4 }); P.flat(ctx, P.capsule(sd * 126, -100, sd * 136, 20, 19, 15), base, { off: 4 }); P.flat(ctx, P.capsule(sd * 34, 0, sd * 44, 180, 36, 26), base, { off: 5 }); P.flat(ctx, P.capsule(sd * 44, 180, sd * 46, 330, 25, 16), base, { off: 4 }); }
+    if (side === 'front') {
+      for (const sd of [-1, 1]) {
+        Z('shoulders', P.circ(sd * 98, -238, 30)); Z('chest', P.blob([[sd * 6, -236], [sd * 84, -230], [sd * 80, -170], [sd * 10, -160]]));
+        Z('biceps', P.capsule(sd * 110, -200, sd * 124, -120, 16, 13)); Z('forearms', P.capsule(sd * 128, -80, sd * 134, 10, 14, 11));
+        Z('obliques', P.blob([[sd * 54, -140], [sd * 76, -130], [sd * 60, -30], [sd * 46, -40]])); Z('quads', P.capsule(sd * 42, 30, sd * 46, 160, 28, 20));
+        Z('adductors', P.blob([[sd * 8, 20], [sd * 24, 30], [sd * 26, 110], [sd * 12, 90]])); Z('calves', P.capsule(sd * 46, 210, sd * 46, 290, 16, 11));
+      }
+      for (let r = 0; r < 3; r++) for (const sd of [-1, 1]) Z('abs', P.rr(sd > 0 ? 4 : -40, -146 + r * 40, 36, 34, 10));
+    } else {
+      for (const sd of [-1, 1]) {
+        Z('rear', P.circ(sd * 98, -238, 30)); Z('lats', P.blob([[sd * 20, -210], [sd * 84, -210], [sd * 70, -110], [sd * 24, -80]])); Z('triceps', P.capsule(sd * 112, -200, sd * 124, -120, 16, 13));
+        Z('lowback', P.rr(sd > 0 ? 4 : -38, -76, 34, 60, 12)); Z('glutes', P.ell(sd * 36, 14, 38, 34)); Z('hamstrings', P.capsule(sd * 42, 70, sd * 46, 170, 24, 18)); Z('calves', P.capsule(sd * 46, 210, sd * 46, 290, 18, 12));
+      }
+      Z('traps', P.blob([[-60, -262], [60, -262], [30, -200], [0, -170], [-30, -200]]));
+    }
+    for (const k in hi) if (hi[k] >= 1) {} // reserved
+    ctx.restore(); };
+
+  // ---------------- side-view lifter (for form) ----------------
+  // pose: 'stand' | 'hinge' (deadlift/RDL) | 'squat' | 'plank' | 'pushup' (0..1 down) | 'row' | 'press' (overhead) | 'hang' (pull-up)
+  // o: { k: 0..1 pose depth, bar: true, wince, smile, facing: 1 | -1, bulk }
+  P.lifterSide = (ctx, x, y, s = 1, pose = 'stand', o = {}) => {
+    const k = cl(o.k == null ? 1 : o.k), f = o.facing || 1, bw = 1 + (o.bulk || 0) * 0.25;
+    // joint angles (radians from vertical; 0 = straight down/up)
+    let hip, kneeB, torso, arm = 0, lift = 0, rot = 0, armUp = false;
+    switch (pose) {
+      case 'hinge': torso = 1.25 * k; hip = 0.1 * k; kneeB = 0.25 * k; arm = 0; break;
+      case 'squat': torso = 0.6 * k; hip = 1.6 * k; kneeB = 2.0 * k; arm = 1.4; break;
+      case 'row': torso = 1.15; hip = 0.15; kneeB = 0.35; arm = k * 1.2; break;
+      case 'press': torso = 0; hip = 0; kneeB = 0; armUp = true; arm = k; break;
+      case 'hang': torso = 0; hip = 0.2; kneeB = 0.6; armUp = true; arm = 1; lift = -k * 120; break;
+      case 'plank': case 'pushup': rot = Math.PI / 2 * 0.92; torso = 0; hip = 0; kneeB = 0; arm = 0; break;
+      default: torso = 0; hip = 0; kneeB = 0;
+    }
+    ctx.save(); ctx.translate(x, y); ctx.scale(s * f, s);
+    if (pose !== 'hang') P.shadow(ctx, 0, 4, pose === 'plank' || pose === 'pushup' ? 200 : 110, 16, 0.22);
+    const thigh = 104, shin = 98, trunk = 150, upper = 84, fore = 78;
+    let hipP, kneeP, ankP;
+    if (pose === 'plank' || pose === 'pushup') {
+      const down = pose === 'pushup' ? k : 0, ax = -170, shY = -60 + down * 38;
+      ankP = [ax + 10, -10]; hipP = [ax + 10 + (thigh + shin) * 0.98, -24 - (thigh + shin) * 0.2 + down * 20]; kneeP = [(ankP[0] + hipP[0]) / 2, (ankP[1] + hipP[1]) / 2];
+      const sh = [hipP[0] + trunk, shY], hand = [sh[0] + 10, -6], elbow = [lerp(sh[0], hand[0], 0.5) - down * 40, lerp(sh[1], hand[1], 0.5) - down * 10];
+      if (pose === 'plank') { elbow[0] = sh[0]; elbow[1] = -8; hand[0] = sh[0] + 60; }
+      P.flat(ctx, P.capsule(ankP[0], ankP[1], kneeP[0], kneeP[1], 15 * bw, 19 * bw), PAL.skin, { off: 5 });
+      P.flat(ctx, P.capsule(kneeP[0], kneeP[1], hipP[0], hipP[1], 19 * bw, 23 * bw), '#272a8f', { off: 5 });
+      P.flat(ctx, P.rr(ankP[0] - 30, ankP[1] - 10, 30, 22, 8), '#f4f4ff', { off: 3 });
+      P.flat(ctx, P.capsule(hipP[0], hipP[1], sh[0], sh[1], 30 * bw, 34 * bw), PAL.teal, { off: 7 });
+      P.flat(ctx, P.capsule(sh[0], sh[1], elbow[0], elbow[1], 15 * bw), PAL.skin, { off: 5 }); P.flat(ctx, P.capsule(elbow[0], elbow[1], hand[0], hand[1], 13 * bw), PAL.skin, { off: 5 });
+      head(ctx, sh[0] + 52, sh[1] - 18, o, 0.35);
+      ctx.restore(); return { hip: hipP, shoulder: sh };
+    }
+    ankP = [0, -14]; ctx.translate(0, lift);
+    const kneeA = kneeB * 0.5, shinV = [Math.sin(kneeA) * shin, -Math.cos(kneeA) * shin];
+    kneeP = [ankP[0] + shinV[0], ankP[1] + shinV[1]];
+    const thA = kneeA - Math.min(kneeB, hip + kneeA);
+    hipP = [kneeP[0] + Math.sin(-hip * 0.9 + kneeA * 0) * thigh * -0.0 - Math.sin(hip * 0.85) * thigh, kneeP[1] - Math.cos(hip * 0.85) * thigh];
+    const sh = [hipP[0] + Math.sin(torso) * trunk, hipP[1] - Math.cos(torso) * trunk];
+    // arms hang from the shoulder (gravity) unless pressing / hanging / holding squat bar
+    let elbow, hand;
+    if (armUp) { const up = pose === 'press' ? lerp(0.6, 1, arm) : 1; elbow = [sh[0] + 10, sh[1] - upper * up]; hand = [sh[0] + 6, sh[1] - (upper + fore) * up]; if (pose === 'press') { elbow = [sh[0] + 30 * (1 - arm), sh[1] - upper * lerp(0.2, 1, arm)]; hand = [sh[0] + 8, sh[1] - lerp(70, upper + fore, arm)]; } }
+    else if (pose === 'squat') { elbow = [sh[0] + 40, sh[1] + 30]; hand = [sh[0] + 6, sh[1] - 8]; }
+    else if (pose === 'row') { hand = [sh[0] + 6, sh[1] + upper + fore - arm * 90]; elbow = [sh[0] - arm * 46, sh[1] + upper * 0.8 - arm * 30]; }
+    else { elbow = [sh[0], sh[1] + upper]; hand = [sh[0], sh[1] + upper + fore]; }
+    // back leg (shade), legs, shorts, torso, arm, head
+    P.flat(ctx, P.capsule(ankP[0] - 8, ankP[1], kneeP[0] - 8, kneeP[1], 15 * bw, 18 * bw), PAL.skinD, { off: 4 });
+    P.flat(ctx, P.capsule(ankP[0], ankP[1], kneeP[0], kneeP[1], 16 * bw, 19 * bw), PAL.skin, { off: 5 });
+    P.flat(ctx, P.rr(ankP[0] - 16, ankP[1] - 6, 48, 22, 10), '#f4f4ff', { off: 3 }); P.fill(ctx, P.rr(ankP[0] - 16, ankP[1] + 10, 48, 6, 3), '#3b3f9e');
+    P.flat(ctx, P.capsule(kneeP[0], kneeP[1], hipP[0], hipP[1], 21 * bw, 26 * bw), '#272a8f', { off: 6 });
+    if (o.bar && pose === 'squat') { const bp = [sh[0] - Math.cos(torso) * 34, sh[1] - Math.sin(torso) * 34 + 6]; P.flat(ctx, P.circ(bp[0], bp[1], 40), PAL.orange, { off: 5 }); P.fill(ctx, P.circ(bp[0], bp[1], 9), PAL.steel); }
+    P.flat(ctx, P.capsule(hipP[0], hipP[1], sh[0], sh[1], 30 * bw, 33 * bw), PAL.teal, { off: 7 });
+    P.flat(ctx, P.capsule(sh[0], sh[1], elbow[0], elbow[1], 16 * bw, 14 * bw), PAL.skin, { off: 5 });
+    P.flat(ctx, P.capsule(elbow[0], elbow[1], hand[0], hand[1], 14 * bw, 12 * bw), PAL.skin, { off: 5 }); P.flat(ctx, P.circ(hand[0], hand[1], 13 * bw), PAL.skin, { off: 3 });
+    const hx = sh[0] + Math.sin(torso) * 52, hy = sh[1] - Math.cos(torso) * 52;
+    head(ctx, hx, hy, o, torso);
+    if (o.bar && pose !== 'squat') { const bp = hand; P.fill(ctx, P.rr(bp[0] - 6, bp[1] - 6, 12, 12, 6), PAL.steel); P.flat(ctx, P.circ(bp[0], bp[1], 46), PAL.orange, { off: 5 }); P.fill(ctx, P.circ(bp[0], bp[1], 10), PAL.steel); }
+    if (pose === 'hang') P.flat(ctx, P.rr(hand[0] - 220, hand[1] - 24, 440, 22, 11), PAL.steel, { off: 3 });
+    ctx.restore(); return { hip: [x + hipP[0] * s * f, y + (hipP[1] + lift) * s], shoulder: [x + sh[0] * s * f, y + (sh[1] + lift) * s], hand: [x + hand[0] * s * f, y + (hand[1] + lift) * s], knee: [x + kneeP[0] * s * f, y + (kneeP[1] + lift) * s] };
+  };
+  function head(ctx, hx, hy, o, tilt) {
+    ctx.save(); ctx.translate(hx, hy); ctx.rotate(tilt * 0.4);
+    P.flat(ctx, P.circ(0, 0, 38), PAL.skin, { off: 6 });
+    P.flat(ctx, P.blob([[-36, -6], [-30, -34], [-6, -46], [16, -44], [34, -26], [30, -14], [-6, -24], [-24, -10]]), PAL.hair, { off: 4, light: 0.15 });
+    P.fill(ctx, P.rr(-38, -22, 74, 11, 5), PAL.orange);
+    ctx.fillStyle = '#ffffff'; P.ell(18, 2, 8, o.wince ? 4 : 10)(ctx); ctx.fill(); ctx.fillStyle = PAL.ink; P.circ(21, 4, 4.5)(ctx); ctx.fill();
+    ctx.strokeStyle = PAL.ink; ctx.lineWidth = 3.5; ctx.lineCap = 'round'; ctx.beginPath();
+    if (o.smile) ctx.arc(20, 16, 9, 0.1 * Math.PI, 0.7 * Math.PI); else if (o.wince) { ctx.moveTo(14, 22); ctx.lineTo(30, 20); } else { ctx.moveTo(16, 22); ctx.lineTo(28, 22); } ctx.stroke();
+    P.fill(ctx, P.circ(4, 14, 6), 'rgba(255,90,120,0.35)'); ctx.restore();
+  }
+
+  // ---------------- charts and UI ----------------
+  // checklist row: ok true = green tick, false = red cross
+  P.check = (ctx, text, x, y, ok, k = 1, size = 34) => { if (k <= 0) return; ctx.save(); ctx.translate(x, y); const pk = pop(k); ctx.scale(pk, pk); ctx.font = `900 ${size}px ${P.FONT}`; const tw = ctx.measureText(text).width, w = tw + size * 2.6;
+    P.flat(ctx, P.rr(-w / 2, -size * 0.85, w, size * 1.7, size * 0.85), P.alpha(PAL.ink, 0.85), { off: 4, light: 0.1 });
+    P.flat(ctx, P.circ(-w / 2 + size * 0.95, 0, size * 0.6), ok ? PAL.mint : PAL.red, { off: 3 });
+    ctx.strokeStyle = PAL.white; ctx.lineWidth = size * 0.16; ctx.lineCap = 'round'; ctx.beginPath(); const cx = -w / 2 + size * 0.95, r = size * 0.28;
+    if (ok) { ctx.moveTo(cx - r, 0); ctx.lineTo(cx - r * 0.2, r * 0.8); ctx.lineTo(cx + r, -r * 0.7); } else { ctx.moveTo(cx - r, -r); ctx.lineTo(cx + r, r); ctx.moveTo(cx + r, -r); ctx.lineTo(cx - r, r); } ctx.stroke();
+    ctx.textAlign = 'left'; ctx.textBaseline = 'middle'; ctx.fillStyle = PAL.white; ctx.fillText(text, -w / 2 + size * 1.85, size * 0.04); ctx.restore(); };
+  // MYTH / FACT badge
+  P.verdict = (ctx, x, y, fact, k = 1, s = 1) => { if (k <= 0) return; ctx.save(); ctx.translate(x, y); ctx.rotate(-0.08); const pk = pop(k); ctx.scale(s * pk, s * pk);
+    const col = fact ? PAL.mint : PAL.red; P.flat(ctx, P.rr(-150, -54, 300, 108, 22), col, { off: 7 }); P.fill(ctx, P.rr(-136, -40, 272, 80, 14), P.shade(col, 0.15)); txt(ctx, fact ? 'FACT' : 'MYTH', 0, 4, 64); ctx.restore(); };
+  // A vs B card: two panels with titles; draws callbacks inside; win: 0 = none, 1 = left, 2 = right
+  P.versus = (ctx, x, y, w, h, a, b, k = 1, win = 0, drawA = null, drawB = null) => { if (k <= 0) return; ctx.save(); ctx.globalAlpha = cl(k * 2);
+    [[a, -1, drawA, PAL.blue], [b, 1, drawB, PAL.magenta]].forEach(([lab, sd, fn, c], i) => { const px = x + sd * (w / 4 + 6), on = win === i + 1;
+      P.flat(ctx, P.rr(px - w / 4, y - h / 2, w / 2 - 12, h, 28), on ? c : P.alpha(c, 0.55), { off: 6 }); if (on) P.glow(ctx, px, y, w / 3, c, 0.35);
+      if (fn) { ctx.save(); ctx.translate(px, y + 10); fn(ctx); ctx.restore(); } ctx.save(); txt(ctx, lab, px, y - h / 2 + 44, 34); ctx.restore(); });
+    P.flat(ctx, P.circ(x, y, 42), PAL.yellow, { off: 5 }); txt(ctx, 'VS', x, y + 2, 34, PAL.ink); ctx.restore(); };
+  // rising/falling line chart: pts 0..1 values, k draws it left to right
+  P.lineChart = (ctx, x, y, w, h, pts, k = 1, col = PAL.mint, label = '') => { P.fill(ctx, P.rr(x, y - h, w, h, 18), 'rgba(255,255,255,0.08)');
+    ctx.save(); ctx.strokeStyle = P.alpha(PAL.white, 0.25); ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(x + 30, y - 24); ctx.lineTo(x + w - 20, y - 24); ctx.moveTo(x + 30, y - 24); ctx.lineTo(x + 30, y - h + 20); ctx.stroke();
+    const n = pts.length, X = (i) => x + 40 + (w - 70) * i / (n - 1), Y = (v) => y - 34 - (h - 70) * v, lim = k * (n - 1);
+    ctx.strokeStyle = col; ctx.lineWidth = 7; ctx.lineJoin = 'round'; ctx.lineCap = 'round'; ctx.beginPath();
+    for (let i = 0; i <= Math.floor(lim); i++) { if (i === 0) ctx.moveTo(X(0), Y(pts[0])); else ctx.lineTo(X(i), Y(pts[i])); }
+    const f = lim - Math.floor(lim), i0 = Math.floor(lim); if (i0 < n - 1 && f > 0) ctx.lineTo(lerp(X(i0), X(i0 + 1), f), Y(lerp(pts[i0], pts[i0 + 1], f)));
+    ctx.stroke(); ctx.restore(); if (label) P.label(ctx, label, x + w / 2, y + 40, 1, { color: col, size: 24 }); };
+  // horizontal progress bar with value text
+  P.progress = (ctx, x, y, w, k, col = PAL.mint, label = '') => { P.fill(ctx, P.rr(x - w / 2, y - 22, w, 44, 22), 'rgba(255,255,255,0.14)'); const fw = Math.max(44, w * cl(k)); P.flat(ctx, P.rr(x - w / 2, y - 22, fw, 44, 22), col, { off: 4 });
+    if (label) { ctx.save(); txt(ctx, label, x, y + 2, 24, PAL.ink); ctx.restore(); } };
+  // round countdown ring (rest timer): frac 0..1 remaining, centre text
+  P.ring = (ctx, x, y, r, frac, text = '', col = PAL.cyan) => { ctx.save(); ctx.lineCap = 'round'; ctx.lineWidth = r * 0.18; ctx.strokeStyle = 'rgba(255,255,255,0.15)'; ctx.beginPath(); ctx.arc(x, y, r, 0, TAU); ctx.stroke();
+    ctx.strokeStyle = col; ctx.beginPath(); ctx.arc(x, y, r, -Math.PI / 2, -Math.PI / 2 + TAU * cl(frac)); ctx.stroke(); ctx.restore(); if (text) { ctx.save(); txt(ctx, text, x, y + 2, r * 0.5); ctx.restore(); } };
+  // rep counter tally: n reps done of total, as filled dots
+  P.reps = (ctx, x, y, n, total, col = PAL.amber, r = 18) => { const gap = r * 2.6, x0 = x - (total - 1) * gap / 2; for (let i = 0; i < total; i++) { const on = i < n; P.flat(ctx, P.circ(x0 + i * gap, y, on ? r : r * 0.7), on ? col : 'rgba(255,255,255,0.18)', { off: on ? 3 : 0, light: on ? 0.22 : 0 }); } };
+  // series badge for frame 0: "WHY DOES THIS HAPPEN? #1" style pill with an icon dot
+  P.seriesTag = (ctx, x, y, text, k = 1, col = PAL.magenta) => P.label(ctx, text, x, y, k, { color: col, size: 28 });
+})();

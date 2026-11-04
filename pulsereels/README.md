@@ -7,7 +7,7 @@ skill /pulsestyle; its reference files live on the "Pulse Sample" artifact). Eve
 
 - **Voice:** ElevenLabs `cBTYF7NiJbR8Bvmdeuse`, model `eleven_v4` (owner's pick, 3 Nov). Source of truth: `config.json`.
   Never change it without asking the owner.
-- **Engine:** `kit/pulse.js` (library: palette, flat shading, gym, lifter, fibres, filaments, fat cells, triglycerides, blood
+- **Engine:** `kit/pulse.js` (props pack 2 added 4 Nov: gym kit, muscle map, side-view lifter, supplements, food, body parts, charts; every prop shown in `kit/props_gallery.js` and listed in `skills/pulsestyle/SKILL.md`) (library: palette, flat shading, gym, lifter, fibres, filaments, fat cells, triglycerides, blood
   vessel, mitochondria, molecules, lungs, counters, stamps, bubbles, scale, treadmill, captions, zoom-through / slide
   transitions, `P.sequence`). `kit/harness.js`, `kit/sound.js`, `kit/player_body.html`, `kit/render_reel.py`. Font: Nunito (`fonts/`).
 - **Reel folder** `reels/NNN-slug/`: `script.json` `{"lines":[{"say":"..."}]}` (numbers spelled as words), `story.js`

@@ -78,6 +78,24 @@ ElevenLabs voice **`cBTYF7NiJbR8Bvmdeuse`**, model `eleven_v4` (owner's pick, 3 
   (`co2`, `h2o`, `o2`), `P.ion` (H+), `P.lactate`, `P.lungs`, `P.heart`, `P.brain`, `P.liver`, `P.flow` (particle streams),
   `P.puff` (breath), `P.drop`, `P.sweat`, `P.scale`, `P.treadmill`, `P.barbell`, `P.calendar`, `P.moon`, `P.shaker`,
   `P.egg`, `P.battery`, `P.wanted` (WANTED poster + INNOCENT stamp).
+- **Props pack 2 (fitness pack, 4 Nov):** see `kit/props_gallery.js` for every one in use.
+  - *Gym:* `P.dumbbell`, `P.kettlebell` (label), `P.plate` (r, colour, label), `P.bench` (incline), `P.pullupBar`, `P.rope` (jump
+    rope, swings with t), `P.stopwatch` (frac sweep, label), `P.bottle` (water level).
+  - *Supplements:* `P.tub` (label, sub, accent), `P.scoop`, `P.pill` (two-tone capsule), `P.softgel` (fish oil), `P.coffee`
+    (steam), `P.sun` (vitamin D), `P.evidence(ctx, x, y, level 0-3)` (NO EVIDENCE / WEAK / MODERATE / STRONG badge).
+  - *Food:* `P.chicken`, `P.steak`, `P.rice`, `P.banana`, `P.broccoli`, `P.milk`, `P.platePie(ctx, x, y, r, [[frac, colour, label]], k)`.
+  - *Body:* `P.bone`, `P.knee` (side view; `bend`, `glow`), `P.spine` (`curve`, `hi` vertebra), `P.neuron` (motor neuron with a
+    travelling signal), `P.kidney`, `P.stomach` (`full`), `P.protein` (amino-acid chain built bead by bead), `P.ecg` (heart
+    trace; `bpm`), `P.thermometer`, `P.bed` (sleeping lifter with Zzz).
+  - *Muscle map:* `P.musclemap(ctx, x, y, s, 'front' | 'back', { zone: 0..1 }, colour)`. Front zones: shoulders, chest, biceps,
+    forearms, abs, obliques, quads, adductors, calves. Back: traps, rear, lats, triceps, lowback, glutes, hamstrings, calves.
+    The Exercise series uses this for "what it really works".
+  - *Side-view lifter (form):* `P.lifterSide(ctx, x, feetY, s, pose, { k, bar, wince, smile, facing, bulk })`, poses `stand`,
+    `hinge` (deadlift / RDL), `squat` (bar on the upper back), `row`, `press` (overhead), `hang` (pull-up; k lifts him),
+    `pushup` (k = down), `plank`. Returns hip / shoulder / hand / knee points for glows and arrows. Same character as `P.lifter`.
+  - *Charts and UI:* `P.check(ctx, text, x, y, ok, k)` (tick / cross rows), `P.verdict` (MYTH / FACT badge), `P.versus` (A vs B
+    panels with draw callbacks, `win`), `P.lineChart` (values 0..1, k draws it), `P.progress`, `P.ring` (rest timer),
+    `P.reps(ctx, x, y, done, total)`, `P.seriesTag` (frame-0 series pill).
 - **Text:** `P.title` (hook title, amber fill / white rim / indigo outline, on screen from frame 0), `P.label` (pill tags,
   colour-coded, optional `sub` and `stem`), `P.counter` + `P.countTo` (big counting numbers), `P.bubble`, `P.qmarks`,
   `P.stampX` (myth busted), `P.meter` (bar charts), `P.arrowFlat`, `P.caption` (2-3 words, white, 73% height, last).
