@@ -70,22 +70,22 @@ Folder: [`gears-pov/`](gears-pov/)
 | [028-alarm-clock-thoughts](gears-pov/028-alarm-clock-thoughts.mp4) | You can hear what your alarm clock thinks ⏰ | Waiting to post |
 | [029-puppy-first-night](gears-pov/029-puppy-first-night.mp4) | You can hear what your puppy thinks on night one 🐶 | Waiting to post |
 | [030-delivery-guy-thoughts](gears-pov/030-delivery-guy-thoughts.mp4) | You can hear what the delivery guy thinks 🍕 | Waiting to post |
-| [031-old-cat-thoughts](gears-pov/031-old-cat-thoughts.mp4) | You can hear what your 15-year-old cat thinks 🐱 | Not scheduled |
-| [032-waiter-thoughts](gears-pov/032-waiter-thoughts.mp4) | You can hear what your waiter thinks 🍽️ | Not scheduled |
-| [033-duck-thoughts](gears-pov/033-duck-thoughts.mp4) | You can hear what ducks think 🦆 | Not scheduled |
-| [034-crow-thoughts](gears-pov/034-crow-thoughts.mp4) | You can hear what crows think. And they remember your face 🐦‍⬛ | Not scheduled |
-| [035-sister-thoughts](gears-pov/035-sister-thoughts.mp4) | You can hear what your sister thinks 👧 | Not scheduled |
-| [036-mirror-thoughts](gears-pov/036-mirror-thoughts.mp4) | You can hear what your mirror thinks 🪞 | Not scheduled |
-| [037-washing-machine-thoughts](gears-pov/037-washing-machine-thoughts.mp4) | You can hear what your washing machine thinks 🧦 | Not scheduled |
-| [038-kitten-thoughts](gears-pov/038-kitten-thoughts.mp4) | You can hear what your new kitten thinks 🐱 | Not scheduled |
-| [039-wedding-uncle-thoughts](gears-pov/039-wedding-uncle-thoughts.mp4) | You can hear what the uncle at every wedding thinks 🕺 | Not scheduled |
-| [040-taxi-driver-thoughts](gears-pov/040-taxi-driver-thoughts.mp4) | You can hear what your taxi driver thinks 🚕 | Not scheduled |
-| [041-sofa-thoughts](gears-pov/041-sofa-thoughts.mp4) | You can hear what your sofa thinks 🛋️ | Not scheduled |
-| [042-big-brother-thoughts](gears-pov/042-big-brother-thoughts.mp4) | You can hear what your big brother thinks 👦 | Not scheduled |
-| [043-owl-thoughts](gears-pov/043-owl-thoughts.mp4) | You can hear what the owl outside your window thinks 🦉 | Not scheduled |
-| [044-first-date-thoughts](gears-pov/044-first-date-thoughts.mp4) | You can hear what your first date thinks 💘 | Not scheduled |
-| [045-old-dog-thoughts](gears-pov/045-old-dog-thoughts.mp4) | You can hear what your old dog thinks 🐕 | Not scheduled |
-| [046-tv-remote-thoughts](gears-pov/046-tv-remote-thoughts.mp4) | You can hear what your TV remote thinks 📺 | Not scheduled |
+| [031-old-cat-thoughts](gears-pov/031-old-cat-thoughts.mp4) | You can hear what your 15-year-old cat thinks 🐱 | Waiting to post |
+| [032-waiter-thoughts](gears-pov/032-waiter-thoughts.mp4) | You can hear what your waiter thinks 🍽️ | Waiting to post |
+| [033-duck-thoughts](gears-pov/033-duck-thoughts.mp4) | You can hear what ducks think 🦆 | Waiting to post |
+| [034-crow-thoughts](gears-pov/034-crow-thoughts.mp4) | You can hear what crows think. And they remember your face 🐦‍⬛ | Waiting to post |
+| [035-sister-thoughts](gears-pov/035-sister-thoughts.mp4) | You can hear what your sister thinks 👧 | Waiting to post |
+| [036-mirror-thoughts](gears-pov/036-mirror-thoughts.mp4) | You can hear what your mirror thinks 🪞 | Waiting to post |
+| [037-washing-machine-thoughts](gears-pov/037-washing-machine-thoughts.mp4) | You can hear what your washing machine thinks 🧦 | Waiting to post |
+| [038-kitten-thoughts](gears-pov/038-kitten-thoughts.mp4) | You can hear what your new kitten thinks 🐱 | Waiting to post |
+| [039-wedding-uncle-thoughts](gears-pov/039-wedding-uncle-thoughts.mp4) | You can hear what the uncle at every wedding thinks 🕺 | Waiting to post |
+| [040-taxi-driver-thoughts](gears-pov/040-taxi-driver-thoughts.mp4) | You can hear what your taxi driver thinks 🚕 | Waiting to post |
+| [041-sofa-thoughts](gears-pov/041-sofa-thoughts.mp4) | You can hear what your sofa thinks 🛋️ | Waiting to post |
+| [042-big-brother-thoughts](gears-pov/042-big-brother-thoughts.mp4) | You can hear what your big brother thinks 👦 | Waiting to post |
+| [043-owl-thoughts](gears-pov/043-owl-thoughts.mp4) | You can hear what the owl outside your window thinks 🦉 | Waiting to post |
+| [044-first-date-thoughts](gears-pov/044-first-date-thoughts.mp4) | You can hear what your first date thinks 💘 | Waiting to post |
+| [045-old-dog-thoughts](gears-pov/045-old-dog-thoughts.mp4) | You can hear what your old dog thinks 🐕 | Waiting to post |
+| [046-tv-remote-thoughts](gears-pov/046-tv-remote-thoughts.mp4) | You can hear what your TV remote thinks 📺 | Waiting to post |
 
 ## CouchSarcasm (old couple comedy) (40)
 Folder: [`couch-sarcasm/`](couch-sarcasm/)
