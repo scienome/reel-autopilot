@@ -1,0 +1,33 @@
+{
+ "music-418c41ab9be3.mp3": {
+  "prompt": "Tender nostalgic music with soft piano, warm strings and a music box, playful in the middle, deeply warm at the end, no vocals",
+  "music_length_ms": 33500,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-b0b81a1b540d.mp3": {
+  "text": "fridge door opening",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-09f5a2915fda.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-073d93e78470.mp3": {
+  "text": "slow old dog sigh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-5e3c04f9f6d6.mp3": {
+  "text": "soft snore",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-831e7143ab51.mp3": {
+  "text": "soft warm choir aww",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ }
+}
