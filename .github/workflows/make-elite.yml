@@ -48,7 +48,7 @@ jobs:
             [ -f "mysteryreels/reels/$id/reel.js" ] || continue
             python tools/elite_make.py "$id"
             git add "mysteryreels/reels/$id/voice_lines"
-            git diff --cached --quiet || (git commit -q -m "Voice for $id [skip ci]" && git pull --rebase -q && git push -q)
+            git diff --cached --quiet || (git commit -q -m "Voice for $id [skip ci]" && for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; sleep $((i * 3)); done)
             gh release delete "elite-$id" --yes --cleanup-tag >/dev/null 2>&1 || true
             gh release create "elite-$id" "out/$id/$id.mp4" --title "elitesendgame $id" --notes "Made by the daily job."
           done

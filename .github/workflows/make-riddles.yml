@@ -60,7 +60,7 @@ jobs:
             fi
             # keep the paid-for voice in the repo so a re-render never pays twice
             git add "riddles/reels/$id/voice" 2>/dev/null || true
-            git diff --cached --quiet || (git commit -q -m "Voice for riddle $id [skip ci]" && git pull --rebase -q && git push -q)
+            git diff --cached --quiet || (git commit -q -m "Voice for riddle $id [skip ci]" && for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; sleep $((i * 3)); done)
             echo "::endgroup::"
           done
           if [ -n "$FAILED" ]; then echo "::error::Not made:$FAILED"; exit 1; fi

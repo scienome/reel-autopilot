@@ -69,14 +69,14 @@ jobs:
               echo "::error::$id failed: $(tail -n 12 "/tmp/$id.log" | tr '\n' ' ' | cut -c1-900)"; FAILED="$FAILED $id"
               git add "reels/$id/voice.mp3" "reels/$id/timing.json" "reels/$id/voice_chunks" 2>/dev/null || true
               git add "reels/$id/eleven" 2>/dev/null || true   # ElevenLabs music / sound effects, paid once
-              git diff --cached --quiet || (git commit -m "Voiceover for toy reel $id [skip ci]" && git pull --rebase -q && git push)
+              git diff --cached --quiet || (git commit -m "Voiceover for toy reel $id [skip ci]" && for i in 1 2 3 4 5; do git pull --rebase -q && git push && break; sleep $((i * 3)); done)
               echo "::endgroup::"; continue
             fi
             cat "/tmp/$id.log"
             # keep the paid-for voice in the repo so a re-render never pays twice
             git add "reels/$id/voice.mp3" "reels/$id/timing.json" "reels/$id/voice_chunks" 2>/dev/null || true
             git add "reels/$id/eleven" 2>/dev/null || true   # ElevenLabs music / sound effects, paid once
-            git diff --cached --quiet || (git commit -m "Voiceover for toy reel $id [skip ci]" && git pull --rebase -q && git push)
+            git diff --cached --quiet || (git commit -m "Voiceover for toy reel $id [skip ci]" && for i in 1 2 3 4 5; do git pull --rebase -q && git push && break; sleep $((i * 3)); done)
             gh release delete "toyreel-$id" --yes --cleanup-tag >/dev/null 2>&1 || true
             TITLE=$(python -c "import json;print(json.load(open('reels/$id/meta.json'))['title'])")
             gh release create "toyreel-$id" "out/$id/$id.mp4" "out/$id/cover.jpg" "out/$id/caption.txt" --title "$TITLE" --notes-file "out/$id/caption.txt"

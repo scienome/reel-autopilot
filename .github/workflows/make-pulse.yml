@@ -52,7 +52,7 @@ jobs:
             [ -f "pulsereels/reels/$id/story.js" ] || continue
             python tools/pulse_make.py "$id"
             git add "pulsereels/reels/$id/voice_lines"
-            git diff --cached --quiet || (git commit -q -m "Voice for pulse $id [skip ci]" && git pull --rebase -q && git push -q)
+            git diff --cached --quiet || (git commit -q -m "Voice for pulse $id [skip ci]" && for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; sleep $((i * 3)); done)
             gh release delete "pulse-$id" --yes --cleanup-tag >/dev/null 2>&1 || true
             gh release create "pulse-$id" "out/$id/$id.mp4" "out/$id/cover.jpg" "out/$id/caption.txt" "out/$id/player.html" --title "pulse $id" --notes-file "out/$id/caption.txt"
           done
