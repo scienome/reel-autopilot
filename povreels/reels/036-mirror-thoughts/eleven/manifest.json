@@ -1,0 +1,28 @@
+{
+ "music-2afb63735a9a.mp3": {
+  "prompt": "Playful bathroom comedy music with ukulele and finger snaps, a glamorous moment, then warm and uplifting, no vocals",
+  "music_length_ms": 29180,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-772d7102aa93.mp3": {
+  "text": "record scratch",
+  "duration_seconds": 1,
+  "prompt_influence": 0.5
+ },
+ "sfx-07934122bcf4.mp3": {
+  "text": "applause small crowd",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-cb591854d208.mp3": {
+  "text": "sparkle chime",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-831e7143ab51.mp3": {
+  "text": "soft warm choir aww",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ }
+}
