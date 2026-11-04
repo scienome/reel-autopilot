@@ -1,0 +1,33 @@
+{
+ "music-70f0acf3a71e.mp3": {
+  "prompt": "Playful sibling rivalry music with plucky strings and kazoo, an action sting, then warm and heartfelt, no vocals",
+  "music_length_ms": 28380,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-4b47491f1378.mp3": {
+  "text": "villain sting short",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-09f5a2915fda.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-0413cb24f3a8.mp3": {
+  "text": "bicycle crash clatter",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-c8d29c552b23.mp3": {
+  "text": "dramatic orchestra hit",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-f304b05f41be.mp3": {
+  "text": "small audience aww",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
