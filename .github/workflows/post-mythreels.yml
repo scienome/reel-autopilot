@@ -1,29 +1,31 @@
 name: Post myth reels (Instagram + YouTube)
 # Posts the Hindi mythology reels (mythreels/) to the Instagram account AND the YouTube channel at the same moment,
-# 4 a day at 08:00, 13:00, 18:00 and 21:00 IST (02:30, 07:30, 12:30, 15:30 UTC), strictly in mythreels/schedule.json
+# 4 a day at 06:30, 12:30, 18:30 and 22:30 IST plus the Karna slot at 21:00 (01:00, 07:00, 13:00, 17:00, 15:30 UTC), strictly in mythreels/schedule.json
 # order, from their mythreel-<id> Releases. Every slot has three runs, 4, 3 and 2 hours before it, because GitHub starts
 # scheduled runs late; the first one uploads and waits for the exact minute. If you change the times, change
 # mythreels/schedule.json too. Needs the IG_MYTH_* and YT_MYTH_* secrets. The Instagram token is renewed every Monday.
 on:
   schedule:
-    # 08:00 IST slot (02:30 UTC)
-    - cron: '27 22 * * *'
-    - cron: '27 23 * * *'
-    - cron: '27 0 * * *'
-    # 13:00 IST slot (07:30 UTC)
-    - cron: '27 3 * * *'
-    - cron: '27 4 * * *'
-    - cron: '27 5 * * *'
-    # 18:00 IST slot (12:30 UTC)
-    - cron: '27 8 * * *'
-    - cron: '27 9 * * *'
-    - cron: '27 10 * * *'
-    # 21:00 IST slot (15:30 UTC)
+    # 06:30 IST slot (01:00 UTC)
+    - cron: '57 20 * * *'
+    - cron: '57 21 * * *'
+    - cron: '57 22 * * *'
+    # 12:30 IST slot (07:00 UTC)
+    - cron: '57 2 * * *'
+    - cron: '57 3 * * *'
+    - cron: '57 4 * * *'
+    # 18:30 IST slot (13:00 UTC)
+    - cron: '57 8 * * *'
+    - cron: '57 9 * * *'
+    - cron: '57 10 * * *'
+    # 21:00 IST slot, Karna (15:30 UTC)
     - cron: '27 11 * * *'
     - cron: '27 12 * * *'
     - cron: '27 13 * * *'
-    - cron: '27 14 * * *'
-    - cron: '27 15 * * *'
+    # 22:30 IST slot (17:00 UTC)
+    - cron: '57 12 * * *'
+    - cron: '57 13 * * *'
+    - cron: '57 14 * * *'
     # Monday: renew the Instagram token
     - cron: '45 3 * * 1'
   workflow_dispatch:
