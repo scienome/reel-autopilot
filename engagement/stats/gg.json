@@ -1,23 +1,53 @@
 {
  "account": "GG",
  "username": "thoughtbubble.pov",
- "followers": 7,
- "fetched": "2026-11-04T07:04:21.459981Z",
+ "followers": 8,
+ "fetched": "2026-11-05T03:26:28.246361Z",
  "reels": [
+  {
+   "id": "18098380562673502",
+   "timestamp": "2026-11-05T02:00:01+0000",
+   "like_count": 20,
+   "comments_count": 2,
+   "permalink": "https://www.instagram.com/reel/DfVo9vqDiIm/",
+   "caption": "\"I make the milk. You get the cheese. Unfair.\" 🐄\nThen a spaceship landed... 👇\n\n#cow #farm ",
+   "views": 1543,
+   "reach": 1197,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 22,
+   "ig_reels_avg_watch_time": 11479,
+   "ig_reels_video_view_total_time": 13603559
+  },
+  {
+   "id": "18126173588318259",
+   "timestamp": "2026-11-04T15:00:01+0000",
+   "like_count": 5,
+   "comments_count": 1,
+   "permalink": "https://www.instagram.com/reel/DfUXzMtDOAC/",
+   "caption": "\"Great presentation.\" (He didn't understand slide two.) 💼\nThen you asked for a raise... 👇\n",
+   "views": 319,
+   "reach": 257,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 6,
+   "ig_reels_avg_watch_time": 14797,
+   "ig_reels_video_view_total_time": 3832477
+  },
   {
    "id": "18124961014926651",
    "timestamp": "2026-11-04T07:00:01+0000",
-   "like_count": 0,
+   "like_count": 19,
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfTgTB0iE3H/",
    "caption": "2 a.m. Cheese in hand. Your fridge saw everything. 🧀\nWhat would YOUR fridge say about you?",
-   "views": 8,
-   "reach": 0,
-   "saved": 0,
+   "views": 1649,
+   "reach": 1450,
+   "saved": 1,
    "shares": 0,
-   "total_interactions": 1,
-   "ig_reels_avg_watch_time": 0,
-   "ig_reels_video_view_total_time": 0
+   "total_interactions": 21,
+   "ig_reels_avg_watch_time": 12343,
+   "ig_reels_video_view_total_time": 17626330
   },
   {
    "id": "18135177940731301",
@@ -26,13 +56,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfTEA4RjaKy/",
    "caption": "Nine days without water. Then too much water. 🪴\nHow many plants have YOU killed? 👇\n\n#plant",
-   "views": 1826,
-   "reach": 1497,
+   "views": 1842,
+   "reach": 1512,
    "saved": 0,
    "shares": 0,
    "total_interactions": 32,
-   "ig_reels_avg_watch_time": 13404,
-   "ig_reels_video_view_total_time": 19891938
+   "ig_reels_avg_watch_time": 13337,
+   "ig_reels_video_view_total_time": 19925646
   },
   {
    "id": "18119499911068499",
@@ -41,13 +71,13 @@
    "comments_count": 4,
    "permalink": "https://www.instagram.com/reel/DfRyw8-AExZ/",
    "caption": "It knows your password. It knows what you call your boss. 🦜\nThen it ordered forty pizzas..",
-   "views": 1292,
-   "reach": 1069,
+   "views": 1302,
+   "reach": 1073,
    "saved": 0,
    "shares": 1,
    "total_interactions": 21,
-   "ig_reels_avg_watch_time": 19231,
-   "ig_reels_video_view_total_time": 20366165
+   "ig_reels_avg_watch_time": 19062,
+   "ig_reels_video_view_total_time": 20396522
   },
   {
    "id": "18121381024984481",
@@ -72,7 +102,7 @@
    "permalink": "https://www.instagram.com/reel/DfQfBWYidix/",
    "caption": "Six hours of screen time. Two hundred unlocks. One percent battery. 📱\nHow many old phones ",
    "views": 1719,
-   "reach": 1454,
+   "reach": 1456,
    "saved": 0,
    "shares": 0,
    "total_interactions": 26,
@@ -116,13 +146,13 @@
    "comments_count": 5,
    "permalink": "https://www.instagram.com/reel/DfN5hTYgUeY/",
    "caption": "\"Wow! A castle!\" Every 3 seconds. For 2 years. 🏰\nBut there's one thing it never forgets...",
-   "views": 2157,
-   "reach": 1759,
+   "views": 2159,
+   "reach": 1760,
    "saved": 1,
    "shares": 0,
    "total_interactions": 45,
-   "ig_reels_avg_watch_time": 15459,
-   "ig_reels_video_view_total_time": 26976763
+   "ig_reels_avg_watch_time": 15469,
+   "ig_reels_video_view_total_time": 27010328
   },
   {
    "id": "17994425253114516",
@@ -176,13 +206,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfKB9aMgR-3/",
    "caption": "The puppies were screaming 'pick me'. The old dog didn't even stand up. 🐶\nThree weeks late",
-   "views": 1496,
-   "reach": 1176,
+   "views": 1498,
+   "reach": 1177,
    "saved": 1,
    "shares": 0,
    "total_interactions": 49,
-   "ig_reels_avg_watch_time": 18062,
-   "ig_reels_video_view_total_time": 20970640
+   "ig_reels_avg_watch_time": 18099,
+   "ig_reels_video_view_total_time": 21031891
   },
   {
    "id": "18072722462764693",
@@ -341,28 +371,28 @@
    "comments_count": 2,
    "permalink": "https://www.instagram.com/reel/DfBcyGNjMnk/",
    "caption": "Four bolts. Zero bolts. One very breezy flight. ✈️\nCabin pressure pushes outward on every ",
-   "views": 1789,
-   "reach": 1354,
+   "views": 1793,
+   "reach": 1357,
    "saved": 0,
    "shares": 0,
    "total_interactions": 31,
-   "ig_reels_avg_watch_time": 19920,
-   "ig_reels_video_view_total_time": 26614453
+   "ig_reels_avg_watch_time": 19917,
+   "ig_reels_video_view_total_time": 26669101
   },
   {
    "id": "18026166275876471",
    "timestamp": "2026-10-27T15:48:24+0000",
-   "like_count": 29,
+   "like_count": 30,
    "comments_count": 0,
    "permalink": "https://www.instagram.com/reel/DfANtRYEyPT/",
    "caption": "Hitler wanted a tank nothing could stop. Physics agreed: nothing could move it either. 🐭\nT",
-   "views": 1515,
-   "reach": 1184,
+   "views": 1519,
+   "reach": 1186,
    "saved": 1,
    "shares": 0,
-   "total_interactions": 30,
-   "ig_reels_avg_watch_time": 20323,
-   "ig_reels_video_view_total_time": 23799054
+   "total_interactions": 31,
+   "ig_reels_avg_watch_time": 20317,
+   "ig_reels_video_view_total_time": 23811683
   }
  ]
 }
