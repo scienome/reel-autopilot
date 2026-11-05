@@ -1,0 +1,11 @@
+{ "lines": [
+ {"shot":"hook","cap":"","say":"Your alarm clock just asked you for money.","cold":true},
+ {"shot":"wake","cap":"YOU *PAY.","say":"You pay. You're half asleep."},
+ {"shot":"fridge","cap":"YOUR FRIDGE IS *LOCKED.","say":"Seven thirty. Your fridge won't open until you renew."},
+ {"shot":"car","cap":"NO PLAN. NO *CAR.","say":"Eight fifteen. Your car won't start without its monthly plan."},
+ {"shot":"walk","cap":"EVERYTHING *CHARGES YOU.","say":"So you walk. Music. Storage. Shoes. Everything you use now charges you."},
+ {"shot":"zero","cap":"BALANCE: *ZERO.","say":"By noon, your balance is zero."},
+ {"shot":"rise","cap":"YOU OWN *NOTHING.","say":"You work all day, and you own nothing."},
+ {"shot":"tower","cap":"ONE *TOWER.","say":"Every payment in this city flows to one tower."},
+ {"shot":"end","cap":"","say":"What would you refuse to rent? Write it in the comments."}
+] }
