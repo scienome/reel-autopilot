@@ -53,7 +53,7 @@ Folder: [`gears-pov/`](gears-pov/)
 | [011-parrot-thoughts](gears-pov/011-parrot-thoughts.mp4) | You can hear what your parrot thinks 🦜 | Posted on Instagram · on YouTube |
 | [012-goldfish-memory](gears-pov/012-goldfish-memory.mp4) | You can hear what your goldfish thinks 🐠 | Posted on Instagram · on YouTube |
 | [013-fridge-judges-you](gears-pov/013-fridge-judges-you.mp4) | You can hear what your fridge thinks 🧀 | Posted on Instagram · on YouTube |
-| [014-pigeon-thoughts](gears-pov/014-pigeon-thoughts.mp4) | You can hear what pigeons think 🐦 | Waiting to post |
+| [014-pigeon-thoughts](gears-pov/014-pigeon-thoughts.mp4) | You can hear what pigeons think 🐦 | Posted on Instagram · on YouTube |
 | [015-phone-thoughts](gears-pov/015-phone-thoughts.mp4) | You can hear what your phone thinks 📱 | Posted on Instagram · on YouTube |
 | [016-grandpa-thoughts](gears-pov/016-grandpa-thoughts.mp4) | You can hear what your grandpa thinks 👴 | Posted on Instagram · on YouTube |
 | [017-cow-thoughts](gears-pov/017-cow-thoughts.mp4) | You can hear what cows think 🐄 | Posted on Instagram · on YouTube |
@@ -249,7 +249,7 @@ Folder: [`toy-reels/`](toy-reels/)
 | [59-war-of-the-bucket](toy-reels/59-war-of-the-bucket.mp4) | Two Cities Fought A War Over A Bucket 🪣 | Waiting to post |
 | [60-cadaver-synod](toy-reels/60-cadaver-synod.mp4) | A Pope Put A Dead Pope On Trial ⚖️ | Posted (Instagram + YouTube) |
 | [61-mary-toft-rabbits](toy-reels/61-mary-toft-rabbits.mp4) | She Fooled Royal Doctors Into Believing She Birthed Rabbits 🐇 | Posted (Instagram + YouTube) |
-| [62-cardiff-giant](toy-reels/62-cardiff-giant.mp4) | The 10-Foot Giant That Was A Fake Of A Fake 🗿 | Waiting to post |
+| [62-cardiff-giant](toy-reels/62-cardiff-giant.mp4) | The 10-Foot Giant That Was A Fake Of A Fake 🗿 | Posted (Instagram + YouTube) |
 | [63-wojtek-soldier-bear](toy-reels/63-wojtek-soldier-bear.mp4) | Poland Enlisted A Bear As A Soldier 🐻 | Posted (Instagram + YouTube) |
 | [64-mike-headless-chicken](toy-reels/64-mike-headless-chicken.mp4) | The Chicken That Lived 18 Months Without A Head 🐔 | Waiting to post |
 | [65-microwave-chocolate-bar](toy-reels/65-microwave-chocolate-bar.mp4) | A Melted Chocolate Bar Invented The Microwave 🍫 | Waiting to post |
