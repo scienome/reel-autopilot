@@ -1,5 +1,6 @@
 name: Post reel
-# Posts the next rendered reel on main to Instagram, three times a day, at exactly 7:30 AM, 1:30 PM and 9:30 PM IST
+# Posts the next rendered reel on main to Instagram, three times a day. Socho Zara (riddles): 06:30, 12:30 and 20:30 IST from
+# config.json "post_times_ist" (owner, 5 Nov 2026). The old couch notes below describe earlier times.
 # (02:00, 08:00 and 16:00 UTC). 7:30 AM IST = evening in the USA (about 9 PM New York, 6 PM California);
 # 1:30 PM IST = lunchtime in India, early morning in the UK; 9:30 PM IST = prime time in India, late afternoon in
 # the UK and lunchtime in the USA.
@@ -8,18 +9,18 @@ name: Post reel
 # publishes on the exact minute. The later runs queue behind it, see the slot is already posted and do nothing.
 on:
   schedule:
-    # 07:30 IST slot (02:00 UTC)
-    - cron: '49 21 * * *'
-    - cron: '49 22 * * *'
-    - cron: '49 23 * * *'
-    # 13:30 IST slot (08:00 UTC)
-    - cron: '49 3 * * *'
-    - cron: '49 4 * * *'
-    - cron: '49 5 * * *'
-    # 21:30 IST slot (16:00 UTC)
-    - cron: '49 11 * * *'
-    - cron: '49 12 * * *'
-    - cron: '49 13 * * *'
+    # 06:30 IST slot (01:00 UTC)
+    - cron: '57 20 * * *'
+    - cron: '57 21 * * *'
+    - cron: '57 22 * * *'
+    # 12:30 IST slot (07:00 UTC)
+    - cron: '57 2 * * *'
+    - cron: '57 3 * * *'
+    - cron: '57 4 * * *'
+    # 20:30 IST slot (15:00 UTC)
+    - cron: '57 10 * * *'
+    - cron: '57 11 * * *'
+    - cron: '57 12 * * *'
   workflow_dispatch:
     inputs:
       dry_run:
