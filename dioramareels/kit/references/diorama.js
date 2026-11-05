@@ -7,6 +7,7 @@
      living    x=200   yellow striped living room, orange sofa, side table (router lives here), lamp, plant
 */
 (() => {
+  { let a = 90210; Math.random = () => { a = (a + 0x6d2b79f5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
   const W = 720, H = 1280, PINK = '#ec2c5a', INK = '#121212', FONT = '"Lilita One", "Arial Black", sans-serif';
   const T = THREE;
   const gl = new T.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true, alpha: false });
@@ -15,11 +16,11 @@
   gl.shadowMap.enabled = true;
   gl.shadowMap.type = T.PCFSoftShadowMap;
   gl.outputEncoding = T.sRGBEncoding;
-  gl.toneMapping = T.ACESFilmicToneMapping;
-  gl.toneMappingExposure = 0.92;
+  gl.toneMapping = T.LinearToneMapping;
+  gl.toneMappingExposure = 1;
   const scene = new T.Scene();
   scene.background = new T.Color('#14121c');
-  const cam = new T.PerspectiveCamera(32, W / H, 0.1, 400);
+  const cam = new T.PerspectiveCamera(32, W / H, 0.3, 2400);
 
   // ---------- helpers ----------
   const mat = (c, o = {}) => new T.MeshStandardMaterial({ color: c, roughness: o.r ?? 0.5, metalness: o.m ?? 0, emissive: o.e || '#000', emissiveIntensity: o.ei ?? 1, map: o.map || null, transparent: !!o.tr, opacity: o.op ?? 1 });
@@ -162,27 +163,28 @@
   // ---------- building (x = 0) ----------
   const building = new T.Group();
   scene.add(building);
-  const FL = 3, RW = 4, SW = 2.4, DEP = 3.2, NF = 5;
-  const roomColors = [['#f3d27a', '#4c7bd1'], ['#9fd8c9', '#e8774a'], ['#f2a7b8', '#5aa469'], ['#c9b6f0', '#e9c046'], ['#f6e6c2', '#d94f4f'], ['#a7c7f2', '#f0a35e'], ['#f0c09a', '#6c8fd9'], ['#cde8a8', '#c4568a'], ['#f5d7a1', '#3f9f9a'], ['#e7b9e0', '#e7a33b']];
+  const FL = 3, RW = 4, SW = 2.4, DEP = 3.2, NF = 9;
+  const roomGlow = [];
+  const roomColors = [['#ffbf1f', '#1f6fe0'], ['#14c7a8', '#ff5a36'], ['#ff5f8f', '#23a455'], ['#8a5cf6', '#ffc300'], ['#ff8a1e', '#d6276a'], ['#2f9bff', '#ff9f1c'], ['#f2d21f', '#6c3fe0'], ['#3fd06a', '#d6276a'], ['#ff6b4a', '#0fa9a0'], ['#d65cf0', '#ffb01f']];
   const lamps = [];
   for (let f = 0; f < NF; f++) {
     const y = f * FL;
-    box(building, RW * 2 + SW + 0.4, 0.22, DEP + 0.3, '#ece6dc', 0, y, 0);
+    box(building, RW * 2 + SW + 0.6, 0.22, DEP + 0.3, '#fff3e0', 0, y, 0);
     [-1, 1].forEach((s, si) => {
       const cx = s * (SW / 2 + RW / 2), [wall, acc] = roomColors[(f * 2 + si) % roomColors.length];
-      box(building, RW, FL, 0.12, '#' + new T.Color(wall).multiplyScalar(0.5).getHexString(), cx, y + FL / 2, -DEP / 2);
-      box(building, 0.14, FL, DEP, '#ece6dc', s * (SW / 2 + RW), y + FL / 2, 0);
-      const k = (f * 3 + si) % 4;
+      { const wm = mat(wall, { r: 0.75, e: wall, ei: 0.25 }); roomGlow.push(wm); box(building, RW, FL, 0.12, wm, cx, y + FL / 2, -DEP / 2); }
+      box(building, 0.3, FL, DEP, '#c8452f', s * (SW / 2 + RW), y + FL / 2, 0);
+      const k = (f * 3 + si * 2 + (f >> 1)) % 7;
       if (k === 0) { box(building, 1.8, 0.45, 0.7, acc, cx, y + 0.35, -DEP / 2 + 0.5); box(building, 1.8, 0.6, 0.2, acc, cx, y + 0.7, -DEP / 2 + 0.2); }
       else if (k === 1) { box(building, 1.4, 0.35, 1.9, '#fff', cx - 0.6, y + 0.3, -0.3); box(building, 1.4, 0.15, 0.6, acc, cx - 0.6, y + 0.5, -1.0); }
       else if (k === 2) { box(building, 1.2, 0.8, 0.6, acc, cx + 0.8, y + 0.5, -DEP / 2 + 0.4); box(building, 0.7, 0.5, 0.05, mat('#111', { e: '#7ab8ff', ei: 1.5 }), cx + 0.8, y + 1.4, -DEP / 2 + 0.12); }
-      else { box(building, 1.1, 0.06, 0.8, acc, cx, y + 0.75, 0); [-0.4, 0.4].forEach((d) => box(building, 0.06, 0.75, 0.06, '#555', cx + d, y + 0.4, 0)); }
+      else if (k === 3) { box(building, 1.1, 0.06, 0.8, acc, cx, y + 0.75, 0); [-0.4, 0.4].forEach((d) => box(building, 0.06, 0.75, 0.06, '#555', cx + d, y + 0.4, 0)); }
+      else if (k === 4) { box(building, 1.6, 2, 0.4, '#7a4b2a', cx - 0.8, y + 1.1, -DEP / 2 + 0.3); [0, 1, 2].forEach((r) => [0, 1, 2, 3].forEach((c) => box(building, 0.3, 0.45, 0.28, roomColors[(r * 3 + c) % 10][1], cx - 1.3 + c * 0.34, y + 0.5 + r * 0.6, -DEP / 2 + 0.34, { cast: false }))); }
+      else if (k === 5) { box(building, 2.6, 0.9, 0.6, '#f4efe4', cx - 0.3, y + 0.55, -DEP / 2 + 0.4); box(building, 0.8, 1.9, 0.7, '#dfe7f2', cx + 1.3, y + 1.05, -DEP / 2 + 0.45); box(building, 2.6, 0.06, 0.66, acc, cx - 0.3, y + 1.02, -DEP / 2 + 0.4); }
+      else { box(building, 1.9, 0.7, 0.9, '#f8f6f0', cx, y + 0.45, -DEP / 2 + 0.6); box(building, 1.6, 0.05, 0.62, '#29c5e6', cx, y + 0.8, -DEP / 2 + 0.6, { cast: false }); }
       add(building, new T.CylinderGeometry(1.1, 1.1, 0.03, 24), mat(acc, { r: 0.9 }), cx + 0.3, y + 0.13, 0.4);
       const lamp = add(building, new T.SphereGeometry(0.16, 12, 10), mat('#fff6d8', { e: '#ffd38a', ei: 2 }), cx - s * 1.4, y + 1.0, -DEP / 2 + 0.4, { cast: false });
       lamps.push(lamp);
-      const pl = new T.PointLight('#ffc77a', 0.3, 5, 2);
-      pl.position.set(cx, y + 2.4, 0.2);
-      building.add(pl);
     });
     box(building, SW, FL, 0.1, '#3b3f4a', 0, y + FL / 2, -DEP / 2);
   }
@@ -194,7 +196,7 @@
   car.children[0].material.side = T.BackSide;
   box(car, SW - 0.2, 0.08, 2.4, '#b8202b', 0, 0.06, -0.6);
   add(car, new T.PlaneGeometry(1.2, 0.5), mat('#fff', { e: '#ffe2a8', ei: 2.2 }), 0, 2.46, -0.6, { rx: Math.PI / 2, cast: false });
-  const carLight = new T.PointLight('#ffb35c', 1.6, 6, 2);
+  const carLight = new T.PointLight('#ffb35c', 2.2, 6, 2);
   carLight.position.set(0, 2.1, 0);
   car.add(carLight);
   car.position.set(0, 2 * FL + 0.12, 0);
@@ -204,22 +206,10 @@
   add(tower, new T.CylinderGeometry(0.9, 0.9, 1.5, 20), mat('#7a4a2e', { r: 0.8 }), 0, 1.6, 0);
   add(tower, new T.ConeGeometry(1.0, 0.6, 20), mat('#5b3420', { r: 0.8 }), 0, 2.65, 0);
   [-0.6, 0.6].forEach((x) => [-0.6, 0.6].forEach((z) => add(tower, new T.CylinderGeometry(0.05, 0.05, 0.9, 6), mat('#333'), x, 0.45, z)));
-  const sky = add(scene, new T.PlaneGeometry(160, 120), new T.MeshBasicMaterial({ map: tex(512, 512, (x, w, h) => {
-    const g = x.createLinearGradient(0, 0, 0, h);
-    g.addColorStop(0, '#141a3a'); g.addColorStop(0.55, '#3a3a78'); g.addColorStop(1, '#8a5a7a');
-    x.fillStyle = g; x.fillRect(0, 0, w, h);
-    for (let i = 0; i < 160; i++) {
-      const xx = Math.random() * w, yy = h * 0.45 + Math.random() * h * 0.5, r = 2 + Math.random() * 7;
-      x.fillStyle = `rgba(255,${180 + Math.random() * 60 | 0},${110 + Math.random() * 80 | 0},${0.25 + Math.random() * 0.5})`;
-      x.beginPath(); x.arc(xx, yy, r, 0, 7); x.fill();
-    }
-    x.fillStyle = '#1a1c2c';
-    for (let i = 0; i < 26; i++) { const bw = 14 + Math.random() * 30, bh = 30 + Math.random() * 120; x.fillRect(i * w / 26, h - bh, bw, bh); }
-  }) }), 0, 6, -40, { cast: false, recv: false });
 
   // ---------- elevator interior (x = 100) ----------
   const EL = new T.Group();
-  EL.position.set(100, 0, 0);
+  EL.position.set(1000, 0, 0);
   scene.add(EL);
   const EW = 3.4, EH = 3.4, ED = 2.8;
   const woodMat = mat('#c86a26', { map: wood, r: 0.45 });
@@ -238,7 +228,7 @@
   box(phoneBox, 0.24, 0.16, 0.03, '#f6e7d6', 0, 0.12, 0.05);
   [0, 1, 2].forEach((r) => [0, 1, 2].forEach((c) => add(phoneBox, new T.SphereGeometry(0.018, 6, 6), mat('#4a0d10'), -0.06 + c * 0.06, -0.12 - r * 0.06, 0.045)));
   const display = add(EL, new T.PlaneGeometry(0.5, 0.3), new T.MeshBasicMaterial({ map: tex(128, 76, (x, w, h) => { x.fillStyle = '#120a06'; x.fillRect(0, 0, w, h); x.fillStyle = '#ffb02e'; x.font = '900 52px Arial'; x.textAlign = 'center'; x.fillText('3', w / 2, 60); }) }), 0, EH - 0.35, -ED / 2 + 0.06, { cast: false });
-  const elLight = new T.PointLight('#ffb766', 2.4, 9, 2);
+  const elLight = new T.PointLight('#ffb766', 1.1, 9, 2);
   elLight.position.set(0, EH - 0.5, 0.6);
   elLight.castShadow = true;
   elLight.shadow.mapSize.set(1024, 1024);
@@ -250,7 +240,7 @@
 
   // ---------- living room (x = 200) ----------
   const LV = new T.Group();
-  LV.position.set(200, 0, 0);
+  LV.position.set(1100, 0, 0);
   scene.add(LV);
   const wp = stripes('#f2b632', '#e8a51f', 10);
   wp.repeat.set(3, 1); wp.wrapS = T.RepeatWrapping;
@@ -295,15 +285,16 @@
   add(plant, new T.CylinderGeometry(0.28, 0.22, 0.5, 16), mat('#d9d2c6'), 0, 0.25, 0);
   for (let i = 0; i < 7; i++) add(plant, new T.SphereGeometry(0.28, 10, 8), mat('#3f8f4a', { r: 0.8 }), Math.sin(i * 2.1) * 0.25, 0.75 + (i % 3) * 0.28, Math.cos(i * 2.1) * 0.25);
   const lvKey = new T.DirectionalLight('#ffe2b8', 0.75);
-  lvKey.position.set(203, 7, 6);
-  lvKey.target.position.set(200, 0, -1);
+  lvKey.position.set(1103, 7, 6);
+  lvKey.target.position.set(1100, 0, -1);
   lvKey.castShadow = true;
   lvKey.shadow.mapSize.set(1024, 1024);
   Object.assign(lvKey.shadow.camera, { left: -6, right: 6, top: 6, bottom: -6 });
   scene.add(lvKey, lvKey.target);
 
   // global light
-  scene.add(new T.HemisphereLight('#ffe9cc', '#3a2a40', 0.3));
+  const hemi = new T.HemisphereLight('#ffe9cc', '#3a2a40', 0.3);
+  scene.add(hemi);
   const moon = new T.DirectionalLight('#9fb4ff', 0.3);
   moon.position.set(-10, 30, 20);
   scene.add(moon);
@@ -598,6 +589,7 @@
   }
 
   window.D = {
+    kit: { mat, add, box, tex, lights: { hemi, moon, lvKey }, hero: { building, NF, FL, DEP, RW, SW }, heroGlow: (v) => roomGlow.forEach((m) => { m.emissiveIntensity = v; }) },
     W, H, PINK, INK, FONT, THREE: T, scene, cam, gl, figure, render3d, screen, caption, title, label, rule, phoneCard, toast, endCard, fiction, thought, hookCard, lerp, ease, clamp,
     sets: { building, car, lamps, EL, elLight, ceil, LV, router, leds, sideT, sofa, phoneBox, display },
   };
