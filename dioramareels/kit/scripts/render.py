@@ -68,7 +68,7 @@ async def page(b):
         await pg.add_script_tag(content=read(three))
     else:
         await pg.add_script_tag(url=THREE_URL)
-    for f in [SOUND, os.path.join(refs, "diorama.js"), os.path.join(refs, "city.js"), *([a.timing] if a.timing else []), a.story]:
+    for f in [SOUND, os.path.join(refs, "diorama.js"), os.path.join(refs, "city.js"), os.path.join(refs, "life.js"), *([a.timing] if a.timing else []), a.story]:
         await pg.add_script_tag(content=read(f))
     return pg
 
