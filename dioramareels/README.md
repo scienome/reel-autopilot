@@ -6,6 +6,7 @@
 ## Files
 - `kit/references/diorama.js`: engine (`window.D`): toy figures, hero tower, elevator, living room, tilt-shift, all overlays.
 - `kit/references/city.js`: complete city (`D.city`).
+- `kit/references/life.js`: you-live-here kit (`D.life`): your apartment, over-the-shoulder camera, balance counter, clock tag, gold tower, money stream, rise shot.
 - `kit/scripts/render.py`: sheet and video render. Sound effects come from `mysteryreels/kit/references/sound.js`.
 
 ## Sets
