@@ -1,0 +1,9 @@
+{ "lines": [
+ {"shot":"hook","cap":"","say":"Your bank just sold your debt. To them.","cold":true},
+ {"shot":"apt","cap":"ONLY *$300.","say":"It was only three hundred dollars."},
+ {"shot":"letter","cap":"NEW *OWNER.","say":"This morning, the name on the letter changed. Lot Nine Recovery."},
+ {"shot":"hall","cap":"THEY DON'T KNOCK *TWICE.","say":"Tonight, three of them walk down your hallway. They don't knock twice."},
+ {"shot":"offer","cap":"A NEW *PLAN.","say":"They hold up a phone. It's your new monthly plan."},
+ {"shot":"tower","cap":"SAME *TOWER.","say":"Follow the payment. It lands in the same tower as your bank."},
+ {"shot":"end","cap":"","say":"Would you open the door? Write it in the comments."}
+] }
