@@ -7,7 +7,7 @@
   },
   "instagram": {
     "api_version": "v26.0",
-    "post_times_ist": ["06:00", "12:00", "20:30"],
+    "post_times_ist": ["06:30", "12:30", "20:30"],
     "default_hashtags": ["riddle", "paheli", "hindi", "brainteaser", "puzzle", "dimaag", "reels"]
   }
 }
