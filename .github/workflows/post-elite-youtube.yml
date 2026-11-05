@@ -1,0 +1,60 @@
+name: Post Elites Endgame reels to YouTube
+# Uploads the new-style reels (tools/elite_youtube.py) as Shorts scheduled for 01:00, 06:00 and 20:30 IST, in
+# dioramareels/schedule.json "queue" order. Each slot has runs 4, 3 and 2 hours before it. Nothing goes out while
+# schedule.json has "paused". Needs YT_ELITE_CLIENT_ID, YT_ELITE_CLIENT_SECRET and YT_ELITE_REFRESH_TOKEN.
+on:
+  schedule:
+    # 01:00 IST slot (19:30 UTC)
+    - cron: '27 15 * * *'
+    - cron: '27 16 * * *'
+    - cron: '27 17 * * *'
+    # 06:00 IST slot (00:30 UTC)
+    - cron: '27 20 * * *'
+    - cron: '27 21 * * *'
+    - cron: '27 22 * * *'
+    # 20:30 IST slot (15:00 UTC)
+    - cron: '57 10 * * *'
+    - cron: '57 11 * * *'
+    - cron: '57 12 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Only check the sign-in and show the queue'
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: post-elite-youtube
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install -q requests
+      - name: Upload the reel that is due
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_ELITE_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_ELITE_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_ELITE_REFRESH_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git pull -q --rebase || true
+          python tools/elite_youtube.py ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '--dry-run' || '' }}
+      - name: Record it
+        if: always()
+        run: |
+          git config user.name "elite-bot"; git config user.email "elite-bot@users.noreply.github.com"
+          git add dioramareels/youtube_posted.json 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -q -m "Elites Endgame reel on YouTube [skip ci]"
+            for i in 1 2 3 4; do git pull --rebase -q && git push -q && break; sleep $((i * 5)); done
+          fi
