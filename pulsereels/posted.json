@@ -1,13 +1,29 @@
 {
  "001-where-fat-goes": {
-  "instagram": {"manual": "posted by hand before autopost (owner, 5 Nov 2026)"},
-  "youtube": {"manual": "posted by hand before autopost (owner, 5 Nov 2026)"}
+  "instagram": {
+   "manual": "posted by hand before autopost (owner, 5 Nov 2026)"
+  },
+  "youtube": {
+   "manual": "posted by hand before autopost (owner, 5 Nov 2026)"
+  }
  },
  "002-muscle-memory": {
-  "instagram": {"manual": "posted by hand before autopost (owner, 5 Nov 2026)"},
-  "youtube": {"manual": "posted by hand before autopost (owner, 5 Nov 2026)"}
+  "instagram": {
+   "manual": "posted by hand before autopost (owner, 5 Nov 2026)"
+  },
+  "youtube": {
+   "manual": "posted by hand before autopost (owner, 5 Nov 2026)"
+  }
  },
  "005-why-last-rep-shakes": {
-  "instagram": {"manual": "posted by hand before autopost (owner, 5 Nov 2026); YouTube still to do"}
+  "instagram": {
+   "manual": "posted by hand before autopost (owner, 5 Nov 2026); YouTube still to do"
+  },
+  "youtube": {
+   "id": "Ua7Azoc2SI8",
+   "url": "https://youtu.be/Ua7Azoc2SI8",
+   "publish_utc": "now",
+   "title": "Why your muscles SHAKE on the last rep \ud83e\udee8 #shorts"
+  }
  }
 }
