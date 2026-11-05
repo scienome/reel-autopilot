@@ -144,5 +144,50 @@
     ctx.fillStyle = '#ffd23f'; ctx.fillText(txt, 45, 88);
     ctx.restore();
   }
-  D.life = { you, youCity, car, set: A, place, walk, shoulder, stream, rise, balance, charge, clock, towerTop: () => [TX, TH, TZ] };
+  // ---------- hospital room, x = 1300 ----------
+  const H2 = new T.Group();
+  H2.position.set(1300, 0, 0);
+  D.scene.add(H2);
+  const tiles = tex(128, 128, (x, w, h) => { x.fillStyle = '#e8f6ff'; x.fillRect(0, 0, w, h); x.fillStyle = '#b9e4f5'; x.fillRect(0, 0, w / 2, h / 2); x.fillRect(w / 2, h / 2, w / 2, h / 2); }, [8, 10]);
+  box(H2, 10, 0.08, 14, mat('#fff', { map: tiles, r: 0.35 }), 0, 0, 3);
+  box(H2, 10, 4.2, 0.12, '#1f8efa', 0, 2.1, -3.2);
+  box(H2, 0.12, 4.2, 14, '#14c7a8', -5, 2.1, 3);
+  box(H2, 0.12, 4.2, 14, '#7b3ff2', 5, 2.1, 3);
+  add(H2, new T.PlaneGeometry(2.8, 2), new T.MeshBasicMaterial({ map: view }), -2.8, 2.4, -3.12, { cast: false });
+  [[3, 0.12, -2.8, 3.45], [3, 0.12, -2.8, 1.35]].forEach(([w, h, x, y]) => box(H2, w, h, 0.1, '#fff', x, y, -3.1));
+  const hbed = new T.Group(); hbed.position.set(0, 0, -0.9); H2.add(hbed);
+  box(hbed, 2.2, 0.16, 4, '#d8dde6', 0, 0.82, 0, { r: 0.3, m: 0.3 });
+  box(hbed, 2.1, 0.26, 3.9, '#fff', 0, 1.03, 0);
+  box(hbed, 2.4, 1.3, 0.14, '#c94f8a', 0, 1.1, -2.05);
+  box(hbed, 2.2, 0.3, 2.2, '#ff6b8a', 0, 1.38, 0.85);
+  box(hbed, 2.1, 0.24, 2.4, '#fff', 0, 1.36, -0.95, { rx: 1.0 });
+  [[-1, -1.7], [1, -1.7], [-1, 1.7], [1, 1.7]].forEach(([x, z]) => box(hbed, 0.1, 0.8, 0.1, '#8d95a6', x, 0.4, z));
+  const mom = D.figure({ shirt: '#9fd8ff', pants: '#9fd8ff', hair: 'bun', hairColor: '#b9b9c6', mood: 'calm', glasses: true, skin: '#f0c7a6' });
+  mom.rotation.x = -1.05;
+  mom.position.set(0, 0.95, 0.9);
+  hbed.add(mom);
+  const mach = new T.Group(); mach.position.set(2.2, 0, -1.9); H2.add(mach);
+  box(mach, 1.2, 2.2, 0.8, '#3a4256', 0, 1.1, 0, { r: 0.4 });
+  const ecg = tex(256, 160, (x, w, h) => { x.fillStyle = '#06140f'; x.fillRect(0, 0, w, h); x.strokeStyle = '#37ff8b'; x.lineWidth = 5; x.beginPath(); x.moveTo(0, 90); [30, 60, 76, 88, 100, 112, 140, 170, 186, 198, 210, 222, 256].forEach((px, i) => x.lineTo(px, i % 6 === 3 ? 26 : i % 6 === 4 ? 130 : 90)); x.stroke(); });
+  add(mach, new T.PlaneGeometry(1, 0.7), new T.MeshBasicMaterial({ map: ecg }), 0, 1.75, 0.41, { cast: false });
+  const expT = tex(256, 96, (x, w, h) => { x.fillStyle = '#b3061f'; x.fillRect(0, 0, w, h); x.fillStyle = '#fff'; x.textAlign = 'center'; x.font = '40px "Lilita One", Arial'; x.fillText('PLAN EXPIRED', w / 2, 62); });
+  const exp = add(mach, new T.PlaneGeometry(1.1, 0.42), new T.MeshBasicMaterial({ map: expT }), 0, 1.05, 0.41, { cast: false });
+  add(H2, new T.CylinderGeometry(0.04, 0.04, 3, 8), mat('#c9cfdb', { m: 0.6 }), -1.7, 1.5, -1.9);
+  box(H2, 0.34, 0.5, 0.12, mat('#bfeaff', { r: 0.2 }), -1.7, 2.8, -1.9);
+  const hk = new T.PointLight('#fff0dc', 1, 18, 1.5); hk.position.set(0, 3.9, 1.5); hk.castShadow = true; hk.shadow.mapSize.set(1024, 1024); hk.shadow.bias = -0.002; H2.add(hk);
+  const alarm = new T.PointLight('#ff2740', 0, 12, 1.8); alarm.position.set(2.2, 3, 0); H2.add(alarm);
+  const youH = D.figure(youO);
+  H2.add(youH);
+  const dorisCity = D.figure({ shirt: '#7d4fc0', pants: '#6b5b8c', hair: 'bun', hairColor: '#c9c9cf', glasses: true, mood: 'calm', skin: '#f0c7a6', shoes: '#7a3b4a' });
+  D.city.group.add(dorisCity);
+  function timer(ctx, secs) {
+    const m = Math.floor(secs / 60), s = Math.max(0, Math.floor(secs % 60)), txt = `0${m}:${s < 10 ? '0' : ''}${s}`, low = secs < 60;
+    ctx.save(); ctx.font = `72px ${D.FONT}`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    const w = ctx.measureText(txt).width + 50, x = 720 - w / 2 - 26;
+    ctx.fillStyle = low ? D.PINK : 'rgba(14,12,26,.92)'; ctx.beginPath(); ctx.moveTo(x - w / 2 + 16, 56); ctx.arcTo(x + w / 2, 56, x + w / 2, 156, 16); ctx.arcTo(x + w / 2, 156, x - w / 2, 156, 16); ctx.arcTo(x - w / 2, 156, x - w / 2, 56, 16); ctx.arcTo(x - w / 2, 56, x + w / 2, 56, 16); ctx.closePath(); ctx.fill();
+    ctx.fillStyle = low ? '#fff' : '#ff4d6d'; ctx.fillText(txt, x, 110);
+    ctx.font = `20px ${D.FONT}`; ctx.fillStyle = 'rgba(255,255,255,.8)'; ctx.restore();
+  }
+
+  D.life = { you, youCity, car, set: A, place, walk, shoulder, stream, rise, balance, charge, clock, towerTop: () => [TX, TH, TZ], hospital: H2, youH, mom, alarm, machine: mach, dorisCity, timer };
 })();
