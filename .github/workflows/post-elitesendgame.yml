@@ -1,25 +1,21 @@
 name: Post elitesendgame reels (Instagram)
-# Posts mysteryreels/ reels to Instagram: one story per slot, 01:00, 06:00 and 20:30 IST (19:30, 00:30, 15:00 UTC), from mysteryreels/schedule.json. Nothing goes out
+# Posts mysteryreels/ reels to Instagram: one story per slot, 3 a day at 01:00, 06:00 and 20:30 IST (19:30, 00:30, 15:00 UTC; owner, 5 Nov 2026: the 13:00 and 18:30 wildcard slots are off), from mysteryreels/schedule.json. Nothing goes out
 # while schedule.json has "paused". Needs IG_ELITE_ACCESS_TOKEN and IG_ELITE_USER_ID. The token is renewed every Monday.
 on:
   schedule:
-    # 01:00 IST slot
+    # 01:00 IST slot (19:30 UTC)
+    - cron: '27 15 * * *'
     - cron: '27 16 * * *'
     - cron: '27 17 * * *'
-    - cron: '27 18 * * *'
-    # 06:00 IST slot
+    # 06:00 IST slot (00:30 UTC)
+    - cron: '27 20 * * *'
     - cron: '27 21 * * *'
     - cron: '27 22 * * *'
-    - cron: '27 23 * * *'
-    # 20:30 IST slot
-    - cron: '27 12 * * *'
-    - cron: '27 13 * * *'
-    - cron: '27 4 * * *'
-    - cron: '27 5 * * *'
-    - cron: '27 6 * * *'
-    - cron: '27 10 * * *'
-    - cron: '27 11 * * *'
-    - cron: '27 14 * * *'
+    # 20:30 IST slot (15:00 UTC)
+    - cron: '57 10 * * *'
+    - cron: '57 11 * * *'
+    - cron: '57 12 * * *'
+    # Monday: renew the Instagram token
     - cron: '45 3 * * 1'
   workflow_dispatch:
     inputs:
