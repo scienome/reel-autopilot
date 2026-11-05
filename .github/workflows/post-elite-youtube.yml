@@ -33,7 +33,7 @@ concurrency:
 jobs:
   post:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 320
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6
@@ -49,12 +49,19 @@ jobs:
         run: |
           git pull -q --rebase || true
           python tools/elite_youtube.py ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '--dry-run' || '' }}
+      - name: Publish the same reel on Instagram at its slot
+        if: always()
+        env:
+          IG_ELITE_ACCESS_TOKEN: ${{ secrets.IG_ELITE_ACCESS_TOKEN }}
+          IG_ELITE_USER_ID: ${{ secrets.IG_ELITE_USER_ID }}
+        run: |
+          python tools/elite_ig_city.py ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '--dry-run' || '' }}
       - name: Record it
         if: always()
         run: |
           git config user.name "elite-bot"; git config user.email "elite-bot@users.noreply.github.com"
-          git add dioramareels/youtube_posted.json 2>/dev/null || true
+          git add dioramareels/youtube_posted.json dioramareels/instagram_posted.json 2>/dev/null || true
           if ! git diff --cached --quiet; then
-            git commit -q -m "Elites Endgame reel on YouTube [skip ci]"
+            git commit -q -m "Elites Endgame reel posted [skip ci]"
             for i in 1 2 3 4; do git pull --rebase -q && git push -q && break; sleep $((i * 5)); done
           fi
