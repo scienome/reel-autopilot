@@ -12,22 +12,22 @@
   [[youM, -0.5], [dorM, 0.5]].forEach(([f, x]) => { f.scale.setScalar(0.85); f.position.set(x, 0.1, -0.5); Z.car.add(f); });
 
   const views = {
-    hook: (p) => ({ pos: [99.22, 2.3, D.lerp(5.6, 4.9, p)], look: [99.22, 2.45, 0], focus: [0.5, 0.95], blur: 7 }),
-    wide: (p) => ({ pos: [D.lerp(2.5, 0.1, p), D.lerp(9.5, 7.4, p), D.lerp(34, 10, p)], look: [0, D.lerp(8, 7.2, p), 0], focus: [0.42, 0.68], blur: 8 }),
-    think: (p) => ({ pos: [99.3, 2.3, D.lerp(7, 6.2, p)], look: [99.5, 2.5, 0], focus: [0.45, 0.95], blur: 7 }),
-    turn: (p) => ({ pos: [100.78, 2.05, D.lerp(5, 3.6, p)], look: [100.78, 2.0, 0], focus: [0.3, 0.8], blur: 9 }),
-    rule1: (p) => ({ pos: [99.2, 2.35, D.lerp(7.5, 6.9, p)], look: [99.2, 2.35, 0], focus: [0.5, 0.95], blur: 8 }),
-    rule2: (p) => ({ pos: [100 + D.lerp(0.25, -0.25, p), 2.3, D.lerp(9.2, 8.4, p)], look: [100, 2.25, 0], focus: [0.45, 0.92], blur: 6 }),
-    twist: (p) => ({ pos: [100, 2.3, D.lerp(9.6, 8.8, p)], look: [100, 2.1, 0], focus: [0.42, 0.9], blur: 6 }),
-    reveal: (p) => ({ pos: [100.78, 2.05, D.lerp(3.6, 2.9, p)], look: [100.78, 2.0, 0], focus: [0.3, 0.8], blur: 9 }),
-    end: () => ({ pos: [100, 2.3, 9.4], look: [100, 2.1, 0], focus: [0.42, 0.9], blur: 6 }),
+    hook: (p) => ({ pos: [999.22, 2.3, D.lerp(5.6, 4.9, p)], look: [999.22, 2.45, 0], focus: [0.5, 0.95], blur: 7 }),
+    wide: (p) => D.city.dive(p),
+    think: (p) => ({ pos: [999.3, 2.3, D.lerp(7, 6.2, p)], look: [999.5, 2.5, 0], focus: [0.45, 0.95], blur: 7 }),
+    turn: (p) => ({ pos: [1000.78, 2.05, D.lerp(5, 3.6, p)], look: [1000.78, 2.0, 0], focus: [0.3, 0.8], blur: 9 }),
+    rule1: (p) => ({ pos: [999.2, 2.35, D.lerp(7.5, 6.9, p)], look: [999.2, 2.35, 0], focus: [0.5, 0.95], blur: 8 }),
+    rule2: (p) => ({ pos: [1000 + D.lerp(0.25, -0.25, p), 2.3, D.lerp(9.2, 8.4, p)], look: [1000, 2.25, 0], focus: [0.45, 0.92], blur: 6 }),
+    twist: (p) => ({ pos: [1000, 2.3, D.lerp(9.6, 8.8, p)], look: [1000, 2.1, 0], focus: [0.42, 0.9], blur: 6 }),
+    reveal: (p) => ({ pos: [1000.78, 2.05, D.lerp(3.6, 2.9, p)], look: [1000.78, 2.0, 0], focus: [0.3, 0.8], blur: 9 }),
+    end: () => ({ pos: [1000, 2.3, 9.4], look: [1000, 2.1, 0], focus: [0.42, 0.9], blur: 6 }),
   };
 
   function setPose(n, t, p) {
     const dark = n === 'twist' || n === 'reveal' || n === 'end';
     const flick = n === 'twist' && p < 0.3 ? (Math.sin(t * 47) * Math.sin(t * 19) > 0.1 ? 0.25 : 1) : 1;
-    Z.elLight.intensity = 2.4 * (dark ? 0.7 : 1) * flick;
-    Z.ceil.material.emissiveIntensity = 1.1 * (dark ? 0.7 : 1) * flick;
+    Z.elLight.intensity = 1.1 * (dark ? 0.7 : 1) * flick;
+    Z.ceil.material.emissiveIntensity = 0.9 * (dark ? 0.7 : 1) * flick;
     const breathe = Math.sin(t * 2.2) * 0.012;
     const turned = n === 'turn' ? -1.0 * D.ease(p * 1.2) : ['rule1', 'rule2', 'twist', 'reveal', 'end'].includes(n) ? -0.75 : 0;
     dor.pose({ yaw: n === 'reveal' ? -0.15 : turned, mood: n === 'turn' || dark || n === 'rule2' || n === 'rule1' ? 'glare' : 'calm', bob: breathe });
@@ -39,6 +39,8 @@
     let n = order[0];
     order.forEach((s) => { if (t >= start(s)) n = s; });
     const [a, b] = span(n), p = D.clamp((t - a) / (b - a), 0, 1);
+    D.city.mode(n === 'wide' ? 'sunset' : 'interior');
+    D.city.update(t);
     setPose(n, t, p);
     D.render3d(ctx, views[n](D.ease(p)));
     const yh = D.screen(you, [0, 2.3, 0]), dh = D.screen(dor, [0, 2.3, 0]);
