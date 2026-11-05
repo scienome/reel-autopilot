@@ -1,0 +1,10 @@
+{ "lines": [
+ {"shot":"hook","cap":"","say":"Only one of these doors gets you out alive.","cold":true},
+ {"shot":"dark","cap":"THE CITY WENT *DARK.","say":"Three oh seven in the morning. The whole city just went dark."},
+ {"shot":"floor","cap":"4% *BATTERY.","say":"You're on floor nine. Your phone has four percent."},
+ {"shot":"steps","cap":"SOMEONE IS *COMING.","say":"Someone is walking up the stairs behind you."},
+ {"shot":"a","cap":"NOBODY CAME *BACK.","say":"Door A is free. Nobody who took it has come back."},
+ {"shot":"b","cap":"YOUR LAST *$50.","say":"Door B costs fifty dollars. It's all you have."},
+ {"shot":"pick","cap":"","say":"Five seconds. Pick."},
+ {"shot":"end","cap":"","say":"Comment A or B. Tomorrow, you find out."}
+] }
