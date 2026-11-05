@@ -1,0 +1,99 @@
+name: Post Musclyth reels (Instagram + YouTube)
+# Posts the Musclyth bodybuilding science reels (pulsereels/) to the Musclyth Instagram account AND the Musclyth
+# YouTube channel at the same moment, 3 a day, 30 minutes before the US, India and UK peaks: 06:00, 20:30 and 01:00 IST
+# (00:30, 15:00 and 19:30 UTC), in pulsereels/schedule.json "queue" order, from their pulse-<id> Releases
+# (tools/pulse_post.py). GitHub starts scheduled runs late, so every slot has three runs, 4, 3 and 2 hours before it;
+# the first one to start uploads the YouTube Short scheduled for the slot, uploads the Instagram Reel so it is
+# processed, then waits and publishes it on the exact minute. The later runs queue behind it, see the slot is used and
+# stop. "paused" in schedule.json stops it. If you change the times, change schedule.json too.
+# Needs the IG_PULSE_ACCESS_TOKEN, IG_PULSE_USER_ID, YT_PULSE_CLIENT_ID, YT_PULSE_CLIENT_SECRET and
+# YT_PULSE_REFRESH_TOKEN secrets. Until all five exist it posts nothing. The Instagram token is renewed every Monday
+# (needs GH_PAT).
+on:
+  schedule:
+    # 06:00 IST slot (00:30 UTC)
+    - cron: '27 20 * * *'
+    - cron: '27 21 * * *'
+    - cron: '27 22 * * *'
+    # 20:30 IST slot (15:00 UTC)
+    - cron: '57 10 * * *'
+    - cron: '57 11 * * *'
+    - cron: '57 12 * * *'
+    # 01:00 IST slot (19:30 UTC)
+    - cron: '27 15 * * *'
+    - cron: '27 16 * * *'
+    - cron: '27 17 * * *'
+    # Monday: renew the Instagram token
+    - cron: '45 3 * * 1'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Only show what would be posted (checks both sign-ins)'
+        type: boolean
+        default: true
+      reel:
+        description: 'Post this Musclyth reel now on both, e.g. 008-creatine (empty = the next one, if "post now" is ticked)'
+        required: false
+        default: ''
+      post_now:
+        description: 'Post the next reel straight away instead of waiting for its slot'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: post-pulse
+  cancel-in-progress: false
+
+jobs:
+  post:
+    if: github.event.schedule != '45 3 * * 1'
+    runs-on: ubuntu-latest
+    timeout-minutes: 320
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install -q requests
+      - name: Post the Musclyth reel that is due
+        env:
+          IG_PULSE_ACCESS_TOKEN: ${{ secrets.IG_PULSE_ACCESS_TOKEN }}
+          IG_PULSE_USER_ID: ${{ secrets.IG_PULSE_USER_ID }}
+          YT_CLIENT_ID: ${{ secrets.YT_PULSE_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_PULSE_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_PULSE_REFRESH_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git pull -q --rebase || true
+          python tools/pulse_post.py \
+            ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '--dry-run' || '' }} \
+            ${{ (github.event_name == 'workflow_dispatch' && inputs.post_now) && '--now' || '' }} \
+            ${{ (github.event_name == 'workflow_dispatch' && inputs.reel != '') && format('--id {0}', inputs.reel) || '' }}
+      - name: Record it in pulsereels/posted.json
+        if: always()
+        run: |
+          git config user.name "pulse-bot"; git config user.email "pulse-bot@users.noreply.github.com"
+          git add pulsereels/posted.json 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -q -m "Musclyth reel posted [skip ci]"
+            for i in 1 2 3 4; do git pull --rebase -q && git push -q && break; sleep $((i * 5)); done
+          fi
+
+  refresh-token:
+    if: github.event.schedule == '45 3 * * 1'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Renew and store the Musclyth Instagram token
+        env:
+          IG_PULSE_ACCESS_TOKEN: ${{ secrets.IG_PULSE_ACCESS_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          if [ -z "$IG_PULSE_ACCESS_TOKEN" ]; then echo "No IG_PULSE_ACCESS_TOKEN yet; nothing to renew."; exit 0; fi
+          NEW=$(curl -sf "https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${IG_PULSE_ACCESS_TOKEN}" | python3 -c "import sys,json; print(json.load(sys.stdin)['access_token'])")
+          echo "::add-mask::$NEW"
+          if [ -z "$GH_TOKEN" ]; then echo "::warning::Token renewed with Instagram but not saved: add a GH_PAT secret (Secrets: read and write)."; exit 0; fi
+          gh secret set IG_PULSE_ACCESS_TOKEN --body "$NEW" --repo "$GITHUB_REPOSITORY"
+          echo "Token renewed and saved."
