@@ -1,0 +1,10 @@
+{ "lines": [
+ {"shot":"hook","cap":"","say":"Your wedding ring just got cancelled. In front of everyone.","cold":true},
+ {"shot":"rent","cap":"YOU *RENTED IT.","say":"You rented it. Everyone does now. Ninety dollars a month."},
+ {"shot":"vows","cap":"SHE SAYS *I DO.","say":"She says I do. Then your phone buzzes."},
+ {"shot":"lock","cap":"THE RING *LOCKS.","say":"The ring locks. It starts to flash red."},
+ {"shot":"guests","cap":"EVERYONE *SAW.","say":"Two hundred guests watch it happen."},
+ {"shot":"off","cap":"IT WON'T *COME OFF.","say":"She tries to take it off. It won't come off."},
+ {"shot":"tower","cap":"ONE *OWNER.","say":"Across the city, a million rings belong to one tower."},
+ {"shot":"end","cap":"","say":"Would you still say yes? Write it in the comments."}
+] }
