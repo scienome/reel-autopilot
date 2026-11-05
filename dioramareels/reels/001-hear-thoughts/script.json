@@ -1,0 +1,11 @@
+{ "lines": [
+ {"shot":"hook","cap":"","say":"Starting now, everyone can hear your thoughts.","cold":true},
+ {"shot":"wide","cap":"STUCK IN AN *ELEVATOR","say":"And you're stuck in an elevator with your neighbor."},
+ {"shot":"think","cap":"YOUR FIRST *THOUGHT:","say":"Your first thought? Is that a wig?"},
+ {"shot":"turn","cap":"DORIS *TURNS.","say":"Doris turns. Slowly."},
+ {"shot":"rule1","cap":"RULE *#1:","say":"Rule one. Think about something boring."},
+ {"shot":"rule2","cap":"RULE *#2:","say":"Rule two. Do not think about the wig."},
+ {"shot":"twist","cap":"THAT'S *NOT YOURS.","say":"Then you hear a thought that isn't yours."},
+ {"shot":"reveal","cap":"","say":"I know about the wifi."},
+ {"shot":"end","cap":"","say":"What thought would ruin your life? Write it in the comments."}
+] }
