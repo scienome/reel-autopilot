@@ -1,0 +1,9 @@
+{ "lines": [
+ {"shot":"hook","cap":"","say":"The building is on fire. And the elevator just asked for your card.","cold":true},
+ {"shot":"tower","cap":"FLOOR *NINE.","say":"Floor nine. The stairs are gone."},
+ {"shot":"lift","cap":"PREMIUM *ONLY.","say":"Premium members only. Your plan expired on Tuesday."},
+ {"shot":"pay","cap":"YOUR LAST *$50.","say":"You pay your last fifty dollars. That buys one seat."},
+ {"shot":"doris","cap":"DORIS IS *STILL HERE.","say":"Then you hear Doris, from six C, calling your name."},
+ {"shot":"close","cap":"ONE *SEAT.","say":"The doors are closing. Seven seconds."},
+ {"shot":"end","cap":"","say":"Do you give her your seat? Write it in the comments."}
+] }
