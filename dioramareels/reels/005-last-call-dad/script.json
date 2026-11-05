@@ -1,0 +1,10 @@
+{ "lines": [
+ {"shot":"hook","cap":"","say":"Your dead father just asked you for a payment.","cold":true},
+ {"shot":"sunday","cap":"EVERY *SUNDAY.","say":"He died two years ago. Every Sunday, you still call him."},
+ {"shot":"voice","cap":"IT'S *HIS VOICE.","say":"It's his voice. His jokes. He remembers your birthday."},
+ {"shot":"price","cap":"THE PRICE *DOUBLED.","say":"Today, the price doubled. You can't pay."},
+ {"shot":"cut","cap":"","say":"He's halfway through a sentence. I'm so proud of"},
+ {"shot":"silence","cap":"*SILENCE.","say":"Your trial has ended."},
+ {"shot":"tower","cap":"A MILLION *FAMILIES.","say":"Tonight, a million families are on the same plan."},
+ {"shot":"end","cap":"","say":"Would you keep paying? Write it in the comments."}
+] }
