@@ -1,0 +1,9 @@
+{ "lines": [
+ {"shot":"hook","cap":"","say":"Everyone on floor nine is dead. They still pay rent.","cold":true},
+ {"shot":"tower","cap":"EVERY *NIGHT.","say":"Three oh seven. The lights on floor nine come on. Every night."},
+ {"shot":"cheap","cap":"$1 A *MONTH.","say":"You moved in because it was cheap. One dollar a month."},
+ {"shot":"ledger","cap":"ALL *PAID.","say":"Then you find the rent book. Died nineteen ninety four. Paid."},
+ {"shot":"door","cap":"THEY *CAN'T CANCEL.","say":"Behind you, a door opens. They can't cancel. Nobody can."},
+ {"shot":"phone","cap":"*FOREVER.","say":"Your phone buzzes. Lease renewed. Forever."},
+ {"shot":"end","cap":"","say":"Would you stay? Write it in the comments."}
+] }
