@@ -1,0 +1,10 @@
+{ "lines": [
+ {"shot":"hook","cap":"","say":"Your mother has four minutes left. And you're forty dollars short.","cold":true},
+ {"shot":"room","cap":"HER PLAN *EXPIRED.","say":"Her care plan expired at midnight. The machine doesn't care."},
+ {"shot":"bank","cap":"PLEASE *HOLD.","say":"You call the bank. A robot tells you to hold."},
+ {"shot":"run","cap":"SOLD: YOUR *JACKET.","say":"So you run. You sell your jacket. Twenty dollars."},
+ {"shot":"doris","cap":"IT'S ALL *SHE HAS.","say":"Your neighbor Doris gives you ten. It's all she has."},
+ {"shot":"tower","cap":"HE'S FINISHING *DINNER.","say":"Above the city, the man who owns this hospital finishes dinner."},
+ {"shot":"back","cap":"STILL *$10 SHORT.","say":"Thirty seconds. You're still ten dollars short."},
+ {"shot":"end","cap":"","say":"Who would you call? Write it in the comments."}
+] }
