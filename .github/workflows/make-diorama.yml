@@ -6,6 +6,10 @@ on:
       reel:
         description: 'Reel ids, space separated'
         required: true
+      voice_only:
+        description: 'Only make and save the voice, skip the video (render on the PC)'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -33,12 +37,15 @@ jobs:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
           GH_TOKEN: ${{ github.token }}
           REELS: ${{ inputs.reel }}
+          VOICE_ONLY: ${{ inputs.voice_only }}
         run: |
           git config user.name "diorama-bot"; git config user.email "diorama-bot@users.noreply.github.com"
+          FLAG=""; if [ "$VOICE_ONLY" = "true" ]; then FLAG="--voice-only"; fi
           for id in $REELS; do
-            python tools/diorama_make.py "$id"
+            python tools/diorama_make.py "$id" $FLAG
             git add "dioramareels/reels/$id/voice_lines"
             git diff --cached --quiet || (git commit -q -m "Voice for $id [skip ci]" && for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; sleep $((i * 3)); done)
+            if [ -n "$FLAG" ]; then continue; fi
             gh release delete "diorama-$id" --yes --cleanup-tag >/dev/null 2>&1 || true
             gh release create "diorama-$id" "out/$id/$id.mp4" --title "diorama $id" --notes "Made by hand. Not posted."
           done
