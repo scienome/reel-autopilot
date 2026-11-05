@@ -1,7 +1,7 @@
 name: Post Musclyth reels (Instagram + YouTube)
 # Posts the Musclyth bodybuilding science reels (pulsereels/) to the Musclyth Instagram account AND the Musclyth
-# YouTube channel at the same moment, 3 a day, 30 minutes before the US, India and UK peaks: 06:00, 20:30 and 01:00 IST
-# (00:30, 15:00 and 19:30 UTC), in pulsereels/schedule.json "queue" order, from their pulse-<id> Releases
+# YouTube channel at the same moment, 4 a day, 30 minutes before the UK, US, India and US-lunch peaks: 01:00, 06:00, 20:30 and 22:00 IST
+# (19:30, 00:30, 15:00 and 16:30 UTC), in pulsereels/schedule.json "queue" order, from their pulse-<id> Releases
 # (tools/pulse_post.py). GitHub starts scheduled runs late, so every slot has three runs, 4, 3 and 2 hours before it;
 # the first one to start uploads the YouTube Short scheduled for the slot, uploads the Instagram Reel so it is
 # processed, then waits and publishes it on the exact minute. The later runs queue behind it, see the slot is used and
@@ -23,6 +23,10 @@ on:
     - cron: '27 15 * * *'
     - cron: '27 16 * * *'
     - cron: '27 17 * * *'
+    # 22:00 IST slot (16:30 UTC)
+    - cron: '27 12 * * *'
+    - cron: '27 13 * * *'
+    - cron: '27 14 * * *'
     # Monday: renew the Instagram token
     - cron: '45 3 * * 1'
   workflow_dispatch:
