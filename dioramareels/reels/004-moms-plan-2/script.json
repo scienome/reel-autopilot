@@ -1,0 +1,10 @@
+{ "lines": [
+ {"shot":"hook","cap":"","say":"Twenty seconds left. Ten dollars short. Then someone knocks.","cold":true},
+ {"shot":"doris","cap":"SHE TOLD THE *BUILDING.","say":"It's Doris. She told the whole building."},
+ {"shot":"floors","cap":"ONE DOLLAR AT A *TIME.","say":"One dollar from six C. Two from a kid in three A."},
+ {"shot":"floors2","cap":"EVERY *DOOR.","say":"Every floor. Every door."},
+ {"shot":"paid","cap":"PAYMENT *ACCEPTED.","say":"Two seconds left. Payment accepted."},
+ {"shot":"eyes","cap":"SHE OPENS HER *EYES.","say":"Your mother opens her eyes."},
+ {"shot":"tower","cap":"HE SAW THE *PAYMENT.","say":"High above the city, the owner sees it too. And he raises the price."},
+ {"shot":"end","cap":"","say":"Next month, it's double. What do you do? Write it in the comments."}
+] }
