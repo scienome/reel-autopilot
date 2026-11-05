@@ -48,6 +48,9 @@ def main(rid):
         last = ln['shot']
     for f in set(os.listdir(takes)) - keep:
         os.remove(os.path.join(takes, f))
+    if '--voice-only' in sys.argv:
+        print(f'{rid}: voice saved, video skipped')
+        return
     shots = {}
     for ln in timed:
         shots.setdefault(ln['shot'], round(max(0, ln['t0'] - LEAD_IN), 3))
