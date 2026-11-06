@@ -1,0 +1,28 @@
+{
+ "music-2b3fbe5039e6.mp3": {
+  "prompt": "Bouncy comedic tuba and pizzicato with hiccup-like staccato rhythm, no vocals",
+  "music_length_ms": 29960,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-5b3c8358ca25.mp3": {
+  "text": "cartoon hiccup",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-c365a9ddb65b.mp3": {
+  "text": "pig oink",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-59c1b0ba43a9.mp3": {
+  "text": "spring boing",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-83f72382f160.mp3": {
+  "text": "silence then ding",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
