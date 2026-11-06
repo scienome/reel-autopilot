@@ -1,0 +1,28 @@
+{
+ "music-75dbcd738566.mp3": {
+  "prompt": "Quirky lab music with xylophone and pizzicato strings, WWII era, no vocals",
+  "music_length_ms": 28200,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-8d6768c8935b.mp3": {
+  "text": "pigeon cooing",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-19b6e3c2288b.mp3": {
+  "text": "rapid pecking taps",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-734e44de0108.mp3": {
+  "text": "success ding",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-42e9fc404c9c.mp3": {
+  "text": "crowd laughter short",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
