@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Sneaky spy jazz, upright bass and muted trumpet, comedic, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "spy",
+   "offset": 0.0,
+   "prompt": "spy theme sting",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b2",
+   "word": "microphone",
+   "offset": 0.0,
+   "prompt": "electronic beep",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "orders",
+   "offset": 0.0,
+   "prompt": "cat hiss",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "practical",
+   "offset": 0.0,
+   "prompt": "paper stamp",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

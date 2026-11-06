@@ -1,0 +1,62 @@
+[
+ {
+  "chapter": "A",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "A broke man declared himself",
+     "Emperor of the United States."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "In eighteen fifty nine,",
+     "Joshua Norton had lost his fortune."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "So he sent a newspaper his announcement.",
+     "It printed it."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "He printed his own money,",
+     "and some shops accepted it."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "He issued royal orders,",
+     "like building a bridge across the bay."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "Decades later,",
+     "a bridge was built there."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "When he died,",
+     "thousands came to his funeral."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Would you have accepted his money?"
+    ]
+   }
+  ]
+ }
+]

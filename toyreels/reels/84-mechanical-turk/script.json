@@ -1,0 +1,62 @@
+[
+ {
+  "chapter": "A",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "A chess robot",
+     "beat Napoleon."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "It was called the Turk,",
+     "built in seventeen seventy."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "It toured Europe",
+     "and beat almost everyone."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "It reportedly beat Napoleon,",
+     "and Benjamin Franklin."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "People were sure",
+     "a machine was thinking."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "It wasn’t.",
+     "A human chess master was hiding inside."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "The robot was a hoax",
+     "for over fifty years."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Would you have spotted the trick?"
+    ]
+   }
+  ]
+ }
+]

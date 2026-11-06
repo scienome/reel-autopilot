@@ -1,0 +1,62 @@
+[
+ {
+  "chapter": "The",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "The CIA turned a cat",
+     "into a spy."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "In the nineteen sixties,",
+     "they wanted ears near Soviet officials."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "A vet put a microphone",
+     "and a radio inside the cat."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "A former officer said it cost",
+     "about twenty million dollars."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "First mission:",
+     "listen to two men in a park."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "The cat did not take orders.",
+     "Legend says a taxi ended the mission."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "A CIA memo said",
+     "cats were not practical spies."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Would your cat take orders?"
+    ]
+   }
+  ]
+ }
+]

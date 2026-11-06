@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Playful ragtime piano with light train rhythm, early 1900s, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "mailed",
+   "offset": 0.0,
+   "prompt": "postal stamp thud",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "train",
+   "offset": 0.0,
+   "prompt": "old steam train whistle",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "safely",
+   "offset": 0.0,
+   "prompt": "cartoon delivery bell ding",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "banned",
+   "offset": 0.0,
+   "prompt": "rubber stamp slam",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

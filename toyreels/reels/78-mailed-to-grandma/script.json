@@ -1,0 +1,62 @@
+[
+ {
+  "chapter": "A",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "A little girl was mailed",
+     "to her grandma."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "In nineteen fourteen,",
+     "her parents bought fifty three cents of stamps."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "The stamps went",
+     "on her coat."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "She rode in the mail car",
+     "of a train."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "A relative who worked as a mail clerk",
+     "kept an eye on her."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "She was delivered",
+     "safely to grandma."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "Soon after,",
+     "the Post Office banned mailing people."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Who would you mail?"
+    ]
+   }
+  ]
+ }
+]

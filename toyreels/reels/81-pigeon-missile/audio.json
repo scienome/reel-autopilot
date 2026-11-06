@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Quirky lab music with xylophone and pizzicato strings, WWII era, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "pigeons",
+   "offset": 0.0,
+   "prompt": "pigeon cooing",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b2",
+   "word": "peck",
+   "offset": 0.0,
+   "prompt": "rapid pecking taps",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b4",
+   "word": "worked",
+   "offset": 0.0,
+   "prompt": "success ding",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "seriously",
+   "offset": 0.0,
+   "prompt": "crowd laughter short",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

@@ -1,0 +1,62 @@
+[
+ {
+  "chapter": "The",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "The US Army strapped bombs",
+     "to bats."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "The plan:",
+     "drop thousands of bats over Japan in World War Two."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "Each bat carried",
+     "a tiny fire bomb."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "During tests in nineteen forty three,",
+     "some bats escaped."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "They roosted under",
+     "the base’s buildings and fuel tank."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "Then the bombs went off.",
+     "The test base caught fire."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "The project was cancelled,",
+     "overtaken by the atomic bomb."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Worst idea in military history?"
+    ]
+   }
+  ]
+ }
+]

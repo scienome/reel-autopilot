@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Elegant 18th-century harpsichord minuet with comedic clockwork ticks, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "robot",
+   "offset": 0.0,
+   "prompt": "clockwork gears whirring",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "napoleon",
+   "offset": 0.0,
+   "prompt": "checkmate dramatic sting",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "inside",
+   "offset": 0.0,
+   "prompt": "wooden cabinet door creak",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "hoax",
+   "offset": 0.0,
+   "prompt": "comedic gasp",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Whimsical woodland music box and harp, slightly mysterious, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "fooled",
+   "offset": 0.0,
+   "prompt": "magical sparkle chime",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b1",
+   "word": "photos",
+   "offset": 0.0,
+   "prompt": "old camera shutter click",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "paper",
+   "offset": 0.0,
+   "prompt": "paper rustle",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "seen",
+   "offset": 0.0,
+   "prompt": "mysterious twinkle",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

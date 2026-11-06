@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Tense comedic military snare and low brass, WWII newsreel feel, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "bats",
+   "offset": 0.0,
+   "prompt": "bat wings flutter swarm",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "escaped",
+   "offset": 0.0,
+   "prompt": "flapping wings escape",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "fire",
+   "offset": 0.0,
+   "prompt": "fire whoosh crackle",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "cancelled",
+   "offset": 0.0,
+   "prompt": "sad trombone short",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Pompous royal fanfare played on toy instruments, 1800s comedic, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "emperor",
+   "offset": 0.0,
+   "prompt": "royal trumpet fanfare",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "money",
+   "offset": 0.0,
+   "prompt": "cash register ding",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "bridge",
+   "offset": 0.0,
+   "prompt": "construction hammering",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "thousands",
+   "offset": 0.0,
+   "prompt": "large crowd murmur",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

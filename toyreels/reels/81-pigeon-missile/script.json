@@ -1,0 +1,62 @@
+[
+ {
+  "chapter": "A",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "A famous scientist trained pigeons",
+     "to steer missiles."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "In World War Two,",
+     "B F Skinner put three pigeons in a missile’s nose."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "They learned to peck",
+     "at a picture of the target."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "Each peck",
+     "turned the missile."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "In tests,",
+     "it worked surprisingly well."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "The military cancelled it",
+     "in nineteen forty four."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "Skinner said the problem was",
+     "nobody took it seriously."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Would you trust a pigeon pilot?"
+    ]
+   }
+  ]
+ }
+]
