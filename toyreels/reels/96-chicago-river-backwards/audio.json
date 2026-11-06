@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Busy industrial orchestral with comedic brass, early 1900s, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "backwards",
+   "offset": 0.0,
+   "prompt": "reverse whoosh",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b2",
+   "word": "sewage",
+   "offset": 0.0,
+   "prompt": "toilet flush",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "sued",
+   "offset": 0.0,
+   "prompt": "gavel bang",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "lost",
+   "offset": 0.0,
+   "prompt": "sad trombone",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

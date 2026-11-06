@@ -1,0 +1,63 @@
+[
+ {
+  "chapter": "A",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "A Roman emperor",
+     "taxed pee."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "Romans collected urine",
+     "from public pots."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "Cleaners used it",
+     "to wash and whiten clothes."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "Emperor Vespasian",
+     "put a tax on it."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "His son complained.",
+     "It was disgusting."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "Vespasian held a coin to his nose",
+     "and asked: does it smell?"
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "That’s where the saying comes from:",
+     "money doesn’t stink."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "What’s the weirdest tax",
+     "you know?"
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,63 @@
+[
+ {
+  "chapter": "Chicago",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "This city made a river",
+     "flow backwards."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "Chicago drank water",
+     "from Lake Michigan."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "But its river carried the city’s sewage",
+     "straight into that lake."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "In nineteen hundred,",
+     "engineers dug a canal and opened the gates."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "The river reversed,",
+     "carrying the sewage away to the Mississippi."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "Downstream,",
+     "Missouri sued."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "In nineteen oh six,",
+     "Missouri lost."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Genius,",
+     "or just moving the problem?"
+    ]
+   }
+  ]
+ }
+]

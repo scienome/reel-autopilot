@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Bouncy comedic tuba and pizzicato with hiccup-like staccato rhythm, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "hiccups",
+   "offset": 0.0,
+   "prompt": "cartoon hiccup",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b1",
+   "word": "hog",
+   "offset": 0.0,
+   "prompt": "pig oink",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "cure",
+   "offset": 0.0,
+   "prompt": "spring boing",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "stopped",
+   "offset": 0.0,
+   "prompt": "silence then ding",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

@@ -1,0 +1,63 @@
+[
+ {
+  "chapter": "This",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "This man had hiccups",
+     "for sixty eight years."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "In nineteen twenty two,",
+     "Charles Osborne was lifting a hog."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "He started hiccuping.",
+     "And didn’t stop."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "Doctors tried everything.",
+     "No cure worked."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "Meanwhile he married twice,",
+     "and had eight children."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "Then, in nineteen ninety,",
+     "the hiccups just stopped."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "It’s still the world record",
+     "for the longest hiccups."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "What’s your best",
+     "hiccup cure?"
+    ]
+   }
+  ]
+ }
+]

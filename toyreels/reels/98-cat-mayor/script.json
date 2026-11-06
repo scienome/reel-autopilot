@@ -1,0 +1,63 @@
+[
+ {
+  "chapter": "A",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "A cat was a town’s mayor",
+     "for twenty years."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "The town was Talkeetna,",
+     "in Alaska."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "The town has no human mayor.",
+     "So the cat, Stubbs, got the title."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "Tourists came from all over",
+     "to meet him."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "His office was",
+     "the general store."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "No scandals.",
+     "No broken promises."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "Twenty years in office.",
+     "A political career most mayors would envy."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Would you vote",
+     "for a cat?"
+    ]
+   }
+  ]
+ }
+]

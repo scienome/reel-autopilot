@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Warm small-town folk guitar and harmonica, gentle and funny, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "mayor",
+   "offset": 0.0,
+   "prompt": "cat meow cute",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "tourists",
+   "offset": 0.0,
+   "prompt": "crowd cheering small",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "scandals",
+   "offset": 0.0,
+   "prompt": "cash register no-sale",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "twenty",
+   "offset": 0.0,
+   "prompt": "celebration party horn",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

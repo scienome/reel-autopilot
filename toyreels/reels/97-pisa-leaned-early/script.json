@@ -1,0 +1,63 @@
+[
+ {
+  "chapter": "The",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "This tower was leaning",
+     "before it was even finished."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "Pisa started building it",
+     "in eleven seventy three."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "Five years in, at floor two,",
+     "it started sinking into soft ground."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "Work stopped for decades,",
+     "because of wars."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "When building restarted,",
+     "it was still tilting."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "So they built the upper floors",
+     "taller on one side, to curve it back."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "It took about two hundred years.",
+     "The mistake made it famous."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Would you have",
+     "kept building?"
+    ]
+   }
+  ]
+ }
+]

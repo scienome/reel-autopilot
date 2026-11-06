@@ -1,0 +1,63 @@
+[
+ {
+  "chapter": "A",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "This ruler",
+     "taxed beards."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "In sixteen ninety eight,",
+     "Peter the Great of Russia wanted a modern look."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "Beards were out.",
+     "Unless you paid."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "Payers carried a beard token",
+     "as proof."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "Refuse to pay,",
+     "and you could be shaved on the spot."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "Rich merchants paid",
+     "up to one hundred rubles a year."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "Your face",
+     "needed a permit."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "How much would you pay",
+     "to keep yours?"
+    ]
+   }
+  ]
+ }
+]

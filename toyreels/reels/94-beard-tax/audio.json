@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Russian folk balalaika played comically fast, 1600s court, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "beards",
+   "offset": 0.0,
+   "prompt": "scissors snip",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "token",
+   "offset": 0.0,
+   "prompt": "coin clink",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b4",
+   "word": "shaved",
+   "offset": 0.0,
+   "prompt": "razor buzz",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "permit",
+   "offset": 0.0,
+   "prompt": "rubber stamp",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Italian mandolin tarantella, comedic and bouncy, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "leaning",
+   "offset": 0.0,
+   "prompt": "creaking wood groan",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b2",
+   "word": "sinking",
+   "offset": 0.0,
+   "prompt": "deep rumble",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "curve",
+   "offset": 0.0,
+   "prompt": "construction hammering",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "famous",
+   "offset": 0.0,
+   "prompt": "crowd cheer",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

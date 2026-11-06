@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Grand French military march played comically on kazoos and brass, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "short",
+   "offset": 0.0,
+   "prompt": "record scratch",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "inches",
+   "offset": 0.0,
+   "prompt": "measuring tape zip",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "cartoons",
+   "offset": 0.0,
+   "prompt": "pencil scribbling",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "little",
+   "offset": 0.0,
+   "prompt": "crowd laughing",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Pompous Roman fanfare with comedic tuba, ancient empire parody, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "pee",
+   "offset": 0.0,
+   "prompt": "liquid pouring comedic",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "tax",
+   "offset": 0.0,
+   "prompt": "coins jingling",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "smell",
+   "offset": 0.0,
+   "prompt": "comedic sniff",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "stink",
+   "offset": 0.0,
+   "prompt": "dramatic sting",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

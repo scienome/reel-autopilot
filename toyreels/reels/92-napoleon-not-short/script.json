@@ -1,0 +1,63 @@
+[
+ {
+  "chapter": "Napoleon",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "Napoleon",
+     "wasn’t short."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "He was about five foot seven.",
+     "Average for his time."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "So where did",
+     "the tiny Napoleon come from?"
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "First, French inches",
+     "were longer than English inches."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "His height in French units",
+     "sounded small in English."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "Second, British cartoons",
+     "drew him tiny on purpose."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "They called him",
+     "Little Boney. It stuck."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "What other history fact",
+     "is fake?"
+    ]
+   }
+  ]
+ }
+]
