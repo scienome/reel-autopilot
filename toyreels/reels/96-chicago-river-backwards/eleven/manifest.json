@@ -1,0 +1,28 @@
+{
+ "music-2400d8d9e002.mp3": {
+  "prompt": "Busy industrial orchestral with comedic brass, early 1900s, no vocals",
+  "music_length_ms": 29960,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-43522d6989de.mp3": {
+  "text": "reverse whoosh",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-89b58f7783b6.mp3": {
+  "text": "toilet flush",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-a8e2eb03be83.mp3": {
+  "text": "gavel bang",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-6358af2cc682.mp3": {
+  "text": "sad trombone",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
