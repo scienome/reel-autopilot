@@ -183,7 +183,7 @@ Folder: [`dave-reels/`](dave-reels/)
 | [43-dave-grows-an-inch](dave-reels/43-dave-grows-an-inch.mp4) | What if you grew 1 inch every day? | Waiting to post |
 | [44-gimli-glider](dave-reels/44-gimli-glider.mp4) | The jet that ran out of fuel because of maths | Waiting to post |
 
-## Toy reels (Brick Toy) (77)
+## Toy reels (Brick Toy) (84)
 Folder: [`toy-reels/`](toy-reels/)
 
 | Video | Title | Status |
@@ -265,6 +265,13 @@ Folder: [`toy-reels/`](toy-reels/)
 | [75-war-of-jenkins-ear](toy-reels/75-war-of-jenkins-ear.mp4) | Britain Went To War Over One Ear 👂⚔️ | Waiting to post |
 | [76-stone-of-scone-heist](toy-reels/76-stone-of-scone-heist.mp4) | Four Students Stole Britain's Coronation Stone 🪨 | Posted (Instagram + YouTube) |
 | [77-mona-lisa-stolen](toy-reels/77-mona-lisa-stolen.mp4) | The Man Who Stole The Mona Lisa 🖼️ | Posted (Instagram + YouTube) |
+| [85-clever-hans](toy-reels/85-clever-hans.mp4) | The Horse That Did Math. Sort Of 🐴 | Waiting to post |
+| [86-great-moon-hoax](toy-reels/86-great-moon-hoax.mp4) | A Newspaper Said Bat-People Lived On The Moon 🌙 | Waiting to post |
+| [87-dagen-h-sweden](toy-reels/87-dagen-h-sweden.mp4) | An Entire Country Switched Driving Sides Overnight 🚗 | Waiting to post |
+| [88-lake-peigneur](toy-reels/88-lake-peigneur.mp4) | An Oil Rig Drilled Into A Mine. The Whole Lake Vanished 🌀 | Waiting to post |
+| [89-kentucky-meat-shower](toy-reels/89-kentucky-meat-shower.mp4) | It Rained Meat In Kentucky 🥩 | Waiting to post |
+| [90-1904-olympic-marathon](toy-reels/90-1904-olympic-marathon.mp4) | The Wildest Olympic Marathon Ever 🏃 | Waiting to post |
+| [91-byron-bear](toy-reels/91-byron-bear.mp4) | College Banned Dogs. So Lord Byron Got A Bear 🐻 | Waiting to post |
 
 ## Mechanic Shorts (YouTube) (25)
 Folder: [`mechanic-shorts/`](mechanic-shorts/)
