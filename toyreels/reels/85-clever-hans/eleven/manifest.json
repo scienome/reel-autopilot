@@ -1,0 +1,28 @@
+{
+ "music-339a11cff929.mp3": {
+  "prompt": "Cheerful circus waltz with clip-clop percussion, early 1900s, no vocals",
+  "music_length_ms": 35080,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-70936d8bb242.mp3": {
+  "text": "horse whinny",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-fb5a8f4a6ddd.mp3": {
+  "text": "hoof taps on wood",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-250fba1820ac.mp3": {
+  "text": "dramatic reveal sting",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-677e3472bfb1.mp3": {
+  "text": "record scratch",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
