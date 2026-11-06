@@ -1,0 +1,28 @@
+{
+ "music-96a413d1329a.mp3": {
+  "prompt": "Elegant 18th-century harpsichord minuet with comedic clockwork ticks, no vocals",
+  "music_length_ms": 27400,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-048a096f7c74.mp3": {
+  "text": "clockwork gears whirring",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-1672e4ce2538.mp3": {
+  "text": "checkmate dramatic sting",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-4a2158214ec8.mp3": {
+  "text": "wooden cabinet door creak",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-25f6a8a9be59.mp3": {
+  "text": "comedic gasp",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
