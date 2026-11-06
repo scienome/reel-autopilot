@@ -1,0 +1,28 @@
+{
+ "music-17f155b9cef5.mp3": {
+  "prompt": "Frantic ragtime chase music, piano and honky-tonk, no vocals",
+  "music_length_ms": 32360,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-476011399cf0.mp3": {
+  "text": "old car horn honk",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-6c556b3e6d9d.mp3": {
+  "text": "glass bottle clink",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-22ce66334bbe.mp3": {
+  "text": "cartoon snore",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-76f1aced127e.mp3": {
+  "text": "finish line whistle",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
