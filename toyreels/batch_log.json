@@ -105,5 +105,33 @@
   ],
   "status": "done",
   "updated": "2026-11-02T20:23:59Z"
+ },
+ {
+  "batch": "2026-11-06",
+  "ids": [
+   "78-mailed-to-grandma",
+   "79-bat-bombs",
+   "80-acoustic-kitty",
+   "81-pigeon-missile",
+   "82-emperor-norton",
+   "83-cottingley-fairies",
+   "84-mechanical-turk",
+   "85-clever-hans",
+   "86-great-moon-hoax",
+   "87-dagen-h-sweden",
+   "88-lake-peigneur",
+   "89-kentucky-meat-shower",
+   "90-1904-olympic-marathon",
+   "91-byron-bear",
+   "92-napoleon-not-short",
+   "93-68-years-hiccups",
+   "94-beard-tax",
+   "95-urine-tax",
+   "96-chicago-river-backwards",
+   "97-pisa-leaned-early",
+   "98-cat-mayor"
+  ],
+  "status": "in_progress",
+  "updated": "2026-11-06T02:20:00Z"
  }
 ]
