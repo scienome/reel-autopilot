@@ -1,0 +1,28 @@
+{
+ "music-bfc3415de4b8.mp3": {
+  "prompt": "Russian folk balalaika played comically fast, 1600s court, no vocals",
+  "music_length_ms": 27320,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-cfdefe31dd1b.mp3": {
+  "text": "scissors snip",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-0dadef8ed954.mp3": {
+  "text": "coin clink",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-e44008ccd7c4.mp3": {
+  "text": "razor buzz",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-79f79e48fdb3.mp3": {
+  "text": "rubber stamp",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
