@@ -2,22 +2,82 @@
  "account": "TOY",
  "username": "toyboxtheory",
  "followers": 15,
- "fetched": "2026-11-05T03:26:06.591122Z",
+ "fetched": "2026-11-06T03:27:08.562512Z",
  "reels": [
   {
-   "id": "18080650904403663",
-   "timestamp": "2026-11-05T00:30:01+0000",
+   "id": "17915123811552227",
+   "timestamp": "2026-11-06T00:30:01+0000",
+   "like_count": 1,
+   "comments_count": 1,
+   "permalink": "https://www.instagram.com/reel/DfX-V5MFcQN/",
+   "caption": "America woke up to the news that the Liberty Bell was sold 🔔\nWait for the ending 👀\n\nTrue s",
+   "views": 300,
+   "reach": 250,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 2,
+   "ig_reels_avg_watch_time": 9694,
+   "ig_reels_video_view_total_time": 2443078
+  },
+  {
+   "id": "18049888325824951",
+   "timestamp": "2026-11-05T19:30:01+0000",
+   "like_count": 13,
+   "comments_count": 1,
+   "permalink": "https://www.instagram.com/reel/DfXdk8EDE3Q/",
+   "caption": "He got rich selling rocks as pets 🪨\nWait for the ending 👀\n\nTrue story. In 1975 an ad man s",
+   "views": 1527,
+   "reach": 1306,
+   "saved": 1,
+   "shares": 0,
+   "total_interactions": 15,
+   "ig_reels_avg_watch_time": 9119,
+   "ig_reels_video_view_total_time": 11754978
+  },
+  {
+   "id": "18350675998280062",
+   "timestamp": "2026-11-05T15:00:01+0000",
    "like_count": 3,
    "comments_count": 1,
-   "permalink": "https://www.instagram.com/reel/DfVZlemFTfD/",
-   "caption": "She convinced the king's doctors she was giving birth to rabbits 🐇\nWait for the ending 👀\n\n",
-   "views": 339,
-   "reach": 284,
+   "permalink": "https://www.instagram.com/reel/DfW80y7DE58/",
+   "caption": "This chicken lived 18 months without a head 🐔\nWait for the ending 👀\n\nTrue story. In 1945 a",
+   "views": 199,
+   "reach": 175,
    "saved": 0,
    "shares": 0,
    "total_interactions": 4,
-   "ig_reels_avg_watch_time": 8968,
-   "ig_reels_video_view_total_time": 2600975
+   "ig_reels_avg_watch_time": 7279,
+   "ig_reels_video_view_total_time": 1273911
+  },
+  {
+   "id": "18130300228825295",
+   "timestamp": "2026-11-05T07:00:01+0000",
+   "like_count": 30,
+   "comments_count": 1,
+   "permalink": "https://www.instagram.com/reel/DfWGi5XgVH_/",
+   "caption": "Workers dug up a 10-foot stone giant on a farm 🗿\nWait for the ending 👀\n\nTrue story. In 186",
+   "views": 2333,
+   "reach": 1862,
+   "saved": 1,
+   "shares": 0,
+   "total_interactions": 32,
+   "ig_reels_avg_watch_time": 12722,
+   "ig_reels_video_view_total_time": 23893377
+  },
+  {
+   "id": "18080650904403663",
+   "timestamp": "2026-11-05T00:30:01+0000",
+   "like_count": 41,
+   "comments_count": 1,
+   "permalink": "https://www.instagram.com/reel/DfVZlemFTfD/",
+   "caption": "She convinced the king's doctors she was giving birth to rabbits 🐇\nWait for the ending 👀\n\n",
+   "views": 1943,
+   "reach": 1550,
+   "saved": 1,
+   "shares": 1,
+   "total_interactions": 46,
+   "ig_reels_avg_watch_time": 12413,
+   "ig_reels_video_view_total_time": 19153731
   },
   {
    "id": "18058295339808300",
@@ -26,13 +86,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfUX8zXko77/",
    "caption": "America and Britain nearly went to war over one pig 🐖\nWait for the ending 👀\n\nTrue story. I",
-   "views": 298,
-   "reach": 254,
+   "views": 327,
+   "reach": 278,
    "saved": 0,
    "shares": 0,
    "total_interactions": 3,
-   "ig_reels_avg_watch_time": 8670,
-   "ig_reels_video_view_total_time": 2193634
+   "ig_reels_avg_watch_time": 8766,
+   "ig_reels_video_view_total_time": 2454615
   },
   {
    "id": "18028262114873545",
@@ -46,8 +106,8 @@
    "saved": 0,
    "shares": 0,
    "total_interactions": 23,
-   "ig_reels_avg_watch_time": 10097,
-   "ig_reels_video_view_total_time": 19266178
+   "ig_reels_avg_watch_time": 10092,
+   "ig_reels_video_view_total_time": 19266457
   },
   {
    "id": "18115166867335239",
@@ -56,13 +116,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfS2UbsnNWo/",
    "caption": "True story. On Christmas Day 1950 four Scottish students took the Stone of Scone out of We",
-   "views": 1178,
-   "reach": 998,
+   "views": 1183,
+   "reach": 1002,
    "saved": 2,
    "shares": 0,
    "total_interactions": 26,
-   "ig_reels_avg_watch_time": 10616,
-   "ig_reels_video_view_total_time": 10531435
+   "ig_reels_avg_watch_time": 10593,
+   "ig_reels_video_view_total_time": 10540371
   },
   {
    "id": "18126867706900610",
@@ -82,17 +142,17 @@
   {
    "id": "18108710345338835",
    "timestamp": "2026-11-03T07:00:01+0000",
-   "like_count": 52,
+   "like_count": 53,
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfQ8Zj_DOcF/",
    "caption": "True story. In WW2 a secret US unit called the Ghost Army used inflatable tanks, sound tru",
-   "views": 2272,
+   "views": 2273,
    "reach": 1907,
    "saved": 2,
    "shares": 0,
-   "total_interactions": 55,
-   "ig_reels_avg_watch_time": 13119,
-   "ig_reels_video_view_total_time": 25201755
+   "total_interactions": 56,
+   "ig_reels_avg_watch_time": 13113,
+   "ig_reels_video_view_total_time": 25203903
   },
   {
    "id": "18112812335152873",
@@ -162,7 +222,7 @@
    "permalink": "https://www.instagram.com/reel/DfMnGZ1jeeR/",
    "caption": "True story. A 1996 Pepsi ad offered a Harrier jet for 7 million points. One man tried to c",
    "views": 2475,
-   "reach": 1815,
+   "reach": 1818,
    "saved": 1,
    "shares": 3,
    "total_interactions": 57,
@@ -176,13 +236,13 @@
    "comments_count": 2,
    "permalink": "https://www.instagram.com/reel/DfLy9P-GOj9/",
    "caption": "True story. In WWII the Polish army put a bear on the payroll. He carried real artillery s",
-   "views": 2207,
-   "reach": 1779,
+   "views": 2208,
+   "reach": 1782,
    "saved": 0,
    "shares": 57,
    "total_interactions": 141,
-   "ig_reels_avg_watch_time": 10498,
-   "ig_reels_video_view_total_time": 18981447
+   "ig_reels_avg_watch_time": 10493,
+   "ig_reels_video_view_total_time": 18982165
   },
   {
    "id": "18121107233084414",
@@ -191,13 +251,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfLEhAjH9Tc/",
    "caption": "True story. In 1932 the Australian army went to war against emus. The emus did not care. 🐦",
-   "views": 2199,
+   "views": 2200,
    "reach": 1813,
    "saved": 0,
    "shares": 1,
    "total_interactions": 31,
-   "ig_reels_avg_watch_time": 17050,
-   "ig_reels_video_view_total_time": 30810914
+   "ig_reels_avg_watch_time": 17041,
+   "ig_reels_video_view_total_time": 30811646
   },
   {
    "id": "17877383388582048",
@@ -206,13 +266,13 @@
    "comments_count": 16,
    "permalink": "https://www.instagram.com/reel/DfKCF2vnfFG/",
    "caption": "Parody. 🍲 The food taster deserved a raise.\nWhose dish was it? Wrong answers only 👇\n\n#paro",
-   "views": 2642,
+   "views": 2643,
    "reach": 1768,
    "saved": 1,
    "shares": 1,
    "total_interactions": 54,
-   "ig_reels_avg_watch_time": 14703,
-   "ig_reels_video_view_total_time": 26731532
+   "ig_reels_avg_watch_time": 14701,
+   "ig_reels_video_view_total_time": 26741158
   },
   {
    "id": "18105743072198139",
@@ -236,13 +296,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfIgacbgi7C/",
    "caption": "🌕 The most expensive cheap decision in history.\nWould you go back for them? 👇\n\n#moonlandin",
-   "views": 2797,
-   "reach": 2093,
+   "views": 2800,
+   "reach": 2096,
    "saved": 0,
    "shares": 0,
    "total_interactions": 55,
-   "ig_reels_avg_watch_time": 16589,
-   "ig_reels_video_view_total_time": 35468374
+   "ig_reels_avg_watch_time": 16603,
+   "ig_reels_video_view_total_time": 35530699
   },
   {
    "id": "18100662218436158",
@@ -337,17 +397,17 @@
   {
    "id": "18118001260823753",
    "timestamp": "2026-10-29T00:30:01+0000",
-   "like_count": 62,
+   "like_count": 63,
    "comments_count": 8,
    "permalink": "https://www.instagram.com/reel/DfDXMhMlUEc/",
    "caption": "🔥 Hell's customer service is exactly as bad as you'd hope.\nWho else deserves the basement?",
-   "views": 4938,
+   "views": 4942,
    "reach": 4211,
    "saved": 2,
    "shares": 1,
-   "total_interactions": 75,
-   "ig_reels_avg_watch_time": 20293,
-   "ig_reels_video_view_total_time": 85496827
+   "total_interactions": 76,
+   "ig_reels_avg_watch_time": 20298,
+   "ig_reels_video_view_total_time": 85577627
   },
   {
    "id": "18072773543791200",
@@ -356,13 +416,13 @@
    "comments_count": 10,
    "permalink": "https://www.instagram.com/reel/DfCpId3CkDP/",
    "caption": "Parody. 🚀 Kim's missile test went exactly as planned. Just not his plan.\nRate his aim from",
-   "views": 1883,
+   "views": 1885,
    "reach": 1412,
    "saved": 1,
    "shares": 2,
    "total_interactions": 47,
-   "ig_reels_avg_watch_time": 19098,
-   "ig_reels_video_view_total_time": 27654782
+   "ig_reels_avg_watch_time": 19106,
+   "ig_reels_video_view_total_time": 27704970
   },
   {
    "id": "18107031452203718",
@@ -431,13 +491,13 @@
    "comments_count": 2,
    "permalink": "https://www.instagram.com/reel/De8ZxSQSABy/",
    "caption": "Steve vs. a Black Hole 🕳️ Episode 1\nHe got stretched into actual spaghetti. (That’s the re",
-   "views": 1394,
-   "reach": 1175,
+   "views": 1395,
+   "reach": 1177,
    "saved": 0,
    "shares": 0,
    "total_interactions": 43,
-   "ig_reels_avg_watch_time": 18141,
-   "ig_reels_video_view_total_time": 21896692
+   "ig_reels_avg_watch_time": 18147,
+   "ig_reels_video_view_total_time": 21921861
   },
   {
    "id": "18165909202425316",

@@ -2,22 +2,67 @@
  "account": "ELITE",
  "username": "elitesendgame",
  "followers": 3,
- "fetched": "2026-11-05T03:25:52.198624Z",
+ "fetched": "2026-11-06T03:27:01.174876Z",
  "reels": [
+  {
+   "id": "17974778517156544",
+   "timestamp": "2026-11-06T00:30:01+0000",
+   "like_count": 2,
+   "comments_count": 0,
+   "permalink": "https://www.instagram.com/reel/DfX-BGgkbMa/",
+   "caption": "Your alarm clock just asked you for money.\n\nFiction, built on the real rise of subscriptio",
+   "views": 236,
+   "reach": 205,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 2,
+   "ig_reels_avg_watch_time": 11156,
+   "ig_reels_video_view_total_time": 2298216
+  },
+  {
+   "id": "17921862810241115",
+   "timestamp": "2026-11-05T19:30:01+0000",
+   "like_count": 1,
+   "comments_count": 0,
+   "permalink": "https://www.instagram.com/reel/DfXdsKDjQrl/",
+   "caption": "Room Four is where they keep the other me.\n\nFiction. Room Four, Part 4. Would you lie down",
+   "views": 127,
+   "reach": 98,
+   "saved": 1,
+   "shares": 1,
+   "total_interactions": 3,
+   "ig_reels_avg_watch_time": 12859,
+   "ig_reels_video_view_total_time": 1363102
+  },
+  {
+   "id": "17968625706217025",
+   "timestamp": "2026-11-05T15:00:01+0000",
+   "like_count": 2,
+   "comments_count": 0,
+   "permalink": "https://www.instagram.com/reel/DfW85hJk4EH/",
+   "caption": "I paid for dinner with my own name.\n\nFiction. The Last Dinner, Part 4. Would you seat him ",
+   "views": 114,
+   "reach": 100,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 2,
+   "ig_reels_avg_watch_time": 6276,
+   "ig_reels_video_view_total_time": 652732
+  },
   {
    "id": "18101700347648500",
    "timestamp": "2026-11-05T00:30:01+0000",
-   "like_count": 0,
+   "like_count": 1,
    "comments_count": 0,
    "permalink": "https://www.instagram.com/reel/DfVfo2ZCIj9/",
    "caption": "There is a man whose job is to erase people.\n\nFiction. The Witness, File 5. Would you obey",
-   "views": 60,
-   "reach": 49,
+   "views": 119,
+   "reach": 104,
    "saved": 0,
    "shares": 0,
-   "total_interactions": 0,
-   "ig_reels_avg_watch_time": 5857,
-   "ig_reels_video_view_total_time": 304592
+   "total_interactions": 1,
+   "ig_reels_avg_watch_time": 6091,
+   "ig_reels_video_view_total_time": 651797
   },
   {
    "id": "17893730955450057",
@@ -26,13 +71,13 @@
    "comments_count": 0,
    "permalink": "https://www.instagram.com/reel/DfUwZQnDj4P/",
    "caption": "The man who said I would die called me again.\n\nFiction. Room Four, Part 3. Would you trust",
-   "views": 118,
-   "reach": 104,
+   "views": 126,
+   "reach": 106,
    "saved": 0,
    "shares": 0,
    "total_interactions": 1,
-   "ig_reels_avg_watch_time": 5905,
-   "ig_reels_video_view_total_time": 625977
+   "ig_reels_avg_watch_time": 6263,
+   "ig_reels_video_view_total_time": 682771
   },
   {
    "id": "18394973077164747",
@@ -41,13 +86,13 @@
    "comments_count": 0,
    "permalink": "https://www.instagram.com/reel/DfUhEKpCQlt/",
    "caption": "A dinner where every course costs you a memory.\n\nFiction. The Last Dinner, Part 3. What wo",
-   "views": 96,
-   "reach": 76,
+   "views": 123,
+   "reach": 97,
    "saved": 0,
    "shares": 0,
    "total_interactions": 1,
-   "ig_reels_avg_watch_time": 6075,
-   "ig_reels_video_view_total_time": 492099
+   "ig_reels_avg_watch_time": 7201,
+   "ig_reels_video_view_total_time": 727313
   },
   {
    "id": "18202012852389055",
@@ -56,13 +101,13 @@
    "comments_count": 0,
    "permalink": "https://www.instagram.com/reel/DfUWkCICMdJ/",
    "caption": "One of these two guards is lying. Can you tell which?\n\nFiction. Two guards, one night, one",
-   "views": 178,
-   "reach": 151,
+   "views": 182,
+   "reach": 153,
    "saved": 0,
    "shares": 0,
    "total_interactions": 2,
-   "ig_reels_avg_watch_time": 9320,
-   "ig_reels_video_view_total_time": 1407469
+   "ig_reels_avg_watch_time": 9240,
+   "ig_reels_video_view_total_time": 1413790
   },
   {
    "id": "17989133639881424",
@@ -71,13 +116,13 @@
    "comments_count": 0,
    "permalink": "https://www.instagram.com/reel/DfTsp_wilJL/",
    "caption": "Real and strange. The Voynich manuscript is real, held at Yale, dated to the early 1400s, ",
-   "views": 124,
-   "reach": 108,
+   "views": 125,
+   "reach": 109,
    "saved": 1,
    "shares": 0,
    "total_interactions": 1,
-   "ig_reels_avg_watch_time": 6837,
-   "ig_reels_video_view_total_time": 752071
+   "ig_reels_avg_watch_time": 6782,
+   "ig_reels_video_view_total_time": 752862
   },
   {
    "id": "17965223112231420",
@@ -86,13 +131,13 @@
    "comments_count": 0,
    "permalink": "https://www.instagram.com/reel/DfS7vVHjLwU/",
    "caption": "A fictional story. The Witness, File 4. Would you take the job?\n\n#fiction #scarystories #m",
-   "views": 117,
-   "reach": 100,
+   "views": 118,
+   "reach": 101,
    "saved": 0,
    "shares": 0,
    "total_interactions": 0,
-   "ig_reels_avg_watch_time": 5600,
-   "ig_reels_video_view_total_time": 582421
+   "ig_reels_avg_watch_time": 5551,
+   "ig_reels_video_view_total_time": 582898
   },
   {
    "id": "18131527145491863",
@@ -101,13 +146,13 @@
    "comments_count": 0,
    "permalink": "https://www.instagram.com/reel/DfSdQ-zjAU4/",
    "caption": "A fictional story. Room Four, Part 2. Would you knock on that door?\n\n#fiction #scarystorie",
-   "views": 118,
-   "reach": 96,
+   "views": 122,
+   "reach": 97,
    "saved": 0,
    "shares": 0,
    "total_interactions": 0,
-   "ig_reels_avg_watch_time": 4845,
-   "ig_reels_video_view_total_time": 499084
+   "ig_reels_avg_watch_time": 5013,
+   "ig_reels_video_view_total_time": 521370
   },
   {
    "id": "18123728264288327",
@@ -116,13 +161,13 @@
    "comments_count": 0,
    "permalink": "https://www.instagram.com/reel/DfR8UMAiS3x/",
    "caption": "A fictional story. The Last Dinner, Part 2. Would you have eaten the soup?\n\n#fiction #scar",
-   "views": 145,
-   "reach": 118,
+   "views": 147,
+   "reach": 119,
    "saved": 0,
    "shares": 0,
    "total_interactions": 1,
-   "ig_reels_avg_watch_time": 6435,
-   "ig_reels_video_view_total_time": 772276
+   "ig_reels_avg_watch_time": 6396,
+   "ig_reels_video_view_total_time": 773941
   },
   {
    "id": "17933241177422164",
@@ -131,13 +176,13 @@
    "comments_count": 0,
    "permalink": "https://www.instagram.com/reel/DfRwlYHAD9L/",
    "caption": "Where the Philadelphia Experiment story came from, told as a story and not as fact: the US",
-   "views": 126,
-   "reach": 104,
+   "views": 130,
+   "reach": 105,
    "saved": 0,
    "shares": 0,
    "total_interactions": 1,
-   "ig_reels_avg_watch_time": 5824,
-   "ig_reels_video_view_total_time": 623212
+   "ig_reels_avg_watch_time": 5988,
+   "ig_reels_video_view_total_time": 646766
   },
   {
    "id": "18358409302216899",
@@ -146,13 +191,13 @@
    "comments_count": 0,
    "permalink": "https://www.instagram.com/reel/DfRHY8MlCfn/",
    "caption": "A fictional story. Three rules for the night shift. Would you have answered? Tell me below",
-   "views": 146,
-   "reach": 120,
+   "views": 148,
+   "reach": 122,
    "saved": 0,
    "shares": 0,
    "total_interactions": 2,
-   "ig_reels_avg_watch_time": 8101,
-   "ig_reels_video_view_total_time": 1069362
+   "ig_reels_avg_watch_time": 7999,
+   "ig_reels_video_view_total_time": 1071950
   },
   {
    "id": "18645757273010633",
@@ -161,13 +206,13 @@
    "comments_count": 0,
    "permalink": "https://www.instagram.com/reel/DfQVP2-Ehno/",
    "caption": "A fictional story. The Witness, File 3. Would you have walked in?\n\n#fiction #scarystories ",
-   "views": 112,
-   "reach": 95,
+   "views": 113,
+   "reach": 96,
    "saved": 0,
    "shares": 0,
    "total_interactions": 1,
-   "ig_reels_avg_watch_time": 4987,
-   "ig_reels_video_view_total_time": 523654
+   "ig_reels_avg_watch_time": 4942,
+   "ig_reels_video_view_total_time": 523916
   },
   {
    "id": "18079000100559962",
@@ -176,13 +221,13 @@
    "comments_count": 0,
    "permalink": "https://www.instagram.com/reel/DfPnJnZAjW2/",
    "caption": "A fictional story. Room Four, Part 1. Would you have gone home?\n\n#fiction #scarystories #m",
-   "views": 155,
-   "reach": 127,
+   "views": 157,
+   "reach": 128,
    "saved": 0,
    "shares": 0,
    "total_interactions": 1,
-   "ig_reels_avg_watch_time": 7994,
-   "ig_reels_video_view_total_time": 1039303
+   "ig_reels_avg_watch_time": 8063,
+   "ig_reels_video_view_total_time": 1056260
   },
   {
    "id": "17910751740603228",
