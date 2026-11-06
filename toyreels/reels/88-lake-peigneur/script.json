@@ -1,0 +1,62 @@
+[
+ {
+  "chapter": "An",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "An oil rig made",
+     "a whole lake disappear."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "In nineteen eighty,",
+     "a rig was drilling in a Louisiana lake."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "Under the lake",
+     "was a huge salt mine."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "The drill punched into it.",
+     "The lake became a whirlpool."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "It swallowed the rig",
+     "and a line of barges."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "A canal started flowing backwards",
+     "to fill the hole."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "Amazingly,",
+     "everyone escaped."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Whose fault was it?"
+    ]
+   }
+  ]
+ }
+]

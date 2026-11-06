@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Cheerful circus waltz with clip-clop percussion, early 1900s, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "math",
+   "offset": 0.0,
+   "prompt": "horse whinny",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b2",
+   "word": "tapped",
+   "offset": 0.0,
+   "prompt": "hoof taps on wood",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "faces",
+   "offset": 0.0,
+   "prompt": "dramatic reveal sting",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b4",
+   "word": "see",
+   "offset": 0.0,
+   "prompt": "record scratch",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

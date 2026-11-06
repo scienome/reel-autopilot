@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Posh English chamber strings with a comedic bassoon, Regency era, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "bear",
+   "offset": 0.0,
+   "prompt": "bear growl comedic",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b2",
+   "word": "rules",
+   "offset": 0.0,
+   "prompt": "paper unrolling",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "bear",
+   "offset": 0.0,
+   "prompt": "big bear roar",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "loophole",
+   "offset": 0.0,
+   "prompt": "cartoon ding idea",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

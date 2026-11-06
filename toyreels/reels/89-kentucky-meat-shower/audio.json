@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Country fiddle and banjo, bouncy and absurd, 1870s Kentucky, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "meat",
+   "offset": 0.0,
+   "prompt": "wet splats raining",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "tasted",
+   "offset": 0.0,
+   "prompt": "cartoon gulp",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "vultures",
+   "offset": 0.0,
+   "prompt": "vulture screech",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "vomiting",
+   "offset": 0.0,
+   "prompt": "cartoon retch",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

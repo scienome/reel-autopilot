@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Upbeat 1960s Scandinavian pop instrumental with brass, playful, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "overnight",
+   "offset": 0.0,
+   "prompt": "car horns chaos",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "stopped",
+   "offset": 0.0,
+   "prompt": "tyres screech stop",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "switched",
+   "offset": 0.0,
+   "prompt": "whoosh transition",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "dropped",
+   "offset": 0.0,
+   "prompt": "success chime",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

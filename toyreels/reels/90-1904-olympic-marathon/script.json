@@ -1,0 +1,63 @@
+[
+ {
+  "chapter": "The",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "The Olympic marathon winner",
+     "rode in a car."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "St Louis, nineteen oh four.",
+     "A hot, dusty, chaotic race."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "Fred Lorz quit, took a car ride for about ten miles,",
+     "then ran across the finish line first."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "The real winner’s trainers fed him",
+     "rat poison and brandy."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "Another runner ate rotten apples,",
+     "and took a nap mid race."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "Lorz was caught",
+     "and disqualified."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "And the apple napper",
+     "still finished fourth."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Which runner",
+     "is the real legend?"
+    ]
+   }
+  ]
+ }
+]

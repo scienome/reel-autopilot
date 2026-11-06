@@ -1,0 +1,63 @@
+[
+ {
+  "chapter": "The",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "This horse could do math.",
+     "Or could he?"
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "In Berlin,",
+     "Clever Hans answered sums by tapping his hoof."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "Two plus three?",
+     "He tapped five times."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "Crowds were amazed.",
+     "Experts were stumped."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "Then a psychologist hid the answer.",
+     "If Hans could not see the questioner, he failed."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "Hans was reading",
+     "people’s faces."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "When the answer came,",
+     "people relaxed without knowing. Hans stopped tapping."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Is your pet a genius,",
+     "or just reading you?"
+    ]
+   }
+  ]
+ }
+]

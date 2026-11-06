@@ -1,0 +1,60 @@
+[
+ {
+  "chapter": "A",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "A newspaper said",
+     "bat people live on the moon."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "In eighteen thirty five,",
+     "the New York Sun printed the story."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "It claimed a famous astronomer",
+     "saw bat winged people through his telescope."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "Readers believed it.",
+     "Sales went through the roof."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "There were moon unicorns too."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "The astronomer had nothing to do with it."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "He later complained",
+     "about that ridiculous hoax."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Would you have bought the paper?"
+    ]
+   }
+  ]
+ }
+]

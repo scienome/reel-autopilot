@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Building suspense orchestra with water rumble, dramatic but playful, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "disappear",
+   "offset": 0.0,
+   "prompt": "giant drain gurgle",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "whirlpool",
+   "offset": 0.0,
+   "prompt": "swirling water vortex",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "backwards",
+   "offset": 0.0,
+   "prompt": "reverse whoosh",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "escaped",
+   "offset": 0.0,
+   "prompt": "relieved crowd cheer",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

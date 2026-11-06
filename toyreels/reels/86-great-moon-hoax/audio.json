@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Old-timey newsreel orchestra, mysterious and whimsical, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "moon",
+   "offset": 0.0,
+   "prompt": "eerie theremin swoop",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b2",
+   "word": "bat",
+   "offset": 0.0,
+   "prompt": "bat wing flaps",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "sales",
+   "offset": 0.0,
+   "prompt": "cash register ding",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "nothing",
+   "offset": 0.0,
+   "prompt": "record scratch",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

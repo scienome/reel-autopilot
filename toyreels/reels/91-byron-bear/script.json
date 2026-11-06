@@ -1,0 +1,63 @@
+[
+ {
+  "chapter": "College",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "His college banned dogs.",
+     "So he got a bear."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "The poet Lord Byron",
+     "studied at Cambridge."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "His college rules said:",
+     "no dogs allowed."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "Byron read the rules",
+     "very carefully."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "They said nothing",
+     "about bears."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "So, the story goes,",
+     "he kept a tame bear."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "The college had no rule to stop it.",
+     "A perfect loophole."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Would your landlord",
+     "allow a bear?"
+    ]
+   }
+  ]
+ }
+]

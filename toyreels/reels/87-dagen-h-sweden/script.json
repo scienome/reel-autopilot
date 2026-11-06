@@ -1,0 +1,63 @@
+[
+ {
+  "chapter": "An",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "A whole country switched sides of the road",
+     "overnight."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "Sweden drove on the left,",
+     "but its neighbours drove on the right."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "So they picked one day:",
+     "the third of September, nineteen sixty seven."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "Before five in the morning,",
+     "all traffic stopped."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "Every car carefully crossed",
+     "to the other side."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "Then they switched on",
+     "and drove on the right."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "At first,",
+     "accidents actually dropped."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Could your country",
+     "pull this off?"
+    ]
+   }
+  ]
+ }
+]

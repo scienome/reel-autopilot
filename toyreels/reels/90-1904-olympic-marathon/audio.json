@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Frantic ragtime chase music, piano and honky-tonk, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "car",
+   "offset": 0.0,
+   "prompt": "old car horn honk",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "poison",
+   "offset": 0.0,
+   "prompt": "glass bottle clink",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b4",
+   "word": "nap",
+   "offset": 0.0,
+   "prompt": "cartoon snore",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "fourth",
+   "offset": 0.0,
+   "prompt": "finish line whistle",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}
