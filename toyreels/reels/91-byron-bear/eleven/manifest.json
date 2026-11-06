@@ -1,0 +1,28 @@
+{
+ "music-d48c2e021e1c.mp3": {
+  "prompt": "Posh English chamber strings with a comedic bassoon, Regency era, no vocals",
+  "music_length_ms": 27800,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-f13314c78bfc.mp3": {
+  "text": "bear growl comedic",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-f94b2420945c.mp3": {
+  "text": "paper unrolling",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-b4613d496605.mp3": {
+  "text": "big bear roar",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-e7eb5c396d08.mp3": {
+  "text": "cartoon ding idea",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
