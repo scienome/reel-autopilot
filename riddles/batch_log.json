@@ -33,5 +33,32 @@
   "status": "done",
   "note": "owner 4 Nov: 10 days for every account; answers proved by script",
   "updated": "2026-11-04T07:53:35Z"
+ },
+ {
+  "batch": 3,
+  "ids": [
+   "riddle-do-sikke-15",
+   "riddle-behen-umar",
+   "riddle-pahad-khargosh",
+   "riddle-line-sher",
+   "riddle-aadha-laddoo",
+   "riddle-badh-ghat",
+   "riddle-aath-hazaar",
+   "riddle-chor-nishan",
+   "riddle-kursi-char",
+   "riddle-sheesha-ghadi",
+   "riddle-pasa-chhupe",
+   "riddle-hotel-30",
+   "riddle-jadu-square",
+   "riddle-gauss-100",
+   "riddle-khamba-bandar",
+   "riddle-ghadi-milan",
+   "riddle-baat-chaar",
+   "riddle-andhera-sikke",
+   "riddle-ret-ghadi",
+   "riddle-kitne-chaukor",
+   "riddle-rangeen-cube"
+  ],
+  "status": "in_progress"
  }
 ]
