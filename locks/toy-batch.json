@@ -1,10 +1,10 @@
 {
  "job": "toy-batch",
- "status": "done",
- "owner": "vm-10526c",
- "started": "2026-11-02T20:04:43Z",
- "updated": "2026-11-02T20:24:02Z",
- "note": "72-77 pushed (21 total), waiting renders",
+ "status": "in_progress",
+ "owner": "vm-8de09d",
+ "started": "2026-11-06T02:05:57Z",
+ "updated": "2026-11-06T02:05:57Z",
+ "note": "",
  "history": [
   {
    "owner": "vm-dcbd4e",
