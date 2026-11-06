@@ -1,0 +1,28 @@
+{
+ "music-4a1a90191e9f.mp3": {
+  "prompt": "Italian mandolin tarantella, comedic and bouncy, no vocals",
+  "music_length_ms": 31160,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-ee666840d993.mp3": {
+  "text": "creaking wood groan",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-e9ecd7471640.mp3": {
+  "text": "deep rumble",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-28b1f85706d9.mp3": {
+  "text": "construction hammering",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-91141726c459.mp3": {
+  "text": "crowd cheer",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
