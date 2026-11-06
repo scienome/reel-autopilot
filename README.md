@@ -60,15 +60,15 @@ Folder: [`gears-pov/`](gears-pov/)
 | [018-boss-thoughts](gears-pov/018-boss-thoughts.mp4) | You can hear what your boss thinks 💼 | Posted on Instagram · on YouTube |
 | [019-houseplant-thoughts](gears-pov/019-houseplant-thoughts.mp4) | You can hear what your houseplant thinks 🪴 | Posted on Instagram · on YouTube |
 | [020-mum-thoughts](gears-pov/020-mum-thoughts.mp4) | You can hear what your mum thinks 👩 | Posted on Instagram · on YouTube |
-| [021-hamster-thoughts](gears-pov/021-hamster-thoughts.mp4) | You can hear what your hamster thinks 🐹 | Waiting to post |
+| [021-hamster-thoughts](gears-pov/021-hamster-thoughts.mp4) | You can hear what your hamster thinks 🐹 | Posted on Instagram · on YouTube |
 | [022-toddler-thoughts](gears-pov/022-toddler-thoughts.mp4) | You can hear what your toddler thinks 🧒 | Waiting to post |
 | [023-seagull-thoughts](gears-pov/023-seagull-thoughts.mp4) | You can hear what seagulls think 🐦 | Waiting to post |
 | [024-wifi-router-thoughts](gears-pov/024-wifi-router-thoughts.mp4) | You can hear what your wifi router thinks 📶 | Waiting to post |
-| [025-dad-thoughts](gears-pov/025-dad-thoughts.mp4) | You can hear what your dad thinks 👨 | Waiting to post |
+| [025-dad-thoughts](gears-pov/025-dad-thoughts.mp4) | You can hear what your dad thinks 👨 | Posted on Instagram · on YouTube |
 | [026-cop-thoughts](gears-pov/026-cop-thoughts.mp4) | You can hear what the police officer thinks 🚓 | Waiting to post |
 | [027-ex-thoughts](gears-pov/027-ex-thoughts.mp4) | You can hear what your ex thinks 💔 | Waiting to post |
 | [028-alarm-clock-thoughts](gears-pov/028-alarm-clock-thoughts.mp4) | You can hear what your alarm clock thinks ⏰ | Waiting to post |
-| [029-puppy-first-night](gears-pov/029-puppy-first-night.mp4) | You can hear what your puppy thinks on night one 🐶 | Waiting to post |
+| [029-puppy-first-night](gears-pov/029-puppy-first-night.mp4) | You can hear what your puppy thinks on night one 🐶 | Posted on Instagram · on YouTube |
 | [030-delivery-guy-thoughts](gears-pov/030-delivery-guy-thoughts.mp4) | You can hear what the delivery guy thinks 🍕 | Waiting to post |
 | [031-old-cat-thoughts](gears-pov/031-old-cat-thoughts.mp4) | You can hear what your 15-year-old cat thinks 🐱 | Waiting to post |
 | [032-waiter-thoughts](gears-pov/032-waiter-thoughts.mp4) | You can hear what your waiter thinks 🍽️ | Waiting to post |
@@ -251,16 +251,16 @@ Folder: [`toy-reels/`](toy-reels/)
 | [61-mary-toft-rabbits](toy-reels/61-mary-toft-rabbits.mp4) | She Fooled Royal Doctors Into Believing She Birthed Rabbits 🐇 | Posted (Instagram + YouTube) |
 | [62-cardiff-giant](toy-reels/62-cardiff-giant.mp4) | The 10-Foot Giant That Was A Fake Of A Fake 🗿 | Posted (Instagram + YouTube) |
 | [63-wojtek-soldier-bear](toy-reels/63-wojtek-soldier-bear.mp4) | Poland Enlisted A Bear As A Soldier 🐻 | Posted (Instagram + YouTube) |
-| [64-mike-headless-chicken](toy-reels/64-mike-headless-chicken.mp4) | The Chicken That Lived 18 Months Without A Head 🐔 | Waiting to post |
+| [64-mike-headless-chicken](toy-reels/64-mike-headless-chicken.mp4) | The Chicken That Lived 18 Months Without A Head 🐔 | Posted (Instagram + YouTube) |
 | [65-microwave-chocolate-bar](toy-reels/65-microwave-chocolate-bar.mp4) | A Melted Chocolate Bar Invented The Microwave 🍫 | Waiting to post |
 | [66-play-doh-wallpaper](toy-reels/66-play-doh-wallpaper.mp4) | Play-Doh Started As Wallpaper Cleaner 🧽 | Waiting to post |
-| [67-pet-rock-millionaire](toy-reels/67-pet-rock-millionaire.mp4) | He Sold Rocks As Pets And Became A Millionaire 🪨 | Waiting to post |
+| [67-pet-rock-millionaire](toy-reels/67-pet-rock-millionaire.mp4) | He Sold Rocks As Pets And Became A Millionaire 🪨 | Posted (Instagram + YouTube) |
 | [68-pepsi-harrier-jet](toy-reels/68-pepsi-harrier-jet.mp4) | Pepsi Offered A Fighter Jet. A Man Tried To Claim It ✈️ | Posted (Instagram + YouTube) |
 | [69-van-meegeren-forger](toy-reels/69-van-meegeren-forger.mp4) | He Sold A Fake Vermeer To Goering. Then Proved It. 🎨 | Posted (Instagram + YouTube) |
 | [70-great-stink-london](toy-reels/70-great-stink-london.mp4) | London Smelled So Bad Parliament Had To Act 🤢 | Waiting to post |
 | [71-bitcoin-pizza-day](toy-reels/71-bitcoin-pizza-day.mp4) | He Paid 10,000 Bitcoin For Two Pizzas 🍕 | Posted (Instagram + YouTube) |
 | [72-ghost-army-rubber-tanks](toy-reels/72-ghost-army-rubber-tanks.mp4) | America's Army Made Of Rubber Fooled The Nazis 🎈 | Posted (Instagram + YouTube) |
-| [73-taco-liberty-bell](toy-reels/73-taco-liberty-bell.mp4) | Taco Bell 'Bought' The Liberty Bell 🔔🌮 | Waiting to post |
+| [73-taco-liberty-bell](toy-reels/73-taco-liberty-bell.mp4) | Taco Bell 'Bought' The Liberty Bell 🔔🌮 | Posted (Instagram + YouTube) |
 | [74-dancing-plague-1518](toy-reels/74-dancing-plague-1518.mp4) | Hundreds Danced Non-Stop In 1518. Nobody Knows Why 💃 | Posted (Instagram + YouTube) |
 | [75-war-of-jenkins-ear](toy-reels/75-war-of-jenkins-ear.mp4) | Britain Went To War Over One Ear 👂⚔️ | Waiting to post |
 | [76-stone-of-scone-heist](toy-reels/76-stone-of-scone-heist.mp4) | Four Students Stole Britain's Coronation Stone 🪨 | Posted (Instagram + YouTube) |
