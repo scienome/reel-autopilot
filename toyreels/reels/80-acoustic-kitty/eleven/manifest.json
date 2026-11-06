@@ -1,0 +1,28 @@
+{
+ "music-d60bac6d13ea.mp3": {
+  "prompt": "Sneaky spy jazz, upright bass and muted trumpet, comedic, no vocals",
+  "music_length_ms": 32360,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-522486bc0e0e.mp3": {
+  "text": "spy theme sting",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-812b99b94536.mp3": {
+  "text": "electronic beep",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-0b50a92c5790.mp3": {
+  "text": "cat hiss",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-6c9675d98786.mp3": {
+  "text": "paper stamp",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
