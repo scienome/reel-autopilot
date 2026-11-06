@@ -1,9 +1,9 @@
 {
  "job": "riddle-batch",
- "status": "done",
- "owner": "vm-8de09d",
- "started": "2026-11-04T06:47:20Z",
- "updated": "2026-11-04T07:53:37Z",
- "note": "15 pushed, rendering",
+ "status": "in_progress",
+ "owner": "vm-3a874a",
+ "started": "2026-11-06T21:38:33Z",
+ "updated": "2026-11-06T21:38:33Z",
+ "note": "",
  "history": []
 }
