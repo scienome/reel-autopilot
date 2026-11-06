@@ -1,0 +1,28 @@
+{
+ "music-933bd4f5b548.mp3": {
+  "prompt": "Grand French military march played comically on kazoos and brass, no vocals",
+  "music_length_ms": 28120,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-677e3472bfb1.mp3": {
+  "text": "record scratch",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-f0d8f5b10fb7.mp3": {
+  "text": "measuring tape zip",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-7d6d6530acde.mp3": {
+  "text": "pencil scribbling",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-74244ef69177.mp3": {
+  "text": "crowd laughing",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
