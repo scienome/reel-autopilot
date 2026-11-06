@@ -1,0 +1,28 @@
+{
+ "music-763dfb615a58.mp3": {
+  "prompt": "Old-timey newsreel orchestra, mysterious and whimsical, no vocals",
+  "music_length_ms": 27720,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-1c82b35b429a.mp3": {
+  "text": "eerie theremin swoop",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-971873a34aff.mp3": {
+  "text": "bat wing flaps",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-3abda190cedc.mp3": {
+  "text": "cash register ding",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-677e3472bfb1.mp3": {
+  "text": "record scratch",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
