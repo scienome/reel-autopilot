@@ -1,0 +1,28 @@
+{
+ "music-05f4e1bf0c8f.mp3": {
+  "prompt": "Country fiddle and banjo, bouncy and absurd, 1870s Kentucky, no vocals",
+  "music_length_ms": 27800,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-eca508029d9c.mp3": {
+  "text": "wet splats raining",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-f06ab8e16174.mp3": {
+  "text": "cartoon gulp",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-879151f4d165.mp3": {
+  "text": "vulture screech",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-d2980992a793.mp3": {
+  "text": "cartoon retch",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
