@@ -1,0 +1,28 @@
+{
+ "music-f64ab9f44eb0.mp3": {
+  "prompt": "Whimsical woodland music box and harp, slightly mysterious, no vocals",
+  "music_length_ms": 31240,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-f1d8a5dd604d.mp3": {
+  "text": "magical sparkle chime",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-0fbbe09aed6f.mp3": {
+  "text": "old camera shutter click",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-0eca259c8067.mp3": {
+  "text": "paper rustle",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-9c23ca4a72db.mp3": {
+  "text": "mysterious twinkle",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
