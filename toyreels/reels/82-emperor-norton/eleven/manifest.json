@@ -1,0 +1,28 @@
+{
+ "music-876102c8c894.mp3": {
+  "prompt": "Pompous royal fanfare played on toy instruments, 1800s comedic, no vocals",
+  "music_length_ms": 30920,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-0852b279aec9.mp3": {
+  "text": "royal trumpet fanfare",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-3abda190cedc.mp3": {
+  "text": "cash register ding",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-28b1f85706d9.mp3": {
+  "text": "construction hammering",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-dbb536ac86c3.mp3": {
+  "text": "large crowd murmur",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
