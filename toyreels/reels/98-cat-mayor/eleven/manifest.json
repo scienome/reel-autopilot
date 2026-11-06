@@ -1,0 +1,28 @@
+{
+ "music-37feb71e4d70.mp3": {
+  "prompt": "Warm small-town folk guitar and harmonica, gentle and funny, no vocals",
+  "music_length_ms": 28120,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-aa5eb399e4f7.mp3": {
+  "text": "cat meow cute",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-2e22a7505ec1.mp3": {
+  "text": "crowd cheering small",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-671cab26ed35.mp3": {
+  "text": "cash register no-sale",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-b42f2714084d.mp3": {
+  "text": "celebration party horn",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
