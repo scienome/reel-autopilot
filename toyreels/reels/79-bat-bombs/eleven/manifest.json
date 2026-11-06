@@ -1,0 +1,28 @@
+{
+ "music-2d0ed3af7693.mp3": {
+  "prompt": "Tense comedic military snare and low brass, WWII newsreel feel, no vocals",
+  "music_length_ms": 31000,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-626d8363fad1.mp3": {
+  "text": "bat wings flutter swarm",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-76a396669f24.mp3": {
+  "text": "flapping wings escape",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-ddcfe79a5276.mp3": {
+  "text": "fire whoosh crackle",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-7da31c8da417.mp3": {
+  "text": "sad trombone short",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
