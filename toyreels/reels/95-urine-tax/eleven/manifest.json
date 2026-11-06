@@ -1,0 +1,28 @@
+{
+ "music-0604e2962746.mp3": {
+  "prompt": "Pompous Roman fanfare with comedic tuba, ancient empire parody, no vocals",
+  "music_length_ms": 27720,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-15f9dbbb4085.mp3": {
+  "text": "liquid pouring comedic",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-f096ee5c7f23.mp3": {
+  "text": "coins jingling",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-4f107f10aa71.mp3": {
+  "text": "comedic sniff",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-9dfd37645d75.mp3": {
+  "text": "dramatic sting",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
