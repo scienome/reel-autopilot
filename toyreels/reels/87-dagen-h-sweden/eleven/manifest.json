@@ -1,0 +1,28 @@
+{
+ "music-2e7a4e57b14a.mp3": {
+  "prompt": "Upbeat 1960s Scandinavian pop instrumental with brass, playful, no vocals",
+  "music_length_ms": 29640,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-16721ab18524.mp3": {
+  "text": "car horns chaos",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-c6e6160961a9.mp3": {
+  "text": "tyres screech stop",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-37f328b55079.mp3": {
+  "text": "whoosh transition",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3600f3e0477.mp3": {
+  "text": "success chime",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
