@@ -1,0 +1,28 @@
+{
+ "music-e3fc5d9017be.mp3": {
+  "prompt": "Playful ragtime piano with light train rhythm, early 1900s, no vocals",
+  "music_length_ms": 25560,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-720657a20c42.mp3": {
+  "text": "postal stamp thud",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-5abea555efd0.mp3": {
+  "text": "old steam train whistle",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-31d472a79c0c.mp3": {
+  "text": "cartoon delivery bell ding",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-7c772c4fe299.mp3": {
+  "text": "rubber stamp slam",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
