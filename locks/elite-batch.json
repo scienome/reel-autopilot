@@ -1,9 +1,9 @@
 {
  "job": "elite-batch",
- "status": "in_progress",
+ "status": "done",
  "owner": "vm-6a586d",
  "started": "2026-11-07T03:35:35Z",
- "updated": "2026-11-07T03:35:35Z",
- "note": "",
+ "updated": "2026-11-07T03:36:34Z",
+ "note": "NOT made: schedule.json paused by owner 6 Nov (switched to city reels); 0/35",
  "history": []
 }
