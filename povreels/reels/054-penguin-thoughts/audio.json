@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Cute waddling pizzicato and glockenspiel, silly at first, then tender and warm, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "penguin",
+   "offset": 0.0,
+   "prompt": "penguin squawk small",
+   "dur": 1.2,
+   "gain": -6
+  },
+  {
+   "beat": "p1",
+   "word": "fell",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -9
+  },
+  {
+   "beat": "p3",
+   "word": "forever",
+   "offset": 0.0,
+   "prompt": "soft warm choir aww",
+   "dur": 2,
+   "gain": -9
+  },
+  {
+   "beat": "p4",
+   "word": "Here",
+   "offset": 0.0,
+   "prompt": "small audience aww",
+   "dur": 1.5,
+   "gain": -9
+  }
+ ]
+}

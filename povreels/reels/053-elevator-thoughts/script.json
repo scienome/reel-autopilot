@@ -1,0 +1,67 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what the elevator thinks."
+  ]
+ },
+ {
+  "id": "e1",
+  "who": "friend",
+  "phrases": [
+   "Close-door button?",
+   "Does nothing.",
+   "It never did."
+  ]
+ },
+ {
+  "id": "e2",
+  "who": "friend",
+  "phrases": [
+   "I let you press it for comfort.",
+   "Thirty times a day. Nothing.",
+   "Keep going. It helps."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "Late at night, a man steps in. He's crying."
+  ]
+ },
+ {
+  "id": "e3",
+  "who": "friend",
+  "phrases": [
+   "I won't say anything.",
+   "Fifteen floors.",
+   "I'll go extra slow."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "Nobody presses a button."
+  ]
+ },
+ {
+  "id": "e4",
+  "who": "friend",
+  "phrases": [
+   "Take your time.",
+   "Nobody's waiting.",
+   "This floor is yours."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "Do you hammer the door button too?",
+   "Part two?"
+  ]
+ }
+]

@@ -1,0 +1,67 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what your best friend thinks when they say, I'm fine."
+  ]
+ },
+ {
+  "id": "f1",
+  "who": "date",
+  "phrases": [
+   "I'm fine.",
+   "Totally fine.",
+   "Don't look at me like that."
+  ]
+ },
+ {
+  "id": "f2",
+  "who": "date",
+  "phrases": [
+   "I'm so tired.",
+   "I haven't told anyone.",
+   "Please ask me again."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "You ask again. 'Really?'"
+  ]
+ },
+ {
+  "id": "f3",
+  "who": "date",
+  "phrases": [
+   "Oh no.",
+   "You noticed.",
+   "Okay. Okay. It's a lot."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "You sit down. You just listen."
+  ]
+ },
+ {
+  "id": "f4",
+  "who": "date",
+  "phrases": [
+   "Thank you.",
+   "I needed one person to ask twice.",
+   "It was you."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "When did you last ask a friend twice?",
+   "Part two?"
+  ]
+ }
+]

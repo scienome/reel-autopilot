@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Soft elevator-style jazz with vibraphone, cheeky at first, then tender and slow, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "elevator",
+   "offset": 0.0,
+   "prompt": "elevator ding",
+   "dur": 1.2,
+   "gain": -6
+  },
+  {
+   "beat": "e1",
+   "word": "Does",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -9
+  },
+  {
+   "beat": "e3",
+   "word": "slow",
+   "offset": 0.0,
+   "prompt": "elevator hum gentle",
+   "dur": 2,
+   "gain": -12
+  },
+  {
+   "beat": "e4",
+   "word": "floor",
+   "offset": 0.0,
+   "prompt": "elevator ding",
+   "dur": 1.2,
+   "gain": -6
+  }
+ ]
+}

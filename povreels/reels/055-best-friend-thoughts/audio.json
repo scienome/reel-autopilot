@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Soft emotional piano and warm pads, hesitant at first, then hopeful and tender, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "fine",
+   "offset": 0.0,
+   "prompt": "soft sad piano note",
+   "dur": 2,
+   "gain": -10
+  },
+  {
+   "beat": "f3",
+   "word": "noticed",
+   "offset": 0.0,
+   "prompt": "soft heartbeat",
+   "dur": 2,
+   "gain": -10
+  },
+  {
+   "beat": "f4",
+   "word": "Thank",
+   "offset": 0.0,
+   "prompt": "soft warm choir aww",
+   "dur": 2,
+   "gain": -9
+  },
+  {
+   "beat": "f4",
+   "word": "ask",
+   "offset": 0.0,
+   "prompt": "small audience aww",
+   "dur": 1.5,
+   "gain": -9
+  }
+ ]
+}

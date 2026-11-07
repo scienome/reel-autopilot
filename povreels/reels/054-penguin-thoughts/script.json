@@ -1,0 +1,67 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what a penguin thinks."
+  ]
+ },
+ {
+  "id": "p1",
+  "who": "dog",
+  "phrases": [
+   "You think I'm cute.",
+   "I fell over four times today.",
+   "Nobody filmed the good ones."
+  ]
+ },
+ {
+  "id": "p2",
+  "who": "dog",
+  "phrases": [
+   "Everyone says I look like I'm wearing a tuxedo.",
+   "I'm not fancy.",
+   "I'm just cold."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "The penguin walks all day. He is looking for something."
+  ]
+ },
+ {
+  "id": "p3",
+  "who": "dog",
+  "phrases": [
+   "I need one perfect pebble.",
+   "It took me six days.",
+   "It's for someone I'll love forever."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "He waddles up to you."
+  ]
+ },
+ {
+  "id": "p4",
+  "who": "dog",
+  "phrases": [
+   "Here.",
+   "It's the best pebble.",
+   "Please don't lose it."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "Who would you give a pebble to?",
+   "Part two?"
+  ]
+ }
+]
