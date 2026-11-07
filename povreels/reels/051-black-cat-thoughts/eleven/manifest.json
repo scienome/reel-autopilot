@@ -1,0 +1,28 @@
+{
+ "music-94d56e42d8e9.mp3": {
+  "prompt": "Playful jazzy double bass and brushed drums with a mysterious wink, tender purring warmth in the middle, no vocals",
+  "music_length_ms": 33580,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-de9b61c1aa98.mp3": {
+  "text": "cat meow",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-09f5a2915fda.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-a6ee112ab654.mp3": {
+  "text": "cat purring",
+  "duration_seconds": 2.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-d51038b668ff.mp3": {
+  "text": "cat meow demanding",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
