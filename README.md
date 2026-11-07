@@ -35,7 +35,7 @@ Folder: [`couch-cartoon/`](couch-cartoon/)
 | [p003-the-real-hurt](couch-cartoon/p003-the-real-hurt.mp4) | "When did you stop looking at me?" 💔 | Not scheduled |
 | [t001-dentist](couch-cartoon/t001-dentist.mp4) | Who's Jessica? 📱 | Not scheduled |
 
-## Thought Bubble POV stories (formerly Gears & Glitches) (53)
+## Thought Bubble POV stories (formerly Gears & Glitches) (55)
 Folder: [`gears-pov/`](gears-pov/)
 
 | Video | Title | Status |
@@ -93,6 +93,8 @@ Folder: [`gears-pov/`](gears-pov/)
 | [051-black-cat-thoughts](gears-pov/051-black-cat-thoughts.mp4) | You can hear what a black cat thinks 🐈‍⬛ | Not scheduled |
 | [052-grandma-cooking-thoughts](gears-pov/052-grandma-cooking-thoughts.mp4) | You can hear what your grandma thinks while cooking 👵 | Not scheduled |
 | [053-elevator-thoughts](gears-pov/053-elevator-thoughts.mp4) | You can hear what the elevator thinks 🛗 | Not scheduled |
+| [054-penguin-thoughts](gears-pov/054-penguin-thoughts.mp4) | You can hear what a penguin thinks 🐧 | Not scheduled |
+| [055-best-friend-thoughts](gears-pov/055-best-friend-thoughts.mp4) | You can hear what your best friend thinks when they say "I'm fine" 💬 | Not scheduled |
 
 ## CouchSarcasm (old couple comedy) (40)
 Folder: [`couch-sarcasm/`](couch-sarcasm/)
