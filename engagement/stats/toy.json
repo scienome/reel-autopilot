@@ -1,38 +1,83 @@
 {
  "account": "TOY",
  "username": "toyboxtheory",
- "followers": 15,
- "fetched": "2026-11-06T03:27:08.562512Z",
+ "followers": 16,
+ "fetched": "2026-11-07T03:26:02.844711Z",
  "reels": [
+  {
+   "id": "17912470080307883",
+   "timestamp": "2026-11-07T00:30:00+0000",
+   "like_count": 0,
+   "comments_count": 1,
+   "permalink": "https://www.instagram.com/reel/Dfaikheo5NY/",
+   "caption": "The US Army strapped tiny bombs to bats 🦇\nWait for the ending 👀\n\nTrue story. In WWII the U",
+   "views": 242,
+   "reach": 195,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 1,
+   "ig_reels_avg_watch_time": 11681,
+   "ig_reels_video_view_total_time": 2254569
+  },
+  {
+   "id": "18033167288683495",
+   "timestamp": "2026-11-06T19:30:01+0000",
+   "like_count": 1,
+   "comments_count": 2,
+   "permalink": "https://www.instagram.com/reel/DfaApmFmW9O/",
+   "caption": "The Olympic marathon \"winner\" rode in a car 🏃🚗\nWait for the ending 👀\n\nTrue story. At the 1",
+   "views": 268,
+   "reach": 231,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 3,
+   "ig_reels_avg_watch_time": 6704,
+   "ig_reels_video_view_total_time": 1542083
+  },
+  {
+   "id": "18152235436525227",
+   "timestamp": "2026-11-06T15:00:02+0000",
+   "like_count": 6,
+   "comments_count": 1,
+   "permalink": "https://www.instagram.com/reel/DfZhgDFE3QS/",
+   "caption": "An oil rig made a whole lake disappear 🌀\nWait for the ending 👀\n\nTrue story. In November 19",
+   "views": 984,
+   "reach": 810,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 7,
+   "ig_reels_avg_watch_time": 8610,
+   "ig_reels_video_view_total_time": 6948664
+  },
   {
    "id": "17915123811552227",
    "timestamp": "2026-11-06T00:30:01+0000",
-   "like_count": 1,
+   "like_count": 3,
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfX-V5MFcQN/",
    "caption": "America woke up to the news that the Liberty Bell was sold 🔔\nWait for the ending 👀\n\nTrue s",
-   "views": 300,
-   "reach": 250,
+   "views": 457,
+   "reach": 387,
    "saved": 0,
    "shares": 0,
-   "total_interactions": 2,
-   "ig_reels_avg_watch_time": 9694,
-   "ig_reels_video_view_total_time": 2443078
+   "total_interactions": 4,
+   "ig_reels_avg_watch_time": 10588,
+   "ig_reels_video_view_total_time": 4076420
   },
   {
    "id": "18049888325824951",
    "timestamp": "2026-11-05T19:30:01+0000",
-   "like_count": 13,
+   "like_count": 17,
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfXdk8EDE3Q/",
    "caption": "He got rich selling rocks as pets 🪨\nWait for the ending 👀\n\nTrue story. In 1975 an ad man s",
-   "views": 1527,
-   "reach": 1306,
-   "saved": 1,
+   "views": 1825,
+   "reach": 1545,
+   "saved": 2,
    "shares": 0,
-   "total_interactions": 15,
-   "ig_reels_avg_watch_time": 9119,
-   "ig_reels_video_view_total_time": 11754978
+   "total_interactions": 20,
+   "ig_reels_avg_watch_time": 9629,
+   "ig_reels_video_view_total_time": 14685673
   },
   {
    "id": "18350675998280062",
@@ -41,13 +86,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfW80y7DE58/",
    "caption": "This chicken lived 18 months without a head 🐔\nWait for the ending 👀\n\nTrue story. In 1945 a",
-   "views": 199,
-   "reach": 175,
+   "views": 201,
+   "reach": 177,
    "saved": 0,
    "shares": 0,
    "total_interactions": 4,
-   "ig_reels_avg_watch_time": 7279,
-   "ig_reels_video_view_total_time": 1273911
+   "ig_reels_avg_watch_time": 7370,
+   "ig_reels_video_view_total_time": 1304584
   },
   {
    "id": "18130300228825295",
@@ -56,13 +101,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfWGi5XgVH_/",
    "caption": "Workers dug up a 10-foot stone giant on a farm 🗿\nWait for the ending 👀\n\nTrue story. In 186",
-   "views": 2333,
-   "reach": 1862,
+   "views": 2335,
+   "reach": 1865,
    "saved": 1,
    "shares": 0,
    "total_interactions": 32,
-   "ig_reels_avg_watch_time": 12722,
-   "ig_reels_video_view_total_time": 23893377
+   "ig_reels_avg_watch_time": 12735,
+   "ig_reels_video_view_total_time": 23930570
   },
   {
    "id": "18080650904403663",
@@ -71,13 +116,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfVZlemFTfD/",
    "caption": "She convinced the king's doctors she was giving birth to rabbits 🐇\nWait for the ending 👀\n\n",
-   "views": 1943,
-   "reach": 1550,
+   "views": 1944,
+   "reach": 1552,
    "saved": 1,
    "shares": 1,
    "total_interactions": 46,
-   "ig_reels_avg_watch_time": 12413,
-   "ig_reels_video_view_total_time": 19153731
+   "ig_reels_avg_watch_time": 12422,
+   "ig_reels_video_view_total_time": 19179826
   },
   {
    "id": "18058295339808300",
@@ -86,13 +131,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfUX8zXko77/",
    "caption": "America and Britain nearly went to war over one pig 🐖\nWait for the ending 👀\n\nTrue story. I",
-   "views": 327,
-   "reach": 278,
+   "views": 328,
+   "reach": 279,
    "saved": 0,
    "shares": 0,
    "total_interactions": 3,
-   "ig_reels_avg_watch_time": 8766,
-   "ig_reels_video_view_total_time": 2454615
+   "ig_reels_avg_watch_time": 8737,
+   "ig_reels_video_view_total_time": 2455339
   },
   {
    "id": "18028262114873545",
@@ -161,13 +206,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfQO-avDEcA/",
    "caption": "True story. In 897 a pope had his dead predecessor dug up and put on trial. The corpse los",
-   "views": 3216,
+   "views": 3217,
    "reach": 2464,
    "saved": 3,
    "shares": 7,
    "total_interactions": 69,
-   "ig_reels_avg_watch_time": 14195,
-   "ig_reels_video_view_total_time": 35390505
+   "ig_reels_avg_watch_time": 14190,
+   "ig_reels_video_view_total_time": 35390938
   },
   {
    "id": "18114110936145402",
@@ -177,7 +222,7 @@
    "permalink": "https://www.instagram.com/reel/DfPOJKyDSex/",
    "caption": "True story. In 1925 a con man sold the Eiffel Tower as scrap metal, and the buyer was too ",
    "views": 2737,
-   "reach": 2220,
+   "reach": 2221,
    "saved": 0,
    "shares": 0,
    "total_interactions": 38,
@@ -191,13 +236,13 @@
    "comments_count": 3,
    "permalink": "https://www.instagram.com/reel/DfOYCmqjGst/",
    "caption": "True story. In 2010 a programmer paid 10,000 bitcoin for two pizzas, the first known real-",
-   "views": 1947,
-   "reach": 1601,
+   "views": 1952,
+   "reach": 1603,
    "saved": 1,
    "shares": 1,
    "total_interactions": 39,
-   "ig_reels_avg_watch_time": 13164,
-   "ig_reels_video_view_total_time": 20840170
+   "ig_reels_avg_watch_time": 13141,
+   "ig_reels_video_view_total_time": 20843050
   },
   {
    "id": "17906840682597949",
@@ -251,13 +296,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfLEhAjH9Tc/",
    "caption": "True story. In 1932 the Australian army went to war against emus. The emus did not care. 🐦",
-   "views": 2200,
-   "reach": 1813,
+   "views": 2203,
+   "reach": 1818,
    "saved": 0,
    "shares": 1,
    "total_interactions": 31,
-   "ig_reels_avg_watch_time": 17041,
-   "ig_reels_video_view_total_time": 30811646
+   "ig_reels_avg_watch_time": 17014,
+   "ig_reels_video_view_total_time": 30813311
   },
   {
    "id": "17877383388582048",
@@ -266,13 +311,13 @@
    "comments_count": 16,
    "permalink": "https://www.instagram.com/reel/DfKCF2vnfFG/",
    "caption": "Parody. 🍲 The food taster deserved a raise.\nWhose dish was it? Wrong answers only 👇\n\n#paro",
-   "views": 2643,
-   "reach": 1768,
+   "views": 2645,
+   "reach": 1770,
    "saved": 1,
    "shares": 1,
-   "total_interactions": 54,
-   "ig_reels_avg_watch_time": 14701,
-   "ig_reels_video_view_total_time": 26741158
+   "total_interactions": 53,
+   "ig_reels_avg_watch_time": 14686,
+   "ig_reels_video_view_total_time": 26744526
   },
   {
    "id": "18105743072198139",
@@ -296,13 +341,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfIgacbgi7C/",
    "caption": "🌕 The most expensive cheap decision in history.\nWould you go back for them? 👇\n\n#moonlandin",
-   "views": 2800,
+   "views": 2802,
    "reach": 2096,
    "saved": 0,
    "shares": 0,
    "total_interactions": 55,
-   "ig_reels_avg_watch_time": 16603,
-   "ig_reels_video_view_total_time": 35530699
+   "ig_reels_avg_watch_time": 16613,
+   "ig_reels_video_view_total_time": 35585567
   },
   {
    "id": "18100662218436158",
@@ -371,13 +416,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfE5hw8CZOR/",
    "caption": "💀 Even the Grim Reaper isn't safe from AI.\nWould you trust an AI with your death? 👇\n\n#dark",
-   "views": 2169,
-   "reach": 1753,
+   "views": 2170,
+   "reach": 1756,
    "saved": 2,
    "shares": 1,
    "total_interactions": 44,
-   "ig_reels_avg_watch_time": 18430,
-   "ig_reels_video_view_total_time": 32420019
+   "ig_reels_avg_watch_time": 18424,
+   "ig_reels_video_view_total_time": 32427843
   },
   {
    "id": "17992724973114043",
@@ -401,13 +446,13 @@
    "comments_count": 8,
    "permalink": "https://www.instagram.com/reel/DfDXMhMlUEc/",
    "caption": "🔥 Hell's customer service is exactly as bad as you'd hope.\nWho else deserves the basement?",
-   "views": 4942,
+   "views": 4943,
    "reach": 4211,
    "saved": 2,
    "shares": 1,
    "total_interactions": 76,
-   "ig_reels_avg_watch_time": 20298,
-   "ig_reels_video_view_total_time": 85577627
+   "ig_reels_avg_watch_time": 20293,
+   "ig_reels_video_view_total_time": 85579183
   },
   {
    "id": "18072773543791200",
@@ -491,13 +536,13 @@
    "comments_count": 2,
    "permalink": "https://www.instagram.com/reel/De8ZxSQSABy/",
    "caption": "Steve vs. a Black Hole 🕳️ Episode 1\nHe got stretched into actual spaghetti. (That’s the re",
-   "views": 1395,
-   "reach": 1177,
+   "views": 1398,
+   "reach": 1178,
    "saved": 0,
    "shares": 0,
    "total_interactions": 43,
-   "ig_reels_avg_watch_time": 18147,
-   "ig_reels_video_view_total_time": 21921861
+   "ig_reels_avg_watch_time": 18137,
+   "ig_reels_video_view_total_time": 21964216
   },
   {
    "id": "18165909202425316",

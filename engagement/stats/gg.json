@@ -1,23 +1,68 @@
 {
  "account": "GG",
  "username": "thoughtbubble.pov",
- "followers": 10,
- "fetched": "2026-11-06T03:27:19.478096Z",
+ "followers": 11,
+ "fetched": "2026-11-07T03:26:17.607688Z",
  "reels": [
+  {
+   "id": "17978981012930649",
+   "timestamp": "2026-11-07T00:30:01+0000",
+   "like_count": 29,
+   "comments_count": 1,
+   "permalink": "https://www.instagram.com/reel/DfaimLhj75a/",
+   "caption": "Banana. Not THAT banana. 🍌\nThen bedtime... and one line that melts you. Angel or boss? 👇\n\n",
+   "views": 1421,
+   "reach": 1152,
+   "saved": 1,
+   "shares": 1,
+   "total_interactions": 34,
+   "ig_reels_avg_watch_time": 17162,
+   "ig_reels_video_view_total_time": 20166092
+  },
+  {
+   "id": "17876941587636262",
+   "timestamp": "2026-11-06T19:30:01+0000",
+   "like_count": 22,
+   "comments_count": 2,
+   "permalink": "https://www.instagram.com/reel/DfaBHd5ihNe/",
+   "caption": "\"I've known you six years. You have never once woken up on the first ring.\" ⏰\nWatch the en",
+   "views": 1338,
+   "reach": 1141,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 26,
+   "ig_reels_avg_watch_time": 13543,
+   "ig_reels_video_view_total_time": 15331582
+  },
+  {
+   "id": "18048624011684767",
+   "timestamp": "2026-11-06T15:00:01+0000",
+   "like_count": 8,
+   "comments_count": 1,
+   "permalink": "https://www.instagram.com/reel/DfZhK82HN6x/",
+   "caption": "\"Dave, I know where you live. I live on your roof.\" 🐦🍟\nThen he did something nobody expect",
+   "views": 547,
+   "reach": 499,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 9,
+   "ig_reels_avg_watch_time": 8916,
+   "ig_reels_video_view_total_time": 4396031
+  },
   {
    "id": "18134326948806768",
    "timestamp": "2026-11-06T00:30:01+0000",
-   "like_count": 16,
+   "like_count": 27,
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfX-N21E-S4/",
    "caption": "\"I'm fine.\" \"I don't need directions.\" 👨\nThen the line he can never say out loud... Does Y",
-   "views": 792,
-   "reach": 620,
+   "views": 1371,
+   "reach": 1133,
    "saved": 1,
    "shares": 0,
-   "total_interactions": 18,
-   "ig_reels_avg_watch_time": 12453,
-   "ig_reels_video_view_total_time": 7796036
+   "total_interactions": 29,
+   "ig_reels_avg_watch_time": 13187,
+   "ig_reels_video_view_total_time": 15323758
   },
   {
    "id": "18133679656838464",
@@ -26,28 +71,28 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfXd07dnBKO/",
    "caption": "\"Where is my mum?\" 🥺🐶\nThe first night with your puppy... and what happens when you pick he",
-   "views": 1545,
-   "reach": 1209,
+   "views": 1608,
+   "reach": 1264,
    "saved": 1,
    "shares": 0,
    "total_interactions": 54,
-   "ig_reels_avg_watch_time": 16327,
-   "ig_reels_video_view_total_time": 20523101
+   "ig_reels_avg_watch_time": 16264,
+   "ig_reels_video_view_total_time": 21354772
   },
   {
    "id": "17940152406391877",
    "timestamp": "2026-11-05T15:00:00+0000",
-   "like_count": 20,
+   "like_count": 21,
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfW8hZvCu7o/",
    "caption": "Four thousand miles on the wheel. Still in the cage. 🐹\nThen the door opened... 👇\n\n#hamster",
-   "views": 1506,
+   "views": 1508,
    "reach": 1292,
    "saved": 0,
    "shares": 0,
-   "total_interactions": 22,
+   "total_interactions": 23,
    "ig_reels_avg_watch_time": 12166,
-   "ig_reels_video_view_total_time": 15488348
+   "ig_reels_video_view_total_time": 15524422
   },
   {
    "id": "17977451061156130",
@@ -56,13 +101,13 @@
    "comments_count": 7,
    "permalink": "https://www.instagram.com/reel/DfWFrB8kszj/",
    "caption": "Plan A: staring. Plan B: we don't talk about Plan B. 🐦\nWhat's Plan B? Wrong answers only 👇",
-   "views": 1329,
-   "reach": 1156,
+   "views": 1330,
+   "reach": 1157,
    "saved": 0,
    "shares": 0,
    "total_interactions": 17,
-   "ig_reels_avg_watch_time": 9881,
-   "ig_reels_video_view_total_time": 11333978
+   "ig_reels_avg_watch_time": 9883,
+   "ig_reels_video_view_total_time": 11346040
   },
   {
    "id": "18098380562673502",
@@ -222,7 +267,7 @@
    "permalink": "https://www.instagram.com/reel/DfMm3vFj74q/",
    "caption": "Dog: 'tell my family I loved them.' (It's a nail trim.) 🐶\nThen the vet looked at your old ",
    "views": 1303,
-   "reach": 1039,
+   "reach": 1041,
    "saved": 2,
    "shares": 1,
    "total_interactions": 38,
@@ -267,7 +312,7 @@
    "permalink": "https://www.instagram.com/reel/DfKB9aMgR-3/",
    "caption": "The puppies were screaming 'pick me'. The old dog didn't even stand up. 🐶\nThree weeks late",
    "views": 1499,
-   "reach": 1178,
+   "reach": 1179,
    "saved": 1,
    "shares": 0,
    "total_interactions": 49,
@@ -281,13 +326,13 @@
    "comments_count": 3,
    "permalink": "https://www.instagram.com/reel/DfJMYJSAFnN/",
    "caption": "She hissed at him. He thinks it's going well. 🐶❤️🐱\nThen the neighbours moved away... 👇\n\n#p",
-   "views": 1727,
-   "reach": 1446,
+   "views": 1728,
+   "reach": 1447,
    "saved": 1,
    "shares": 7,
    "total_interactions": 49,
-   "ig_reels_avg_watch_time": 13160,
-   "ig_reels_video_view_total_time": 18991203
+   "ig_reels_avg_watch_time": 13152,
+   "ig_reels_video_view_total_time": 18991805
   },
   {
    "id": "18112886909232290",
@@ -341,13 +386,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfGLoeaAWmn/",
    "caption": "Day 1: your dog thinks you talk to the toaster. Day 30: you know what the neighbour's pood",
-   "views": 1904,
+   "views": 1905,
    "reach": 1541,
    "saved": 3,
    "shares": 1,
    "total_interactions": 59,
-   "ig_reels_avg_watch_time": 23897,
-   "ig_reels_video_view_total_time": 37280397
+   "ig_reels_avg_watch_time": 23882,
+   "ig_reels_video_view_total_time": 37281152
   },
   {
    "id": "18121585997053014",
@@ -356,13 +401,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfE5VUgCfYz/",
    "caption": "NASA dropped a 77-tonne space station on Australia. Australia sent back a $400 fine for li",
-   "views": 1795,
+   "views": 1796,
    "reach": 1311,
    "saved": 0,
    "shares": 0,
    "total_interactions": 31,
-   "ig_reels_avg_watch_time": 17484,
-   "ig_reels_video_view_total_time": 22695391
+   "ig_reels_avg_watch_time": 17471,
+   "ig_reels_video_view_total_time": 22696012
   },
   {
    "id": "18119199971085453",
@@ -371,13 +416,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfEQmDUDTGJ/",
    "caption": "Russia cast a 202-tonne bell. It has never made a single sound. Not once. 🔔\nCold water on ",
-   "views": 2201,
-   "reach": 1606,
+   "views": 2208,
+   "reach": 1612,
    "saved": 1,
    "shares": 0,
    "total_interactions": 32,
-   "ig_reels_avg_watch_time": 20642,
-   "ig_reels_video_view_total_time": 33317663
+   "ig_reels_avg_watch_time": 20634,
+   "ig_reels_video_view_total_time": 33387260
   },
   {
    "id": "18450687865193272",
@@ -431,13 +476,13 @@
    "comments_count": 2,
    "permalink": "https://www.instagram.com/reel/DfBcyGNjMnk/",
    "caption": "Four bolts. Zero bolts. One very breezy flight. ✈️\nCabin pressure pushes outward on every ",
-   "views": 1794,
-   "reach": 1358,
+   "views": 1795,
+   "reach": 1359,
    "saved": 0,
    "shares": 0,
    "total_interactions": 31,
-   "ig_reels_avg_watch_time": 19922,
-   "ig_reels_video_view_total_time": 26696390
+   "ig_reels_avg_watch_time": 19911,
+   "ig_reels_video_view_total_time": 26700758
   },
   {
    "id": "18026166275876471",
@@ -446,13 +491,13 @@
    "comments_count": 0,
    "permalink": "https://www.instagram.com/reel/DfANtRYEyPT/",
    "caption": "Hitler wanted a tank nothing could stop. Physics agreed: nothing could move it either. 🐭\nT",
-   "views": 1519,
-   "reach": 1186,
+   "views": 1521,
+   "reach": 1188,
    "saved": 1,
    "shares": 0,
    "total_interactions": 31,
-   "ig_reels_avg_watch_time": 20317,
-   "ig_reels_video_view_total_time": 23811683
+   "ig_reels_avg_watch_time": 20291,
+   "ig_reels_video_view_total_time": 23822555
   }
  ]
 }

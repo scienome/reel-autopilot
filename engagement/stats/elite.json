@@ -2,22 +2,67 @@
  "account": "ELITE",
  "username": "elitesendgame",
  "followers": 3,
- "fetched": "2026-11-06T03:27:01.174876Z",
+ "fetched": "2026-11-07T03:25:51.668641Z",
  "reels": [
   {
-   "id": "17974778517156544",
-   "timestamp": "2026-11-06T00:30:01+0000",
+   "id": "18239834143319948",
+   "timestamp": "2026-11-07T00:30:01+0000",
+   "like_count": 24,
+   "comments_count": 2,
+   "permalink": "https://www.instagram.com/reel/DfaiXU8EZ_h/",
+   "caption": "Your dead father just asked you for a payment.\n\nFiction. Would you keep paying?\n\n#endgame ",
+   "views": 1374,
+   "reach": 1119,
+   "saved": 1,
+   "shares": 0,
+   "total_interactions": 27,
+   "ig_reels_avg_watch_time": 13523,
+   "ig_reels_video_view_total_time": 15024471
+  },
+  {
+   "id": "18104980148367806",
+   "timestamp": "2026-11-06T19:30:02+0000",
    "like_count": 2,
    "comments_count": 0,
-   "permalink": "https://www.instagram.com/reel/DfX-BGgkbMa/",
-   "caption": "Your alarm clock just asked you for money.\n\nFiction, built on the real rise of subscriptio",
-   "views": 236,
-   "reach": 205,
+   "permalink": "https://www.instagram.com/reel/DfaBCdljFOC/",
+   "caption": "Twenty seconds left. Ten dollars short. Then someone knocks.\n\nFiction. Part 2. Next month ",
+   "views": 187,
+   "reach": 161,
    "saved": 0,
    "shares": 0,
    "total_interactions": 2,
-   "ig_reels_avg_watch_time": 11156,
-   "ig_reels_video_view_total_time": 2298216
+   "ig_reels_avg_watch_time": 11901,
+   "ig_reels_video_view_total_time": 1987590
+  },
+  {
+   "id": "18081731822386022",
+   "timestamp": "2026-11-06T15:00:01+0000",
+   "like_count": 17,
+   "comments_count": 1,
+   "permalink": "https://www.instagram.com/reel/DfZhlPvG6SU/",
+   "caption": "Your mother has four minutes left. And you're $40 short.\n\nFiction. Who would you call?\n\n#e",
+   "views": 1147,
+   "reach": 904,
+   "saved": 1,
+   "shares": 0,
+   "total_interactions": 19,
+   "ig_reels_avg_watch_time": 13926,
+   "ig_reels_video_view_total_time": 12617749
+  },
+  {
+   "id": "17974778517156544",
+   "timestamp": "2026-11-06T00:30:01+0000",
+   "like_count": 5,
+   "comments_count": 0,
+   "permalink": "https://www.instagram.com/reel/DfX-BGgkbMa/",
+   "caption": "Your alarm clock just asked you for money.\n\nFiction, built on the real rise of subscriptio",
+   "views": 601,
+   "reach": 516,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 5,
+   "ig_reels_avg_watch_time": 12436,
+   "ig_reels_video_view_total_time": 6491842
   },
   {
    "id": "17921862810241115",
@@ -26,13 +71,13 @@
    "comments_count": 0,
    "permalink": "https://www.instagram.com/reel/DfXdsKDjQrl/",
    "caption": "Room Four is where they keep the other me.\n\nFiction. Room Four, Part 4. Would you lie down",
-   "views": 127,
-   "reach": 98,
+   "views": 130,
+   "reach": 100,
    "saved": 1,
    "shares": 1,
    "total_interactions": 3,
-   "ig_reels_avg_watch_time": 12859,
-   "ig_reels_video_view_total_time": 1363102
+   "ig_reels_avg_watch_time": 12555,
+   "ig_reels_video_view_total_time": 1368539
   },
   {
    "id": "17968625706217025",
@@ -41,13 +86,13 @@
    "comments_count": 0,
    "permalink": "https://www.instagram.com/reel/DfW85hJk4EH/",
    "caption": "I paid for dinner with my own name.\n\nFiction. The Last Dinner, Part 4. Would you seat him ",
-   "views": 114,
-   "reach": 100,
+   "views": 117,
+   "reach": 103,
    "saved": 0,
    "shares": 0,
    "total_interactions": 2,
-   "ig_reels_avg_watch_time": 6276,
-   "ig_reels_video_view_total_time": 652732
+   "ig_reels_avg_watch_time": 6123,
+   "ig_reels_video_view_total_time": 655249
   },
   {
    "id": "18101700347648500",
@@ -56,13 +101,13 @@
    "comments_count": 0,
    "permalink": "https://www.instagram.com/reel/DfVfo2ZCIj9/",
    "caption": "There is a man whose job is to erase people.\n\nFiction. The Witness, File 5. Would you obey",
-   "views": 119,
-   "reach": 104,
+   "views": 120,
+   "reach": 106,
    "saved": 0,
    "shares": 0,
    "total_interactions": 1,
-   "ig_reels_avg_watch_time": 6091,
-   "ig_reels_video_view_total_time": 651797
+   "ig_reels_avg_watch_time": 6055,
+   "ig_reels_video_view_total_time": 654047
   },
   {
    "id": "17893730955450057",
@@ -266,13 +311,13 @@
    "comments_count": 0,
    "permalink": "https://www.instagram.com/reel/DfOjS_QD-d7/",
    "caption": "A fictional story. Would you open door A or door B? Comment your letter.\n\n#fiction #wouldy",
-   "views": 131,
-   "reach": 111,
+   "views": 132,
+   "reach": 112,
    "saved": 0,
    "shares": 1,
    "total_interactions": 4,
-   "ig_reels_avg_watch_time": 6607,
-   "ig_reels_video_view_total_time": 766515
+   "ig_reels_avg_watch_time": 6605,
+   "ig_reels_video_view_total_time": 772792
   },
   {
    "id": "18122078866991930",
@@ -281,13 +326,13 @@
    "comments_count": 0,
    "permalink": "https://www.instagram.com/reel/DfNv1fclfvK/",
    "caption": "A fictional story. The Witness, File 2. Would you go back?\n\n#fiction #scarystories #myster",
-   "views": 140,
-   "reach": 100,
+   "views": 141,
+   "reach": 101,
    "saved": 0,
    "shares": 0,
    "total_interactions": 2,
-   "ig_reels_avg_watch_time": 10200,
-   "ig_reels_video_view_total_time": 1101669
+   "ig_reels_avg_watch_time": 10348,
+   "ig_reels_video_view_total_time": 1127993
   },
   {
    "id": "18157867585516646",
@@ -296,13 +341,13 @@
    "comments_count": 0,
    "permalink": "https://www.instagram.com/reel/DfNV5TeCb0l/",
    "caption": "A fictional story. The Witness, File 1. Would you have opened that door?\n\n#fiction #scarys",
-   "views": 149,
-   "reach": 121,
+   "views": 150,
+   "reach": 122,
    "saved": 0,
    "shares": 0,
    "total_interactions": 4,
-   "ig_reels_avg_watch_time": 7822,
-   "ig_reels_video_view_total_time": 985622
+   "ig_reels_avg_watch_time": 8047,
+   "ig_reels_video_view_total_time": 1022031
   },
   {
    "id": "18032020961854686",
@@ -311,13 +356,13 @@
    "comments_count": 0,
    "permalink": "https://www.instagram.com/reel/DeuPMEvTqTm/",
    "caption": "Rituals?\n\n #elite",
-   "views": 94,
-   "reach": 57,
+   "views": 95,
+   "reach": 58,
    "saved": 1,
    "shares": 0,
    "total_interactions": 6,
-   "ig_reels_avg_watch_time": 5578,
-   "ig_reels_video_view_total_time": 351453
+   "ig_reels_avg_watch_time": 5514,
+   "ig_reels_video_view_total_time": 352908
   },
   {
    "id": "17976310488157504",
@@ -326,13 +371,13 @@
    "comments_count": 0,
    "permalink": "https://www.instagram.com/reel/DekETMkTNxk/",
    "caption": "What do you think about lizard people??",
-   "views": 135,
-   "reach": 107,
+   "views": 136,
+   "reach": 108,
    "saved": 0,
    "shares": 0,
    "total_interactions": 4,
-   "ig_reels_avg_watch_time": 5031,
-   "ig_reels_video_view_total_time": 568517
+   "ig_reels_avg_watch_time": 5071,
+   "ig_reels_video_view_total_time": 578130
   },
   {
    "id": "18055785089800031",
@@ -341,13 +386,13 @@
    "comments_count": 0,
    "permalink": "https://www.instagram.com/reel/Dei8YaJRLC0/",
    "caption": "Who controls us? Papers? Radios? Tv? Kings? Reptiles? Politicians? Someone else? \n#mystery",
-   "views": 18,
-   "reach": 13,
+   "views": 19,
+   "reach": 14,
    "saved": 0,
    "shares": 0,
    "total_interactions": 3,
-   "ig_reels_avg_watch_time": 4050,
-   "ig_reels_video_view_total_time": 76950
+   "ig_reels_avg_watch_time": 5117,
+   "ig_reels_video_view_total_time": 102354
   },
   {
    "id": "17935828773401510",
@@ -356,13 +401,13 @@
    "comments_count": 0,
    "permalink": "https://www.instagram.com/reel/Dei0gjBxcXl/",
    "caption": "",
-   "views": 180,
-   "reach": 109,
+   "views": 183,
+   "reach": 110,
    "saved": 0,
    "shares": 2,
    "total_interactions": 5,
-   "ig_reels_avg_watch_time": 8004,
-   "ig_reels_video_view_total_time": 920572
+   "ig_reels_avg_watch_time": 8088,
+   "ig_reels_video_view_total_time": 938276
   },
   {
    "id": "18111523529466551",
@@ -371,13 +416,13 @@
    "comments_count": 0,
    "permalink": "https://www.instagram.com/reel/DehaS3tTqSF/",
    "caption": "The Giants",
-   "views": 43,
-   "reach": 35,
+   "views": 44,
+   "reach": 36,
    "saved": 0,
    "shares": 0,
    "total_interactions": 3,
-   "ig_reels_avg_watch_time": 8449,
-   "ig_reels_video_view_total_time": 380228
+   "ig_reels_avg_watch_time": 9079,
+   "ig_reels_video_view_total_time": 417664
   }
  ]
 }
