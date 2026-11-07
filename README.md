@@ -61,13 +61,13 @@ Folder: [`gears-pov/`](gears-pov/)
 | [019-houseplant-thoughts](gears-pov/019-houseplant-thoughts.mp4) | You can hear what your houseplant thinks 🪴 | Posted on Instagram · on YouTube |
 | [020-mum-thoughts](gears-pov/020-mum-thoughts.mp4) | You can hear what your mum thinks 👩 | Posted on Instagram · on YouTube |
 | [021-hamster-thoughts](gears-pov/021-hamster-thoughts.mp4) | You can hear what your hamster thinks 🐹 | Posted on Instagram · on YouTube |
-| [022-toddler-thoughts](gears-pov/022-toddler-thoughts.mp4) | You can hear what your toddler thinks 🧒 | Waiting to post |
-| [023-seagull-thoughts](gears-pov/023-seagull-thoughts.mp4) | You can hear what seagulls think 🐦 | Waiting to post |
+| [022-toddler-thoughts](gears-pov/022-toddler-thoughts.mp4) | You can hear what your toddler thinks 🧒 | Posted on Instagram · on YouTube |
+| [023-seagull-thoughts](gears-pov/023-seagull-thoughts.mp4) | You can hear what seagulls think 🐦 | Posted on Instagram · on YouTube |
 | [024-wifi-router-thoughts](gears-pov/024-wifi-router-thoughts.mp4) | You can hear what your wifi router thinks 📶 | Waiting to post |
 | [025-dad-thoughts](gears-pov/025-dad-thoughts.mp4) | You can hear what your dad thinks 👨 | Posted on Instagram · on YouTube |
 | [026-cop-thoughts](gears-pov/026-cop-thoughts.mp4) | You can hear what the police officer thinks 🚓 | Waiting to post |
 | [027-ex-thoughts](gears-pov/027-ex-thoughts.mp4) | You can hear what your ex thinks 💔 | Waiting to post |
-| [028-alarm-clock-thoughts](gears-pov/028-alarm-clock-thoughts.mp4) | You can hear what your alarm clock thinks ⏰ | Waiting to post |
+| [028-alarm-clock-thoughts](gears-pov/028-alarm-clock-thoughts.mp4) | You can hear what your alarm clock thinks ⏰ | Posted on Instagram · on YouTube |
 | [029-puppy-first-night](gears-pov/029-puppy-first-night.mp4) | You can hear what your puppy thinks on night one 🐶 | Posted on Instagram · on YouTube |
 | [030-delivery-guy-thoughts](gears-pov/030-delivery-guy-thoughts.mp4) | You can hear what the delivery guy thinks 🍕 | Waiting to post |
 | [031-old-cat-thoughts](gears-pov/031-old-cat-thoughts.mp4) | You can hear what your 15-year-old cat thinks 🐱 | Waiting to post |
@@ -266,7 +266,7 @@ Folder: [`toy-reels/`](toy-reels/)
 | [76-stone-of-scone-heist](toy-reels/76-stone-of-scone-heist.mp4) | Four Students Stole Britain's Coronation Stone 🪨 | Posted (Instagram + YouTube) |
 | [77-mona-lisa-stolen](toy-reels/77-mona-lisa-stolen.mp4) | The Man Who Stole The Mona Lisa 🖼️ | Posted (Instagram + YouTube) |
 | [78-mailed-to-grandma](toy-reels/78-mailed-to-grandma.mp4) | A Little Girl Was Mailed To Her Grandma 📮 | Waiting to post |
-| [79-bat-bombs](toy-reels/79-bat-bombs.mp4) | The US Army Strapped Bombs To Bats. It Went Badly 🦇 | Waiting to post |
+| [79-bat-bombs](toy-reels/79-bat-bombs.mp4) | The US Army Strapped Bombs To Bats. It Went Badly 🦇 | Posted (Instagram + YouTube) |
 | [80-acoustic-kitty](toy-reels/80-acoustic-kitty.mp4) | The CIA Turned A Cat Into A Spy 🐈 | Waiting to post |
 | [81-pigeon-missile](toy-reels/81-pigeon-missile.mp4) | A Famous Scientist Trained Pigeons To Steer Missiles 🐦 | Waiting to post |
 | [82-emperor-norton](toy-reels/82-emperor-norton.mp4) | A Broke Man Declared Himself Emperor. The City Played Along 👑 | Waiting to post |
@@ -275,9 +275,9 @@ Folder: [`toy-reels/`](toy-reels/)
 | [85-clever-hans](toy-reels/85-clever-hans.mp4) | The Horse That Did Math. Sort Of 🐴 | Waiting to post |
 | [86-great-moon-hoax](toy-reels/86-great-moon-hoax.mp4) | A Newspaper Said Bat-People Lived On The Moon 🌙 | Waiting to post |
 | [87-dagen-h-sweden](toy-reels/87-dagen-h-sweden.mp4) | An Entire Country Switched Driving Sides Overnight 🚗 | Waiting to post |
-| [88-lake-peigneur](toy-reels/88-lake-peigneur.mp4) | An Oil Rig Drilled Into A Mine. The Whole Lake Vanished 🌀 | Waiting to post |
+| [88-lake-peigneur](toy-reels/88-lake-peigneur.mp4) | An Oil Rig Drilled Into A Mine. The Whole Lake Vanished 🌀 | Posted (Instagram + YouTube) |
 | [89-kentucky-meat-shower](toy-reels/89-kentucky-meat-shower.mp4) | It Rained Meat In Kentucky 🥩 | Waiting to post |
-| [90-1904-olympic-marathon](toy-reels/90-1904-olympic-marathon.mp4) | The Wildest Olympic Marathon Ever 🏃 | Waiting to post |
+| [90-1904-olympic-marathon](toy-reels/90-1904-olympic-marathon.mp4) | The Wildest Olympic Marathon Ever 🏃 | Posted (Instagram + YouTube) |
 | [91-byron-bear](toy-reels/91-byron-bear.mp4) | College Banned Dogs. So Lord Byron Got A Bear 🐻 | Waiting to post |
 | [92-napoleon-not-short](toy-reels/92-napoleon-not-short.mp4) | Napoleon Wasn't Short. A Cartoon Made Him Short 📏 | Waiting to post |
 | [93-68-years-hiccups](toy-reels/93-68-years-hiccups.mp4) | This Man Had Hiccups For 68 Years 😮 | Waiting to post |
