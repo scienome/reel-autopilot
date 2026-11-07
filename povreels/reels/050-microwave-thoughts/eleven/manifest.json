@@ -1,0 +1,18 @@
+{
+ "music-328e14a35174.mp3": {
+  "prompt": "Warm kitchen lo-fi with soft keys and plucked guitar, cheeky at first, then tender, no vocals",
+  "music_length_ms": 35420,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-093dde7cbe4a.mp3": {
+  "text": "microwave beep",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-831e7143ab51.mp3": {
+  "text": "soft warm choir aww",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ }
+}
