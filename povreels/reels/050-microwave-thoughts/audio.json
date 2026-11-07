@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Warm kitchen lo-fi with soft keys and plucked guitar, cheeky at first, then tender, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "microwave",
+   "offset": 0.0,
+   "prompt": "microwave beep",
+   "dur": 1.2,
+   "gain": -6
+  },
+  {
+   "beat": "m1",
+   "word": "Beep",
+   "offset": 0.0,
+   "prompt": "microwave beep",
+   "dur": 1.2,
+   "gain": -6
+  },
+  {
+   "beat": "m3",
+   "word": "warm",
+   "offset": 0.0,
+   "prompt": "soft warm choir aww",
+   "dur": 2,
+   "gain": -9
+  },
+  {
+   "beat": "m4",
+   "word": "Beep.",
+   "offset": 0.0,
+   "prompt": "microwave beep",
+   "dur": 1.2,
+   "gain": -6
+  }
+ ]
+}

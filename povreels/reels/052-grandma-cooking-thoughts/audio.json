@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Warm nostalgic acoustic guitar and soft accordion, cheeky at first, tender and emotional in the middle, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "cooks",
+   "offset": 0.0,
+   "prompt": "pot sizzling cooking",
+   "dur": 2,
+   "gain": -8
+  },
+  {
+   "beat": "g2",
+   "word": "Worth",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -9
+  },
+  {
+   "beat": "g3",
+   "word": "empty",
+   "offset": 0.0,
+   "prompt": "soft sad piano note",
+   "dur": 2,
+   "gain": -10
+  },
+  {
+   "beat": "g4",
+   "word": "thirds",
+   "offset": 0.0,
+   "prompt": "soft warm choir aww",
+   "dur": 2,
+   "gain": -9
+  }
+ ]
+}

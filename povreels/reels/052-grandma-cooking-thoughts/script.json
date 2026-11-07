@@ -1,0 +1,67 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what your grandma thinks while she cooks."
+  ]
+ },
+ {
+  "id": "g1",
+  "who": "grandma",
+  "phrases": [
+   "Eat more.",
+   "You look thin.",
+   "You look thin every time."
+  ]
+ },
+ {
+  "id": "g2",
+  "who": "grandma",
+  "phrases": [
+   "I cooked for three hours.",
+   "You'll eat it in three minutes.",
+   "Worth it."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "You help her carry the plates. She stops."
+  ]
+ },
+ {
+  "id": "g3",
+  "who": "grandma",
+  "phrases": [
+   "Your grandpa's chair is empty.",
+   "The house is so quiet.",
+   "So I cook enough for everyone."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "You sit in his chair."
+  ]
+ },
+ {
+  "id": "g4",
+  "who": "grandma",
+  "phrases": [
+   "Oh.",
+   "Eat, eat.",
+   "Have seconds. Have thirds."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "What did your grandma cook for you?",
+   "Part two?"
+  ]
+ }
+]

@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Playful jazzy double bass and brushed drums with a mysterious wink, tender purring warmth in the middle, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "cat",
+   "offset": 0.0,
+   "prompt": "cat meow",
+   "dur": 1.2,
+   "gain": -6
+  },
+  {
+   "beat": "c2",
+   "word": "think",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -9
+  },
+  {
+   "beat": "c3",
+   "word": "purring",
+   "offset": 0.0,
+   "prompt": "cat purring",
+   "dur": 2.5,
+   "gain": -8
+  },
+  {
+   "beat": "c4",
+   "word": "feed",
+   "offset": 0.0,
+   "prompt": "cat meow demanding",
+   "dur": 1.2,
+   "gain": -6
+  }
+ ]
+}

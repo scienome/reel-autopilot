@@ -1,0 +1,66 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what your microwave thinks."
+  ]
+ },
+ {
+  "id": "m1",
+  "who": "car",
+  "phrases": [
+   "Beep beep.",
+   "Three minutes.",
+   "You never take it out."
+  ]
+ },
+ {
+  "id": "m2",
+  "who": "car",
+  "phrases": [
+   "Last Tuesday you left coffee in me for six hours.",
+   "I am not a storage unit."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "Midnight. You're crying and heating up leftovers."
+  ]
+ },
+ {
+  "id": "m3",
+  "who": "car",
+  "phrases": [
+   "I see you.",
+   "Same pasta, three days.",
+   "I'll make it warm. That's what I can do."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "You walk away. It beeps again."
+  ]
+ },
+ {
+  "id": "m4",
+  "who": "car",
+  "phrases": [
+   "Beep. Beep. Beep.",
+   "I'm not mad.",
+   "I just want you to know I'm here."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "What did you reheat last night?",
+   "Part two?"
+  ]
+ }
+]

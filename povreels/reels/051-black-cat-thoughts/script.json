@@ -1,0 +1,67 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what a black cat thinks."
+  ]
+ },
+ {
+  "id": "c1",
+  "who": "pug",
+  "phrases": [
+   "You walked around me.",
+   "Rude.",
+   "I'm not bad luck."
+  ]
+ },
+ {
+  "id": "c2",
+  "who": "pug",
+  "phrases": [
+   "Your exam went well.",
+   "You got the promotion.",
+   "Who do you think did that?"
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "One night, you get a terrible cold."
+  ]
+ },
+ {
+  "id": "c3",
+  "who": "pug",
+  "phrases": [
+   "Don't tell anyone.",
+   "But I'm sitting on your chest.",
+   "That's called purring. It's medicine."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "By morning, you feel better."
+  ]
+ },
+ {
+  "id": "c4",
+  "who": "pug",
+  "phrases": [
+   "Luck? Please.",
+   "I just like you.",
+   "Now feed me."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "Would you walk around a black cat?",
+   "Part two?"
+  ]
+ }
+]
