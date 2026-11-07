@@ -35,7 +35,7 @@ Folder: [`couch-cartoon/`](couch-cartoon/)
 | [p003-the-real-hurt](couch-cartoon/p003-the-real-hurt.mp4) | "When did you stop looking at me?" 💔 | Not scheduled |
 | [t001-dentist](couch-cartoon/t001-dentist.mp4) | Who's Jessica? 📱 | Not scheduled |
 
-## Thought Bubble POV stories (formerly Gears & Glitches) (46)
+## Thought Bubble POV stories (formerly Gears & Glitches) (50)
 Folder: [`gears-pov/`](gears-pov/)
 
 | Video | Title | Status |
@@ -63,10 +63,10 @@ Folder: [`gears-pov/`](gears-pov/)
 | [021-hamster-thoughts](gears-pov/021-hamster-thoughts.mp4) | You can hear what your hamster thinks 🐹 | Posted on Instagram · on YouTube |
 | [022-toddler-thoughts](gears-pov/022-toddler-thoughts.mp4) | You can hear what your toddler thinks 🧒 | Posted on Instagram · on YouTube |
 | [023-seagull-thoughts](gears-pov/023-seagull-thoughts.mp4) | You can hear what seagulls think 🐦 | Posted on Instagram · on YouTube |
-| [024-wifi-router-thoughts](gears-pov/024-wifi-router-thoughts.mp4) | You can hear what your wifi router thinks 📶 | Waiting to post |
+| [024-wifi-router-thoughts](gears-pov/024-wifi-router-thoughts.mp4) | You can hear what your wifi router thinks 📶 | Posted on Instagram · on YouTube |
 | [025-dad-thoughts](gears-pov/025-dad-thoughts.mp4) | You can hear what your dad thinks 👨 | Posted on Instagram · on YouTube |
 | [026-cop-thoughts](gears-pov/026-cop-thoughts.mp4) | You can hear what the police officer thinks 🚓 | Waiting to post |
-| [027-ex-thoughts](gears-pov/027-ex-thoughts.mp4) | You can hear what your ex thinks 💔 | Waiting to post |
+| [027-ex-thoughts](gears-pov/027-ex-thoughts.mp4) | You can hear what your ex thinks 💔 | Posted on Instagram · on YouTube |
 | [028-alarm-clock-thoughts](gears-pov/028-alarm-clock-thoughts.mp4) | You can hear what your alarm clock thinks ⏰ | Posted on Instagram · on YouTube |
 | [029-puppy-first-night](gears-pov/029-puppy-first-night.mp4) | You can hear what your puppy thinks on night one 🐶 | Posted on Instagram · on YouTube |
 | [030-delivery-guy-thoughts](gears-pov/030-delivery-guy-thoughts.mp4) | You can hear what the delivery guy thinks 🍕 | Waiting to post |
@@ -86,6 +86,10 @@ Folder: [`gears-pov/`](gears-pov/)
 | [044-first-date-thoughts](gears-pov/044-first-date-thoughts.mp4) | You can hear what your first date thinks 💘 | Waiting to post |
 | [045-old-dog-thoughts](gears-pov/045-old-dog-thoughts.mp4) | You can hear what your old dog thinks 🐕 | Waiting to post |
 | [046-tv-remote-thoughts](gears-pov/046-tv-remote-thoughts.mp4) | You can hear what your TV remote thinks 📺 | Waiting to post |
+| [047-stray-dog-thoughts](gears-pov/047-stray-dog-thoughts.mp4) | You can hear what a stray dog thinks 🐕 | Not scheduled |
+| [048-rooster-thoughts](gears-pov/048-rooster-thoughts.mp4) | You can hear what the rooster thinks at 4am 🐓 | Not scheduled |
+| [049-dentist-thoughts](gears-pov/049-dentist-thoughts.mp4) | You can hear what your dentist thinks 🦷 | Not scheduled |
+| [050-microwave-thoughts](gears-pov/050-microwave-thoughts.mp4) | 050-microwave-thoughts | Not scheduled |
 
 ## CouchSarcasm (old couple comedy) (40)
 Folder: [`couch-sarcasm/`](couch-sarcasm/)
@@ -267,9 +271,9 @@ Folder: [`toy-reels/`](toy-reels/)
 | [77-mona-lisa-stolen](toy-reels/77-mona-lisa-stolen.mp4) | The Man Who Stole The Mona Lisa 🖼️ | Posted (Instagram + YouTube) |
 | [78-mailed-to-grandma](toy-reels/78-mailed-to-grandma.mp4) | A Little Girl Was Mailed To Her Grandma 📮 | Waiting to post |
 | [79-bat-bombs](toy-reels/79-bat-bombs.mp4) | The US Army Strapped Bombs To Bats. It Went Badly 🦇 | Posted (Instagram + YouTube) |
-| [80-acoustic-kitty](toy-reels/80-acoustic-kitty.mp4) | The CIA Turned A Cat Into A Spy 🐈 | Waiting to post |
+| [80-acoustic-kitty](toy-reels/80-acoustic-kitty.mp4) | The CIA Turned A Cat Into A Spy 🐈 | Posted (Instagram + YouTube) |
 | [81-pigeon-missile](toy-reels/81-pigeon-missile.mp4) | A Famous Scientist Trained Pigeons To Steer Missiles 🐦 | Waiting to post |
-| [82-emperor-norton](toy-reels/82-emperor-norton.mp4) | A Broke Man Declared Himself Emperor. The City Played Along 👑 | Waiting to post |
+| [82-emperor-norton](toy-reels/82-emperor-norton.mp4) | A Broke Man Declared Himself Emperor. The City Played Along 👑 | Posted (Instagram + YouTube) |
 | [83-cottingley-fairies](toy-reels/83-cottingley-fairies.mp4) | Two Girls Fooled Sherlock Holmes's Creator With Paper Fairies 🧚 | Waiting to post |
 | [84-mechanical-turk](toy-reels/84-mechanical-turk.mp4) | A Chess Robot Beat Napoleon. A Man Was Hiding Inside ♟️ | Waiting to post |
 | [85-clever-hans](toy-reels/85-clever-hans.mp4) | The Horse That Did Math. Sort Of 🐴 | Waiting to post |
