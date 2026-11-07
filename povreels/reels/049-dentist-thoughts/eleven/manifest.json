@@ -1,0 +1,23 @@
+{
+ "music-be10646928cf.mp3": {
+  "prompt": "Quirky light comedy underscore with pizzicato and marimba, tender in the middle, cheeky at the end, no vocals",
+  "music_length_ms": 31740,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-d947d0bdda35.mp3": {
+  "text": "dental drill short",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-09f5a2915fda.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-831e7143ab51.mp3": {
+  "text": "soft warm choir aww",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ }
+}
