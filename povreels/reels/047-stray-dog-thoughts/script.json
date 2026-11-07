@@ -1,0 +1,68 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what a stray dog thinks."
+  ]
+ },
+ {
+  "id": "d1",
+  "who": "dog",
+  "phrases": [
+   "Please don't walk past.",
+   "I'm not asking for food.",
+   "Okay. A little food."
+  ]
+ },
+ {
+  "id": "d2",
+  "who": "dog",
+  "phrases": [
+   "I watch the same shop every day.",
+   "A man gave me half a sandwich once.",
+   "I think about it daily."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "One cold night, you stop."
+  ]
+ },
+ {
+  "id": "d3",
+  "who": "dog",
+  "phrases": [
+   "I knew it.",
+   "You're the one.",
+   "I've been waiting since the sandwich."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "You take him home."
+  ]
+ },
+ {
+  "id": "d4",
+  "who": "dog",
+  "phrases": [
+   "Is this a bed?",
+   "For me?",
+   "I don't know how to do this.",
+   "Can I just sit very close to you?"
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "Would you stop for a stray?",
+   "Part two?"
+  ]
+ }
+]

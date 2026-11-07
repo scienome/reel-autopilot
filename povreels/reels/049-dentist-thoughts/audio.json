@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Quirky light comedy underscore with pizzicato and marimba, tender in the middle, cheeky at the end, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "dentist",
+   "offset": 0.0,
+   "prompt": "dental drill short",
+   "dur": 1.2,
+   "gain": -8
+  },
+  {
+   "beat": "t2",
+   "word": "Yesterday",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -9
+  },
+  {
+   "beat": "t3",
+   "word": "Squeeze",
+   "offset": 0.0,
+   "prompt": "soft warm choir aww",
+   "dur": 2,
+   "gain": -9
+  },
+  {
+   "beat": "t4",
+   "word": "floss",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -9
+  }
+ ]
+}

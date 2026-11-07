@@ -390,5 +390,131 @@
    "title": "Você ouve o que o entregador pensa 🍕",
    "caption": "Nove pizzas. Uma pessoa. \"Sem julgamento. Tá, um pouquinho.\" 🍕\nDepois você correu atrás dele... Você dá gorjeta? 👇"
   }
+ },
+ "047-stray-dog-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं आवारा कुत्ता क्या सोचता है 🐕",
+   "caption": "उसे वो आदमी याद है जिसने उसे आधा सैंडविच दिया था। 🐕\nक्या आप एक आवारा कुत्ते के लिए रुकेंगे? 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa un perro callejero 🐕",
+   "caption": "Recuerda al hombre que le dio medio sándwich. 🐕\n¿Te detendrías por un perro callejero? 👇"
+  },
+  "pt": {
+   "title": "Você pode ouvir o que um cachorro de rua pensa 🐕",
+   "caption": "Ele lembra do homem que lhe deu meio sanduíche. 🐕\nVocê pararia por um cachorro de rua? 👇"
+  }
+ },
+ "048-rooster-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं सुबह 4 बजे मुर्गा क्या सोचता है 🐓",
+   "caption": "\"सब मुझसे नफ़रत करते हैं। पर आप मेरी वजह से ही उठते हैं।\" 🐓\nआप अपने अलार्म से प्यार करते हैं या नफ़रत? 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa el gallo a las 4 a. m. 🐓",
+   "caption": "\"Todos me odian. Pero soy la única razón por la que despiertas.\" 🐓\n¿Amas u odias tu alarma? 👇"
+  },
+  "pt": {
+   "title": "Você pode ouvir o que o galo pensa às 4 da manhã 🐓",
+   "caption": "\"Todo mundo me odeia. Mas sou a única razão de você acordar.\" 🐓\nVocê ama ou odeia seu despertador? 👇"
+  }
+ },
+ "049-dentist-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं आपका डेंटिस्ट क्या सोचता है 🦷",
+   "caption": "\"क्या आप फ्लॉस करते हैं?\" \"रोज़।\" आपके मसूड़े कहते हैं: एक बार, कल। 🦷\nसच में कितनी बार फ्लॉस करते हैं? 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa tu dentista 🦷",
+   "caption": "\"¿Usas hilo dental?\" \"Todos los días.\" Tus encías dicen: una vez, ayer. 🦷\n¿Cuántas veces lo usas de verdad? 👇"
+  },
+  "pt": {
+   "title": "Você pode ouvir o que seu dentista pensa 🦷",
+   "caption": "\"Você usa fio dental?\" \"Todo dia.\" Suas gengivas dizem: uma vez, ontem. 🦷\nQuantas vezes você usa de verdade? 👇"
+  }
+ },
+ "050-microwave-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं आपका माइक्रोवेव क्या सोचता है 🍝",
+   "caption": "तीन दिन लगातार वही पास्ता। वो सब देखता है। 🍝\nकल रात आपने क्या गर्म किया? 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa tu microondas 🍝",
+   "caption": "La misma pasta, tres días seguidos. Lo ve todo. 🍝\n¿Qué recalentaste anoche? 👇"
+  },
+  "pt": {
+   "title": "Você pode ouvir o que seu micro-ondas pensa 🍝",
+   "caption": "O mesmo macarrão, três dias seguidos. Ele vê tudo. 🍝\nO que você requentou ontem à noite? 👇"
+  }
+ },
+ "051-black-cat-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं काली बिल्ली क्या सोचती है 🐈‍⬛",
+   "caption": "\"अपशकुन?\" ज़रा सोचिए। आपकी ज़िंदगी उसी की वजह से चलती है। 🐈‍⬛\nक्या आप काली बिल्ली से बचकर निकलेंगे? 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa un gato negro 🐈‍⬛",
+   "caption": "\"¿Mala suerte?\" Por favor. Ella es la razón de que tu vida funcione. 🐈‍⬛\n¿Darías la vuelta por un gato negro? 👇"
+  },
+  "pt": {
+   "title": "Você pode ouvir o que um gato preto pensa 🐈‍⬛",
+   "caption": "\"Azar?\" Por favor. Ela é o motivo da sua vida dar certo. 🐈‍⬛\nVocê desviaria de um gato preto? 👇"
+  }
+ },
+ "052-grandma-cooking-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं खाना बनाते समय आपकी दादी क्या सोचती है 👵",
+   "caption": "\"मैं इसलिए पकाती हूँ कि तुम लौटकर आओ।\" 👵\nदादी ने आपके लिए क्या बनाया? 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa tu abuela mientras cocina 👵",
+   "caption": "\"Cocino para que vuelvas.\" 👵\n¿Qué te cocinaba tu abuela? 👇"
+  },
+  "pt": {
+   "title": "Você pode ouvir o que sua avó pensa enquanto cozinha 👵",
+   "caption": "\"Eu cozinho para você voltar.\" 👵\nO que sua avó cozinhava para você? 👇"
+  }
+ },
+ "053-elevator-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं लिफ़्ट क्या सोचती है 🛗",
+   "caption": "दरवाज़ा बंद करने वाला बटन कुछ नहीं करता। लिफ़्ट बस आपको दबाने देती है। 🛗\nक्या आप भी बटन बार-बार दबाते हैं? 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa el ascensor 🛗",
+   "caption": "El botón de cerrar puertas no hace nada. Te deja pulsarlo por consuelo. 🛗\n¿Tú también lo aporreas? 👇"
+  },
+  "pt": {
+   "title": "Você pode ouvir o que o elevador pensa 🛗",
+   "caption": "O botão de fechar a porta não faz nada. Ele deixa você apertar por conforto. 🛗\nVocê também aperta sem parar? 👇"
+  }
+ },
+ "054-penguin-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं पेंगुइन क्या सोचता है 🐧",
+   "caption": "\"आज मैं चार बार गिरा। अच्छे वाले किसी ने फ़िल्माए ही नहीं।\" 🐧\nआप कंकड़ किसे देंगे? 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa un pingüino 🐧",
+   "caption": "\"Hoy me caí cuatro veces. Nadie grabó las buenas.\" 🐧\n¿A quién le darías una piedrita? 👇"
+  },
+  "pt": {
+   "title": "Você pode ouvir o que um pinguim pensa 🐧",
+   "caption": "\"Hoje caí quatro vezes. Ninguém filmou as boas.\" 🐧\nPara quem você daria uma pedrinha? 👇"
+  }
+ },
+ "055-best-friend-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं जब आपका बेस्ट फ्रेंड \"मैं ठीक हूँ\" कहता है तो वो क्या सोचता है 💬",
+   "caption": "\"मैं ठीक हूँ।\" वो ठीक नहीं है। दोबारा पूछिए। 💬\nआपने आख़िरी बार किसी दोस्त से दो बार कब पूछा था? 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa tu mejor amigo cuando dice \"estoy bien\" 💬",
+   "caption": "\"Estoy bien.\" No lo está. Pregunta dos veces. 💬\n¿Cuándo fue la última vez que preguntaste dos veces? 👇"
+  },
+  "pt": {
+   "title": "Você pode ouvir o que seu melhor amigo pensa quando diz \"estou bem\" 💬",
+   "caption": "\"Estou bem.\" Não está. Pergunte duas vezes. 💬\nQuando foi a última vez que você perguntou duas vezes? 👇"
+  }
  }
 }

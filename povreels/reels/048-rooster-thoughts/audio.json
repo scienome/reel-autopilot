@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Cheeky farmyard banjo and pizzicato strings, sleepy in the middle, then a panicky comic ending, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "rooster",
+   "offset": 0.0,
+   "prompt": "rooster crowing",
+   "dur": 1.8,
+   "gain": -5
+  },
+  {
+   "beat": "r1",
+   "word": "scream",
+   "offset": 0.0,
+   "prompt": "rooster crow loud",
+   "dur": 1.5,
+   "gain": -6
+  },
+  {
+   "beat": "r3",
+   "word": "quiet",
+   "offset": 0.0,
+   "prompt": "crickets",
+   "dur": 2,
+   "gain": -10
+  },
+  {
+   "beat": "r4",
+   "word": "three",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -9
+  }
+ ]
+}

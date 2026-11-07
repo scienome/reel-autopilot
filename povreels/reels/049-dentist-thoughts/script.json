@@ -1,0 +1,65 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what your dentist thinks."
+  ]
+ },
+ {
+  "id": "t1",
+  "who": "dad",
+  "phrases": [
+   "Open wider.",
+   "Please stop biting my fingers."
+  ]
+ },
+ {
+  "id": "t2",
+  "who": "dad",
+  "phrases": [
+   "Do you floss?",
+   "'Every day.'",
+   "Your gums say once. Yesterday."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "A little boy sits in the chair. He's shaking."
+  ]
+ },
+ {
+  "id": "t3",
+  "who": "dad",
+  "phrases": [
+   "I was scared of this chair too.",
+   "That's why I became a dentist.",
+   "Squeeze my hand."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "He doesn't cry once."
+  ]
+ },
+ {
+  "id": "t4",
+  "who": "dad",
+  "phrases": [
+   "Great job, champ.",
+   "Now tell your dad to floss."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "How often do you really floss?",
+   "Part two?"
+  ]
+ }
+]

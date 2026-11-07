@@ -1,0 +1,67 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what the rooster thinks at four a.m."
+  ]
+ },
+ {
+  "id": "r1",
+  "who": "poodle",
+  "phrases": [
+   "Four a.m.",
+   "Time to scream.",
+   "Nobody asked. Doesn't matter."
+  ]
+ },
+ {
+  "id": "r2",
+  "who": "poodle",
+  "phrases": [
+   "Everyone hates me.",
+   "But I'm the only reason you wake up.",
+   "You're welcome."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "One morning, the rooster oversleeps."
+  ]
+ },
+ {
+  "id": "r3",
+  "who": "poodle",
+  "phrases": [
+   "Wait. What time is it?",
+   "Why is it so quiet?",
+   "Did I skip the sunrise?"
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "The whole village wakes up at noon."
+  ]
+ },
+ {
+  "id": "r4",
+  "who": "poodle",
+  "phrases": [
+   "Nobody is coming to thank me.",
+   "Fine.",
+   "Tomorrow I'm screaming at three."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "Do you love your alarm, or hate it?",
+   "Part two?"
+  ]
+ }
+]
