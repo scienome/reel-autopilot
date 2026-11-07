@@ -1,0 +1,23 @@
+{
+ "music-4434e2eb54d9.mp3": {
+  "prompt": "Soft elevator-style jazz with vibraphone, cheeky at first, then tender and slow, no vocals",
+  "music_length_ms": 32620,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-c96f7dcaf04e.mp3": {
+  "text": "elevator ding",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-09f5a2915fda.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-da533cbf206f.mp3": {
+  "text": "elevator hum gentle",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ }
+}
