@@ -1,0 +1,28 @@
+{
+ "music-859babd2dbd7.mp3": {
+  "prompt": "Cheeky farmyard banjo and pizzicato strings, sleepy in the middle, then a panicky comic ending, no vocals",
+  "music_length_ms": 36460,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-dc93fa2e45d8.mp3": {
+  "text": "rooster crowing",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ },
+ "sfx-bd7fb569b014.mp3": {
+  "text": "rooster crow loud",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-f88d20bc5630.mp3": {
+  "text": "crickets",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-09f5a2915fda.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ }
+}
