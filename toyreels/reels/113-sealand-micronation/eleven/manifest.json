@@ -1,0 +1,28 @@
+{
+ "music-857afc87be37.mp3": {
+  "prompt": "Cheeky pirate shanty with accordion and tin whistle, upbeat and funny, no vocals",
+  "music_length_ms": 26200,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-1af52583028b.mp3": {
+  "text": "comedic trumpet fanfare short",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-9eccfc014c3b.mp3": {
+  "text": "royal fanfare short",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-00c52c3af065.mp3": {
+  "text": "gunshot cartoon and splash",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-143718da5de6.mp3": {
+  "text": "sad trombone wah wah",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
