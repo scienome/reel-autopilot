@@ -2,19 +2,107 @@
  {
   "chapter": "A",
   "beats": [
-   { "id": "hook", "phrases": ["Why is your pizza always cold", "when it finally arrives?"] },
-   { "id": "fix", "phrases": ["Let's fix that."] },
-   { "id": "b1", "phrases": ["First, give the delivery guy", "a faster bike."] },
-   { "id": "b2", "phrases": ["Now he's quick.", "Until he hits traffic."] },
-   { "id": "b3", "phrases": ["So strap a jetpack", "to his back."] },
-   { "id": "b4", "phrases": ["Great! He flies over everything.", "Except the wind", "blows your pizza away."] },
-   { "id": "b5", "phrases": ["So put a whole oven", "inside his backpack."] },
-   { "id": "b6", "phrases": ["The pizza stays hot.", "But now he's too heavy", "to take off."] },
-   { "id": "b7", "phrases": ["So you move the pizza shop", "right next to your house."] },
-   { "id": "b8", "phrases": ["Except now the whole town", "queues on your lawn."] },
-   { "id": "b9", "phrases": ["So you get your own", "delivery vehicle."] },
-   { "id": "twist", "phrases": ["Your pizza arrives in two seconds.", "Piping hot."] },
-   { "id": "close", "phrases": ["You ordered ice cream."] }
+   {
+    "id": "hook",
+    "phrases": [
+     "Why is your pizza always cold",
+     "when it finally arrives?"
+    ]
+   },
+   {
+    "id": "fix",
+    "phrases": [
+     "Let's fix that."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "First, give the delivery guy",
+     "a faster bike."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "Now he's quick.",
+     "Until he hits traffic."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "So strap a jetpack",
+     "to his back."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "B",
+  "beats": [
+   {
+    "id": "b4",
+    "phrases": [
+     "Great! He flies over everything.",
+     "Except the wind",
+     "blows your pizza away."
+    ]
+   },
+   {
+    "id": "b5",
+    "phrases": [
+     "So put a whole oven",
+     "inside his backpack."
+    ]
+   },
+   {
+    "id": "b6",
+    "phrases": [
+     "The pizza stays hot.",
+     "But now he's too heavy",
+     "to take off."
+    ]
+   },
+   {
+    "id": "b7",
+    "phrases": [
+     "So you move the pizza shop",
+     "right next to your house."
+    ]
+   }
+  ]
+ },
+ {
+  "chapter": "C",
+  "beats": [
+   {
+    "id": "b8",
+    "phrases": [
+     "Except now the whole town",
+     "queues on your lawn."
+    ]
+   },
+   {
+    "id": "b9",
+    "phrases": [
+     "So you get your own",
+     "delivery vehicle."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "Your pizza arrives in two seconds.",
+     "Piping hot."
+    ]
+   },
+   {
+    "id": "close",
+    "phrases": [
+     "You ordered ice cream."
+    ]
+   }
   ]
  }
 ]
