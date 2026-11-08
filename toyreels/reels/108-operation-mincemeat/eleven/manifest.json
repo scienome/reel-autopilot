@@ -1,0 +1,28 @@
+{
+ "music-462d25c43f2c.mp3": {
+  "prompt": "Sneaky 1940s spy jazz, upright bass, muted trumpet and finger snaps, tense but playful, no vocals",
+  "music_length_ms": 30840,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-08f88acdc731.mp3": {
+  "text": "comedic suspenseful sting",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-b34ccbc6116e.mp3": {
+  "text": "metal handcuff chain clink",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-e9cdd478f7c2.mp3": {
+  "text": "typewriter bell ding",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-8b4b9af5f22d.mp3": {
+  "text": "soldiers landing on beach with waves",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
