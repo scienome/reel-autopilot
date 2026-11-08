@@ -1,0 +1,30 @@
+[
+ {
+  "chapter": "A",
+  "beats": [
+   { "id": "hook", "phrases": ["Why does your car turn into an oven", "every summer?"] },
+   { "id": "fix", "phrases": ["Let's fix that."] },
+   { "id": "b1", "phrases": ["First, put a sunshade", "on the windscreen."] },
+   { "id": "b2", "phrases": ["Except the rest of the car", "still cooks."] }
+  ]
+ },
+ {
+  "chapter": "B",
+  "beats": [
+   { "id": "b3", "phrases": ["So park it", "under a big tree."] },
+   { "id": "b4", "phrases": ["Perfect shade.", "Until fifty birds move in", "right above it."] },
+   { "id": "b5", "phrases": ["So build a roof", "over your car."] },
+   { "id": "b6", "phrases": ["But the sun sneaks in", "from the sides."] }
+  ]
+ },
+ {
+  "chapter": "C",
+  "beats": [
+   { "id": "b7", "phrases": ["So add walls.", "Now it's a garage."] },
+   { "id": "b8", "phrases": ["Except a closed box in the sun", "gets even hotter."] },
+   { "id": "b9", "phrases": ["So bolt an air conditioner", "to the wall."] },
+   { "id": "twist", "phrases": ["Your car is ice cold.", "Perfect."] },
+   { "id": "close", "phrases": ["But your keys", "are locked inside it."] }
+  ]
+ }
+]
