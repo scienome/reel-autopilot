@@ -69,8 +69,8 @@ Folder: [`gears-pov/`](gears-pov/)
 | [027-ex-thoughts](gears-pov/027-ex-thoughts.mp4) | You can hear what your ex thinks 💔 | Posted on Instagram · on YouTube |
 | [028-alarm-clock-thoughts](gears-pov/028-alarm-clock-thoughts.mp4) | You can hear what your alarm clock thinks ⏰ | Posted on Instagram · on YouTube |
 | [029-puppy-first-night](gears-pov/029-puppy-first-night.mp4) | You can hear what your puppy thinks on night one 🐶 | Posted on Instagram · on YouTube |
-| [030-delivery-guy-thoughts](gears-pov/030-delivery-guy-thoughts.mp4) | You can hear what the delivery guy thinks 🍕 | Waiting to post |
-| [031-old-cat-thoughts](gears-pov/031-old-cat-thoughts.mp4) | You can hear what your 15-year-old cat thinks 🐱 | Waiting to post |
+| [030-delivery-guy-thoughts](gears-pov/030-delivery-guy-thoughts.mp4) | You can hear what the delivery guy thinks 🍕 | Posted on Instagram · on YouTube |
+| [031-old-cat-thoughts](gears-pov/031-old-cat-thoughts.mp4) | You can hear what your 15-year-old cat thinks 🐱 | Posted on Instagram · on YouTube |
 | [032-waiter-thoughts](gears-pov/032-waiter-thoughts.mp4) | You can hear what your waiter thinks 🍽️ | Waiting to post |
 | [033-duck-thoughts](gears-pov/033-duck-thoughts.mp4) | You can hear what ducks think 🦆 | Waiting to post |
 | [034-crow-thoughts](gears-pov/034-crow-thoughts.mp4) | You can hear what crows think. And they remember your face 🐦‍⬛ | Waiting to post |
@@ -192,7 +192,7 @@ Folder: [`dave-reels/`](dave-reels/)
 | [43-dave-grows-an-inch](dave-reels/43-dave-grows-an-inch.mp4) | What if you grew 1 inch every day? | Waiting to post |
 | [44-gimli-glider](dave-reels/44-gimli-glider.mp4) | The jet that ran out of fuel because of maths | Waiting to post |
 
-## Toy reels (Brick Toy) (107)
+## Toy reels (Brick Toy) (112)
 Folder: [`toy-reels/`](toy-reels/)
 
 | Video | Title | Status |
@@ -214,7 +214,12 @@ Folder: [`toy-reels/`](toy-reels/)
 | [104-cold-pizza-buster](toy-reels/104-cold-pizza-buster.mp4) | How To Get Your Pizza Hot, Step By Step 🍕 | Skipped (never posted) |
 | [105-shopping-bags](toy-reels/105-shopping-bags.mp4) | How To Stop Your Shopping Bags Ripping, Step By Step 🛒 | Skipped (never posted) |
 | [106-hot-car](toy-reels/106-hot-car.mp4) | How To Stop Your Car Becoming An Oven, Step By Step 🚗 | Skipped (never posted) |
+| [107-lego-spill-1997](toy-reels/107-lego-spill-1997.mp4) | 5 Million Lego Pieces Fell In The Sea. They Never Stopped Washing Up 🧱 | Waiting to post |
+| [108-operation-mincemeat](toy-reels/108-operation-mincemeat.mp4) | Britain Fooled Hitler With A Dead Man And A Briefcase 💼 | Waiting to post |
+| [109-gimli-glider](toy-reels/109-gimli-glider.mp4) | A Jumbo Jet Ran Out Of Fuel. The Pilot Glided It Onto A Racetrack ✈️ | Waiting to post |
 | [11-kim-missile-boomerang](toy-reels/11-kim-missile-boomerang.mp4) | Kim Pressed The Button. The Missile Came Back. 💀 | Posted (Instagram + YouTube) |
+| [110-captain-of-kopenick](toy-reels/110-captain-of-kopenick.mp4) | A Jobless Shoemaker Took Over A Town Hall In A Costume 🥾 | Waiting to post |
+| [111-wrong-way-corrigan](toy-reels/111-wrong-way-corrigan.mp4) | He Flew To Ireland By "Accident" And Became A Hero ✈️ | Waiting to post |
 | [12-zombie-apocalypse-fails](toy-reels/12-zombie-apocalypse-fails.mp4) | The Zombie Apocalypse Failed For The Dumbest Reason 🧟 | Posted (Instagram + YouTube) |
 | [13-hitler-hell-queue](toy-reels/13-hitler-hell-queue.mp4) | Hitler Went To Hell And Got Put On Hold 💀 | Posted (Instagram + YouTube) |
 | [14-death-replaced-by-ai](toy-reels/14-death-replaced-by-ai.mp4) | Death Got Replaced By AI. Nobody Has Died Since 💀 | Posted (Instagram + YouTube) |
@@ -292,9 +297,9 @@ Folder: [`toy-reels/`](toy-reels/)
 | [86-great-moon-hoax](toy-reels/86-great-moon-hoax.mp4) | A Newspaper Said Bat-People Lived On The Moon 🌙 | Waiting to post |
 | [87-dagen-h-sweden](toy-reels/87-dagen-h-sweden.mp4) | An Entire Country Switched Driving Sides Overnight 🚗 | Waiting to post |
 | [88-lake-peigneur](toy-reels/88-lake-peigneur.mp4) | An Oil Rig Drilled Into A Mine. The Whole Lake Vanished 🌀 | Posted (Instagram + YouTube) |
-| [89-kentucky-meat-shower](toy-reels/89-kentucky-meat-shower.mp4) | It Rained Meat In Kentucky 🥩 | Waiting to post |
+| [89-kentucky-meat-shower](toy-reels/89-kentucky-meat-shower.mp4) | It Rained Meat In Kentucky 🥩 | Posted (Instagram + YouTube) |
 | [90-1904-olympic-marathon](toy-reels/90-1904-olympic-marathon.mp4) | The Wildest Olympic Marathon Ever 🏃 | Posted (Instagram + YouTube) |
-| [91-byron-bear](toy-reels/91-byron-bear.mp4) | College Banned Dogs. So Lord Byron Got A Bear 🐻 | Waiting to post |
+| [91-byron-bear](toy-reels/91-byron-bear.mp4) | College Banned Dogs. So Lord Byron Got A Bear 🐻 | Posted (Instagram + YouTube) |
 | [92-napoleon-not-short](toy-reels/92-napoleon-not-short.mp4) | Napoleon Wasn't Short. A Cartoon Made Him Short 📏 | Waiting to post |
 | [93-68-years-hiccups](toy-reels/93-68-years-hiccups.mp4) | This Man Had Hiccups For 68 Years 😮 | Waiting to post |
 | [94-beard-tax](toy-reels/94-beard-tax.mp4) | A Tsar Made Men Pay Tax For Their Beards 🧔 | Waiting to post |
