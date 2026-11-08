@@ -1,0 +1,23 @@
+{
+ "music-38be12c12a4b.mp3": {
+  "prompt": "Curious playful lab music with marimba and soft strings, discovery build, no vocals",
+  "music_length_ms": 26600,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-6760ac1dd761.mp3": {
+  "text": "glass petri dish clink",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-f73ef1d26562.mp3": {
+  "text": "soft squelch fuzzy growth",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-00ec1ca11663.mp3": {
+  "text": "triumphant ding fanfare",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
