@@ -65,7 +65,7 @@ Folder: [`gears-pov/`](gears-pov/)
 | [023-seagull-thoughts](gears-pov/023-seagull-thoughts.mp4) | You can hear what seagulls think 🐦 | Posted on Instagram · on YouTube |
 | [024-wifi-router-thoughts](gears-pov/024-wifi-router-thoughts.mp4) | You can hear what your wifi router thinks 📶 | Posted on Instagram · on YouTube |
 | [025-dad-thoughts](gears-pov/025-dad-thoughts.mp4) | You can hear what your dad thinks 👨 | Posted on Instagram · on YouTube |
-| [026-cop-thoughts](gears-pov/026-cop-thoughts.mp4) | You can hear what the police officer thinks 🚓 | Waiting to post |
+| [026-cop-thoughts](gears-pov/026-cop-thoughts.mp4) | You can hear what the police officer thinks 🚓 | Posted on Instagram · on YouTube |
 | [027-ex-thoughts](gears-pov/027-ex-thoughts.mp4) | You can hear what your ex thinks 💔 | Posted on Instagram · on YouTube |
 | [028-alarm-clock-thoughts](gears-pov/028-alarm-clock-thoughts.mp4) | You can hear what your alarm clock thinks ⏰ | Posted on Instagram · on YouTube |
 | [029-puppy-first-night](gears-pov/029-puppy-first-night.mp4) | You can hear what your puppy thinks on night one 🐶 | Posted on Instagram · on YouTube |
@@ -86,15 +86,15 @@ Folder: [`gears-pov/`](gears-pov/)
 | [044-first-date-thoughts](gears-pov/044-first-date-thoughts.mp4) | You can hear what your first date thinks 💘 | Waiting to post |
 | [045-old-dog-thoughts](gears-pov/045-old-dog-thoughts.mp4) | You can hear what your old dog thinks 🐕 | Waiting to post |
 | [046-tv-remote-thoughts](gears-pov/046-tv-remote-thoughts.mp4) | You can hear what your TV remote thinks 📺 | Waiting to post |
-| [047-stray-dog-thoughts](gears-pov/047-stray-dog-thoughts.mp4) | You can hear what a stray dog thinks 🐕 | Not scheduled |
-| [048-rooster-thoughts](gears-pov/048-rooster-thoughts.mp4) | You can hear what the rooster thinks at 4am 🐓 | Not scheduled |
-| [049-dentist-thoughts](gears-pov/049-dentist-thoughts.mp4) | You can hear what your dentist thinks 🦷 | Not scheduled |
-| [050-microwave-thoughts](gears-pov/050-microwave-thoughts.mp4) | You can hear what your microwave thinks 🍝 | Not scheduled |
-| [051-black-cat-thoughts](gears-pov/051-black-cat-thoughts.mp4) | You can hear what a black cat thinks 🐈‍⬛ | Not scheduled |
-| [052-grandma-cooking-thoughts](gears-pov/052-grandma-cooking-thoughts.mp4) | You can hear what your grandma thinks while cooking 👵 | Not scheduled |
-| [053-elevator-thoughts](gears-pov/053-elevator-thoughts.mp4) | You can hear what the elevator thinks 🛗 | Not scheduled |
-| [054-penguin-thoughts](gears-pov/054-penguin-thoughts.mp4) | You can hear what a penguin thinks 🐧 | Not scheduled |
-| [055-best-friend-thoughts](gears-pov/055-best-friend-thoughts.mp4) | You can hear what your best friend thinks when they say "I'm fine" 💬 | Not scheduled |
+| [047-stray-dog-thoughts](gears-pov/047-stray-dog-thoughts.mp4) | You can hear what a stray dog thinks 🐕 | Waiting to post |
+| [048-rooster-thoughts](gears-pov/048-rooster-thoughts.mp4) | You can hear what the rooster thinks at 4am 🐓 | Waiting to post |
+| [049-dentist-thoughts](gears-pov/049-dentist-thoughts.mp4) | You can hear what your dentist thinks 🦷 | Waiting to post |
+| [050-microwave-thoughts](gears-pov/050-microwave-thoughts.mp4) | You can hear what your microwave thinks 🍝 | Waiting to post |
+| [051-black-cat-thoughts](gears-pov/051-black-cat-thoughts.mp4) | You can hear what a black cat thinks 🐈‍⬛ | Waiting to post |
+| [052-grandma-cooking-thoughts](gears-pov/052-grandma-cooking-thoughts.mp4) | You can hear what your grandma thinks while cooking 👵 | Waiting to post |
+| [053-elevator-thoughts](gears-pov/053-elevator-thoughts.mp4) | You can hear what the elevator thinks 🛗 | Waiting to post |
+| [054-penguin-thoughts](gears-pov/054-penguin-thoughts.mp4) | You can hear what a penguin thinks 🐧 | Waiting to post |
+| [055-best-friend-thoughts](gears-pov/055-best-friend-thoughts.mp4) | You can hear what your best friend thinks when they say "I'm fine" 💬 | Waiting to post |
 
 ## CouchSarcasm (old couple comedy) (40)
 Folder: [`couch-sarcasm/`](couch-sarcasm/)
@@ -280,7 +280,7 @@ Folder: [`toy-reels/`](toy-reels/)
 | [81-pigeon-missile](toy-reels/81-pigeon-missile.mp4) | A Famous Scientist Trained Pigeons To Steer Missiles 🐦 | Waiting to post |
 | [82-emperor-norton](toy-reels/82-emperor-norton.mp4) | A Broke Man Declared Himself Emperor. The City Played Along 👑 | Posted (Instagram + YouTube) |
 | [83-cottingley-fairies](toy-reels/83-cottingley-fairies.mp4) | Two Girls Fooled Sherlock Holmes's Creator With Paper Fairies 🧚 | Waiting to post |
-| [84-mechanical-turk](toy-reels/84-mechanical-turk.mp4) | A Chess Robot Beat Napoleon. A Man Was Hiding Inside ♟️ | Waiting to post |
+| [84-mechanical-turk](toy-reels/84-mechanical-turk.mp4) | A Chess Robot Beat Napoleon. A Man Was Hiding Inside ♟️ | Posted (Instagram + YouTube) |
 | [85-clever-hans](toy-reels/85-clever-hans.mp4) | The Horse That Did Math. Sort Of 🐴 | Waiting to post |
 | [86-great-moon-hoax](toy-reels/86-great-moon-hoax.mp4) | A Newspaper Said Bat-People Lived On The Moon 🌙 | Waiting to post |
 | [87-dagen-h-sweden](toy-reels/87-dagen-h-sweden.mp4) | An Entire Country Switched Driving Sides Overnight 🚗 | Waiting to post |
