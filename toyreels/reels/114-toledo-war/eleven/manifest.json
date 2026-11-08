@@ -1,0 +1,28 @@
+{
+ "music-7f9a6b73a612.mp3": {
+  "prompt": "Comedic American folk fiddle and banjo march, light and bouncy, no vocals",
+  "music_length_ms": 29560,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-436bb0686157.mp3": {
+  "text": "comedic drum roll",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-b15b3af1ec50.mp3": {
+  "text": "group marching with drum",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-3abda190cedc.mp3": {
+  "text": "cash register ding",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-b72688dfcbfe.mp3": {
+  "text": "coins pouring into a pile",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
