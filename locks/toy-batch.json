@@ -1,9 +1,9 @@
 {
  "job": "toy-batch",
- "status": "in_progress",
+ "status": "done",
  "owner": "vm-88b73e",
  "started": "2026-11-08T20:03:51Z",
- "updated": "2026-11-08T20:56:31Z",
+ "updated": "2026-11-08T20:56:33Z",
  "note": "all 21 rendered",
  "history": [
   {
