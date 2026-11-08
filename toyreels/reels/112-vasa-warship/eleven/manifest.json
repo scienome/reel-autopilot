@@ -1,0 +1,28 @@
+{
+ "music-ecae9d64fe87.mp3": {
+  "prompt": "Epic yet comedic baroque brass fanfare with a sad trombone ending, no vocals",
+  "music_length_ms": 25560,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-d36310e05e61.mp3": {
+  "text": "cartoon ship sinking gurgle",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-b45a0f99ec48.mp3": {
+  "text": "comedic heavy thud",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-7244d649ec6b.mp3": {
+  "text": "wind gust whoosh",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-39a57e50864d.mp3": {
+  "text": "triumphant fanfare with water pouring",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
