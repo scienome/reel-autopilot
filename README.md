@@ -192,7 +192,7 @@ Folder: [`dave-reels/`](dave-reels/)
 | [43-dave-grows-an-inch](dave-reels/43-dave-grows-an-inch.mp4) | What if you grew 1 inch every day? | Waiting to post |
 | [44-gimli-glider](dave-reels/44-gimli-glider.mp4) | The jet that ran out of fuel because of maths | Waiting to post |
 
-## Toy reels (Brick Toy) (112)
+## Toy reels (Brick Toy) (118)
 Folder: [`toy-reels/`](toy-reels/)
 
 | Video | Title | Status |
@@ -220,6 +220,12 @@ Folder: [`toy-reels/`](toy-reels/)
 | [11-kim-missile-boomerang](toy-reels/11-kim-missile-boomerang.mp4) | Kim Pressed The Button. The Missile Came Back. 💀 | Posted (Instagram + YouTube) |
 | [110-captain-of-kopenick](toy-reels/110-captain-of-kopenick.mp4) | A Jobless Shoemaker Took Over A Town Hall In A Costume 🥾 | Waiting to post |
 | [111-wrong-way-corrigan](toy-reels/111-wrong-way-corrigan.mp4) | He Flew To Ireland By "Accident" And Became A Hero ✈️ | Waiting to post |
+| [112-vasa-warship](toy-reels/112-vasa-warship.mp4) | Sweden's Mightiest Warship Sank On Its First Trip 🚢 | Waiting to post |
+| [113-sealand-micronation](toy-reels/113-sealand-micronation.mp4) | A Man Turned A WW2 Sea Fort Into His Own Country 🏴 | Waiting to post |
+| [114-toledo-war](toy-reels/114-toledo-war.mp4) | Two US States Went To War Over One Strip Of Land 🗺️ | Waiting to post |
+| [115-spaghetti-harvest-bbc](toy-reels/115-spaghetti-harvest-bbc.mp4) | The BBC Convinced Britain That Spaghetti Grows On Trees 🍝 | Waiting to post |
+| [116-rubber-ducks-lost-at-sea](toy-reels/116-rubber-ducks-lost-at-sea.mp4) | 28,800 Bath Toys Fell In The Ocean. Scientists Tracked Them 🦆 | Waiting to post |
+| [117-post-it-failed-glue](toy-reels/117-post-it-failed-glue.mp4) | A Failed Glue Became The Post-it Note 📝 | Waiting to post |
 | [12-zombie-apocalypse-fails](toy-reels/12-zombie-apocalypse-fails.mp4) | The Zombie Apocalypse Failed For The Dumbest Reason 🧟 | Posted (Instagram + YouTube) |
 | [13-hitler-hell-queue](toy-reels/13-hitler-hell-queue.mp4) | Hitler Went To Hell And Got Put On Hold 💀 | Posted (Instagram + YouTube) |
 | [14-death-replaced-by-ai](toy-reels/14-death-replaced-by-ai.mp4) | Death Got Replaced By AI. Nobody Has Died Since 💀 | Posted (Instagram + YouTube) |
