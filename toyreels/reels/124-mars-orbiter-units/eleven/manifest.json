@@ -1,0 +1,28 @@
+{
+ "music-42013bc4a08a.mp3": {
+  "prompt": "Quirky sci-fi comedic synth with theremin, light tension, no vocals",
+  "music_length_ms": 27800,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-82e3df9f15ff.mp3": {
+  "text": "comedic space whoosh",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-5bfa3a24cd82.mp3": {
+  "text": "comedic cartoon thud",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-5e8b3e2f6aec.mp3": {
+  "text": "descending falling whistle",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-21acebdb371a.mp3": {
+  "text": "explosion with sad trombone",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
