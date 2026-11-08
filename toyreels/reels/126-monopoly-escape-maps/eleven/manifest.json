@@ -1,0 +1,23 @@
+{
+ "music-131abcf632cc.mp3": {
+  "prompt": "Sneaky 1940s spy jazz with playful brass and finger snaps, no vocals",
+  "music_length_ms": 29720,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-d7f7aaeb12d7.mp3": {
+  "text": "dice rolling on board",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-a9970fa8e8bb.mp3": {
+  "text": "paper unfolding map rustle",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-8c3bac9b45a4.mp3": {
+  "text": "small metal clinking tools",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
