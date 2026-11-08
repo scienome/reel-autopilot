@@ -1,0 +1,28 @@
+{
+ "music-03fa2326a1ea.mp3": {
+  "prompt": "Cheerful internet-era comedic ukulele with whistle, bouncy, no vocals",
+  "music_length_ms": 30840,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-c1d71c156462.mp3": {
+  "text": "comedic horn toot",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-328dd6ec0b6d.mp3": {
+  "text": "ticking counter fast and ding",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-830a88ea34f2.mp3": {
+  "text": "comedic rejection buzzer",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-908f38003fc3.mp3": {
+  "text": "sonar ping and bubbles",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
