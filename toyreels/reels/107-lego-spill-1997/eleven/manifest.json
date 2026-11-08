@@ -1,0 +1,28 @@
+{
+ "music-9f3ef168945a.mp3": {
+  "prompt": "Playful adventurous seaside music, ukulele and light percussion, ocean waves, no vocals",
+  "music_length_ms": 29160,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-9f2d06c436d0.mp3": {
+  "text": "heavy splash of many plastic bricks hitting water",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-7b21e0864943.mp3": {
+  "text": "metal shipping container crashing into the sea",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-3d82ae363d80.mp3": {
+  "text": "comedic discovery chime",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-7f03dc95c155.mp3": {
+  "text": "happy ding win sound",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
