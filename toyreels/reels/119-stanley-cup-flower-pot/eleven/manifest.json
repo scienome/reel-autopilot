@@ -1,0 +1,23 @@
+{
+ "music-a3d1ed7e2f1b.mp3": {
+  "prompt": "Upbeat hockey arena organ with comedic bass, playful and bouncy, no vocals",
+  "music_length_ms": 25240,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-8e3da2f5312b.mp3": {
+  "text": "metal trophy clank set down",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-7f454fa3cca5.mp3": {
+  "text": "relieved sigh and chime",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-035a3031549b.mp3": {
+  "text": "comedic plant pot pop and bird tweet",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
