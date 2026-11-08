@@ -1,0 +1,20 @@
+[
+ {
+  "chapter": "A",
+  "beats": [
+   { "id": "hook", "phrases": ["Your neighbour's dog barks all night."] },
+   { "id": "b1", "phrases": ["So you buy earplugs."] },
+   { "id": "b2", "phrases": ["They work too well.", "You miss your own wedding."] },
+   { "id": "b3", "phrases": ["Your fiancée marries the dog."] },
+   { "id": "b4", "phrases": ["The dog runs for mayor.", "And wins."] },
+   { "id": "b5", "phrases": ["First law:", "Mondays are illegal."] },
+   { "id": "b6", "phrases": ["The economy collapses."] },
+   { "id": "b7", "phrases": ["Aliens land to help."] },
+   { "id": "b8", "phrases": ["They also bark."] },
+   { "id": "b9", "phrases": ["So you move to the moon."] },
+   { "id": "b10", "phrases": ["Finally.", "Silence."] },
+   { "id": "twist", "phrases": ["Then a rocket lands next door."] },
+   { "id": "close", "phrases": ["Your neighbour.", "With a bigger dog."] }
+  ]
+ }
+]
