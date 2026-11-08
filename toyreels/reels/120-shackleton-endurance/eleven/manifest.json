@@ -1,0 +1,23 @@
+{
+ "music-6637091d0141.mp3": {
+  "prompt": "Epic yet hopeful cinematic strings with distant wind, building to triumphant, no vocals",
+  "music_length_ms": 29240,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-c2cad8992d58.mp3": {
+  "text": "icy wind howling",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-99ee789a0cd6.mp3": {
+  "text": "ice cracking and wooden ship creaking",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-140b564b588c.mp3": {
+  "text": "waves and creaking small boat",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
