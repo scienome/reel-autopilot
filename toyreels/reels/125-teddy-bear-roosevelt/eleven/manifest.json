@@ -1,0 +1,18 @@
+{
+ "music-c215206b2098.mp3": {
+  "prompt": "Warm playful music-box melody with gentle strings, whimsical, no vocals",
+  "music_length_ms": 24600,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-bad929885477.mp3": {
+  "text": "comedic gasp crowd",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-86473a5fbd55.mp3": {
+  "text": "gentle bear growl small",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
