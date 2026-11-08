@@ -1,0 +1,63 @@
+[
+ {
+  "chapter": "A",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "A messy lab and a forgotten dish",
+     "changed medicine."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "In nineteen twenty eight, Alexander Fleming",
+     "came back from holiday."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "He had left bacteria",
+     "dishes on his bench."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "One was covered",
+     "in mould."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "Around the mould,",
+     "the bacteria had died."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "The mould was",
+     "Penicillium."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "It became the first widely used",
+     "antibiotic."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Would you have",
+     "thrown it away?"
+    ]
+   }
+  ]
+ }
+]

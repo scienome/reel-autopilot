@@ -1,0 +1,62 @@
+[
+ {
+  "chapter": "A",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "A president refused to shoot a bear,",
+     "and a toy was born."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "In nineteen oh two, President Roosevelt",
+     "went hunting in Mississippi."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "His hosts brought him",
+     "a bear to shoot."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "He refused."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "A cartoon of it",
+     "made the front page."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "A Brooklyn shop owner saw it",
+     "and made a stuffed bear."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "He called it",
+     "Teddy's Bear."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Did your teddy",
+     "have a name?"
+    ]
+   }
+  ]
+ }
+]

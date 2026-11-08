@@ -1,0 +1,63 @@
+[
+ {
+  "chapter": "A",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "NASA lost a Mars probe",
+     "because of a unit mix up."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "In nineteen ninety nine,",
+     "the Mars Climate Orbiter reached Mars."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "One team used",
+     "pounds of force."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "The other expected",
+     "newtons."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "The numbers did",
+     "not match."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "It came in about",
+     "one hundred seventy kilometres too low."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "A spacecraft worth over",
+     "a hundred million dollars, gone."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Metric,",
+     "or imperial?"
+    ]
+   }
+  ]
+ }
+]

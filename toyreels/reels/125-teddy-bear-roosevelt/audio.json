@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Warm playful music-box melody with gentle strings, whimsical, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "refused",
+   "offset": 0.0,
+   "prompt": "comedic gasp crowd",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b2",
+   "word": "bear",
+   "offset": 0.0,
+   "prompt": "gentle bear growl small",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "cartoon",
+   "offset": 0.0,
+   "prompt": "pencil scribbling and paper swish",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "teddy",
+   "offset": 0.0,
+   "prompt": "cute squeak toy",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

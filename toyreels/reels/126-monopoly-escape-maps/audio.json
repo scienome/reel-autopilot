@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Sneaky 1940s spy jazz with playful brass and finger snaps, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "boards",
+   "offset": 0.0,
+   "prompt": "dice rolling on board",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "silk",
+   "offset": 0.0,
+   "prompt": "paper unfolding map rustle",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b4",
+   "word": "compasses",
+   "offset": 0.0,
+   "prompt": "small metal clinking tools",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "jail",
+   "offset": 0.0,
+   "prompt": "prison gate opening comedic",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

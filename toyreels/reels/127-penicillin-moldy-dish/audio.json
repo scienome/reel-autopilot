@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Curious playful lab music with marimba and soft strings, discovery build, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "dish",
+   "offset": 0.0,
+   "prompt": "glass petri dish clink",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "mould",
+   "offset": 0.0,
+   "prompt": "soft squelch fuzzy growth",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "died",
+   "offset": 0.0,
+   "prompt": "tiny comedic pop",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "antibiotic",
+   "offset": 0.0,
+   "prompt": "triumphant ding fanfare",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

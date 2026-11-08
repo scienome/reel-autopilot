@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Quirky sci-fi comedic synth with theremin, light tension, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "probe",
+   "offset": 0.0,
+   "prompt": "comedic space whoosh",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b2",
+   "word": "pounds",
+   "offset": 0.0,
+   "prompt": "comedic cartoon thud",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "low",
+   "offset": 0.0,
+   "prompt": "descending falling whistle",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "million",
+   "offset": 0.0,
+   "prompt": "explosion with sad trombone",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}
