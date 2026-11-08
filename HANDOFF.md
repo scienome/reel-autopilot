@@ -547,6 +547,10 @@ Cron lines run 4, 3 and 2 hours before each slot; if you change a time, change b
 - **Voice not decided yet.** Each sample names its voice in `reel/voice.json` (per-reel override in toyreels/tools/voice.py).
   Tested: `pVnrL6sighQX7hVz89cp` (99-barking-dog, 100-tv-remote), `WrPknjKhmIXkCONEtG3j` (101-tv-remote-voice2, same reel,
   for comparison), `5tBfq6CyEBxaLvrzxdJw` (102-stone-age, latest). toyreels/config.json still has the old voice.
+- All four samples are rendered (Releases toyreel-99-barking-dog, -100-tv-remote, -101-tv-remote-voice2, -102-stone-age).
+  A new ElevenLabs voice must be in the owner's "My Voices" first: 102's first render hung on the voice call until the
+  owner added it (toyreels/tools/voice.py now gives up on a hung call after 3 minutes). Waiting on the owner: pick one
+  of the 3 voices and say "approve".
 - **Samples are held back from posting** (marked `skipped` in toyreels/posted.json): 99-barking-dog, 100-tv-remote,
   101-tv-remote-voice2 (voice test, never post), 102-stone-age. When the owner approves: set the chosen voice in
   toyreels/config.json, delete the `skipped` entries for 99/100/102 (keep 101 skipped), rewrite toyreels/PLAYBOOK.md
