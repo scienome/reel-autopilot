@@ -1,0 +1,28 @@
+{
+ "music-c75d82df1521.mp3": {
+  "prompt": "Funny military march mixed with playful cat meows and kazoo, no vocals",
+  "music_length_ms": 29160,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-aa5eb399e4f7.mp3": {
+  "text": "cat meow cute",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-48027529e7d1.mp3": {
+  "text": "rats squeaking and scurrying",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-887528e5fdd3.mp3": {
+  "text": "propeller plane flyby",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-0152095ca93d.mp3": {
+  "text": "comedic question mark sting",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
