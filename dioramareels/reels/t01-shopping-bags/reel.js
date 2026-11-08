@@ -18,7 +18,7 @@
   // ---------- light and sky (only this world is in view) ----------
   const sun = new T.DirectionalLight('#fff1d6', 0.85);
   sun.position.set(X0 - 10, 30, 22); sun.target.position.set(X0 + 6, 0, -2);
-  sun.castShadow = true; sun.shadow.mapSize.set(2048, 2048);
+  sun.castShadow = true; sun.shadow.mapSize.set(1024, 1024);
   Object.assign(sun.shadow.camera, { left: -26, right: 26, top: 26, bottom: -26, near: 1, far: 90 });
   sun.shadow.bias = -0.0006;
   S.add(sun); S.add(sun.target);
