@@ -1,0 +1,28 @@
+{
+ "music-d63351e4628b.mp3": {
+  "prompt": "Comedic German oompah brass band march, tuba and snare, marching and cheeky, no vocals",
+  "music_length_ms": 29480,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-46fb35fc59d3.mp3": {
+  "text": "comedic tuba bump",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-c8ada2ece86b.mp3": {
+  "text": "group of soldiers marching and boots stomping",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-0912eb9ebd49.mp3": {
+  "text": "coins clinking into a bag",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-3d43489b6aef.mp3": {
+  "text": "triumphant trumpet fanfare short",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
