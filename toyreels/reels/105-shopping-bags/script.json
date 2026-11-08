@@ -1,0 +1,29 @@
+[
+ {
+  "chapter": "A",
+  "beats": [
+   { "id": "hook", "phrases": ["Why do your shopping bags always rip", "halfway home?"] },
+   { "id": "fix", "phrases": ["Let's fix that."] },
+   { "id": "b1", "phrases": ["First, use two bags,", "one inside the other."] },
+   { "id": "b2", "phrases": ["Now they hold everything.", "Except your arms can't."] }
+  ]
+ },
+ {
+  "chapter": "B",
+  "beats": [
+   { "id": "b3", "phrases": ["So put the bags", "on a trolley with wheels."] },
+   { "id": "b4", "phrases": ["Easy! Until you reach", "the stairs to your flat."] },
+   { "id": "b5", "phrases": ["So swap the wheels", "for tank tracks."] },
+   { "id": "b6", "phrases": ["It climbs the stairs!", "And the stairs fall apart."] }
+  ]
+ },
+ {
+  "chapter": "C",
+  "beats": [
+   { "id": "b7", "phrases": ["So skip the stairs.", "Bolt a crane to your balcony."] },
+   { "id": "b8", "phrases": ["Except the wind swings it", "into your neighbour's window."] },
+   { "id": "twist", "phrases": ["He's furious.", "But you have your groceries."] },
+   { "id": "close", "phrases": ["Then you remember.", "You forgot the milk."] }
+  ]
+ }
+]
