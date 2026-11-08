@@ -1,0 +1,63 @@
+[
+ {
+  "chapter": "A",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "A passenger jet ran out of fuel",
+     "halfway through its flight."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "In nineteen eighty three,",
+     "Air Canada flight one four three had a problem."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "The crew had mixed up",
+     "pounds and kilograms."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "Both engines died",
+     "mid air."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "The pilot was also",
+     "an experienced glider pilot."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "He glided the jet down onto",
+     "a racetrack."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "Nobody died.",
+     "Gimli still celebrates it."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Would you have",
+     "stayed calm?"
+    ]
+   }
+  ]
+ }
+]

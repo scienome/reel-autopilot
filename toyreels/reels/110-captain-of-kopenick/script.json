@@ -1,0 +1,63 @@
+[
+ {
+  "chapter": "A",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "A shoemaker in a secondhand uniform",
+     "took over a town hall."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "In nineteen oh six, a jobless shoemaker",
+     "bought a captain uniform."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "He stopped some soldiers",
+     "and they obeyed him."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "They marched into the town hall",
+     "and arrested the mayor."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "Then he took the town cash,",
+     "over four thousand marks."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "He was caught about ten days later,",
+     "but the public loved it."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "Even the Kaiser",
+     "pardoned him."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Would you have",
+     "saluted him?"
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Tense but comedic cinematic flight music, soft strings with playful pizzicato, then triumphant brass, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "fuel",
+   "offset": 0.0,
+   "prompt": "plane engine winding down and stalling",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b2",
+   "word": "pounds",
+   "offset": 0.0,
+   "prompt": "comedic record scratch",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b4",
+   "word": "glided",
+   "offset": 0.0,
+   "prompt": "wind whooshing glider",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "racetrack",
+   "offset": 0.0,
+   "prompt": "crowd cheering and race cars",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Comedic German oompah brass band march, tuba and snare, marching and cheeky, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "shoemaker",
+   "offset": 0.0,
+   "prompt": "comedic tuba bump",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b2",
+   "word": "soldiers",
+   "offset": 0.0,
+   "prompt": "group of soldiers marching and boots stomping",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b4",
+   "word": "cash",
+   "offset": 0.0,
+   "prompt": "coins clinking into a bag",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "pardoned",
+   "offset": 0.0,
+   "prompt": "triumphant trumpet fanfare short",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

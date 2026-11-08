@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Playful adventurous seaside music, ukulele and light percussion, ocean waves, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "million",
+   "offset": 0.0,
+   "prompt": "heavy splash of many plastic bricks hitting water",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b2",
+   "word": "containers",
+   "offset": 0.0,
+   "prompt": "metal shipping container crashing into the sea",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "still",
+   "offset": 0.0,
+   "prompt": "comedic discovery chime",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "beaches",
+   "offset": 0.0,
+   "prompt": "happy ding win sound",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

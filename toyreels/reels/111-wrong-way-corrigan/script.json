@@ -1,0 +1,63 @@
+[
+ {
+  "chapter": "A",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "A pilot accidentally",
+     "flew across the Atlantic."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "In nineteen thirty eight,",
+     "Douglas Corrigan took off from New York."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "His plan, he said,",
+     "was California."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "Twenty eight hours later,",
+     "he landed in Dublin."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "He said his compass",
+     "had been wrong."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "Officials had refused",
+     "his request to fly to Ireland."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "He became a star,",
+     "and endorsed a watch that ran backwards."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Honest mistake,",
+     "or genius excuse?"
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,63 @@
+[
+ {
+  "chapter": "A",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "A dead man with a briefcase",
+     "fooled an entire army."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "It was nineteen forty three.",
+     "Britain wanted to invade Sicily in secret."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "So spies invented",
+     "a fake officer."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "They chained a briefcase",
+     "of fake plans to his wrist."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "He washed up in Spain,",
+     "and the Germans took the bait."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "Germany moved its troops",
+     "to guard the wrong places."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "The real invasion hit Sicily",
+     "in July."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Genius plan,",
+     "or too weird to work?"
+    ]
+   }
+  ]
+ }
+]

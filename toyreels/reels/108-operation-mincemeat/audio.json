@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Sneaky 1940s spy jazz, upright bass, muted trumpet and finger snaps, tense but playful, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "dead",
+   "offset": 0.0,
+   "prompt": "comedic suspenseful sting",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "briefcase",
+   "offset": 0.0,
+   "prompt": "metal handcuff chain clink",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b4",
+   "word": "took",
+   "offset": 0.0,
+   "prompt": "typewriter bell ding",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "sicily",
+   "offset": 0.0,
+   "prompt": "soldiers landing on beach with waves",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

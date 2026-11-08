@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Jaunty 1930s swing with clarinet and bouncy piano, light-hearted adventure, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "accidentally",
+   "offset": 0.0,
+   "prompt": "comedic oops slide whistle",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "landed",
+   "offset": 0.0,
+   "prompt": "small propeller plane landing",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b4",
+   "word": "compass",
+   "offset": 0.0,
+   "prompt": "compass needle spinning comedic",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "backwards",
+   "offset": 0.0,
+   "prompt": "cheerful ta-da fanfare",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

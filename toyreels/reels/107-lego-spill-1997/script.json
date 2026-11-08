@@ -1,0 +1,63 @@
+[
+ {
+  "chapter": "A",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "Nearly five million Lego pieces",
+     "fell into the sea."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "In nineteen ninety seven,",
+     "a giant wave hit a cargo ship off Cornwall."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "Sixty two containers",
+     "went overboard."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "One held nearly five million",
+     "Lego pieces."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "Lots of them",
+     "were sea themed."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "Beachcombers are still finding them",
+     "more than twenty five years later."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "Finders have mapped them",
+     "on over forty beaches."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Would you go",
+     "hunting for them?"
+    ]
+   }
+  ]
+ }
+]
