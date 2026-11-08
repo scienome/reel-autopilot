@@ -1,0 +1,18 @@
+{
+ "music-2dcf2c08223f.mp3": {
+  "prompt": "Tense but comedic cinematic flight music, soft strings with playful pizzicato, then triumphant brass, no vocals",
+  "music_length_ms": 28120,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-90e1488799a1.mp3": {
+  "text": "plane engine winding down and stalling",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-918bd71d0ad9.mp3": {
+  "text": "comedic record scratch",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
