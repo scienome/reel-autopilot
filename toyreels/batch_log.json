@@ -133,5 +133,33 @@
     ],
     "status": "done",
     "updated": "2026-11-06T03:45:00Z"
+  },
+  {
+    "batch": "2026-11-08",
+    "ids": [
+      "107-lego-spill-1997",
+      "108-operation-mincemeat",
+      "109-gimli-glider",
+      "110-captain-of-kopenick",
+      "111-wrong-way-corrigan",
+      "112-vasa-warship",
+      "113-sealand-micronation",
+      "114-toledo-war",
+      "115-spaghetti-harvest-bbc",
+      "116-rubber-ducks-lost-at-sea",
+      "117-post-it-failed-glue",
+      "118-slinky-fell-off-shelf",
+      "119-stanley-cup-flower-pot",
+      "120-shackleton-endurance",
+      "121-escobar-hippos",
+      "122-boaty-mcboatface",
+      "123-operation-cat-drop",
+      "124-mars-orbiter-units",
+      "125-teddy-bear-roosevelt",
+      "126-monopoly-escape-maps",
+      "127-penicillin-moldy-dish"
+    ],
+    "status": "in_progress",
+    "updated": "2026-11-08T20:20:59Z"
   }
 ]
