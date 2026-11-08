@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Epic yet hopeful cinematic strings with distant wind, building to triumphant, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "antarctica",
+   "offset": 0.0,
+   "prompt": "icy wind howling",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b1",
+   "word": "crushed",
+   "offset": 0.0,
+   "prompt": "ice cracking and wooden ship creaking",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "boat",
+   "offset": 0.0,
+   "prompt": "waves and creaking small boat",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "survived",
+   "offset": 0.0,
+   "prompt": "triumphant orchestral fanfare short",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

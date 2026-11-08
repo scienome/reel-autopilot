@@ -1,0 +1,63 @@
+[
+ {
+  "chapter": "A",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "Twenty eight men were stranded",
+     "in Antarctica. Every one survived."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "In nineteen fifteen,",
+     "ice crushed their ship, Endurance."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "The crew camped",
+     "on the ice for months."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "Shackleton and five men sailed",
+     "eight hundred miles in an open boat."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "Then they crossed mountains",
+     "to find help."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "Rescue came in",
+     "nineteen sixteen."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "Every single man",
+     "came home."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Would you have",
+     "followed him?"
+    ]
+   }
+  ]
+ }
+]

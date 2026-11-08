@@ -1,0 +1,63 @@
+[
+ {
+  "chapter": "A",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "Champions left the Stanley Cup",
+     "on the side of the road."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "In nineteen twenty four,",
+     "the Montreal Canadiens won it."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "On the way home,",
+     "they stopped to push a car."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "They put the cup",
+     "on the curb."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "Hours later,",
+     "they realised."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "The cup was still",
+     "sitting there."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "In nineteen oh seven, another team left it",
+     "at a house, and it became a flower pot."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Where would you",
+     "have left it?"
+    ]
+   }
+  ]
+ }
+]

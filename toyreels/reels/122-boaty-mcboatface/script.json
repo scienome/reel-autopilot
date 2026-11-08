@@ -1,0 +1,63 @@
+[
+ {
+  "chapter": "A",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "The internet named a polar ship",
+     "Boaty McBoatface."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "In twenty sixteen, a science agency",
+     "asked the public to name a new ship."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "Boaty McBoatface won",
+     "with over one hundred twenty four thousand votes."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "The agency said",
+     "no."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "The ship became",
+     "RRS Sir David Attenborough."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "The man who suggested Boaty",
+     "voted for Attenborough too."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "Boaty got a consolation prize:",
+     "a small submarine."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Should they have",
+     "listened?"
+    ]
+   }
+  ]
+ }
+]

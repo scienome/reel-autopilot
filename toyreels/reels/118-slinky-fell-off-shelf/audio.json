@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Bouncy playful 1940s toy-shop music with celesta and bouncing bass, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "spring",
+   "offset": 0.0,
+   "prompt": "slinky boing sound",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "walked",
+   "offset": 0.0,
+   "prompt": "slinky springy walking sound",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "flop",
+   "offset": 0.0,
+   "prompt": "comedic sad trombone",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "toys",
+   "offset": 0.0,
+   "prompt": "happy ding cash register",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

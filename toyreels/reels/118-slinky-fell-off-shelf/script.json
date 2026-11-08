@@ -1,0 +1,62 @@
+[
+ {
+  "chapter": "A",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "A spring fell off a shelf",
+     "and walked away."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "In nineteen forty three, engineer Richard James",
+     "was building ship instruments."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "He was testing springs",
+     "to steady them at sea."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "One fell off the shelf",
+     "and walked down."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "He saw a toy."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "His ship device",
+     "was a flop."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "But the Slinky became one of",
+     "the best selling toys in America."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Did yours make it",
+     "down the stairs?"
+    ]
+   }
+  ]
+ }
+]

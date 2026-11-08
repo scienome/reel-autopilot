@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Cheerful internet-era comedic ukulele with whistle, bouncy, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "boaty",
+   "offset": 0.0,
+   "prompt": "comedic horn toot",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b2",
+   "word": "votes",
+   "offset": 0.0,
+   "prompt": "ticking counter fast and ding",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "no",
+   "offset": 0.0,
+   "prompt": "comedic rejection buzzer",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "submarine",
+   "offset": 0.0,
+   "prompt": "sonar ping and bubbles",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

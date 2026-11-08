@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Latin-flavoured comedic jungle music with marimba and congas, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "hippos",
+   "offset": 0.0,
+   "prompt": "hippo grunt bellow",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "river",
+   "offset": 0.0,
+   "prompt": "splash of big animal into river",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "around",
+   "offset": 0.0,
+   "prompt": "multiple hippo grunts",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "thousand",
+   "offset": 0.0,
+   "prompt": "dramatic comedic sting",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

@@ -1,0 +1,63 @@
+[
+ {
+  "chapter": "A",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "The RAF flew cats",
+     "to a village drowning in rats."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "In nineteen sixty, a village in Borneo",
+     "was overrun by rats."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "The story says pest spraying",
+     "had killed the local cats."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "So the RAF",
+     "flew in cats."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "Records suggest",
+     "only a small number of cats."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "The parachutes,",
+     "and the big numbers, are disputed."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "The rats lost",
+     "either way."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Cat or",
+     "mousetrap?"
+    ]
+   }
+  ]
+ }
+]

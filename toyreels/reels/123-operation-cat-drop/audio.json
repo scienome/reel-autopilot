@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Funny military march mixed with playful cat meows and kazoo, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "cats",
+   "offset": 0.0,
+   "prompt": "cat meow cute",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b1",
+   "word": "rats",
+   "offset": 0.0,
+   "prompt": "rats squeaking and scurrying",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "flew",
+   "offset": 0.0,
+   "prompt": "propeller plane flyby",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "disputed",
+   "offset": 0.0,
+   "prompt": "comedic question mark sting",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

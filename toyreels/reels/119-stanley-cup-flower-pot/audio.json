@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Upbeat hockey arena organ with comedic bass, playful and bouncy, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "roadside",
+   "offset": 0.0,
+   "prompt": "comedic car horn and crowd cheer",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "curb",
+   "offset": 0.0,
+   "prompt": "metal trophy clank set down",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "still",
+   "offset": 0.0,
+   "prompt": "relieved sigh and chime",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "flower",
+   "offset": 0.0,
+   "prompt": "comedic plant pot pop and bird tweet",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

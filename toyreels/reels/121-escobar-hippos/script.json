@@ -1,0 +1,62 @@
+[
+ {
+  "chapter": "A",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "Four hippos escaped a drug lord's zoo",
+     "and took over a river."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "Pablo Escobar kept hippos",
+     "at his private zoo in Colombia."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "After his death,",
+     "the hippos were left behind."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "They slipped into",
+     "the river."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "And they bred."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "Now there are around",
+     "two hundred."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "Experts warn it could be",
+     "a thousand by twenty thirty five."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Save them",
+     "or cull them?"
+    ]
+   }
+  ]
+ }
+]
