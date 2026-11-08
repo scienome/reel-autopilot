@@ -192,7 +192,7 @@ Folder: [`dave-reels/`](dave-reels/)
 | [43-dave-grows-an-inch](dave-reels/43-dave-grows-an-inch.mp4) | What if you grew 1 inch every day? | Waiting to post |
 | [44-gimli-glider](dave-reels/44-gimli-glider.mp4) | The jet that ran out of fuel because of maths | Waiting to post |
 
-## Toy reels (Brick Toy) (103)
+## Toy reels (Brick Toy) (104)
 Folder: [`toy-reels/`](toy-reels/)
 
 | Video | Title | Status |
@@ -210,6 +210,7 @@ Folder: [`toy-reels/`](toy-reels/)
 | [100-tv-remote](toy-reels/100-tv-remote.mp4) | How To Find Your TV Remote (Step By Step) 📺 | Skipped (never posted) |
 | [101-tv-remote-voice2](toy-reels/101-tv-remote-voice2.mp4) | How To Find Your TV Remote (Step By Step) 📺 | Skipped (never posted) |
 | [102-stone-age](toy-reels/102-stone-age.mp4) | Inventing Everything In The Stone Age 🦣 | Skipped (never posted) |
+| [103-cold-pizza](toy-reels/103-cold-pizza.mp4) | How To Get Your Pizza Hot, Step By Step 🍕 | Skipped (never posted) |
 | [11-kim-missile-boomerang](toy-reels/11-kim-missile-boomerang.mp4) | Kim Pressed The Button. The Missile Came Back. 💀 | Posted (Instagram + YouTube) |
 | [12-zombie-apocalypse-fails](toy-reels/12-zombie-apocalypse-fails.mp4) | The Zombie Apocalypse Failed For The Dumbest Reason 🧟 | Posted (Instagram + YouTube) |
 | [13-hitler-hell-queue](toy-reels/13-hitler-hell-queue.mp4) | Hitler Went To Hell And Got Put On Hold 💀 | Posted (Instagram + YouTube) |
