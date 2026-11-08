@@ -535,6 +535,31 @@ Cron lines run 4, 3 and 2 hours before each slot; if you change a time, change b
 - The Actions "Run workflow" button returned HTTP 500 on 5 Nov; `gh workflow run` worked.
 - Cancelling a running posting job was blocked by the Claude auto-mode classifier; the owner must cancel those in Actions.
 
+## 12f. 8 Nov 2026 — toy reels: new "random escalation" format (samples, NOT yet approved)
+
+- The owner wants toy reels to become **random escalation** humour (deadpan "you" narrator, an everyday problem, each fix
+  more absurd, a twist; reference: random tank/balcony reel). 2-3 s per beat, 6-7 locations, busy frames (tags, booms,
+  props). Badge "STEP BY STEP" (or a topic badge like "STONE AGE"), `meta.json` `"format": "random-escalation"`.
+- **Signature object:** the **Gold Tank** — a powerful golden battle tank, NOT a character, never named or mentioned in the
+  voiceover (`goldTank(S, x, z, s, rot, t, { y, fire, turret })` in toyreels/style/props.js). It appears in EVERY reel;
+  in ~1 of 3 it is also the absurd fix. Some first comments: "Did you spot the gold tank? 🟨". toyreels/PLAYBOOK.md has
+  the rule ("The Gold Tank, the channel's signature").
+- **Voice not decided yet.** Each sample names its voice in `reel/voice.json` (per-reel override in toyreels/tools/voice.py).
+  Tested: `pVnrL6sighQX7hVz89cp` (99-barking-dog, 100-tv-remote), `WrPknjKhmIXkCONEtG3j` (101-tv-remote-voice2, same reel,
+  for comparison), `5tBfq6CyEBxaLvrzxdJw` (102-stone-age, latest). toyreels/config.json still has the old voice.
+- **Samples are held back from posting** (marked `skipped` in toyreels/posted.json): 99-barking-dog, 100-tv-remote,
+  101-tv-remote-voice2 (voice test, never post), 102-stone-age. When the owner approves: set the chosen voice in
+  toyreels/config.json, delete the `skipped` entries for 99/100/102 (keep 101 skipped), rewrite toyreels/PLAYBOOK.md
+  section 2 for random escalation (keep the hard limits), and update the toy batch prompt (21 per run) to match.
+- Other 28 Oct-8 Nov changes worth knowing: every poster calls `guard_slot()` (tools/first_comment.py) right before
+  publishing, so a slot never gets 2 posts; meta.json `"potential"` (1-10) puts the strongest of the next 3 reels in
+  morning/evening slots and the weakest at 12:00-17:00 IST (`best_for_slot`); CouchSarcasm uploads its YouTube Short in
+  the same run with publishAt = the slot (no delay); a cancelled/failed run can lose its log commit — if a post went out
+  but posted.json lacks it, add the entry by hand or it posts again.
+- Scheduled runs need push access: a routine that fires into a fresh session without the repo attached cannot push.
+  The toy routines fire into a worker session that has the repo attached; on a new account, create routines whose
+  sessions have scienome/reel-autopilot attached with push access (or a worker session made with the repo as source).
+
 ## 13. STATUS SNAPSHOT (1 Nov 2026, about 15:30 IST — re-check live, this goes stale)
 
 **Live channels and queues**
