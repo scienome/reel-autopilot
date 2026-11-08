@@ -498,5 +498,8 @@
  },
  "101-tv-remote-voice2": {
   "skipped": "voice test, not for posting"
+ },
+ "102-stone-age": {
+  "skipped": "voice/style test, waiting for the owner to approve"
  }
 }

@@ -1,0 +1,18 @@
+[
+ {
+  "chapter": "A",
+  "beats": [
+   { "id": "hook", "phrases": ["Stone age.", "You invent the wheel."] },
+   { "id": "b1", "phrases": ["Nobody cares.", "They want fire."] },
+   { "id": "b2", "phrases": ["So you invent fire.", "Your cave burns down."] },
+   { "id": "b3", "phrases": ["So you invent the house."] },
+   { "id": "b4", "phrases": ["Everyone wants one.", "So you invent taxes."] },
+   { "id": "b5", "phrases": ["The tribe chases you."] },
+   { "id": "b6", "phrases": ["A mammoth sits on your house."] },
+   { "id": "b7", "phrases": ["So you invent", "a tank."] },
+   { "id": "b8", "phrases": ["The mammoth runs.", "The T-rex runs."] },
+   { "id": "twist", "phrases": ["The tribe makes you king."] },
+   { "id": "close", "phrases": ["Then the meteor arrives."] }
+  ]
+ }
+]
