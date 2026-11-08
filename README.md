@@ -192,7 +192,7 @@ Folder: [`dave-reels/`](dave-reels/)
 | [43-dave-grows-an-inch](dave-reels/43-dave-grows-an-inch.mp4) | What if you grew 1 inch every day? | Waiting to post |
 | [44-gimli-glider](dave-reels/44-gimli-glider.mp4) | The jet that ran out of fuel because of maths | Waiting to post |
 
-## Toy reels (Brick Toy) (118)
+## Toy reels (Brick Toy) (125)
 Folder: [`toy-reels/`](toy-reels/)
 
 | Video | Title | Status |
@@ -226,7 +226,14 @@ Folder: [`toy-reels/`](toy-reels/)
 | [115-spaghetti-harvest-bbc](toy-reels/115-spaghetti-harvest-bbc.mp4) | The BBC Convinced Britain That Spaghetti Grows On Trees 🍝 | Waiting to post |
 | [116-rubber-ducks-lost-at-sea](toy-reels/116-rubber-ducks-lost-at-sea.mp4) | 28,800 Bath Toys Fell In The Ocean. Scientists Tracked Them 🦆 | Waiting to post |
 | [117-post-it-failed-glue](toy-reels/117-post-it-failed-glue.mp4) | A Failed Glue Became The Post-it Note 📝 | Waiting to post |
+| [118-slinky-fell-off-shelf](toy-reels/118-slinky-fell-off-shelf.mp4) | A Spring Fell Off A Shelf And Became The Slinky 🌀 | Waiting to post |
+| [119-stanley-cup-flower-pot](toy-reels/119-stanley-cup-flower-pot.mp4) | Champions Left The Stanley Cup On The Roadside 🏆 | Waiting to post |
 | [12-zombie-apocalypse-fails](toy-reels/12-zombie-apocalypse-fails.mp4) | The Zombie Apocalypse Failed For The Dumbest Reason 🧟 | Posted (Instagram + YouTube) |
+| [120-shackleton-endurance](toy-reels/120-shackleton-endurance.mp4) | Trapped In Antarctica. All 28 Men Survived 🧊 | Waiting to post |
+| [121-escobar-hippos](toy-reels/121-escobar-hippos.mp4) | A Drug Lord's Zoo Left Colombia With Wild Hippos 🦛 | Waiting to post |
+| [122-boaty-mcboatface](toy-reels/122-boaty-mcboatface.mp4) | The Internet Named A Ship Boaty McBoatface. They Said No 🚢 | Waiting to post |
+| [123-operation-cat-drop](toy-reels/123-operation-cat-drop.mp4) | The RAF Flew Cats To A Village Full Of Rats 🐈 | Waiting to post |
+| [124-mars-orbiter-units](toy-reels/124-mars-orbiter-units.mp4) | 124-mars-orbiter-units | Waiting to post |
 | [13-hitler-hell-queue](toy-reels/13-hitler-hell-queue.mp4) | Hitler Went To Hell And Got Put On Hold 💀 | Posted (Instagram + YouTube) |
 | [14-death-replaced-by-ai](toy-reels/14-death-replaced-by-ai.mp4) | Death Got Replaced By AI. Nobody Has Died Since 💀 | Posted (Instagram + YouTube) |
 | [15-napoleon-sues-everyone](toy-reels/15-napoleon-sues-everyone.mp4) | Napoleon Came Back From The Dead To Sue Everyone 💀 | Waiting to post |
