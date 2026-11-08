@@ -1,10 +1,10 @@
 {
  "job": "toy-batch",
- "status": "done",
- "owner": "vm-8de09d",
- "started": "2026-11-06T02:05:57Z",
- "updated": "2026-11-06T03:25:40Z",
- "note": "85-91 released; manual run for 78-84, 92-98",
+ "status": "in_progress",
+ "owner": "vm-88b73e",
+ "started": "2026-11-08T20:03:51Z",
+ "updated": "2026-11-08T20:03:51Z",
+ "note": "",
  "history": [
   {
    "owner": "vm-dcbd4e",
