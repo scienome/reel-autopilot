@@ -1,0 +1,28 @@
+{
+ "music-f962abb65719.mp3": {
+  "prompt": "Quirky upbeat office pizzicato with xylophone and light claps, no vocals",
+  "music_length_ms": 28520,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-0faaa23e32ed.mp3": {
+  "text": "comedic fail trombone",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-2b412468927c.mp3": {
+  "text": "paper peeling sticky sound",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-4d7f530808d9.mp3": {
+  "text": "lightbulb ding idea",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-02cbd46ee1ba.mp3": {
+  "text": "cheerful office bell and applause",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
