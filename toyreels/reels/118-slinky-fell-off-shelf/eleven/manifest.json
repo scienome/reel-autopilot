@@ -1,0 +1,28 @@
+{
+ "music-64b7a9bf80b5.mp3": {
+  "prompt": "Bouncy playful 1940s toy-shop music with celesta and bouncing bass, no vocals",
+  "music_length_ms": 26680,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-60b169fc0d9a.mp3": {
+  "text": "slinky boing sound",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-559ddb76c0a7.mp3": {
+  "text": "slinky springy walking sound",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-9cd9ffa328df.mp3": {
+  "text": "comedic sad trombone",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-7ab53d6c2544.mp3": {
+  "text": "happy ding cash register",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
