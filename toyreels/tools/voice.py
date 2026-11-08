@@ -54,7 +54,7 @@ def call_api(text, prev_text, next_text, cfg):
     if next_text: body['next_text'] = next_text
     if cfg.get('voice_settings'): body['voice_settings'] = cfg['voice_settings']
     for attempt in range(5):
-        r = requests.post(url, headers={'xi-api-key': key, 'Content-Type': 'application/json'}, json=body, timeout=600)
+        r = requests.post(url, headers={'xi-api-key': key, 'Content-Type': 'application/json'}, json=body, timeout=180)
         if r.status_code == 200:
             return r.json()
         print(f'::error::ElevenLabs {r.status_code}: {r.text[:300]}', flush=True)
