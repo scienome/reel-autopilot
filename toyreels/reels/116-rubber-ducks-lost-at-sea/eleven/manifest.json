@@ -1,0 +1,28 @@
+{
+ "music-d8a6e755b1eb.mp3": {
+  "prompt": "Cute whimsical xylophone and ukulele with gentle ocean waves, playful, no vocals",
+  "music_length_ms": 28920,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-752b96e88058.mp3": {
+  "text": "heavy splash rubber toys hitting water",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-8a1969c06f9f.mp3": {
+  "text": "container crack open crash",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-a0eaf8430979.mp3": {
+  "text": "rubber duck squeak",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-058211fcd7b4.mp3": {
+  "text": "happy discovery chime",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
