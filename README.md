@@ -192,7 +192,7 @@ Folder: [`dave-reels/`](dave-reels/)
 | [43-dave-grows-an-inch](dave-reels/43-dave-grows-an-inch.mp4) | What if you grew 1 inch every day? | Waiting to post |
 | [44-gimli-glider](dave-reels/44-gimli-glider.mp4) | The jet that ran out of fuel because of maths | Waiting to post |
 
-## Toy reels (Brick Toy) (125)
+## Toy reels (Brick Toy) (128)
 Folder: [`toy-reels/`](toy-reels/)
 
 | Video | Title | Status |
@@ -233,7 +233,10 @@ Folder: [`toy-reels/`](toy-reels/)
 | [121-escobar-hippos](toy-reels/121-escobar-hippos.mp4) | A Drug Lord's Zoo Left Colombia With Wild Hippos 🦛 | Waiting to post |
 | [122-boaty-mcboatface](toy-reels/122-boaty-mcboatface.mp4) | The Internet Named A Ship Boaty McBoatface. They Said No 🚢 | Waiting to post |
 | [123-operation-cat-drop](toy-reels/123-operation-cat-drop.mp4) | The RAF Flew Cats To A Village Full Of Rats 🐈 | Waiting to post |
-| [124-mars-orbiter-units](toy-reels/124-mars-orbiter-units.mp4) | 124-mars-orbiter-units | Waiting to post |
+| [124-mars-orbiter-units](toy-reels/124-mars-orbiter-units.mp4) | NASA Lost A Mars Probe Over A Unit Mix-Up 🚀 | Waiting to post |
+| [125-teddy-bear-roosevelt](toy-reels/125-teddy-bear-roosevelt.mp4) | A President Refused To Shoot A Bear. A Toy Was Born 🧸 | Waiting to post |
+| [126-monopoly-escape-maps](toy-reels/126-monopoly-escape-maps.mp4) | Monopoly Boards Secretly Helped Prisoners Escape In WW2 🎲 | Waiting to post |
+| [127-penicillin-moldy-dish](toy-reels/127-penicillin-moldy-dish.mp4) | A Forgotten Dish Of Mould Changed Medicine 🧫 | Waiting to post |
 | [13-hitler-hell-queue](toy-reels/13-hitler-hell-queue.mp4) | Hitler Went To Hell And Got Put On Hold 💀 | Posted (Instagram + YouTube) |
 | [14-death-replaced-by-ai](toy-reels/14-death-replaced-by-ai.mp4) | Death Got Replaced By AI. Nobody Has Died Since 💀 | Posted (Instagram + YouTube) |
 | [15-napoleon-sues-everyone](toy-reels/15-napoleon-sues-everyone.mp4) | Napoleon Came Back From The Dead To Sue Everyone 💀 | Waiting to post |
