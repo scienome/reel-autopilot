@@ -25,6 +25,9 @@ def main(rid):
     os.makedirs(out, exist_ok=True)
     os.makedirs(takes, exist_ok=True)
     cfg = json.load(open(os.path.join(HOME, 'config.json')))['voice']
+    vo = os.path.join(reel, 'voice.json')  # a reel may name its own voice (a test of a new voice or a toy reel)
+    if os.path.exists(vo):
+        cfg = dict(cfg, **json.load(open(vo)))
     lines = json.load(open(os.path.join(reel, 'script.json'), encoding='utf-8'))['lines']
     keep, pcm, timed, last, t = set(), [b'\0\0' * int(LEAD_IN * 44100)], [], None, LEAD_IN
     for ln in lines:
