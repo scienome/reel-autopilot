@@ -466,6 +466,75 @@ Owner's English channel: flat-vector "what happens inside your body when you tra
 - **Render check (4 Nov, 07:55 UTC):** every POV 031-046, riddle batch 2 and noir 010-065 reel has a Release; samples checked (sound about -15 to -18 dB, new hooks visible). POV 031-046 and riddles batch 2 queued; pov-batch, riddle-batch and elite-batch claims done. Unposted: POV 29, riddles 30, noir 10-11 per slot (about 10 days each). Render workflows now retry the voice push 5 times (two toy runs lost paid voices to a push race).
 - **Lokvara** is the best performer (1,500-70,000 views, 15-25 s watch): no change needed.
 
+## 12e. 5-8 Nov 2026 — new post times, Elites Endgame rebuilt as 3D city reels, YouTube, VoiceStudio
+
+**URGENT (8 Nov):** the Elite queue is empty after 8 Nov. YouTube has posted all 8 new reels; Instagram's last one
+(010-dead-tenants) goes out 8 Nov 20:30 IST. Nothing is queued after that. Make new reels (below) or Elite goes silent.
+
+### Post times (owner, 5 Nov; all IST, each slot about 30 minutes before a peak)
+| Channel | Audience | Times | Files |
+|---|---|---|---|
+| Lokvara | India | 06:30, 12:30, 18:30, 22:30 + Karna 21:00 | `mythreels/schedule.json`, `post-mythreels.yml` |
+| Socho Zara | India | 06:30, 12:30, 20:30 | `config.json` post_times_ist, `post.yml` |
+| toyboxtheory | International | 01:00, 06:00, 20:30 | `toyreels/posting.json`, `post-toyreels.yml` |
+| Thought Bubble | International | 01:00, 06:00, 20:30 | `davereels/schedule.json` (Dave series still paused), `post-instagram-mech.yml` |
+| Musclyth | International | 01:00, 06:00, 20:30, 22:00 | `pulsereels/schedule.json`, `post-pulse.yml` |
+| Elites Endgame | International | 01:00, 06:00, 20:30 | `dioramareels/schedule.json`, `post-elite-youtube.yml` |
+Cron lines run 4, 3 and 2 hours before each slot; if you change a time, change both files.
+
+### Elites Endgame: the new format (noir is retired)
+- **Why:** noir got about 126 views and 6 s watch time at every slot, so the content was the problem, not the timing.
+- **Format:** "You live in this city." 3D tilt-shift toy diorama with rich colours, a game-style camera just behind the viewer's
+  character, and the "end game" of the powerful shown from the ground floor. Strong reels: money/subscription traps, emotional family
+  stakes (mother's care plan, AI dad, rented wedding ring), survival/panic (last elevator, door A/B), debt sold to invented
+  collectors, ghosts (dead tenants pay rent).
+- **Rules:** always labelled fiction; invented people, companies and gangs only, never a real person, company, religion or group, and
+  no thin aliases of living people (the owner suggested names like "Lodant Trump"; declined, use invented names). No gore. Facts behind
+  a reel must be real and checkable.
+- **Scroll stoppers (kit `hook.js`):** giant frame-0 hook card + voice from 0 s, zoom punch and flash on every line, pinned yellow
+  "stay to the end" tag, survival meter, YOUR BALANCE counter, countdowns, door A/B 5-second choice card, a question in the end card.
+  Sound effects: the owner wants them soft (no bang on frame 0).
+- **Owed follow-ups:** Mom's Plan Part 3 (004 ends on "PART 3"), the door reveal for 007-survive-this-city (held back from the queue
+  because it says "tomorrow you find out"). Owner also asked earlier for funnier, outcome-first toyboxtheory hooks: not done yet.
+
+### Elites Endgame: files and pipeline (all on main)
+- **Kit:** `dioramareels/README.md`, `kit/references/{diorama,city,life,wedding,hook}.js`, `kit/scripts/render.py` (three.js r149).
+  Sets: hero tower x=0 in a full city, elevator x=1000, living room 1100, apartment 1200, hospital 1300, wedding hall 1400,
+  hallway with doors A/B 1500. Reels: `dioramareels/reels/<id>/{script.json,reel.js,meta.json}`, 001-010 exist.
+- **Voice:** ElevenLabs voice `R9EZoy8pXSL8Yh4yxiew`, `eleven_v4` (`dioramareels/config.json`). Owner tested VoiceStudio on
+  8 Nov and chose to **keep ElevenLabs**.
+- **Making a reel (fast):** commit the reel folder on GitHub, then `gh workflow run make-diorama.yml -f reel=<ids> -f voice_only=true`
+  (voices and commits `voice_lines/`, about 2 minutes). Render on the owner's PC: copy the kit and reel with its voice_lines into a
+  folder laid out like the repo, change `GL = [...]` in render.py to `["--use-angle=d3d11", "--ignore-gpu-blocklist"]` so the RTX
+  5070 Ti is used, run `python tools/diorama_make.py <id>` (about 20-30 s a reel). Without `voice_only`, GitHub renders on CPU,
+  which takes 30-60+ minutes. Then `gh release create diorama-<id> <id>.mp4`.
+- **Posting:** `post-elite-youtube.yml` → `tools/elite_youtube.py` (YouTube Short scheduled for the slot) then
+  `tools/elite_ig_city.py` (Instagram at the slot, reusing `tools/elite_post.py`). Queue = `dioramareels/schedule.json` "queue";
+  records `youtube_posted.json` and `instagram_posted.json`. Instagram runs one slot behind YouTube (it started 6 Nov 06:00).
+  Add new ids to the end of "queue". `"paused"` stops both.
+- **Noir:** `mysteryreels/schedule.json` has `"paused"`. The `elite-batch` Claude routines may still create noir reels: pause or
+  repoint them; nothing posts them.
+
+### YouTube: Elites Endgame
+- Channel **Elites Endgame**, handle **@elitesendgame**, on Google account `techbcofficialaman@gmail.com` (renamed from the empty
+  "Scieno" channel). Picture and banner: `dioramareels/brand/`. The owner does not want the Instagram picture changed.
+- Google Cloud project **Elites Endgame Uploads** (`sixth-utility-513818-t3`), created under scienome@gmail.com, In production,
+  youtube.upload scope. Secrets `YT_ELITE_CLIENT_ID`, `YT_ELITE_CLIENT_SECRET`, `YT_ELITE_REFRESH_TOKEN`.
+
+### VoiceStudio (installed on the owner's PC, not used for posting)
+- Installed 5 Nov from the verified official installer; backend `http://127.0.0.1:3900`, MCP `/mcp/` (local `.mcp.json`, git-excluded).
+  Must be started from Windows (Start menu or desktop shortcut), not from inside the Claude app, or its first-run Python setup breaks.
+- Default OmniVoice model is **non-commercial**; CosyVoice 3 (installed 6 Nov, needed MS C++ Build Tools) is labelled Apache-2.0 but
+  unverified. Saved voice "EliteEndgame" (`fa11d590`) is a 3 s sample whose source and rights are unclear; it has no ref_text, which
+  crashes the backend's GPU transcription unless you pass `ref_text`. Owner chose ElevenLabs; about 30 GB can be removed if wanted.
+
+### Working notes
+- Commit through the GitHub website (owner rule). In the editor, `(document.querySelector('.cm-content').cmView||...cmTile).view`
+  lets you replace text with `view.dispatch`; pass large files as gzip+base64 and keep a bundle in `sessionStorage` across pages.
+  Verify each commit against raw at the latest SHA.
+- The Actions "Run workflow" button returned HTTP 500 on 5 Nov; `gh workflow run` worked.
+- Cancelling a running posting job was blocked by the Claude auto-mode classifier; the owner must cancel those in Actions.
+
 ## 13. STATUS SNAPSHOT (1 Nov 2026, about 15:30 IST — re-check live, this goes stale)
 
 **Live channels and queues**
