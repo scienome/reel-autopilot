@@ -1,0 +1,28 @@
+{
+ "music-7cb7c9efb896.mp3": {
+  "prompt": "Latin-flavoured comedic jungle music with marimba and congas, no vocals",
+  "music_length_ms": 26200,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-9ec782385198.mp3": {
+  "text": "hippo grunt bellow",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-cd46fed31a68.mp3": {
+  "text": "splash of big animal into river",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-98742708f635.mp3": {
+  "text": "multiple hippo grunts",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-9e91376e9225.mp3": {
+  "text": "dramatic comedic sting",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
