@@ -1,9 +1,54 @@
 {
  "account": "GG",
  "username": "thoughtbubble.pov",
- "followers": 11,
- "fetched": "2026-11-07T03:26:17.607688Z",
+ "followers": 12,
+ "fetched": "2026-11-08T03:28:54.215080Z",
  "reels": [
+  {
+   "id": "17924893587223336",
+   "timestamp": "2026-11-08T00:30:01+0000",
+   "like_count": 24,
+   "comments_count": 2,
+   "permalink": "https://www.instagram.com/reel/DfdGknwAaYo/",
+   "caption": "\"Please just say sorry. I want to go home.\" 🚓\nThen he did something you did not expect. Wo",
+   "views": 1537,
+   "reach": 1231,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 27,
+   "ig_reels_avg_watch_time": 14904,
+   "ig_reels_video_view_total_time": 18332021
+  },
+  {
+   "id": "17873563725646064",
+   "timestamp": "2026-11-07T19:30:01+0000",
+   "like_count": 32,
+   "comments_count": 2,
+   "permalink": "https://www.instagram.com/reel/Dfckfj1EQSc/",
+   "caption": "Eleven devices. One router. Nobody says thank you. 📶\nThen the power cut... Router or fridg",
+   "views": 1585,
+   "reach": 1387,
+   "saved": 1,
+   "shares": 0,
+   "total_interactions": 36,
+   "ig_reels_avg_watch_time": 14099,
+   "ig_reels_video_view_total_time": 19471368
+  },
+  {
+   "id": "17963670390257701",
+   "timestamp": "2026-11-07T15:00:01+0000",
+   "like_count": 27,
+   "comments_count": 3,
+   "permalink": "https://www.instagram.com/reel/DfcEB1MiHgK/",
+   "caption": "\"I'm totally fine.\" (She is not fine.) 💔\nWait for the hoodie... Do you still keep somethin",
+   "views": 2148,
+   "reach": 1691,
+   "saved": 3,
+   "shares": 2,
+   "total_interactions": 35,
+   "ig_reels_avg_watch_time": 14356,
+   "ig_reels_video_view_total_time": 24377332
+  },
   {
    "id": "17978981012930649",
    "timestamp": "2026-11-07T00:30:01+0000",
@@ -11,13 +56,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfaimLhj75a/",
    "caption": "Banana. Not THAT banana. 🍌\nThen bedtime... and one line that melts you. Angel or boss? 👇\n\n",
-   "views": 1421,
-   "reach": 1152,
+   "views": 1499,
+   "reach": 1212,
    "saved": 1,
    "shares": 1,
    "total_interactions": 34,
-   "ig_reels_avg_watch_time": 17162,
-   "ig_reels_video_view_total_time": 20166092
+   "ig_reels_avg_watch_time": 17065,
+   "ig_reels_video_view_total_time": 21110149
   },
   {
    "id": "17876941587636262",
@@ -26,28 +71,28 @@
    "comments_count": 2,
    "permalink": "https://www.instagram.com/reel/DfaBHd5ihNe/",
    "caption": "\"I've known you six years. You have never once woken up on the first ring.\" ⏰\nWatch the en",
-   "views": 1338,
-   "reach": 1141,
+   "views": 1345,
+   "reach": 1154,
    "saved": 0,
    "shares": 0,
    "total_interactions": 26,
-   "ig_reels_avg_watch_time": 13543,
-   "ig_reels_video_view_total_time": 15331582
+   "ig_reels_avg_watch_time": 13547,
+   "ig_reels_video_view_total_time": 15431080
   },
   {
    "id": "18048624011684767",
    "timestamp": "2026-11-06T15:00:01+0000",
-   "like_count": 8,
+   "like_count": 9,
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfZhK82HN6x/",
    "caption": "\"Dave, I know where you live. I live on your roof.\" 🐦🍟\nThen he did something nobody expect",
-   "views": 547,
-   "reach": 499,
+   "views": 688,
+   "reach": 625,
    "saved": 0,
    "shares": 0,
-   "total_interactions": 9,
-   "ig_reels_avg_watch_time": 8916,
-   "ig_reels_video_view_total_time": 4396031
+   "total_interactions": 10,
+   "ig_reels_avg_watch_time": 8915,
+   "ig_reels_video_view_total_time": 5527395
   },
   {
    "id": "18134326948806768",
@@ -56,13 +101,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfX-N21E-S4/",
    "caption": "\"I'm fine.\" \"I don't need directions.\" 👨\nThen the line he can never say out loud... Does Y",
-   "views": 1371,
+   "views": 1372,
    "reach": 1133,
    "saved": 1,
    "shares": 0,
    "total_interactions": 29,
-   "ig_reels_avg_watch_time": 13187,
-   "ig_reels_video_view_total_time": 15323758
+   "ig_reels_avg_watch_time": 13176,
+   "ig_reels_video_view_total_time": 15324544
   },
   {
    "id": "18133679656838464",
@@ -71,13 +116,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfXd07dnBKO/",
    "caption": "\"Where is my mum?\" 🥺🐶\nThe first night with your puppy... and what happens when you pick he",
-   "views": 1608,
+   "views": 1609,
    "reach": 1264,
    "saved": 1,
    "shares": 0,
    "total_interactions": 54,
-   "ig_reels_avg_watch_time": 16264,
-   "ig_reels_video_view_total_time": 21354772
+   "ig_reels_avg_watch_time": 16252,
+   "ig_reels_video_view_total_time": 21356013
   },
   {
    "id": "17940152406391877",
@@ -86,13 +131,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfW8hZvCu7o/",
    "caption": "Four thousand miles on the wheel. Still in the cage. 🐹\nThen the door opened... 👇\n\n#hamster",
-   "views": 1508,
-   "reach": 1292,
+   "views": 1510,
+   "reach": 1294,
    "saved": 0,
    "shares": 0,
    "total_interactions": 23,
-   "ig_reels_avg_watch_time": 12166,
-   "ig_reels_video_view_total_time": 15524422
+   "ig_reels_avg_watch_time": 12172,
+   "ig_reels_video_view_total_time": 15556014
   },
   {
    "id": "17977451061156130",
@@ -341,13 +386,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfIv22Mj9AF/",
    "caption": "Your boss: 112. Your date: 47. Grandma: just one. 🤥\nThen you looked in the mirror... 👇\n\n#p",
-   "views": 2284,
-   "reach": 1813,
+   "views": 2285,
+   "reach": 1815,
    "saved": 0,
    "shares": 0,
    "total_interactions": 37,
-   "ig_reels_avg_watch_time": 16980,
-   "ig_reels_video_view_total_time": 31209858
+   "ig_reels_avg_watch_time": 16972,
+   "ig_reels_video_view_total_time": 31212284
   },
   {
    "id": "18118731496805156",
@@ -416,13 +461,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfEQmDUDTGJ/",
    "caption": "Russia cast a 202-tonne bell. It has never made a single sound. Not once. 🔔\nCold water on ",
-   "views": 2208,
-   "reach": 1612,
+   "views": 2216,
+   "reach": 1615,
    "saved": 1,
    "shares": 0,
    "total_interactions": 32,
-   "ig_reels_avg_watch_time": 20634,
-   "ig_reels_video_view_total_time": 33387260
+   "ig_reels_avg_watch_time": 20566,
+   "ig_reels_video_view_total_time": 33441806
   },
   {
    "id": "18450687865193272",
@@ -476,13 +521,13 @@
    "comments_count": 2,
    "permalink": "https://www.instagram.com/reel/DfBcyGNjMnk/",
    "caption": "Four bolts. Zero bolts. One very breezy flight. ✈️\nCabin pressure pushes outward on every ",
-   "views": 1795,
-   "reach": 1359,
+   "views": 1796,
+   "reach": 1360,
    "saved": 0,
    "shares": 0,
    "total_interactions": 31,
-   "ig_reels_avg_watch_time": 19911,
-   "ig_reels_video_view_total_time": 26700758
+   "ig_reels_avg_watch_time": 19898,
+   "ig_reels_video_view_total_time": 26704303
   },
   {
    "id": "18026166275876471",
