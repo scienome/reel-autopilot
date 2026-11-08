@@ -495,5 +495,8 @@
  },
  "100-tv-remote": {
   "skipped": "sample of the new random-escalation format, waiting for the owner to approve"
+ },
+ "101-tv-remote-voice2": {
+  "skipped": "voice test, not for posting"
  }
 }

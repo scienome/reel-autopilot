@@ -1,0 +1,19 @@
+[
+ {
+  "chapter": "A",
+  "beats": [
+   { "id": "hook", "phrases": ["You lost the TV remote."] },
+   { "id": "b1", "phrases": ["You check under the sofa.", "Nothing."] },
+   { "id": "b2", "phrases": ["So you buy a metal detector."] },
+   { "id": "b3", "phrases": ["It finds a sword.", "And a pirate."] },
+   { "id": "b4", "phrases": ["The pirate says,", "dig deeper."] },
+   { "id": "b5", "phrases": ["So you dig.", "Through the floor."] },
+   { "id": "b6", "phrases": ["Through the Earth's core."] },
+   { "id": "b7", "phrases": ["You come out in the stone age."] },
+   { "id": "b8", "phrases": ["The cavemen think", "your phone is a god."] },
+   { "id": "b9", "phrases": ["A T-rex chases you", "all the way home."] },
+   { "id": "twist", "phrases": ["You finally sit down."] },
+   { "id": "close", "phrases": ["The remote was", "in your hand."] }
+  ]
+ }
+]
