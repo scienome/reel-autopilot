@@ -1,0 +1,28 @@
+{
+ "music-00b3445959af.mp3": {
+  "prompt": "Light-hearted Italian-style mandolin and accordion, comedic and warm, no vocals",
+  "music_length_ms": 28040,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-bda24d7b964f.mp3": {
+  "text": "comedic boing",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-25e4654dd3b8.mp3": {
+  "text": "plucking leaves and rustling",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-f6e23450647e.mp3": {
+  "text": "old telephone ringing many times",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-45d6813b4d3b.mp3": {
+  "text": "comedic slide whistle and laugh track",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
