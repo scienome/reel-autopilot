@@ -1,0 +1,28 @@
+{
+ "music-3c967f702eac.mp3": {
+  "prompt": "Jaunty 1930s swing with clarinet and bouncy piano, light-hearted adventure, no vocals",
+  "music_length_ms": 28760,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-cdc9e67e0f14.mp3": {
+  "text": "comedic oops slide whistle",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-733b31667505.mp3": {
+  "text": "small propeller plane landing",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-8f5220a43feb.mp3": {
+  "text": "compass needle spinning comedic",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-56d87e081f04.mp3": {
+  "text": "cheerful ta-da fanfare",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ }
+}
