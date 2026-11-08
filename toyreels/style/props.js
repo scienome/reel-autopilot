@@ -173,18 +173,18 @@
     if (eye > 0) S.box((p) => add(mul(p, s), [x, 1.3 * s, z + 0.12 * s]), 0.2, 0.13, 0.02, [255, 230, 120], { bevel: 0.3, paint: (c, w, h) => { c.fillStyle = '#fff6d0'; c.beginPath(); c.ellipse(w / 2, h / 2, w * 0.42, h * 0.34 * eye, 0, 0, TAU); c.fill(); c.fillStyle = '#2a2a33'; c.beginPath(); c.arc(w / 2, h / 2, h * 0.22 * eye, 0, TAU); c.fill(); } });
   };
   // a cartoon explosion: puffs of bricks growing with u (0..1) and fading out after 1
-  // Kevin: the channel's pink tank. He turns up in every reel (a cameo or the absurd fix); viewers hunt for him.
-  // kevin(S, x, z, s, rot, t, o) o: { y, fire: time the barrel recoils, turret: angle }
-  const kevin = (S, x, z, s = 1, rot = 0, t = 0, o = {}) => {
-    const PINK = [255, 120, 180], DPINK = [214, 80, 140], y0 = o.y || 0, ry = rot;
+  // The Gold Tank: the channel's signature. It turns up in every reel (a cameo or the absurd fix); viewers hunt for it.
+  // goldTank(S, x, z, s, rot, t, o) o: { y, fire: time the barrel recoils, turret: angle }
+  const goldTank = (S, x, z, s = 1.3, rot = 0, t = 0, o = {}) => {
+    const PINK = [232, 184, 64], DPINK = [196, 146, 40], y0 = o.y || 0, ry = rot;
     const B = (dx, dy, dz, hx, hy, hz, c, r2 = 0) => S.box((p) => add(rotY(add(rotY(p, r2), [dx * s, dy * s, dz * s]), ry), [x, y0, z]), hx * s, hy * s, hz * s, c, { bevel: 0.3 });
     for (const a of [-1, 1]) { B(0, 0.12, a * 0.32, 0.5, 0.12, 0.1, [50, 50, 58]); for (let i = -2; i <= 2; i++) B(i * 0.2, 0.12, a * 0.43, 0.07, 0.07, 0.02, [90, 90, 100]); }
     B(0, 0.32, 0, 0.48, 0.1, 0.3, PINK);
     const tr = o.turret || Math.sin(t * 0.7) * 0.3, rec = o.fire != null && t > o.fire ? Math.max(0, 0.12 - (t - o.fire) * 0.4) : 0;
     B(0, 0.5, 0, 0.24, 0.09, 0.2, DPINK, tr);
     S.box((p) => add(rotY(add(rotY(add(p, [(0.42 - rec) * s, 0, 0]), tr), [0, 0.52 * s, 0]), ry), [x, y0, z]), 0.26 * s, 0.035 * s, 0.035 * s, DPINK, { bevel: 0.3 });
-    B(-0.05, 0.62, 0.05, 0.05, 0.04, 0.05, [255, 220, 240], tr);
-    B(-0.15, 0.72, -0.08, 0.008, 0.12, 0.008, [40, 40, 44]); B(-0.12, 0.8, -0.08, 0.04, 0.025, 0.003, [255, 220, 60]); // little flag
+    B(-0.05, 0.62, 0.05, 0.05, 0.04, 0.05, [255, 236, 150], tr); B(0.2, 0.52, 0, 0.08, 0.06, 0.18, [150, 110, 30], tr);
+    B(-0.15, 0.72, -0.08, 0.008, 0.12, 0.008, [40, 40, 44]); B(-0.12, 0.8, -0.08, 0.04, 0.025, 0.003, [200, 30, 40]); // pennant
   };
   const boom = (S, x, y, z, s = 1, u = 1) => {
     if (u <= 0 || u >= 2) return;

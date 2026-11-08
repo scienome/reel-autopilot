@@ -213,8 +213,9 @@ post, anything that failed and why.
 ## Posting order
 - **`"potential"` in meta.json (1-10):** your honest guess of how hard the reel will hit (hook strength, shock, comment bait). The posters put the strongest of the next few reels in the morning and evening slots and the weakest in the afternoon slot, so score every reel and spread the scores (not all 8s).
 
-## Kevin, the channel's signature (every reel)
-Kevin is a small pink tank (`kevin(S, x, z, s, rot, t, { y, fire, turret })` in toyreels/style/props.js). He appears in
-EVERY reel at least once, never mentioned in the voiceover: parked in the background, rolling through a disaster, on the
-moon, in heaven. In about one reel in three he is also the absurd fix ("So you buy a tank."). Keep him small and easy to
-miss, and make the reel's `first_comment` a hunt for him from time to time ("Did you spot Kevin? 🩷").
+## The Gold Tank, the channel's signature (every reel)
+The Gold Tank is a big golden battle tank (`goldTank(S, x, z, s, rot, t, { y, fire, turret })` in toyreels/style/props.js):
+a powerful object, not a character, never named or mentioned in the voiceover. It appears in EVERY reel at least once:
+parked in the background, rolling through a disaster, on the moon, in the stone age, in heaven. In about one reel in
+three it is also the absurd fix ("So you buy a tank."). Keep it easy to miss, and now and then make the reel's
+`first_comment` a hunt for it ("Did you spot the gold tank? 🟨").

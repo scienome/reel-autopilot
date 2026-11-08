@@ -14,7 +14,7 @@
       const BRIDE = [null, 0.45, 0.2, 0, { shirt: [250, 250, 252], pants: [250, 250, 252], face: 'smile', hair: 'long' }];
       const crowd = (k = 0) => [['cop', -1.6, 0.9, 0.4, (t) => ({ arms: Math.sin(t * 8 + k) > 0 ? 'up' : null })], ['chef', -0.9, 1.2, 0.2], ['cowboy', 0.9, 1.2, -0.2], ['scientist', 1.6, 0.9, -0.4, (t) => ({ arms: Math.sin(t * 8 + k + 1) > 0 ? 'up' : null })]];
       return {
-        hook: { set: 'lawn', opt: { night: 0.8 }, cam: 'wide', props: (S, t) => { house(S, -1.2); house(S, 1.3, [210, 220, 240]); dog(S, -0.6, 0.3, 1.1, t); kevin(S, 0.2, 1.3, 0.6, 0.5, t); }, cast: [YOU({ face: 'sad' })],
+        hook: { set: 'lawn', opt: { night: 0.8 }, cam: 'wide', props: (S, t) => { house(S, -1.2); house(S, 1.3, [210, 220, 240]); dog(S, -0.6, 0.3, 1.1, t); goldTank(S, -1.3, 1.3, 0.8, 0.5, t); }, cast: [YOU({ face: 'sad' })],
           tags: WOOF([[-0.6, 1.2, 0.3, 0.3], [-1.2, 1.9, 0.0, 0.9], [0.0, 1.6, 0.4, 1.5], [-0.9, 2.3, 0.2, 2.0]]) },
         b1: { set: 'lawn', opt: { night: 0.8 }, cam: 'close', at: 1.0, cast: [YOU({ face: 'smile' })], props: (S) => { for (const a of [-1, 1]) bx(S, 1.0 + a * 0.2, 1.72, 0.8, 0.05, 0.05, 0.05, P.orange); },
           tags: [[1.0, 2.35, 0.8, 'EARPLUGS 3000', V('b1', 'earplugs'), 'orange']] },
@@ -26,7 +26,7 @@
           tags: [[0, 2.0, -0.2, 'MAYOR', V('b4', 'wins'), 'blue']], flash: [V('b4', 'wins')] },
         b5: { set: 'court', cam: 'mid', props: (S, t) => { podium(S, 0, -0.2, '', [120, 84, 50], 1); dog(S, 0, -0.2, 1.3, t, { tie: true, hat: true, y: 1.05 }); }, cast: [['judge', -1.2, 0.2, 0.3], ['cop', 1.2, 0.2, -0.3]],
           tags: [[0, 2.2, 0.0, 'MONDAY', V('b5', 'Mondays'), 'red']], booms: [[0, 2.2, 0.0, V('b5', 'illegal'), 1.2]] },
-        b6: { set: 'city', opt: { night: 0.4 }, cam: 'high', shake: V('b6', 'collapses'), cast: crowd(3), props: (S, t, u) => { kevin(S, H.lerp(-3, 3, u), 0.2, 1.1, 0, t, { fire: V('b6', 'collapses') }); for (let i = 0; i < 18; i++) cash(S, -2 + (i * 0.73) % 4, 3 - ((u * 4 + i * 0.37) % 3), -0.5 + (i % 5) * 0.3, 0.8, t * 3 + i); },
+        b6: { set: 'city', opt: { night: 0.4 }, cam: 'high', shake: V('b6', 'collapses'), cast: crowd(3), props: (S, t, u) => { goldTank(S, H.lerp(-3, 3, u), 0.2, 1.4, 0, t, { fire: V('b6', 'collapses') }); for (let i = 0; i < 18; i++) cash(S, -2 + (i * 0.73) % 4, 3 - ((u * 4 + i * 0.37) % 3), -0.5 + (i % 5) * 0.3, 0.8, t * 3 + i); },
           booms: [[-1.5, 0.6, -1, V('b6', 'economy'), 1.4], [1.4, 0.6, -0.8, V('b6', 'collapses'), 1.8]], tags: [[0, 2.4, 0, 'STOCKS: 0', V('b6', 'collapses'), 'red']] },
         b7: { set: 'sky', opt: { night: 0.3 }, cam: 'pull', props: (S, t, u) => ufo(S, 3.5 - 2.2 * H.ease.out(u), t), cast: [['alien', -0.5, 0.5, 0.3, (t, u) => ({ hide: u < 0.6 })], ['alien', 0.6, 0.6, -0.3, (t, u) => ({ hide: u < 0.7 })]],
           tags: [[0, 2.9, 0, 'HELP IS HERE', V('b7', 'help'), 'green']] },
@@ -36,7 +36,7 @@
         b10: { set: 'moon', cam: 'wide', props: (S) => { astronaut(S, 0.5, 0.4, 0.9, -0.3); bx(S, -1.2, 0.5, -0.5, 0.6, 0.5, 0.5, [236, 236, 240]); }, tags: [[0.5, 2.2, 0.4, '0 dB', V('b10', 'Silence'), 'green']] },
         twist: { set: 'moon', cam: 'pull', shake: V('twist', 'next'), props: (S, t, u) => { astronaut(S, 0.5, 0.4, 0.9, -0.3); bx(S, -1.2, 0.5, -0.5, 0.6, 0.5, 0.5, [236, 236, 240]); missile(S, 1.9, H.lerp(5, 0.9, H.ease.out(Math.min(1, u * 1.3))), -0.6, 0.9, 0, 1); },
           booms: [[1.9, 0.3, -0.6, V('twist', 'next'), 1.2]] },
-        close: { set: 'moon', cam: 'wide', shake: V('close', 'bigger'), props: (S, t) => { astronaut(S, 0.3, 0.6, 0.9, -0.3); astronaut(S, 2.0, 0.2, 0.9, -0.6); dog(S, -1.1, -0.5, 3.4, t); kevin(S, 1.3, 1.0, 0.7, -2.4, t, { turret: 2.6 }); },
+        close: { set: 'moon', cam: 'wide', shake: V('close', 'bigger'), props: (S, t) => { astronaut(S, 0.3, 0.6, 0.9, -0.3); astronaut(S, 2.0, 0.2, 0.9, -0.6); dog(S, -1.1, -0.5, 3.4, t); goldTank(S, 1.4, 0.9, 1.0, -2.4, t, { turret: 2.6 }); },
           tags: WOOF([[-0.4, 3.3, -0.6, V('close', 'bigger')], [-1.5, 2.5, -0.4, V('close', 'bigger') + 0.3], [0.6, 2.8, -0.2, V('close', 'bigger') + 0.6]]), flash: [V('close', 'bigger')] },
       };
     },
