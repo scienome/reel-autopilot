@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Cute whimsical xylophone and ukulele with gentle ocean waves, playful, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "bath",
+   "offset": 0.0,
+   "prompt": "heavy splash rubber toys hitting water",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b2",
+   "word": "broke",
+   "offset": 0.0,
+   "prompt": "container crack open crash",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b4",
+   "word": "floated",
+   "offset": 0.0,
+   "prompt": "rubber duck squeak",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "currents",
+   "offset": 0.0,
+   "prompt": "happy discovery chime",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

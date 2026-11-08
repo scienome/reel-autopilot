@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Comedic American folk fiddle and banjo march, light and bouncy, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "war",
+   "offset": 0.0,
+   "prompt": "comedic drum roll",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b2",
+   "word": "militias",
+   "offset": 0.0,
+   "prompt": "group marching with drum",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b4",
+   "word": "deal",
+   "offset": 0.0,
+   "prompt": "cash register ding",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "copper",
+   "offset": 0.0,
+   "prompt": "coins pouring into a pile",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

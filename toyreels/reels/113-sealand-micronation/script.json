@@ -1,0 +1,62 @@
+[
+ {
+  "chapter": "A",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "A man declared a rusty sea fort",
+     "his own country."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "In nineteen sixty seven,",
+     "Roy Bates was a pirate radio operator."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "He found a disused",
+     "World War Two sea fort."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "He named it",
+     "the Principality of Sealand."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "And he made himself",
+     "a prince."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "Sealand has even fought off",
+     "invaders."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "No country",
+     "officially recognises it."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Would you move in?"
+    ]
+   }
+  ]
+ }
+]

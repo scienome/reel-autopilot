@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Light-hearted Italian-style mandolin and accordion, comedic and warm, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "trees",
+   "offset": 0.0,
+   "prompt": "comedic boing",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b2",
+   "word": "harvesting",
+   "offset": 0.0,
+   "prompt": "plucking leaves and rustling",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b4",
+   "word": "hundreds",
+   "offset": 0.0,
+   "prompt": "old telephone ringing many times",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "joke",
+   "offset": 0.0,
+   "prompt": "comedic slide whistle and laugh track",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

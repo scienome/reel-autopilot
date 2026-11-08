@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Cheeky pirate shanty with accordion and tin whistle, upbeat and funny, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "country",
+   "offset": 0.0,
+   "prompt": "comedic trumpet fanfare short",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "principality",
+   "offset": 0.0,
+   "prompt": "royal fanfare short",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "invaders",
+   "offset": 0.0,
+   "prompt": "gunshot cartoon and splash",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "recognises",
+   "offset": 0.0,
+   "prompt": "sad trombone wah wah",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

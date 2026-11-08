@@ -1,0 +1,63 @@
+[
+ {
+  "chapter": "A",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "A failed glue became",
+     "a billion dollar office product."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "In nineteen sixty eight,",
+     "a chemist tried to make a super strong glue."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "He made a weak one",
+     "instead."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "For years, nobody knew",
+     "what to use it for."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "Then a colleague kept losing",
+     "his church hymn book bookmark."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "He realised weak glue",
+     "was perfect."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "In nineteen eighty,",
+     "the Post-it note launched."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "What colour would",
+     "you have picked?"
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Epic yet comedic baroque brass fanfare with a sad trombone ending, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "sank",
+   "offset": 0.0,
+   "prompt": "cartoon ship sinking gurgle",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b2",
+   "word": "heavy",
+   "offset": 0.0,
+   "prompt": "comedic heavy thud",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b3",
+   "word": "gust",
+   "offset": 0.0,
+   "prompt": "wind gust whoosh",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "raised",
+   "offset": 0.0,
+   "prompt": "triumphant fanfare with water pouring",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

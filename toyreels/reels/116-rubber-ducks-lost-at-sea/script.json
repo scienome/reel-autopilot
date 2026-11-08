@@ -1,0 +1,63 @@
+[
+ {
+  "chapter": "A",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "Twenty eight thousand bath toys",
+     "fell into the ocean."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "In nineteen ninety two,",
+     "a storm hit a cargo ship in the Pacific."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "A container of toys",
+     "broke open."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "Yellow ducks, red beavers,",
+     "blue turtles and green frogs."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "They floated for months",
+     "across the sea."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "The first ones reached Alaska",
+     "about ten months later."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "Scientists used them",
+     "to map ocean currents."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Which toy would you",
+     "have followed?"
+    ]
+   }
+  ]
+ }
+]

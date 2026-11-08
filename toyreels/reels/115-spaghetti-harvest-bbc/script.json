@@ -1,0 +1,63 @@
+[
+ {
+  "chapter": "A",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "The BBC told Britain",
+     "that spaghetti grows on trees."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "On April first, nineteen fifty seven,",
+     "a trusted news show ran a report."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "A Swiss family",
+     "was harvesting spaghetti."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "The voice was Richard Dimbleby,",
+     "a very trusted presenter."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "Hundreds of viewers called",
+     "to ask how to grow their own."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "It was an April Fools",
+     "joke."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "The show never tried",
+     "another one."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Would you have",
+     "believed it?"
+    ]
+   }
+  ]
+ }
+]

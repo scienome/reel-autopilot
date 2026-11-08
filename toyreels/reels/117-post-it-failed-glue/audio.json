@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Quirky upbeat office pizzicato with xylophone and light claps, no vocals",
+  "gain": 0,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "failed",
+   "offset": 0.0,
+   "prompt": "comedic fail trombone",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "b2",
+   "word": "weak",
+   "offset": 0.0,
+   "prompt": "paper peeling sticky sound",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "twist",
+   "word": "perfect",
+   "offset": 0.0,
+   "prompt": "lightbulb ding idea",
+   "dur": 1.2,
+   "gain": -3
+  },
+  {
+   "beat": "punch",
+   "word": "launched",
+   "offset": 0.0,
+   "prompt": "cheerful office bell and applause",
+   "dur": 1.2,
+   "gain": -3
+  }
+ ]
+}

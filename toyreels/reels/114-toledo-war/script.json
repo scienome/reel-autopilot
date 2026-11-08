@@ -1,0 +1,63 @@
+[
+ {
+  "chapter": "A",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "Two US states went to war",
+     "over one strip of land."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "In eighteen thirty five,",
+     "Ohio and Michigan both claimed Toledo."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "Both sent militias",
+     "to the border."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "Almost nobody",
+     "got hurt."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "Congress made a deal.",
+     "Ohio kept Toledo."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "Michigan got what looked",
+     "like a worthless wilderness."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "It was full of copper,",
+     "iron and timber."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "So who won,",
+     "Ohio or Michigan?"
+    ]
+   }
+  ]
+ }
+]

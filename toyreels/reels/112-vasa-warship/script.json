@@ -1,0 +1,63 @@
+[
+ {
+  "chapter": "A",
+  "beats": [
+   {
+    "id": "hook",
+    "phrases": [
+     "A brand new warship",
+     "sank on its very first trip."
+    ]
+   },
+   {
+    "id": "b1",
+    "phrases": [
+     "In sixteen twenty eight,",
+     "Sweden launched the Vasa."
+    ]
+   },
+   {
+    "id": "b2",
+    "phrases": [
+     "But it was",
+     "top heavy."
+    ]
+   },
+   {
+    "id": "b3",
+    "phrases": [
+     "A light gust of wind",
+     "tipped it over."
+    ]
+   },
+   {
+    "id": "b4",
+    "phrases": [
+     "It sailed a little over",
+     "one kilometre."
+    ]
+   },
+   {
+    "id": "twist",
+    "phrases": [
+     "It stayed on the seabed",
+     "for over three hundred years."
+    ]
+   },
+   {
+    "id": "punch",
+    "phrases": [
+     "In nineteen sixty one,",
+     "it was raised from the sea."
+    ]
+   },
+   {
+    "id": "cta",
+    "phrases": [
+     "Would you have",
+     "sailed on it?"
+    ]
+   }
+  ]
+ }
+]
