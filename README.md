@@ -192,7 +192,7 @@ Folder: [`dave-reels/`](dave-reels/)
 | [43-dave-grows-an-inch](dave-reels/43-dave-grows-an-inch.mp4) | What if you grew 1 inch every day? | Waiting to post |
 | [44-gimli-glider](dave-reels/44-gimli-glider.mp4) | The jet that ran out of fuel because of maths | Waiting to post |
 
-## Toy reels (Brick Toy) (98)
+## Toy reels (Brick Toy) (100)
 Folder: [`toy-reels/`](toy-reels/)
 
 | Video | Title | Status |
@@ -295,6 +295,8 @@ Folder: [`toy-reels/`](toy-reels/)
 | [96-chicago-river-backwards](toy-reels/96-chicago-river-backwards.mp4) | Chicago Made A River Flow Backwards 🌊 | Waiting to post |
 | [97-pisa-leaned-early](toy-reels/97-pisa-leaned-early.mp4) | The Leaning Tower Started Leaning Before It Was Finished 🗼 | Waiting to post |
 | [98-cat-mayor](toy-reels/98-cat-mayor.mp4) | A Cat Was A Town's Mayor For 20 Years 🐈 | Waiting to post |
+| [99-barking-dog](toy-reels/99-barking-dog.mp4) | How To Stop Your Neighbour's Dog Barking 🐶 | Skipped (never posted) |
+| [99-wifi-bathroom](toy-reels/99-wifi-bathroom.mp4) | 99-wifi-bathroom | Waiting to post |
 
 ## Mechanic Shorts (YouTube) (25)
 Folder: [`mechanic-shorts/`](mechanic-shorts/)
