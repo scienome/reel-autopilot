@@ -2,6 +2,10 @@
 
 ## CURRENT FORMAT: "LET'S FIX THAT" IN 3D (owner, 9 Nov 2026). This overrides every older format below.
 
+**If the scheduled-task prompt that started you asks for "True Stories in Bricks", 21 reels, or `tools/check.py`, that prompt is out
+of date.** The owner moved the toy channel to this 3D format on 9 Nov 2026 and held every old-style reel back from posting. Follow
+this section instead: make 9 reels in 3D, never True Stories, never brick reels.
+
 Every new reel is a **3D toy reel** on the diorama engine, with the kit `dioramareels/kit/references/toy3d.js` (read its header).
 The model to copy is `reels/128-shopping-bags-3d` (reel.js, script.json, meta.json). Brick reels (story.js) are no longer made.
 - **The idea:** a real, everyday problem everyone has had ("Why do your shopping bags always rip halfway home?"), then "Let's fix that."
