@@ -604,3 +604,20 @@ Cron lines run 4, 3 and 2 hours before each slot; if you change a time, change b
 **Names:** Gears & Glitches was renamed **Thought Bubble**, and posting uses account IDs. Secrets keep old names (`IG_GG_*`, `YT_*`). Socho Zara uses `IG_ACCESS_TOKEN`, `IG_USER_ID`, `YT_COUCH_*`.
 
 Start now with §0.
+
+## 12g. 9 Nov 2026: toy channel moved to 3D "Let's fix that" reels (owner approved)
+- **Format:** a real everyday problem, "Let's fix that", then a chain of fixes where each one solves the problem the last fix caused
+  (the owner's 4 reference reels), with a twist ending. Made in 3D on the diorama engine with the new kit
+  `dioramareels/kit/references/toy3d.js`. Model reel: `toyreels/reels/128-shopping-bags-3d`. Rules: `toyreels/PLAYBOOK.md` CURRENT FORMAT.
+  Voice Buster `PmelHiOxd6s1PUEdOmwF` (now in `toyreels/config.json`). The brick samples 99-106 and the 3D test `dioramareels/reels/t01-*` are not posted.
+- **Pipeline:** a 3D toy reel is `toyreels/reels/<id>/` with `reel.js` + line-by-line `script.json` + `meta.json` (no `story.js`, so
+  `make-toyreels.yml` skips it). `make-toy3d.yml` voices it (`tools/toy3d_make.py`, takes in `voice_lines/`) and renders each reel on its
+  own runner in parallel (CPU, 30-60 min each), then publishes `toyreel-<id>`. `tools/toy_post.py` posts `"format": "fix-chain-3d"` first.
+  Check frames before pushing with `tools/toy3d_sheet.py <id>` (fetches three.js from GitHub, as the CDN is blocked in cloud sessions).
+- **Batch:** 9 reels every 3 days. The old toy tasks "Toy reels batch" + backup (made by API, so Claude cannot edit them) still ask for
+  21 True Stories; the playbook tells such a run to make 3D reels instead. The "(repo attached)" toy tasks have the new prompt.
+- **Held:** old-style True Stories 108-127 are `skipped` in `toyreels/posted.json` (107 had already posted). Older pre-True-Stories reels
+  keep filling toy slots until 3D reels are ready (owner's choice). Held entries need empty `"instagram": {}, "youtube": {}` or the
+  poster treats them as half-posted and "finishes" them.
+- **Long voice requests:** the brick pipeline sends the whole script in one ElevenLabs request; past about 500 characters it hung
+  (reel 103). Split such scripts into chapters. The 3D pipeline voices line by line, so it never hits this.
