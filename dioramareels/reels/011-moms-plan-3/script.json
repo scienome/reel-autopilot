@@ -1,0 +1,10 @@
+{ "lines": [
+ {"shot":"hook","cap":"","say":"Your mother's plan doubled. Two hundred forty dollars. Thirty days.","cold":true},
+ {"shot":"doris","cap":"A *NOTEBOOK.","say":"Doris knocks. She brings a notebook."},
+ {"shot":"floors","cap":"EVERY *FLOOR.","say":"She writes down every floor. Not for the tower."},
+ {"shot":"floors2","cap":"TEN *CENTS.","say":"Ten cents a day, from twelve hundred homes."},
+ {"shot":"paid","cap":"DAY *THIRTY.","say":"Day thirty. The machine runs on neighbors."},
+ {"shot":"eyes","cap":"*THEIRS.","say":"Your mother smiles. Her care belongs to no tower."},
+ {"shot":"tower","cap":"THE *FINE.","say":"Above the city, the owner sends a fine. One million dollars."},
+ {"shot":"end","cap":"","say":"Would you sign the notebook? Write it in the comments."}
+] }
