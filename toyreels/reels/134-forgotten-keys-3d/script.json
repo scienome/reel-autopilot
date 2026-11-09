@@ -1,0 +1,94 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "WHY DO YOU ALWAYS|*FORGET",
+   "say": "Why do you always forget"
+  },
+  {
+   "shot": "hook",
+   "cap": "YOUR *KEYS?",
+   "say": "your keys?"
+  },
+  {
+   "shot": "fix",
+   "cap": "LET'S *FIX THAT.",
+   "say": "Let's fix that."
+  },
+  {
+   "shot": "b1",
+   "cap": "SO PUT *A HOOK|BY THE DOOR.",
+   "say": "So put a hook by the door."
+  },
+  {
+   "shot": "b1",
+   "cap": "YOU WALK *STRAIGHT|PAST IT.",
+   "say": "You walk straight past it."
+  },
+  {
+   "shot": "b2",
+   "cap": "SO TIE THEM *ON|WITH A ROPE.",
+   "say": "So tie them on with a rope."
+  },
+  {
+   "shot": "b2",
+   "cap": "IT SNAGS ON *EVERYTHING|AND PULLS A BIN OVER.",
+   "say": "It snags on everything and pulls a bin over."
+  },
+  {
+   "shot": "b3",
+   "cap": "SO FIT A *DOOR ALARM.",
+   "say": "So fit a door alarm."
+  },
+  {
+   "shot": "b3",
+   "cap": "IT WAKES UP|THE *WHOLE STREET.",
+   "say": "It wakes up the whole street."
+  },
+  {
+   "shot": "b4",
+   "cap": "SO USE A *FINGERPRINT|LOCK.",
+   "say": "So use a fingerprint lock."
+  },
+  {
+   "shot": "b4",
+   "cap": "IT DOESN'T KNOW|YOUR *JAMMY FINGERS.",
+   "say": "It doesn't know your jammy fingers."
+  },
+  {
+   "shot": "b5",
+   "cap": "SO HIRE *A DOORMAN.",
+   "say": "So hire a doorman."
+  },
+  {
+   "shot": "b5",
+   "cap": "HE'S *FAST ASLEEP.",
+   "say": "He's fast asleep."
+  },
+  {
+   "shot": "b6",
+   "cap": "SO REMOVE *THE DOOR.",
+   "say": "So remove the door."
+  },
+  {
+   "shot": "b6",
+   "cap": "NOW THE *WHOLE STREET|CAN SEE IN.",
+   "say": "Now the whole street can see in."
+  },
+  {
+   "shot": "twist",
+   "cap": "YOU WALK *IN.",
+   "say": "You walk in."
+  },
+  {
+   "shot": "close",
+   "cap": "THE DOOR WAS|*OPEN.",
+   "say": "The door was open."
+  },
+  {
+   "shot": "close",
+   "cap": "THE KEYS WERE IN|THE *LOCK.",
+   "say": "The keys were in the lock."
+  }
+ ]
+}
