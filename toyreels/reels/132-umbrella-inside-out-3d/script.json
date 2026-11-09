@@ -1,0 +1,94 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "WHY DOES YOUR UMBRELLA|ALWAYS *FLIP",
+   "say": "Why does your umbrella always flip"
+  },
+  {
+   "shot": "hook",
+   "cap": "INSIDE *OUT?",
+   "say": "inside out?"
+  },
+  {
+   "shot": "fix",
+   "cap": "LET'S *FIX THAT.",
+   "say": "Let's fix that."
+  },
+  {
+   "shot": "b1",
+   "cap": "SO BUY A *STRONGER ONE|WITH STEEL RIBS.",
+   "say": "So buy a stronger one with steel ribs."
+  },
+  {
+   "shot": "b1",
+   "cap": "THE WIND *LIFTS YOU|OFF THE GROUND.",
+   "say": "The wind lifts you off the ground."
+  },
+  {
+   "shot": "b2",
+   "cap": "SO TIE ON *BRICKS.",
+   "say": "So tie on bricks."
+  },
+  {
+   "shot": "b2",
+   "cap": "NOW YOU CAN'T *WALK.",
+   "say": "Now you can't walk."
+  },
+  {
+   "shot": "b3",
+   "cap": "SO PUT IT ON *WHEELS.",
+   "say": "So put it on wheels."
+  },
+  {
+   "shot": "b3",
+   "cap": "IT ROLLS *AWAY|DOWN THE HILL.",
+   "say": "It rolls away down the hill."
+  },
+  {
+   "shot": "b4",
+   "cap": "SO TIE IT TO *A LAMP POST.",
+   "say": "So tie it to a lamp post."
+  },
+  {
+   "shot": "b4",
+   "cap": "THE LAMP POST|*FALLS OVER.",
+   "say": "The lamp post falls over."
+  },
+  {
+   "shot": "b5",
+   "cap": "SO BUILD A *ROOF|OVER THE STREET.",
+   "say": "So build a roof over the street."
+  },
+  {
+   "shot": "b5",
+   "cap": "NOW THE *SUN|NEVER SHINES.",
+   "say": "Now the sun never shines."
+  },
+  {
+   "shot": "b6",
+   "cap": "SO CUT *A HOLE.",
+   "say": "So cut a hole."
+  },
+  {
+   "shot": "b6",
+   "cap": "THE RAIN *POURS IN|ON YOU.",
+   "say": "The rain pours in on you."
+  },
+  {
+   "shot": "twist",
+   "cap": "THEN THE RAIN|*STOPS.",
+   "say": "Then the rain stops."
+  },
+  {
+   "shot": "close",
+   "cap": "YOU LEFT THE|*UMBRELLA",
+   "say": "You left the umbrella"
+  },
+  {
+   "shot": "close",
+   "cap": "AT THE *BUS STOP.",
+   "say": "at the bus stop."
+  }
+ ]
+}
