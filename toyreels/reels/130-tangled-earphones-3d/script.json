@@ -1,0 +1,94 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "WHY ARE YOUR|EARPHONES|ALWAYS *TANGLED?",
+   "say": "Why are your earphones always tangled?"
+  },
+  {
+   "shot": "hook",
+   "cap": "EVERY TIME|IN YOUR *POCKET?",
+   "say": "Every time, in your pocket?"
+  },
+  {
+   "shot": "fix",
+   "cap": "LET'S *FIX THAT.",
+   "say": "Let's fix that."
+  },
+  {
+   "shot": "b1",
+   "cap": "SO GO *WIRELESS.",
+   "say": "So go wireless."
+  },
+  {
+   "shot": "b1",
+   "cap": "THEN YOU LOSE|ONE DOWN *A DRAIN.",
+   "say": "Then you lose one down a drain."
+  },
+  {
+   "shot": "b2",
+   "cap": "SO FISH IT OUT|WITH A *MAGNET.",
+   "say": "So fish it out with a magnet."
+  },
+  {
+   "shot": "b2",
+   "cap": "IT GRABS EVERY *FORK|ON THE STREET.",
+   "say": "It grabs every fork on the street."
+  },
+  {
+   "shot": "b3",
+   "cap": "SO USE A *VACUUM|INSTEAD.",
+   "say": "So use a vacuum instead."
+  },
+  {
+   "shot": "b3",
+   "cap": "IT SUCKS UP|THE *WHOLE LAWN.",
+   "say": "It sucks up the whole lawn."
+  },
+  {
+   "shot": "b4",
+   "cap": "SO SEND A *DRONE|TO LOOK.",
+   "say": "So send a drone to look."
+  },
+  {
+   "shot": "b4",
+   "cap": "IT FLIES OFF|WITH THE *EARBUD.",
+   "say": "It flies off with the earbud."
+  },
+  {
+   "shot": "b5",
+   "cap": "SO FIRE A *NET|TO CATCH IT.",
+   "say": "So fire a net to catch it."
+  },
+  {
+   "shot": "b5",
+   "cap": "THE NET LANDS|ON A *BUS.",
+   "say": "The net lands on a bus."
+  },
+  {
+   "shot": "b6",
+   "cap": "SO BUY THE *BUS.",
+   "say": "So buy the bus."
+  },
+  {
+   "shot": "b6",
+   "cap": "NOW YOU OWN *A BUS.",
+   "say": "Now you own a bus."
+  },
+  {
+   "shot": "twist",
+   "cap": "THEN YOU *FIND IT.",
+   "say": "Then you find it."
+  },
+  {
+   "shot": "close",
+   "cap": "IT WAS IN YOUR|*POCKET.",
+   "say": "It was in your pocket."
+  },
+  {
+   "shot": "close",
+   "cap": "THE WHOLE TIME.",
+   "say": "The whole time."
+  }
+ ]
+}

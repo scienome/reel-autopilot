@@ -1,0 +1,94 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "WHY DO YOU SLEEP|THROUGH YOUR *ALARM?",
+   "say": "Why do you sleep through your alarm?"
+  },
+  {
+   "shot": "hook",
+   "cap": "EVERY SINGLE|*MORNING?",
+   "say": "Every single morning?"
+  },
+  {
+   "shot": "fix",
+   "cap": "LET'S *FIX THAT.",
+   "say": "Let's fix that."
+  },
+  {
+   "shot": "b1",
+   "cap": "PUT THE ALARM|*ACROSS THE ROOM.",
+   "say": "Put the alarm across the room."
+  },
+  {
+   "shot": "b1",
+   "cap": "YOU WALK OVER,|SWITCH IT OFF,|*CRAWL BACK.",
+   "say": "You walk over, switch it off, crawl back."
+  },
+  {
+   "shot": "b2",
+   "cap": "SO MAKE THE BED|*TIP YOU OUT.",
+   "say": "So make the bed tip you out."
+  },
+  {
+   "shot": "b2",
+   "cap": "YOU LAND IN|THE *WARDROBE.|OUCH.",
+   "say": "You land in the wardrobe. Ouch."
+  },
+  {
+   "shot": "b3",
+   "cap": "SO ADD A *TRAMPOLINE|TO CATCH YOU.",
+   "say": "So add a trampoline to catch you."
+  },
+  {
+   "shot": "b3",
+   "cap": "YOU BOUNCE RIGHT|OUT OF THE *WINDOW.|BOING!",
+   "say": "You bounce right out of the window."
+  },
+  {
+   "shot": "b4",
+   "cap": "SO HANG A *NET|OUTSIDE.",
+   "say": "So hang a net outside."
+  },
+  {
+   "shot": "b4",
+   "cap": "NOW YOU'RE STUCK|*UPSIDE DOWN.|FOR HOURS.",
+   "say": "Now you're stuck upside down for hours."
+  },
+  {
+   "shot": "b5",
+   "cap": "SO TIP A *BUCKET|OF WATER ON YOU.",
+   "say": "So tip a bucket of water on you."
+  },
+  {
+   "shot": "b5",
+   "cap": "IT'S FREEZING.|AND YOUR BED IS *WET.",
+   "say": "It's freezing. And your bed is wet."
+  },
+  {
+   "shot": "b6",
+   "cap": "SO SLEEP IN A *BOAT.|NOTHING GETS WET.",
+   "say": "So sleep in a boat. Nothing gets wet."
+  },
+  {
+   "shot": "b6",
+   "cap": "THEN THE *RAIN CAME,|AND YOU FLOATED AWAY.",
+   "say": "Then it rained and you floated away."
+  },
+  {
+   "shot": "twist",
+   "cap": "YOU WAKE UP,|RIGHT ON *TIME.",
+   "say": "You wake up, right on time."
+  },
+  {
+   "shot": "close",
+   "cap": "THEN YOU|*REMEMBER.",
+   "say": "Then you remember."
+  },
+  {
+   "shot": "close",
+   "cap": "IT'S *SATURDAY.",
+   "say": "It's Saturday."
+  }
+ ]
+}
