@@ -1,0 +1,10 @@
+{ "lines": [
+ {"shot":"hook","cap":"","say":"Someone just signed your lease. And he has your face.","cold":true},
+ {"shot":"key","cap":"*NOON.","say":"Your key stopped working at noon. Your name is still on the door."},
+ {"shot":"lease","cap":"WELCOME *HOME.","say":"The landlord texts. Welcome home, tenant nine D."},
+ {"shot":"knock","cap":"*I'M BUSY.","say":"You knock. A voice inside says, I'm busy."},
+ {"shot":"door","cap":"ONLY *HAPPIER.","say":"The door opens. He looks exactly like you. Only happier."},
+ {"shot":"rent","cap":"ALWAYS *ON TIME.","say":"He pays your rent on time. Better than you."},
+ {"shot":"landlord","cap":"ONE *TENANT.","say":"The landlord says, one tenant per name."},
+ {"shot":"end","cap":"","say":"Would you fight for your name? Write it in the comments."}
+] }
