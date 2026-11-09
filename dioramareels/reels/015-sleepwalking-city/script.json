@@ -1,0 +1,9 @@
+{ "lines": [
+ {"shot":"hook","cap":"","say":"Every night at three oh seven, your whole city gets up in its sleep.","cold":true},
+ {"shot":"wake","cap":"EYES *CLOSED.","say":"You wake up. Everyone on your street is walking. Eyes closed."},
+ {"shot":"street","cap":"PERFECT *STEP.","say":"They all walk toward the tower, in perfect step."},
+ {"shot":"rule","cap":"WALK LIKE *THEM.","say":"Rule one. Do not wake anyone. Rule two. Walk like them."},
+ {"shot":"doris","cap":"HER *RENT.","say":"Doris from six C walks past. Her eyes are shut. She's holding her rent."},
+ {"shot":"tower","cap":"THE *NIGHT SHIFT.","say":"They aren't sleepwalking. They're working the night shift. For the tower. Unpaid."},
+ {"shot":"end","cap":"","say":"Would you wake them up? Write it in the comments."}
+] }
