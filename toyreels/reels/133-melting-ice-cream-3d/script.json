@@ -1,0 +1,94 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "WHY DOES ICE CREAM|*MELT BEFORE",
+   "say": "Why does ice cream melt before"
+  },
+  {
+   "shot": "hook",
+   "cap": "YOU CAN FINISH *IT?",
+   "say": "you can finish it?"
+  },
+  {
+   "shot": "fix",
+   "cap": "LET'S *FIX THAT.",
+   "say": "Let's fix that."
+  },
+  {
+   "shot": "b1",
+   "cap": "SO EAT *FASTER.",
+   "say": "So eat faster."
+  },
+  {
+   "shot": "b1",
+   "cap": "BRAIN FREEZE!",
+   "say": "Brain freeze!"
+  },
+  {
+   "shot": "b2",
+   "cap": "SO KEEP IT IN *A COOLER.",
+   "say": "So keep it in a cooler."
+  },
+  {
+   "shot": "b2",
+   "cap": "NOW YOU CAN'T|*REACH IT.",
+   "say": "Now you can't reach it."
+  },
+  {
+   "shot": "b3",
+   "cap": "SO WHEEL *A FREEZER|BEHIND YOU.",
+   "say": "So wheel a freezer behind you."
+  },
+  {
+   "shot": "b3",
+   "cap": "THE *LEAD|IS TOO SHORT.",
+   "say": "The lead is too short."
+  },
+  {
+   "shot": "b4",
+   "cap": "SO USE A *LONG LEAD.",
+   "say": "So use a long lead."
+  },
+  {
+   "shot": "b4",
+   "cap": "IT PULLS THE *PLUG|OUT OF THE SHOP.",
+   "say": "It pulls the plug out of the shop."
+  },
+  {
+   "shot": "b5",
+   "cap": "SO WEAR A *SOLAR HAT.",
+   "say": "So wear a solar hat."
+  },
+  {
+   "shot": "b5",
+   "cap": "THE SUN *MELTS IT|EVEN FASTER.",
+   "say": "The sun melts it even faster."
+  },
+  {
+   "shot": "b6",
+   "cap": "SO MOVE TO|THE *NORTH POLE.",
+   "say": "So move to the North Pole."
+  },
+  {
+   "shot": "b6",
+   "cap": "NOW YOUR ICE CREAM|IS *FROZEN SOLID.",
+   "say": "Now your ice cream is frozen solid."
+  },
+  {
+   "shot": "twist",
+   "cap": "YOU FINALLY *REACH|THE CONE.",
+   "say": "You finally reach the cone."
+  },
+  {
+   "shot": "close",
+   "cap": "IT'S *EMPTY.",
+   "say": "It's empty."
+  },
+  {
+   "shot": "close",
+   "cap": "A SEAGULL|GOT IT.",
+   "say": "A seagull got it."
+  }
+ ]
+}
