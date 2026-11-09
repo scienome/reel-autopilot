@@ -1,0 +1,9 @@
+{ "lines": [
+ {"shot":"hook","cap":"","say":"Yesterday, you picked a door. Here is what was behind it.","cold":true},
+ {"shot":"dark","cap":"*3:07 AM.","say":"Same hallway. Three oh seven. Footsteps on the stairs."},
+ {"shot":"a","cap":"DOOR A. *FREE.","say":"Door A was free. Behind it, a staircase. Down to the street."},
+ {"shot":"out","cap":"NOBODY *NEEDED TO.","say":"Nobody came back. They didn't need to."},
+ {"shot":"b","cap":"DOOR B. *$50.","say":"Door B cost fifty dollars. Behind it, an elevator that never opens."},
+ {"shot":"man","cap":"*HIS DOOR.","say":"And the footsteps? A man who sells door B."},
+ {"shot":"end","cap":"","say":"Which door did you pick? Write A or B in the comments."}
+] }
