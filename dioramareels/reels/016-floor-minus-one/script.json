@@ -1,0 +1,9 @@
+{ "lines": [
+ {"shot":"hook","cap":"","say":"Your elevator just grew a new button. Floor minus one.","cold":true},
+ {"shot":"lift","cap":"ALWAYS *ONE.","say":"You've lived on nine for years. The buttons always stopped at one."},
+ {"shot":"press","cap":"*DOWN.","say":"You press it. The floor drops. Slow music plays."},
+ {"shot":"doors","cap":"*HUNDREDS.","say":"The doors open on a long grey office. Clerks. Hundreds of them."},
+ {"shot":"sign","cap":"*COLLECTIONS.","say":"A sign on the wall. Collections. Payments due from the tower."},
+ {"shot":"owner","cap":"HE PAYS *RENT.","say":"The man who owns this city pays rent too. To someone down here."},
+ {"shot":"end","cap":"","say":"So who do you think owns the tower? Write it in the comments."}
+] }
