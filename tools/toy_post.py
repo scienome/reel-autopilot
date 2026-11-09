@@ -175,9 +175,9 @@ def main():
 
     ids = sorted(d for d in os.listdir(REELS) if os.path.exists(os.path.join(REELS, d, 'meta.json')))
     half = [r for r in ids if r in log and not ('instagram' in log[r] and 'youtube' in log[r])]
-    def rank(r):  # the True Stories format goes first (owner, 31 Oct 2026), then strongest first; older reels still post after them
+    def rank(r):  # 3D 'Let's fix that' reels first (owner, 9 Nov 2026), then True Stories, then strongest first; older reels post after them
         m = json.load(open(os.path.join(REELS, r, 'meta.json'), encoding='utf-8'))
-        return (m.get('format') != 'true-story', -m.get('potential', 5))
+        return (m.get('format') != 'fix-chain-3d', m.get('format') != 'true-story', -m.get('potential', 5))
     queue = sorted((r for r in ids if r not in log), key=rank)
 
     if a.id:

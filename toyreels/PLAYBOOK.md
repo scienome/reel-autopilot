@@ -1,6 +1,45 @@
 # Toy reels: the scheduled-run playbook
 
-## CURRENT FORMAT: TRUE STORIES IN BRICKS (owner, 31 Oct 2026). This overrides any older format below.
+## CURRENT FORMAT: "LET'S FIX THAT" IN 3D (owner, 9 Nov 2026). This overrides every older format below.
+
+Every new reel is a **3D toy reel** on the diorama engine, with the kit `dioramareels/kit/references/toy3d.js` (read its header).
+The model to copy is `reels/128-shopping-bags-3d` (reel.js, script.json, meta.json). Brick reels (story.js) are no longer made.
+- **The idea:** a real, everyday problem everyone has had ("Why do your shopping bags always rip halfway home?"), then "Let's fix that."
+  Then 5-7 fixes in a chain. **Each fix must solve the problem the last fix caused**, and cause a new, bigger one: random and
+  escalating, but every step makes sense (bags rip -> double bag -> too heavy -> trolley -> stairs -> tank tracks -> stairs collapse
+  -> crane -> wind -> the neighbour's window). It ends on a short twist that undoes it all ("You forgot the milk."). The owner's
+  reference reels: phone battery, neighbour's garden, each fix growing from wheels to hoverboard to fans to a pool to a coaster.
+- **Problems:** real-world and relatable (home, commute, food, weather, sleep, neighbours, school, shopping, pets). No repeats: read every
+  `meta.json` title first. No real people, no brands, nothing dangerous to copy at home, no gore. Comedy, not cruelty.
+- **Script:** `script.json` is `{"lines": [{"shot", "say", "cap"}]}`, 2 lines a shot at most, 10-12 shots, 40-55 s in all. `cap` is the
+  caption in capitals with one `*RED` word and `|` for a line break. Short lines, spoken words only (numbers as words in `say`).
+  Shot ids: `hook`, `fix`, `b1`, `b2`, ... `twist`, `close`. The first line is the problem as a question. The voice is the one in `config.json`
+  (Buster `PmelHiOxd6s1PUEdOmwF`; never change it without the owner). It is voiced line by line, so long scripts never hang.
+- **Animation (the owner's rules: not static, nothing just pops in, a moving camera, a rich look):**
+  - Every shot moves the camera (push in, orbit, follow, tilt up, pull back) and every shot has a person doing something
+    (walking, pushing, carrying, pointing, panicking, sagging under weight).
+  - Every fix is **built on screen piece by piece** (parts drop in one after another, a pole grows, an arm extends, wheels pop off).
+  - Every new problem is **physical**: things fall, bounce, collapse, smash, fly, with a camera shake on the big ones.
+  - Big readable labels pinned to the 3D thing (`Y.tag`): weights, temperatures, names of the fix ("TANK TRACKS", "18 KG").
+  - Keep people and the fix in the middle of the frame and out of the caption band (y 845). Use the street, shops, flats and trees
+    from the kit; build new props from boxes, cylinders and spheres in the reel (look at how 128 builds the trolley and the crane).
+- **The gold tank** (`Y.tank`) is in every reel, never mentioned: parked, rolling past, or (one reel in three) it is part of a fix.
+- **`meta.json`:** `title` ("How To ..., Step By Step" + 1 emoji), `caption` (the question + "Let's fix that", "Wait for the last step 💀",
+  a comment question), `hashtags`, `first_comment`, `cover_t` (a dramatic moment), `potential` (honest 1-10), `"format": "fix-chain-3d"`.
+  The poster sends `fix-chain-3d` reels before everything else.
+- **How many:** **9 reels a batch** (posting uses 9 every 3 days). Better fewer than weak, but do not stop early: leave the batch
+  `in_progress` if you run out of time and say how many are left.
+- **Check every reel before pushing:** `python3 tools/toy3d_sheet.py <id>` (estimates the timing, renders a contact sheet with two frames a
+  shot into `out/<id>/sheet.png`; the first run fetches three.js from GitHub). LOOK at it: no page errors, nobody cut off or hidden behind
+  a prop, the fix visible, labels readable. Fix and check again.
+- **Push and wait:** push each reel's `reel.js`, `script.json` and `meta.json` (a few reels a push is fine). The "Make 3D toy reels"
+  workflow (`make-toy3d.yml`) voices and renders every changed reel on its own runner in parallel (30-60 min each, CPU) and publishes
+  `toyreel-<id>`. Wait for every Release (`gh release view toyreel-<id>`). If a render fails, read its log, fix, push again, or run
+  the workflow by hand for that id. Never run posting workflows.
+- The steps 0, 0a, 0b, 1 and 5 below still apply (setup, claim, resume, plan, report). Sections 2-4 describe the old brick formats:
+  keep them for reference only.
+
+## OLDER FORMAT: TRUE STORIES IN BRICKS (owner, 31 Oct 2026). Replaced on 9 Nov 2026 by the 3D format above.
 
 The old formats (world leaders, superheroes, villains, Heaven & Hell) weren't working. Every new reel is now a **true, surprising
 story told in bricks**, in English, with the voice in `config.json`. Copy `reels/56-eiffel-tower-con`. Keep using this playbook for
@@ -214,7 +253,7 @@ post, anything that failed and why.
 - **`"potential"` in meta.json (1-10):** your honest guess of how hard the reel will hit (hook strength, shock, comment bait). The posters put the strongest of the next few reels in the morning and evening slots and the weakest in the afternoon slot, so score every reel and spread the scores (not all 8s).
 
 ## The Gold Tank, the channel's signature (every reel)
-The Gold Tank is a big golden battle tank (`goldTank(S, x, z, s, rot, t, { y, fire, turret })` in toyreels/style/props.js):
+The Gold Tank is a big golden battle tank (3D reels: `Y.tank` from the toy3d kit; old brick reels: `goldTank(S, x, z, s, rot, t, { y, fire, turret })` in toyreels/style/props.js):
 a powerful object, not a character, never named or mentioned in the voiceover. It appears in EVERY reel at least once:
 parked in the background, rolling through a disaster, on the moon, in the stone age, in heaven. In about one reel in
 three it is also the absurd fix ("So you buy a tank."). Keep it easy to miss, and now and then make the reel's

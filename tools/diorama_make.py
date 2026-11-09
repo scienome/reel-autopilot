@@ -8,6 +8,7 @@ import hashlib, json, os, subprocess, sys, urllib.request, wave
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HOME = os.path.join(ROOT, 'dioramareels')
+KIT = os.path.join(ROOT, 'dioramareels', 'kit')  # the 3D engine; tools/toy3d_make.py points HOME at toyreels/
 LINE_GAP, SHOT_GAP, LEAD_IN, TAIL = 0.2, 0.42, 0.25, 1.8
 
 
@@ -51,9 +52,6 @@ def main(rid):
         last = ln['shot']
     for f in set(os.listdir(takes)) - keep:
         os.remove(os.path.join(takes, f))
-    if '--voice-only' in sys.argv:
-        print(f'{rid}: voice saved, video skipped')
-        return
     shots = {}
     for ln in timed:
         shots.setdefault(ln['shot'], round(max(0, ln['t0'] - LEAD_IN), 3))
@@ -64,7 +62,10 @@ def main(rid):
         w.setframerate(44100)
         w.writeframes(b''.join(pcm))
     open(timing, 'w', encoding='utf-8').write('window.TIMING = ' + json.dumps({'lines': timed, 'shots': shots, 'duration': round(t + TAIL, 2)}, ensure_ascii=False) + ';\n')
-    subprocess.run([sys.executable, os.path.join(HOME, 'kit', 'scripts', 'render.py'), 'video', os.path.join(reel, 'reel.js'), os.path.join(out, rid + '.mp4'), '--timing', timing, '--voice', voice], check=True)
+    if '--voice-only' in sys.argv:  # voice.wav and timing.js are written, so the PC (or a contact sheet) can use them
+        print(f'{rid}: voice saved, video skipped')
+        return
+    subprocess.run([sys.executable, os.path.join(KIT, 'scripts', 'render.py'), 'video', os.path.join(reel, 'reel.js'), os.path.join(out, rid + '.mp4'), '--timing', timing, '--voice', voice], check=True)
     print(f'{rid}: {round(t + TAIL, 1)} s')
 
 
