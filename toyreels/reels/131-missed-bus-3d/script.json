@@ -1,0 +1,89 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "WHY DOES YOUR BUS|ALWAYS *LEAVE",
+   "say": "Why does your bus always leave"
+  },
+  {
+   "shot": "hook",
+   "cap": "JUST AS YOU|*ARRIVE?",
+   "say": "just as you arrive?"
+  },
+  {
+   "shot": "fix",
+   "cap": "LET'S *FIX THAT.",
+   "say": "Let's fix that."
+  },
+  {
+   "shot": "b1",
+   "cap": "SO RUN *FASTER.",
+   "say": "So run faster."
+  },
+  {
+   "shot": "b1",
+   "cap": "YOU'RE OUT OF *BREATH.|IT'S STILL GONE.",
+   "say": "You're out of breath. It's still gone."
+  },
+  {
+   "shot": "b2",
+   "cap": "SO WEAR *ROLLER SKATES.",
+   "say": "So wear roller skates."
+  },
+  {
+   "shot": "b2",
+   "cap": "YOU CAN'T STOP.|YOU SKATE *PAST IT.",
+   "say": "You can't stop. You skate past it."
+  },
+  {
+   "shot": "b3",
+   "cap": "SO ADD A *PARACHUTE|TO SLOW YOU.",
+   "say": "So add a parachute to slow you."
+  },
+  {
+   "shot": "b3",
+   "cap": "IT DRAGS YOU|BACKWARDS INTO *A BIN.",
+   "say": "It drags you backwards into a bin."
+  },
+  {
+   "shot": "b4",
+   "cap": "SO CAMP AT THE STOP|IN A *TENT.",
+   "say": "So camp at the stop in a tent."
+  },
+  {
+   "shot": "b4",
+   "cap": "THE DRIVER CAN'T|*SEE YOU.",
+   "say": "The driver can't see you."
+  },
+  {
+   "shot": "b5",
+   "cap": "SO WAVE A *HUGE FLAG.",
+   "say": "So wave a huge flag."
+  },
+  {
+   "shot": "b5",
+   "cap": "IT COVERS THE|TRAFFIC *LIGHT.",
+   "say": "It covers the traffic light."
+  },
+  {
+   "shot": "b6",
+   "cap": "SO BUY YOUR *OWN BUS.",
+   "say": "So buy your own bus."
+  },
+  {
+   "shot": "b6",
+   "cap": "NOW NOBODY *WAITS|FOR YOU.",
+   "say": "Now nobody waits for you."
+  },
+  {
+   "shot": "twist",
+   "cap": "THE BUS *ARRIVES.|RIGHT ON TIME.",
+   "say": "The bus arrives. Right on time."
+  },
+  {
+   "shot": "close",
+   "cap": "IT GOES TO THE|*WRONG TOWN.",
+   "say": "It goes to the wrong town."
+  }
+ ]
+}
