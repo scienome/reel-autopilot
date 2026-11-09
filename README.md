@@ -78,7 +78,7 @@ Folder: [`gears-pov/`](gears-pov/)
 | [036-mirror-thoughts](gears-pov/036-mirror-thoughts.mp4) | You can hear what your mirror thinks 🪞 | Waiting to post |
 | [037-washing-machine-thoughts](gears-pov/037-washing-machine-thoughts.mp4) | You can hear what your washing machine thinks 🧦 | Waiting to post |
 | [038-kitten-thoughts](gears-pov/038-kitten-thoughts.mp4) | You can hear what your new kitten thinks 🐱 | Waiting to post |
-| [039-wedding-uncle-thoughts](gears-pov/039-wedding-uncle-thoughts.mp4) | You can hear what the uncle at every wedding thinks 🕺 | Waiting to post |
+| [039-wedding-uncle-thoughts](gears-pov/039-wedding-uncle-thoughts.mp4) | You can hear what the uncle at every wedding thinks 🕺 | Posted on Instagram · on YouTube |
 | [040-taxi-driver-thoughts](gears-pov/040-taxi-driver-thoughts.mp4) | You can hear what your taxi driver thinks 🚕 | Waiting to post |
 | [041-sofa-thoughts](gears-pov/041-sofa-thoughts.mp4) | You can hear what your sofa thinks 🛋️ | Waiting to post |
 | [042-big-brother-thoughts](gears-pov/042-big-brother-thoughts.mp4) | You can hear what your big brother thinks 👦 | Waiting to post |
@@ -214,29 +214,29 @@ Folder: [`toy-reels/`](toy-reels/)
 | [104-cold-pizza-buster](toy-reels/104-cold-pizza-buster.mp4) | How To Get Your Pizza Hot, Step By Step 🍕 | Skipped (never posted) |
 | [105-shopping-bags](toy-reels/105-shopping-bags.mp4) | How To Stop Your Shopping Bags Ripping, Step By Step 🛒 | Skipped (never posted) |
 | [106-hot-car](toy-reels/106-hot-car.mp4) | How To Stop Your Car Becoming An Oven, Step By Step 🚗 | Skipped (never posted) |
-| [107-lego-spill-1997](toy-reels/107-lego-spill-1997.mp4) | 5 Million Lego Pieces Fell In The Sea. They Never Stopped Washing Up 🧱 | Waiting to post |
-| [108-operation-mincemeat](toy-reels/108-operation-mincemeat.mp4) | Britain Fooled Hitler With A Dead Man And A Briefcase 💼 | Waiting to post |
-| [109-gimli-glider](toy-reels/109-gimli-glider.mp4) | A Jumbo Jet Ran Out Of Fuel. The Pilot Glided It Onto A Racetrack ✈️ | Waiting to post |
+| [107-lego-spill-1997](toy-reels/107-lego-spill-1997.mp4) | 5 Million Lego Pieces Fell In The Sea. They Never Stopped Washing Up 🧱 | Posted (Instagram + YouTube) |
+| [108-operation-mincemeat](toy-reels/108-operation-mincemeat.mp4) | Britain Fooled Hitler With A Dead Man And A Briefcase 💼 | Skipped (never posted) |
+| [109-gimli-glider](toy-reels/109-gimli-glider.mp4) | A Jumbo Jet Ran Out Of Fuel. The Pilot Glided It Onto A Racetrack ✈️ | Skipped (never posted) |
 | [11-kim-missile-boomerang](toy-reels/11-kim-missile-boomerang.mp4) | Kim Pressed The Button. The Missile Came Back. 💀 | Posted (Instagram + YouTube) |
-| [110-captain-of-kopenick](toy-reels/110-captain-of-kopenick.mp4) | A Jobless Shoemaker Took Over A Town Hall In A Costume 🥾 | Waiting to post |
-| [111-wrong-way-corrigan](toy-reels/111-wrong-way-corrigan.mp4) | He Flew To Ireland By "Accident" And Became A Hero ✈️ | Waiting to post |
-| [112-vasa-warship](toy-reels/112-vasa-warship.mp4) | Sweden's Mightiest Warship Sank On Its First Trip 🚢 | Waiting to post |
-| [113-sealand-micronation](toy-reels/113-sealand-micronation.mp4) | A Man Turned A WW2 Sea Fort Into His Own Country 🏴 | Waiting to post |
-| [114-toledo-war](toy-reels/114-toledo-war.mp4) | Two US States Went To War Over One Strip Of Land 🗺️ | Waiting to post |
-| [115-spaghetti-harvest-bbc](toy-reels/115-spaghetti-harvest-bbc.mp4) | The BBC Convinced Britain That Spaghetti Grows On Trees 🍝 | Waiting to post |
-| [116-rubber-ducks-lost-at-sea](toy-reels/116-rubber-ducks-lost-at-sea.mp4) | 28,800 Bath Toys Fell In The Ocean. Scientists Tracked Them 🦆 | Waiting to post |
-| [117-post-it-failed-glue](toy-reels/117-post-it-failed-glue.mp4) | A Failed Glue Became The Post-it Note 📝 | Waiting to post |
-| [118-slinky-fell-off-shelf](toy-reels/118-slinky-fell-off-shelf.mp4) | A Spring Fell Off A Shelf And Became The Slinky 🌀 | Waiting to post |
-| [119-stanley-cup-flower-pot](toy-reels/119-stanley-cup-flower-pot.mp4) | Champions Left The Stanley Cup On The Roadside 🏆 | Waiting to post |
+| [110-captain-of-kopenick](toy-reels/110-captain-of-kopenick.mp4) | A Jobless Shoemaker Took Over A Town Hall In A Costume 🥾 | Skipped (never posted) |
+| [111-wrong-way-corrigan](toy-reels/111-wrong-way-corrigan.mp4) | He Flew To Ireland By "Accident" And Became A Hero ✈️ | Skipped (never posted) |
+| [112-vasa-warship](toy-reels/112-vasa-warship.mp4) | Sweden's Mightiest Warship Sank On Its First Trip 🚢 | Skipped (never posted) |
+| [113-sealand-micronation](toy-reels/113-sealand-micronation.mp4) | A Man Turned A WW2 Sea Fort Into His Own Country 🏴 | Skipped (never posted) |
+| [114-toledo-war](toy-reels/114-toledo-war.mp4) | Two US States Went To War Over One Strip Of Land 🗺️ | Skipped (never posted) |
+| [115-spaghetti-harvest-bbc](toy-reels/115-spaghetti-harvest-bbc.mp4) | The BBC Convinced Britain That Spaghetti Grows On Trees 🍝 | Skipped (never posted) |
+| [116-rubber-ducks-lost-at-sea](toy-reels/116-rubber-ducks-lost-at-sea.mp4) | 28,800 Bath Toys Fell In The Ocean. Scientists Tracked Them 🦆 | Skipped (never posted) |
+| [117-post-it-failed-glue](toy-reels/117-post-it-failed-glue.mp4) | A Failed Glue Became The Post-it Note 📝 | Skipped (never posted) |
+| [118-slinky-fell-off-shelf](toy-reels/118-slinky-fell-off-shelf.mp4) | A Spring Fell Off A Shelf And Became The Slinky 🌀 | Skipped (never posted) |
+| [119-stanley-cup-flower-pot](toy-reels/119-stanley-cup-flower-pot.mp4) | Champions Left The Stanley Cup On The Roadside 🏆 | Skipped (never posted) |
 | [12-zombie-apocalypse-fails](toy-reels/12-zombie-apocalypse-fails.mp4) | The Zombie Apocalypse Failed For The Dumbest Reason 🧟 | Posted (Instagram + YouTube) |
-| [120-shackleton-endurance](toy-reels/120-shackleton-endurance.mp4) | Trapped In Antarctica. All 28 Men Survived 🧊 | Waiting to post |
-| [121-escobar-hippos](toy-reels/121-escobar-hippos.mp4) | A Drug Lord's Zoo Left Colombia With Wild Hippos 🦛 | Waiting to post |
-| [122-boaty-mcboatface](toy-reels/122-boaty-mcboatface.mp4) | The Internet Named A Ship Boaty McBoatface. They Said No 🚢 | Waiting to post |
-| [123-operation-cat-drop](toy-reels/123-operation-cat-drop.mp4) | The RAF Flew Cats To A Village Full Of Rats 🐈 | Waiting to post |
-| [124-mars-orbiter-units](toy-reels/124-mars-orbiter-units.mp4) | NASA Lost A Mars Probe Over A Unit Mix-Up 🚀 | Waiting to post |
-| [125-teddy-bear-roosevelt](toy-reels/125-teddy-bear-roosevelt.mp4) | A President Refused To Shoot A Bear. A Toy Was Born 🧸 | Waiting to post |
-| [126-monopoly-escape-maps](toy-reels/126-monopoly-escape-maps.mp4) | Monopoly Boards Secretly Helped Prisoners Escape In WW2 🎲 | Waiting to post |
-| [127-penicillin-moldy-dish](toy-reels/127-penicillin-moldy-dish.mp4) | A Forgotten Dish Of Mould Changed Medicine 🧫 | Waiting to post |
+| [120-shackleton-endurance](toy-reels/120-shackleton-endurance.mp4) | Trapped In Antarctica. All 28 Men Survived 🧊 | Skipped (never posted) |
+| [121-escobar-hippos](toy-reels/121-escobar-hippos.mp4) | A Drug Lord's Zoo Left Colombia With Wild Hippos 🦛 | Skipped (never posted) |
+| [122-boaty-mcboatface](toy-reels/122-boaty-mcboatface.mp4) | The Internet Named A Ship Boaty McBoatface. They Said No 🚢 | Skipped (never posted) |
+| [123-operation-cat-drop](toy-reels/123-operation-cat-drop.mp4) | The RAF Flew Cats To A Village Full Of Rats 🐈 | Skipped (never posted) |
+| [124-mars-orbiter-units](toy-reels/124-mars-orbiter-units.mp4) | NASA Lost A Mars Probe Over A Unit Mix-Up 🚀 | Skipped (never posted) |
+| [125-teddy-bear-roosevelt](toy-reels/125-teddy-bear-roosevelt.mp4) | A President Refused To Shoot A Bear. A Toy Was Born 🧸 | Skipped (never posted) |
+| [126-monopoly-escape-maps](toy-reels/126-monopoly-escape-maps.mp4) | Monopoly Boards Secretly Helped Prisoners Escape In WW2 🎲 | Skipped (never posted) |
+| [127-penicillin-moldy-dish](toy-reels/127-penicillin-moldy-dish.mp4) | A Forgotten Dish Of Mould Changed Medicine 🧫 | Skipped (never posted) |
 | [13-hitler-hell-queue](toy-reels/13-hitler-hell-queue.mp4) | Hitler Went To Hell And Got Put On Hold 💀 | Posted (Instagram + YouTube) |
 | [14-death-replaced-by-ai](toy-reels/14-death-replaced-by-ai.mp4) | Death Got Replaced By AI. Nobody Has Died Since 💀 | Posted (Instagram + YouTube) |
 | [15-napoleon-sues-everyone](toy-reels/15-napoleon-sues-everyone.mp4) | Napoleon Came Back From The Dead To Sue Everyone 💀 | Waiting to post |
