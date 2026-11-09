@@ -72,7 +72,7 @@ Folder: [`gears-pov/`](gears-pov/)
 | [030-delivery-guy-thoughts](gears-pov/030-delivery-guy-thoughts.mp4) | You can hear what the delivery guy thinks 🍕 | Posted on Instagram · on YouTube |
 | [031-old-cat-thoughts](gears-pov/031-old-cat-thoughts.mp4) | You can hear what your 15-year-old cat thinks 🐱 | Posted on Instagram · on YouTube |
 | [032-waiter-thoughts](gears-pov/032-waiter-thoughts.mp4) | You can hear what your waiter thinks 🍽️ | Waiting to post |
-| [033-duck-thoughts](gears-pov/033-duck-thoughts.mp4) | You can hear what ducks think 🦆 | Waiting to post |
+| [033-duck-thoughts](gears-pov/033-duck-thoughts.mp4) | You can hear what ducks think 🦆 | Posted on Instagram · on YouTube |
 | [034-crow-thoughts](gears-pov/034-crow-thoughts.mp4) | You can hear what crows think. And they remember your face 🐦‍⬛ | Waiting to post |
 | [035-sister-thoughts](gears-pov/035-sister-thoughts.mp4) | You can hear what your sister thinks 👧 | Waiting to post |
 | [036-mirror-thoughts](gears-pov/036-mirror-thoughts.mp4) | You can hear what your mirror thinks 🪞 | Waiting to post |
@@ -192,7 +192,7 @@ Folder: [`dave-reels/`](dave-reels/)
 | [43-dave-grows-an-inch](dave-reels/43-dave-grows-an-inch.mp4) | What if you grew 1 inch every day? | Waiting to post |
 | [44-gimli-glider](dave-reels/44-gimli-glider.mp4) | The jet that ran out of fuel because of maths | Waiting to post |
 
-## Toy reels (Brick Toy) (128)
+## Toy reels (Brick Toy) (129)
 Folder: [`toy-reels/`](toy-reels/)
 
 | Video | Title | Status |
@@ -237,6 +237,7 @@ Folder: [`toy-reels/`](toy-reels/)
 | [125-teddy-bear-roosevelt](toy-reels/125-teddy-bear-roosevelt.mp4) | A President Refused To Shoot A Bear. A Toy Was Born 🧸 | Skipped (never posted) |
 | [126-monopoly-escape-maps](toy-reels/126-monopoly-escape-maps.mp4) | Monopoly Boards Secretly Helped Prisoners Escape In WW2 🎲 | Skipped (never posted) |
 | [127-penicillin-moldy-dish](toy-reels/127-penicillin-moldy-dish.mp4) | A Forgotten Dish Of Mould Changed Medicine 🧫 | Skipped (never posted) |
+| [128-shopping-bags-3d](toy-reels/128-shopping-bags-3d.mp4) | How To Stop Your Shopping Bags Ripping, Step By Step 🛒 | Posted (Instagram + YouTube) |
 | [13-hitler-hell-queue](toy-reels/13-hitler-hell-queue.mp4) | Hitler Went To Hell And Got Put On Hold 💀 | Posted (Instagram + YouTube) |
 | [14-death-replaced-by-ai](toy-reels/14-death-replaced-by-ai.mp4) | Death Got Replaced By AI. Nobody Has Died Since 💀 | Posted (Instagram + YouTube) |
 | [15-napoleon-sues-everyone](toy-reels/15-napoleon-sues-everyone.mp4) | Napoleon Came Back From The Dead To Sue Everyone 💀 | Waiting to post |
