@@ -1,0 +1,9 @@
+{ "lines": [
+ {"shot":"hook","cap":"","say":"Someone bought the sun. Now your street pays for daylight.","cold":true},
+ {"shot":"wake","cap":"*BLACK.","say":"Seven a.m. Your window turns black until you pay."},
+ {"shot":"meter","cap":"$9 AN *HOUR.","say":"Sunlight costs nine dollars an hour. Shade is free."},
+ {"shot":"walk","cap":"LIKE *NOON.","say":"You walk to work in the dark. The rich blocks glow like noon."},
+ {"shot":"mirror","cap":"A *MIRROR.","say":"Then a kid on your street hangs a mirror. And bounces the light to you."},
+ {"shot":"tower","cap":"*SUN THEFT.","say":"The tower sends a notice. Mirrors are theft of the sun."},
+ {"shot":"end","cap":"","say":"Would you share the light? Write it in the comments."}
+] }
