@@ -105,6 +105,7 @@
       let n = order[0]; order.forEach((s) => { if (t >= st(s)) n = s; });
       const i = order.indexOf(n), a = st(n), b = i + 1 < order.length ? st(order[i + 1]) : DURATION, p = seg(t, a, b);
       const St = { t, n, a, b, p, e: E(p), E, lerp, seg: (t0, t1) => seg(t, t0, t1), at: (k = 0) => (lines(n)[k] || lines(n)[lines(n).length - 1] || { t0: a }).t0, line: (sh, k = 0) => (lines(sh)[k] || { t0: st(sh) }).t0 };
+      if (D.city) D.city.mode('interior'); // switches off the city's own sun, which otherwise bleaches the toy world white
       S.background = Y.sky.skyTex; S.fog = Y.sky.fog;
       K.lights.moon.intensity = 0; K.lights.lvKey.intensity = 0; K.lights.hemi.intensity = 0;
       Y.people.forEach((f) => f.reset()); if (Y.flats) Y.flats.reset(); Y.blowWind(t, 0, 0, false);
@@ -112,6 +113,7 @@
       const v = Object.assign({ fov: 38, focus: [0.3, 0.85], blur: 4 }, o.shots[n](St));
       if (v.shake) { const k = v.shake; v.pos = [v.pos[0] + Math.sin(t * 53) * 0.12 * k, v.pos[1] + Math.sin(t * 41) * 0.1 * k, v.pos[2]]; }
       D.render3d(ctx, { ...v, pos: W(...v.pos), look: W(...v.look) });
+      ctx.save(); ctx.filter = 'saturate(1.7) contrast(1.15)'; ctx.drawImage(ctx.canvas, 0, 0); ctx.restore(); // rich toy colours
       D.label(ctx, o.badge || "LET'S FIX THAT", 360, 118, null, null, t, 0, 1e9, { bg: '#c2412c', fg: '#fff', size: 30 });
       if (o.overlays) o.overlays(ctx, St);
       L.forEach((l) => D.caption(ctx, l.cap, t, l.t0, l.t1 + 0.1, 845));
