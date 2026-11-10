@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Playful clucking pizzicato and banjo, silly at first, then warm and tender, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "hen",
+   "offset": 0.0,
+   "prompt": "hen clucking short",
+   "dur": 1.2,
+   "gain": -8
+  },
+  {
+   "beat": "h1",
+   "word": "nine",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "h3",
+   "word": "anyway",
+   "offset": 0.0,
+   "prompt": "soft warm choir aww",
+   "dur": 2,
+   "gain": -8
+  },
+  {
+   "beat": "h4",
+   "word": "mums",
+   "offset": 0.0,
+   "prompt": "small audience aww",
+   "dur": 1.5,
+   "gain": -8
+  }
+ ]
+}

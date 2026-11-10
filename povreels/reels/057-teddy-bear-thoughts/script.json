@@ -1,0 +1,67 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what your old teddy bear thinks."
+  ]
+ },
+ {
+  "id": "b1",
+  "who": "dog",
+  "phrases": [
+   "Day one: you said I was your best friend.",
+   "Day four thousand: you're at university.",
+   "I'm still on the shelf, facing the door."
+  ]
+ },
+ {
+  "id": "b2",
+  "who": "dog",
+  "phrases": [
+   "I know you're busy.",
+   "I lost an eye in two thousand nine.",
+   "You cried for a week."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "You find him in the attic. You pick him up."
+  ]
+ },
+ {
+  "id": "b3",
+  "who": "dog",
+  "phrases": [
+   "You came back.",
+   "I kept your spot warm.",
+   "Twenty years. It's still warm."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "You put him back on your bed."
+  ]
+ },
+ {
+  "id": "b4",
+  "who": "dog",
+  "phrases": [
+   "Tell your kids I'm a good listener.",
+   "I've heard everything.",
+   "I never told anyone."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "Do you still have your first toy?",
+   "Part two?"
+  ]
+ }
+]

@@ -1,0 +1,67 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what your pet rabbit thinks."
+  ]
+ },
+ {
+  "id": "r1",
+  "who": "dog",
+  "phrases": [
+   "You think I'm sitting quietly.",
+   "I am planning.",
+   "The cable is next."
+  ]
+ },
+ {
+  "id": "r2",
+  "who": "dog",
+  "phrases": [
+   "I did a happy jump at three a.m.",
+   "You were asleep.",
+   "I did it for me."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "You hold out a whole carrot."
+  ]
+ },
+ {
+  "id": "r3",
+  "who": "dog",
+  "phrases": [
+   "I will pretend I don't care.",
+   "I'm turning my back.",
+   "Is that a whole carrot?"
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "He thumps his foot twice."
+  ]
+ },
+ {
+  "id": "r4",
+  "who": "dog",
+  "phrases": [
+   "Thumping means I'm scared.",
+   "But I'm not scared of you.",
+   "That's rare. Don't tell the others."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "What is your pet's weirdest habit?",
+   "Part two?"
+  ]
+ }
+]

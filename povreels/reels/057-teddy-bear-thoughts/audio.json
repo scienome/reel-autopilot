@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Gentle music box and soft piano, wistful, then warm and tender, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "teddy",
+   "offset": 0.0,
+   "prompt": "soft plush squeak",
+   "dur": 1.0,
+   "gain": -8
+  },
+  {
+   "beat": "b1",
+   "word": "door",
+   "offset": 0.0,
+   "prompt": "soft sad sigh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "b3",
+   "word": "warm",
+   "offset": 0.0,
+   "prompt": "soft warm choir aww",
+   "dur": 2,
+   "gain": -8
+  },
+  {
+   "beat": "b4",
+   "word": "listener",
+   "offset": 0.0,
+   "prompt": "small audience aww",
+   "dur": 1.5,
+   "gain": -8
+  }
+ ]
+}

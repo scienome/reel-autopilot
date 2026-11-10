@@ -1,0 +1,68 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what a hen thinks."
+  ]
+ },
+ {
+  "id": "h1",
+  "who": "chihuahua",
+  "phrases": [
+   "Everyone thinks I'm dumb.",
+   "I laid an egg every day.",
+   "For nine years.",
+   "Nobody said thank you."
+  ]
+ },
+ {
+  "id": "h2",
+  "who": "chihuahua",
+  "phrases": [
+   "You eat my work for breakfast.",
+   "That's fine.",
+   "I'm not bitter."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "She sits on one egg. It isn't even hers."
+  ]
+ },
+ {
+  "id": "h3",
+  "who": "chihuahua",
+  "phrases": [
+   "The farmer swapped it for a duck egg.",
+   "I know. I can count.",
+   "I'm keeping it anyway."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "A little duckling hatches. He follows her everywhere."
+  ]
+ },
+ {
+  "id": "h4",
+  "who": "chihuahua",
+  "phrases": [
+   "He swims. I can't swim.",
+   "So I stand at the edge and watch.",
+   "That's what mums do."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "What did someone do for you without being asked?",
+   "Part two?"
+  ]
+ }
+]

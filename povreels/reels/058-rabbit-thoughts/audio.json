@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Bouncy marimba and pizzicato, mischievous, then tender, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "rabbit",
+   "offset": 0.0,
+   "prompt": "small rabbit thump",
+   "dur": 1.0,
+   "gain": -8
+  },
+  {
+   "beat": "r1",
+   "word": "cable",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "r3",
+   "word": "carrot",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "r4",
+   "word": "safe",
+   "offset": 0.0,
+   "prompt": "soft warm choir aww",
+   "dur": 2,
+   "gain": -8
+  }
+ ]
+}

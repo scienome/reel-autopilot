@@ -516,5 +516,131 @@
    "title": "Você pode ouvir o que seu melhor amigo pensa quando diz \"estou bem\" 💬",
    "caption": "\"Estou bem.\" Não está. Pergunte duas vezes. 💬\nQuando foi a última vez que você perguntou duas vezes? 👇"
   }
+ },
+ "056-hen-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं कि मुर्गी क्या सोचती है 🐔",
+   "caption": "\"मैंने नौ साल रोज़ अंडा दिया। किसी ने शुक्रिया नहीं कहा।\" 🐔\nबिना कहे किसी ने आपके लिए क्या किया? 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa una gallina 🐔",
+   "caption": "\"Puse un huevo cada día durante nueve años. Nadie dio las gracias.\" 🐔\n¿Qué hizo alguien por ti sin que se lo pidieras? 👇"
+  },
+  "pt": {
+   "title": "Você pode ouvir o que uma galinha pensa 🐔",
+   "caption": "\"Botei um ovo todo dia por nove anos. Ninguém agradeceu.\" 🐔\nO que alguém fez por você sem você pedir? 👇"
+  }
+ },
+ "057-teddy-bear-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं कि आपका पुराना टेडी बियर क्या सोचता है 🧸",
+   "caption": "\"पहला दिन: तुमने कहा मैं तुम्हारा सबसे अच्छा दोस्त हूँ। चार हज़ारवाँ दिन: मैं अब भी दरवाज़े की तरफ़ मुँह किए बैठा हूँ।\" 🧸\nक्या आपके पास अब भी आपका पहला खिलौना है? 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa tu viejo osito de peluche 🧸",
+   "caption": "\"Día uno: dijiste que era tu mejor amigo. Día cuatro mil: sigo mirando la puerta.\" 🧸\n¿Todavía tienes tu primer juguete? 👇"
+  },
+  "pt": {
+   "title": "Você pode ouvir o que seu velho ursinho de pelúcia pensa 🧸",
+   "caption": "\"Dia um: você disse que eu era seu melhor amigo. Dia quatro mil: ainda estou olhando para a porta.\" 🧸\nVocê ainda tem seu primeiro brinquedo? 👇"
+  }
+ },
+ "058-rabbit-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं कि आपका पालतू खरगोश क्या सोचता है 🐰",
+   "caption": "\"तुम्हें लगता है मैं चुपचाप बैठा हूँ। मैं योजना बना रहा हूँ। अगला नंबर तार का है।\" 🐰\nआपके पालतू की सबसे अजीब आदत क्या है? 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa tu conejo 🐰",
+   "caption": "\"Crees que estoy sentado tranquilo. Estoy planeando. El cable es el siguiente.\" 🐰\n¿Cuál es la costumbre más rara de tu mascota? 👇"
+  },
+  "pt": {
+   "title": "Você pode ouvir o que seu coelho pensa 🐰",
+   "caption": "\"Você acha que estou sentado quieto. Estou planejando. O fio é o próximo.\" 🐰\nQual é o hábito mais estranho do seu pet? 👇"
+  }
+ },
+ "059-newborn-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं कि रात के 3 बजे नवजात शिशु क्या सोचता है 👶",
+   "caption": "\"तुम्हारी धड़कन पहला गाना था जो मैंने सुना। मुझे नीचे मत रखना।\" 👶\nबचपन में आपके लिए कौन रात भर जागा? 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa un recién nacido a las 3 a. m. 👶",
+   "caption": "\"Tu latido es la primera canción que escuché. No me sueltes.\" 👶\n¿Quién se desveló por ti cuando eras pequeño? 👇"
+  },
+  "pt": {
+   "title": "Você pode ouvir o que um recém-nascido pensa às 3 da manhã 👶",
+   "caption": "\"Seu batimento é a primeira música que eu ouvi. Não me coloque no chão.\" 👶\nQuem ficou acordado por você quando você era pequeno? 👇"
+  }
+ },
+ "060-teacher-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं कि आपकी टीचर क्या सोचती है 📚",
+   "caption": "\"तीस बच्चे। मैं सबसे प्यार करती हूँ। उन्हें बताना मत।\" 📚\nकिस टीचर ने आपकी ज़िंदगी बदली? 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa tu profesora 📚",
+   "caption": "\"Treinta niños. Quiero a todos. No se lo digas.\" 📚\n¿Qué profesor te cambió la vida? 👇"
+  },
+  "pt": {
+   "title": "Você pode ouvir o que sua professora pensa 📚",
+   "caption": "\"Trinta alunos. Eu amo cada um. Não conte a eles.\" 📚\nQual professor mudou a sua vida? 👇"
+  }
+ },
+ "061-toothbrush-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं कि आपका टूथब्रश क्या सोचता है 🪥",
+   "caption": "\"पैकेट पर लिखा है तीन महीने। हम ग्यारहवें महीने में हैं।\" 🪥\nसच बताइए: आपका टूथब्रश कितना पुराना है? 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa tu cepillo de dientes 🪥",
+   "caption": "\"El paquete dice tres meses. Vamos por el mes once.\" 🪥\nSé sincero: ¿qué edad tiene tu cepillo? 👇"
+  },
+  "pt": {
+   "title": "Você pode ouvir o que sua escova de dentes pensa 🪥",
+   "caption": "\"A embalagem diz três meses. Estamos no mês onze.\" 🪥\nSeja sincero: quantos anos tem a sua escova? 👇"
+  }
+ },
+ "062-barber-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं कि आपका नाई क्या सोचता है 💈",
+   "caption": "\"आपने मुझे फ़िल्म स्टार की फ़ोटो दिखाई। सर, आप फ़िल्म स्टार नहीं हैं।\" 💈\nक्या आपको अपने नाई का नाम पता है? 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa tu barbero 💈",
+   "caption": "\"Me enseñaste la foto de un actor. Señor, usted no es un actor.\" 💈\n¿Sabes cómo se llama tu barbero? 👇"
+  },
+  "pt": {
+   "title": "Você pode ouvir o que seu barbeiro pensa 💈",
+   "caption": "\"Você me mostrou a foto de um astro de cinema. Senhor, você não é um astro de cinema.\" 💈\nVocê sabe o nome do seu barbeiro? 👇"
+  }
+ },
+ "063-front-door-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं कि आपका मुख्य दरवाज़ा क्या सोचता है 🚪",
+   "caption": "\"धड़ाम। धड़ाम। धड़ाम। रोज़। मैं ढोल नहीं हूँ।\" 🚪\nघर लौटने का सबसे अच्छा पल कौन सा होता है? 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa la puerta de tu casa 🚪",
+   "caption": "\"Pum. Pum. Pum. Todos los días. No soy un tambor.\" 🚪\n¿Qué es lo mejor de volver a casa? 👇"
+  },
+  "pt": {
+   "title": "Você pode ouvir o que a porta da sua casa pensa 🚪",
+   "caption": "\"Bam. Bam. Bam. Todo dia. Eu não sou um tambor.\" 🚪\nQual é a melhor parte de voltar para casa? 👇"
+  }
+ },
+ "064-neighbours-dog-thoughts": {
+  "hi": {
+   "title": "आप सुन सकते हैं कि पड़ोस का कुत्ता क्या सोचता है 🐕",
+   "caption": "\"मैं रोज़ तुम पर भौंकता हूँ। मैंने कभी दिल से नहीं भौंका।\" 🐕\nरोज़ किसे देखने का आपको इंतज़ार रहता है? 👇"
+  },
+  "es": {
+   "title": "Puedes oír lo que piensa el perro de al lado 🐕",
+   "caption": "\"Te ladro todos los días. Nunca lo he dicho en serio.\" 🐕\n¿A quién esperas ver cada día? 👇"
+  },
+  "pt": {
+   "title": "Você pode ouvir o que o cachorro do vizinho pensa 🐕",
+   "caption": "\"Eu latio para você todo dia. Nunca foi sério.\" 🐕\nQuem você espera ver todo dia? 👇"
+  }
  }
 }
