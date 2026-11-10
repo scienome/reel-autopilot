@@ -1,0 +1,18 @@
+{
+ "music-2292d471afc1.mp3": {
+  "prompt": "Bouncy marimba and pizzicato, mischievous, then tender, no vocals",
+  "music_length_ms": 37340,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-3140bd73a1f8.mp3": {
+  "text": "small rabbit thump",
+  "duration_seconds": 1.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-09f5a2915fda.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ }
+}
