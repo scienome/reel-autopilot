@@ -1,0 +1,67 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what the dog next door thinks."
+  ]
+ },
+ {
+  "id": "f1",
+  "who": "husky",
+  "phrases": [
+   "You walk past every day.",
+   "I bark at you every day.",
+   "I have never once meant it."
+  ]
+ },
+ {
+  "id": "f2",
+  "who": "husky",
+  "phrases": [
+   "I'm not guarding anything.",
+   "I'm just excited.",
+   "Nobody comes. Then you come."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "One day you stop. You reach through the fence."
+  ]
+ },
+ {
+  "id": "f3",
+  "who": "husky",
+  "phrases": [
+   "You're petting me?",
+   "The fence is between us, and you still came.",
+   "Do it again."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "After that, you come every day."
+  ]
+ },
+ {
+  "id": "f4",
+  "who": "husky",
+  "phrases": [
+   "My person works late.",
+   "You're my six p.m.",
+   "Please never move house."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "Who do you look forward to seeing?",
+   "Part two?"
+  ]
+ }
+]

@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Soft lullaby with celesta and gentle harp, sleepy and tender, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "newborn",
+   "offset": 0.0,
+   "prompt": "newborn baby small cry",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "w2",
+   "word": "sorry",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "w3",
+   "word": "home",
+   "offset": 0.0,
+   "prompt": "soft warm choir aww",
+   "dur": 2,
+   "gain": -8
+  },
+  {
+   "beat": "w4",
+   "word": "thanks",
+   "offset": 0.0,
+   "prompt": "small audience aww",
+   "dur": 1.5,
+   "gain": -8
+  }
+ ]
+}

@@ -1,0 +1,67 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what your front door thinks."
+  ]
+ },
+ {
+  "id": "d1",
+  "who": "car",
+  "phrases": [
+   "Slam. Slam. Slam.",
+   "Every single day.",
+   "I'm not a drum."
+  ]
+ },
+ {
+  "id": "d2",
+  "who": "car",
+  "phrases": [
+   "You come home at seven. You say nothing.",
+   "You come home at midnight. You say nothing.",
+   "I know everything anyway."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "Tonight, you stand outside for a long time."
+  ]
+ },
+ {
+  "id": "d3",
+  "who": "car",
+  "phrases": [
+   "You're not ready to come in.",
+   "That's okay.",
+   "Take your time. I'm not going anywhere."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "You open it slowly. Your family is waiting."
+  ]
+ },
+ {
+  "id": "d4",
+  "who": "car",
+  "phrases": [
+   "Welcome home.",
+   "I say it every day.",
+   "Today, you heard me."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "What's the best part of coming home?",
+   "Part two?"
+  ]
+ }
+]

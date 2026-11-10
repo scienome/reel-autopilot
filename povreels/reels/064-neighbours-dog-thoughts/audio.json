@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Cheerful ukulele and light percussion, playful, then warm and tender, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "dog",
+   "offset": 0.0,
+   "prompt": "dog bark short",
+   "dur": 1.2,
+   "gain": -8
+  },
+  {
+   "beat": "f1",
+   "word": "meant",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "f3",
+   "word": "again",
+   "offset": 0.0,
+   "prompt": "soft warm choir aww",
+   "dur": 2,
+   "gain": -8
+  },
+  {
+   "beat": "f4",
+   "word": "house",
+   "offset": 0.0,
+   "prompt": "small audience aww",
+   "dur": 1.5,
+   "gain": -8
+  }
+ ]
+}

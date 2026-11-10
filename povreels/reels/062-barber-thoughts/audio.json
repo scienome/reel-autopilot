@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Warm jazzy guitar and brushes, funny at first, then gentle and sweet, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "barber",
+   "offset": 0.0,
+   "prompt": "electric hair clippers short",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "b2",
+   "word": "star",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "b3",
+   "word": "talk",
+   "offset": 0.0,
+   "prompt": "soft warm choir aww",
+   "dur": 2,
+   "gain": -8
+  },
+  {
+   "beat": "b4",
+   "word": "yours",
+   "offset": 0.0,
+   "prompt": "small audience aww",
+   "dur": 1.5,
+   "gain": -8
+  }
+ ]
+}

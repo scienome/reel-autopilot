@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Light classroom piano and soft strings, funny at first, then touching, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "teacher",
+   "offset": 0.0,
+   "prompt": "school bell ring short",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "t1",
+   "word": "talking",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "t3",
+   "word": "allergies",
+   "offset": 0.0,
+   "prompt": "soft warm choir aww",
+   "dur": 2,
+   "gain": -8
+  },
+  {
+   "beat": "t4",
+   "word": "love",
+   "offset": 0.0,
+   "prompt": "small audience aww",
+   "dur": 1.5,
+   "gain": -8
+  }
+ ]
+}

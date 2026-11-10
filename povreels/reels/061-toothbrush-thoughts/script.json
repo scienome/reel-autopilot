@@ -1,0 +1,67 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what your toothbrush thinks."
+  ]
+ },
+ {
+  "id": "g1",
+  "who": "friend",
+  "phrases": [
+   "Twice a day, I go in your mouth.",
+   "I know all your secrets.",
+   "You had garlic for lunch."
+  ]
+ },
+ {
+  "id": "g2",
+  "who": "friend",
+  "phrases": [
+   "We've been together eleven months.",
+   "The packet says three.",
+   "I'm so tired."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "Tonight you skip brushing. You're too tired."
+  ]
+ },
+ {
+  "id": "g3",
+  "who": "friend",
+  "phrases": [
+   "It's okay. I get it.",
+   "I'll wait on the sink.",
+   "I'm very patient."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "Next morning, you brush for two full minutes."
+  ]
+ },
+ {
+  "id": "g4",
+  "who": "friend",
+  "phrases": [
+   "Two minutes?",
+   "You're my favourite human.",
+   "Please don't replace me. Okay, replace me."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "How old is your toothbrush, honestly?",
+   "Part two?"
+  ]
+ }
+]

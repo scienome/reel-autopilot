@@ -1,0 +1,67 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what your barber thinks."
+  ]
+ },
+ {
+  "id": "b1",
+  "who": "dad",
+  "phrases": [
+   "How would you like it?",
+   "Same as last time.",
+   "I have no idea what last time was."
+  ]
+ },
+ {
+  "id": "b2",
+  "who": "dad",
+  "phrases": [
+   "You showed me a photo of a movie star.",
+   "Sir, you are not a movie star.",
+   "I'll do my best."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "An old man sits down. He comes every week. He barely has any hair."
+  ]
+ },
+ {
+  "id": "b3",
+  "who": "dad",
+  "phrases": [
+   "He doesn't need a haircut.",
+   "He needs someone to talk to.",
+   "So I cut very slowly."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "He tips more than the haircut costs."
+  ]
+ },
+ {
+  "id": "b4",
+  "who": "dad",
+  "phrases": [
+   "Same time next week, sir.",
+   "I'll save your chair.",
+   "It's always yours."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "Do you know your barber's name?",
+   "Part two?"
+  ]
+ }
+]

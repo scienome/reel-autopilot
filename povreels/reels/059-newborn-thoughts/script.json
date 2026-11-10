@@ -1,0 +1,67 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what a newborn thinks at three a.m."
+  ]
+ },
+ {
+  "id": "w1",
+  "who": "baby",
+  "phrases": [
+   "Hello. Who is the big tired one?",
+   "Why is it so bright?",
+   "Why am I outside?"
+  ]
+ },
+ {
+  "id": "w2",
+  "who": "baby",
+  "phrases": [
+   "I can't walk. I can't talk.",
+   "So I cry.",
+   "Sorry. It's all I have."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "You pick her up. She goes quiet."
+  ]
+ },
+ {
+  "id": "w3",
+  "who": "baby",
+  "phrases": [
+   "You smell like home.",
+   "Your heartbeat is the first song I ever heard.",
+   "Don't put me down."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "You haven't slept in two days. You don't care."
+  ]
+ },
+ {
+  "id": "w4",
+  "who": "baby",
+  "phrases": [
+   "I won't remember any of this.",
+   "But you will.",
+   "Thanks for staying up."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "Who stayed up for you?",
+   "Part two?"
+  ]
+ }
+]

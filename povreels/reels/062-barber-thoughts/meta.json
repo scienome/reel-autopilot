@@ -1,0 +1,19 @@
+{
+ "title": "You can hear what your barber thinks 💈",
+ "caption": "\"You showed me a photo of a movie star. Sir, you are not a movie star.\" 💈\nDo you know your barber's name? 👇",
+ "hashtags": [
+  "barber",
+  "haircut",
+  "barbershop",
+  "men",
+  "pov",
+  "funny",
+  "animation",
+  "relatable"
+ ],
+ "first_comment": "Barber question: \"same as last time\" or a photo? Pick one 💈👇",
+ "cover_t": 3.0,
+ "libs": [
+  "lib/pov.js"
+ ]
+}

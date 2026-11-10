@@ -1,0 +1,41 @@
+{
+ "music": {
+  "prompt": "Quirky bouncy xylophone and plucked strings, comedic, then a soft sweet moment, no vocals",
+  "gain": -5,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "hook",
+   "word": "toothbrush",
+   "offset": 0.0,
+   "prompt": "bathroom sink tap short",
+   "dur": 1.2,
+   "gain": -8
+  },
+  {
+   "beat": "g1",
+   "word": "garlic",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  },
+  {
+   "beat": "g3",
+   "word": "patient",
+   "offset": 0.0,
+   "prompt": "soft warm choir aww",
+   "dur": 2,
+   "gain": -8
+  },
+  {
+   "beat": "g4",
+   "word": "replace",
+   "offset": 0.0,
+   "prompt": "small audience laugh",
+   "dur": 1.5,
+   "gain": -8
+  }
+ ]
+}

@@ -1,0 +1,67 @@
+[
+ {
+  "id": "hook",
+  "who": "narrator",
+  "phrases": [
+   "You can hear what your teacher thinks."
+  ]
+ },
+ {
+  "id": "t1",
+  "who": "mum",
+  "phrases": [
+   "Please don't be talking.",
+   "Please don't be talking.",
+   "You're talking."
+  ]
+ },
+ {
+  "id": "t2",
+  "who": "mum",
+  "phrases": [
+   "Nobody read the chapter.",
+   "I can tell by your faces.",
+   "Also, the chapter was great."
+  ]
+ },
+ {
+  "id": "n2",
+  "who": "narrator",
+  "phrases": [
+   "One boy at the back never speaks. Today, he does."
+  ]
+ },
+ {
+  "id": "t3",
+  "who": "mum",
+  "phrases": [
+   "He said the answer. He was right.",
+   "He's been too scared to talk for a year.",
+   "I'm not crying. It's allergies."
+  ]
+ },
+ {
+  "id": "n3",
+  "who": "narrator",
+  "phrases": [
+   "She smiles. First time this week."
+  ]
+ },
+ {
+  "id": "t4",
+  "who": "mum",
+  "phrases": [
+   "Tomorrow I'll act angry again.",
+   "Thirty kids. I love every one.",
+   "Don't tell them."
+  ]
+ },
+ {
+  "id": "cta",
+  "who": "narrator",
+  "phrases": [
+   "Which teacher changed your life?",
+   "Part two?"
+  ]
+ }
+]
