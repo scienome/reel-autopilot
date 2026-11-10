@@ -35,7 +35,7 @@ Folder: [`couch-cartoon/`](couch-cartoon/)
 | [p003-the-real-hurt](couch-cartoon/p003-the-real-hurt.mp4) | "When did you stop looking at me?" 💔 | Not scheduled |
 | [t001-dentist](couch-cartoon/t001-dentist.mp4) | Who's Jessica? 📱 | Not scheduled |
 
-## Thought Bubble POV stories (formerly Gears & Glitches) (59)
+## Thought Bubble POV stories (formerly Gears & Glitches) (61)
 Folder: [`gears-pov/`](gears-pov/)
 
 | Video | Title | Status |
@@ -99,6 +99,8 @@ Folder: [`gears-pov/`](gears-pov/)
 | [057-teddy-bear-thoughts](gears-pov/057-teddy-bear-thoughts.mp4) | You can hear what your old teddy bear thinks 🧸 | Not scheduled |
 | [058-rabbit-thoughts](gears-pov/058-rabbit-thoughts.mp4) | You can hear what your pet rabbit thinks 🐰 | Not scheduled |
 | [059-newborn-thoughts](gears-pov/059-newborn-thoughts.mp4) | You can hear what a newborn thinks at 3 a.m. 👶 | Not scheduled |
+| [060-teacher-thoughts](gears-pov/060-teacher-thoughts.mp4) | You can hear what your teacher thinks 📚 | Not scheduled |
+| [061-toothbrush-thoughts](gears-pov/061-toothbrush-thoughts.mp4) | You can hear what your toothbrush thinks 🪥 | Not scheduled |
 
 ## CouchSarcasm (old couple comedy) (40)
 Folder: [`couch-sarcasm/`](couch-sarcasm/)
