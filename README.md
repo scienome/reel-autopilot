@@ -35,7 +35,7 @@ Folder: [`couch-cartoon/`](couch-cartoon/)
 | [p003-the-real-hurt](couch-cartoon/p003-the-real-hurt.mp4) | "When did you stop looking at me?" 💔 | Not scheduled |
 | [t001-dentist](couch-cartoon/t001-dentist.mp4) | Who's Jessica? 📱 | Not scheduled |
 
-## Thought Bubble POV stories (formerly Gears & Glitches) (55)
+## Thought Bubble POV stories (formerly Gears & Glitches) (59)
 Folder: [`gears-pov/`](gears-pov/)
 
 | Video | Title | Status |
@@ -73,9 +73,9 @@ Folder: [`gears-pov/`](gears-pov/)
 | [031-old-cat-thoughts](gears-pov/031-old-cat-thoughts.mp4) | You can hear what your 15-year-old cat thinks 🐱 | Posted on Instagram · on YouTube |
 | [032-waiter-thoughts](gears-pov/032-waiter-thoughts.mp4) | You can hear what your waiter thinks 🍽️ | Posted on Instagram · on YouTube |
 | [033-duck-thoughts](gears-pov/033-duck-thoughts.mp4) | You can hear what ducks think 🦆 | Posted on Instagram · on YouTube |
-| [034-crow-thoughts](gears-pov/034-crow-thoughts.mp4) | You can hear what crows think. And they remember your face 🐦‍⬛ | Waiting to post |
+| [034-crow-thoughts](gears-pov/034-crow-thoughts.mp4) | You can hear what crows think. And they remember your face 🐦‍⬛ | Posted on Instagram · on YouTube |
 | [035-sister-thoughts](gears-pov/035-sister-thoughts.mp4) | You can hear what your sister thinks 👧 | Waiting to post |
-| [036-mirror-thoughts](gears-pov/036-mirror-thoughts.mp4) | You can hear what your mirror thinks 🪞 | Waiting to post |
+| [036-mirror-thoughts](gears-pov/036-mirror-thoughts.mp4) | You can hear what your mirror thinks 🪞 | Posted on Instagram · on YouTube |
 | [037-washing-machine-thoughts](gears-pov/037-washing-machine-thoughts.mp4) | You can hear what your washing machine thinks 🧦 | Waiting to post |
 | [038-kitten-thoughts](gears-pov/038-kitten-thoughts.mp4) | You can hear what your new kitten thinks 🐱 | Waiting to post |
 | [039-wedding-uncle-thoughts](gears-pov/039-wedding-uncle-thoughts.mp4) | You can hear what the uncle at every wedding thinks 🕺 | Posted on Instagram · on YouTube |
@@ -95,6 +95,10 @@ Folder: [`gears-pov/`](gears-pov/)
 | [053-elevator-thoughts](gears-pov/053-elevator-thoughts.mp4) | You can hear what the elevator thinks 🛗 | Waiting to post |
 | [054-penguin-thoughts](gears-pov/054-penguin-thoughts.mp4) | You can hear what a penguin thinks 🐧 | Waiting to post |
 | [055-best-friend-thoughts](gears-pov/055-best-friend-thoughts.mp4) | You can hear what your best friend thinks when they say "I'm fine" 💬 | Waiting to post |
+| [056-hen-thoughts](gears-pov/056-hen-thoughts.mp4) | You can hear what a hen thinks 🐔 | Not scheduled |
+| [057-teddy-bear-thoughts](gears-pov/057-teddy-bear-thoughts.mp4) | You can hear what your old teddy bear thinks 🧸 | Not scheduled |
+| [058-rabbit-thoughts](gears-pov/058-rabbit-thoughts.mp4) | You can hear what your pet rabbit thinks 🐰 | Not scheduled |
+| [059-newborn-thoughts](gears-pov/059-newborn-thoughts.mp4) | You can hear what a newborn thinks at 3 a.m. 👶 | Not scheduled |
 
 ## CouchSarcasm (old couple comedy) (40)
 Folder: [`couch-sarcasm/`](couch-sarcasm/)
@@ -240,8 +244,8 @@ Folder: [`toy-reels/`](toy-reels/)
 | [128-shopping-bags-3d](toy-reels/128-shopping-bags-3d.mp4) | How To Stop Your Shopping Bags Ripping, Step By Step 🛒 | Posted (Instagram + YouTube) |
 | [129-sleep-through-alarm-3d](toy-reels/129-sleep-through-alarm-3d.mp4) | How To Stop Sleeping Through Your Alarm, Step By Step ⏰ | Posted (Instagram + YouTube) |
 | [13-hitler-hell-queue](toy-reels/13-hitler-hell-queue.mp4) | Hitler Went To Hell And Got Put On Hold 💀 | Posted (Instagram + YouTube) |
-| [130-tangled-earphones-3d](toy-reels/130-tangled-earphones-3d.mp4) | How To Stop Your Earphones Tangling, Step By Step 🎧 | Waiting to post |
-| [131-missed-bus-3d](toy-reels/131-missed-bus-3d.mp4) | How To Stop Missing The Bus, Step By Step 🚌 | Waiting to post |
+| [130-tangled-earphones-3d](toy-reels/130-tangled-earphones-3d.mp4) | How To Stop Your Earphones Tangling, Step By Step 🎧 | Posted (Instagram + YouTube) |
+| [131-missed-bus-3d](toy-reels/131-missed-bus-3d.mp4) | How To Stop Missing The Bus, Step By Step 🚌 | Posted (Instagram + YouTube) |
 | [132-umbrella-inside-out-3d](toy-reels/132-umbrella-inside-out-3d.mp4) | How To Stop Your Umbrella Flipping, Step By Step ☂️ | Waiting to post |
 | [133-melting-ice-cream-3d](toy-reels/133-melting-ice-cream-3d.mp4) | How To Stop Ice Cream Melting, Step By Step 🍦 | Waiting to post |
 | [134-forgotten-keys-3d](toy-reels/134-forgotten-keys-3d.mp4) | How To Never Forget Your Keys, Step By Step 🔑 | Waiting to post |
