@@ -1,9 +1,9 @@
 {
  "job": "pov-batch",
- "status": "done",
- "owner": "vm-b9962b",
- "started": "2026-11-07T21:18:51Z",
- "updated": "2026-11-07T21:54:31Z",
- "note": "queued 047-055",
+ "status": "in_progress",
+ "owner": "vm-1d86de",
+ "started": "2026-11-10T21:17:49Z",
+ "updated": "2026-11-10T21:17:49Z",
+ "note": "",
  "history": []
 }
