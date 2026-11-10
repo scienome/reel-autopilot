@@ -1,0 +1,22 @@
+{
+ "sfx-d67956f91193.mp3": {
+  "text": "school bell ring short",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-09f5a2915fda.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-831e7143ab51.mp3": {
+  "text": "soft warm choir aww",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-289e90e644e8.mp3": {
+  "text": "small audience aww",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ }
+}
