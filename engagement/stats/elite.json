@@ -2,22 +2,52 @@
  "account": "ELITE",
  "username": "elitesendgame",
  "followers": 4,
- "fetched": "2026-11-09T03:27:10.278325Z",
+ "fetched": "2026-11-10T03:25:02.649410Z",
  "reels": [
+  {
+   "id": "18035388848856525",
+   "timestamp": "2026-11-10T00:30:01+0000",
+   "like_count": 0,
+   "comments_count": 0,
+   "permalink": "https://www.instagram.com/reel/DfiYIdFEjV2/",
+   "caption": "Someone just signed your lease. And he has your face.\n\nFiction. Would you fight for your n",
+   "views": 182,
+   "reach": 162,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 0,
+   "ig_reels_avg_watch_time": 7211,
+   "ig_reels_video_view_total_time": 1189909
+  },
+  {
+   "id": "18128049158309294",
+   "timestamp": "2026-11-09T21:19:24+0000",
+   "like_count": 0,
+   "comments_count": 0,
+   "permalink": "https://www.instagram.com/reel/DfiR7RckYYw/",
+   "caption": "Your elevator just grew a new button. Floor minus one.\n\nFiction. Who do you think owns the",
+   "views": 126,
+   "reach": 116,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 0,
+   "ig_reels_avg_watch_time": 5945,
+   "ig_reels_video_view_total_time": 701602
+  },
   {
    "id": "18153113044558726",
    "timestamp": "2026-11-08T15:00:02+0000",
-   "like_count": 3,
+   "like_count": 4,
    "comments_count": 0,
    "permalink": "https://www.instagram.com/reel/DfepQuiD1Zl/",
    "caption": "Everyone on floor nine is dead. They still pay rent.\n\nFiction. Would you stay?\n\n#ghost #cr",
-   "views": 307,
-   "reach": 270,
+   "views": 419,
+   "reach": 353,
    "saved": 0,
    "shares": 0,
-   "total_interactions": 3,
-   "ig_reels_avg_watch_time": 11658,
-   "ig_reels_video_view_total_time": 3182685
+   "total_interactions": 4,
+   "ig_reels_avg_watch_time": 12415,
+   "ig_reels_video_view_total_time": 4469624
   },
   {
    "id": "18115769936616650",
@@ -26,13 +56,13 @@
    "comments_count": 0,
    "permalink": "https://www.instagram.com/reel/DfdGSxaiYZV/",
    "caption": "Your bank just sold your debt. To them.\n\nFiction. Would you open the door?\n\n#endgame #debt",
-   "views": 464,
-   "reach": 407,
+   "views": 465,
+   "reach": 408,
    "saved": 0,
    "shares": 0,
    "total_interactions": 4,
-   "ig_reels_avg_watch_time": 10384,
-   "ig_reels_video_view_total_time": 4267958
+   "ig_reels_avg_watch_time": 10371,
+   "ig_reels_video_view_total_time": 4272934
   },
   {
    "id": "18007164194795414",
@@ -41,13 +71,13 @@
    "comments_count": 0,
    "permalink": "https://www.instagram.com/reel/DfckRNqk3-s/",
    "caption": "The building is on fire. And the elevator just asked for your card.\n\nFiction. Do you give ",
-   "views": 255,
-   "reach": 218,
+   "views": 256,
+   "reach": 219,
    "saved": 0,
    "shares": 0,
    "total_interactions": 0,
-   "ig_reels_avg_watch_time": 6445,
-   "ig_reels_video_view_total_time": 1424534
+   "ig_reels_avg_watch_time": 6429,
+   "ig_reels_video_view_total_time": 1427447
   },
   {
    "id": "18154857931529069",
@@ -56,13 +86,13 @@
    "comments_count": 0,
    "permalink": "https://www.instagram.com/reel/DfcEOavllii/",
    "caption": "Your wedding ring just got cancelled. In front of everyone.\n\nFiction. Would you still say ",
-   "views": 1609,
+   "views": 1611,
    "reach": 1358,
-   "saved": 1,
+   "saved": 0,
    "shares": 0,
-   "total_interactions": 35,
-   "ig_reels_avg_watch_time": 13794,
-   "ig_reels_video_view_total_time": 18829158
+   "total_interactions": 34,
+   "ig_reels_avg_watch_time": 13790,
+   "ig_reels_video_view_total_time": 18851715
   },
   {
    "id": "18239834143319948",
@@ -71,13 +101,13 @@
    "comments_count": 2,
    "permalink": "https://www.instagram.com/reel/DfaiXU8EZ_h/",
    "caption": "Your dead father just asked you for a payment.\n\nFiction. Would you keep paying?\n\n#endgame ",
-   "views": 1782,
-   "reach": 1467,
+   "views": 1788,
+   "reach": 1468,
    "saved": 1,
    "shares": 0,
    "total_interactions": 34,
-   "ig_reels_avg_watch_time": 13184,
-   "ig_reels_video_view_total_time": 19090905
+   "ig_reels_avg_watch_time": 13202,
+   "ig_reels_video_view_total_time": 19143285
   },
   {
    "id": "18104980148367806",
@@ -86,13 +116,13 @@
    "comments_count": 0,
    "permalink": "https://www.instagram.com/reel/DfaBCdljFOC/",
    "caption": "Twenty seconds left. Ten dollars short. Then someone knocks.\n\nFiction. Part 2. Next month ",
-   "views": 250,
+   "views": 251,
    "reach": 208,
    "saved": 0,
    "shares": 0,
    "total_interactions": 3,
-   "ig_reels_avg_watch_time": 12684,
-   "ig_reels_video_view_total_time": 2739948
+   "ig_reels_avg_watch_time": 12748,
+   "ig_reels_video_view_total_time": 2766479
   },
   {
    "id": "18081731822386022",
@@ -101,13 +131,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfZhlPvG6SU/",
    "caption": "Your mother has four minutes left. And you're $40 short.\n\nFiction. Who would you call?\n\n#e",
-   "views": 1306,
+   "views": 1308,
    "reach": 1076,
-   "saved": 1,
+   "saved": 0,
    "shares": 0,
-   "total_interactions": 23,
-   "ig_reels_avg_watch_time": 13934,
-   "ig_reels_video_view_total_time": 14896058
+   "total_interactions": 22,
+   "ig_reels_avg_watch_time": 13955,
+   "ig_reels_video_view_total_time": 14932173
   },
   {
    "id": "17974778517156544",
@@ -116,13 +146,13 @@
    "comments_count": 0,
    "permalink": "https://www.instagram.com/reel/DfX-BGgkbMa/",
    "caption": "Your alarm clock just asked you for money.\n\nFiction, built on the real rise of subscriptio",
-   "views": 602,
-   "reach": 516,
+   "views": 603,
+   "reach": 517,
    "saved": 0,
    "shares": 0,
    "total_interactions": 5,
-   "ig_reels_avg_watch_time": 12414,
-   "ig_reels_video_view_total_time": 6492709
+   "ig_reels_avg_watch_time": 12391,
+   "ig_reels_video_view_total_time": 6492886
   },
   {
    "id": "17921862810241115",
