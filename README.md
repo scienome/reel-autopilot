@@ -71,7 +71,7 @@ Folder: [`gears-pov/`](gears-pov/)
 | [029-puppy-first-night](gears-pov/029-puppy-first-night.mp4) | You can hear what your puppy thinks on night one 🐶 | Posted on Instagram · on YouTube |
 | [030-delivery-guy-thoughts](gears-pov/030-delivery-guy-thoughts.mp4) | You can hear what the delivery guy thinks 🍕 | Posted on Instagram · on YouTube |
 | [031-old-cat-thoughts](gears-pov/031-old-cat-thoughts.mp4) | You can hear what your 15-year-old cat thinks 🐱 | Posted on Instagram · on YouTube |
-| [032-waiter-thoughts](gears-pov/032-waiter-thoughts.mp4) | You can hear what your waiter thinks 🍽️ | Waiting to post |
+| [032-waiter-thoughts](gears-pov/032-waiter-thoughts.mp4) | You can hear what your waiter thinks 🍽️ | Posted on Instagram · on YouTube |
 | [033-duck-thoughts](gears-pov/033-duck-thoughts.mp4) | You can hear what ducks think 🦆 | Posted on Instagram · on YouTube |
 | [034-crow-thoughts](gears-pov/034-crow-thoughts.mp4) | You can hear what crows think. And they remember your face 🐦‍⬛ | Waiting to post |
 | [035-sister-thoughts](gears-pov/035-sister-thoughts.mp4) | You can hear what your sister thinks 👧 | Waiting to post |
@@ -84,7 +84,7 @@ Folder: [`gears-pov/`](gears-pov/)
 | [042-big-brother-thoughts](gears-pov/042-big-brother-thoughts.mp4) | You can hear what your big brother thinks 👦 | Waiting to post |
 | [043-owl-thoughts](gears-pov/043-owl-thoughts.mp4) | You can hear what the owl outside your window thinks 🦉 | Waiting to post |
 | [044-first-date-thoughts](gears-pov/044-first-date-thoughts.mp4) | You can hear what your first date thinks 💘 | Waiting to post |
-| [045-old-dog-thoughts](gears-pov/045-old-dog-thoughts.mp4) | You can hear what your old dog thinks 🐕 | Waiting to post |
+| [045-old-dog-thoughts](gears-pov/045-old-dog-thoughts.mp4) | You can hear what your old dog thinks 🐕 | Posted on Instagram · on YouTube |
 | [046-tv-remote-thoughts](gears-pov/046-tv-remote-thoughts.mp4) | You can hear what your TV remote thinks 📺 | Waiting to post |
 | [047-stray-dog-thoughts](gears-pov/047-stray-dog-thoughts.mp4) | You can hear what a stray dog thinks 🐕 | Waiting to post |
 | [048-rooster-thoughts](gears-pov/048-rooster-thoughts.mp4) | You can hear what the rooster thinks at 4am 🐓 | Waiting to post |
@@ -192,7 +192,7 @@ Folder: [`dave-reels/`](dave-reels/)
 | [43-dave-grows-an-inch](dave-reels/43-dave-grows-an-inch.mp4) | What if you grew 1 inch every day? | Waiting to post |
 | [44-gimli-glider](dave-reels/44-gimli-glider.mp4) | The jet that ran out of fuel because of maths | Waiting to post |
 
-## Toy reels (Brick Toy) (129)
+## Toy reels (Brick Toy) (135)
 Folder: [`toy-reels/`](toy-reels/)
 
 | Video | Title | Status |
@@ -238,7 +238,13 @@ Folder: [`toy-reels/`](toy-reels/)
 | [126-monopoly-escape-maps](toy-reels/126-monopoly-escape-maps.mp4) | Monopoly Boards Secretly Helped Prisoners Escape In WW2 🎲 | Skipped (never posted) |
 | [127-penicillin-moldy-dish](toy-reels/127-penicillin-moldy-dish.mp4) | A Forgotten Dish Of Mould Changed Medicine 🧫 | Skipped (never posted) |
 | [128-shopping-bags-3d](toy-reels/128-shopping-bags-3d.mp4) | How To Stop Your Shopping Bags Ripping, Step By Step 🛒 | Posted (Instagram + YouTube) |
+| [129-sleep-through-alarm-3d](toy-reels/129-sleep-through-alarm-3d.mp4) | How To Stop Sleeping Through Your Alarm, Step By Step ⏰ | Posted (Instagram + YouTube) |
 | [13-hitler-hell-queue](toy-reels/13-hitler-hell-queue.mp4) | Hitler Went To Hell And Got Put On Hold 💀 | Posted (Instagram + YouTube) |
+| [130-tangled-earphones-3d](toy-reels/130-tangled-earphones-3d.mp4) | How To Stop Your Earphones Tangling, Step By Step 🎧 | Waiting to post |
+| [131-missed-bus-3d](toy-reels/131-missed-bus-3d.mp4) | How To Stop Missing The Bus, Step By Step 🚌 | Waiting to post |
+| [132-umbrella-inside-out-3d](toy-reels/132-umbrella-inside-out-3d.mp4) | How To Stop Your Umbrella Flipping, Step By Step ☂️ | Waiting to post |
+| [133-melting-ice-cream-3d](toy-reels/133-melting-ice-cream-3d.mp4) | How To Stop Ice Cream Melting, Step By Step 🍦 | Waiting to post |
+| [134-forgotten-keys-3d](toy-reels/134-forgotten-keys-3d.mp4) | How To Never Forget Your Keys, Step By Step 🔑 | Waiting to post |
 | [14-death-replaced-by-ai](toy-reels/14-death-replaced-by-ai.mp4) | Death Got Replaced By AI. Nobody Has Died Since 💀 | Posted (Instagram + YouTube) |
 | [15-napoleon-sues-everyone](toy-reels/15-napoleon-sues-everyone.mp4) | Napoleon Came Back From The Dead To Sue Everyone 💀 | Waiting to post |
 | [16-robbers-rob-illuminati](toy-reels/16-robbers-rob-illuminati.mp4) | Two Robbers Robbed The Illuminati's Bank 👁️ | Posted (Instagram + YouTube) |
@@ -317,7 +323,7 @@ Folder: [`toy-reels/`](toy-reels/)
 | [89-kentucky-meat-shower](toy-reels/89-kentucky-meat-shower.mp4) | It Rained Meat In Kentucky 🥩 | Posted (Instagram + YouTube) |
 | [90-1904-olympic-marathon](toy-reels/90-1904-olympic-marathon.mp4) | The Wildest Olympic Marathon Ever 🏃 | Posted (Instagram + YouTube) |
 | [91-byron-bear](toy-reels/91-byron-bear.mp4) | College Banned Dogs. So Lord Byron Got A Bear 🐻 | Posted (Instagram + YouTube) |
-| [92-napoleon-not-short](toy-reels/92-napoleon-not-short.mp4) | Napoleon Wasn't Short. A Cartoon Made Him Short 📏 | Waiting to post |
+| [92-napoleon-not-short](toy-reels/92-napoleon-not-short.mp4) | Napoleon Wasn't Short. A Cartoon Made Him Short 📏 | Posted (Instagram + YouTube) |
 | [93-68-years-hiccups](toy-reels/93-68-years-hiccups.mp4) | This Man Had Hiccups For 68 Years 😮 | Waiting to post |
 | [94-beard-tax](toy-reels/94-beard-tax.mp4) | A Tsar Made Men Pay Tax For Their Beards 🧔 | Waiting to post |
 | [95-urine-tax](toy-reels/95-urine-tax.mp4) | A Roman Emperor Taxed Pee. "Money Doesn't Stink" 🪙 | Waiting to post |
