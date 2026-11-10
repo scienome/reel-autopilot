@@ -285,5 +285,18 @@
    "media_id": "18125986538007877",
    "posted_at": "2026-11-10T00:30:08+00:00"
   }
+ },
+ "030-fish-oil": {
+  "slot": "2026-11-10T15:00Z",
+  "youtube": {
+   "id": "k7cIoUt9Jh4",
+   "url": "https://youtu.be/k7cIoUt9Jh4",
+   "publish_utc": "2026-11-10T15:00:00.000Z",
+   "title": "Fish oil: does it help you build muscle? \ud83d\udc1f #shorts"
+  },
+  "instagram": {
+   "media_id": "18034450361857437",
+   "posted_at": "2026-11-10T15:00:09+00:00"
+  }
  }
 }
