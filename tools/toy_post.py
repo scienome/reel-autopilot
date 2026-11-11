@@ -170,6 +170,9 @@ def main():
     ap.add_argument('--id', help='post this reel straight away')
     a = ap.parse_args()
     conf = json.load(open(CONF))
+    if conf.get('paused') and not a.id:
+        print('toy posting is paused (toyreels/posting.json "paused": true); nothing posted')
+        return
     log = json.load(open(LOG)) if os.path.exists(LOG) else {}
     t = now()
 
