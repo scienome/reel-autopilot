@@ -1,0 +1,49 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Never run from a dog. Here's why.",
+   "say": "Never run from a dog. Here's why."
+  },
+  {
+   "shot": "chase",
+   "cap": "Running tells a dog's brain one thing. Chase. It's instinct, even in friendly dogs.",
+   "say": "Running tells a dog's brain one thing. Chase. It's instinct, even in friendly dogs."
+  },
+  {
+   "shot": "fast",
+   "cap": "And you won't win. Most dogs can sprint faster than most people.",
+   "say": "And you won't win. Most dogs can sprint faster than most people."
+  },
+  {
+   "shot": "tree",
+   "cap": "Instead, be a tree. Stop. Stand still. Arms in.",
+   "say": "Instead, be a tree. Stop. Stand still. Arms in."
+  },
+  {
+   "shot": "eyes",
+   "cap": "Don't stare into its eyes. To a dog, that's a challenge. Look slightly away.",
+   "say": "Don't stare into its eyes. To a dog, that's a challenge. Look slightly away."
+  },
+  {
+   "shot": "side",
+   "cap": "Turn a little side-on, and speak calmly. Then back away, slowly.",
+   "say": "Turn a little side-on, and speak calmly. Then back away, slowly."
+  },
+  {
+   "shot": "bored",
+   "cap": "Most dogs lose interest in something that isn't moving.",
+   "say": "Most dogs lose interest in something that isn't moving."
+  },
+  {
+   "shot": "ball",
+   "cap": "And if you're ever knocked down, curl into a ball, and cover your neck with your hands.",
+   "say": "And if you're ever knocked down, curl into a ball, and cover your neck with your hands."
+  },
+  {
+   "shot": "outro",
+   "cap": "Save this. Then send it to someone who jogs.",
+   "say": "Save this. Then send it to someone who jogs."
+  }
+ ]
+}

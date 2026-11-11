@@ -1,0 +1,20 @@
+// 154 cinestory3d (story3d.js): what to do when a dog runs at you (CDC, AVMA). Scroll stopper: a big dog sprinting straight at the camera.
+STORY((k) => {
+  const { T, M, PI, E, seg, lerp } = k; const pk = k.LIB.place.park(); k.place(pk);
+  const dog = k.add(k.LIB.animal('husky', { h: 0.75 }), [0, 0, -10], 0, pk);
+  const man = k.add(k.LIB.human({ body: 'm', top: '#ff8a1a', bottom: '#2a2f3a', shoes: '#f2f2f2', hair: '#3b2414' }), [0, 0, 2], PI, pk);
+  let ov = null; const speed = (ctx, a, b) => { ctx.save(); ctx.fillStyle = 'rgba(0,0,0,0.5)'; ctx.beginPath(); ctx.roundRect(110, 130, 500, 200, 24); ctx.fill(); ctx.font = '900 30px Nunito, Arial'; ctx.fillStyle = '#fff'; ctx.textAlign = 'left';
+    ctx.fillText('YOU', 140, 190); ctx.fillText('DOG', 140, 280); ctx.fillStyle = '#ff8a1a'; ctx.fillRect(240, 165, 200 * a, 34); ctx.fillStyle = '#e8384f'; ctx.fillRect(240, 255, 340 * b, 34); ctx.restore(); };
+  const shots = {
+    hook: (t, kk) => { k.only(pk); man.visible = false; k.walk(dog, [0, 0, -14], [0, 0, 3], E(kk) * 0.92, 'gallop', t); ov = (ctx) => k.vignette(ctx, 0.5); return k.cam([0.3, 0.5, 5], [0, 0.5, -2], 40, { sky: pk.sky }); },
+    chase: (t, kk) => { k.only(pk); man.visible = true; k.walk(man, [0, 0, 0], [0, 0, 12], kk, 'run', t); k.walk(dog, [0.4, 0, -5], [0.4, 0, 10], kk, 'gallop', t); ov = (ctx) => k.card(ctx, 'RUN = CHASE', { y: 200, bg: '#e8384f' }); return k.cam([11, 1.6, man.position.z - 2.6], [0, 0.8, man.position.z - 2.6], 40, { sky: pk.sky }); },
+    fast: (t, kk) => { k.only(pk); man.visible = true; k.walk(man, [0, 0, 4], [0, 0, 14], kk, 'run', t); k.walk(dog, [0.4, 0, -2], [0.4, 0, 13.5], kk, 'gallop', t); ov = (ctx) => speed(ctx, Math.min(1, kk * 2), Math.min(1, kk * 2)); return k.cam([-8, 1.4, man.position.z - 0.8], [0, 0.8, man.position.z - 0.8], 40, { sky: pk.sky }); },
+    tree: (t, kk) => { k.only(pk); man.visible = true; man.position.set(0, 0, 2); man.rotation.y = PI; man.pose('idle', 0); k.walk(dog, [0, 0, -8], [0, 0, 0.4], E(Math.min(1, kk * 1.3)), 'gallop', t); if (kk > 0.77) dog.pose('idle', t); ov = (ctx) => k.card(ctx, 'BE A TREE 🌳', { y: 200, bg: '#2ecc71' }); return k.cam([3.5, 1.4, 4.5], [0, 0.9, 1], 40, { sky: pk.sky }); },
+    eyes: (t, kk) => { k.only(pk); man.visible = true; man.position.set(0, 0, 2); man.rotation.y = PI + 0.5; man.pose('idle', 0); dog.position.set(0, 0, 0.4); dog.rotation.y = 0; dog.pose('idle', t); ov = (ctx) => { k.card(ctx, 'LOOK SLIGHTLY AWAY', { y: 200, bg: '#7a3ad8' }); }; return k.close(man, { d: 1.6, side: PI - 0.6, h: 0.95, look: 0.88 }); },
+    side: (t, kk) => { k.only(pk); man.visible = true; man.rotation.y = PI + 1.0; man.position.set(lerp(0, 0.6, kk), 0, lerp(2, 3.6, kk)); man.pose(kk > 0.4 ? 'walk' : 'talk', t * 0.4); dog.position.set(0, 0, 0.4); dog.rotation.y = 0; dog.pose('idle', t); return k.cam([4, 1.5, 3.5], [0.3, 0.8, 1.6], 40, { sky: pk.sky }); },
+    bored: (t, kk) => { k.only(pk); man.visible = true; man.position.set(0.6, 0, 3.6); man.rotation.y = PI + 1.0; man.pose('idle', 0); k.walk(dog, [0, 0, 0.4], [-4, 0, -6], E(seg(kk, 0.2, 1)), 'walk', t); if (kk < 0.2) dog.pose('idle', t); return k.cam([3, 1.6, 6], [-1, 0.6, -1], 42, { sky: pk.sky }); },
+    ball: (t, kk) => { k.only(pk); man.visible = true; dog.visible = false; man.position.set(0, 0, 2); man.rotation.y = PI; man.pose('crouch', t); ov = (ctx) => k.card(ctx, 'COVER YOUR NECK', { y: 200, bg: '#e8384f' }); return k.close(man, { d: 2.2, side: 0.8, h: 0.8, look: 0.35 }); },
+    outro: (t, kk) => { k.only(pk); man.visible = false; k.walk(dog, [0, 0, -14], [0, 0, 3], E(kk) * 0.75, 'gallop', t); ov = (ctx) => k.vignette(ctx, 0.5); return k.cam([0.3, 0.5, 5], [0, 0.5, -2], 40, { sky: pk.sky }); },
+  };
+  return { shots, sky: pk.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('whoosh', at('hook', 0.2), { dur: 0.8, gain: 0.2 }); kit.play('ding', at('bored', 1.0), { f: 'E6', gain: 0.25 }); } };
+}, { assets: ['animals/husky', 'humans/Superhero_Male', 'humans/ual1', 'nature/tree_oak', 'nature/tree_maple', 'nature/tree_birch', 'nature/rock_mossy', 'props/bench'] });
