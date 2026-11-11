@@ -102,7 +102,8 @@
    "063-front-door-thoughts",
    "064-neighbours-dog-thoughts"
   ],
-  "status": "in_progress",
-  "updated": "2026-11-10T00:00:00Z"
+  "status": "blocked",
+  "updated": "2026-11-10T00:00:00Z",
+  "note": "056-061 rendered and queued; 062-064 NOT voiced: ElevenLabs quota 0 credits (11 Nov)"
  }
 ]
