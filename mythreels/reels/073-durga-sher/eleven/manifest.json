@@ -1,0 +1,28 @@
+{
+ "music-960729fb145e.mp3": {
+  "prompt": "Indian mythological cinematic underscore: tanpura drone, soft tabla, bansuri, temple bells, swelling shehnai at the climax, no vocals, warm devotional temple feeling",
+  "music_length_ms": 50860,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-5f8012e261a0.mp3": {
+  "text": "lion roar",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-ef5d282c3148.mp3": {
+  "text": "wind and passing seasons",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-76cd5e7f2370.mp3": {
+  "text": "temple bells and conch",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
