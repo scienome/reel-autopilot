@@ -1,0 +1,29 @@
+{
+ "title": "भीम से एक पूँछ नहीं उठी! 💪 | हनुमान जी के अनसुने किस्से भाग 2",
+ "caption": "महाबली भीम एक बूढ़े वानर की पूँछ नहीं हिला पाए। वो थे हनुमान जी। 🙏\nजय हनुमान लिखें 👇",
+ "hashtags": [
+  "hanuman",
+  "bhim",
+  "mahabharat",
+  "bajrangbali",
+  "pandav",
+  "hindumythology",
+  "sanatandharma",
+  "animation",
+  "hindi",
+  "reels"
+ ],
+ "first_comment": "जय हनुमान 🙏 लिखें",
+ "cover_t": 1.2,
+ "series": "हनुमान जी के अनसुने किस्से",
+ "part": 2,
+ "potential": 9,
+ "libs": [
+  "kit/myth.js",
+  "kit/katha.js"
+ ],
+ "sources": [
+  "Mahabharata, Vana Parva (Tirtha-yatra Parva, ch. 146-151: Bhima meets Hanuman on the way to the Saugandhika flowers)",
+  "Mahabharata: Hanuman promises to be on Arjuna's banner (Kapidhvaja)"
+ ]
+}

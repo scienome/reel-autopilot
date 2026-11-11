@@ -1,0 +1,30 @@
+{
+ "title": "शनिवार को पीपल की पूजा क्यों? 🌳 | ऐसा क्यों? भाग 1",
+ "caption": "हर शनिवार पीपल के नीचे दीया, इसके पीछे एक बालक की कथा है। 🪔\nक्या आप शनिवार को पीपल पूजते हैं? 👇",
+ "hashtags": [
+  "shanidev",
+  "peepal",
+  "shanivar",
+  "pippalad",
+  "shiv",
+  "hindumythology",
+  "sanatandharma",
+  "animation",
+  "hindi",
+  "reels"
+ ],
+ "first_comment": "जय शनि देव 🙏 लिखें",
+ "cover_t": 1.2,
+ "series": "ऐसा क्यों?",
+ "part": 1,
+ "potential": 9,
+ "libs": [
+  "kit/myth.js",
+  "kit/katha.js"
+ ],
+ "sources": [
+  "Shiva Purana, Shatarudra Samhita (Pippalada avatar; story as commonly retold)",
+  "Skanda Purana, Kashi Khanda (Pippalada tirtha and Saturday worship)",
+  "Folk tradition: Shani spares those who worship the peepal on Saturday"
+ ]
+}

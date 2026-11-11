@@ -1,0 +1,30 @@
+{
+ "title": "जब विष्णु के दो अवतार आमने सामने आए 🏹🪓 | परशुराम की गाथा भाग 6",
+ "caption": "परशुराम और श्री राम, एक ही विष्णु के दो अवतार, आमने सामने। 🙏\nपरशुराम की गाथा यहीं समाप्त। सबसे यादगार भाग कौन सा था? 👇",
+ "hashtags": [
+  "parshuram",
+  "ram",
+  "sitaswayamvar",
+  "shivdhanush",
+  "ramayan",
+  "hindumythology",
+  "sanatandharma",
+  "animation",
+  "hindi",
+  "reels"
+ ],
+ "first_comment": "जय श्री राम, जय परशुराम 🙏",
+ "cover_t": 1.2,
+ "series": "परशुराम की गाथा",
+ "part": 6,
+ "potential": 10,
+ "libs": [
+  "kit/myth.js",
+  "kit/katha.js"
+ ],
+ "sources": [
+  "Valmiki Ramayana, Bala Kanda, sarga 74-76 (Parashurama confronts Rama after the breaking of Shiva's bow; Rama strings Vishnu's bow)",
+  "Tulsidas, Ramcharitmanas, Bal Kand (Parashurama arrives at Janaka's court)",
+  "Kalki Purana (Parashurama as Kalki's teacher)"
+ ]
+}

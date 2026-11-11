@@ -1,0 +1,29 @@
+{
+ "title": "एक श्राप, जिसने अर्जुन की जान बचाई 🏹 | श्राप जिन्होंने इतिहास बदला भाग 2",
+ "caption": "उर्वशी का श्राप अर्जुन के लिए वरदान बन गया। 🙏\nकौन सा श्राप आपको सबसे हैरान करता है? 👇",
+ "hashtags": [
+  "arjun",
+  "urvashi",
+  "mahabharat",
+  "brihannala",
+  "shraap",
+  "hindumythology",
+  "sanatandharma",
+  "animation",
+  "hindi",
+  "reels"
+ ],
+ "first_comment": "अर्जुन या कर्ण, सबसे महान धनुर्धर कौन? 👇",
+ "cover_t": 1.2,
+ "series": "श्राप जिन्होंने इतिहास बदला",
+ "part": 2,
+ "potential": 9,
+ "libs": [
+  "kit/myth.js",
+  "kit/katha.js"
+ ],
+ "sources": [
+  "Mahabharata, Vana Parva (Indralokagamana Parva, ch. 45-46: Urvashi curses Arjuna; Indra limits it to one year)",
+  "Mahabharata, Virata Parva (Arjuna lives as Brihannala, the dance teacher, during the year in hiding)"
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "music": {
+  "prompt": "Indian mythological epic score: war drums, dhol, shehnai, conch blasts, tanpura drone, rising strings, no vocals, heroic and intense",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "b2",
+   "word": "उन्होंने",
+   "prompt": "sudden silence then a low drum",
+   "dur": 1.6,
+   "gain": -8
+  },
+  {
+   "beat": "b4",
+   "word": "उन्होंने",
+   "prompt": "war drums and a conch blast",
+   "dur": 1.6,
+   "gain": -8
+  },
+  {
+   "beat": "b5",
+   "word": "महाभारत",
+   "prompt": "thunder and rolling war drums",
+   "dur": 1.6,
+   "gain": -8
+  },
+  {
+   "beat": "nx",
+   "word": "अगले",
+   "prompt": "deep suspense drum hit and rising whoosh",
+   "dur": 1.8,
+   "gain": -7
+  }
+ ]
+}

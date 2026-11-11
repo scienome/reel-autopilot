@@ -1,0 +1,29 @@
+{
+ "title": "एकादशी पर चावल क्यों नहीं खाते? 🍚 | ऐसा क्यों? भाग 2",
+ "caption": "करोड़ों लोग एकादशी पर चावल नहीं खाते, पर वजह बहुत कम जानते हैं। 🙏\nक्या आप एकादशी का व्रत रखते हैं? 👇",
+ "hashtags": [
+  "ekadashi",
+  "vrat",
+  "vishnu",
+  "chawal",
+  "parampara",
+  "hindumythology",
+  "sanatandharma",
+  "animation",
+  "hindi",
+  "reels"
+ ],
+ "first_comment": "एकादशी पर आप क्या खाते हैं? 👇",
+ "cover_t": 1.2,
+ "series": "ऐसा क्यों?",
+ "part": 2,
+ "potential": 9,
+ "libs": [
+  "kit/myth.js",
+  "kit/katha.js"
+ ],
+ "sources": [
+  "Folk tradition: the body of Maharishi Medha became rice and barley on Ekadashi (widely retold, not from a single Purana)",
+  "Padma Purana, Uttara Khanda (Ekadashi mahatmya: grains are not eaten on Ekadashi)"
+ ]
+}

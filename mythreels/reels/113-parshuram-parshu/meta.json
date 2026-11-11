@@ -1,0 +1,30 @@
+{
+ "title": "विष्णु का वो अवतार, जो आज भी जीवित है 🪓 | परशुराम की गाथा भाग 1",
+ "caption": "विष्णु के छठे अवतार, जिन्हें महादेव ने फरसा दिया। और जो आज भी धरती पर हैं। 🪓\nजय परशुराम लिखें 👇",
+ "hashtags": [
+  "parshuram",
+  "vishnu",
+  "mahadev",
+  "chiranjeevi",
+  "avatar",
+  "hindumythology",
+  "sanatandharma",
+  "animation",
+  "hindi",
+  "reels"
+ ],
+ "first_comment": "जय भगवान परशुराम 🙏🪓",
+ "cover_t": 1.2,
+ "series": "परशुराम की गाथा",
+ "part": 1,
+ "potential": 9,
+ "libs": [
+  "kit/myth.js",
+  "kit/katha.js"
+ ],
+ "sources": [
+  "Mahabharata, Vana Parva and Shanti Parva (Parashurama, son of Jamadagni and Renuka)",
+  "Brahmanda Purana (Parashurama receives the parashu from Shiva after penance)",
+  "Tradition of the eight chiranjeevis (Ashwatthama, Bali, Vyasa, Hanuman, Vibhishana, Kripa, Parashurama, Markandeya)"
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "title": "नारद के श्राप से राम-सीता बिछड़े! 😮 | श्राप जिन्होंने इतिहास बदला भाग 3",
+ "caption": "नारद मुनि के एक श्राप ने रामायण की राह बदल दी। 🙏\nक्या आपने ये कथा पहले सुनी थी? 👇",
+ "hashtags": [
+  "narad",
+  "vishnu",
+  "ram",
+  "sita",
+  "ramcharitmanas",
+  "hindumythology",
+  "sanatandharma",
+  "animation",
+  "hindi",
+  "reels"
+ ],
+ "first_comment": "नारायण नारायण 🙏 लिखें",
+ "cover_t": 1.2,
+ "series": "श्राप जिन्होंने इतिहास बदला",
+ "part": 3,
+ "potential": 9,
+ "libs": [
+  "kit/myth.js",
+  "kit/katha.js"
+ ],
+ "sources": [
+  "Tulsidas, Ramcharitmanas, Bal Kand (Narad moh: Narada curses Vishnu, doha 128-139)",
+  "Shiva Purana, Rudra Samhita, Srishti Khanda (Narada's pride and the curse on Vishnu)"
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "title": "धरती पर शक्तिपीठ कैसे बने? 🔱 | देवियों के रहस्य भाग 2",
+ "caption": "कामाख्या, कालीघाट, ज्वाला जी... सब शक्तिपीठों की कहानी एक है। 🙏\nआप कौन से शक्तिपीठ गए हैं? 👇",
+ "hashtags": [
+  "shaktipeeth",
+  "sati",
+  "shiv",
+  "kamakhya",
+  "navratri",
+  "hindumythology",
+  "sanatandharma",
+  "animation",
+  "hindi",
+  "reels"
+ ],
+ "first_comment": "अपने शहर का शक्तिपीठ कमेंट करें 🙏",
+ "cover_t": 1.2,
+ "series": "देवियों के रहस्य",
+ "part": 2,
+ "potential": 9,
+ "libs": [
+  "kit/myth.js",
+  "kit/katha.js"
+ ],
+ "sources": [
+  "Devi Bhagavata Purana, Book 7 (Daksha's sacrifice and the Shakti Peethas)",
+  "Kalika Purana (Shiva carries Sati's body; the parts fall to earth)",
+  "Shiva Purana, Rudra Samhita, Sati Khanda (Daksha's yajna and Sati's self-immolation)"
+ ]
+}

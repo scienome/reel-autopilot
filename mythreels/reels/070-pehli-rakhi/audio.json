@@ -1,0 +1,37 @@
+{
+ "music": {
+  "prompt": "Indian mythological cinematic underscore: tanpura drone, soft tabla, bansuri, temple bells, swelling shehnai at the climax, no vocals, warm devotional temple feeling",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "b2",
+   "word": "भविष्य",
+   "prompt": "war drums and clashing weapons",
+   "dur": 1.6,
+   "gain": -8
+  },
+  {
+   "beat": "b4",
+   "word": "बृहस्पति",
+   "prompt": "mantra chant hum and a bell",
+   "dur": 1.6,
+   "gain": -8
+  },
+  {
+   "beat": "b5",
+   "word": "इंद्राणी",
+   "prompt": "victory conch blast",
+   "dur": 1.6,
+   "gain": -8
+  },
+  {
+   "beat": "nx",
+   "word": "अगले",
+   "prompt": "deep suspense drum hit and rising whoosh",
+   "dur": 1.8,
+   "gain": -7
+  }
+ ]
+}

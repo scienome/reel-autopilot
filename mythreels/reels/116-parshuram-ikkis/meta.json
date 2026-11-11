@@ -1,0 +1,29 @@
+{
+ "title": "इक्कीस बार धरती क्षत्रियों से खाली! ⚔️ | परशुराम की गाथा भाग 4",
+ "caption": "पिता की मृत्यु और माँ के इक्कीस आघात। परशुराम का सबसे बड़ा प्रण। ⚔️\nक्या परशुराम का क्रोध सही था? 👇",
+ "hashtags": [
+  "parshuram",
+  "jamadagni",
+  "samantapanchak",
+  "kurukshetra",
+  "puran",
+  "hindumythology",
+  "sanatandharma",
+  "animation",
+  "hindi",
+  "reels"
+ ],
+ "first_comment": "जय परशुराम ⚔️ लिखें",
+ "cover_t": 1.2,
+ "series": "परशुराम की गाथा",
+ "part": 4,
+ "potential": 9,
+ "libs": [
+  "kit/myth.js",
+  "kit/katha.js"
+ ],
+ "sources": [
+  "Mahabharata, Vana Parva, ch. 117 and Adi Parva, ch. 2 (Jamadagni killed; Parashurama clears the earth of Kshatriyas twenty-one times; the five lakes of Samantapanchaka at Kurukshetra)",
+  "Bhagavata Purana 9.16 (Renuka strikes her breast twenty-one times; the earth given to Kashyapa)"
+ ]
+}

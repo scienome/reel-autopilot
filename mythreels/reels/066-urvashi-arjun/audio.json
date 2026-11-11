@@ -1,0 +1,37 @@
+{
+ "music": {
+  "prompt": "Indian mythological cinematic underscore: tanpura drone, soft tabla, bansuri, temple bells, swelling shehnai at the climax, no vocals, warm devotional temple feeling",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "b1",
+   "word": "अर्जुन",
+   "prompt": "heavenly harp shimmer and soft bells",
+   "dur": 1.6,
+   "gain": -8
+  },
+  {
+   "beat": "b3",
+   "word": "उर्वशी",
+   "prompt": "thunder crack and a deep curse rumble",
+   "dur": 1.6,
+   "gain": -8
+  },
+  {
+   "beat": "end",
+   "word": "अर्जुन",
+   "prompt": "anklet bells and a light dance rhythm",
+   "dur": 1.6,
+   "gain": -8
+  },
+  {
+   "beat": "nx",
+   "word": "अगले",
+   "prompt": "deep suspense drum hit and rising whoosh",
+   "dur": 1.8,
+   "gain": -7
+  }
+ ]
+}

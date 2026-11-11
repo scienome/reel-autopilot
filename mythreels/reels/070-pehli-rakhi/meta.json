@@ -1,0 +1,29 @@
+{
+ "title": "राखी सबसे पहले किसने बाँधी? 🧵 | ऐसा क्यों? भाग 3",
+ "caption": "पहली राखी एक बहन ने नहीं, एक पत्नी ने बाँधी थी। 🧵\nआपको ये पता था? 👇",
+ "hashtags": [
+  "rakhi",
+  "rakshabandhan",
+  "indra",
+  "indrani",
+  "shravan",
+  "hindumythology",
+  "sanatandharma",
+  "animation",
+  "hindi",
+  "reels"
+ ],
+ "first_comment": "अपने भाई या बहन को टैग करें 🧵",
+ "cover_t": 1.2,
+ "series": "ऐसा क्यों?",
+ "part": 3,
+ "potential": 9,
+ "libs": [
+  "kit/myth.js",
+  "kit/katha.js"
+ ],
+ "sources": [
+  "Bhavishya Purana, Uttara Parva (Indrani ties a raksha sutra on Indra on Shravan Purnima, given by Brihaspati)",
+  "Common tradition: Raksha Bandhan on Shravan Purnima"
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "title": "जब गुरु और शिष्य तेईस दिन लड़े ⚔️ | परशुराम की गाथा भाग 5",
+ "caption": "परशुराम बनाम भीष्म। तेईस दिन, और कोई नहीं हारा। ⚔️\nगुरु या शिष्य, किसका प्रण बड़ा? 👇",
+ "hashtags": [
+  "parshuram",
+  "bhishma",
+  "amba",
+  "mahabharat",
+  "kurukshetra",
+  "hindumythology",
+  "sanatandharma",
+  "animation",
+  "hindi",
+  "reels"
+ ],
+ "first_comment": "परशुराम या भीष्म, आप किसके साथ? 👇",
+ "cover_t": 1.2,
+ "series": "परशुराम की गाथा",
+ "part": 5,
+ "potential": 10,
+ "libs": [
+  "kit/myth.js",
+  "kit/katha.js"
+ ],
+ "sources": [
+  "Mahabharata, Udyoga Parva, Ambopakhyana Parva (ch. 173-187: Amba seeks Parashurama's help; Bhishma and Parashurama fight for 23 days at Kurukshetra until the gods and ancestors stop them)"
+ ]
+}

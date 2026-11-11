@@ -86,5 +86,49 @@
    "कार्तिकेय के छह मुख": "valid but not run yet; spare for later (series already at 12)"
   },
   "status": "See PLAYBOOK. All teasers chain 042 -> 045 ... 059/058 end the series."
+ },
+ "week_11nov": {
+  "run": "owner request in chat, 11 Nov 2026 (\"create next 7 days of content for every channel\")",
+  "series_owner_picked": [
+   "श्राप जिन्होंने इतिहास बदला",
+   "ऐसा क्यों?",
+   "देवियों के रहस्य",
+   "हनुमान जी के अनसुने किस्से"
+  ],
+  "regular": {
+   "श्राप": [
+    "065-gandhari-shraap",
+    "066-urvashi-arjun",
+    "067-narad-shraap"
+   ],
+   "ऐसा क्यों?": [
+    "068-peepal-shanivar",
+    "069-ekadashi-chawal",
+    "070-pehli-rakhi"
+   ],
+   "देवियों": [
+    "071-kali-jeebh",
+    "072-shaktipeeth",
+    "073-durga-sher"
+   ],
+   "हनुमान": [
+    "074-makardhwaj",
+    "075-hanuman-bhim",
+    "076-hanuman-ramayan"
+   ]
+  },
+  "karna_slot_next": {
+   "series": "परशुराम की गाथा",
+   "voice": "Sudhir narration (owner, 11 Nov)",
+   "ids": [
+    "113-parshuram-parshu",
+    "114-parshuram-renuka",
+    "115-parshuram-kamdhenu",
+    "116-parshuram-ikkis",
+    "117-parshuram-bhishma",
+    "118-parshuram-ram"
+   ]
+  },
+  "notes": "Folk versions say कहते हैं and list folk tradition in sources. Teasers of each part 3 point to part 4 (not yet made): पांडु और हिरण का श्राप, मंदिर में घंटी, नवरात्रि के नौ रूप, हनुमान चिरंजीवी. Bhishma story follows Parshuram."
  }
 }

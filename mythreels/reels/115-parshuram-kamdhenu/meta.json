@@ -1,0 +1,29 @@
+{
+ "title": "हज़ार भुजाओं वाला राजा, एक फरसे से हारा 🪓 | परशुराम की गाथा भाग 3",
+ "caption": "सहस्रार्जुन ने कामधेनु छीनी, और परशुराम का फरसा उठा। 🪓\nरावण को हराने वाला राजा भी हार गया। आगे क्या हुआ? 👇",
+ "hashtags": [
+  "parshuram",
+  "sahasrarjun",
+  "kamdhenu",
+  "kartavirya",
+  "puran",
+  "hindumythology",
+  "sanatandharma",
+  "animation",
+  "hindi",
+  "reels"
+ ],
+ "first_comment": "जय परशुराम 🪓 लिखें",
+ "cover_t": 1.2,
+ "series": "परशुराम की गाथा",
+ "part": 3,
+ "potential": 9,
+ "libs": [
+  "kit/myth.js",
+  "kit/katha.js"
+ ],
+ "sources": [
+  "Mahabharata, Vana Parva, ch. 116 (Kartavirya Arjuna takes the sage's calf/cow; Parashurama kills him)",
+  "Bhagavata Purana 9.15 (Kamadhenu taken; Parashurama cuts off the thousand arms)"
+ ]
+}
