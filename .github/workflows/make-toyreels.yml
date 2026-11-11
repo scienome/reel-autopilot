@@ -51,6 +51,7 @@ jobs:
           else
             LIST=""; for d in reels/*/; do id=$(basename "$d"); gh release view "toyreel-$id" >/dev/null 2>&1 || LIST="$LIST $id"; done
           fi
+          LIST=$(for id in $LIST; do [ -f "reels/$id/reel.js" ] || printf '%s ' "$id"; done)  # 3D reels (reel.js) belong to make-toy3d.yml
           echo "list=$LIST" >> "$GITHUB_OUTPUT"; echo "Reels to make: $LIST"
       - name: Voice, render, release
         if: steps.pick.outputs.list != ''
