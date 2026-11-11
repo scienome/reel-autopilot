@@ -41,7 +41,7 @@ def main(rid):
     keep, pcm, timed, last, t = set(), [b'\0\0' * int(LEAD_IN * 44100)], [], None, LEAD_IN
     for ln in lines:
         if last is not None:
-            gap = SHOT_GAP if ln['shot'] != last else LINE_GAP
+            gap = cfg.get('shot_gap', SHOT_GAP) if ln['shot'] != last else cfg.get('line_gap', LINE_GAP)  # voice.json can tighten the pauses
             t += gap
             pcm.append(b'\0\0' * int(gap * 44100))
         name = hashlib.sha1(f"{cfg['voice_id']}|{cfg['model_id']}|{ln['say']}".encode()).hexdigest()[:16] + '.mp3'
