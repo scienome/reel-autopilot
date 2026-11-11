@@ -202,7 +202,7 @@ Folder: [`dave-reels/`](dave-reels/)
 | [43-dave-grows-an-inch](dave-reels/43-dave-grows-an-inch.mp4) | What if you grew 1 inch every day? | Waiting to post |
 | [44-gimli-glider](dave-reels/44-gimli-glider.mp4) | The jet that ran out of fuel because of maths | Waiting to post |
 
-## Toy reels (Brick Toy) (153)
+## Toy reels (Brick Toy) (157)
 Folder: [`toy-reels/`](toy-reels/)
 
 | Video | Title | Status |
@@ -269,11 +269,15 @@ Folder: [`toy-reels/`](toy-reels/)
 | [150-alpaca-spits](toy-reels/150-alpaca-spits.mp4) | She'll spit on you if she's not into you 🦙💦 | Waiting to post |
 | [151-collapse-in-crowd](toy-reels/151-collapse-in-crowd.mp4) | Someone collapses. 20 people walk past. Do THIS 🚨 | Waiting to post |
 | [153-togo-and-balto](toy-reels/153-togo-and-balto.mp4) | The dogs who ran through a blizzard to save a town 🐺❄️ | Waiting to post |
+| [154-never-run-from-dog](toy-reels/154-never-run-from-dog.mp4) | Never run from a dog. Here's why 🐕 | Waiting to post |
+| [155-stag-rack](toy-reels/155-stag-rack.mp4) | Every year he loses his rack… and grows a bigger one 🦌 | Waiting to post |
+| [159-wolf-or7](toy-reels/159-wolf-or7.mp4) | He walked 1,000+ miles alone to find a family 🐺 | Waiting to post |
 | [16-robbers-rob-illuminati](toy-reels/16-robbers-rob-illuminati.mp4) | Two Robbers Robbed The Illuminati's Bank 👁️ | Posted (Instagram + YouTube) |
 | [161-ass-guards-sheep](toy-reels/161-ass-guards-sheep.mp4) | Farmers hire an ass to protect their sheep 🫏🐑 | Waiting to post |
 | [162-clever-hans](toy-reels/162-clever-hans.mp4) | The horse who could 'do maths' 🐴➕ | Waiting to post |
 | [163-fox-scream](toy-reels/163-fox-scream.mp4) | That woman screaming at night? It's a fox 🦊😱 | Waiting to post |
 | [164-ewe-remember-faces](toy-reels/164-ewe-remember-faces.mp4) | Ewe won't believe what sheep remember 🐑 | Waiting to post |
+| [165-cow-burps](toy-reels/165-cow-burps.mp4) | Cows aren't farting the planet to death. It's the burps 🐄💨 | Waiting to post |
 | [166-moon-pulling-out](toy-reels/166-moon-pulling-out.mp4) | The Moon is slowly pulling out 🌙 | Waiting to post |
 | [17-einstein-art-school](toy-reels/17-einstein-art-school.mp4) | Einstein Went Back In Time To Get Hitler Into Art School 🎨 | Posted (Instagram + YouTube) |
 | [171-uranus-on-its-side](toy-reels/171-uranus-on-its-side.mp4) | Something hit Uranus so hard, it's still on its side 🪐 | Waiting to post |
