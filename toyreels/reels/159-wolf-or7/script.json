@@ -1,0 +1,49 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "This wolf walked more than a thousand miles, alone, to find a family.",
+   "say": "This wolf walked more than a thousand miles, alone, to find a family."
+  },
+  {
+   "shot": "born",
+   "cap": "Oregon, 2009. A grey wolf is born into a pack. Scientists fit him with a collar and call him OR-7.",
+   "say": "Oregon, 2009. A grey wolf is born into a pack. Scientists fit him with a collar and call him OR-7."
+  },
+  {
+   "shot": "leave",
+   "cap": "At two years old, he leaves home. Young wolves have to find their own territory.",
+   "say": "At two years old, he leaves home. Young wolves have to find their own territory."
+  },
+  {
+   "shot": "walk",
+   "cap": "He walks. Across mountains, highways and deserts. Thousands of miles in total.",
+   "say": "He walks. Across mountains, highways and deserts. Thousands of miles in total."
+  },
+  {
+   "shot": "california",
+   "cap": "In December 2011, he crosses into California. The first wild wolf seen there in almost ninety years.",
+   "say": "In December 2011, he crosses into California. The first wild wolf seen there in almost ninety years."
+  },
+  {
+   "shot": "alone",
+   "cap": "For two years, he wanders alone. The GPS shows him searching, and searching.",
+   "say": "For two years, he wanders alone. The GPS shows him searching, and searching."
+  },
+  {
+   "shot": "mate",
+   "cap": "Then, in 2014, a trail camera catches him with a female.",
+   "say": "Then, in 2014, a trail camera catches him with a female."
+  },
+  {
+   "shot": "pups",
+   "cap": "That summer, they have pups. A brand new pack is born.",
+   "say": "That summer, they have pups. A brand new pack is born."
+  },
+  {
+   "shot": "outro",
+   "cap": "He walked a thousand miles alone, and found his family at the end.",
+   "say": "He walked a thousand miles alone, and found his family at the end."
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Don't call him an ass. He's smarter than you think.",
+   "say": "Don't call him an ass. He's smarter than you think."
+  },
+  {
+   "shot": "stub",
+   "cap": "Donkeys have a reputation. Stubborn. Lazy. Dumb.",
+   "say": "Donkeys have a reputation. Stubborn. Lazy. Dumb."
+  },
+  {
+   "shot": "stop",
+   "cap": "But when a donkey stops and refuses to move, it isn't being stubborn.",
+   "say": "But when a donkey stops and refuses to move, it isn't being stubborn."
+  },
+  {
+   "shot": "think",
+   "cap": "It's thinking. A horse runs from danger. A donkey freezes, and works out if it's safe.",
+   "say": "It's thinking. A horse runs from danger. A donkey freezes, and works out if it's safe."
+  },
+  {
+   "shot": "cliff",
+   "cap": "If it doesn't feel safe, no amount of pulling will change its mind. That's self-preservation, not stupidity.",
+   "say": "If it doesn't feel safe, no amount of pulling will change its mind. That's self-preservation, not stupidity."
+  },
+  {
+   "shot": "memory",
+   "cap": "They have great memories too. They can remember places, and other donkeys, for years.",
+   "say": "They have great memories too. They can remember places, and other donkeys, for years."
+  },
+  {
+   "shot": "bray",
+   "cap": "And that loud bray? In the desert, it helps them find each other over long distances.",
+   "say": "And that loud bray? In the desert, it helps them find each other over long distances."
+  },
+  {
+   "shot": "outro",
+   "cap": "So he's not an ass. He just thinks before he moves.",
+   "say": "So he's not an ass. He just thinks before he moves."
+  }
+ ]
+}

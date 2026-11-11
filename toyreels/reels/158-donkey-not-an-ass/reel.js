@@ -1,0 +1,25 @@
+// 158 cinestory3d (story3d.js): donkeys are cautious, not stubborn (The Donkey Sanctuary). Scroll stopper: a man pulling a donkey that will not budge at a rickety bridge.
+STORY((k) => {
+  const { T, M, PI, E, seg, lerp } = k; const fm = k.farm(); const OX = 4, OZ = 7; // open grass, away from the well
+  const don = k.add(k.LIB.animal('donkey', { h: 1.35 }), [0, 0, 0], PI / 2, fm), horse = k.add(k.LIB.animal('horse', { h: 1.7 }), [0, 0, 0], 0, fm), wolf = k.add(k.LIB.animal('wolf', { h: 0.8 }), [0, 0, 0], 0, fm);
+  const man = k.add(k.LIB.human({ body: 'm', top: '#4a7a3a', bottom: '#3a3a4a', hair: '#5a3a1a' }), [0, 0, 0], 0, fm);
+  const pal = k.add(k.LIB.animal('donkey', { h: 1.3 }), [0, 0, 0], 0, fm);
+  const br = new T.Group(); fm.add(br); br.position.set(OX + 3.2, 0, OZ); for (let i = 0; i < 9; i++) { const p = new T.Mesh(new T.BoxGeometry(0.3, 0.06, 1.4), M(i % 3 === 1 ? '#3a2a1a' : '#7a5a3a', 0.9)); p.position.set(i * 0.33, 0.3 + Math.sin(i) * 0.04, 0); p.rotation.z = Math.sin(i * 2) * 0.12; br.add(p); }
+  const gap = new T.Mesh(new T.BoxGeometry(3.2, 0.1, 3), M('#2a3a4a', 0.2)); gap.position.set(OX + 4.4, -0.2, OZ); fm.add(gap);
+  const rope = new T.Mesh(new T.CylinderGeometry(0.015, 0.015, 1, 6), M('#c9a46a')); fm.add(rope);
+  const pull = (t, tension) => { don.position.set(OX + 2.2, 0, OZ); don.rotation.y = PI / 2; don.pose('idle', t); man.position.set(OX + 3.6 + Math.sin(t * 5) * 0.05 * tension, 0.3, OZ + 0.1); man.rotation.y = -PI / 2; man.pose(tension > 0.5 ? 'push' : 'idle', t);
+    const a = new T.Vector3(OX + 2.75, 1.0, OZ), b = new T.Vector3(man.position.x - 0.35, 1.0, OZ + 0.1); rope.visible = true; rope.position.copy(a).add(b).multiplyScalar(0.5); rope.scale.y = a.distanceTo(b); rope.rotation.set(0, 0, PI / 2); };
+  let ov = null; const base = () => { k.only(fm); [horse, wolf, man, pal].forEach((a) => { a.visible = false; }); rope.visible = false; br.visible = gap.visible = true; };
+  const shots = {
+    hook: (t, kk) => { base(); man.visible = true; pull(t, 1); ov = (ctx) => k.big(ctx, 'NOPE.', { y: 240, size: 100, col: '#ffd23f' }); return k.cam([OX + 2.8, 1.6, OZ + 5], [OX + 2.8, 0.9, OZ], 40, { sky: fm.sky }); },
+    stub: (t, kk) => { base(); br.visible = gap.visible = false; don.position.set(0, 0, 2); don.rotation.y = 0.4; don.pose('idle', t); ov = (ctx) => { ['STUBBORN', 'LAZY', 'DUMB'].forEach((w, i) => k.card(ctx, w, { t: kk * 10, at: i * 0.9, y: 180 + i * 110, bg: '#e8384f' })); }; return k.close(don, { d: 3, side: 0.4 }); },
+    stop: (t, kk) => { base(); man.visible = true; pull(t, 0.4); return k.cam([OX + 1.2, 1.2, OZ + 3.2], [OX + 2.4, 0.9, OZ], 40, { sky: fm.sky }); },
+    think: (t, kk) => { base(); br.visible = gap.visible = false; horse.visible = wolf.visible = true; k.walk(wolf, [-6, 0, -6], [-2.5, 0, -2], E(kk), 'walk', t); if (kk > 0.3) { k.walk(horse, [1.5, 0, 2], [7, 0, 9], seg(kk, 0.3, 1), 'gallop', t); } else { horse.position.set(1.5, 0, 2); horse.pose('idle', t); }
+      don.position.set(-1, 0, 2.5); don.rotation.y = -2.4; don.pose('idle', 0); ov = (ctx) => { if (kk > 0.5) k.card(ctx, 'HORSE: RUN · DONKEY: THINK', { y: 200, bg: '#7a3ad8', size: 36 }); }; return k.cam([4, 2.4, 9], [0, 0.8, 1], 42, { sky: fm.sky }); },
+    cliff: (t, kk) => { base(); man.visible = true; pull(t, 1); ov = (ctx) => k.card(ctx, 'SELF-PRESERVATION', { y: 200, bg: '#2ecc71' }); return k.cam([OX + 5.4, 0.9, OZ + 3.2], [OX + 3.0, 0.6, OZ], 40, { sky: fm.sky }); },
+    memory: (t, kk) => { base(); br.visible = gap.visible = false; pal.visible = true; k.walk(don, [-5, 0, 3], [-0.8, 0, 2], E(kk), 'walk', t); pal.position.set(0.8, 0, 2); pal.rotation.y = -PI / 2; pal.pose('idle', t); if (kk > 0.95) don.pose('idle', t); ov = (ctx) => k.card(ctx, 'REMEMBERS FOR YEARS', { y: 200, bg: '#1d3557' }); return k.cam([0, 1.6, 7.5], [0, 0.8, 2], 40, { sky: fm.sky }); },
+    bray: (t, kk) => { base(); br.visible = gap.visible = false; don.position.set(0, 0, 2); don.rotation.y = 0.4; don.pose('attack', t); ov = (ctx) => { ctx.save(); for (let i = 0; i < 5; i++) { const u = (t * 0.9 + i / 5) % 1; ctx.strokeStyle = `rgba(255,210,63,${1 - u})`; ctx.lineWidth = 8; ctx.beginPath(); ctx.arc(330, 520, 60 + u * 360, -1.2, 0.2); ctx.stroke(); } ctx.restore(); k.big(ctx, 'HEE-HAW!', { y: 240, size: 86, col: '#ffd23f' }); }; return k.close(don, { d: 2.4, side: 0.6 }); },
+    outro: (t, kk) => { base(); man.visible = true; pull(t, 1); ov = (ctx) => k.big(ctx, 'NOPE.', { y: 240, size: 100, col: '#ffd23f' }); return k.cam([OX + 2.8, 1.6, OZ + 5], [OX + 2.8, 0.9, OZ], 40, { sky: fm.sky }); },
+  };
+  return { shots, sky: fm.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('pop', at('hook', 0.6), { gain: 0.3 }); kit.play('whoosh', at('think', 1.0), { dur: 0.6, gain: 0.2 }); } };
+}, { assets: ['animals/donkey', 'animals/horse', 'animals/wolf', 'humans/Superhero_Male', 'humans/ual1', 'props/hay', 'buildings/cottage', 'buildings/village_house', 'buildings/house_v2', 'buildings/well', 'buildings/fence', 'nature/tree_oak', 'nature/tree_maple'] });

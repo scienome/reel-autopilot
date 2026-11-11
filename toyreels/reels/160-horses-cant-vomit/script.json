@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Horses can't throw up. Ever.",
+   "say": "Horses can't throw up. Ever."
+  },
+  {
+   "shot": "eat",
+   "cap": "If a horse eats something bad, it can't just bring it back up.",
+   "say": "If a horse eats something bad, it can't just bring it back up."
+  },
+  {
+   "shot": "inside",
+   "cap": "The muscle at the bottom of its food pipe is so strong, it works like a one way valve.",
+   "say": "The muscle at the bottom of its food pipe is so strong, it works like a one way valve."
+  },
+  {
+   "shot": "angle",
+   "cap": "And the pipe joins the stomach at a sharp angle. When the stomach swells, it squeezes the valve even tighter.",
+   "say": "And the pipe joins the stomach at a sharp angle. When the stomach swells, it squeezes the valve even tighter."
+  },
+  {
+   "shot": "why",
+   "cap": "One idea is that it let wild horses gallop for miles, without anything coming back up.",
+   "say": "One idea is that it let wild horses gallop for miles, without anything coming back up."
+  },
+  {
+   "shot": "danger",
+   "cap": "But it makes a swollen, painful belly, called colic, really dangerous.",
+   "say": "But it makes a swollen, painful belly, called colic, really dangerous."
+  },
+  {
+   "shot": "vet",
+   "cap": "That's why owners watch for the signs. Pawing, rolling, looking at the belly. And call the vet fast.",
+   "say": "That's why owners watch for the signs. Pawing, rolling, looking at the belly. And call the vet fast."
+  },
+  {
+   "shot": "outro",
+   "cap": "So be careful what you feed a horse. What goes in, stays in.",
+   "say": "So be careful what you feed a horse. What goes in, stays in."
+  }
+ ]
+}
