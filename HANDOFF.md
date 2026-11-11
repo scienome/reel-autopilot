@@ -41,6 +41,15 @@ or anything that posts publicly.
 
 ## 0c. WEEK 2 PLAN (owner, 11 Nov 2026): 16-22 Nov content for every channel
 
+**STATUS 11 Nov, 22:00 IST (all week-2 content written and pushed):**
+- Elites Endgame 035-055 + 019/032/033 queued (`dioramareels/schedule.json`); 040 re-render dispatched, queue it when `diorama-040-birthday-auction` exists.
+- Musclyth 057-084 (28) pushed and queued; Exercise/Supplement series replaced by Gym Myths Busted + Diet & Food (`pulsereels/README.md`).
+  A catch-up `make-pulse` run (empty input) is queued behind the first one because 28 renders exceed one 90-min run.
+- Lokvara 201-228 (4 new series) queued + भीष्म 119-125 in reserved 21:00 (`mythreels/PLAYBOOK.md` §2c). Catch-up myth run queued.
+- SAMPLES waiting for the owner (not queued): toy 136 time-lapse (sent), Thought Bubble 065-what-if-no-sleep, riddles
+  riddle-nariyal-faayda (maths) and riddle-taaza-paint (detective). After approval: 15 more toy topics, 20 more What-happens-if, 21 riddles.
+- All scheduled Claude runs are OFF (owner, 11 Nov). Posting workflows on GitHub still run (toy posting paused).
+
 Week 1 (11-15 Nov) was made on 11 Nov: Elites Endgame 017-034, Musclyth 037-056, Lokvara 065-076 + Parshuram 113-118, POV 062-064.
 Toy posting is PAUSED (`toyreels/posting.json` "paused": true) until the owner approves the new What-if style (sample 135).
 Owner's picks for week 2:
