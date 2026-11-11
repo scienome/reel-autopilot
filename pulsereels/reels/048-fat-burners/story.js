@@ -1,0 +1,18 @@
+// 048 Supplements 11: fat burners (Jeukendrup 2011; FDA; Hursel 2010)
+(function () {
+P.reel({ merge: [['f d a', 'FDA']], scenes: (A) => { const { L, pop, ramp, W, H, PAL } = A; return [
+  { at: 0, name: 'hook', draw: (c, t) => { P.bg(c, W, H, 'violet', t); P.bgCells(c, W, H, t, '#ffffff', 5, 0.05); P.glow(c, W / 2, 760, 320, PAL.red, 0.6); P.tub(c, W / 2, 760 + Math.sin(t * 2) * 8, 1.6, '#2a0a12', 'BURN', 'xtreme', PAL.red); P.zap(c, W / 2, 760, 240, t, 4, 5, PAL.amber);
+    A.hookTitle(c, ["What's In", 'FAT BURNERS?'], 'Supplement Series · Part 11', PAL.magenta, 62); } },
+  { at: L(2) - 0.2, name: 'label', tr: 'zoom', focus: [W / 2, 640], draw: (c, t) => { P.bg(c, W, H, 'plum', t); P.flat(c, P.rr(110, 320, 500, 520, 24), PAL.white, { off: 8 });
+    c.save(); c.font = `900 34px ${P.FONT}`; c.fillStyle = PAL.ink; c.textAlign = 'center'; c.fillText('INGREDIENTS', W / 2, 390); c.font = `800 28px ${P.FONT}`; ['CAFFEINE', 'Green tea extract', 'Pepper extract', '"Thermo blend"'].forEach((s, i) => { if (pop(t, L(2) + 0.8 + i * 0.6) > 0) c.fillText(s, W / 2, 470 + i * 75); }); c.restore();
+    P.coffee(c, W / 2, 1020, 1.0, t); P.label(c, 'Mostly caffeine', W / 2, 200, pop(t, L(2) + 1), { color: PAL.amber }); } },
+  { at: L(3) - 0.2, name: 'small', tr: 'slide', draw: (c, t) => { P.bg(c, W, H, 'deep', t); P.bgCells(c, W, H, t, PAL.cyan, 3, 0.05); P.fatCell(c, W / 2, 620, 200 - ramp(t, L(3) + 2, L(3) + 5) * 12, t);
+    P.label(c, 'Burn a little more', W / 2, 220, pop(t, L(3) + 0.5), { color: PAL.mint }); P.label(c, 'Effect on fat: SMALL', W / 2, 1000, pop(t, L(3) + 4), { color: PAL.amber }); } },
+  { at: L(4) - 0.2, name: 'review', tr: 'slide', draw: (c, t) => { P.bg(c, W, H, 'night', t); P.person(c, W / 2, H * 0.9, 1.0, 'doc', { talk: A.talk(t), arms: 'down' }); P.evidence(c, W / 2, 330, 1, pop(t, L(4) + 1.5)); P.label(c, 'Most ingredients', W / 2, 200, pop(t, L(4)), { color: PAL.blue }); } },
+  { at: L(5) - 0.2, name: 'hidden', tr: 'zoom', focus: [W / 2, 640], draw: (c, t) => { P.bg(c, W, H, 'night', t); P.tub(c, W / 2, 620, 1.3, '#2a0a12', 'BURN', '', PAL.red); if (pop(t, L(5) + 2) > 0) P.pill(c, W / 2 + 40, 560, 1.2, 0.5, PAL.red, PAL.ink);
+    P.stampX(c, W / 2, 620, 170, pop(t, L(5) + 2.4)); P.label(c, 'Hidden drugs found', W / 2, 220, pop(t, L(5) + 1.5), { color: PAL.red }); P.label(c, 'FDA keeps a list', W / 2, 1010, pop(t, L(5) + 4), { color: PAL.amber, size: 28 }); } },
+  { at: L(6) - 0.2, name: 'heart', tr: 'slide', draw: (c, t) => { P.bg(c, W, H, 'plum', t); P.heart(c, W / 2, 520, 120 + Math.sin(t * 14) * 10, t * 3); P.ecg(c, 90, 820, 540, 140, t, 160, PAL.red);
+    P.bubble(c, 'Heart problems or pregnant? Avoid', W / 2, 1050, pop(t, L(6) + 3), { color: PAL.red }); } },
+  { at: L(7) - 0.2, name: 'real', tr: 'slide', draw: (c, t) => { P.gym(c, W, H, t); const k = 0.5 - 0.5 * Math.cos(t * 2.4); P.lifter(c, W / 2, H * 0.86, 1.25, { arms: 'bar', squat: k, bar: true, smile: true, blink: A.blink(t) }); const e = pop(t, L(8) - 0.2);
+    ['Small deficit', 'Enough protein', 'Lifting', 'Sleep'].forEach((s, i) => P.check(c, s, W / 2, 180 + i * 85, true, pop(t, L(7) + i * 0.9) * (1 - e), 26)); A.next(c, t, 'MAGNESIUM'); } },
+]; }, sfx: (A) => [['riser', 0, { dur: 0.6, gain: 0.3 }], ['paper', A.L(2), { dur: 0.3 }], ['blip', A.L(3) + 0.5, { f: 'C6' }], ['error', A.L(3) + 4, { gain: 0.3 }], ['stamp', A.L(4) + 1.5, { gain: 0.4 }], ['stamp', A.L(5) + 2.4, { gain: 0.6 }], ['buzz', A.L(6), { dur: 0.6, f: 120, gain: 0.3 }], ['pop', A.L(7), { f: 700 }], ['pop', A.L(7) + 0.9, { f: 760 }], ['pop', A.L(7) + 1.8, { f: 820 }], ['pop', A.L(7) + 2.7, { f: 880 }]] });

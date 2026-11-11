@@ -1,0 +1,14 @@
+// 055 Exercise 13: incline vs flat bench (Rodríguez-Ridao 2020; Trebs 2010; Chaves 2020)
+(function () {
+P.reel({ merge: [['thirty degrees', '30°'], ['forty five degrees', '45°']], scenes: (A) => { const { L, pop, ramp, W, H, PAL } = A; return [
+  { at: 0, name: 'hook', draw: (c, t) => { P.gym(c, W, H, t); P.lifterBench(c, W / 2 + 40, H * 0.66, 1.25, 'bench', { k: 0.5 - 0.5 * Math.cos(t * 2.4) }); A.hookTitle(c, ['Incline Or', 'FLAT BENCH?'], 'Exercise Series · Part 13', PAL.magenta, 64); } },
+  { at: L(2) - 0.2, name: 'parts', tr: 'zoom', focus: [W / 2, 640], draw: (c, t) => { P.bg(c, W, H, 'deep', t); P.bgCells(c, W, H, t, PAL.cyan, 3, 0.05); P.musclemap(c, W / 2, 720, 1.2, 'front', { chest: 0.4 + 0.3 * Math.sin(t * 3) });
+    P.label(c, 'Upper chest', W / 2, 220, pop(t, L(2) + 0.5), { color: PAL.amber }); P.label(c, 'Bigger lower part', W / 2, 300, pop(t, L(2) + 2.5), { color: PAL.red, size: 28 }); } },
+  { at: L(3) - 0.2, name: 'thirty', tr: 'slide', draw: (c, t) => { P.gym(c, W, H, t); P.bench(c, W / 2, H * 0.72, 1.4, 0.52); P.arcArrow(c, W / 2 - 100, H * 0.72, 120, -Math.PI * 0.17, 0, pop(t, L(3) + 2), PAL.yellow);
+    P.counter(c, '30°', W / 2, 380, 120, pop(t, L(3) + 2.4), PAL.yellow); P.label(c, 'More upper chest', W / 2, 220, pop(t, L(3) + 3.5), { color: PAL.mint }); } },
+  { at: L(4) - 0.2, name: 'steep', tr: 'zoom', focus: [W / 2, 700], draw: (c, t) => { A.xrayRep(c, t, 'frontpress', { shoulders: 1, chest: 0.3, triceps: 0.6 }, { map: 'front' }); P.label(c, '45°+ = shoulders take over', W / 2, 200, pop(t, L(4) + 1), { color: PAL.red, size: 28 }); } },
+  { at: L(5) - 0.2, name: 'flat', tr: 'slide', draw: (c, t) => { A.xrayRep(c, t, 'bench', { chest: 1, triceps: 0.7, shoulders: 0.5 }, { map: 'front' }); P.label(c, 'Flat: whole chest', W / 2, 200, pop(t, L(5)), { color: PAL.mint }); P.label(c, 'More weight', W / 2, 280, pop(t, L(5) + 2.4), { color: PAL.amber, size: 28 }); } },
+  { at: L(6) - 0.2, name: 'both', tr: 'slide', draw: (c, t) => { P.gym(c, W, H, t); P.versus(c, W / 2, 680, 660, 420, 'Flat', 'Incline 30°', pop(t, L(6)), 0, (cc) => P.bench(cc, 0, 80, 0.7, 0), (cc) => P.bench(cc, 0, 80, 0.7, 0.52));
+    P.label(c, 'Do BOTH', W / 2, 220, pop(t, L(6) + 0.3), { color: PAL.yellow }); } },
+  { at: L(7) - 0.2, name: 'blades', tr: 'slide', draw: (c, t) => { P.gym(c, W, H, t); P.lifterBench(c, W / 2 + 40, H * 0.66, 1.25, 'bench', { k: 0.5 - 0.5 * Math.cos(t * 2) }); P.check(c, 'Shoulder blades pinched back', W / 2, 220, true, pop(t, L(7)), 26); if (t > L(8) - 0.3) A.next(c, t, 'DIPS'); } },
+]; }, sfx: (A) => [['riser', 0, { dur: 0.6, gain: 0.3 }], ['blip', A.L(2) + 0.5, { f: 'C6' }], ['blip', A.L(2) + 2.5, { f: 'E6' }], ['stamp', A.L(3) + 2.4, { gain: 0.5 }], ['error', A.L(4) + 1, { gain: 0.3 }], ['ding', A.L(5), { f: 'G6' }], ['success', A.L(6) + 0.3], ['pop', A.L(7), { f: 800 }]] });

@@ -1,0 +1,18 @@
+// 050 Muscle Building 12: deload week (Coleman 2024; Bell 2023; Bell 2024)
+(function () {
+P.reel({ merge: [['twenty twenty four', '2024'], ['nine weeks', '9 weeks'], ['week six', 'week 6']], scenes: (A) => { const { L, pop, ramp, W, H, PAL } = A; return [
+  { at: 0, name: 'hook', draw: (c, t) => { P.bg(c, W, H, 'night', t); P.moon(c, 560, 230, 60); P.bed(c, W / 2, 860, 1.3, t); P.week(c, W / 2, 620, 600, [0, 0, 0, 0, 0, 0, 0], 1, PAL.cyan);
+    A.hookTitle(c, ['Do You Need A', 'DELOAD?'], 'Muscle Building · Part 12', PAL.magenta, 66); } },
+  { at: L(2) - 0.2, name: 'what', tr: 'slide', draw: (c, t) => { P.gym(c, W, H, t); const k = 0.5 - 0.5 * Math.cos(t * 2); P.lifter(c, W / 2, H * 0.86, 1.3, { arms: 'down', arms2: 'curl', mix: k, smile: true, blink: A.blink(t) });
+    P.week(c, W / 2, 260, 620, [4, 0, 3, 0, 3, 0, 0], 1 - ramp(t, L(2) + 1, L(2) + 3) * 0.6, PAL.amber); ['Less weight', 'Fewer sets', 'Or a break'].forEach((s, i) => P.label(c, s, W / 2, 420 + i * 80, pop(t, L(2) + 1 + i * 0.9), { color: PAL.mint, size: 28 })); } },
+  { at: L(3) - 0.2, name: 'idea', tr: 'zoom', focus: [W / 2, 640], draw: (c, t) => { P.bg(c, W, H, 'plum', t); P.bgCells(c, W, H, t, PAL.pink, 3, 0.05); P.muscleBelly(c, W / 2, 640, 440, 160, 0.05, 0.2, t, { col: '#e8475b' }); P.sparkles(c, W / 2, 640, 220, t, 1, 4);
+    P.label(c, 'Recover → come back stronger?', W / 2, 220, pop(t, L(3)), { color: PAL.mint, size: 28 }); P.qmarks(c, W / 2, 940, t, pop(t, L(3) + 2)); } },
+  { at: L(4) - 0.2, name: 'study', tr: 'slide', draw: (c, t) => { P.bg(c, W, H, 'deep', t); P.bgCells(c, W, H, t, PAL.cyan, 3, 0.05); P.calendar(c, W / 2, 330, 1.0, '9 WEEKS', 'trained lifters', pop(t, L(4) + 1));
+    P.week(c, W / 2, 620, 620, [1, 1, 1, 1, 1, 1, 1], pop(t, L(4) + 2), PAL.mint); P.week(c, W / 2, 760, 620, [1, 1, 1, 0, 1, 1, 1], pop(t, L(4) + 3), PAL.amber); P.label(c, 'Week off in the middle', W / 2, 900, pop(t, L(4) + 3.5), { color: PAL.amber, size: 26 }); } },
+  { at: L(5) - 0.2, name: 'result', tr: 'zoom', focus: [W / 2, 700], draw: (c, t) => { P.bg(c, W, H, 'violet', t); const k = ramp(t, L(5), L(5) + 2.5);
+    P.meter(c, 160, 1000, 110, 400, 0.6 * k, PAL.mint, 'Size'); P.meter(c, 290, 1000, 110, 400, 0.6 * k, PAL.amber, 'Size'); P.meter(c, 450, 1000, 110, 400, 0.7 * k, PAL.mint, 'Legs'); P.meter(c, 580, 1000, 110, 400, 0.55 * k, PAL.amber, 'Legs');
+    P.label(c, 'Muscle: SAME', 225, 470, pop(t, L(5) + 1), { color: PAL.mint, size: 26 }); P.label(c, 'Strength: a bit less', 515, 470, pop(t, L(5) + 3), { color: PAL.amber, size: 24 }); } },
+  { at: L(6) - 0.2, name: 'schedule', tr: 'slide', draw: (c, t) => { P.bg(c, W, H, 'night', t); P.calendar(c, W / 2, 520, 1.3, 'WEEK 6', 'auto deload?', 1); P.stampX(c, W / 2, 520, 170, pop(t, L(6) + 1.5)); } },
+  { at: L(7) - 0.2, name: 'when', tr: 'slide', draw: (c, t) => { P.gym(c, W, H, t); P.lifter(c, W / 2 - 80, H * 0.86, 1.15, { arms: 'down', wince: 0.4, blink: A.blink(t) }); P.person(c, W / 2 + 190, H * 0.86, 0.9, 'coach', { talk: A.talk(t), arms: 'down', look: -0.5 }); const e = pop(t, L(8) - 0.2);
+    ['Joints ache', 'Bad sleep', 'Lifts keep dropping'].forEach((s, i) => P.check(c, s, W / 2, 200 + i * 90, true, pop(t, L(7) + 0.8 + i * 1.1) * (1 - e), 28)); A.next(c, t, 'TRAINING FREQUENCY'); } },
+]; }, sfx: (A) => [['riser', 0, { dur: 0.6, gain: 0.3 }], ['pop', A.L(2) + 1, { f: 700 }], ['pop', A.L(2) + 1.9, { f: 800 }], ['pop', A.L(2) + 2.8, { f: 900 }], ['sparkle', A.L(3), { n: 6 }], ['paper', A.L(4) + 1, { dur: 0.3 }], ['ding', A.L(5) + 1, { f: 'E6' }], ['error', A.L(5) + 3, { gain: 0.3 }], ['stamp', A.L(6) + 1.5, { gain: 0.6 }]] });

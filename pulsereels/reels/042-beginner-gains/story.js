@@ -1,0 +1,16 @@
+// 042 Muscle Building 10: beginner gains (Moritani 1979; Seynnes 2007; Folland 2007)
+(function () {
+P.reel({ merge: [['three weeks', '3 weeks']], scenes: (A) => { const { L, pop, ramp, W, H, PAL } = A; return [
+  { at: 0, name: 'hook', draw: (c, t) => { P.gym(c, W, H, t); const k = 0.5 - 0.5 * Math.cos(t * 3); P.lifter(c, W / 2, H * 0.86, 1.35, { arms: 'down', arms2: 'curl', mix: k, wince: 0.4, blink: A.blink(t) });
+    A.hookTitle(c, ['Why Do Gains', 'SLOW DOWN?'], 'Muscle Building · Part 10', PAL.magenta, 64); } },
+  { at: L(2) - 0.2, name: 'fast', tr: 'slide', draw: (c, t) => { P.bg(c, W, H, 'deep', t); P.bgCells(c, W, H, t, PAL.cyan, 3, 0.05); P.lineChart(c, 100, 980, 520, 520, [0.1, 0.45, 0.62, 0.72, 0.79, 0.84, 0.88, 0.9], ramp(t, L(2), L(2) + 3), PAL.mint, 'STRENGTH');
+    P.label(c, 'Weeks 1-4: fast!', W / 2, 200, pop(t, L(2) + 0.6), { color: PAL.mint }); P.label(c, 'Not new muscle yet', W / 2, 300, pop(t, L(2) + 3), { color: PAL.amber, size: 28 }); } },
+  { at: L(3) - 0.2, name: 'brain', tr: 'zoom', focus: [W / 2, 520], draw: (c, t) => { P.bg(c, W, H, 'night', t); P.bgCells(c, W, H, t, '#ffffff', 2, 0.05); P.glow(c, W / 2, 420, 180, PAL.pink, 0.5); P.brain(c, W / 2, 420, 110);
+    const k = ramp(t, L(3) + 1, L(3) + 3); for (let i = 0; i < 5; i++) P.neuron(c, W / 2, 520, 120 + i * 120, 980, t, i / 5 < k ? 1 : 0.1, 3, PAL.yellow); P.label(c, 'Nervous system learns', W / 2, 200, pop(t, L(3)), { color: PAL.pink }); P.label(c, 'More fibres fire together', W / 2, 1080, pop(t, L(3) + 2.5), { color: PAL.yellow, size: 28 }); } },
+  { at: L(4) - 0.2, name: 'grow', tr: 'zoom', focus: [W / 2, 640], draw: (c, t) => { P.bg(c, W, H, 'plum', t); P.bgCells(c, W, H, t, PAL.pink, 3, 0.05); const g = ramp(t, L(4), L(4) + 3);
+    P.muscleBelly(c, W / 2, 680, 440, 120 + 60 * g, 0.05, 0.3, t, { col: '#e8475b' }); P.sparkles(c, W / 2, 680, 200, t, g, 2); P.calendar(c, W / 2, 330, 0.9, '3 WEEKS', 'growth measurable', pop(t, L(4) + 1.6)); } },
+  { at: L(5) - 0.2, name: 'curve', tr: 'slide', draw: (c, t) => { P.bg(c, W, H, 'deep', t); P.bgCells(c, W, H, t, PAL.cyan, 3, 0.05); P.lineChart(c, 100, 980, 520, 520, [0.05, 0.4, 0.58, 0.68, 0.74, 0.78, 0.81, 0.83, 0.845, 0.855], ramp(t, L(5), L(5) + 3), PAL.amber, 'MUSCLE');
+    P.label(c, 'Year 1 = fastest gains', W / 2, 200, pop(t, L(5) + 3), { color: PAL.amber }); P.label(c, 'Closer to your limit = slower', W / 2, 300, pop(t, L(5) + 1.2), { color: PAL.cyan, size: 26 }); } },
+  { at: L(6) - 0.2, name: 'keep', tr: 'slide', draw: (c, t) => { P.gym(c, W, H, t); const k = 0.5 - 0.5 * Math.cos(t * 2.4); P.lifter(c, W / 2 - 80, H * 0.86, 1.15, { arms: 'bar', arms2: 'press', mix: k, bar: true, blink: A.blink(t) }); P.person(c, W / 2 + 190, H * 0.86, 0.9, 'coach', { talk: A.talk(t), arms: 'down', look: -0.5 });
+    P.check(c, '+ a little weight', W / 2, 200, true, pop(t, L(6) + 1), 28); P.check(c, '+ one rep', W / 2, 290, true, pop(t, L(6) + 2), 28); P.check(c, 'Be patient', W / 2, 380, true, pop(t, L(6) + 3), 28); if (t > L(7) - 0.3) A.next(c, t, 'REST BETWEEN SETS'); } },
+]; }, sfx: (A) => [['riser', 0, { dur: 0.6, gain: 0.3 }], ['blip', A.L(2) + 0.6, { f: 'C6' }], ['error', A.L(2) + 3, { gain: 0.3 }], ['powerup', A.L(3) + 1, { gain: 0.4 }], ['ding', A.L(4) + 1.6, { f: 'E6' }], ['pop', A.L(6) + 1, { f: 700 }], ['pop', A.L(6) + 2, { f: 800 }], ['pop', A.L(6) + 3, { f: 900 }]] });
