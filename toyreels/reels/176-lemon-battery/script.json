@@ -1,0 +1,54 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "These lemons are powering a light.",
+   "say": "These lemons are powering a light."
+  },
+  {
+   "shot": "take",
+   "cap": "You need a lemon, a copper coin, and a zinc coated nail.",
+   "say": "You need a lemon, a copper coin, and a zinc coated nail."
+  },
+  {
+   "shot": "roll",
+   "cap": "Roll the lemon first, to free up the juice inside.",
+   "say": "Roll the lemon first, to free up the juice inside."
+  },
+  {
+   "shot": "push",
+   "cap": "Push the nail into one side, and the coin into the other. Close, but not touching.",
+   "say": "Push the nail into one side, and the coin into the other. Close, but not touching."
+  },
+  {
+   "shot": "inside",
+   "cap": "Inside, the acid pulls electrons off the zinc. They want to reach the copper.",
+   "say": "Inside, the acid pulls electrons off the zinc. They want to reach the copper."
+  },
+  {
+   "shot": "wire",
+   "cap": "So give them a path. Connect the nail and the coin with a wire.",
+   "say": "So give them a path. Connect the nail and the coin with a wire."
+  },
+  {
+   "shot": "chain",
+   "cap": "One lemon makes less than one volt, so link four lemons in a row, coin to nail.",
+   "say": "One lemon makes less than one volt, so link four lemons in a row, coin to nail."
+  },
+  {
+   "shot": "led",
+   "cap": "Add a small LED, long leg to the copper end.",
+   "say": "Add a small LED, long leg to the copper end."
+  },
+  {
+   "shot": "glow",
+   "cap": "And it glows. A battery made from fruit.",
+   "say": "And it glows. A battery made from fruit."
+  },
+  {
+   "shot": "outro",
+   "cap": "Every battery works like this. Two metals, and a chemical in between.",
+   "say": "Every battery works like this. Two metals, and a chemical in between."
+  }
+ ]
+}

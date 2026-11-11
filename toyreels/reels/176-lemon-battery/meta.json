@@ -1,0 +1,22 @@
+{
+ "title": "Light an LED with lemons 🍋💡",
+ "caption": "Four lemons, four nails, four coins, one tiny light 🍋💡\nWould you try this? 👇",
+ "hashtags": [
+  "diy",
+  "science",
+  "lemonbattery",
+  "experiment",
+  "stem",
+  "3danimation",
+  "howto",
+  "satisfying"
+ ],
+ "first_comment": "What fruit should we try next? 🍊👇",
+ "cover_t": 38,
+ "format": "cinestory3d-diy",
+ "sources": [
+  "Lemon cell: zinc and copper electrodes in citric acid give about 0.9 V; several cells in series light an LED (Exploratorium / Royal Society of Chemistry classroom experiments)",
+  "Red LEDs need roughly 1.8-2 V forward voltage (manufacturer datasheets, e.g. Kingbright)"
+ ],
+ "kind": "diy"
+}

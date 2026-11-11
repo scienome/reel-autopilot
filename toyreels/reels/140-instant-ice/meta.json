@@ -14,9 +14,9 @@
  "first_comment": "Did it work for you? Tell us how long you froze it 👇",
  "cover_t": 1.5,
  "format": "cinestory3d-diy",
- "sample": true,
  "sources": [
   "Supercooling: pure water can stay liquid below 0 °C without nucleation sites; a shock or an ice crystal starts freezing (US Geological Survey Water Science School; Royal Society of Chemistry, 'supercooled water')",
   "Typical home method: purified bottled water, about 2-2.5 hours in a home freezer (time varies by freezer)"
- ]
+ ],
+ "kind": "diy"
 }
