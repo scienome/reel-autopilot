@@ -10,6 +10,7 @@
      t, n (shot id), a, b (shot start/end), p (0..1 through the shot), e (eased p), at(k) (start of the shot's k-th line), seg(t0, t1) and E.
      A shot returns a camera view { pos, look, fov, focus, blur, shake } with positions inside the toy world. Y.tag(ctx, S, text, obj, off, t0, colour)
      pins a label to a 3D thing. Captions (one *RED word, | for a new line), the LET'S FIX THAT badge and screen shake are drawn for you.
+   badge: false hides the top badge; captions: false skips the popping captions (a reel then draws its own subtitles in overlays).
    Rules: everything random uses Math.random seeded by the engine (never reseed). Keep people and the fix in the middle third:
    captions sit at y 845. Every shot moves the camera a little (push, orbit, follow, tilt). Things are built piece by piece, not popped in. */
 (() => {
@@ -114,9 +115,9 @@
       if (v.shake) { const k = v.shake; v.pos = [v.pos[0] + Math.sin(t * 53) * 0.12 * k, v.pos[1] + Math.sin(t * 41) * 0.1 * k, v.pos[2]]; }
       D.render3d(ctx, { ...v, pos: W(...v.pos), look: W(...v.look) });
       ctx.save(); ctx.filter = 'saturate(1.7) contrast(1.15)'; ctx.drawImage(ctx.canvas, 0, 0); ctx.restore(); // rich toy colours
-      D.label(ctx, o.badge || "LET'S FIX THAT", 360, 118, null, null, t, 0, 1e9, { bg: '#c2412c', fg: '#fff', size: 30 });
+      if (o.badge !== false) D.label(ctx, o.badge || "LET'S FIX THAT", 360, 118, null, null, t, 0, 1e9, { bg: '#c2412c', fg: '#fff', size: 30 });
       if (o.overlays) o.overlays(ctx, St);
-      L.forEach((l) => D.caption(ctx, l.cap, t, l.t0, l.t1 + 0.1, o.capY || 845));
+      if (o.captions !== false) L.forEach((l) => D.caption(ctx, l.cap, t, l.t0, l.t1 + 0.1, o.capY || 845));
     }
     const at = (sh, k = 0) => (lines(sh)[k] || { t0: st(sh) }).t0;
     function score(k) {

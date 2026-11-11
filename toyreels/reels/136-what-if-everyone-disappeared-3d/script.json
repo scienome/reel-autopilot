@@ -1,0 +1,13 @@
+{ "lines": [
+ {"shot":"hook","cap":"What if everyone disappeared?","say":"What if every person on Earth disappeared, right now?"},
+ {"shot":"s2","cap":"Nobody is driving anymore.","say":"Two seconds later. Cars roll to a stop. Nobody is driving."},
+ {"shot":"d1","cap":"Power plants shut down. The lights go out.","say":"Day one. The power plants shut down. One by one, the lights go out."},
+ {"shot":"w1","cap":"The food goes bad. The rats move in.","say":"One week. The food in every shop goes bad. The rats move in."},
+ {"shot":"y1","cap":"Weeds crack the road. Deer walk the high street.","say":"One year. Weeds crack the road. Deer walk down the high street."},
+ {"shot":"y10","cap":"The street becomes a meadow.","say":"Ten years. The street becomes a meadow. Shop windows fall out."},
+ {"shot":"y100","cap":"Roofs cave in. Trees grow through the bakery.","say":"One hundred years. Roofs cave in. A tree grows right through the bakery."},
+ {"shot":"y1000","cap":"Only broken stone is left.","say":"One thousand years. The town is a forest. Only broken stone is left."},
+ {"shot":"y10000","cap":"Ice. Nobody could tell a town was here.","say":"Ten thousand years. The ice comes back. Nobody could tell a town was ever here."},
+ {"shot":"tank","cap":"Except one thing.","say":"Except one thing. A shiny gold tank. Still parked. Not a scratch."},
+ {"shot":"end","cap":"Who parked it?","say":"Who parked it? Tell me in the comments."}
+] }

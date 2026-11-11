@@ -53,7 +53,13 @@ Owner's picks for week 2:
 - **Thought Bubble (povreels):** NO MORE POV (owner). New format "What happens if..." (body/science, real facts,
   funny soft-3D characters). Make one sample first, then 21.
 - **Socho Zara riddles:** 7 animal riddles (same style), 7 maths/number puzzles, 7 detective/logic riddles. Samples first for the new kinds.
-- **toyboxtheory:** wait for the owner's verdict on sample 135, then 21 in the approved style.
+- **toyboxtheory:** owner's chosen style (11 Nov): the TIME-LAPSE format of their reference video: ONE locked toy scene that changes stage by stage,
+  a small counter top-left (e.g. TIME WITHOUT HUMANS 1,000 YEARS), a big "+1 YEAR" jump card with a soft wash between stages, one quiet italic
+  subtitle above the scene (`badge: false, captions: false` in `D.toy.reel`; no popping captions over the action). Sample: 136 (everyone disappeared).
+  Owner's 16 topics (all picked): What if: everyone disappeared, the Moon disappeared, internet down a year, Earth stopped spinning.
+  Over time: town grows 1800 to today, life of a tree 500 years, one street over 100 years, dinosaurs to today on one spot.
+  How it's built: skyscraper in 60 days, a bridge, a road, pizza farm to plate. History/nature: castle over 1,000 years, Stone Age to today,
+  volcano island is born, Ice Age comes and goes. Posting stays paused until the owner approves sample 136.
 
 ---
 
