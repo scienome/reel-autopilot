@@ -202,7 +202,7 @@ Folder: [`dave-reels/`](dave-reels/)
 | [43-dave-grows-an-inch](dave-reels/43-dave-grows-an-inch.mp4) | What if you grew 1 inch every day? | Waiting to post |
 | [44-gimli-glider](dave-reels/44-gimli-glider.mp4) | The jet that ran out of fuel because of maths | Waiting to post |
 
-## Toy reels (Brick Toy) (149)
+## Toy reels (Brick Toy) (151)
 Folder: [`toy-reels/`](toy-reels/)
 
 | Video | Title | Status |
@@ -272,7 +272,9 @@ Folder: [`toy-reels/`](toy-reels/)
 | [161-ass-guards-sheep](toy-reels/161-ass-guards-sheep.mp4) | Farmers hire an ass to protect their sheep 🫏🐑 | Waiting to post |
 | [162-clever-hans](toy-reels/162-clever-hans.mp4) | The horse who could 'do maths' 🐴➕ | Waiting to post |
 | [163-fox-scream](toy-reels/163-fox-scream.mp4) | That woman screaming at night? It's a fox 🦊😱 | Waiting to post |
+| [166-moon-pulling-out](toy-reels/166-moon-pulling-out.mp4) | The Moon is slowly pulling out 🌙 | Waiting to post |
 | [17-einstein-art-school](toy-reels/17-einstein-art-school.mp4) | Einstein Went Back In Time To Get Hitler Into Art School 🎨 | Posted (Instagram + YouTube) |
+| [171-uranus-on-its-side](toy-reels/171-uranus-on-its-side.mp4) | Something hit Uranus so hard, it's still on its side 🪐 | Waiting to post |
 | [18-santa-layoffs](toy-reels/18-santa-layoffs.mp4) | Santa Replaced The Elves With Robots. Big Mistake. 🎅 | Posted (Instagram + YouTube) |
 | [19-batguy-electricity-bill](toy-reels/19-batguy-electricity-bill.mp4) | Bat-Guy's Worst Villain Was The Electricity Bill 🦇 | Waiting to post |
 | [20-illuminati-moon-landing](toy-reels/20-illuminati-moon-landing.mp4) | The Illuminati Faked The Moon Landing... ON THE MOON 🌕 | Posted (Instagram + YouTube) |
