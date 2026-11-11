@@ -54,9 +54,16 @@ def one_take(rid, reel, out, takes, cfg, lines):
         if v < th and st0 is None:
             st0 = i
         elif v >= th and st0 is not None:
-            if i - st0 >= 6 and st0 > 5:
+            if i - st0 >= 5 and st0 > 5:
                 pauses.append((st0 / 100, i / 100))
             st0 = None
+    merged = []  # quiet runs split by a blip of breath are one pause
+    for pa in pauses:
+        if merged and pa[0] - merged[-1][1] <= 0.05:
+            merged[-1] = (merged[-1][0], pa[1])
+        else:
+            merged.append(pa)
+    pauses = merged
     n = [len(ln['say']) + 1 for ln in lines]
     want, acc = [], 0
     for i in range(len(lines) - 1):

@@ -1,0 +1,54 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Lost, with only muddy water? Watch this.",
+   "say": "Lost, with only muddy water? Watch this."
+  },
+  {
+   "shot": "cut",
+   "cap": "Cut the bottom off a plastic bottle and turn it upside down.",
+   "say": "Cut the bottom off a plastic bottle and turn it upside down."
+  },
+  {
+   "shot": "cloth",
+   "cap": "Push a piece of cloth into the neck.",
+   "say": "Push a piece of cloth into the neck."
+  },
+  {
+   "shot": "charcoal",
+   "cap": "Add a layer of crushed charcoal, from a campfire.",
+   "say": "Add a layer of crushed charcoal, from a campfire."
+  },
+  {
+   "shot": "sand",
+   "cap": "Then fine sand, then coarse sand, then small stones.",
+   "say": "Then fine sand, then coarse sand, then small stones."
+  },
+  {
+   "shot": "pour",
+   "cap": "Now pour the muddy water in the top.",
+   "say": "Now pour the muddy water in the top."
+  },
+  {
+   "shot": "inside",
+   "cap": "Stones catch the leaves, sand traps the mud, and charcoal grabs smells and some chemicals.",
+   "say": "Stones catch the leaves, sand traps the mud, and charcoal grabs smells and some chemicals."
+  },
+  {
+   "shot": "clear",
+   "cap": "And what drips out is clear.",
+   "say": "And what drips out is clear."
+  },
+  {
+   "shot": "boil",
+   "cap": "But clear is not safe. Germs still get through, so boil it for at least one minute before you drink it.",
+   "say": "But clear is not safe. Germs still get through, so boil it for at least one minute before you drink it."
+  },
+  {
+   "shot": "outro",
+   "cap": "Save this. You might need it one day.",
+   "say": "Save this. You might need it one day."
+  }
+ ]
+}

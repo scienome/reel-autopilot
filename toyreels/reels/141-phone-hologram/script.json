@@ -1,0 +1,54 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "This jellyfish is floating above a phone. Here's how.",
+   "say": "This jellyfish is floating above a phone. Here's how."
+  },
+  {
+   "shot": "case",
+   "cap": "Take an old CD case, or any clear plastic.",
+   "say": "Take an old CD case, or any clear plastic."
+  },
+  {
+   "shot": "draw",
+   "cap": "Draw this shape. One centimetre on top, six at the bottom, three and a half tall.",
+   "say": "Draw this shape. One centimetre on top, six at the bottom, three and a half tall."
+  },
+  {
+   "shot": "cut",
+   "cap": "Cut out four of them.",
+   "say": "Cut out four of them."
+  },
+  {
+   "shot": "tape",
+   "cap": "Tape the edges together into a little pyramid.",
+   "say": "Tape the edges together into a little pyramid."
+  },
+  {
+   "shot": "video",
+   "cap": "Find a hologram video. Four copies of the same thing, on black.",
+   "say": "Find a hologram video. Four copies of the same thing, on black."
+  },
+  {
+   "shot": "place",
+   "cap": "Stand the pyramid upside down in the middle, and turn off the lights.",
+   "say": "Stand the pyramid upside down in the middle, and turn off the lights."
+  },
+  {
+   "shot": "inside",
+   "cap": "Each side of the plastic reflects one copy toward your eye. They meet in the middle, so it seems to float.",
+   "say": "Each side of the plastic reflects one copy toward your eye. They meet in the middle, so it seems to float."
+  },
+  {
+   "shot": "ghost",
+   "cap": "It's a stage trick that's over a hundred and fifty years old, called Pepper's ghost.",
+   "say": "It's a stage trick that's over a hundred and fifty years old, called Pepper's ghost."
+  },
+  {
+   "shot": "outro",
+   "cap": "What would you put in yours?",
+   "say": "What would you put in yours?"
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "This water is about to freeze. In one second.",
+   "say": "This water is about to freeze. In one second."
+  },
+  {
+   "shot": "take",
+   "cap": "Take a sealed bottle of purified water. Tap water often won't work.",
+   "say": "Take a sealed bottle of purified water. Tap water often won't work."
+  },
+  {
+   "shot": "freezer",
+   "cap": "Lay it in the freezer for about two and a half hours.",
+   "say": "Lay it in the freezer for about two and a half hours."
+  },
+  {
+   "shot": "out",
+   "cap": "Take it out gently. It's still liquid, but now it's colder than zero.",
+   "say": "Take it out gently. It's still liquid, but now it's colder than zero."
+  },
+  {
+   "shot": "inside",
+   "cap": "Inside, the water wants to freeze, but it has nothing to start on. No dust, no bubbles.",
+   "say": "Inside, the water wants to freeze, but it has nothing to start on. No dust, no bubbles."
+  },
+  {
+   "shot": "tap",
+   "cap": "So give it a start. One sharp tap.",
+   "say": "So give it a start. One sharp tap."
+  },
+  {
+   "shot": "freeze",
+   "cap": "And the ice races through the whole bottle.",
+   "say": "And the ice races through the whole bottle."
+  },
+  {
+   "shot": "pour",
+   "cap": "Or pour it slowly onto an ice cube, and build a tower of slush.",
+   "say": "Or pour it slowly onto an ice cube, and build a tower of slush."
+  },
+  {
+   "shot": "outro",
+   "cap": "It's called supercooling. Would you try it?",
+   "say": "It's called supercooling. Would you try it?"
+  }
+ ]
+}
