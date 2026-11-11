@@ -1,0 +1,49 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Your dog isn't being dirty when he humps.",
+   "say": "Your dog isn't being dirty when he humps."
+  },
+  {
+   "shot": "guest",
+   "cap": "A guest sits down. And the dog grabs their leg. Awkward.",
+   "say": "A guest sits down. And the dog grabs their leg. Awkward."
+  },
+  {
+   "shot": "not",
+   "cap": "But most of the time, it has nothing to do with mating. Even neutered males and females do it.",
+   "say": "But most of the time, it has nothing to do with mating. Even neutered males and females do it."
+  },
+  {
+   "shot": "play",
+   "cap": "Often it's play. Too much excitement, and nowhere to put it.",
+   "say": "Often it's play. Too much excitement, and nowhere to put it."
+  },
+  {
+   "shot": "stress",
+   "cap": "Sometimes it's stress, or a way to get your attention. Because it works. Everyone reacts.",
+   "say": "Sometimes it's stress, or a way to get your attention. Because it works. Everyone reacts."
+  },
+  {
+   "shot": "toy",
+   "cap": "Some dogs just have a favourite pillow. It feels good, so they do it.",
+   "say": "Some dogs just have a favourite pillow. It feels good, so they do it."
+  },
+  {
+   "shot": "fix",
+   "cap": "The fix? Stay calm. Calmly move them off, then give them something better to do, like a toy or a sit.",
+   "say": "The fix? Stay calm. Calmly move them off, then give them something better to do, like a toy or a sit."
+  },
+  {
+   "shot": "vet",
+   "cap": "If it suddenly starts a lot, ask a vet. It can sometimes be a sign of an itch or a problem down there.",
+   "say": "If it suddenly starts a lot, ask a vet. It can sometimes be a sign of an itch or a problem down there."
+  },
+  {
+   "shot": "outro",
+   "cap": "So relax. He's not being dirty. He's just over excited.",
+   "say": "So relax. He's not being dirty. He's just over excited."
+  }
+ ]
+}

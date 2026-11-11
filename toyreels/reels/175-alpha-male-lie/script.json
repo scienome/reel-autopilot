@@ -1,0 +1,49 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "The alpha male is a lie. And the man who made it famous took it back.",
+   "say": "The alpha male is a lie. And the man who made it famous took it back."
+  },
+  {
+   "shot": "myth",
+   "cap": "The story goes: every wolf pack is ruled by an alpha, who fought his way to the top.",
+   "say": "The story goes: every wolf pack is ruled by an alpha, who fought his way to the top."
+  },
+  {
+   "shot": "captive",
+   "cap": "That idea came from studies of captive wolves. Strangers, thrown together in a zoo enclosure.",
+   "say": "That idea came from studies of captive wolves. Strangers, thrown together in a zoo enclosure."
+  },
+  {
+   "shot": "fight",
+   "cap": "Of course they fought. They weren't a family.",
+   "say": "Of course they fought. They weren't a family."
+  },
+  {
+   "shot": "mech",
+   "cap": "In 1970, biologist David Mech wrote a famous book using the word alpha. It sold for decades.",
+   "say": "In 1970, biologist David Mech wrote a famous book using the word alpha. It sold for decades."
+  },
+  {
+   "shot": "wild",
+   "cap": "But then he spent years watching wild wolves in the Arctic. And saw something else.",
+   "say": "But then he spent years watching wild wolves in the Arctic. And saw something else."
+  },
+  {
+   "shot": "family",
+   "cap": "A wild pack is a family. A mother and father, and their pups. The leaders are just the parents.",
+   "say": "A wild pack is a family. A mother and father, and their pups. The leaders are just the parents."
+  },
+  {
+   "shot": "sorry",
+   "cap": "Mech has spent decades asking people to stop using alpha. He even asked his publisher to stop printing the book.",
+   "say": "Mech has spent decades asking people to stop using alpha. He even asked his publisher to stop printing the book."
+  },
+  {
+   "shot": "outro",
+   "cap": "So the real alpha? He's just a dad.",
+   "say": "So the real alpha? He's just a dad."
+  }
+ ]
+}

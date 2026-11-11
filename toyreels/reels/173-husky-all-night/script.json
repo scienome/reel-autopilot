@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "This dog can go all night, and never get tired.",
+   "say": "This dog can go all night, and never get tired."
+  },
+  {
+   "shot": "race",
+   "cap": "The Iditarod. About a thousand miles across Alaska, in snow and darkness.",
+   "say": "The Iditarod. About a thousand miles across Alaska, in snow and darkness."
+  },
+  {
+   "shot": "day",
+   "cap": "Sled dogs run up to a hundred miles a day, for days in a row.",
+   "say": "Sled dogs run up to a hundred miles a day, for days in a row."
+  },
+  {
+   "shot": "fuel",
+   "cap": "For an athlete, that should mean running out of fuel, and crashing.",
+   "say": "For an athlete, that should mean running out of fuel, and crashing."
+  },
+  {
+   "shot": "switch",
+   "cap": "But scientists found something strange. After the first days, these dogs switch the way their bodies burn energy.",
+   "say": "But scientists found something strange. After the first days, these dogs switch the way their bodies burn energy."
+  },
+  {
+   "shot": "inside",
+   "cap": "Their muscles stop draining their own fuel stores, and run mostly on fat from their food. Like a car that refuels while it drives.",
+   "say": "Their muscles stop draining their own fuel stores, and run mostly on fat from their food. Like a car that refuels while it drives."
+  },
+  {
+   "shot": "eat",
+   "cap": "That's why they eat up to ten thousand calories a day during a race.",
+   "say": "That's why they eat up to ten thousand calories a day during a race."
+  },
+  {
+   "shot": "outro",
+   "cap": "So yes. He really can go all night. And all day. For a week.",
+   "say": "So yes. He really can go all night. And all day. For a week."
+  }
+ ]
+}
