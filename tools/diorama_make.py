@@ -52,15 +52,22 @@ def align_lines(wav, lines):
     for blk in m.get_matching_blocks():
         for k in range(blk.size):
             at[blk.a + k] = blk.b + k
-    lo, hi = [], []
+    lo, hi, wt = [], [], []
     for i in range(len(lines)):
         idx = [j for j, o in enumerate(owner) if o == i and j in at]
         if not idx:
             return None
         lo.append(float(words[at[idx[0]]].start)); hi.append(float(words[at[idx[-1]]].end))
+        mine = [j for j, o in enumerate(owner) if o == i]
+        known = {j: (float(words[at[j]].start), float(words[at[j]].end)) for j in mine if j in at}
+        row, last = [], lo[-1]
+        for j in mine:  # words the recogniser missed take the time of the word before
+            row.append([round(known[j][0], 3), round(known[j][1], 3)] if j in known else [round(last, 3), round(last + 0.2, 3)])
+            last = row[-1][1]
+        wt.append(row)
     for i in range(1, len(lines)):  # keep them in order
         lo[i] = max(lo[i], hi[i - 1]); hi[i] = max(hi[i], lo[i] + 0.3)
-    return lo, hi
+    return lo, hi, wt
 
 
 def one_take(rid, reel, out, takes, cfg, lines):
@@ -82,14 +89,14 @@ def one_take(rid, reel, out, takes, cfg, lines):
     lo = hi = None
     aj = mp3[:-4] + '.json'  # word-aligned line times, cached next to the take (made locally with faster-whisper)
     if os.path.exists(aj):
-        al = json.load(open(aj)); lo, hi = al['lo'], al['hi']
+        al = json.load(open(aj)); lo, hi, wt = al['lo'], al['hi'], al.get('words')
     else:
         al = align_lines(wav, lines)
         if al:
-            lo, hi = al
-            json.dump({'lo': lo, 'hi': hi}, open(aj, 'w'))
+            lo, hi, wt = al
+            json.dump({'lo': lo, 'hi': hi, 'words': wt}, open(aj, 'w'))
     if lo is not None:
-        return finish(rid, reel, out, lines, audio, dur, lo, hi)
+        return finish(rid, reel, out, lines, audio, dur, lo, hi, wt)
     import array, math
     smp = array.array('h', audio)
     win = 441  # 10 ms
@@ -139,8 +146,11 @@ def one_take(rid, reel, out, takes, cfg, lines):
     return finish(rid, reel, out, lines, audio, dur, lo, hi)
 
 
-def finish(rid, reel, out, lines, audio, dur, lo, hi):
+def finish(rid, reel, out, lines, audio, dur, lo, hi, wt=None):
     timed = [{'shot': ln['shot'], 'cap': ln['cap'], 't0': round(LEAD_IN + lo[i], 3), 't1': round(LEAD_IN + hi[i], 3)} for i, ln in enumerate(lines)]
+    if wt:  # word times (captions pop on their own words)
+        for i, ln in enumerate(timed):
+            ln['words'] = [[round(LEAD_IN + a_, 3), round(LEAD_IN + b_, 3)] for a_, b_ in wt[i]]
     shots = {}
     for i, ln in enumerate(timed):  # a shot cuts in the middle of the pause before its line
         shots.setdefault(ln['shot'], round(max(0, (LEAD_IN + (hi[i - 1] + lo[i]) / 2) if i else 0), 3))

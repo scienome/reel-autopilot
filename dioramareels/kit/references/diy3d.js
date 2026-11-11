@@ -72,6 +72,7 @@ window.DIY = (build, opt = {}) => {
   const ORDER = L.map((l) => l.shot); const st = (n) => TM.shots[n];
   // captions: 1-3 words at a time, timed inside each voice line by length
   const CH = []; L.forEach((l) => { const ws = (l.cap || '').split(/\s+/).filter(Boolean); const chunks = []; for (let i = 0; i < ws.length;) { const n = ws.length - i <= 3 ? ws.length - i : (ws[i + 1] && ws[i + 1].length > 7 ? 2 : 3); chunks.push(ws.slice(i, i + n).join(' ')); i += n; }
+    if (l.words && l.words.length === ws.length) { let wi = 0; chunks.forEach((c, ci) => { const n = c.split(/\s+/).length, a0 = l.words[wi][0], nx = ci + 1 < chunks.length ? l.words[wi + n][0] : l.t1 + 0.15; CH.push([a0, Math.max(a0 + 0.2, nx), c.replace(/[,.]$/, '')]); wi += n; }); return; } // word-timed
     const tot = chunks.reduce((s, c) => s + c.length + 2, 0); let acc = l.t0; chunks.forEach((c) => { const d = (l.t1 - l.t0) * (c.length + 2) / tot; CH.push([acc, acc + d, c.replace(/[,.]$/, '')]); acc += d; }); });
   function caption(ctx, t) { const c = CH.find(([a, b]) => t >= a && t < b + 0.05); if (!c) return; ctx.save(); ctx.font = '900 54px "Nunito", "Poppins", "Arial Black", sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
     ctx.shadowColor = 'rgba(0,0,0,0.75)'; ctx.shadowBlur = 14; ctx.shadowOffsetY = 3; ctx.fillStyle = '#ffffff'; ctx.fillText(c[2], 360, 1050); ctx.restore(); }
