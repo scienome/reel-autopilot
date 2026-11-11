@@ -39,6 +39,24 @@ or anything that posts publicly.
 
 ---
 
+## 0c. WEEK 2 PLAN (owner, 11 Nov 2026): 16-22 Nov content for every channel
+
+Week 1 (11-15 Nov) was made on 11 Nov: Elites Endgame 017-034, Musclyth 037-056, Lokvara 065-076 + Parshuram 113-118, POV 062-064.
+Toy posting is PAUSED (`toyreels/posting.json` "paused": true) until the owner approves the new What-if style (sample 135).
+Owner's picks for week 2:
+- **Lokvara regular (4 slots):** four NEW series, 7 parts each, rotating one per slot per day: रावण से पहले: असुरों के रहस्य;
+  देवताओं के वाहन क्यों? (skip Garuda and the peacock, already told); मंदिरों के रहस्य; श्रीकृष्ण के अनसुने किस्से. The week-1 series stop at part 3.
+- **Lokvara 21:00:** भीष्म की गाथा (7 parts, Sudhir narrates) after Parshuram ends on 18 Nov.
+- **Musclyth:** Why Does This Happen? and Muscle Building continue; Supplements and Exercise rest; two NEW series:
+  "Gym Myths Busted" and "Diet & Food". One reel per series per day (28).
+- **Elites Endgame:** same mix (money traps, rules, family twists, owed sequels) plus new kinds of stories (21).
+- **Thought Bubble (povreels):** NO MORE POV (owner). New format "What happens if..." (body/science, real facts,
+  funny soft-3D characters). Make one sample first, then 21.
+- **Socho Zara riddles:** 7 animal riddles (same style), 7 maths/number puzzles, 7 detective/logic riddles. Samples first for the new kinds.
+- **toyboxtheory:** wait for the owner's verdict on sample 135, then 21 in the approved style.
+
+---
+
 ## 0b. CURRENT STATE OF EVERY CHANNEL (11 Nov 2026, 13:45 IST). Read this first; it overrides older status notes below.
 
 **Two things block new reels everywhere:**
