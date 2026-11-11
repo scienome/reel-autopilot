@@ -28,6 +28,80 @@ def tts(text, cfg, path):
     open(path, 'wb').write(urllib.request.urlopen(req, timeout=300).read())
 
 
+def one_take(rid, reel, out, takes, cfg, lines):
+    """Cartesia reels: the whole script in ONE request (no tone reset between lines), then each line's start and end is
+    found from the natural pauses: for every line break, the pause nearest to where it should fall by text length."""
+    text = ' '.join(ln['say'].strip() for ln in lines)
+    name = hashlib.sha1(f"{cfg['voice_id']}|{cfg['model_id']}|onetake|{text}".encode()).hexdigest()[:16] + '.mp3'
+    mp3 = os.path.join(takes, name)
+    if not os.path.exists(mp3):
+        print('voicing the whole script in one take', flush=True)
+        tts(text, cfg, mp3)
+    for f in set(os.listdir(takes)) - {name}:
+        os.remove(os.path.join(takes, f))
+    wav = os.path.join(out, 'take.wav')
+    subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', mp3, '-ac', '1', '-ar', '44100', '-sample_fmt', 's16', wav], check=True)
+    with wave.open(wav) as w:
+        audio = w.readframes(w.getnframes())
+        dur = w.getnframes() / 44100
+    import array, math
+    smp = array.array('h', audio)
+    win = 441  # 10 ms
+    db = [20 * math.log10(math.sqrt(sum(x * x for x in smp[i:i + win]) / win) + 1) for i in range(0, len(smp) - win, win)]
+    th = sorted(db)[len(db) // 10] + 3  # quiet = within 3 dB of the quietest tenth of the take
+    pauses, st0 = [], None
+    for i, v in enumerate(db + [999]):
+        if v < th and st0 is None:
+            st0 = i
+        elif v >= th and st0 is not None:
+            if i - st0 >= 6 and st0 > 5:
+                pauses.append((st0 / 100, i / 100))
+            st0 = None
+    n = [len(ln['say']) + 1 for ln in lines]
+    want, acc = [], 0
+    for i in range(len(lines) - 1):
+        acc += n[i]
+        want.append(dur * acc / sum(n))
+    # monotonic match of line breaks to pauses: close to where the text says, longer pauses preferred (dynamic programming)
+    B, P = len(want), len(pauses)
+    cost = lambda i, j: abs((pauses[j][0] + pauses[j][1]) / 2 - want[i]) - 3 * (pauses[j][1] - pauses[j][0])
+    INF = float('inf')
+    dp = [[INF] * (P + 1) for _ in range(B + 1)]
+    for j in range(P + 1):
+        dp[0][j] = 0
+    for i in range(1, B + 1):
+        for j in range(1, P + 1):
+            dp[i][j] = min(dp[i][j - 1], dp[i - 1][j - 1] + cost(i - 1, j - 1))
+    cuts, i, j = [], B, P
+    while i > 0 and j > 0:
+        if dp[i][j] == dp[i][j - 1]:
+            j -= 1
+        else:
+            cuts.append(pauses[j - 1]); i -= 1; j -= 1
+    cuts.reverse()
+    if len(cuts) < B:  # not enough pauses: fall back to text-length positions
+        cuts = [(w_, w_) for w_ in want]
+    lo = [0.0] + [b for a, b in cuts]
+    hi = [a for a, b in cuts] + [dur]
+    timed = [{'shot': ln['shot'], 'cap': ln['cap'], 't0': round(LEAD_IN + lo[i], 3), 't1': round(LEAD_IN + hi[i], 3)} for i, ln in enumerate(lines)]
+    shots = {}
+    for i, ln in enumerate(timed):  # a shot cuts in the middle of the pause before its line
+        shots.setdefault(ln['shot'], round(max(0, (LEAD_IN + (hi[i - 1] + lo[i]) / 2) if i else 0), 3))
+    voice, timing = os.path.join(out, 'voice.wav'), os.path.join(out, 'timing.js')
+    with wave.open(voice, 'wb') as w:
+        w.setnchannels(1)
+        w.setsampwidth(2)
+        w.setframerate(44100)
+        w.writeframes(b'\0\0' * int(LEAD_IN * 44100) + audio)
+    total = round(LEAD_IN + dur + TAIL, 2)
+    open(timing, 'w', encoding='utf-8').write('window.TIMING = ' + json.dumps({'lines': timed, 'shots': shots, 'duration': total}, ensure_ascii=False) + ';\n')
+    if '--voice-only' in sys.argv:
+        print(f'{rid}: voice saved (one take, {round(dur, 1)} s), video skipped')
+        return
+    subprocess.run([sys.executable, os.path.join(KIT, 'scripts', 'render.py'), 'video', os.path.join(reel, 'reel.js'), os.path.join(out, rid + '.mp4'), '--timing', timing, '--voice', voice], check=True)
+    print(f'{rid}: {total} s')
+
+
 def main(rid):
     reel, out = os.path.join(HOME, 'reels', rid), os.path.join(ROOT, 'out', rid)
     takes = os.path.join(reel, 'voice_lines')
@@ -38,6 +112,8 @@ def main(rid):
     if os.path.exists(vo):
         cfg = dict(cfg, **json.load(open(vo)))
     lines = json.load(open(os.path.join(reel, 'script.json'), encoding='utf-8'))['lines']
+    if cfg.get('provider') == 'cartesia' and cfg.get('one_take', True):
+        return one_take(rid, reel, out, takes, cfg, lines)
     keep, pcm, timed, last, t = set(), [b'\0\0' * int(LEAD_IN * 44100)], [], None, LEAD_IN
     for ln in lines:
         if last is not None:
