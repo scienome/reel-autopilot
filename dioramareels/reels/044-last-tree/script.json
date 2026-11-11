@@ -1,0 +1,8 @@
+{ "lines": [
+ {"shot": "hook", "cap": "", "say": "Your city has one tree left. Ten minutes under it costs twenty dollars.", "cold": true},
+ {"shot": "queue", "cap": "*SIX HOURS.", "say": "The queue is six hours long. People bring their grandparents. Some cry."},
+ {"shot": "sit", "cap": "*TEN MINUTES.", "say": "Your turn. You sit. It smells like rain. Best ten minutes of your year."},
+ {"shot": "kid", "cap": "*A LABEL.", "say": "A kid next to you peels back the bark. There is a label."},
+ {"shot": "plastic", "cap": "*PLASTIC.", "say": "Made in the tower. Plastic. The smell comes from a speaker."},
+ {"shot": "end", "cap": "", "say": "Would you still pay to sit under it? Write it in the comments."}
+] }

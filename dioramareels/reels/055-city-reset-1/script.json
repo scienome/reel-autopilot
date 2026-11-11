@@ -1,0 +1,8 @@
+{ "lines": [
+ {"shot": "hook", "cap": "", "say": "Every seven years, your whole city forgets everything. You found a note from yourself.", "cold": true},
+ {"shot": "note", "cap": "*YOUR HANDWRITING.", "say": "Under the floorboard. Your handwriting. Dated seven years ago."},
+ {"shot": "read", "cap": "*SEVEN DAYS.", "say": "It says. In seven days the city resets again. Don’t let them take your memories."},
+ {"shot": "calendar", "cap": "*SIX DAYS.", "say": "You check the date. Six days left."},
+ {"shot": "tower", "cap": "*THE TOWER.", "say": "The last line. Whatever happens, don’t trust the tower. It doesn’t forget."},
+ {"shot": "end", "cap": "", "say": "Would you trust the note? Part two next. Write it in the comments."}
+] }

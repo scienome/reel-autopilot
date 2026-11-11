@@ -1,0 +1,8 @@
+{ "lines": [
+ {"shot": "hook", "cap": "", "say": "Every night, your flat moves to a different city while you sleep.", "cold": true},
+ {"shot": "fun", "cap": "*NEW VIEW.", "say": "Monday, a beach. Tuesday, snowy mountains. Wednesday, a city that never sleeps."},
+ {"shot": "work", "cap": "*LATE.", "say": "But your job is in one city. You are late every day. Then you are fired."},
+ {"shot": "mom", "cap": "*ADDRESS.", "say": "Your mom asks for your address. You send her a different one every day."},
+ {"shot": "lost", "cap": "*NIGHT 100.", "say": "Night one hundred. You wake up in your own hometown. Then the flat starts shaking again."},
+ {"shot": "end", "cap": "", "say": "Where would you want to wake up? Write it in the comments."}
+] }

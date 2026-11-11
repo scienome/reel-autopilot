@@ -1,0 +1,8 @@
+{ "lines": [
+ {"shot": "hook", "cap": "", "say": "You opened the penthouse door at nine oh one. It was you.", "cold": true},
+ {"shot": "open", "cap": "*OLDER.", "say": "Same face. But older. Tired. Holding a wet contract."},
+ {"shot": "warn", "cap": "*PAGE TWO.", "say": "He whispers. Never sign page two. Page two is the renewal."},
+ {"shot": "contract", "cap": "*FOREVER.", "say": "You read it. Winners stay forever. They just get a new face every year."},
+ {"shot": "pen", "cap": "*ALREADY SIGNED.", "say": "Then you see the signature at the bottom. Yours. In your handwriting. Dated tomorrow."},
+ {"shot": "end", "cap": "", "say": "Would you sign page two? Write it in the comments."}
+] }

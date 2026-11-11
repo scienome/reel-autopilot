@@ -1,0 +1,8 @@
+{ "lines": [
+ {"shot": "hook", "cap": "", "say": "Your dreams now have ads. Ad-free dreams cost five dollars a night.", "cold": true},
+ {"shot": "ad", "cap": "*FOR SOFAS.", "say": "You dream about the sea. Then a man sells you a sofa. For ten minutes."},
+ {"shot": "skip", "cap": "*$5 A NIGHT.", "say": "You pay to skip. Five dollars a night. Your balance melts."},
+ {"shot": "broke", "cap": "*THE ADS.", "say": "You can't pay any more. The ads come back. You get used to them."},
+ {"shot": "mom", "cap": "*MOM'S VOICE.", "say": "Then one night, an ad starts with your late mom’s voice. Buy now, sweetheart."},
+ {"shot": "end", "cap": "", "say": "Would you pay for ad-free dreams? Write it in the comments."}
+] }

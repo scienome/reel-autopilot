@@ -1,0 +1,8 @@
+{ "lines": [
+ {"shot": "hook", "cap": "", "say": "Yesterday you picked a door. Here is what was behind each one.", "cold": true},
+ {"shot": "a", "cap": "*TOO PERFECT.", "say": "Door A. Your mom is cooking. Your favourite dinner. She smiles a little too wide."},
+ {"shot": "wrong", "cap": "*NO SHADOW.", "say": "Then you notice. She has no shadow. Nobody in Door A has a shadow."},
+ {"shot": "b", "cap": "*COLD.", "say": "Door B. Cold and quiet, because you left the window open this morning. It is just your flat."},
+ {"shot": "note", "cap": "*A TEXT.", "say": "Your phone buzzes. Your mom. Did you get home safe? She is in another city."},
+ {"shot": "end", "cap": "", "say": "Did you pick the right door? Write it in the comments."}
+] }

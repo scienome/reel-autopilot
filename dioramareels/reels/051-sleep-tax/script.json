@@ -1,0 +1,8 @@
+{ "lines": [
+ {"shot": "hook", "cap": "", "say": "Your city now taxes sleep. Eight hours costs eight dollars.", "cold": true},
+ {"shot": "meter", "cap": "*$1 AN HOUR.", "say": "A meter on your bed counts every hour."},
+ {"shot": "awake", "cap": "*FOUR HOURS.", "say": "Most people buy four hours. The streets fill with yawning zombies."},
+ {"shot": "broke", "cap": "*ZERO.", "say": "By Friday you can’t afford any. You lie awake, staring."},
+ {"shot": "free", "cap": "*TAX FREE.", "say": "Through the window, the tower is dark. Sleep up there is a business expense. Tax free."},
+ {"shot": "end", "cap": "", "say": "How many hours would you buy? Write it in the comments."}
+] }

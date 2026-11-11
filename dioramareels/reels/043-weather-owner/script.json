@@ -1,0 +1,8 @@
+{ "lines": [
+ {"shot": "hook", "cap": "", "say": "A company bought your city’s weather. Sunny days cost extra.", "cold": true},
+ {"shot": "menu", "cap": "*$500 SUN.", "say": "The app has a menu. Light rain, free. Sun for one day, five hundred dollars."},
+ {"shot": "wedding", "cap": "*YOUR WEDDING.", "say": "Saturday is your wedding. You pay for sun."},
+ {"shot": "day", "cap": "*IT POURS.", "say": "Saturday morning. It pours. The guests run. The cake melts."},
+ {"shot": "rain", "cap": "*$501.", "say": "You check the app. Your neighbour paid five hundred and one. For rain. On your day."},
+ {"shot": "end", "cap": "", "say": "Would you pay for sun on your wedding day? Write it in the comments."}
+] }

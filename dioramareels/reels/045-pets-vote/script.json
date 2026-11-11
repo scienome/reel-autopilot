@@ -1,0 +1,8 @@
+{ "lines": [
+ {"shot": "hook", "cap": "", "say": "Your city just gave every pet the right to vote.", "cold": true},
+ {"shot": "dogs", "cap": "*DOGS.", "say": "The dogs vote first. Everyone assumes the dog candidate wins."},
+ {"shot": "cats", "cap": "*CATS.", "say": "But the cats stayed quiet. They never campaign. They just win."},
+ {"shot": "mayor", "cap": "*MAYOR CAT.", "say": "The new mayor moves into the tower. It sleeps twenty hours a day."},
+ {"shot": "law", "cap": "*NO MONDAYS.", "say": "First law. Mondays are banned. Second law. Every lap belongs to a cat."},
+ {"shot": "end", "cap": "", "say": "What law would your pet make? Write it in the comments."}
+] }

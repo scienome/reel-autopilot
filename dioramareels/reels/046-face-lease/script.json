@@ -1,0 +1,8 @@
+{ "lines": [
+ {"shot": "hook", "cap": "", "say": "The face you were born with was only on lease. It expires on Friday.", "cold": true},
+ {"shot": "price", "cap": "*$9,000.", "say": "Renewal costs nine thousand dollars. Or you get a free basic face."},
+ {"shot": "basic", "cap": "*GREY FACES.", "say": "Half your building already has the basic face. Grey. They all look the same."},
+ {"shot": "friday", "cap": "*FRIDAY.", "say": "Friday. Your face fades in the mirror."},
+ {"shot": "who", "cap": "*YOUR FACE.", "say": "That night you see a billboard on the tower. A new model. Smiling. With your face."},
+ {"shot": "end", "cap": "", "say": "Would you pay to keep your face? Write it in the comments."}
+] }

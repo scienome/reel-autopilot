@@ -1,0 +1,7 @@
+{ "lines": [
+ {"shot": "hook", "cap": "", "say": "Two doors. One leads home. You have five seconds.", "cold": true},
+ {"shot": "clue", "cap": "*THE CLUES.", "say": "Door A is warm. You can hear your mom cooking. Too perfectly."},
+ {"shot": "clue2", "cap": "*SILENCE.", "say": "Door B is cold. Silent. But your keys fit the lock."},
+ {"shot": "pick", "cap": "", "say": "Choose now. Four. Three. Two."},
+ {"shot": "end", "cap": "", "say": "Door A or Door B? Comment your door. The answer is in the next reel."}
+] }

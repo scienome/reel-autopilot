@@ -1,0 +1,8 @@
+{ "lines": [
+ {"shot": "hook", "cap": "", "say": "Your grandma left you two things. Her debt. And a key.", "cold": true},
+ {"shot": "debt", "cap": "*$40,000.", "say": "Forty thousand dollars of debt. Sixty years of it."},
+ {"shot": "door", "cap": "*9F.", "say": "The key has a tag. Nine F. The empty flat nobody opens."},
+ {"shot": "room", "cap": "*LETTERS.", "say": "Inside, boxes of letters. Thank-you notes. Hundreds."},
+ {"shot": "paid", "cap": "*EVERYONE.", "say": "Every loan paid someone’s rent in this building. Doris. The guard. Your mom. For sixty years."},
+ {"shot": "end", "cap": "", "say": "Would you pay off her debt? Write it in the comments."}
+] }

@@ -1,0 +1,8 @@
+{ "lines": [
+ {"shot": "hook", "cap": "", "say": "Your building’s lift has four rules after midnight. Break one and you don’t arrive.", "cold": true},
+ {"shot": "one", "cap": "*FACE THE DOOR.", "say": "Rule one. Always face the door."},
+ {"shot": "two", "cap": "*DON’T ANSWER.", "say": "Rule two. If someone behind you says your name, don’t answer."},
+ {"shot": "three", "cap": "*IT STOPS.", "say": "Rule three. If it stops between floors, wait. Do not press anything."},
+ {"shot": "four", "cap": "*FLOOR TEN.", "say": "Rule four. Your building has nine floors. If the lift shows ten, get out. Whatever is there is kinder."},
+ {"shot": "end", "cap": "", "say": "Which rule would you break? Write it in the comments."}
+] }

@@ -1,0 +1,8 @@
+{ "lines": [
+ {"shot": "hook", "cap": "", "say": "You pressed minus nine. Someone down there has been living your life.", "cold": true},
+ {"shot": "door", "cap": "*YOUR DOORMAT.", "say": "Your doormat. Your door. You knock. You open it yourself."},
+ {"shot": "inside", "cap": "*SAME FLAT.", "say": "Same flat. Same bed. But everything is grey. And a man in grey is eating your breakfast."},
+ {"shot": "work", "cap": "*TWO JOBS.", "say": "He works two jobs. Night shifts. His payslips have your name on them."},
+ {"shot": "rent", "cap": "*YOUR RENT.", "say": "Every month he pays your rent. That's why it was always so cheap."},
+ {"shot": "end", "cap": "", "say": "He wants to swap back. Would you? Write it in the comments."}
+] }

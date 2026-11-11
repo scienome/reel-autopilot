@@ -1,0 +1,8 @@
+{ "lines": [
+ {"shot": "hook", "cap": "", "say": "Your city gives everyone one thousand words a day. Extra words cost money.", "cold": true},
+ {"shot": "count", "cap": "*A COUNTER.", "say": "A counter on your wrist. Good morning, minus two."},
+ {"shot": "quiet", "cap": "*SILENT.", "say": "By evening the whole city is silent. People point and nod."},
+ {"shot": "kid", "cap": "*ONE YEAR.", "say": "Your daughter has not spoken all year. You thought she was sad."},
+ {"shot": "saved", "cap": "*ALL FOR YOU.", "say": "On your birthday she speaks for an hour. Every saved word. All for you."},
+ {"shot": "end", "cap": "", "say": "What would you save your words for? Write it in the comments."}
+] }

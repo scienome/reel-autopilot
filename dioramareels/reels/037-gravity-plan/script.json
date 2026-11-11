@@ -1,0 +1,8 @@
+{ "lines": [
+ {"shot": "hook", "cap": "", "say": "Gravity in your building is now a monthly subscription.", "cold": true},
+ {"shot": "late", "cap": "*ONE DAY LATE.", "say": "You pay one day late. Your cereal floats off the spoon."},
+ {"shot": "float", "cap": "*FLOATING.", "say": "Your bed lifts. Your shoes drift out of the window. Doris from six C floats past, still knitting."},
+ {"shot": "pay", "cap": "*PAID.", "say": "You pay. You hit the floor. Hard."},
+ {"shot": "rich", "cap": "*FLOAT FOR FUN.", "say": "Then you look at the tower. The rich turned their gravity off. They float above the city for fun."},
+ {"shot": "end", "cap": "", "say": "Would you pay for gravity? Write it in the comments."}
+] }

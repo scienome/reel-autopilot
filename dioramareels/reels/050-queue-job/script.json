@@ -1,0 +1,8 @@
+{ "lines": [
+ {"shot": "hook", "cap": "", "say": "Your job is standing in queues for rich people. Twenty dollars an hour.", "cold": true},
+ {"shot": "first", "cap": "*NEW PHONES.", "say": "Monday you queue for new phones. Tuesday for concert tickets."},
+ {"shot": "long", "cap": "*THREE DAYS.", "say": "Wednesday the queue is three days long. You sleep on the pavement."},
+ {"shot": "front", "cap": "*THE FRONT.", "say": "You finally reach the front. A sign. Jobs, one opening."},
+ {"shot": "own", "cap": "*YOUR JOB.", "say": "The job is yours. Your boss replaced you. You were queuing for your own job, for someone richer."},
+ {"shot": "end", "cap": "", "say": "Would you take the queue job? Write it in the comments."}
+] }

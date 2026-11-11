@@ -1,0 +1,8 @@
+{ "lines": [
+ {"shot": "hook", "cap": "", "say": "Your birthday was sold at auction. A rich kid has it now.", "cold": true},
+ {"shot": "letter", "cap": "*SOLD.", "say": "The city ran out of good dates. Birthdays go to the highest bidder."},
+ {"shot": "party", "cap": "*HIS PARTY.", "say": "On your day, the tower throws a party. Fireworks. Your name is not on the cake."},
+ {"shot": "new", "cap": "*A NEW DATE.", "say": "You get a free new birthday. The city's leftover date."},
+ {"shot": "date", "cap": "*30 FEBRUARY.", "say": "Thirtieth of February. It never comes. You will never be older. Or celebrated."},
+ {"shot": "end", "cap": "", "say": "Would you buy your birthday back? Write it in the comments."}
+] }
