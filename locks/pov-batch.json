@@ -3,8 +3,8 @@
  "status": "in_progress",
  "owner": "vm-853e30",
  "started": "2026-11-11T03:17:46Z",
- "updated": "2026-11-11T03:17:46Z",
- "note": "059-064 pushed",
+ "updated": "2026-11-11T03:18:50Z",
+ "note": "056-061 queued; 062-064 blocked by ElevenLabs quota 0",
  "history": [
   {
    "owner": "vm-1d86de",
