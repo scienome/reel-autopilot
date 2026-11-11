@@ -202,7 +202,7 @@ Folder: [`dave-reels/`](dave-reels/)
 | [43-dave-grows-an-inch](dave-reels/43-dave-grows-an-inch.mp4) | What if you grew 1 inch every day? | Waiting to post |
 | [44-gimli-glider](dave-reels/44-gimli-glider.mp4) | The jet that ran out of fuel because of maths | Waiting to post |
 
-## Toy reels (Brick Toy) (137)
+## Toy reels (Brick Toy) (144)
 Folder: [`toy-reels/`](toy-reels/)
 
 | Video | Title | Status |
@@ -258,7 +258,14 @@ Folder: [`toy-reels/`](toy-reels/)
 | [135-what-if-rain-never-stops-3d](toy-reels/135-what-if-rain-never-stops-3d.mp4) | What If It Never Stopped Raining? 🌧️ | Waiting to post |
 | [136-what-if-everyone-disappeared-3d](toy-reels/136-what-if-everyone-disappeared-3d.mp4) | What If Everyone Disappeared? 🌍 | Waiting to post |
 | [14-death-replaced-by-ai](toy-reels/14-death-replaced-by-ai.mp4) | Death Got Replaced By AI. Nobody Has Died Since 💀 | Posted (Instagram + YouTube) |
+| [143-fox-snow-north](toy-reels/143-fox-snow-north.mp4) | Foxes do it in the snow… facing north 🦊❄️ | Waiting to post |
+| [144-hachiko-waited](toy-reels/144-hachiko-waited.mp4) | The dog who waited 9 years 🐕💔 | Waiting to post |
+| [145-uranus-stinks](toy-reels/145-uranus-stinks.mp4) | Scientists confirmed it: Uranus stinks 🪐💨 | Waiting to post |
+| [146-bull-cant-see-red](toy-reels/146-bull-cant-see-red.mp4) | Balls of steel… and he can't even see red 🐂 | Waiting to post |
+| [148-horse-standing-up](toy-reels/148-horse-standing-up.mp4) | This horse can do it standing up 🐴 | Waiting to post |
+| [149-bobbie-walked-home](toy-reels/149-bobbie-walked-home.mp4) | He walked 2,500 miles to get home 🐕❤️ | Waiting to post |
 | [15-napoleon-sues-everyone](toy-reels/15-napoleon-sues-everyone.mp4) | Napoleon Came Back From The Dead To Sue Everyone 💀 | Waiting to post |
+| [150-alpaca-spits](toy-reels/150-alpaca-spits.mp4) | She'll spit on you if she's not into you 🦙💦 | Waiting to post |
 | [16-robbers-rob-illuminati](toy-reels/16-robbers-rob-illuminati.mp4) | Two Robbers Robbed The Illuminati's Bank 👁️ | Posted (Instagram + YouTube) |
 | [17-einstein-art-school](toy-reels/17-einstein-art-school.mp4) | Einstein Went Back In Time To Get Hitler Into Art School 🎨 | Posted (Instagram + YouTube) |
 | [18-santa-layoffs](toy-reels/18-santa-layoffs.mp4) | Santa Replaced The Elves With Robots. Big Mistake. 🎅 | Posted (Instagram + YouTube) |
