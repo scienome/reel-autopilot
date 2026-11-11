@@ -29,14 +29,85 @@ or anything that posts publicly.
    the files next to it directly), and ready-to-upload `skills/zips/*.zip`. If `/toystyle` etc. aren't installed on this
    account, tell me once: "download the zips from skills/zips on GitHub → Settings → Capabilities → Skills → upload".
    Never block on it: the repo's series folders contain every renderer.
-5. **Scheduled Claude runs** (see §8) live on the Claude account that created them. List this account's cloud routines;
-   **if the toy, POV and riddle batch tasks are missing, create them now from the templates in §8, without asking** (I want
-   reel making to run on whichever account I'm using). **Don't create Couch or Mechanic tasks: I stopped them.** Running the
-   same tasks on several accounts is SAFE because of the claim lock (§7b): only one run ever does the work.
+5. **Scheduled Claude runs: ALL OFF since 10 Nov 2026 (owner: "stop all scheduling task in claude").** Do NOT create or
+   re-enable any cloud routine unless I ask in chat. Reels are now made only when I ask. (Older rule, now replaced: create the
+   toy, POV and riddle tasks from §8.) GitHub posting workflows are not Claude tasks and keep running.
 6. Then give me a 3–5 line status: what's live, what's queued (days ahead per channel), anything broken.
-7. **If any live channel has less than 2 days (6 reels) queued, start making reels for it right away** with that
+7. **If any live channel has less than 2 days (6 reels) queued, tell me first and make reels when I say so** (ElevenLabs credits ran out on 11 Nov, see §0b) with that
    series' playbook (`toyreels/PLAYBOOK.md`, `povreels/PLAYBOOK.md`, `mythreels/PLAYBOOK.md`, `riddles/PLAYBOOK.md`), claim first, then send me
    each finished MP4. The playbooks are what keep the results consistent: follow them exactly.
+
+---
+
+## 0b. CURRENT STATE OF EVERY CHANNEL (11 Nov 2026, 13:45 IST). Read this first; it overrides older status notes below.
+
+**Two things block new reels everywhere:**
+1. **ElevenLabs credits are used up.** The POV batch on 11 Nov 03:18 UTC voiced 056-061, then got "quota 0" for 062-064.
+   Every channel's voice is ElevenLabs, so no new reel can be voiced until the owner tops up or the month resets
+   (Creator plan, 131,000 characters a month, new account since 1 Nov). Check with `check-elevenlabs.yml`. Re-renders of
+   reels whose takes are already saved cost nothing.
+2. **All Claude scheduled routines are OFF** (owner, 10 Nov). 20 routines exist on this account, none enabled. Nothing makes
+   reels on a timer any more; batches happen only when the owner asks in chat.
+
+**What still runs by itself:** the GitHub posting workflows (each channel below). They post what is queued and stop when a
+queue is empty. Failures in the last 60 runs: only "Make POV reels" (credits). Elite city IG and YouTube posts succeed.
+
+### Live channels
+
+| Channel (IG / YT) | Folder | Format now | Voice (ElevenLabs id, `eleven_v4`) | Posts (IST) | Queued (11 Nov) | Lasts to about |
+|---|---|---|---|---|---|---|
+| **Lokvara** (IG + YT, `IG_MYTH_*`, `YT_MYTH_*`) | `mythreels/` | Hindi folk-art mythology. "Familiar thing, unknown why" + continuing stories; Karna 12 parts at 21:00 | Sudhir `XNJDyPyJ8r4J7de0WJwB` (all reels); Karna first-person `6EphsklDopDQ6eRkwNHT` | 06:30, 12:30, 18:30, 21:00 (Karna only), 22:30 | 16 regular (next 048-ardhanarishvara) + Karna 111, 112 | regular ~15 Nov; Karna ends 12 Nov |
+| **Socho Zara** riddles (old Couch IG + YT, `IG_ACCESS_TOKEN`, `IG_USER_ID`, `YT_COUCH_*`) | `riddles/` | Hinglish animal riddles, flat 2D | `lOJWQNMBIzoU3N0EnOya` | 06:30, 12:30, 20:30 (root `config.json`) | 30 | ~21 Nov |
+| **toyboxtheory** (IG + YT, `IG_TOY_*`, `YT_TOY_*`) | `toyreels/` | 3D "Let's fix that" fix-chains since 9 Nov (`dioramareels/kit/references/toy3d.js`); old brick reels fill gaps | Buster `PmelHiOxd6s1PUEdOmwF` (3D reels); older reels keep saved takes (`c6SfcYrb2t09NHXiT80T`, Adam) | 01:00, 06:00, 20:30 | 2 3D (133, 134) then 50 old (33 old + 17 true-story); 38 held as `skipped` | 3D runs out 12 Nov; old reels fill ~17 days |
+| **Thought Bubble** POV (IG @gearsandglitches + YT, `IG_GG_*`, `YT_*`) | `povreels/` | "You're the only one who…" soft-3D | Adam `s3TPKV1kjDlVtZbl4Ksh` + cast in `povreels/config.json` | 01:00, 06:00, 20:30 | 23 (next 037-washing-machine) | ~18 Nov |
+| **Musclyth** fitness (IG + YT, `IG_PULSE_*`, `YT_PULSE_*`) | `pulsereels/` | flat-vector body science, 4 series | `cBTYF7NiJbR8Bvmdeuse` | 01:00, 06:00, 20:30, 22:00 | 9 (next 032-vitamin-d) | ~13 Nov (shortest) |
+| **Elites Endgame** (IG @elitesendgame `IG_ELITE_*`; YT @elitesendgame `YT_ELITE_*`) | `dioramareels/` | 3D tilt-shift city, "You live in this city", second person, always fiction | `R9EZoy8pXSL8Yh4yxiew` | 01:00, 06:00, 20:30 (YouTube first, IG one slot behind) | YT 3 (012, 015, 011), IG 2 (015, 011) | ~12 Nov |
+
+**Stopped, keep stopped:** CouchSarcasm (`couchnew/`, accounts now Socho Zara), Mechanic Shorts and videos, Dave, old couch
+reels, Elite noir (`mysteryreels/`, `"paused"`; 46 noir reels unposted, never post them unless asked).
+
+### Elites Endgame, everything
+- **History:** 1-6 Nov noir comic stories (The Witness, The Last Dinner, Room Four + wildcards; 19 posted, about 126 views
+  each). Owner switched on 6 Nov to 3D city reels; the noir schedule is paused.
+- **City reels made:** 001-016. 011 Mom's Plan Part 3, 012 door reveal for 007, 013 clone lease, 014 sunlight tax,
+  015 sleepwalking city, 016 floor minus one were made 9-10 Nov by a one-off cloud job. 001 and t01 are tests, not queued.
+- **Make a reel:** `dioramareels/PLAYBOOK.md` (written 10 Nov) + `README.md`. Push the folder; **`make-diorama-parallel.yml`**
+  (added 10 Nov) voices and renders each changed reel on its own runner and publishes `diorama-<id>`. Then add the id to the end
+  of `dioramareels/schedule.json` "queue". The old `make-diorama.yml` is sequential with a 90-minute limit: use it only for one reel.
+- **Posting:** `post-elite-youtube.yml` → `tools/elite_youtube.py`, then `tools/elite_ig_city.py`. Logs
+  `dioramareels/youtube_posted.json`, `instagram_posted.json`. `post-elitesendgame.yml` is the old noir poster: it runs and
+  does nothing while noir is paused.
+- **Rules:** invented people and companies only, never a real person, company, religion or group, no thin aliases of living
+  people, no gore, labelled fiction.
+
+### toyboxtheory 3D, everything
+- Model reel `toyreels/reels/128-shopping-bags-3d`. 129-134 made 9 Nov (alarm, earphones, missed bus, umbrella, ice cream,
+  keys). Rules: `toyreels/PLAYBOOK.md` CURRENT FORMAT. Render: `make-toy3d.yml` (parallel, push or by hand).
+- **Colour fix, 10 Nov:** reels looked washed out because the city's sun (intensity 2) stayed on in the toy world.
+  `toy3d.js` now calls `D.city.mode('interior')` each frame and adds `saturate(1.7) contrast(1.15)` after the 3D render.
+  131-134 were re-rendered with it; 128-130 had already posted with the old look.
+
+### Voices in use (all ElevenLabs, model `eleven_v4`; never change without the owner)
+| Use | Voice id | Name |
+|---|---|---|
+| Lokvara, all reels | `XNJDyPyJ8r4J7de0WJwB` | Sudhir (Hindi) |
+| Lokvara, Karna first person | `6EphsklDopDQ6eRkwNHT` | owner's pick, 1 Nov |
+| Socho Zara riddles | `lOJWQNMBIzoU3N0EnOya` | Bismil |
+| toyboxtheory 3D reels | `PmelHiOxd6s1PUEdOmwF` | Buster |
+| toyboxtheory brick True Stories (old) | `c6SfcYrb2t09NHXiT80T` | Jarnathan |
+| Thought Bubble narrator | `s3TPKV1kjDlVtZbl4Ksh` | Adam |
+| Thought Bubble cast | cute `FgiNpTIapnCbaD6xiqIo`, naughty `zJrRUu1KEcKH8qdpNaPJ`, Helen `XB0fDUnXU5powFXDhCwa`, George `JBFqnCBsd6RMkjVDRZzb`, Adam Dominant `pNInz6obpgDQGcFmaJgB`, Jessica `cgSgspJ2msm6clMCkdW9`, Alice `Xb7hH8MSUJpSbSDYk0k2`, Daniel `onwK4e9ZLuTAKqWW03F9`, Chris `iP95p4xoKVk53GoZ742B` | see `povreels/config.json` |
+| Musclyth | `cBTYF7NiJbR8Bvmdeuse` | in `pulsereels/config.json` |
+| Elites Endgame city | `R9EZoy8pXSL8Yh4yxiew` | owner kept ElevenLabs over VoiceStudio, 8 Nov |
+| Elite noir (paused) | `eCGXfCpGinKGrwYNoBuo` | owner's pick, 1 Nov |
+| Stopped channels | Mechanic Brian `nPczCjzI2devNBz1zQrb`; ToyBox long videos `IvUJKFyjVb5hItY9dJAT`; Couch cast in `couchnew/config.json` | |
+
+### Open items for the owner
+- Top up ElevenLabs or wait for the reset: until then no channel gets new reels.
+- Musclyth (~13 Nov), Elites Endgame (~12 Nov) and toy 3D (12 Nov) run out first. Lokvara needs the story after Karna
+  (Parshuram, Bhishma, Ashwatthama, in that order) and new regular reels by ~15 Nov.
+- Scheduled routines are off by the owner's choice; turn any back on only when asked.
+- Owed: funnier, outcome-first toyboxtheory hooks (asked earlier, not done).
 
 ---
 
