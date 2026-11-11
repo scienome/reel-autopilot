@@ -42,7 +42,7 @@ or anything that posts publicly.
 ## 0b. CURRENT STATE OF EVERY CHANNEL (11 Nov 2026, 13:45 IST). Read this first; it overrides older status notes below.
 
 **Two things block new reels everywhere:**
-1. **ElevenLabs credits are used up.** The POV batch on 11 Nov 03:18 UTC voiced 056-061, then got "quota 0" for 062-064.
+1. **Solved 11 Nov 10:26 UTC: the owner put in a new ElevenLabs key** (Creator, 51 of 131,000 used; Adam, Brian, Buster and `IvUJKFyjVb5hItY9dJAT` tested OK; the other channels' voices were not tested and may need adding to this account's My Voices). Before that: **ElevenLabs credits were used up.** The POV batch on 11 Nov 03:18 UTC voiced 056-061, then got "quota 0" for 062-064.
    Every channel's voice is ElevenLabs, so no new reel can be voiced until the owner tops up or the month resets
    (Creator plan, 131,000 characters a month, new account since 1 Nov). Check with `check-elevenlabs.yml`. Re-renders of
    reels whose takes are already saved cost nothing.
