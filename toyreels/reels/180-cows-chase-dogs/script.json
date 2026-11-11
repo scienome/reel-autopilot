@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Cows chasing you in a field? Let go of your dog.",
+   "say": "Cows chasing you in a field? Let go of your dog."
+  },
+  {
+   "shot": "walk",
+   "cap": "A country walk. A field. Some cows with calves. And you, with your dog on a lead.",
+   "say": "A country walk. A field. Some cows with calves. And you, with your dog on a lead."
+  },
+  {
+   "shot": "why",
+   "cap": "To a mother cow, your dog looks like a wolf. She'll protect her calf.",
+   "say": "To a mother cow, your dog looks like a wolf. She'll protect her calf."
+  },
+  {
+   "shot": "charge",
+   "cap": "Cows weigh over half a tonne, and can run faster than you.",
+   "say": "Cows weigh over half a tonne, and can run faster than you."
+  },
+  {
+   "shot": "let",
+   "cap": "If they charge, let go of the lead. Your dog can outrun them, and will usually come back to you later.",
+   "say": "If they charge, let go of the lead. Your dog can outrun them, and will usually come back to you later."
+  },
+  {
+   "shot": "walkaway",
+   "cap": "Then keep calm. Walk away steadily, don't run. Head for the nearest exit, or the edge of the field.",
+   "say": "Then keep calm. Walk away steadily, don't run. Head for the nearest exit, or the edge of the field."
+  },
+  {
+   "shot": "avoid",
+   "cap": "Better still, don't walk between cows and their calves. Go around.",
+   "say": "Better still, don't walk between cows and their calves. Go around."
+  },
+  {
+   "shot": "outro",
+   "cap": "Save this. Then share it with someone who walks their dog in the countryside.",
+   "say": "Save this. Then share it with someone who walks their dog in the countryside."
+  }
+ ]
+}

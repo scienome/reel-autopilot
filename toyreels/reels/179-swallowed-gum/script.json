@@ -1,0 +1,39 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Swallowed gum stays in your stomach for seven years? Here's the truth.",
+   "say": "Swallowed gum stays in your stomach for seven years? Here's the truth."
+  },
+  {
+   "shot": "kid",
+   "cap": "Almost everyone heard it as a kid. Don't swallow your gum!",
+   "say": "Almost everyone heard it as a kid. Don't swallow your gum!"
+  },
+  {
+   "shot": "base",
+   "cap": "It's true that your body can't fully digest gum base. It's a rubbery material that stomach acid can't break down.",
+   "say": "It's true that your body can't fully digest gum base. It's a rubbery material that stomach acid can't break down."
+  },
+  {
+   "shot": "inside",
+   "cap": "But your gut doesn't need to break it down. It just keeps things moving.",
+   "say": "But your gut doesn't need to break it down. It just keeps things moving."
+  },
+  {
+   "shot": "days",
+   "cap": "Like other things you can't digest, it passes through, and out the other end, usually within a few days.",
+   "say": "Like other things you can't digest, it passes through, and out the other end, usually within a few days."
+  },
+  {
+   "shot": "lots",
+   "cap": "The only real problem is swallowing a lot of gum, often, especially for small kids. Doctors have seen rare blockages.",
+   "say": "The only real problem is swallowing a lot of gum, often, especially for small kids. Doctors have seen rare blockages."
+  },
+  {
+   "shot": "outro",
+   "cap": "So one piece won't stay for seven years. It'll be gone by the weekend.",
+   "say": "So one piece won't stay for seven years. It'll be gone by the weekend."
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+// 180 cinestory3d (story3d.js): walking with a dog near cattle (HSE, NFU, Ramblers). Scroll stopper: a herd charging at a walker and dog.
+STORY((k) => {
+  const { T, M, PI, E, seg, lerp } = k; const fm = k.farm();
+  const man = k.add(k.LIB.human({ body: 'm', top: '#2f8a6a', bottom: '#3a3a44', hair: '#3b2414' }), [0, 0, 6], PI, fm), dog = k.add(k.LIB.animal('dog', { h: 0.5 }), [0.6, 0, 6.2], PI, fm);
+  const lead = new T.Mesh(new T.CylinderGeometry(0.01, 0.01, 1, 6), M('#d0141e')); fm.add(lead);
+  const cows = []; for (let i = 0; i < 5; i++) cows.push(k.add(k.LIB.animal('cow', { h: 1.5 }), [-3 + i * 1.6, 0, -2 - (i % 2)], 0, fm)); const calf = k.add(k.LIB.animal('cow', { h: 0.9 }), [1.5, 0, -0.6], 0, fm);
+  const leash = (on) => { lead.visible = on; if (!on) return; const a = new T.Vector3(man.position.x + 0.3, 0.95, man.position.z), b = new T.Vector3(dog.position.x, 0.45, dog.position.z); lead.position.copy(a).add(b).multiplyScalar(0.5); lead.scale.y = a.distanceTo(b); lead.lookAt(b); lead.rotateX(PI / 2); };
+  const charge = (t, u) => cows.forEach((c, i) => { c.position.set(-3 + i * 1.6 + u * (i - 2) * -0.5, 0, -2 - (i % 2) + u * 6); c.rotation.y = 0; c.pose(u > 0.02 ? 'gallop' : 'eat', t + i); });
+  let ov = null; const base = () => { k.only(fm); calf.visible = true; calf.pose('idle', 0); man.visible = dog.visible = true; };
+  const shots = {
+    hook: (t, kk) => { base(); charge(t, E(kk) * 0.8); man.position.set(0, 0, 6); man.rotation.y = PI; man.pose('idle', t); dog.position.set(0.7, 0, 6.2); dog.rotation.y = PI; dog.pose('attack', t); leash(true); ov = (ctx) => k.vignette(ctx, 0.5); return k.cam([3.5, 1.5, 11], [0, 0.9, 3.5], 44, { sky: fm.sky }); },
+    walk: (t, kk) => { base(); charge(t, 0); k.walk(man, [-6, 0, 8], [0, 0, 6], kk, 'walk', t); k.walk(dog, [-5.4, 0, 8.3], [0.6, 0, 6.3], kk, 'walk', t); leash(true); return k.cam([6, 3, 14], [-1, 0.6, 3], 44, { sky: fm.sky }); },
+    why: (t, kk) => { base(); charge(t, 0); cows[2].pose('idle', t); man.position.set(0, 0, 6); dog.position.set(0.6, 0, 6.3); man.pose('idle', t); dog.pose('idle', t); leash(true); ov = (ctx) => k.card(ctx, 'DOG = WOLF? 🐺', { y: 200, bg: '#7a3ad8' }); return k.close(cows[2], { d: 3.6, side: 0.3, extra: { sky: fm.sky } }); },
+    charge: (t, kk) => { base(); charge(t, E(kk) * 0.6); man.position.set(0, 0, 6); man.pose('idle', t); dog.position.set(0.6, 0, 6.3); dog.pose('idle', t); leash(true); ov = (ctx) => k.counter(ctx, 'EACH COW', '600+ KG', { y: 190 }); return k.cam([2.5, 0.5, 6.4], [0, 1.0, 0], 40, { sky: fm.sky }); },
+    let: (t, kk) => { base(); charge(t, 0.6 + kk * 0.3); man.position.set(0, 0, 6); man.rotation.y = PI; man.pose('interact', t); k.walk(dog, [0.6, 0, 6.3], [6, 0, 14], E(kk), 'gallop', t); leash(kk < 0.15); ov = (ctx) => k.card(ctx, 'LET GO OF THE LEAD', { y: 200, bg: '#e8384f' }); return k.cam([-3, 2, 13], [1, 0.6, 7], 42, { sky: fm.sky }); },
+    walkaway: (t, kk) => { base(); dog.visible = false; charge(t, 0.9); cows.forEach((c) => c.pose('idle', t)); k.walk(man, [0, 0, 6], [4, 0, 11], kk, 'walk', t); leash(false); ov = (ctx) => k.card(ctx, "WALK. DON'T RUN.", { y: 200, bg: '#2ecc71' }); return k.cam([6, 2.4, 14], [1, 0.8, 6], 42, { sky: fm.sky }); },
+    avoid: (t, kk) => { base(); charge(t, 0); calf.position.set(2.5, 0, 2); k.walk(man, [-6, 0, 9], [6, 0, 9], kk, 'walk', t); k.walk(dog, [-5.4, 0, 9.3], [6.6, 0, 9.3], kk, 'walk', t); leash(true); ov = (ctx) => k.card(ctx, 'GO AROUND MUM + CALF', { y: 200, bg: '#1d3557', size: 38 }); return k.cam([0, 9, 18], [0, 0, 4], 46, { sky: fm.sky }); },
+    outro: (t, kk) => { base(); charge(t, E(kk) * 0.8); man.position.set(0, 0, 6); man.rotation.y = PI; man.pose('idle', t); dog.position.set(0.7, 0, 6.2); dog.rotation.y = PI; dog.pose('attack', t); leash(true); ov = (ctx) => k.vignette(ctx, 0.5); return k.cam([3.5, 1.5, 11], [0, 0.9, 3.5], 44, { sky: fm.sky }); },
+  };
+  return { shots, sky: fm.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('whoosh', at('hook', 0.3), { dur: 1.2, gain: 0.2 }); } };
+}, { assets: ['animals/cow', 'animals/dog', 'humans/Superhero_Male', 'humans/ual1', 'props/hay', 'buildings/cottage', 'buildings/village_house', 'buildings/house_v2', 'buildings/well', 'buildings/fence', 'nature/tree_oak', 'nature/tree_maple'] });

@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Cows swallow, then bring it back up for more.",
+   "say": "Cows swallow, then bring it back up for more."
+  },
+  {
+   "shot": "eat",
+   "cap": "A cow grabs mouthfuls of grass, and swallows them almost without chewing.",
+   "say": "A cow grabs mouthfuls of grass, and swallows them almost without chewing."
+  },
+  {
+   "shot": "rumen",
+   "cap": "It lands in the rumen, the biggest of four stomach chambers. Big enough to hold a bathtub of food.",
+   "say": "It lands in the rumen, the biggest of four stomach chambers. Big enough to hold a bathtub of food."
+  },
+  {
+   "shot": "up",
+   "cap": "Later, while resting, she brings small balls of it back up into her mouth. That's the cud.",
+   "say": "Later, while resting, she brings small balls of it back up into her mouth. That's the cud."
+  },
+  {
+   "shot": "chew",
+   "cap": "And she chews it again. Slowly. About forty to sixty times per mouthful.",
+   "say": "And she chews it again. Slowly. About forty to sixty times per mouthful."
+  },
+  {
+   "shot": "hours",
+   "cap": "Cows can spend up to eight hours a day chewing their cud.",
+   "say": "Cows can spend up to eight hours a day chewing their cud."
+  },
+  {
+   "shot": "why",
+   "cap": "All that chewing breaks grass into tiny pieces, so microbes in the stomach can finish the job.",
+   "say": "All that chewing breaks grass into tiny pieces, so microbes in the stomach can finish the job."
+  },
+  {
+   "shot": "outro",
+   "cap": "So next time you see a cow chewing with nothing in front of her, she's having seconds.",
+   "say": "So next time you see a cow chewing with nothing in front of her, she's having seconds."
+  }
+ ]
+}
