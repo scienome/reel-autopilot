@@ -116,7 +116,7 @@
       ctx.save(); ctx.filter = 'saturate(1.7) contrast(1.15)'; ctx.drawImage(ctx.canvas, 0, 0); ctx.restore(); // rich toy colours
       D.label(ctx, o.badge || "LET'S FIX THAT", 360, 118, null, null, t, 0, 1e9, { bg: '#c2412c', fg: '#fff', size: 30 });
       if (o.overlays) o.overlays(ctx, St);
-      L.forEach((l) => D.caption(ctx, l.cap, t, l.t0, l.t1 + 0.1, 845));
+      L.forEach((l) => D.caption(ctx, l.cap, t, l.t0, l.t1 + 0.1, o.capY || 845));
     }
     const at = (sh, k = 0) => (lines(sh)[k] || { t0: st(sh) }).t0;
     function score(k) {

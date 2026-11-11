@@ -32,6 +32,7 @@
   D.toy.reel({
     order: ORDER,
     badge: 'WHAT IF...',
+    capY: 1105,
     reset(S) {
       H = level(S); const wet = H > 0.05;
       water.visible = wet; water.scale.y = Math.max(0.01, H); water.position.y = H / 2;
