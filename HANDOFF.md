@@ -327,16 +327,18 @@ Cloud routines, not on the owner's PC (owner: "dont run on this pc"). Model `cla
 The routine list can't be deleted through the tool; the owner deletes at claude.ai/code/routines. Off and safe to delete: Couch (2), Weekly couple, Check PR #1, and fired one-offs.
 **Read the run's result, not just the lock:** `RemoteTrigger` `list_runs`, then `get_run_log`. A run can say `done` having made far fewer than asked. Cloud runs could not open web pages on 31 Oct, so their facts rest on search summaries.
 
+**11 Nov 2026: the owner stopped every scheduled Claude run except the one-off "Resume reels at 9:05 PM". Do not turn any back on unless asked.**
+
 | Task | When (IST) | State |
 |---|---|---|
-| Toy reels: 21 new reels | 01:33 on the 3rd, 6th, 9th… | ON |
-| Toy reels: backup (finish unfinished batch) | 07:33 same days | ON |
+| Toy reels: 21 new reels | 01:33 on the 3rd, 6th, 9th… | OFF (11 Nov, owner: "stop every other session, nothing must run") |
+| Toy reels: backup (finish unfinished batch) | 07:33 same days | OFF (11 Nov) |
 | CouchSarcasm sitcom: 9 episodes (`couch-batch`, `couchnew/PLAYBOOK.md`) | 02:17 on the 1st, 4th, 7th… | OFF (31 Oct, owner stopped new episodes and all Couch posting: root config.json "paused") |
 | CouchSarcasm sitcom: backup | 08:17 same days | OFF (31 Oct) |
-| Thought Bubble POV: 9 episodes (`pov-batch`, `povreels/PLAYBOOK.md`) | 02:47 on the 2nd, 5th, 8th… | ON (30 Oct) |
-| Thought Bubble POV: backup | 08:47 same days | ON (30 Oct) |
-| Socho Zara riddles: 21 new reels (`riddle-batch`, `riddles/PLAYBOOK.md`) | 03:07 on the 1st, 4th, 7th… | ON (31 Oct) |
-| Socho Zara riddles: backup (finish unfinished batch) | 09:07 same days | ON (31 Oct) |
+| Thought Bubble POV: 9 episodes (`pov-batch`, `povreels/PLAYBOOK.md`) | 02:47 on the 2nd, 5th, 8th… | OFF (11 Nov, owner) |
+| Thought Bubble POV: backup | 08:47 same days | OFF (11 Nov) |
+| Socho Zara riddles: 21 new reels (`riddle-batch`, `riddles/PLAYBOOK.md`) | 03:07 on the 1st, 4th, 7th… | OFF on this account (not in the list on 11 Nov) |
+| Socho Zara riddles: backup (finish unfinished batch) | 09:07 same days | OFF on this account (11 Nov) |
 | Lokvara week 2 (`myth-batch`, `mythreels/PLAYBOOK.md` §2) | one-off, fired 31 Oct and 1 Nov | FINISHED with only 4 of 28. One-offs "Lokvara week 2 remaining 24" run 2 Nov 00:30 IST, backup 09:30 IST, on the plan in PLAYBOOK §2b |
 | elitesendgame: 35 reels, 21 story + 14 wildcards (job `elite-batch`, `mysteryreels/PLAYBOOK.md`) | 09:00, backup 13:00, on the 2nd, 7th, 12th, 17th, 22nd, 27th | ON (2 Nov). Renders with `make-elite.yml`. Makes 7 a day against 5 posted, so the queue grows by about 10 per batch, at about 95,000 ElevenLabs characters a month: owner's choice, 2 Nov |
 | elitesendgame first batch top-up (job `elite-first-35`) | one-off, 2 Nov 16:00 | The first batch began as 21; this finishes it to 35 if it stopped short |
