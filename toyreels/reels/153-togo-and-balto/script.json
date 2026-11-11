@@ -1,0 +1,49 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "These dogs ran through a blizzard to save a town full of children.",
+   "say": "These dogs ran through a blizzard to save a town full of children."
+  },
+  {
+   "shot": "nome",
+   "cap": "Nome, Alaska. January 1925. Children are catching diphtheria, and the town is running out of medicine.",
+   "say": "Nome, Alaska. January 1925. Children are catching diphtheria, and the town is running out of medicine."
+  },
+  {
+   "shot": "far",
+   "cap": "The nearest serum is almost seven hundred miles away. Planes can't fly in this cold.",
+   "say": "The nearest serum is almost seven hundred miles away. Planes can't fly in this cold."
+  },
+  {
+   "shot": "relay",
+   "cap": "So twenty mushers and about a hundred and fifty dogs form a relay, through temperatures of minus fifty.",
+   "say": "So twenty mushers and about a hundred and fifty dogs form a relay, through temperatures of minus fifty."
+  },
+  {
+   "shot": "togo",
+   "cap": "A husky called Togo leads the hardest stretch. His team runs about two hundred and sixty miles, across cracking sea ice.",
+   "say": "A husky called Togo leads the hardest stretch. His team runs about two hundred and sixty miles, across cracking sea ice."
+  },
+  {
+   "shot": "balto",
+   "cap": "Then a dog called Balto leads the final leg, through a whiteout, into Nome.",
+   "say": "Then a dog called Balto leads the final leg, through a whiteout, into Nome."
+  },
+  {
+   "shot": "saved",
+   "cap": "Five and a half days. The medicine arrives. The town is saved.",
+   "say": "Five and a half days. The medicine arrives. The town is saved."
+  },
+  {
+   "shot": "statue",
+   "cap": "Balto got a statue in New York. Togo, the dog who ran the furthest, was almost forgotten.",
+   "say": "Balto got a statue in New York. Togo, the dog who ran the furthest, was almost forgotten."
+  },
+  {
+   "shot": "outro",
+   "cap": "So remember his name. Togo.",
+   "say": "So remember his name. Togo."
+  }
+ ]
+}

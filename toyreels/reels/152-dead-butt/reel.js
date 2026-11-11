@@ -1,0 +1,27 @@
+// 152 cinestory3d (story3d.js): 'dead butt syndrome' (gluteal amnesia) from long sitting; fixes. Scroll stopper: a worker in a chair, a 'zzz' over his butt and a 10:00:00 sitting clock.
+STORY((k) => {
+  const { T, M, PI, E, seg, lerp } = k; const of = k.LIB.place.office(); k.place(of); const D = of.spots.desk;
+  const man = k.add(k.LIB.human({ body: 'm', top: '#7aa3c8', bottom: '#2f3440', hair: '#3b2414' }), [D[0], 0, D[2]], PI, of);
+  const glow = new T.Mesh(new T.SphereGeometry(0.22, 20, 14), new T.MeshBasicMaterial({ color: '#7fb2ff', transparent: true, opacity: 0.0, depthWrite: false, toneMapped: false })); of.add(glow);
+  let ov = null; const zzz = (ctx, t, x, y) => { ctx.save(); ctx.font = '900 54px Nunito, Arial'; ctx.fillStyle = '#fff'; ctx.strokeStyle = '#1d3557'; ctx.lineWidth = 8; for (let i = 0; i < 3; i++) { const u = (t * 0.6 + i / 3) % 1; ctx.globalAlpha = 1 - u; ctx.strokeText('z', x + u * 80, y - u * 150); ctx.fillText('z', x + u * 80, y - u * 150); } ctx.restore(); };
+  const body = (ctx, t, mode) => { ctx.save(); ctx.translate(360, 620); ctx.fillStyle = 'rgba(10,20,40,0.85)'; ctx.beginPath(); ctx.roundRect(-290, -360, 580, 700, 30); ctx.fill();
+    ctx.fillStyle = '#e8c4a8'; ctx.beginPath(); ctx.ellipse(0, -200, 120, 150, 0, 0, 7); ctx.fill(); ctx.fillRect(-120, -60, 240, 60); ctx.fillRect(-120, 0, 100, 300); ctx.fillRect(20, 0, 100, 300); // torso, hips, legs (from behind)
+    const gl = mode === 'off' ? '#7d8fa8' : '#ff4a3a'; ctx.fillStyle = gl; ctx.beginPath(); ctx.ellipse(-60, 20, 70, 60, 0, 0, 7); ctx.ellipse(60, 20, 70, 60, 0, 0, 7); ctx.fill();
+    if (mode === 'tight') { ctx.strokeStyle = '#ff3a3a'; ctx.lineWidth = 16; ctx.beginPath(); ctx.moveTo(-70, -80); ctx.lineTo(-60, 60); ctx.moveTo(70, -80); ctx.lineTo(60, 60); ctx.stroke(); }
+    ctx.font = '900 30px Nunito, Arial'; ctx.textAlign = 'center'; ctx.fillStyle = '#ffd23f'; ctx.fillText(mode === 'off' ? 'GLUTES: OFF' : mode === 'tight' ? 'HIP FLEXORS: TIGHT' : 'GLUTES: ON', 0, 330); ctx.restore(); if (mode === 'off') zzz(ctx, t, 400, 560); };
+  const pains = (ctx, t, u) => { [[360, 470, 'BACK'], [300, 640, 'HIP'], [340, 860, 'KNEE']].forEach(([x, y, l], i) => { const a = Math.max(0, Math.min(1, u * 3 - i)); if (a <= 0) return; ctx.save(); ctx.globalAlpha = a; const g = ctx.createRadialGradient(x, y, 5, x, y, 70); g.addColorStop(0, 'rgba(255,40,40,0.9)'); g.addColorStop(1, 'rgba(255,40,40,0)'); ctx.fillStyle = g; ctx.fillRect(x - 80, y - 80, 160, 160);
+    ctx.font = '900 30px Nunito, Arial'; ctx.fillStyle = '#fff'; ctx.textAlign = 'center'; ctx.lineWidth = 7; ctx.strokeStyle = '#000'; ctx.strokeText(l, x + 120, y + 10); ctx.fillText(l, x + 120, y + 10); ctx.restore(); }); };
+  const sit = (t) => { man.position.set(D[0], 0.03, D[2]); man.rotation.y = PI; man.pose('sit', t); };
+  const shots = {
+    hook: (t, kk) => { k.only(of); sit(t); ov = (ctx) => { zzz(ctx, t, 330, 760); k.counter(ctx, 'SITTING', `${String(8 + Math.floor(kk * 2)).padStart(2, '0')}:${String(Math.floor((t * 7) % 60)).padStart(2, '0')}:00`, { y: 190 }); }; return k.cam([D[0] + 1.4, 1.1, D[2] + 1.8], [D[0], 0.6, D[2]], 40); },
+    office: (t, kk) => { k.only(of); sit(t); ov = (ctx) => k.tint(ctx, '#203040', 0.1); return k.wide(of, { pos: [2.2, 1.7, 3.6], look: [D[0], 0.8, D[2]] }); },
+    amnesia: (t, kk) => { k.only(of); sit(t); ov = (ctx) => body(ctx, t, 'off'); return k.cam([D[0], 1.3, D[2] + 2.2], [D[0], 0.7, D[2]], 40); },
+    inside: (t, kk) => { k.only(of); sit(t); ov = (ctx) => body(ctx, t, 'tight'); return k.cam([D[0], 1.3, D[2] + 2.2], [D[0], 0.7, D[2]], 40); },
+    pain: (t, kk) => { k.only(of); man.position.set(0, 0, 1.6); man.rotation.y = PI; man.pose('hit', 0.5 + (t % 1) * 0.3); ov = (ctx) => pains(ctx, t, kk); return k.cam([0, 1.0, 4.4], [0, 0.95, 1.6], 38); },
+    test: (t, kk) => { k.only(of); man.position.set(0, 0, 1.6); man.rotation.y = 0; man.pose('idle', t); man.rotation.z = Math.sin(t * 2) * 0.05; ov = (ctx) => k.card(ctx, 'STAND ON ONE LEG', { y: 200, bg: '#7a3ad8' }); return k.cam([0.3, 1.1, 4.8], [0, 0.95, 1.6], 38); },
+    fix: (t, kk) => { k.only(of); man.rotation.z = 0; man.position.set(D[0], 0, D[2] + 0.4); man.rotation.y = 0; man.pose(kk < 0.35 ? 'standup' : 'idle', kk < 0.35 ? kk * 4 : t); ov = (ctx) => k.counter(ctx, 'EVERY', '30–60 MIN', { y: 190 }); return k.wide(of, { pos: [2.2, 1.7, 3.6], look: [D[0], 0.9, D[2]] }); },
+    moves: (t, kk) => { k.only(of); man.rotation.z = 0; man.position.set(0, 0, 1.0); man.rotation.y = 0.4; man.pose(Math.sin(t * 2.4) > 0 ? 'crouch' : 'idle', t); ov = (ctx) => { k.card(ctx, '10 BRIDGES', { y: 190, bg: '#2ecc71' }); k.card(ctx, '10 SQUATS', { y: 300, bg: '#2ecc71' }); }; return k.close(man, { d: 3.0, side: 0.3, h: 0.6, look: 0.5 }); },
+    outro: (t, kk) => { k.only(of); man.rotation.z = 0; man.position.set(0, 0, 1.0); man.rotation.y = 0.4; man.pose('dance', t); ov = (ctx) => k.big(ctx, 'WAKE UP! 🍑', { y: 230, size: 80, col: '#ffd23f' }); return k.close(man, { d: 3.2, side: 0.4, h: 0.6, look: 0.5 }); },
+  };
+  return { shots, sky: '#dfe4e8', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('ding', at('fix', 0.4), { f: 'E6', gain: 0.3 }); kit.play('pop', at('outro', 0.3), { gain: 0.3 }); } };
+}, { assets: ['humans/Superhero_Male', 'humans/ual1', 'props/chair'] });

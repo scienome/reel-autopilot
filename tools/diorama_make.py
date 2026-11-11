@@ -28,6 +28,41 @@ def tts(text, cfg, path):
     open(path, 'wb').write(urllib.request.urlopen(req, timeout=300).read())
 
 
+def align_lines(wav, lines):
+    """Line start/end times from word timestamps (faster-whisper, tiny.en, CPU). None if it is not installed."""
+    try:
+        import numpy as np, difflib, re as _re
+        from faster_whisper import WhisperModel
+    except Exception:
+        return None
+    w16 = wav[:-4] + '_16k.wav'
+    subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', wav, '-ar', '16000', '-ac', '1', w16], check=True)
+    with wave.open(w16) as w:
+        x = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32) / 32768
+    segs, _ = WhisperModel('tiny.en', device='cpu', compute_type='int8').transcribe(x, word_timestamps=True)
+    words = [w for sg in segs for w in sg.words]
+    norm = lambda t: _re.sub(r"[^a-z0-9]", '', t.lower())
+    heard = [norm(w.word) for w in words]
+    said, owner = [], []
+    for i, ln in enumerate(lines):
+        for t in ln['say'].split():
+            said.append(norm(t)); owner.append(i)
+    m = difflib.SequenceMatcher(None, said, heard, autojunk=False)
+    at = {}
+    for blk in m.get_matching_blocks():
+        for k in range(blk.size):
+            at[blk.a + k] = blk.b + k
+    lo, hi = [], []
+    for i in range(len(lines)):
+        idx = [j for j, o in enumerate(owner) if o == i and j in at]
+        if not idx:
+            return None
+        lo.append(float(words[at[idx[0]]].start)); hi.append(float(words[at[idx[-1]]].end))
+    for i in range(1, len(lines)):  # keep them in order
+        lo[i] = max(lo[i], hi[i - 1]); hi[i] = max(hi[i], lo[i] + 0.3)
+    return lo, hi
+
+
 def one_take(rid, reel, out, takes, cfg, lines):
     """Cartesia reels: the whole script in ONE request (no tone reset between lines), then each line's start and end is
     found from the natural pauses: for every line break, the pause nearest to where it should fall by text length."""
@@ -37,13 +72,24 @@ def one_take(rid, reel, out, takes, cfg, lines):
     if not os.path.exists(mp3):
         print('voicing the whole script in one take', flush=True)
         tts(text, cfg, mp3)
-    for f in set(os.listdir(takes)) - {name}:
+    for f in set(os.listdir(takes)) - {name, name[:-4] + '.json'}:
         os.remove(os.path.join(takes, f))
     wav = os.path.join(out, 'take.wav')
     subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', mp3, '-ac', '1', '-ar', '44100', '-sample_fmt', 's16', wav], check=True)
     with wave.open(wav) as w:
         audio = w.readframes(w.getnframes())
         dur = w.getnframes() / 44100
+    lo = hi = None
+    aj = mp3[:-4] + '.json'  # word-aligned line times, cached next to the take (made locally with faster-whisper)
+    if os.path.exists(aj):
+        al = json.load(open(aj)); lo, hi = al['lo'], al['hi']
+    else:
+        al = align_lines(wav, lines)
+        if al:
+            lo, hi = al
+            json.dump({'lo': lo, 'hi': hi}, open(aj, 'w'))
+    if lo is not None:
+        return finish(rid, reel, out, lines, audio, dur, lo, hi)
     import array, math
     smp = array.array('h', audio)
     win = 441  # 10 ms
@@ -90,6 +136,10 @@ def one_take(rid, reel, out, takes, cfg, lines):
         cuts = [(w_, w_) for w_ in want]
     lo = [0.0] + [b for a, b in cuts]
     hi = [a for a, b in cuts] + [dur]
+    return finish(rid, reel, out, lines, audio, dur, lo, hi)
+
+
+def finish(rid, reel, out, lines, audio, dur, lo, hi):
     timed = [{'shot': ln['shot'], 'cap': ln['cap'], 't0': round(LEAD_IN + lo[i], 3), 't1': round(LEAD_IN + hi[i], 3)} for i, ln in enumerate(lines)]
     shots = {}
     for i, ln in enumerate(timed):  # a shot cuts in the middle of the pause before its line
