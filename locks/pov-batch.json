@@ -1,9 +1,9 @@
 {
  "job": "pov-batch",
- "status": "in_progress",
+ "status": "done",
  "owner": "vm-853e30",
  "started": "2026-11-11T03:17:46Z",
- "updated": "2026-11-11T03:18:50Z",
+ "updated": "2026-11-11T03:18:52Z",
  "note": "056-061 queued; 062-064 blocked by ElevenLabs quota 0",
  "history": [
   {
