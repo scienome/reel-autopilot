@@ -202,7 +202,7 @@ Folder: [`dave-reels/`](dave-reels/)
 | [43-dave-grows-an-inch](dave-reels/43-dave-grows-an-inch.mp4) | What if you grew 1 inch every day? | Waiting to post |
 | [44-gimli-glider](dave-reels/44-gimli-glider.mp4) | The jet that ran out of fuel because of maths | Waiting to post |
 
-## Toy reels (Brick Toy) (157)
+## Toy reels (Brick Toy) (159)
 Folder: [`toy-reels/`](toy-reels/)
 
 | Video | Title | Status |
@@ -279,8 +279,10 @@ Folder: [`toy-reels/`](toy-reels/)
 | [164-ewe-remember-faces](toy-reels/164-ewe-remember-faces.mp4) | Ewe won't believe what sheep remember 🐑 | Waiting to post |
 | [165-cow-burps](toy-reels/165-cow-burps.mp4) | Cows aren't farting the planet to death. It's the burps 🐄💨 | Waiting to post |
 | [166-moon-pulling-out](toy-reels/166-moon-pulling-out.mp4) | The Moon is slowly pulling out 🌙 | Waiting to post |
+| [169-sheepdog-eyes](toy-reels/169-sheepdog-eyes.mp4) | She moves 300 sheep with just her eyes 🐕🐑 | Waiting to post |
 | [17-einstein-art-school](toy-reels/17-einstein-art-school.mp4) | Einstein Went Back In Time To Get Hitler Into Art School 🎨 | Posted (Instagram + YouTube) |
 | [171-uranus-on-its-side](toy-reels/171-uranus-on-its-side.mp4) | Something hit Uranus so hard, it's still on its side 🪐 | Waiting to post |
+| [172-counting-sheep](toy-reels/172-counting-sheep.mp4) | Counting sheep doesn't work. Try this instead 🐑😴 | Waiting to post |
 | [18-santa-layoffs](toy-reels/18-santa-layoffs.mp4) | Santa Replaced The Elves With Robots. Big Mistake. 🎅 | Posted (Instagram + YouTube) |
 | [19-batguy-electricity-bill](toy-reels/19-batguy-electricity-bill.mp4) | Bat-Guy's Worst Villain Was The Electricity Bill 🦇 | Waiting to post |
 | [20-illuminati-moon-landing](toy-reels/20-illuminati-moon-landing.mp4) | The Illuminati Faked The Moon Landing... ON THE MOON 🌕 | Posted (Instagram + YouTube) |
