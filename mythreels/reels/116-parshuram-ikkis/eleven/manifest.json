@@ -1,0 +1,28 @@
+{
+ "music-6462b876db18.mp3": {
+  "prompt": "Indian mythological epic score: war drums, dhol, shehnai, conch blasts, tanpura drone, rising strings, no vocals, heroic and intense",
+  "music_length_ms": 50460,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-48be55067ce3.mp3": {
+  "text": "sudden silence then a low drum",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-c68830933064.mp3": {
+  "text": "war drums and a conch blast",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-b4bb6a50ec34.mp3": {
+  "text": "thunder and rolling war drums",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
