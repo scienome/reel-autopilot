@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Cows face north. And nobody knows why.",
+   "say": "Cows face north. And nobody knows why."
+  },
+  {
+   "shot": "sat",
+   "cap": "In 2008, scientists studied satellite images of more than eight thousand cattle, all over the world.",
+   "say": "In 2008, scientists studied satellite images of more than eight thousand cattle, all over the world."
+  },
+  {
+   "shot": "pattern",
+   "cap": "Grazing or resting, they kept lining up the same way. Roughly north to south.",
+   "say": "Grazing or resting, they kept lining up the same way. Roughly north to south."
+  },
+  {
+   "shot": "deer",
+   "cap": "Deer did it too. Even when the wind and the sun came from other directions.",
+   "say": "Deer did it too. Even when the wind and the sun came from other directions."
+  },
+  {
+   "shot": "why",
+   "cap": "One idea: cows can sense Earth's magnetic field, like a built in compass.",
+   "say": "One idea: cows can sense Earth's magnetic field, like a built in compass."
+  },
+  {
+   "shot": "power",
+   "cap": "Under power lines, which disturb the magnetic field, the pattern fell apart.",
+   "say": "Under power lines, which disturb the magnetic field, the pattern fell apart."
+  },
+  {
+   "shot": "doubt",
+   "cap": "But another team couldn't find the same pattern. So the mystery is still open.",
+   "say": "But another team couldn't find the same pattern. So the mystery is still open."
+  },
+  {
+   "shot": "outro",
+   "cap": "Next time you pass a field of cows, check which way they're facing.",
+   "say": "Next time you pass a field of cows, check which way they're facing."
+  }
+ ]
+}

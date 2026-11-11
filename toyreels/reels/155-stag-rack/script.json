@@ -1,0 +1,49 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Every year he loses his rack, and grows a bigger one.",
+   "say": "Every year he loses his rack, and grows a bigger one."
+  },
+  {
+   "shot": "drop",
+   "cap": "Late winter. A stag's antlers simply fall off. Both of them, within days.",
+   "say": "Late winter. A stag's antlers simply fall off. Both of them, within days."
+  },
+  {
+   "shot": "regrow",
+   "cap": "Then they grow back, from scratch. Up to two and a half centimetres a day.",
+   "say": "Then they grow back, from scratch. Up to two and a half centimetres a day."
+  },
+  {
+   "shot": "fastest",
+   "cap": "That's some of the fastest growing tissue of any mammal.",
+   "say": "That's some of the fastest growing tissue of any mammal."
+  },
+  {
+   "shot": "velvet",
+   "cap": "While they grow, they're covered in soft, fuzzy skin called velvet, full of blood vessels.",
+   "say": "While they grow, they're covered in soft, fuzzy skin called velvet, full of blood vessels."
+  },
+  {
+   "shot": "bone",
+   "cap": "By late summer they harden into bone, and he rubs the velvet off on trees.",
+   "say": "By late summer they harden into bone, and he rubs the velvet off on trees."
+  },
+  {
+   "shot": "rut",
+   "cap": "Then it's autumn, and he uses them to fight other males, and impress the females.",
+   "say": "Then it's autumn, and he uses them to fight other males, and impress the females."
+  },
+  {
+   "shot": "bigger",
+   "cap": "As he gets older and stronger, the rack usually gets bigger.",
+   "say": "As he gets older and stronger, the rack usually gets bigger."
+  },
+  {
+   "shot": "outro",
+   "cap": "So yes. He loses it every year. And comes back bigger.",
+   "say": "So yes. He loses it every year. And comes back bigger."
+  }
+ ]
+}

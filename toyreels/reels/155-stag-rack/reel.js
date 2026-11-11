@@ -1,0 +1,31 @@
+// 155 cinestory3d (story3d.js): antlers are shed and regrown every year (Britannica; Price et al. 2005). Scroll stopper: a stag with a huge rack, then the antlers drop off.
+STORY((k) => {
+  const { T, M, PI, E, seg, lerp } = k; const fr = k.forest({ trees: 22 });
+  const stag = k.add(k.LIB.animal('stag', { h: 1.9 }), [0, 0, 0], 0.6, fr), doe = k.add(k.LIB.animal('deer', { h: 1.5 }), [0, 0, 0], 0.6, fr);
+  const rival = k.add(k.LIB.animal('stag', { h: 1.85 }), [0, 0, 0], 0, fr), mate = k.add(k.LIB.animal('deer', { h: 1.35 }), [3, 0, -3], -0.8, fr);
+  // growing antlers on the antler-less deer: branches parented to its head bone
+  let head = null; doe.traverse((n) => { if (n.isBone && n.name === 'Head') head = n; });
+  const VEL = M('#4a3020', 0.95), BONE = M('#cdbb98', 0.5), rack = new T.Group(); const tines = [];
+  [-1, 1].forEach((s) => { const beam = new T.Group(); beam.rotation.set(-0.25, 0, s * 0.45); beam.position.x = s * 0.06; rack.add(beam); for (let i = 0; i < 5; i++) { const c = new T.Mesh(new T.CylinderGeometry(0.018 - i * 0.002, 0.024 - i * 0.002, 0.16, 8), VEL); c.position.y = 0.08 + i * 0.15; beam.add(c); tines.push(c);
+    if (i > 0) { const tn = new T.Mesh(new T.CylinderGeometry(0.008, 0.014, 0.12, 6), VEL); tn.position.set(0, 0.08 + i * 0.15, 0.04); tn.rotation.x = 0.9; beam.add(tn); tines.push(tn); } } });
+  fr.add(rack); const hv = new T.Vector3();
+  const grow = (u, bone) => { rack.visible = u > 0.01 && doe.visible; doe.updateMatrixWorld(true); if (head) { head.getWorldPosition(hv); fr.worldToLocal(hv); rack.position.set(hv.x, hv.y + 0.1, hv.z); } rack.rotation.y = doe.rotation.y; rack.scale.setScalar(0.85 * Math.max(0.01, u)); tines.forEach((t) => { t.material = bone ? BONE : VEL; }); };
+  const fallen = [0, 1].map((i) => { const g = new T.Group(); const a = new T.Mesh(new T.CylinderGeometry(0.03, 0.05, 1.0, 8), BONE); a.rotation.z = PI / 2 - 0.3; g.add(a); for (let j = 0; j < 3; j++) { const tn = new T.Mesh(new T.CylinderGeometry(0.012, 0.025, 0.3, 6), BONE); tn.position.set(-0.3 + j * 0.3, 0.12, 0); tn.rotation.z = 0.4; g.add(tn); } g.position.set(i ? 0.5 : -0.4, 0.04, 0.9 + i * 0.3); g.rotation.y = i * 1.3; fr.add(g); return g; });
+  let ov = null; const base = () => { k.only(fr); [stag, doe, rival, mate].forEach((a) => { a.visible = false; }); fallen.forEach((f) => { f.visible = false; }); };
+  const winter = (ctx) => k.tint(ctx, '#dfe8f2', 0.25), summer = (ctx) => k.tint(ctx, '#ffd27a', 0.1), autumn = (ctx) => k.tint(ctx, '#ff8a3a', 0.16);
+  const season = (ctx, s) => k.card(ctx, s, { y: 190, bg: { WINTER: '#5d7590', SPRING: '#4a9a4a', SUMMER: '#e0a020', AUTUMN: '#c8501e' }[s] });
+  const shots = {
+    hook: (t, kk) => { base(); const off = kk > 0.55; (off ? doe : stag).visible = true; const a = off ? doe : stag; a.position.set(0, 0, 0); a.rotation.y = 0.6; a.pose('idle', t); grow(0); fallen.forEach((f) => { f.visible = off; }); ov = (ctx) => winter(ctx);
+      return k.cam([2.4, 1.7, 3.2], [0, 1.4, 0], 38, { sky: fr.sky }); },
+    drop: (t, kk) => { base(); doe.visible = true; doe.position.set(0, 0, 0); doe.rotation.y = 0.6; doe.pose('headlow', t); grow(0); fallen.forEach((f) => { f.visible = true; }); ov = (ctx) => { winter(ctx); season(ctx, 'WINTER'); }; return k.cam([2.0, 1.2, 2.6], [0.1, 0.6, 0.6], 38, { sky: fr.sky }); },
+    regrow: (t, kk) => { base(); doe.visible = true; doe.position.set(0, 0, 0); doe.rotation.y = 0.6; doe.pose('idle', t); grow(E(kk) * 0.6); ov = (ctx) => { summer(ctx); season(ctx, 'SPRING'); k.counter(ctx, 'GROWING', '2.5 CM / DAY', { y: 330 }); }; return k.cam([2.6, 1.8, 3.4], [0.15, 1.55, 0.2], 34, { sky: fr.sky, focus: [0.3, 0.75], blur: 7 }); },
+    fastest: (t, kk) => { base(); doe.visible = true; doe.position.set(0, 0, 0); doe.rotation.y = 0.6 + t * 0.2; doe.pose('idle', t); grow(0.6 + kk * 0.3); ov = (ctx) => { summer(ctx); k.card(ctx, 'FASTEST GROWING TISSUE', { y: 200, bg: '#7a3ad8', size: 38 }); }; return k.cam([2.6, 1.8, 3.4], [0.15, 1.55, 0.2], 34, { sky: fr.sky, focus: [0.3, 0.75], blur: 7 }); },
+    velvet: (t, kk) => { base(); doe.visible = true; doe.position.set(0, 0, 0); doe.rotation.y = 0.6; doe.pose('idle', t); grow(0.9); ov = (ctx) => { summer(ctx); ctx.save(); ctx.strokeStyle = 'rgba(220,40,40,0.85)'; ctx.lineWidth = 4; for (let i = 0; i < 8; i++) { ctx.beginPath(); for (let y = 0; y < 220; y += 10) ctx.lineTo(300 + i * 16 + Math.sin(y / 20 + i + t * 2) * 8, 520 - y); ctx.stroke(); } ctx.restore(); k.card(ctx, 'VELVET = SKIN + BLOOD', { y: 200, bg: '#8b0000', size: 40 }); };
+      return k.cam([2.6, 1.8, 3.4], [0.15, 1.55, 0.2], 34, { sky: fr.sky, focus: [0.3, 0.75], blur: 7 }); },
+    bone: (t, kk) => { base(); doe.visible = true; doe.position.set(0.6, 0, 0); doe.rotation.y = PI / 2 + Math.sin(t * 6) * 0.2; doe.pose('attack', t); grow(1, kk > 0.4); ov = (ctx) => { summer(ctx); season(ctx, 'SUMMER'); }; return k.cam([2.8, 1.4, 2.4], [0.6, 1.1, 0], 38, { sky: fr.sky }); },
+    rut: (t, kk) => { base(); stag.visible = rival.visible = mate.visible = true; stag.position.set(-0.9, 0, 0); stag.rotation.y = PI / 2; rival.position.set(0.9, 0, 0); rival.rotation.y = -PI / 2; stag.pose('attack', t); rival.pose('attack', t + 0.4); mate.pose('idle', t); ov = (ctx) => { autumn(ctx); season(ctx, 'AUTUMN'); }; return k.cam([0.4, 1.4, 4.6], [0, 1.1, 0], 40, { sky: fr.sky }); },
+    bigger: (t, kk) => { base(); stag.visible = true; stag.position.set(0, 0, 0); stag.rotation.y = 0.6; stag.scale.setScalar(lerp(0.85, 1.12, E(kk))); stag.pose('idle', t); ov = (ctx) => autumn(ctx); return k.cam([2.8, 1.6, 3.8], [0, 1.4, 0], 40, { sky: fr.sky }); },
+    outro: (t, kk) => { base(); stag.visible = true; stag.scale.setScalar(1.12); stag.position.set(0, 0, 0); stag.rotation.y = 0.6; stag.pose('idle', t); ov = (ctx) => k.big(ctx, 'BIGGER. 🦌', { y: 230, size: 84, col: '#ffd23f' }); return k.cam([2.4, 1.7, 3.6], [0, 1.5, 0], 38, { sky: fr.sky }); },
+  };
+  return { shots, sky: fr.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('click', at('hook', 2.4), { gain: 0.4 }); kit.play('click', at('rut', 0.5), { gain: 0.5 }); kit.play('click', at('rut', 1.3), { gain: 0.5 }); } };
+}, { assets: ['animals/stag', 'animals/deer', 'nature/tree_oak', 'nature/tree_maple', 'nature/tree_birch', 'nature/rock_mossy', 'nature/rock_large_a'] });

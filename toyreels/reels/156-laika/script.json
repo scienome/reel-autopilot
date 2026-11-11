@@ -1,0 +1,49 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "She was the first living thing to orbit the Earth. And she was never coming back.",
+   "say": "She was the first living thing to orbit the Earth. And she was never coming back."
+  },
+  {
+   "shot": "stray",
+   "cap": "Moscow, 1957. Scientists pick a small stray dog off the streets. Her name is Laika.",
+   "say": "Moscow, 1957. Scientists pick a small stray dog off the streets. Her name is Laika."
+  },
+  {
+   "shot": "why",
+   "cap": "Strays were tough, used to cold and hunger. Perfect, they thought, for space.",
+   "say": "Strays were tough, used to cold and hunger. Perfect, they thought, for space."
+  },
+  {
+   "shot": "train",
+   "cap": "She trained in tiny cages, and in machines that shook like a rocket.",
+   "say": "She trained in tiny cages, and in machines that shook like a rocket."
+  },
+  {
+   "shot": "launch",
+   "cap": "On the third of November, Sputnik 2 launches, with Laika inside.",
+   "say": "On the third of November, Sputnik 2 launches, with Laika inside."
+  },
+  {
+   "shot": "orbit",
+   "cap": "She becomes the first animal ever to orbit the Earth.",
+   "say": "She becomes the first animal ever to orbit the Earth."
+  },
+  {
+   "shot": "truth",
+   "cap": "But there was no way to bring her back. Decades later, the world learned she died within hours, from the heat.",
+   "say": "But there was no way to bring her back. Decades later, the world learned she died within hours, from the heat."
+  },
+  {
+   "shot": "regret",
+   "cap": "One of the scientists later said, we did not learn enough to justify the death of the dog.",
+   "say": "One of the scientists later said, we did not learn enough to justify the death of the dog."
+  },
+  {
+   "shot": "outro",
+   "cap": "Today, a monument to Laika stands in Moscow. A small dog, on top of a rocket.",
+   "say": "Today, a monument to Laika stands in Moscow. A small dog, on top of a rocket."
+  }
+ ]
+}
