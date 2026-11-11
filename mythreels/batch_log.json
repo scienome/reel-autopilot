@@ -130,5 +130,17 @@
    ]
   },
   "notes": "Folk versions say कहते हैं and list folk tradition in sources. Teasers of each part 3 point to part 4 (not yet made): पांडु और हिरण का श्राप, मंदिर में घंटी, नवरात्रि के नौ रूप, हनुमान चिरंजीवी. Bhishma story follows Parshuram."
+ },
+ "week_16nov": {
+  "date": "2026-11-11",
+  "status": "done",
+  "made": "201-228 (4 new series x 7: रावण से पहले: असुरों के रहस्य 201-207, देवताओं के वाहन क्यों? 208-214, मंदिरों के रहस्य 215-221, श्रीकृष्ण के अनसुने किस्से 222-228) + भीष्म की गाथा 119-125 (21:00 slot, Sudhir)",
+  "notes": "Owner picked the 4 series and Bhishma (11 Nov). Avoided stories already told: mouse, peacock, Garuda, Durga lion, Jagannath, Vritra. Regular ids start at 201 because 101-125 is the 21:00 range. Queue alternates the 4 series in part order.",
+  "rejected": [
+   "मूषक/मोर/गरुड़/शेर (already 052/054/057/073)",
+   "जगन्नाथ (049)",
+   "सोमनाथ (Daksha-Chandra overlaps 045)",
+   "अंबा (117, 023)"
+  ]
  }
 }

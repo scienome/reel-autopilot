@@ -1,0 +1,37 @@
+{
+ "music": {
+  "prompt": "Indian mythological cinematic underscore: tanpura drone, soft tabla, bansuri, temple bells, swelling shehnai at the climax, no vocals, warm devotional temple feeling",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "b2",
+   "word": "उसकी",
+   "prompt": "soft flute and anklet bells",
+   "dur": 1.6,
+   "gain": -8
+  },
+  {
+   "beat": "b3",
+   "word": "पुंडलिक",
+   "prompt": "a brick sliding on stone",
+   "dur": 1.6,
+   "gain": -8
+  },
+  {
+   "beat": "end",
+   "word": "मातापिता",
+   "prompt": "taal cymbals and bhajan rhythm",
+   "dur": 1.6,
+   "gain": -8
+  },
+  {
+   "beat": "nx",
+   "word": "मंदिरों",
+   "prompt": "deep suspense drum hit and rising whoosh",
+   "dur": 1.8,
+   "gain": -7
+  }
+ ]
+}

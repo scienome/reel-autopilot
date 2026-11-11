@@ -83,7 +83,35 @@
   "067-narad-shraap",
   "070-pehli-rakhi",
   "073-durga-sher",
-  "076-hanuman-ramayan"
+  "076-hanuman-ramayan",
+  "201-devta-asur-bhai",
+  "208-nandi-vahan",
+  "215-kedarnath",
+  "222-ranchhod",
+  "202-diti-sandhya",
+  "209-airavat",
+  "216-tirupati-karz",
+  "223-syamantak-mani",
+  "203-shukracharya-aankh",
+  "210-lakshmi-ullu",
+  "217-vaishno-bhairon",
+  "224-jambavan-yuddh",
+  "204-sanjeevani-vidya",
+  "211-saraswati-hans",
+  "218-rameshwaram",
+  "225-sandipani-dakshina",
+  "205-kach-devayani",
+  "212-surya-saat-ghode",
+  "219-mahakal-dakshin",
+  "226-chhappan-bhog",
+  "206-rahu-ketu",
+  "213-kuber-naravahan",
+  "220-kashi-trishul",
+  "227-rukmini-durvasa",
+  "207-maya-danav",
+  "214-dattatreya-kutte",
+  "221-vitthal-eent",
+  "228-jara-teer"
  ],
  "reserved": {
   "21:00": [
@@ -104,7 +132,14 @@
    "115-parshuram-kamdhenu",
    "116-parshuram-ikkis",
    "117-parshuram-bhishma",
-   "118-parshuram-ram"
+   "118-parshuram-ram",
+   "119-bhishma-vasu",
+   "120-bhishma-pratigya",
+   "121-bhishma-kuruvansh",
+   "122-bhishma-chup",
+   "123-krishna-pratigya",
+   "124-bhishma-rahasya",
+   "125-baano-ki-shayya"
   ]
  }
 }

@@ -1,0 +1,28 @@
+{
+ "title": "एक प्रतिज्ञा, जिसने देवव्रत को भीष्म बनाया 🙏 | भीष्म की गाथा भाग 2",
+ "caption": "पिता की खुशी के लिए राजगद्दी और विवाह, दोनों का त्याग। आकाश से आवाज़ आई: भीष्म! 🙏\nजय भीष्म पितामह लिखें 👇",
+ "hashtags": [
+  "bhishma",
+  "pratigya",
+  "satyavati",
+  "shantanu",
+  "mahabharat",
+  "hindumythology",
+  "sanatandharma",
+  "animation",
+  "hindi",
+  "reels"
+ ],
+ "first_comment": "भीष्म पितामह को प्रणाम 🙏",
+ "cover_t": 1.2,
+ "series": "भीष्म की गाथा",
+ "part": 2,
+ "potential": 9,
+ "libs": [
+  "kit/myth.js",
+  "kit/katha.js"
+ ],
+ "sources": [
+  "Mahabharata, Adi Parva ch. 94 (Devavrata renounces the throne and marriage for Satyavati's father; the gods call him Bhishma; Shantanu grants death at will)"
+ ]
+}

@@ -104,3 +104,10 @@ compact style (`one`, `two`, `CAM`, `cardOn` from the harness).
 - Push 2-3 episodes per commit; don't push while a "Make myth reels" run is queued (a second queued run replaces it).
 - Download each `mythreel-<id>` MP4: duration < 60 s, mean volume ≈ -15 dB, a few frames; the job log shows every line
   voiced and the sfx placed. Then add the id to `schedule.json` "queue" (series order).
+
+## 2c. Week of 16 Nov 2026 (owner, 11 Nov): 4 new series + Bhishma
+Made in one batch: रावण से पहले: असुरों के रहस्य (201-207), देवताओं के वाहन क्यों? (208-214), मंदिरों के रहस्य (215-221),
+श्रीकृष्ण के अनसुने किस्से (222-228), all 7 parts and ended; भीष्म की गाथा (119-125) in the reserved 21:00 slot, Sudhir narrating.
+**Ids:** regular reels now use 201+ (101-1xx is the 21:00 series range). Animal and temple helpers (owl, swan, horse, dog, bear,
+palanquin, temple, shivling, gem, brick) were written inline per reel (see any of 201-228); the sets diwali/field/road/street/ayodhya
+need `kit/diwali.js` in meta `libs`.

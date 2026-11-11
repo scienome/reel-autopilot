@@ -1,0 +1,29 @@
+{
+ "title": "बाणों की शय्या पर अट्ठावन रातें 🙏 | भीष्म की गाथा भाग 7",
+ "caption": "बाणों का तकिया, धरती से निकली गंगा, और उत्तरायण तक का इंतज़ार। भीष्म की प्रतिज्ञा आखिरी साँस तक निभी। 🙏\nसीरीज़ कैसी लगी? 👇",
+ "hashtags": [
+  "bhishma",
+  "shareshayya",
+  "uttarayan",
+  "arjun",
+  "mahabharat",
+  "hindumythology",
+  "sanatandharma",
+  "animation",
+  "hindi",
+  "reels"
+ ],
+ "first_comment": "भीष्म पितामह को प्रणाम 🙏 अगली सीरीज़ किस पर? 👇",
+ "cover_t": 1.2,
+ "series": "भीष्म की गाथा",
+ "part": 7,
+ "potential": 9,
+ "libs": [
+  "kit/myth.js",
+  "kit/katha.js"
+ ],
+ "sources": [
+  "Mahabharata, Bhishma Parva ch. 115-116 (the pillow of arrows; Arjuna's arrow brings up a stream of water for Bhishma)",
+  "Mahabharata, Anushasana Parva ch. 167 (fifty-eight nights on the bed of arrows; Bhishma leaves his body at uttarayana) and Shanti Parva (his teachings to Yudhishthira)"
+ ]
+}

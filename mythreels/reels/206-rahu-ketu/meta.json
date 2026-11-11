@@ -1,0 +1,29 @@
+{
+ "title": "एक असुर, जो दो ग्रह बन गया! 🌑 | रावण से पहले भाग 6",
+ "caption": "अमृत की एक घूँट, एक सुदर्शन चक्र, और जन्मे राहु-केतु। 🌘\nग्रहण की ये कथा पहले सुनी थी? 👇",
+ "hashtags": [
+  "rahu",
+  "ketu",
+  "samudramanthan",
+  "grahan",
+  "mohini",
+  "hindumythology",
+  "sanatandharma",
+  "animation",
+  "hindi",
+  "reels"
+ ],
+ "first_comment": "ॐ नमो नारायणाय 🙏 लिखें",
+ "cover_t": 1.2,
+ "series": "रावण से पहले: असुरों के रहस्य",
+ "part": 6,
+ "potential": 9,
+ "libs": [
+  "kit/myth.js",
+  "kit/katha.js"
+ ],
+ "sources": [
+  "Bhagavata Purana 8.9 (Svarbhanu sits among the gods, is beheaded by the Sudarshana; the head becomes a graha)",
+  "Mahabharata, Adi Parva ch. 19 (Rahu drinks amrita, is beheaded; his enmity with the Sun and Moon, the eclipse)"
+ ]
+}

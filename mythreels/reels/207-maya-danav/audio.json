@@ -1,0 +1,37 @@
+{
+ "music": {
+  "prompt": "Indian mythological cinematic underscore: tanpura drone, soft tabla, bansuri, temple bells, swelling shehnai at the climax, no vocals, warm devotional temple feeling",
+  "gain": -7,
+  "tail": 3
+ },
+ "sfx": [
+  {
+   "beat": "b2",
+   "word": "उन्होंने",
+   "prompt": "a mighty bow twang and a cosmic explosion",
+   "dur": 1.6,
+   "gain": -8
+  },
+  {
+   "beat": "b4",
+   "word": "और",
+   "prompt": "roaring forest fire",
+   "dur": 1.6,
+   "gain": -8
+  },
+  {
+   "beat": "b5",
+   "word": "बदले",
+   "prompt": "a splash of water and echoing laughter",
+   "dur": 1.6,
+   "gain": -8
+  },
+  {
+   "beat": "nx",
+   "word": "रावण",
+   "prompt": "deep suspense drum hit and rising whoosh",
+   "dur": 1.8,
+   "gain": -7
+  }
+ ]
+}

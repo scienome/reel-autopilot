@@ -1,0 +1,30 @@
+{
+ "title": "असुरों का इंजीनियर, जो बना रावण का ससुर! 🏛️ | रावण से पहले भाग 7",
+ "caption": "त्रिपुर, मयसभा, और मंदोदरी के पिता। मय दानव की कहानी। 🏛️\nसीरीज़ कैसी लगी? 👇",
+ "hashtags": [
+  "mayasur",
+  "mandodari",
+  "mayasabha",
+  "tripur",
+  "ravan",
+  "hindumythology",
+  "sanatandharma",
+  "animation",
+  "hindi",
+  "reels"
+ ],
+ "first_comment": "अगली सीरीज़ किस पर हो? बताइए 👇",
+ "cover_t": 1.2,
+ "series": "रावण से पहले: असुरों के रहस्य",
+ "part": 7,
+ "potential": 9,
+ "libs": [
+  "kit/myth.js",
+  "kit/katha.js"
+ ],
+ "sources": [
+  "Mahabharata, Sabha Parva ch. 1-3 and Adi Parva (Khandava): Arjuna spares Maya, who builds the assembly hall",
+  "Valmiki Ramayana, Uttara Kanda ch. 12 (Mandodari, daughter of Maya, married to Ravana)",
+  "Shiva Purana, Rudra Samhita, Yuddha Khanda (Maya builds Tripura; Shiva destroys it with one arrow)"
+ ]
+}

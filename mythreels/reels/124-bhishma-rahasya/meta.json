@@ -1,0 +1,29 @@
+{
+ "title": "भीष्म ने खुद बताया, मुझे कैसे मारो! 😮 | भीष्म की गाथा भाग 6",
+ "caption": "नौ दिन अजेय रहे भीष्म, और फिर पांडवों को अपनी ही हार का रास्ता बता दिया। 🏹\nभीष्म ने ऐसा क्यों किया? 👇",
+ "hashtags": [
+  "bhishma",
+  "shikhandi",
+  "arjun",
+  "kurukshetra",
+  "mahabharat",
+  "hindumythology",
+  "sanatandharma",
+  "animation",
+  "hindi",
+  "reels"
+ ],
+ "first_comment": "भीष्म ने अपनी हार का रास्ता क्यों बताया? 👇",
+ "cover_t": 1.2,
+ "series": "भीष्म की गाथा",
+ "part": 6,
+ "potential": 9,
+ "libs": [
+  "kit/myth.js",
+  "kit/katha.js"
+ ],
+ "sources": [
+  "Mahabharata, Bhishma Parva ch. 103-108 (the Pandavas ask Bhishma how to defeat him; he will not fight Shikhandi; Arjuna shoots from behind Shikhandi)",
+  "Mahabharata, Bhishma Parva ch. 114-115 (Bhishma falls; his body rests on the arrows without touching the ground)"
+ ]
+}

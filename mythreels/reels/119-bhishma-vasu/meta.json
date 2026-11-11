@@ -1,0 +1,28 @@
+{
+ "title": "भीष्म एक श्रापित देवता थे! 😮 | भीष्म की गाथा भाग 1",
+ "caption": "आठ वसु, वशिष्ठ की गाय, और एक श्राप। गंगा ने सात बेटों को बहाया, आठवें बने भीष्म। 🌊\nये कथा पहले सुनी थी? 👇",
+ "hashtags": [
+  "bhishma",
+  "ganga",
+  "vasu",
+  "vashishtha",
+  "mahabharat",
+  "hindumythology",
+  "sanatandharma",
+  "animation",
+  "hindi",
+  "reels"
+ ],
+ "first_comment": "जय गंगा मैया 🙏🌊 लिखें",
+ "cover_t": 1.2,
+ "series": "भीष्म की गाथा",
+ "part": 1,
+ "potential": 9,
+ "libs": [
+  "kit/myth.js",
+  "kit/katha.js"
+ ],
+ "sources": [
+  "Mahabharata, Adi Parva ch. 93-96 (the Vasus steal Vasishtha's cow Nandini and are cursed; Ganga as their mother; Shantanu stops her at the eighth son, Devavrata)"
+ ]
+}
