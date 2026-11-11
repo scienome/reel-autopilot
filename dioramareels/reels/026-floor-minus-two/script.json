@@ -1,0 +1,8 @@
+{ "lines": [
+ {"shot": "hook", "cap": "", "say": "You went back to floor minus one. Now there is a button below it.", "cold": true},
+ {"shot": "down", "cap": "*MINUS TWO.", "say": "Minus two. The clerks down here collect rent from minus one."},
+ {"shot": "deeper", "cap": "*DEEPER.", "say": "Minus three. Minus four. Every floor pays the floor below it."},
+ {"shot": "nine", "cap": "*MINUS NINE.", "say": "The last button says minus nine. You live on nine."},
+ {"shot": "door", "cap": "*YOUR DOOR.", "say": "The doors open on a hallway. Your doormat. Your door. Your light is on."},
+ {"shot": "end", "cap": "", "say": "Would you press minus nine? Write it in the comments."}
+] }

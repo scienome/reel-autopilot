@@ -1,0 +1,8 @@
+{ "lines": [
+ {"shot": "hook", "cap": "", "say": "Your city pays salaries in hours of life. Your boss just offered overtime.", "cold": true},
+ {"shot": "deal", "cap": "ONE FOR *TWO.", "say": "One extra hour of work. Two hours added to your life. Easy."},
+ {"shot": "rent", "cap": "RENT: *ONE WEEK.", "say": "Then rent comes due. One week of your life. Every month."},
+ {"shot": "rich", "cap": "*NOBODY AGES.", "say": "You walk past the rich block. Nobody there looks older than thirty."},
+ {"shot": "young", "cap": "*1890.", "say": "The man at the top has been thirty years old since eighteen ninety."},
+ {"shot": "end", "cap": "", "say": "Would you sell one hour of your life? Write it in the comments."}
+] }

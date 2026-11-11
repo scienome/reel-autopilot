@@ -1,0 +1,8 @@
+{ "lines": [
+ {"shot": "hook", "cap": "", "say": "You just won the penthouse in your city's lottery. There is one rule.", "cold": true},
+ {"shot": "rule", "cap": "AFTER *9 PM.", "say": "Never leave the penthouse after nine p.m. Not even for a fire."},
+ {"shot": "knock", "cap": "*9:01.", "say": "Nine oh one. A knock. Someone outside says your name."},
+ {"shot": "wall", "cap": "PAST *WINNERS.", "say": "You look at the wall of past winners. Every year. Every face smiling."},
+ {"shot": "photo", "cap": "IT'S *YOU.", "say": "The winner from nineteen ninety. It's you. Same face. Same shirt."},
+ {"shot": "end", "cap": "", "say": "Would you still move in? Write it in the comments."}
+] }

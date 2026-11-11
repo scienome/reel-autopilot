@@ -1,0 +1,8 @@
+{ "lines": [
+ {"shot": "hook", "cap": "", "say": "Your memories were only rented. The lease ends on Friday.", "cold": true},
+ {"shot": "notice", "cap": "MEMCO *LTD.", "say": "A letter from MemCo. Childhood memories, leased since you were five."},
+ {"shot": "forget", "cap": "MOM'S *FACE.", "say": "Wednesday, the first one goes. Your mom's face. Then her voice."},
+ {"shot": "pay", "cap": "*$900.", "say": "You pay. Everything comes back. Except one box, still locked."},
+ {"shot": "signed", "cap": "YOU *SIGNED IT.", "say": "You open the file. The lease was signed by you. At nine. To forget something."},
+ {"shot": "end", "cap": "", "say": "What would you pay to keep one memory? Write it in the comments."}
+] }

@@ -1,0 +1,9 @@
+{ "lines": [
+ {"shot": "hook", "cap": "", "say": "Your city now charges you for every step you take.", "cold": true},
+ {"shot": "meter", "cap": "TEN CENTS A *STEP.", "say": "Ten cents a step. The sidewalk counts every one."},
+ {"shot": "work", "cap": "$80 A *DAY.", "say": "Your walk to work costs eighty dollars a day. You earn sixty."},
+ {"shot": "doris", "cap": "DORIS IS *SMILING.", "say": "Then you see Doris from six C. She is walking. And smiling."},
+ {"shot": "back", "cap": "A *REFUND.", "say": "She's walking backwards. Every step backwards is a refund."},
+ {"shot": "city", "cap": "*BACKWARDS.", "say": "By Friday the whole city walks to work backwards."},
+ {"shot": "end", "cap": "", "say": "Would you walk backwards to work? Write it in the comments."}
+] }

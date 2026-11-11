@@ -1,0 +1,8 @@
+{ "lines": [
+ {"shot": "hook", "cap": "", "say": "Your best friend was rented. The contract ends tonight.", "cold": true},
+ {"shot": "parents", "cap": "*TEN YEARS.", "say": "Your parents hired him when you were eight. Ten years. Paid monthly."},
+ {"shot": "last", "cap": "*LAST WALK.", "say": "You walk home together. You both know. Nobody says it."},
+ {"shot": "midnight", "cap": "*MIDNIGHT.", "say": "Midnight. His phone buzzes. Contract over."},
+ {"shot": "renew", "cap": "*HE PAID.", "say": "Then yours buzzes. Contract renewed. Paid by Max. For the rest of his life."},
+ {"shot": "end", "cap": "", "say": "Is he still your best friend? Write it in the comments."}
+] }

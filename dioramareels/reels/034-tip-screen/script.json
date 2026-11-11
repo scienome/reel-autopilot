@@ -1,0 +1,8 @@
+{ "lines": [
+ {"shot": "hook", "cap": "", "say": "Everything in your city now asks for a tip. Even your front door.", "cold": true},
+ {"shot": "door", "cap": "*20, 25, 30%.", "say": "Your door opens if you tip twenty, twenty five or thirty percent."},
+ {"shot": "lift", "cap": "*THE LIFT.", "say": "The lift wants a tip. The stairs want a tip. Your fridge wants a tip."},
+ {"shot": "work", "cap": "*PAYDAY.", "say": "Friday. Payday. You worked sixty hours this week."},
+ {"shot": "pay", "cap": "*ZERO PERCENT.", "say": "Your paycheck arrives with a tip screen. Your boss picked zero percent."},
+ {"shot": "end", "cap": "", "say": "Would you tip your door? Write it in the comments."}
+] }

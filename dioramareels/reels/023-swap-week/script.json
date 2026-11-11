@@ -1,0 +1,8 @@
+{ "lines": [
+ {"shot": "hook", "cap": "", "say": "Once a year your city swaps every family with a stranger's. For one week.", "cold": true},
+ {"shot": "letter", "cap": "*NINE A.", "say": "Your letter says nine A. Your kid moves in with the family upstairs."},
+ {"shot": "quiet", "cap": "*NO CALLS.", "say": "No calls allowed. The flat is so quiet you can hear the lift."},
+ {"shot": "sunday", "cap": "*SUNDAY.", "say": "Sunday night. You wait in the hall with her favourite cake."},
+ {"shot": "stay", "cap": "SHE *STAYS.", "say": "The door of nine A opens. Your kid waves. And closes it again."},
+ {"shot": "end", "cap": "", "say": "Would you do Swap Week? Write it in the comments."}
+] }

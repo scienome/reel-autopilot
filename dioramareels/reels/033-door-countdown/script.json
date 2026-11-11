@@ -1,0 +1,8 @@
+{ "lines": [
+ {"shot": "hook", "cap": "", "say": "A countdown appeared on your front door. Three days.", "cold": true},
+ {"shot": "others", "cap": "*ONLY YOURS.", "say": "Nobody else has one. The neighbours stop saying hello."},
+ {"shot": "quit", "cap": "*YOU QUIT.", "say": "So you quit your job. You call your mom. You eat cake for breakfast."},
+ {"shot": "party", "cap": "*A PARTY.", "say": "Last night. Doris throws you a party. The whole floor comes. Everybody cries."},
+ {"shot": "zero", "cap": "*ZERO.", "say": "Zero. The door beeps. A message. Your rent just went up by forty percent."},
+ {"shot": "end", "cap": "", "say": "You already quit your job. What would you do? Write it in the comments."}
+] }

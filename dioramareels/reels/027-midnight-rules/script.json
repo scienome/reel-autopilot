@@ -1,0 +1,8 @@
+{ "lines": [
+ {"shot": "hook", "cap": "", "say": "Your building has three rules after midnight. Rule three is in your handwriting.", "cold": true},
+ {"shot": "one", "cap": "*NINE F.", "say": "Rule one. Never open the door of nine F. Nobody lives there."},
+ {"shot": "two", "cap": "*DORIS.", "say": "Rule two. If Doris knocks, do not answer. Doris moved out last year."},
+ {"shot": "knock", "cap": "*KNOCK KNOCK.", "say": "Twelve oh four. A knock. A sweet old voice. Have you got any sugar?"},
+ {"shot": "three", "cap": "*YOUR HANDWRITING.", "say": "You read rule three. Your handwriting. It says: let her in. She is the only one protecting you."},
+ {"shot": "end", "cap": "", "say": "Would you follow rule three? Write it in the comments."}
+] }

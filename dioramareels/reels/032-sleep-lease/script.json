@@ -1,0 +1,8 @@
+{ "lines": [
+ {"shot": "hook", "cap": "", "say": "You rent out your body while you sleep. It pays fifty dollars a night.", "cold": true},
+ {"shot": "app", "cap": "*DELIVERIES.", "say": "The app says deliveries. Your body walks the city. You just dream."},
+ {"shot": "sand", "cap": "*SAND.", "say": "Day three. You wake up with sand in your shoes. There is no beach here."},
+ {"shot": "tired", "cap": "*SO TIRED.", "say": "Day seven. You are so tired. People on the street wave at you. You have never met them."},
+ {"shot": "ring", "cap": "*A RING.", "say": "Day eight. A gold ring on your finger. A text. Good morning, husband."},
+ {"shot": "end", "cap": "", "say": "Would you rent out your sleep? Write it in the comments."}
+] }

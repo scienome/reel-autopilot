@@ -1,0 +1,8 @@
+{ "lines": [
+ {"shot": "hook", "cap": "", "say": "You came home tonight. You were already inside.", "cold": true},
+ {"shot": "inside", "cap": "*SAME FACE.", "say": "Same face. Same beanie. Eating your dinner. He waves."},
+ {"shot": "better", "cap": "*THE DISHES.", "say": "He did the dishes. He called your mom. He paid the rent early."},
+ {"shot": "landlord", "cap": "*ONE OF YOU.", "say": "The landlord comes up. One tenant per flat. He points at the other you."},
+ {"shot": "out", "cap": "*YOU LEAVE.", "say": "You stand on the street. Your light goes off. He forgot to wave."},
+ {"shot": "end", "cap": "", "say": "Who should get to stay? Write it in the comments."}
+] }

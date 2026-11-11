@@ -1,0 +1,8 @@
+{ "lines": [
+ {"shot": "hook", "cap": "", "say": "Your city gave every resident a free phone. You just found out why.", "cold": true},
+ {"shot": "great", "cap": "*NO BILLS.", "say": "No bills. No ads. Best phone you ever had."},
+ {"shot": "show", "cap": "*EVERY TV.", "say": "Then a new show comes out. Every TV in the tower is watching it."},
+ {"shot": "you", "cap": "*YOUR FIGHT.", "say": "It's your kitchen. Your voice. Last night's fight with your mom. Episode one."},
+ {"shot": "rating", "cap": "*NUMBER ONE.", "say": "It is the number one show in the city. Season two starts tonight."},
+ {"shot": "end", "cap": "", "say": "Would you keep the free phone? Write it in the comments."}
+] }
