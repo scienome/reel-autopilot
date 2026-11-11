@@ -1,0 +1,49 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "This dog walked two and a half thousand miles, to get home.",
+   "say": "This dog walked two and a half thousand miles, to get home."
+  },
+  {
+   "shot": "trip",
+   "cap": "1923. A family from Oregon drives across America, with their dog, Bobbie.",
+   "say": "1923. A family from Oregon drives across America, with their dog, Bobbie."
+  },
+  {
+   "shot": "lost",
+   "cap": "At a stop in Indiana, Bobbie gets chased off by other dogs, and disappears.",
+   "say": "At a stop in Indiana, Bobbie gets chased off by other dogs, and disappears."
+  },
+  {
+   "shot": "search",
+   "cap": "They search for days. Then, heartbroken, they drive home without him.",
+   "say": "They search for days. Then, heartbroken, they drive home without him."
+  },
+  {
+   "shot": "walk",
+   "cap": "Bobbie starts walking. Across rivers, plains and mountains, in the middle of winter.",
+   "say": "Bobbie starts walking. Across rivers, plains and mountains, in the middle of winter."
+  },
+  {
+   "shot": "months",
+   "cap": "Six months later, a thin, limping dog walks up to their door in Silverton, Oregon.",
+   "say": "Six months later, a thin, limping dog walks up to their door in Silverton, Oregon."
+  },
+  {
+   "shot": "feet",
+   "cap": "His paws were worn to the bone. It was Bobbie.",
+   "say": "His paws were worn to the bone. It was Bobbie."
+  },
+  {
+   "shot": "proof",
+   "cap": "Later, people along the way wrote in. They had fed him, and let him sleep by their fire.",
+   "say": "Later, people along the way wrote in. They had fed him, and let him sleep by their fire."
+  },
+  {
+   "shot": "outro",
+   "cap": "Two and a half thousand miles. Just to come home.",
+   "say": "Two and a half thousand miles. Just to come home."
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "She'll spit on you if she's not into you.",
+   "say": "She'll spit on you if she's not into you."
+  },
+  {
+   "shot": "meet",
+   "cap": "Meet the alpaca. Fluffy, calm, adorable.",
+   "say": "Meet the alpaca. Fluffy, calm, adorable."
+  },
+  {
+   "shot": "male",
+   "cap": "But when a male walks over with ideas, and she's not interested...",
+   "say": "But when a male walks over with ideas, and she's not interested..."
+  },
+  {
+   "shot": "spit",
+   "cap": "She spits. Right in his face.",
+   "say": "She spits. Right in his face."
+  },
+  {
+   "shot": "what",
+   "cap": "And it's not just spit. It's half digested grass from her stomach. Green, and very smelly.",
+   "say": "And it's not just spit. It's half digested grass from her stomach. Green, and very smelly."
+  },
+  {
+   "shot": "farmers",
+   "cap": "Farmers even use it as a test. If she spits at the male, she's probably already pregnant.",
+   "say": "Farmers even use it as a test. If she spits at the male, she's probably already pregnant."
+  },
+  {
+   "shot": "food",
+   "cap": "They also spit over food, or when they're scared.",
+   "say": "They also spit over food, or when they're scared."
+  },
+  {
+   "shot": "humans",
+   "cap": "Good news. They rarely spit at people, unless someone treats them badly.",
+   "say": "Good news. They rarely spit at people, unless someone treats them badly."
+  },
+  {
+   "shot": "outro",
+   "cap": "So if an alpaca spits at you, you probably deserved it.",
+   "say": "So if an alpaca spits at you, you probably deserved it."
+  }
+ ]
+}

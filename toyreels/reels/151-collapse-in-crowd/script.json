@@ -1,0 +1,49 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Someone collapses on a busy street. Twenty people walk past.",
+   "say": "Someone collapses on a busy street. Twenty people walk past."
+  },
+  {
+   "shot": "why",
+   "cap": "It's called the bystander effect. The more people watching, the less each one feels it's their job.",
+   "say": "It's called the bystander effect. The more people watching, the less each one feels it's their job."
+  },
+  {
+   "shot": "study",
+   "cap": "In a famous 1968 study, people on their own nearly always went to help. In a group, far fewer did.",
+   "say": "In a famous 1968 study, people on their own nearly always went to help. In a group, far fewer did."
+  },
+  {
+   "shot": "do",
+   "cap": "So if it ever happens, don't shout, somebody call an ambulance.",
+   "say": "So if it ever happens, don't shout, somebody call an ambulance."
+  },
+  {
+   "shot": "point",
+   "cap": "Point at one person. You, in the red jacket. Call an ambulance.",
+   "say": "Point at one person. You, in the red jacket. Call an ambulance."
+  },
+  {
+   "shot": "second",
+   "cap": "Then pick another. You. Find a defibrillator.",
+   "say": "Then pick another. You. Find a defibrillator."
+  },
+  {
+   "shot": "works",
+   "cap": "Now they're not part of a crowd. They're responsible. And people almost always do it.",
+   "say": "Now they're not part of a crowd. They're responsible. And people almost always do it."
+  },
+  {
+   "shot": "cpr",
+   "cap": "If the person isn't breathing normally, push hard and fast in the centre of the chest, until help arrives.",
+   "say": "If the person isn't breathing normally, push hard and fast in the centre of the chest, until help arrives."
+  },
+  {
+   "shot": "outro",
+   "cap": "Save this. One sentence could save a life.",
+   "say": "Save this. One sentence could save a life."
+  }
+ ]
+}
