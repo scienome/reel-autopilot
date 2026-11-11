@@ -1,0 +1,49 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "A judge fined everyone in his courtroom. Here's why.",
+   "say": "A judge fined everyone in his courtroom. Here's why."
+  },
+  {
+   "shot": "night",
+   "cap": "The story goes: New York, the 1930s, in the middle of the Depression. The mayor himself is sitting as judge.",
+   "say": "The story goes: New York, the 1930s, in the middle of the Depression. The mayor himself is sitting as judge."
+  },
+  {
+   "shot": "case",
+   "cap": "An old man is brought in. He stole a loaf of bread.",
+   "say": "An old man is brought in. He stole a loaf of bread."
+  },
+  {
+   "shot": "why",
+   "cap": "His family had no money, and his grandchildren were going hungry.",
+   "say": "His family had no money, and his grandchildren were going hungry."
+  },
+  {
+   "shot": "law",
+   "cap": "The judge says: the law makes no exceptions. I fine you ten dollars.",
+   "say": "The judge says: the law makes no exceptions. I fine you ten dollars."
+  },
+  {
+   "shot": "pays",
+   "cap": "Then he takes ten dollars from his own pocket, and pays the fine himself.",
+   "say": "Then he takes ten dollars from his own pocket, and pays the fine himself."
+  },
+  {
+   "shot": "room",
+   "cap": "And he fines everyone in the courtroom fifty cents, for living in a city where a man has to steal bread to feed his family.",
+   "say": "And he fines everyone in the courtroom fifty cents, for living in a city where a man has to steal bread to feed his family."
+  },
+  {
+   "shot": "hat",
+   "cap": "The hat goes round. The old man walks out with forty-seven dollars and fifty cents.",
+   "say": "The hat goes round. The old man walks out with forty-seven dollars and fifty cents."
+  },
+  {
+   "shot": "outro",
+   "cap": "Nobody knows if every detail is true. But it's the kind of judge people still talk about.",
+   "say": "Nobody knows if every detail is true. But it's the kind of judge people still talk about."
+  }
+ ]
+}

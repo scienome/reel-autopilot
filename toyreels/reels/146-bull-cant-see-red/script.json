@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "This bull has balls of steel. And he can't even see red.",
+   "say": "This bull has balls of steel. And he can't even see red."
+  },
+  {
+   "shot": "cape",
+   "cap": "For centuries, bullfighters have waved a red cape at angry bulls.",
+   "say": "For centuries, bullfighters have waved a red cape at angry bulls."
+  },
+  {
+   "shot": "eye",
+   "cap": "But cattle see in only two main colours. To a bull, red looks dull and greyish.",
+   "say": "But cattle see in only two main colours. To a bull, red looks dull and greyish."
+  },
+  {
+   "shot": "test",
+   "cap": "In tests with red, blue and white flags, the bull charged whichever one was moving.",
+   "say": "In tests with red, blue and white flags, the bull charged whichever one was moving."
+  },
+  {
+   "shot": "move",
+   "cap": "What sets him off is the movement. A cape that snaps and swirls.",
+   "say": "What sets him off is the movement. A cape that snaps and swirls."
+  },
+  {
+   "shot": "still",
+   "cap": "In one famous test, a bull ignored a man standing perfectly still, and charged the one waving his arms.",
+   "say": "In one famous test, a bull ignored a man standing perfectly still, and charged the one waving his arms."
+  },
+  {
+   "shot": "why",
+   "cap": "So why red? Tradition. And it hides the blood.",
+   "say": "So why red? Tradition. And it hides the blood."
+  },
+  {
+   "shot": "outro",
+   "cap": "It was never the colour. It's the attitude.",
+   "say": "It was never the colour. It's the attitude."
+  }
+ ]
+}

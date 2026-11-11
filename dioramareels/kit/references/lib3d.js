@@ -531,7 +531,8 @@
     return (move, t = 0, speed = 1) => { const name = map[move] || move; const clip = clips[name] || clips[Object.keys(clips).find((k) => k.endsWith('|' + name) || k.toLowerCase() === String(name).toLowerCase())];
       if (!clip) throw new Error('LIB: no move ' + move + ' (have ' + Object.keys(clips).slice(0, 12).join(', ') + ')');
       if (cur !== clip.name) { mixer.stopAllAction(); acts[clip.name] = acts[clip.name] || mixer.clipAction(clip); acts[clip.name].play(); cur = clip.name; }
-      mixer.setTime(Math.max(0, t * speed)); return root; }; };
+      let tt = Math.max(0, t * speed); if (/death|enter|exit|land|hitreact/i.test(clip.name)) tt = Math.min(tt, clip.duration - 0.02); // one-shot clips hold their last frame
+      mixer.setTime(tt); return root; }; };
   // painted clothes for the realistic base bodies: every vertex takes the colour of the bones that move it (soft edges)
   const REGION = (b, o) => { b = b.toLowerCase();
     if (/head|neck|eye|jaw/.test(b)) return 'skin'; if (/hand|index|middle|ring|pinky|thumb/.test(b)) return 'skin';
@@ -544,6 +545,16 @@
     for (let i = 0; i < si.count; i++) { let r = 0, g = 0, b = 0, a = 0; for (let k = 0; k < 4; k++) { const w = GC(sw, i, k); if (!w) continue; const reg = REGION(bones[GC(si, i, k)].name, o);
         if (reg !== 'skin') { r += col[reg].r * w; g += col[reg].g * w; b += col[reg].b * w; a += w; } }
       if (a > 0) { r /= a; g /= a; b /= a; } arr.set([r, g, b, Math.min(1, a * 1.25)], i * 4); }
+    // painted hair: head vertices above the hairline take the hair colour (shape follows the skull exactly)
+    if (o.hairStyle !== 'none' && o.eyes) { const pos = geo.attributes.position, hi = bones.findIndex((x) => /^head$/i.test(x.name)), v = new T.Vector3();
+      const isHead = (i) => { for (let q = 0; q < 4; q++) if (GC(si, i, q) === hi && GC(sw, i, q) > 0.5) return true; return false; };
+      const Hc = new T.Vector3(), Fc = new T.Vector3(); let nh = 0, nf = 0; for (let i = 0; i < pos.count; i++) { v.fromBufferAttribute(pos, i); if (isHead(i)) { Hc.add(v); nh++; } else if (/foot|ball/.test(bones[GC(si, i, 0)].name)) { Fc.add(v); nf++; } }
+      Hc.divideScalar(nh); Fc.divideScalar(Math.max(1, nf)); const up = Hc.clone().sub(Fc).normalize(); const fw = o.eyes.clone().sub(Hc); fw.sub(up.clone().multiplyScalar(fw.dot(up))).normalize();
+      let top = -1e9, bot = 1e9, ff = -1e9; for (let i = 0; i < pos.count; i++) if (isHead(i)) { v.fromBufferAttribute(pos, i).sub(Hc); const h = v.dot(up); top = Math.max(top, h); bot = Math.min(bot, h); ff = Math.max(ff, v.dot(fw)); }
+      const span = top - bot, hc = new T.Color(o.hair || '#2a1a10').convertSRGBToLinear(), deep = { buzz: 0.3, short: 0.4, long: 0.62, bun: 0.45 }[o.hairStyle || 'short'] || 0.4;
+      for (let i = 0; i < pos.count; i++) { if (!isHead(i)) continue; v.fromBufferAttribute(pos, i).sub(Hc); const h = (v.dot(up) - bot) / span, f = v.dot(fw) / ff; // h: 0 chin .. 1 crown, f: 1 = face front
+        const line = f > 0.55 ? 1 - 0.24 : (f > 0.2 ? 1 - deep * 0.7 : 1 - deep); const e = Math.max(0, Math.min(1, (h - line) / 0.04)); if (e <= 0) continue; const j = i * 4;
+        arr[j] = arr[j] * (1 - e) + hc.r * e; arr[j + 1] = arr[j + 1] * (1 - e) + hc.g * e; arr[j + 2] = arr[j + 2] * (1 - e) + hc.b * e; arr[j + 3] = Math.max(arr[j + 3], e * (o.hairStyle === 'buzz' ? 0.85 : 0.97)); } }
     geo.setAttribute('cloth', new T.BufferAttribute(arr, 4)); const m = mesh.material = mesh.material.clone(); const tint = new T.Color(o.skin || '#ffffff').convertSRGBToLinear();
     m.onBeforeCompile = (sh) => { sh.uniforms.skinTint = { value: tint };
       sh.vertexShader = sh.vertexShader.replace('#include <common>', '#include <common>\nattribute vec4 cloth;\nvarying vec4 vCloth;').replace('#include <begin_vertex>', '#include <begin_vertex>\nvCloth = cloth;\ntransformed += objectNormal * cloth.a * 0.014;'); // cloth sits a little off the skin
@@ -553,10 +564,10 @@
   const hairOn = (root, mesh, o) => { if (o.hairStyle === 'none') return; const bones = mesh.skeleton.bones, head = bones.find((b) => /^head$/i.test(b.name)); if (!head) return;
     // head size from the body height (a 1.78 m body has a head about 0.22 m tall), centred above the head bone
     root.updateMatrixWorld(true); const H = o._H || 1.78, k = H / 1.78, hp = head.getWorldPosition(new T.Vector3()), fw = new T.Vector3(0, 0, 1).applyQuaternion(root.getWorldQuaternion(new T.Quaternion()));
-    const bb = new T.Box3(new T.Vector3(hp.x - 0.09 * k, hp.y, hp.z - 0.1 * k), new T.Vector3(hp.x + 0.09 * k, hp.y + 0.22 * k, hp.z + 0.1 * k)); bb.translate(fw.multiplyScalar(0.012 * k));
+    const bb = new T.Box3(new T.Vector3(hp.x - 0.095 * k, hp.y - 0.04 * k, hp.z - 0.105 * k), new T.Vector3(hp.x + 0.095 * k, hp.y + 0.18 * k, hp.z + 0.105 * k)); bb.translate(fw.multiplyScalar(0.03 * k));
     const c = bb.getCenter(new T.Vector3()), s = bb.getSize(new T.Vector3()); const HM = new T.MeshStandardMaterial({ color: o.hair || '#2a1a10', roughness: 0.85 });
-    const g = new T.Group(); const r = Math.max(s.x, s.z) * 0.56; const style = o.hairStyle || (o.body === 'f' ? 'long' : 'short');
-    const cap = new T.Mesh(new T.SphereGeometry(r, 28, 18, 0, Math.PI * 2, 0, style === 'buzz' ? 1.25 : 1.45), HM); cap.scale.set(1, style === 'buzz' ? 0.82 : 0.95, 1.08); cap.position.set(0, s.y * 0.12, -s.z * 0.06); g.add(cap);
+    const g = new T.Group(); const r = Math.max(s.x, s.z) * 0.64; const style = o.hairStyle || (o.body === 'f' ? 'long' : 'short');
+    const cap = o.capless ? new T.Object3D() :  new T.Mesh(new T.SphereGeometry(r, 28, 18, 0, Math.PI * 2, 0, style === 'buzz' ? 1.25 : 1.4), HM); cap.scale.set(0.98, style === 'buzz' ? 0.85 : 0.95, 1.1); cap.position.set(0, s.y * 0.0, s.z * 0.02); cap.rotation.x = 0.12; g.add(cap);
     if (style === 'long') { const back = new T.Mesh(new T.CapsuleGeometry(r * 0.82, s.y * 0.9, 6, 16), HM); back.scale.set(1.05, 1, 0.55); back.position.set(0, -s.y * 0.25, -s.z * 0.32); g.add(back); }
     if (style === 'bun') { const bun = new T.Mesh(new T.SphereGeometry(r * 0.42, 16, 12), HM); bun.position.set(0, s.y * 0.38, -s.z * 0.42); g.add(bun); }
     g.position.copy(c); g.updateMatrixWorld(true); head.attach(g); g.traverse((n) => { if (n.isMesh) n.castShadow = true; }); };
@@ -565,7 +576,8 @@
       const out = wrap(inner, { h: o.h || 1.7 }); const clips = Object.fromEntries(g.animations.map((c) => [c.name.split('|').pop(), c])); out.pose = poser(inner, clips, WMOVES); out.pose('idle', 0); return out; }
     const n = o.body === 'f' ? 'humans/Superhero_Female' : 'humans/Superhero_Male'; const inner = T.SkeletonUtils.clone(get(n).scene); let body = null;
     inner.traverse((m) => { if (m.isSkinnedMesh && (!body || m.geometry.attributes.position.count > body.geometry.attributes.position.count)) body = m; });
-    dress(body, o); const out = wrap(inner, { h: o.h || 1.78 }); out.pose = poser(inner, ual(), MOVES); out.pose('idle', 0); out.updateMatrixWorld(true); hairOn(inner, body, Object.assign({ _H: o.h || 1.78 }, o));
+    let eyes = null; inner.traverse((m) => { if (m.isSkinnedMesh && /eye/i.test(m.name) && !/brow/i.test(m.name)) { m.geometry.computeBoundingBox(); eyes = m.geometry.boundingBox.getCenter(new T.Vector3()); } }); o.eyes = eyes;
+    dress(body, o); const out = wrap(inner, { h: o.h || 1.78 }); out.pose = poser(inner, ual(), MOVES); out.pose('idle', 0); out.updateMatrixWorld(true); // hair is painted on the head in dress() (hairOn's cap meshes looked like bowls)
     out.bone = (b) => { let f = null; inner.traverse((x) => { if (x.isBone && x.name === b) f = x; }); return f; }; return out; };
   LIB.animal = (name, o = {}) => { const g = get('animals/' + name); const inner = T.SkeletonUtils.clone(g.scene); const out = wrap(inner, { h: o.h || ({ horse: 1.7, horse_white: 1.7, cow: 1.5, bull: 1.6, deer: 1.3, stag: 1.6, alpaca: 1.8, donkey: 1.3, sheep: 1.0, dog: 0.55, husky: 0.6, fox: 0.45, wolf: 0.8 })[name] || 1 });
     const clips = {}; g.animations.forEach((c) => { const k = c.name.split('|').pop(); if (!clips[k] || c.name.includes('|')) clips[k] = c; }); const map = Object.fromEntries(Object.entries(AMOVES).map(([k, c]) => [k, c.find((x) => clips[x]) || 'Idle'])); out.moves = Object.keys(clips); out.pose = poser(inner, clips, map); out.pose('idle', 0); return out; };
@@ -599,7 +611,7 @@
     box(g, 1.4, 1.0, 0.6, W, -2.6, 0.5, -1.6); box(g, 1.6, 0.06, 0.7, W2, -2.6, 1.02, -1.6); // witness stand
     for (let i = 0; i < 2; i++) { box(g, 1.8, 0.75, 0.8, W2, i ? 1.6 : -1.6, 0.375, 0.6); } // lawyers' tables
     for (let r = 0; r < 3; r++) box(g, 7, 0.45, 0.5, W, 0, 0.225, 2.3 + r * 0.8); box(g, 8, 1.0, 0.08, W, 0, 0.5, 1.6); // gallery + bar
-    const seal = new T.Mesh(new T.CylinderGeometry(0.55, 0.55, 0.05, 40), M('#c9a24a', 0.3, 0.8)); seal.rotation.x = Math.PI / 2; seal.position.set(0, 3.0, -3.95); g.add(seal);
+    const seal = new T.Mesh(new T.CylinderGeometry(0.38, 0.38, 0.05, 40), M('#8a6a2a', 0.4, 0.7)); seal.rotation.x = Math.PI / 2; seal.position.set(0, 3.3, -3.95); g.add(seal);
     g.spots = { judge: [0, 0.6, -3.6], witness: [-2.6, 0, -1.9], defense: [-1.6, 0, 1.2], prosecution: [1.6, 0, 1.2], gallery: [0, 0, 2.6] }; g.cam = { pos: [0, 2.4, 6.5], look: [0, 1.3, -2], fov: 42 }; return g; };
   P.cell = (o = {}) => { const g = new T.Group(); ground(g, 12, tiles('#7d8086', '#73767c', 6), 3); const CW = M('#9a9d9f', 0.95);
     box(g, 4, 3, 0.2, CW, 0, 1.5, -1.6); box(g, 0.2, 3, 3.4, CW, -2, 1.5, 0); box(g, 0.2, 3, 3.4, CW, 2, 1.5, 0);

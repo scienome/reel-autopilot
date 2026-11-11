@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "This horse can do it standing up.",
+   "say": "This horse can do it standing up."
+  },
+  {
+   "shot": "doze",
+   "cap": "Horses can doze on their feet, for hours, without falling over.",
+   "say": "Horses can doze on their feet, for hours, without falling over."
+  },
+  {
+   "shot": "inside",
+   "cap": "The trick is in the legs. Tendons and ligaments, called the stay apparatus, lock them in place.",
+   "say": "The trick is in the legs. Tendons and ligaments, called the stay apparatus, lock them in place."
+  },
+  {
+   "shot": "knee",
+   "cap": "In the back legs, the kneecap hooks over a bump on the thigh bone, like a latch.",
+   "say": "In the back legs, the kneecap hooks over a bump on the thigh bone, like a latch."
+  },
+  {
+   "shot": "why",
+   "cap": "For an animal that gets hunted, it means it can run the second danger shows up.",
+   "say": "For an animal that gets hunted, it means it can run the second danger shows up."
+  },
+  {
+   "shot": "deep",
+   "cap": "But there's a catch. For deep, dreaming sleep, a horse has to lie down.",
+   "say": "But there's a catch. For deep, dreaming sleep, a horse has to lie down."
+  },
+  {
+   "shot": "herd",
+   "cap": "So in a herd, they take turns. One stays up on guard, while the others lie down.",
+   "say": "So in a herd, they take turns. One stays up on guard, while the others lie down."
+  },
+  {
+   "shot": "outro",
+   "cap": "So yes, he can do it standing up. Just not all night.",
+   "say": "So yes, he can do it standing up. Just not all night."
+  }
+ ]
+}
