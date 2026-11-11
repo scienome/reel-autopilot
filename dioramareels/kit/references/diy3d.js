@@ -4,7 +4,10 @@
 // helpers (T, root, M, mesh, grp, tex, grab, place, RH, LH, seg, E, lerp, clamp, PI, liquid, glassM) and shots maps each
 // script.json shot name to (t, k01, start, end) => camera { pos, look, fov, focus, blur, dark? } in table units (1 unit
 // ~ 7 cm; the hand is 2.1 units long). Hidden-by-default: every object in props is hidden at the start of each frame.
-window.DIY = (build) => {
+// Library models (people, animals, places from lib3d.js): DIY(build, { assets: ['humans/Superhero_Male', 'humans/ual1', ...] })
+// loads them first. Story scenes away from the table: return { table: false, sky: '#9fd3f2', ... } and build a LIB.place.
+window.DIY = (build, opt = {}) => {
+  if (opt.assets && opt.assets.length && !opt.loaded) { window.REEL_READY = LIB.need(opt.assets).then(() => window.DIY(build, Object.assign({}, opt, { loaded: true }))); return; }
   const T = D.THREE, K = D.kit, S = D.scene, X0 = 6000, lerp = D.lerp, clamp = D.clamp, E = D.ease, PI = Math.PI;
   const TM = window.TIMING, L = TM.lines, DUR = TM.duration;
   const seg = (t, a, b) => clamp((t - a) / Math.max(0.01, b - a), 0, 1);
@@ -81,7 +84,7 @@ window.DIY = (build) => {
     ALLP.forEach((o) => { o.visible = false; }); RH.visible = LH.visible = false; ALL.forEach((l) => { l.visible = true; });
     const v = R.shots[n](t, kk, a, b);
     if (RH.visible || LH.visible) { const d = 1.5; v.pos = v.pos.map((x, j) => v.look[j] + (x - v.look[j]) * d); v.pos[1] += 0.8; v.fov *= 0.78; } // hand shots: camera back and above the arms
-    S.background = new T.Color(v.dark ? '#0b0e16' : (R.wall || '#2f6f8c')); S.fog = null; wall.visible = !v.dark; table.visible = !v.dark && !v.noTable; wall.material.color.set(R.wall || '#3f8fb0');
+    S.background = new T.Color(v.dark ? '#0b0e16' : (R.wall || '#2f6f8c')); S.fog = null; wall.visible = !v.dark && R.table !== false; table.visible = !v.dark && !v.noTable && R.table !== false; if (R.sky && !v.dark) S.background = new T.Color(v.sky || R.sky); wall.material.color.set(R.wall || '#3f8fb0');
     const hand = Math.sin(t * 1.3) * 0.015, cam = { ...v, pos: [X0 + v.pos[0] + hand, v.pos[1] + Math.sin(t * 1.7) * 0.01, v.pos[2]], look: [X0 + v.look[0], v.look[1], v.look[2]] };
     D.render3d(ctx, cam);
     ctx.save(); ctx.globalCompositeOperation = 'soft-light'; ctx.fillStyle = 'rgba(255,170,90,0.12)'; ctx.fillRect(0, 0, 720, 1280); ctx.restore(); // warm grade

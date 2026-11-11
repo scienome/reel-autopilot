@@ -61,6 +61,13 @@ list sources in meta.json. No gore beyond what a family film would show.
 - Realistic people need ready-made rigged human models (glTF) with clothes and facial poses. Procedural people
   look like toys and break the style. See section 6.
 
+## 5b. The kit (dioramareels/kit)
+- `references/diy3d.js`: DIY tabletop set + realistic rigged hands (`grab`), 1-3 word captions, cut flashes. One reel.js = `DIY(build, { assets })`.
+- `references/lib3d.js` + `assets/` (CC0 models, see assets/README.md and LICENSES.md): realistic people with painted clothes and hair and 43 moves,
+  13 animated animals, ~45 props/trees/rocks/buildings, and ready-made places (room, kitchen, office, courtroom, prison cell, park, village, street).
+- Voice: Cartesia, the whole script in ONE take (voice.json `"provider": "cartesia"`); line times come from the natural pauses. Never line by line.
+- Every video opens on a scroll stopper: the strangest/most satisfying frame in the first second, hook under 8 words; the last shot loops to the first.
+
 ## 6. What three.js can and can't do here
 - Can: realistic lighting with an HDR environment, PBR materials, shadows, depth of field, motion blur, grading,
   cutaways and thought bubbles, fast cutting, rigged characters from glTF models, crowds by instancing.

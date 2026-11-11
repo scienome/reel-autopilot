@@ -58,6 +58,15 @@ async def launch(p):
 
 async def page(b):
     pg = await b.new_page(viewport={"width": 720, "height": 1280})
+    assets = os.path.join(os.path.dirname(refs), "assets")  # the model library (lib3d.js asks for https://kit.assets/<group>/<name>.glb)
+
+    async def serve(route):
+        f = os.path.normpath(os.path.join(assets, route.request.url.split("kit.assets/", 1)[1].split("?")[0]))
+        if f.startswith(assets) and os.path.exists(f):
+            await route.fulfill(status=200, body=open(f, "rb").read(), headers={"Access-Control-Allow-Origin": "*", "Content-Type": "model/gltf-binary"})
+        else:
+            await route.fulfill(status=404, body="missing " + f, headers={"Access-Control-Allow-Origin": "*"})
+    await pg.route("https://kit.assets/**", serve)
     pg.on("pageerror", lambda e: print("page error:", e))
     await pg.set_content(HTML)
     ok = await pg.evaluate("async (fs)=>{await Promise.all(fs.map(f=>document.fonts.load(f,'AaZz09'))); await document.fonts.ready; return fs.every(f=>document.fonts.check(f))}", FONTS)
@@ -68,11 +77,12 @@ async def page(b):
         await pg.add_script_tag(content=read(three))
     else:
         await pg.add_script_tag(url=THREE_URL)
-    for f in [SOUND, os.path.join(refs, "diorama.js"), os.path.join(refs, "city.js"), os.path.join(refs, "life.js"), os.path.join(refs, "wedding.js"), os.path.join(refs, "hook.js"), *([os.path.join(refs, "toy3d.js")] if os.path.exists(os.path.join(refs, "toy3d.js")) else []), *([os.path.join(refs, "hands.js")] if os.path.exists(os.path.join(refs, "hands.js")) else []), *([os.path.join(refs, "diy3d.js")] if os.path.exists(os.path.join(refs, "diy3d.js")) else [])]:
+    for f in [SOUND, os.path.join(refs, "diorama.js"), os.path.join(refs, "city.js"), os.path.join(refs, "life.js"), os.path.join(refs, "wedding.js"), os.path.join(refs, "hook.js"), *([os.path.join(refs, "toy3d.js")] if os.path.exists(os.path.join(refs, "toy3d.js")) else []), *([os.path.join(refs, "hands.js")] if os.path.exists(os.path.join(refs, "hands.js")) else []), *([os.path.join(refs, "diy3d.js")] if os.path.exists(os.path.join(refs, "diy3d.js")) else []), *([os.path.join(refs, "lib3d.js")] if os.path.exists(os.path.join(refs, "lib3d.js")) else [])]:
         await pg.add_script_tag(content=read(f))
     await pg.evaluate("async () => { if (window.HANDS_READY) await window.HANDS_READY; }")  # rigged hand models (hands.js) load async
     for f in [*([a.timing] if a.timing else []), a.story]:
         await pg.add_script_tag(content=read(f))
+    await pg.evaluate("async () => { if (window.REEL_READY) await window.REEL_READY; }")  # reels that load library models (lib3d.js) build after loading
     return pg
 
 
