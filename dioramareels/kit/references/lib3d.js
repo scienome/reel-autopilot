@@ -514,7 +514,7 @@
   LIB.need = (list) => Promise.all(list.map(LIB.load));
   const get = (n) => { const g = LIB.gltf[n]; if (!g) throw new Error(`LIB: '${n}' was not loaded; add it to the reel's assets list`); return g; };
   const fit = (o, { h, w, scale } = {}) => { o.updateMatrixWorld(true); const bb = new T.Box3().setFromObject(o), sz = bb.getSize(new T.Vector3());
-    const k = scale || (h ? h / sz.y : w ? w / Math.max(sz.x, sz.z) : 1); o.scale.multiplyScalar(k); o.updateMatrixWorld(true); const b2 = new T.Box3().setFromObject(o); o.position.y -= b2.min.y; return o; };
+    const k = scale || (h ? h / sz.y : w ? w / Math.max(sz.x, sz.z) : 1); o.scale.multiplyScalar(k); o.updateMatrixWorld(true); const b2 = new T.Box3().setFromObject(o); o.position.y -= b2.min.y; const c2 = b2.getCenter(new T.Vector3()), s2 = b2.getSize(new T.Vector3()); if (Math.hypot(c2.x, c2.z) > Math.max(s2.x, s2.z)) { o.position.x -= c2.x; o.position.z -= c2.z; } return o; }; // models authored far from their origin get centred
   const wrap = (inner, opts) => { const g = new T.Group(); g.add(inner); fit(inner, opts); g.traverse((n) => { if (n.isMesh) { n.castShadow = true; n.receiveShadow = true; n.frustumCulled = false; } }); return g; };
   LIB.prop = (n, opts = {}) => { const g = get(n); return wrap(T.SkeletonUtils.clone(g.scene), opts); };
   const MOVES = { idle: 'Idle_Loop', walk: 'Walk_Loop', run: 'Jog_Fwd_Loop', sprint: 'Sprint_Loop', sit: 'Sitting_Idle_Loop', sittalk: 'Sitting_Talking_Loop', sitdown: 'Sitting_Enter', standup: 'Sitting_Exit',

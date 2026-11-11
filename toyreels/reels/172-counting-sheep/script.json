@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Counting sheep doesn't work. Here's what does.",
+   "say": "Counting sheep doesn't work. Here's what does."
+  },
+  {
+   "shot": "bed",
+   "cap": "Midnight. You can't sleep. So you start counting. One sheep. Two sheep. Three.",
+   "say": "Midnight. You can't sleep. So you start counting. One sheep. Two sheep. Three."
+  },
+  {
+   "shot": "study",
+   "cap": "In 2002, Oxford researchers tested it on people with insomnia.",
+   "say": "In 2002, Oxford researchers tested it on people with insomnia."
+  },
+  {
+   "shot": "result",
+   "cap": "The sheep counters took slightly longer to fall asleep than people who did nothing special.",
+   "say": "The sheep counters took slightly longer to fall asleep than people who did nothing special."
+  },
+  {
+   "shot": "why",
+   "cap": "Counting is just too boring to block out your worries. The thoughts sneak back in.",
+   "say": "Counting is just too boring to block out your worries. The thoughts sneak back in."
+  },
+  {
+   "shot": "scene",
+   "cap": "What worked better: imagining a calm, detailed scene. A waterfall. A beach. The sounds, the light, the temperature.",
+   "say": "What worked better: imagining a calm, detailed scene. A waterfall. A beach. The sounds, the light, the temperature."
+  },
+  {
+   "shot": "faster",
+   "cap": "That group fell asleep about twenty minutes faster than usual.",
+   "say": "That group fell asleep about twenty minutes faster than usual."
+  },
+  {
+   "shot": "outro",
+   "cap": "So tonight, forget the sheep. Go to the beach.",
+   "say": "So tonight, forget the sheep. Go to the beach."
+  }
+ ]
+}

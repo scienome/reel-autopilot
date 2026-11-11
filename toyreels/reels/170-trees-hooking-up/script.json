@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Trees are secretly hooking up, underground.",
+   "say": "Trees are secretly hooking up, underground."
+  },
+  {
+   "shot": "forest",
+   "cap": "A forest looks like a crowd of separate trees, all fighting for light.",
+   "say": "A forest looks like a crowd of separate trees, all fighting for light."
+  },
+  {
+   "shot": "roots",
+   "cap": "But dig down, and the roots are wrapped in fungus. Threads thinner than a hair.",
+   "say": "But dig down, and the roots are wrapped in fungus. Threads thinner than a hair."
+  },
+  {
+   "shot": "web",
+   "cap": "Those threads spread through the soil, and can link one tree to another. Scientists call it the wood wide web.",
+   "say": "Those threads spread through the soil, and can link one tree to another. Scientists call it the wood wide web."
+  },
+  {
+   "shot": "deal",
+   "cap": "The deal: trees give the fungus sugar. The fungus brings back water and nutrients.",
+   "say": "The deal: trees give the fungus sugar. The fungus brings back water and nutrients."
+  },
+  {
+   "shot": "share",
+   "cap": "Experiments found carbon moving between trees through the network, even between different species.",
+   "say": "Experiments found carbon moving between trees through the network, even between different species."
+  },
+  {
+   "shot": "debate",
+   "cap": "How much trees really help each other this way is still hotly debated by scientists.",
+   "say": "How much trees really help each other this way is still hotly debated by scientists."
+  },
+  {
+   "shot": "outro",
+   "cap": "But one thing is certain. Under every forest, there's a lot of hooking up going on.",
+   "say": "But one thing is certain. Under every forest, there's a lot of hooking up going on."
+  }
+ ]
+}

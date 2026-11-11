@@ -68,6 +68,7 @@ async def page(b):
             await route.fulfill(status=404, body="missing " + f, headers={"Access-Control-Allow-Origin": "*"})
     await pg.route("https://kit.assets/**", serve)
     pg.on("pageerror", lambda e: print("page error:", e))
+    pg.on("console", lambda m: print("console:", m.text) if m.text.startswith("DBG") or "TREE" in m.text else None)
     await pg.set_content(HTML)
     ok = await pg.evaluate("async (fs)=>{await Promise.all(fs.map(f=>document.fonts.load(f,'AaZz09'))); await document.fonts.ready; return fs.every(f=>document.fonts.check(f))}", FONTS)
     if not ok:

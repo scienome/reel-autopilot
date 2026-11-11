@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Something hit Uranus so hard, it's still lying on its side.",
+   "say": "Something hit Uranus so hard, it's still lying on its side."
+  },
+  {
+   "shot": "tilt",
+   "cap": "Most planets spin like a top, standing almost upright. Uranus is tipped over by about ninety eight degrees.",
+   "say": "Most planets spin like a top, standing almost upright. Uranus is tipped over by about ninety eight degrees."
+  },
+  {
+   "shot": "roll",
+   "cap": "So it doesn't spin. It rolls around the Sun, like a ball.",
+   "say": "So it doesn't spin. It rolls around the Sun, like a ball."
+  },
+  {
+   "shot": "impact",
+   "cap": "The best explanation: billions of years ago, an object maybe twice the size of Earth smashed into it.",
+   "say": "The best explanation: billions of years ago, an object maybe twice the size of Earth smashed into it."
+  },
+  {
+   "shot": "seasons",
+   "cap": "Because of the tilt, each pole gets about forty two years of daylight, then forty two years of darkness.",
+   "say": "Because of the tilt, each pole gets about forty two years of daylight, then forty two years of darkness."
+  },
+  {
+   "shot": "rings",
+   "cap": "Even its rings and moons got knocked sideways, circling around its middle.",
+   "say": "Even its rings and moons got knocked sideways, circling around its middle."
+  },
+  {
+   "shot": "cold",
+   "cap": "And it's one of the coldest planets we know, even though Neptune is further away.",
+   "say": "And it's one of the coldest planets we know, even though Neptune is further away."
+  },
+  {
+   "shot": "outro",
+   "cap": "So yes. Uranus took a massive hit, and never got back up.",
+   "say": "So yes. Uranus took a massive hit, and never got back up."
+  }
+ ]
+}
