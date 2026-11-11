@@ -1,0 +1,11 @@
+{
+ "music": {"prompt": "Quirky curious pizzicato and soft synth pulse, playful science explainer, gets woozy and dreamy, then calm, no vocals", "gain": -6, "tail": 3},
+ "sfx": [
+  {"beat": "hook", "word": "stop", "offset": 0.0, "prompt": "alarm clock ring short", "dur": 1.2, "gain": -9},
+  {"beat": "n2", "word": "drinks", "offset": 0.0, "prompt": "glass clink and woozy wobble", "dur": 1.4, "gain": -9},
+  {"beat": "b2", "word": "Twice", "offset": 0.0, "prompt": "small audience laugh", "dur": 1.5, "gain": -9},
+  {"beat": "b3", "word": "driving", "offset": 0.0, "prompt": "car horn and tyre screech", "dur": 1.5, "gain": -8},
+  {"beat": "b4", "word": "breathing", "offset": 0.0, "prompt": "eerie low breathing whoosh", "dur": 2, "gain": -9},
+  {"beat": "n5", "word": "sleep", "offset": 0.0, "prompt": "soft lullaby chime", "dur": 1.8, "gain": -9}
+ ]
+}

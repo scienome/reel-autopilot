@@ -1,0 +1,11 @@
+{
+ "title": "What happens if you stop sleeping? 🧠😵",
+ "caption": "Hour 16, hour 24, day 2, day 3... your brain narrates every stage 🧠\nWhat should we test next? 👇",
+ "hashtags": ["whathappensif", "sleep", "brain", "science", "funny", "animation", "relatable", "reels"],
+ "first_comment": "Longest you have stayed awake? Be honest 👀👇",
+ "cover_t": 14.0,
+ "format": "what-happens-if",
+ "sample": true,
+ "sources": ["Dawson D, Reid K. Fatigue, alcohol and performance impairment. Nature 1997;388:235 (24 h awake ~ blood alcohol 0.10%)", "Poudel GR et al. Losing the struggle to stay awake: divergent thalamic and cortical activity during microsleeps. Hum Brain Mapp 2014;35:257-269", "Waters F et al. Severe sleep deprivation causes hallucinations and a gradual progression toward psychosis with increasing time awake. Front Psychiatry 2018;9:303", "Diekelmann S, Born J. The memory function of sleep. Nat Rev Neurosci 2010;11:114-126", "Xie L et al. Sleep drives metabolite clearance from the adult brain. Science 2013;342:373-377"],
+ "libs": ["lib/pov.js"]
+}

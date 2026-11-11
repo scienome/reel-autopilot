@@ -1,0 +1,14 @@
+[
+ {"id": "hook", "who": "narrator", "phrases": ["What happens if you stop sleeping?"]},
+ {"id": "n1", "who": "narrator", "phrases": ["Hour sixteen. You feel fine. Your brain doesn't."]},
+ {"id": "b1", "who": "friend", "phrases": ["I'm still holding today's memories.", "You never let me file them."]},
+ {"id": "n2", "who": "narrator", "phrases": ["Hour twenty-four. Your reactions are as slow as someone who's had a few drinks."]},
+ {"id": "b2", "who": "friend", "phrases": ["Why did we walk into the kitchen?", "Twice?"]},
+ {"id": "n3", "who": "narrator", "phrases": ["Day two. Microsleeps. Your brain switches off for a few seconds, even with your eyes open."]},
+ {"id": "b3", "who": "friend", "phrases": ["Sorry, I blinked.", "For four seconds.", "You were driving."]},
+ {"id": "n4", "who": "narrator", "phrases": ["Day three. Some people start seeing things that aren't there."]},
+ {"id": "b4", "who": "friend", "phrases": ["Is the wall breathing?", "I think the wall is breathing."]},
+ {"id": "n5", "who": "narrator", "phrases": ["Then you finally sleep. Your body pays the debt back with extra deep sleep."]},
+ {"id": "b5", "who": "friend", "phrases": ["Do not wake me.", "I'm cleaning up."]},
+ {"id": "cta", "who": "narrator", "phrases": ["What should your brain survive next? Tell me."]}
+]
