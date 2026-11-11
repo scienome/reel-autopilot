@@ -1,0 +1,38 @@
+{
+ "music-e0e7f18de3f1.mp3": {
+  "prompt": "Quirky curious pizzicato and soft synth pulse, playful science explainer, gets woozy and dreamy, then calm, no vocals",
+  "music_length_ms": 51180,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-9c418bd75bf4.mp3": {
+  "text": "alarm clock ring short",
+  "duration_seconds": 1.2,
+  "prompt_influence": 0.5
+ },
+ "sfx-90b175b4f1a9.mp3": {
+  "text": "glass clink and woozy wobble",
+  "duration_seconds": 1.4,
+  "prompt_influence": 0.5
+ },
+ "sfx-09f5a2915fda.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-a8cafe9ebf64.mp3": {
+  "text": "car horn and tyre screech",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-76af05b56b1c.mp3": {
+  "text": "eerie low breathing whoosh",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-6ff548dbc6b4.mp3": {
+  "text": "soft lullaby chime",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
