@@ -69,13 +69,13 @@ jobs:
               cat "/tmp/$id.log"
               echo "::error::$id failed: $(tail -n 12 "/tmp/$id.log" | tr '\n' ' ' | cut -c1-900)"; FAILED="$FAILED $id"
               for f in voice.mp3 timing.json alignment.json voice_lines eleven; do git add "reels/$id/$f" 2>/dev/null || true; done   # paid once, kept
-              git diff --cached --quiet || (git commit -m "Voiceover for myth reel $id [skip ci]" && git pull --rebase -q && git push)
+              git diff --cached --quiet || (git commit -m "Voiceover for myth reel $id [skip ci]" && for i in 1 2 3 4 5; do git pull --rebase -q && git push && break; sleep $((i * 3)); done)
               echo "::endgroup::"; continue
             fi
             cat "/tmp/$id.log"
             # keep the paid-for voice in the repo so a re-render never pays twice
             for f in voice.mp3 timing.json alignment.json voice_lines eleven; do git add "reels/$id/$f" 2>/dev/null || true; done   # paid once, kept
-            git diff --cached --quiet || (git commit -m "Voiceover for myth reel $id [skip ci]" && git pull --rebase -q && git push)
+            git diff --cached --quiet || (git commit -m "Voiceover for myth reel $id [skip ci]" && for i in 1 2 3 4 5; do git pull --rebase -q && git push && break; sleep $((i * 3)); done)
             gh release delete "mythreel-$id" --yes --cleanup-tag >/dev/null 2>&1 || true
             TITLE=$(python -c "import json;print(json.load(open('reels/$id/meta.json'))['title'])")
             gh release create "mythreel-$id" "out/$id/$id.mp4" "out/$id/cover.jpg" "out/$id/caption.txt" --title "$TITLE" --notes-file "out/$id/caption.txt"
