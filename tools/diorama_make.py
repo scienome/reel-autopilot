@@ -2,9 +2,11 @@
 """Voice and render one 3D diorama reel: python3 tools/diorama_make.py <id>, writes out/<id>/<id>.mp4. It never posts.
 
 One voice reads script.json line by line. Takes are kept in the reel's voice_lines/ folder, so a re-render pays only for
-lines whose text changed. Timing uses the same gaps as the noirstyle kit. Needs ELEVENLABS_API_KEY, ffmpeg and playwright.
+lines whose text changed. Timing uses the same gaps as the noirstyle kit. Needs ELEVENLABS_API_KEY (or CARTESIA_API_KEY when
+the reel's voice.json says "provider": "cartesia"), ffmpeg and playwright.
 """
 import hashlib, json, os, subprocess, sys, urllib.request, wave
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HOME = os.path.join(ROOT, 'dioramareels')
@@ -13,6 +15,12 @@ LINE_GAP, SHOT_GAP, LEAD_IN, TAIL = 0.2, 0.42, 0.25, 1.8
 
 
 def tts(text, cfg, path):
+    if cfg.get('provider') == 'cartesia':  # a reel's voice.json can pick Cartesia: {"provider": "cartesia", "voice_id", "model_id"}
+        import tempfile, cartesia_tts
+        with tempfile.TemporaryDirectory() as d:
+            wav = cartesia_tts.tts(text, os.path.join(d, 'take.wav'), voice=cfg['voice_id'])
+            subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', wav, '-b:a', '128k', path], check=True)
+        return
     req = urllib.request.Request(
         f"https://api.elevenlabs.io/v1/text-to-speech/{cfg['voice_id']}?output_format=mp3_44100_128",
         data=json.dumps({'text': text, 'model_id': cfg['model_id']}).encode(),

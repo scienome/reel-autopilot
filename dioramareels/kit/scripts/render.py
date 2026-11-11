@@ -68,7 +68,10 @@ async def page(b):
         await pg.add_script_tag(content=read(three))
     else:
         await pg.add_script_tag(url=THREE_URL)
-    for f in [SOUND, os.path.join(refs, "diorama.js"), os.path.join(refs, "city.js"), os.path.join(refs, "life.js"), os.path.join(refs, "wedding.js"), os.path.join(refs, "hook.js"), *([os.path.join(refs, "toy3d.js")] if os.path.exists(os.path.join(refs, "toy3d.js")) else []), *([a.timing] if a.timing else []), a.story]:
+    for f in [SOUND, os.path.join(refs, "diorama.js"), os.path.join(refs, "city.js"), os.path.join(refs, "life.js"), os.path.join(refs, "wedding.js"), os.path.join(refs, "hook.js"), *([os.path.join(refs, "toy3d.js")] if os.path.exists(os.path.join(refs, "toy3d.js")) else []), *([os.path.join(refs, "hands.js")] if os.path.exists(os.path.join(refs, "hands.js")) else [])]:
+        await pg.add_script_tag(content=read(f))
+    await pg.evaluate("async () => { if (window.HANDS_READY) await window.HANDS_READY; }")  # rigged hand models (hands.js) load async
+    for f in [*([a.timing] if a.timing else []), a.story]:
         await pg.add_script_tag(content=read(f))
     return pg
 

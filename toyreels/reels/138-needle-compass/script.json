@@ -1,0 +1,54 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "No phone, no map? You can make a compass from a needle.",
+   "say": "No phone, no map? You can make a compass from a needle."
+  },
+  {
+   "shot": "take",
+   "cap": "Take a sewing needle and a magnet.",
+   "say": "Take a sewing needle and a magnet."
+  },
+  {
+   "shot": "stroke",
+   "cap": "Stroke the needle along the magnet, in one direction only, about thirty times.",
+   "say": "Stroke the needle along the magnet, in one direction only, about thirty times."
+  },
+  {
+   "shot": "inside",
+   "cap": "Inside the steel, tiny magnetic regions start to line up.",
+   "say": "Inside the steel, tiny magnetic regions start to line up."
+  },
+  {
+   "shot": "test",
+   "cap": "Now the needle is a weak magnet. It can even lift a pin.",
+   "say": "Now the needle is a weak magnet. It can even lift a pin."
+  },
+  {
+   "shot": "cork",
+   "cap": "Push it through a thin slice of cork.",
+   "say": "Push it through a thin slice of cork."
+  },
+  {
+   "shot": "float",
+   "cap": "Float the cork in a bowl of still water.",
+   "say": "Float the cork in a bowl of still water."
+  },
+  {
+   "shot": "turn",
+   "cap": "Slowly, it turns. One end points north.",
+   "say": "Slowly, it turns. One end points north."
+  },
+  {
+   "shot": "earth",
+   "cap": "Because the Earth itself is a giant magnet, and your needle lines up with it.",
+   "say": "Because the Earth itself is a giant magnet, and your needle lines up with it."
+  },
+  {
+   "shot": "mark",
+   "cap": "Check it once against the sunset, mark the north end, and you will never be lost again.",
+   "say": "Check it once against the sunset, mark the north end, and you will never be lost again."
+  }
+ ]
+}

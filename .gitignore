@@ -8,3 +8,4 @@ out/[0-9]*/
 ready/
 out/sample/
 dioramareels/kit/references/three.min.js
+.env
