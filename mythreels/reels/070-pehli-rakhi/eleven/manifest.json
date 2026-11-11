@@ -1,0 +1,28 @@
+{
+ "music-09f3570e59e2.mp3": {
+  "prompt": "Indian mythological cinematic underscore: tanpura drone, soft tabla, bansuri, temple bells, swelling shehnai at the climax, no vocals, warm devotional temple feeling",
+  "music_length_ms": 50460,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-e845f19700de.mp3": {
+  "text": "war drums and clashing weapons",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-1e91d407d791.mp3": {
+  "text": "mantra chant hum and a bell",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-9277b2320b27.mp3": {
+  "text": "victory conch blast",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
