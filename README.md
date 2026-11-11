@@ -83,7 +83,7 @@ Folder: [`gears-pov/`](gears-pov/)
 | [041-sofa-thoughts](gears-pov/041-sofa-thoughts.mp4) | You can hear what your sofa thinks 🛋️ | Waiting to post |
 | [042-big-brother-thoughts](gears-pov/042-big-brother-thoughts.mp4) | You can hear what your big brother thinks 👦 | Waiting to post |
 | [043-owl-thoughts](gears-pov/043-owl-thoughts.mp4) | You can hear what the owl outside your window thinks 🦉 | Waiting to post |
-| [044-first-date-thoughts](gears-pov/044-first-date-thoughts.mp4) | You can hear what your first date thinks 💘 | Waiting to post |
+| [044-first-date-thoughts](gears-pov/044-first-date-thoughts.mp4) | You can hear what your first date thinks 💘 | Posted on Instagram · on YouTube |
 | [045-old-dog-thoughts](gears-pov/045-old-dog-thoughts.mp4) | You can hear what your old dog thinks 🐕 | Posted on Instagram · on YouTube |
 | [046-tv-remote-thoughts](gears-pov/046-tv-remote-thoughts.mp4) | You can hear what your TV remote thinks 📺 | Waiting to post |
 | [047-stray-dog-thoughts](gears-pov/047-stray-dog-thoughts.mp4) | You can hear what a stray dog thinks 🐕 | Waiting to post |
@@ -95,12 +95,12 @@ Folder: [`gears-pov/`](gears-pov/)
 | [053-elevator-thoughts](gears-pov/053-elevator-thoughts.mp4) | You can hear what the elevator thinks 🛗 | Waiting to post |
 | [054-penguin-thoughts](gears-pov/054-penguin-thoughts.mp4) | You can hear what a penguin thinks 🐧 | Waiting to post |
 | [055-best-friend-thoughts](gears-pov/055-best-friend-thoughts.mp4) | You can hear what your best friend thinks when they say "I'm fine" 💬 | Waiting to post |
-| [056-hen-thoughts](gears-pov/056-hen-thoughts.mp4) | You can hear what a hen thinks 🐔 | Not scheduled |
-| [057-teddy-bear-thoughts](gears-pov/057-teddy-bear-thoughts.mp4) | You can hear what your old teddy bear thinks 🧸 | Not scheduled |
-| [058-rabbit-thoughts](gears-pov/058-rabbit-thoughts.mp4) | You can hear what your pet rabbit thinks 🐰 | Not scheduled |
-| [059-newborn-thoughts](gears-pov/059-newborn-thoughts.mp4) | You can hear what a newborn thinks at 3 a.m. 👶 | Not scheduled |
-| [060-teacher-thoughts](gears-pov/060-teacher-thoughts.mp4) | You can hear what your teacher thinks 📚 | Not scheduled |
-| [061-toothbrush-thoughts](gears-pov/061-toothbrush-thoughts.mp4) | You can hear what your toothbrush thinks 🪥 | Not scheduled |
+| [056-hen-thoughts](gears-pov/056-hen-thoughts.mp4) | You can hear what a hen thinks 🐔 | Waiting to post |
+| [057-teddy-bear-thoughts](gears-pov/057-teddy-bear-thoughts.mp4) | You can hear what your old teddy bear thinks 🧸 | Waiting to post |
+| [058-rabbit-thoughts](gears-pov/058-rabbit-thoughts.mp4) | You can hear what your pet rabbit thinks 🐰 | Waiting to post |
+| [059-newborn-thoughts](gears-pov/059-newborn-thoughts.mp4) | You can hear what a newborn thinks at 3 a.m. 👶 | Waiting to post |
+| [060-teacher-thoughts](gears-pov/060-teacher-thoughts.mp4) | You can hear what your teacher thinks 📚 | Waiting to post |
+| [061-toothbrush-thoughts](gears-pov/061-toothbrush-thoughts.mp4) | You can hear what your toothbrush thinks 🪥 | Waiting to post |
 
 ## CouchSarcasm (old couple comedy) (40)
 Folder: [`couch-sarcasm/`](couch-sarcasm/)
@@ -248,7 +248,7 @@ Folder: [`toy-reels/`](toy-reels/)
 | [13-hitler-hell-queue](toy-reels/13-hitler-hell-queue.mp4) | Hitler Went To Hell And Got Put On Hold 💀 | Posted (Instagram + YouTube) |
 | [130-tangled-earphones-3d](toy-reels/130-tangled-earphones-3d.mp4) | How To Stop Your Earphones Tangling, Step By Step 🎧 | Posted (Instagram + YouTube) |
 | [131-missed-bus-3d](toy-reels/131-missed-bus-3d.mp4) | How To Stop Missing The Bus, Step By Step 🚌 | Posted (Instagram + YouTube) |
-| [132-umbrella-inside-out-3d](toy-reels/132-umbrella-inside-out-3d.mp4) | How To Stop Your Umbrella Flipping, Step By Step ☂️ | Waiting to post |
+| [132-umbrella-inside-out-3d](toy-reels/132-umbrella-inside-out-3d.mp4) | How To Stop Your Umbrella Flipping, Step By Step ☂️ | Posted (Instagram + YouTube) |
 | [133-melting-ice-cream-3d](toy-reels/133-melting-ice-cream-3d.mp4) | How To Stop Ice Cream Melting, Step By Step 🍦 | Waiting to post |
 | [134-forgotten-keys-3d](toy-reels/134-forgotten-keys-3d.mp4) | How To Never Forget Your Keys, Step By Step 🔑 | Waiting to post |
 | [14-death-replaced-by-ai](toy-reels/14-death-replaced-by-ai.mp4) | Death Got Replaced By AI. Nobody Has Died Since 💀 | Posted (Instagram + YouTube) |
