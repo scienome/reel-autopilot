@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Your empty bottle can do this.",
+   "say": "Your empty bottle can do this."
+  },
+  {
+   "shot": "crack",
+   "cap": "Crack an egg onto a plate. Try not to break the yolk.",
+   "say": "Crack an egg onto a plate. Try not to break the yolk."
+  },
+  {
+   "shot": "squeeze",
+   "cap": "Take a clean, empty plastic bottle, and squeeze it gently.",
+   "say": "Take a clean, empty plastic bottle, and squeeze it gently."
+  },
+  {
+   "shot": "touch",
+   "cap": "Hold the opening right against the yolk.",
+   "say": "Hold the opening right against the yolk."
+  },
+  {
+   "shot": "release",
+   "cap": "Now let go. The yolk shoots up into the bottle.",
+   "say": "Now let go. The yolk shoots up into the bottle."
+  },
+  {
+   "shot": "inside",
+   "cap": "Squeezing pushes air out. When the bottle springs back, the pressure inside drops, and the air outside pushes the yolk in.",
+   "say": "Squeezing pushes air out. When the bottle springs back, the pressure inside drops, and the air outside pushes the yolk in."
+  },
+  {
+   "shot": "out",
+   "cap": "Move it over a bowl, and squeeze again. Out it pops, in one piece.",
+   "say": "Move it over a bowl, and squeeze again. Out it pops, in one piece."
+  },
+  {
+   "shot": "outro",
+   "cap": "Perfect yolk. Perfect whites. Two seconds.",
+   "say": "Perfect yolk. Perfect whites. Two seconds."
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+// 177 DIY (diy3d.js): separate an egg yolk with a squeezed bottle (air pressure). Scroll stopper: a yolk shooting up into a bottle.
+DIY(({ T, root, M, mesh, grp, tex, grab, RH, LH, seg, E, lerp, PI, glassM }) => {
+  const plate = mesh(root, new T.CylinderGeometry(1.4, 1.2, 0.08, 48), M('#f4f2ec', 0.3), 0, 0.04, 0);
+  const white = mesh(root, new T.CylinderGeometry(0.85, 0.85, 0.05, 40), M('#f8f6ee', 0.2, 0, { transparent: true, opacity: 0.85 }), 0, 0.1, 0); white.scale.z = 0.8;
+  const yolk = mesh(root, new T.SphereGeometry(0.28, 32, 20), M('#ffb21a', 0.25, 0, { emissive: '#7a3a00', emissiveIntensity: 0.15 }), 0, 0.2, 0); yolk.scale.y = 0.7;
+  const bowl = grp(root, 2.6, 0, -0.4); { const pts = []; for (let i = 0; i <= 10; i++) { const a = i / 10; pts.push(new T.Vector2(0.7 + Math.sin(a * 1.4) * 0.4, a * 0.7)); } mesh(bowl, new T.LatheGeometry(pts, 40), M('#2f7fd8', 0.3, 0, { side: T.DoubleSide })); }
+  const bottle = grp(root); const BP = glassM({ opacity: 0.3, color: '#cfe8ff' }); const bod = mesh(bottle, new T.CylinderGeometry(0.42, 0.42, 1.8, 32), BP, 0, 1.4, 0); mesh(bottle, new T.CylinderGeometry(0.12, 0.42, 0.4, 32), BP, 0, 0.3, 0); mesh(bottle, new T.CylinderGeometry(0.12, 0.12, 0.2, 20), BP, 0, 0.05, 0);
+  const inYolk = mesh(bottle, new T.SphereGeometry(0.26, 24, 16), M('#ffb21a', 0.25), 0, 0.6, 0); inYolk.visible = false;
+  const egg = grp(root); const sh = mesh(egg, new T.SphereGeometry(0.3, 24, 16), M('#e8d2b0', 0.6)); sh.scale.y = 1.3;
+  const squeeze = (u) => { bod.scale.set(1 - u * 0.25, 1, 1 + u * 0.05); };
+  const B = (x, y, z) => { bottle.position.set(x, y, z); };
+  const cam = (p, l, fov = 34) => ({ pos: p, look: l, fov, focus: [0.25, 0.8], blur: 8 });
+  const shots = {
+    hook: (t, k) => { plate.visible = white.visible = true; const u = E(seg(k, 0.15, 0.45)); yolk.visible = u < 0.95; yolk.position.set(0, lerp(0.2, 0.5, u), 0); inYolk.visible = u >= 0.95; B(0, 0.18, 0); squeeze(1 - E(seg(k, 0.1, 0.3))); grab(RH, [0.45, 1.4, 0.0], -1.4, 0.2, 'hold'); return cam([0.6, 1.2, 3.2], [0, 0.7, 0], 36); },
+    crack: (t, k) => { bottle.visible = false; white.visible = yolk.visible = k > 0.5; egg.visible = k < 0.55; egg.position.set(0, lerp(1.2, 0.5, k), 0); grab(RH, [0.3, egg.position.y, 0], -1.3, 0.3, 'pinch'); return cam([0.6, 2.2, 3], [0, 0.3, 0], 36); },
+    squeeze: (t, k) => { plate.visible = white.visible = yolk.visible = true; B(0.8, 0.4, 0.6); squeeze(E(k)); grab(RH, [1.25, 1.6, 0.6], -1.4, 0.2, 'hold'); grab(LH, [0.35, 1.6, 0.6], PI - 0.2, 0.2, 'hold'); return cam([1.2, 1.6, 4], [0.6, 1.0, 0.3], 38); },
+    touch: (t, k) => { plate.visible = white.visible = yolk.visible = true; B(0, lerp(0.8, 0.22, E(k)), 0); squeeze(1); grab(RH, [0.45, bottle.position.y + 1.2, 0], -1.4, 0.2, 'hold'); return cam([0.4, 0.5, 1.6], [0, 0.3, 0], 34); },
+    release: (t, k) => { plate.visible = white.visible = true; const u = E(seg(k, 0.1, 0.4)); yolk.visible = u < 0.95; yolk.position.set(0, lerp(0.2, 0.5, u), 0); inYolk.visible = u >= 0.95; B(0, 0.18, 0); squeeze(1 - E(seg(k, 0, 0.2))); grab(RH, [0.45, 1.4, 0], -1.4, 0.2, 'hold'); return cam([0.4, 0.6, 1.8], [0, 0.4, 0], 34); },
+    inside: (t, k) => { plate.visible = white.visible = true; B(0, 0.18, 0); inYolk.visible = true; yolk.visible = false; return { pos: [0, 1.0, 3.2], look: [0, 0.9, 0], fov: 38, focus: [0.1, 0.95], blur: 2 }; },
+    out: (t, k) => { plate.visible = white.visible = true; const m = E(seg(k, 0, 0.5)); B(lerp(0, 2.6, m), lerp(0.4, 0.9, m), lerp(0, -0.4, m)); squeeze(E(seg(k, 0.55, 0.8))); inYolk.visible = k < 0.7; yolk.visible = k >= 0.7; yolk.position.set(2.6, lerp(0.8, 0.25, seg(k, 0.7, 0.9)), -0.4); grab(RH, [bottle.position.x + 0.45, bottle.position.y + 1.2, bottle.position.z], -1.4, 0.2, 'hold'); return cam([2.2, 2.0, 3.6], [1.6, 0.6, -0.2], 40); },
+    outro: (t, k) => { plate.visible = white.visible = true; const u = E(seg(k, 0.15, 0.45)); yolk.visible = u < 0.95; yolk.position.set(0, lerp(0.2, 0.5, u), 0); inYolk.visible = u >= 0.95; B(0, 0.18, 0); squeeze(1 - E(seg(k, 0.1, 0.3))); grab(RH, [0.45, 1.4, 0], -1.4, 0.2, 'hold'); return cam([0.6, 1.2, 3.2], [0, 0.7, 0], 36); },
+  };
+  const arrows = (ctx, t) => { ctx.save(); ctx.fillStyle = 'rgba(8,16,32,0.55)'; ctx.fillRect(0, 0, 720, 1280); ctx.strokeStyle = '#7fd0ff'; ctx.lineWidth = 10; ctx.lineCap = 'round'; [[200, 1000], [520, 1000], [360, 1080]].forEach(([x, y], i) => { const u = (t * 1.2 + i * 0.3) % 1; ctx.globalAlpha = 1 - u * 0.5; ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x + (360 - x) * 0.4, y - 120 - u * 40); ctx.stroke(); }); ctx.globalAlpha = 1; ctx.font = '900 36px Nunito, Arial'; ctx.fillStyle = '#ffd23f'; ctx.textAlign = 'center'; ctx.fillText('LOW PRESSURE INSIDE', 360, 260); ctx.fillText('AIR PUSHES THE YOLK IN', 360, 310); ctx.restore(); };
+  Object.keys(shots).forEach((n) => { const f = shots[n]; shots[n] = (t, k, a, b) => { bottle.visible = plate.visible = white.visible = true; bowl.visible = n === 'out'; egg.visible = n === 'crack'; inYolk.visible = false; yolk.visible = true; yolk.position.set(0, 0.2, 0); return f(t, k, a, b); }; });
+  return { props: [plate, white, yolk, bowl, bottle, egg], shots, wall: '#e8a87c', over: (ctx, t, n) => { if (n === 'inside') arrows(ctx, t); },
+    score: (kit, at) => { kit.play('pop', at('hook', 0.6), { gain: 0.4 }); kit.play('pop', at('release', 0.6), { gain: 0.4 }); kit.play('pop', at('outro', 0.6), { gain: 0.4 }); } };
+});

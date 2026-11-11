@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "The jar isn't too tight. You're doing it wrong.",
+   "say": "The jar isn't too tight. You're doing it wrong."
+  },
+  {
+   "shot": "struggle",
+   "cap": "Twisting harder almost never works. The lid is held down by a vacuum.",
+   "say": "Twisting harder almost never works. The lid is held down by a vacuum."
+  },
+  {
+   "shot": "inside",
+   "cap": "When the jar was sealed, hot food cooled down. The air inside shrank, and the outside air presses the lid down hard.",
+   "say": "When the jar was sealed, hot food cooled down. The air inside shrank, and the outside air presses the lid down hard."
+  },
+  {
+   "shot": "tap",
+   "cap": "So break the seal. Tap the edge of the lid firmly on the counter, or slide a spoon under the edge and lever it up.",
+   "say": "So break the seal. Tap the edge of the lid firmly on the counter, or slide a spoon under the edge and lever it up."
+  },
+  {
+   "shot": "pop",
+   "cap": "Listen for the pop. That's air rushing back in.",
+   "say": "Listen for the pop. That's air rushing back in."
+  },
+  {
+   "shot": "twist",
+   "cap": "Now it twists off easily.",
+   "say": "Now it twists off easily."
+  },
+  {
+   "shot": "hot",
+   "cap": "Still stuck? Run the lid under hot water for thirty seconds. The metal lid expands more than the glass.",
+   "say": "Still stuck? Run the lid under hot water for thirty seconds. The metal lid expands more than the glass."
+  },
+  {
+   "shot": "outro",
+   "cap": "No muscles needed. Just physics.",
+   "say": "No muscles needed. Just physics."
+  }
+ ]
+}

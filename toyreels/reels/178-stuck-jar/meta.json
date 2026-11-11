@@ -1,0 +1,22 @@
+{
+ "title": "The jar isn't too tight. You're doing it wrong 🫙",
+ "caption": "Open any stuck jar in 3 seconds. No muscles needed 🫙💪\nSave this 👇",
+ "hashtags": [
+  "lifehack",
+  "kitchenhack",
+  "jar",
+  "tips",
+  "physics",
+  "3danimation",
+  "diy",
+  "howto"
+ ],
+ "first_comment": "Which trick do you use? 👇",
+ "cover_t": 1.0,
+ "format": "cinestory3d",
+ "kind": "diy",
+ "sources": [
+  "Vacuum sealing: cooling contents lower the internal pressure, so atmospheric pressure holds the lid (USDA / National Center for Home Food Preservation, canning basics)",
+  "Thermal expansion: metal expands more than glass when heated (coefficients of linear expansion; e.g. Engineering Toolbox)"
+ ]
+}
