@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "That woman screaming outside at night? It's probably a fox.",
+   "say": "That woman screaming outside at night? It's probably a fox."
+  },
+  {
+   "shot": "night",
+   "cap": "Two in the morning. A scream, right outside your window.",
+   "say": "Two in the morning. A scream, right outside your window."
+  },
+  {
+   "shot": "fox",
+   "cap": "In a lot of towns, the culprit is a red fox.",
+   "say": "In a lot of towns, the culprit is a red fox."
+  },
+  {
+   "shot": "vixen",
+   "cap": "It's often a female, a vixen, calling out in the mating season, mostly in winter.",
+   "say": "It's often a female, a vixen, calling out in the mating season, mostly in winter."
+  },
+  {
+   "shot": "why",
+   "cap": "The scream tells males where she is, and that she's ready to meet.",
+   "say": "The scream tells males where she is, and that she's ready to meet."
+  },
+  {
+   "shot": "other",
+   "cap": "Foxes make lots of other sounds too. Barks, yelps, and a call scientists call gekkering.",
+   "say": "Foxes make lots of other sounds too. Barks, yelps, and a call scientists call gekkering."
+  },
+  {
+   "shot": "safe",
+   "cap": "It sounds terrifying, but the fox is just talking.",
+   "say": "It sounds terrifying, but the fox is just talking."
+  },
+  {
+   "shot": "outro",
+   "cap": "So next time you hear a scream at night, listen again. It might just be a fox.",
+   "say": "So next time you hear a scream at night, listen again. It might just be a fox."
+  }
+ ]
+}

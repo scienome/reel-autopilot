@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Farmers hire an ass, to protect their sheep.",
+   "say": "Farmers hire an ass, to protect their sheep."
+  },
+  {
+   "shot": "night",
+   "cap": "Night on the farm. A fox creeps toward the flock.",
+   "say": "Night on the farm. A fox creeps toward the flock."
+  },
+  {
+   "shot": "guard",
+   "cap": "But standing with the sheep is a donkey. And it's not there by accident.",
+   "say": "But standing with the sheep is a donkey. And it's not there by accident."
+  },
+  {
+   "shot": "hate",
+   "cap": "Donkeys don't like dogs, foxes or coyotes. When one gets close, they bray, chase it, and even kick.",
+   "say": "Donkeys don't like dogs, foxes or coyotes. When one gets close, they bray, chase it, and even kick."
+  },
+  {
+   "shot": "charge",
+   "cap": "A donkey kick is strong enough to send a fox running.",
+   "say": "A donkey kick is strong enough to send a fox running."
+  },
+  {
+   "shot": "works",
+   "cap": "So some farmers keep a donkey in the field as a full time guard. No training, no salary.",
+   "say": "So some farmers keep a donkey in the field as a full time guard. No training, no salary."
+  },
+  {
+   "shot": "one",
+   "cap": "The trick? One donkey, on its own. Two donkeys tend to hang out with each other, and ignore the sheep.",
+   "say": "The trick? One donkey, on its own. Two donkeys tend to hang out with each other, and ignore the sheep."
+  },
+  {
+   "shot": "outro",
+   "cap": "So next time someone calls you an ass, say thank you.",
+   "say": "So next time someone calls you an ass, say thank you."
+  }
+ ]
+}

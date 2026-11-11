@@ -1,0 +1,49 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "This horse could do maths. Or could he?",
+   "say": "This horse could do maths. Or could he?"
+  },
+  {
+   "shot": "berlin",
+   "cap": "Berlin, around 1904. A teacher shows off his horse, Hans, to amazed crowds.",
+   "say": "Berlin, around 1904. A teacher shows off his horse, Hans, to amazed crowds."
+  },
+  {
+   "shot": "tap",
+   "cap": "Ask him two plus three, and Hans taps his hoof. One, two, three, four, five. Then stops.",
+   "say": "Ask him two plus three, and Hans taps his hoof. One, two, three, four, five. Then stops."
+  },
+  {
+   "shot": "famous",
+   "cap": "He could add, tell the time, even spell. Newspapers called him Clever Hans.",
+   "say": "He could add, tell the time, even spell. Newspapers called him Clever Hans."
+  },
+  {
+   "shot": "test",
+   "cap": "A psychologist, Oskar Pfungst, ran a test. What if the person asking doesn't know the answer?",
+   "say": "A psychologist, Oskar Pfungst, ran a test. What if the person asking doesn't know the answer?"
+  },
+  {
+   "shot": "fail",
+   "cap": "Suddenly, Hans got almost everything wrong.",
+   "say": "Suddenly, Hans got almost everything wrong."
+  },
+  {
+   "shot": "truth",
+   "cap": "Hans wasn't counting. He was reading faces. When he reached the right number, people relaxed without knowing it. And Hans stopped.",
+   "say": "Hans wasn't counting. He was reading faces. When he reached the right number, people relaxed without knowing it. And Hans stopped."
+  },
+  {
+   "shot": "legacy",
+   "cap": "Today, scientists still blind their experiments, because of a horse.",
+   "say": "Today, scientists still blind their experiments, because of a horse."
+  },
+  {
+   "shot": "outro",
+   "cap": "He couldn't do maths. He could read you.",
+   "say": "He couldn't do maths. He could read you."
+  }
+ ]
+}
