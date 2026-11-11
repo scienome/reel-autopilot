@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Smooth balls don't go far.",
+   "say": "Smooth balls don't go far."
+  },
+  {
+   "shot": "old",
+   "cap": "Early golf balls were smooth. And golfers noticed something strange.",
+   "say": "Early golf balls were smooth. And golfers noticed something strange."
+  },
+  {
+   "shot": "beat",
+   "cap": "Old, beaten up balls, full of dents and scratches, flew further than new ones.",
+   "say": "Old, beaten up balls, full of dents and scratches, flew further than new ones."
+  },
+  {
+   "shot": "inside",
+   "cap": "Here's why. Air flowing over a smooth ball peels away early, leaving a big pocket of drag behind it.",
+   "say": "Here's why. Air flowing over a smooth ball peels away early, leaving a big pocket of drag behind it."
+  },
+  {
+   "shot": "dimples",
+   "cap": "Dimples make a thin layer of air cling to the ball for longer. The pocket behind it shrinks.",
+   "say": "Dimples make a thin layer of air cling to the ball for longer. The pocket behind it shrinks."
+  },
+  {
+   "shot": "far",
+   "cap": "Less drag. And with backspin, more lift. A dimpled ball can fly about twice as far.",
+   "say": "Less drag. And with backspin, more lift. A dimpled ball can fly about twice as far."
+  },
+  {
+   "shot": "count",
+   "cap": "Most golf balls have between three hundred and five hundred dimples.",
+   "say": "Most golf balls have between three hundred and five hundred dimples."
+  },
+  {
+   "shot": "outro",
+   "cap": "So size isn't everything. It's the dimples.",
+   "say": "So size isn't everything. It's the dimples."
+  }
+ ]
+}

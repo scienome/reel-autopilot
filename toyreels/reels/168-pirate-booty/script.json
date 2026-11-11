@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Pirates almost never buried their booty.",
+   "say": "Pirates almost never buried their booty."
+  },
+  {
+   "shot": "map",
+   "cap": "X marks the spot. A chest of gold, buried on a desert island.",
+   "say": "X marks the spot. A chest of gold, buried on a desert island."
+  },
+  {
+   "shot": "real",
+   "cap": "Real pirates? They spent it. Fast. On food, drink and partying in port.",
+   "say": "Real pirates? They spent it. Fast. On food, drink and partying in port."
+  },
+  {
+   "shot": "shared",
+   "cap": "The loot was split between the whole crew, often right after the raid.",
+   "say": "The loot was split between the whole crew, often right after the raid."
+  },
+  {
+   "shot": "kidd",
+   "cap": "There's really only one famous case. In 1699, Captain William Kidd buried some treasure on an island near New York.",
+   "say": "There's really only one famous case. In 1699, Captain William Kidd buried some treasure on an island near New York."
+  },
+  {
+   "shot": "dug",
+   "cap": "It was dug up and used as evidence against him. He was hanged in 1701.",
+   "say": "It was dug up and used as evidence against him. He was hanged in 1701."
+  },
+  {
+   "shot": "book",
+   "cap": "The X on the map? Mostly from a novel. Treasure Island, published in 1883.",
+   "say": "The X on the map? Mostly from a novel. Treasure Island, published in 1883."
+  },
+  {
+   "shot": "outro",
+   "cap": "So pirates didn't bury their booty. They shook it.",
+   "say": "So pirates didn't bury their booty. They shook it."
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "title": "Smooth balls don't go far ⛳",
+ "caption": "Turns out the dimples do all the work ⛳💨\nTag your golf buddy 👇",
+ "hashtags": [
+  "golf",
+  "physics",
+  "science",
+  "sports",
+  "didyouknow",
+  "3danimation",
+  "golfball",
+  "aerodynamics"
+ ],
+ "first_comment": "Did you know why golf balls have dimples? ⛳👇",
+ "cover_t": 1.0,
+ "format": "cinestory3d",
+ "kind": "cheeky",
+ "sources": [
+  "NASA Glenn Research Center / US Golf Association: dimples trip the boundary layer to turbulence, delaying separation and reducing drag",
+  "Encyclopaedia Britannica, 'golf ball' (early smooth 'gutties' flew further once nicked; modern balls have about 300-500 dimples)",
+  "Bearman P. W. & Harvey J. K. (1976) 'Golf ball aerodynamics', Aeronautical Quarterly 27: 112-122 (a dimpled ball travels roughly twice as far as a smooth one)"
+ ]
+}

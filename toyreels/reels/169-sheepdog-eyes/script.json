@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "She moves three hundred sheep, with just her eyes.",
+   "say": "She moves three hundred sheep, with just her eyes."
+  },
+  {
+   "shot": "field",
+   "cap": "A wide hillside. Hundreds of sheep, scattered everywhere. One farmer, and one dog.",
+   "say": "A wide hillside. Hundreds of sheep, scattered everywhere. One farmer, and one dog."
+  },
+  {
+   "shot": "whistle",
+   "cap": "The farmer whistles. The dog races out in a big, wide circle, behind the flock.",
+   "say": "The farmer whistles. The dog races out in a big, wide circle, behind the flock."
+  },
+  {
+   "shot": "eye",
+   "cap": "Then she drops low, and stares. Shepherds call it the eye.",
+   "say": "Then she drops low, and stares. Shepherds call it the eye."
+  },
+  {
+   "shot": "move",
+   "cap": "The sheep see a predator, and bunch together. They move away from her, exactly where she wants.",
+   "say": "The sheep see a predator, and bunch together. They move away from her, exactly where she wants."
+  },
+  {
+   "shot": "commands",
+   "cap": "Each whistle means something different. Go left. Go right. Stop. Walk on.",
+   "say": "Each whistle means something different. Go left. Go right. Stop. Walk on."
+  },
+  {
+   "shot": "gate",
+   "cap": "Step by step, the whole flock flows through a narrow gate.",
+   "say": "Step by step, the whole flock flows through a narrow gate."
+  },
+  {
+   "shot": "outro",
+   "cap": "No barking. No biting. Just the stare.",
+   "say": "No barking. No biting. Just the stare."
+  }
+ ]
+}
