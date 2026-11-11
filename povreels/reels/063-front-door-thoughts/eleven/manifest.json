@@ -1,0 +1,28 @@
+{
+ "music-93d73210b412.mp3": {
+  "prompt": "Wry pizzicato and soft piano, comedic, then warm and emotional, no vocals",
+  "music_length_ms": 39980,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-ad09db076f9f.mp3": {
+  "text": "door slam short",
+  "duration_seconds": 1.0,
+  "prompt_influence": 0.5
+ },
+ "sfx-09f5a2915fda.mp3": {
+  "text": "small audience laugh",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ },
+ "sfx-831e7143ab51.mp3": {
+  "text": "soft warm choir aww",
+  "duration_seconds": 2,
+  "prompt_influence": 0.5
+ },
+ "sfx-289e90e644e8.mp3": {
+  "text": "small audience aww",
+  "duration_seconds": 1.5,
+  "prompt_influence": 0.5
+ }
+}
