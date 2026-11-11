@@ -35,7 +35,7 @@ Folder: [`couch-cartoon/`](couch-cartoon/)
 | [p003-the-real-hurt](couch-cartoon/p003-the-real-hurt.mp4) | "When did you stop looking at me?" 💔 | Not scheduled |
 | [t001-dentist](couch-cartoon/t001-dentist.mp4) | Who's Jessica? 📱 | Not scheduled |
 
-## Thought Bubble POV stories (formerly Gears & Glitches) (61)
+## Thought Bubble POV stories (formerly Gears & Glitches) (64)
 Folder: [`gears-pov/`](gears-pov/)
 
 | Video | Title | Status |
@@ -101,6 +101,9 @@ Folder: [`gears-pov/`](gears-pov/)
 | [059-newborn-thoughts](gears-pov/059-newborn-thoughts.mp4) | You can hear what a newborn thinks at 3 a.m. 👶 | Waiting to post |
 | [060-teacher-thoughts](gears-pov/060-teacher-thoughts.mp4) | You can hear what your teacher thinks 📚 | Waiting to post |
 | [061-toothbrush-thoughts](gears-pov/061-toothbrush-thoughts.mp4) | You can hear what your toothbrush thinks 🪥 | Waiting to post |
+| [062-barber-thoughts](gears-pov/062-barber-thoughts.mp4) | You can hear what your barber thinks 💈 | Not scheduled |
+| [063-front-door-thoughts](gears-pov/063-front-door-thoughts.mp4) | You can hear what your front door thinks 🚪 | Not scheduled |
+| [064-neighbours-dog-thoughts](gears-pov/064-neighbours-dog-thoughts.mp4) | You can hear what the dog next door thinks 🐕 | Not scheduled |
 
 ## CouchSarcasm (old couple comedy) (40)
 Folder: [`couch-sarcasm/`](couch-sarcasm/)
