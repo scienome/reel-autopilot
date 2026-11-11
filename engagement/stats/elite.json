@@ -2,8 +2,53 @@
  "account": "ELITE",
  "username": "elitesendgame",
  "followers": 4,
- "fetched": "2026-11-10T03:25:02.649410Z",
+ "fetched": "2026-11-11T03:28:57.109555Z",
  "reels": [
+  {
+   "id": "18037572488902959",
+   "timestamp": "2026-11-11T00:30:02+0000",
+   "like_count": 3,
+   "comments_count": 0,
+   "permalink": "https://www.instagram.com/reel/Dfk17OTDgZw/",
+   "caption": "The free door was the way out. The paid door was the trap.\n\nFiction. Did you pick right? C",
+   "views": 259,
+   "reach": 229,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 3,
+   "ig_reels_avg_watch_time": 8568,
+   "ig_reels_video_view_total_time": 1970723
+  },
+  {
+   "id": "18101520959562765",
+   "timestamp": "2026-11-10T19:30:03+0000",
+   "like_count": 2,
+   "comments_count": 2,
+   "permalink": "https://www.instagram.com/reel/DfkU0uJjZxG/",
+   "caption": "Only one of these doors gets you out alive.\n\nFiction. A or B? Tomorrow you find out.\n\n#sur",
+   "views": 182,
+   "reach": 155,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 5,
+   "ig_reels_avg_watch_time": 8565,
+   "ig_reels_video_view_total_time": 1336254
+  },
+  {
+   "id": "18004542518804412",
+   "timestamp": "2026-11-10T15:00:01+0000",
+   "like_count": 7,
+   "comments_count": 0,
+   "permalink": "https://www.instagram.com/reel/Dfj0p4SjiVb/",
+   "caption": "Someone bought the sun. Your street now pays for daylight.\n\nFiction. Would you share the l",
+   "views": 359,
+   "reach": 319,
+   "saved": 1,
+   "shares": 0,
+   "total_interactions": 8,
+   "ig_reels_avg_watch_time": 12948,
+   "ig_reels_video_view_total_time": 4104645
+  },
   {
    "id": "18035388848856525",
    "timestamp": "2026-11-10T00:30:01+0000",
@@ -11,13 +56,13 @@
    "comments_count": 0,
    "permalink": "https://www.instagram.com/reel/DfiYIdFEjV2/",
    "caption": "Someone just signed your lease. And he has your face.\n\nFiction. Would you fight for your n",
-   "views": 182,
-   "reach": 162,
+   "views": 187,
+   "reach": 167,
    "saved": 0,
    "shares": 0,
    "total_interactions": 0,
-   "ig_reels_avg_watch_time": 7211,
-   "ig_reels_video_view_total_time": 1189909
+   "ig_reels_avg_watch_time": 7318,
+   "ig_reels_video_view_total_time": 1236803
   },
   {
    "id": "18128049158309294",
@@ -26,13 +71,13 @@
    "comments_count": 0,
    "permalink": "https://www.instagram.com/reel/DfiR7RckYYw/",
    "caption": "Your elevator just grew a new button. Floor minus one.\n\nFiction. Who do you think owns the",
-   "views": 126,
-   "reach": 116,
+   "views": 130,
+   "reach": 120,
    "saved": 0,
    "shares": 0,
    "total_interactions": 0,
-   "ig_reels_avg_watch_time": 5945,
-   "ig_reels_video_view_total_time": 701602
+   "ig_reels_avg_watch_time": 5949,
+   "ig_reels_video_view_total_time": 725874
   },
   {
    "id": "18153113044558726",
@@ -42,12 +87,12 @@
    "permalink": "https://www.instagram.com/reel/DfepQuiD1Zl/",
    "caption": "Everyone on floor nine is dead. They still pay rent.\n\nFiction. Would you stay?\n\n#ghost #cr",
    "views": 419,
-   "reach": 353,
+   "reach": 354,
    "saved": 0,
    "shares": 0,
    "total_interactions": 4,
-   "ig_reels_avg_watch_time": 12415,
-   "ig_reels_video_view_total_time": 4469624
+   "ig_reels_avg_watch_time": 12420,
+   "ig_reels_video_view_total_time": 4483668
   },
   {
    "id": "18115769936616650",
