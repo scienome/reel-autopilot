@@ -35,6 +35,17 @@ One channel, four numbered series that rotate, so every day has a mix. Each reel
 
 **Rotation (owner, 4 Nov): 4 posts a day, one from each series every day** (28 reels a week, 7 per series).
 
+**Week 2 change (owner, 11 Nov 2026):** Exercise Series and Supplement Series are REPLACED by two new series (tag on screen):
+`Gym Myths Busted #N` (one popular gym myth, the evidence, a MYTH/FACT stamp with `P.verdict`) and `Diet & Food #N`
+(one food question, the evidence; caption always ends "General information, not medical advice."). Why and Muscle
+Building continue. Week 2 = 057-084, 4 a day in the order Why, Muscle Building, Myth, Diet:
+Why #14-20 (dizzy after squats, shout = stronger, music, happy after a workout, scale after a cheat meal, a week off,
+stronger in the evening) · MB 14-20 (cardio and gains, mind-muscle, full vs half reps, how long for results, rest days,
+genetics, alcohol) · Myths 1-7 (spot reduction, women bulky, muscle to fat, stretching and injury, 30-minute window,
+must be sore, squats and knees) · Diet 1-7 (egg yolks, carbs at night, water, banana before training, plant vs animal
+protein, fruit sugar, pre-workout meal). Next promised: Why #21 tight muscles, MB 21 breaking a plateau, Myth 8 muscle
+after 40, Diet 8 milk. Older reels 055/056 promise dips and ashwagandha; those series are retired, so skip them.
+
 **Next topics, in order:**
 - Why: the pump · knees cracking · side stitch when running · red face when lifting · hungrier on rest days · why you can't sleep after evening training · morning stiffness · why one side is stronger · goosebumps/shivers after a hard set · why you feel sick after leg day · why muscles twitch at night · why you sweat more as you get fitter.
 - Muscle Building: how much protein (2) · how many sets a week (3) · how heavy and how many reps (4) · how close to failure (5) · rest between sets (6) · progressive overload (7) · sleep and growth (8) · eating in a surplus (9) · beginner gains and why they slow (10) · can you build muscle and lose fat at once (11) · deload weeks (12).

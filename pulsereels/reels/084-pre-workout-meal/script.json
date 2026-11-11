@@ -1,0 +1,31 @@
+{
+ "lines": [
+  {
+   "say": "What should you eat before a workout?"
+  },
+  {
+   "say": "Diet and food, number seven."
+  },
+  {
+   "say": "Two to three hours before: a normal meal. Carbs, protein, and a little fat. Like rice, chicken and vegetables, or roti and dal."
+  },
+  {
+   "say": "One hour before or less: something small and easy. A banana, toast, yogurt, or a shake."
+  },
+  {
+   "say": "Carbs give you energy for hard sets. Protein gets the building blocks in early."
+  },
+  {
+   "say": "Keep fat and fiber low right before training. They digest slowly, and can upset your stomach."
+  },
+  {
+   "say": "Training first thing in the morning? A small snack, or even nothing, is fine for a short session."
+  },
+  {
+   "say": "Test what feels best for you."
+  },
+  {
+   "say": "Next: is milk good for gains?"
+  }
+ ]
+}
