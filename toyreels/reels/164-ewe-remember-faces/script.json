@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Ewe won't believe what sheep remember.",
+   "say": "Ewe won't believe what sheep remember."
+  },
+  {
+   "shot": "dumb",
+   "cap": "People think sheep are dumb. Just a fluffy crowd that follows the leader.",
+   "say": "People think sheep are dumb. Just a fluffy crowd that follows the leader."
+  },
+  {
+   "shot": "test",
+   "cap": "In 2001, scientists showed sheep photos of other sheep's faces, and rewarded them for picking the right one.",
+   "say": "In 2001, scientists showed sheep photos of other sheep's faces, and rewarded them for picking the right one."
+  },
+  {
+   "shot": "fifty",
+   "cap": "The sheep learned to recognise fifty different faces.",
+   "say": "The sheep learned to recognise fifty different faces."
+  },
+  {
+   "shot": "years",
+   "cap": "And they still remembered them, two years later.",
+   "say": "And they still remembered them, two years later."
+  },
+  {
+   "shot": "humans",
+   "cap": "In another study, sheep even learned to recognise famous human faces from photos.",
+   "say": "In another study, sheep even learned to recognise famous human faces from photos."
+  },
+  {
+   "shot": "mood",
+   "cap": "They can also tell a calm face from a stressed one, and they prefer the calm one.",
+   "say": "They can also tell a calm face from a stressed one, and they prefer the calm one."
+  },
+  {
+   "shot": "outro",
+   "cap": "So be nice to sheep. They'll remember you.",
+   "say": "So be nice to sheep. They'll remember you."
+  }
+ ]
+}

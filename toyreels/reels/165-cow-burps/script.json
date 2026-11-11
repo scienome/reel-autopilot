@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Cows aren't farting the planet to death. It's the burps.",
+   "say": "Cows aren't farting the planet to death. It's the burps."
+  },
+  {
+   "shot": "myth",
+   "cap": "Everyone blames cow farts for warming the planet.",
+   "say": "Everyone blames cow farts for warming the planet."
+  },
+  {
+   "shot": "inside",
+   "cap": "But inside a cow's first stomach, microbes break down grass, and make methane gas.",
+   "say": "But inside a cow's first stomach, microbes break down grass, and make methane gas."
+  },
+  {
+   "shot": "front",
+   "cap": "Most of that gas comes out of the front. Around ninety five percent, by burping.",
+   "say": "Most of that gas comes out of the front. Around ninety five percent, by burping."
+  },
+  {
+   "shot": "much",
+   "cap": "One cow can burp out around a hundred kilos of methane a year.",
+   "say": "One cow can burp out around a hundred kilos of methane a year."
+  },
+  {
+   "shot": "why",
+   "cap": "And methane traps far more heat than carbon dioxide, at least for the first twenty years.",
+   "say": "And methane traps far more heat than carbon dioxide, at least for the first twenty years."
+  },
+  {
+   "shot": "fix",
+   "cap": "Scientists are testing fixes, like adding a little seaweed to cow feed, which cuts the burps.",
+   "say": "Scientists are testing fixes, like adding a little seaweed to cow feed, which cuts the burps."
+  },
+  {
+   "shot": "outro",
+   "cap": "So next time someone blames cow farts, tell them they've got the wrong end.",
+   "say": "So next time someone blames cow farts, tell them they've got the wrong end."
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+// 165 cinestory3d (story3d.js): cow methane comes mostly from burps (UC Davis CLEAR; FAO; Roque 2021). Scroll stopper: a cow burping a green cloud out of its mouth.
+STORY((k) => {
+  const { T, M, PI, E, seg, lerp } = k; const fm = k.farm();
+  const cow = k.add(k.LIB.animal('cow', { h: 1.5 }), [0, 0, 3], PI / 2, fm); const herd = [0, 1, 2, 3].map((i) => k.add(k.LIB.animal('cow', { h: 1.5 }), [-5 + i * 2.8, 0, -0.5 - (i % 2)], i * 0.8, fm));
+  const sci = k.add(k.LIB.human({ body: 'm', top: '#f4f6f8', bottom: '#333', hair: '#3b2414' }), [2.2, 0, 4.2], -PI / 2, fm);
+  const PM = new T.MeshBasicMaterial({ color: '#7fd13a', transparent: true, opacity: 0.4, depthWrite: false, toneMapped: false }); const puffs = []; for (let i = 0; i < 10; i++) { const p = new T.Mesh(new T.SphereGeometry(0.22, 14, 10), PM); fm.add(p); puffs.push(p); }
+  const burp = (t, front = true, on = true) => puffs.forEach((p, i) => { const u = (t * 0.6 + i / 10) % 1; p.visible = on; const x0 = front ? 1.1 : -1.1; p.position.set(x0 + (front ? 1 : -1) * u * 1.4, 1.2 + u * 1.2, 3 + Math.sin(i * 2) * 0.3 * u); p.scale.setScalar(0.5 + u * 1.6); });
+  let ov = null; const stom = (ctx, t) => { ctx.save(); ctx.translate(360, 620); ctx.fillStyle = 'rgba(8,16,32,0.85)'; ctx.beginPath(); ctx.roundRect(-300, -330, 600, 640, 30); ctx.fill(); const labs = ['RUMEN', 'RETICULUM', 'OMASUM', 'ABOMASUM'];
+    [[-90, -40, 150], [110, -140, 70], [130, 30, 60], [90, 170, 80]].forEach(([x, y, r], i) => { ctx.fillStyle = i ? 'rgba(255,170,120,0.8)' : 'rgba(160,220,90,0.85)'; ctx.beginPath(); ctx.arc(x, y, r, 0, 7); ctx.fill(); ctx.fillStyle = '#fff'; ctx.font = '900 22px Nunito, Arial'; ctx.textAlign = 'center'; ctx.fillText(labs[i], x, y + 8); });
+    for (let i = 0; i < 18; i++) { const u = (t * 0.5 + i / 18) % 1; ctx.fillStyle = `rgba(160,255,90,${1 - u})`; ctx.beginPath(); ctx.arc(-90 + Math.sin(i * 3) * 80, -40 - u * 250, 8, 0, 7); ctx.fill(); } ctx.fillStyle = '#9be36a'; ctx.font = '900 30px Nunito, Arial'; ctx.fillText('CH₄', -90, -260); ctx.restore(); };
+  const base = () => { k.only(fm); herd.forEach((h, i) => h.pose('eat', i)); sci.visible = false; puffs.forEach((p) => { p.visible = false; }); cow.position.set(0, 0, 3); cow.rotation.y = PI / 2; };
+  const shots = {
+    hook: (t, kk) => { base(); cow.pose('idle', t); burp(t); ov = (ctx) => k.big(ctx, 'BUUURP', { y: 240, size: 96, col: '#9be36a' }); return k.cam([1.6, 1.6, 6.6], [0.6, 1.2, 3], 40, { sky: fm.sky }); },
+    myth: (t, kk) => { base(); cow.pose('eat', t); burp(t, false); ov = (ctx) => { k.card(ctx, 'FARTS?', { y: 200, bg: '#e8384f' }); }; return k.cam([-3.5, 1.4, 6], [-0.6, 1, 3], 40, { sky: fm.sky }); },
+    inside: (t, kk) => { base(); cow.pose('idle', t); ov = (ctx) => stom(ctx, t); return k.cam([0, 1.3, 7], [0, 1, 3], 40, { sky: fm.sky }); },
+    front: (t, kk) => { base(); cow.pose('idle', t); burp(t); ov = (ctx) => { k.card(ctx, 'FRONT: ~95%', { y: 190, bg: '#2ecc71' }); k.card(ctx, 'BACK: ~5%', { y: 300, bg: '#7a7f88' }); }; return k.cam([0.4, 1.6, 6.2], [0.4, 1.3, 3], 38, { sky: fm.sky }); },
+    much: (t, kk) => { base(); cow.pose('idle', t); burp(t); ov = (ctx) => k.counter(ctx, 'PER COW, PER YEAR', '~100 KG', { y: 190 }); return k.wide(fm, { pos: [7, 3, 12], look: [0, 1, 2] }); },
+    why: (t, kk) => { base(); cow.pose('idle', t); burp(t); ov = (ctx) => { k.tint(ctx, '#ff6a2a', 0.15 + 0.1 * Math.sin(t * 2)); k.card(ctx, 'TRAPS ~80× MORE HEAT', { y: 200, bg: '#c8501e', size: 38 }); }; return k.cam([4, 2.4, 10], [0, 1.4, 2], 42, { sky: '#e8a878' }); },
+    fix: (t, kk) => { base(); sci.visible = true; sci.pose('pickup', t); cow.pose('eat', t); ov = (ctx) => k.card(ctx, '+ SEAWEED = FEWER BURPS', { y: 200, bg: '#2ecc71', size: 38 }); return k.cam([3.6, 1.6, 7], [1, 1, 3.5], 40, { sky: fm.sky }); },
+    outro: (t, kk) => { base(); cow.pose('idle', t); burp(t); ov = (ctx) => k.big(ctx, 'WRONG END.', { y: 240, size: 84, col: '#ffd23f' }); return k.cam([1.6, 1.6, 6.6], [0.6, 1.2, 3], 40, { sky: fm.sky }); },
+  };
+  return { shots, sky: fm.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('pop', at('hook', 0.3), { gain: 0.4 }); kit.play('pop', at('outro', 0.3), { gain: 0.4 }); } };
+}, { assets: ['animals/cow', 'humans/Superhero_Male', 'humans/ual1', 'props/hay', 'buildings/cottage', 'buildings/village_house', 'buildings/house_v2', 'buildings/well', 'buildings/fence', 'nature/tree_oak', 'nature/tree_maple'] });

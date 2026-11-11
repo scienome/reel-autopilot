@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "The Moon is slowly pulling out.",
+   "say": "The Moon is slowly pulling out."
+  },
+  {
+   "shot": "drift",
+   "cap": "Every year, it moves about 3.8 centimetres further away from Earth.",
+   "say": "Every year, it moves about 3.8 centimetres further away from Earth."
+  },
+  {
+   "shot": "laser",
+   "cap": "We know because Apollo astronauts left mirrors on the Moon. Scientists bounce lasers off them, and time the light.",
+   "say": "We know because Apollo astronauts left mirrors on the Moon. Scientists bounce lasers off them, and time the light."
+  },
+  {
+   "shot": "why",
+   "cap": "The cause? The tides. The Moon pulls on Earth's oceans, and the bulge of water pulls the Moon forward, into a bigger orbit.",
+   "say": "The cause? The tides. The Moon pulls on Earth's oceans, and the bulge of water pulls the Moon forward, into a bigger orbit."
+  },
+  {
+   "shot": "day",
+   "cap": "Meanwhile, Earth slows down. Days are getting longer, by a tiny bit every century.",
+   "say": "Meanwhile, Earth slows down. Days are getting longer, by a tiny bit every century."
+  },
+  {
+   "shot": "past",
+   "cap": "Hundreds of millions of years ago, a day on Earth was much shorter.",
+   "say": "Hundreds of millions of years ago, a day on Earth was much shorter."
+  },
+  {
+   "shot": "eclipse",
+   "cap": "One day, far in the future, the Moon will look too small to cover the Sun. No more total eclipses.",
+   "say": "One day, far in the future, the Moon will look too small to cover the Sun. No more total eclipses."
+  },
+  {
+   "shot": "outro",
+   "cap": "So enjoy the view. It's slowly pulling out.",
+   "say": "So enjoy the view. It's slowly pulling out."
+  }
+ ]
+}

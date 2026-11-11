@@ -1,0 +1,23 @@
+{
+ "title": "The Moon is slowly pulling out 🌙",
+ "caption": "3.8 cm a year. We measured it with lasers 🌙📏\nShare with a space nerd 👇",
+ "hashtags": [
+  "moon",
+  "space",
+  "astronomy",
+  "science",
+  "apollo",
+  "3danimation",
+  "didyouknow",
+  "earth"
+ ],
+ "first_comment": "Did you know the Moon is drifting away? 🌙👇",
+ "cover_t": 1.0,
+ "format": "cinestory3d",
+ "kind": "cheeky",
+ "sources": [
+  "NASA, Lunar Laser Ranging / Apollo 11, 14 and 15 retroreflectors; the Moon recedes about 3.8 cm per year",
+  "Williams J. G. & Boggs D. H. (2016), 'Secular tidal changes in lunar orbit and Earth rotation', Celestial Mechanics and Dynamical Astronomy 126: 89-129",
+  "NASA / ESA: tidal braking lengthens Earth's day (about 1.7-2.3 ms per century); total solar eclipses will eventually end (hundreds of millions of years)"
+ ]
+}
