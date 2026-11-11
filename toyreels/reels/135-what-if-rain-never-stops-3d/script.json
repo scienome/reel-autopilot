@@ -1,0 +1,12 @@
+{ "lines": [
+ {"shot":"hook","cap":"WHAT IF IT|*NEVER STOPPED|RAINING?","say":"What if it started raining, and never stopped?"},
+ {"shot":"d1","cap":"DAY ONE.|*PUDDLES.","say":"Day one. Puddles. You forgot your umbrella."},
+ {"shot":"d3","cap":"THE STREET IS|A *RIVER.","say":"Day three. The street is a river. The bakery gives away wet bread."},
+ {"shot":"d7","cap":"SCHOOL IS|*CANCELLED.","say":"Day seven. The water reaches the shop signs. School is cancelled. Forever."},
+ {"shot":"d30","cap":"YOU LIVE ON|THE *BALCONY.","say":"Day thirty. The ground floor is gone. You live on the balcony now."},
+ {"shot":"d100","cap":"A *BATHTUB.","say":"Day one hundred. Your neighbour paddles past in a bathtub."},
+ {"shot":"d365","cap":"*FISH|AT YOUR WINDOW.","say":"One year. Only the roof is left. Fish swim past your window."},
+ {"shot":"twist","cap":"THE *SUN|COMES OUT.","say":"Then the rain stops. The sun comes out."},
+ {"shot":"close","cap":"SEE YOU|*MONDAY.","say":"And your boss emails. See you Monday."},
+ {"shot":"ask","cap":"","say":"Would you stay? Yes or no?"}
+] }
