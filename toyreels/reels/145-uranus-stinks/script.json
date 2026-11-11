@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Scientists finally confirmed it. Uranus stinks.",
+   "say": "Scientists finally confirmed it. Uranus stinks."
+  },
+  {
+   "shot": "tele",
+   "cap": "In 2018, astronomers pointed a giant telescope in Hawaii at Uranus's clouds.",
+   "say": "In 2018, astronomers pointed a giant telescope in Hawaii at Uranus's clouds."
+  },
+  {
+   "shot": "light",
+   "cap": "They split the light into colours, looking for the fingerprint of each gas.",
+   "say": "They split the light into colours, looking for the fingerprint of each gas."
+  },
+  {
+   "shot": "found",
+   "cap": "And there it was. Hydrogen sulphide. The gas that makes rotten eggs smell.",
+   "say": "And there it was. Hydrogen sulphide. The gas that makes rotten eggs smell."
+  },
+  {
+   "shot": "why",
+   "cap": "Uranus's top clouds are full of it. Jupiter and Saturn have ammonia clouds instead.",
+   "say": "Uranus's top clouds are full of it. Jupiter and Saturn have ammonia clouds instead."
+  },
+  {
+   "shot": "inside",
+   "cap": "So if you flew into Uranus, you would smell it. For about a second.",
+   "say": "So if you flew into Uranus, you would smell it. For about a second."
+  },
+  {
+   "shot": "cold",
+   "cap": "Because it's around minus two hundred degrees, with no oxygen. The smell is the least of your problems.",
+   "say": "Because it's around minus two hundred degrees, with no oxygen. The smell is the least of your problems."
+  },
+  {
+   "shot": "outro",
+   "cap": "So yes. Uranus stinks. Officially.",
+   "say": "So yes. Uranus stinks. Officially."
+  }
+ ]
+}

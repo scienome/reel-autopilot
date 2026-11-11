@@ -182,6 +182,8 @@ def main():
         m = json.load(open(os.path.join(REELS, r, 'meta.json'), encoding='utf-8'))
         return (m.get('format') != 'fix-chain-3d', m.get('format') != 'true-story', -m.get('potential', 5))
     queue = sorted((r for r in ids if r not in log), key=rank)
+    if conf.get('order'):  # an explicit posting order (posting.json "order"): only these reels, in this order
+        queue = [r for r in conf['order'] if r in ids and r not in log]
 
     if a.id:
         if a.id not in ids:

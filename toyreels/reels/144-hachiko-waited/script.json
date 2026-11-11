@@ -1,0 +1,49 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "This dog waited at the same train station every day. For nine years.",
+   "say": "This dog waited at the same train station every day. For nine years."
+  },
+  {
+   "shot": "meet",
+   "cap": "In 1924, a professor in Tokyo took in a puppy called Hachikō.",
+   "say": "In 1924, a professor in Tokyo took in a puppy called Hachikō."
+  },
+  {
+   "shot": "daily",
+   "cap": "Every evening, Hachi walked to Shibuya station to meet his train home.",
+   "say": "Every evening, Hachi walked to Shibuya station to meet his train home."
+  },
+  {
+   "shot": "gone",
+   "cap": "Then one day in 1925, the professor didn't come back. He had died at work.",
+   "say": "Then one day in 1925, the professor didn't come back. He had died at work."
+  },
+  {
+   "shot": "wait",
+   "cap": "Hachi came back the next evening. And the next. And the next.",
+   "say": "Hachi came back the next evening. And the next. And the next."
+  },
+  {
+   "shot": "years",
+   "cap": "Through rain, snow and summer, for almost ten years, he never stopped coming.",
+   "say": "Through rain, snow and summer, for almost ten years, he never stopped coming."
+  },
+  {
+   "shot": "famous",
+   "cap": "Strangers started bringing him food. In 1934, they built him a statue, while he was still alive.",
+   "say": "Strangers started bringing him food. In 1934, they built him a statue, while he was still alive."
+  },
+  {
+   "shot": "end",
+   "cap": "In 1935, Hachi died, still close to the station.",
+   "say": "In 1935, Hachi died, still close to the station."
+  },
+  {
+   "shot": "outro",
+   "cap": "His statue still stands at Shibuya. People still meet there, every single day.",
+   "say": "His statue still stands at Shibuya. People still meet there, every single day."
+  }
+ ]
+}

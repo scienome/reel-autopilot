@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Foxes do it in the snow. And almost always facing north.",
+   "say": "Foxes do it in the snow. And almost always facing north."
+  },
+  {
+   "shot": "listen",
+   "cap": "In winter, a fox stops dead in a snowy field, and just listens.",
+   "say": "In winter, a fox stops dead in a snowy field, and just listens."
+  },
+  {
+   "shot": "under",
+   "cap": "Under the snow, a mouse is moving. The fox can hear it.",
+   "say": "Under the snow, a mouse is moving. The fox can hear it."
+  },
+  {
+   "shot": "turn",
+   "cap": "Then it turns. Not left, not right. Mostly north-east.",
+   "say": "Then it turns. Not left, not right. Mostly north-east."
+  },
+  {
+   "shot": "jump",
+   "cap": "It leaps high, and dives in head first.",
+   "say": "It leaps high, and dives in head first."
+  },
+  {
+   "shot": "inside",
+   "cap": "Scientists think foxes may feel Earth's magnetic field, and use it like a rangefinder to judge the distance.",
+   "say": "Scientists think foxes may feel Earth's magnetic field, and use it like a rangefinder to judge the distance."
+  },
+  {
+   "shot": "stats",
+   "cap": "In one study, north-east dives caught prey about three times out of four. Most other directions, fewer than one in five.",
+   "say": "In one study, north-east dives caught prey about three times out of four. Most other directions, fewer than one in five."
+  },
+  {
+   "shot": "outro",
+   "cap": "So if you see a fox with its face in the snow, it knows exactly what it's doing.",
+   "say": "So if you see a fox with its face in the snow, it knows exactly what it's doing."
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+// 145 cinestory3d (story3d.js): hydrogen sulphide in Uranus's clouds (Irwin et al. 2018). Scroll stopper: a planet with a green stink cloud.
+STORY((k) => {
+  const { T, M, PI, E, seg, lerp } = k; const sp = k.space();
+  const ur = k.planet({ r: 2, color: '#4fb8c9', color2: '#3b9fb3', bands: 3, rings: 'thin', ringColor: '#a9c6cc', tilt: 1.71 }); sp.add(ur);
+  const ju = k.planet({ r: 1.4, color: '#d8b48a', color2: '#b98a5e', bands: 9 }); ju.position.set(-5, 0, -6); sp.add(ju); const sa = k.planet({ r: 1.2, color: '#e6cf9a', color2: '#cdb27a', bands: 6, rings: 'wide' }); sa.position.set(5, 0.5, -6); sa.rotation.z = 0.4; sp.add(sa);
+  // stink puffs around the planet
+  const puffs = []; const PM = new T.MeshBasicMaterial({ color: '#4cff2a', transparent: true, opacity: 0.3, depthWrite: false, toneMapped: false }); for (let i = 0; i < 14; i++) { const p = new T.Mesh(new T.SphereGeometry(0.5, 16, 12), PM); sp.add(p); puffs.push(p); }
+  // the telescope: dome on a dark mountain under stars
+  const obs = new T.Group(); sp.add(obs); obs.position.set(0, -60, 0); const mtn = new T.Mesh(new T.ConeGeometry(30, 10, 40), M('#3a2f2a', 0.95)); mtn.position.y = -5; obs.add(mtn);
+  const dome = new T.Mesh(new T.SphereGeometry(2, 32, 20, 0, PI * 2, 0, PI / 2), M('#e8e8ec', 0.4, 0.3)); obs.add(dome); const base = new T.Mesh(new T.CylinderGeometry(2, 2, 1.6, 32), M('#d8d8dc', 0.5)); base.position.y = -0.8; obs.add(base);
+  const slit = new T.Mesh(new T.BoxGeometry(0.7, 2.2, 0.2), M('#111', 0.6)); slit.position.set(0, 1.2, 1.7); slit.rotation.x = -0.5; obs.add(slit); const beam = new T.Mesh(new T.CylinderGeometry(0.15, 0.6, 40, 16, 1, true), M('#bfe8ff', 0.2, 0, { emissive: '#9fe0ff', emissiveIntensity: 1.5, transparent: true, opacity: 0.18, depthWrite: false })); beam.position.set(0, 20, 12); beam.rotation.x = -0.5; obs.add(beam);
+  const egg = k.LIB.prop('props/egg_q', { h: 1.4 }); sp.add(egg); egg.position.set(0, -1.2, 0);
+  let ov = null; const stink = (t, rad = 2.6) => puffs.forEach((p, i) => { const a = i * 0.9 + t * 0.4, u = (t * 0.25 + i / 14) % 1; p.visible = true; p.position.set(Math.cos(a) * rad * (1 + u * 0.4), Math.sin(i * 1.7) * rad * 0.7 + u, Math.sin(a) * rad * (1 + u * 0.4)); p.scale.setScalar(0.6 + u * 1.2); });
+  const hide = () => { puffs.forEach((p) => { p.visible = false; }); ju.visible = sa.visible = false; egg.visible = false; ur.visible = true; obs.visible = false; };
+  const spectrum = (ctx, t, hit) => { const x0 = 80, w = 560, y = 260; ctx.save(); const g = ctx.createLinearGradient(x0, 0, x0 + w, 0); ['#7a00ff', '#0040ff', '#00c8ff', '#00ff60', '#ffee00', '#ff8800', '#ff0020'].forEach((c, i) => g.addColorStop(i / 6, c)); ctx.fillStyle = g; ctx.fillRect(x0, y, w, 70);
+    ctx.fillStyle = 'rgba(0,0,0,0.85)'; [0.18, 0.33, 0.47, 0.71, 0.86].forEach((p, i) => ctx.fillRect(x0 + w * p, y, i === 3 && hit ? 10 : 5, 70)); if (hit) { ctx.strokeStyle = '#ffd23f'; ctx.lineWidth = 6; ctx.strokeRect(x0 + w * 0.71 - 14, y - 12, 38, 94); ctx.font = '900 34px Nunito, Arial'; ctx.fillStyle = '#ffd23f'; ctx.textAlign = 'center'; ctx.fillText('H₂S', x0 + w * 0.71, y + 130); } ctx.restore(); };
+  const shots = {
+    hook: (t, kk) => { hide(); k.only(sp); ur.body.rotation.y = t * 0.3; stink(t); ov = (ctx) => k.big(ctx, 'URANUS', { y: 240, size: 84, col: '#9be36a' }); return k.cam([lerp(2, 0.8, kk), 0.6, lerp(17, 14.5, kk)], [0, 0, 0], 38, { sky: sp.sky, focus: [0.05, 0.95], blur: 1 }); },
+    tele: (t, kk) => { hide(); k.only(sp); ur.visible = false; obs.visible = true; ov = (ctx) => k.card(ctx, 'HAWAII, 2018', { t: kk * 10, at: 0.3, y: 200, bg: '#1d3557' }); return k.cam([lerp(9, 7, kk), -56, 10], [0, -59, 0], 40, { sky: sp.sky, focus: [0.05, 0.95], blur: 1 }); },
+    light: (t, kk) => { hide(); k.only(sp); ur.body.rotation.y = t * 0.3; ov = (ctx) => spectrum(ctx, t, false); return k.cam([4, 1, 12], [0, 0.6, 0], 36, { sky: sp.sky, focus: [0.05, 0.95], blur: 1 }); },
+    found: (t, kk) => { hide(); k.only(sp); ur.visible = false; egg.visible = true; egg.rotation.y = t; stink(t, 1.2); puffs.forEach((p) => { p.position.y -= 1; p.scale.multiplyScalar(0.6); }); ov = (ctx) => spectrum(ctx, t, true); return k.cam([0, -0.4, 4.2], [0, -0.6, 0], 36, { sky: '#0a1a0a', focus: [0.05, 0.95], blur: 1 }); },
+    why: (t, kk) => { hide(); k.only(sp); ju.visible = sa.visible = true; ur.body.rotation.y = t * 0.3; stink(t); ov = (ctx) => { k.card(ctx, 'URANUS: ROTTEN EGG GAS', { y: 190, bg: '#3f9a3a', size: 40 }); k.card(ctx, 'JUPITER + SATURN: AMMONIA', { y: 300, bg: '#b9873a', size: 40 }); }; return k.cam([0, 1.5, 24], [0, 0, -3], 42, { sky: sp.sky, focus: [0.05, 0.95], blur: 1 }); },
+    inside: (t, kk) => { hide(); k.only(sp); stink(t, 2.2); return k.cam([lerp(0.6, 0.2, kk), lerp(0.6, 0.2, kk), lerp(12, 2.6, E(kk))], [0, 0, 0], 40, { sky: sp.sky, focus: [0.05, 0.95], blur: 1 }); },
+    cold: (t, kk) => { hide(); k.only(sp); ur.body.rotation.y = t * 0.3; ov = (ctx) => { k.big(ctx, '-200°C', { y: 230, size: 110, col: '#9fe8ff' }); k.card(ctx, 'NO OXYGEN', { t: kk * 10, at: 3, y: 360, bg: '#e8384f' }); }; return k.cam([4, 0.4, 11], [0, 0.8, 0], 38, { sky: sp.sky, focus: [0.05, 0.95], blur: 1 }); },
+    outro: (t, kk) => { hide(); k.only(sp); ur.body.rotation.y = t * 0.3; stink(t); ov = (ctx) => k.big(ctx, 'OFFICIALLY.', { y: 240, size: 80, col: '#9be36a' }); return k.cam([lerp(0.8, 2, kk), 0.6, lerp(14.5, 17, kk)], [0, 0, 0], 38, { sky: sp.sky, focus: [0.05, 0.95], blur: 1 }); },
+  };
+  return { shots, sky: sp.sky, over: (ctx) => { if (ov) ov(ctx); }, score: (kit, at) => { kit.play('ding', at('found', 0.4), { f: 'E6', gain: 0.3 }); kit.play('pop', at('outro', 0.3), { gain: 0.3 }); } };
+}, { assets: ['props/egg_q'] });
