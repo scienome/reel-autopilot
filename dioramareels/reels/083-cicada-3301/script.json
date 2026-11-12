@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Solve this puzzle, and someone recruits you. Twelve years later, nobody knows who.",
+   "say": "Solve this puzzle, and someone recruits you. Twelve years later, nobody knows who."
+  },
+  {
+   "shot": "post",
+   "cap": "January 2012. An image appears on 4chan. White text on black. We are looking for highly intelligent individuals. Find the hidden message.",
+   "say": "January 2012. An image appears on 4chan. White text on black. We are looking for highly intelligent individuals. Find the hidden message."
+  },
+  {
+   "shot": "hunt",
+   "cap": "Thousands tried. The clues used codes, old books, hidden data inside pictures, and even phone numbers.",
+   "say": "Thousands tried. The clues used codes, old books, hidden data inside pictures, and even phone numbers."
+  },
+  {
+   "shot": "world",
+   "cap": "Then the hunt left the internet. Posters appeared on poles, in fourteen cities around the world, on the same day. Each with a QR code.",
+   "say": "Then the hunt left the internet. Posters appeared on poles, in fourteen cities around the world, on the same day. Each with a QR code."
+  },
+  {
+   "shot": "finish",
+   "cap": "The few who reached the end were invited to a secret forum. Then, silence.",
+   "say": "The few who reached the end were invited to a secret forum. Then, silence."
+  },
+  {
+   "shot": "guess",
+   "cap": "Who was it? A spy agency? A bank? Hackers? Nobody has ever proven it. They came back in 2013 and 2014. Then they vanished.",
+   "say": "Who was it? A spy agency? A bank? Hackers? Nobody has ever proven it. They came back in 2013 and 2014. Then they vanished."
+  },
+  {
+   "shot": "gag",
+   "cap": "It's the only job interview in history where you solve twenty puzzles, and never find out the company.",
+   "say": "It's the only job interview in history where you solve twenty puzzles, and never find out the company."
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the smartest person you know. Because,",
+   "say": "Tag the smartest person you know. Because,"
+  }
+ ]
+}
