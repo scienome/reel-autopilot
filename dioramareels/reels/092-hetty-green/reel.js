@@ -17,5 +17,5 @@ STORY((k) => {
     rich: (t, kk) => { home(); het.pose('sit', t); ov = (ctx) => { k.night(ctx, t, 0.6); frost(ctx, 0.8); k.paper(ctx, 'HETTY GREEN DIES, ONE OF WORLD\'S RICHEST', '1916', { s: 0.75, y: 600 }); }; return k.cam([0, 1.9, -2.1], [0, 1.0, 0.1], 46, { blur: 3 }); },
     outro: (t, kk) => { home(); het.pose('sit', t); ov = (ctx) => { k.night(ctx, t, 0.55); frost(ctx, 0.8); k.card(ctx, 'TAG THE CHEAPEST PERSON YOU KNOW 🥣👇', { y: 1185, bg: '#1a2a5a', size: 30 }); }; return k.cam([0.5, 1.45, -1.9], [0, 1.15, 0.1], 42, { blur: 4 }); },
   };
-  return { shots, sky: '#060a14', capStyle: 'film', table: false, fog: ['#0b1224', 0.04], light: { sun: [-4, 10, 6], key: 0.8, fill: 0.2, rim: 0.6, color: '#9ab4ff', shadow: 12, exposure: 1.25, grade: false }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+  return { shots, sky: '#060a14', capStyle: 'film', lens: 24, table: false, fog: ['#0b1224', 0.04], light: { sun: [-4, 10, 6], key: 0.8, fill: 0.2, rim: 0.6, color: '#9ab4ff', shadow: 12, exposure: 1.25, grade: false }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
 }, { assets: ['props/table_round', 'elite/woman_suit', 'elite/man_suit', 'elite/man_hoodie'] });

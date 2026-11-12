@@ -19,5 +19,5 @@ STORY((k) => {
     gag: (t, kk) => { k.only(isl); ducks.forEach((d, i) => { d.position.y = 0.08 + Math.abs(Math.sin(t * 3 + i)) * 0.04; d.rotation.y = Math.sin(t + i) * 0.4; }); ov = (ctx) => { k.night(ctx, t, 0.5); k.counter(ctx, 'DUCKS HUNTED', '0 🦆', { y: 170 }); k.boom(ctx, (kk - 0.3) * 2.4, 360, 1000, 'QUACK.'); }; return k.cam([0, 0.9, 6.5], [0, 0.2, 3], 44, { blur: 4 }); },
     outro: (t, kk) => { k.only(st); six.forEach((s, i) => s.pose('idle', t + i)); train.position.z = 0; ov = (ctx) => { k.night(ctx, t, 0.5); k.card(ctx, 'TAG WHO\'D COME BACK WITH NO DUCKS 🦆👇', { y: 1185, bg: '#3a2a10', size: 30 }); }; return k.cam([-2.6, 2.1, 3.2], [-5.4, 2.0, -0.2], 46, { blur: 3 }); },
   };
-  return { shots, sky: '#060a14', capStyle: 'film', table: false, fog: ['#0b1224', 0.03], light: { sun: [-4, 10, 6], key: 0.9, fill: 0.2, rim: 0.6, color: '#9ab4ff', shadow: 16, exposure: 1.25, grade: false }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+  return { shots, sky: '#060a14', capStyle: 'film', lens: 24, table: false, fog: ['#0b1224', 0.03], light: { sun: [-4, 10, 6], key: 0.9, fill: 0.2, rim: 0.6, color: '#9ab4ff', shadow: 16, exposure: 1.25, grade: false }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
 }, { assets: ['buildings/village_house', 'buildings/cottage', 'buildings/well', 'buildings/fence', 'nature/tree_oak', 'elite/man_suit'] });

@@ -1,0 +1,22 @@
+// 099 Elite Files (fiction): the handshake test. Gala room, two men shake hands, tap rings over the hands; the intern gets 'promoted to the moon'.
+STORY((k) => {
+  const { T, M, PI } = k; const gala = k.LIB.place.room({ w: 8, d: 8, h: 4, wall: '#2a1a1e', floor: 'wood', window: false }); k.place(gala);
+  const ch = new T.PointLight('#ffd890', 1.6, 9); ch.position.set(0, 3.4, 0); gala.add(ch); const chand = new T.Mesh(new T.SphereGeometry(0.35, 16, 12), new T.MeshStandardMaterial({ color: '#ffe6a0', emissive: '#ffcc66', emissiveIntensity: 1.5 })); chand.position.set(0, 3.5, 0); gala.add(chand);
+  const old = k.add(k.LIB.human({ body: 'elite:man_suit', colors: { Suit: '#14141a', Tie: '#c8a21e', Hair: '#d8d8d8' } }), [-0.42, 0, 0], PI / 2, gala); const you = k.add(k.LIB.human({ body: 'elite:man_casual', colors: { Hair: '#3b2414' } }), [0.42, 0, 0], -PI / 2, gala);
+  const crowd = []; for (let i = 0; i < 6; i++) { const h = k.add(k.LIB.human({ body: i % 2 ? 'elite:woman_formal' : 'elite:man_suit', colors: { Suit: '#1a1a24', Red: '#5a1a2a' } }), [-2.6 + i * 1.05, 0, -2.6 + (i % 2) * 0.4], 0, gala); crowd.push(h); }
+  const moon = new T.Mesh(new T.SphereGeometry(2.2, 32, 20), new T.MeshStandardMaterial({ color: '#d8d8cc', roughness: 0.9, emissive: '#555', emissiveIntensity: 0.4 })); moon.position.set(4, 14, -14); gala.add(moon); moon.visible = false;
+  let ov = null; const taps = (ctx, t, pat, x = 360, y = 700) => { pat.forEach((p, i) => { const u = (t * 1.6 - i * 0.35) % 2.2; if (u > 0 && u < 0.6) { ctx.save(); ctx.strokeStyle = p > 1 ? '#ffd23f' : '#ffffff'; ctx.globalAlpha = 1 - u / 0.6; ctx.lineWidth = 8; ctx.beginPath(); ctx.arc(x, y, 30 + u * 160, 0, 7); ctx.stroke(); ctx.restore(); } }); };
+  const scene = (t, a = 'interact', b = 'interact') => { k.only(gala); old.pose(a, t); you.pose(b, t + 0.3); crowd.forEach((c, i) => c.pose('idle', t + i)); you.position.set(0.42, 0, 0); you.rotation.set(0, -PI / 2, 0); moon.visible = false; };
+  const hands = k.cam([0, 1.25, 1.5], [0, 1.05, 0], 40, { blur: 4 });
+  const shots = {
+    hook: (t, kk) => { scene(t); ov = (ctx) => { k.night(ctx, t, 0.35); k.fileTag(ctx, 99); taps(ctx, t, [2, 1, 2]); if (kk > 0.6) k.stamp(ctx, 'FAILED', (kk - 0.6) * 3, 360, 1000); }; return hands; },
+    shake: (t, kk) => { scene(t); ov = (ctx) => { k.night(ctx, t, 0.35); taps(ctx, t, [2, 1, 2]); k.card(ctx, ['SLOW…', 'SLOW · FAST…', 'SLOW · FAST · SLOW'][Math.min(2, Math.floor(kk * 3))], { y: 200, bg: '#1a1a24', size: 42 }); }; return k.cam([0, 1.15, 0.9], [0, 1.05, 0], 36, { blur: 4 }); },
+    reply: (t, kk) => { scene(t); ov = (ctx) => { k.night(ctx, t, 0.35); taps(ctx, t, [2, 2]); k.card(ctx, 'TAP TAP = "WE SEE YOU" 👁️', { y: 200, bg: '#5a0a1e', size: 36 }); }; return k.close(old, { d: 1.6, side: 0.4 }); },
+    fail: (t, kk) => { scene(t, 'idle', 'idle'); ov = (ctx) => { k.night(ctx, t, 0.4); k.card(ctx, '🙂 …', { y: 200, bg: '#1a1a24', size: 46 }); k.paper(ctx, 'INVITATION', 'never sent', { s: 0.55, y: 860, rot: 0.1 }); k.stamp(ctx, 'DENIED', kk * 2, 380, 900); }; return k.cam([-1.7, 1.6, 1.6], [-0.4, 1.3, 0], 40, { blur: 3 }); },
+    story: (t, kk) => { scene(t); ov = (ctx) => { k.night(ctx, t, 0.35); taps(ctx, t, [2, 1, 2]); if (kk > 0.6) k.card(ctx, 'THEY TAPPED BACK 😳', { y: 200, bg: '#5a0a1e', size: 40 }); }; return k.cam([2.2, 1.7, 2.6], [0, 1.1, 0], 44, { blur: 3 }); },
+    gag: (t, kk) => { k.only(gala); old.pose('wave', t); crowd.forEach((c, i) => c.pose('wave', t + i)); moon.visible = true; k.launch(you, kk * 1.1, [0.42, 0, 0]); ov = (ctx) => { k.night(ctx, t, 0.3); k.card(ctx, 'PROMOTED 🚀🌕', { y: 200, bg: '#2a6a3a', size: 44 }); k.boom(ctx, (kk - 0.05) * 3, 360, 900, 'WHOOSH!'); }; return k.cam([0, 1.6, 5.5], [0.5, 3.5, -2], 56, { blur: 2 }); },
+    cta: (t, kk) => { scene(t); ov = (ctx) => { k.night(ctx, t, 0.35); taps(ctx, t, [2, 2]); k.card(ctx, 'IF THEY TAP BACK TWICE… RUN 🏃', { y: 200, bg: '#5a0a0e', size: 34 }); }; return hands; },
+    outro: (t, kk) => { scene(t); ov = (ctx) => { k.night(ctx, t, 0.35); k.fileTag(ctx, 99); taps(ctx, t, [2, 1, 2]); k.card(ctx, 'TAG WHO JUST TAPPED THEIR OWN HAND 👇', { y: 1185, bg: '#5a0a1e', size: 28 }); }; return hands; },
+  };
+  return { shots, sky: '#060a14', capStyle: 'film', lens: 24, table: false, fog: ['#0b1224', 0.03], light: { sun: [-4, 10, 6], key: 0.8, fill: 0.25, rim: 0.6, color: '#9ab4ff', shadow: 12, exposure: 1.3, grade: false }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+}, { assets: ['elite/man_suit', 'elite/man_casual', 'elite/woman_formal'] });

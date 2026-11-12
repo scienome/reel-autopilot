@@ -18,5 +18,5 @@ STORY((k) => {
     end: (t, kk) => { k.only(ct); bern2.pose('idle', t); ov = (ctx) => { k.night(ctx, t, 0.45); k.counter(ctx, 'SENTENCE · 2009', '150 YEARS', { y: 170 }); }; return k.close(bern2, { d: 1.6 }); },
     outro: (t, kk) => { room(); bern.pose('idle', t); clients.forEach((c, i) => c.pose(i === 0 ? 'interact' : 'idle', t + i)); ov = (ctx) => { k.night(ctx, t, 0.45); k.card(ctx, 'TAG WHO FALLS FOR EVERY "INVESTMENT" 👇', { y: 1185, bg: '#2a6a3a', size: 28 }); }; return k.cam([1.6, 1.7, 2.6], [0, 1.1, -0.6], 46, { blur: 3 }); },
   };
-  return { shots, sky: '#060a14', capStyle: 'film', table: false, fog: ['#0b1224', 0.03], light: { sun: [-4, 10, 6], key: 0.8, fill: 0.2, rim: 0.5, color: '#9ab4ff', shadow: 12, exposure: 1.3, grade: false }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+  return { shots, sky: '#060a14', capStyle: 'film', lens: 24, table: false, fog: ['#0b1224', 0.03], light: { sun: [-4, 10, 6], key: 0.8, fill: 0.2, rim: 0.5, color: '#9ab4ff', shadow: 12, exposure: 1.3, grade: false }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
 }, { assets: ['elite/man_suit', 'elite/woman_formal', 'elite/man_casual'] });

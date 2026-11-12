@@ -18,5 +18,5 @@ STORY((k) => {
     gag: (t, kk) => { k.only(br); share.forEach((s, i) => s.pose('wave', t + i)); ov = (ctx) => { k.night(ctx, t, 0.4); report(ctx, t, kk); k.boom(ctx, (kk - 0.7) * 3, 360, 1050, 'DIVIDENDS!'); }; return k.cam([0, 2.4, 2.4], [0, 0.9, -1], 46, { blur: 3 }); },
     outro: (t, kk) => { k.only(pl); march(t, kk * 0.3); ov = (ctx) => { k.night(ctx, t, 0.6); k.card(ctx, 'TAG WHO\'D INVADE FOR DIVIDENDS 👇', { y: 1185, bg: '#a81a1a', size: 32 }); }; return k.cam([0, 2.2, 9], [0, 0.5, 3], 48, { blur: 3 }); },
   };
-  return { shots, sky: '#060a14', capStyle: 'film', table: false, fog: ['#0b1224', 0.03], light: { sun: [-4, 10, 6], key: 1.0, fill: 0.2, rim: 0.6, color: '#9ab4ff', shadow: 16, exposure: 1.25, grade: false }, over: (ctx) => { if (ov) ov(ctx); ov = null; k.vignette(ctx, 0.5); } };
+  return { shots, sky: '#060a14', capStyle: 'film', lens: 24, table: false, fog: ['#0b1224', 0.03], light: { sun: [-4, 10, 6], key: 1.0, fill: 0.2, rim: 0.6, color: '#9ab4ff', shadow: 16, exposure: 1.25, grade: false }, over: (ctx) => { if (ov) ov(ctx); ov = null; k.vignette(ctx, 0.5); } };
 }, { assets: ['buildings/village_house', 'buildings/cottage', 'buildings/well', 'buildings/fence', 'nature/tree_oak', 'elite/man_suit', 'elite/woman_formal', 'elite/man_farmer', 'elite/woman_medieval', 'elite/man_casual', 'elite/woman_casual'] });

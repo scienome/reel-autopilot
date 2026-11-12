@@ -23,5 +23,5 @@ STORY((k) => {
     gag: (t, kk) => { lodge({ talk: true }); ini.visible = false; ov = (ctx) => { k.night(ctx, t, 0.45); k.card(ctx, '"MOSTLY CHARITY & DINNERS" 🍝', { y: 200, bg: '#2a6a3a', size: 36 }); if (kk > 0.5) { k.card(ctx, '…SAYS THE SECRET SOCIETY 🤨', { y: 1185, bg: '#5a0a0e', size: 34 }); k.boom(ctx, (kk - 0.5) * 2.4, 360, 560, 'SUS'); } }; return k.close(mas[1], { d: 1.7, side: 0.3 }); },
     outro: (t, kk) => { lodge(); walkIni(t, kk * 0.3); ov = (ctx) => { k.night(ctx, t, 0.5); k.card(ctx, 'TAG WHO\'D JOIN JUST FOR THE APRON 👇', { y: 1185, bg: '#1a2a5a', size: 30 }); }; return k.cam([1.2, 1.4, -1.2], [0, 1.2, 1.2], 46, { blur: 4 }); },
   };
-  return { shots, sky: '#060a14', capStyle: 'film', table: false, fog: ['#0b1224', 0.03], light: { sun: [-4, 10, 6], key: 0.6, fill: 0.2, rim: 0.5, color: '#9ab4ff', shadow: 12, exposure: 1.3, grade: false }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+  return { shots, sky: '#060a14', capStyle: 'film', lens: 24, table: false, fog: ['#0b1224', 0.03], light: { sun: [-4, 10, 6], key: 0.6, fill: 0.2, rim: 0.5, color: '#9ab4ff', shadow: 12, exposure: 1.3, grade: false }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
 }, { assets: ['elite/man_suit', 'elite/man_casual'] });

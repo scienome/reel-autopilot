@@ -15,5 +15,5 @@ STORY((k) => {
     line: (t, kk) => { k.only(lab); jer.pose('idle', t); bob.visible = false; ov = (ctx) => { k.night(ctx, t, 0.4); k.card(ctx, '"THAT\'S INTERESTING." 😐', { y: 200, bg: '#1a1a24', size: 44 }); }; const c = k.close(jer, { d: 1.2, look: 0.88 }); bob.visible = true; return c; },
     outro: (t, kk) => { k.only(lab); bob.pose('interact', t); jer.pose('idle', t); ov = (ctx) => { k.night(ctx, t, 0.4); readout(ctx, t, 15.0); k.card(ctx, 'TAG WHO NEVER ADMITS THEY\'RE WRONG 👇', { y: 1185, bg: '#5a0a0e', size: 30 }); }; return k.cam([0, 1.6, 1.8], [0, 1.0, -0.8], 44, { blur: 3 }); },
   };
-  return { shots, sky: '#03040a', capStyle: 'film', table: false, light: { sun: [-4, 10, 6], key: 1.0, fill: 0.2, rim: 0.5, color: '#9ab4ff', shadow: 14, exposure: 1.25, grade: false }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+  return { shots, sky: '#03040a', capStyle: 'film', lens: 24, table: false, light: { sun: [-4, 10, 6], key: 1.0, fill: 0.2, rim: 0.5, color: '#9ab4ff', shadow: 14, exposure: 1.25, grade: false }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
 }, { assets: ['props/table_round', 'props/hay', 'buildings/cottage', 'buildings/fence', 'buildings/village_house', 'buildings/well', 'nature/tree_oak', 'nature/tree_maple', 'elite/man_casual', 'elite/man_hoodie'] });

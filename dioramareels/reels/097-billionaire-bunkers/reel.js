@@ -20,5 +20,5 @@ STORY((k) => {
     gag: (t, kk) => { inBunker(t, 'g'); boss.pose('wave', t); guards.forEach((g, i) => { g.rotation.y = 0; g.pose('wave', t + i * 0.3); }); red.intensity = 0; ov = (ctx) => { k.night(ctx, t, 0.35); k.boom(ctx, (kk - 0.1) * 2.2, 360, 640, 'BE NICE.'); k.card(ctx, '…NOW. 😇', { y: 1185, bg: '#2a6a3a', size: 44 }); }; return k.cam([0, 1.8, 3.4], [0, 1.1, -0.6], 50, { blur: 3 }); },
     outro: (t, kk) => { night(t, 0.2); ov = (ctx) => { k.night(ctx, t, 0.8); k.card(ctx, 'TAG WHO YOU\'D LET IN YOUR BUNKER 👇', { y: 1185, bg: '#1a1a24', size: 30 }); }; return k.cam([2.6, 2.6, 3.4], [0.3, 1.2, -0.9], 46, { blur: 3 }); },
   };
-  return { shots, sky: '#060a14', capStyle: 'film', table: false, fog: ['#0b1224', 0.03], light: { sun: [-4, 10, 6], key: 0.9, fill: 0.2, rim: 0.6, color: '#9ab4ff', shadow: 14, exposure: 1.25, grade: false }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+  return { shots, sky: '#060a14', capStyle: 'film', lens: 24, table: false, fog: ['#0b1224', 0.03], light: { sun: [-4, 10, 6], key: 0.9, fill: 0.2, rim: 0.6, color: '#9ab4ff', shadow: 14, exposure: 1.25, grade: false }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
 }, { assets: ['elite/man_suit', 'elite/woman_formal', 'elite/man_swat', 'elite/man_hoodie'] });

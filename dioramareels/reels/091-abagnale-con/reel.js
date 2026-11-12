@@ -17,5 +17,5 @@ STORY((k) => {
     gag: (t, kk) => { k.only(set_); dir.pose('jump', t); act.pose('wave', t); ov = (ctx) => { k.night(ctx, t, 0.3); mask(ctx, t); k.boom(ctx, (kk - 0.4) * 2.4, 360, 1000, 'CONNED!'); }; return k.cam([2.6, 1.8, 3.4], [0.6, 1.2, 0.6], 46, { blur: 3 }); },
     outro: (t, kk) => { k.only(ap); fr.pose('walk', t); fr.position.z = 1.5; stews.forEach((s, i) => { s.pose('walk', t + i); s.position.z = 1.0; }); ov = (ctx) => { k.night(ctx, t, 0.6); k.card(ctx, 'TAG THE BEST LIAR YOU KNOW 🎭👇', { y: 1185, bg: '#5a0a0e', size: 32 }); }; return k.cam([0, 1.5, 4.2], [0, 1.4, 0], 44, { blur: 3 }); },
   };
-  return { shots, sky: '#060a14', capStyle: 'film', table: false, fog: ['#0b1224', 0.03], light: { sun: [-4, 10, 6], key: 0.9, fill: 0.2, rim: 0.6, color: '#9ab4ff', shadow: 14, exposure: 1.25, grade: false }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+  return { shots, sky: '#060a14', capStyle: 'film', lens: 24, table: false, fog: ['#0b1224', 0.03], light: { sun: [-4, 10, 6], key: 0.9, fill: 0.2, rim: 0.6, color: '#9ab4ff', shadow: 14, exposure: 1.25, grade: false }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
 }, { assets: ['elite/man_suit', 'elite/woman_suit', 'elite/man_casual'] });

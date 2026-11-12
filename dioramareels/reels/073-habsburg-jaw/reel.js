@@ -19,5 +19,5 @@ STORY((k) => {
     gag: (t, kk) => { base({ pairs: 3 }); pairs.forEach(([a, b], i) => { a.pose('idle', t + i); b.pose('idle', t + i); }); ov = (ctx) => { k.night(ctx, t, 0.6); ctx.fillStyle = 'rgba(10,8,12,0.75)'; ctx.fillRect(60, 360, 600, 560); tree(ctx, t, Math.min(1, kk * 1.5)); k.card(ctx, kk < 0.6 ? 'THE FAMILY TREE…' : '…IS A FAMILY WREATH 🌿', { y: 200, bg: '#2a6a3a', size: 40 }); }; return k.cam([0, 2.2, 5], [0, 1.4, -1], 46, { blur: 3 }); },
     outro: (t, kk) => { base({ carl: true, jaw: 2.2 }); carl.pose('idle', t); ov = (ctx) => { k.night(ctx, t, 0.45); k.card(ctx, 'TAG YOUR WEIRDEST COUSIN 👇', { y: 1185, bg: '#5a0a1e', size: 34 }); }; return k.close(carl, { d: 1.7, look: 0.88, fov: 36 }); },
   };
-  return { shots, sky: '#060a14', capStyle: 'film', table: false, fog: ['#0b0a10', 0.03], light: { sun: [-4, 10, 6], key: 0.7, fill: 0.2, rim: 0.5, color: '#9ab4ff', shadow: 12, exposure: 1.3, grade: false }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+  return { shots, sky: '#060a14', capStyle: 'film', lens: 24, table: false, fog: ['#0b0a10', 0.03], light: { sun: [-4, 10, 6], key: 0.7, fill: 0.2, rim: 0.5, color: '#9ab4ff', shadow: 12, exposure: 1.3, grade: false }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
 }, { assets: ['props/chandelier', 'elite/man_suit', 'elite/woman_formal'] });

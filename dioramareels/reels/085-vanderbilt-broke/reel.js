@@ -19,5 +19,5 @@ STORY((k) => {
     broke: (t, kk) => { k.only(reu); fam.forEach((f, i) => f.pose(kk > 0.6 ? 'hit' : 'idle', t + i)); ov = (ctx) => { k.night(ctx, t, 0.4); k.counter(ctx, 'VANDERBILT REUNION · 1973', '0 MILLIONAIRES', { y: 170 }); }; return k.cam([0, 2.2, 4.2], [0, 1.1, -0.4], 46, { blur: 3 }); },
     outro: (t, kk) => { k.only(reu); fam.forEach((f, i) => f.pose('idle', t + i)); ov = (ctx) => { k.night(ctx, t, 0.4); k.card(ctx, 'TAG WHO\'D BLOW IT IN ONE GENERATION 💸👇', { y: 1185, bg: '#5a0a1e', size: 28 }); }; return k.cam([0, 2.2, 4.2], [0, 1.1, -0.4], 46, { blur: 3 }); },
   };
-  return { shots, sky: '#060a14', capStyle: 'film', table: false, fog: ['#0b1224', 0.03], light: { sun: [-4, 10, 6], key: 0.9, fill: 0.2, rim: 0.6, color: '#9ab4ff', shadow: 16, exposure: 1.25, grade: false }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+  return { shots, sky: '#060a14', capStyle: 'film', lens: 24, table: false, fog: ['#0b1224', 0.03], light: { sun: [-4, 10, 6], key: 0.9, fill: 0.2, rim: 0.6, color: '#9ab4ff', shadow: 16, exposure: 1.25, grade: false }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
 }, { assets: ['props/chandelier', 'nature/tree_oak', 'nature/tree_maple', 'nature/tree_birch', 'elite/man_suit', 'elite/woman_formal', 'elite/man_casual', 'elite/woman_casual', 'elite/man_hoodie', 'elite/woman_worker', 'elite/man_farmer'] });

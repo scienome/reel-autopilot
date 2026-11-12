@@ -20,5 +20,5 @@ STORY((k) => {
     airport: (t, kk) => { k.only(ex); vis.forEach((v, i) => v.pose('interact', t + i)); ov = (ctx) => { k.night(ctx, t, 0.3); k.card(ctx, 'THE AIRPORT TROLLS ITSELF 🦎', { y: 200, bg: '#2a6a3a', size: 38 }); }; return k.cam([0, 1.8, 3.6], [0, 1.7, -1.5], 50, { blur: 3 }); },
     outro: (t, kk) => { night(); ov = (ctx) => { k.night(ctx, t, 0.75); k.card(ctx, 'TAG WHO\'D NEVER FLY THROUGH DENVER 👇', { y: 1185, bg: '#1a2a5a', size: 30 }); }; return k.cam([5.5, 4.4, 4.5], [1.2, 4.2, -2], 46, { blur: 4 }); },
   };
-  return { shots, sky: '#060a14', capStyle: 'film', table: false, fog: ['#0b1224', 0.03], light: { sun: [-4, 10, 6], key: 1.0, fill: 0.2, rim: 0.6, color: '#9ab4ff', shadow: 16, exposure: 1.25, grade: false }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+  return { shots, sky: '#060a14', capStyle: 'film', lens: 24, table: false, fog: ['#0b1224', 0.03], light: { sun: [-4, 10, 6], key: 1.0, fill: 0.2, rim: 0.6, color: '#9ab4ff', shadow: 16, exposure: 1.25, grade: false }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
 }, { assets: ['elite/man_worker', 'elite/woman_casual', 'elite/man_hoodie', 'elite/woman_punk'] });
