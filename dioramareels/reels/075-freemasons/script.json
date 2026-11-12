@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "To join the world's most famous secret society, a grown man drops one trouser leg, gets blindfolded, and is led around on a rope.",
+   "say": "To join the world's most famous secret society, a grown man drops one trouser leg, gets blindfolded, and is led around on a rope."
+  },
+  {
+   "shot": "what",
+   "cap": "That's a Freemason initiation. One trouser leg up, one slipper on, and a rope around the neck called a cable tow.",
+   "say": "That's a Freemason initiation. One trouser leg up, one slipper on, and a rope around the neck called a cable tow."
+  },
+  {
+   "shot": "who",
+   "cap": "It began with British stonemasons. The first Grand Lodge opened in London in 1717.",
+   "say": "It began with British stonemasons. The first Grand Lodge opened in London in 1717."
+  },
+  {
+   "shot": "presidents",
+   "cap": "Around fourteen US presidents were Freemasons. George Washington laid the Capitol's first stone in a Masonic apron.",
+   "say": "Around fourteen US presidents were Freemasons. George Washington laid the Capitol's first stone in a Masonic apron."
+  },
+  {
+   "shot": "secrets",
+   "cap": "Secret oaths. Secret handshakes. Temples full of symbols. The square, the compass, the all-seeing eye.",
+   "say": "Secret oaths. Secret handshakes. Temples full of symbols. The square, the compass, the all-seeing eye."
+  },
+  {
+   "shot": "fear",
+   "cap": "In 1826, a New Yorker threatened to publish their secrets. Then he vanished. America even got an Anti-Masonic political party.",
+   "say": "In 1826, a New Yorker threatened to publish their secrets. Then he vanished. America even got an Anti-Masonic political party."
+  },
+  {
+   "shot": "gag",
+   "cap": "Members today say it's mostly charity and dinners. Which is exactly what a secret society would say.",
+   "say": "Members today say it's mostly charity and dinners. Which is exactly what a secret society would say."
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the friend who'd join just for the apron. Because,",
+   "say": "Tag the friend who'd join just for the apron. Because,"
+  }
+ ]
+}
