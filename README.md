@@ -202,7 +202,7 @@ Folder: [`dave-reels/`](dave-reels/)
 | [43-dave-grows-an-inch](dave-reels/43-dave-grows-an-inch.mp4) | What if you grew 1 inch every day? | Waiting to post |
 | [44-gimli-glider](dave-reels/44-gimli-glider.mp4) | The jet that ran out of fuel because of maths | Waiting to post |
 
-## Toy reels (Brick Toy) (179)
+## Toy reels (Brick Toy) (183)
 Folder: [`toy-reels/`](toy-reels/)
 
 | Video | Title | Status |
@@ -304,7 +304,11 @@ Folder: [`toy-reels/`](toy-reels/)
 | [180-cows-chase-dogs](toy-reels/180-cows-chase-dogs.mp4) | Cows chasing you? Let go of the dog 🐄🐕 | Waiting to post |
 | [181-cow-cud](toy-reels/181-cow-cud.mp4) | Cows swallow… then bring it back up for more 🐄 | Waiting to post |
 | [184-hard-in-cold](toy-reels/184-hard-in-cold.mp4) | He got hard after 3 days in the cold 🥶 | Waiting to post |
+| [185-halley-comes](toy-reels/185-halley-comes.mp4) | She only comes once every 76 years ☄️ | Waiting to post |
+| [186-four-hours](toy-reels/186-four-hours.mp4) | Stiff for more than 4 hours? Go to hospital 🚨 | Waiting to post |
+| [187-two-nuts](toy-reels/187-two-nuts.mp4) | Just two of my nuts a day is all you need 🥜 | Waiting to post |
 | [19-batguy-electricity-bill](toy-reels/19-batguy-electricity-bill.mp4) | Bat-Guy's Worst Villain Was The Electricity Bill 🦇 | Waiting to post |
+| [196-jim-twins](toy-reels/196-jim-twins.mp4) | Same Linda. Same Betty. Same Toy. 👯 | Waiting to post |
 | [20-illuminati-moon-landing](toy-reels/20-illuminati-moon-landing.mp4) | The Illuminati Faked The Moon Landing... ON THE MOON 🌕 | Posted (Instagram + YouTube) |
 | [21-zeus-wifi-down](toy-reels/21-zeus-wifi-down.mp4) | Zeus Unplugged Heaven's Wi-Fi 😇⚡ | Posted (Instagram + YouTube) |
 | [22-devil-sues-billionaire](toy-reels/22-devil-sues-billionaire.mp4) | The Devil Sued A Billionaire And LOST 😈 | Waiting to post |
