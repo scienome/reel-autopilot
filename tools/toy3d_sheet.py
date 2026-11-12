@@ -7,7 +7,8 @@ with a sparse git clone of mrdoob/three.js r149. The fetched copy is not committ
 import json, os, subprocess, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 rid, times = sys.argv[1], sys.argv[2:]
-reel, out = os.path.join(ROOT, 'toyreels', 'reels', rid), os.path.join(ROOT, 'out', rid)
+HOMEDIR = 'dioramareels' if os.path.isdir(os.path.join(ROOT, 'dioramareels', 'reels', rid)) and not os.path.isdir(os.path.join(ROOT, 'toyreels', 'reels', rid)) else 'toyreels'  # Elites Endgame reels live in dioramareels/
+reel, out = os.path.join(ROOT, HOMEDIR, 'reels', rid), os.path.join(ROOT, 'out', rid)
 os.makedirs(out, exist_ok=True)
 three = os.path.join(ROOT, 'dioramareels', 'kit', 'references', 'three.min.js')
 if not os.path.exists(three):

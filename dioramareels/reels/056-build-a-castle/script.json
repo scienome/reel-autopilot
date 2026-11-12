@@ -1,0 +1,59 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "You're a king, and everyone wants your throne. So, you build a castle.",
+   "say": "You're a king, and everyone wants your throne. So, you build a castle."
+  },
+  {
+   "shot": "motte",
+   "cap": "First, a wooden tower on a hill. Cheap, fast, and very easy to burn.",
+   "say": "First, a wooden tower on a hill. Cheap, fast, and very easy to burn."
+  },
+  {
+   "shot": "keep",
+   "cap": "So you switch to stone. A huge square keep. Fire can't touch it.",
+   "say": "So you switch to stone. A huge square keep. Fire can't touch it."
+  },
+  {
+   "shot": "mine",
+   "cap": "But your enemies dig under one corner, burn the supports, and the whole corner falls. King John did exactly that, in 1215.",
+   "say": "But your enemies dig under one corner, burn the supports, and the whole corner falls. King John did exactly that, in 1215."
+  },
+  {
+   "shot": "round",
+   "cap": "So, being a genius, you make every tower round. No corners to bring down.",
+   "say": "So, being a genius, you make every tower round. No corners to bring down."
+  },
+  {
+   "shot": "curtain",
+   "cap": "You wrap it all in a high wall, packed with archers.",
+   "say": "You wrap it all in a high wall, packed with archers."
+  },
+  {
+   "shot": "outer",
+   "cap": "Still not enough? You add a second, lower wall in front. Now anyone who breaks through is trapped between two walls, with arrows coming from both.",
+   "say": "Still not enough? You add a second, lower wall in front. Now anyone who breaks through is trapped between two walls, with arrows coming from both."
+  },
+  {
+   "shot": "moat",
+   "cap": "Then a moat, and a gate with holes in the ceiling, for dropping rocks on anyone inside.",
+   "say": "Then a moat, and a gate with holes in the ceiling, for dropping rocks on anyone inside."
+  },
+  {
+   "shot": "twist",
+   "cap": "The Crusaders built a castle just like this. Krak des Chevaliers. In 1271, it fell anyway.",
+   "say": "The Crusaders built a castle just like this. Krak des Chevaliers. In 1271, it fell anyway."
+  },
+  {
+   "shot": "letter",
+   "cap": "To a fake letter, ordering them to surrender.",
+   "say": "To a fake letter, ordering them to surrender."
+  },
+  {
+   "shot": "outro",
+   "cap": "The weakest part of any castle is the people inside it.",
+   "say": "The weakest part of any castle is the people inside it."
+  }
+ ]
+}

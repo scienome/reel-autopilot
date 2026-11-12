@@ -8,6 +8,7 @@
      k.orbit(target, r, ang, h, fov) / k.push(camA, camB, u)
      k.card(ctx, text, { at, t, y, bg, col, size }) a pop-in label;  k.big(ctx, text, { y, col, size, stroke }) a big centred word
      k.counter(ctx, label, value, { y }) / k.cross(ctx, t, at) a big red X / k.tick(ctx, t, at) a green tick / k.vignette(ctx, a)
+   Build-up dioramas: k.stone(), k.wall(a, b, o), k.tower(p, o), k.town(o), k.army(n, o), k.rise(obj, u), k.water(w, d), k.hill(r, h).
    Comedy gags: k.missile(), k.strike(m, at, u), k.boom(ctx, u, x, y, word), k.launch(obj, u) (+ kit.play('riser'/'impact') in score).
    Extra places: k.snow(), k.arena(), k.space(), k.forest(), k.farm(), k.station(), k.campfire(); props: k.car({ color }),
    k.planet({ r, color, color2, bands, rings, tilt }), k.stars(n). */
@@ -43,6 +44,37 @@ window.STORY = (build, opt = {}) => DIY((k) => {
   k.tick = (ctx, t, at) => mark(ctx, t, at, () => { ctx.strokeStyle = '#2ecc71'; ctx.lineWidth = 46; ctx.beginPath(); ctx.moveTo(-150, 0); ctx.lineTo(-40, 120); ctx.lineTo(170, -140); ctx.stroke(); });
   k.vignette = (ctx, a = 0.5) => { const g = ctx.createRadialGradient(360, 640, 300, 360, 640, 820); g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(1, `rgba(0,0,0,${a})`); ctx.fillStyle = g; ctx.fillRect(0, 0, 720, 1280); };
   k.tint = (ctx, col, a) => { ctx.save(); ctx.fillStyle = col; ctx.globalAlpha = a; ctx.fillRect(0, 0, 720, 1280); ctx.restore(); };
+  // ---------- build-up dioramas (Elites Endgame "you build it" reels; miniature scale, keep within about ±8 units for shadows) ----------
+  // k.stone(rep) a stone-block material; k.wall([x,z], [x,z], { h, th, cren }) a crenellated wall; k.tower([x,z], { r, h, round, roof })
+  // k.town({ x, z, w, d, n, seed, avoid(x,z) }) instanced houses; k.army(n, { col, head, h }) instanced tiny people: .put(i, x, z, ry, bob) .hideFrom(n)
+  // k.rise(obj, u) grows a model up out of the ground (u 0..1); k.water(w, d) a flat water sheet; k.hill(r, h) a grassy mound
+  const stoneTex = {}; k.stone = (rep = 2, col = '#c9b48c') => { const key = rep + col; if (!stoneTex[key]) stoneTex[key] = ctex(256, 256, (c, w, h) => { c.fillStyle = col; c.fillRect(0, 0, w, h); for (let r = 0; r < 16; r++) for (let i = 0; i < 8; i++) { const x = i * 32 + (r % 2) * 16, y = r * 16; const v = ((r * 7 + i * 13) % 9) / 9; c.fillStyle = `rgba(${90 + v * 40},${70 + v * 30},${40 + v * 20},0.25)`; c.fillRect(x + 1, y + 1, 30, 14); c.strokeStyle = 'rgba(60,45,25,0.55)'; c.lineWidth = 1.5; c.strokeRect(x + 0.5, y + 0.5, 32, 16); } }, rep); return M('#ffffff', 0.95, 0, { map: stoneTex[key] }); };
+  k.wall = (a, b, o = {}) => { const h = o.h || 0.8, th = o.th || 0.22, g = new T.Group(), dx = b[0] - a[0], dz = b[1] - a[1], L = Math.hypot(dx, dz), mat = o.mat || k.stone(Math.max(1, L * 1.4));
+    const body = new T.Mesh(new T.BoxGeometry(L, h, th), mat); body.position.y = h / 2; body.castShadow = body.receiveShadow = true; g.add(body);
+    if (o.cren !== false) { const n = Math.max(2, Math.floor(L / 0.16)); for (let i = 0; i < n; i++) if (i % 2 === 0) { const m = new T.Mesh(new T.BoxGeometry(L / n, h * 0.14, th * 1.02), mat); m.position.set(-L / 2 + (i + 0.5) * L / n, h + h * 0.07, 0); m.castShadow = true; g.add(m); } }
+    g.position.set((a[0] + b[0]) / 2, 0, (a[1] + b[1]) / 2); g.rotation.y = -Math.atan2(dz, dx); return g; };
+  k.tower = (p, o = {}) => { const r = o.r || 0.35, h = o.h || 1.2, g = new T.Group(), mat = o.mat || k.stone(Math.max(2, r * 6)); const geo = o.round === false ? new T.BoxGeometry(r * 2, h, r * 2) : new T.CylinderGeometry(r, r * 1.08, h, 20);
+    const body = new T.Mesh(geo, mat); body.position.y = h / 2; body.castShadow = body.receiveShadow = true; g.add(body); const n = o.round === false ? 8 : 10;
+    for (let i = 0; i < n; i++) { const a = i / n * PI * 2, m = new T.Mesh(new T.BoxGeometry(r * 0.32, h * 0.1, r * 0.32), mat); if (o.round === false) { const s = i % 4, f = (Math.floor(i / 4) ? 0.5 : -0.5); const P = [[f * r, -r], [r, f * r], [-f * r, r], [-r, -f * r]][s]; m.position.set(P[0] * 0.9, h + h * 0.05, P[1] * 0.9); } else m.position.set(Math.cos(a) * r * 0.92, h + h * 0.05, Math.sin(a) * r * 0.92); m.castShadow = true; g.add(m); }
+    if (o.roof) { const rf = new T.Mesh(new T.ConeGeometry(r * 1.15, r * 1.6, o.round === false ? 4 : 20), M(o.roof, 0.7)); rf.position.y = h + r * 0.8; if (o.round === false) rf.rotation.y = PI / 4; rf.castShadow = true; g.add(rf); }
+    g.position.set(p[0], 0, p[1]); return g; };
+  k.town = (o = {}) => { const n = o.n || 300, g = new T.Group(); let s = o.seed || 7; const rnd = () => ((s = (s * 16807) % 2147483647) / 2147483647);
+    const box = new T.BoxGeometry(1, 1, 1); box.translate(0, 0.5, 0); const roof = new T.ConeGeometry(0.75, 0.6, 4); roof.rotateY(PI / 4); roof.translate(0, 0.3, 0);
+    const wallsM = new T.InstancedMesh(box, M('#e8d9b8', 0.9), n), roofM = new T.InstancedMesh(roof, M('#b5532e', 0.8), n); wallsM.castShadow = roofM.castShadow = true; wallsM.receiveShadow = true;
+    const mtx = new T.Matrix4(), q = new T.Quaternion(), e = new T.Euler(), col = new T.Color(); let c = 0;
+    for (let i = 0; i < n * 4 && c < n; i++) { const x = (o.x || 0) + (rnd() - 0.5) * (o.w || 6), z = (o.z || 0) + (rnd() - 0.5) * (o.d || 6); if (o.avoid && o.avoid(x, z)) continue; const sw = 0.12 + rnd() * 0.1, sh = 0.1 + rnd() * 0.12, sd = 0.12 + rnd() * 0.1, ry = rnd() * PI;
+      q.setFromEuler(e.set(0, ry, 0)); mtx.compose(new T.Vector3(x, 0, z), q, new T.Vector3(sw, sh, sd)); wallsM.setMatrixAt(c, mtx); col.setHSL(0.1 + rnd() * 0.05, 0.35, 0.72 + rnd() * 0.12); wallsM.setColorAt(c, col);
+      mtx.compose(new T.Vector3(x, sh, z), q, new T.Vector3(sw * 1.05, 0.22 + rnd() * 0.1, sd * 1.05)); roofM.setMatrixAt(c, mtx); col.setHSL(0.03 + rnd() * 0.04, 0.55, 0.38 + rnd() * 0.12); roofM.setColorAt(c, col); c++; }
+    wallsM.count = roofM.count = c; g.add(wallsM); g.add(roofM); return g; };
+  k.army = (n, o = {}) => { const h = o.h || 0.11, g = new T.Group(); const body = new T.CylinderGeometry(h * 0.16, h * 0.2, h * 0.62, 6); body.translate(0, h * 0.31, 0); const head = new T.SphereGeometry(h * 0.13, 8, 6); head.translate(0, h * 0.75, 0);
+    const B = new T.InstancedMesh(body, M(o.col || '#7a3a2a', 0.8), n), H = new T.InstancedMesh(head, M(o.head || '#d8b08a', 0.7), n); B.castShadow = H.castShadow = true; B.frustumCulled = H.frustumCulled = false; g.add(B); g.add(H);
+    const mtx = new T.Matrix4(), q = new T.Quaternion(), e = new T.Euler(), one = new T.Vector3(1, 1, 1), far = new T.Vector3(0, -99, 0);
+    g.put = (i, x, z, ry = 0, bob = 0, y = 0) => { q.setFromEuler(e.set(0, ry, 0)); mtx.compose(new T.Vector3(x, y + Math.abs(Math.sin(bob)) * h * 0.12, z), q, one); B.setMatrixAt(i, mtx); H.setMatrixAt(i, mtx); };
+    g.flush = () => { B.instanceMatrix.needsUpdate = true; H.instanceMatrix.needsUpdate = true; };
+    g.hideFrom = (m) => { for (let i = m; i < n; i++) { mtx.compose(far, q.identity(), one); B.setMatrixAt(i, mtx); H.setMatrixAt(i, mtx); } g.flush(); }; g.n = n; return g; };
+  k.rise = (obj, u) => { u = Math.max(0, Math.min(1, u)); obj.visible = u > 0.001; obj.scale.y = Math.max(0.001, u < 1 ? 1 - Math.pow(1 - u, 3) : 1); return obj; };
+  k.water = (w, d, col = '#3d7f99') => { const m = new T.Mesh(new T.PlaneGeometry(w, d), new T.MeshStandardMaterial({ color: col, roughness: 0.15, metalness: 0.3, transparent: true, opacity: 0.92 })); m.rotation.x = -PI / 2; m.receiveShadow = true; return m; };
+  k.hill = (r, h, col = '#7a9a4a') => { const m = new T.Mesh(new T.SphereGeometry(r, 32, 16, 0, PI * 2, 0, PI / 2), M(col, 0.95)); m.scale.y = h / r; m.receiveShadow = m.castShadow = true; return m; };
   // ---------- comedy gags: k.missile() a cartoon missile; k.strike(m, [x,y,z], u) flies it down onto a spot (u 0..1, hits at 1);
   // k.boom(ctx, u, x, y, word) a cartoon explosion overlay (u 0..1 after the hit); k.launch(obj, u, base) blasts a model up into the sky spinning.
   // Sounds in score(): kit.play('riser', at) before, kit.play('impact', hit) on the hit.

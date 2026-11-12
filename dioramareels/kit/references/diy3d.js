@@ -74,21 +74,23 @@ window.DIY = (build, opt = {}) => {
   const CH = []; L.forEach((l) => { const ws = (l.cap || '').split(/\s+/).filter(Boolean); const chunks = []; for (let i = 0; i < ws.length;) { const n = ws.length - i <= 3 ? ws.length - i : (ws[i + 1] && ws[i + 1].length > 7 ? 2 : 3); chunks.push(ws.slice(i, i + n).join(' ')); i += n; }
     if (l.words && l.words.length === ws.length) { let wi = 0; chunks.forEach((c, ci) => { const n = c.split(/\s+/).length, a0 = l.words[wi][0], nx = ci + 1 < chunks.length ? l.words[wi + n][0] : l.t1 + 0.15; CH.push([a0, Math.max(a0 + 0.2, nx), c.replace(/[,.]$/, '')]); wi += n; }); return; } // word-timed
     const tot = chunks.reduce((s, c) => s + c.length + 2, 0); let acc = l.t0; chunks.forEach((c) => { const d = (l.t1 - l.t0) * (c.length + 2) / tot; CH.push([acc, acc + d, c.replace(/[,.]$/, '')]); acc += d; }); });
-  function caption(ctx, t) { const c = CH.find(([a, b]) => t >= a && t < b + 0.05); if (!c) return; ctx.save(); ctx.font = '900 54px "Nunito", "Poppins", "Arial Black", sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-    ctx.shadowColor = 'rgba(0,0,0,0.75)'; ctx.shadowBlur = 14; ctx.shadowOffsetY = 3; ctx.fillStyle = '#ffffff'; ctx.fillText(c[2], 360, 1050); ctx.restore(); }
+  function caption(ctx, t) { const c = CH.find(([a, b]) => t >= a && t < b + 0.05); if (!c) return; ctx.save(); const small = R.capStyle === 'small'; // 'small': quiet white caps in the middle of the frame (Elites Endgame build-up reels)
+    ctx.font = small ? '800 34px "Nunito", "Poppins", "Arial Black", sans-serif' : '900 54px "Nunito", "Poppins", "Arial Black", sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.shadowColor = 'rgba(0,0,0,0.75)'; ctx.shadowBlur = small ? 10 : 14; ctx.shadowOffsetY = small ? 2 : 3; ctx.fillStyle = '#ffffff'; ctx.fillText(small ? c[2].toUpperCase() : c[2], 360, small ? 660 : 1050); ctx.restore(); }
 
   function draw(ctx, t) {
     let n = ORDER[0]; ORDER.forEach((s) => { if (t >= st(s)) n = s; });
     const i = ORDER.indexOf(n), a = st(n), b = i + 1 < ORDER.length ? st(ORDER[i + 1]) : DUR, kk = seg(t, a, b);
     if (D.city) D.city.mode('interior'); K.lights.moon.intensity = 0; K.lights.lvKey.intensity = 0; K.lights.hemi.intensity = 0;
-    D.gl.toneMapping = T.ACESFilmicToneMapping; D.gl.toneMappingExposure = 1.0;
+    D.gl.toneMapping = T.ACESFilmicToneMapping; D.gl.toneMappingExposure = R.light && R.light.exposure || 1.0;
+    if (R.light && !R.light.done) { const L = R.light; L.done = true; if (L.sun) key.position.set(X0 + L.sun[0], L.sun[1], L.sun[2]); if (L.key != null) key.intensity = L.key; if (L.fill != null) fill.intensity = L.fill; if (L.rim != null) rim.intensity = L.rim; if (L.color) key.color.set(L.color); if (L.shadow) { Object.assign(key.shadow.camera, { left: -L.shadow, right: L.shadow, top: L.shadow, bottom: -L.shadow, far: 80 }); key.shadow.mapSize.set(4096, 4096); if (key.shadow.map) { key.shadow.map.dispose(); key.shadow.map = null; } key.shadow.camera.updateProjectionMatrix(); } } // R.light: { sun, key, fill, rim, color, shadow, exposure, grade }
     ALLP.forEach((o) => { o.visible = false; }); RH.visible = LH.visible = false; ALL.forEach((l) => { l.visible = true; });
     const v = R.shots[n](t, kk, a, b);
     if (RH.visible || LH.visible) { const d = 1.5; v.pos = v.pos.map((x, j) => v.look[j] + (x - v.look[j]) * d); v.pos[1] += 0.8; v.fov *= 0.78; } // hand shots: camera back and above the arms
     S.background = new T.Color(v.dark ? '#0b0e16' : (R.wall || '#2f6f8c')); S.fog = null; wall.visible = !v.dark && R.table !== false; table.visible = !v.dark && !v.noTable && R.table !== false; if (R.sky && !v.dark) S.background = new T.Color(v.sky || R.sky); wall.material.color.set(R.wall || '#3f8fb0');
     const hand = Math.sin(t * 1.3) * 0.015, cam = { ...v, pos: [X0 + v.pos[0] + hand, v.pos[1] + Math.sin(t * 1.7) * 0.01, v.pos[2]], look: [X0 + v.look[0], v.look[1], v.look[2]] };
     D.render3d(ctx, cam);
-    ctx.save(); ctx.globalCompositeOperation = 'soft-light'; ctx.fillStyle = 'rgba(255,170,90,0.12)'; ctx.fillRect(0, 0, 720, 1280); ctx.restore(); // warm grade
+    if (!(R.light && R.light.grade === false)) { ctx.save(); ctx.globalCompositeOperation = 'soft-light'; ctx.fillStyle = 'rgba(255,170,90,0.12)'; ctx.fillRect(0, 0, 720, 1280); ctx.restore(); } // warm grade
     if (R.over) R.over(ctx, t, n, kk);
     caption(ctx, t);
     const cut = t - a; if (a > 0 && cut < 0.06) { ctx.fillStyle = `rgba(255,255,255,${0.12 * (1 - cut / 0.06)})`; ctx.fillRect(0, 0, 720, 1280); }
