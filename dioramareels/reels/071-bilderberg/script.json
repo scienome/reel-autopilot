@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Once a year, the most powerful people on Earth check into the same hotel. And lock the doors.",
+   "say": "Once a year, the most powerful people on Earth check into the same hotel. And lock the doors."
+  },
+  {
+   "shot": "what",
+   "cap": "It's the Bilderberg Meeting. Started in 1954, at the Hotel de Bilderberg in the Netherlands.",
+   "say": "It's the Bilderberg Meeting. Started in 1954, at the Hotel de Bilderberg in the Netherlands."
+  },
+  {
+   "shot": "who",
+   "cap": "Around a hundred and thirty guests. Prime ministers, bank bosses, tech billionaires, generals, and royals.",
+   "say": "Around a hundred and thirty guests. Prime ministers, bank bosses, tech billionaires, generals, and royals."
+  },
+  {
+   "shot": "rules",
+   "cap": "No press. No votes. No official minutes. Whatever's said inside, you can use, but never say who said it.",
+   "say": "No press. No votes. No official minutes. Whatever's said inside, you can use, but never say who said it."
+  },
+  {
+   "shot": "guards",
+   "cap": "The hotel gets surrounded by police and fences. Outside, protesters and reporters wait for days.",
+   "say": "The hotel gets surrounded by police and fences. Outside, protesters and reporters wait for days."
+  },
+  {
+   "shot": "future",
+   "cap": "Bill Clinton went in 1991. A year later, he was president. Tony Blair went in 1993. Four years later, prime minister.",
+   "say": "Bill Clinton went in 1991. A year later, he was president. Tony Blair went in 1993. Four years later, prime minister."
+  },
+  {
+   "shot": "gag",
+   "cap": "They do publish one thing. The list of topics. Sample topic: the future. Very helpful.",
+   "say": "They do publish one thing. The list of topics. Sample topic: the future. Very helpful."
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the friend who'd sneak in disguised as a waiter. Because,",
+   "say": "Tag the friend who'd sneak in disguised as a waiter. Because,"
+  }
+ ]
+}
