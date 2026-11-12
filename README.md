@@ -202,7 +202,7 @@ Folder: [`dave-reels/`](dave-reels/)
 | [43-dave-grows-an-inch](dave-reels/43-dave-grows-an-inch.mp4) | What if you grew 1 inch every day? | Waiting to post |
 | [44-gimli-glider](dave-reels/44-gimli-glider.mp4) | The jet that ran out of fuel because of maths | Waiting to post |
 
-## Toy reels (Brick Toy) (176)
+## Toy reels (Brick Toy) (177)
 Folder: [`toy-reels/`](toy-reels/)
 
 | Video | Title | Status |
@@ -276,6 +276,7 @@ Folder: [`toy-reels/`](toy-reels/)
 | [154-never-run-from-dog](toy-reels/154-never-run-from-dog.mp4) | Never run from a dog. Here's why 🐕 | Waiting to post |
 | [155-stag-rack](toy-reels/155-stag-rack.mp4) | Every year he loses his rack… and grows a bigger one 🦌 | Waiting to post |
 | [156-laika](toy-reels/156-laika.mp4) | The first dog in space was never coming back 🐕🚀 | Waiting to post |
+| [157-cows-face-north](toy-reels/157-cows-face-north.mp4) | Cows face north. Nobody knows why 🐄🧭 | Waiting to post |
 | [158-donkey-not-an-ass](toy-reels/158-donkey-not-an-ass.mp4) | Don't call him an ass. He's smarter than you 🫏 | Waiting to post |
 | [159-wolf-or7](toy-reels/159-wolf-or7.mp4) | He walked 1,000+ miles alone to find a family 🐺 | Waiting to post |
 | [16-robbers-rob-illuminati](toy-reels/16-robbers-rob-illuminati.mp4) | Two Robbers Robbed The Illuminati's Bank 👁️ | Posted (Instagram + YouTube) |
