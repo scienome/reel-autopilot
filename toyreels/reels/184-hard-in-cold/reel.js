@@ -2,7 +2,7 @@
 STORY((k) => {
   const sn = k.snow(); const man = k.add(k.LIB.human({ body: 'm', top: '#c8501e', bottom: '#2a3140', hair: '#2b1d14', sleeves: true }), [0, 0, 0], 0.4, sn);
   const fire = k.add(k.campfire(), [1.4, 0, 0.6], 0, sn); const rm = k.LIB.place.room({ wall: '#e2d6c4' }); k.place(rm); const man2 = k.add(k.LIB.human({ body: 'm', top: '#c8501e', bottom: '#2a3140', hair: '#2b1d14', sleeves: true }), [0, 0, 0], 0.3, rm);
-  let ov = null; const cold = () => { k.only(sn); fire.visible = false; };
+  let ov = null; const cold = () => { k.only(sn); fire.visible = false; man.rotation.set(0, 0.4, 0); };
   const hand = (ctx, stage, t, o = {}) => { const col = ['#e8b48f', '#e8746a', '#d9dde2', '#aab2bb'][stage]; ctx.save(); ctx.translate(360, o.y || 640); ctx.scale(1.2, 1.2); ctx.fillStyle = col; ctx.strokeStyle = 'rgba(0,0,0,0.35)'; ctx.lineWidth = 4;
     ctx.beginPath(); ctx.roundRect(-110, -20, 220, 200, 50); ctx.fill(); ctx.stroke(); [[-95, 0.25], [-40, 0.05], [15, 0], [70, 0.1]].forEach(([x, r], i) => { ctx.save(); ctx.translate(x + 20, -10); ctx.rotate(-r + (i - 1.5) * 0.06); ctx.beginPath(); ctx.roundRect(-22, -170 + (i === 0 || i === 3 ? 30 : 0), 44, 180 - (i === 0 || i === 3 ? 30 : 0), 22); ctx.fill(); ctx.stroke();
       if (stage >= 2) { ctx.fillStyle = 'rgba(255,255,255,0.8)'; for (let j = 0; j < 5; j++) { ctx.beginPath(); ctx.arc(Math.sin(j * 3 + i) * 10, -150 + j * 18 + (i % 2) * 20, 4, 0, 7); ctx.fill(); } ctx.fillStyle = col; } ctx.restore(); });
@@ -13,9 +13,9 @@ STORY((k) => {
     first: (t, kk) => { cold(); man.pose('idle', t); ov = (ctx) => { hand(ctx, kk < 0.5 ? 0 : 1, t); k.card(ctx, kk < 0.5 ? 'COLD · RED · PAIN' : 'THEN NUMB = WARNING', { y: 1185, bg: '#e8384f', size: 36 }); }; return k.close(man, { d: 2.0 }); },
     inside: (t, kk) => { cold(); man.pose('idle', t); ov = (ctx) => { hand(ctx, 2, t); k.card(ctx, 'ICE CRYSTALS IN THE SKIN', { y: 1185, bg: '#1f8fd8', size: 34 }); }; return k.close(man, { d: 2.0 }); },
     hard: (t, kk) => { cold(); man.pose('kneel', t); ov = (ctx) => { hand(ctx, 3, t); k.card(ctx, 'WHITE · GREY · HARD AS WAX', { y: 1185, bg: '#5a6470', size: 34 }); }; return k.close(man, { d: 2.0, look: 0.5 }); },
-    dont: (t, kk) => { k.only(sn); fire.visible = true; man.pose('crouch', t); man.position.set(0.6, 0, 0.2); ov = (ctx) => { k.card(ctx, 'NO RUBBING · NO FIRE', { y: 200, bg: '#e8384f', size: 40 }); k.cross(ctx, t, 0.3); }; return k.cam([0.2, 1.2, 3.2], [1.0, 0.5, 0.4], 42); },
+    dont: (t, kk) => { k.only(sn); fire.visible = true; man.rotation.set(0, 0.4, 0); man.pose('crouch', t); man.position.set(0.6, 0, 0.2); const b = (kk - 0.35) * 2.2; k.launch(man, Math.max(0, b * 0.7), [0.6, 0, 0.2]); ov = (ctx) => { k.boom(ctx, b, 420, 640, 'FWOOSH!'); if (kk > 0.75) { k.card(ctx, 'NO RUBBING · NO FIRE', { y: 200, bg: '#e8384f', size: 40 }); k.cross(ctx, t, 0.3); } }; return k.cam([0.2, 1.2, 3.2], [1.0, 0.5, 0.4], 42); },
     do: (t, kk) => { k.only(rm); man2.pose('sit', t); ov = (ctx) => { k.card(ctx, 'WARM WATER, NOT HOT', { y: 200, bg: '#2a9d4a', size: 40 }); k.card(ctx, 'THEN SEE A DOCTOR', { y: 1185, bg: '#1f8fd8', size: 36 }); k.tick(ctx, t, 0.4); }; return k.close(man2, { d: 2.0, look: 0.6 }); },
     outro: (t, kk) => { cold(); man.position.set(0, 0, 0); man.pose('dance', t); ov = (ctx) => { k.big(ctx, 'GLOVES ON. 🧤', { y: 240, size: 60, col: '#ffd23f' }); k.card(ctx, 'General information, not medical advice.', { y: 1240, bg: 'rgba(0,0,0,0.5)', size: 20 }); }; return k.cam([1.6, 1.5, 3.4], [0, 0.9, 0], 42); },
   };
-  return { shots, sky: '#cfe0ea', over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+  return { shots, sky: '#cfe0ea', score: (kit, at) => { kit.play('impact', at('dont', 1.0), { gain: 0.6 }); }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
 }, { assets: ['humans/Superhero_Male', 'humans/ual1'] });

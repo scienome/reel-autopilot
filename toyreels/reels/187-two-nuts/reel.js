@@ -1,0 +1,21 @@
+// 187 cinestory3d (story3d.js): Brazil nuts and selenium (NIH ODS; Harvard). Scroll stopper: a man tells a woman "two of my nuts a day", she jumps back... then a bowl of Brazil nuts.
+STORY((k) => {
+  const { T } = k; const kt = k.LIB.place.kitchen({}); k.place(kt);
+  const man = k.add(k.LIB.human({ body: 'm', top: '#2a9d4a', bottom: '#2a2a30', hair: '#2b1d14' }), [-0.5, 0, 0.3], 0.7, kt);
+  const her = k.add(k.LIB.human({ body: 'woman_tanktop' }), [0.6, 0, 0.3], -0.9, kt);
+  const tbl = k.LIB.prop('props/table_round', { h: 0.78 }); tbl.position.set(0.05, 0, -0.5); kt.add(tbl);
+  const bowl = new T.Group(); const bw = new T.Mesh(new T.CylinderGeometry(0.2, 0.13, 0.1, 24, 1, true), k.M('#f4f1ea', 0.4)); bw.material.side = T.DoubleSide; bowl.add(bw);
+  for (let i = 0; i < 14; i++) { const n = new T.Mesh(new T.SphereGeometry(0.035, 10, 8), new T.MeshStandardMaterial({ color: i % 3 ? '#3a1f0e' : '#4a2a14', roughness: 0.6 })); n.scale.set(1.9, 1, 1.1); n.position.set(Math.cos(i * 2.4) * 0.11 * ((i % 3) / 3 + 0.4), 0.03 + (i > 8 ? 0.04 : 0), Math.sin(i * 2.4) * 0.11 * ((i % 3) / 3 + 0.4)); n.rotation.y = i; bowl.add(n); }
+  bowl.position.set(0.05, 0.83, -0.5); kt.add(bowl); const fo = k.forest(); const mis = k.missile(kt); let ov = null; const home = () => { k.only(kt); mis.visible = false; man.position.set(-0.5, 0, 0.3); man.rotation.set(0, 0.7, 0); };
+  const shots = {
+    hook: (t, kk) => { home(); man.pose('talk', t); her.pose(kk > 0.3 && kk < 0.6 ? 'jump' : 'idle', t); ov = (ctx) => { if (kk < 0.6) k.card(ctx, '"2 A DAY" 😳', { y: 200, bg: '#e8384f', size: 48 }); else k.counter(ctx, 'BRAZIL NUTS', '🥜 x2', { y: 170 }); }; return kk < 0.6 ? k.cam([0.1, 1.5, 2.6], [0.05, 1.1, 0.3], 44) : k.cam([0.05, 1.25, 0.15], [0.05, 0.83, -0.5], 40); },
+    reveal: (t, kk) => { home(); man.pose('idle', t); her.pose('idle', t); ov = (ctx) => k.card(ctx, 'SELENIUM CHAMPION', { y: 200, bg: '#7a3ad8', size: 42 }); return k.cam([0.4, 1.3, 0.3], [0.05, 0.83, -0.5], 38); },
+    one: (t, kk) => { home(); man.pose('talk', t); her.pose('idle', t); ov = (ctx) => { k.counter(ctx, '1 NUT', '68–91 µg', { y: 170 }); k.card(ctx, 'ADULT NEEDS 55 µg / DAY', { y: 1185, bg: '#1f8fd8', size: 34 }); }; return k.cam([-0.3, 1.25, 0.2], [0.05, 0.83, -0.5], 38); },
+    why: (t, kk) => { home(); man.pose('talk', t); her.pose('idle', t); ov = (ctx) => k.card(ctx, 'THYROID · IMMUNE SYSTEM', { y: 200, bg: '#2a9d4a', size: 38 }); return k.close(man, { d: 1.8, side: 0.3 }); },
+    too: (t, kk) => { home(); man.pose('pickup', t); her.pose('idle', t); const H = 0.6, b = (kk - H) * 2.5; k.strike(mis, [-0.5, 0.9, 0.3], kk / H); k.launch(man, Math.max(0, b * 0.8), [-0.5, 0, 0.3]); ov = (ctx) => { k.counter(ctx, 'HANDFUL / DAY', `${Math.round(6 * 80 * Math.min(1, kk * 1.5))} µg`, { y: 170 }); k.boom(ctx, b, 300, 640, 'TOO MANY!'); k.card(ctx, 'LIMIT: 400 µg', { y: 1185, bg: '#e8384f', size: 38 }); }; return k.cam([0.6, 1.6, 3.6], [-0.3, 1.3, 0.2], 50); },
+    signs: (t, kk) => { home(); her.pose('idle', t); man.pose('idle', t); ov = (ctx) => k.card(ctx, ['GARLIC BREATH', 'BRITTLE NAILS', 'HAIR LOSS'][Math.min(2, Math.floor(kk * 3))], { y: 200, bg: '#e8384f', size: 46 }); return k.close(her, { d: 1.8, side: -0.3 }); },
+    tree: (t, kk) => { k.only(fo); ov = (ctx) => k.card(ctx, 'AMAZON · SELENIUM SOIL', { y: 200, bg: '#2a9d4a', size: 38 }); return k.cam([0, 1.6, 6 - kk], [0, 2.5, 0], 50); },
+    outro: (t, kk) => { home(); man.pose('dance', t); her.pose('idle', t); ov = (ctx) => { k.big(ctx, 'ONE OR TWO. 🥜', { y: 240, size: 60, col: '#ffd23f' }); k.card(ctx, 'General information, not medical advice.', { y: 1240, bg: 'rgba(0,0,0,0.5)', size: 20 }); }; return k.cam([0.1, 1.5, 2.8], [0.05, 1.0, 0.1], 44); },
+  };
+  return { shots, sky: '#e9e2d4', score: (kit, at) => { kit.play('riser', at('too', 0.4), { dur: 1.2, gain: 0.4 }); kit.play('impact', at('too', 2.0), { gain: 0.7 }); }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+}, { assets: ['humans/Superhero_Male', 'humans/Woman_TankTop', 'humans/ual1', 'props/table_round', 'nature/tree_oak', 'nature/tree_maple', 'nature/tree_birch', 'nature/rock_a'] });

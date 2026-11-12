@@ -8,6 +8,7 @@
      k.orbit(target, r, ang, h, fov) / k.push(camA, camB, u)
      k.card(ctx, text, { at, t, y, bg, col, size }) a pop-in label;  k.big(ctx, text, { y, col, size, stroke }) a big centred word
      k.counter(ctx, label, value, { y }) / k.cross(ctx, t, at) a big red X / k.tick(ctx, t, at) a green tick / k.vignette(ctx, a)
+   Comedy gags: k.missile(), k.strike(m, at, u), k.boom(ctx, u, x, y, word), k.launch(obj, u) (+ kit.play('riser'/'impact') in score).
    Extra places: k.snow(), k.arena(), k.space(), k.forest(), k.farm(), k.station(), k.campfire(); props: k.car({ color }),
    k.planet({ r, color, color2, bands, rings, tilt }), k.stars(n). */
 window.STORY = (build, opt = {}) => DIY((k) => {
@@ -42,6 +43,21 @@ window.STORY = (build, opt = {}) => DIY((k) => {
   k.tick = (ctx, t, at) => mark(ctx, t, at, () => { ctx.strokeStyle = '#2ecc71'; ctx.lineWidth = 46; ctx.beginPath(); ctx.moveTo(-150, 0); ctx.lineTo(-40, 120); ctx.lineTo(170, -140); ctx.stroke(); });
   k.vignette = (ctx, a = 0.5) => { const g = ctx.createRadialGradient(360, 640, 300, 360, 640, 820); g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(1, `rgba(0,0,0,${a})`); ctx.fillStyle = g; ctx.fillRect(0, 0, 720, 1280); };
   k.tint = (ctx, col, a) => { ctx.save(); ctx.fillStyle = col; ctx.globalAlpha = a; ctx.fillRect(0, 0, 720, 1280); ctx.restore(); };
+  // ---------- comedy gags: k.missile() a cartoon missile; k.strike(m, [x,y,z], u) flies it down onto a spot (u 0..1, hits at 1);
+  // k.boom(ctx, u, x, y, word) a cartoon explosion overlay (u 0..1 after the hit); k.launch(obj, u, base) blasts a model up into the sky spinning.
+  // Sounds in score(): kit.play('riser', at) before, kit.play('impact', hit) on the hit.
+  k.missile = (parent = root) => { const g = new T.Group(); const B = M('#e8eef4', 0.4, 0.3), R = M('#e8384f', 0.5);
+    const body = new T.Mesh(new T.CylinderGeometry(0.12, 0.12, 1.1, 18), B); g.add(body); const nose = new T.Mesh(new T.ConeGeometry(0.12, 0.35, 18), R); nose.position.y = -0.72; nose.rotation.x = PI; g.add(nose);
+    for (let i = 0; i < 4; i++) { const f = new T.Mesh(new T.BoxGeometry(0.02, 0.28, 0.22), R); f.position.set(Math.cos(i * PI / 2) * 0.14, 0.45, Math.sin(i * PI / 2) * 0.14); f.rotation.y = -i * PI / 2; g.add(f); }
+    const fl = new T.Mesh(new T.ConeGeometry(0.1, 0.5, 12), new T.MeshBasicMaterial({ color: '#ffb21a', transparent: true, opacity: 0.9 })); fl.position.y = 0.8; g.add(fl); g.fl = fl; g.visible = false; parent.add(g); return g; };
+  k.strike = (m, at, u, from = [6, 14, -4]) => { m.visible = u > 0 && u < 1; if (!m.visible) return m; const e = u * u; m.position.set(from[0] + (at[0] - from[0]) * e, from[1] + (at[1] - from[1]) * e, from[2] + (at[2] - from[2]) * e);
+    m.rotation.set(0, 0, 0); const dx = at[0] - from[0], dy = at[1] - from[1], dz = at[2] - from[2]; m.quaternion.setFromUnitVectors(new T.Vector3(0, -1, 0), new T.Vector3(dx, dy, dz).normalize()); m.fl.scale.setScalar(0.8 + Math.random() * 0.5); return m; };
+  k.boom = (ctx, u, x = 360, y = 640, word = 'BOOM!') => { if (u <= 0 || u >= 1) return; ctx.save(); const s = Math.min(1, u * 5), a = u < 0.7 ? 1 : (1 - u) / 0.3; ctx.globalAlpha = a; ctx.translate(x, y); ctx.scale(s, s);
+    if (u < 0.08) { ctx.restore(); ctx.save(); ctx.fillStyle = 'rgba(255,255,255,0.85)'; ctx.fillRect(0, 0, 720, 1280); ctx.restore(); return; }
+    [['#e8384f', 300], ['#ff8a1e', 240], ['#ffd23f', 170]].forEach(([c, r]) => { ctx.fillStyle = c; ctx.beginPath(); for (let i = 0; i <= 24; i++) { const rr = i % 2 ? r * 0.6 : r, an = i / 24 * PI * 2 + u; i ? ctx.lineTo(Math.cos(an) * rr, Math.sin(an) * rr) : ctx.moveTo(Math.cos(an) * rr, Math.sin(an) * rr); } ctx.fill(); });
+    ctx.rotate(-0.12); ctx.font = FONT(900, 110); ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.lineJoin = 'round'; ctx.lineWidth = 16; ctx.strokeStyle = '#1a1a1a'; ctx.strokeText(word, 0, 0); ctx.fillStyle = '#fff'; ctx.fillText(word, 0, 0); ctx.restore(); };
+  k.launch = (obj, u, base) => { if (!obj.userData.home) obj.userData.home = base || [obj.position.x, obj.position.y, obj.position.z]; const h = obj.userData.home; if (u <= 0) { obj.position.set(h[0], h[1], h[2]); return obj; }
+    obj.position.set(h[0] + u * 1.5, h[1] + u * 9 + Math.sin(u * PI) * 2, h[2] - u * 2); obj.rotation.x = u * 14; obj.rotation.z = u * 9; return obj; };
   // ---------- extra places + primitive props ----------
   const ctex = (w, h, f, rep = 1) => { const t = k.tex(w, h, f); t.wrapS = t.wrapT = T.RepeatWrapping; t.repeat.set(rep, rep); return t; };
   const ground = (g, size, mat) => { const p = new T.Mesh(new T.PlaneGeometry(size, size), mat); p.rotation.x = -PI / 2; p.receiveShadow = true; g.add(p); return p; };

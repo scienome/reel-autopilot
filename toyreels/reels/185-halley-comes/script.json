@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "She only comes once every seventy six years, and everyone stops to watch.",
+   "say": "She only comes once every seventy six years, and everyone stops to watch."
+  },
+  {
+   "shot": "who",
+   "cap": "Halley's Comet. A dirty snowball, fifteen kilometres long.",
+   "say": "Halley's Comet. A dirty snowball, fifteen kilometres long."
+  },
+  {
+   "shot": "orbit",
+   "cap": "She loops past the Sun, then disappears far beyond Neptune, for decades.",
+   "say": "She loops past the Sun, then disappears far beyond Neptune, for decades."
+  },
+  {
+   "shot": "twain",
+   "cap": "Mark Twain was born the year she came, in 1835. He said, I came in with it, and I'll go out with it.",
+   "say": "Mark Twain was born the year she came, in 1835. He said, I came in with it, and I'll go out with it."
+  },
+  {
+   "shot": "died",
+   "cap": "He died in 1910, one day after she was closest to the Sun.",
+   "say": "He died in 1910, one day after she was closest to the Sun."
+  },
+  {
+   "shot": "dust",
+   "cap": "She leaves dust behind. Every May and October, it lights up our sky as shooting stars.",
+   "say": "She leaves dust behind. Every May and October, it lights up our sky as shooting stars."
+  },
+  {
+   "shot": "next",
+   "cap": "Her next visit is in 2061.",
+   "say": "Her next visit is in 2061."
+  },
+  {
+   "shot": "outro",
+   "cap": "So mark the date. She won't wait for you.",
+   "say": "So mark the date. She won't wait for you."
+  }
+ ]
+}

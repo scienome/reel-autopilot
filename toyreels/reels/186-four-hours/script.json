@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Stiff for more than four hours? Doctors say, go to hospital. Here's why.",
+   "say": "Stiff for more than four hours? Doctors say, go to hospital. Here's why."
+  },
+  {
+   "shot": "label",
+   "cap": "It's printed on the label of some pills for men. Most people laugh at it.",
+   "say": "It's printed on the label of some pills for men. Most people laugh at it."
+  },
+  {
+   "shot": "name",
+   "cap": "Doctors call it priapism. And it's an emergency.",
+   "say": "Doctors call it priapism. And it's an emergency."
+  },
+  {
+   "shot": "blood",
+   "cap": "Normally, blood flows in, and then flows back out.",
+   "say": "Normally, blood flows in, and then flows back out."
+  },
+  {
+   "shot": "trapped",
+   "cap": "In priapism, it gets trapped. Trapped blood loses its oxygen.",
+   "say": "In priapism, it gets trapped. Trapped blood loses its oxygen."
+  },
+  {
+   "shot": "damage",
+   "cap": "After about four hours, the tissue starts to get damaged. Wait too long, and it may never work properly again.",
+   "say": "After about four hours, the tissue starts to get damaged. Wait too long, and it may never work properly again."
+  },
+  {
+   "shot": "fix",
+   "cap": "In hospital, doctors can drain the blood, or give medicine to reverse it.",
+   "say": "In hospital, doctors can drain the blood, or give medicine to reverse it."
+  },
+  {
+   "shot": "outro",
+   "cap": "So if the label says four hours, believe it. General information, not medical advice.",
+   "say": "So if the label says four hours, believe it. General information, not medical advice."
+  }
+ ]
+}

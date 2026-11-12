@@ -1,0 +1,26 @@
+// 186 cinestory3d (story3d.js): priapism over 4 hours is an emergency (NHS; Mayo Clinic; FDA sildenafil label). Scroll stopper: a man in his bedroom staring down in panic as a clock ticks past 4:00... then a pill-bottle warning label.
+STORY((k) => {
+  const rm = k.LIB.place.room({ wall: '#cfd8e6' }); k.place(rm); const bed = k.LIB.prop('props/bed_single', { h: 0.7 }); bed.position.set(-1.6, 0, -1.2); rm.add(bed);
+  const man = k.add(k.LIB.human({ body: 'm', top: '#e8e8e8', bottom: '#3a4a7a', hair: '#2b1d14' }), [0, 0, 0], 0.2, rm);
+  const hos = k.LIB.place.room({ wall: '#eef3f6', floor: 'tiles', window: false }); k.place(hos);
+  const doc = k.add(k.LIB.human({ body: 'woman_dress' }), [0.7, 0, -0.3], -0.6, hos); const pat = k.add(k.LIB.human({ body: 'm', top: '#9ec7e8', bottom: '#9ec7e8', hair: '#2b1d14' }), [-0.5, 0, 0], 0.5, hos);
+  const mis = k.missile(rm); let ov = null; const home = () => { k.only(rm); mis.visible = false; man.position.set(0, 0, 0); man.rotation.set(0, 0.2, 0); };
+  const clock = (ctx, h, m, red) => k.counter(ctx, 'HOW LONG?', `${h}:${String(m).padStart(2, '0')} HRS`, { y: 170 });
+  const bottle = (ctx, a) => { ctx.save(); ctx.globalAlpha = a; ctx.translate(360, 680); ctx.fillStyle = '#e07a1e'; ctx.beginPath(); ctx.roundRect(-150, -200, 300, 420, 30); ctx.fill(); ctx.fillStyle = '#f4f4f4'; ctx.beginPath(); ctx.roundRect(-170, -270, 340, 90, 18); ctx.fill();
+    ctx.fillStyle = '#fff'; ctx.beginPath(); ctx.roundRect(-130, -130, 260, 290, 14); ctx.fill(); ctx.fillStyle = '#e8384f'; ctx.font = '900 40px sans-serif'; ctx.textAlign = 'center'; ctx.fillText('⚠ WARNING', 0, -70); ctx.fillStyle = '#1a1a1a'; ctx.font = '800 26px sans-serif';
+    ['ERECTION LASTING', 'MORE THAN 4 HOURS?', 'GET EMERGENCY', 'MEDICAL HELP'].forEach((s, i) => ctx.fillText(s, 0, -20 + i * 40)); ctx.restore(); };
+  const flow = (ctx, t, mode) => { ctx.save(); ctx.fillStyle = 'rgba(10,18,30,0.85)'; ctx.beginPath(); ctx.roundRect(60, 360, 600, 520, 30); ctx.fill(); ctx.strokeStyle = '#ff9aa8'; ctx.lineWidth = 60; ctx.lineCap = 'round'; ctx.beginPath(); ctx.moveTo(140, 520); ctx.lineTo(580, 520); ctx.stroke(); ctx.beginPath(); ctx.moveTo(140, 720); ctx.lineTo(580, 720); ctx.stroke();
+    ctx.font = '900 26px sans-serif'; ctx.fillStyle = '#fff'; ctx.fillText('IN →', 110, 450); ctx.fillText(mode === 'out' ? '← OUT' : '← OUT ✕', 470, 800);
+    for (let i = 0; i < 9; i++) { const u = mode === 'out' ? (t * 0.4 + i / 9) % 1 : (i / 9); ctx.fillStyle = mode === 'out' ? '#e8202a' : `rgb(${Math.round(232 - 150 * Math.min(1, t * 0.15))},40,${Math.round(42 + 120 * Math.min(1, t * 0.15))})`; ctx.beginPath(); ctx.arc(150 + u * 420, 520, 16, 0, 7); ctx.fill(); if (mode === 'out') { ctx.beginPath(); ctx.arc(570 - u * 420, 720, 16, 0, 7); ctx.fill(); } } ctx.restore(); };
+  const shots = {
+    hook: (t, kk) => { home(); man.pose(kk < 0.5 ? 'idle' : 'crouch', t); const m = Math.min(59, Math.floor(kk * 120)); ov = (ctx) => { if (kk < 0.55) clock(ctx, kk < 0.5 ? 3 : 4, kk < 0.5 ? 50 + Math.floor(kk * 18) : 0); else bottle(ctx, Math.min(1, (kk - 0.55) * 5)); }; return k.cam([0.4, 1.0, 1.9], [0.1, 0.9, 0], 46); },
+    label: (t, kk) => { home(); man.pose('dance', t); const H = 0.6, b = (kk - H) * 2.5; k.strike(mis, [0, 0.9, 0], kk / H); k.launch(man, Math.max(0, b * 0.8), [0, 0, 0]); ov = (ctx) => { if (kk < 0.35) bottle(ctx, 1); k.card(ctx, 'MOST PEOPLE LAUGH AT IT', { y: 1185, bg: '#7a3ad8', size: 34 }); k.boom(ctx, b, 360, 640, 'BOOM!'); }; return k.cam([0.6, 1.5, 4.4], [0.1, 1.3, 0], 50); },
+    name: (t, kk) => { home(); man.pose('idle', t); ov = (ctx) => k.card(ctx, 'PRIAPISM = EMERGENCY 🚨', { y: 200, bg: '#e8384f', size: 40 }); return k.close(man, { d: 1.6, side: 0.3 }); },
+    blood: (t, kk) => { home(); man.pose('idle', t); ov = (ctx) => { flow(ctx, t, 'out'); k.card(ctx, 'NORMAL: IN, THEN OUT', { y: 1185, bg: '#2a9d4a', size: 36 }); }; return k.close(man, { d: 2.2 }); },
+    trapped: (t, kk) => { home(); man.pose('idle', t); ov = (ctx) => { flow(ctx, kk * 7, 'stuck'); k.card(ctx, 'TRAPPED · NO OXYGEN', { y: 1185, bg: '#e8384f', size: 36 }); }; return k.close(man, { d: 2.2 }); },
+    damage: (t, kk) => { home(); man.pose('crouch', t); ov = (ctx) => { clock(ctx, 4, Math.floor(kk * 59)); k.card(ctx, 'AFTER ~4 HRS: DAMAGE', { y: 1185, bg: '#e8384f', size: 36 }); }; return k.close(man, { d: 2.0, look: 0.6 }); },
+    fix: (t, kk) => { k.only(hos); doc.pose('talk', t); pat.pose('idle', t); ov = (ctx) => k.card(ctx, 'HOSPITAL: DRAIN OR MEDICINE', { y: 200, bg: '#1f8fd8', size: 34 }); return k.cam([0.2, 1.5, 3.2], [0.1, 1.0, -0.1], 42); },
+    outro: (t, kk) => { k.only(hos); doc.pose('idle', t); pat.pose('dance', t); ov = (ctx) => { k.big(ctx, 'BELIEVE THE LABEL.', { y: 240, size: 54, col: '#ffd23f' }); k.card(ctx, 'General information, not medical advice.', { y: 1240, bg: 'rgba(0,0,0,0.5)', size: 20 }); }; return k.cam([0.2, 1.5, 3.4], [0.1, 1.0, -0.1], 42); },
+  };
+  return { shots, sky: '#cfd8e6', score: (kit, at) => { kit.play('riser', at('label', 0.5), { dur: 1.2, gain: 0.4 }); kit.play('impact', at('label', 2.3), { gain: 0.7 }); }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+}, { assets: ['humans/Superhero_Male', 'humans/Woman_Dress', 'humans/ual1', 'props/bed_single'] });

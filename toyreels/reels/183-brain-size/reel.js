@@ -3,8 +3,8 @@ STORY((k) => {
   const { PI } = k; const rm = k.LIB.place.room({ wall: '#e8d6e6' }); k.place(rm);
   const man = k.add(k.LIB.human({ body: 'm', top: '#2f6fd8', bottom: '#2a2a30', hair: '#2b1d14' }), [0, 0, 0], 0.3, rm);
   const her = k.add(k.LIB.human({ body: 'woman_casual' }), [0.9, 0, 0.7], -2.3, rm);
-  const ein = k.add(k.LIB.human({ body: 'm', top: '#8a7a68', bottom: '#4a3f36', hair: '#eeeeee', hairStyle: 'long', h: 1.72 }), [0, 0, 0], 0.2, rm);
-  let ov = null; const base = () => { k.only(rm); man.visible = her.visible = true; ein.visible = false; };
+  const mis = k.missile(rm); const ein = k.add(k.LIB.human({ body: 'm', top: '#8a7a68', bottom: '#4a3f36', hair: '#eeeeee', hairStyle: 'long', h: 1.72 }), [0, 0, 0], 0.2, rm);
+  let ov = null; const base = () => { k.only(rm); man.visible = her.visible = true; ein.visible = false; mis.visible = false; man.position.set(0, 0, 0); man.rotation.set(0, 0.3, 0); };
   const ruler = (ctx, x, y, w, ang, label) => { ctx.save(); ctx.translate(x, y); ctx.rotate(ang); ctx.fillStyle = '#ffd23f'; ctx.strokeStyle = '#1a1a1a'; ctx.lineWidth = 4; ctx.beginPath(); ctx.roundRect(-w / 2, -26, w, 52, 8); ctx.fill(); ctx.stroke();
     ctx.fillStyle = '#1a1a1a'; for (let i = 0; i <= 20; i++) { const xx = -w / 2 + 14 + i * (w - 28) / 20; ctx.fillRect(xx - 1.5, -26, 3, i % 5 ? 14 : 26); } if (label) { ctx.font = '900 22px sans-serif'; ctx.textAlign = 'center'; ctx.fillText(label, 0, 18); } ctx.restore(); };
   const brain = (ctx, cx, cy, s, glow) => { ctx.save(); ctx.translate(cx, cy); ctx.scale(s, s); ctx.fillStyle = '#f2a7b8'; ctx.strokeStyle = '#b8586e'; ctx.lineWidth = 6; ctx.beginPath(); ctx.ellipse(0, 0, 150, 110, 0, 0, 7); ctx.fill(); ctx.stroke();
@@ -18,7 +18,7 @@ STORY((k) => {
     inside: (t, kk) => { base(); her.visible = false; man.pose('idle', t); ov = (ctx) => { brain(ctx, 360, 640, 1.2, t * 2); k.card(ctx, 'IT\'S THE WIRING', { y: 1185, bg: '#2a9d4a', size: 40 }); }; return k.close(man, { d: 2.2 }); },
     einstein2: (t, kk) => { k.only(rm); man.visible = her.visible = false; ein.visible = true; ein.pose('talk', t); ov = (ctx) => { brain(ctx, 360, 640, 1.2, t * 3); k.card(ctx, 'EXTRA FOLDS · MATHS & SPACE', { y: 1185, bg: '#7a3ad8', size: 32 }); }; return k.close(ein, { d: 2.0 }); },
     grow: (t, kk) => { base(); her.pose('idle', t); man.pose('talk', t); ov = (ctx) => { brain(ctx, 360, 520, 0.8 + kk * 0.3, t * 4); k.card(ctx, 'LEARN = NEW CONNECTIONS', { y: 1185, bg: '#1f8fd8', size: 34 }); }; return k.cam([0.3, 1.4, 3.2], [0.3, 1.0, 0], 44); },
-    outro: (t, kk) => { base(); man.pose('dance', t); her.pose('idle', t); ov = (ctx) => k.big(ctx, 'IT\'S HOW YOU USE IT.', { y: 240, size: 50, col: '#ffd23f' }); return k.cam([0.6, 1.4, 3.4], [0.3, 0.9, 0], 42); },
+    outro: (t, kk) => { base(); man.pose('dance', t); her.pose('idle', t); const H = 0.62; k.strike(mis, [0, 0.9, 0], kk / H); const b = (kk - H) * 2.6; k.launch(man, Math.max(0, b * 0.8), [0, 0, 0]); ov = (ctx) => { if (kk < H) k.big(ctx, 'IT\'S HOW YOU USE IT.', { y: 240, size: 50, col: '#ffd23f' }); k.boom(ctx, b, 360, 640, 'BOOM!'); }; return k.cam([0.6, 1.4, 4.4], [0.3, 1.2, 0], 50); },
   };
-  return { shots, sky: '#e8d6e6', over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+  return { shots, sky: '#e8d6e6', score: (kit, at) => { kit.play('riser', at('outro', 0.4), { dur: 1.2, gain: 0.4 }); kit.play('impact', at('outro', 1.9), { gain: 0.7 }); }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
 }, { assets: ['humans/Superhero_Male', 'humans/Woman_Casual', 'humans/ual1'] });

@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Just two of my nuts a day, is all you need. Any more, and you're in trouble.",
+   "say": "Just two of my nuts a day, is all you need. Any more, and you're in trouble."
+  },
+  {
+   "shot": "reveal",
+   "cap": "Brazil nuts. One of the richest sources of selenium on Earth.",
+   "say": "Brazil nuts. One of the richest sources of selenium on Earth."
+  },
+  {
+   "shot": "one",
+   "cap": "A single nut can have more selenium than an adult needs in a whole day.",
+   "say": "A single nut can have more selenium than an adult needs in a whole day."
+  },
+  {
+   "shot": "why",
+   "cap": "Your body needs selenium for your thyroid and immune system. Just tiny amounts.",
+   "say": "Your body needs selenium for your thyroid and immune system. Just tiny amounts."
+  },
+  {
+   "shot": "too",
+   "cap": "But if you snack on a big handful every day, it builds up.",
+   "say": "But if you snack on a big handful every day, it builds up."
+  },
+  {
+   "shot": "signs",
+   "cap": "Too much selenium can cause garlic breath, brittle nails, and even hair loss.",
+   "say": "Too much selenium can cause garlic breath, brittle nails, and even hair loss."
+  },
+  {
+   "shot": "tree",
+   "cap": "The trees grow wild in the Amazon. The nuts soak up selenium from the soil.",
+   "say": "The trees grow wild in the Amazon. The nuts soak up selenium from the soil."
+  },
+  {
+   "shot": "outro",
+   "cap": "So one or two a day. Leave the rest of the bag. General information, not medical advice.",
+   "say": "So one or two a day. Leave the rest of the bag. General information, not medical advice."
+  }
+ ]
+}
