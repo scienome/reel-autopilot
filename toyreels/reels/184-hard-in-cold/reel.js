@@ -17,5 +17,5 @@ STORY((k) => {
     do: (t, kk) => { k.only(rm); man2.pose('sit', t); ov = (ctx) => { k.card(ctx, 'WARM WATER, NOT HOT', { y: 200, bg: '#2a9d4a', size: 40 }); k.card(ctx, 'THEN SEE A DOCTOR', { y: 1185, bg: '#1f8fd8', size: 36 }); k.tick(ctx, t, 0.4); }; return k.close(man2, { d: 2.0, look: 0.6 }); },
     outro: (t, kk) => { cold(); man.position.set(0, 0, 0); man.pose('dance', t); ov = (ctx) => { k.big(ctx, 'GLOVES ON. 🧤', { y: 240, size: 60, col: '#ffd23f' }); k.card(ctx, 'General information, not medical advice.', { y: 1240, bg: 'rgba(0,0,0,0.5)', size: 20 }); }; return k.cam([1.6, 1.5, 3.4], [0, 0.9, 0], 42); },
   };
-  return { shots, sky: '#cfe0ea', score: (kit, at) => { kit.play('impact', at('dont', 1.0), { gain: 0.6 }); }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
-}, { assets: ['humans/Superhero_Male', 'humans/ual1'] });
+  return { shots, lens: 28, minDist: 2.6, sky: '#cfe0ea', score: (kit, at) => { kit.play('impact', at('dont', 1.0), { gain: 0.6 }); }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/Superhero_Male', 'humans/ual1'] });

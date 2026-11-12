@@ -87,6 +87,7 @@ window.DIY = (build, opt = {}) => {
     ALLP.forEach((o) => { o.visible = false; }); RH.visible = LH.visible = false; ALL.forEach((l) => { l.visible = true; });
     const v = R.shots[n](t, kk, a, b);
     if (R.lens && !v.tight) { const lf = 2 * Math.atan(18 / R.lens) * 180 / Math.PI; if (!(v.fov >= lf)) v.fov = lf; } // R.lens: focal length in mm (full-frame, long side vertical); 24 = wide, shows the whole scene. A shot can keep its own framing with tight: true
+    if (R.minDist && !v.tight) { const d = Math.hypot(v.pos[0] - v.look[0], v.pos[1] - v.look[1], v.pos[2] - v.look[2]); if (d > 0.01 && d < R.minDist) { const f = R.minDist / d; v.pos = v.pos.map((x, j) => v.look[j] + (x - v.look[j]) * f); } } // R.minDist: pull close cameras back (toy cast has big heads)
     if (RH.visible || LH.visible) { const d = 1.5; v.pos = v.pos.map((x, j) => v.look[j] + (x - v.look[j]) * d); v.pos[1] += 0.8; v.fov *= 0.78; } // hand shots: camera back and above the arms
     S.background = new T.Color(v.dark ? '#0b0e16' : (R.wall || '#2f6f8c')); S.fog = R.fog ? new T.FogExp2(R.fog[0], v.fog != null ? v.fog : R.fog[1]) : null; wall.visible = !v.dark && R.table !== false; table.visible = !v.dark && !v.noTable && R.table !== false; if (R.sky && !v.dark) S.background = new T.Color(v.sky || R.sky); wall.material.color.set(R.wall || '#3f8fb0');
     const hand = Math.sin(t * 1.3) * 0.015, cam = { ...v, pos: [X0 + v.pos[0] + hand, v.pos[1] + Math.sin(t * 1.7) * 0.01, v.pos[2]], look: [X0 + v.look[0], v.look[1], v.look[2]] };

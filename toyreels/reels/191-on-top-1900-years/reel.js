@@ -20,5 +20,5 @@ STORY((k) => {
     modern: (t, kk) => { base(); her.visible = false; man.pose('idle', t); man.position.set(4, 0, 6); man.rotation.y = PI; const f = Math.max(0, (kk - 0.45) * 2); tower.rotation.z = f * f * 1.4; tower.position.y = -f * 1.2; ov = (ctx) => { k.card(ctx, 'STEEL RUSTS → CONCRETE CRACKS', { y: 200, bg: '#5a6470', size: 30 }); k.boom(ctx, f * 0.9, 520, 700, 'CRACK!'); }; return k.cam([3, 2.2, 16], [4, 3.5, 0], 50); },
     outro: (t, kk) => { base(); her.pose('sit', t); man.visible = false; tower.visible = false; ov = (ctx) => k.big(ctx, 'STILL ON TOP. 🏛️', { y: 240, size: 58, col: '#ffd23f' }); return k.cam([6 * Math.sin(kk), 4, 13 * Math.cos(kk * 0.5)], [0, 5, 0], 46); },
   };
-  return { shots, sky: '#bfe3ff', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('impact', at('modern', 2.2), { gain: 0.6 }); } };
-}, { assets: ['humans/Superhero_Male', 'humans/Woman_Dress', 'humans/ual1'] });
+  return { shots, lens: 28, minDist: 2.6, sky: '#bfe3ff', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('impact', at('modern', 2.2), { gain: 0.6 }); } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/Superhero_Male', 'humans/Woman_Dress', 'humans/ual1'] });
