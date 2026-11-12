@@ -281,7 +281,7 @@ window.STORY = (build, opt = {}) => DIY((k) => {
     k.only(S.home); S.me.pose('idle', t); S.glow.intensity = 1.4 * (0.9 + 0.1 * Math.sin(t * 7));
     if (name === 'tip') return k.cam([0.6, 1.6, 2.6], [-0.3, 1.2, 0], 50, { blur: 6 });
     return k.cam([0.9 - kk * 0.2, 1.55, 1.9 - kk * 0.3], [-0.45, 1.4, 0.3], 40, { blur: 3 }); };
-  k.hookText = (ctx, text, o = {}) => { ctx.save(); const lines = text.split('\n'); const sz = o.size || 64; ctx.font = FONT(900, sz); ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.lineJoin = 'round';
+  k.hookText = (ctx, text, o = {}) => { ctx.save(); const lines = text.split('\n'); let sz = o.size || 64; ctx.font = FONT(900, sz); const widest = Math.max(...lines.map((l) => ctx.measureText(l.replace(/\*/g, '')).width)); if (widest > 650) { sz = Math.floor(sz * 650 / widest); ctx.font = FONT(900, sz); } ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.lineJoin = 'round';
     lines.forEach((ln, i) => { const y = (o.y || 250) + i * sz * 1.15; const parts = ln.split('*'); let total = 0; parts.forEach((p) => { total += ctx.measureText(p).width; }); let x = 360 - total / 2;
       parts.forEach((p, j) => { const w = ctx.measureText(p).width; ctx.textAlign = 'left'; ctx.lineWidth = 14; ctx.strokeStyle = '#000'; ctx.strokeText(p, x, y); ctx.fillStyle = j % 2 ? '#ff3030' : '#ffffff'; ctx.fillText(p, x, y); x += w; }); }); ctx.restore(); };
   const R = build(k); return Object.assign({ table: false }, R);
