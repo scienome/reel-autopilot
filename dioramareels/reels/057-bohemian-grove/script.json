@@ -2,58 +2,48 @@
  "lines": [
   {
    "shot": "hook",
-   "cap": "Every July, the most powerful men in America put on robes, and burn a body in front of a giant owl.",
-   "say": "Every July, the most powerful men in America put on robes, and burn a body in front of a giant owl."
+   "cap": "Every July, America's most powerful old men go deep into the woods, put on robes, and play with fire. Wives not invited.",
+   "say": "Every July, America's most powerful old men go deep into the woods, put on robes, and play with fire. Wives not invited."
   },
   {
    "shot": "camp",
-   "cap": "This isn't a horror film. It's a private camp, hidden in the California redwoods. Bohemian Grove.",
-   "say": "This isn't a horror film. It's a private camp, hidden in the California redwoods. Bohemian Grove."
+   "cap": "It's called Bohemian Grove. A private camp in the California redwoods.",
+   "say": "It's called Bohemian Grove. A private camp in the California redwoods."
   },
   {
    "shot": "members",
-   "cap": "Presidents have been members or guests. Hoover. Nixon. Reagan. Plus bankers, generals and the bosses of giant companies.",
-   "say": "Presidents have been members or guests. Hoover. Nixon. Reagan. Plus bankers, generals and the bosses of giant companies."
+   "cap": "Presidents, bankers, billionaires. The biggest wallets in America, all in one tent.",
+   "say": "Presidents, bankers, billionaires. The biggest wallets in America, all in one tent."
   },
   {
    "shot": "rules",
-   "cap": "No women. No cameras. And their motto: weaving spiders come not here. Meaning, no business. Officially.",
-   "say": "No women. No cameras. And their motto: weaving spiders come not here. Meaning, no business. Officially."
-  },
-  {
-   "shot": "ritual",
-   "cap": "On the first night, they hold a ceremony called the Cremation of Care.",
-   "say": "On the first night, they hold a ceremony called the Cremation of Care."
+   "cap": "Rule one. No women. The most expensive sausage party on Earth. Rule two. No business. Their motto is, weaving spiders come not here. Funny, because the guest list is mostly spiders.",
+   "say": "Rule one. No women. The most expensive sausage party on Earth. Rule two. No business. Their motto is, weaving spiders come not here. Funny, because the guest list is mostly spiders."
   },
   {
    "shot": "robes",
-   "cap": "Men in hooded red robes carry a body to the feet of a forty foot stone owl.",
-   "say": "Men in hooded red robes carry a body to the feet of a forty foot stone owl."
+   "cap": "On the first night, men in red hooded robes carry a body to a forty foot owl,",
+   "say": "On the first night, men in red hooded robes carry a body to a forty foot owl,"
   },
   {
    "shot": "burn",
-   "cap": "And they set it on fire.",
-   "say": "And they set it on fire."
+   "cap": "and set it on fire.",
+   "say": "and set it on fire."
   },
   {
    "shot": "dummy",
-   "cap": "The body is a dummy. It stands for their worries. They burn their cares away, then party for two weeks.",
-   "say": "The body is a dummy. It stands for their worries. They burn their cares away, then party for two weeks."
-  },
-  {
-   "shot": "camera",
-   "cap": "In 2000, an outsider sneaked in with a hidden camera, and filmed the whole thing.",
-   "say": "In 2000, an outsider sneaked in with a hidden camera, and filmed the whole thing."
+   "cap": "Relax. It's a dummy. It stands for their worries. Which, when you're that rich, is mostly taxes.",
+   "say": "Relax. It's a dummy. It stands for their worries. Which, when you're that rich, is mostly taxes."
   },
   {
    "shot": "bomb",
-   "cap": "But the creepiest part? In 1942, scientists met at the Grove to plan the atomic bomb.",
-   "say": "But the creepiest part? In 1942, scientists met at the Grove to plan the atomic bomb."
+   "cap": "But here's the dark part. In nineteen forty two, scientists met at the Grove, to plan the atomic bomb.",
+   "say": "But here's the dark part. In nineteen forty two, scientists met at the Grove, to plan the atomic bomb."
   },
   {
    "shot": "outro",
-   "cap": "So the next time the owl burns, ask yourself, what else gets decided in those woods?",
-   "say": "So the next time the owl burns, ask yourself, what else gets decided in those woods?"
+   "cap": "Send this to the one friend who'd definitely get invited. Because while you're stuck at work, they're in the woods, burning their cares away, and deciding yours. Because every July,",
+   "say": "Send this to the one friend who'd definitely get invited. Because while you're stuck at work, they're in the woods, burning their cares away, and deciding yours. Because every July,"
   }
  ]
 }
