@@ -28,14 +28,22 @@ def texts(rid):
     return title, meta['caption'].strip() + '\n\n' + ' '.join('#' + t for t in tags) + ' #shorts', ['shorts'] + tags
 
 
-def next_slot(times, now):
+def has_video(rid):
+    import requests
+    try:
+        return requests.head(f"https://github.com/{os.environ.get('GITHUB_REPOSITORY', 'scienome/reel-autopilot')}/releases/download/diorama-{rid}/{rid}.mp4", allow_redirects=False, timeout=30).status_code in (200, 302)
+    except Exception:
+        return False
+
+
+def next_slot(times, now, taken=()):
     best = None
     for d in (0, 1):
         day = (now + IST).date() + dt.timedelta(days=d)
         for s in times:
             h, m = map(int, s.split(':'))
             t = dt.datetime.combine(day, dt.time(h, m)) - IST
-            if now < t <= now + dt.timedelta(hours=5) and (best is None or t < best):
+            if now < t <= now + dt.timedelta(hours=5) and t.strftime('%Y-%m-%dT%H:%MZ') not in taken and (best is None or t < best):
                 best = t
     return best
 
@@ -59,7 +67,7 @@ def main():
         print(f"::notice::Elites Endgame YouTube is paused: {cfg['paused']}")
         return
     now = dt.datetime.now(dt.timezone.utc).replace(tzinfo=None)
-    slot = next_slot(cfg['times_ist'], now)
+    slot = next_slot(cfg['times_ist'], now, {v.get('slot') for v in log.values()})
     if not slot or not todo:
         print('no posting time within 5 hours, or the queue is empty')
         return
@@ -67,7 +75,11 @@ def main():
     if any(v.get('slot') == key for v in log.values()):
         print(f'{key} already has a reel')
         return
-    rid = todo[0]
+    ready = [r for r in todo if has_video(r)]  # a reel whose render isn't finished yet waits; the next ready one goes
+    if not ready:
+        print('no rendered reel in the queue yet')
+        return
+    rid = ready[0]
     out = os.path.join(ROOT, 'out', rid)
     os.makedirs(out, exist_ok=True)
     subprocess.run(['gh', 'release', 'download', 'diorama-' + rid, '-p', '*.mp4', '-D', out, '--clobber'], check=True)

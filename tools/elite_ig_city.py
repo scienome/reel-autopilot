@@ -40,7 +40,12 @@ def main():
     if not due:
         print('no Instagram slot due now')
         return
-    at, rid = due[0], todo[0]
+    import requests
+    ready = [r for r in todo if requests.head(f'https://github.com/{ep.REPO}/releases/download/diorama-{r}/{r}.mp4', allow_redirects=False, timeout=30).status_code in (200, 302)]
+    if not ready:
+        print('no rendered reel in the queue yet')
+        return
+    at, rid = due[0], ready[0]  # a reel whose render isn't finished yet waits; the next ready one goes
     e = ep.post(rid, at)
     e['slot'] = at.strftime('%Y-%m-%dT%H:%MZ')
     log[rid] = e

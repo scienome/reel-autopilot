@@ -1,5 +1,5 @@
 name: Post Elites Endgame reels to YouTube
-# Uploads the new-style reels (tools/elite_youtube.py) as Shorts scheduled for 01:00, 06:00 and 20:30 IST, in
+# Uploads the new-style reels (tools/elite_youtube.py) as Shorts scheduled for 01:00 (UK evening), 06:00 (US East evening), 09:00 (US West evening), 13:00 (India lunch) and 20:30 (India prime) IST, in
 # dioramareels/schedule.json "queue" order. Each slot has runs 4, 3 and 2 hours before it. Nothing goes out while
 # schedule.json has "paused". Needs YT_ELITE_CLIENT_ID, YT_ELITE_CLIENT_SECRET and YT_ELITE_REFRESH_TOKEN.
 on:
@@ -12,6 +12,14 @@ on:
     - cron: '27 20 * * *'
     - cron: '27 21 * * *'
     - cron: '27 22 * * *'
+    # 09:00 IST slot (03:30 UTC)
+    - cron: '27 23 * * *'
+    - cron: '27 0 * * *'
+    - cron: '27 1 * * *'
+    # 13:00 IST slot (07:30 UTC)
+    - cron: '27 3 * * *'
+    - cron: '27 4 * * *'
+    - cron: '27 5 * * *'
     # 20:30 IST slot (15:00 UTC)
     - cron: '57 10 * * *'
     - cron: '57 11 * * *'
