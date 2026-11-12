@@ -80,7 +80,7 @@ Folder: [`gears-pov/`](gears-pov/)
 | [038-kitten-thoughts](gears-pov/038-kitten-thoughts.mp4) | You can hear what your new kitten thinks 🐱 | Posted on Instagram · on YouTube |
 | [039-wedding-uncle-thoughts](gears-pov/039-wedding-uncle-thoughts.mp4) | You can hear what the uncle at every wedding thinks 🕺 | Posted on Instagram · on YouTube |
 | [040-taxi-driver-thoughts](gears-pov/040-taxi-driver-thoughts.mp4) | You can hear what your taxi driver thinks 🚕 | Posted on Instagram · on YouTube |
-| [041-sofa-thoughts](gears-pov/041-sofa-thoughts.mp4) | You can hear what your sofa thinks 🛋️ | Waiting to post |
+| [041-sofa-thoughts](gears-pov/041-sofa-thoughts.mp4) | You can hear what your sofa thinks 🛋️ | Posted on Instagram · on YouTube |
 | [042-big-brother-thoughts](gears-pov/042-big-brother-thoughts.mp4) | You can hear what your big brother thinks 👦 | Waiting to post |
 | [043-owl-thoughts](gears-pov/043-owl-thoughts.mp4) | You can hear what the owl outside your window thinks 🦉 | Waiting to post |
 | [044-first-date-thoughts](gears-pov/044-first-date-thoughts.mp4) | You can hear what your first date thinks 💘 | Posted on Instagram · on YouTube |
@@ -202,7 +202,7 @@ Folder: [`dave-reels/`](dave-reels/)
 | [43-dave-grows-an-inch](dave-reels/43-dave-grows-an-inch.mp4) | What if you grew 1 inch every day? | Waiting to post |
 | [44-gimli-glider](dave-reels/44-gimli-glider.mp4) | The jet that ran out of fuel because of maths | Waiting to post |
 
-## Toy reels (Brick Toy) (204)
+## Toy reels (Brick Toy) (209)
 Folder: [`toy-reels/`](toy-reels/)
 
 | Video | Title | Status |
@@ -291,10 +291,11 @@ Folder: [`toy-reels/`](toy-reels/)
 | [168-pirate-booty](toy-reels/168-pirate-booty.mp4) | Pirates almost never buried their booty 🏴‍☠️ | Waiting to post |
 | [169-sheepdog-eyes](toy-reels/169-sheepdog-eyes.mp4) | She moves 300 sheep with just her eyes 🐕🐑 | Waiting to post |
 | [17-einstein-art-school](toy-reels/17-einstein-art-school.mp4) | Einstein Went Back In Time To Get Hitler Into Art School 🎨 | Posted (Instagram + YouTube) |
+| [170-trees-hooking-up](toy-reels/170-trees-hooking-up.mp4) | Trees are secretly hooking up underground 🌳 | Waiting to post |
 | [171-uranus-on-its-side](toy-reels/171-uranus-on-its-side.mp4) | Something hit Uranus so hard, it's still on its side 🪐 | Waiting to post |
 | [172-counting-sheep](toy-reels/172-counting-sheep.mp4) | Counting sheep doesn't work. Try this instead 🐑😴 | Waiting to post |
 | [173-husky-all-night](toy-reels/173-husky-all-night.mp4) | This dog can go all night and never get tired 🐺❄️ | Waiting to post |
-| [174-dog-humping](toy-reels/174-dog-humping.mp4) | Your dog isn't being dirty when he humps 🐕 | Waiting to post |
+| [174-dog-humping](toy-reels/174-dog-humping.mp4) | Your dog isn't being dirty when he humps 🐕 | Posted (Instagram + YouTube) |
 | [175-alpha-male-lie](toy-reels/175-alpha-male-lie.mp4) | The 'alpha male' is a lie. The man who made it famous said so 🐺 | Waiting to post |
 | [176-lemon-battery](toy-reels/176-lemon-battery.mp4) | Light an LED with lemons 🍋💡 | Waiting to post |
 | [177-egg-yolk-bottle](toy-reels/177-egg-yolk-bottle.mp4) | Your bottle can do this 🥚 | Waiting to post |
@@ -326,8 +327,12 @@ Folder: [`toy-reels/`](toy-reels/)
 | [200-bend-over-chair](toy-reels/200-bend-over-chair.mp4) | Alone? Bend over the back of a chair 🪑 | Waiting to post |
 | [201-dirtier-than-toilet](toy-reels/201-dirtier-than-toilet.mp4) | What you touch in bed is dirtier than a toilet seat 🤢 | Waiting to post |
 | [202-held-it-in](toy-reels/202-held-it-in.mp4) | He held it in so hard, something tore 😳 | Waiting to post |
+| [203-lost-make-yourself-big](toy-reels/203-lost-make-yourself-big.mp4) | Lost in the woods? Stay put and make yourself big 🌲 | Waiting to post |
 | [204-round-holes](toy-reels/204-round-holes.mp4) | Square holes kept ripping open… so now they're round ✈️ | Waiting to post |
 | [205-wrinkled-when-wet](toy-reels/205-wrinkled-when-wet.mp4) | Stay wet too long and things start to wrinkle 🛁 | Waiting to post |
+| [206-sold-eiffel](toy-reels/206-sold-eiffel.mp4) | He screwed one buyer so well he came back for another 🗼 | Waiting to post |
+| [207-lemon-face](toy-reels/207-lemon-face.mp4) | He rubbed juice all over his face and thought he was invisible 🍋 | Waiting to post |
+| [208-hit-it-big](toy-reels/208-hit-it-big.mp4) | He hit it big one night… and it ruined his life 💸 | Waiting to post |
 | [209-played-dead](toy-reels/209-played-dead.mp4) | He played dead… and 3,000 people came 😳 | Waiting to post |
 | [21-zeus-wifi-down](toy-reels/21-zeus-wifi-down.mp4) | Zeus Unplugged Heaven's Wi-Fi 😇⚡ | Posted (Instagram + YouTube) |
 | [210-two-large-ones](toy-reels/210-two-large-ones.mp4) | He blew 10,000 on two large ones 🍕 | Waiting to post |
