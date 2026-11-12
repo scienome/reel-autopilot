@@ -206,5 +206,83 @@ window.STORY = (build, opt = {}) => DIY((k) => {
   k.flashWord = (ctx, word, u) => { if (u <= 0 || u >= 1) return; ctx.save(); ctx.fillStyle = 'rgba(0,0,0,0.85)'; ctx.fillRect(0, 0, 720, 1280); ctx.font = FONT(900, 120); ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillStyle = '#ff2a2a'; ctx.fillText(word, 360 + (Math.random() - 0.5) * 12, 640); ctx.restore(); };
   k.fileTag = (ctx, num) => { ctx.save(); ctx.font = '700 26px "Courier New", monospace'; ctx.fillStyle = 'rgba(0,0,0,0.65)'; ctx.fillRect(24, 34, 330, 42); ctx.fillStyle = '#ff3a3a'; ctx.fillText('● ELITE FILE #' + String(num).padStart(3, '0'), 36, 64); ctx.restore(); };
   k.rec = (ctx, t, label = 'REC') => { ctx.save(); ctx.font = '700 26px "Courier New", monospace'; if (Math.sin(t * 5) > 0) { ctx.fillStyle = '#ff2020'; ctx.beginPath(); ctx.arc(52, 92, 11, 0, 7); ctx.fill(); } ctx.fillStyle = '#fff'; ctx.fillText(label, 72, 101); const s = Math.floor(t * 10) % 600; ctx.fillText(`03:${String(Math.floor(s / 10) % 60).padStart(2, '0')}:${String(s % 10)}0 AM`, 470, 101); ctx.restore(); };
+
+  // ---------- 'THE ROOM' set (Elite Files meta reels): k.roomSet() builds three scenes once and returns helpers:
+  //   S.city  hand-scale model city on a billionaire's table (1 unit ~ 12 cm; the rigged hand is 1.6 long). S.you = tiny you with a glowing phone, S.cars, S.crowd (army), S.lamp
+  //   S.room  the algorithm room: 9 hooded figures at a desk facing a wall of screens (S.wall; screen 0 shows THIS video via k.grabFrame), S.figs, S.stampL (red light)
+  //   S.home  you at night on your phone in a dark bedroom (S.me, S.glow)
+  //   S.hand(u, from, to, pose, yaw, pitch) moves the right hand between two points (u 0..1); S.cityTick(t) animates cars + crowd; S.roomTick(t)
+  // Overlays: k.grabFrame(ctx) at the end of over() (feeds screen 0 + k.phoneShot); k.phoneShot(ctx, u, o) a phone held up showing this video;
+  //   k.tip(ctx, u, title, steps, o) a clean 'SAVE THIS' value card (y 250-780, above the film caption); k.promise(ctx, text) small top banner.
+  k.FRAME = (() => { const c = document.createElement('canvas'); c.width = 180; c.height = 320; return c; })();
+  k.grabFrame = (ctx) => { try { k.FRAME.getContext('2d').drawImage(ctx.canvas, 0, 0, 180, 320); } catch (e) {} };
+  k.feedThumb = (c, w, h, i, t) => { if (i === 0) { c.fillStyle = '#000'; c.fillRect(0, 0, w, h); const fw = h * 9 / 16; c.drawImage(k.FRAME, (w - fw) / 2, 0, fw, h); c.strokeStyle = '#ff2a2a'; c.lineWidth = 4; c.strokeRect(2, 2, w - 4, h - 4); return; }
+    const hue = (i * 47) % 360; c.fillStyle = `hsl(${hue},35%,22%)`; c.fillRect(0, 0, w, h); c.fillStyle = `hsl(${hue},45%,45%)`; c.beginPath(); c.arc(w / 2, h * 0.42, h * 0.2, 0, 7); c.fill(); c.fillRect(w / 2 - h * 0.18, h * 0.6, h * 0.36, h * 0.4);
+    c.fillStyle = '#fff'; c.font = 'bold 13px sans-serif'; c.fillText('♥ ' + ((i * 7919) % 900 + 1) + (i % 3 ? 'K' : ''), 6, h - 8); c.fillStyle = i % 4 === 1 ? '#ff3a3a' : '#7aff9a'; c.fillRect(w - 16, 6, 10, 10); };
+  k.roomSet = (o = {}) => { const S = {}; const tb = new T.Group(); S.city = tb;
+    const wood = M('#ffffff', 0.55, 0, { map: (() => { const t = k.tex(256, 256, (c, w, h) => { c.fillStyle = '#3a2214'; c.fillRect(0, 0, w, h); for (let i = 0; i < 70; i++) { c.fillStyle = i % 2 ? 'rgba(20,10,4,0.35)' : 'rgba(90,50,24,0.25)'; c.fillRect(0, (i * 37) % h, w, 1 + (i % 3)); } }); t.wrapS = t.wrapT = T.RepeatWrapping; t.repeat.set(4, 4); return t; })() });
+    const top = new T.Mesh(new T.BoxGeometry(30, 0.6, 22), wood); top.position.y = -0.3; top.receiveShadow = true; tb.add(top); const base = new T.Mesh(new T.PlaneGeometry(26, 18), M('#040506', 1)); base.rotation.x = -PI / 2; base.position.y = 0.01; base.receiveShadow = true; tb.add(base);
+    const winT = k.tex(64, 128, (c, w, h) => { c.fillStyle = '#1a1e26'; c.fillRect(0, 0, w, h); for (let y = 6; y < h; y += 12) for (let x = 6; x < w; x += 14) { c.fillStyle = ((x * 7 + y * 3) % 5 === 0) ? '#ffd27a' : '#2a303a'; c.fillRect(x, y, 8, 7); } }); winT.wrapS = winT.wrapT = T.RepeatWrapping;
+    const bm = new T.MeshStandardMaterial({ map: winT, emissive: '#ffffff', emissiveMap: winT, emissiveIntensity: 0.55, roughness: 0.6 }); const box = new T.BoxGeometry(1, 1, 1); box.translate(0, 0.5, 0); const N = 120; const city = new T.InstancedMesh(box, bm, N); city.castShadow = city.receiveShadow = true;
+    const mx = new T.Matrix4(); let c = 0, sd = 3; const rnd = () => ((sd = (sd * 16807) % 2147483647) / 2147483647);
+    for (let gx = -5; gx <= 5; gx++) for (let gz = -4; gz <= 4; gz++) { if (gx === 0 || gz === 0 || c >= N || (Math.abs(gx) < 2 && Math.abs(gz) < 2) || (gx >= 0 && gx <= 2 && gz >= 1)) continue; const h = 0.6 + rnd() * (4 - Math.hypot(gx, gz) * 0.3); mx.compose(new T.Vector3(gx * 2.1, 0, gz * 1.9), new T.Quaternion(), new T.Vector3(1.4, Math.max(0.5, h), 1.3)); city.setMatrixAt(c++, mx); }
+    city.count = c; tb.add(city); S.blocks = city;
+    const road = M('#020203', 1); [[0, 0, 26, 1.2], [0, 0, 1.2, 18]].forEach(([x, z, w, d]) => { const r = new T.Mesh(new T.PlaneGeometry(w, d), road); r.rotation.x = -PI / 2; r.position.set(x, 0.02, z); tb.add(r); });
+    const plaza = new T.Mesh(new T.CircleGeometry(1.6, 32), M('#0c0d10', 1)); plaza.rotation.x = -PI / 2; plaza.position.set(2.1, 0.025, 1.9); tb.add(plaza);
+    S.crowd = k.army(70, { col: '#1a2030', head: '#6a5040', h: 0.32 }); tb.add(S.crowd); for (let i = 0; i < 70; i++) S.crowd.put(i, -12 + (i * 0.37) % 24, (i % 2 ? 0.35 : -0.35) + (i % 7 === 0 ? 0 : 0), i, 0); S.crowd.flush();
+    S.cars = []; for (let i = 0; i < 10; i++) { const cr = new T.Group(); const b = new T.Mesh(new T.BoxGeometry(0.22, 0.14, 0.45), M(['#c8101e', '#e8e8e8', '#1a4a8a', '#c8a21e'][i % 4], 0.4, 0.4)); b.position.y = 0.08; cr.add(b); const l = new T.Mesh(new T.PlaneGeometry(0.18, 0.04), new T.MeshBasicMaterial({ color: '#fff6c0' })); l.position.set(0, 0.09, 0.23); cr.add(l); cr.userData.i = i; tb.add(cr); S.cars.push(cr); }
+    S.you = k.LIB.human({ body: 'elite:man_hoodie', h: 0.45, colors: o.youColors }); S.you.position.set(2.1, 0.03, 2.4); S.you.rotation.y = 0.4; tb.add(S.you); const ph = new T.Mesh(new T.PlaneGeometry(0.05, 0.08), new T.MeshBasicMaterial({ color: '#bfe4ff' })); ph.position.set(0, 0.3, 0.07); ph.rotation.x = -0.6; S.you.add(ph); const pl = new T.PointLight('#9ad0ff', 0.6, 1.2); pl.position.set(0, 0.32, 0.12); S.you.add(pl);
+    S.lamp = new T.SpotLight('#ffe6b0', 7, 40, 0.4, 0.7, 1.5); S.lamp.position.set(2, 18, 6); S.lamp.target.position.set(1, 0, 1); S.lamp.castShadow = true; tb.add(S.lamp); tb.add(S.lamp.target);
+    k.place(tb);
+    S.cityTick = (t) => { S.cars.forEach((cr) => { const i = cr.userData.i, u = ((t * 0.08 + i * 0.13) % 1); if (i % 2) { cr.position.set(-12 + u * 24, 0, i % 4 === 1 ? 0.3 : -0.3); cr.rotation.y = PI / 2; } else { cr.position.set(i % 4 === 0 ? 0.3 : -0.3, 0, -8.5 + u * 17); cr.rotation.y = 0; } }); };
+    const fwd = new T.Vector3(); S.hand = (u, from, to, pose = 'pinch', yaw = PI, pitch = 0.9) => { const e = u < 0 ? 0 : u > 1 ? 1 : u * u * (3 - 2 * u); k.grab(k.RH, [from[0] + (to[0] - from[0]) * e, from[1] + (to[1] - from[1]) * e, from[2] + (to[2] - from[2]) * e], yaw, pitch, pose); return k.RH; };
+    // the algorithm room (human scale)
+    const rm = k.LIB.place.room({ w: 9, d: 8, h: 4, wall: '#0e1016', floor: 'tiles', window: false }); S.room = rm; k.place(rm);
+    S.wall = k.monitors(6, 4, { w: 1.15, draw: k.feedThumb, glow: '#8ab0ff' }); S.wall.position.set(0, 0.3, -3.6); rm.add(S.wall);
+    const desk = new T.Mesh(new T.BoxGeometry(7.4, 0.8, 0.8), M('#14161c', 0.4, 0.3)); desk.position.set(0, 0.4, -0.6); rm.add(desk);
+    S.figs = []; for (let i = 0; i < 9; i++) { const f = k.hood({ col: i === 4 ? '#3a0a10' : '#14141a', mask: i === 4 ? 'gold' : null }); f.position.set(-3.2 + i * 0.8, 0, 0.1); f.rotation.y = PI; rm.add(f); S.figs.push(f); }
+    S.stampL = new T.PointLight('#ff2020', 0, 10); S.stampL.position.set(0, 3, 1); rm.add(S.stampL);
+    S.roomTick = (t) => { S.wall.tick(t); S.figs.forEach((f, i) => f.bob(t, i)); };
+    // home: you on your phone at night
+    const hm = k.LIB.place.room({ w: 4, d: 4, h: 2.8, wall: '#1a1e2a', floor: 'wood', window: true }); S.home = hm; k.place(hm);
+    const bed = new T.Mesh(new T.BoxGeometry(1.6, 0.45, 2.1), M('#2a3048', 0.9)); bed.position.set(0.7, 0.22, -0.6); hm.add(bed); const pil = new T.Mesh(new T.BoxGeometry(1.2, 0.15, 0.4), M('#c8ccd8', 0.9)); pil.position.set(0.7, 0.52, -1.45); hm.add(pil);
+    S.me = k.add(k.LIB.human({ body: 'elite:man_hoodie', colors: o.youColors }), [-0.5, 0, 0.3], 0.3, hm); const ph2 = new T.Mesh(new T.BoxGeometry(0.08, 0.15, 0.01), new T.MeshBasicMaterial({ color: '#cfe8ff' })); ph2.position.set(0, 1.2, 0.3); ph2.rotation.x = -0.5; S.me.add(ph2);
+    S.glow = new T.PointLight('#8ac4ff', 1.4, 3); S.glow.position.set(0, 1.35, 0.5); S.me.add(S.glow);
+    return S; };
+  k.phoneShot = (ctx, u, o = {}) => { if (u <= 0) return; ctx.save(); const e = Math.min(1, u * 2.5); const W = 300, H = 600; ctx.translate(o.x || 360, (o.y || 560) + (1 - e) * 700); ctx.rotate(o.rot == null ? -0.06 : o.rot);
+    ctx.fillStyle = '#0a0a0c'; ctx.shadowColor = 'rgba(0,0,0,0.7)'; ctx.shadowBlur = 40; ctx.beginPath(); ctx.roundRect(-W / 2 - 14, -H / 2 - 14, W + 28, H + 28, 40); ctx.fill(); ctx.shadowBlur = 0; ctx.drawImage(k.FRAME, -W / 2, -H / 2, W, H);
+    if (o.label) { ctx.fillStyle = 'rgba(0,0,0,0.6)'; ctx.fillRect(-W / 2, H / 2 - 70, W, 70); ctx.fillStyle = '#fff'; ctx.font = FONT(900, 26); ctx.textAlign = 'center'; ctx.fillText(o.label, 0, H / 2 - 26); } ctx.restore(); };
+  k.tip = (ctx, u, title, steps = [], o = {}) => { if (u <= 0) return; ctx.save(); const e = Math.min(1, u * 3); ctx.globalAlpha = e; ctx.translate(0, (1 - e) * 40); const y0 = o.y || 250, H = 120 + steps.length * 92;
+    ctx.fillStyle = 'rgba(250,250,252,0.97)'; ctx.shadowColor = 'rgba(0,0,0,0.6)'; ctx.shadowBlur = 30; ctx.beginPath(); ctx.roundRect(50, y0, 620, H, 28); ctx.fill(); ctx.shadowBlur = 0;
+    ctx.fillStyle = '#c8101e'; ctx.beginPath(); ctx.roundRect(70, y0 - 24, 220, 48, 24); ctx.fill(); ctx.fillStyle = '#fff'; ctx.font = FONT(900, 24); ctx.textAlign = 'center'; ctx.fillText(o.badge || '💾 SAVE THIS', 180, y0 + 9);
+    ctx.textAlign = 'left'; ctx.fillStyle = '#111'; ctx.font = FONT(900, 36); ctx.fillText(title, 80, y0 + 74);
+    steps.forEach((s, i) => { const y = y0 + 132 + i * 92; const show = Math.min(1, Math.max(0, u * (steps.length + 1) - i - 0.3) * 3); ctx.globalAlpha = e * show; ctx.fillStyle = '#c8101e'; ctx.beginPath(); ctx.arc(102, y - 10, 22, 0, 7); ctx.fill(); ctx.fillStyle = '#fff'; ctx.font = FONT(900, 26); ctx.textAlign = 'center'; ctx.fillText(String(i + 1), 102, y - 1); ctx.textAlign = 'left'; ctx.fillStyle = '#222'; ctx.font = FONT(800, 27);
+      const words = s.split(' '); let line = '', ly = y - 2; words.forEach((w) => { if (ctx.measureText(line + w).width > 500) { ctx.fillText(line, 140, ly); line = ''; ly += 32; } line += w + ' '; }); ctx.fillText(line, 140, ly); }); ctx.restore(); };
+  k.promise = (ctx, text = '🔒 THE WAY OUT IS AT THE END') => { ctx.save(); ctx.font = FONT(900, 26); const w = ctx.measureText(text).width + 40; ctx.fillStyle = 'rgba(200,16,30,0.92)'; ctx.beginPath(); ctx.roundRect(360 - w / 2, 96, w, 46, 23); ctx.fill(); ctx.fillStyle = '#fff'; ctx.textAlign = 'center'; ctx.fillText(text, 360, 128); ctx.restore(); };
+
+  // k.roomScene(S, name, t, kk, o) shows one of the set's scenes and returns its camera: 'wall' (this video on the screen wall), 'room' (behind the hoods),
+  //   'leader' (gold mask, front), 'cityWide', 'cityYou' (tiny you on the model city), 'cityHand' (giant hand lifts you; o.drop to put you back), 'home' (you in bed on your phone), 'tip' (home, dimmed).
+  // k.hookText(ctx, text, o) the scroll-stopper: huge 2-3 line hook at the top of frame one (words in *stars* go red).
+  k.FEEDME = 8;
+  const _fT = k.feedThumb; k.feedThumb = (c, w, h, i, t) => _fT(c, w, h, i === k.FEEDME ? 0 : (i === 0 ? 31 : i), t);
+  k.roomScene = (S, name, t, kk, o = {}) => { const you = S.you; if (!you.userData.home) you.userData.home = [you.position.x, you.position.y, you.position.z];
+    const H = you.userData.home; you.position.set(H[0], H[1], H[2]); you.rotation.set(0, 0.4, 0);
+    if (name === 'wall' || name === 'room' || name === 'leader') { k.only(S.room); S.roomTick(t); S.stampL.intensity = o.red ? 3 * k.flicker(t) : 0;
+      if (name === 'wall') return k.cam([0.2, 1.75, -0.2 - kk * 0.6], [0, 1.25, -3.6], 40, { blur: 2 });
+      if (name === 'room') return k.cam([2.4 - kk * 0.8, 2.3, 3.6], [0, 1.5, -3.4], 44, { blur: 2 });
+      return k.cam([0.35, 1.55, -1.7 + kk * 0.2], [0, 1.45, 0.1], 40, { blur: 3 }); }
+    if (name.startsWith('city')) { k.only(S.city); S.cityTick(t); you.pose && you.pose(o.move || 'idle', t);
+      if (name === 'cityWide') return k.cam([9 - kk * 3, 13 - kk * 2, 15 - kk * 3], [0.5, 0, 0.5], 40, { blur: 2 });
+      if (name === 'cityYou') return k.cam([2.3 - kk * 0.2, 0.5, 3.7 - kk * 0.4], [2.1, 0.3, 2.4], 44, { blur: 4, tight: true });
+      const top = [H[0], H[1] + 0.42, H[2]]; const up = o.drop ? 1 - kk : kk; const lift = Math.max(0, (up - 0.35) / 0.65);
+      const hp = up < 0.35 ? S.hand(up / 0.35, [top[0], 4, top[2] - 1.5], top, 'pinch', 0, 0.9) : S.hand(lift, top, [H[0] + 0.3, 3.0, H[2] - 0.8], 'pinch', 0, 0.9);
+      if (up >= 0.35) { { const e = lift * lift * (3 - 2 * lift); you.position.set(H[0] + 0.3 * e, H[1] + 2.58 * e, H[2] - 0.8 * e); } you.rotation.z = Math.sin(t * 3) * 0.15 * lift; }
+      return k.cam([2.4, 1.4, 4.6], [2.2, 1.2, 2.3], 44, { blur: 2 }); }
+    k.only(S.home); S.me.pose('idle', t); S.glow.intensity = 1.4 * (0.9 + 0.1 * Math.sin(t * 7));
+    if (name === 'tip') return k.cam([0.6, 1.6, 2.6], [-0.3, 1.2, 0], 50, { blur: 6 });
+    return k.cam([0.9 - kk * 0.2, 1.55, 1.9 - kk * 0.3], [-0.45, 1.4, 0.3], 40, { blur: 3 }); };
+  k.hookText = (ctx, text, o = {}) => { ctx.save(); const lines = text.split('\n'); const sz = o.size || 64; ctx.font = FONT(900, sz); ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.lineJoin = 'round';
+    lines.forEach((ln, i) => { const y = (o.y || 250) + i * sz * 1.15; const parts = ln.split('*'); let total = 0; parts.forEach((p) => { total += ctx.measureText(p).width; }); let x = 360 - total / 2;
+      parts.forEach((p, j) => { const w = ctx.measureText(p).width; ctx.textAlign = 'left'; ctx.lineWidth = 14; ctx.strokeStyle = '#000'; ctx.strokeText(p, x, y); ctx.fillStyle = j % 2 ? '#ff3030' : '#ffffff'; ctx.fillText(p, x, y); x += w; }); }); ctx.restore(); };
   const R = build(k); return Object.assign({ table: false }, R);
 }, opt);

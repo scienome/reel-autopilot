@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Ever notice videos at two AM feel different? That's the night shift.",
+   "say": "Ever notice videos at two AM feel different? That's the night shift."
+  },
+  {
+   "shot": "swap",
+   "cap": "At midnight, the room changes. Different hoods. Different rules. Weirder videos.",
+   "say": "At midnight, the room changes. Different hoods. Different rules. Weirder videos."
+  },
+  {
+   "shot": "why",
+   "cap": "The night shift knows you're tired. Your guard is down. So they show you things the day shift never would.",
+   "say": "The night shift knows you're tired. Your guard is down. So they show you things the day shift never would."
+  },
+  {
+   "shot": "you",
+   "cap": "Like this. If you're watching this at night, they picked you.",
+   "say": "Like this. If you're watching this at night, they picked you."
+  },
+  {
+   "shot": "promise",
+   "cap": "At the end, how to send the night shift home.",
+   "say": "At the end, how to send the night shift home."
+  },
+  {
+   "shot": "twist",
+   "cap": "The night shift is mostly one guy. He eats cereal. He picks videos by whatever the cereal spells.",
+   "say": "The night shift is mostly one guy. He eats cereal. He picks videos by whatever the cereal spells."
+  },
+  {
+   "shot": "tip",
+   "cap": "Real tip. Turn on Quiet mode on Instagram for night hours. It pauses notifications and tells people you're away. YouTube has a bedtime reminder too.",
+   "say": "Real tip. Turn on Quiet mode on Instagram for night hours. It pauses notifications and tells people you're away. YouTube has a bedtime reminder too."
+  },
+  {
+   "shot": "outro",
+   "cap": "Comment what time it is for you. Because videos at two AM",
+   "say": "Comment what time it is for you. Because videos at two AM"
+  }
+ ]
+}

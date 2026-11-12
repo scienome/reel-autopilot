@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "That song stuck in your head right now? They put it there. On purpose.",
+   "say": "That song stuck in your head right now? They put it there. On purpose."
+  },
+  {
+   "shot": "room",
+   "cap": "The room picks one sound a week. Plays it in a thousand videos. Short. Catchy. Again.",
+   "say": "The room picks one sound a week. Plays it in a thousand videos. Short. Catchy. Again."
+  },
+  {
+   "shot": "why",
+   "cap": "By Friday, the whole world is humming it. And humming people keep scrolling to hear it again.",
+   "say": "By Friday, the whole world is humming it. And humming people keep scrolling to hear it again."
+  },
+  {
+   "shot": "you",
+   "cap": "You're humming it right now, aren't you?",
+   "say": "You're humming it right now, aren't you?"
+  },
+  {
+   "shot": "promise",
+   "cap": "At the end, a real way to get it out.",
+   "say": "At the end, a real way to get it out."
+  },
+  {
+   "shot": "twist",
+   "cap": "This week's song was chosen by the leader's toddler. It's the same three notes. The world is suffering.",
+   "say": "This week's song was chosen by the leader's toddler. It's the same three notes. The world is suffering."
+  },
+  {
+   "shot": "tip",
+   "cap": "Real tip from science. Chew gum. A University of Reading study found chewing gum cuts how often a stuck song comes back. It blocks your inner voice.",
+   "say": "Real tip from science. Chew gum. A University of Reading study found chewing gum cuts how often a stuck song comes back. It blocks your inner voice."
+  },
+  {
+   "shot": "outro",
+   "cap": "Comment the song stuck in your head. Because that song",
+   "say": "Comment the song stuck in your head. Because that song"
+  }
+ ]
+}

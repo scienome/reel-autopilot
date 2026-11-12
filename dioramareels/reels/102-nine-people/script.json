@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "The algorithm isn't a computer. It's nine people in a room. And one of them just watched you watch this.",
+   "say": "The algorithm isn't a computer. It's nine people in a room. And one of them just watched you watch this."
+  },
+  {
+   "shot": "seat",
+   "cap": "Seat four. She handles you. Every pause. Every rewatch. Every time you almost liked something.",
+   "say": "Seat four. She handles you. Every pause. Every rewatch. Every time you almost liked something."
+  },
+  {
+   "shot": "proof",
+   "cap": "Ever stop on a video for one second and get fifty more like it? That was her. Taking notes.",
+   "say": "Ever stop on a video for one second and get fifty more like it? That was her. Taking notes."
+  },
+  {
+   "shot": "you",
+   "cap": "She knows you watch sad songs at night. She knows you skip ads at second five.",
+   "say": "She knows you watch sad songs at night. She knows you skip ads at second five."
+  },
+  {
+   "shot": "promise",
+   "cap": "There's a way to make her forget you. It's at the end.",
+   "say": "There's a way to make her forget you. It's at the end."
+  },
+  {
+   "shot": "twist",
+   "cap": "She's been on shift since twenty sixteen. She's seen everything. She's just tired.",
+   "say": "She's been on shift since twenty sixteen. She's seen everything. She's just tired."
+  },
+  {
+   "shot": "tip",
+   "cap": "Real tip. Search reset suggested content in your Instagram settings. It wipes your recommendations and starts fresh. On YouTube, clear your watch history.",
+   "say": "Real tip. Search reset suggested content in your Instagram settings. It wipes your recommendations and starts fresh. On YouTube, clear your watch history."
+  },
+  {
+   "shot": "outro",
+   "cap": "Comment if you felt watched. Because the algorithm isn't a computer",
+   "say": "Comment if you felt watched. Because the algorithm isn't a computer"
+  }
+ ]
+}

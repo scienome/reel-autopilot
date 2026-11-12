@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Your screen time isn't a report. It's a score. And the room is watching it.",
+   "say": "Your screen time isn't a report. It's a score. And the room is watching it."
+  },
+  {
+   "shot": "board",
+   "cap": "A leaderboard. Billions of names. The higher your hours, the more they like you.",
+   "say": "A leaderboard. Billions of names. The higher your hours, the more they like you."
+  },
+  {
+   "shot": "why",
+   "cap": "Every hour you give is an hour they sell. To shops. To brands. To people you'll never meet.",
+   "say": "Every hour you give is an hour they sell. To shops. To brands. To people you'll never meet."
+  },
+  {
+   "shot": "you",
+   "cap": "Your number just went up. You're watching this.",
+   "say": "Your number just went up. You're watching this."
+  },
+  {
+   "shot": "promise",
+   "cap": "At the end, one trick that makes your phone boring on purpose.",
+   "say": "At the end, one trick that makes your phone boring on purpose."
+  },
+  {
+   "shot": "twist",
+   "cap": "Number one on the board? A man who fell asleep on a live stream in twenty nineteen. Still going.",
+   "say": "Number one on the board? A man who fell asleep on a live stream in twenty nineteen. Still going."
+  },
+  {
+   "shot": "tip",
+   "cap": "Real trick. Turn on grayscale mode. Studies found people use their phones less when the colours are gone. Find it in accessibility, colour filters.",
+   "say": "Real trick. Turn on grayscale mode. Studies found people use their phones less when the colours are gone. Find it in accessibility, colour filters."
+  },
+  {
+   "shot": "outro",
+   "cap": "Comment your screen time. Be honest. Because your screen time",
+   "say": "Comment your screen time. Be honest. Because your screen time"
+  }
+ ]
+}

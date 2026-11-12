@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Every like you give is a vote in the room. And you've been voting for the wrong people.",
+   "say": "Every like you give is a vote in the room. And you've been voting for the wrong people."
+  },
+  {
+   "shot": "room",
+   "cap": "Each like drops a tiny gold coin on the wall. The more coins, the bigger the screen.",
+   "say": "Each like drops a tiny gold coin on the wall. The more coins, the bigger the screen."
+  },
+  {
+   "shot": "why",
+   "cap": "You liked a stranger's lunch. You skipped your best friend's post. The room took notes.",
+   "say": "You liked a stranger's lunch. You skipped your best friend's post. The room took notes."
+  },
+  {
+   "shot": "you",
+   "cap": "Your friend's screen got smaller. A stranger's sandwich got famous.",
+   "say": "Your friend's screen got smaller. A stranger's sandwich got famous."
+  },
+  {
+   "shot": "promise",
+   "cap": "At the end, how to make sure you never miss your people again.",
+   "say": "At the end, how to make sure you never miss your people again."
+  },
+  {
+   "shot": "twist",
+   "cap": "The sandwich now has a manager.",
+   "say": "The sandwich now has a manager."
+  },
+  {
+   "shot": "tip",
+   "cap": "Real tip. Add your people to Favorites on Instagram. Their posts show up higher, and there's a Favorites feed with only them.",
+   "say": "Real tip. Add your people to Favorites on Instagram. Their posts show up higher, and there's a Favorites feed with only them."
+  },
+  {
+   "shot": "outro",
+   "cap": "Comment who deserves your vote. Because every like you give",
+   "say": "Comment who deserves your vote. Because every like you give"
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "They know you're about to close the app. That's exactly when this video shows up.",
+   "say": "They know you're about to close the app. That's exactly when this video shows up."
+  },
+  {
+   "shot": "room",
+   "cap": "On the wall, your thumb hovers. A red light flashes. Leaving. Leaving.",
+   "say": "On the wall, your thumb hovers. A red light flashes. Leaving. Leaving."
+  },
+  {
+   "shot": "why",
+   "cap": "So they send the strongest thing they have. Something you can't skip. Like this.",
+   "say": "So they send the strongest thing they have. Something you can't skip. Like this."
+  },
+  {
+   "shot": "you",
+   "cap": "See? You were going to sleep. Now you're here.",
+   "say": "See? You were going to sleep. Now you're here."
+  },
+  {
+   "shot": "promise",
+   "cap": "At the end, how to leave when you want to.",
+   "say": "At the end, how to leave when you want to."
+  },
+  {
+   "shot": "twist",
+   "cap": "The room tried sending puppies. Then a cooking video. Then this. This works best.",
+   "say": "The room tried sending puppies. Then a cooking video. Then this. This works best."
+  },
+  {
+   "shot": "tip",
+   "cap": "Real tip. Turn off notifications from apps and keep only ones from real people. Most people check their phone because of a ping, not because they want to.",
+   "say": "Real tip. Turn off notifications from apps and keep only ones from real people. Most people check their phone because of a ping, not because they want to."
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag who always says one more video. Because they know you're about to close the app",
+   "say": "Tag who always says one more video. Because they know you're about to close the app"
+  }
+ ]
+}

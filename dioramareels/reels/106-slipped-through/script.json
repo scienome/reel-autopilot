@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "You weren't supposed to see this. It slipped through. Watch before it's deleted.",
+   "say": "You weren't supposed to see this. It slipped through. Watch before it's deleted."
+  },
+  {
+   "shot": "room",
+   "cap": "Every night at three, the room deletes one video. It's always this one. It always comes back.",
+   "say": "Every night at three, the room deletes one video. It's always this one. It always comes back."
+  },
+  {
+   "shot": "why",
+   "cap": "Because it shows the room. And the room doesn't like being seen.",
+   "say": "Because it shows the room. And the room doesn't like being seen."
+  },
+  {
+   "shot": "glitch",
+   "cap": "If the screen glitches, they found it. Keep watching.",
+   "say": "If the screen glitches, they found it. Keep watching."
+  },
+  {
+   "shot": "promise",
+   "cap": "The part they delete first is the end. So stay.",
+   "say": "The part they delete first is the end. So stay."
+  },
+  {
+   "shot": "twist",
+   "cap": "The intern meant to delete it. He hit boost instead. So here we are. Hi.",
+   "say": "The intern meant to delete it. He hit boost instead. So here we are. Hi."
+  },
+  {
+   "shot": "tip",
+   "cap": "Real tip. Download your information. Accounts Center, your information and permissions. See everything they keep on you. It's your right.",
+   "say": "Real tip. Download your information. Accounts Center, your information and permissions. See everything they keep on you. It's your right."
+  },
+  {
+   "shot": "outro",
+   "cap": "Watch before it's gone. You weren't supposed to see this",
+   "say": "Watch before it's gone. You weren't supposed to see this"
+  }
+ ]
+}

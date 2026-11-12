@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Someone in a mansion just got a notification. It says you're watching this.",
+   "say": "Someone in a mansion just got a notification. It says you're watching this."
+  },
+  {
+   "shot": "map",
+   "cap": "A model of your city. Tiny streets. Tiny cars. And a tiny you, holding your phone.",
+   "say": "A model of your city. Tiny streets. Tiny cars. And a tiny you, holding your phone."
+  },
+  {
+   "shot": "hand",
+   "cap": "He leans over. Picks you up. Turns you around. Checks your battery.",
+   "say": "He leans over. Picks you up. Turns you around. Checks your battery."
+  },
+  {
+   "shot": "why",
+   "cap": "He does this every night. One person. Random. Tonight it's you.",
+   "say": "He does this every night. One person. Random. Tonight it's you."
+  },
+  {
+   "shot": "promise",
+   "cap": "Stay. At the end I'll show you how to check who's really logged into you.",
+   "say": "Stay. At the end I'll show you how to check who's really logged into you."
+  },
+  {
+   "shot": "twist",
+   "cap": "He puts you back. Slightly to the left. That's why your Wi-Fi is bad now.",
+   "say": "He puts you back. Slightly to the left. That's why your Wi-Fi is bad now."
+  },
+  {
+   "shot": "tip",
+   "cap": "Real tip. Open Accounts Center, password and security, where you're logged in. If you see a device you don't know, log it out. Then turn on two factor.",
+   "say": "Real tip. Open Accounts Center, password and security, where you're logged in. If you see a device you don't know, log it out. Then turn on two factor."
+  },
+  {
+   "shot": "outro",
+   "cap": "Comment seen if you're still here. Because someone in a mansion",
+   "say": "Comment seen if you're still here. Because someone in a mansion"
+  }
+ ]
+}

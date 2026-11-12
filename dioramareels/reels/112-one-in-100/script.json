@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Only one in a hundred people watch this to the end. Then something happens.",
+   "say": "Only one in a hundred people watch this to the end. Then something happens."
+  },
+  {
+   "shot": "count",
+   "cap": "Ninety nine people already left. You're still here. The room noticed.",
+   "say": "Ninety nine people already left. You're still here. The room noticed."
+  },
+  {
+   "shot": "why",
+   "cap": "The room only respects one thing. Attention. You have it. Most people sold theirs years ago.",
+   "say": "The room only respects one thing. Attention. You have it. Most people sold theirs years ago."
+  },
+  {
+   "shot": "hand",
+   "cap": "On the model city, a giant hand picks you up. Moves you to a better street.",
+   "say": "On the model city, a giant hand picks you up. Moves you to a better street."
+  },
+  {
+   "shot": "promise",
+   "cap": "Almost there. The thing happens at the end.",
+   "say": "Almost there. The thing happens at the end."
+  },
+  {
+   "shot": "twist",
+   "cap": "The thing is the video ends. Sorry. But you did win something.",
+   "say": "The thing is the video ends. Sorry. But you did win something."
+  },
+  {
+   "shot": "tip",
+   "cap": "Real prize. Set a daily limit. Your activity, time spent, set daily limit. You'll get a reminder before the room takes your whole night.",
+   "say": "Real prize. Set a daily limit. Your activity, time spent, set daily limit. You'll get a reminder before the room takes your whole night."
+  },
+  {
+   "shot": "outro",
+   "cap": "Comment end if you made it. Because only one in a hundred people",
+   "say": "Comment end if you made it. Because only one in a hundred people"
+  }
+ ]
+}

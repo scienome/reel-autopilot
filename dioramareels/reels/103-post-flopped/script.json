@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Why did your best post flop? The room voted no. Here's who voted.",
+   "say": "Why did your best post flop? The room voted no. Here's who voted."
+  },
+  {
+   "shot": "room",
+   "cap": "Your post went up. The wall lit up. Nine hoods leaned in.",
+   "say": "Your post went up. The wall lit up. Nine hoods leaned in."
+  },
+  {
+   "shot": "vote",
+   "cap": "Three said yes. Five said no. One was asleep.",
+   "say": "Three said yes. Five said no. One was asleep."
+  },
+  {
+   "shot": "why",
+   "cap": "Too much text. A watermark from another app. They hate that. Instantly buried.",
+   "say": "Too much text. A watermark from another app. They hate that. Instantly buried."
+  },
+  {
+   "shot": "promise",
+   "cap": "Stay. At the end I'll show you how to check if they've buried you.",
+   "say": "Stay. At the end I'll show you how to check if they've buried you."
+  },
+  {
+   "shot": "twist",
+   "cap": "The one asleep? Tie breaker. He woke up, sneezed, and hit no.",
+   "say": "The one asleep? Tie breaker. He woke up, sneezed, and hit no."
+  },
+  {
+   "shot": "tip",
+   "cap": "Real tip. Instagram has a page called Account status. It tells you if your posts can be recommended to people who don't follow you. Check it today.",
+   "say": "Real tip. Instagram has a page called Account status. It tells you if your posts can be recommended to people who don't follow you. Check it today."
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the friend whose posts deserve more. Because your best post",
+   "say": "Tag the friend whose posts deserve more. Because your best post"
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "The room has a list of words that kill your reach. You've probably used three today.",
+   "say": "The room has a list of words that kill your reach. You've probably used three today."
+  },
+  {
+   "shot": "list",
+   "cap": "It's long. It's secret. It changes every Tuesday. Nobody's ever seen the whole thing.",
+   "say": "It's long. It's secret. It changes every Tuesday. Nobody's ever seen the whole thing."
+  },
+  {
+   "shot": "why",
+   "cap": "Say the wrong word and your post doesn't vanish. It just goes quiet. Like nobody's home.",
+   "say": "Say the wrong word and your post doesn't vanish. It just goes quiet. Like nobody's home."
+  },
+  {
+   "shot": "you",
+   "cap": "Creators whisper about it. Like a curse.",
+   "say": "Creators whisper about it. Like a curse."
+  },
+  {
+   "shot": "promise",
+   "cap": "At the end, what actually gets you buried. For real.",
+   "say": "At the end, what actually gets you buried. For real."
+  },
+  {
+   "shot": "twist",
+   "cap": "Word number one on the list? Algorithm. Oops. This video is now invisible. Hi to the four of you.",
+   "say": "Word number one on the list? Algorithm. Oops. This video is now invisible. Hi to the four of you."
+  },
+  {
+   "shot": "tip",
+   "cap": "What's real. Instagram says it pushes original content and holds back reposts, especially ones with other apps' watermarks. Post your own stuff, made for the app.",
+   "say": "What's real. Instagram says it pushes original content and holds back reposts, especially ones with other apps' watermarks. Post your own stuff, made for the app."
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag a creator who needs this. Because the room has a list",
+   "say": "Tag a creator who needs this. Because the room has a list"
+  }
+ ]
+}

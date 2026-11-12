@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "This video knows when you'll stop watching it. It's been counting since the start.",
+   "say": "This video knows when you'll stop watching it. It's been counting since the start."
+  },
+  {
+   "shot": "room",
+   "cap": "The room has a graph for every video. The exact second everyone leaves. For this one, it's coming up.",
+   "say": "The room has a graph for every video. The exact second everyone leaves. For this one, it's coming up."
+  },
+  {
+   "shot": "why",
+   "cap": "Most people leave at nine seconds. You're past it. You broke the graph.",
+   "say": "Most people leave at nine seconds. You're past it. You broke the graph."
+  },
+  {
+   "shot": "you",
+   "cap": "Now the room is watching the video watch you.",
+   "say": "Now the room is watching the video watch you."
+  },
+  {
+   "shot": "promise",
+   "cap": "Stay. At the end, the room's one weakness.",
+   "say": "Stay. At the end, the room's one weakness."
+  },
+  {
+   "shot": "twist",
+   "cap": "The weakness is you putting the phone down. That's it. That's the whole weakness. They hate it.",
+   "say": "The weakness is you putting the phone down. That's it. That's the whole weakness. They hate it."
+  },
+  {
+   "shot": "tip",
+   "cap": "Real tip. YouTube can remind you to take a break. Settings, general, remind me to take a break. Set it to thirty minutes. Then actually take it.",
+   "say": "Real tip. YouTube can remind you to take a break. Settings, general, remind me to take a break. Set it to thirty minutes. Then actually take it."
+  },
+  {
+   "shot": "outro",
+   "cap": "Comment the second you almost left. Because this video knows",
+   "say": "Comment the second you almost left. Because this video knows"
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Your feed knows your mood before you do. Watch the first three videos you saw today.",
+   "say": "Your feed knows your mood before you do. Watch the first three videos you saw today."
+  },
+  {
+   "shot": "room",
+   "cap": "Sad songs. Breakups. Rain. That wasn't random. The room saw you slow down on one. Then fed you more.",
+   "say": "Sad songs. Breakups. Rain. That wasn't random. The room saw you slow down on one. Then fed you more."
+  },
+  {
+   "shot": "why",
+   "cap": "The room doesn't care if you're happy. It cares if you stay.",
+   "say": "The room doesn't care if you're happy. It cares if you stay."
+  },
+  {
+   "shot": "you",
+   "cap": "Sad people scroll longer. So sad feeds win.",
+   "say": "Sad people scroll longer. So sad feeds win."
+  },
+  {
+   "shot": "promise",
+   "cap": "At the end, a way to see only the people you chose.",
+   "say": "At the end, a way to see only the people you chose."
+  },
+  {
+   "shot": "twist",
+   "cap": "The room made itself sad once to test it. Now it only watches puppy videos and cries.",
+   "say": "The room made itself sad once to test it. Now it only watches puppy videos and cries."
+  },
+  {
+   "shot": "tip",
+   "cap": "Real tip. Use the Following feed. Tap the Instagram logo at the top, choose Following. Only people you follow, newest first. No room.",
+   "say": "Real tip. Use the Following feed. Tap the Instagram logo at the top, choose Following. Only people you follow, newest first. No room."
+  },
+  {
+   "shot": "outro",
+   "cap": "Comment your mood in one emoji. Because your feed knows your mood",
+   "say": "Comment your mood in one emoji. Because your feed knows your mood"
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "If this video reached you, you're on the list. Not everyone gets this one.",
+   "say": "If this video reached you, you're on the list. Not everyone gets this one."
+  },
+  {
+   "shot": "list",
+   "cap": "The room keeps a list. People who stop. People who think. People who don't just scroll.",
+   "say": "The room keeps a list. People who stop. People who think. People who don't just scroll."
+  },
+  {
+   "shot": "why",
+   "cap": "Most people scrolled past by now. You didn't. That's how they know.",
+   "say": "Most people scrolled past by now. You didn't. That's how they know."
+  },
+  {
+   "shot": "you",
+   "cap": "Your name just moved up. Three places.",
+   "say": "Your name just moved up. Three places."
+  },
+  {
+   "shot": "promise",
+   "cap": "At the end, what the list is for.",
+   "say": "At the end, what the list is for."
+  },
+  {
+   "shot": "twist",
+   "cap": "The list is for a newsletter. It's weekly. You can't unsubscribe.",
+   "say": "The list is for a newsletter. It's weekly. You can't unsubscribe."
+  },
+  {
+   "shot": "tip",
+   "cap": "Real tip. Turn on Hidden Words. It filters mean comments and creepy messages before you ever see them. Settings, Hidden Words.",
+   "say": "Real tip. Turn on Hidden Words. It filters mean comments and creepy messages before you ever see them. Settings, Hidden Words."
+  },
+  {
+   "shot": "outro",
+   "cap": "Comment if you're on it. Because if this video reached you",
+   "say": "Comment if you're on it. Because if this video reached you"
+  }
+ ]
+}

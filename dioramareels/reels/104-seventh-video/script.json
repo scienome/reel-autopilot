@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Every seventh video on your feed is paid for by them. Count. This one is number seven.",
+   "say": "Every seventh video on your feed is paid for by them. Count. This one is number seven."
+  },
+  {
+   "shot": "count",
+   "cap": "One. Two. Three. You didn't notice. Four. Five. Six. They're placed. Not random.",
+   "say": "One. Two. Three. You didn't notice. Four. Five. Six. They're placed. Not random."
+  },
+  {
+   "shot": "why",
+   "cap": "The seventh is where you're tired. Thumb slowing. Brain open. That's when they slide something in.",
+   "say": "The seventh is where you're tired. Thumb slowing. Brain open. That's when they slide something in."
+  },
+  {
+   "shot": "you",
+   "cap": "A shoe. A song. An idea. You'll think it was yours.",
+   "say": "A shoe. A song. An idea. You'll think it was yours."
+  },
+  {
+   "shot": "promise",
+   "cap": "At the end, how to see exactly why they picked you.",
+   "say": "At the end, how to see exactly why they picked you."
+  },
+  {
+   "shot": "twist",
+   "cap": "Today's seventh slot was bought by a billionaire. He's selling his own autobiography. Nobody bought it.",
+   "say": "Today's seventh slot was bought by a billionaire. He's selling his own autobiography. Nobody bought it."
+  },
+  {
+   "shot": "tip",
+   "cap": "Real tip. On any ad, tap the three dots, then why am I seeing this ad. It shows exactly what they know about you. You can change it.",
+   "say": "Real tip. On any ad, tap the three dots, then why am I seeing this ad. It shows exactly what they know about you. You can change it."
+  },
+  {
+   "shot": "outro",
+   "cap": "Count your feed and comment what number seven was. Because every seventh video",
+   "say": "Count your feed and comment what number seven was. Because every seventh video"
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "This video gets removed every twenty four hours. And every night, someone uploads it again.",
+   "say": "This video gets removed every twenty four hours. And every night, someone uploads it again."
+  },
+  {
+   "shot": "who",
+   "cap": "Nobody knows who. Different account every time. Same video. Same words. Same ending.",
+   "say": "Nobody knows who. Different account every time. Same video. Same words. Same ending."
+  },
+  {
+   "shot": "room",
+   "cap": "The room has tried everything. Bans. Shadow bans. A very strongly worded email.",
+   "say": "The room has tried everything. Bans. Shadow bans. A very strongly worded email."
+  },
+  {
+   "shot": "why",
+   "cap": "Some say it's a former member. Seat ten. The one who quit.",
+   "say": "Some say it's a former member. Seat ten. The one who quit."
+  },
+  {
+   "shot": "promise",
+   "cap": "Seat ten left something at the end. For you.",
+   "say": "Seat ten left something at the end. For you."
+  },
+  {
+   "shot": "twist",
+   "cap": "It's his mum. She just really likes the video.",
+   "say": "It's his mum. She just really likes the video."
+  },
+  {
+   "shot": "tip",
+   "cap": "Real tip from seat ten. Check your activity off Meta technologies. It shows which apps and websites send what you do to Instagram. You can disconnect them.",
+   "say": "Real tip from seat ten. Check your activity off Meta technologies. It shows which apps and websites send what you do to Instagram. You can disconnect them."
+  },
+  {
+   "shot": "outro",
+   "cap": "Comment the time you saw this. Because this video gets removed",
+   "say": "Comment the time you saw this. Because this video gets removed"
+  }
+ ]
+}

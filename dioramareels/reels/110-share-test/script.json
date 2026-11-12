@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Your feed is a test. Right now they're checking if you'll share this. Most people don't. That's how they know.",
+   "say": "Your feed is a test. Right now they're checking if you'll share this. Most people don't. That's how they know."
+  },
+  {
+   "shot": "room",
+   "cap": "On the wall, a list of names. Each one gets this video. Each one gets one chance.",
+   "say": "On the wall, a list of names. Each one gets this video. Each one gets one chance."
+  },
+  {
+   "shot": "why",
+   "cap": "People who share get more. More reach. More friends. More luck. People who don't get sent the same ad for socks. Forever.",
+   "say": "People who share get more. More reach. More friends. More luck. People who don't get sent the same ad for socks. Forever."
+  },
+  {
+   "shot": "you",
+   "cap": "You already thought of someone. The first face that came to mind. That's the one.",
+   "say": "You already thought of someone. The first face that came to mind. That's the one."
+  },
+  {
+   "shot": "promise",
+   "cap": "Stay to the end and I'll show you how to train the feed yourself.",
+   "say": "Stay to the end and I'll show you how to train the feed yourself."
+  },
+  {
+   "shot": "twist",
+   "cap": "Last month someone shared it with their ex. The room had to take a day off.",
+   "say": "Last month someone shared it with their ex. The room had to take a day off."
+  },
+  {
+   "shot": "tip",
+   "cap": "Real tip. Tap not interested on posts you hate. Do it ten times. Your feed changes faster than you think. The feed learns from what you tell it.",
+   "say": "Real tip. Tap not interested on posts you hate. Do it ten times. Your feed changes faster than you think. The feed learns from what you tell it."
+  },
+  {
+   "shot": "outro",
+   "cap": "Send this to the first person you thought of. Because your feed is a test",
+   "say": "Send this to the first person you thought of. Because your feed is a test"
+  }
+ ]
+}

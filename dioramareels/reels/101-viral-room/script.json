@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "There's a room that decides who goes viral. This video got approved. Yours didn't.",
+   "say": "There's a room that decides who goes viral. This video got approved. Yours didn't."
+  },
+  {
+   "shot": "room",
+   "cap": "Nine people. Hoods. A wall of screens. Every video posted on Earth passes in front of them.",
+   "say": "Nine people. Hoods. A wall of screens. Every video posted on Earth passes in front of them."
+  },
+  {
+   "shot": "vote",
+   "cap": "They don't watch. They feel. Thumb up, it goes to millions. Thumb down, it goes to your aunt.",
+   "say": "They don't watch. They feel. Thumb up, it goes to millions. Thumb down, it goes to your aunt."
+  },
+  {
+   "shot": "you",
+   "cap": "Right now, on that wall, there's a tiny screen. It's you. Watching this.",
+   "say": "Right now, on that wall, there's a tiny screen. It's you. Watching this."
+  },
+  {
+   "shot": "promise",
+   "cap": "Stay till the end. I'll show you how to get past them.",
+   "say": "Stay till the end. I'll show you how to get past them."
+  },
+  {
+   "shot": "twist",
+   "cap": "The leader stamps one video a day. Today he stamped a cat falling off a fridge. Again.",
+   "say": "The leader stamps one video a day. Today he stamped a cat falling off a fridge. Again."
+  },
+  {
+   "shot": "tip",
+   "cap": "Here's the real way past the room. Instagram's own boss said it: shares are one of the strongest signals. Not likes. Sends.",
+   "say": "Here's the real way past the room. Instagram's own boss said it: shares are one of the strongest signals. Not likes. Sends."
+  },
+  {
+   "shot": "outro",
+   "cap": "So send this to someone. Let's see if the room notices. Because there's a room",
+   "say": "So send this to someone. Let's see if the room notices. Because there's a room"
+  }
+ ]
+}

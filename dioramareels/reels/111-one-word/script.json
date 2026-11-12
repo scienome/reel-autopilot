@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Comment one word. They read every single one. Most people are too scared.",
+   "say": "Comment one word. They read every single one. Most people are too scared."
+  },
+  {
+   "shot": "room",
+   "cap": "Every comment goes to the wall. Nine hoods. Reading. Sorting. Remembering.",
+   "say": "Every comment goes to the wall. Nine hoods. Reading. Sorting. Remembering."
+  },
+  {
+   "shot": "why",
+   "cap": "One word says everything about you. Brave. Tired. Pizza. They know exactly what to do with it.",
+   "say": "One word says everything about you. Brave. Tired. Pizza. They know exactly what to do with it."
+  },
+  {
+   "shot": "proof",
+   "cap": "Ever comment something and suddenly your feed changes? That was them. Answering.",
+   "say": "Ever comment something and suddenly your feed changes? That was them. Answering."
+  },
+  {
+   "shot": "promise",
+   "cap": "At the end, how to control who can talk to you.",
+   "say": "At the end, how to control who can talk to you."
+  },
+  {
+   "shot": "twist",
+   "cap": "Last week someone commented banana. The room has been arguing about it ever since.",
+   "say": "Last week someone commented banana. The room has been arguing about it ever since."
+  },
+  {
+   "shot": "tip",
+   "cap": "Real tip. You can limit interactions. Turn on Limits in settings and only followers you know can comment or message you for a while. Great for bad days.",
+   "say": "Real tip. You can limit interactions. Turn on Limits in settings and only followers you know can comment or message you for a while. Great for bad days."
+  },
+  {
+   "shot": "outro",
+   "cap": "Comment one word. If you dare. Because they read every single one",
+   "say": "Comment one word. If you dare. Because they read every single one"
+  }
+ ]
+}

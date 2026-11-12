@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "They're timing how long you watch this. Three more seconds and you're in.",
+   "say": "They're timing how long you watch this. Three more seconds and you're in."
+  },
+  {
+   "shot": "clock",
+   "cap": "Three. Two. One. Congratulations. You're in.",
+   "say": "Three. Two. One. Congratulations. You're in."
+  },
+  {
+   "shot": "what",
+   "cap": "In what? The room has a word for people like you. The stayers.",
+   "say": "In what? The room has a word for people like you. The stayers."
+  },
+  {
+   "shot": "why",
+   "cap": "Stayers see different videos. Longer ones. Stranger ones. Ones that scrollers never find.",
+   "say": "Stayers see different videos. Longer ones. Stranger ones. Ones that scrollers never find."
+  },
+  {
+   "shot": "promise",
+   "cap": "Stayers also get the secret. At the end.",
+   "say": "Stayers also get the secret. At the end."
+  },
+  {
+   "shot": "twist",
+   "cap": "The prize for stayers is one free extra second of life. It's already been used. On this sentence.",
+   "say": "The prize for stayers is one free extra second of life. It's already been used. On this sentence."
+  },
+  {
+   "shot": "tip",
+   "cap": "Real secret. If you post, your first three seconds decide everything. Start with the most interesting moment, not hello. Watch time is one of the biggest signals.",
+   "say": "Real secret. If you post, your first three seconds decide everything. Start with the most interesting moment, not hello. Watch time is one of the biggest signals."
+  },
+  {
+   "shot": "outro",
+   "cap": "Comment your watch time. Because they're timing how long you watch this",
+   "say": "Comment your watch time. Because they're timing how long you watch this"
+  }
+ ]
+}

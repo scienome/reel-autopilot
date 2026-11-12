@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Your phone wakes up at night when you're asleep. And it reports to the room.",
+   "say": "Your phone wakes up at night when you're asleep. And it reports to the room."
+  },
+  {
+   "shot": "night",
+   "cap": "Three AM. Screen off. But somewhere inside, apps are still running. Refreshing. Checking. Sending.",
+   "say": "Three AM. Screen off. But somewhere inside, apps are still running. Refreshing. Checking. Sending."
+  },
+  {
+   "shot": "room",
+   "cap": "On the wall, little lights blink. Each one is a phone. Each one is a person. Asleep. Reporting.",
+   "say": "On the wall, little lights blink. Each one is a phone. Each one is a person. Asleep. Reporting."
+  },
+  {
+   "shot": "why",
+   "cap": "What do they send? Where you are. What you did today. How long you slept.",
+   "say": "What do they send? Where you are. What you did today. How long you slept."
+  },
+  {
+   "shot": "promise",
+   "cap": "At the end, how to make your phone actually sleep.",
+   "say": "At the end, how to make your phone actually sleep."
+  },
+  {
+   "shot": "twist",
+   "cap": "One phone reported its owner talks in his sleep. He just says pizza. The room ordered some.",
+   "say": "One phone reported its owner talks in his sleep. He just says pizza. The room ordered some."
+  },
+  {
+   "shot": "tip",
+   "cap": "Real tip. Turn off background app refresh for apps that don't need it. On iPhone, settings, general, background app refresh. On Android, restrict background data.",
+   "say": "Real tip. Turn off background app refresh for apps that don't need it. On iPhone, settings, general, background app refresh. On Android, restrict background data."
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag who sleeps with their phone. Because your phone wakes up at night",
+   "say": "Tag who sleeps with their phone. Because your phone wakes up at night"
+  }
+ ]
+}
