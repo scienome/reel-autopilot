@@ -1,3 +1,4 @@
+// toy cast: Kenney Mini Characters (re-render 13 Nov 2026)
 // 191 cinestory3d (story3d.js): the Pantheon dome, 43 m unreinforced concrete (Britannica; Mark & Hutchinson 1986; Jackson 2017). Scroll stopper: a woman sitting on top of a giant dome, "ON TOP SINCE 125 AD". Gag: a steel-and-concrete tower next door cracks and falls.
 STORY((k) => {
   const { T, M, PI } = k; const pz = k.arena(); const P = new T.Group(); pz.add(P); const C = M('#cfc6b4', 0.9), C2 = M('#bdb3a0', 0.9);
