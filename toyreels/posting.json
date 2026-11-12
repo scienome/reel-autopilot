@@ -1,9 +1,11 @@
 {
- "note": "When the toy reels go live on Instagram and YouTube together (IST), 30 minutes before each international peak (owner, 5 Nov 2026): 01:00 = 7:30 PM London (UK prime time), 06:00 = 7:30 PM New York (US prime time), 20:30 = India prime time (9 PM IST; also 3 PM UK). GitHub starts scheduled runs up to ~2 hours late, so each slot has runs 4, 3 and 2 hours before it; the first one to start uploads and then waits for the exact minute. If you change these times, change the cron lines in .github/workflows/post-toyreels.yml too.",
+ "note": "When the toy reels go live on Instagram and YouTube together (IST), 30 minutes before each international peak (owner, 5 Nov 2026): 01:00 = 7:30 PM London (UK prime time), 06:00 = 7:30 PM New York (US prime time), 20:30 = India prime time (9 PM IST; also 3 PM UK). GitHub starts scheduled runs up to ~2 hours late, so each slot has runs 4, 3 and 2 hours before it; the first one to start uploads and then waits for the exact minute. If you change these times, change the cron lines in .github/workflows/post-toyreels.yml too. 13 Nov 2026 (owner: more than 3 a day, for India and other countries): 5 a day, adding 09:00 IST (7:30 PM US West) and 13:00 IST (India lunch; Gulf midday; Australia evening).",
  "timezone_offset": "+05:30",
  "times_ist": [
   "01:00",
   "06:00",
+  "09:00",
+  "13:00",
   "20:30"
  ],
  "paused_note": "Resumed 11 Nov 2026 for the two-week CineStory plan (owner: \"make them and post them\"); only reels in \"order\" post.",
