@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "You let one go about fifteen times a day. Everyone does.",
+   "say": "You let one go about fifteen times a day. Everyone does."
+  },
+  {
+   "shot": "office",
+   "cap": "Yes, even the quiet person at the next desk.",
+   "say": "Yes, even the quiet person at the next desk."
+  },
+  {
+   "shot": "air",
+   "cap": "Most of it is just air you swallow. Eating fast, chewing gum, fizzy drinks.",
+   "say": "Most of it is just air you swallow. Eating fast, chewing gum, fizzy drinks."
+  },
+  {
+   "shot": "inside",
+   "cap": "The rest comes from bacteria in your gut, feasting on food you couldn't digest.",
+   "say": "The rest comes from bacteria in your gut, feasting on food you couldn't digest."
+  },
+  {
+   "shot": "beans",
+   "cap": "Beans, onions and broccoli feed them the most. So they make more gas.",
+   "say": "Beans, onions and broccoli feed them the most. So they make more gas."
+  },
+  {
+   "shot": "smell",
+   "cap": "Less than one percent of it smells. A tiny bit of sulphur does all the damage.",
+   "say": "Less than one percent of it smells. A tiny bit of sulphur does all the damage."
+  },
+  {
+   "shot": "hold",
+   "cap": "Holding it in doesn't make it disappear. It just waits, and comes out later.",
+   "say": "Holding it in doesn't make it disappear. It just waits, and comes out later."
+  },
+  {
+   "shot": "outro",
+   "cap": "So don't be embarrassed. Your gut is just doing its job.",
+   "say": "So don't be embarrassed. Your gut is just doing its job."
+  }
+ ]
+}

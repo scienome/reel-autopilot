@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Does size really matter? In your brain, not much.",
+   "say": "Does size really matter? In your brain, not much."
+  },
+  {
+   "shot": "einstein",
+   "cap": "When Albert Einstein died in 1955, a pathologist kept his brain.",
+   "say": "When Albert Einstein died in 1955, a pathologist kept his brain."
+  },
+  {
+   "shot": "weigh",
+   "cap": "It weighed about twelve hundred and thirty grams. A little lighter than average for a man.",
+   "say": "It weighed about twelve hundred and thirty grams. A little lighter than average for a man."
+  },
+  {
+   "shot": "whales",
+   "cap": "A sperm whale's brain weighs about eight kilos. It's not doing calculus.",
+   "say": "A sperm whale's brain weighs about eight kilos. It's not doing calculus."
+  },
+  {
+   "shot": "inside",
+   "cap": "What matters is the wiring. How many connections, and how fast signals travel between brain areas.",
+   "say": "What matters is the wiring. How many connections, and how fast signals travel between brain areas."
+  },
+  {
+   "shot": "einstein2",
+   "cap": "Einstein's brain had unusual folds, and extra support cells, in the parts used for maths and space.",
+   "say": "Einstein's brain had unusual folds, and extra support cells, in the parts used for maths and space."
+  },
+  {
+   "shot": "grow",
+   "cap": "And yours can still grow new connections, every time you learn something.",
+   "say": "And yours can still grow new connections, every time you learn something."
+  },
+  {
+   "shot": "outro",
+   "cap": "So it's not the size. It's how you use it.",
+   "say": "So it's not the size. It's how you use it."
+  }
+ ]
+}

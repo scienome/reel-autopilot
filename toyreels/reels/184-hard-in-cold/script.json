@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "He got hard, after three days in the cold.",
+   "say": "He got hard, after three days in the cold."
+  },
+  {
+   "shot": "climb",
+   "cap": "His fingers. Frozen solid on a mountain at minus twenty five.",
+   "say": "His fingers. Frozen solid on a mountain at minus twenty five."
+  },
+  {
+   "shot": "first",
+   "cap": "First they go cold, red and painful. Then numb. That's the warning.",
+   "say": "First they go cold, red and painful. Then numb. That's the warning."
+  },
+  {
+   "shot": "inside",
+   "cap": "Below freezing, ice crystals form inside the skin. Blood stops reaching the tips.",
+   "say": "Below freezing, ice crystals form inside the skin. Blood stops reaching the tips."
+  },
+  {
+   "shot": "hard",
+   "cap": "The skin turns white or grey, and feels hard, like wax.",
+   "say": "The skin turns white or grey, and feels hard, like wax."
+  },
+  {
+   "shot": "dont",
+   "cap": "Don't rub it. Don't warm it by a fire. You can't feel the burn.",
+   "say": "Don't rub it. Don't warm it by a fire. You can't feel the burn."
+  },
+  {
+   "shot": "do",
+   "cap": "Get out of the cold, and warm it in water that's warm, not hot. Then get medical help.",
+   "say": "Get out of the cold, and warm it in water that's warm, not hot. Then get medical help."
+  },
+  {
+   "shot": "outro",
+   "cap": "So in the cold, keep your fingers moving, and your gloves on.",
+   "say": "So in the cold, keep your fingers moving, and your gloves on."
+  }
+ ]
+}
