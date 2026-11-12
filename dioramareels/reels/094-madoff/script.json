@@ -1,0 +1,49 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "The rich begged this man to take their money. He took sixty five billion dollars. And they said thank you.",
+   "say": "The rich begged this man to take their money. He took sixty five billion dollars. And they said thank you."
+  },
+  {
+   "shot": "who",
+   "cap": "Bernie Madoff. Former chairman of the Nasdaq stock market. A Wall Street legend.",
+   "say": "Bernie Madoff. Former chairman of the Nasdaq stock market. A Wall Street legend."
+  },
+  {
+   "shot": "secret",
+   "cap": "His fund paid about one percent a month. Every month. For decades. Even in crashes.",
+   "say": "His fund paid about one percent a month. Every month. For decades. Even in crashes."
+  },
+  {
+   "shot": "club",
+   "cap": "Getting in was hard. So everyone wanted in. Celebrities, banks, charities.",
+   "say": "Getting in was hard. So everyone wanted in. Celebrities, banks, charities."
+  },
+  {
+   "shot": "ponzi",
+   "cap": "The secret? He never invested the money. He just paid old clients with new clients' money. A Ponzi scheme.",
+   "say": "The secret? He never invested the money. He just paid old clients with new clients' money. A Ponzi scheme."
+  },
+  {
+   "shot": "warn",
+   "cap": "An analyst named Harry Markopolos warned regulators for nine years. They didn't listen.",
+   "say": "An analyst named Harry Markopolos warned regulators for nine years. They didn't listen."
+  },
+  {
+   "shot": "crash",
+   "cap": "In 2008, clients wanted their money back. It wasn't there. He confessed to his own sons. They turned him in.",
+   "say": "In 2008, clients wanted their money back. It wasn't there. He confessed to his own sons. They turned him in."
+  },
+  {
+   "shot": "end",
+   "cap": "He got a hundred and fifty years in prison. He died there in 2021.",
+   "say": "He got a hundred and fifty years in prison. He died there in 2021."
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the friend who falls for every investment. Because,",
+   "say": "Tag the friend who falls for every investment. Because,"
+  }
+ ]
+}
