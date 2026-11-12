@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "He blew ten thousand on two large ones.",
+   "say": "He blew ten thousand on two large ones."
+  },
+  {
+   "shot": "pizza",
+   "cap": "Bitcoins. On two large pizzas. May 22nd, 2010.",
+   "say": "Bitcoins. On two large pizzas. May 22nd, 2010."
+  },
+  {
+   "shot": "who",
+   "cap": "Laszlo Hanyecz, a programmer in Florida, posted online. I'll pay ten thousand bitcoins for two pizzas.",
+   "say": "Laszlo Hanyecz, a programmer in Florida, posted online. I'll pay ten thousand bitcoins for two pizzas."
+  },
+  {
+   "shot": "deal",
+   "cap": "A teenager in California took the deal, and ordered him two pizzas from Papa John's. At the time, those coins were worth about forty one dollars.",
+   "say": "A teenager in California took the deal, and ordered him two pizzas from Papa John's. At the time, those coins were worth about forty one dollars."
+  },
+  {
+   "shot": "first",
+   "cap": "It was one of the first times anyone bought something real with bitcoin.",
+   "say": "It was one of the first times anyone bought something real with bitcoin."
+  },
+  {
+   "shot": "now",
+   "cap": "At bitcoin's peak, those two pizzas were worth over a billion dollars.",
+   "say": "At bitcoin's peak, those two pizzas were worth over a billion dollars."
+  },
+  {
+   "shot": "regret",
+   "cap": "Laszlo says he doesn't regret it. Somebody had to show it could buy something.",
+   "say": "Laszlo says he doesn't regret it. Somebody had to show it could buy something."
+  },
+  {
+   "shot": "outro",
+   "cap": "Every May 22nd, crypto fans celebrate Bitcoin Pizza Day.",
+   "say": "Every May 22nd, crypto fans celebrate Bitcoin Pizza Day."
+  }
+ ]
+}

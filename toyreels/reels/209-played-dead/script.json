@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "He played dead, and three thousand people came.",
+   "say": "He played dead, and three thousand people came."
+  },
+  {
+   "shot": "who",
+   "cap": "Timothy Dexter. An eccentric rich man in Massachusetts, in the 1790s.",
+   "say": "Timothy Dexter. An eccentric rich man in Massachusetts, in the 1790s."
+  },
+  {
+   "shot": "why",
+   "cap": "He wanted to know how people would react when he died. So he faked his own death.",
+   "say": "He wanted to know how people would react when he died. So he faked his own death."
+  },
+  {
+   "shot": "funeral",
+   "cap": "He arranged a full funeral. Coffin, mourners, the lot. About three thousand people turned up.",
+   "say": "He arranged a full funeral. Coffin, mourners, the lot. About three thousand people turned up."
+  },
+  {
+   "shot": "watch",
+   "cap": "And he watched it all, from his own house.",
+   "say": "And he watched it all, from his own house."
+  },
+  {
+   "shot": "wife",
+   "cap": "But one thing upset him. His wife didn't cry enough. So afterwards, he beat her for it.",
+   "say": "But one thing upset him. His wife didn't cry enough. So afterwards, he beat her for it."
+  },
+  {
+   "shot": "reveal",
+   "cap": "Then he walked out, very much alive, to a room full of shocked mourners.",
+   "say": "Then he walked out, very much alive, to a room full of shocked mourners."
+  },
+  {
+   "shot": "outro",
+   "cap": "Some people just need to know who'd show up.",
+   "say": "Some people just need to know who'd show up."
+  }
+ ]
+}

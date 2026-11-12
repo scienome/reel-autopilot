@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "They went in from below, all weekend long. And a stranger heard every word.",
+   "say": "They went in from below, all weekend long. And a stranger heard every word."
+  },
+  {
+   "shot": "shop",
+   "cap": "London, 1971. A gang rented a shop two doors down from a Lloyds Bank, on Baker Street.",
+   "say": "London, 1971. A gang rented a shop two doors down from a Lloyds Bank, on Baker Street."
+  },
+  {
+   "shot": "tunnel",
+   "cap": "They dug a tunnel about forty feet long, under a restaurant, right up into the bank's vault.",
+   "say": "They dug a tunnel about forty feet long, under a restaurant, right up into the bank's vault."
+  },
+  {
+   "shot": "radio",
+   "cap": "A lookout on the roof talked to them on walkie-talkies. But a local radio fan, Robert Rowlands, picked up their chatter at home.",
+   "say": "A lookout on the roof talked to them on walkie-talkies. But a local radio fan, Robert Rowlands, picked up their chatter at home."
+  },
+  {
+   "shot": "police",
+   "cap": "He called the police and recorded everything. But they didn't say which bank. Police checked hundreds of banks.",
+   "say": "He called the police and recorded everything. But they didn't say which bank. Police checked hundreds of banks."
+  },
+  {
+   "shot": "vault",
+   "cap": "By Monday, the gang had emptied hundreds of safety deposit boxes.",
+   "say": "By Monday, the gang had emptied hundreds of safety deposit boxes."
+  },
+  {
+   "shot": "caught",
+   "cap": "Four men were eventually jailed. But most of the loot was never found.",
+   "say": "Four men were eventually jailed. But most of the loot was never found."
+  },
+  {
+   "shot": "outro",
+   "cap": "Never talk shop on an open channel.",
+   "say": "Never talk shop on an open channel."
+  }
+ ]
+}
