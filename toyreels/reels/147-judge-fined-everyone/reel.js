@@ -26,5 +26,5 @@ STORY((k) => {
       const sum = (kk * 47.5).toFixed(2); ov = (ctx) => { dusk(ctx); k.counter(ctx, 'IN THE HAT', '$' + sum, { y: 190 }); }; return k.cam([3.4, 1.9, 4.6], [0, 1.0, 2.6], 40); },
     outro: (t, kk) => { k.only(ct); bread.visible = hat.visible = false; judge.pose('sittalk', t); all('idle', t); old.pose('idle', t); ov = (ctx) => { dusk(ctx); k.vignette(ctx, 0.5); }; return k.cam([lerp(0.4, 1.2, kk), 2.0, 5.4], [0, 1.8, -3.3], 40); },
   };
-  return { shots, sky: '#3a2a20', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('click', at('hook', 0.3), { gain: 0.5 }); kit.play('click', at('law', 1.0), { gain: 0.5 }); kit.play('ding', at('hat', 1.5), { f: 'E6', gain: 0.3 }); } };
-}, { assets: ['humans/Superhero_Male', 'humans/Superhero_Female', 'humans/ual1'] });
+  return { shots, lens: 28, minDist: 2.6, sky: '#3a2a20', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('click', at('hook', 0.3), { gain: 0.5 }); kit.play('click', at('law', 1.0), { gain: 0.5 }); kit.play('ding', at('hat', 1.5), { f: 'E6', gain: 0.3 }); } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/Superhero_Male', 'humans/Superhero_Female', 'humans/ual1'] });

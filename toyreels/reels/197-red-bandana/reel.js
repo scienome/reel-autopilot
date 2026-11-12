@@ -19,5 +19,5 @@ STORY((k) => {
     found: (t, kk) => { base(); wel.visible = false; ban.visible = false; ov = (ctx) => { k.tint(ctx, '#101014', 0.55); k.card(ctx, 'FOUND BESIDE FIREFIGHTERS · 2002', { y: 200, bg: '#5a5a60', size: 32 }); k.big(ctx, '🫡', { y: 640, size: 140 }); }; return k.cam([0, 1.6, 3.6], [0, 1.0, 0], 44); },
     outro: (t, kk) => { base(); wel.visible = true; wel.position.set(0, 0, 0); wel.rotation.y = 0; wel.pose('idle', t); band(); ov = (ctx) => { k.vignette(ctx, 0.6); k.big(ctx, 'WELLES CROWTHER', { y: 240, size: 60, col: '#ffffff' }); }; return k.cam([0, 1.5, 2.2 + kk * 2], [0, 1.4, 0], 40); },
   };
-  return { shots, sky: '#9aa4ad', over: (ctx) => { if (ov) ov(ctx); ov = null; } };
-}, { assets: ['humans/Superhero_Male', 'humans/Woman_Jacket', 'humans/ual1'] });
+  return { shots, lens: 28, minDist: 2.6, sky: '#9aa4ad', over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/Superhero_Male', 'humans/Woman_Jacket', 'humans/ual1'] });

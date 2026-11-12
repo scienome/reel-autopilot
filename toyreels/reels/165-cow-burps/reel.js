@@ -19,5 +19,5 @@ STORY((k) => {
     fix: (t, kk) => { base(); sci.visible = true; sci.pose('pickup', t); cow.pose('eat', t); ov = (ctx) => k.card(ctx, '+ SEAWEED = FEWER BURPS', { y: 200, bg: '#2ecc71', size: 38 }); return k.cam([3.6, 1.6, 7], [1, 1, 3.5], 40, { sky: fm.sky }); },
     outro: (t, kk) => { base(); cow.pose('idle', t); burp(t); ov = (ctx) => k.big(ctx, 'WRONG END.', { y: 240, size: 84, col: '#ffd23f' }); return k.cam([1.6, 1.6, 6.6], [0.6, 1.2, 3], 40, { sky: fm.sky }); },
   };
-  return { shots, sky: fm.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('pop', at('hook', 0.3), { gain: 0.4 }); kit.play('pop', at('outro', 0.3), { gain: 0.4 }); } };
-}, { assets: ['animals/cow', 'humans/Superhero_Male', 'humans/ual1', 'props/hay', 'buildings/cottage', 'buildings/village_house', 'buildings/house_v2', 'buildings/well', 'buildings/fence', 'nature/tree_oak', 'nature/tree_maple'] });
+  return { shots, lens: 28, minDist: 2.6, sky: fm.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('pop', at('hook', 0.3), { gain: 0.4 }); kit.play('pop', at('outro', 0.3), { gain: 0.4 }); } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'animals/cow', 'humans/Superhero_Male', 'humans/ual1', 'props/hay', 'buildings/cottage', 'buildings/village_house', 'buildings/house_v2', 'buildings/well', 'buildings/fence', 'nature/tree_oak', 'nature/tree_maple'] });

@@ -27,5 +27,5 @@ STORY((k) => {
     end: (t, kk) => { reset(); k.only(st); dog.position.set(P[0], Y, 1); dog.rotation.y = PI / 2; dog.pose('headlow', t * 0.5); ov = (ctx) => { k.tint(ctx, '#0b1630', 0.45); snow(ctx, t, 0.5); k.vignette(ctx, 0.7); }; return k.cam([P[0] + 2.2, 1.5, 2.4], [P[0], 1.0, 1], 36, { focus: [0.3, 0.75], blur: 8 }); },
     outro: (t, kk) => { reset(); k.only(st); dog.visible = false; statue.visible = true; crowd(t); return k.cam([lerp(1.5, 0.5, kk), 1.7, 10.5], [-2.5, 1.4, 6], 40, { sky: '#b9d9ef' }); },
   };
-  return { shots, sky: '#9ab0c8', over: (ctx) => { if (ov) ov(ctx); }, score: (kit, at) => { kit.play('ding', at('famous', 2.5), { f: 'C6', gain: 0.25 }); } };
-}, { assets: ['animals/dog', 'humans/Superhero_Male', 'humans/Superhero_Female', 'humans/ual1'] });
+  return { shots, lens: 28, minDist: 2.6, sky: '#9ab0c8', over: (ctx) => { if (ov) ov(ctx); }, score: (kit, at) => { kit.play('ding', at('famous', 2.5), { f: 'C6', gain: 0.25 }); } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'animals/dog', 'humans/Superhero_Male', 'humans/Superhero_Female', 'humans/ual1'] });

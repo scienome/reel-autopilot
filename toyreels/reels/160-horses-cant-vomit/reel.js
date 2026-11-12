@@ -25,5 +25,5 @@ STORY((k) => {
       ov = (ctx) => { ['PAWING', 'ROLLING', 'LOOKING AT BELLY'].forEach((s, i) => k.card(ctx, s, { t: kk * 10, at: i * 1.4, y: 180 + i * 100, bg: '#7a3ad8', size: 40 })); }; return k.cam([2.6, 1.6, 5], [0, 1, 0.4], 40, { sky: fm.sky }); },
     outro: (t, kk) => { base(); stand(t); ov = (ctx) => xray(ctx, t, 'valve'); return k.cam([0.6, 1.4, 4.2], [0, 1.2, 0], 40, { sky: fm.sky }); },
   };
-  return { shots, sky: fm.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('click', at('hook', 0.5), { gain: 0.4 }); kit.play('click', at('inside', 0.8), { gain: 0.4 }); } };
-}, { assets: ['animals/horse', 'animals/horse_white', 'humans/Superhero_Female', 'humans/ual1', 'props/hay', 'buildings/cottage', 'buildings/village_house', 'buildings/house_v2', 'buildings/well', 'buildings/fence', 'nature/tree_oak', 'nature/tree_maple'] });
+  return { shots, lens: 28, minDist: 2.6, sky: fm.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('click', at('hook', 0.5), { gain: 0.4 }); kit.play('click', at('inside', 0.8), { gain: 0.4 }); } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'animals/horse', 'animals/horse_white', 'humans/Superhero_Female', 'humans/ual1', 'props/hay', 'buildings/cottage', 'buildings/village_house', 'buildings/house_v2', 'buildings/well', 'buildings/fence', 'nature/tree_oak', 'nature/tree_maple'] });

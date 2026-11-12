@@ -16,5 +16,5 @@ STORY((k) => {
     fix: (t, kk) => { base(); man.pose('sit', t); ov = (ctx) => { k.tint(ctx, '#0a1640', 0.2); germs(ctx, t, Math.max(0, Math.round(6 - kk * 8)), 360, 700, 160); k.card(ctx, '70% ALCOHOL WIPE 🧼', { y: 200, bg: '#2a9d4a', size: 42 }); k.tick(ctx, t, 0.6); }; return k.cam([0.05, 1.05, 1.1], [0, 0.95, 0.65], 38); },
     outro: (t, kk) => { base(); ph.visible = false; man.pose('sit', t); ov = (ctx) => { k.tint(ctx, '#0a1640', 0.25); k.big(ctx, 'WIPE IT. 📱', { y: 240, size: 64, col: '#ffd23f' }); }; return k.cam([0.9, 1.3, 2.4], [0, 0.9, 0.2], 44); },
   };
-  return { shots, sky: '#2c3a5a', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('riser', at('toilet', 0.4), { dur: 1.0, gain: 0.4 }); kit.play('impact', at('toilet', 2.0), { gain: 0.7 }); } };
-}, { assets: ['humans/Superhero_Male', 'humans/ual1', 'props/bed_single'] });
+  return { shots, lens: 28, minDist: 2.6, sky: '#2c3a5a', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('riser', at('toilet', 0.4), { dur: 1.0, gain: 0.4 }); kit.play('impact', at('toilet', 2.0), { gain: 0.7 }); } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/Superhero_Male', 'humans/ual1', 'props/bed_single'] });

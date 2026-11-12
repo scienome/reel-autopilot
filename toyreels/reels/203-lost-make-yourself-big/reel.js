@@ -14,5 +14,5 @@ STORY((k) => {
     found: (t, kk) => { base(); man.pose(kk > 0.6 ? 'jump' : 'sit', t); s1.visible = s2.visible = true; k.walk(s1, [-4, 0, -4], [-1.0, 0, -0.6], Math.min(1, kk * 1.5), 'walk', t); k.walk(s2, [-4.6, 0, -3.2], [-1.2, 0, 0.2], Math.min(1, kk * 1.5), 'walk', t); if (kk > 0.67) { s1.pose('talk', t); s2.pose('clap', t); } ov = (ctx) => k.card(ctx, 'FOUND FASTER 🧭', { y: 200, bg: '#2a9d4a', size: 44 }); return k.cam([1.6, 1.6, 3.6], [-0.6, 1.0, -0.4], 48); },
     outro: (t, kk) => { base(); man.pose('dance', t); ov = (ctx) => k.big(ctx, 'STOP · LOUD · BIG', { y: 240, size: 56, col: '#ffd23f' }); return k.cam([0.4, 1.5, 3.2], [0, 1.0, 0], 44); },
   };
-  return { shots, sky: '#a8c8a0', over: (ctx) => { if (ov) ov(ctx); ov = null; } };
-}, { assets: ['humans/Superhero_Male', 'humans/Woman_Jacket', 'humans/ual1', 'animals/wolf', 'nature/tree_oak', 'nature/tree_maple', 'nature/tree_birch', 'nature/rock_a', 'nature/rock_mossy'] });
+  return { shots, lens: 28, minDist: 2.6, sky: '#a8c8a0', over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/Superhero_Male', 'humans/Woman_Jacket', 'humans/ual1', 'animals/wolf', 'nature/tree_oak', 'nature/tree_maple', 'nature/tree_birch', 'nature/rock_a', 'nature/rock_mossy'] });

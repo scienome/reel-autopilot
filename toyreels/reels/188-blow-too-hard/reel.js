@@ -18,5 +18,5 @@ STORY((k) => {
     tip: (t, kk) => { base(); man.pose('idle', t); her.pose('talk', t); blow(0.7); ov = (ctx) => { k.card(ctx, 'BREAKS · BREATHE · USE A PUMP', { y: 200, bg: '#2a9d4a', size: 32 }); k.tick(ctx, t, 0.4); }; return k.cam([1.8, 1.5, 3.4], [0.3, 1.3, 0.4], 46); },
     outro: (t, kk) => { base(); man.pose('dance', t); her.pose('dance', t); ov = (ctx) => { k.big(ctx, 'LUNGS SAY THANKS. 🎈', { y: 240, size: 50, col: '#ffd23f' }); k.card(ctx, 'General information, not medical advice.', { y: 1240, bg: 'rgba(0,0,0,0.5)', size: 20 }); }; return k.cam([0.6, 1.5, 3.8], [0.5, 1.0, 0.3], 44); },
   };
-  return { shots, sky: '#f2d9e6', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('impact', at('dizzy', 1.4), { gain: 0.7 }); } };
-}, { assets: ['humans/Superhero_Male', 'humans/Woman_Casual', 'humans/ual1'] });
+  return { shots, lens: 28, minDist: 2.6, sky: '#f2d9e6', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('impact', at('dizzy', 1.4), { gain: 0.7 }); } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/Superhero_Male', 'humans/Woman_Casual', 'humans/ual1'] });

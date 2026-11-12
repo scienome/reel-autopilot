@@ -27,5 +27,5 @@ STORY((k) => {
     bigger: (t, kk) => { base(); stag.visible = true; stag.position.set(0, 0, 0); stag.rotation.y = 0.6; stag.scale.setScalar(lerp(0.85, 1.12, E(kk))); stag.pose('idle', t); ov = (ctx) => autumn(ctx); return k.cam([2.8, 1.6, 3.8], [0, 1.4, 0], 40, { sky: fr.sky }); },
     outro: (t, kk) => { base(); stag.visible = true; stag.scale.setScalar(1.12); stag.position.set(0, 0, 0); stag.rotation.y = 0.6; stag.pose('idle', t); ov = (ctx) => k.big(ctx, 'BIGGER. 🦌', { y: 230, size: 84, col: '#ffd23f' }); return k.cam([2.4, 1.7, 3.6], [0, 1.5, 0], 38, { sky: fr.sky }); },
   };
-  return { shots, sky: fr.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('click', at('hook', 2.4), { gain: 0.4 }); kit.play('click', at('rut', 0.5), { gain: 0.5 }); kit.play('click', at('rut', 1.3), { gain: 0.5 }); } };
+  return { shots, lens: 28, sky: fr.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('click', at('hook', 2.4), { gain: 0.4 }); kit.play('click', at('rut', 0.5), { gain: 0.5 }); kit.play('click', at('rut', 1.3), { gain: 0.5 }); } };
 }, { assets: ['animals/stag', 'animals/deer', 'nature/tree_oak', 'nature/tree_maple', 'nature/tree_birch', 'nature/rock_mossy', 'nature/rock_large_a'] });

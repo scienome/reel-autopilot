@@ -24,5 +24,5 @@ STORY((k) => {
     now: (t, kk) => { base(true); fly(t); ov = (ctx) => k.card(ctx, 'WINDOWS · DOORS · HATCHES', { y: 200, bg: '#2a9d4a', size: 36 }); return k.cam([1.5, 0.3, 2.2], [0.8, 0.1, 0.4], 44); },
     outro: (t, kk) => { base(true); fly(t); ov = (ctx) => k.big(ctx, 'ROUND = SAFE. ✈️', { y: 240, size: 60, col: '#ffd23f' }); return k.cam([6 * Math.cos(kk), 1.5, 6 * Math.sin(kk) + 2], [0, 0, 0], 46); },
   };
-  return { shots, sky: '#9fd0ff', over: (ctx) => { if (ov) ov(ctx); ov = null; } };
-}, { assets: ['humans/Superhero_Male', 'humans/ual1'] });
+  return { shots, lens: 28, minDist: 2.6, sky: '#9fd0ff', over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/Superhero_Male', 'humans/ual1'] });

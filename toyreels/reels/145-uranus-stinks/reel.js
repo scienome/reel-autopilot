@@ -24,5 +24,5 @@ STORY((k) => {
     cold: (t, kk) => { hide(); k.only(sp); ur.body.rotation.y = t * 0.3; ov = (ctx) => { k.big(ctx, '-200°C', { y: 230, size: 110, col: '#9fe8ff' }); k.card(ctx, 'NO OXYGEN', { t: kk * 10, at: 3, y: 360, bg: '#e8384f' }); }; return k.cam([4, 0.4, 11], [0, 0.8, 0], 38, { sky: sp.sky, focus: [0.05, 0.95], blur: 1 }); },
     outro: (t, kk) => { hide(); k.only(sp); ur.body.rotation.y = t * 0.3; stink(t); ov = (ctx) => k.big(ctx, 'OFFICIALLY.', { y: 240, size: 80, col: '#9be36a' }); return k.cam([lerp(0.8, 2, kk), 0.6, lerp(14.5, 17, kk)], [0, 0, 0], 38, { sky: sp.sky, focus: [0.05, 0.95], blur: 1 }); },
   };
-  return { shots, sky: sp.sky, over: (ctx) => { if (ov) ov(ctx); }, score: (kit, at) => { kit.play('ding', at('found', 0.4), { f: 'E6', gain: 0.3 }); kit.play('pop', at('outro', 0.3), { gain: 0.3 }); } };
+  return { shots, lens: 28, sky: sp.sky, over: (ctx) => { if (ov) ov(ctx); }, score: (kit, at) => { kit.play('ding', at('found', 0.4), { f: 'E6', gain: 0.3 }); kit.play('pop', at('outro', 0.3), { gain: 0.3 }); } };
 }, { assets: ['props/egg_q'] });

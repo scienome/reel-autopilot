@@ -24,5 +24,5 @@ STORY((k) => {
     count: (t, kk) => { base(); unscale(); smooth.visible = false; golfer.visible = false; dimp.position.set(0, 0.25, 0); dimp.rotation.y = t * 0.6; ov = (ctx) => k.counter(ctx, 'DIMPLES', String(Math.round(300 + kk * 200)), { y: 190 }); return k.cam([0.5, 0.4, 0.7], [0, 0.25, 0], 34, { sky: pk.sky, focus: [0.3, 0.75], blur: 9 }); },
     outro: (t, kk) => { base(); race(t, kk); ov = (ctx) => k.big(ctx, "IT'S THE DIMPLES.", { y: 240, size: 64, col: '#ffd23f' }); return k.cam([10, 3, 18], [20, 1, 0], 44, { sky: pk.sky }); },
   };
-  return { shots, sky: pk.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('click', at('hook', 0.1), { gain: 0.6 }); kit.play('click', at('outro', 0.1), { gain: 0.6 }); } };
-}, { assets: ['humans/Superhero_Male', 'humans/ual1', 'nature/tree_oak', 'nature/tree_maple', 'nature/tree_birch', 'nature/rock_mossy', 'props/bench'] });
+  return { shots, lens: 28, minDist: 2.6, sky: pk.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('click', at('hook', 0.1), { gain: 0.6 }); kit.play('click', at('outro', 0.1), { gain: 0.6 }); } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/Superhero_Male', 'humans/ual1', 'nature/tree_oak', 'nature/tree_maple', 'nature/tree_birch', 'nature/rock_mossy', 'props/bench'] });

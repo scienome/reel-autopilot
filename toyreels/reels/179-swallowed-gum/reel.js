@@ -18,5 +18,5 @@ STORY((k) => {
     lots: (t, kk) => { base(); kid.pose('idle', t); mum.pose('talk', t); ov = (ctx) => k.card(ctx, 'LOTS, OFTEN = RARE BLOCKAGE', { y: 200, bg: '#e8384f', size: 34 }); return k.cam([1.4, 1.4, 3.6], [0.4, 1.0, -0.2], 40); },
     outro: (t, kk) => { base(); kid.pose('dance', t); mum.pose('idle', t); ov = (ctx) => k.big(ctx, 'GONE BY THE WEEKEND.', { y: 240, size: 52, col: '#ffd23f' }); return k.cam([1.4, 1.4, 3.6], [0.2, 0.9, -0.2], 40); },
   };
-  return { shots, sky: '#cfe0ea', over: (ctx) => { if (ov) ov(ctx); ov = null; } };
-}, { assets: ['humans/Superhero_Male', 'humans/Superhero_Female', 'humans/ual1'] });
+  return { shots, lens: 28, minDist: 2.6, sky: '#cfe0ea', over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/Superhero_Male', 'humans/Superhero_Female', 'humans/ual1'] });

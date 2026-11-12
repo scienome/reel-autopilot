@@ -17,5 +17,5 @@ STORY((k) => {
     skip: (t, kk) => { base(); man.pose('sit', t); const H = 0.55, b = (kk - H) * 2.4; k.strike(mis, [0, 0.8, 0.35], kk / H); k.launch(man, Math.max(0, b * 0.7), [0, 0, 0.35]); ov = (ctx) => { k.tint(ctx, '#0a1640', 0.4); k.counter(ctx, 'STILL SCROLLING', '3:12 AM', { y: 170 }); k.boom(ctx, b, 360, 640, 'GO TO BED!'); }; return k.cam([1.6, 1.4, 3.6], [0, 1.2, 0], 50); },
     outro: (t, kk) => { base(); man.pose('sit', t); ov = (ctx) => { k.tint(ctx, '#0a1640', 0.55); k.big(ctx, 'GOODNIGHT. 💤', { y: 240, size: 60, col: '#ffd23f' }); k.card(ctx, 'General information, not medical advice.', { y: 1240, bg: 'rgba(0,0,0,0.5)', size: 20 }); }; return k.cam([1.2, 1.2, 2.6], [0, 0.8, -0.2], 44); },
   };
-  return { shots, sky: '#2c3a5a', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('riser', at('skip', 0.3), { dur: 1.2, gain: 0.4 }); kit.play('impact', at('skip', 1.7), { gain: 0.7 }); } };
-}, { assets: ['humans/Superhero_Male', 'humans/ual1', 'props/bed_single'] });
+  return { shots, lens: 28, minDist: 2.6, sky: '#2c3a5a', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('riser', at('skip', 0.3), { dur: 1.2, gain: 0.4 }); kit.play('impact', at('skip', 1.7), { gain: 0.7 }); } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/Superhero_Male', 'humans/ual1', 'props/bed_single'] });

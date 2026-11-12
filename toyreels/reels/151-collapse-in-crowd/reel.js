@@ -29,5 +29,5 @@ STORY((k) => {
       return k.cam([X - 2.6, 1.5, -1.6], [X - 0.3, 0.5, 0.1], 40, { sky: st.sky }); },
     outro: (t, kk, a) => { k.only(st); hero.visible = red.visible = blue.visible = false; crowd(t); vic.position.set(X, Y, 0); vic.rotation.y = PI / 2; vic.pose('idle', t); return k.cam([X - 4.5, 1.8, 6], [X, 0.8, 0], 38, { sky: st.sky }); },
   };
-  return { shots, sky: st.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('pop', at('hook', 0.9), { gain: 0.4 }); kit.play('ding', at('works', 0.5), { f: 'E6', gain: 0.3 }); } };
-}, { assets: ['humans/Superhero_Male', 'humans/Superhero_Female', 'humans/ual1'] });
+  return { shots, lens: 28, minDist: 2.6, sky: st.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('pop', at('hook', 0.9), { gain: 0.4 }); kit.play('ding', at('works', 0.5), { f: 'E6', gain: 0.3 }); } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/Superhero_Male', 'humans/Superhero_Female', 'humans/ual1'] });

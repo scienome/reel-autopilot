@@ -16,5 +16,5 @@ STORY((k) => {
     regret: (t, kk) => { base(); jack.pose('sit', t); ov = (ctx) => { k.tint(ctx, '#0a0a14', 0.4); ctx.save(); ctx.translate(360, 640); ctx.fillStyle = '#f4f1ea'; ctx.save(); ctx.translate(-8 - kk * 40, 0); ctx.rotate(-0.1 - kk * 0.2); ctx.fillRect(-160, -90, 160, 180); ctx.restore(); ctx.save(); ctx.translate(8 + kk * 40, 0); ctx.rotate(0.1 + kk * 0.2); ctx.fillRect(0, -90, 160, 180); ctx.restore(); ctx.restore(); k.card(ctx, '"I WISH I\'D TORN THAT TICKET UP."', { y: 200, bg: '#1a1a1a', size: 32 }); }; return k.close(jack, { d: 1.6, look: 0.7 }); },
     outro: (t, kk) => { base(); jack.pose('sit', t); ov = (ctx) => { k.vignette(ctx, 0.6); k.big(ctx, "MONEY ≠ HAPPY.", { y: 240, size: 64, col: '#ffd23f' }); }; return k.cam([0, 1.3 + kk, 2.4 + kk * 2], [0, 0.8, 0], 44); },
   };
-  return { shots, sky: '#bfe3ff', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('swish', at('targets', 1.6), { gain: 0.6 }); } };
-}, { assets: ['humans/Superhero_Male', 'humans/ual1', 'props/chest'] });
+  return { shots, lens: 28, minDist: 2.6, sky: '#bfe3ff', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('swish', at('targets', 1.6), { gain: 0.6 }); } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/Superhero_Male', 'humans/ual1', 'props/chest'] });

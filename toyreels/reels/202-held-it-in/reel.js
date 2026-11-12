@@ -15,5 +15,5 @@ STORY((k) => {
     safe: (t, kk) => { base(); man.pose('idle', t); ov = (ctx) => { k.card(ctx, 'TISSUE OR ELBOW 🤧', { y: 200, bg: '#2a9d4a', size: 44 }); k.tick(ctx, t, 0.4); }; return k.close(man, { d: 1.6 }); },
     outro: (t, kk) => { base(); man.pose('dance', t); ov = (ctx) => { k.big(ctx, 'LET IT OUT. 🤧', { y: 240, size: 60, col: '#ffd23f' }); k.card(ctx, 'General information, not medical advice.', { y: 1240, bg: 'rgba(0,0,0,0.5)', size: 20 }); }; return k.cam([0.4, 1.5, 3.4], [0, 1.0, 0], 44); },
   };
-  return { shots, sky: '#dfe4e8', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('impact', at('hook', 2.6), { gain: 0.5 }); kit.play('impact', at('force', 1.6), { gain: 0.7 }); kit.play('whoosh', at('force', 1.7), { dur: 0.8, gain: 0.5 }); } };
-}, { assets: ['humans/Superhero_Male', 'humans/Woman_Dress', 'humans/ual1'] });
+  return { shots, lens: 28, minDist: 2.6, sky: '#dfe4e8', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('impact', at('hook', 2.6), { gain: 0.5 }); kit.play('impact', at('force', 1.6), { gain: 0.7 }); kit.play('whoosh', at('force', 1.7), { dur: 0.8, gain: 0.5 }); } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/Superhero_Male', 'humans/Woman_Dress', 'humans/ual1'] });

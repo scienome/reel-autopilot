@@ -14,5 +14,5 @@ STORY((k) => {
     fix: (t, kk) => { base(); man.pose('sit', t); ov = (ctx) => { k.tint(ctx, '#0a1640', 0.55); for (let i = 0; i < 3; i++) { const u = (t * 0.4 + i / 3) % 1; ctx.globalAlpha = 1 - u; k.big(ctx, 'Z', { y: 560 - u * 300, size: 60 + i * 20, col: '#bfe3ff' }); ctx.globalAlpha = 1; } }; return k.cam([0.6, 1.4, 2.4], [-1.0, 0.8, -0.5], 44); },
     outro: (t, kk) => { base(); man.pose('dance', t); ov = (ctx) => { k.big(ctx, 'GO TO BED. 💤', { y: 240, size: 60, col: '#ffd23f' }); k.card(ctx, 'General information, not medical advice.', { y: 1240, bg: 'rgba(0,0,0,0.5)', size: 20 }); }; return k.cam([0.6, 1.5, 3.0], [-0.6, 1.0, -0.4], 46); },
   };
-  return { shots, sky: '#2c3a5a', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('thud', at('micro', 1.8), { gain: 0.7 }); } };
-}, { assets: ['humans/Superhero_Male', 'humans/ual1', 'props/bed_single', 'props/table_round', 'animals/fox'] });
+  return { shots, lens: 28, minDist: 2.6, sky: '#2c3a5a', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('thud', at('micro', 1.8), { gain: 0.7 }); } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/Superhero_Male', 'humans/ual1', 'props/bed_single', 'props/table_round', 'animals/fox'] });

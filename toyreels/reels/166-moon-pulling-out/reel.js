@@ -24,5 +24,5 @@ STORY((k) => {
       return k.cam([0, 0, 2.6], [0, 0, 0], 40, { sky: sp.sky, focus: [0.05, 0.95], blur: 1 }); },
     outro: (t, kk) => { base(); dist(lerp(3, 4.4, E(kk))); ov = (ctx) => ruler(ctx, kk * 3.8); return k.cam([1.6, 0.8, 13], [1.6, 0, 0], 40, { sky: sp.sky, focus: [0.05, 0.95], blur: 1 }); },
   };
-  return { shots, sky: sp.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('whoosh', at('hook', 0.3), { dur: 1.4, gain: 0.15 }); kit.play('ding', at('laser', 1.0), { f: 'E6', gain: 0.25 }); } };
+  return { shots, lens: 28, sky: sp.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('whoosh', at('hook', 0.3), { dur: 1.4, gain: 0.15 }); kit.play('ding', at('laser', 1.0), { f: 'E6', gain: 0.25 }); } };
 }, { assets: [] });

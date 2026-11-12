@@ -22,5 +22,5 @@ STORY((k) => {
     caught: (t, kk) => { k.only(st); cops.forEach((c, i) => { c.visible = true; c.position.set(-1 + i, 0, 1); c.rotation.y = 0; c.pose('idle', t); }); ov = (ctx) => { k.counter(ctx, 'JAILED', '4 MEN', { y: 170 }); k.card(ctx, 'MOST LOOT: NEVER FOUND', { y: 1185, bg: '#c8a21e', size: 38 }); }; return k.cam([0, 1.6, 5], [0, 1, 1], 46); },
     outro: (t, kk) => { k.only(hm); ham.pose('sit', t); ov = (ctx) => k.big(ctx, 'CHANNEL OPEN. 📻', { y: 240, size: 56, col: '#ffd23f' }); return k.cam([0.9, 1.5, -1.6], [0, 1.0, -0.2], 44); },
   };
-  return { shots, sky: '#bfe3ff', over: (ctx) => { if (ov) ov(ctx); ov = null; } };
-}, { assets: ['humans/Superhero_Male', 'humans/ual1', 'props/table_round'] });
+  return { shots, lens: 28, minDist: 2.6, sky: '#bfe3ff', over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/Superhero_Male', 'humans/ual1', 'props/table_round'] });

@@ -26,5 +26,5 @@ STORY((k) => {
     mum: (t, kk) => { k.only(vl); k.walk(sar2, [-3, 0, 0], [-0.1, 0, 0], Math.min(1, kk * 1.7), 'walk', t); if (kk > 0.6) sar2.pose('idle', t); ma.pose(kk > 0.6 ? 'clap' : 'idle', t); ov = (ctx) => { if (kk > 0.6) k.big(ctx, '❤️', { y: 300, size: 120 }); }; return k.cam([-1.0, 1.5, 3.4], [-0.6, 1.1, 0], 44); },
     outro: (t, kk) => { k.only(vl); sar2.position.set(-0.1, 0, 0); sar2.pose('idle', t); ma.pose('idle', t); ov = (ctx) => { k.vignette(ctx, 0.5); k.big(ctx, '25 YEARS.', { y: 240, size: 84, col: '#ffd23f' }); }; return k.cam([-0.3 + kk, 1.4, 2.6 + kk * 2], [0.2, 1.2, 0], 44); },
   };
-  return { shots, sky: '#bfe3ff', over: (ctx) => { if (ov) ov(ctx); ov = null; } };
-}, { assets: ['humans/Superhero_Male', 'humans/Woman_Jacket', 'humans/Woman_Dress', 'humans/ual1', 'props/table_round', 'buildings/village_house', 'buildings/cottage', 'buildings/well', 'buildings/fence', 'nature/tree_oak'] });
+  return { shots, lens: 28, minDist: 2.6, sky: '#bfe3ff', over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/Superhero_Male', 'humans/Woman_Jacket', 'humans/Woman_Dress', 'humans/ual1', 'props/table_round', 'buildings/village_house', 'buildings/cottage', 'buildings/well', 'buildings/fence', 'nature/tree_oak'] });

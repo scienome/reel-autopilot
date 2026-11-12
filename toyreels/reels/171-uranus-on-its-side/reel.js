@@ -18,5 +18,5 @@ STORY((k) => {
     cold: (t, kk) => { base(t); tilt(1.71); ov = (ctx) => k.big(ctx, '-224°C', { y: 240, size: 110, col: '#9fe8ff' }); return k.cam([2.5, 0.4, 7], [0, 0.6, 0], 38, { sky: sp.sky, focus: [0.05, 0.95], blur: 1 }); },
     outro: (t, kk) => { base(t); tilt(1.71 + Math.sin(t * 2) * 0.02); ov = (ctx) => k.big(ctx, 'NEVER GOT UP.', { y: 240, size: 70, col: '#ffd23f' }); return k.cam([0, 1, 13], [0, 0, 0], 44, { sky: sp.sky, focus: [0.05, 0.95], blur: 1 }); },
   };
-  return { shots, sky: sp.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('pop', at('hook', 1.4), { gain: 0.5 }); kit.play('pop', at('impact', 2.6), { gain: 0.5 }); } };
+  return { shots, lens: 28, sky: sp.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('pop', at('hook', 1.4), { gain: 0.5 }); kit.play('pop', at('impact', 2.6), { gain: 0.5 }); } };
 }, { assets: [] });

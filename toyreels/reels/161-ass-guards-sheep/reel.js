@@ -15,5 +15,5 @@ STORY((k) => {
       ov = (ctx) => { k.card(ctx, '1 DONKEY ✓', { y: 190, bg: '#2ecc71' }); k.card(ctx, '2 DONKEYS ✗', { y: 300, bg: '#e8384f' }); }; return k.cam([0, 2.6, 13], [-1.5, 0.6, 4.5], 42, { sky: fm.sky }); },
     outro: (t, kk) => { base(); fox.visible = false; don.position.set(1.4, 0, 6.8); don.rotation.y = 0.3; don.pose('idle', t); ov = (ctx) => k.big(ctx, 'THANK YOU. 🫏', { y: 230, size: 80, col: '#ffd23f' }); return k.close(don, { d: 3.6, side: 0.3 }); },
   };
-  return { shots, sky: fm.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('whoosh', at('hook', 0.3), { dur: 0.8, gain: 0.2 }); kit.play('whoosh', at('charge', 0.3), { dur: 0.8, gain: 0.2 }); } };
+  return { shots, lens: 28, sky: fm.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('whoosh', at('hook', 0.3), { dur: 0.8, gain: 0.2 }); kit.play('whoosh', at('charge', 0.3), { dur: 0.8, gain: 0.2 }); } };
 }, { assets: ['animals/donkey', 'animals/fox', 'animals/sheep', 'props/hay', 'buildings/cottage', 'buildings/village_house', 'buildings/house_v2', 'buildings/well', 'buildings/fence', 'nature/tree_oak', 'nature/tree_maple'] });

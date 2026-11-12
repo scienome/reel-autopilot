@@ -19,5 +19,5 @@ STORY((k) => {
     hold: (t, kk) => { base(); guy.pose('crouch', t); her.visible = false; ov = (ctx) => k.card(ctx, 'HOLD IT = IT WAITS', { y: 200, bg: '#e8384f', size: 42 }); return k.close(guy, { d: 2.0, side: 0.4, look: 0.6 }); },
     outro: (t, kk) => { base(); guy.pose('dance', t); her.pose('idle', t); ov = (ctx) => k.big(ctx, 'YOUR GUT IS WORKING.', { y: 240, size: 50, col: '#ffd23f' }); return k.cam([1.2, 1.5, 3.4], [-0.3, 0.9, -0.3], 40); },
   };
-  return { shots, sky: '#dfe4e8', score: (kit, at) => { kit.play('impact', at('smell', 1.6), { gain: 0.5 }); kit.play('whoosh', at('smell', 1.7), { dur: 0.8, gain: 0.5 }); }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
-}, { assets: ['humans/Superhero_Male', 'humans/Woman_Jacket', 'humans/ual1'] });
+  return { shots, lens: 28, minDist: 2.6, sky: '#dfe4e8', score: (kit, at) => { kit.play('impact', at('smell', 1.6), { gain: 0.5 }); kit.play('whoosh', at('smell', 1.7), { dur: 0.8, gain: 0.5 }); }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/Superhero_Male', 'humans/Woman_Jacket', 'humans/ual1'] });

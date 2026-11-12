@@ -20,5 +20,5 @@ STORY((k) => {
     doctors: (t, kk) => { base(); man.pose('sit', t); ov = (ctx) => { hand(ctx, 1); k.card(ctx, 'NERVE TEST FOR DOCTORS', { y: 200, bg: '#1f8fd8', size: 38 }); k.tick(ctx, t, 0.5); }; return k.cam([0.6, 1.3, 1.5], [-0.3, 0.8, -0.6], 44); },
     outro: (t, kk) => { base(); man.pose('sit', t); ov = (ctx) => { steam(ctx, t); k.big(ctx, 'GET A GRIP. 🛁', { y: 240, size: 60, col: '#ffd23f' }); }; return k.cam([1.4, 1.6, 2.4], [-0.2, 0.7, -0.6], 46); },
   };
-  return { shots, sky: '#dff0f4', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('impact', at('debate', 2.2), { gain: 0.6 }); } };
-}, { assets: ['humans/Superhero_Male', 'humans/Woman_Jacket', 'humans/ual1'] });
+  return { shots, lens: 28, minDist: 2.6, sky: '#dff0f4', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('impact', at('debate', 2.2), { gain: 0.6 }); } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/Superhero_Male', 'humans/Woman_Jacket', 'humans/ual1'] });

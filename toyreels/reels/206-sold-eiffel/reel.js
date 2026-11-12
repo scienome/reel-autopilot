@@ -18,5 +18,5 @@ STORY((k) => {
     again: (t, kk) => { room(); d1.visible = true; d1.pose(kk > 0.5 ? 'run' : 'talk', t); lus.pose('talk', t); poi.visible = false; ov = (ctx) => k.card(ctx, kk < 0.5 ? 'TRIES IT AGAIN 😏' : 'POLICE! → ESCAPES TO USA', { y: 200, bg: kk < 0.5 ? '#7a3ad8' : '#1f4fa8', size: 36 }); poi.visible = true; return k.cam([0, 1.7, 3.2], [0.2, 1.1, -0.3], 46); },
     outro: (t, kk) => { k.only(ci); truck.visible = false; poi2.visible = false; ov = (ctx) => k.big(ctx, 'NEVER HIS TO SELL.', { y: 240, size: 54, col: '#ffd23f' }); return k.cam([6 * Math.sin(kk), 2 + kk * 3, 6], [0, 6, -6], 52); },
   };
-  return { shots, sky: '#bfe3ff', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('impact', at('shame', 1.6), { gain: 0.7 }); } };
-}, { assets: ['humans/Superhero_Male', 'humans/ual1', 'props/chandelier'] });
+  return { shots, lens: 28, minDist: 2.6, sky: '#bfe3ff', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('impact', at('shame', 1.6), { gain: 0.7 }); } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/Superhero_Male', 'humans/ual1', 'props/chandelier'] });
