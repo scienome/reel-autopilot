@@ -21,5 +21,5 @@ STORY((k) => {
     faster: (t, kk) => { base(); lie(); ov = (ctx) => { night(ctx, 0.5); k.counter(ctx, 'ASLEEP', '~20 MIN FASTER', { y: 190 }); k.tick(ctx, t, 0); ctx.save(); ctx.font = '900 54px Nunito, Arial'; ctx.fillStyle = '#fff'; for (let i = 0; i < 3; i++) { const u = (t * 0.6 + i / 3) % 1; ctx.globalAlpha = 1 - u; ctx.fillText('z', 420 + u * 80, 700 - u * 150); } ctx.restore(); }; return k.close(guy, { d: 1.8, h: 1.6, look: 0.3 }); },
     outro: (t, kk) => { k.only(beach); relax.position.set(0, 0, 0); relax.pose('sit', t); ov = (ctx) => k.big(ctx, 'GO TO THE BEACH. 🏖️', { y: 240, size: 56, col: '#ffd23f' }); return k.cam([0, 1.4, 4], [0, 0.7, -6], 42, { sky: beach.sky }); },
   };
-  return { shots, sky: '#2a2f45', over: (ctx) => { if (ov) ov(ctx); ov = null; } };
-}, { assets: ['animals/sheep', 'humans/Superhero_Male', 'humans/Superhero_Female', 'humans/ual1'] });
+  return { shots, lens: 28, minDist: 2.6, sky: '#2a2f45', over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'animals/sheep', 'humans/Superhero_Male', 'humans/Superhero_Female', 'humans/ual1'] });

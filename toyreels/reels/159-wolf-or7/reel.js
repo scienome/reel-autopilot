@@ -27,5 +27,5 @@ STORY((k) => {
       ov = (ctx) => k.card(ctx, 'THE ROGUE PACK', { y: 200, bg: '#2ecc71' }); return k.cam([1.4, 1.1, 4.4], [0.4, 0.4, 0.8], 40, { sky: fr.sky }); },
     outro: (t, kk) => { base(fr); w.visible = fem.visible = true; pups.forEach((p) => { p.visible = true; p.pose('idle', t); }); w.position.set(-0.6, 0, 0.4); w.rotation.y = 1.2; w.pose('idle', t); fem.pose('idle', t); col(); ov = (ctx) => { k.tint(ctx, '#ff9a3c', 0.15); map(ctx, 1); }; return k.cam([lerp(1.4, 3, kk), 1.4, lerp(4.4, 6, kk)], [0.2, 0.4, 0.6], 40, { sky: fr.sky }); },
   };
-  return { shots, sky: fr.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('ding', at('pups', 0.4), { f: 'C6', gain: 0.3 }); } };
+  return { shots, lens: 28, sky: fr.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('ding', at('pups', 0.4), { f: 'C6', gain: 0.3 }); } };
 }, { assets: ['animals/wolf', 'nature/tree_oak', 'nature/tree_maple', 'nature/tree_birch', 'nature/rock_mossy', 'nature/rock_large_a', 'nature/rock_a', 'nature/rock_b', 'nature/rock_medium'] });

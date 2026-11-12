@@ -10,7 +10,7 @@ STORY((k) => {
   let ov = null; const room = () => { k.only(hot); d1.visible = false; }; const cash = (ctx, t) => { for (let i = 0; i < 10; i++) { const u = (t * 0.5 + i / 10) % 1; ctx.save(); ctx.translate(360 + Math.sin(i * 2) * 160 * u, 760 - u * 500); ctx.rotate(u * 5 + i); ctx.fillStyle = '#5fbf6a'; ctx.fillRect(-36, -16, 72, 32); ctx.restore(); } };
   const shots = {
     hook: (t, kk) => { room(); lus.pose('talk', t); poi.pose(kk < 0.5 ? 'pickup' : 'idle', t); ov = (ctx) => { k.tint(ctx, '#3a1a10', 0.2); if (kk < 0.55) { cash(ctx, t); k.card(ctx, 'HE GOT SCREWED 😳', { y: 200, bg: '#e8384f', size: 48 }); } else k.card(ctx, '...OUT OF A TOWER 🗼', { y: 200, bg: '#7a5a3a', size: 46 }); }; return kk < 0.55 ? k.cam([0.2, 1.5, 2.6], [0, 1.1, 0], 44) : k.cam([0, 1.6, 9], [0, 6, -6], 50); },
-    who: (t, kk) => { room(); lus.pose('idle', t); poi.visible = false; ov = (ctx) => k.card(ctx, 'VICTOR LUSTIG · PARIS · 1925', { y: 200, bg: '#1a1a1a', size: 36 }); poi.visible = true; return k.close(lus, { d: 1.6, side: 0.3 }); },
+    who: (t, kk) => { room(); lus.pose('idle', t); poi.visible = false; ov = (ctx) => k.card(ctx, 'VICTOR LUSTIG · PARIS · 1925', { y: 200, bg: '#1a1a1a', size: 36 }); poi.visible = true; return k.close(lus, { d: 2.4, side: 0.9 }); },
     news: (t, kk) => { k.only(ci); truck.visible = false; poi2.visible = false; ov = (ctx) => { k.card(ctx, 'RUSTY · COSTLY TO REPAIR', { y: 200, bg: '#c8501e', size: 38 }); }; return k.cam([3 - kk * 2, 1.6, 6], [0, 6, -6], 52); },
     meeting: (t, kk) => { room(); d1.visible = true; d1.pose('idle', t); lus.pose('talk', t); poi.pose('idle', t); ov = (ctx) => k.card(ctx, 'FAKE OFFICIAL · SECRET MEETING', { y: 200, bg: '#7a3a3a', size: 34 }); return k.cam([0, 1.7, 3.2], [0.2, 1.1, -0.3], 46); },
     sold: (t, kk) => { room(); lus.pose('talk', t); poi.pose('pickup', t); ov = (ctx) => { cash(ctx, t); k.card(ctx, 'ANDRÉ POISSON PAYS 💸', { y: 200, bg: '#2a9d4a', size: 40 }); }; return k.cam([0.2, 1.5, 2.6], [0, 1.1, 0], 44); },
@@ -18,5 +18,5 @@ STORY((k) => {
     again: (t, kk) => { room(); d1.visible = true; d1.pose(kk > 0.5 ? 'run' : 'talk', t); lus.pose('talk', t); poi.visible = false; ov = (ctx) => k.card(ctx, kk < 0.5 ? 'TRIES IT AGAIN 😏' : 'POLICE! → ESCAPES TO USA', { y: 200, bg: kk < 0.5 ? '#7a3ad8' : '#1f4fa8', size: 36 }); poi.visible = true; return k.cam([0, 1.7, 3.2], [0.2, 1.1, -0.3], 46); },
     outro: (t, kk) => { k.only(ci); truck.visible = false; poi2.visible = false; ov = (ctx) => k.big(ctx, 'NEVER HIS TO SELL.', { y: 240, size: 54, col: '#ffd23f' }); return k.cam([6 * Math.sin(kk), 2 + kk * 3, 6], [0, 6, -6], 52); },
   };
-  return { shots, sky: '#bfe3ff', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('impact', at('shame', 1.6), { gain: 0.7 }); } };
-}, { assets: ['humans/Superhero_Male', 'humans/ual1', 'props/chandelier'] });
+  return { shots, lens: 28, minDist: 2.6, sky: '#bfe3ff', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('impact', at('shame', 1.6), { gain: 0.7 }); } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/Superhero_Male', 'humans/ual1', 'props/chandelier'] });

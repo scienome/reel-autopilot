@@ -23,5 +23,5 @@ STORY((k) => {
     moves: (t, kk) => { k.only(of); man.rotation.z = 0; man.position.set(0, 0, 1.0); man.rotation.y = 0.4; man.pose(Math.sin(t * 2.4) > 0 ? 'crouch' : 'idle', t); ov = (ctx) => { k.card(ctx, '10 BRIDGES', { y: 190, bg: '#2ecc71' }); k.card(ctx, '10 SQUATS', { y: 300, bg: '#2ecc71' }); }; return k.close(man, { d: 3.0, side: 0.3, h: 0.6, look: 0.5 }); },
     outro: (t, kk) => { k.only(of); man.rotation.z = 0; man.position.set(0, 0, 1.0); man.rotation.y = 0.4; man.pose('dance', t); ov = (ctx) => k.big(ctx, 'WAKE UP! 🍑', { y: 230, size: 80, col: '#ffd23f' }); return k.close(man, { d: 3.2, side: 0.4, h: 0.6, look: 0.5 }); },
   };
-  return { shots, sky: '#dfe4e8', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('ding', at('fix', 0.4), { f: 'E6', gain: 0.3 }); kit.play('pop', at('outro', 0.3), { gain: 0.3 }); } };
-}, { assets: ['humans/Superhero_Male', 'humans/ual1', 'props/chair'] });
+  return { shots, lens: 28, minDist: 2.6, sky: '#dfe4e8', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('ding', at('fix', 0.4), { f: 'E6', gain: 0.3 }); kit.play('pop', at('outro', 0.3), { gain: 0.3 }); } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/Superhero_Male', 'humans/ual1', 'props/chair'] });

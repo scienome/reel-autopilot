@@ -21,5 +21,5 @@ STORY((k) => {
       return k.cam([6, 6, 10], [9, 0, -1], 44, { sky: fm.sky }); },
     outro: (t, kk) => { base(); herd(t, 2, 1, 4, -PI / 2, 'idle'); dog.position.set(-1.6, 0, 1); dog.rotation.y = PI / 2; dog.pose('headlow', t); ov = (ctx) => k.big(ctx, 'JUST THE STARE.', { y: 240, size: 64, col: '#ffd23f' }); return k.cam([-3.4, 0.8, -0.2], [0.6, 0.4, 1.4], 40, { sky: fm.sky }); },
   };
-  return { shots, sky: fm.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
-}, { assets: ['animals/dog', 'animals/sheep', 'humans/Superhero_Male', 'humans/ual1', 'props/hay', 'buildings/cottage', 'buildings/village_house', 'buildings/house_v2', 'buildings/well', 'buildings/fence', 'nature/tree_oak', 'nature/tree_maple'] });
+  return { shots, lens: 28, minDist: 2.6, sky: fm.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'animals/dog', 'animals/sheep', 'humans/Superhero_Male', 'humans/ual1', 'props/hay', 'buildings/cottage', 'buildings/village_house', 'buildings/house_v2', 'buildings/well', 'buildings/fence', 'nature/tree_oak', 'nature/tree_maple'] });

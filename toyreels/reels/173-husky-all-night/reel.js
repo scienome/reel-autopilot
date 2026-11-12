@@ -20,5 +20,5 @@ STORY((k) => {
     eat: (t, kk) => { k.only(sn); team.visible = false; solo.visible = bowl.visible = true; solo.position.set(0, 0, 0); solo.rotation.y = 0.6; solo.pose('eat', t); bowl.position.set(0.35, 0.05, 0.6); ov = (ctx) => k.counter(ctx, 'PER DAY', '~10,000 KCAL', { y: 190 }); return k.close(solo, { d: 1.6, side: 0.8 }); },
     outro: (t, kk) => { k.only(sn); solo.visible = bowl.visible = false; run(t); ov = (ctx) => { aurora(ctx, t); k.big(ctx, 'ALL WEEK. 🐺', { y: 240, size: 80, col: '#ffd23f' }); }; return k.cam([2.4, 0.8, team.position.z - 7], [0, 0.6, team.position.z - 3], 42, { sky: '#0a1428' }); },
   };
-  return { shots, sky: sn.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
-}, { assets: ['animals/husky', 'humans/Superhero_Male', 'humans/ual1', 'nature/tree_birch', 'nature/tree_oak', 'nature/rock_a', 'nature/rock_b', 'nature/rock_medium'] });
+  return { shots, lens: 28, minDist: 2.6, sky: sn.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'animals/husky', 'humans/Superhero_Male', 'humans/ual1', 'nature/tree_birch', 'nature/tree_oak', 'nature/rock_a', 'nature/rock_b', 'nature/rock_medium'] });

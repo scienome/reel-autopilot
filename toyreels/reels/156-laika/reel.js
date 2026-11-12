@@ -29,5 +29,5 @@ STORY((k) => {
       return k.cam([1, 1.6, 3], [0, 1.2, -1], 40); },
     outro: (t, kk) => { k.only(st); mon.visible = true; sci.forEach((s) => { s.visible = false; }); sdog.visible = false; ov = (ctx) => k.card(ctx, 'LAIKA · 1954–1957', { y: 200, bg: '#c9a24a' }); return k.cam([lerp(1, 0, kk), 2.4, 11], [-1.5, 3.2, 6], 38, { sky: '#b9cfe0' }); },
   };
-  return { shots, sky: '#03040a', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('whoosh', at('launch', 0.6), { dur: 1.6, gain: 0.25 }); } };
-}, { assets: ['animals/dog', 'humans/Superhero_Male', 'humans/Superhero_Female', 'humans/ual1', 'props/chair', 'nature/tree_birch', 'nature/tree_oak', 'nature/rock_a', 'nature/rock_b', 'nature/rock_medium'] });
+  return { shots, lens: 28, minDist: 2.6, sky: '#03040a', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('whoosh', at('launch', 0.6), { dur: 1.6, gain: 0.25 }); } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'animals/dog', 'humans/Superhero_Male', 'humans/Superhero_Female', 'humans/ual1', 'props/chair', 'nature/tree_birch', 'nature/tree_oak', 'nature/rock_a', 'nature/rock_b', 'nature/rock_medium'] });

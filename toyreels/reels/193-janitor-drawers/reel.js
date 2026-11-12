@@ -18,5 +18,5 @@ STORY((k) => {
     gave: (t, kk) => { home(); ron.pose('idle', t); ov = (ctx) => { k.card(ctx, 'HOSPITAL $4.8M', { y: 200, bg: '#1f8fd8', size: 44 }); k.card(ctx, 'LIBRARY $1.2M', { y: 1185, bg: '#7a3ad8', size: 44 }); }; return k.close(ron, { d: 1.8 }); },
     outro: (t, kk) => { k.only(st); show.pose('dance', t); ron2.pose('idle', t); const H = 0.5, b = (kk - H) * 2.4; k.strike(mis, [2.1, 0.5, -0.5], kk / H); car.visible = b < 0.1; ov = (ctx) => { if (kk < H) k.card(ctx, '"LOOK AT MY CAR!"', { y: 200, bg: '#e8384f', size: 44 }); k.boom(ctx, b, 480, 700, 'BOOM!'); if (kk > 0.8) k.big(ctx, 'KEEP IT.', { y: 240, size: 80, col: '#ffd23f' }); }; return k.cam([0, 1.7, 8.2], [0, 1.1, 2.0], 56); },
   };
-  return { shots, sky: '#bfe3ff', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('riser', at('outro', 0.2), { dur: 1.0, gain: 0.4 }); kit.play('impact', at('outro', 1.5), { gain: 0.7 }); } };
-}, { assets: ['humans/Superhero_Male', 'humans/ual1', 'props/chest'] });
+  return { shots, lens: 28, minDist: 2.6, sky: '#bfe3ff', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('riser', at('outro', 0.2), { dur: 1.0, gain: 0.4 }); kit.play('impact', at('outro', 1.5), { gain: 0.7 }); } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/Superhero_Male', 'humans/ual1', 'props/chest'] });

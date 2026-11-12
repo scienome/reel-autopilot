@@ -18,5 +18,5 @@ STORY((k) => {
     regret: (t, kk) => { base(); las.pose('talk', t); ov = (ctx) => k.card(ctx, '"NO REGRETS."', { y: 200, bg: '#1f8fd8', size: 46 }); return k.close(las, { d: 1.5, side: 0.3 }); },
     outro: (t, kk) => { base(); b1.visible = false; piz.visible = true; piz.position.set(0, 0.79, -0.5); las.pose('dance', t); ov = (ctx) => { coins(ctx, t, 8); k.big(ctx, 'PIZZA DAY 🍕', { y: 240, size: 64, col: '#ffd23f' }); }; return k.cam([0.4, 1.6, 2.6], [0, 0.9, -0.2], 46); },
   };
-  return { shots, sky: '#e9e2d4', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('riser', at('now', 0.6), { dur: 1.2, gain: 0.4 }); kit.play('impact', at('now', 2.2), { gain: 0.7 }); } };
-}, { assets: ['humans/Superhero_Male', 'humans/ual1', 'props/table_round'] });
+  return { shots, lens: 28, minDist: 2.6, sky: '#e9e2d4', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('riser', at('now', 0.6), { dur: 1.2, gain: 0.4 }); kit.play('impact', at('now', 2.2), { gain: 0.7 }); } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/Superhero_Male', 'humans/ual1', 'props/table_round'] });

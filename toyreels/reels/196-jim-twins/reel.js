@@ -20,5 +20,5 @@ STORY((k) => {
     study: (t, kk) => { base(); sci.visible = true; sci.pose('talk', t); j1.pose('idle', t); j2.pose('idle', t); ov = (ctx) => k.card(ctx, 'MINNESOTA TWIN STUDY', { y: 200, bg: '#2a9d4a', size: 40 }); return k.cam([0, 1.6, 3.4], [0, 1.1, -0.8], 46); },
     outro: (t, kk) => { base(); const H = 0.45, bb = (kk - H) * 2.4; j1.pose(kk < H ? 'punch' : 'death', t); j2.pose(kk < H ? 'punch' : 'death', t); ov = (ctx) => { k.boom(ctx, bb, 360, 600, 'SAME!!'); if (kk > 0.8) k.big(ctx, 'NOT JUST CHANCE.', { y: 240, size: 56, col: '#ffd23f' }); }; return cam(); },
   };
-  return { shots, sky: '#dfe4e8', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('impact', at('outro', 1.3), { gain: 0.6 }); } };
-}, { assets: ['humans/Superhero_Male', 'humans/Woman_Casual', 'humans/Woman_Dress', 'humans/ual1', 'animals/dog'] });
+  return { shots, lens: 28, minDist: 2.6, sky: '#dfe4e8', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('impact', at('outro', 1.3), { gain: 0.6 }); } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/Superhero_Male', 'humans/Woman_Casual', 'humans/Woman_Dress', 'humans/ual1', 'animals/dog'] });

@@ -20,5 +20,5 @@ STORY((k) => {
     sorry: (t, kk) => { k.only(sn); aw.forEach((w) => { w.visible = false; }); mech.position.set(0, 0, 0); mech.rotation.y = 0.3; mech.pose('talk', t); ov = (ctx) => k.card(ctx, '"PLEASE STOP SAYING ALPHA"', { y: 200, bg: '#c8501e', size: 36 }); return k.close(mech, { d: 2.0, side: 0.3, extra: { sky: sn.sky } }); },
     outro: (t, kk) => { k.only(fr); fam(t); ov = (ctx) => k.big(ctx, 'JUST A DAD. 🐺', { y: 240, size: 78, col: '#ffd23f' }); return k.cam([0.2, 1.0, 3.6], [0, 0.5, 0.4], 40, { sky: fr.sky }); },
   };
-  return { shots, sky: fr.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
-}, { assets: ['animals/wolf', 'humans/Superhero_Male', 'humans/ual1', 'nature/tree_oak', 'nature/tree_maple', 'nature/tree_birch', 'nature/rock_mossy', 'nature/rock_large_a', 'nature/rock_a', 'nature/rock_b', 'nature/rock_medium'] });
+  return { shots, lens: 28, minDist: 2.6, sky: fr.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'animals/wolf', 'humans/Superhero_Male', 'humans/ual1', 'nature/tree_oak', 'nature/tree_maple', 'nature/tree_birch', 'nature/rock_mossy', 'nature/rock_large_a', 'nature/rock_a', 'nature/rock_b', 'nature/rock_medium'] });

@@ -22,5 +22,5 @@ STORY((k) => {
     fix: (t, kk) => { k.only(hos); doc.pose('talk', t); pat.pose('idle', t); ov = (ctx) => k.card(ctx, 'HOSPITAL: DRAIN OR MEDICINE', { y: 200, bg: '#1f8fd8', size: 34 }); return k.cam([0.2, 1.5, 3.2], [0.1, 1.0, -0.1], 42); },
     outro: (t, kk) => { k.only(hos); doc.pose('idle', t); pat.pose('dance', t); ov = (ctx) => { k.big(ctx, 'BELIEVE THE LABEL.', { y: 240, size: 54, col: '#ffd23f' }); k.card(ctx, 'General information, not medical advice.', { y: 1240, bg: 'rgba(0,0,0,0.5)', size: 20 }); }; return k.cam([0.2, 1.5, 3.4], [0.1, 1.0, -0.1], 42); },
   };
-  return { shots, sky: '#cfd8e6', score: (kit, at) => { kit.play('riser', at('label', 0.5), { dur: 1.2, gain: 0.4 }); kit.play('impact', at('label', 2.3), { gain: 0.7 }); }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
-}, { assets: ['humans/Superhero_Male', 'humans/Woman_Dress', 'humans/ual1', 'props/bed_single'] });
+  return { shots, lens: 28, minDist: 2.6, sky: '#cfd8e6', score: (kit, at) => { kit.play('riser', at('label', 0.5), { dur: 1.2, gain: 0.4 }); kit.play('impact', at('label', 2.3), { gain: 0.7 }); }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/Superhero_Male', 'humans/Woman_Dress', 'humans/ual1', 'props/bed_single'] });

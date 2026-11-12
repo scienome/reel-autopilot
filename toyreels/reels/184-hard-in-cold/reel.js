@@ -1,3 +1,4 @@
+// toy cast: Kenney Mini Characters (re-render 13 Nov 2026)
 // 184 cinestory3d (story3d.js): frostbite stages and first aid (NHS; Mayo Clinic). Scroll stopper: a man curled up in the snow, "DAY 3", groaning "it's so hard"... then his frozen white fingers.
 STORY((k) => {
   const sn = k.snow(); const man = k.add(k.LIB.human({ body: 'm', top: '#c8501e', bottom: '#2a3140', hair: '#2b1d14', sleeves: true }), [0, 0, 0], 0.4, sn);

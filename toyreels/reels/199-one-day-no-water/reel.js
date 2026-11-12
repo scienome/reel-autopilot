@@ -17,5 +17,5 @@ STORY((k) => {
     days: (t, kk) => { base(); man.pose('death', t); ov = (ctx) => { heat(ctx, 0.25); k.counter(ctx, 'SURVIVAL', 'A FEW DAYS', { y: 170 }); k.card(ctx, 'HEAT + EXERCISE = FASTER', { y: 1185, bg: '#e8384f', size: 34 }); }; return k.cam([0, 6, 3], [0, 0, 0], 50); },
     outro: (t, kk) => { k.only(kt); man2.pose('dance', t); ov = (ctx) => { k.big(ctx, 'DRINK UP. 💧', { y: 240, size: 64, col: '#ffd23f' }); k.card(ctx, 'General information, not medical advice.', { y: 1240, bg: 'rgba(0,0,0,0.5)', size: 20 }); }; return k.cam([0.4, 1.5, 3.0], [0, 1.0, 0], 44); },
   };
-  return { shots, sky: '#ffd9a0', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('thud', at('thirst', 2.6), { gain: 0.7 }); } };
-}, { assets: ['humans/Superhero_Male', 'humans/ual1'] });
+  return { shots, lens: 28, minDist: 2.6, sky: '#ffd9a0', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('thud', at('thirst', 2.6), { gain: 0.7 }); } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/Superhero_Male', 'humans/ual1'] });

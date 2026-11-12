@@ -21,5 +21,5 @@ STORY((k) => {
     doubt: (t, kk) => { base(); align(1, cows, true); ov = (ctx) => { k.big(ctx, '?', { y: 300, size: 220, col: '#ffd23f' }); }; return top(46); },
     outro: (t, kk) => { base(); align(Math.min(1, kk * 1.4), cows); ov = (ctx) => compass(ctx); return k.cam([10, 4, 18], [-1, 0.8, 6], 42, { sky: fm.sky }); },
   };
-  return { shots, sky: fm.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('ding', at('pattern', 0.4), { f: 'E6', gain: 0.3 }); } };
+  return { shots, lens: 28, sky: fm.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('ding', at('pattern', 0.4), { f: 'E6', gain: 0.3 }); } };
 }, { assets: ['animals/cow', 'animals/bull', 'animals/deer', 'props/hay', 'buildings/cottage', 'buildings/village_house', 'buildings/house_v2', 'buildings/well', 'buildings/fence', 'nature/tree_oak', 'nature/tree_maple'] });

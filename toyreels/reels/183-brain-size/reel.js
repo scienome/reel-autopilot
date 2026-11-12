@@ -20,5 +20,5 @@ STORY((k) => {
     grow: (t, kk) => { base(); her.pose('idle', t); man.pose('talk', t); ov = (ctx) => { brain(ctx, 360, 520, 0.8 + kk * 0.3, t * 4); k.card(ctx, 'LEARN = NEW CONNECTIONS', { y: 1185, bg: '#1f8fd8', size: 34 }); }; return k.cam([0.3, 1.4, 3.2], [0.3, 1.0, 0], 44); },
     outro: (t, kk) => { base(); man.pose('dance', t); her.pose('idle', t); const H = 0.62; k.strike(mis, [0, 0.9, 0], kk / H); const b = (kk - H) * 2.6; k.launch(man, Math.max(0, b * 0.8), [0, 0, 0]); ov = (ctx) => { if (kk < H) k.big(ctx, 'IT\'S HOW YOU USE IT.', { y: 240, size: 50, col: '#ffd23f' }); k.boom(ctx, b, 360, 640, 'BOOM!'); }; return k.cam([0.6, 1.4, 4.4], [0.3, 1.2, 0], 50); },
   };
-  return { shots, sky: '#e8d6e6', score: (kit, at) => { kit.play('riser', at('outro', 0.4), { dur: 1.2, gain: 0.4 }); kit.play('impact', at('outro', 1.9), { gain: 0.7 }); }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
-}, { assets: ['humans/Superhero_Male', 'humans/Woman_Casual', 'humans/ual1'] });
+  return { shots, lens: 28, minDist: 2.6, sky: '#e8d6e6', score: (kit, at) => { kit.play('riser', at('outro', 0.4), { dur: 1.2, gain: 0.4 }); kit.play('impact', at('outro', 1.9), { gain: 0.7 }); }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/Superhero_Male', 'humans/Woman_Casual', 'humans/ual1'] });

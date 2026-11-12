@@ -14,5 +14,5 @@ STORY((k) => {
     boss: (t, kk) => { base(); boss.visible = true; boss.position.set(1.0, 0, 0.6); boss.rotation.y = -2.3; boss.pose('talk', t); ono.pose(kk > 0.6 ? 'kneel' : 'idle', t); ono.rotation.y = 1.0; ov = (ctx) => k.card(ctx, '"THE WAR IS OVER."', { y: 200, bg: '#2a9d4a', size: 44 }); return k.close(ono, { d: 1.8, side: -0.6, look: 0.6 }); },
     outro: (t, kk) => { base(); ono.pose('kneel', t); ov = (ctx) => { k.vignette(ctx, 0.6); k.big(ctx, '29 YEARS.', { y: 240, size: 80, col: '#ffd23f' }); }; return k.cam([0, 1.2 + kk * 2, 2.6 + kk * 3], [0, 0.6, 0], 44); },
   };
-  return { shots, sky: '#a8c8a0', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('slap', at('leaflets', 1.4), { gain: 0.6 }); } };
-}, { assets: ['humans/Superhero_Male', 'humans/ual1', 'nature/tree_oak', 'nature/tree_maple', 'nature/tree_birch', 'nature/rock_a', 'nature/rock_mossy'] });
+  return { shots, lens: 28, minDist: 2.6, sky: '#a8c8a0', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('slap', at('leaflets', 1.4), { gain: 0.6 }); } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/Superhero_Male', 'humans/ual1', 'nature/tree_oak', 'nature/tree_maple', 'nature/tree_birch', 'nature/rock_a', 'nature/rock_mossy'] });

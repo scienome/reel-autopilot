@@ -21,5 +21,5 @@ STORY((k) => {
     debate: (t, kk) => { base(); glow(t, 5); ov = (ctx) => k.big(ctx, '?', { y: 300, size: 200, col: '#ffd23f' }); return cutCam(); },
     outro: (t, kk) => { base(); glow(t); ov = (ctx) => k.big(ctx, 'HOOKED UP. 🌳', { y: 240, size: 72, col: '#ffd23f' }); return cutCam(); },
   };
-  return { shots, sky: fr.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+  return { shots, lens: 28, sky: fr.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
 }, { assets: ['nature/tree_oak', 'nature/tree_maple', 'nature/tree_birch', 'nature/rock_mossy', 'nature/rock_large_a'] });

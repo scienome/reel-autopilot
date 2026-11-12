@@ -23,5 +23,5 @@ STORY((k) => {
     outro: (t, kk, a) => { base(); write('2 + 3 = ?'); const n = taps(t, a, 5); tea.pose('idle', t); ov = (ctx) => { old(ctx); k.counter(ctx, 'TAPS', String(n), { y: 190 }); }; return k.cam([2.4, 1.6, 5.6], [-0.2, 1.1, 0], 40, { sky: '#d8c8a8' }); },
   };
   function fm_sky() { return '#b9cfe0'; }
-  return { shots, sky: '#d8c8a8', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { for (let i = 0; i < 5; i++) kit.play('click', at('tap', 1.6 + i * 0.45), { gain: 0.35 }); } };
-}, { assets: ['animals/horse_white', 'humans/Superhero_Male', 'humans/Superhero_Female', 'humans/Woman_Casual', 'humans/ual1', 'buildings/cottage', 'buildings/village_house', 'buildings/house_v2', 'buildings/well', 'buildings/fence', 'nature/tree_oak', 'nature/tree_maple'] });
+  return { shots, lens: 28, minDist: 2.6, sky: '#d8c8a8', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { for (let i = 0; i < 5; i++) kit.play('click', at('tap', 1.6 + i * 0.45), { gain: 0.35 }); } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'animals/horse_white', 'humans/Superhero_Male', 'humans/Superhero_Female', 'humans/Woman_Casual', 'humans/ual1', 'buildings/cottage', 'buildings/village_house', 'buildings/house_v2', 'buildings/well', 'buildings/fence', 'nature/tree_oak', 'nature/tree_maple'] });

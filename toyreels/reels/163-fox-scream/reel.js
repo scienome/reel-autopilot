@@ -17,5 +17,5 @@ STORY((k) => {
     safe: (t, kk) => { k.only(st); tod.visible = true; tod.position.set(2.6, 0, 1.4); tod.rotation.y = 0.8; tod.pose('idle', t); vixen(t); ov = (ctx) => { night(ctx, 0.2); k.tick(ctx, t, -99); }; return k.cam([1.2, 0.8, 4.8], [3, 0.35, 1.7], 38, { sky: st.sky }); },
     outro: (t, kk) => { k.only(st); tod.visible = false; vixen(t, 'attack'); ov = (ctx) => { night(ctx, 0.3); scream(ctx, t, 330, 640); }; return k.cam([1.2, 0.6, 4.4], [3.4, 0.35, 2], 38, { sky: st.sky }); },
   };
-  return { shots, sky: st.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('whoosh', at('hook', 0.2), { dur: 0.6, gain: 0.25 }); } };
-}, { assets: ['animals/fox', 'humans/Superhero_Female', 'humans/ual1'] });
+  return { shots, lens: 28, minDist: 2.6, sky: st.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('whoosh', at('hook', 0.2), { dur: 0.6, gain: 0.25 }); } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'animals/fox', 'humans/Superhero_Female', 'humans/ual1'] });

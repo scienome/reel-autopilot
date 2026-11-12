@@ -18,5 +18,5 @@ STORY((k) => {
     why: (t, kk) => { base(); lie(t); ov = (ctx) => { xr(ctx, t, 1); k.card(ctx, 'TINY PIECES → MICROBES', { y: 200, bg: '#7a3ad8', size: 38 }); }; return k.cam([1.8, 1.3, 6.4], [0.6, 0.7, 3], 40, { sky: fm.sky }); },
     outro: (t, kk) => { base(); lie(t); ov = (ctx) => k.big(ctx, 'SECONDS. 🐄', { y: 240, size: 84, col: '#ffd23f' }); return k.cam([2.8, 0.9, 4.8], [1.0, 0.5, 3], 36, { sky: fm.sky }); },
   };
-  return { shots, sky: fm.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+  return { shots, lens: 28, sky: fm.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
 }, { assets: ['animals/cow', 'props/hay', 'buildings/cottage', 'buildings/village_house', 'buildings/house_v2', 'buildings/well', 'buildings/fence', 'nature/tree_oak', 'nature/tree_maple'] });

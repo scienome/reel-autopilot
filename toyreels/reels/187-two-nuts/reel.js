@@ -17,5 +17,5 @@ STORY((k) => {
     tree: (t, kk) => { k.only(fo); ov = (ctx) => k.card(ctx, 'AMAZON · SELENIUM SOIL', { y: 200, bg: '#2a9d4a', size: 38 }); return k.cam([0, 1.6, 6 - kk], [0, 2.5, 0], 50); },
     outro: (t, kk) => { home(); man.pose('dance', t); her.pose('idle', t); ov = (ctx) => { k.big(ctx, 'ONE OR TWO. 🥜', { y: 240, size: 60, col: '#ffd23f' }); k.card(ctx, 'General information, not medical advice.', { y: 1240, bg: 'rgba(0,0,0,0.5)', size: 20 }); }; return k.cam([0.1, 1.5, 2.8], [0.05, 1.0, 0.1], 44); },
   };
-  return { shots, sky: '#e9e2d4', score: (kit, at) => { kit.play('riser', at('too', 0.4), { dur: 1.2, gain: 0.4 }); kit.play('impact', at('too', 2.0), { gain: 0.7 }); }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
-}, { assets: ['humans/Superhero_Male', 'humans/Woman_TankTop', 'humans/ual1', 'props/table_round', 'nature/tree_oak', 'nature/tree_maple', 'nature/tree_birch', 'nature/rock_a'] });
+  return { shots, lens: 28, minDist: 2.6, sky: '#e9e2d4', score: (kit, at) => { kit.play('riser', at('too', 0.4), { dur: 1.2, gain: 0.4 }); kit.play('impact', at('too', 2.0), { gain: 0.7 }); }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+}, { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/Superhero_Male', 'humans/Woman_TankTop', 'humans/ual1', 'props/table_round', 'nature/tree_oak', 'nature/tree_maple', 'nature/tree_birch', 'nature/rock_a'] });
