@@ -1,0 +1,39 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Every mansion keeps one window lit at three AM. Never the same one twice.",
+   "say": "Every mansion keeps one window lit at three AM. Never the same one twice."
+  },
+  {
+   "shot": "street",
+   "cap": "Drive past any old money street at night. Count. One light. Always one.",
+   "say": "Drive past any old money street at night. Count. One light. Always one."
+  },
+  {
+   "shot": "job",
+   "cap": "It's a job. They call it the watcher. Paid in gold to stay awake till sunrise.",
+   "say": "It's a job. They call it the watcher. Paid in gold to stay awake till sunrise."
+  },
+  {
+   "shot": "why",
+   "cap": "Watching what? The street. The neighbours. You.",
+   "say": "Watching what? The street. The neighbours. You."
+  },
+  {
+   "shot": "rule",
+   "cap": "The only rule. The watcher must never close the curtain.",
+   "say": "The only rule. The watcher must never close the curtain."
+  },
+  {
+   "shot": "twist",
+   "cap": "I zoomed in on one. The watcher was a cardboard cutout. He'd been asleep since 2009.",
+   "say": "I zoomed in on one. The watcher was a cardboard cutout. He'd been asleep since 2009."
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag who's awake at three AM right now. Because every mansion",
+   "say": "Tag who's awake at three AM right now. Because every mansion"
+  }
+ ]
+}

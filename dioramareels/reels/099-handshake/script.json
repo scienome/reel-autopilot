@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Rich people can tell if you're one of them with one handshake. You've probably failed it already.",
+   "say": "Rich people can tell if you're one of them with one handshake. You've probably failed it already."
+  },
+  {
+   "shot": "shake",
+   "cap": "It's not the grip. It's the thumb. Three taps. Slow. Fast. Slow.",
+   "say": "It's not the grip. It's the thumb. Three taps. Slow. Fast. Slow."
+  },
+  {
+   "shot": "reply",
+   "cap": "If they're old money, they tap back twice. That means: we see you.",
+   "say": "If they're old money, they tap back twice. That means: we see you."
+  },
+  {
+   "shot": "fail",
+   "cap": "Get it wrong and the smile stays. But the invitation never comes.",
+   "say": "Get it wrong and the smile stays. But the invitation never comes."
+  },
+  {
+   "shot": "story",
+   "cap": "One intern guessed the code at a gala. He tapped three times. They tapped back.",
+   "say": "One intern guessed the code at a gala. He tapped three times. They tapped back."
+  },
+  {
+   "shot": "gag",
+   "cap": "Next morning he was promoted. To the moon.",
+   "say": "Next morning he was promoted. To the moon."
+  },
+  {
+   "shot": "cta",
+   "cap": "Try it on your friend. If they tap back twice, run.",
+   "say": "Try it on your friend. If they tap back twice, run."
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag who just tapped their own hand. Because rich people can tell",
+   "say": "Tag who just tapped their own hand. Because rich people can tell"
+  }
+ ]
+}

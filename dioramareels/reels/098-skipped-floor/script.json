@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Every skyscraper over fifty floors has one floor the elevator won't stop at. I found out why.",
+   "say": "Every skyscraper over fifty floors has one floor the elevator won't stop at. I found out why."
+  },
+  {
+   "shot": "lift",
+   "cap": "Watch the numbers. Twelve. Fourteen. No thirteen. Builders say it's superstition.",
+   "say": "Watch the numbers. Twelve. Fourteen. No thirteen. Builders say it's superstition."
+  },
+  {
+   "shot": "cleaner",
+   "cap": "A night cleaner said otherwise. Her key card opened it. Once.",
+   "say": "A night cleaner said otherwise. Her key card opened it. Once."
+  },
+  {
+   "shot": "inside",
+   "cap": "Candles. A round table. Twelve chairs. Twelve people in hoods. Nobody spoke.",
+   "say": "Candles. A round table. Twelve chairs. Twelve people in hoods. Nobody spoke."
+  },
+  {
+   "shot": "eyes",
+   "cap": "They all turned. At the exact same time.",
+   "say": "They all turned. At the exact same time."
+  },
+  {
+   "shot": "note",
+   "cap": "Next morning her card was dead. And on her desk, a note: thank you for your service.",
+   "say": "Next morning her card was dead. And on her desk, a note: thank you for your service."
+  },
+  {
+   "shot": "twist",
+   "cap": "The sign on the door said: Book club. Members only. The book was about her.",
+   "say": "The sign on the door said: Book club. Members only. The book was about her."
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag who'd press the button anyway. Because every skyscraper over fifty floors",
+   "say": "Tag who'd press the button anyway. Because every skyscraper over fifty floors"
+  }
+ ]
+}

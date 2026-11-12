@@ -1,0 +1,22 @@
+// 100 Elite Files (fiction): every mansion keeps one window lit at 3 AM. Street of dark mansions, the lit window hops, a watcher in the window; gag: he's a cardboard cutout.
+STORY((k) => {
+  const { T, M, PI } = k; const st = k.LIB.place.street({ len: 60 }); k.place(st); const ms = [];
+  for (let i = 0; i < 4; i++) { const m = k.mansion({ lit: [] }); m.scale.setScalar(0.55); m.position.set(i % 2 ? 7 : -7, 0, -16 + Math.floor(i / 2) * 14); m.rotation.y = i % 2 ? -PI / 2 : PI / 2; st.add(m); ms.push(m); }
+  const ON = new T.MeshStandardMaterial({ color: '#ffd890', emissive: '#ffb040', emissiveIntensity: 1.4 }), OFF = M('#0a0c12', 0.2, 0.5); const light = (mi, wi) => ms.forEach((m, j) => m.wins.forEach((w, i) => { w.material = j === mi && i === wi ? ON : OFF; }));
+  const car = k.car({ color: '#1a1a24', lights: true }); car.position.set(1.5, 0, 0); st.add(car);
+  const rm = k.LIB.place.room({ w: 4, d: 4, h: 3, wall: '#3a2a1a', floor: 'wood', window: true }); k.place(rm); const lamp = new T.PointLight('#ffb060', 1.4, 5); lamp.position.set(0, 2, 0); rm.add(lamp);
+  const watcher = k.add(k.LIB.human({ body: 'elite:man_suit', colors: { Suit: '#1a1a24', Hair: '#8a8a8a' } }), [0, 0, 0.6], PI, rm);
+  const cut = new T.Mesh(new T.PlaneGeometry(0.9, 1.9), new T.MeshStandardMaterial({ map: k.tex(180, 380, (c, w, h) => { c.fillStyle = '#c8a878'; c.fillRect(0, 0, w, h); c.fillStyle = '#1a1a24'; c.fillRect(30, 120, 120, 260); c.fillStyle = '#e0b890'; c.beginPath(); c.arc(90, 70, 46, 0, 7); c.fill(); c.fillStyle = '#000'; c.fillRect(70, 62, 10, 6); c.fillRect(102, 62, 10, 6); c.fillRect(75, 95, 34, 5); }), side: T.DoubleSide, transparent: true }));
+  cut.position.set(0, 0.95, 0.6); rm.add(cut); const sleeper = k.add(k.LIB.human({ body: 'elite:man_suit', colors: { Suit: '#1a1a24', Hair: '#8a8a8a' } }), [0.9, 0, -0.8], PI, rm);
+  let ov = null; const street = (t, mi, wi) => { k.only(st); light(mi, wi); };
+  const shots = {
+    hook: (t, kk) => { street(t, Math.floor(kk * 4) % 4, [3, 8, 1, 10][Math.floor(kk * 4) % 4]); car.position.z = 6 - kk * 8; ov = (ctx) => { k.night(ctx, t, 0.85); k.fileTag(ctx, 100); k.rec(ctx, t, ''); }; return k.cam([1.5, 1.6, 8 - kk * 4], [0, 3, -14], 48, { blur: 2 }); },
+    street: (t, kk) => { street(t, 1, 4); car.position.z = 2 - kk * 6; ov = (ctx) => { k.night(ctx, t, 0.85); k.counter(ctx, 'LIGHTS ON', '1', { y: 170 }); }; return k.cam([0, 6, 10], [0, 1, -10], 50, { blur: 2 }); },
+    job: (t, kk) => { k.only(rm); watcher.visible = true; cut.visible = false; sleeper.visible = false; watcher.pose('idle', t); lamp.intensity = 1.4 * k.flicker(t); ov = (ctx) => { k.night(ctx, t, 0.4); k.card(ctx, 'JOB TITLE: "THE WATCHER"', { y: 200, bg: '#1a1a24', size: 36 }); k.counter(ctx, 'PAY', '🪙 GOLD', { y: 1110 }); }; return k.close(watcher, { d: 1.8 }); },
+    why: (t, kk) => { k.only(rm); watcher.visible = true; cut.visible = false; sleeper.visible = false; watcher.pose('idle', t); ov = (ctx) => { k.night(ctx, t, 0.5); k.card(ctx, ['THE STREET', 'THE NEIGHBOURS', 'YOU 👁️'][Math.min(2, Math.floor(kk * 3))], { y: 200, bg: '#5a0a0e', size: 44 }); if (kk > 0.7) k.redeyes(ctx, 360, 470, 7); }; return k.close(watcher, { d: 0.9, look: 0.92 }); },
+    rule: (t, kk) => { street(t, 2, 6); ov = (ctx) => { k.night(ctx, t, 0.85); k.card(ctx, 'RULE: NEVER CLOSE THE CURTAIN', { y: 200, bg: '#5a0a0e', size: 34 }); }; return k.cam([-1, 1.6, 3], [7 * 0.0 - 4, 2.2, -2], 40, { blur: 2 }); },
+    twist: (t, kk) => { k.only(rm); watcher.visible = false; cut.visible = true; sleeper.visible = kk > 0.5; sleeper.pose('death', t); cut.rotation.y = kk > 0.35 ? Math.min(1.4, (kk - 0.35) * 5) : 0; ov = (ctx) => { k.night(ctx, t, 0.4); k.boom(ctx, (kk - 0.35) * 2.4, 360, 980, 'CARDBOARD?!'); if (kk > 0.6) k.card(ctx, 'ASLEEP SINCE 2009 💤', { y: 200, bg: '#2a6a3a', size: 40 }); }; return k.cam([0.3, 1.5, 3.2], [0.3, 1.1, -0.2], 46, { blur: 2 }); },
+    outro: (t, kk) => { street(t, 0, 3); car.position.z = 6; ov = (ctx) => { k.night(ctx, t, 0.85); k.fileTag(ctx, 100); k.card(ctx, 'TAG WHO\'S AWAKE AT 3AM RIGHT NOW 👇', { y: 1185, bg: '#1a2a5a', size: 28 }); }; return k.cam([1.5, 1.6, 8], [0, 3, -14], 48, { blur: 2 }); },
+  };
+  return { shots, sky: '#04060c', capStyle: 'film', table: false, fog: ['#070b16', 0.035], light: { sun: [-4, 10, 6], key: 0.6, fill: 0.15, rim: 0.5, color: '#7a94e0', shadow: 12, exposure: 1.3, grade: false }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+}, { assets: ['elite/man_suit', 'buildings/village_house'] });
