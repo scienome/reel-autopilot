@@ -202,7 +202,7 @@ Folder: [`dave-reels/`](dave-reels/)
 | [43-dave-grows-an-inch](dave-reels/43-dave-grows-an-inch.mp4) | What if you grew 1 inch every day? | Waiting to post |
 | [44-gimli-glider](dave-reels/44-gimli-glider.mp4) | The jet that ran out of fuel because of maths | Waiting to post |
 
-## Toy reels (Brick Toy) (178)
+## Toy reels (Brick Toy) (179)
 Folder: [`toy-reels/`](toy-reels/)
 
 | Video | Title | Status |
@@ -303,6 +303,7 @@ Folder: [`toy-reels/`](toy-reels/)
 | [18-santa-layoffs](toy-reels/18-santa-layoffs.mp4) | Santa Replaced The Elves With Robots. Big Mistake. 🎅 | Posted (Instagram + YouTube) |
 | [180-cows-chase-dogs](toy-reels/180-cows-chase-dogs.mp4) | Cows chasing you? Let go of the dog 🐄🐕 | Waiting to post |
 | [181-cow-cud](toy-reels/181-cow-cud.mp4) | Cows swallow… then bring it back up for more 🐄 | Waiting to post |
+| [184-hard-in-cold](toy-reels/184-hard-in-cold.mp4) | He got hard after 3 days in the cold 🥶 | Waiting to post |
 | [19-batguy-electricity-bill](toy-reels/19-batguy-electricity-bill.mp4) | Bat-Guy's Worst Villain Was The Electricity Bill 🦇 | Waiting to post |
 | [20-illuminati-moon-landing](toy-reels/20-illuminati-moon-landing.mp4) | The Illuminati Faked The Moon Landing... ON THE MOON 🌕 | Posted (Instagram + YouTube) |
 | [21-zeus-wifi-down](toy-reels/21-zeus-wifi-down.mp4) | Zeus Unplugged Heaven's Wi-Fi 😇⚡ | Posted (Instagram + YouTube) |
