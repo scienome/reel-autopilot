@@ -79,7 +79,7 @@ Folder: [`gears-pov/`](gears-pov/)
 | [037-washing-machine-thoughts](gears-pov/037-washing-machine-thoughts.mp4) | You can hear what your washing machine thinks 🧦 | Posted on Instagram · on YouTube |
 | [038-kitten-thoughts](gears-pov/038-kitten-thoughts.mp4) | You can hear what your new kitten thinks 🐱 | Posted on Instagram · on YouTube |
 | [039-wedding-uncle-thoughts](gears-pov/039-wedding-uncle-thoughts.mp4) | You can hear what the uncle at every wedding thinks 🕺 | Posted on Instagram · on YouTube |
-| [040-taxi-driver-thoughts](gears-pov/040-taxi-driver-thoughts.mp4) | You can hear what your taxi driver thinks 🚕 | Waiting to post |
+| [040-taxi-driver-thoughts](gears-pov/040-taxi-driver-thoughts.mp4) | You can hear what your taxi driver thinks 🚕 | Posted on Instagram · on YouTube |
 | [041-sofa-thoughts](gears-pov/041-sofa-thoughts.mp4) | You can hear what your sofa thinks 🛋️ | Waiting to post |
 | [042-big-brother-thoughts](gears-pov/042-big-brother-thoughts.mp4) | You can hear what your big brother thinks 👦 | Waiting to post |
 | [043-owl-thoughts](gears-pov/043-owl-thoughts.mp4) | You can hear what the owl outside your window thinks 🦉 | Waiting to post |
@@ -202,7 +202,7 @@ Folder: [`dave-reels/`](dave-reels/)
 | [43-dave-grows-an-inch](dave-reels/43-dave-grows-an-inch.mp4) | What if you grew 1 inch every day? | Waiting to post |
 | [44-gimli-glider](dave-reels/44-gimli-glider.mp4) | The jet that ran out of fuel because of maths | Waiting to post |
 
-## Toy reels (Brick Toy) (159)
+## Toy reels (Brick Toy) (176)
 Folder: [`toy-reels/`](toy-reels/)
 
 | Video | Title | Status |
@@ -258,7 +258,10 @@ Folder: [`toy-reels/`](toy-reels/)
 | [135-what-if-rain-never-stops-3d](toy-reels/135-what-if-rain-never-stops-3d.mp4) | What If It Never Stopped Raining? 🌧️ | Waiting to post |
 | [136-what-if-everyone-disappeared-3d](toy-reels/136-what-if-everyone-disappeared-3d.mp4) | What If Everyone Disappeared? 🌍 | Waiting to post |
 | [14-death-replaced-by-ai](toy-reels/14-death-replaced-by-ai.mp4) | Death Got Replaced By AI. Nobody Has Died Since 💀 | Posted (Instagram + YouTube) |
-| [143-fox-snow-north](toy-reels/143-fox-snow-north.mp4) | Foxes do it in the snow… facing north 🦊❄️ | Waiting to post |
+| [140-instant-ice](toy-reels/140-instant-ice.mp4) | This water freezes in one second 🧊 | Waiting to post |
+| [141-phone-hologram](toy-reels/141-phone-hologram.mp4) | A hologram from your phone 📱✨ | Waiting to post |
+| [142-muddy-water-filter](toy-reels/142-muddy-water-filter.mp4) | Turn muddy water clear 🏕️ | Waiting to post |
+| [143-fox-snow-north](toy-reels/143-fox-snow-north.mp4) | Foxes do it in the snow… facing north 🦊❄️ | Posted (Instagram + YouTube) |
 | [144-hachiko-waited](toy-reels/144-hachiko-waited.mp4) | The dog who waited 9 years 🐕💔 | Waiting to post |
 | [145-uranus-stinks](toy-reels/145-uranus-stinks.mp4) | Scientists confirmed it: Uranus stinks 🪐💨 | Waiting to post |
 | [146-bull-cant-see-red](toy-reels/146-bull-cant-see-red.mp4) | Balls of steel… and he can't even see red 🐂 | Waiting to post |
@@ -268,9 +271,12 @@ Folder: [`toy-reels/`](toy-reels/)
 | [15-napoleon-sues-everyone](toy-reels/15-napoleon-sues-everyone.mp4) | Napoleon Came Back From The Dead To Sue Everyone 💀 | Waiting to post |
 | [150-alpaca-spits](toy-reels/150-alpaca-spits.mp4) | She'll spit on you if she's not into you 🦙💦 | Waiting to post |
 | [151-collapse-in-crowd](toy-reels/151-collapse-in-crowd.mp4) | Someone collapses. 20 people walk past. Do THIS 🚨 | Waiting to post |
+| [152-dead-butt](toy-reels/152-dead-butt.mp4) | Sitting all day is literally killing your butt 🍑 | Waiting to post |
 | [153-togo-and-balto](toy-reels/153-togo-and-balto.mp4) | The dogs who ran through a blizzard to save a town 🐺❄️ | Waiting to post |
 | [154-never-run-from-dog](toy-reels/154-never-run-from-dog.mp4) | Never run from a dog. Here's why 🐕 | Waiting to post |
 | [155-stag-rack](toy-reels/155-stag-rack.mp4) | Every year he loses his rack… and grows a bigger one 🦌 | Waiting to post |
+| [156-laika](toy-reels/156-laika.mp4) | The first dog in space was never coming back 🐕🚀 | Waiting to post |
+| [158-donkey-not-an-ass](toy-reels/158-donkey-not-an-ass.mp4) | Don't call him an ass. He's smarter than you 🫏 | Waiting to post |
 | [159-wolf-or7](toy-reels/159-wolf-or7.mp4) | He walked 1,000+ miles alone to find a family 🐺 | Waiting to post |
 | [16-robbers-rob-illuminati](toy-reels/16-robbers-rob-illuminati.mp4) | Two Robbers Robbed The Illuminati's Bank 👁️ | Posted (Instagram + YouTube) |
 | [161-ass-guards-sheep](toy-reels/161-ass-guards-sheep.mp4) | Farmers hire an ass to protect their sheep 🫏🐑 | Waiting to post |
@@ -279,11 +285,22 @@ Folder: [`toy-reels/`](toy-reels/)
 | [164-ewe-remember-faces](toy-reels/164-ewe-remember-faces.mp4) | Ewe won't believe what sheep remember 🐑 | Waiting to post |
 | [165-cow-burps](toy-reels/165-cow-burps.mp4) | Cows aren't farting the planet to death. It's the burps 🐄💨 | Waiting to post |
 | [166-moon-pulling-out](toy-reels/166-moon-pulling-out.mp4) | The Moon is slowly pulling out 🌙 | Waiting to post |
+| [167-smooth-balls](toy-reels/167-smooth-balls.mp4) | Smooth balls don't go far ⛳ | Waiting to post |
+| [168-pirate-booty](toy-reels/168-pirate-booty.mp4) | Pirates almost never buried their booty 🏴‍☠️ | Waiting to post |
 | [169-sheepdog-eyes](toy-reels/169-sheepdog-eyes.mp4) | She moves 300 sheep with just her eyes 🐕🐑 | Waiting to post |
 | [17-einstein-art-school](toy-reels/17-einstein-art-school.mp4) | Einstein Went Back In Time To Get Hitler Into Art School 🎨 | Posted (Instagram + YouTube) |
 | [171-uranus-on-its-side](toy-reels/171-uranus-on-its-side.mp4) | Something hit Uranus so hard, it's still on its side 🪐 | Waiting to post |
 | [172-counting-sheep](toy-reels/172-counting-sheep.mp4) | Counting sheep doesn't work. Try this instead 🐑😴 | Waiting to post |
+| [173-husky-all-night](toy-reels/173-husky-all-night.mp4) | This dog can go all night and never get tired 🐺❄️ | Waiting to post |
+| [174-dog-humping](toy-reels/174-dog-humping.mp4) | Your dog isn't being dirty when he humps 🐕 | Waiting to post |
+| [175-alpha-male-lie](toy-reels/175-alpha-male-lie.mp4) | The 'alpha male' is a lie. The man who made it famous said so 🐺 | Waiting to post |
+| [176-lemon-battery](toy-reels/176-lemon-battery.mp4) | Light an LED with lemons 🍋💡 | Waiting to post |
+| [177-egg-yolk-bottle](toy-reels/177-egg-yolk-bottle.mp4) | Your bottle can do this 🥚 | Waiting to post |
+| [178-stuck-jar](toy-reels/178-stuck-jar.mp4) | The jar isn't too tight. You're doing it wrong 🫙 | Waiting to post |
+| [179-swallowed-gum](toy-reels/179-swallowed-gum.mp4) | Swallowed gum stays 7 years? Here's the truth 🫧 | Waiting to post |
 | [18-santa-layoffs](toy-reels/18-santa-layoffs.mp4) | Santa Replaced The Elves With Robots. Big Mistake. 🎅 | Posted (Instagram + YouTube) |
+| [180-cows-chase-dogs](toy-reels/180-cows-chase-dogs.mp4) | Cows chasing you? Let go of the dog 🐄🐕 | Waiting to post |
+| [181-cow-cud](toy-reels/181-cow-cud.mp4) | Cows swallow… then bring it back up for more 🐄 | Waiting to post |
 | [19-batguy-electricity-bill](toy-reels/19-batguy-electricity-bill.mp4) | Bat-Guy's Worst Villain Was The Electricity Bill 🦇 | Waiting to post |
 | [20-illuminati-moon-landing](toy-reels/20-illuminati-moon-landing.mp4) | The Illuminati Faked The Moon Landing... ON THE MOON 🌕 | Posted (Instagram + YouTube) |
 | [21-zeus-wifi-down](toy-reels/21-zeus-wifi-down.mp4) | Zeus Unplugged Heaven's Wi-Fi 😇⚡ | Posted (Instagram + YouTube) |
