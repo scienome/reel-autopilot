@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Stay wet for too long, and things start to wrinkle. But it's not what you think.",
+   "say": "Stay wet for too long, and things start to wrinkle. But it's not what you think."
+  },
+  {
+   "shot": "myth",
+   "cap": "Most people think the skin just soaks up water, and swells.",
+   "say": "Most people think the skin just soaks up water, and swells."
+  },
+  {
+   "shot": "nerves",
+   "cap": "But in the 1930s, doctors noticed something strange. If the nerve in a finger was cut, it didn't wrinkle at all.",
+   "say": "But in the 1930s, doctors noticed something strange. If the nerve in a finger was cut, it didn't wrinkle at all."
+  },
+  {
+   "shot": "control",
+   "cap": "So it's your nervous system doing it. Blood vessels under the skin tighten, and the skin pulls into folds.",
+   "say": "So it's your nervous system doing it. Blood vessels under the skin tighten, and the skin pulls into folds."
+  },
+  {
+   "shot": "grip",
+   "cap": "Why? One 2013 study found people with wrinkled fingers moved wet marbles faster. Like tyre treads, draining water.",
+   "say": "Why? One 2013 study found people with wrinkled fingers moved wet marbles faster. Like tyre treads, draining water."
+  },
+  {
+   "shot": "debate",
+   "cap": "Not every study agrees, so scientists are still arguing.",
+   "say": "Not every study agrees, so scientists are still arguing."
+  },
+  {
+   "shot": "doctors",
+   "cap": "Doctors even use it as a simple test, to check if nerves in the hand are working.",
+   "say": "Doctors even use it as a simple test, to check if nerves in the hand are working."
+  },
+  {
+   "shot": "outro",
+   "cap": "So next time you're in the bath, your fingers are getting a grip.",
+   "say": "So next time you're in the bath, your fingers are getting a grip."
+  }
+ ]
+}

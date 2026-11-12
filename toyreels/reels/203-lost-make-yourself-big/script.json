@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Lost in the woods? Stay put, get loud, and make yourself big.",
+   "say": "Lost in the woods? Stay put, get loud, and make yourself big."
+  },
+  {
+   "shot": "panic",
+   "cap": "Most people who get lost make it worse by walking. They panic, and wander further from where searchers will look.",
+   "say": "Most people who get lost make it worse by walking. They panic, and wander further from where searchers will look."
+  },
+  {
+   "shot": "one",
+   "cap": "Rule one. Stop. Sit down, calm down, and stay where you are. Hug a tree if it helps.",
+   "say": "Rule one. Stop. Sit down, calm down, and stay where you are. Hug a tree if it helps."
+  },
+  {
+   "shot": "two",
+   "cap": "Rule two. Get loud. Three blasts on a whistle is the signal for help. It carries further than your voice, and it won't wear you out.",
+   "say": "Rule two. Get loud. Three blasts on a whistle is the signal for help. It carries further than your voice, and it won't wear you out."
+  },
+  {
+   "shot": "three",
+   "cap": "Rule three. Make yourself big. Bright clothes, an open spot, anything shiny or colourful, so searchers can see you from above.",
+   "say": "Rule three. Make yourself big. Bright clothes, an open spot, anything shiny or colourful, so searchers can see you from above."
+  },
+  {
+   "shot": "shelter",
+   "cap": "Then stay warm and dry. Get off the cold ground, and out of the wind.",
+   "say": "Then stay warm and dry. Get off the cold ground, and out of the wind."
+  },
+  {
+   "shot": "found",
+   "cap": "Searchers start where you were last seen. If you stay put, they find you faster.",
+   "say": "Searchers start where you were last seen. If you stay put, they find you faster."
+  },
+  {
+   "shot": "outro",
+   "cap": "Stop. Get loud. Get big. Save this before your next hike.",
+   "say": "Stop. Get loud. Get big. Save this before your next hike."
+  }
+ ]
+}

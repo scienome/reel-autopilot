@@ -1,0 +1,18 @@
+// 203 cinestory3d (story3d.js): what to do when lost (NPS/USFS "STOP"; Hug-a-Tree and Survive; whistle signals). Scroll stopper: a hiker alone in the woods, "MAKE YOURSELF BIG 😳"... Gag: a wolf creeps up, he makes himself big and loud, the wolf bolts.
+STORY((k) => {
+  const { PI } = k; const fo = k.forest(); const man = k.add(k.LIB.human({ body: 'm', top: '#ff8a1e', bottom: '#2a3140', hair: '#2b1d14', sleeves: true }), [0, 0, 0], 0, fo);
+  const wolf = k.add(k.LIB.animal('wolf', { h: 0.9 }), [1.6, 0, -2.2], -0.6, fo); const fire = k.add(k.campfire(), [0.8, 0, 0.6], 0, fo);
+  const s1 = k.add(k.LIB.human({ body: 'm', top: '#e8384f', bottom: '#2a2a30', hair: '#1a1210', sleeves: true }), [0, 0, 0], 0, fo), s2 = k.add(k.LIB.human({ body: 'woman_jacket' }), [0, 0, 0], 0, fo);
+  let ov = null; const base = () => { k.only(fo); wolf.visible = fire.visible = s1.visible = s2.visible = false; man.position.set(0, 0, 0); man.rotation.set(0, 0, 0); };
+  const shots = {
+    hook: (t, kk) => { base(); wolf.visible = true; const B = kk > 0.5; man.pose(B ? 'jump' : 'idle', t); if (!B) { k.walk(wolf, [2.4, 0, -3.2], [1.0, 0, -1.2], kk / 0.5, 'walk', t); } else { k.walk(wolf, [1.0, 0, -1.2], [5, 0, -6], (kk - 0.5) * 2, 'run', t); } ov = (ctx) => { k.card(ctx, B ? 'MAKE YOURSELF BIG 😳' : 'LOST IN THE WOODS?', { y: 200, bg: B ? '#e8384f' : '#2a6a3a', size: 44 }); if (B) k.boom(ctx, (kk - 0.5) * 2.5, 300, 520, 'RAAAH!'); }; return k.cam([-1.4, 1.5, 3.4], [0.4, 1.0, -0.6], 50); },
+    panic: (t, kk) => { base(); k.walk(man, [-1, 0, 1], [1.5, 0, -2], kk, 'run', t); ov = (ctx) => k.card(ctx, 'WANDERING = HARDER TO FIND', { y: 200, bg: '#5a6470', size: 36 }); return k.cam([2.4, 1.6, 3.4], [man.position.x, 1.0, man.position.z], 46); },
+    one: (t, kk) => { base(); man.pose('sit', t); ov = (ctx) => { k.counter(ctx, 'RULE 1', 'STOP 🛑', { y: 170 }); k.card(ctx, 'SIT · CALM DOWN · STAY', { y: 1185, bg: '#e8384f', size: 38 }); }; return k.close(man, { d: 2.0, look: 0.5 }); },
+    two: (t, kk) => { base(); man.pose('idle', t); ov = (ctx) => { k.counter(ctx, 'RULE 2', 'GET LOUD 📢', { y: 170 }); const n = Math.floor((t * 2) % 4); for (let i = 0; i < Math.min(3, n); i++) k.card(ctx, 'TWEET!', { y: 420 + i * 110, bg: '#ffb21a', size: 50 }); }; return k.close(man, { d: 1.8 }); },
+    three: (t, kk) => { base(); man.pose('jump', t); ov = (ctx) => { k.counter(ctx, 'RULE 3', 'GET BIG 🙌', { y: 170 }); k.card(ctx, 'BRIGHT · OPEN · SHINY', { y: 1185, bg: '#ff8a1e', size: 40 }); }; return k.cam([0.2, 9 - kk * 3, 1.2], [0, 0, 0], 50); },
+    shelter: (t, kk) => { base(); fire.visible = true; man.pose('sit', t); ov = (ctx) => k.card(ctx, 'WARM · DRY · OFF THE GROUND', { y: 200, bg: '#c8501e', size: 36 }); return k.cam([-1.2, 1.2, 2.6], [0.4, 0.6, 0.2], 46); },
+    found: (t, kk) => { base(); man.pose(kk > 0.6 ? 'jump' : 'sit', t); s1.visible = s2.visible = true; k.walk(s1, [-4, 0, -4], [-1.0, 0, -0.6], Math.min(1, kk * 1.5), 'walk', t); k.walk(s2, [-4.6, 0, -3.2], [-1.2, 0, 0.2], Math.min(1, kk * 1.5), 'walk', t); if (kk > 0.67) { s1.pose('talk', t); s2.pose('clap', t); } ov = (ctx) => k.card(ctx, 'FOUND FASTER 🧭', { y: 200, bg: '#2a9d4a', size: 44 }); return k.cam([1.6, 1.6, 3.6], [-0.6, 1.0, -0.4], 48); },
+    outro: (t, kk) => { base(); man.pose('dance', t); ov = (ctx) => k.big(ctx, 'STOP · LOUD · BIG', { y: 240, size: 56, col: '#ffd23f' }); return k.cam([0.4, 1.5, 3.2], [0, 1.0, 0], 44); },
+  };
+  return { shots, sky: '#a8c8a0', over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+}, { assets: ['humans/Superhero_Male', 'humans/Woman_Jacket', 'humans/ual1', 'animals/wolf', 'nature/tree_oak', 'nature/tree_maple', 'nature/tree_birch', 'nature/rock_a', 'nature/rock_mossy'] });

@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Square holes kept ripping open. So now, every hole they make is round.",
+   "say": "Square holes kept ripping open. So now, every hole they make is round."
+  },
+  {
+   "shot": "comet",
+   "cap": "1952. The de Havilland Comet, the world's first jet airliner. Fast, sleek, and full of square-ish windows.",
+   "say": "1952. The de Havilland Comet, the world's first jet airliner. Fast, sleek, and full of square-ish windows."
+  },
+  {
+   "shot": "crash",
+   "cap": "Then, in 1954, two Comets broke apart in mid air, within months.",
+   "say": "Then, in 1954, two Comets broke apart in mid air, within months."
+  },
+  {
+   "shot": "test",
+   "cap": "Engineers put a whole plane in a giant water tank, and pumped it up and down, again and again, like real flights.",
+   "say": "Engineers put a whole plane in a giant water tank, and pumped it up and down, again and again, like real flights."
+  },
+  {
+   "shot": "crack",
+   "cap": "It ripped open at a sharp corner near the top. Cracks had started at corners, where stress piles up.",
+   "say": "It ripped open at a sharp corner near the top. Cracks had started at corners, where stress piles up."
+  },
+  {
+   "shot": "round",
+   "cap": "A rounded corner spreads that stress out smoothly. No weak point.",
+   "say": "A rounded corner spreads that stress out smoothly. No weak point."
+  },
+  {
+   "shot": "now",
+   "cap": "So today, every window, door and hatch on a plane has rounded corners.",
+   "say": "So today, every window, door and hatch on a plane has rounded corners."
+  },
+  {
+   "shot": "outro",
+   "cap": "Round holes. Safer flights.",
+   "say": "Round holes. Safer flights."
+  }
+ ]
+}
