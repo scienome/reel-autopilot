@@ -1,0 +1,49 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "The richest knights in Europe all got screwed on the same day. Friday the thirteenth. By a king who owed them money.",
+   "say": "The richest knights in Europe all got screwed on the same day. Friday the thirteenth. By a king who owed them money."
+  },
+  {
+   "shot": "who",
+   "cap": "The Knights Templar. Warrior monks who protected Christian pilgrims travelling to Jerusalem.",
+   "say": "The Knights Templar. Warrior monks who protected Christian pilgrims travelling to Jerusalem."
+  },
+  {
+   "shot": "bank",
+   "cap": "They got so rich, they basically invented banking. Leave your gold in Paris, collect it in Jerusalem, with a letter of credit.",
+   "say": "They got so rich, they basically invented banking. Leave your gold in Paris, collect it in Jerusalem, with a letter of credit."
+  },
+  {
+   "shot": "king",
+   "cap": "And the King of France, Philip the Fourth, owed them a fortune.",
+   "say": "And the King of France, Philip the Fourth, owed them a fortune."
+  },
+  {
+   "shot": "raid",
+   "cap": "So on Friday, October thirteenth, 1307, his soldiers arrested every Templar in France. At dawn. All at once.",
+   "say": "So on Friday, October thirteenth, 1307, his soldiers arrested every Templar in France. At dawn. All at once."
+  },
+  {
+   "shot": "torture",
+   "cap": "They were tortured until they confessed to strange rituals. Spitting on the cross. Worshipping a head named Baphomet.",
+   "say": "They were tortured until they confessed to strange rituals. Spitting on the cross. Worshipping a head named Baphomet."
+  },
+  {
+   "shot": "fire",
+   "cap": "In 1314, their last Grand Master was burned alive in Paris. Legend says he cursed the king and the pope from the flames.",
+   "say": "In 1314, their last Grand Master was burned alive in Paris. Legend says he cursed the king and the pope from the flames."
+  },
+  {
+   "shot": "curse",
+   "cap": "Both were dead within a year.",
+   "say": "Both were dead within a year."
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the friend who owes you money. Just in case. Because,",
+   "say": "Tag the friend who owes you money. Just in case. Because,"
+  }
+ ]
+}
