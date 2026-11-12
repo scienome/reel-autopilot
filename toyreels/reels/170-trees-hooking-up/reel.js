@@ -8,7 +8,7 @@ STORY((k) => {
   [-2.2, 2.2].forEach((x) => { for (let i = 0; i < 5; i++) tube([[x, 0, 0.8], [x + (i - 2) * 0.3, -0.6, 0.85], [x + (i - 2) * 0.7, -1.4 - (i % 2) * 0.4, 0.85]], 0.06 - i * 0.005, RM); });
   const threads = []; for (let i = 0; i < 9; i++) threads.push(tube([[-2.2 + (i % 3 - 1) * 0.5, -1.0 - (i % 3) * 0.3, 0.86], [0, -0.8 - Math.sin(i) * 0.6, 0.88], [2.2 + (i % 3 - 1) * 0.5, -1.1 - ((i + 1) % 3) * 0.3, 0.86]], 0.012, FM));
   const dots = []; for (let i = 0; i < 16; i++) { const d = new T.Mesh(new T.SphereGeometry(0.05, 10, 8), new T.MeshBasicMaterial({ color: '#7fe0ff', toneMapped: false })); under.add(d); dots.push(d); }
-  const glow = (t, n = 9, dir = 1) => { threads.forEach((th, i) => { th.o.visible = i < n; th.o.material.opacity = 0.5 + 0.4 * Math.sin(t * 3 + i); }); dots.forEach((d, i) => { const th = threads[i % n]; const u = ((t * 0.3 + i / dots.length) % 1); d.visible = true; d.position.copy(th.c.getPointAt(dir > 0 ? u : 1 - u)); }); };
+  const glow = (t, n = 9, dir = 1) => { n = Math.max(1, n); threads.forEach((th, i) => { th.o.visible = i < n; th.o.material.opacity = 0.5 + 0.4 * Math.sin(t * 3 + i); }); dots.forEach((d, i) => { const th = threads[i % n]; const u = ((t * 0.3 + i / dots.length) % 1); d.visible = true; d.position.copy(th.c.getPointAt(dir > 0 ? u : 1 - u)); }); };
   let ov = null; const base = () => { k.only(fr); under.visible = true; dots.forEach((d) => { d.visible = false; }); };
   const cutCam = (o = {}) => k.cam([0, -0.6, 7.5], [0, -0.7, 0], 42, Object.assign({ sky: fr.sky, focus: [0.1, 0.95], blur: 2 }, o));
   const shots = {
