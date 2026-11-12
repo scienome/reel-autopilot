@@ -202,7 +202,7 @@ Folder: [`dave-reels/`](dave-reels/)
 | [43-dave-grows-an-inch](dave-reels/43-dave-grows-an-inch.mp4) | What if you grew 1 inch every day? | Waiting to post |
 | [44-gimli-glider](dave-reels/44-gimli-glider.mp4) | The jet that ran out of fuel because of maths | Waiting to post |
 
-## Toy reels (Brick Toy) (177)
+## Toy reels (Brick Toy) (178)
 Folder: [`toy-reels/`](toy-reels/)
 
 | Video | Title | Status |
@@ -280,6 +280,7 @@ Folder: [`toy-reels/`](toy-reels/)
 | [158-donkey-not-an-ass](toy-reels/158-donkey-not-an-ass.mp4) | Don't call him an ass. He's smarter than you 🫏 | Waiting to post |
 | [159-wolf-or7](toy-reels/159-wolf-or7.mp4) | He walked 1,000+ miles alone to find a family 🐺 | Waiting to post |
 | [16-robbers-rob-illuminati](toy-reels/16-robbers-rob-illuminati.mp4) | Two Robbers Robbed The Illuminati's Bank 👁️ | Posted (Instagram + YouTube) |
+| [160-horses-cant-vomit](toy-reels/160-horses-cant-vomit.mp4) | Horses can't throw up. Ever 🐴 | Waiting to post |
 | [161-ass-guards-sheep](toy-reels/161-ass-guards-sheep.mp4) | Farmers hire an ass to protect their sheep 🫏🐑 | Waiting to post |
 | [162-clever-hans](toy-reels/162-clever-hans.mp4) | The horse who could 'do maths' 🐴➕ | Waiting to post |
 | [163-fox-scream](toy-reels/163-fox-scream.mp4) | That woman screaming at night? It's a fox 🦊😱 | Waiting to post |
