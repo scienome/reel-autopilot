@@ -1,0 +1,23 @@
+// 182 cinestory3d (story3d.js): flatulence 5-15+ times a day (NHS; Suarez 1998). Scroll stopper: an office worker bends over and a green cloud puffs out behind him, his colleague recoils.
+STORY((k) => {
+  const { T, PI } = k; const of = k.LIB.place.office({}); k.place(of);
+  const guy = k.add(k.LIB.human({ body: 'm', top: '#e8eef4', bottom: '#2a3140', hair: '#2b1d14', sleeves: true }), [0, 0, 0], 0.6, of);
+  const her = k.add(k.LIB.human({ body: 'woman_jacket' }), [-1.0, 0, -0.9], 0.9, of);
+  const cloud = new T.Group(); for (let i = 0; i < 9; i++) { const s = new T.Mesh(new T.SphereGeometry(0.16 + (i % 3) * 0.06, 14, 10), new T.MeshBasicMaterial({ color: i % 2 ? '#9be36a' : '#c6f08a', transparent: true, opacity: 0.55 })); s.userData.i = i; cloud.add(s); } of.add(cloud);
+  const puff = (u) => { const p = guy.position, a = guy.rotation.y + PI; cloud.visible = u > 0; cloud.children.forEach((s) => { const i = s.userData.i, r = 0.12 + u * (0.35 + (i % 4) * 0.12); s.position.set(p.x + Math.sin(a) * (0.25 + r) + Math.cos(i * 1.7) * r * 0.6, 0.95 + Math.sin(i * 2.3) * r * 0.5 + u * 0.2, p.z + Math.cos(a) * (0.25 + r) + Math.sin(i * 1.7) * r * 0.6); s.scale.setScalar(0.6 + u * 1.2); s.material.opacity = 0.6 * (1 - u * 0.5); }); };
+  let ov = null; const base = () => { k.only(of); guy.position.set(0, 0, 0); guy.rotation.y = 0.6; her.visible = true; puff(0); };
+  const gut = (ctx, t, food) => { ctx.save(); ctx.fillStyle = 'rgba(10,18,30,0.85)'; ctx.beginPath(); ctx.roundRect(70, 300, 580, 640, 30); ctx.fill(); ctx.strokeStyle = '#ff9aa8'; ctx.lineWidth = 34; ctx.lineCap = 'round'; ctx.beginPath();
+    for (let i = 0; i <= 80; i++) { const s = i / 80, x = 360 + Math.sin(s * 16) * 200 * (1 - s * 0.3), y = 360 + s * 520; i ? ctx.lineTo(x, y) : ctx.moveTo(x, y); } ctx.stroke();
+    for (let i = 0; i < 22; i++) { const s = ((i * 0.137 + t * 0.12) % 1), x = 360 + Math.sin(s * 16) * 200 * (1 - s * 0.3), y = 360 + s * 520; ctx.fillStyle = food && i % 3 === 0 ? food : '#7ee08a'; ctx.beginPath(); ctx.arc(x + Math.sin(i) * 8, y, food && i % 3 === 0 ? 14 : 7 + (i % 3) * 3, 0, 7); ctx.fill(); } ctx.restore(); };
+  const shots = {
+    hook: (t, kk) => { base(); guy.pose(kk < 0.35 ? 'pickup' : 'idle', t); her.pose(kk > 0.4 ? 'jump' : 'idle', t); puff(Math.max(0, (kk - 0.3) * 1.6)); ov = (ctx) => k.counter(ctx, 'EVERY DAY', `${Math.min(15, Math.round(kk * 20))}x 💨`, { y: 170 }); return k.cam([2.4, 1.3, -1.6], [0, 0.95, 0], 38); },
+    office: (t, kk) => { base(); guy.pose('idle', t); her.pose('sit', t); her.position.set(-1.0, 0, -0.9); ov = (ctx) => k.card(ctx, 'YES. EVEN HER.', { y: 200, bg: '#7a3ad8', size: 40 }); return k.close(her, { d: 2.0, side: 0.2 }); },
+    air: (t, kk) => { base(); guy.pose('talk', t); her.visible = false; ov = (ctx) => k.card(ctx, 'SWALLOWED AIR · GUM · FIZZY DRINKS', { y: 200, bg: '#1f8fd8', size: 30 }); return k.close(guy, { d: 1.8, side: 0.1 }); },
+    inside: (t, kk) => { base(); guy.pose('idle', t); her.visible = false; ov = (ctx) => { gut(ctx, t); k.card(ctx, 'GUT BACTERIA AT WORK', { y: 1185, bg: '#2a9d4a', size: 34 }); }; return k.close(guy, { d: 2.2 }); },
+    beans: (t, kk) => { base(); guy.pose('idle', t); her.visible = false; ov = (ctx) => { gut(ctx, t, '#c8781e'); k.card(ctx, 'BEANS · ONIONS · BROCCOLI', { y: 1185, bg: '#c8501e', size: 34 }); }; return k.close(guy, { d: 2.2 }); },
+    smell: (t, kk) => { base(); guy.pose('idle', t); her.pose('jump', t); puff(0.7 + Math.sin(t * 2) * 0.1); ov = (ctx) => k.counter(ctx, 'SMELLY PART', '< 1%', { y: 170 }); return k.cam([2.4, 1.3, -1.6], [-0.3, 0.95, -0.3], 40); },
+    hold: (t, kk) => { base(); guy.pose('crouch', t); her.visible = false; ov = (ctx) => k.card(ctx, 'HOLD IT = IT WAITS', { y: 200, bg: '#e8384f', size: 42 }); return k.close(guy, { d: 2.0, side: 0.4, look: 0.6 }); },
+    outro: (t, kk) => { base(); guy.pose('dance', t); her.pose('idle', t); ov = (ctx) => k.big(ctx, 'YOUR GUT IS WORKING.', { y: 240, size: 50, col: '#ffd23f' }); return k.cam([1.2, 1.5, 3.4], [-0.3, 0.9, -0.3], 40); },
+  };
+  return { shots, sky: '#dfe4e8', over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+}, { assets: ['humans/Superhero_Male', 'humans/Woman_Jacket', 'humans/ual1'] });

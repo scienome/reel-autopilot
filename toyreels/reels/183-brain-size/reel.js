@@ -1,0 +1,24 @@
+// 183 cinestory3d (story3d.js): Einstein's brain 1,230 g (Witelson 1999; Falk 2013). Scroll stopper: a woman holds up a tape ruler to a nervous man ("does size matter?"), then it swings up to his head.
+STORY((k) => {
+  const { PI } = k; const rm = k.LIB.place.room({ wall: '#e8d6e6' }); k.place(rm);
+  const man = k.add(k.LIB.human({ body: 'm', top: '#2f6fd8', bottom: '#2a2a30', hair: '#2b1d14' }), [0, 0, 0], 0.3, rm);
+  const her = k.add(k.LIB.human({ body: 'woman_casual' }), [0.9, 0, 0.7], -2.3, rm);
+  const ein = k.add(k.LIB.human({ body: 'm', top: '#8a7a68', bottom: '#4a3f36', hair: '#eeeeee', hairStyle: 'long', h: 1.72 }), [0, 0, 0], 0.2, rm);
+  let ov = null; const base = () => { k.only(rm); man.visible = her.visible = true; ein.visible = false; };
+  const ruler = (ctx, x, y, w, ang, label) => { ctx.save(); ctx.translate(x, y); ctx.rotate(ang); ctx.fillStyle = '#ffd23f'; ctx.strokeStyle = '#1a1a1a'; ctx.lineWidth = 4; ctx.beginPath(); ctx.roundRect(-w / 2, -26, w, 52, 8); ctx.fill(); ctx.stroke();
+    ctx.fillStyle = '#1a1a1a'; for (let i = 0; i <= 20; i++) { const xx = -w / 2 + 14 + i * (w - 28) / 20; ctx.fillRect(xx - 1.5, -26, 3, i % 5 ? 14 : 26); } if (label) { ctx.font = '900 22px sans-serif'; ctx.textAlign = 'center'; ctx.fillText(label, 0, 18); } ctx.restore(); };
+  const brain = (ctx, cx, cy, s, glow) => { ctx.save(); ctx.translate(cx, cy); ctx.scale(s, s); ctx.fillStyle = '#f2a7b8'; ctx.strokeStyle = '#b8586e'; ctx.lineWidth = 6; ctx.beginPath(); ctx.ellipse(0, 0, 150, 110, 0, 0, 7); ctx.fill(); ctx.stroke();
+    ctx.lineWidth = 5; for (let i = 0; i < 9; i++) { ctx.beginPath(); for (let j = 0; j <= 12; j++) { const x = -130 + j * 22, y = -80 + i * 20 + Math.sin(j * 1.3 + i) * 9; j ? ctx.lineTo(x, y) : ctx.moveTo(x, y); } ctx.stroke(); }
+    ctx.beginPath(); ctx.moveTo(0, -110); ctx.lineTo(0, 100); ctx.stroke(); if (glow) { ctx.strokeStyle = '#7ff2ff'; ctx.lineWidth = 4; ctx.shadowColor = '#7ff2ff'; ctx.shadowBlur = 20; for (let i = 0; i < 14; i++) { const a = i * 0.45 + glow, b = a + 2.1; ctx.beginPath(); ctx.moveTo(Math.cos(a) * 110, Math.sin(a) * 75); ctx.quadraticCurveTo(0, 0, Math.cos(b) * 110, Math.sin(b) * 75); ctx.stroke(); } } ctx.restore(); };
+  const shots = {
+    hook: (t, kk) => { base(); man.pose(kk < 0.5 ? 'idle' : 'talk', t); her.pose('talk', t); const up = Math.min(1, Math.max(0, (kk - 0.45) * 3)); ov = (ctx) => { ruler(ctx, 360, 860 - up * 470, 300, 0, up < 1 ? 'SIZE?' : 'BRAIN'); if (up >= 1) k.big(ctx, '🧠', { y: 230, size: 120 }); }; return k.cam([0.3, 1.1, 3.0], [0.1, 1.0 + 0.3 * up, 0], 44); },
+    einstein: (t, kk) => { k.only(rm); man.visible = her.visible = false; ein.visible = true; ein.pose('talk', t); ov = (ctx) => k.card(ctx, 'ALBERT EINSTEIN · 1955', { y: 200, bg: '#5a4a3a', size: 38 }); return k.close(ein, { d: 1.6, side: 0.2 }); },
+    weigh: (t, kk) => { k.only(rm); man.visible = her.visible = false; ein.visible = true; ein.pose('idle', t); ov = (ctx) => { brain(ctx, 360, 640, 1.1); k.counter(ctx, 'EINSTEIN', '1,230 g', { y: 170 }); k.card(ctx, 'AVERAGE MAN ≈ 1,350 g', { y: 1185, bg: '#1f8fd8', size: 34 }); }; return k.close(ein, { d: 2.0 }); },
+    whales: (t, kk) => { base(); her.visible = false; man.pose('idle', t); ov = (ctx) => { brain(ctx, 360, 640, 1.6 + Math.sin(t) * 0.03); k.counter(ctx, 'SPERM WHALE', '≈ 8 kg', { y: 170 }); k.card(ctx, 'NO CALCULUS', { y: 1185, bg: '#e8384f', size: 40 }); }; return k.close(man, { d: 2.2 }); },
+    inside: (t, kk) => { base(); her.visible = false; man.pose('idle', t); ov = (ctx) => { brain(ctx, 360, 640, 1.2, t * 2); k.card(ctx, 'IT\'S THE WIRING', { y: 1185, bg: '#2a9d4a', size: 40 }); }; return k.close(man, { d: 2.2 }); },
+    einstein2: (t, kk) => { k.only(rm); man.visible = her.visible = false; ein.visible = true; ein.pose('talk', t); ov = (ctx) => { brain(ctx, 360, 640, 1.2, t * 3); k.card(ctx, 'EXTRA FOLDS · MATHS & SPACE', { y: 1185, bg: '#7a3ad8', size: 32 }); }; return k.close(ein, { d: 2.0 }); },
+    grow: (t, kk) => { base(); her.pose('idle', t); man.pose('talk', t); ov = (ctx) => { brain(ctx, 360, 520, 0.8 + kk * 0.3, t * 4); k.card(ctx, 'LEARN = NEW CONNECTIONS', { y: 1185, bg: '#1f8fd8', size: 34 }); }; return k.cam([0.3, 1.4, 3.2], [0.3, 1.0, 0], 44); },
+    outro: (t, kk) => { base(); man.pose('dance', t); her.pose('idle', t); ov = (ctx) => k.big(ctx, 'IT\'S HOW YOU USE IT.', { y: 240, size: 50, col: '#ffd23f' }); return k.cam([0.6, 1.4, 3.4], [0.3, 0.9, 0], 42); },
+  };
+  return { shots, sky: '#e8d6e6', over: (ctx) => { if (ov) ov(ctx); ov = null; } };
+}, { assets: ['humans/Superhero_Male', 'humans/Woman_Casual', 'humans/ual1'] });
