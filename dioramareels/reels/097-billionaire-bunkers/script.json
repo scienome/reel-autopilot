@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "The richest people on Earth are quietly digging holes. In New Zealand. In Hawaii. In old missile silos. What do they know?",
+   "say": "The richest people on Earth are quietly digging holes. In New Zealand. In Hawaii. In old missile silos. What do they know?"
+  },
+  {
+   "shot": "nz",
+   "cap": "Peter Thiel became a New Zealand citizen after spending just twelve days there. Nobody found out for six years.",
+   "say": "Peter Thiel became a New Zealand citizen after spending just twelve days there. Nobody found out for six years."
+  },
+  {
+   "shot": "silo",
+   "cap": "In Kansas, a nuclear missile silo became luxury doomsday condos. Pool. Cinema. Climbing wall. Millions per apartment.",
+   "say": "In Kansas, a nuclear missile silo became luxury doomsday condos. Pool. Cinema. Climbing wall. Millions per apartment."
+  },
+  {
+   "shot": "zuck",
+   "cap": "Mark Zuckerberg's Hawaii ranch reportedly has a five thousand square foot underground shelter.",
+   "say": "Mark Zuckerberg's Hawaii ranch reportedly has a five thousand square foot underground shelter."
+  },
+  {
+   "shot": "poll",
+   "cap": "A LinkedIn co-founder guessed over half of Silicon Valley billionaires have apocalypse insurance.",
+   "say": "A LinkedIn co-founder guessed over half of Silicon Valley billionaires have apocalypse insurance."
+  },
+  {
+   "shot": "guards",
+   "cap": "Then a writer was paid to advise five billionaires. Their real question? After the world ends, how do we stop our own guards from turning on us?",
+   "say": "Then a writer was paid to advise five billionaires. Their real question? After the world ends, how do we stop our own guards from turning on us?"
+  },
+  {
+   "shot": "gag",
+   "cap": "His answer: be nice to them. Now.",
+   "say": "His answer: be nice to them. Now."
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the friend you'd let in your bunker. Because, the richest people on Earth",
+   "say": "Tag the friend you'd let in your bunker. Because, the richest people on Earth"
+  }
+ ]
+}
