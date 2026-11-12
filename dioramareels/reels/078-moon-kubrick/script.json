@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "People say Stanley Kubrick faked the Moon landing. But Kubrick was such a perfectionist, he'd have shot it on location.",
+   "say": "People say Stanley Kubrick faked the Moon landing. But Kubrick was such a perfectionist, he'd have shot it on location."
+  },
+  {
+   "shot": "claim",
+   "cap": "1969. Six hundred million people watch Apollo Eleven land. A few years later, a book claimed it was all fake.",
+   "say": "1969. Six hundred million people watch Apollo Eleven land. A few years later, a book claimed it was all fake."
+  },
+  {
+   "shot": "flag",
+   "cap": "The flag waves, so there's wind! Actually, a rod holds it out. It only moved while they twisted the pole in.",
+   "say": "The flag waves, so there's wind! Actually, a rod holds it out. It only moved while they twisted the pole in."
+  },
+  {
+   "shot": "stars",
+   "cap": "No stars in the sky! Because the ground was bright sunlight. Your phone can't catch stars in daylight either.",
+   "say": "No stars in the sky! Because the ground was bright sunlight. Your phone can't catch stars in daylight either."
+  },
+  {
+   "shot": "mirror",
+   "cap": "Here's the proof you can check. Apollo astronauts left mirrors on the Moon. Scientists still bounce lasers off them today.",
+   "say": "Here's the proof you can check. Apollo astronauts left mirrors on the Moon. Scientists still bounce lasers off them today."
+  },
+  {
+   "shot": "secret",
+   "cap": "And four hundred thousand people worked on Apollo. Not one leaked. Most of us can't keep a group chat secret.",
+   "say": "And four hundred thousand people worked on Apollo. Not one leaked. Most of us can't keep a group chat secret."
+  },
+  {
+   "shot": "buzz",
+   "cap": "In 2002, a hoax believer called Buzz Aldrin a liar to his face. He was seventy two. He punched him.",
+   "say": "In 2002, a hoax believer called Buzz Aldrin a liar to his face. He was seventy two. He punched him."
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the friend who still doubts it. Because,",
+   "say": "Tag the friend who still doubts it. Because,"
+  }
+ ]
+}
