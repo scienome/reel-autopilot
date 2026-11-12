@@ -75,6 +75,16 @@ window.STORY = (build, opt = {}) => DIY((k) => {
   k.rise = (obj, u) => { u = Math.max(0, Math.min(1, u)); obj.visible = u > 0.001; obj.scale.y = Math.max(0.001, u < 1 ? 1 - Math.pow(1 - u, 3) : 1); return obj; };
   k.water = (w, d, col = '#3d7f99') => { const m = new T.Mesh(new T.PlaneGeometry(w, d), new T.MeshStandardMaterial({ color: col, roughness: 0.15, metalness: 0.3, transparent: true, opacity: 0.92 })); m.rotation.x = -PI / 2; m.receiveShadow = true; return m; };
   k.hill = (r, h, col = '#7a9a4a') => { const m = new T.Mesh(new T.SphereGeometry(r, 32, 16, 0, PI * 2, 0, PI / 2), M(col, 0.95)); m.scale.y = h / r; m.receiveShadow = m.castShadow = true; return m; };
+  // ---------- dark / creepy look (Elites Endgame): R.light { sun, key, color:'#7fa0ff' ... }, R.fog ['#0a1020', 0.06], R.capStyle 'film'
+  // k.night(ctx, t, a) blue moonlight grade + grain + vignette; k.paper(ctx, headline, sub, o) an old newspaper insert; k.flicker(t) 0..1 torch/fire flicker; k.redeyes(ctx, x, y, s)
+  k.night = (ctx, t, a = 1) => { ctx.save(); ctx.globalCompositeOperation = 'multiply'; ctx.fillStyle = `rgba(70,95,170,${0.55 * a})`; ctx.fillRect(0, 0, 720, 1280); ctx.restore();
+    ctx.save(); ctx.globalAlpha = 0.07 * a; for (let i = 0; i < 260; i++) { const x = (i * 97 + Math.floor(t * 24) * 131) % 720, y = (i * 53 + Math.floor(t * 24) * 211) % 1280; ctx.fillStyle = i % 2 ? '#fff' : '#000'; ctx.fillRect(x, y, 2, 2); } ctx.restore(); k.vignette(ctx, 0.75 * a); };
+  k.paper = (ctx, head, sub = '', o = {}) => { ctx.save(); ctx.translate(360, o.y || 600); ctx.rotate(o.rot == null ? -0.05 : o.rot); const s = o.s || 1; ctx.scale(s, s); ctx.fillStyle = '#e9e1cc'; ctx.shadowColor = 'rgba(0,0,0,0.6)'; ctx.shadowBlur = 30; ctx.fillRect(-270, -330, 540, 660); ctx.shadowBlur = 0;
+    ctx.fillStyle = '#1a1a1a'; ctx.font = '900 30px Georgia, serif'; ctx.textAlign = 'center'; ctx.fillText(o.mast || 'THE DAILY CHRONICLE', 0, -280); ctx.fillRect(-240, -262, 480, 3); ctx.font = '900 46px Georgia, serif';
+    const words = head.split(' '); let line = '', y = -200; words.forEach((w) => { const tl = line ? line + ' ' + w : w; if (ctx.measureText(tl).width > 470) { ctx.fillText(line, 0, y); y += 52; line = w; } else line = tl; }); ctx.fillText(line, 0, y); y += 40;
+    ctx.font = 'italic 24px Georgia, serif'; ctx.fillStyle = '#3a3a3a'; if (sub) ctx.fillText(sub, 0, y + 6); ctx.fillStyle = '#8a8478'; ctx.fillRect(-240, y + 30, 220, 200); for (let i = 0; i < 9; i++) ctx.fillRect(10, y + 34 + i * 22, 230, 8); for (let i = 0; i < 4; i++) ctx.fillRect(-240, y + 250 + i * 20, 480, 8); ctx.restore(); };
+  k.flicker = (t) => 0.75 + 0.15 * Math.sin(t * 17) + 0.1 * Math.sin(t * 41 + 1);
+  k.redeyes = (ctx, x, y, sz = 6) => { ctx.save(); ctx.shadowColor = '#ff2020'; ctx.shadowBlur = 18; ctx.fillStyle = '#ff3a3a'; ctx.beginPath(); ctx.arc(x - sz * 2.2, y, sz, 0, 7); ctx.arc(x + sz * 2.2, y, sz, 0, 7); ctx.fill(); ctx.restore(); };
   // ---------- comedy gags: k.missile() a cartoon missile; k.strike(m, [x,y,z], u) flies it down onto a spot (u 0..1, hits at 1);
   // k.boom(ctx, u, x, y, word) a cartoon explosion overlay (u 0..1 after the hit); k.launch(obj, u, base) blasts a model up into the sky spinning.
   // Sounds in score(): kit.play('riser', at) before, kit.play('impact', hit) on the hit.
