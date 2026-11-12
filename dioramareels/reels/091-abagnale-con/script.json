@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "The world's most famous con man pulled one last con. On Hollywood. And on you.",
+   "say": "The world's most famous con man pulled one last con. On Hollywood. And on you."
+  },
+  {
+   "shot": "story",
+   "cap": "Frank Abagnale. His story: as a teenager, he posed as an airline pilot, a doctor and a lawyer. He cashed millions in fake cheques around the world.",
+   "say": "Frank Abagnale. His story: as a teenager, he posed as an airline pilot, a doctor and a lawyer. He cashed millions in fake cheques around the world."
+  },
+  {
+   "shot": "movie",
+   "cap": "In 2002, Steven Spielberg made it a movie. Catch Me If You Can. Leonardo DiCaprio. Tom Hanks. A huge hit.",
+   "say": "In 2002, Steven Spielberg made it a movie. Catch Me If You Can. Leonardo DiCaprio. Tom Hanks. A huge hit."
+  },
+  {
+   "shot": "speaker",
+   "cap": "Abagnale became a famous fraud expert. He gave talks for decades, paid tens of thousands of dollars a time.",
+   "say": "Abagnale became a famous fraud expert. He gave talks for decades, paid tens of thousands of dollars a time."
+  },
+  {
+   "shot": "check",
+   "cap": "Then journalists and researchers checked the records. Airline staff, hospital staff, school records, jail records.",
+   "say": "Then journalists and researchers checked the records. Airline staff, hospital staff, school records, jail records."
+  },
+  {
+   "shot": "truth",
+   "cap": "They found he was in jail, or prison, for much of the time he claimed to be flying planes. Many of the big stories had no evidence at all.",
+   "say": "They found he was in jail, or prison, for much of the time he claimed to be flying planes. Many of the big stories had no evidence at all."
+  },
+  {
+   "shot": "gag",
+   "cap": "The book, the movie, the speeches. The greatest con wasn't the cheques. It was the life story.",
+   "say": "The book, the movie, the speeches. The greatest con wasn't the cheques. It was the life story."
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the best liar you know. Because,",
+   "say": "Tag the best liar you know. Because,"
+  }
+ ]
+}
