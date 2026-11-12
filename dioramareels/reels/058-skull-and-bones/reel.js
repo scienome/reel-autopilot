@@ -11,8 +11,8 @@ STORY((k) => {
   [-1, 1].forEach((s) => { const e = new T.Mesh(new T.SphereGeometry(0.04, 8, 6), M('#050505', 1)); e.position.set(s * 0.06, 0.02, 0.14); skull.add(e); }); skull.position.set(0, 1.25, -1.6); rm.add(skull);
   const rob = (col) => { const h = k.LIB.human({ body: 'm', top: col, bottom: col, skin: '#1a1414', hair: col, h: 1.8 }); const RB = M(col, 0.9); const cl = new T.Mesh(new T.CylinderGeometry(0.3, 0.46, 1.45, 14, 1, true), RB); cl.material.side = T.DoubleSide; cl.position.y = 0.73; h.add(cl); const hood = new T.Mesh(new T.SphereGeometry(0.17, 16, 12), RB); hood.scale.set(1, 1.25, 1.05); hood.position.set(0, 1.66, -0.03); h.add(hood); const f = new T.Mesh(new T.CircleGeometry(0.085, 16), M('#030303', 1)); f.position.set(0, 1.62, 0.15); h.add(f); return h; };
   const bones = [0, 1, 2, 3, 4].map((i) => { const b = rob('#141418'); const a = -1.1 + i * 0.55; b.position.set(Math.sin(a) * 2.0, 0, 0.6 + Math.cos(a) * 0.3); b.rotation.y = PI + a * 0.4; rm.add(b); return b; });
-  const kid = k.add(k.LIB.human({ body: 'm', top: '#f4f4f4', bottom: '#2a2a30', hair: '#3b2414' }), [0, 0, 1.6], PI, rm);
-  const party = k.LIB.place.room({ wall: '#3a2a4a' }); k.place(party); const pm = k.add(k.LIB.human({ body: 'm', top: '#1a2a5a', bottom: '#1a1a20', hair: '#8a6a4a' }), [-0.5, 0, 0], 0.6, party), pg = k.add(k.LIB.human({ body: 'woman_casual' }), [0.6, 0, 0.1], -0.6, party);
+  const kid = k.add(k.LIB.human({ body: 'elite:man_casual' }), [0, 0, 1.6], PI, rm);
+  const party = k.LIB.place.room({ wall: '#3a2a4a' }); k.place(party); const pm = k.add(k.LIB.human({ body: 'elite:man_suit' }), [-0.5, 0, 0], 0.6, party), pg = k.add(k.LIB.human({ body: 'elite:woman_formal' }), [0.6, 0, 0.1], -0.6, party);
   const disco = new T.PointLight('#ff3aa8', 1.5, 6); disco.position.set(0, 2.2, 1); party.add(disco);
   let ov = null; const room = () => { k.only(rm); candles.forEach((l, i) => { l.intensity = 0.7 * k.flicker(performance.now() / 1000 + i); }); kid.visible = true; };
   const shots = {
@@ -26,4 +26,4 @@ STORY((k) => {
     outro: (t, kk) => { room(); bones.forEach((b, i) => b.pose('idle', t + i)); kid.pose('walk', t); kid.position.z = 2.2 - kk * 0.6; ov = (ctx) => { k.night(ctx, t, 0.7); k.card(ctx, 'TAG THE ONE WHO\'D CONFESS EVERYTHING 👇', { y: 1185, bg: '#5a0a0e', size: 28 }); }; return k.cam([1.2, 2.9, 4.6], [0, 0.6, -0.6], 46, { blur: 4 }); },
   };
   return { shots, sky: '#060a14', capStyle: 'film', table: false, fog: ['#0b1224', 0.05], light: { sun: [-4, 10, 6], key: 1.1, fill: 0.2, rim: 0.6, color: '#9ab4ff', shadow: 14, exposure: 1.25, grade: false }, over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('whoosh', at('leave', 2.0), { dur: 0.6, gain: 0.5 }); } };
-}, { assets: ['humans/Superhero_Male', 'humans/Woman_Casual', 'humans/ual1'] });
+}, { assets: ['humans/Superhero_Male', 'humans/Woman_Casual', 'humans/ual1', 'elite/man_casual', 'elite/man_suit', 'elite/woman_formal'] });

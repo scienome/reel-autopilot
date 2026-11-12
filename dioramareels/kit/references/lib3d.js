@@ -523,6 +523,8 @@
     formalwalk: 'Walk_Formal_Loop', torch: 'Idle_Torch_Loop', spell: 'Spell_Simple_Idle_Loop', sword: 'Sword_Idle', tpose: 'A_TPose' };
   const WMOVES = { idle: 'Female_Idle', walk: 'Female_Walk', run: 'Female_Run', sprint: 'Female_Run', sit: 'Female_Sitting', sittalk: 'Female_Sitting', talk: 'Female_Standing', punch: 'Female_Punch', jab: 'Female_Punch',
     death: 'Female_Death', jump: 'Female_Jump', clap: 'Female_Clapping', sword: 'Female_SwordSlash', dance: 'Female_Clapping', hit: 'Female_Jump', hithead: 'Female_Jump', crouch: 'Female_Sitting', pickup: 'Female_Standing', kneel: 'Female_Sitting', wave: 'Female_Standing' };
+  const EMOVES = { idle: 'Idle_Neutral', walk: 'Walk', run: 'Run', sprint: 'Run', sit: 'Idle', sittalk: 'Interact', talk: 'Interact', punch: 'Punch_Right', jab: 'Punch_Left', death: 'Death', hit: 'HitRecieve', hithead: 'HitRecieve_2', pickup: 'Interact', push: 'Interact',
+    crouch: 'Idle', crouchwalk: 'Walk', dance: 'Wave', kneel: 'Idle', jump: 'HitRecieve', clap: 'Wave', wave: 'Wave', pistol: 'Idle_Gun_Pointing', shoot: 'Gun_Shoot', kick: 'Kick_Right', roll: 'Roll', interact: 'Interact', standup: 'Idle', sitdown: 'Idle', drive: 'Idle' };
   const AMOVES = { idle: ['Idle'], walk: ['Walk', 'WalkSlow'], walkslow: ['WalkSlow', 'Walk'], gallop: ['Gallop', 'Run'], run: ['Gallop', 'Run'], eat: ['Eating', 'Idle_Headlow', 'Idle_2_HeadLow', 'Idle'], attack: ['Attack', 'Attack_Headbutt', 'Attack_Kick', 'Idle'],
     death: ['Death'], jump: ['Gallop_Jump', 'Jump'], hit: ['Idle_HitReact_Left', 'Idle'], idle2: ['Idle_2', 'Idle'], headlow: ['Idle_Headlow', 'Idle_2_HeadLow', 'Idle'] };
   // clips from the animation library, cleaned for other bodies: keep rotations, and the pelvis/root position only
@@ -572,6 +574,9 @@
     if (style === 'bun') { const bun = new T.Mesh(new T.SphereGeometry(r * 0.42, 16, 12), HM); bun.position.set(0, s.y * 0.38, -s.z * 0.42); g.add(bun); }
     g.position.copy(c); g.updateMatrixWorld(true); head.attach(g); g.traverse((n) => { if (n.isMesh) n.castShadow = true; }); };
   LIB.human = (o = {}) => { o = Object.assign({ body: 'm', top: '#3a5f8a', bottom: '#2a2f3a', shoes: '#1d1d1f', sleeves: 'long', legs: 'long' }, o);
+    if (/^elite:/.test(o.body)) { const g = get('elite/' + o.body.slice(6)); const inner = T.SkeletonUtils.clone(g.scene); // Elites Endgame cast (Quaternius Ultimate Modular Men/Women, CC0): a look apart from the toy channel
+      inner.traverse((m) => { if (m.isMesh) { m.castShadow = true; m.receiveShadow = true; m.material = m.material.clone(); const c = o.colors && o.colors[m.material.name]; if (c) m.material.color.set(c); if (o.shade) m.material.color.multiplyScalar(o.shade); } if (/pistol|sword|gun/i.test(m.name || '') && !o.armed) m.visible = false; }); // o.armed: keep the pack's pistol (gangsters)
+      const out = wrap(inner, { h: o.h || 1.75 }); const clips = Object.fromEntries(g.animations.map((c) => [c.name.split('|').pop(), c])); out.pose = poser(inner, clips, EMOVES); out.mats = () => { const n = new Set(); inner.traverse((m) => { if (m.isMesh) n.add(m.material.name); }); return [...n]; }; out.pose('idle', 0); return out; }
     if (/^woman_/.test(o.body)) { const n = 'humans/' + o.body.replace(/^woman_(\w)/, (m, c) => 'Woman_' + c.toUpperCase()).replace('Tanktop', 'TankTop'); const g = get(n); const inner = T.SkeletonUtils.clone(g.scene);
       const out = wrap(inner, { h: o.h || 1.7 }); const clips = Object.fromEntries(g.animations.map((c) => [c.name.split('|').pop(), c])); out.pose = poser(inner, clips, WMOVES); out.pose('idle', 0); return out; }
     const n = o.body === 'f' ? 'humans/Superhero_Female' : 'humans/Superhero_Male'; const inner = T.SkeletonUtils.clone(get(n).scene); let body = null;

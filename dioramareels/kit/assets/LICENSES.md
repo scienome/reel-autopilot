@@ -17,3 +17,5 @@ Every model here is free to use in videos, commercial included. Keep this file w
 
 Code: references/hands.js bundles the WebXR generic-hand models (MIT, Copyright (c) 2019 Amazon) and three.js r147 GLTFLoader (MIT);
 references/lib3d.js bundles three.js r147 SkeletonUtils (MIT). Not used (not CC0): the poly.pizza goat and helmet in Knight-of-the-Garden.
+| elite/man_* (suit, casual, hoodie, worker, farmer, swat, adventurer) | Elites Endgame cast, own clips (Idle, Walk, Run, Interact, Wave, Death...) | Quaternius, *Ultimate Modular Men* (2022), via github.com/tien2805/fptu-godot4-simulator and JieeiroSst/Knight-of-the-Garden (glTF converted to GLB) | CC0 1.0 |
+| elite/woman_* (formal, suit, punk, witch, worker, casual, soldier, medieval) | Elites Endgame cast | Quaternius, *Ultimate Modular Women* (April 2022), via github.com/flawlesshappiness/EmotionCreatures (License.txt: CC0) | CC0 1.0 |
