@@ -74,7 +74,7 @@ Folder: [`gears-pov/`](gears-pov/)
 | [032-waiter-thoughts](gears-pov/032-waiter-thoughts.mp4) | You can hear what your waiter thinks 🍽️ | Posted on Instagram · on YouTube |
 | [033-duck-thoughts](gears-pov/033-duck-thoughts.mp4) | You can hear what ducks think 🦆 | Posted on Instagram · on YouTube |
 | [034-crow-thoughts](gears-pov/034-crow-thoughts.mp4) | You can hear what crows think. And they remember your face 🐦‍⬛ | Posted on Instagram · on YouTube |
-| [035-sister-thoughts](gears-pov/035-sister-thoughts.mp4) | You can hear what your sister thinks 👧 | Waiting to post |
+| [035-sister-thoughts](gears-pov/035-sister-thoughts.mp4) | You can hear what your sister thinks 👧 | Posted on Instagram · on YouTube |
 | [036-mirror-thoughts](gears-pov/036-mirror-thoughts.mp4) | You can hear what your mirror thinks 🪞 | Posted on Instagram · on YouTube |
 | [037-washing-machine-thoughts](gears-pov/037-washing-machine-thoughts.mp4) | You can hear what your washing machine thinks 🧦 | Posted on Instagram · on YouTube |
 | [038-kitten-thoughts](gears-pov/038-kitten-thoughts.mp4) | You can hear what your new kitten thinks 🐱 | Posted on Instagram · on YouTube |
@@ -269,7 +269,7 @@ Folder: [`toy-reels/`](toy-reels/)
 | [148-horse-standing-up](toy-reels/148-horse-standing-up.mp4) | This horse can do it standing up 🐴 | Waiting to post |
 | [149-bobbie-walked-home](toy-reels/149-bobbie-walked-home.mp4) | He walked 2,500 miles to get home 🐕❤️ | Waiting to post |
 | [15-napoleon-sues-everyone](toy-reels/15-napoleon-sues-everyone.mp4) | Napoleon Came Back From The Dead To Sue Everyone 💀 | Waiting to post |
-| [150-alpaca-spits](toy-reels/150-alpaca-spits.mp4) | She'll spit on you if she's not into you 🦙💦 | Waiting to post |
+| [150-alpaca-spits](toy-reels/150-alpaca-spits.mp4) | She'll spit on you if she's not into you 🦙💦 | Posted (Instagram + YouTube) |
 | [151-collapse-in-crowd](toy-reels/151-collapse-in-crowd.mp4) | Someone collapses. 20 people walk past. Do THIS 🚨 | Waiting to post |
 | [152-dead-butt](toy-reels/152-dead-butt.mp4) | Sitting all day is literally killing your butt 🍑 | Waiting to post |
 | [153-togo-and-balto](toy-reels/153-togo-and-balto.mp4) | The dogs who ran through a blizzard to save a town 🐺❄️ | Waiting to post |
