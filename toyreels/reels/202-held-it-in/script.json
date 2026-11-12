@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "He held it in so hard, that something inside him tore.",
+   "say": "He held it in so hard, that something inside him tore."
+  },
+  {
+   "shot": "sneeze",
+   "cap": "He was trying to stop a sneeze. He pinched his nose and shut his mouth.",
+   "say": "He was trying to stop a sneeze. He pinched his nose and shut his mouth."
+  },
+  {
+   "shot": "pop",
+   "cap": "He felt a pop in his neck. Then pain, and swelling. He could barely swallow.",
+   "say": "He felt a pop in his neck. Then pain, and swelling. He could barely swallow."
+  },
+  {
+   "shot": "hospital",
+   "cap": "Doctors in England found the force had torn a hole in the back of his throat.",
+   "say": "Doctors in England found the force had torn a hole in the back of his throat."
+  },
+  {
+   "shot": "week",
+   "cap": "He spent a week in hospital, fed through a tube.",
+   "say": "He spent a week in hospital, fed through a tube."
+  },
+  {
+   "shot": "force",
+   "cap": "A sneeze blasts air out fast. Block the exits, and all that pressure has to go somewhere.",
+   "say": "A sneeze blasts air out fast. Block the exits, and all that pressure has to go somewhere."
+  },
+  {
+   "shot": "safe",
+   "cap": "So don't hold it in. Sneeze into a tissue, or your elbow.",
+   "say": "So don't hold it in. Sneeze into a tissue, or your elbow."
+  },
+  {
+   "shot": "outro",
+   "cap": "Let it out. General information, not medical advice.",
+   "say": "Let it out. General information, not medical advice."
+  }
+ ]
+}

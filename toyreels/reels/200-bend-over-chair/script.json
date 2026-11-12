@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "If you're alone, and it gets stuck deep in your throat, bend over the back of a chair.",
+   "say": "If you're alone, and it gets stuck deep in your throat, bend over the back of a chair."
+  },
+  {
+   "shot": "sign",
+   "cap": "Choking. You can't talk, can't breathe, can't cough. Hands go to the throat.",
+   "say": "Choking. You can't talk, can't breathe, can't cough. Hands go to the throat."
+  },
+  {
+   "shot": "call",
+   "cap": "First, call emergency services if you can. Even if you can't speak, they can trace the call.",
+   "say": "First, call emergency services if you can. Even if you can't speak, they can trace the call."
+  },
+  {
+   "shot": "cough",
+   "cap": "If you can still cough, keep coughing hard. That's the best way out.",
+   "say": "If you can still cough, keep coughing hard. That's the best way out."
+  },
+  {
+   "shot": "fist",
+   "cap": "If not, make a fist, and put it just above your belly button. Grab it with your other hand, and push in and up, hard.",
+   "say": "If not, make a fist, and put it just above your belly button. Grab it with your other hand, and push in and up, hard."
+  },
+  {
+   "shot": "chair",
+   "cap": "Or lean over the back of a chair, and throw your weight onto it, again and again.",
+   "say": "Or lean over the back of a chair, and throw your weight onto it, again and again."
+  },
+  {
+   "shot": "out",
+   "cap": "Keep going until it shoots out. Then get checked by a doctor.",
+   "say": "Keep going until it shoots out. Then get checked by a doctor."
+  },
+  {
+   "shot": "outro",
+   "cap": "Save this. It could save you. General information, not medical advice.",
+   "say": "Save this. It could save you. General information, not medical advice."
+  }
+ ]
+}
