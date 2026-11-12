@@ -1,5 +1,5 @@
 {
- "_note": "Elites Endgame YouTube, new-style reels only. 007-survive-this-city waits for its door reveal reel. Remove paused to start.",
+ "_note": "Elites Endgame YouTube, new-style reels only. 007-survive-this-city waits for its door reveal reel. Remove paused to start. 12 Nov 2026 (owner: 'stop the bad ones'): dropped 34 unposted reels in the styles that underperformed (rules, doors, floors, subscriptions; 6-9 s avg watch). Kept personal-loss reels. New true dark stories (one-take Cartesia voice from the owner) get added here.",
  "times_ist": [
   "01:00",
   "06:00",
@@ -22,6 +22,11 @@
   "015-sleepwalking-city",
   "011-moms-plan-3",
   "018-memory-lease",
+  "030-rented-friend",
+  "019-last-cashier",
+  "054-grandma-key"
+ ],
+ "dropped_12_nov": [
   "020-penthouse-lottery",
   "023-swap-week",
   "025-smile-tax",
@@ -34,9 +39,7 @@
   "029-green-light-auction",
   "031-double-at-door",
   "017-pay-per-step",
-  "030-rented-friend",
   "034-tip-screen",
-  "019-last-cashier",
   "032-sleep-lease",
   "033-door-countdown",
   "035-floor-minus-nine",
@@ -57,7 +60,6 @@
   "051-sleep-tax",
   "052-moving-flat",
   "053-neighbour-ranking",
-  "054-grandma-key",
   "055-city-reset-1"
  ]
 }
