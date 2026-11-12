@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Stay up all night, three nights in a row, and this is what happens to you.",
+   "say": "Stay up all night, three nights in a row, and this is what happens to you."
+  },
+  {
+   "shot": "one",
+   "cap": "After one night, about twenty four hours awake, your reactions are about as slow as someone over the drink-drive limit.",
+   "say": "After one night, about twenty four hours awake, your reactions are about as slow as someone over the drink-drive limit."
+  },
+  {
+   "shot": "micro",
+   "cap": "Your brain starts taking tiny naps without asking. Microsleeps. A few seconds, gone.",
+   "say": "Your brain starts taking tiny naps without asking. Microsleeps. A few seconds, gone."
+  },
+  {
+   "shot": "two",
+   "cap": "After two nights, your mood crashes. Memory slips. Simple maths gets hard.",
+   "say": "After two nights, your mood crashes. Memory slips. Simple maths gets hard."
+  },
+  {
+   "shot": "three",
+   "cap": "By the third night, many people start seeing things that aren't there.",
+   "say": "By the third night, many people start seeing things that aren't there."
+  },
+  {
+   "shot": "record",
+   "cap": "In 1964, a seventeen year old named Randy Gardner stayed awake for eleven days. Record-keepers no longer accept attempts. It's too dangerous.",
+   "say": "In 1964, a seventeen year old named Randy Gardner stayed awake for eleven days. Record-keepers no longer accept attempts. It's too dangerous."
+  },
+  {
+   "shot": "fix",
+   "cap": "The good news? A few good nights of sleep usually bring you back.",
+   "say": "The good news? A few good nights of sleep usually bring you back."
+  },
+  {
+   "shot": "outro",
+   "cap": "So go to bed. General information, not medical advice.",
+   "say": "So go to bed. General information, not medical advice."
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Go just one day without it, and your body starts begging.",
+   "say": "Go just one day without it, and your body starts begging."
+  },
+  {
+   "shot": "water",
+   "cap": "Water. About sixty percent of you is water, and you lose around two and a half litres a day.",
+   "say": "Water. About sixty percent of you is water, and you lose around two and a half litres a day."
+  },
+  {
+   "shot": "thirst",
+   "cap": "Lose just one or two percent, and you feel thirsty. Your mouth goes dry.",
+   "say": "Lose just one or two percent, and you feel thirsty. Your mouth goes dry."
+  },
+  {
+   "shot": "brain",
+   "cap": "At two percent, studies show focus, mood and memory start to slip. Headaches begin.",
+   "say": "At two percent, studies show focus, mood and memory start to slip. Headaches begin."
+  },
+  {
+   "shot": "kidneys",
+   "cap": "Your kidneys try to save every drop. Your pee turns dark.",
+   "say": "Your kidneys try to save every drop. Your pee turns dark."
+  },
+  {
+   "shot": "blood",
+   "cap": "Your blood gets thicker, your heart beats faster, and you feel dizzy when you stand up.",
+   "say": "Your blood gets thicker, your heart beats faster, and you feel dizzy when you stand up."
+  },
+  {
+   "shot": "days",
+   "cap": "Most people can only survive a few days without water. Heat and exercise make it faster.",
+   "say": "Most people can only survive a few days without water. Heat and exercise make it faster."
+  },
+  {
+   "shot": "outro",
+   "cap": "So drink up. Your body is asking nicely. General information, not medical advice.",
+   "say": "So drink up. Your body is asking nicely. General information, not medical advice."
+  }
+ ]
+}

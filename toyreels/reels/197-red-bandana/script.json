@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "He went in, pulled them out, and then went in again. And again.",
+   "say": "He went in, pulled them out, and then went in again. And again."
+  },
+  {
+   "shot": "who",
+   "cap": "Welles Crowther was twenty four. A trader on the hundred and fourth floor of the South Tower. He'd been a volunteer firefighter.",
+   "say": "Welles Crowther was twenty four. A trader on the hundred and fourth floor of the South Tower. He'd been a volunteer firefighter."
+  },
+  {
+   "shot": "hit",
+   "cap": "On September eleventh, 2001, a plane hit his tower. Smoke filled the seventy eighth floor.",
+   "say": "On September eleventh, 2001, a plane hit his tower. Smoke filled the seventy eighth floor."
+  },
+  {
+   "shot": "voice",
+   "cap": "Through the smoke, survivors heard a calm voice. Follow me. I found the stairs.",
+   "say": "Through the smoke, survivors heard a calm voice. Follow me. I found the stairs."
+  },
+  {
+   "shot": "carry",
+   "cap": "He carried a woman on his shoulders, led people down, then turned around, and went back up for more.",
+   "say": "He carried a woman on his shoulders, led people down, then turned around, and went back up for more."
+  },
+  {
+   "shot": "bandana",
+   "cap": "Nobody knew his name. They only remembered the red bandana over his face.",
+   "say": "Nobody knew his name. They only remembered the red bandana over his face."
+  },
+  {
+   "shot": "found",
+   "cap": "His body was found months later, next to firefighters, in the lobby. His mother learned what he did from a newspaper story.",
+   "say": "His body was found months later, next to firefighters, in the lobby. His mother learned what he did from a newspaper story."
+  },
+  {
+   "shot": "outro",
+   "cap": "The man in the red bandana. Welles Crowther.",
+   "say": "The man in the red bandana. Welles Crowther."
+  }
+ ]
+}
