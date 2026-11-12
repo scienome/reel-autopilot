@@ -1,0 +1,22 @@
+// 193 cinestory3d (story3d.js): Ronald Read, $8M estate (WSJ 2015; Brattleboro Reformer). Scroll stopper: an old janitor and cash flying out of his drawers... it's a bank box. Gag: a flashy neighbour's sports car gets a missile.
+STORY((k) => {
+  const { T, PI } = k; const rm = k.LIB.place.room({ wall: '#d9cbb3' }); k.place(rm);
+  const ron = k.add(k.LIB.human({ body: 'm', top: '#4a5a7a', bottom: '#3a3a40', hair: '#e8e8e8', h: 1.72 }), [0, 0, 0], 0.2, rm);
+  const box = k.LIB.prop('props/chest', { h: 0.55 }); box.position.set(0.9, 0, -0.6); rm.add(box);
+  const st = k.LIB.place.street({}); k.place(st); const car = k.add(k.car({ color: '#e8202a' }), [2.1, 0, -0.5], PI / 2, st); const old = k.add(k.car({ color: '#8a8a7a' }), [-2.1, 0, -0.5], PI / 2, st);
+  const show = k.add(k.LIB.human({ body: 'm', top: '#ffd23f', bottom: '#f4f4f4', hair: '#1a1210' }), [1.0, 0, 3.4], -0.2, st); const ron2 = k.add(k.LIB.human({ body: 'm', top: '#4a5a7a', bottom: '#3a3a40', hair: '#e8e8e8', h: 1.72 }), [-1.0, 0, 3.4], 0.2, st);
+  const mis = k.missile(st); let ov = null; const home = () => { k.only(rm); ron.position.set(0, 0, 0); ron.rotation.set(0, 0.2, 0); };
+  const cash = (ctx, t, n = 16) => { for (let i = 0; i < n; i++) { const u = (t * 0.6 + i / n) % 1; ctx.save(); ctx.translate(360 + Math.sin(i * 2.1) * u * 320, 820 - u * 700 + Math.sin(i) * 40); ctx.rotate(u * 6 + i); ctx.fillStyle = '#5fbf6a'; ctx.fillRect(-40, -18, 80, 36); ctx.fillStyle = '#2a7a3a'; ctx.font = '900 24px sans-serif'; ctx.textAlign = 'center'; ctx.fillText('$', 0, 9); ctx.restore(); } };
+  const chart = (ctx, u) => { ctx.save(); ctx.fillStyle = 'rgba(10,18,30,0.86)'; ctx.beginPath(); ctx.roundRect(60, 380, 600, 460, 26); ctx.fill(); ctx.strokeStyle = '#2ecc71'; ctx.lineWidth = 8; ctx.beginPath(); for (let i = 0; i <= 60 * u; i++) { const x = 100 + i * 9, y = 800 - Math.pow(i / 60, 2.4) * 380 - Math.sin(i) * 10; i ? ctx.lineTo(x, y) : ctx.moveTo(x, y); } ctx.stroke(); ctx.restore(); };
+  const shots = {
+    hook: (t, kk) => { home(); ron.pose(kk < 0.5 ? 'idle' : 'talk', t); ov = (ctx) => { if (kk < 0.5) { cash(ctx, t); k.counter(ctx, 'IN HIS DRAWERS', '$8,000,000 😳', { y: 170 }); } else k.card(ctx, '...A BANK BOX 🏦', { y: 200, bg: '#1f8fd8', size: 46 }); }; return kk < 0.5 ? k.cam([0.2, 1.0, 1.6], [0, 0.95, 0], 46) : k.cam([1.6, 1.3, 1.2], [0.9, 0.4, -0.6], 42); },
+    who: (t, kk) => { home(); ron.pose('idle', t); ov = (ctx) => k.card(ctx, 'RONALD READ · GAS · JANITOR', { y: 200, bg: '#5a4a3a', size: 34 }); return k.close(ron, { d: 1.8, side: 0.4 }); },
+    frugal: (t, kk) => { home(); ron.pose('idle', t); ov = (ctx) => k.card(ctx, ['USED CAR', 'OWN FIREWOOD', 'COAT + SAFETY PINS'][Math.min(2, Math.floor(kk * 3))], { y: 200, bg: '#5a6470', size: 44 }); return k.close(ron, { d: 1.6 }); },
+    stocks: (t, kk) => { home(); ron.pose('talk', t); ov = (ctx) => { chart(ctx, 0.3 + kk * 0.2); k.card(ctx, 'BIG, BORING COMPANIES', { y: 1185, bg: '#2a9d4a', size: 36 }); }; return k.close(ron, { d: 2.0 }); },
+    wait: (t, kk) => { home(); ron.pose('sit', t); ov = (ctx) => { chart(ctx, 0.5 + kk * 0.5); k.counter(ctx, 'NEVER SOLD', `${Math.round(kk * 60)} YEARS`, { y: 170 }); }; return k.close(ron, { d: 2.2 }); },
+    dies: (t, kk) => { home(); ron.visible = true; ron.pose('idle', t); ov = (ctx) => { k.vignette(ctx, 0.6); k.counter(ctx, '2014 · AGE 92', '$8 MILLION', { y: 170 }); }; return k.cam([1.6, 1.3, 1.2], [0.9, 0.4, -0.6], 42); },
+    gave: (t, kk) => { home(); ron.pose('idle', t); ov = (ctx) => { k.card(ctx, 'HOSPITAL $4.8M', { y: 200, bg: '#1f8fd8', size: 44 }); k.card(ctx, 'LIBRARY $1.2M', { y: 1185, bg: '#7a3ad8', size: 44 }); }; return k.close(ron, { d: 1.8 }); },
+    outro: (t, kk) => { k.only(st); show.pose('dance', t); ron2.pose('idle', t); const H = 0.5, b = (kk - H) * 2.4; k.strike(mis, [2.1, 0.5, -0.5], kk / H); car.visible = b < 0.1; ov = (ctx) => { if (kk < H) k.card(ctx, '"LOOK AT MY CAR!"', { y: 200, bg: '#e8384f', size: 44 }); k.boom(ctx, b, 480, 700, 'BOOM!'); if (kk > 0.8) k.big(ctx, 'KEEP IT.', { y: 240, size: 80, col: '#ffd23f' }); }; return k.cam([0, 1.7, 8.2], [0, 1.1, 2.0], 56); },
+  };
+  return { shots, sky: '#bfe3ff', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('riser', at('outro', 0.2), { dur: 1.0, gain: 0.4 }); kit.play('impact', at('outro', 1.5), { gain: 0.7 }); } };
+}, { assets: ['humans/Superhero_Male', 'humans/ual1', 'props/chest'] });

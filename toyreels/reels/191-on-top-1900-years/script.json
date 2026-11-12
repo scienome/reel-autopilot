@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "She's been on top for nineteen hundred years, and never needed any support.",
+   "say": "She's been on top for nineteen hundred years, and never needed any support."
+  },
+  {
+   "shot": "reveal",
+   "cap": "The dome of the Pantheon, in Rome. Finished around 125 AD.",
+   "say": "The dome of the Pantheon, in Rome. Finished around 125 AD."
+  },
+  {
+   "shot": "size",
+   "cap": "It's forty three metres wide. Still the biggest dome ever built from concrete with no steel inside.",
+   "say": "It's forty three metres wide. Still the biggest dome ever built from concrete with no steel inside."
+  },
+  {
+   "shot": "light",
+   "cap": "The secret? The concrete gets lighter as it goes up. Heavy stone at the bottom, light volcanic rock at the top.",
+   "say": "The secret? The concrete gets lighter as it goes up. Heavy stone at the bottom, light volcanic rock at the top."
+  },
+  {
+   "shot": "coffers",
+   "cap": "Those square holes inside cut even more weight.",
+   "say": "Those square holes inside cut even more weight."
+  },
+  {
+   "shot": "hole",
+   "cap": "And there's a giant open hole at the top, eight metres wide. When it rains, it rains inside.",
+   "say": "And there's a giant open hole at the top, eight metres wide. When it rains, it rains inside."
+  },
+  {
+   "shot": "modern",
+   "cap": "Most modern concrete has steel inside, and steel rusts and cracks it over time.",
+   "say": "Most modern concrete has steel inside, and steel rusts and cracks it over time."
+  },
+  {
+   "shot": "outro",
+   "cap": "So she's still on top. And she's not coming down.",
+   "say": "So she's still on top. And she's not coming down."
+  }
+ ]
+}
