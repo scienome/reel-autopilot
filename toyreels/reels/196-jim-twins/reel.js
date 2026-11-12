@@ -1,0 +1,24 @@
+// 196 cinestory3d (story3d.js): the "Jim twins" (Segal 2012; Bouchard 1990). Scroll stopper: two identical men, tally cards popping "LINDA ✔✔ BETTY ✔✔ TOY ✔✔"... Toy is the dog. Gag: they high-five and the "SAME!" boom knocks them both over.
+STORY((k) => {
+  const { PI } = k; const rm = k.LIB.place.room({ wall: '#dfe4e8' }); k.place(rm); const J = () => k.LIB.human({ body: 'm', top: '#2f6fd8', bottom: '#3a3a40', hair: '#3b2414' });
+  const j1 = k.add(J(), [-0.6, 0, 0], PI / 2, rm), j2 = k.add(J(), [0.6, 0, 0], -PI / 2, rm);
+  const l1 = k.add(k.LIB.human({ body: 'woman_casual' }), [-1.3, 0, -0.5], 0.4, rm), l2 = k.add(k.LIB.human({ body: 'woman_casual' }), [1.3, 0, -0.5], -0.4, rm);
+  const b1 = k.add(k.LIB.human({ body: 'woman_dress' }), [-1.3, 0, -0.5], 0.4, rm), b2 = k.add(k.LIB.human({ body: 'woman_dress' }), [1.3, 0, -0.5], -0.4, rm);
+  const d1 = k.add(k.LIB.animal('dog', { h: 0.55 }), [-0.45, 0, 0.9], 0.6, rm), d2 = k.add(k.LIB.animal('dog', { h: 0.55 }), [0.45, 0, 0.9], -0.6, rm);
+  const sci = k.add(k.LIB.human({ body: 'm', top: '#f2f2ee', bottom: '#3a3a40', hair: '#8a8a8a' }), [0, 0, -1.4], 0, rm);
+  const st = k.LIB.place.street({}); k.place(st); const c1 = k.add(k.car({ color: '#1f8fd8' }), [-1.6, 0, -0.5], 0, st), c2 = k.add(k.car({ color: '#1f8fd8' }), [1.6, 0, -0.5], 0, st);
+  let ov = null; const base = () => { k.only(rm); [l1, l2, b1, b2, d1, d2, sci].forEach((o) => { o.visible = false; }); j1.position.set(-0.6, 0, 0); j2.position.set(0.6, 0, 0); j1.rotation.set(0, PI / 2, 0); j2.rotation.set(0, -PI / 2, 0); };
+  const two = (ctx, L, R, col = '#2a9d4a') => { k.card(ctx, L, { y: 200, bg: col, size: 34 }); ctx.save(); ctx.strokeStyle = 'rgba(255,255,255,0.7)'; ctx.lineWidth = 6; ctx.setLineDash([16, 12]); ctx.beginPath(); ctx.moveTo(360, 280); ctx.lineTo(360, 1100); ctx.stroke(); ctx.restore(); if (R) k.card(ctx, R, { y: 1185, bg: '#1a1a1a', size: 32 }); };
+  const cam = () => k.cam([0, 1.5, 3.6], [0, 1.0, 0], 46);
+  const shots = {
+    hook: (t, kk) => { base(); j1.pose('talk', t); j2.pose('talk', t); const items = ['LINDA', 'BETTY', 'TOY']; const n = Math.min(3, Math.floor(kk * 4)); if (n >= 3) { d1.visible = d2.visible = true; d1.pose('idle', t); d2.pose('idle', t); } ov = (ctx) => { for (let i = 0; i < n; i++) k.card(ctx, `${items[i]} ✔ ✔`, { y: 180 + i * 90, bg: ['#e8384f', '#7a3ad8', '#ffb21a'][i], size: 40 }); if (n >= 3) k.card(ctx, 'TOY = THE DOG 🐶', { y: 1185, bg: '#1a1a1a', size: 36 }); }; return cam(); },
+    birth: (t, kk) => { base(); j1.rotation.y = 0; j2.rotation.y = 0; j1.position.x = -0.75; j2.position.x = 0.75; j1.pose('idle', t); j2.pose('idle', t); ov = (ctx) => two(ctx, '1939 · OHIO · BOTH NAMED JAMES', 'FAMILY A  |  FAMILY B'); return cam(); },
+    meet: (t, kk) => { base(); k.walk(j1, [-2.2, 0, 0], [-0.55, 0, 0], Math.min(1, kk * 1.5), 'walk', t); k.walk(j2, [2.2, 0, 0], [0.55, 0, 0], Math.min(1, kk * 1.5), 'walk', t); if (kk > 0.67) { j1.pose('talk', t); j2.pose('talk', t); } ov = (ctx) => k.card(ctx, 'FIRST MEETING · AGE 39', { y: 200, bg: '#1f8fd8', size: 40 }); return cam(); },
+    wives: (t, kk) => { base(); j1.pose('idle', t); j2.pose('idle', t); const L = kk < 0.5; [l1, l2].forEach((o) => { o.visible = L; o.pose('idle', t); }); [b1, b2].forEach((o) => { o.visible = !L; o.pose('idle', t); }); ov = (ctx) => two(ctx, L ? 'WIFE #1: LINDA · LINDA' : 'WIFE #2: BETTY · BETTY', null, L ? '#e8384f' : '#7a3ad8'); return k.cam([0, 1.6, 4.4], [0, 1.0, -0.2], 50); },
+    sons: (t, kk) => { base(); j1.pose('idle', t); j2.pose('idle', t); d1.visible = d2.visible = true; d1.pose('walk', t); d2.pose('walk', t); ov = (ctx) => two(ctx, kk < 0.5 ? 'SONS: JAMES ALAN · JAMES ALLAN' : 'DOGS: TOY · TOY 🐶', null, '#ffb21a'); return k.cam([0, 1.3, 3.4], [0, 0.6, 0.3], 48); },
+    more: (t, kk) => { k.only(st); ov = (ctx) => two(ctx, ['SAME CAR', 'WOODWORK', 'SAME FLORIDA BEACH'][Math.min(2, Math.floor(kk * 3))], null, '#1f8fd8'); return k.cam([0, 1.8, 7.5], [0, 0.8, -0.5], 50); },
+    study: (t, kk) => { base(); sci.visible = true; sci.pose('talk', t); j1.pose('idle', t); j2.pose('idle', t); ov = (ctx) => k.card(ctx, 'MINNESOTA TWIN STUDY', { y: 200, bg: '#2a9d4a', size: 40 }); return k.cam([0, 1.6, 3.4], [0, 1.1, -0.8], 46); },
+    outro: (t, kk) => { base(); const H = 0.45, bb = (kk - H) * 2.4; j1.pose(kk < H ? 'punch' : 'death', t); j2.pose(kk < H ? 'punch' : 'death', t); ov = (ctx) => { k.boom(ctx, bb, 360, 600, 'SAME!!'); if (kk > 0.8) k.big(ctx, 'NOT JUST CHANCE.', { y: 240, size: 56, col: '#ffd23f' }); }; return cam(); },
+  };
+  return { shots, sky: '#dfe4e8', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('impact', at('outro', 1.3), { gain: 0.6 }); } };
+}, { assets: ['humans/Superhero_Male', 'humans/Woman_Casual', 'humans/Woman_Dress', 'humans/ual1', 'animals/dog'] });
