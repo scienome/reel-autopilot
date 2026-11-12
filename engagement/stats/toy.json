@@ -2,52 +2,67 @@
  "account": "TOY",
  "username": "toyboxtheory",
  "followers": 18,
- "fetched": "2026-11-11T03:29:11.078866Z",
+ "fetched": "2026-11-12T03:27:02.746852Z",
  "reels": [
+  {
+   "id": "17937974982406861",
+   "timestamp": "2026-11-12T00:30:01+0000",
+   "like_count": 11,
+   "comments_count": 1,
+   "permalink": "https://www.instagram.com/reel/DfnqFGjmdcY/",
+   "caption": "They really do it in the snow, and almost always facing north-east 🦊🧭\nNature is weirder th",
+   "views": 813,
+   "reach": 595,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 13,
+   "ig_reels_avg_watch_time": 12274,
+   "ig_reels_video_view_total_time": 7315653
+  },
   {
    "id": "18099388940671762",
    "timestamp": "2026-11-11T00:30:01+0000",
-   "like_count": 27,
+   "like_count": 35,
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/Dfk2RVVDlOh/",
    "caption": "Why does your umbrella always flip inside out? Let's fix that 🔧\nWait for the last step 💀\nW",
-   "views": 2577,
-   "reach": 2008,
+   "views": 3053,
+   "reach": 2371,
    "saved": 0,
    "shares": 0,
-   "total_interactions": 29,
-   "ig_reels_avg_watch_time": 13872,
-   "ig_reels_video_view_total_time": 27536947
+   "total_interactions": 37,
+   "ig_reels_avg_watch_time": 14152,
+   "ig_reels_video_view_total_time": 33188358
   },
   {
    "id": "18111326699189407",
    "timestamp": "2026-11-10T19:30:01+0000",
-   "like_count": 7,
+   "like_count": 9,
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfkUfa8nH71/",
    "caption": "Why does your bus always leave just as you arrive? Let's fix that 🔧\nWait for the last step",
-   "views": 583,
-   "reach": 502,
+   "views": 617,
+   "reach": 529,
    "saved": 0,
    "shares": 0,
-   "total_interactions": 8,
-   "ig_reels_avg_watch_time": 10224,
-   "ig_reels_video_view_total_time": 5143025
+   "total_interactions": 10,
+   "ig_reels_avg_watch_time": 10344,
+   "ig_reels_video_view_total_time": 5461930
   },
   {
    "id": "18114864830579507",
    "timestamp": "2026-11-10T15:00:01+0000",
-   "like_count": 27,
+   "like_count": 31,
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/Dfj0sMiDlEF/",
    "caption": "Why are your earphones always tangled? Let's fix that 🔧\nWait for the last step 💀\nWhich fix",
-   "views": 1679,
-   "reach": 1355,
+   "views": 2093,
+   "reach": 1652,
    "saved": 0,
    "shares": 1,
-   "total_interactions": 29,
-   "ig_reels_avg_watch_time": 11146,
-   "ig_reels_video_view_total_time": 15582123
+   "total_interactions": 33,
+   "ig_reels_avg_watch_time": 11539,
+   "ig_reels_video_view_total_time": 20008974
   },
   {
    "id": "18127433452928589",
@@ -56,13 +71,13 @@
    "comments_count": 2,
    "permalink": "https://www.instagram.com/reel/DfiR9eFCbzf/",
    "caption": "Why do you always sleep through your alarm? Let's fix that 🔧\nWait for the last step 💀\nWhic",
-   "views": 2001,
-   "reach": 1665,
+   "views": 2003,
+   "reach": 1667,
    "saved": 0,
    "shares": 0,
    "total_interactions": 47,
-   "ig_reels_avg_watch_time": 21988,
-   "ig_reels_video_view_total_time": 36390182
+   "ig_reels_avg_watch_time": 21964,
+   "ig_reels_video_view_total_time": 36395254
   },
   {
    "id": "18040142975655028",
@@ -101,28 +116,28 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DffrnapkaF2/",
    "caption": "Nearly five million Lego pieces fell into the sea 🧱\nWait for the ending 👀\n\nTrue story. In ",
-   "views": 379,
-   "reach": 333,
+   "views": 381,
+   "reach": 334,
    "saved": 0,
    "shares": 0,
    "total_interactions": 5,
-   "ig_reels_avg_watch_time": 8634,
-   "ig_reels_video_view_total_time": 2875173
+   "ig_reels_avg_watch_time": 8691,
+   "ig_reels_video_view_total_time": 2902867
   },
   {
    "id": "17995273446111004",
    "timestamp": "2026-11-08T21:04:02+0000",
-   "like_count": 33,
+   "like_count": 34,
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DffrafBCZUj/",
    "caption": "What if you invented everything in the stone age? 🦣\nWait for step 7 💀\nWhat would you inven",
-   "views": 2161,
-   "reach": 1517,
+   "views": 2163,
+   "reach": 1519,
    "saved": 0,
    "shares": 0,
-   "total_interactions": 34,
-   "ig_reels_avg_watch_time": 14841,
-   "ig_reels_video_view_total_time": 22426045
+   "total_interactions": 35,
+   "ig_reels_avg_watch_time": 14834,
+   "ig_reels_video_view_total_time": 22443996
   },
   {
    "id": "17976042719947667",
@@ -131,13 +146,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DffJClcGTaW/",
    "caption": "His college banned dogs. So he got a BEAR 🐻\nWait for the ending 👀\n\nTrue story (as the stor",
-   "views": 1135,
+   "views": 1136,
    "reach": 956,
    "saved": 0,
    "shares": 0,
    "total_interactions": 15,
-   "ig_reels_avg_watch_time": 10050,
-   "ig_reels_video_view_total_time": 9738596
+   "ig_reels_avg_watch_time": 10045,
+   "ig_reels_video_view_total_time": 9743826
   },
   {
    "id": "17895712905438609",
@@ -176,13 +191,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfdGjicmWWJ/",
    "caption": "A chess robot beat Napoleon ♟️\nWait for the ending 👀\n\nTrue story. The Turk, built in 1770,",
-   "views": 502,
-   "reach": 399,
+   "views": 503,
+   "reach": 401,
    "saved": 0,
    "shares": 0,
    "total_interactions": 6,
-   "ig_reels_avg_watch_time": 10435,
-   "ig_reels_video_view_total_time": 4132311
+   "ig_reels_avg_watch_time": 10414,
+   "ig_reels_video_view_total_time": 4134403
   },
   {
    "id": "17974478592174517",
@@ -206,13 +221,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfcENL7DxCI/",
    "caption": "The CIA turned a cat into a spy 🐈\nWait for the ending 👀\n\nTrue story. In the 1960s the CIA ",
-   "views": 337,
-   "reach": 289,
+   "views": 338,
+   "reach": 290,
    "saved": 0,
    "shares": 0,
    "total_interactions": 10,
-   "ig_reels_avg_watch_time": 11896,
-   "ig_reels_video_view_total_time": 3390590
+   "ig_reels_avg_watch_time": 11863,
+   "ig_reels_video_view_total_time": 3392874
   },
   {
    "id": "17912470080307883",
@@ -251,13 +266,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfZhgDFE3QS/",
    "caption": "An oil rig made a whole lake disappear 🌀\nWait for the ending 👀\n\nTrue story. In November 19",
-   "views": 1024,
-   "reach": 837,
+   "views": 1025,
+   "reach": 838,
    "saved": 0,
    "shares": 0,
    "total_interactions": 8,
-   "ig_reels_avg_watch_time": 8648,
-   "ig_reels_video_view_total_time": 7229875
+   "ig_reels_avg_watch_time": 8643,
+   "ig_reels_video_view_total_time": 7234613
   },
   {
    "id": "17915123811552227",
@@ -382,17 +397,17 @@
   {
    "id": "18126867706900610",
    "timestamp": "2026-11-03T15:00:01+0000",
-   "like_count": 6,
+   "like_count": 7,
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfRy0_jjHb7/",
    "caption": "True story. In 1518 a woman began dancing in the streets of Strasbourg and many others joi",
-   "views": 316,
-   "reach": 281,
+   "views": 317,
+   "reach": 282,
    "saved": 0,
    "shares": 0,
-   "total_interactions": 7,
-   "ig_reels_avg_watch_time": 7067,
-   "ig_reels_video_view_total_time": 1964824
+   "total_interactions": 8,
+   "ig_reels_avg_watch_time": 7047,
+   "ig_reels_video_view_total_time": 1966123
   },
   {
    "id": "18108710345338835",
@@ -491,13 +506,13 @@
    "comments_count": 2,
    "permalink": "https://www.instagram.com/reel/DfLy9P-GOj9/",
    "caption": "True story. In WWII the Polish army put a bear on the payroll. He carried real artillery s",
-   "views": 2208,
+   "views": 2209,
    "reach": 1782,
    "saved": 0,
    "shares": 57,
    "total_interactions": 141,
-   "ig_reels_avg_watch_time": 10493,
-   "ig_reels_video_view_total_time": 18982165
+   "ig_reels_avg_watch_time": 10487,
+   "ig_reels_video_view_total_time": 18982787
   },
   {
    "id": "18121107233084414",
@@ -521,13 +536,13 @@
    "comments_count": 16,
    "permalink": "https://www.instagram.com/reel/DfKCF2vnfFG/",
    "caption": "Parody. 🍲 The food taster deserved a raise.\nWhose dish was it? Wrong answers only 👇\n\n#paro",
-   "views": 2650,
-   "reach": 1779,
+   "views": 2652,
+   "reach": 1782,
    "saved": 1,
    "shares": 1,
    "total_interactions": 53,
-   "ig_reels_avg_watch_time": 14654,
-   "ig_reels_video_view_total_time": 26759325
+   "ig_reels_avg_watch_time": 14663,
+   "ig_reels_video_view_total_time": 26789438
   },
   {
    "id": "18105743072198139",
@@ -536,13 +551,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfJNWHXFNP3/",
    "caption": "⚡ Heaven: no Wi-Fi. Hell: five bars. Tough choice.\nWhich one are you picking? 👇\n\n#zeus #he",
-   "views": 3251,
-   "reach": 2546,
+   "views": 3253,
+   "reach": 2547,
    "saved": 1,
    "shares": 0,
    "total_interactions": 40,
-   "ig_reels_avg_watch_time": 13399,
-   "ig_reels_video_view_total_time": 34274908
+   "ig_reels_avg_watch_time": 13405,
+   "ig_reels_video_view_total_time": 34304516
   },
   {
    "id": "18119950564991286",
@@ -626,13 +641,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfE5hw8CZOR/",
    "caption": "💀 Even the Grim Reaper isn't safe from AI.\nWould you trust an AI with your death? 👇\n\n#dark",
-   "views": 2170,
-   "reach": 1756,
+   "views": 2171,
+   "reach": 1758,
    "saved": 2,
    "shares": 1,
    "total_interactions": 44,
-   "ig_reels_avg_watch_time": 18424,
-   "ig_reels_video_view_total_time": 32427843
+   "ig_reels_avg_watch_time": 18415,
+   "ig_reels_video_view_total_time": 32430507
   },
   {
    "id": "17992724973114043",
