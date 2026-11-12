@@ -522,7 +522,7 @@
     crouchwalk: 'Crouch_Fwd_Loop', drive: 'Driving_Loop', dance: 'Dance_Loop', kneel: 'Fixing_Kneeling', jump: 'Jump_Loop', swim: 'Swim_Fwd_Loop', interact: 'Interact', roll: 'Roll', pistol: 'Pistol_Idle_Loop',
     formalwalk: 'Walk_Formal_Loop', torch: 'Idle_Torch_Loop', spell: 'Spell_Simple_Idle_Loop', sword: 'Sword_Idle', tpose: 'A_TPose' };
   const WMOVES = { idle: 'Female_Idle', walk: 'Female_Walk', run: 'Female_Run', sprint: 'Female_Run', sit: 'Female_Sitting', sittalk: 'Female_Sitting', talk: 'Female_Standing', punch: 'Female_Punch', jab: 'Female_Punch',
-    death: 'Female_Death', jump: 'Female_Jump', clap: 'Female_Clapping', sword: 'Female_SwordSlash' };
+    death: 'Female_Death', jump: 'Female_Jump', clap: 'Female_Clapping', sword: 'Female_SwordSlash', dance: 'Female_Clapping', hit: 'Female_Jump', hithead: 'Female_Jump', crouch: 'Female_Sitting', pickup: 'Female_Standing', kneel: 'Female_Sitting', wave: 'Female_Standing' };
   const AMOVES = { idle: ['Idle'], walk: ['Walk', 'WalkSlow'], walkslow: ['WalkSlow', 'Walk'], gallop: ['Gallop', 'Run'], run: ['Gallop', 'Run'], eat: ['Eating', 'Idle_Headlow', 'Idle_2_HeadLow', 'Idle'], attack: ['Attack', 'Attack_Headbutt', 'Attack_Kick', 'Idle'],
     death: ['Death'], jump: ['Gallop_Jump', 'Jump'], hit: ['Idle_HitReact_Left', 'Idle'], idle2: ['Idle_2', 'Idle'], headlow: ['Idle_Headlow', 'Idle_2_HeadLow', 'Idle'] };
   // clips from the animation library, cleaned for other bodies: keep rotations, and the pelvis/root position only

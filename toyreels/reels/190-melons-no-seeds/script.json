@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "These melons were bred to be bigger, sweeter, and they had no seeds.",
+   "say": "These melons were bred to be bigger, sweeter, and they had no seeds."
+  },
+  {
+   "shot": "wild",
+   "cap": "The watermelon's wild relatives in Africa were small, pale, and often bitter.",
+   "say": "The watermelon's wild relatives in Africa were small, pale, and often bitter."
+  },
+  {
+   "shot": "egypt",
+   "cap": "Thousands of years ago, farmers kept planting the sweetest ones. Watermelons even appear in ancient Egyptian tomb art.",
+   "say": "Thousands of years ago, farmers kept planting the sweetest ones. Watermelons even appear in ancient Egyptian tomb art."
+  },
+  {
+   "shot": "red",
+   "cap": "Over time, the flesh turned red, sweet and juicy.",
+   "say": "Over time, the flesh turned red, sweet and juicy."
+  },
+  {
+   "shot": "japan",
+   "cap": "Then in the 1930s and 40s, a Japanese scientist, Hitoshi Kihara, worked out how to grow them without seeds.",
+   "say": "Then in the 1930s and 40s, a Japanese scientist, Hitoshi Kihara, worked out how to grow them without seeds."
+  },
+  {
+   "shot": "how",
+   "cap": "He crossed two kinds of plants, so the fruit couldn't make proper seeds. Those soft white ones are just empty seed coats.",
+   "say": "He crossed two kinds of plants, so the fruit couldn't make proper seeds. Those soft white ones are just empty seed coats."
+  },
+  {
+   "shot": "pollen",
+   "cap": "But seedless melons still need pollen from normal, seeded plants growing nearby.",
+   "say": "But seedless melons still need pollen from normal, seeded plants growing nearby."
+  },
+  {
+   "shot": "outro",
+   "cap": "So every seedless melon still needs a little help.",
+   "say": "So every seedless melon still needs a little help."
+  }
+ ]
+}

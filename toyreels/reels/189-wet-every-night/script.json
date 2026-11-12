@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Every night, while you sleep, your brain gets a good, wet wash.",
+   "say": "Every night, while you sleep, your brain gets a good, wet wash."
+  },
+  {
+   "shot": "fluid",
+   "cap": "A clear fluid called cerebrospinal fluid, surrounds your brain.",
+   "say": "A clear fluid called cerebrospinal fluid, surrounds your brain."
+  },
+  {
+   "shot": "sleep",
+   "cap": "In 2013, scientists found that during deep sleep, brain cells shrink a little. The gaps between them grow by about sixty percent.",
+   "say": "In 2013, scientists found that during deep sleep, brain cells shrink a little. The gaps between them grow by about sixty percent."
+  },
+  {
+   "shot": "flush",
+   "cap": "That lets the fluid rush through, and flush out the waste your brain made all day.",
+   "say": "That lets the fluid rush through, and flush out the waste your brain made all day."
+  },
+  {
+   "shot": "waste",
+   "cap": "Including a sticky protein linked to Alzheimer's disease.",
+   "say": "Including a sticky protein linked to Alzheimer's disease."
+  },
+  {
+   "shot": "waves",
+   "cap": "In 2019, brain scans caught it in people. Big slow waves of fluid, washing in, during deep sleep.",
+   "say": "In 2019, brain scans caught it in people. Big slow waves of fluid, washing in, during deep sleep."
+  },
+  {
+   "shot": "skip",
+   "cap": "Skip sleep, and the trash stays in.",
+   "say": "Skip sleep, and the trash stays in."
+  },
+  {
+   "shot": "outro",
+   "cap": "So go to bed. Your brain needs its wash. General information, not medical advice.",
+   "say": "So go to bed. Your brain needs its wash. General information, not medical advice."
+  }
+ ]
+}

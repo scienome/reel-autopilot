@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Blow too hard, for too long, and you'll pass out. Here's what's happening to your body.",
+   "say": "Blow too hard, for too long, and you'll pass out. Here's what's happening to your body."
+  },
+  {
+   "shot": "balloon",
+   "cap": "Balloons. Every party, someone goes dizzy blowing them up.",
+   "say": "Balloons. Every party, someone goes dizzy blowing them up."
+  },
+  {
+   "shot": "co2",
+   "cap": "Blowing hard again and again, you breathe out too much carbon dioxide.",
+   "say": "Blowing hard again and again, you breathe out too much carbon dioxide."
+  },
+  {
+   "shot": "vessels",
+   "cap": "With too little of it in your blood, the vessels in your brain tighten up. Less blood gets in.",
+   "say": "With too little of it in your blood, the vessels in your brain tighten up. Less blood gets in."
+  },
+  {
+   "shot": "push",
+   "cap": "And pushing hard squeezes your chest. That slows the blood going back to your heart.",
+   "say": "And pushing hard squeezes your chest. That slows the blood going back to your heart."
+  },
+  {
+   "shot": "dizzy",
+   "cap": "Less blood to the brain means stars, tingling fingers, and sometimes, lights out.",
+   "say": "Less blood to the brain means stars, tingling fingers, and sometimes, lights out."
+  },
+  {
+   "shot": "tip",
+   "cap": "So take breaks, breathe normally, or just use a pump.",
+   "say": "So take breaks, breathe normally, or just use a pump."
+  },
+  {
+   "shot": "outro",
+   "cap": "Your lungs will thank you. General information, not medical advice.",
+   "say": "Your lungs will thank you. General information, not medical advice."
+  }
+ ]
+}
