@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "He screwed one buyer so well, that he came back to do it again.",
+   "say": "He screwed one buyer so well, that he came back to do it again."
+  },
+  {
+   "shot": "who",
+   "cap": "Victor Lustig. A con man, in Paris, in 1925.",
+   "say": "Victor Lustig. A con man, in Paris, in 1925."
+  },
+  {
+   "shot": "news",
+   "cap": "He read that the Eiffel Tower was rusting, and costly to repair. So he had an idea.",
+   "say": "He read that the Eiffel Tower was rusting, and costly to repair. So he had an idea."
+  },
+  {
+   "shot": "meeting",
+   "cap": "He posed as a government official, and invited scrap metal dealers to a secret meeting, in a fancy hotel.",
+   "say": "He posed as a government official, and invited scrap metal dealers to a secret meeting, in a fancy hotel."
+  },
+  {
+   "shot": "sold",
+   "cap": "The Eiffel Tower is being torn down, he said. Who wants the metal? A dealer named André Poisson paid him, plus a bribe.",
+   "say": "The Eiffel Tower is being torn down, he said. Who wants the metal? A dealer named André Poisson paid him, plus a bribe."
+  },
+  {
+   "shot": "shame",
+   "cap": "Lustig fled with the cash. Poisson was too embarrassed to tell the police.",
+   "say": "Lustig fled with the cash. Poisson was too embarrassed to tell the police."
+  },
+  {
+   "shot": "again",
+   "cap": "So Lustig came back, and tried the same trick on new dealers. This time, one went to the police. He escaped to America.",
+   "say": "So Lustig came back, and tried the same trick on new dealers. This time, one went to the police. He escaped to America."
+  },
+  {
+   "shot": "outro",
+   "cap": "He sold a tower he never owned.",
+   "say": "He sold a tower he never owned."
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "He rubbed juice all over his face, and thought nobody could see him.",
+   "say": "He rubbed juice all over his face, and thought nobody could see him."
+  },
+  {
+   "shot": "lemon",
+   "cap": "Lemon juice. In 1995, McArthur Wheeler believed it made you invisible to cameras. Like invisible ink.",
+   "say": "Lemon juice. In 1995, McArthur Wheeler believed it made you invisible to cameras. Like invisible ink."
+  },
+  {
+   "shot": "test",
+   "cap": "He even tested it. He took a photo of himself, and somehow he wasn't in it.",
+   "say": "He even tested it. He took a photo of himself, and somehow he wasn't in it."
+  },
+  {
+   "shot": "rob",
+   "cap": "So he robbed two banks in Pittsburgh, in broad daylight. No mask. Smiling at the cameras.",
+   "say": "So he robbed two banks in Pittsburgh, in broad daylight. No mask. Smiling at the cameras."
+  },
+  {
+   "shot": "news",
+   "cap": "His face was on the evening news that night. He was arrested within hours.",
+   "say": "His face was on the evening news that night. He was arrested within hours."
+  },
+  {
+   "shot": "shock",
+   "cap": "When police showed him the tapes, he said, but I wore the juice!",
+   "say": "When police showed him the tapes, he said, but I wore the juice!"
+  },
+  {
+   "shot": "study",
+   "cap": "Two psychologists read about him, and studied why the least skilled people are often the most confident. The Dunning-Kruger effect.",
+   "say": "Two psychologists read about him, and studied why the least skilled people are often the most confident. The Dunning-Kruger effect."
+  },
+  {
+   "shot": "outro",
+   "cap": "Confidence isn't the same as being right.",
+   "say": "Confidence isn't the same as being right."
+  }
+ ]
+}
