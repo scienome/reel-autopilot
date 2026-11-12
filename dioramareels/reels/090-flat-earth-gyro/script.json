@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Flat earthers spent twenty thousand dollars on a machine to prove the Earth doesn't spin. It proved it does.",
+   "say": "Flat earthers spent twenty thousand dollars on a machine to prove the Earth doesn't spin. It proved it does."
+  },
+  {
+   "shot": "claim",
+   "cap": "The flat earth idea came back online in the 2010s. Videos, conferences, a whole movement. Some believe the Earth is a disc, with a wall of ice around the edge.",
+   "say": "The flat earth idea came back online in the 2010s. Videos, conferences, a whole movement. Some believe the Earth is a disc, with a wall of ice around the edge."
+  },
+  {
+   "shot": "test",
+   "cap": "In the documentary Behind the Curve, believers bought a laser ring gyroscope. A super sensitive tool. If the Earth spins, it should pick up a drift of fifteen degrees per hour.",
+   "say": "In the documentary Behind the Curve, believers bought a laser ring gyroscope. A super sensitive tool. If the Earth spins, it should pick up a drift of fifteen degrees per hour."
+  },
+  {
+   "shot": "result",
+   "cap": "They switched it on. It picked up a drift of fifteen degrees per hour.",
+   "say": "They switched it on. It picked up a drift of fifteen degrees per hour."
+  },
+  {
+   "shot": "excuse",
+   "cap": "So they said it must be broken. Or, maybe the sky is spinning.",
+   "say": "So they said it must be broken. Or, maybe the sky is spinning."
+  },
+  {
+   "shot": "light",
+   "cap": "Then they tried a second test, with a light and three holes. If the Earth curves, the light should vanish. It vanished.",
+   "say": "Then they tried a second test, with a light and three holes. If the Earth curves, the light should vanish. It vanished."
+  },
+  {
+   "shot": "line",
+   "cap": "Their reaction, on camera? That's interesting.",
+   "say": "Their reaction, on camera? That's interesting."
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the friend who never admits they're wrong. Because,",
+   "say": "Tag the friend who never admits they're wrong. Because,"
+  }
+ ]
+}

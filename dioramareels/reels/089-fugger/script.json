@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "The richest man in history bought a king his crown. And then sent him the bill.",
+   "say": "The richest man in history bought a king his crown. And then sent him the bill."
+  },
+  {
+   "shot": "who",
+   "cap": "Jakob Fugger. A banker from Augsburg, Germany, around 1500. Many historians call him the richest person who ever lived.",
+   "say": "Jakob Fugger. A banker from Augsburg, Germany, around 1500. Many historians call him the richest person who ever lived."
+  },
+  {
+   "shot": "mines",
+   "cap": "He lent money to the Habsburgs. In return, he got their silver and copper mines.",
+   "say": "He lent money to the Habsburgs. In return, he got their silver and copper mines."
+  },
+  {
+   "shot": "election",
+   "cap": "In 1519, the job of Holy Roman Emperor was up for grabs. Chosen by seven electors. Who could be bribed.",
+   "say": "In 1519, the job of Holy Roman Emperor was up for grabs. Chosen by seven electors. Who could be bribed."
+  },
+  {
+   "shot": "bribe",
+   "cap": "Fugger paid most of the bribes for his client, Charles of Habsburg. Around half a million florins. Charles won.",
+   "say": "Fugger paid most of the bribes for his client, Charles of Habsburg. Around half a million florins. Charles won."
+  },
+  {
+   "shot": "letter",
+   "cap": "Years later, Charles was slow to repay. So Fugger wrote to him. Without me, Your Majesty would not have the crown. Please pay.",
+   "say": "Years later, Charles was slow to repay. So Fugger wrote to him. Without me, Your Majesty would not have the crown. Please pay."
+  },
+  {
+   "shot": "housing",
+   "cap": "He also built the Fuggerei. Cheap housing for the poor. It still exists. The rent is still less than one euro a year.",
+   "say": "He also built the Fuggerei. Cheap housing for the poor. It still exists. The rent is still less than one euro a year."
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the friend who always collects what they're owed. Because,",
+   "say": "Tag the friend who always collects what they're owed. Because,"
+  }
+ ]
+}
