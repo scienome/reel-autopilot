@@ -38,6 +38,50 @@ def speak(text, vcfg):
     sys.exit('ElevenLabs kept failing')
 
 
+def is_cartesia(vid):
+    return isinstance(vid, str) and vid.count('-') == 4 and len(vid) == 36  # Cartesia voice ids are UUIDs; ElevenLabs ids are 20 letters
+
+
+def speak_cartesia(text, vcfg):
+    """Cartesia over SSE with word timestamps, returned in the same shape as an ElevenLabs with-timestamps response."""
+    import requests
+    key = os.environ.get('CARTESIA_API_KEY')
+    if not key:
+        env = os.path.join(os.path.dirname(ROOT), '.env')
+        if os.path.exists(env):
+            for ln in open(env):
+                k, _, v = ln.strip().partition('=')
+                if k == 'CARTESIA_API_KEY': key = v.strip().strip('"\'')
+    if not key:
+        sys.exit('CARTESIA_API_KEY is not set')
+    body = {'model_id': vcfg.get('cartesia_model', 'sonic-3.6-2026-08-27'), 'transcript': text, 'voice': {'mode': 'id', 'id': vcfg['voice_id']}, 'language': vcfg.get('language', 'hi'),
+            'output_format': {'container': 'raw', 'encoding': 'pcm_s16le', 'sample_rate': 44100}, 'add_timestamps': True}
+    for attempt in range(4):
+        r = requests.post('https://api.cartesia.ai/tts/sse', headers={'X-API-Key': key, 'Cartesia-Version': '2026-08-14', 'Content-Type': 'application/json'}, json=body, stream=True, timeout=180)
+        if r.status_code == 200: break
+        print(f'Cartesia {r.status_code}: {r.text[:300]}', file=sys.stderr, flush=True); import time; time.sleep(5 * (attempt + 1))
+    else:
+        sys.exit('Cartesia failed')
+    pcm, W = b'', []
+    for ln in r.iter_lines():
+        if not ln or not ln.startswith(b'data:'): continue
+        d = json.loads(ln[5:])
+        if d.get('type') == 'chunk': pcm += base64.b64decode(d['data'])
+        elif d.get('type') == 'timestamps': w = d['word_timestamps']; W += list(zip(w['words'], w['start'], w['end']))
+    d = tempfile.mkdtemp(); raw = os.path.join(d, 'a.raw'); mp3 = os.path.join(d, 'a.mp3'); open(raw, 'wb').write(pcm)
+    subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-f', 's16le', '-ar', '44100', '-ac', '1', '-i', raw, '-b:a', '128k', mp3], check=True)
+    st, en = [0.0] * len(text), [0.0] * len(text); cur, last = 0, 0.0
+    for w, a, b in W:
+        k = text.find(w, cur)
+        if k < 0: k = text.find(w.strip('.,!?।'), cur)
+        if k < 0: continue
+        for i in range(cur, k): st[i] = en[i] = last
+        for i in range(k, k + len(w)): st[i], en[i] = float(a), float(b)
+        cur, last = k + len(w), float(b)
+    for i in range(cur, len(text)): st[i] = en[i] = last
+    return {'audio_base64': base64.b64encode(open(mp3, 'rb').read()).decode(), 'alignment': {'characters': list(text), 'character_start_times_seconds': st, 'character_end_times_seconds': en}}
+
+
 def main(reel):
     cfg = json.load(open(os.path.join(ROOT, 'config.json')))
     base, cast = cfg['voice'], cfg.get('cast', {})
@@ -51,7 +95,7 @@ def main(reel):
         res = json.load(open(cache)) if os.path.exists(cache) else None
         if not (res and res.get('text') == text and res.get('voice') == tag):
             print(f'voicing {beat["id"]} ({who}): {text}', flush=True)
-            res = speak(text, vcfg); res['text'] = text; res['voice'] = tag; json.dump(res, open(cache, 'w'))
+            res = (speak_cartesia if is_cartesia(vcfg['voice_id']) else speak)(text, vcfg); res['text'] = text; res['voice'] = tag; json.dump(res, open(cache, 'w'))
         mp3 = os.path.join(tmp, beat['id'] + '.mp3'); open(mp3, 'wb').write(base64.b64decode(res['audio_base64']))
         wav = os.path.join(tmp, f'{len(parts):03d}.wav')
         subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', mp3, '-af', f'apad=pad_dur={GAP}', '-ar', '44100', '-ac', '1', wav], check=True)

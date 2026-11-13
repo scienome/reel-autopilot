@@ -1,15 +1,17 @@
 {
  "voice": {
-  "voice_id": "XNJDyPyJ8r4J7de0WJwB",
-  "model_id": "eleven_v4",
+  "voice_id": "bdab08ad-4137-4548-b9db-6142854c7525",
+  "provider": "cartesia",
+  "cartesia_model": "sonic-3.6-2026-08-27",
+  "language": "hi",
   "voice_settings": null
  },
  "cast": {
-  "narrator": "XNJDyPyJ8r4J7de0WJwB",
+  "narrator": "bdab08ad-4137-4548-b9db-6142854c7525",
   "karna": "6EphsklDopDQ6eRkwNHT"
  },
  "_cast_names": {
-  "narrator": "Sudhir - Warm & Expressive Hindi Voice (owner's pick, 30 Oct 2026; also voices character lines for now)",
+  "narrator": "Imran - Hindi Film Actor (Cartesia), owner's pick 13 Nov 2026 for all unposted reels (was Sudhir on ElevenLabs)",
   "karna": "Owner's voice for Karna telling his own story, कर्ण की गाथा (1 Nov 2026)"
  },
  "cast_settings": {}

@@ -57,6 +57,7 @@ jobs:
         if: steps.pick.outputs.list != ''
         env:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          CARTESIA_API_KEY: ${{ secrets.CARTESIA_API_KEY }}
           GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "reel-bot"; git config user.email "reel-bot@users.noreply.github.com"
