@@ -15,6 +15,7 @@ Every model here is free to use in videos, commercial included. Keep this file w
 | nature/rock_formation | rock formation | Kenney (poly.pizza) | CC0 1.0 |
 | props/strawberry watermelon corn cabbage onion eggplant | food | Kenney (poly.pizza) | CC0 1.0 |
 | props/coin trophy present egg_q | items | Quaternius / Kenney (poly.pizza) | CC0 1.0 |
+| khome/* (48), ktown/* (42), knature/* (31) | furniture, city buildings + roads + cars + planters, trees + flowers + rocks (textures embedded) | Kenney *Furniture Kit*, *City Kit (Commercial / Roads)*, *Car Kit*, *Suburban*, *Nature Kit*, via github.com/RetroDECK/RetroQUEST, Rbitah/godot-city-builder_kenny_assets, leaukojo/carlito, BastiaanOlij/godot-vr-weapons (Kenney assets are CC0) | CC0 1.0 |
 | mini/male-a..f, female-a..f | chunky toy people, 32 clips each (idle, walk, sprint, sit, pick-up, emotes...); texture embedded | Kenney, *Mini Characters 1*, via github.com/ivanlarios22/Zapopan (Kenney assets are CC0) | CC0 1.0 |
 
 Code: references/hands.js bundles the WebXR generic-hand models (MIT, Copyright (c) 2019 Amazon) and three.js r147 GLTFLoader (MIT);

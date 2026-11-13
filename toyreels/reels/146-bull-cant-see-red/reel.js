@@ -1,4 +1,4 @@
-// re-render: character flicker fix (13 Nov 2026)
+// re-render: flicker fix + Kenney toy scenery (13 Nov 2026)
 // 146 cinestory3d (story3d.js): bulls are red-green colourblind; movement, not colour, triggers the charge. Scroll stopper: a bull charging the camera.
 STORY((k) => {
   const { T, M, PI, E, seg, lerp } = k; const ar = k.arena();

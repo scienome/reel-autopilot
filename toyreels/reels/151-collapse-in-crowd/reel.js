@@ -1,4 +1,4 @@
-// re-render: character flicker fix (13 Nov 2026)
+// re-render: flicker fix + Kenney toy scenery (13 Nov 2026)
 // 151 cinestory3d (story3d.js): the bystander effect and how to beat it (point at one person; Red Cross guidance). Scroll stopper: a man collapses as a crowd walks past.
 STORY((k) => {
   const { T, M, PI, E, seg, lerp } = k; const st = k.LIB.place.street({ len: 60 }); k.place(st); const X = 5.4, Y = 0.18;

@@ -1,4 +1,4 @@
-// re-render: character flicker fix (13 Nov 2026)
+// re-render: flicker fix + Kenney toy scenery (13 Nov 2026)
 // 183 cinestory3d (story3d.js): Einstein's brain 1,230 g (Witelson 1999; Falk 2013). Scroll stopper: a woman holds up a tape ruler to a nervous man ("does size matter?"), then it swings up to his head.
 STORY((k) => {
   const { PI } = k; const rm = k.LIB.place.room({ wall: '#e8d6e6' }); k.place(rm);

@@ -1,4 +1,4 @@
-// re-render: character flicker fix (13 Nov 2026)
+// re-render: flicker fix + Kenney toy scenery (13 Nov 2026)
 // 201 cinestory3d (story3d.js): phones carry more bacteria than toilet seats (Gerba via TIME 2012; Olsen 2020; Apple). Scroll stopper: a man in bed at night, "TOUCHED EVERY NIGHT 😳"... his phone, crawling with cartoon germs. Gag: he takes it into the bathroom and gets a missile.
 STORY((k) => {
   const { T, M, PI } = k; const rm = k.LIB.place.room({ wall: '#2c3a5a' }); k.place(rm); const bed = k.LIB.prop('props/bed_single', { h: 0.7 }); bed.position.set(0, 0, -0.6); rm.add(bed);

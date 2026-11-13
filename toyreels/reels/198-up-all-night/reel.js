@@ -1,4 +1,4 @@
-// re-render: character flicker fix (13 Nov 2026)
+// re-render: flicker fix + Kenney toy scenery (13 Nov 2026)
 // 198 cinestory3d (story3d.js): sleep deprivation, 24 h ~ 0.10% BAC, hallucinations by day 3, Randy Gardner (Dawson & Reid 1997; Waters 2018; Ross 1965). Scroll stopper: a man wide awake on his bed in the dark, "72 HOURS". Gag: a microsleep face-plant into the desk, BONK; a giant fox hallucination.
 STORY((k) => {
   const { PI } = k; const rm = k.LIB.place.room({ wall: '#2c3a5a' }); k.place(rm); const bed = k.LIB.prop('props/bed_single', { h: 0.7 }); bed.position.set(-1.0, 0, -0.9); rm.add(bed); const tbl = k.LIB.prop('props/table_round', { h: 0.76 }); tbl.position.set(0.9, 0, -0.6); rm.add(tbl);

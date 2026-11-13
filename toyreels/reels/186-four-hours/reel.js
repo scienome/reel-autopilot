@@ -1,4 +1,4 @@
-// re-render: character flicker fix (13 Nov 2026)
+// re-render: flicker fix + Kenney toy scenery (13 Nov 2026)
 // 186 cinestory3d (story3d.js): priapism over 4 hours is an emergency (NHS; Mayo Clinic; FDA sildenafil label). Scroll stopper: a man in his bedroom staring down in panic as a clock ticks past 4:00... then a pill-bottle warning label.
 STORY((k) => {
   const rm = k.LIB.place.room({ wall: '#cfd8e6' }); k.place(rm); const bed = k.LIB.prop('props/bed_single', { h: 0.7 }); bed.position.set(-1.6, 0, -1.2); rm.add(bed);

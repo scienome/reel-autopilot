@@ -1,4 +1,4 @@
-// re-render: character flicker fix (13 Nov 2026)
+// re-render: flicker fix + Kenney toy scenery (13 Nov 2026)
 // 168 cinestory3d (story3d.js): buried pirate treasure is mostly myth; Kidd's 1699 cache (Britannica, Smithsonian). Scroll stopper: a pirate digging at an X, the chest is empty.
 STORY((k) => {
   const { T, M, PI, E, seg, lerp } = k; const isl = new T.Group(); k.place(isl); const sand = new T.Mesh(new T.CircleGeometry(14, 48), M('#e8d29a', 0.95)); sand.rotation.x = -PI / 2; isl.add(sand);

@@ -609,16 +609,49 @@
   const add = (p, o, x, y, z, ry = 0) => { o.position.set(x, y, z); o.rotation.y = ry; p.add(o); return o; };
   const has = (n) => !!LIB.gltf[n];
   const P = LIB.place = {};
+  // ---------- Kenney toy dressing (CC0 Furniture / City / Car / Nature kits, assets khome/* ktown/* knature/*). Matches the Kenney Mini toy cast.
+  // Used automatically by room / kitchen / office / street / park / village when the reel loads those assets (LIB.toyKit adds them all).
+  const KH = {"bookcaseOpen": 2.1, "pottedPlant": 1.3, "lampRoundFloor": 1.9, "rugRound": 0.03, "cabinetTelevision": 0.7, "televisionModern": 0.75, "sideTable": 0.7, "books": 0.25, "kitchenFridge": 2.0, "kitchenCabinet": 1.0, "kitchenSink": 1.0, "kitchenStove": 1.0, "trashcan": 0.6, "bookcaseClosedWide": 2.0, "coatRackStanding": 1.8, "cardboardBoxClosed": 0.5, "bedDouble": 0.75, "rugRectangle": 0.03}; // real heights for the furniture (the kit's own sizes vary)
+  const KP = (n, sc, x, y, z, ry = 0, g) => { if (!has(n)) return null; const hh = KH[n.split('/')[1]]; const o = LIB.prop(n, n.startsWith('khome/') && hh ? (hh < 0.1 ? { w: 2.6 } : { h: hh * 1.15 }) : { scale: sc }); o.position.set(x, y, z); o.rotation.y = ry; g.add(o); return o; };
+  const kenneyOn = () => has('khome/loungeSofa') || has('ktown/building-a') || has('knature/tree_oak');
+  LIB.toyKitAssets = () => [...['loungeSofa', 'loungeChair', 'tableCoffee', 'rugRectangle', 'rugRound', 'cabinetTelevision', 'televisionModern', 'lampRoundFloor', 'pottedPlant', 'plantSmall1', 'bookcaseOpen', 'bookcaseClosedWide', 'sideTable', 'books',
+      'kitchenFridge', 'kitchenStove', 'kitchenCabinet', 'kitchenSink', 'kitchenBar', 'stoolBar', 'desk', 'chairDesk', 'computerScreen', 'computerKeyboard', 'laptop', 'trashcan', 'coatRackStanding', 'bedDouble', 'cardboardBoxClosed', 'speaker'].map((n) => 'khome/' + n),
+    ...['a', 'c', 'e', 'h', 'k', 'm', 'o', 'q', 's', 't'].map((n) => 'ktown/building-' + n), 'ktown/car-sedan', 'ktown/car-taxi', 'ktown/car-van', 'ktown/car-suv', 'ktown/light-curved', 'ktown/planter', 'ktown/construction-cone', 'ktown/detail-parasol-a',
+    ...['tree_oak', 'tree_default', 'tree_fat', 'tree_pineRoundA', 'plant_bush', 'plant_bushLarge', 'flower_redA', 'flower_yellowA', 'flower_purpleA', 'rock_largeA', 'mushroom_red', 'log', 'fence_simple', 'grass_large'].map((n) => 'knature/' + n)];
+  const S = 2.0; // furniture scale next to the 1.4-tall toy cast
+  const dressRoom = (g, o) => { if (!kenneyOn() || o.bare) return; const bw = -o.d / 2 + 0.05, L = -o.w / 2 + 0.05, R = o.w / 2 - 0.05;
+    // wainscot + skirting so walls are not flat
+    const WS = M(new T.Color(o.wall).multiplyScalar(0.78).getStyle(), 0.8); box(g, o.w, 0.9, 0.04, WS, 0, 0.45, bw + 0.04); box(g, 0.04, 0.9, o.d, WS, L + 0.04, 0.45, 0); box(g, 0.04, 0.9, o.d, WS, R - 0.04, 0.45, 0);
+    box(g, o.w, 0.05, 0.06, M('#ffffff', 0.5), 0, 0.92, bw + 0.06);
+    const pic = box(g, 0.8, 0.6, 0.03, M(['#e8a33a', '#3a8ad8', '#d8503a', '#4ab07a'][(o.seed || 0) % 4], 0.6), o.w / 4, 1.75, bw + 0.04); box(g, 0.9, 0.7, 0.02, M('#2a2a2a', 0.5), o.w / 4, 1.75, bw + 0.02);
+    const kind = o.kind || 'living';
+    if (kind === 'living') { KP('khome/bookcaseOpen', S, L + 0.35, 0, bw + 0.25, Math.PI / 2, g) || null; KP('khome/pottedPlant', S, R - 0.4, 0, bw + 0.4, 0, g); KP('khome/lampRoundFloor', S, L + 0.4, 0, o.d / 2 - 0.8, 0, g); KP('khome/rugRound', S * 1.6, 0, 0.005, 0.2, 0, g);
+      KP('khome/cabinetTelevision', S, R - 0.35, 0, -0.4, -Math.PI / 2, g); KP('khome/televisionModern', S, R - 0.35, 0.62, -0.4, -Math.PI / 2, g); KP('khome/sideTable', S, -o.w / 4 - 0.9, 0, bw + 0.35, 0, g); KP('khome/books', S, -o.w / 4 - 0.9, 0.55, bw + 0.35, 0.4, g); }
+    if (kind === 'kitchen') { [['khome/kitchenFridge', -2.5], ['khome/kitchenCabinet', -1.75], ['khome/kitchenSink', -1.05], ['khome/kitchenStove', -0.35], ['khome/kitchenCabinet', 0.35]].forEach(([n, x]) => KP(n, S, x, 0, bw + 0.35, 0, g));
+      KP('khome/pottedPlant', S, R - 0.4, 0, bw + 0.4, 0, g); KP('khome/trashcan', S, L + 0.35, 0, 0.6, 0, g); }
+    if (kind === 'office') { KP('khome/bookcaseClosedWide', S, -0.8, 0, bw + 0.2, 0, g); KP('khome/bookcaseClosedWide', S, 0.4, 0, bw + 0.2, 0, g); KP('khome/pottedPlant', S, R - 0.4, 0, bw + 0.4, 0, g); KP('khome/coatRackStanding', S, L + 0.4, 0, bw + 0.5, 0, g); KP('khome/trashcan', S, L + 0.5, 0, 0.8, 0, g); KP('khome/cardboardBoxClosed', S, R - 0.5, 0, 1.0, 0.3, g); }
+    if (kind === 'bedroom') { KP('khome/bedDouble', S, 0.8, 0, bw + 1.1, 0, g); KP('khome/sideTable', S, -0.6, 0, bw + 0.3, 0, g); KP('khome/lampRoundFloor', S, R - 0.4, 0, bw + 0.4, 0, g); KP('khome/rugRectangle', S, 0, 0.005, 0.8, 0, g); } };
+  const dressOutdoor = (g, kind, o = {}) => { if (!kenneyOn()) return; const TR = ['knature/tree_oak', 'knature/tree_default', 'knature/tree_fat', 'knature/tree_pineRoundA'].filter(has), FL = ['knature/flower_redA', 'knature/flower_yellowA', 'knature/flower_purpleA', 'knature/plant_bush', 'knature/grass_large'].filter(has);
+    const R = (i) => ((i * 9301 + 49297) % 233280) / 233280;
+    if (kind === 'park' || kind === 'village') { for (let i = 0; i < 12 && TR.length; i++) { const sd = i % 2 ? 1 : -1; KP(TR[i % TR.length], 4.2 + R(i) * 1.6, sd * (6 + R(i + 3) * 8), 0, -24 + i * 2.2, R(i) * 6, g); }
+      for (let i = 0; i < 40 && FL.length; i++) { const sd = i % 2 ? 1 : -1; KP(FL[i % FL.length], 1.4 + R(i) * 0.6, sd * (3 + R(i + 7) * 8), 0, -20 + R(i + 11) * 22, R(i) * 6, g); }
+      if (kind === 'park') { KP('knature/rock_largeA', 2.2, -4.2, 0, -4, 0.6, g); KP('knature/log', 2.2, 4.4, 0, -6, 0.9, g); KP('knature/mushroom_red', 2, -3.4, 0, -2.2, 0, g); } }
+    if (kind === 'street') { const B = ['a', 'c', 'e', 'h', 'k', 'm', 'o', 'q', 's', 't'].map((n) => 'ktown/building-' + n).filter(has); const len = o.len || 60;
+      if (B.length) { g.children.slice().forEach((c) => { if (c.isMesh && c.geometry && c.geometry.parameters && c.geometry.parameters.width === 8.5) c.visible = false; }); // hide the plain box buildings
+        [-1, 1].forEach((sd) => { for (let i = 0; i < len / 9; i++) { const b = KP(B[(i * 3 + (sd > 0 ? 5 : 0)) % B.length], 7, sd * 15.5, 0.18, -len / 2 + 4.5 + i * 9, sd > 0 ? -Math.PI / 2 : Math.PI / 2, g); } }); }
+      const C = ['ktown/car-sedan', 'ktown/car-taxi', 'ktown/car-van', 'ktown/car-suv'].filter(has); for (let i = 0; i < 4 && C.length; i++) KP(C[i % C.length], 1.25, (i % 2 ? 1 : -1) * 2.4, 0, -len / 2 + 4 + i * 6, i % 2 ? Math.PI : 0, g); // parked far down the road, away from the action
+      for (let z = -len / 2 + 8; z < 2; z += 12) { KP('ktown/planter', 1.4, 6.6, 0.18, z, 0, g); KP('ktown/planter', 1.4, -6.6, 0.18, z + 6, 0, g); if (TR.length) { KP(TR[0], 3.4, 6.7, 0.18, z + 3, 0, g); KP(TR[1 % TR.length], 3.4, -6.7, 0.18, z - 3, 0, g); } } } };
+  LIB.dressRoom = dressRoom; LIB.dressOutdoor = dressOutdoor;
   P.room = (o = {}) => { o = Object.assign({ w: 6, d: 5, h: 2.8, wall: '#d9cbb3', floor: 'wood', window: true }, o); const g = new T.Group();
     ground(g, Math.max(o.w, o.d) * 2, o.floor === 'tiles' ? tiles('#e8e4dc', '#cfc8bc') : planks('#8a5a36', '#7a4e2e'), Math.max(o.w, o.d));
     const WM = M(o.wall, 0.9); box(g, o.w, o.h, 0.1, WM, 0, o.h / 2, -o.d / 2); box(g, 0.1, o.h, o.d, WM, -o.w / 2, o.h / 2, 0); box(g, 0.1, o.h, o.d, WM, o.w / 2, o.h / 2, 0);
     if (o.window) { box(g, 1.4, 1.1, 0.12, M('#bfe3ff', 0.1, 0, { emissive: '#bfe3ff', emissiveIntensity: 0.6 }), -o.w / 4, 1.6, -o.d / 2 + 0.02); box(g, 1.5, 0.08, 0.16, M('#f4f1ea'), -o.w / 4, 1.02, -o.d / 2 + 0.04); }
     const lamp = new T.PointLight('#ffe2b8', 0.8, 12, 2); lamp.position.set(0, o.h - 0.3, 0); g.add(lamp);
-    g.spots = { center: [0, 0, 0], door: [o.w / 2 - 0.8, 0, o.d / 2 - 0.5], window: [-o.w / 4, 0, -o.d / 2 + 0.8] }; g.cam = { pos: [o.w * 0.35, 1.7, o.d * 0.9], look: [0, 1.1, 0], fov: 40 }; return g; };
-  P.kitchen = (o = {}) => { const g = P.room(Object.assign({ floor: 'tiles', wall: '#e9e2d4' }, o)); const C = M('#f4f1ea', 0.5), TOP = M('#3b3b40', 0.3);
+    dressRoom(g, o); g.spots = { center: [0, 0, 0], door: [o.w / 2 - 0.8, 0, o.d / 2 - 0.5], window: [-o.w / 4, 0, -o.d / 2 + 0.8] }; g.cam = { pos: [o.w * 0.35, 1.7, o.d * 0.9], look: [0, 1.1, 0], fov: 40 }; return g; };
+  P.kitchen = (o = {}) => { const g = P.room(Object.assign({ floor: 'tiles', wall: '#e9e2d4', kind: 'kitchen' }, o)); const C = M('#f4f1ea', 0.5), TOP = M('#3b3b40', 0.3);
     box(g, 4, 0.9, 0.62, C, 0, 0.45, -2.15); box(g, 4.05, 0.05, 0.66, TOP, 0, 0.92, -2.15); box(g, 4, 0.7, 0.35, C, 0, 1.9, -2.3); box(g, 0.75, 1.8, 0.7, M('#cfd3d8', 0.3, 0.6), 2.4, 0.9, -2.1);
     g.spots.counter = [0, 0, -1.4]; return g; };
-  P.office = (o = {}) => { const g = P.room(Object.assign({ wall: '#dfe4e8', floor: 'tiles' }, o)); const D = M('#6b4a32', 0.5);
+  P.office = (o = {}) => { const g = P.room(Object.assign({ wall: '#dfe4e8', floor: 'tiles', kind: 'office' }, o)); const D = M('#6b4a32', 0.5);
     for (let i = -1; i <= 1; i += 2) { box(g, 1.4, 0.05, 0.7, D, i * 1.4, 0.75, -0.6); box(g, 0.05, 0.75, 0.6, D, i * 1.4 - 0.65, 0.375, -0.6); box(g, 0.05, 0.75, 0.6, D, i * 1.4 + 0.65, 0.375, -0.6);
       box(g, 0.5, 0.32, 0.03, M('#111', 0.3, 0.2, { emissive: '#2a4a7a', emissiveIntensity: 0.6 }), i * 1.4, 0.95, -0.8); if (has('props/chair')) add(g, LIB.prop('props/chair', { h: 1.0 }), i * 1.4, 0, 0.05, Math.PI); }
     g.spots.desk = [-1.4, 0, 0.1]; g.spots.desk2 = [1.4, 0, 0.1]; return g; };
@@ -640,12 +673,12 @@
     const TR = ['nature/tree_oak', 'nature/tree_maple', 'nature/tree_birch'].filter(has); for (let i = 0; i < o.trees && TR.length; i++) { const side = i % 2 ? 1 : -1; const z = -o.size / 2 + 3 + (i * o.size * 0.9) / o.trees;
       add(g, LIB.prop(TR[(i + o.seed) % TR.length], { h: 6 + ((i * 7) % 3) }), side * (4 + ((i * 13) % 5)), 0, z, i); }
     if (has('props/bench')) add(g, LIB.prop('props/bench', { w: 1.8 }), 2.2, 0, 0, -Math.PI / 2); if (has('nature/rock_mossy')) add(g, LIB.prop('nature/rock_mossy', { h: 1.0 }), -3.0, 0, 3);
-    g.spots = { bench: [2.0, 0, 0], path: [0, 0, 0], far: [0, 0, -12] }; g.cam = { pos: [3.5, 1.6, 8], look: [0, 1.0, 0], fov: 40 }; g.sky = '#9fd3f2'; return g; };
+    dressOutdoor(g, 'park'); g.spots = { bench: [2.0, 0, 0], path: [0, 0, 0], far: [0, 0, -12] }; g.cam = { pos: [3.5, 1.6, 8], look: [0, 1.0, 0], fov: 40 }; g.sky = '#9fd3f2'; return g; };
   P.village = (o = {}) => { const g = new T.Group(); ground(g, 60, grassT(), 15); const H = ['buildings/cottage', 'buildings/village_house', 'buildings/house_v2'].filter(has);
     H.forEach((n, i) => add(g, LIB.prop(n, { h: 6 }), -9 + i * 9, 0, -8 - (i % 2) * 2, (i - 1) * 0.3)); if (has('buildings/well')) add(g, LIB.prop('buildings/well', { h: 2.6 }), 3, 0, -1);
     if (has('buildings/fence')) for (let i = 0; i < 5; i++) add(g, LIB.prop('buildings/fence', { w: 2.5 }), -10 + i * 2.5, 0, 2);
     const TR = ['nature/tree_oak', 'nature/tree_maple'].filter(has); for (let i = 0; i < 6 && TR.length; i++) add(g, LIB.prop(TR[i % TR.length], { h: 7 }), -16 + i * 6.5, 0, -16 - (i % 2) * 3, i);
-    g.spots = { well: [2, 0, 0.5], square: [0, 0, 0], door: [0, 0, -5] }; g.cam = { pos: [4, 2.2, 10], look: [0, 1.6, -4], fov: 42 }; g.sky = '#a8d8f0'; return g; };
+    dressOutdoor(g, 'village'); g.spots = { well: [2, 0, 0.5], square: [0, 0, 0], door: [0, 0, -5] }; g.cam = { pos: [4, 2.2, 10], look: [0, 1.6, -4], fov: 42 }; g.sky = '#a8d8f0'; return g; };
   P.street = (o = {}) => { o = Object.assign({ len: 60, night: false }, o); const g = new T.Group(); const asph = ctex(128, 128, (c, w, h) => { c.fillStyle = '#3b3d42'; c.fillRect(0, 0, w, h); for (let i = 0; i < 900; i++) { c.fillStyle = i % 2 ? '#45474c' : '#33353a'; c.fillRect((i * 37) % w, (i * 91) % h, 2, 2); } });
     asph.repeat.set(2, o.len / 4); const road = new T.Mesh(new T.PlaneGeometry(8, o.len), M('#ffffff', 0.9, 0, { map: asph })); road.rotation.x = -Math.PI / 2; road.receiveShadow = true; g.add(road);
     for (let z = -o.len / 2; z < o.len / 2; z += 4) box(g, 0.15, 0.01, 2, M('#f2f2f2', 0.6), 0, 0.01, z);
@@ -654,5 +687,5 @@
         const win = ctex(64, 128, (c, w, h) => { c.fillStyle = col; c.fillRect(0, 0, w, h); for (let y = 8; y < h; y += 16) for (let x = 6; x < w; x += 16) { c.fillStyle = o.night ? ((x * y) % 7 < 3 ? '#ffd27a' : '#1b2330') : '#5d7387'; c.fillRect(x, y, 9, 10); } });
         win.repeat.set(2, hgt / 4); box(g, 8.5, hgt, 8, M('#ffffff', 0.85, 0, { map: win, emissive: o.night ? '#ffffff' : '#000000', emissiveMap: o.night ? win : null, emissiveIntensity: o.night ? 0.35 : 0 }), s * 11.5, hgt / 2, -o.len / 2 + 4.5 + i * 9); }
       for (let z = -o.len / 2 + 5; z < o.len / 2; z += 12) { box(g, 0.12, 4.5, 0.12, M('#2b2d31', 0.4, 0.8), s * 4.4, 2.25, z); if (o.night) { const L = new T.PointLight('#ffd9a0', 1.2, 14, 2); L.position.set(s * 4.0, 4.4, z); g.add(L); } } });
-    g.spots = { sidewalk: [5.2, 0.18, 0], road: [0, 0, 0], crossing: [0, 0, 8] }; g.cam = { pos: [2.5, 1.7, 14], look: [0, 2.0, -6], fov: 44 }; g.sky = o.night ? '#0d1424' : '#b9d9ef'; return g; };
+    dressOutdoor(g, 'street', o); g.spots = { sidewalk: [5.2, 0.18, 0], road: [0, 0, 0], crossing: [0, 0, 8] }; g.cam = { pos: [2.5, 1.7, 14], look: [0, 2.0, -6], fov: 44 }; g.sky = o.night ? '#0d1424' : '#b9d9ef'; return g; };
 })();

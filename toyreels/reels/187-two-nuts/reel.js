@@ -1,4 +1,4 @@
-// re-render: character flicker fix (13 Nov 2026)
+// re-render: flicker fix + Kenney toy scenery (13 Nov 2026)
 // 187 cinestory3d (story3d.js): Brazil nuts and selenium (NIH ODS; Harvard). Scroll stopper: a man tells a woman "two of my nuts a day", she jumps back... then a bowl of Brazil nuts.
 STORY((k) => {
   const { T } = k; const kt = k.LIB.place.kitchen({}); k.place(kt);

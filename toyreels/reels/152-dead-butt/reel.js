@@ -1,4 +1,4 @@
-// re-render: character flicker fix (13 Nov 2026)
+// re-render: flicker fix + Kenney toy scenery (13 Nov 2026)
 // 152 cinestory3d (story3d.js): 'dead butt syndrome' (gluteal amnesia) from long sitting; fixes. Scroll stopper: a worker in a chair, a 'zzz' over his butt and a 10:00:00 sitting clock.
 STORY((k) => {
   const { T, M, PI, E, seg, lerp } = k; const of = k.LIB.place.office(); k.place(of); const D = of.spots.desk;

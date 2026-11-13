@@ -1,4 +1,4 @@
-// re-render: character flicker fix (13 Nov 2026)
+// re-render: flicker fix + Kenney toy scenery (13 Nov 2026)
 // 207 cinestory3d (story3d.js): McArthur Wheeler's lemon-juice robberies, 1995 (Kruger & Dunning 1999). Scroll stopper: a man rubbing juice all over his face, "INVISIBLE?"... lemons. Gag: he waves at the CCTV, then the police arrive, BUSTED!
 STORY((k) => {
   const { T, M, PI } = k; const bk = k.LIB.place.office({ wall: '#d8d0b8' }); k.place(bk);

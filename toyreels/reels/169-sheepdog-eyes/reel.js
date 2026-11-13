@@ -1,4 +1,4 @@
-// re-render: character flicker fix (13 Nov 2026)
+// re-render: flicker fix + Kenney toy scenery (13 Nov 2026)
 // 169 cinestory3d (story3d.js): Border Collie 'eye' and whistle commands (ISDS; Strömbom 2014). Scroll stopper: a crouched dog staring down a whole flock.
 STORY((k) => {
   const { T, M, PI, E, seg, lerp } = k; const fm = k.farm();

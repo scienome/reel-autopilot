@@ -1,4 +1,4 @@
-// re-render: character flicker fix (13 Nov 2026)
+// re-render: flicker fix + Kenney toy scenery (13 Nov 2026)
 // 205 cinestory3d (story3d.js): water-induced finger wrinkles are nerve-controlled (Lewis & Pickering 1935; Kareklas 2013; Haseleu 2014). Scroll stopper: a man soaking in a steamy tub, "45 MINUTES 😳", then his wrinkly fingers. Gag: two scientists argue, and the debate ends in a BOOM.
 STORY((k) => {
   const { T, M, PI } = k; const bt = k.LIB.place.room({ wall: '#dff0f4', floor: 'tiles', window: false }); k.place(bt);

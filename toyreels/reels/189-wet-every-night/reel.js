@@ -1,4 +1,4 @@
-// re-render: character flicker fix (13 Nov 2026)
+// re-render: flicker fix + Kenney toy scenery (13 Nov 2026)
 // 189 cinestory3d (story3d.js): glymphatic clearance in sleep (Xie 2013; Fultz 2019). Scroll stopper: dark bedroom, a man on his bed, "WET 💦 EVERY NIGHT"... then his brain in a blue wash. Gag: up scrolling at 3 AM, a missile says go to sleep.
 STORY((k) => {
   const { T, PI } = k; const rm = k.LIB.place.room({ wall: '#2c3a5a' }); k.place(rm); const bed = k.LIB.prop('props/bed_single', { h: 0.7 }); bed.position.set(0, 0, -0.6); rm.add(bed);

@@ -1,4 +1,4 @@
-// re-render: character flicker fix (13 Nov 2026)
+// re-render: flicker fix + Kenney toy scenery (13 Nov 2026)
 // 199 cinestory3d (story3d.js): dehydration (Popkin 2010; EFSA 2010; NHS). Scroll stopper: a man on his knees in the desert, begging, "24 HOURS". Gag: he dives into an oasis... it's a mirage, SAND!
 STORY((k) => {
   const { T, M, PI } = k; const ds = k.arena(); const man = k.add(k.LIB.human({ body: 'm', top: '#f4e8d0', bottom: '#5a4a3a', hair: '#2b1d14' }), [0, 0, 0], 0, ds);

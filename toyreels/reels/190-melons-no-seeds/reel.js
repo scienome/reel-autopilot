@@ -1,4 +1,4 @@
-// re-render: character flicker fix (13 Nov 2026)
+// re-render: flicker fix + Kenney toy scenery (13 Nov 2026)
 // 190 cinestory3d (story3d.js): watermelon domestication and seedless (triploid) melons (Renner 2021; Paris 2015; Kihara 1951). Scroll stopper: a man staring at two huge melons on a cart, a woman slaps him... Gag: he karate-chops one, SPLAT.
 STORY((k) => {
   const { T } = k; const fm = k.farm(); const cart = k.LIB.prop('props/table_round', { h: 0.78 }); cart.position.set(0, 0, -0.6); fm.add(cart);

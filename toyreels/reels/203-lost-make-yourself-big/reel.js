@@ -1,4 +1,4 @@
-// re-render: character flicker fix (13 Nov 2026)
+// re-render: flicker fix + Kenney toy scenery (13 Nov 2026)
 // 203 cinestory3d (story3d.js): what to do when lost (NPS/USFS "STOP"; Hug-a-Tree and Survive; whistle signals). Scroll stopper: a hiker alone in the woods, "MAKE YOURSELF BIG 😳"... Gag: a wolf creeps up, he makes himself big and loud, the wolf bolts.
 STORY((k) => {
   const { PI } = k; const fo = k.forest(); const man = k.add(k.LIB.human({ body: 'm', top: '#ff8a1e', bottom: '#2a3140', hair: '#2b1d14', sleeves: true }), [0, 0, 0], 0, fo);

@@ -1,4 +1,4 @@
-// re-render: character flicker fix (13 Nov 2026)
+// re-render: flicker fix + Kenney toy scenery (13 Nov 2026)
 // 185 cinestory3d (story3d.js): Halley's Comet, 76-year orbit, Mark Twain 1835/1910, meteor showers (NASA). Scroll stopper: a man on a park bench at night with flowers, "LAST TIME: 1986"... then a comet streaks across the sky.
 STORY((k) => {
   const { T, PI } = k; const pk = k.LIB.place.park({}); k.place(pk); pk.add(k.stars(1200, 200));

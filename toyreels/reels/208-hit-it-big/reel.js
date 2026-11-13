@@ -1,4 +1,4 @@
-// re-render: character flicker fix (13 Nov 2026)
+// re-render: flicker fix + Kenney toy scenery (13 Nov 2026)
 // 208 cinestory3d (story3d.js): Jack Whittaker's $315M Powerball win and its fallout (ABC News 2007; Washington Post 2020). Scroll stopper: a man jumping, cash raining, "HIT IT BIG 😳". Gag: a thief grabs the case from his car, YOINK.
 STORY((k) => {
   const { PI } = k; const rm = k.LIB.place.room({ wall: '#e9e2d4' }); k.place(rm); const jack = k.add(k.LIB.human({ body: 'm', top: '#f4f4f4', bottom: '#2a2a30', hair: '#cfcfcf', h: 1.75 }), [0, 0, 0], 0, rm);

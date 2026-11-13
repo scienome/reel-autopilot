@@ -1,4 +1,4 @@
-// re-render: character flicker fix (13 Nov 2026)
+// re-render: flicker fix + Kenney toy scenery (13 Nov 2026)
 // 167 cinestory3d (story3d.js): golf ball dimples halve drag (NASA Glenn; USGA; Bearman & Harvey 1976). Scroll stopper: two balls hit side by side, the smooth one drops short.
 STORY((k) => {
   const { T, M, PI, E, seg, lerp } = k; const pk = k.LIB.place.park({ trees: 6 }); k.place(pk);

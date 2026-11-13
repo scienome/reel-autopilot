@@ -1,4 +1,4 @@
-// re-render: character flicker fix (13 Nov 2026)
+// re-render: flicker fix + Kenney toy scenery (13 Nov 2026)
 // 210 cinestory3d (story3d.js): Bitcoin Pizza Day, 22 May 2010 (Hanyecz on Bitcointalk; NYT 2018). Scroll stopper: a man holding two large boxes, "BLEW 10,000 😳"... bitcoins on two pizzas. Gag: a friend asks for a slice of the billion-dollar pizza and gets a missile.
 STORY((k) => {
   const { T, M, PI } = k; const kt = k.LIB.place.kitchen({}); k.place(kt);

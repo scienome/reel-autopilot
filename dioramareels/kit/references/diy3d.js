@@ -7,6 +7,7 @@
 // Library models (people, animals, places from lib3d.js): DIY(build, { assets: ['humans/Superhero_Male', 'humans/ual1', ...] })
 // loads them first. Story scenes away from the table: return { table: false, sky: '#9fd3f2', ... } and build a LIB.place.
 window.DIY = (build, opt = {}) => {
+  if (opt.assets && opt.assets.some((a) => a.startsWith('mini/')) && LIB.toyKitAssets && !opt.loaded) opt = Object.assign({}, opt, { assets: [...new Set([...opt.assets, ...LIB.toyKitAssets()])] }); // toy cast: load the Kenney scenery too
   if (opt.assets && opt.assets.length && !opt.loaded) { window.REEL_READY = LIB.need(opt.assets).then(() => window.DIY(build, Object.assign({}, opt, { loaded: true }))); return; }
   const T = D.THREE, K = D.kit, S = D.scene, X0 = 6000, lerp = D.lerp, clamp = D.clamp, E = D.ease, PI = Math.PI;
   const TM = window.TIMING, L = TM.lines, DUR = TM.duration;

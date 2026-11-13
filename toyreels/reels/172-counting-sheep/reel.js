@@ -1,4 +1,4 @@
-// re-render: character flicker fix (13 Nov 2026)
+// re-render: flicker fix + Kenney toy scenery (13 Nov 2026)
 // 172 cinestory3d (story3d.js): imagery beats counting sheep (Harvey & Payne 2002). Scroll stopper: sheep jumping over a bed, counter climbing, the sleeper wide awake.
 STORY((k) => {
   const { T, M, PI, E, seg, lerp } = k; const rm = k.LIB.place.room({ wall: '#2a2f45', window: true }); k.place(rm); const beach = new T.Group(); k.place(beach);
