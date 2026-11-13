@@ -12,4 +12,4 @@ KATHA((h) => {
     b5: { set: 'village', cam: CAM.close(360), draw: (ctx, t) => { bowl(ctx, 360, 960); plant(ctx, 360, 1100, 1, t); } },
     end: { set: 'heaven', cam: CAM.mid, draw: (ctx, t) => { char(ctx, 'vishnu', 360, 1170, 0.85, t, { halo: true, hold: 'chakra', arms: 'bless', face: { eyes: 'calm', mouth: 'smile' } }); } },
   };
-}, {"series": "ऐसा क्यों?", "part": 2, "hook": "एकादशी पर चावल\nक्यों नहीं खाते?", "nextAt": "nx", "gold": ["एकादशी", "चावल", "मेधा", "जौ", "व्रत"], "next": "राखी सबसे पहले\nकिसने बाँधी?"});
+}, {"series": "ऐसा क्यों?", "part": 2, "hook": "एकादशी के चावल में\nकिसका अंश है?", "nextAt": "nx", "gold": ["एकादशी", "चावल", "मेधा", "जौ", "व्रत"], "next": "राखी सबसे पहले\nकिसने बाँधी?"});

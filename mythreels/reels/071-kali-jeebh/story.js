@@ -10,4 +10,4 @@ KATHA((h) => {
     b5: { set: 'kailash', cam: CAM.mid, draw: (ctx, t) => { char(ctx, 'shiva', 360, 1170, 0.85, t, { halo: true, hold: 'trishul', arms: 'namaste', face: { eyes: 'closed', mouth: 'calm' } }); } },
     end: { set: 'kailash', cam: CAM.close(360), draw: (ctx, t) => { kali(ctx, 360, 1170, 0.9, t, { arms: 'bless', face: { eyes: 'wide', mouth: 'o' } }); } },
   };
-}, {"series": "देवियों के रहस्य", "part": 1, "hook": "माँ काली की जीभ\nबाहर क्यों है?", "nextAt": "nx", "gold": ["काली", "रक्तबीज", "शिव", "जीभ", "क्रोध"], "next": "धरती पर शक्तिपीठ\nकैसे बने?"});
+}, {"series": "देवियों के रहस्य", "part": 1, "hook": "माँ काली का क्रोध\nकिसने रोका?", "nextAt": "nx", "gold": ["काली", "रक्तबीज", "शिव", "जीभ", "क्रोध"], "next": "धरती पर शक्तिपीठ\nकैसे बने?"});

@@ -57,4 +57,4 @@ KATHA((h) => {
     b5: { set: 'road', cam: CAM.push, shake: at('b5', 10), draw: (ctx, t) => { char(ctx, 'sage', 360, 1170, 0.85, t, { arms: 'point', face: { eyes: 'angry', mouth: 'shout' }, as: 'durvasa', glow: 'rgba(255,200,80,0.75)' }); }, over: (ctx, W, H_, t) => { cardOn('b5', 3, 'बारह साल', { y: 300, size: 90 })(ctx, W, H_, t); } },
     end: { set: 'ocean', cam: CAM.wide, draw: (ctx, t) => { temple(ctx, 200, 1060, 0.7, '#f4c0a0'); temple(ctx, 540, 980, 0.45, '#e8d8b8'); }, over: (ctx, W, H_, t) => { cardOn('end', 14, 'मेहमान का मान', { y: 300, size: 76 })(ctx, W, H_, t); } },
   };
-}, {"series": "श्रीकृष्ण के अनसुने किस्से", "part": 6, "hook": "रुक्मिणी और कृष्ण\nबारह साल अलग!", "nextAt": "nx", "gold": ["रुक्मिणी", "दुर्वासा", "द्वारका", "श्राप", "बारह साल"], "next": "कृष्ण के अंत\nका रहस्य"});
+}, {"series": "श्रीकृष्ण के अनसुने किस्से", "part": 6, "hook": "एक घूँट पानी,\nबारह साल की जुदाई", "nextAt": "nx", "gold": ["रुक्मिणी", "दुर्वासा", "द्वारका", "श्राप", "बारह साल"], "next": "कृष्ण के अंत\nका रहस्य"});

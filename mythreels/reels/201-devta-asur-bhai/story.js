@@ -57,4 +57,4 @@ KATHA((h) => {
     b5: { set: 'battle', cam: CAM.wide, shake: at('b5', 3), draw: (ctx, t) => { char(ctx, 'deva', 210, 1170, 0.72, t, { arms: 'fist', face: { eyes: 'angry', mouth: 'shout' }, hold: 'sword' }); char(ctx, 'asura', 510, 1170, 0.72, t, { arms: 'fist', face: { eyes: 'angry', mouth: 'shout' }, flip: true, hold: 'gada' }); }, over: (ctx, W, H_, t) => { cardOn('b5', 8, 'देवासुर संग्राम', { y: 300, size: 70 })(ctx, W, H_, t); } },
     end: { set: 'battle', setOpt: { sun: false }, cam: CAM.mid, draw: (ctx, t) => { char(ctx, 'sage', 360, 1170, 0.85, t, { arms: 'cover', face: { eyes: 'sad', mouth: 'frown' } }); } },
   };
-}, {"series": "रावण से पहले: असुरों के रहस्य", "part": 1, "hook": "देवता और असुर\nसगे भाई थे!", "nextAt": "nx", "gold": ["कश्यप", "अदिति", "दिति", "देवता", "दैत्य", "देवासुर"], "next": "एक माँ की भूल,\nजिससे जन्मे महाअसुर"});
+}, {"series": "रावण से पहले: असुरों के रहस्य", "part": 1, "hook": "देवता और असुर,\nएक ही पिता के बेटे!", "nextAt": "nx", "gold": ["कश्यप", "अदिति", "दिति", "देवता", "दैत्य", "देवासुर"], "next": "एक माँ की भूल,\nजिससे जन्मे महाअसुर"});

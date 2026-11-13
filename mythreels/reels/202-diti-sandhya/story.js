@@ -57,4 +57,4 @@ KATHA((h) => {
     b5: { set: 'underworld', cam: CAM.wide, draw: (ctx, t) => { char(ctx, 'asura', 210, 1170, 0.72, t, { arms: 'fist', face: { eyes: 'angry', mouth: 'shout' }, style: { cloth: '#e2a83a' } }); char(ctx, 'asura', 510, 1170, 0.72, t, { arms: 'up', face: { eyes: 'angry', mouth: 'shout' }, flip: true, style: { cloth: '#c8402a' } }); }, over: (ctx, W, H_, t) => { cardOn('b5', 6, 'वराह और नरसिंह', { y: 300, size: 64 })(ctx, W, H_, t); } },
     end: { set: 'heaven', cam: CAM.mid, draw: (ctx, t) => { MYTH.flame(ctx, 360, 1050, 1.6, t); char(ctx, 'sage', 360, 1170, 0.8, t, { arms: 'namaste', face: { eyes: 'closed', mouth: 'calm' } }); } },
   };
-}, {"series": "रावण से पहले: असुरों के रहस्य", "part": 2, "hook": "संध्या की एक भूल,\nजन्मे दो महाअसुर", "nextAt": "nx", "gold": ["दिति", "कश्यप", "संध्या", "हिरण्याक्ष", "हिरण्यकशिपु", "वराह", "नरसिंह"], "next": "असुरों के गुरु की\nएक आँख कैसे गई?"});
+}, {"series": "रावण से पहले: असुरों के रहस्य", "part": 2, "hook": "एक शाम की ज़िद,\nजन्मे दो महाअसुर", "nextAt": "nx", "gold": ["दिति", "कश्यप", "संध्या", "हिरण्याक्ष", "हिरण्यकशिपु", "वराह", "नरसिंह"], "next": "असुरों के गुरु की\nएक आँख कैसे गई?"});

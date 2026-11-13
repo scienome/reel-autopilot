@@ -57,4 +57,4 @@ KATHA((h) => {
     b5: { set: 'diwali', cam: CAM.wide, draw: (ctx, t) => { char(ctx, 'lakshmi', 260, 1170, 0.8, t, { arms: 'bless', face: { eyes: 'happy', mouth: 'smile' }, as: 'lakshmi', hold: 'lotus', halo: true, style: { cloth: '#d8203a', cloth2: '#ffd23f' } }); owl(ctx, 520, 1060, 0.7, t); }, over: (ctx, W, H_, t) => { cardOn('b5', 9, 'उलूकवाहिनी', { y: 300, size: 76 })(ctx, W, H_, t); } },
     end: { set: 'diwali', cam: CAM.mid, draw: (ctx, t) => { for (let i = 0; i < 5; i++) MYTH.flame(ctx, 120 + i * 120, 1150, 1.2, t + i); owl(ctx, 360, 900, 1.0, t); } },
   };
-}, {"series": "देवताओं के वाहन क्यों?", "part": 3, "hook": "धन की देवी\nउल्लू पर क्यों?", "nextAt": "nx", "gold": ["लक्ष्मी", "उल्लू", "अमावस्या", "उलूकवाहिनी", "दिवाली"], "next": "सरस्वती जी के\nहंस का रहस्य"});
+}, {"series": "देवताओं के वाहन क्यों?", "part": 3, "hook": "अमावस्या की रात,\nलक्ष्मी जी को किसने ढूँढा?", "nextAt": "nx", "gold": ["लक्ष्मी", "उल्लू", "अमावस्या", "उलूकवाहिनी", "दिवाली"], "next": "सरस्वती जी के\nहंस का रहस्य"});

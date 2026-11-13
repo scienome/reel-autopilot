@@ -12,4 +12,4 @@ KATHA((h) => {
     b5: { set: 'heaven', cam: CAM.wide, draw: two('sage', { as: 'sage', style: { cloth: '#e86a1a', cloth2: '#f4c430' }, arms: 'bless', face: { eyes: 'calm', mouth: 'calm' } }, 'shani', { arms: 'namaste', face: { eyes: 'sad', mouth: 'calm' } }), over: cardOn('b5', 9, 'एक शर्त', { y: 300, size: 90 }) },
     end: { set: 'village', cam: CAM.mid, draw: (ctx, t) => { tree(ctx, 360, 1060, 1.1); lamp(ctx, 330, 1120, t); lamp(ctx, 390, 1120, t + 2); char(ctx, 'shani', 560, 1170, 0.65, t, { flip: true, arms: 'bless', face: { eyes: 'calm', mouth: 'calm' } }); } },
   };
-}, {"series": "ऐसा क्यों?", "part": 1, "hook": "शनिवार को पीपल की\nपूजा क्यों?", "nextAt": "nx", "gold": ["पिप्पलाद", "शनि", "पीपल", "शनिवार", "दधीचि", "शिव"], "next": "एकादशी पर चावल\nक्यों नहीं?"});
+}, {"series": "ऐसा क्यों?", "part": 1, "hook": "शनि देव का पैर\nकिसने तोड़ा?", "nextAt": "nx", "gold": ["पिप्पलाद", "शनि", "पीपल", "शनिवार", "दधीचि", "शिव"], "next": "एकादशी पर चावल\nक्यों नहीं?"});

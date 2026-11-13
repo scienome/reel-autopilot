@@ -57,4 +57,4 @@ KATHA((h) => {
     b5: { set: 'kailash', cam: CAM.mid, draw: (ctx, t) => { linga(ctx, 360, 1100, 1.0, '#3a3a44', 0.7); } },
     end: { set: 'kailash', cam: CAM.push, draw: (ctx, t) => { char(ctx, 'shiva', 360, 1170, 0.85, t, { arms: 'bless', face: { eyes: 'calm', mouth: 'calm' }, hold: 'trishul', halo: true }); }, over: (ctx, W, H_, t) => { cardOn('end', 4, 'काल के भी काल', { y: 300, size: 70 })(ctx, W, H_, t); } },
   };
-}, {"series": "मंदिरों के रहस्य", "part": 5, "hook": "महाकाल का मुख\nदक्षिण की ओर क्यों?", "nextAt": "nx", "gold": ["महाकाल", "उज्जैन", "दक्षिण", "दूषण", "ज्योतिर्लिंग"], "next": "प्रलय में भी\nकाशी क्यों बचेगी?"});
+}, {"series": "मंदिरों के रहस्य", "part": 5, "hook": "मृत्यु की दिशा में\nक्यों बैठे महाकाल?", "nextAt": "nx", "gold": ["महाकाल", "उज्जैन", "दक्षिण", "दूषण", "ज्योतिर्लिंग"], "next": "प्रलय में भी\nकाशी क्यों बचेगी?"});

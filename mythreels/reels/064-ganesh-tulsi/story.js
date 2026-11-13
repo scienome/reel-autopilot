@@ -14,4 +14,4 @@ KATHA((h) => {
     b6: { set: 'heaven', cam: CAM.mid, draw: (ctx, t) => { char(ctx, 'ganesha', 360, 1170, 0.85, t, { halo: true, arms: { r: 'point', l: 'down' }, face: { eyes: 'calm', mouth: 'calm' } }); } },
     end: { set: 'heaven', cam: CAM.mid, draw: (ctx, t) => { char(ctx, 'ganesha', 360, 1170, 0.85, t, { halo: true, arms: 'bless', face: { eyes: 'calm', mouth: 'smile' } }); leaf(ctx, 360, 640, 2.2); }, over: (ctx, W, H_, t) => { const u = H.clamp((t - V('end', 'नहीं')) / 0.3); if (u > 0) { ctx.save(); ctx.strokeStyle = '#e8384f'; ctx.lineWidth = 16; ctx.globalAlpha = u; ctx.beginPath(); ctx.arc(360, 480, 150, 0, 6.2832); ctx.moveTo(254, 374); ctx.lineTo(466, 586); ctx.stroke(); ctx.restore(); } } },
   };
-}, {"series": "पूजा के पीछे की कथा", "part": 10, "hook": "गणेश जी को तुलसी\nक्यों नहीं चढ़ती?", "next": "गणेश जी को दूर्वा\nक्यों चढ़ती है?", "nextAt": "nx", "gold": ["तुलसी", "गणेश", "श्राप", "ब्रह्मचारी", "विवाह", "गंगा"]});
+}, {"series": "पूजा के पीछे की कथा", "part": 10, "hook": "हर पूजा में तुलसी...\nबस यहाँ मना है!", "next": "गणेश जी को दूर्वा\nक्यों चढ़ती है?", "nextAt": "nx", "gold": ["तुलसी", "गणेश", "श्राप", "ब्रह्मचारी", "विवाह", "गंगा"]});

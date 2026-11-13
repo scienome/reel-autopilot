@@ -10,4 +10,4 @@ KATHA((h) => {
     b5: { set: 'palace', cam: CAM.mid, draw: (ctx, t) => { char(ctx, 'krishna', 360, 1170, 0.85, t, { halo: true, arms: 'namaste', face: { eyes: 'calm', mouth: 'calm' } }); } },
     end: { set: 'heaven', cam: CAM.mid, draw: (ctx, t) => { char(ctx, 'krishna', 360, 1170, 0.85, t, { halo: true, arms: 'bless', face: { eyes: 'calm', mouth: 'smile' } }); } },
   };
-}, {"series": "श्राप जिन्होंने इतिहास बदला", "part": 1, "hook": "एक माँ के श्राप से\nमिटा कृष्ण का वंश", "nextAt": "nx", "gold": ["गांधारी", "कृष्ण", "श्राप", "यदुवंश", "छत्तीस", "महाभारत"], "next": "वो श्राप, जिसने\nअर्जुन की जान बचाई"});
+}, {"series": "श्राप जिन्होंने इतिहास बदला", "part": 1, "hook": "एक माँ का श्राप,\nभगवान ने भी माना", "nextAt": "nx", "gold": ["गांधारी", "कृष्ण", "श्राप", "यदुवंश", "छत्तीस", "महाभारत"], "next": "वो श्राप, जिसने\nअर्जुन की जान बचाई"});

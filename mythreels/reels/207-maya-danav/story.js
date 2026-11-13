@@ -57,4 +57,4 @@ KATHA((h) => {
     b5: { set: 'palace', cam: CAM.wide, draw: (ctx, t) => { ctx.save(); ctx.fillStyle = 'rgba(80,160,220,0.55)'; ctx.fillRect(60, 1080, 600, 120); ctx.restore(); char(ctx, 'bhima', 210, 1170, 0.72, t, { arms: 'open', face: { eyes: 'wide', mouth: 'o' } }); char(ctx, 'arjuna', 510, 1170, 0.72, t, { arms: 'namaste', face: { eyes: 'happy', mouth: 'smile' }, flip: true }); }, over: (ctx, W, H_, t) => { cardOn('b5', 5, 'मयसभा', { y: 300, size: 90 })(ctx, W, H_, t); } },
     end: { set: 'palace', cam: CAM.push, shake: at('end', 6), draw: (ctx, t) => { char(ctx, 'duryodhana', 360, 1170, 0.85, t, { arms: 'fist', face: { eyes: 'angry', mouth: 'shout' } }); } },
   };
-}, {"series": "रावण से पहले: असुरों के रहस्य", "part": 7, "hook": "असुरों का इंजीनियर,\nबना रावण का ससुर", "nextAt": "nx", "gold": ["मय", "त्रिपुर", "मंदोदरी", "रावण", "मयसभा", "दुर्योधन"]});
+}, {"series": "रावण से पहले: असुरों के रहस्य", "part": 7, "hook": "जहाँ ज़मीन पानी लगे,\nवहीं भड़की महाभारत", "nextAt": "nx", "gold": ["मय", "त्रिपुर", "मंदोदरी", "रावण", "मयसभा", "दुर्योधन"]});

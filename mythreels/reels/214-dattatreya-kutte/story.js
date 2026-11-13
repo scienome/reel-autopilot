@@ -57,4 +57,4 @@ KATHA((h) => {
     b5: { set: 'field', cam: CAM.mid, draw: (ctx, t) => { MYTH.bull(ctx, 360, 1140, 1.0, t); }, over: (ctx, W, H_, t) => { cardOn('b5', 5, 'धरती माता', { y: 300, size: 84 })(ctx, W, H_, t); } },
     end: { set: 'forest', cam: CAM.push, draw: (ctx, t) => { char(ctx, 'sage', 360, 1170, 0.85, t, { arms: 'bless', face: { eyes: 'happy', mouth: 'smile' }, as: 'dattatreya', halo: true, style: { cloth: '#f4a020', cloth2: '#e86a1a' } }); }, over: (ctx, W, H_, t) => { cardOn('end', 2, 'चौबीस गुरु', { y: 300, size: 84 })(ctx, W, H_, t); } },
   };
-}, {"series": "देवताओं के वाहन क्यों?", "part": 7, "hook": "दत्तात्रेय के साथ\nचार कुत्ते क्यों?", "nextAt": "nx", "gold": ["दत्तात्रेय", "ब्रह्मा", "विष्णु", "महेश", "वेद", "चौबीस"]});
+}, {"series": "देवताओं के वाहन क्यों?", "part": 7, "hook": "भगवान के चार कुत्ते,\nअसल में कुत्ते नहीं!", "nextAt": "nx", "gold": ["दत्तात्रेय", "ब्रह्मा", "विष्णु", "महेश", "वेद", "चौबीस"]});

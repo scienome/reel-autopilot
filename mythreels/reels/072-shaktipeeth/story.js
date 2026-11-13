@@ -11,4 +11,4 @@ KATHA((h) => {
     b5: { set: 'space', setOpt: { sun: false }, cam: CAM.wide, draw: (ctx, t) => { char(ctx, 'vishnu', 360, 1170, 0.85, t, { halo: true, hold: 'chakra', arms: 'up', face: { eyes: 'calm', mouth: 'calm' } }); }, over: cardOn('b5', 4, 'सुदर्शन चक्र', { y: 300, size: 80 }) },
     end: { set: 'heaven', cam: CAM.mid, draw: (ctx, t) => { for (let i = 0; i < 9; i++) { ctx.fillStyle = '#ffd23f'; ctx.beginPath(); ctx.arc(120 + (i % 3) * 240, 760 + Math.floor(i / 3) * 140, 22 + Math.sin(t * 3 + i) * 4, 0, 7); ctx.fill(); } }, over: cardOn('end', 19, 'इक्यावन', { y: 300, size: 100 }) },
   };
-}, {"series": "देवियों के रहस्य", "part": 2, "hook": "धरती पर शक्तिपीठ\nकैसे बने?", "nextAt": "nx", "gold": ["सती", "दक्ष", "शिव", "विष्णु", "शक्तिपीठ", "सुदर्शन"], "next": "माँ दुर्गा का वाहन\nशेर क्यों?"});
+}, {"series": "देवियों के रहस्य", "part": 2, "hook": "धरती पर इक्यावन जगह\nक्या गिरा था?", "nextAt": "nx", "gold": ["सती", "दक्ष", "शिव", "विष्णु", "शक्तिपीठ", "सुदर्शन"], "next": "माँ दुर्गा का वाहन\nशेर क्यों?"});

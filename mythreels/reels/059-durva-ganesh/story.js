@@ -14,4 +14,4 @@ KATHA((h) => {
     b6: { set: 'heaven', cam: CAM.mid, draw: (ctx, t) => { char(ctx, 'ganesha', 360, 1170, 0.85, t, { halo: true, arms: 'bless', face: { eyes: 'calm', mouth: 'smile' } }); }, over: (ctx, W, H_, t) => MYTH.petals(ctx, W, t, at('b6', 3), 22) },
     end: { set: 'heaven', cam: CAM.mid, draw: (ctx, t) => { char(ctx, 'ganesha', 360, 1170, 0.85, t, { halo: true, arms: 'bless', face: { eyes: 'calm', mouth: 'smile' } }); durva(ctx, 360, 1050, 1.4); } },
   };
-}, {"series": "पूजा के पीछे की कथा", "part": 11, "hook": "गणेश जी को दूर्वा\nक्यों चढ़ाते हैं?", "next": "पूरी सीरीज़\nप्रोफ़ाइल पर", "nextAt": "nx", "gold": ["दूर्वा", "अनलासुर", "गणेश", "इक्कीस", "जलन", "ऋषि"]});
+}, {"series": "पूजा के पीछे की कथा", "part": 11, "hook": "गणेश जी ने\nएक दैत्य निगल लिया!", "next": "पूरी सीरीज़\nप्रोफ़ाइल पर", "nextAt": "nx", "gold": ["दूर्वा", "अनलासुर", "गणेश", "इक्कीस", "जलन", "ऋषि"]});

@@ -57,4 +57,4 @@ KATHA((h) => {
     b5: { set: 'kailash', cam: CAM.wide, draw: (ctx, t) => { char(ctx, 'shiva', 230, 1170, 0.75, t, { arms: 'bless', face: { eyes: 'happy', mouth: 'smile' }, hold: 'trishul', halo: true }); MYTH.bull(ctx, 520, 1140, 0.9, t, true); }, over: (ctx, W, H_, t) => { cardOn('b5', 10, 'वाहन', { y: 300, size: 100 })(ctx, W, H_, t); } },
     end: { set: 'kailash', cam: CAM.push, draw: (ctx, t) => { linga(ctx, 360, 900, 0.8, '#3a3a44', 0.5); MYTH.bull(ctx, 360, 1160, 1.0, t); } },
   };
-}, {"series": "देवताओं के वाहन क्यों?", "part": 1, "hook": "हर शिव मंदिर में\nनंदी सामने क्यों?", "nextAt": "nx", "gold": ["नंदी", "शिलाद", "शिव", "गण", "वाहन"], "next": "इंद्र का सफेद हाथी\nकहाँ से आया?"});
+}, {"series": "देवताओं के वाहन क्यों?", "part": 1, "hook": "नंदी के कान में\nबात क्यों कहते हैं?", "nextAt": "nx", "gold": ["नंदी", "शिलाद", "शिव", "गण", "वाहन"], "next": "इंद्र का सफेद हाथी\nकहाँ से आया?"});

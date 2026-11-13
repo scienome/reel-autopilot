@@ -13,4 +13,4 @@ KATHA((h) => {
     b5: { set: 'kailash', cam: CAM.wide, draw: (ctx, t) => { lion(ctx, 380, 1080, 1.4, t); char(ctx, 'parvati', 330, 930, 0.5, t, { pose: 'sit', halo: true, arms: 'open', face: { eyes: 'calm', mouth: 'calm' } }); }, over: cardOn('b5', 'सिंह', 'सिंह', { y: 300, size: 90 }) },
     end: { set: 'heaven', cam: CAM.mid, draw: (ctx, t) => { char(ctx, 'parvati', 360, 1170, 0.85, t, { halo: true, arms: 'open', face: { eyes: 'calm', mouth: 'smile' } }); ring(ctx, 360, 860, t, 6); } },
   };
-}, {"series": "देवताओं के रूप का रहस्य", "part": 10, "hook": "दुर्गा माँ के हाथों में\nकिसके हथियार?", "next": "बलराम के हाथ में\nहल क्यों?", "nextAt": "nx", "gold": ["दुर्गा", "महिषासुर", "त्रिशूल", "चक्र", "सिंह", "हिमालय"]});
+}, {"series": "देवताओं के रूप का रहस्य", "part": 10, "hook": "एक असुर,\nजिससे स्वर्ग हार गया", "next": "बलराम के हाथ में\nहल क्यों?", "nextAt": "nx", "gold": ["दुर्गा", "महिषासुर", "त्रिशूल", "चक्र", "सिंह", "हिमालय"]});

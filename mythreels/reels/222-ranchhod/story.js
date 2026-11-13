@@ -57,4 +57,4 @@ KATHA((h) => {
     b5: { set: 'forest', cam: CAM.push, shake: at('b5', 9), draw: (ctx, t) => { cave(ctx, 1); for (let i = 0; i < 5; i++) MYTH.flame(ctx, 220 + i * 70, 1160, 2.4, t + i); } },
     end: { set: 'palace', cam: CAM.mid, draw: (ctx, t) => { char(ctx, 'krishna', 360, 1170, 0.85, t, { arms: 'bless', face: { eyes: 'happy', mouth: 'smile' }, halo: true }); }, over: (ctx, W, H_, t) => { cardOn('end', 5, 'रणछोड़', { y: 300, size: 100 })(ctx, W, H_, t); } },
   };
-}, {"series": "श्रीकृष्ण के अनसुने किस्से", "part": 1, "hook": "कृष्ण युद्ध छोड़कर\nक्यों भागे?", "nextAt": "nx", "gold": ["कृष्ण", "कालयवन", "जरासंध", "मुचुकुंद", "रणछोड़"], "next": "कृष्ण पर लगा\nचोरी का कलंक!"});
+}, {"series": "श्रीकृष्ण के अनसुने किस्से", "part": 1, "hook": "कृष्ण युद्ध से भागे...\nजानबूझकर!", "nextAt": "nx", "gold": ["कृष्ण", "कालयवन", "जरासंध", "मुचुकुंद", "रणछोड़"], "next": "कृष्ण पर लगा\nचोरी का कलंक!"});

@@ -57,4 +57,4 @@ KATHA((h) => {
     b5: { set: 'village', cam: CAM.mid, draw: (ctx, t) => { brick(ctx, 360, 1180, 1.0); char(ctx, 'krishna', 360, 1150, 0.85, t, { arms: 'hips', face: { eyes: 'happy', mouth: 'smile' }, as: 'vitthal', halo: true, style: { skin: '#2a3a7a' } }); }, over: (ctx, W, H_, t) => { cardOn('b5', 12, 'विट्ठल', { y: 300, size: 100 })(ctx, W, H_, t); } },
     end: { set: 'village', cam: CAM.wide, draw: (ctx, t) => { temple(ctx, 360, 1060, 0.8, '#e8d8b8'); for (let i = 0; i < 5; i++) MYTH.flame(ctx, 120 + i * 120, 1180, 1.1, t + i); } },
   };
-}, {"series": "मंदिरों के रहस्य", "part": 7, "hook": "पंढरपुर में भगवान\nईंट पर क्यों?", "nextAt": "nx", "gold": ["पंढरपुर", "पुंडलिक", "विट्ठल", "ईंट", "माता-पिता"]});
+}, {"series": "मंदिरों के रहस्य", "part": 7, "hook": "भगवान एक ईंट पर\nआज तक खड़े हैं", "nextAt": "nx", "gold": ["पंढरपुर", "पुंडलिक", "विट्ठल", "ईंट", "माता-पिता"]});

@@ -57,4 +57,4 @@ KATHA((h) => {
     b5: { set: 'forest', setOpt: { time: 'dusk' }, cam: CAM.push, draw: (ctx, t) => { char(ctx, 'krishna', 360, 1170, 0.85, t, { arms: 'bless', face: { eyes: 'happy', mouth: 'smile' }, halo: true }); } },
     end: { set: 'heaven', cam: CAM.mid, draw: (ctx, t) => { char(ctx, 'krishna', 360, 1170, 0.85, t, { arms: 'bless', face: { eyes: 'happy', mouth: 'smile' }, halo: true }); }, over: (ctx, W, H_, t) => { cardOn('end', 17, 'कर्म का हिसाब', { y: 300, size: 76 })(ctx, W, H_, t); } },
   };
-}, {"series": "श्रीकृष्ण के अनसुने किस्से", "part": 7, "hook": "एक शिकारी का तीर,\nकृष्ण की लीला पूरी", "nextAt": "nx", "gold": ["गांधारी", "यदुवंश", "जरा", "हिरण", "बाली", "कर्म"]});
+}, {"series": "श्रीकृष्ण के अनसुने किस्से", "part": 7, "hook": "एक तीर,\nपिछले जन्म का हिसाब", "nextAt": "nx", "gold": ["गांधारी", "यदुवंश", "जरा", "हिरण", "बाली", "कर्म"]});

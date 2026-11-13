@@ -14,4 +14,4 @@ KATHA((h) => {
     b5: { set: 'palace', cam: CAM.wide, shake: V('b5', 'झुकने'), draw: (ctx, t) => { bal(ctx, 210, 1170, 0.75, t, { arms: 'draw', face: { eyes: 'angry', mouth: 'calm' } }); hal(ctx, 440, 1050, -0.4, 1.0); char(ctx, 'duryodhana', 590, 1170, 0.5, t, { flip: true, arms: 'namaste', face: { eyes: 'wide', mouth: 'o' } }); }, over: cardOn('b5', 'हस्तिनापुर', 'हस्तिनापुर', { y: 300, size: 70 }) },
     end: { set: 'heaven', cam: CAM.mid, draw: (ctx, t) => { bal(ctx, 330, 1170, 0.85, t, { halo: true, arms: 'bless', face: { eyes: 'calm', mouth: 'smile' } }); hal(ctx, 560, 1000, 0.1, 1.2); } },
   };
-}, {"series": "देवताओं के रूप का रहस्य", "part": 11, "hook": "बलराम के हाथ में\nहल क्यों है?", "next": "शिव के डमरू से\nनिकली एक भाषा!", "nextAt": "nx", "gold": ["बलराम", "हल", "यमुना", "हस्तिनापुर", "भागवत", "शक्ति"]});
+}, {"series": "देवताओं के रूप का रहस्य", "part": 11, "hook": "हल से खींच ली\nएक पूरी नदी!", "next": "शिव के डमरू से\nनिकली एक भाषा!", "nextAt": "nx", "gold": ["बलराम", "हल", "यमुना", "हस्तिनापुर", "भागवत", "शक्ति"]});

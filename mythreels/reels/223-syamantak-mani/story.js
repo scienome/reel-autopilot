@@ -57,4 +57,4 @@ KATHA((h) => {
     b5: { set: 'forest', cam: CAM.mid, draw: (ctx, t) => { char(ctx, 'krishna', 360, 1170, 0.85, t, { arms: 'fist', face: { eyes: 'calm', mouth: 'calm' }, halo: true }); } },
     end: { set: 'forest', cam: CAM.push, draw: (ctx, t) => { cave(ctx, 0.6); for (let i = 0; i < 6; i++) { ctx.save(); ctx.fillStyle = 'rgba(40,20,10,0.8)'; ctx.beginPath(); ctx.ellipse(200 + i * 60, 1180 - i * 22, 16, 10, 0, 0, Math.PI * 2); ctx.fill(); ctx.restore(); } }, over: (ctx, W, H_, t) => { cardOn('end', 17, 'भालू', { y: 300, size: 100 })(ctx, W, H_, t); } },
   };
-}, {"series": "श्रीकृष्ण के अनसुने किस्से", "part": 2, "hook": "कृष्ण पर लगा\nचोरी का कलंक!", "nextAt": "nx", "gold": ["स्यमंतक", "सत्राजित", "प्रसेन", "द्वारका", "कलंक"], "next": "कृष्ण और एक भालू,\nअट्ठाईस दिन युद्ध!"});
+}, {"series": "श्रीकृष्ण के अनसुने किस्से", "part": 2, "hook": "भगवान कृष्ण पर\nहत्या का शक!", "nextAt": "nx", "gold": ["स्यमंतक", "सत्राजित", "प्रसेन", "द्वारका", "कलंक"], "next": "कृष्ण और एक भालू,\nअट्ठाईस दिन युद्ध!"});

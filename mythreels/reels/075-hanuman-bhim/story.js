@@ -10,4 +10,4 @@ KATHA((h) => {
     b5: { set: 'sky', setOpt: { time: 'day', sun: true }, cam: CAM.wide, draw: (ctx, t) => { char(ctx, 'hanuman', 360, 1170, 1.0, t, { halo: true, hold: 'gada', arms: 'bless', glow: 'rgba(255,200,80,0.75)', face: { eyes: 'calm', mouth: 'smile' } }); char(ctx, 'bhima', 560, 1170, 0.55, t, { flip: true, arms: 'namaste', face: { eyes: 'wide', mouth: 'o' } }); } },
     end: { set: 'battle', cam: CAM.mid, draw: two('arjuna', { hold: 'bow', arms: 'down', face: { eyes: 'calm', mouth: 'calm' } }, 'hanuman', { arms: 'bless', halo: true, face: { eyes: 'calm', mouth: 'smile' } }), over: cardOn('end', 19, 'कपिध्वज', { y: 300, size: 90 }) },
   };
-}, {"series": "हनुमान जी के अनसुने किस्से", "part": 2, "hook": "भीम से एक\nपूँछ नहीं उठी!", "nextAt": "nx", "gold": ["भीम", "हनुमान", "पवन", "अर्जुन", "द्रौपदी", "महाभारत"], "next": "हनुमान जी की रामायण,\nजो समुद्र में फेंकी गई"});
+}, {"series": "हनुमान जी के अनसुने किस्से", "part": 2, "hook": "महाबली भीम,\nएक पूँछ से हारे!", "nextAt": "nx", "gold": ["भीम", "हनुमान", "पवन", "अर्जुन", "द्रौपदी", "महाभारत"], "next": "हनुमान जी की रामायण,\nजो समुद्र में फेंकी गई"});

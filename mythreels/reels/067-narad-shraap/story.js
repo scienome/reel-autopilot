@@ -10,4 +10,4 @@ KATHA((h) => {
     b5: { set: 'palace', cam: CAM.push, shake: at('b5', 2), draw: (ctx, t) => { narad(ctx, 360, 1170, 0.85, t, { arms: 'point', glow: 'rgba(255,200,80,0.75)', face: { eyes: 'angry', mouth: 'open' } }); }, over: cardOn('b5', 2, 'श्राप!', { y: 300, size: 100 }) },
     end: { set: 'forest', cam: CAM.wide, draw: two('rama', { hold: 'bow', arms: 'down', face: { eyes: 'sad', mouth: 'frown' } }, 'hanuman', { arms: 'namaste', face: { eyes: 'calm', mouth: 'calm' } }) },
   };
-}, {"series": "श्राप जिन्होंने इतिहास बदला", "part": 3, "hook": "नारद के श्राप से\nराम-सीता बिछड़े!", "nextAt": "nx", "gold": ["नारद", "विष्णु", "राम", "सीता", "वानर", "रामचरितमानस"], "next": "एक हिरण का श्राप,\nजिसने पांडु की जान ली"});
+}, {"series": "श्राप जिन्होंने इतिहास बदला", "part": 3, "hook": "एक ऋषि का श्राप,\nराम-सीता बिछड़े", "nextAt": "nx", "gold": ["नारद", "विष्णु", "राम", "सीता", "वानर", "रामचरितमानस"], "next": "एक हिरण का श्राप,\nजिसने पांडु की जान ली"});

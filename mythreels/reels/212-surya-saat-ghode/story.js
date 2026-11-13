@@ -57,4 +57,4 @@ KATHA((h) => {
     b5: { set: 'sky', cam: CAM.mid, draw: (ctx, t) => { char(ctx, 'deva', 360, 1170, 0.85, t, { arms: 'bless', face: { eyes: 'calm', mouth: 'calm' }, as: 'aruna', style: { skin: '#e8603a', cloth: '#e8401c', cloth2: '#ffd23f' } }); }, over: (ctx, W, H_, t) => { cardOn('b5', 1, 'अरुण', { y: 300, size: 100 })(ctx, W, H_, t); } },
     end: { set: 'sky', cam: CAM.push, draw: (ctx, t) => { glowAt(ctx, 360, 1000, 420, 'rgba(255,120,60,0.6)'); MYTH.chariot(ctx, 360, 1000, 0.9, t); } },
   };
-}, {"series": "देवताओं के वाहन क्यों?", "part": 5, "hook": "सूर्य के रथ में\nसात घोड़े क्यों?", "nextAt": "nx", "gold": ["सूर्य", "सात", "छंद", "गायत्री", "अरुण", "गरुड़"], "next": "धन के देवता का\nवाहन एक इंसान!"});
+}, {"series": "देवताओं के वाहन क्यों?", "part": 5, "hook": "सूर्य के सात घोड़े,\nअसल में घोड़े नहीं!", "nextAt": "nx", "gold": ["सूर्य", "सात", "छंद", "गायत्री", "अरुण", "गरुड़"], "next": "धन के देवता का\nवाहन एक इंसान!"});

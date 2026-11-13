@@ -15,4 +15,4 @@ KATHA((h) => {
     b6: { set: 'heaven', cam: CAM.wide, draw: (ctx, t) => { garuda(ctx, 250, 1150, 0.7, t, { arms: 'namaste', face: { eyes: 'happy', mouth: 'smile' } }); char(ctx, 'vishnu', 520, 1170, 0.72, t, { flip: true, halo: true, arms: 'bless', face: { eyes: 'calm', mouth: 'smile' } }); }, over: (ctx, W, H_, t) => MYTH.petals(ctx, W, t, at('b6', 4), 22) },
     end: { set: 'heaven', cam: CAM.mid, draw: (ctx, t) => { garuda(ctx, 360, 1100, 0.58, t, { arms: 'namaste', face: { eyes: 'calm', mouth: 'smile' } }); char(ctx, 'vishnu', 360, 930, 0.4, t, { pose: 'sit', halo: true, arms: 'bless', face: { eyes: 'calm', mouth: 'smile' } }); }, over: cardOn('end', 'गरुड़', 'गरुड़', { y: 300, size: 90 }) },
   };
-}, {"series": "देवताओं के रूप का रहस्य", "part": 8, "hook": "विष्णु जी गरुड़\nपर क्यों सवार हैं?", "next": "विष्णु जी का चक्र\nकिसने दिया?", "nextAt": "nx", "gold": ["गरुड़", "अमृत", "विनता", "विष्णु", "वर", "ध्वज"]});
+}, {"series": "देवताओं के रूप का रहस्य", "part": 8, "hook": "माँ को छुड़ाने के लिए\nअमृत छीन लाया!", "next": "विष्णु जी का चक्र\nकिसने दिया?", "nextAt": "nx", "gold": ["गरुड़", "अमृत", "विनता", "विष्णु", "वर", "ध्वज"]});

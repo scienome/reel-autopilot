@@ -57,4 +57,4 @@ KATHA((h) => {
     b5: { set: 'kailash', cam: CAM.mid, draw: (ctx, t) => { char(ctx, 'sage', 360, 1170, 0.85, t, { arms: 'namaste', face: { eyes: 'sad', mouth: 'frown' }, as: 'bhairon', style: { cloth: '#3a2a4a', cloth2: '#8a1f12' } }); } },
     end: { set: 'kailash', cam: CAM.wide, draw: (ctx, t) => { temple(ctx, 220, 1040, 0.6, '#f4c0a0'); temple(ctx, 520, 960, 0.45, '#d0a080'); }, over: (ctx, W, H_, t) => { cardOn('end', 18, 'भैरों घाटी', { y: 300, size: 84 })(ctx, W, H_, t); } },
   };
-}, {"series": "मंदिरों के रहस्य", "part": 3, "hook": "माँ के दर्शन के बाद\nभैरों के क्यों?", "nextAt": "nx", "gold": ["वैष्णवी", "त्रिकूट", "भैरोंनाथ", "अर्धकुँवारी", "महाकाली", "भैरों"], "next": "रामेश्वरम में\nदो शिवलिंग क्यों?"});
+}, {"series": "मंदिरों के रहस्य", "part": 3, "hook": "जिसका सिर कटा,\nउसी के दर्शन ज़रूरी!", "nextAt": "nx", "gold": ["वैष्णवी", "त्रिकूट", "भैरोंनाथ", "अर्धकुँवारी", "महाकाली", "भैरों"], "next": "रामेश्वरम में\nदो शिवलिंग क्यों?"});

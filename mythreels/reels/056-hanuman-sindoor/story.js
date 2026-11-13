@@ -13,4 +13,4 @@ KATHA((h) => {
     b6: { set: 'heaven', cam: CAM.wide, draw: (ctx, t) => { char(ctx, 'rama', 210, 1170, 0.75, t, { halo: true, arms: 'bless', face: { eyes: 'calm', mouth: 'smile' } }); hanu(ctx, 500, 1170, 0.72, t, { flip: true, arms: 'namaste', glow: 'rgba(230,60,20,0.5)', face: { eyes: 'closed', mouth: 'smile' } }); }, over: (ctx, W, H_, t) => MYTH.petals(ctx, W, t, at('b6', 4), 24) },
     end: { set: 'heaven', cam: CAM.mid, draw: (ctx, t) => { hanu(ctx, 360, 1170, 0.85, t, { halo: true, arms: 'bless', glow: 'rgba(230,60,20,0.5)', face: { eyes: 'calm', mouth: 'smile' } }); } },
   };
-}, {"series": "देवताओं के रूप का रहस्य", "part": 7, "hook": "हनुमान जी सिंदूरी\nक्यों हैं?", "next": "विष्णु जी गरुड़\nपर क्यों सवार हैं?", "nextAt": "nx", "gold": ["सिंदूर", "सीता", "हनुमान", "राम", "माँग", "भक्ति"]});
+}, {"series": "देवताओं के रूप का रहस्य", "part": 7, "hook": "सीता जी की एक बात,\nहनुमान जी लाल हो गए!", "next": "विष्णु जी गरुड़\nपर क्यों सवार हैं?", "nextAt": "nx", "gold": ["सिंदूर", "सीता", "हनुमान", "राम", "माँग", "भक्ति"]});

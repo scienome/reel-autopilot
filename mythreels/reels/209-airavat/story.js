@@ -57,4 +57,4 @@ KATHA((h) => {
     b5: { set: 'sky', cam: CAM.wide, draw: (ctx, t) => { MYTH.elephant(ctx, 360, 1000, 1.0, t); ctx.save(); ctx.strokeStyle = 'rgba(160,200,255,0.8)'; ctx.lineWidth = 3; for (let i = 0; i < 40; i++) { const x = (i * 53 + t * 40) % 720, y = (i * 97 + t * 600) % 1280; ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x - 6, y + 30); ctx.stroke(); } ctx.restore(); } },
     end: { set: 'heaven', cam: CAM.mid, draw: (ctx, t) => { MYTH.elephant(ctx, 360, 1120, 1.2, t); }, over: (ctx, W, H_, t) => { cardOn('end', 9, 'पूर्व दिशा', { y: 300, size: 84 })(ctx, W, H_, t); } },
   };
-}, {"series": "देवताओं के वाहन क्यों?", "part": 2, "hook": "इंद्र का हाथी\nसमुद्र से निकला!", "nextAt": "nx", "gold": ["ऐरावत", "इंद्र", "मंथन", "कामधेनु", "उच्चैःश्रवा", "दिग्गज"], "next": "लक्ष्मी जी\nउल्लू पर क्यों?"});
+}, {"series": "देवताओं के वाहन क्यों?", "part": 2, "hook": "समुद्र से निकला\nचार दाँतों का हाथी!", "nextAt": "nx", "gold": ["ऐरावत", "इंद्र", "मंथन", "कामधेनु", "उच्चैःश्रवा", "दिग्गज"], "next": "लक्ष्मी जी\nउल्लू पर क्यों?"});

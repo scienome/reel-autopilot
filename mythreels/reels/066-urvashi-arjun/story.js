@@ -10,4 +10,4 @@ KATHA((h) => {
     b5: { set: 'forest', cam: CAM.wide, draw: (ctx, t) => { char(ctx, 'arjuna', 360, 1170, 0.8, t, { arms: 'down', face: { eyes: 'sad', mouth: 'frown' } }); }, over: cardOn('b5', 2, 'अज्ञातवास', { y: 300, size: 80 }) },
     end: { set: 'palace', cam: CAM.mid, draw: (ctx, t) => { char(ctx, 'arjuna', 360, 1170, 0.82, t, { arms: 'open', style: { cloth: '#ff8ac0', cloth2: '#ffd23f' }, face: { eyes: 'calm', mouth: 'smile' } }); }, over: cardOn('end', 1, 'बृहन्नला', { y: 300, size: 90 }) },
   };
-}, {"series": "श्राप जिन्होंने इतिहास बदला", "part": 2, "hook": "एक श्राप, जिसने\nअर्जुन की जान बचाई", "nextAt": "nx", "gold": ["अर्जुन", "उर्वशी", "इंद्र", "बृहन्नला", "श्राप", "वरदान"], "next": "नारद के श्राप से\nराम-सीता बिछड़े"});
+}, {"series": "श्राप जिन्होंने इतिहास बदला", "part": 2, "hook": "एक श्राप,\nजो ढाल बन गया", "nextAt": "nx", "gold": ["अर्जुन", "उर्वशी", "इंद्र", "बृहन्नला", "श्राप", "वरदान"], "next": "नारद के श्राप से\nराम-सीता बिछड़े"});

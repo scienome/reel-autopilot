@@ -11,4 +11,4 @@ KATHA((h) => {
     b5: { set: 'ocean', cam: CAM.push, shake: at('b5', 8), draw: (ctx, t) => { const k = Math.min(1, Math.max(0, (t - at('b5', 6)) / 1.2)); char(ctx, 'hanuman', 300, 1170, 0.85, t, { arms: 'up', glow: 'rgba(255,200,80,0.75)', face: { eyes: 'calm', mouth: 'calm' } }); rock(ctx, 300 + k * 260, 640 + k * 500, 0.55, t); }, over: cardOn('b5', 9, 'समुद्र में', { y: 300, size: 90 }) },
     end: { set: 'heaven', cam: CAM.mid, draw: (ctx, t) => { char(ctx, 'hanuman', 360, 1170, 0.85, t, { halo: true, arms: 'namaste', face: { eyes: 'closed', mouth: 'smile' } }); }, over: cardOn('end', 19, 'विनम्रता', { y: 300, size: 100 }) },
   };
-}, {"series": "हनुमान जी के अनसुने किस्से", "part": 3, "hook": "हनुमान जी ने अपनी\nरामायण समुद्र में फेंकी!", "nextAt": "nx", "gold": ["हनुमान", "रामायण", "वाल्मीकि", "राम", "विनम्रता"], "next": "हनुमान जी को\nचिरंजीवी वरदान कैसे?"});
+}, {"series": "हनुमान जी के अनसुने किस्से", "part": 3, "hook": "सबसे पहली रामायण\nसमुद्र में डूबी है!", "nextAt": "nx", "gold": ["हनुमान", "रामायण", "वाल्मीकि", "राम", "विनम्रता"], "next": "हनुमान जी को\nचिरंजीवी वरदान कैसे?"});

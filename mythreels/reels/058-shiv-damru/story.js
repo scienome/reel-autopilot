@@ -12,4 +12,4 @@ KATHA((h) => {
     b5: { set: 'village', cam: CAM.mid, draw: (ctx, t) => { char(ctx, 'sage', 360, 1170, 0.85, t, { arms: 'rest', face: { eyes: 'calm', mouth: 'smile' } }); }, over: cardOn('b5', 'पाणिनि', 'पाणिनि', { y: 300, size: 90 }) },
     end: { set: 'kailash', cam: CAM.mid, draw: (ctx, t) => { char(ctx, 'shiva', 360, 1170, 0.85, t, { halo: true, arms: { r: 'up', l: 'down' }, hold: 'damru', face: { eyes: 'calm', mouth: 'smile' } }); sound(ctx, 360, 640, 0, t); } },
   };
-}, {"series": "देवताओं के रूप का रहस्य", "part": 12, "hook": "शिव के डमरू से\nकौन सी भाषा निकली?", "next": "पूरी सीरीज़\nप्रोफ़ाइल पर", "nextAt": "nx", "gold": ["डमरू", "शिव", "चौदह", "सूत्र", "पाणिनि", "संस्कृत"]});
+}, {"series": "देवताओं के रूप का रहस्य", "part": 12, "hook": "चौदह बार बजा डमरू...\nऔर जन्मी एक भाषा", "next": "पूरी सीरीज़\nप्रोफ़ाइल पर", "nextAt": "nx", "gold": ["डमरू", "शिव", "चौदह", "सूत्र", "पाणिनि", "संस्कृत"]});

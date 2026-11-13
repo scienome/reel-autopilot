@@ -11,4 +11,4 @@ KATHA((h) => {
     b5: { set: 'heaven', cam: CAM.mid, draw: (ctx, t) => { shachi(ctx, 230, 1170, 0.8, t, { arms: 'open', face: { eyes: 'calm', mouth: 'smile' } }); char(ctx, 'indra', 500, 1170, 0.82, t, { flip: true, hold: 'vajra', arms: 'up', glow: 'rgba(255,200,80,0.75)', face: { eyes: 'calm', mouth: 'smile' } }); thread(ctx, 400, 960, t); } },
     end: { set: 'village', cam: CAM.mid, draw: (ctx, t) => { thread(ctx, 360, 820, t); char(ctx, 'villager', 360, 1170, 0.7, t, { arms: 'namaste', face: { eyes: 'calm', mouth: 'smile' } }); } },
   };
-}, {"series": "ऐसा क्यों?", "part": 3, "hook": "राखी सबसे पहले\nकिसने बाँधी?", "nextAt": "nx", "gold": ["राखी", "इंद्र", "इंद्राणी", "बृहस्पति", "रक्षा", "श्रावण"], "next": "मंदिर में घंटी\nक्यों बजाते हैं?"});
+}, {"series": "ऐसा क्यों?", "part": 3, "hook": "पहली राखी\nबहन ने नहीं बाँधी!", "nextAt": "nx", "gold": ["राखी", "इंद्र", "इंद्राणी", "बृहस्पति", "रक्षा", "श्रावण"], "next": "मंदिर में घंटी\nक्यों बजाते हैं?"});

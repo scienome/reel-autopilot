@@ -57,4 +57,4 @@ KATHA((h) => {
     b5: { set: 'palace', cam: CAM.wide, draw: (ctx, t) => { temple(ctx, 360, 1000, 0.9, '#f4d070'); char(ctx, 'villager', 160, 1170, 0.6, t, { arms: 'namaste', face: { eyes: 'calm', mouth: 'calm' } }); char(ctx, 'villager', 560, 1170, 0.6, t, { arms: 'namaste', face: { eyes: 'happy', mouth: 'smile' }, flip: true, style: { cloth: '#d8203a' } }); } },
     end: { set: 'palace', cam: CAM.push, draw: (ctx, t) => { temple(ctx, 360, 1080, 1.1, '#f4d070'); glowAt(ctx, 360, 860, 260); } },
   };
-}, {"series": "मंदिरों के रहस्य", "part": 2, "hook": "भगवान ने लिया\nकुबेर से कर्ज़!", "nextAt": "nx", "gold": ["तिरुपति", "वेंकटेश्वर", "कुबेर", "पद्मावती", "कर्ज़"], "next": "माँ के दर्शन के बाद\nभैरों के क्यों?"});
+}, {"series": "मंदिरों के रहस्य", "part": 2, "hook": "भगवान आज भी\nकर्ज़ चुका रहे हैं!", "nextAt": "nx", "gold": ["तिरुपति", "वेंकटेश्वर", "कुबेर", "पद्मावती", "कर्ज़"], "next": "माँ के दर्शन के बाद\nभैरों के क्यों?"});

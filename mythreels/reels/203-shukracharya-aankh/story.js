@@ -57,4 +57,4 @@ KATHA((h) => {
     b5: { set: 'palace', cam: CAM.close(480), shake: at('b5', 8), draw: (ctx, t) => { char(ctx, 'sage', 480, 1170, 0.9, t, { arms: 'cover', face: { eyes: 'wide', mouth: 'o' }, as: 'sage', style: { cloth: '#f4f0e8', cloth2: '#e86a1a' } }); }, over: (ctx, W, H_, t) => { cardOn('b5', 7, 'आँख', { y: 300, size: 100 })(ctx, W, H_, t); } },
     end: { set: 'palace', cam: CAM.mid, draw: (ctx, t) => { char(ctx, 'bali', 360, 1170, 0.85, t, { arms: 'namaste', face: { eyes: 'happy', mouth: 'smile' }, as: 'bali', halo: true, style: { cloth: '#7a2a8a', cloth2: '#e2a83a' } }); } },
   };
-}, {"series": "रावण से पहले: असुरों के रहस्य", "part": 3, "hook": "असुरों के गुरु की\nएक आँख कैसे गई?", "nextAt": "nx", "gold": ["शुक्राचार्य", "बलि", "वामन", "विष्णु", "कमंडल", "कुशा"], "next": "वो विद्या, जो\nमरे असुर जिंदा करती"});
+}, {"series": "रावण से पहले: असुरों के रहस्य", "part": 3, "hook": "एक कुशा,\nऔर गुरु की आँख गई", "nextAt": "nx", "gold": ["शुक्राचार्य", "बलि", "वामन", "विष्णु", "कमंडल", "कुशा"], "next": "वो विद्या, जो\nमरे असुर जिंदा करती"});

@@ -57,4 +57,4 @@ KATHA((h) => {
     b5: { set: 'river', cam: CAM.wide, draw: (ctx, t) => { ctx.save(); ctx.fillStyle = 'rgba(80,60,30,0.5)'; ctx.fillRect(40, 1080, 640, 140); ctx.restore(); swan(ctx, 360, 1060, 0.9, t); } },
     end: { set: 'heaven', cam: CAM.mid, draw: (ctx, t) => { char(ctx, 'saraswati', 260, 1170, 0.8, t, { arms: 'bless', face: { eyes: 'happy', mouth: 'smile' }, hold: 'veena', halo: true }); swan(ctx, 520, 1100, 0.5, t); }, over: (ctx, W, H_, t) => { cardOn('end', 4, 'परमहंस', { y: 300, size: 90 })(ctx, W, H_, t); } },
   };
-}, {"series": "देवताओं के वाहन क्यों?", "part": 4, "hook": "सरस्वती के साथ\nहंस ही क्यों?", "nextAt": "nx", "gold": ["सरस्वती", "हंस", "ब्रह्मा", "नीर-क्षीर", "परमहंस"], "next": "सूर्य के रथ में\nसात घोड़े क्यों?"});
+}, {"series": "देवताओं के वाहन क्यों?", "part": 4, "hook": "हंस के पास\nएक अनोखी शक्ति", "nextAt": "nx", "gold": ["सरस्वती", "हंस", "ब्रह्मा", "नीर-क्षीर", "परमहंस"], "next": "सूर्य के रथ में\nसात घोड़े क्यों?"});

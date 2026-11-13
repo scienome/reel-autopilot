@@ -57,4 +57,4 @@ KATHA((h) => {
     b5: { set: 'kailash', cam: CAM.push, shake: at('b5', 6), draw: (ctx, t) => { char(ctx, 'bhima', 360, 1170, 0.85, t, { arms: 'fist', face: { eyes: 'wide', mouth: 'o' } }); }, over: (ctx, W, H_, t) => { cardOn('b5', 15, 'पीठ', { y: 300, size: 100 })(ctx, W, H_, t); } },
     end: { set: 'kailash', cam: CAM.mid, draw: (ctx, t) => { temple(ctx, 360, 1080, 1.1, '#c8c0b0'); glowAt(ctx, 360, 900, 220); }, over: (ctx, W, H_, t) => { cardOn('end', 15, 'पंच केदार', { y: 300, size: 90 })(ctx, W, H_, t); } },
   };
-}, {"series": "मंदिरों के रहस्य", "part": 1, "hook": "केदारनाथ में शिव\nबैल की पीठ क्यों?", "nextAt": "nx", "gold": ["केदारनाथ", "पांडव", "शिव", "भीम", "बैल", "पंच केदार"], "next": "भगवान ने लिया\nकुबेर से कर्ज़!"});
+}, {"series": "मंदिरों के रहस्य", "part": 1, "hook": "केदारनाथ में\nशिव की सिर्फ़ पीठ!", "nextAt": "nx", "gold": ["केदारनाथ", "पांडव", "शिव", "भीम", "बैल", "पंच केदार"], "next": "भगवान ने लिया\nकुबेर से कर्ज़!"});

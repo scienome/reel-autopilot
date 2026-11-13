@@ -57,4 +57,4 @@ KATHA((h) => {
     b5: { set: 'river', cam: CAM.push, shake: at('b5', 12), draw: (ctx, t) => { char(ctx, 'amba', 360, 1170, 0.85, t, { arms: 'point', face: { eyes: 'angry', mouth: 'shout' }, as: 'devyani', glow: 'rgba(255,200,80,0.75)', style: { cloth: '#ff8ac0', cloth2: '#e2a83a' } }); }, over: (ctx, W, H_, t) => { cardOn('b5', 12, 'श्राप!', { y: 300, size: 100 })(ctx, W, H_, t); } },
     end: { set: 'heaven', cam: CAM.mid, draw: (ctx, t) => { char(ctx, 'prince', 360, 1170, 0.85, t, { arms: 'bless', face: { eyes: 'happy', mouth: 'smile' }, as: 'kach', halo: true, style: { cloth: '#f4f0e8', cloth2: '#f4c430' } }); } },
   };
-}, {"series": "रावण से पहले: असुरों के रहस्य", "part": 5, "hook": "गुरु के पेट से\nजिंदा निकला शिष्य!", "nextAt": "nx", "gold": ["कच", "देवयानी", "शुक्राचार्य", "संजीवनी", "श्राप"], "next": "एक असुर,\nजो दो ग्रह बन गया"});
+}, {"series": "रावण से पहले: असुरों के रहस्य", "part": 5, "hook": "गुरु के पेट से\nज़िंदा निकला शिष्य!", "nextAt": "nx", "gold": ["कच", "देवयानी", "शुक्राचार्य", "संजीवनी", "श्राप"], "next": "एक असुर,\nजो दो ग्रह बन गया"});

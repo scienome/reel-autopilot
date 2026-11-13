@@ -14,4 +14,4 @@ KATHA((h) => {
     b5: { set: 'space', setOpt: { sun: false }, cam: CAM.wide, shake: V('b5', 'प्रकट'), draw: (ctx, t) => { char(ctx, 'shiva', 470, 1170, 0.8, t, { halo: true, arms: 'bless', face: { eyes: 'calm', mouth: 'smile' } }); char(ctx, 'vishnu', 170, 1170, 0.65, t, { arms: 'namaste', face: { eyes: 'happy', mouth: 'smile' } }); const u = H.clamp((t - V('b5', 'सुदर्शन')) / 0.8); chakra(ctx, 330, 780, 90 * u, t, u); } },
     end: { set: 'heaven', cam: CAM.mid, draw: (ctx, t) => { char(ctx, 'vishnu', 360, 1170, 0.85, t, { halo: true, arms: { r: 'up', l: 'down' }, hold: 'chakra', face: { eyes: 'calm', mouth: 'smile' } }); }, over: cardOn('end', 'सुदर्शन', 'सुदर्शन चक्र', { y: 300, size: 80 }) },
   };
-}, {"series": "देवताओं के रूप का रहस्य", "part": 9, "hook": "विष्णु जी का चक्र\nकिसने दिया?", "next": "दुर्गा माँ के हाथों में\nकिसके हथियार?", "nextAt": "nx", "gold": ["सुदर्शन", "चक्र", "कमल", "शिव", "भक्ति", "आँख"]});
+}, {"series": "देवताओं के रूप का रहस्य", "part": 9, "hook": "एक कमल कम पड़ा...\nतो आँख चढ़ाने चले!", "next": "दुर्गा माँ के हाथों में\nकिसके हथियार?", "nextAt": "nx", "gold": ["सुदर्शन", "चक्र", "कमल", "शिव", "भक्ति", "आँख"]});

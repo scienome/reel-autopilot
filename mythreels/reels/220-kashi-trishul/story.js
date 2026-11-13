@@ -57,4 +57,4 @@ KATHA((h) => {
     b5: { set: 'river', cam: CAM.mid, draw: (ctx, t) => { char(ctx, 'shiva', 360, 1170, 0.85, t, { arms: 'bless', face: { eyes: 'closed', mouth: 'calm' }, halo: true }); }, over: (ctx, W, H_, t) => { cardOn('b5', 13, 'तारक मंत्र', { y: 300, size: 84 })(ctx, W, H_, t); } },
     end: { set: 'river', cam: CAM.push, draw: (ctx, t) => { for (let i = 0; i < 6; i++) MYTH.flame(ctx, 90 + i * 110, 1150, 1.3, t + i); temple(ctx, 360, 1000, 0.7, '#e8c8a0'); }, over: (ctx, W, H_, t) => { cardOn('end', 10, 'मोक्ष की नगरी', { y: 300, size: 76 })(ctx, W, H_, t); } },
   };
-}, {"series": "मंदिरों के रहस्य", "part": 6, "hook": "प्रलय में भी\nकाशी क्यों बचेगी?", "nextAt": "nx", "gold": ["काशी", "शिव", "अविमुक्त", "त्रिशूल", "प्रलय", "तारक"], "next": "भगवान ईंट पर\nक्यों खड़े हैं?"});
+}, {"series": "मंदिरों के रहस्य", "part": 6, "hook": "प्रलय में भी\nएक शहर नहीं डूबेगा", "nextAt": "nx", "gold": ["काशी", "शिव", "अविमुक्त", "त्रिशूल", "प्रलय", "तारक"], "next": "भगवान ईंट पर\nक्यों खड़े हैं?"});

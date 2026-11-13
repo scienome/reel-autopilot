@@ -11,4 +11,4 @@ KATHA((h) => {
     b5: { set: 'forest', cam: CAM.close(420), draw: (ctx, t) => { par(ctx, 420, 1170, 0.9, t, { arms: 'bless', face: { eyes: 'calm', mouth: 'smile' } }); } },
     end: { set: 'heaven', cam: CAM.mid, draw: (ctx, t) => { lion(ctx, 220, 1170, 1.0, t); par(ctx, 480, 1170, 0.8, t, { halo: true, hold: 'trishul', arms: 'bless', face: { eyes: 'calm', mouth: 'smile' } }); } },
   };
-}, {"series": "देवियों के रहस्य", "part": 3, "hook": "माँ दुर्गा का वाहन\nशेर क्यों?", "nextAt": "nx", "gold": ["दुर्गा", "शेर", "पार्वती", "तप", "वाहन"], "next": "नवरात्रि में देवी के\nनौ रूप क्यों?"});
+}, {"series": "देवियों के रहस्य", "part": 3, "hook": "शेर आया था\nमाँ को खाने!", "nextAt": "nx", "gold": ["दुर्गा", "शेर", "पार्वती", "तप", "वाहन"], "next": "नवरात्रि में देवी के\nनौ रूप क्यों?"});

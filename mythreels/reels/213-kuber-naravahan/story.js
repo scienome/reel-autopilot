@@ -57,4 +57,4 @@ KATHA((h) => {
     b5: { set: 'village', cam: CAM.close(480), draw: (ctx, t) => { char(ctx, 'villager', 480, 1170, 0.9, t, { arms: 'carry', face: { eyes: 'sad', mouth: 'frown' } }); } },
     end: { set: 'palace', cam: CAM.mid, draw: (ctx, t) => { char(ctx, 'kubera', 360, 1170, 0.85, t, { arms: 'bless', face: { eyes: 'calm', mouth: 'calm' }, halo: true }); } },
   };
-}, {"series": "देवताओं के वाहन क्यों?", "part": 6, "hook": "धन के देवता का\nवाहन एक इंसान!", "nextAt": "nx", "gold": ["कुबेर", "नरवाहन", "यक्ष", "धन"], "next": "दत्तात्रेय के साथ\nचार कुत्ते क्यों?"});
+}, {"series": "देवताओं के वाहन क्यों?", "part": 6, "hook": "धन के देवता\nइंसान पर सवार!", "nextAt": "nx", "gold": ["कुबेर", "नरवाहन", "यक्ष", "धन"], "next": "दत्तात्रेय के साथ\nचार कुत्ते क्यों?"});
