@@ -62,7 +62,7 @@ def localized(series, rid, desc):
     return out
 
 
-def upload(tok, mp4, title, desc, tags, publish_at, loc=None):
+def upload(tok, mp4, title, desc, tags, publish_at, loc=None, lang='en', category=None):
     import requests
     now = dt.datetime.now(dt.timezone.utc).replace(tzinfo=None)
     status = {'selfDeclaredMadeForKids': False, 'embeddable': True}
@@ -70,8 +70,8 @@ def upload(tok, mp4, title, desc, tags, publish_at, loc=None):
         status.update(privacyStatus='private', publishAt=publish_at.strftime('%Y-%m-%dT%H:%M:%S.000Z'))
     else:
         status['privacyStatus'] = 'public'
-    body = {'snippet': {'title': title[:100], 'description': desc[:4900], 'tags': tags[:30], 'categoryId': CATEGORY,
-                        'defaultLanguage': 'en', 'defaultAudioLanguage': 'en'}, 'status': status}
+    body = {'snippet': {'title': title[:100], 'description': desc[:4900], 'tags': tags[:30], 'categoryId': category or CATEGORY,
+                        'defaultLanguage': lang, 'defaultAudioLanguage': lang}, 'status': status}
     size = os.path.getsize(mp4)
     def start(body, parts):
         return requests.post('https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=' + parts,
@@ -189,3 +189,19 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+def fix_language(tok, vid, lang, category):
+    """Set a video's language and category (for uploads made before they were set right). Keeps its title, description and tags."""
+    import requests
+    h = {'Authorization': 'Bearer ' + tok}
+    r = requests.get('https://www.googleapis.com/youtube/v3/videos', params={'part': 'snippet', 'id': vid}, headers=h, timeout=60).json()
+    if not r.get('items'):
+        return False
+    sn = r['items'][0]['snippet']
+    if sn.get('defaultAudioLanguage') == lang and sn.get('categoryId') == category:
+        return True
+    body = {'id': vid, 'snippet': {k: sn[k] for k in ('title', 'description', 'tags') if k in sn}}
+    body['snippet'].update(categoryId=category, defaultLanguage=lang, defaultAudioLanguage=lang)
+    u = requests.put('https://www.googleapis.com/youtube/v3/videos?part=snippet', headers=dict(h, **{'Content-Type': 'application/json'}), data=json.dumps(body), timeout=60)
+    return u.status_code == 200

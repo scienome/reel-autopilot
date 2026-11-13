@@ -117,7 +117,7 @@ def yt_post(tok, rid, title, desc, tags, at):
     d = tempfile.mkdtemp()
     if not yt.release_assets(TAG + rid, d):
         raise RuntimeError(f'could not download Release {TAG}{rid}')
-    yid, st = yt.upload(tok, os.path.join(d, rid + '.mp4'), title, desc, tags, at, yt.localized('myth', rid, desc))
+    yid, st = yt.upload(tok, os.path.join(d, rid + '.mp4'), title, desc, tags, at, yt.localized('myth', rid, desc), lang='hi', category='24')  # Hindi audio, Entertainment (13 Nov 2026: uploads were marked English / Science & Tech)
     if os.path.exists(os.path.join(d, 'cover.jpg')):
         try:
             yt.set_thumb(tok, yid, os.path.join(d, 'cover.jpg'))
@@ -125,6 +125,22 @@ def yt_post(tok, rid, title, desc, tags, at):
             print(f'::notice::thumbnail not set ({str(e)[:120]})')
     print(f'YouTube: https://youtu.be/{yid} ({st["privacyStatus"]}{", goes public " + st["publishAt"] if "publishAt" in st else ""})')
     return {'id': yid, 'url': f'https://youtu.be/{yid}', 'publish_utc': st.get('publishAt', 'now'), 'title': title}
+
+
+def fix_old_languages(tok, log, n=10):
+    """Uploads before 13 Nov 2026 were marked English audio / Science & Technology. Fix up to n of them per run (Hindi, Entertainment)."""
+    done = 0
+    for r, e in log.items():
+        y = e.get('youtube') or {}
+        if not y.get('id') or y.get('lang') == 'hi' or done >= n:
+            continue
+        try:
+            if yt.fix_language(tok, y['id'], 'hi', '24'):
+                y['lang'] = 'hi'; done += 1
+        except Exception as x:  # quota or a deleted video: try again next run
+            print(f'::notice::language fix for {r} skipped ({str(x)[:120]})'); break
+    if done:
+        save(log); print(f'YouTube: set Hindi audio / Entertainment on {done} older Shorts')
 
 
 # ---------------------------------------------------------------- both
@@ -143,7 +159,9 @@ def post(rid, at, log, tok, slot_key):
     if 'youtube' not in e:  # YouTube first: it schedules itself for `at`, so it can go up early
         try:
             e['youtube'] = yt_post(tok, rid, title, desc, tags, at)
+            e['youtube']['lang'] = 'hi'
             save(log)
+            fix_old_languages(tok, log)
         except RuntimeError as x:
             if any(k in str(x) for k in ('quotaExceeded', 'uploadLimitExceeded', 'rateLimitExceeded')):
                 print(f'::warning::YouTube upload quota used up; {rid} will go to YouTube on the next run.')
