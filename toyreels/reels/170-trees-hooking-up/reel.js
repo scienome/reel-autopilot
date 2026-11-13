@@ -1,3 +1,4 @@
+// re-render: Kenney toy nature scenery (13 Nov 2026)
 // 170 cinestory3d (story3d.js): mycorrhizal networks (Simard 1997; Karst 2023 debate). Scroll stopper: a cut-away forest floor with glowing threads joining two trees' roots.
 STORY((k) => {
   const { T, M, PI, E, seg, lerp } = k; const fr = k.forest({ trees: 20 });
@@ -22,4 +23,4 @@ STORY((k) => {
     outro: (t, kk) => { base(); glow(t); ov = (ctx) => k.big(ctx, 'HOOKED UP. 🌳', { y: 240, size: 72, col: '#ffd23f' }); return cutCam(); },
   };
   return { shots, lens: 28, sky: fr.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
-}, { assets: ['nature/tree_oak', 'nature/tree_maple', 'nature/tree_birch', 'nature/rock_mossy', 'nature/rock_large_a'] });
+}, { assets: [...LIB.toyKitAssets().filter((a) => a.startsWith('knature/')), 'nature/tree_oak', 'nature/tree_maple', 'nature/tree_birch', 'nature/rock_mossy', 'nature/rock_large_a'] });

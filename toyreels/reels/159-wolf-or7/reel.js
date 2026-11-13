@@ -1,3 +1,4 @@
+// re-render: Kenney toy nature scenery (13 Nov 2026)
 // 159 cinestory3d (story3d.js): wolf OR-7 (ODFW/USFWS). Scroll stopper: a lone wolf on a ridge under the moon, GPS dots trailing behind.
 STORY((k) => {
   const { T, M, PI, E, seg, lerp } = k; const fr = k.forest({ trees: 24 }); const sn = k.snow({ trees: 8 });
@@ -28,4 +29,4 @@ STORY((k) => {
     outro: (t, kk) => { base(fr); w.visible = fem.visible = true; pups.forEach((p) => { p.visible = true; p.pose('idle', t); }); w.position.set(-0.6, 0, 0.4); w.rotation.y = 1.2; w.pose('idle', t); fem.pose('idle', t); col(); ov = (ctx) => { k.tint(ctx, '#ff9a3c', 0.15); map(ctx, 1); }; return k.cam([lerp(1.4, 3, kk), 1.4, lerp(4.4, 6, kk)], [0.2, 0.4, 0.6], 40, { sky: fr.sky }); },
   };
   return { shots, lens: 28, sky: fr.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('ding', at('pups', 0.4), { f: 'C6', gain: 0.3 }); } };
-}, { assets: ['animals/wolf', 'nature/tree_oak', 'nature/tree_maple', 'nature/tree_birch', 'nature/rock_mossy', 'nature/rock_large_a', 'nature/rock_a', 'nature/rock_b', 'nature/rock_medium'] });
+}, { assets: [...LIB.toyKitAssets().filter((a) => a.startsWith('knature/')), 'animals/wolf', 'nature/tree_oak', 'nature/tree_maple', 'nature/tree_birch', 'nature/rock_mossy', 'nature/rock_large_a', 'nature/rock_a', 'nature/rock_b', 'nature/rock_medium'] });

@@ -1,3 +1,4 @@
+// re-render: Kenney toy nature scenery (13 Nov 2026)
 // 155 cinestory3d (story3d.js): antlers are shed and regrown every year (Britannica; Price et al. 2005). Scroll stopper: a stag with a huge rack, then the antlers drop off.
 STORY((k) => {
   const { T, M, PI, E, seg, lerp } = k; const fr = k.forest({ trees: 22 });
@@ -28,4 +29,4 @@ STORY((k) => {
     outro: (t, kk) => { base(); stag.visible = true; stag.scale.setScalar(1.12); stag.position.set(0, 0, 0); stag.rotation.y = 0.6; stag.pose('idle', t); ov = (ctx) => k.big(ctx, 'BIGGER. 🦌', { y: 230, size: 84, col: '#ffd23f' }); return k.cam([2.4, 1.7, 3.6], [0, 1.5, 0], 38, { sky: fr.sky }); },
   };
   return { shots, lens: 28, sky: fr.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('click', at('hook', 2.4), { gain: 0.4 }); kit.play('click', at('rut', 0.5), { gain: 0.5 }); kit.play('click', at('rut', 1.3), { gain: 0.5 }); } };
-}, { assets: ['animals/stag', 'animals/deer', 'nature/tree_oak', 'nature/tree_maple', 'nature/tree_birch', 'nature/rock_mossy', 'nature/rock_large_a'] });
+}, { assets: [...LIB.toyKitAssets().filter((a) => a.startsWith('knature/')), 'animals/stag', 'animals/deer', 'nature/tree_oak', 'nature/tree_maple', 'nature/tree_birch', 'nature/rock_mossy', 'nature/rock_large_a'] });

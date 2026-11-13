@@ -1,3 +1,4 @@
+// re-render: Kenney toy nature scenery (13 Nov 2026)
 // 148 cinestory3d (story3d.js): horses doze standing (stay apparatus) but lie down for REM; herds take turns. Scroll stopper: a horse asleep on its feet, eyes shut, zzz.
 STORY((k) => {
   const { T, M, PI, E, seg, lerp } = k; const fm = k.farm();
@@ -23,4 +24,4 @@ STORY((k) => {
     outro: (t, kk) => { base(); asleep(h1, t); h2.pose('idle', t); h3.pose('idle', t); ov = (ctx) => { k.tint(ctx, '#0b1630', 0.35); zzz(ctx, t); }; return k.cam([3.6, 1.5, 4.4], [0, 1.0, 0], 38, { sky: '#3a4a6a', focus: [0.25, 0.8], blur: 6 }); },
   };
   return { shots, lens: 28, sky: '#3a4a6a', over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('click', at('knee', 1.2), { gain: 0.4 }); kit.play('whoosh', at('why', 1.6), { dur: 0.6, gain: 0.2 }); } };
-}, { assets: ['animals/horse_white', 'animals/horse', 'animals/donkey', 'animals/wolf', 'props/hay', 'buildings/cottage', 'buildings/village_house', 'buildings/house_v2', 'buildings/well', 'buildings/fence', 'nature/tree_oak', 'nature/tree_maple'] });
+}, { assets: [...LIB.toyKitAssets().filter((a) => a.startsWith('knature/')), 'animals/horse_white', 'animals/horse', 'animals/donkey', 'animals/wolf', 'props/hay', 'buildings/cottage', 'buildings/village_house', 'buildings/house_v2', 'buildings/well', 'buildings/fence', 'nature/tree_oak', 'nature/tree_maple'] });

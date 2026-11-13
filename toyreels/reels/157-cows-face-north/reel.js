@@ -1,3 +1,4 @@
+// re-render: Kenney toy nature scenery (13 Nov 2026)
 // 157 cinestory3d (story3d.js): magnetic alignment of cattle (Begall 2008; Burda 2009; Hert 2011 failed to replicate). Scroll stopper: a herd all turning to face the same way.
 STORY((k) => {
   const { T, M, PI, E, seg, lerp } = k; const fm = k.farm();
@@ -22,4 +23,4 @@ STORY((k) => {
     outro: (t, kk) => { base(); align(Math.min(1, kk * 1.4), cows); ov = (ctx) => compass(ctx); return k.cam([10, 4, 18], [-1, 0.8, 6], 42, { sky: fm.sky }); },
   };
   return { shots, lens: 28, sky: fm.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('ding', at('pattern', 0.4), { f: 'E6', gain: 0.3 }); } };
-}, { assets: ['animals/cow', 'animals/bull', 'animals/deer', 'props/hay', 'buildings/cottage', 'buildings/village_house', 'buildings/house_v2', 'buildings/well', 'buildings/fence', 'nature/tree_oak', 'nature/tree_maple'] });
+}, { assets: [...LIB.toyKitAssets().filter((a) => a.startsWith('knature/')), 'animals/cow', 'animals/bull', 'animals/deer', 'props/hay', 'buildings/cottage', 'buildings/village_house', 'buildings/house_v2', 'buildings/well', 'buildings/fence', 'nature/tree_oak', 'nature/tree_maple'] });

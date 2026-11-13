@@ -1,3 +1,4 @@
+// re-render: Kenney toy nature scenery (13 Nov 2026)
 // 161 cinestory3d (story3d.js): guard donkeys protect sheep (OMAFRA; Texas A&M AgriLife). Scroll stopper: a donkey charging a fox at night.
 STORY((k) => {
   const { T, M, PI, E, seg, lerp } = k; const fm = k.farm();
@@ -16,4 +17,4 @@ STORY((k) => {
     outro: (t, kk) => { base(); fox.visible = false; don.position.set(1.4, 0, 6.8); don.rotation.y = 0.3; don.pose('idle', t); ov = (ctx) => k.big(ctx, 'THANK YOU. 🫏', { y: 230, size: 80, col: '#ffd23f' }); return k.close(don, { d: 3.6, side: 0.3 }); },
   };
   return { shots, lens: 28, sky: fm.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; }, score: (kit, at) => { kit.play('whoosh', at('hook', 0.3), { dur: 0.8, gain: 0.2 }); kit.play('whoosh', at('charge', 0.3), { dur: 0.8, gain: 0.2 }); } };
-}, { assets: ['animals/donkey', 'animals/fox', 'animals/sheep', 'props/hay', 'buildings/cottage', 'buildings/village_house', 'buildings/house_v2', 'buildings/well', 'buildings/fence', 'nature/tree_oak', 'nature/tree_maple'] });
+}, { assets: [...LIB.toyKitAssets().filter((a) => a.startsWith('knature/')), 'animals/donkey', 'animals/fox', 'animals/sheep', 'props/hay', 'buildings/cottage', 'buildings/village_house', 'buildings/house_v2', 'buildings/well', 'buildings/fence', 'nature/tree_oak', 'nature/tree_maple'] });

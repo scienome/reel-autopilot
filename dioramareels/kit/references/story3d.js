@@ -111,7 +111,7 @@ window.STORY = (build, opt = {}) => DIY((k) => {
     g.cam = { pos: [3, 1.6, 7], look: [0, 0.6, 0], fov: 38 }; g.sky = '#c9d9e8'; return k.place(g); };
   k.forest = (o = {}) => { const g = new T.Group(); ground(g, 120, M('#ffffff', 0.95, 0, { map: ctex(128, 128, (c, w, h) => { c.fillStyle = '#4d5f2c'; c.fillRect(0, 0, w, h); for (let i = 0; i < 900; i++) { c.fillStyle = ['#6b5a2e', '#3e5224', '#7a6a38'][i % 3]; c.fillRect((i * 73) % w, (i * 151) % h, 3, 2); } }, 30) }));
     scatter(g, ['nature/tree_oak', 'nature/tree_maple', 'nature/tree_birch'], o.trees || 26, 5, 40, 7, 11, 3); scatter(g, ['nature/rock_mossy', 'nature/rock_large_a'], 6, 8, 30, 0.8, 2, 7);
-    g.cam = { pos: [3, 1.7, 8], look: [0, 1, 0], fov: 40 }; g.sky = '#a9cfe0'; return k.place(g); };
+    if (LIB.dressOutdoor) LIB.dressOutdoor(g, 'park'); g.cam = { pos: [3, 1.7, 8], look: [0, 1, 0], fov: 40 }; g.sky = '#a9cfe0'; return k.place(g); };
   k.farm = (o = {}) => { const g = LIB.place.village(o); if (LIB.gltf['props/hay']) [[-6, 4], [-5, 5.2], [7, 5]].forEach(([x, z], i) => { const h = LIB.prop('props/hay', { h: 1.4 }); h.position.set(x, 0, z); g.add(h); });
     if (LIB.gltf['buildings/fence']) for (let i = 0; i < 8; i++) { const f = LIB.prop('buildings/fence', { w: 2.5 }); f.position.set(-10 + i * 2.5, 0, 9); g.add(f); } return k.place(g); };
   k.arena = () => { const g = new T.Group(); ground(g, 80, M('#c9a46a', 0.95, 0, { map: ctex(128, 128, (c, w, h) => { c.fillStyle = '#c9a46a'; c.fillRect(0, 0, w, h); for (let i = 0; i < 800; i++) { c.fillStyle = i % 2 ? '#b8935b' : '#d8b57c'; c.fillRect((i * 37) % w, (i * 91) % h, 2, 2); } }, 20) }));

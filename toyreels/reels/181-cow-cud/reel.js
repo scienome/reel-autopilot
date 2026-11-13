@@ -1,3 +1,4 @@
+// re-render: Kenney toy nature scenery (13 Nov 2026)
 // 181 cinestory3d (story3d.js): rumination (Britannica; extension services). Scroll stopper: a cow lying down chewing with nothing in front of it, a bolus travelling UP its neck.
 STORY((k) => {
   const { T, M, PI, E, seg, lerp } = k; const fm = k.farm();
@@ -19,4 +20,4 @@ STORY((k) => {
     outro: (t, kk) => { base(); lie(t); ov = (ctx) => k.big(ctx, 'SECONDS. 🐄', { y: 240, size: 84, col: '#ffd23f' }); return k.cam([2.8, 0.9, 4.8], [1.0, 0.5, 3], 36, { sky: fm.sky }); },
   };
   return { shots, lens: 28, sky: fm.sky, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
-}, { assets: ['animals/cow', 'props/hay', 'buildings/cottage', 'buildings/village_house', 'buildings/house_v2', 'buildings/well', 'buildings/fence', 'nature/tree_oak', 'nature/tree_maple'] });
+}, { assets: [...LIB.toyKitAssets().filter((a) => a.startsWith('knature/')), 'animals/cow', 'props/hay', 'buildings/cottage', 'buildings/village_house', 'buildings/house_v2', 'buildings/well', 'buildings/fence', 'nature/tree_oak', 'nature/tree_maple'] });
