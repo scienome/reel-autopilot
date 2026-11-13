@@ -187,12 +187,13 @@ def main(rid):
             gap = cfg.get('shot_gap', SHOT_GAP) if ln['shot'] != last else cfg.get('line_gap', LINE_GAP)  # voice.json can tighten the pauses
             t += gap
             pcm.append(b'\0\0' * int(gap * 44100))
-        name = hashlib.sha1(f"{cfg['voice_id']}|{cfg['model_id']}|{ln['say']}".encode()).hexdigest()[:16] + '.mp3'
+        lcfg = dict(cfg, voice_id=cfg.get('cast', {}).get(ln['who'], cfg['voice_id'])) if ln.get('who') else cfg  # a line can be spoken by a character: script line "who", voice.json "cast": {who: voice_id}
+        name = hashlib.sha1(f"{lcfg['voice_id']}|{lcfg['model_id']}|{ln['say']}".encode()).hexdigest()[:16] + '.mp3'
         mp3 = os.path.join(takes, name)
         keep.add(name)
         if not os.path.exists(mp3):
             print('voicing:', ln['say'], flush=True)
-            tts(ln['say'], cfg, mp3)
+            tts(ln['say'], lcfg, mp3)
         wav = os.path.join(out, name + '.wav')
         subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', mp3, '-ac', '1', '-ar', '44100', '-sample_fmt', 's16', wav], check=True)
         with wave.open(wav) as w:

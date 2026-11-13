@@ -284,5 +284,7 @@ window.STORY = (build, opt = {}) => DIY((k) => {
   k.hookText = (ctx, text, o = {}) => { ctx.save(); const lines = text.split('\n'); let sz = o.size || 64; ctx.font = FONT(900, sz); const widest = Math.max(...lines.map((l) => ctx.measureText(l.replace(/\*/g, '')).width)); if (widest > 650) { sz = Math.floor(sz * 650 / widest); ctx.font = FONT(900, sz); } ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.lineJoin = 'round';
     lines.forEach((ln, i) => { const y = (o.y || 250) + i * sz * 1.15; const parts = ln.split('*'); let total = 0; parts.forEach((p) => { total += ctx.measureText(p).width; }); let x = 360 - total / 2;
       parts.forEach((p, j) => { const w = ctx.measureText(p).width; ctx.textAlign = 'left'; ctx.lineWidth = 14; ctx.strokeStyle = '#000'; ctx.strokeText(p, x, y); ctx.fillStyle = j % 2 ? '#ff3030' : '#ffffff'; ctx.fillText(p, x, y); x += w; }); }); ctx.restore(); };
+  // k.think(ctx, obj, text, t, t0, t1, o): a thought cloud above a character's head (o.h head height, o.size, o.bg, o.y min top)
+  k.think = (ctx, obj, txt, t, t0 = 0, t1 = 1e9, o = {}) => { const p = D.screen(obj, [0, o.h || 1.6, 0]); if (p.z > 1) return; const y = Math.max(o.y || 250, p.y - (o.up || 170)); D.thought(ctx, txt, o.x || 360, y, p.x, p.y, t, t0, t1, o); };
   const R = build(k); return Object.assign({ table: false }, R);
 }, opt);

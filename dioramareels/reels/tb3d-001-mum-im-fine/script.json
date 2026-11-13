@@ -1,0 +1,74 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "You come home and say, I'm fine. Here's what your mum actually hears.",
+   "say": "You come home and say, I'm fine. Here's what your mum actually hears."
+  },
+  {
+   "shot": "bag",
+   "cap": "You drop your bag. A little too hard.",
+   "say": "You drop your bag. A little too hard."
+  },
+  {
+   "shot": "bag",
+   "cap": "Bag drop. Level seven.",
+   "say": "Bag drop. Level seven.",
+   "who": "mum"
+  },
+  {
+   "shot": "hungry",
+   "cap": "You say, I'm not hungry.",
+   "say": "You say, I'm not hungry."
+  },
+  {
+   "shot": "hungry",
+   "cap": "Not hungry? Code red.",
+   "say": "Not hungry? Code red.",
+   "who": "mum"
+  },
+  {
+   "shot": "cook",
+   "cap": "She starts cooking. Everything. All of it.",
+   "say": "She starts cooking. Everything. All of it."
+  },
+  {
+   "shot": "room",
+   "cap": "You go to your room. Door shut.",
+   "say": "You go to your room. Door shut."
+  },
+  {
+   "shot": "room",
+   "cap": "Don't knock. Don't knock.",
+   "say": "Don't knock. Don't knock.",
+   "who": "mum"
+  },
+  {
+   "shot": "knock",
+   "cap": "She knocks once. Need anything? No.",
+   "say": "She knocks once. Need anything? No."
+  },
+  {
+   "shot": "knock",
+   "cap": "No means yes.",
+   "say": "No means yes.",
+   "who": "mum"
+  },
+  {
+   "shot": "plate",
+   "cap": "At midnight, you open the door. A plate. Still warm. And a note.",
+   "say": "At midnight, you open the door. A plate. Still warm. And a note."
+  },
+  {
+   "shot": "note",
+   "cap": "I'm fine too. Eat.",
+   "say": "I'm fine too. Eat.",
+   "who": "mum"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the one who always knows. Because when you come home and say, I'm fine.",
+   "say": "Tag the one who always knows. Because when you come home and say, I'm fine."
+  }
+ ]
+}
