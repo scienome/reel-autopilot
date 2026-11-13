@@ -1,83 +1,158 @@
 {
  "account": "MYTH",
  "username": "lokvara",
- "followers": 163,
- "fetched": "2026-11-12T03:27:30.245574Z",
+ "followers": 173,
+ "fetched": "2026-11-13T03:29:21.826077Z",
  "reels": [
+  {
+   "id": "18108747236358679",
+   "timestamp": "2026-11-13T01:00:01+0000",
+   "like_count": 33,
+   "comments_count": 1,
+   "permalink": "https://www.instagram.com/reel/DfqDb_LjSET/",
+   "caption": "क्रौंच गंधर्व, ऋषि का श्राप और गणेश जी का पाश 🐭\nकहते हैं, तभी से मूषक बना गणपति का वाहन 🙏\n",
+   "views": 1647,
+   "reach": 1495,
+   "saved": 2,
+   "shares": 0,
+   "total_interactions": 38,
+   "ig_reels_avg_watch_time": 17348,
+   "ig_reels_video_view_total_time": 25919234
+  },
+  {
+   "id": "17960103138264271",
+   "timestamp": "2026-11-12T17:00:01+0000",
+   "like_count": 53,
+   "comments_count": 1,
+   "permalink": "https://www.instagram.com/reel/DfpY2bcjmkG/",
+   "caption": "हज़ारों साल का ध्यान, और महादेव की आँखों से गिरी बूँदें 📿\nकहते हैं, उन्हीं से बने रुद्राक्",
+   "views": 1782,
+   "reach": 1593,
+   "saved": 8,
+   "shares": 10,
+   "total_interactions": 72,
+   "ig_reels_avg_watch_time": 15185,
+   "ig_reels_video_view_total_time": 24205129
+  },
+  {
+   "id": "17927952153203382",
+   "timestamp": "2026-11-12T15:30:01+0000",
+   "like_count": 41,
+   "comments_count": 1,
+   "permalink": "https://www.instagram.com/reel/DfpHpmQgXJO/",
+   "caption": "मैं हारा नहीं। मुझे मारा गया। 💔\nकर्ण की गाथा यहीं समाप्त। आपको सबसे ज़्यादा क्या याद रहेगा",
+   "views": 1881,
+   "reach": 1584,
+   "saved": 1,
+   "shares": 0,
+   "total_interactions": 43,
+   "ig_reels_avg_watch_time": 12201,
+   "ig_reels_video_view_total_time": 19657197
+  },
+  {
+   "id": "17957817552032651",
+   "timestamp": "2026-11-12T13:00:01+0000",
+   "like_count": 49,
+   "comments_count": 1,
+   "permalink": "https://www.instagram.com/reel/DfoxGvqFJNS/",
+   "caption": "मायावी असुर, आम का पेड़ और मुरुगन का वेल 🔱\nतमिल परंपरा कहती है, यहीं से मिला मोर और मुर्गा",
+   "views": 2274,
+   "reach": 2021,
+   "saved": 6,
+   "shares": 10,
+   "total_interactions": 67,
+   "ig_reels_avg_watch_time": 15660,
+   "ig_reels_video_view_total_time": 31539386
+  },
+  {
+   "id": "17916108504509115",
+   "timestamp": "2026-11-12T07:00:01+0000",
+   "like_count": 72,
+   "comments_count": 3,
+   "permalink": "https://www.instagram.com/reel/DfoHOq5geH5/",
+   "caption": "समुद्र मंथन, हलाहल विष और महादेव का नीला कंठ 💧\nकहते हैं, तभी से शिवलिंग पर जल चढ़ाया जाता ",
+   "views": 2235,
+   "reach": 1979,
+   "saved": 9,
+   "shares": 4,
+   "total_interactions": 89,
+   "ig_reels_avg_watch_time": 12047,
+   "ig_reels_video_view_total_time": 24023648
+  },
   {
    "id": "18136702552814494",
    "timestamp": "2026-11-12T01:00:01+0000",
-   "like_count": 38,
+   "like_count": 60,
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/Dfnk4pFHGUW/",
    "caption": "जब ऋषि भृगु ने त्रिदेवों की परीक्षा ली, तब विष्णु जी ने क्षमा दिखाई 🙏\nकहते हैं, उसी चरण-चि",
-   "views": 1583,
-   "reach": 1415,
-   "saved": 4,
-   "shares": 1,
-   "total_interactions": 44,
-   "ig_reels_avg_watch_time": 18013,
-   "ig_reels_video_view_total_time": 25290910
+   "views": 2637,
+   "reach": 2357,
+   "saved": 8,
+   "shares": 3,
+   "total_interactions": 72,
+   "ig_reels_avg_watch_time": 16298,
+   "ig_reels_video_view_total_time": 38382270
   },
   {
    "id": "18050596094683697",
    "timestamp": "2026-11-11T17:00:00+0000",
-   "like_count": 17,
+   "like_count": 25,
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/Dfmz8gbgIvj/",
    "caption": "राजा त्रिशंकु, ऋषि विश्वामित्र और आसमान में लटका एक सिर 🥥\nलोक-कथा कहती है, इसी से बना नारि",
-   "views": 1893,
-   "reach": 1680,
+   "views": 2253,
+   "reach": 2019,
    "saved": 6,
-   "shares": 4,
-   "total_interactions": 28,
-   "ig_reels_avg_watch_time": 12400,
-   "ig_reels_video_view_total_time": 20684619
+   "shares": 5,
+   "total_interactions": 37,
+   "ig_reels_avg_watch_time": 11854,
+   "ig_reels_video_view_total_time": 23909590
   },
   {
    "id": "17889570606491709",
    "timestamp": "2026-11-11T15:30:00+0000",
-   "like_count": 50,
+   "like_count": 61,
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfmipZvjMHD/",
    "caption": "वचन निभाया, और जो शक्ति बचाई थी वो भी चली गई। ⚔️\nक्या मैंने सही किया? 👇\n\n#karna #mahabhara",
-   "views": 2701,
-   "reach": 2190,
-   "saved": 0,
-   "shares": 0,
-   "total_interactions": 51,
-   "ig_reels_avg_watch_time": 12077,
-   "ig_reels_video_view_total_time": 26932405
+   "views": 3459,
+   "reach": 2784,
+   "saved": 1,
+   "shares": 1,
+   "total_interactions": 64,
+   "ig_reels_avg_watch_time": 12205,
+   "ig_reels_video_view_total_time": 35041103
   },
   {
    "id": "18132644645494308",
    "timestamp": "2026-11-11T13:00:01+0000",
-   "like_count": 49,
+   "like_count": 57,
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfmMceYAbdT/",
    "caption": "आधा शिव, आधी शक्ति... यह रूप कहाँ से आया? 🔱\nब्रह्मा जी की एक चिंता और अर्धनारीश्वर का प्रक",
-   "views": 1973,
-   "reach": 1802,
-   "saved": 6,
+   "views": 2224,
+   "reach": 2020,
+   "saved": 7,
    "shares": 4,
-   "total_interactions": 60,
-   "ig_reels_avg_watch_time": 10916,
-   "ig_reels_video_view_total_time": 19399050
+   "total_interactions": 69,
+   "ig_reels_avg_watch_time": 11001,
+   "ig_reels_video_view_total_time": 21969617
   },
   {
    "id": "18130549288926131",
    "timestamp": "2026-11-11T07:00:01+0000",
-   "like_count": 55,
+   "like_count": 56,
    "comments_count": 3,
    "permalink": "https://www.instagram.com/reel/DflilkFFSds/",
    "caption": "पुरी के राजा, एक बूढ़े कारीगर और एक बंद द्वार 🚪\nइसी कथा से जुड़ी हैं जगन्नाथ, बलभद्र और सु",
-   "views": 1747,
-   "reach": 1562,
+   "views": 1772,
+   "reach": 1591,
    "saved": 6,
    "shares": 2,
-   "total_interactions": 66,
-   "ig_reels_avg_watch_time": 8719,
-   "ig_reels_video_view_total_time": 13645990
+   "total_interactions": 67,
+   "ig_reels_avg_watch_time": 8726,
+   "ig_reels_video_view_total_time": 13865790
   },
   {
    "id": "17905645452606817",
@@ -86,13 +161,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/Dfk41rpnAd8/",
    "caption": "द्वार पर गणेश जी, सामने परशुराम का फरसा... और एक दाँत 🐘\nइसी कथा से गणेश जी को मिला नाम एकद",
-   "views": 1864,
-   "reach": 1643,
+   "views": 1883,
+   "reach": 1664,
    "saved": 5,
    "shares": 1,
    "total_interactions": 42,
-   "ig_reels_avg_watch_time": 10454,
-   "ig_reels_video_view_total_time": 17542868
+   "ig_reels_avg_watch_time": 10422,
+   "ig_reels_video_view_total_time": 17676276
   },
   {
    "id": "17996595486058243",
@@ -101,13 +176,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfkPTIpGKpa/",
    "caption": "कलावा बाँधते समय पंडित जी राजा बलि का नाम लेते हैं 🔴\nइस रक्षा-सूत्र के पीछे वामन और बलि की",
-   "views": 1950,
-   "reach": 1737,
+   "views": 1964,
+   "reach": 1752,
    "saved": 8,
    "shares": 6,
    "total_interactions": 49,
-   "ig_reels_avg_watch_time": 27250,
-   "ig_reels_video_view_total_time": 46870609
+   "ig_reels_avg_watch_time": 27103,
+   "ig_reels_video_view_total_time": 46996889
   },
   {
    "id": "18131010628875036",
@@ -116,28 +191,28 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/Dfj-HR8kbnx/",
    "caption": "जिस माँ ने छोड़ा था, उसी को मैंने वचन दे दिया। 💔\nक्या आप माफ़ कर पाते? 👇\n\n#karna #mahabhar",
-   "views": 2259,
-   "reach": 2003,
+   "views": 2269,
+   "reach": 2011,
    "saved": 1,
    "shares": 1,
    "total_interactions": 33,
-   "ig_reels_avg_watch_time": 8674,
-   "ig_reels_video_view_total_time": 17132761
+   "ig_reels_avg_watch_time": 8678,
+   "ig_reels_video_view_total_time": 17219027
   },
   {
    "id": "18001437854822979",
    "timestamp": "2026-11-10T13:00:01+0000",
-   "like_count": 91,
+   "like_count": 92,
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfjnXwKicCf/",
    "caption": "चंद्रमा को श्राप मिला, और महादेव ने उसे अपने मस्तक पर बिठा लिया 🌙\nइसी कथा से शिव का नाम पड",
-   "views": 2715,
-   "reach": 2418,
+   "views": 2737,
+   "reach": 2444,
    "saved": 9,
    "shares": 3,
-   "total_interactions": 104,
-   "ig_reels_avg_watch_time": 15481,
-   "ig_reels_video_view_total_time": 37433215
+   "total_interactions": 105,
+   "ig_reels_avg_watch_time": 15457,
+   "ig_reels_video_view_total_time": 37699975
   },
   {
    "id": "17878214334582241",
@@ -146,13 +221,13 @@
    "comments_count": 2,
    "permalink": "https://www.instagram.com/reel/Dfi9R5Qn3KQ/",
    "caption": "शंखचूड़, तुलसी और महादेव की त्रिशूल वाली कथा 🔱\nइसी से माना जाता है कि शिव पर शंख-जल और तुल",
-   "views": 4174,
-   "reach": 3731,
+   "views": 4245,
+   "reach": 3792,
    "saved": 8,
    "shares": 8,
    "total_interactions": 97,
-   "ig_reels_avg_watch_time": 15172,
-   "ig_reels_video_view_total_time": 56289341
+   "ig_reels_avg_watch_time": 15147,
+   "ig_reels_video_view_total_time": 57105979
   },
   {
    "id": "18377467603214370",
@@ -161,13 +236,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfiVE4ZHG0q/",
    "caption": "इंद्र की गद्दी मिली तो नहुष का घमंड आसमान पर पहुँचा 👑\nऔर फिर एक ऋषि का श्राप... 🐍\nघमंड का ",
-   "views": 1518,
-   "reach": 1370,
+   "views": 1535,
+   "reach": 1376,
    "saved": 2,
    "shares": 7,
    "total_interactions": 46,
-   "ig_reels_avg_watch_time": 17123,
-   "ig_reels_video_view_total_time": 23442641
+   "ig_reels_avg_watch_time": 17197,
+   "ig_reels_video_view_total_time": 23749134
   },
   {
    "id": "17885795424625944",
@@ -176,13 +251,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfhqiwKAnRx/",
    "caption": "पुष्कर में यज्ञ था, और मुहूर्त निकल रहा था ⏳\nइसी रात की कथा से पुष्कर का ब्रह्मा मंदिर जुड",
-   "views": 1634,
-   "reach": 1380,
+   "views": 1642,
+   "reach": 1384,
    "saved": 3,
    "shares": 6,
    "total_interactions": 66,
-   "ig_reels_avg_watch_time": 17887,
-   "ig_reels_video_view_total_time": 24594866
+   "ig_reels_avg_watch_time": 17931,
+   "ig_reels_video_view_total_time": 24799178
   },
   {
    "id": "18137462533663114",
@@ -191,28 +266,28 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfhZYnaDav6/",
    "caption": "सिंहासन मेरे सामने था, और मैंने मना कर दिया। 😢\nआप क्या चुनते? 👇\n\n#karna #mahabharat #surya",
-   "views": 7369,
-   "reach": 5971,
+   "views": 7398,
+   "reach": 5994,
    "saved": 9,
    "shares": 5,
    "total_interactions": 188,
-   "ig_reels_avg_watch_time": 14289,
-   "ig_reels_video_view_total_time": 84751525
+   "ig_reels_avg_watch_time": 14292,
+   "ig_reels_video_view_total_time": 85109906
   },
   {
    "id": "17912805000578092",
    "timestamp": "2026-11-09T13:00:01+0000",
-   "like_count": 295,
+   "like_count": 300,
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfhC5_xgHjf/",
    "caption": "वृत्र को मारकर भी इंद्र जीत का जश्न नहीं मना पाए 🪷\nस्वर्ग का सिंहासन खाली था... और एक नया ",
-   "views": 15929,
-   "reach": 13856,
+   "views": 16350,
+   "reach": 14171,
    "saved": 15,
    "shares": 13,
-   "total_interactions": 330,
-   "ig_reels_avg_watch_time": 19425,
-   "ig_reels_video_view_total_time": 267457028
+   "total_interactions": 335,
+   "ig_reels_avg_watch_time": 19436,
+   "ig_reels_video_view_total_time": 274524613
   },
   {
    "id": "18130264072891645",
@@ -221,13 +296,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfgZKoMmUP6/",
    "caption": "आग के उस स्तंभ का छोर किसे मिला? और केतकी ने क्या झूठ बोला? 🌼\nइसीलिए कहते हैं, शिव की पूजा",
-   "views": 3046,
-   "reach": 2674,
+   "views": 3059,
+   "reach": 2685,
    "saved": 8,
    "shares": 4,
    "total_interactions": 90,
-   "ig_reels_avg_watch_time": 16201,
-   "ig_reels_video_view_total_time": 42657745
+   "ig_reels_avg_watch_time": 16234,
+   "ig_reels_video_view_total_time": 42939037
   },
   {
    "id": "17956361196327388",
@@ -236,13 +311,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DffudGnGaR1/",
    "caption": "अभिमन्यु ने चक्रव्यूह में घुसना माँ के गर्भ में ही सीख लिया था 🔥\nपर बाहर निकलना... क्यों न",
-   "views": 2440,
-   "reach": 2273,
+   "views": 2448,
+   "reach": 2278,
    "saved": 3,
    "shares": 0,
    "total_interactions": 48,
-   "ig_reels_avg_watch_time": 13805,
-   "ig_reels_video_view_total_time": 31160068
+   "ig_reels_avg_watch_time": 13817,
+   "ig_reels_video_view_total_time": 31269737
   },
   {
    "id": "18119580205805336",
@@ -251,28 +326,28 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DffFpH3E_ts/",
    "caption": "अश्वत्थामा को श्री कृष्ण ने 3000 साल भटकने का श्राप दिया था 😱\nकहते हैं, असीरगढ़ के किले मे",
-   "views": 2018,
-   "reach": 1772,
+   "views": 2029,
+   "reach": 1781,
    "saved": 1,
    "shares": 2,
    "total_interactions": 40,
-   "ig_reels_avg_watch_time": 13559,
-   "ig_reels_video_view_total_time": 23606608
+   "ig_reels_avg_watch_time": 13507,
+   "ig_reels_video_view_total_time": 23638470
   },
   {
    "id": "18224574673341089",
    "timestamp": "2026-11-08T15:30:01+0000",
-   "like_count": 95,
+   "like_count": 96,
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/Dfe0catDLRA/",
    "caption": "जान जाती थी, फिर भी मैंने कवच दे दिया। 🙏\nआप होते तो देते? 👇\n\n#karna #mahabharat #suryaputr",
-   "views": 5436,
-   "reach": 4357,
+   "views": 5472,
+   "reach": 4382,
    "saved": 8,
    "shares": 2,
-   "total_interactions": 110,
-   "ig_reels_avg_watch_time": 12562,
-   "ig_reels_video_view_total_time": 54598013
+   "total_interactions": 111,
+   "ig_reels_avg_watch_time": 12535,
+   "ig_reels_video_view_total_time": 54882533
   },
   {
    "id": "18117132509325736",
@@ -281,13 +356,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfepRxZgeGQ/",
    "caption": "ये उज्जैन ज़िले का भिड़ावद गाँव है 😱 दिवाली के अगले दिन की मन्नत: ज़मीन पर लेटना, और ऊपर स",
-   "views": 1662,
-   "reach": 1554,
+   "views": 1669,
+   "reach": 1560,
    "saved": 2,
    "shares": 2,
    "total_interactions": 35,
-   "ig_reels_avg_watch_time": 8448,
-   "ig_reels_video_view_total_time": 13053163
+   "ig_reels_avg_watch_time": 8424,
+   "ig_reels_video_view_total_time": 13074504
   },
   {
    "id": "18134708840500037",
@@ -296,13 +371,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/Dfdz0aqIEzj/",
    "caption": "ये फ़िल्म नहीं... इंदौर के पास का असली रिवाज़ है 🔥\nतुर्रा बनाम कलंगी: जलते हिंगोट, और हर स",
-   "views": 2070,
-   "reach": 1830,
+   "views": 2079,
+   "reach": 1835,
    "saved": 3,
    "shares": 2,
    "total_interactions": 46,
-   "ig_reels_avg_watch_time": 10611,
-   "ig_reels_video_view_total_time": 19928816
+   "ig_reels_avg_watch_time": 10600,
+   "ig_reels_video_view_total_time": 19970938
   },
   {
    "id": "18111784382348961",
@@ -311,28 +386,28 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfdJrimEjHE/",
    "caption": "रावण कितना भी बुरा था, पर महाज्ञानी था 🙏\nमरते समय उसने लक्ष्मण को ये 3 सीख दीं... कौन सी स",
-   "views": 1569,
-   "reach": 1382,
+   "views": 1582,
+   "reach": 1384,
    "saved": 5,
    "shares": 0,
    "total_interactions": 35,
-   "ig_reels_avg_watch_time": 18557,
-   "ig_reels_video_view_total_time": 25869060
+   "ig_reels_avg_watch_time": 18600,
+   "ig_reels_video_view_total_time": 26077723
   },
   {
    "id": "18149268922562715",
    "timestamp": "2026-11-07T17:00:01+0000",
-   "like_count": 151,
+   "like_count": 153,
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/Dfcg3p-AuBG/",
    "caption": "ऋषि मांडव्य के श्राप से यमराज को मनुष्य बनना पड़ा... और वो बने विदुर 😱\nबचपन की एक भूल की इ",
-   "views": 7585,
-   "reach": 6632,
+   "views": 7681,
+   "reach": 6689,
    "saved": 7,
    "shares": 4,
-   "total_interactions": 163,
-   "ig_reels_avg_watch_time": 14827,
-   "ig_reels_video_view_total_time": 99182757
+   "total_interactions": 165,
+   "ig_reels_avg_watch_time": 14801,
+   "ig_reels_video_view_total_time": 100222861
   },
   {
    "id": "17965077246239653",
@@ -341,13 +416,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfcPryInAit/",
    "caption": "उस सभा में मैंने जो कहा, वो मेरा सबसे बड़ा पाप था। 😔\nक्या एक पाप सारे पुण्य मिटा देता है? ",
-   "views": 8504,
-   "reach": 6995,
+   "views": 8532,
+   "reach": 7011,
    "saved": 12,
    "shares": 7,
    "total_interactions": 158,
-   "ig_reels_avg_watch_time": 11060,
-   "ig_reels_video_view_total_time": 77038845
+   "ig_reels_avg_watch_time": 11064,
+   "ig_reels_video_view_total_time": 77249391
   },
   {
    "id": "18649824868045036",
@@ -356,13 +431,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/Dfb3kKDnFIG/",
    "caption": "दिवाली की एक कहानी बिहार के पावापुरी से भी जुड़ी है 🪔\nभगवान महावीर के निर्वाण की रात राजाओ",
-   "views": 1777,
-   "reach": 1619,
+   "views": 1789,
+   "reach": 1626,
    "saved": 1,
    "shares": 4,
    "total_interactions": 25,
-   "ig_reels_avg_watch_time": 8772,
-   "ig_reels_video_view_total_time": 14185278
+   "ig_reels_avg_watch_time": 8765,
+   "ig_reels_video_view_total_time": 14243300
   },
   {
    "id": "18132424255790578",
@@ -371,43 +446,43 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfbOkFGgnEx/",
    "caption": "कैलाश पर महादेव और माता पार्वती का खेल 🎲 कहते हैं दिवाली पर ताश की परंपरा यहीं से आई...\nपर",
-   "views": 3319,
-   "reach": 2900,
+   "views": 3341,
+   "reach": 2917,
    "saved": 8,
    "shares": 20,
    "total_interactions": 77,
-   "ig_reels_avg_watch_time": 14251,
-   "ig_reels_video_view_total_time": 41470732
+   "ig_reels_avg_watch_time": 14221,
+   "ig_reels_video_view_total_time": 41599138
   },
   {
    "id": "17997849672047035",
    "timestamp": "2026-11-07T01:00:01+0000",
-   "like_count": 300,
+   "like_count": 318,
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfalXl8j-_g/",
    "caption": "शूर्पणखा के पति को किसने मारा था? खुद रावण ने 😱\nफिर उसे दंडक वन भेजा... जहाँ मिले राम और ल",
-   "views": 48217,
-   "reach": 38663,
-   "saved": 74,
+   "views": 50936,
+   "reach": 40507,
+   "saved": 81,
    "shares": 21,
-   "total_interactions": 404,
-   "ig_reels_avg_watch_time": 19318,
-   "ig_reels_video_view_total_time": 749922606
+   "total_interactions": 431,
+   "ig_reels_avg_watch_time": 19364,
+   "ig_reels_video_view_total_time": 792008558
   },
   {
    "id": "18182930473438800",
    "timestamp": "2026-11-06T17:00:01+0000",
-   "like_count": 325,
+   "like_count": 336,
    "comments_count": 2,
    "permalink": "https://www.instagram.com/reel/DfZ76-wAgqe/",
    "caption": "कर्ण के सारथी राजा शल्य असल में पांडवों के मामा थे 😱\nदुर्योधन की चाल में फँसे, पर युधिष्ठि",
-   "views": 17783,
-   "reach": 14844,
+   "views": 18718,
+   "reach": 15632,
    "saved": 18,
    "shares": 5,
-   "total_interactions": 352,
-   "ig_reels_avg_watch_time": 20549,
-   "ig_reels_video_view_total_time": 305370232
+   "total_interactions": 364,
+   "ig_reels_avg_watch_time": 20507,
+   "ig_reels_video_view_total_time": 320864329
   },
   {
    "id": "18111329795212468",
@@ -416,13 +491,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfZqwJpjohx/",
    "caption": "जिसने मुझे मान दिया, मैं उसका हो गया। 🙏\nक्या आपके पास ऐसा दोस्त है? उसे टैग करें 👇\n\n#karna",
-   "views": 2609,
+   "views": 2614,
    "reach": 2178,
    "saved": 1,
    "shares": 0,
    "total_interactions": 55,
-   "ig_reels_avg_watch_time": 11073,
-   "ig_reels_video_view_total_time": 24295728
+   "ig_reels_avg_watch_time": 11077,
+   "ig_reels_video_view_total_time": 24360449
   },
   {
    "id": "18378266131242268",
@@ -431,13 +506,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfZUi2YD8kR/",
    "caption": "3 पग ज़मीन माँगी... और राजा बलि का सब कुछ चला गया 👣\nफिर दिवाली के अगले दिन उसी असुर राजा क",
-   "views": 1622,
+   "views": 1624,
    "reach": 1414,
    "saved": 4,
    "shares": 1,
    "total_interactions": 42,
-   "ig_reels_avg_watch_time": 14634,
-   "ig_reels_video_view_total_time": 20664428
+   "ig_reels_avg_watch_time": 14618,
+   "ig_reels_video_view_total_time": 20670280
   },
   {
    "id": "18113019881596631",
@@ -446,13 +521,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfYqaCKASku/",
    "caption": "गले में फूलों की माला, माथे पर टीका, सामने दावत... और पूजा कुत्तों की 🐕🌼\nनेपाल के कुकुर ति",
-   "views": 1428,
-   "reach": 1262,
+   "views": 1430,
+   "reach": 1263,
    "saved": 4,
    "shares": 12,
    "total_interactions": 64,
-   "ig_reels_avg_watch_time": 10839,
-   "ig_reels_video_view_total_time": 13549881
+   "ig_reels_avg_watch_time": 10829,
+   "ig_reels_video_view_total_time": 13558134
   },
   {
    "id": "18227767003326968",
@@ -461,13 +536,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfYBO13FU3B/",
    "caption": "रावण के बेटे मेघनाद ने देवराज इंद्र को बंदी बना लिया था ⚡\nतब ब्रह्मा जी ने उसे नाम दिया \"इ",
-   "views": 2553,
-   "reach": 2118,
+   "views": 2556,
+   "reach": 2124,
    "saved": 4,
    "shares": 5,
    "total_interactions": 38,
-   "ig_reels_avg_watch_time": 16723,
-   "ig_reels_video_view_total_time": 35670853
+   "ig_reels_avg_watch_time": 16720,
+   "ig_reels_video_view_total_time": 35715655
   },
   {
    "id": "18117664396835643",
@@ -476,13 +551,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfXXGgpDhwf/",
    "caption": "जरासंध दो आधे टुकड़ों में पैदा हुआ था, जिन्हें एक राक्षसी ने जोड़ा 😱\nइसीलिए भीम उसे 13 दिन",
-   "views": 1906,
-   "reach": 1653,
+   "views": 1907,
+   "reach": 1654,
    "saved": 7,
    "shares": 0,
    "total_interactions": 55,
-   "ig_reels_avg_watch_time": 15585,
-   "ig_reels_video_view_total_time": 25388638
+   "ig_reels_avg_watch_time": 15597,
+   "ig_reels_video_view_total_time": 25439017
   },
   {
    "id": "17915041863518234",
@@ -491,13 +566,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfXF-vXFRRm/",
    "caption": "पूरी सभा के सामने मुझसे मेरी जाति पूछी गई। 😔\nहुनर बड़ा होता है या कुल? 👇\n\n#karna #mahabhar",
-   "views": 2594,
+   "views": 2595,
    "reach": 2097,
    "saved": 1,
    "shares": 0,
    "total_interactions": 55,
-   "ig_reels_avg_watch_time": 10850,
-   "ig_reels_video_view_total_time": 22450315
+   "ig_reels_avg_watch_time": 10847,
+   "ig_reels_video_view_total_time": 22455345
   },
   {
    "id": "18115575074141398",
@@ -506,13 +581,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfW3Y9oCf76/",
    "caption": "दिवाली से पहले वाली रात गोवा सोता नहीं 🔥 गली-गली विशाल नरकासुर, ढोल और मुकाबला...\nऔर भोर ह",
-   "views": 1368,
+   "views": 1369,
    "reach": 1242,
    "saved": 4,
    "shares": 6,
    "total_interactions": 37,
    "ig_reels_avg_watch_time": 11103,
-   "ig_reels_video_view_total_time": 13645635
+   "ig_reels_video_view_total_time": 13657849
   },
   {
    "id": "18439351111196769",
@@ -521,13 +596,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfWvZy3grfV/",
    "caption": "नरकासुर को वरदान था: सिर्फ़ माँ के हाथों मरेगा 🔥 फिर कृष्ण सत्यभामा को युद्ध में क्यों ले ",
-   "views": 1573,
+   "views": 1579,
    "reach": 1358,
    "saved": 2,
    "shares": 2,
    "total_interactions": 39,
-   "ig_reels_avg_watch_time": 15486,
-   "ig_reels_video_view_total_time": 20984506
+   "ig_reels_avg_watch_time": 15495,
+   "ig_reels_video_view_total_time": 21043405
   },
   {
    "id": "17954815659337221",
@@ -536,13 +611,13 @@
    "comments_count": 2,
    "permalink": "https://www.instagram.com/reel/DfWKtwcjRcO/",
    "caption": "वैकुंठ के द्वारपाल जय-विजय को मिला श्राप... और जय बना रावण 😱\nक्या आप जानते थे रावण विष्णु ",
-   "views": 1856,
-   "reach": 1570,
+   "views": 1861,
+   "reach": 1573,
    "saved": 4,
    "shares": 6,
    "total_interactions": 58,
-   "ig_reels_avg_watch_time": 13917,
-   "ig_reels_video_view_total_time": 21599635
+   "ig_reels_avg_watch_time": 13923,
+   "ig_reels_video_view_total_time": 21650508
   },
   {
    "id": "17979459144138582",
@@ -581,13 +656,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfUdnedCN4A/",
    "caption": "मैंने दर्द सहा, पर गुरु ने सच जान लिया। 🩸\nक्या ये श्राप सही था? 👇\n\n#karna #mahabharat #sur",
-   "views": 2462,
-   "reach": 2055,
+   "views": 2464,
+   "reach": 2057,
    "saved": 2,
    "shares": 1,
    "total_interactions": 72,
-   "ig_reels_avg_watch_time": 11033,
-   "ig_reels_video_view_total_time": 23071355
+   "ig_reels_avg_watch_time": 11024,
+   "ig_reels_video_view_total_time": 23075115
   },
   {
    "id": "17995695504056991",
@@ -596,13 +671,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfUHzd2lYQx/",
    "caption": "दिवाली पर दीये राम जी के लिए जले... फिर पूजा लक्ष्मी-गणेश की क्यों होती है? 🪔\nऔर लक्ष्मी ज",
-   "views": 1324,
-   "reach": 1168,
+   "views": 1325,
+   "reach": 1169,
    "saved": 3,
    "shares": 1,
    "total_interactions": 46,
-   "ig_reels_avg_watch_time": 13965,
-   "ig_reels_video_view_total_time": 15850572
+   "ig_reels_avg_watch_time": 13953,
+   "ig_reels_video_view_total_time": 15851697
   },
   {
    "id": "18374945077215373",
@@ -611,13 +686,13 @@
    "comments_count": 3,
    "permalink": "https://www.instagram.com/reel/DfTl5__mVUq/",
    "caption": "लंका पर पहले राज करते थे धन के देवता कुबेर 💰\nरावण ने अपने ही भाई से लंका और पुष्पक विमान द",
-   "views": 3239,
-   "reach": 2753,
+   "views": 3243,
+   "reach": 2756,
    "saved": 3,
    "shares": 3,
    "total_interactions": 76,
-   "ig_reels_avg_watch_time": 16018,
-   "ig_reels_video_view_total_time": 43667652
+   "ig_reels_avg_watch_time": 16020,
+   "ig_reels_video_view_total_time": 43719533
   },
   {
    "id": "18120050423054528",
@@ -626,13 +701,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfTCl5nAAso/",
    "caption": "राजकुमारी अंबा ने कसम खाई थी: \"मैं ही भीष्म की मृत्यु का कारण बनूँगी\" 🔥\nऔर अगले जन्म में ब",
-   "views": 2374,
-   "reach": 2034,
+   "views": 2377,
+   "reach": 2038,
    "saved": 1,
    "shares": 0,
    "total_interactions": 44,
-   "ig_reels_avg_watch_time": 16335,
-   "ig_reels_video_view_total_time": 33128518
+   "ig_reels_avg_watch_time": 16317,
+   "ig_reels_video_view_total_time": 33157063
   },
   {
    "id": "17911844358664140",
@@ -641,13 +716,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfSN7LiDt2L/",
    "caption": "रावण को हराने वाले सिर्फ़ राम नहीं थे 😱\nहज़ार भुजाओं वाले राजा कार्तवीर्य अर्जुन ने उसे रस",
-   "views": 1976,
-   "reach": 1658,
+   "views": 1981,
+   "reach": 1661,
    "saved": 6,
    "shares": 4,
    "total_interactions": 52,
-   "ig_reels_avg_watch_time": 16654,
-   "ig_reels_video_view_total_time": 27279531
+   "ig_reels_avg_watch_time": 16677,
+   "ig_reels_video_view_total_time": 27367486
   },
   {
    "id": "18098686751444722",
@@ -656,13 +731,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfR46VwEyMz/",
    "caption": "ब्रह्मास्त्र सीखने के लिए मुझे झूठ बोलना पड़ा। 😔\nक्या मेरा झूठ सही था? 👇\n\n#karna #mahabhar",
-   "views": 1986,
-   "reach": 1560,
+   "views": 1988,
+   "reach": 1562,
    "saved": 3,
    "shares": 1,
    "total_interactions": 56,
-   "ig_reels_avg_watch_time": 12618,
-   "ig_reels_video_view_total_time": 20063605
+   "ig_reels_avg_watch_time": 12629,
+   "ig_reels_video_view_total_time": 20105555
   },
   {
    "id": "17883016665629744",
@@ -671,13 +746,13 @@
    "comments_count": 3,
    "permalink": "https://www.instagram.com/reel/DfRigWKDFMo/",
    "caption": "अश्वमेध यज्ञ में अर्जुन को उनके ही बेटे बभ्रुवाहन ने मार दिया 😱\nफिर नागमणि से कौन लाया उन्",
-   "views": 3078,
-   "reach": 2693,
+   "views": 3080,
+   "reach": 2696,
    "saved": 4,
    "shares": 3,
    "total_interactions": 80,
-   "ig_reels_avg_watch_time": 15997,
-   "ig_reels_video_view_total_time": 43496527
+   "ig_reels_avg_watch_time": 15987,
+   "ig_reels_video_view_total_time": 43501117
   },
   {
    "id": "17917032330547720",
@@ -686,13 +761,13 @@
    "comments_count": 2,
    "permalink": "https://www.instagram.com/reel/DfRA4SFH-71/",
    "caption": "रावण बाली से लड़ने गया... और बाली ने उसे बगल में दबाकर चारों समुद्र घुमा दिए 🐒🌊\nक्या आप ये",
-   "views": 5239,
-   "reach": 4522,
+   "views": 5262,
+   "reach": 4532,
    "saved": 4,
    "shares": 6,
    "total_interactions": 137,
-   "ig_reels_avg_watch_time": 14631,
-   "ig_reels_video_view_total_time": 65258011
+   "ig_reels_avg_watch_time": 14621,
+   "ig_reels_video_view_total_time": 65503040
   },
   {
    "id": "18076320368751872",
@@ -701,28 +776,28 @@
    "comments_count": 2,
    "permalink": "https://www.instagram.com/reel/DfQdFLxDKZ-/",
    "caption": "द्रौपदी के अपमान पर पूरी सभा चुप थी... सिर्फ़ विकर्ण ने आवाज़ उठाई ✊\nऔर युद्ध में उसकी मौत",
-   "views": 18724,
-   "reach": 15054,
+   "views": 18751,
+   "reach": 15082,
    "saved": 29,
    "shares": 3,
    "total_interactions": 304,
-   "ig_reels_avg_watch_time": 21410,
-   "ig_reels_video_view_total_time": 327476808
+   "ig_reels_avg_watch_time": 21403,
+   "ig_reels_video_view_total_time": 327909171
   },
   {
    "id": "18359644540169723",
    "timestamp": "2026-11-02T17:30:01+0000",
-   "like_count": 182,
+   "like_count": 184,
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfPopRcn3v7/",
    "caption": "रावण ने सीता माता को एक साल कैद रखा, पर कभी छुआ तक नहीं 🤔\nवजह थी नलकूबर का ये श्राप... 👇\n\n",
-   "views": 10055,
-   "reach": 8351,
-   "saved": 17,
+   "views": 10189,
+   "reach": 8435,
+   "saved": 18,
    "shares": 22,
-   "total_interactions": 226,
-   "ig_reels_avg_watch_time": 16871,
-   "ig_reels_video_view_total_time": 139641575
+   "total_interactions": 229,
+   "ig_reels_avg_watch_time": 16824,
+   "ig_reels_video_view_total_time": 141171962
   },
   {
    "id": "18162264019498341",
@@ -731,13 +806,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfPUBxXjorG/",
    "caption": "एक सारथी के घर पला सूर्य का बेटा। दुनिया ने नाम दिया, सूतपुत्र। 💔\nक्या जन्म से इंसान की की",
-   "views": 1832,
-   "reach": 1541,
+   "views": 1835,
+   "reach": 1544,
    "saved": 4,
    "shares": 0,
    "total_interactions": 45,
-   "ig_reels_avg_watch_time": 9919,
-   "ig_reels_video_view_total_time": 15097534
+   "ig_reels_avg_watch_time": 9905,
+   "ig_reels_video_view_total_time": 15106003
   },
   {
    "id": "17951995641342411",
@@ -746,13 +821,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfO_Wu2D42S/",
    "caption": "धृतराष्ट्र का एक पुत्र युद्ध से ठीक पहले पांडवों की तरफ़ चला गया 😱\nऔर 18 दिन बाद... सिर्फ़",
-   "views": 2872,
+   "views": 2873,
    "reach": 2424,
    "saved": 6,
    "shares": 2,
    "total_interactions": 87,
-   "ig_reels_avg_watch_time": 14013,
-   "ig_reels_video_view_total_time": 33883475
+   "ig_reels_avg_watch_time": 14008,
+   "ig_reels_video_view_total_time": 33887339
   },
   {
    "id": "18110677400230460",
@@ -761,13 +836,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfOcnb5k6qt/",
    "caption": "पिछले जन्म में सीता थीं वेदवती 🔥\nरावण के अपमान के बाद उन्होंने आग में कूदकर ये श्राप दिया.",
-   "views": 2494,
+   "views": 2496,
    "reach": 2130,
    "saved": 7,
    "shares": 4,
    "total_interactions": 94,
-   "ig_reels_avg_watch_time": 12802,
-   "ig_reels_video_view_total_time": 27474751
+   "ig_reels_avg_watch_time": 12791,
+   "ig_reels_video_view_total_time": 27476175
   },
   {
    "id": "18194437414401073",
@@ -776,13 +851,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfN3UxxDRdw/",
    "caption": "बिना गुरु के एकलव्य अर्जुन से बड़ा धनुर्धर बन गया 🏹\nफिर द्रोणाचार्य ने गुरु दक्षिणा में उस",
-   "views": 1824,
+   "views": 1827,
    "reach": 1573,
    "saved": 4,
    "shares": 0,
    "total_interactions": 46,
-   "ig_reels_avg_watch_time": 16770,
-   "ig_reels_video_view_total_time": 26345837
+   "ig_reels_avg_watch_time": 16776,
+   "ig_reels_video_view_total_time": 26389613
   },
   {
    "id": "17926432713438820",
@@ -791,13 +866,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfNDy0_gfQ1/",
    "caption": "रावण ने नंदीश्वर के वानर जैसे मुख का मज़ाक उड़ाया 😂\nऔर फिर मिला वो श्राप, जिसने लंका का अं",
-   "views": 1924,
-   "reach": 1677,
+   "views": 1928,
+   "reach": 1684,
    "saved": 2,
    "shares": 3,
    "total_interactions": 48,
-   "ig_reels_avg_watch_time": 13426,
-   "ig_reels_video_view_total_time": 22611020
+   "ig_reels_avg_watch_time": 13415,
+   "ig_reels_video_view_total_time": 22631492
   },
   {
    "id": "18098774006431707",
@@ -806,13 +881,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfMvMi5AQ8P/",
    "caption": "मैं कर्ण हूँ। ये मेरी अपनी कहानी है। 💔\nउस रात मेरी माँ किनारे पर खड़ी रहीं, और मैं बहता रह",
-   "views": 1576,
-   "reach": 1331,
+   "views": 1577,
+   "reach": 1333,
    "saved": 2,
    "shares": 4,
    "total_interactions": 45,
-   "ig_reels_avg_watch_time": 18956,
-   "ig_reels_video_view_total_time": 25401503
+   "ig_reels_avg_watch_time": 18943,
+   "ig_reels_video_view_total_time": 25402981
   },
   {
    "id": "18103517609456268",
@@ -821,13 +896,13 @@
    "comments_count": 2,
    "permalink": "https://www.instagram.com/reel/DfMYML0Icmw/",
    "caption": "अर्जुन और नाग कन्या उलूपी के पुत्र इरावन ने विजय के लिए अपनी बलि दी 🙏\nउसकी आखिरी इच्छा पूर",
-   "views": 1875,
-   "reach": 1604,
+   "views": 1878,
+   "reach": 1606,
    "saved": 0,
    "shares": 1,
    "total_interactions": 53,
-   "ig_reels_avg_watch_time": 15475,
-   "ig_reels_video_view_total_time": 24884823
+   "ig_reels_avg_watch_time": 15458,
+   "ig_reels_video_view_total_time": 24888023
   },
   {
    "id": "17919060015523811",
@@ -836,13 +911,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfL3CA0Dmwe/",
    "caption": "रावण का असली नाम था दशग्रीव 😱\nफिर उसे \"रावण\" नाम किसने दिया, और क्यों? 👇\n\n#ravana #mahadev",
-   "views": 3239,
-   "reach": 2863,
+   "views": 3241,
+   "reach": 2875,
    "saved": 4,
    "shares": 9,
    "total_interactions": 92,
-   "ig_reels_avg_watch_time": 14818,
-   "ig_reels_video_view_total_time": 42113007
+   "ig_reels_avg_watch_time": 14816,
+   "ig_reels_video_view_total_time": 42139367
   },
   {
    "id": "18031628519914147",
@@ -851,13 +926,13 @@
    "comments_count": 3,
    "permalink": "https://www.instagram.com/reel/DfLSbXDjZYx/",
    "caption": "घटोत्कच की मौत पर श्री कृष्ण खुश क्यों थे? 😱\nक्योंकि कर्ण की वो शक्ति अब अर्जुन पर नहीं चल",
-   "views": 5382,
-   "reach": 4496,
+   "views": 5407,
+   "reach": 4505,
    "saved": 8,
    "shares": 1,
    "total_interactions": 177,
-   "ig_reels_avg_watch_time": 20614,
-   "ig_reels_video_view_total_time": 92744134
+   "ig_reels_avg_watch_time": 20617,
+   "ig_reels_video_view_total_time": 93127069
   },
   {
    "id": "17906402346668720",
@@ -866,13 +941,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfKKeQXkVul/",
    "caption": "रावण ने ब्रह्मा जी को अपने 9 सिर अर्पित किए 🔥\nपर वरदान माँगते समय उसने एक गलती कर दी... 👇\n",
-   "views": 1892,
-   "reach": 1611,
+   "views": 1895,
+   "reach": 1612,
    "saved": 0,
    "shares": 3,
    "total_interactions": 63,
-   "ig_reels_avg_watch_time": 17372,
-   "ig_reels_video_view_total_time": 27119210
+   "ig_reels_avg_watch_time": 17365,
+   "ig_reels_video_view_total_time": 27142372
   },
   {
    "id": "18568182760073241",
@@ -881,13 +956,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfJypwNjyuN/",
    "caption": "भीम का पोता बर्बरीक सिर्फ़ 3 बाणों से पूरा युद्ध खत्म कर सकता था 🏹\nफिर कृष्ण ने उसका शीश द",
-   "views": 2130,
-   "reach": 1841,
+   "views": 2133,
+   "reach": 1843,
    "saved": 5,
    "shares": 2,
    "total_interactions": 85,
-   "ig_reels_avg_watch_time": 16930,
-   "ig_reels_video_view_total_time": 30694481
+   "ig_reels_avg_watch_time": 16916,
+   "ig_reels_video_view_total_time": 30703670
   },
   {
    "id": "18020712251956736",
@@ -896,13 +971,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfJAcUyJBaS/",
    "caption": "रावण ने शनिदेव को बंदी क्यों बनाया था? 😱🔱\n\nजिस रावण से देवता भी भय खाते थे, उसने शनिदेव को",
-   "views": 72562,
+   "views": 72587,
    "reach": 62619,
    "saved": 131,
    "shares": 121,
    "total_interactions": 2594,
-   "ig_reels_avg_watch_time": 24786,
-   "ig_reels_video_view_total_time": 1582091357
+   "ig_reels_avg_watch_time": 24779,
+   "ig_reels_video_view_total_time": 1582255121
   },
   {
    "id": "18082119977529491",
@@ -911,13 +986,13 @@
    "comments_count": 4,
    "permalink": "https://www.instagram.com/reel/DfIC1ZjT2Ha/",
    "caption": "एक शब्द की गलती… और 6 महीने की नींद! 😱\n\nआखिर कुंभकर्ण को ऐसा कौन-सा वरदान मिला था, जिसने उ",
-   "views": 3130,
+   "views": 3133,
    "reach": 2580,
    "saved": 5,
    "shares": 4,
    "total_interactions": 106,
-   "ig_reels_avg_watch_time": 25593,
-   "ig_reels_video_view_total_time": 67182684
+   "ig_reels_avg_watch_time": 25584,
+   "ig_reels_video_view_total_time": 67210669
   }
  ]
 }
