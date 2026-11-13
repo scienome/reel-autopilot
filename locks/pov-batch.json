@@ -1,10 +1,10 @@
 {
  "job": "pov-batch",
- "status": "in_progress",
+ "status": "done",
  "owner": "vm-e56ea9",
  "started": "2026-11-13T21:19:14Z",
- "updated": "2026-11-13T21:19:14Z",
- "note": "",
+ "updated": "2026-11-13T21:19:34Z",
+ "note": "skipped: queue 82 unposted (~20 days); owner said scheduled runs OFF",
  "history": [
   {
    "owner": "vm-1d86de",
