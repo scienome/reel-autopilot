@@ -1,0 +1,105 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Don't hit snooze. Your old self is watching.",
+   "say": "Don't hit snooze. Your old self is watching."
+  },
+  {
+   "shot": "bed",
+   "cap": "Seven a.m. The alarm rings.",
+   "say": "Seven a.m. The alarm rings."
+  },
+  {
+   "shot": "bed",
+   "cap": "Five more minutes.",
+   "say": "Five more minutes.",
+   "who": "you",
+   "emotion": "calm"
+  },
+  {
+   "shot": "bed",
+   "cap": "Five more minutes. That's how my knees went.",
+   "say": "Five more minutes. That's how my knees went.",
+   "who": "old",
+   "bubble": "THAT'S HOW MY KNEES WENT. 🦵",
+   "emotion": "angry"
+  },
+  {
+   "shot": "kit",
+   "cap": "Coffee counts as water, right?",
+   "say": "Coffee counts as water, right?",
+   "who": "you",
+   "emotion": "happy"
+  },
+  {
+   "shot": "kit",
+   "cap": "It does not. I have three kidney stones. I named them after you.",
+   "say": "It does not. I have three kidney stones. I named them after you.",
+   "who": "old",
+   "bubble": "3 KIDNEY STONES. NAMED AFTER YOU. 😤",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "text",
+   "cap": "Should I text my ex?",
+   "say": "Should I text my ex?",
+   "who": "you",
+   "bubble": "TEXT MY EX? 📱",
+   "think": true,
+   "emotion": "anxious"
+  },
+  {
+   "shot": "text",
+   "cap": "Don't. You. Dare.",
+   "say": "Don't. You. Dare.",
+   "who": "old",
+   "bubble": "DON'T. YOU. DARE. ☝️",
+   "emotion": "angry"
+  },
+  {
+   "shot": "text",
+   "cap": "He texts his ex.",
+   "say": "He texts his ex."
+  },
+  {
+   "shot": "text",
+   "cap": "Forty years of regret. Loading.",
+   "say": "Forty years of regret. Loading.",
+   "who": "old",
+   "bubble": "40 YEARS OF REGRET… LOADING ▓▓░",
+   "emotion": "sad"
+  },
+  {
+   "shot": "run",
+   "cap": "Then, one morning, he goes for a run.",
+   "say": "Then, one morning, he goes for a run."
+  },
+  {
+   "shot": "run",
+   "cap": "Wait. He's running. He's actually running!",
+   "say": "Wait. He's running. He's actually running!",
+   "who": "old",
+   "bubble": "HE'S… RUNNING?! 😳",
+   "emotion": "excited"
+  },
+  {
+   "shot": "twist",
+   "cap": "And the old man starts to fade.",
+   "say": "And the old man starts to fade."
+  },
+  {
+   "shot": "twist",
+   "cap": "No, no, wait! I'm changing! I'm sixty now. Nice.",
+   "say": "No, no, wait! I'm changing! I'm sixty now. Nice.",
+   "who": "old",
+   "bubble": "WAIT— I'M 60 NOW?! NICE. 😎",
+   "emotion": "happy"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the one who needs to see this. Don't hit snooze. Your old self is watching.",
+   "say": "Tag the one who needs to see this. Don't hit snooze. Your old self is watching."
+  }
+ ]
+}

@@ -1,0 +1,85 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "He's invisible. But only when nobody's looking.",
+   "say": "He's invisible. But only when nobody's looking."
+  },
+  {
+   "shot": "st",
+   "cap": "He has a superpower. He turns invisible. But only when nobody is looking.",
+   "say": "He has a superpower. He turns invisible. But only when nobody is looking."
+  },
+  {
+   "shot": "st",
+   "cap": "I'm invisible right now. I can feel it.",
+   "say": "I'm invisible right now. I can feel it.",
+   "who": "kabir",
+   "bubble": "I'M INVISIBLE RIGHT NOW. 😎",
+   "emotion": "proud"
+  },
+  {
+   "shot": "st",
+   "cap": "Bro, you're literally standing right there.",
+   "say": "Bro, you're literally standing right there.",
+   "who": "friend",
+   "bubble": "BRO. YOU'RE RIGHT THERE. 🙄",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "room",
+   "cap": "Alone in his room? Totally invisible. Nobody there to see it.",
+   "say": "Alone in his room? Totally invisible. Nobody there to see it."
+  },
+  {
+   "shot": "call",
+   "cap": "Who's making noise up there?",
+   "say": "Who's making noise up there?",
+   "who": "mum",
+   "emotion": "angry"
+  },
+  {
+   "shot": "call",
+   "cap": "Nobody, Mum. I'm invisible!",
+   "say": "Nobody, Mum. I'm invisible!",
+   "who": "kabir",
+   "bubble": "NOBODY, MUM. I'M INVISIBLE! 🫥",
+   "emotion": "excited"
+  },
+  {
+   "shot": "call",
+   "cap": "You're wearing my towel.",
+   "say": "You're wearing my towel.",
+   "who": "mum",
+   "bubble": "YOU'RE WEARING MY TOWEL. 😑",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "twist",
+   "cap": "Nobody believes him. Except one.",
+   "say": "Nobody believes him. Except one."
+  },
+  {
+   "shot": "twist",
+   "cap": "He's there. He's always there. Nobody listens to me.",
+   "say": "He's there. He's always there. Nobody listens to me.",
+   "who": "dog",
+   "bubble": "HE'S THERE. ALWAYS. NOBODY LISTENS. 🐶",
+   "think": true,
+   "emotion": "sad"
+  },
+  {
+   "shot": "twist",
+   "cap": "Same, buddy. Same.",
+   "say": "Same, buddy. Same.",
+   "who": "ghost",
+   "bubble": "SAME, BUDDY. SAME. 👻",
+   "emotion": "sad"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag who'd get this power. He's invisible. But only when nobody's looking.",
+   "say": "Tag who'd get this power. He's invisible. But only when nobody's looking."
+  }
+ ]
+}

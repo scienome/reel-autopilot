@@ -1,0 +1,104 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "The animals won. You're in the zoo now.",
+   "say": "The animals won. You're in the zoo now."
+  },
+  {
+   "shot": "zoo",
+   "cap": "Year 2090. The animals took over.",
+   "say": "Year 2090. The animals took over."
+  },
+  {
+   "shot": "zoo",
+   "cap": "Welcome to the Human Zoo! Please don't feed the humans.",
+   "say": "Welcome to the Human Zoo! Please don't feed the humans.",
+   "who": "fox",
+   "bubble": "PLEASE DON'T FEED THE HUMANS. 🦊",
+   "emotion": "happy"
+  },
+  {
+   "shot": "zoo",
+   "cap": "Mummy, what is that one doing?",
+   "say": "Mummy, what is that one doing?",
+   "who": "lamb",
+   "bubble": "WHAT IS THAT ONE DOING? 🐑",
+   "emotion": "excited"
+  },
+  {
+   "shot": "zoo",
+   "cap": "That's a human scrolling. They do it nine hours a day.",
+   "say": "That's a human scrolling. They do it nine hours a day.",
+   "who": "fox",
+   "bubble": "SCROLLING. 9 HOURS A DAY. 📱",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "zoo",
+   "cap": "Just one more reel.",
+   "say": "Just one more reel.",
+   "who": "man",
+   "bubble": "JUST ONE MORE REEL. 📱",
+   "think": true,
+   "emotion": "calm"
+  },
+  {
+   "shot": "zoo",
+   "cap": "Why does it look so sad?",
+   "say": "Why does it look so sad?",
+   "who": "lamb",
+   "emotion": "sad"
+  },
+  {
+   "shot": "zoo",
+   "cap": "It's waiting for a reply. Since Tuesday.",
+   "say": "It's waiting for a reply. Since Tuesday.",
+   "who": "fox",
+   "bubble": "WAITING FOR A REPLY. SINCE TUESDAY. 🥲",
+   "emotion": "sad"
+  },
+  {
+   "shot": "court",
+   "cap": "Meanwhile, at Animal Court.",
+   "say": "Meanwhile, at Animal Court."
+  },
+  {
+   "shot": "court",
+   "cap": "Next case. The dog. Accused of eating homework.",
+   "say": "Next case. The dog. Accused of eating homework.",
+   "who": "cow",
+   "bubble": "THE DOG. ATE HOMEWORK. ⚖️",
+   "emotion": "calm"
+  },
+  {
+   "shot": "court",
+   "cap": "It was delicious.",
+   "say": "It was delicious.",
+   "who": "dog",
+   "bubble": "IT WAS DELICIOUS. 😋",
+   "emotion": "happy"
+  },
+  {
+   "shot": "twist",
+   "cap": "Guilty. Sentence. One bath.",
+   "say": "Guilty. Sentence. One bath.",
+   "who": "cow",
+   "bubble": "GUILTY. ONE BATH. 🛁",
+   "emotion": "angry"
+  },
+  {
+   "shot": "twist",
+   "cap": "Noooo!",
+   "say": "Noooo!",
+   "who": "dog",
+   "bubble": "NOOOO! 😱",
+   "emotion": "scared"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the human who belongs in this zoo. The animals won. You're in the zoo now.",
+   "say": "Tag the human who belongs in this zoo. The animals won. You're in the zoo now."
+  }
+ ]
+}

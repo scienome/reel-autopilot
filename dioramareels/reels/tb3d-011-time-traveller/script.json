@@ -1,0 +1,102 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "He's from 2090. And he's not allowed to warn you.",
+   "say": "He's from 2090. And he's not allowed to warn you."
+  },
+  {
+   "shot": "sit",
+   "cap": "Rule one of time travel. Never tell anyone the future.",
+   "say": "Rule one of time travel. Never tell anyone the future."
+  },
+  {
+   "shot": "sit",
+   "cap": "Should I buy a house now, or wait?",
+   "say": "Should I buy a house now, or wait?",
+   "who": "raj",
+   "emotion": "calm"
+  },
+  {
+   "shot": "sit",
+   "cap": "Buy. Buy now. No. Rule one.",
+   "say": "Buy. Buy now. No. Rule one.",
+   "who": "trav",
+   "bubble": "BUY. BUY NOW— NO. RULE ONE. 🤐",
+   "think": true,
+   "emotion": "anxious"
+  },
+  {
+   "shot": "sit",
+   "cap": "Honestly, I think AI is just a phase.",
+   "say": "Honestly, I think AI is just a phase.",
+   "who": "mia",
+   "emotion": "content"
+  },
+  {
+   "shot": "sit",
+   "cap": "Oh, you sweet summer child.",
+   "say": "Oh, you sweet summer child.",
+   "who": "trav",
+   "bubble": "OH… SWEET SUMMER CHILD. 🤖",
+   "think": true,
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "water",
+   "cap": "That's four hundred rupees for the water.",
+   "say": "That's four hundred rupees for the water.",
+   "who": "waiter",
+   "emotion": "calm"
+  },
+  {
+   "shot": "water",
+   "cap": "You pay for water? You pay for water?",
+   "say": "You pay for water? You pay for water?",
+   "who": "trav",
+   "bubble": "YOU PAY FOR WATER?! 💧",
+   "emotion": "scared"
+  },
+  {
+   "shot": "slip",
+   "cap": "Anyway, I'm putting all my savings into...",
+   "say": "Anyway, I'm putting all my savings into...",
+   "who": "raj",
+   "emotion": "excited"
+  },
+  {
+   "shot": "slip",
+   "cap": "Don't! I mean. Don't forget your umbrella.",
+   "say": "Don't! I mean. Don't forget your umbrella.",
+   "who": "trav",
+   "bubble": "DON'T!— …FORGET YOUR UMBRELLA. ☂️",
+   "emotion": "anxious"
+  },
+  {
+   "shot": "twist",
+   "cap": "Then he vanishes. Mid sentence.",
+   "say": "Then he vanishes. Mid sentence."
+  },
+  {
+   "shot": "twist",
+   "cap": "Did he just disappear?",
+   "say": "Did he just disappear?",
+   "who": "mia",
+   "bubble": "DID HE JUST… DISAPPEAR? 😳",
+   "emotion": "scared"
+  },
+  {
+   "shot": "twist",
+   "cap": "Every Tuesday. Same guy.",
+   "say": "Every Tuesday. Same guy.",
+   "who": "ghost",
+   "bubble": "EVERY TUESDAY. SAME GUY. 👻",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the friend who'd ruin time travel in five minutes. He's from 2090. And he's not allowed to warn you.",
+   "say": "Tag the friend who'd ruin time travel in five minutes. He's from 2090. And he's not allowed to warn you."
+  }
+ ]
+}

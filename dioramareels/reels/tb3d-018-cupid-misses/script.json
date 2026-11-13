@@ -1,0 +1,98 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Cupid missed. Now the dog loves the vacuum.",
+   "say": "Cupid missed. Now the dog loves the vacuum."
+  },
+  {
+   "shot": "office",
+   "cap": "Cupid has one job today. Make the boss fall in love.",
+   "say": "Cupid has one job today. Make the boss fall in love."
+  },
+  {
+   "shot": "office",
+   "cap": "Okay, okay, one more shot. Aim for the boss. Aaand, that's the printer. That's a printer.",
+   "say": "Okay, okay, one more shot. Aim for the boss. Aaand, that's the printer. That's a printer.",
+   "who": "cupid",
+   "bubble": "AIM FOR THE BOSS… THAT'S A PRINTER. 😬",
+   "emotion": "scared"
+  },
+  {
+   "shot": "office",
+   "cap": "Who is this beautiful machine?",
+   "say": "Who is this beautiful machine?",
+   "who": "boss",
+   "bubble": "WHO IS THIS BEAUTIFUL MACHINE? 😍",
+   "think": true,
+   "emotion": "happy"
+  },
+  {
+   "shot": "office",
+   "cap": "Shall we print something together?",
+   "say": "Shall we print something together?",
+   "who": "boss",
+   "bubble": "SHALL WE… PRINT SOMETHING? 🖨️💕",
+   "emotion": "happy"
+  },
+  {
+   "shot": "home",
+   "cap": "Second try. At home.",
+   "say": "Second try. At home."
+  },
+  {
+   "shot": "home",
+   "cap": "Easy. Aim for the girl next door.",
+   "say": "Easy. Aim for the girl next door.",
+   "who": "cupid",
+   "bubble": "EASY. AIM FOR THE GIRL NEXT DOOR. 🎯",
+   "emotion": "proud"
+  },
+  {
+   "shot": "home",
+   "cap": "He hits the dog.",
+   "say": "He hits the dog."
+  },
+  {
+   "shot": "dog",
+   "cap": "Who is she? Round. Shiny. She hums.",
+   "say": "Who is she? Round. Shiny. She hums.",
+   "who": "dog",
+   "bubble": "ROUND. SHINY. SHE HUMS. 😍",
+   "think": true,
+   "emotion": "happy"
+  },
+  {
+   "shot": "dog",
+   "cap": "The dog now follows the vacuum everywhere.",
+   "say": "The dog now follows the vacuum everywhere."
+  },
+  {
+   "shot": "twist",
+   "cap": "Cupid gives up. He trips. And hits himself.",
+   "say": "Cupid gives up. He trips. And hits himself."
+  },
+  {
+   "shot": "twist",
+   "cap": "Oh no. Oh no no no.",
+   "say": "Oh no. Oh no no no.",
+   "who": "cupid",
+   "bubble": "OH NO. NO NO NO. 💘",
+   "emotion": "scared"
+  },
+  {
+   "shot": "twist",
+   "cap": "She's beautiful.",
+   "say": "She's beautiful.",
+   "who": "cupid",
+   "bubble": "SHE'S… BEAUTIFUL. 🖨️😍",
+   "think": true,
+   "emotion": "happy"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag who'd get hit by Cupid's worst arrow. Cupid missed. Now the dog loves the vacuum.",
+   "say": "Tag who'd get hit by Cupid's worst arrow. Cupid missed. Now the dog loves the vacuum."
+  }
+ ]
+}

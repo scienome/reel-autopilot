@@ -1,0 +1,102 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Never say I wish to a genie. Here's why.",
+   "say": "Never say I wish to a genie. Here's why."
+  },
+  {
+   "shot": "rub",
+   "cap": "He rubs an old lamp. Out comes a genie.",
+   "say": "He rubs an old lamp. Out comes a genie."
+  },
+  {
+   "shot": "rub",
+   "cap": "Three wishes! Any wish!",
+   "say": "Three wishes! Any wish!",
+   "who": "genie",
+   "bubble": "3 WISHES! ANY WISH! ✨",
+   "emotion": "excited"
+  },
+  {
+   "shot": "rub",
+   "cap": "I wish I was rich!",
+   "say": "I wish I was rich!",
+   "who": "dev",
+   "bubble": "I WISH I WAS RICH! 💰",
+   "emotion": "excited"
+  },
+  {
+   "shot": "coin",
+   "cap": "Rich, you said? Done! Enjoy being a coin!",
+   "say": "Rich, you said? Done! Enjoy being a coin!",
+   "who": "genie",
+   "bubble": "DONE! ENJOY BEING A COIN! 🪙",
+   "emotion": "excited"
+  },
+  {
+   "shot": "coin",
+   "cap": "He is now a coin. A two rupee coin.",
+   "say": "He is now a coin. A two rupee coin."
+  },
+  {
+   "shot": "small",
+   "cap": "I wish I was human again!",
+   "say": "I wish I was human again!",
+   "who": "dev",
+   "bubble": "I WISH I WAS HUMAN AGAIN! 😱",
+   "emotion": "scared"
+  },
+  {
+   "shot": "small",
+   "cap": "Done!",
+   "say": "Done!",
+   "who": "genie",
+   "bubble": "DONE! ✨",
+   "emotion": "happy"
+  },
+  {
+   "shot": "small",
+   "cap": "He's human again. Two centimetres tall.",
+   "say": "He's human again. Two centimetres tall."
+  },
+  {
+   "shot": "rules",
+   "cap": "I wish I was normal size, and rich, and...",
+   "say": "I wish I was normal size, and rich, and...",
+   "who": "dev",
+   "emotion": "anxious"
+  },
+  {
+   "shot": "rules",
+   "cap": "Ah ah ah. That's four wishes. Page one of the rules.",
+   "say": "Ah ah ah. That's four wishes. Page one of the rules.",
+   "who": "genie",
+   "bubble": "4 WISHES? PAGE ONE. 📜",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "twist",
+   "cap": "The rule book is forty pages long.",
+   "say": "The rule book is forty pages long."
+  },
+  {
+   "shot": "twist",
+   "cap": "Rule one. Speak slowly.",
+   "say": "Rule one. Speak slowly.",
+   "who": "genie",
+   "bubble": "RULE ONE: SPEAK. SLOWLY. 🧞",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "twist",
+   "cap": "He has one wish left. He's still on page two.",
+   "say": "He has one wish left. He's still on page two."
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the friend who'd waste all three. Never say I wish to a genie.",
+   "say": "Tag the friend who'd waste all three. Never say I wish to a genie."
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+// tb3d-010-future-self Thought Bubble 3D (k.tb template): Don't hit snooze. Your old self is watching. 👴⏰
+STORY((k) => k.tb({ hook: "DON'T HIT *SNOOZE*.\nYOUR OLD SELF IS WATCHING.", tag: 'TAG WHO NEEDS THIS 👇', cast: { you: { body: 'm', look: 'e' }, old: { body: 'm', look: 'e', costume: 'old' } },
+  sets: { bed: { type: 'bedroom', at: { you: [0.3, -0.6, 0.2], old: [-1.1, 0.5, 0.5] }, props: [['phone', 1.2, 0.6, -0.9, 0]] },
+   kit: { type: 'kitchen', at: { you: [0.4, 0.3, -0.3], old: [-0.8, 0.6, 0.5] } },
+   park: { type: 'park', at: { you: [0.5, 0.8, 0.3], old: [-0.8, 1.1, 0.4] } } },
+  shots: { hook: { set: 'bed', cam: 'two', noBubble: true, card: '⏰ 7:00 AM', cardBg: '#d8504a' }, bed: { set: 'bed' }, kit: { set: 'kit' }, text: { set: 'bed', boom: ['SENT. 💀', 0.62] }, run: { set: 'park', pose: { you: 'run' } },
+   twist: { set: 'park', pose: { you: 'run' }, move: (t, kk, a) => { a.old.traverse((m) => { if (m.material) { if (!m.material.transparent) { m.material.transparent = true; m.material.needsUpdate = true; } m.material.opacity = kk < 0.45 ? 1 - kk * 1.6 : 0.35 + (kk - 0.45) * 1.2; } }); } }, outro: { set: 'park', cam: 'wide', pose: { you: 'run' } } } }), { assets: [...(window.TB_ASSETS || []), 'mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/ual1'] });

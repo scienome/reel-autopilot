@@ -1,0 +1,7 @@
+// tb3d-018-cupid-misses Thought Bubble 3D (k.tb template): Cupid missed. Now the dog loves the vacuum. 💘🐶
+STORY((k) => k.tb({ hook: 'CUPID *MISSED*.\nNOW THE DOG LOVES THE VACUUM.', tag: "TAG WHO'D GET HIT 💘👇", cast: { cupid: { body: 'm', look: 'a', costume: 'cupid', h: 1.25, float: 0.45 }, boss: { body: 'm', look: 'f' }, dog: { animal: 'dog' } }, colors: { cupid: ['#ffe0ea', '#8a1a3a'] },
+  sets: { off: { type: 'office', at: { boss: [0.6, 0.3, -0.4], cupid: [-0.9, 0.6, 0.5] }, props: [['printer', 1.5, 0.0, -0.4, -0.5]] },
+   liv: { type: 'living', at: { cupid: [-0.9, 0.6, 0.5], dog: [0.6, 0.8, -0.6] }, props: [['sofa', 0, 0, -1.5, 0], ['vacuum', 1.4, 0, 0.6, 0]] } },
+  shots: { hook: { set: 'liv', cam: 'two', noBubble: true }, office: { set: 'off', boom: ['THWIP 💘', 0.42] }, home: { set: 'liv', boom: ['THWIP 💘', 0.75] },
+   dog: { set: 'liv', move: (t, kk, a, g) => { const v = g.userData.vacuum; if (v) { v.position.set(1.4 - kk * 2.4, 0, 0.6 + Math.sin(kk * 6) * 0.3); } if (a.dog) { a.dog.position.x = (v ? v.position.x : 0) + 0.7; a.dog.position.z = (v ? v.position.z : 0.6) - 0.2; a.dog.rotation.y = -1.57; } }, pose: { dog: 'walk' } },
+   twist: { set: 'off', hide: ['boss'] }, outro: { set: 'liv', cam: 'wide' } } }), { assets: [...(window.TB_ASSETS || []), 'mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/ual1', 'animals/dog'] });

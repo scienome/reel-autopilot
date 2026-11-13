@@ -1,0 +1,101 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "We have twenty four hours left. So I told the truth.",
+   "say": "We have twenty four hours left. So I told the truth."
+  },
+  {
+   "shot": "news",
+   "cap": "Breaking news. An asteroid hits Earth tomorrow.",
+   "say": "Breaking news. An asteroid hits Earth tomorrow."
+  },
+  {
+   "shot": "crush",
+   "cap": "I've liked you since school.",
+   "say": "I've liked you since school.",
+   "who": "arjun",
+   "bubble": "I'VE LIKED YOU SINCE SCHOOL. 😳",
+   "emotion": "anxious"
+  },
+  {
+   "shot": "crush",
+   "cap": "I know. Everyone knows.",
+   "say": "I know. Everyone knows.",
+   "who": "mira",
+   "bubble": "I KNOW. EVERYONE KNOWS. 🙄",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "mum",
+   "cap": "I always knew you broke the vase. Twenty years ago.",
+   "say": "I always knew you broke the vase. Twenty years ago.",
+   "who": "mum",
+   "bubble": "I KNEW ABOUT THE VASE. 20 YEARS. 🏺",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "mum",
+   "cap": "Mum!",
+   "say": "Mum!",
+   "who": "arjun",
+   "bubble": "MUM?! 😱",
+   "emotion": "scared"
+  },
+  {
+   "shot": "boss",
+   "cap": "Your jokes are not funny. They never were.",
+   "say": "Your jokes are not funny. They never were.",
+   "who": "arjun",
+   "bubble": "YOUR JOKES. NEVER FUNNY. 😐",
+   "emotion": "angry"
+  },
+  {
+   "shot": "boss",
+   "cap": "Fair.",
+   "say": "Fair.",
+   "who": "boss",
+   "bubble": "…FAIR. 😔",
+   "emotion": "sad"
+  },
+  {
+   "shot": "twist",
+   "cap": "Then. An update.",
+   "say": "Then. An update."
+  },
+  {
+   "shot": "twist",
+   "cap": "The asteroid missed.",
+   "say": "The asteroid missed."
+  },
+  {
+   "shot": "twist",
+   "cap": "So. See you Monday.",
+   "say": "So. See you Monday.",
+   "who": "boss",
+   "bubble": "SEE YOU MONDAY. 😏",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "twist",
+   "cap": "So. Dinner?",
+   "say": "So. Dinner?",
+   "who": "mira",
+   "bubble": "SO… DINNER? 💛",
+   "emotion": "happy"
+  },
+  {
+   "shot": "twist",
+   "cap": "Wait. Really?",
+   "say": "Wait. Really?",
+   "who": "arjun",
+   "bubble": "WAIT. REALLY?! 🥹",
+   "emotion": "excited"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag who you'd tell the truth to. We have twenty four hours left. So I told the truth.",
+   "say": "Tag who you'd tell the truth to. We have twenty four hours left. So I told the truth."
+  }
+ ]
+}

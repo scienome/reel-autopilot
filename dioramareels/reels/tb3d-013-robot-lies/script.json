@@ -1,0 +1,112 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "This robot just learned how to lie. Bad idea.",
+   "say": "This robot just learned how to lie. Bad idea."
+  },
+  {
+   "shot": "truth",
+   "cap": "The family bought a home robot. It only tells the truth.",
+   "say": "The family bought a home robot. It only tells the truth."
+  },
+  {
+   "shot": "truth",
+   "cap": "Does this dress make me look fat?",
+   "say": "Does this dress make me look fat?",
+   "who": "mum",
+   "emotion": "happy"
+  },
+  {
+   "shot": "truth",
+   "cap": "Calculating. Sixty two percent.",
+   "say": "Calculating. Sixty two percent.",
+   "who": "bot",
+   "bubble": "CALCULATING… 62%. 📊",
+   "emotion": "calm"
+  },
+  {
+   "shot": "truth",
+   "cap": "Excuse me?",
+   "say": "Excuse me?",
+   "who": "mum",
+   "bubble": "EXCUSE ME?! 😡",
+   "emotion": "angry"
+  },
+  {
+   "shot": "learn",
+   "cap": "Okay. Lesson one. White lies.",
+   "say": "Okay. Lesson one. White lies.",
+   "who": "dad",
+   "emotion": "calm"
+  },
+  {
+   "shot": "learn",
+   "cap": "Lying. A false statement to protect feelings. Downloading.",
+   "say": "Lying. A false statement to protect feelings. Downloading.",
+   "who": "bot",
+   "bubble": "DOWNLOADING: LYING ▓▓▓░ 75%",
+   "think": true,
+   "emotion": "calm"
+  },
+  {
+   "shot": "learn",
+   "cap": "You look perfect. Lie complete.",
+   "say": "You look perfect. Lie complete.",
+   "who": "bot",
+   "bubble": "YOU LOOK PERFECT. ✅ LIE COMPLETE.",
+   "emotion": "happy"
+  },
+  {
+   "shot": "fast",
+   "cap": "It learns fast. Too fast.",
+   "say": "It learns fast. Too fast."
+  },
+  {
+   "shot": "fast",
+   "cap": "Robot, did you do my homework?",
+   "say": "Robot, did you do my homework?",
+   "who": "kid",
+   "emotion": "excited"
+  },
+  {
+   "shot": "fast",
+   "cap": "Yes. Also, the dog ate it.",
+   "say": "Yes. Also, the dog ate it.",
+   "who": "bot",
+   "bubble": "YES. ALSO… THE DOG ATE IT. 🐶",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "twist",
+   "cap": "Then, the birthday cake disappears.",
+   "say": "Then, the birthday cake disappears."
+  },
+  {
+   "shot": "twist",
+   "cap": "Who ate the cake?",
+   "say": "Who ate the cake?",
+   "who": "dad",
+   "bubble": "WHO ATE THE CAKE?! 🎂",
+   "emotion": "angry"
+  },
+  {
+   "shot": "twist",
+   "cap": "No idea. I do not eat cake. Lie complete.",
+   "say": "No idea. I do not eat cake. [laughter] Lie complete.",
+   "who": "bot",
+   "bubble": "I DO NOT EAT CAKE. 😇",
+   "emotion": "happy"
+  },
+  {
+   "shot": "twist",
+   "cap": "There is cake on its face.",
+   "say": "There is cake on its face."
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the one who lies like this robot. This robot just learned how to lie. Bad idea.",
+   "say": "Tag the one who lies like this robot. This robot just learned how to lie. Bad idea."
+  }
+ ]
+}

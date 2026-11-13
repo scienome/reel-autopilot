@@ -1,0 +1,104 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "A mermaid got the job. You didn't.",
+   "say": "A mermaid got the job. You didn't."
+  },
+  {
+   "shot": "intro",
+   "cap": "Two candidates. One job.",
+   "say": "Two candidates. One job."
+  },
+  {
+   "shot": "intro",
+   "cap": "I have an MBA and ten years of experience.",
+   "say": "I have an MBA and ten years of experience.",
+   "who": "cand",
+   "bubble": "MBA. 10 YEARS EXPERIENCE. 😎",
+   "emotion": "proud"
+  },
+  {
+   "shot": "intro",
+   "cap": "I have a tail. And confidence.",
+   "say": "I have a tail. And confidence.",
+   "who": "pearl",
+   "bubble": "I HAVE A TAIL. AND CONFIDENCE. 💅",
+   "think": true,
+   "emotion": "proud"
+  },
+  {
+   "shot": "q1",
+   "cap": "Where do you see yourself in five years?",
+   "say": "Where do you see yourself in five years?",
+   "who": "hr",
+   "emotion": "calm"
+  },
+  {
+   "shot": "q1",
+   "cap": "Honestly? Wet. Do I get the job?",
+   "say": "Honestly? Wet. [laughter] Do I get the job?",
+   "who": "pearl",
+   "bubble": "HONESTLY? WET. 💦",
+   "emotion": "happy"
+  },
+  {
+   "shot": "q2",
+   "cap": "Can you handle pressure?",
+   "say": "Can you handle pressure?",
+   "who": "hr",
+   "emotion": "calm"
+  },
+  {
+   "shot": "q2",
+   "cap": "I live at the bottom of the ocean. Pressure is my whole life.",
+   "say": "I live at the bottom of the ocean. Pressure is my whole life.",
+   "who": "pearl",
+   "bubble": "PRESSURE IS MY WHOLE LIFE. 🌊",
+   "emotion": "proud"
+  },
+  {
+   "shot": "q2",
+   "cap": "She can't even use the stairs.",
+   "say": "She can't even use the stairs.",
+   "who": "cand",
+   "bubble": "SHE CAN'T EVEN DO STAIRS. 🙄",
+   "think": true,
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "pick",
+   "cap": "The job goes to. The mermaid.",
+   "say": "The job goes to. The mermaid.",
+   "who": "hr",
+   "bubble": "THE JOB GOES TO… 🧜‍♀️",
+   "emotion": "happy"
+  },
+  {
+   "shot": "pick",
+   "cap": "What? Why?",
+   "say": "What? Why?",
+   "who": "cand",
+   "bubble": "WHAT?! WHY?! 😡",
+   "emotion": "angry"
+  },
+  {
+   "shot": "twist",
+   "cap": "Then he sees under the desk.",
+   "say": "Then he sees under the desk."
+  },
+  {
+   "shot": "twist",
+   "cap": "Us fish have to stick together.",
+   "say": "Us fish have to stick together.",
+   "who": "hr",
+   "bubble": "US FISH STICK TOGETHER. 🐟",
+   "emotion": "happy"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the friend who'd ace this interview. A mermaid got the job. You didn't.",
+   "say": "Tag the friend who'd ace this interview. A mermaid got the job. You didn't."
+  }
+ ]
+}

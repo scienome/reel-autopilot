@@ -201,12 +201,15 @@ def main(rid):
             t += gap
             pcm.append(b'\0\0' * int(gap * 44100))
         lcfg = dict(cfg, voice_id=cfg.get('cast', {}).get(ln['who'], cfg['voice_id'])) if ln.get('who') else cfg  # a line can be spoken by a character: script line "who", voice.json "cast": {who: voice_id}
-        name = hashlib.sha1(f"{lcfg['voice_id']}|{lcfg['model_id']}|{ln['say']}{'|' + ln['emotion'] if ln.get('emotion') else ''}".encode()).hexdigest()[:16] + '.mp3'  # a line can carry an emotion (Cartesia) and [laughter] in its say
+        fx = cfg.get('fx', {}).get(ln.get('who') or '', '')  # voice.json "fx": {who: "robot"} adds a voice effect to that character
+        name = hashlib.sha1(f"{lcfg['voice_id']}|{lcfg['model_id']}|{ln['say']}{'|' + ln['emotion'] if ln.get('emotion') else ''}{'|' + fx if fx else ''}".encode()).hexdigest()[:16] + '.mp3'  # a line can carry an emotion (Cartesia) and [laughter] in its say
         mp3 = os.path.join(takes, name)
         keep.add(name)
         if not os.path.exists(mp3):
             print('voicing:', ln['say'], flush=True)
             tts(ln['say'], lcfg, mp3, ln.get('emotion'))
+            if fx == 'robot':
+                subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', mp3, '-af', 'aecho=0.8:0.6:12:0.4,chorus=0.6:0.9:20:0.4:0.25:2', '-b:a', '128k', mp3 + '.fx.mp3'], check=True); os.replace(mp3 + '.fx.mp3', mp3); level(mp3)
         wav = os.path.join(out, name + '.wav')
         subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', mp3, '-ac', '1', '-ar', '44100', '-sample_fmt', 's16', wav], check=True)
         with wave.open(wav) as w:

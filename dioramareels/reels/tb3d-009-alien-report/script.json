@@ -1,0 +1,109 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "This alien studied humans for one day. He quit.",
+   "say": "This alien studied humans for one day. He quit."
+  },
+  {
+   "shot": "queue",
+   "cap": "Day one. First stop, a bus queue.",
+   "say": "Day one. First stop, a bus queue."
+  },
+  {
+   "shot": "queue",
+   "cap": "Forty humans. Standing still. For a bus that is not coming.",
+   "say": "Forty humans. Standing still. For a bus that is not coming.",
+   "who": "zork",
+   "bubble": "40 HUMANS. 1 BUS. 0 HOPE. 🚌",
+   "think": true,
+   "emotion": "anxious"
+  },
+  {
+   "shot": "queue",
+   "cap": "Relax, it's coming. Five minutes.",
+   "say": "Relax, it's coming. Five minutes.",
+   "who": "man",
+   "emotion": "calm"
+  },
+  {
+   "shot": "queue",
+   "cap": "He has said five minutes for one hour.",
+   "say": "He has said five minutes for one hour.",
+   "who": "zork",
+   "bubble": "HE SAID '5 MINUTES'… 1 HOUR AGO. ⏳",
+   "think": true,
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "wed",
+   "cap": "Evening. A wedding.",
+   "say": "Evening. A wedding."
+  },
+  {
+   "shot": "wed",
+   "cap": "She was this small! Now look at her!",
+   "say": "She was this small! Now look at her!",
+   "who": "uncle",
+   "bubble": "SHE WAS THIS SMALL! 😭",
+   "emotion": "sad"
+  },
+  {
+   "shot": "wed",
+   "cap": "The large one is leaking. Is he in danger?",
+   "say": "The large one is leaking. Is he in danger?",
+   "who": "zork",
+   "bubble": "THE LARGE ONE IS LEAKING. 😨",
+   "think": true,
+   "emotion": "scared"
+  },
+  {
+   "shot": "wed",
+   "cap": "And you, beta? When is your wedding?",
+   "say": "And you, beta? When is your wedding?",
+   "who": "aunty",
+   "bubble": "WHEN IS YOUR WEDDING? 👀",
+   "emotion": "excited"
+  },
+  {
+   "shot": "wed",
+   "cap": "I am four hundred years old. Abort mission.",
+   "say": "I am four hundred years old. Abort mission.",
+   "who": "zork",
+   "bubble": "I'M 400. ABORT MISSION. 🛸",
+   "think": true,
+   "emotion": "scared"
+  },
+  {
+   "shot": "report",
+   "cap": "Back on the ship, he files his report.",
+   "say": "Back on the ship, he files his report."
+  },
+  {
+   "shot": "report",
+   "cap": "Humans wait in lines. They leak at parties. They ask strangers when they will marry.",
+   "say": "Humans wait in lines. They leak at parties. They ask strangers when they will marry.",
+   "who": "zork",
+   "bubble": "REPORT: HUMANS ARE… WEIRD. 📝",
+   "emotion": "sad"
+  },
+  {
+   "shot": "twist",
+   "cap": "So. They're just like us.",
+   "say": "So. They're just like us.",
+   "who": "boss",
+   "bubble": "SO… THEY'RE JUST LIKE US. 🥲",
+   "emotion": "sad"
+  },
+  {
+   "shot": "twist",
+   "cap": "Then the boss starts crying. At the report.",
+   "say": "Then the boss starts crying. At the report."
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the human who'd confuse an alien. This alien studied humans for one day. He quit.",
+   "say": "Tag the human who'd confuse an alien. This alien studied humans for one day. He quit."
+  }
+ ]
+}

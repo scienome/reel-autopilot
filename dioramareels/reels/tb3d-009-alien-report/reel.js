@@ -1,0 +1,7 @@
+// tb3d-009-alien-report Thought Bubble 3D (k.tb template): This alien studied humans for one day. He quit. 👽
+STORY((k) => k.tb({ hook: 'THIS ALIEN STUDIED HUMANS\nFOR ONE DAY. HE *QUIT*.', tag: "TAG WHO'D CONFUSE AN ALIEN 👇", cast: { zork: { body: 'm', look: 'a', costume: 'alien' }, boss: { body: 'm', look: 'c', costume: 'alien' }, man: { body: 'm', look: 'e' }, uncle: { body: 'm', look: 'f' }, aunty: { body: 'f', look: 'd' }, ghost: { ghost: true } },
+  sets: { ship: { type: 'space', at: { zork: [-0.5, 0.6, 0.3], boss: [0.6, 0.2, -0.4] }, props: [['clipboard', -0.15, 0.75, 0.95, 0]] },
+   st: { type: 'street', at: { man: [1.0, 1.6, 0.2, 0.18], zork: [-0.2, 1.8, 0.5, 0.18] }, props: [['saucer', -3.2, 3.2, -1.5, 0]] },
+   wed: { type: 'wedding', at: { uncle: [0.2, 0.3, -0.2], aunty: [1.3, 0.0, -0.5], zork: [-1.0, 0.6, 0.5], ghost: [-2.4, 1.3, -1.2] } } },
+  shots: { hook: { set: 'ship', cam: 'two', noBubble: true }, queue: { set: 'st', card: 'DAY 1 · BUS STOP', cardBg: '#2a6ae0' }, wed: { set: 'wed', boom: ['WHAT?!', 0.82] }, report: { set: 'ship', note: ['HUMANS:\nWAIT. LEAK.\nASK. 👽', '— Agent Zork'] },
+   twist: { set: 'ship', cam: 'two' }, outro: { set: 'ship', cam: 'wide' } } }), { assets: [...(window.TB_ASSETS || []), 'mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/ual1'] });

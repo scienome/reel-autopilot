@@ -1,0 +1,101 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "My roommate hasn't paid rent since 1427.",
+   "say": "My roommate hasn't paid rent since 1427."
+  },
+  {
+   "shot": "meet",
+   "cap": "Meet Victor. Roommate. Six hundred years old.",
+   "say": "Meet Victor. Roommate. Six hundred years old."
+  },
+  {
+   "shot": "meet",
+   "cap": "Victor, rent is due.",
+   "say": "Victor, rent is due.",
+   "who": "ben",
+   "emotion": "calm"
+  },
+  {
+   "shot": "meet",
+   "cap": "Rent? My dear boy, I haven't paid rent since fourteen twenty seven. And put that garlic bread away.",
+   "say": "Rent? My dear boy, I haven't paid rent since fourteen twenty seven. And put that garlic bread away.",
+   "who": "victor",
+   "bubble": "RENT? NOT SINCE 1427. 🧄❌",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "meet",
+   "cap": "It's my garlic bread. It's my kitchen.",
+   "say": "It's my garlic bread. It's my kitchen.",
+   "who": "ben",
+   "bubble": "MY BREAD. MY KITCHEN. 😤",
+   "think": true,
+   "emotion": "angry"
+  },
+  {
+   "shot": "sun",
+   "cap": "Six a.m. Every morning.",
+   "say": "Six a.m. Every morning."
+  },
+  {
+   "shot": "sun",
+   "cap": "Close. The. Curtains!",
+   "say": "Close. The. Curtains!",
+   "who": "victor",
+   "bubble": "CLOSE. THE. CURTAINS! ☀️😱",
+   "emotion": "angry"
+  },
+  {
+   "shot": "selfie",
+   "cap": "Selfie?",
+   "say": "Selfie?",
+   "who": "ben",
+   "emotion": "happy"
+  },
+  {
+   "shot": "selfie",
+   "cap": "I have no reflection. Stop asking.",
+   "say": "I have no reflection. Stop asking.",
+   "who": "victor",
+   "bubble": "NO REFLECTION. STOP ASKING. 🪞",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "knock",
+   "cap": "Then, the landlord comes to collect.",
+   "say": "Then, the landlord comes to collect."
+  },
+  {
+   "shot": "knock",
+   "cap": "Victor. Rent. Six hundred years of it.",
+   "say": "Victor. Rent. Six hundred years of it.",
+   "who": "landlord",
+   "bubble": "RENT. 600 YEARS OF IT. 🧾",
+   "emotion": "angry"
+  },
+  {
+   "shot": "twist",
+   "cap": "Hello, Dad.",
+   "say": "Hello, Dad.",
+   "who": "victor",
+   "bubble": "HELLO… DAD. 😬",
+   "emotion": "anxious"
+  },
+  {
+   "shot": "twist",
+   "cap": "His dad is my landlord. Who do I complain to now?",
+   "say": "His dad is my landlord. Who do I complain to now?",
+   "who": "ben",
+   "bubble": "WHO DO I COMPLAIN TO NOW?! 😩",
+   "think": true,
+   "emotion": "sad"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag your roommate who never pays rent. Mine hasn't paid since 1427.",
+   "say": "Tag your roommate who never pays rent. Mine hasn't paid since 1427."
+  }
+ ]
+}

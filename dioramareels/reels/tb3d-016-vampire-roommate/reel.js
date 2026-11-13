@@ -1,0 +1,6 @@
+// tb3d-016-vampire-roommate Thought Bubble 3D (k.tb template): My roommate hasn't paid rent since 1427. 🧛
+STORY((k) => k.tb({ hook: "MY ROOMMATE HASN'T PAID\nRENT SINCE *1427*.", tag: 'TAG YOUR ROOMMATE 👇', cast: { victor: { body: 'm', look: 'a', costume: 'vampire' }, ben: { body: 'm', look: 'e' }, landlord: { body: 'm', look: 'f', costume: 'vampire' } }, colors: { victor: ['#2a0a14', '#ffd0d8'], landlord: ['#2a0a14', '#ffd0d8'] },
+  sets: { liv: { type: 'living', at: { victor: [-0.6, 0.6, 0.3], ben: [0.6, 0.6, -0.3], landlord: [1.8, -0.2, -0.7] }, props: [['sofa', 0, 0, -1.5, 0]] },
+   kit: { type: 'kitchen', at: { victor: [-0.6, 0.4, 0.4], ben: [0.7, 0.4, -0.4] } } },
+  shots: { hook: { set: 'liv', cam: 'two', noBubble: true, dark: true, hide: ['landlord'] }, meet: { set: 'kit' }, sun: { set: 'liv', card: '⏰ 6:00 AM · SUNRISE', cardBg: '#e8902a', hide: ['landlord', 'ben'] }, selfie: { set: 'liv', hide: ['landlord'] },
+   knock: { set: 'liv', dark: true }, twist: { set: 'liv', dark: true, boom: ['DAD?!', 0.2] }, outro: { set: 'liv', cam: 'wide', dark: true } } }), { assets: [...(window.TB_ASSETS || []), 'mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/ual1'] });

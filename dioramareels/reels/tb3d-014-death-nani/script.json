@@ -1,0 +1,107 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Death came for Grandma. She made him tea.",
+   "say": "Death came for Grandma. She made him tea."
+  },
+  {
+   "shot": "door",
+   "cap": "Eleven p.m. A knock at the door.",
+   "say": "Eleven p.m. A knock at the door."
+  },
+  {
+   "shot": "door",
+   "cap": "Good evening, madam. I'm afraid it's time.",
+   "say": "Good evening, madam. I'm afraid it's time.",
+   "who": "death",
+   "bubble": "IT'S TIME, MADAM. 💀",
+   "emotion": "calm"
+  },
+  {
+   "shot": "door",
+   "cap": "Time for tea? Come in, come in. You're so thin!",
+   "say": "Time for tea? Come in, come in. You're so thin!",
+   "who": "nani",
+   "bubble": "TEA? COME IN! YOU'RE SO THIN! 🫖",
+   "emotion": "happy"
+  },
+  {
+   "shot": "tea",
+   "cap": "Oh. Is that tea? Well. Perhaps one cup.",
+   "say": "Oh. Is that tea? Well. Perhaps one cup.",
+   "who": "death",
+   "bubble": "WELL… PERHAPS ONE CUP. ☕",
+   "emotion": "calm"
+  },
+  {
+   "shot": "tea",
+   "cap": "One cup became three. Then dinner.",
+   "say": "One cup became three. Then dinner."
+  },
+  {
+   "shot": "tea",
+   "cap": "Eat, beta. Who feeds you? Nobody feeds you.",
+   "say": "Eat, beta. Who feeds you? Nobody feeds you.",
+   "who": "nani",
+   "bubble": "EAT, BETA. NOBODY FEEDS YOU. 🍛",
+   "emotion": "content"
+  },
+  {
+   "shot": "tea",
+   "cap": "Nobody has called me beta in four thousand years.",
+   "say": "Nobody has called me beta in four thousand years.",
+   "who": "death",
+   "bubble": "4000 YEARS. NOBODY SAID 'BETA'. 🥲",
+   "think": true,
+   "emotion": "sad"
+  },
+  {
+   "shot": "later",
+   "cap": "Eight months later.",
+   "say": "Eight months later."
+  },
+  {
+   "shot": "later",
+   "cap": "Nani, I knitted you a scarf.",
+   "say": "Nani, I knitted you a scarf.",
+   "who": "death",
+   "bubble": "I KNITTED YOU A SCARF. 🧣",
+   "emotion": "happy"
+  },
+  {
+   "shot": "later",
+   "cap": "Too short. Do it again.",
+   "say": "Too short. Do it again.",
+   "who": "nani",
+   "bubble": "TOO SHORT. AGAIN. 😤",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "later",
+   "cap": "He still hasn't done his job. I've been waiting since 1824.",
+   "say": "He still hasn't done his job. I've been waiting since 1824.",
+   "who": "ghost",
+   "bubble": "STILL WAITING SINCE 1824. 👻",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "twist",
+   "cap": "Death still visits every Sunday. Grandma is ninety nine.",
+   "say": "Death still visits every Sunday. Grandma is ninety nine."
+  },
+  {
+   "shot": "twist",
+   "cap": "Same time next week, Nani?",
+   "say": "Same time next week, Nani?",
+   "who": "death",
+   "bubble": "SAME TIME NEXT WEEK, NANI? 💀💛",
+   "emotion": "happy"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the grandma who could beat Death. Death came for Grandma. She made him tea.",
+   "say": "Tag the grandma who could beat Death. Death came for Grandma. She made him tea."
+  }
+ ]
+}

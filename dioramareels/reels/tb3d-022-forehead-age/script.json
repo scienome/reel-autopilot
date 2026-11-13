@@ -1,0 +1,78 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Your real age is on your forehead. Starting now.",
+   "say": "Your real age is on your forehead. Starting now."
+  },
+  {
+   "shot": "nine",
+   "cap": "Nine a.m. Everyone's real age appears. On their forehead.",
+   "say": "Nine a.m. Everyone's real age appears. On their forehead."
+  },
+  {
+   "shot": "gym",
+   "cap": "I'm nineteen? Everyone thought I was forty.",
+   "say": "I'm nineteen? Everyone thought I was forty.",
+   "who": "gym",
+   "bubble": "I'M 19?! EVERYONE SAID 40. 💪😭",
+   "emotion": "sad"
+  },
+  {
+   "shot": "boss",
+   "cap": "My dating profile says thirty nine.",
+   "say": "My dating profile says thirty nine.",
+   "who": "boss",
+   "bubble": "MY PROFILE SAYS 39. 😬",
+   "think": true,
+   "emotion": "anxious"
+  },
+  {
+   "shot": "rita",
+   "cap": "Thirty four. I have four grandchildren. And a skincare routine.",
+   "say": "Thirty four. I have four grandchildren. And a skincare routine.",
+   "who": "rita",
+   "bubble": "34. FOUR GRANDKIDS. SKINCARE. 💅",
+   "emotion": "proud"
+  },
+  {
+   "shot": "new",
+   "cap": "Then. The new guy walks in.",
+   "say": "Then. The new guy walks in."
+  },
+  {
+   "shot": "new",
+   "cap": "Why does yours say question mark?",
+   "say": "Why does yours say question mark?",
+   "who": "intern",
+   "bubble": "WHY DOES YOURS SAY '?' 🤨",
+   "emotion": "scared"
+  },
+  {
+   "shot": "new",
+   "cap": "No reason. I am a normal age.",
+   "say": "No reason. I am a normal age.",
+   "who": "trav",
+   "bubble": "NO REASON. NORMAL AGE. 😅",
+   "emotion": "anxious"
+  },
+  {
+   "shot": "twist",
+   "cap": "Then his forehead loads. It says 2090.",
+   "say": "Then his forehead loads. It says 2090."
+  },
+  {
+   "shot": "twist",
+   "cap": "Wrong office. Bye.",
+   "say": "Wrong office. Bye.",
+   "who": "trav",
+   "bubble": "WRONG OFFICE. BYE. ⏳",
+   "emotion": "anxious"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag who'd panic first. Your real age is on your forehead. Starting now.",
+   "say": "Tag who'd panic first. Your real age is on your forehead. Starting now."
+  }
+ ]
+}

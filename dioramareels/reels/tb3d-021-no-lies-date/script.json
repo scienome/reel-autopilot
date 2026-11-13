@@ -1,0 +1,111 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "In this world, you can't lie. Even on a first date.",
+   "say": "In this world, you can't lie. Even on a first date."
+  },
+  {
+   "shot": "date",
+   "cap": "So. How old are you?",
+   "say": "So. How old are you?",
+   "who": "maya",
+   "emotion": "happy"
+  },
+  {
+   "shot": "date",
+   "cap": "Older than my photos.",
+   "say": "Older than my photos.",
+   "who": "sam",
+   "bubble": "OLDER THAN MY PHOTOS. 📸",
+   "emotion": "sad"
+  },
+  {
+   "shot": "date",
+   "cap": "Why are you single?",
+   "say": "Why are you single?",
+   "who": "sam",
+   "emotion": "calm"
+  },
+  {
+   "shot": "date",
+   "cap": "I text back after three days. On purpose.",
+   "say": "I text back after three days. On purpose.",
+   "who": "maya",
+   "bubble": "I TEXT BACK AFTER 3 DAYS. ON PURPOSE. 😈",
+   "emotion": "proud"
+  },
+  {
+   "shot": "food",
+   "cap": "How's the food?",
+   "say": "How's the food?",
+   "who": "waiter",
+   "emotion": "happy"
+  },
+  {
+   "shot": "food",
+   "cap": "Terrible.",
+   "say": "Terrible.",
+   "who": "sam",
+   "bubble": "TERRIBLE. 🤢",
+   "emotion": "calm"
+  },
+  {
+   "shot": "food",
+   "cap": "I know. I cooked it.",
+   "say": "I know. I cooked it.",
+   "who": "waiter",
+   "bubble": "I KNOW. I COOKED IT. 😔",
+   "emotion": "sad"
+  },
+  {
+   "shot": "job",
+   "cap": "Do you have a job?",
+   "say": "Do you have a job?",
+   "who": "maya",
+   "emotion": "calm"
+  },
+  {
+   "shot": "job",
+   "cap": "My mum pays me to leave the house.",
+   "say": "My mum pays me to leave the house.",
+   "who": "sam",
+   "bubble": "MUM PAYS ME TO LEAVE THE HOUSE. 💸",
+   "emotion": "sad"
+  },
+  {
+   "shot": "twist",
+   "cap": "Silence. Then they both blurt it out.",
+   "say": "Silence. Then they both blurt it out."
+  },
+  {
+   "shot": "twist",
+   "cap": "I like you.",
+   "say": "I like you.",
+   "who": "sam",
+   "bubble": "I LIKE YOU. 😳",
+   "emotion": "anxious"
+  },
+  {
+   "shot": "twist",
+   "cap": "I like you too. Ugh.",
+   "say": "I like you too. Ugh.",
+   "who": "maya",
+   "bubble": "I LIKE YOU TOO. UGH. 💛",
+   "emotion": "happy"
+  },
+  {
+   "shot": "twist",
+   "cap": "Can't lie about that either.",
+   "say": "Can't lie about that either.",
+   "who": "ghost",
+   "bubble": "CAN'T LIE ABOUT THAT EITHER. 👻💛",
+   "emotion": "content"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag who'd survive this date. In this world, you can't lie. Even on a first date.",
+   "say": "Tag who'd survive this date. In this world, you can't lie. Even on a first date."
+  }
+ ]
+}

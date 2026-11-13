@@ -1,0 +1,93 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Heaven is real. It has a queue.",
+   "say": "Heaven is real. It has a queue."
+  },
+  {
+   "shot": "arrive",
+   "cap": "You died. Good news. Heaven is real. Bad news. It's a government office.",
+   "say": "You died. Good news. Heaven is real. Bad news. It's a government office."
+  },
+  {
+   "shot": "arrive",
+   "cap": "Eight million people ahead of me? I'll die again waiting.",
+   "say": "Eight million people ahead of me? I'll die again waiting.",
+   "who": "you",
+   "bubble": "8 MILLION AHEAD? I'LL DIE AGAIN. 😩",
+   "think": true,
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "desk",
+   "cap": "Name? Date of death? Form twenty seven B?",
+   "say": "Name? Date of death? Form twenty seven B?",
+   "who": "clerk",
+   "bubble": "FORM 27B? 📄",
+   "emotion": "calm"
+  },
+  {
+   "shot": "desk",
+   "cap": "Form what?",
+   "say": "Form what?",
+   "who": "you",
+   "emotion": "scared"
+  },
+  {
+   "shot": "desk",
+   "cap": "No form, no heaven. Next!",
+   "say": "No form, no heaven. Next!",
+   "who": "clerk",
+   "bubble": "NO FORM, NO HEAVEN. NEXT! 🛑",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "later",
+   "cap": "Three hundred years later.",
+   "say": "Three hundred years later."
+  },
+  {
+   "shot": "later",
+   "cap": "Sorry. We lost your file. Have you tried the other place? Shorter queue.",
+   "say": "Sorry. We lost your file. Have you tried the other place? Shorter queue.",
+   "who": "clerk",
+   "bubble": "LOST YOUR FILE. TRY… THE OTHER PLACE? 🔥",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "twist",
+   "cap": "Then, Death walks past.",
+   "say": "Then, Death walks past."
+  },
+  {
+   "shot": "twist",
+   "cap": "Nani? You're not supposed to be here.",
+   "say": "Nani? You're not supposed to be here.",
+   "who": "death",
+   "bubble": "NANI?! YOU'RE NOT SUPPOSED TO BE HERE. 💀",
+   "emotion": "scared"
+  },
+  {
+   "shot": "twist",
+   "cap": "You forgot your lunch, beta. I brought it.",
+   "say": "You forgot your lunch, beta. I brought it.",
+   "who": "nani",
+   "bubble": "YOU FORGOT YOUR LUNCH, BETA. 🍱",
+   "emotion": "happy"
+  },
+  {
+   "shot": "twist",
+   "cap": "Can I have the lunch?",
+   "say": "Can I have the lunch?",
+   "who": "you",
+   "bubble": "…CAN I HAVE THE LUNCH? 🥺",
+   "emotion": "sad"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag who'd still be in this queue. Heaven is real. It has a queue.",
+   "say": "Tag who'd still be in this queue. Heaven is real. It has a queue."
+  }
+ ]
+}

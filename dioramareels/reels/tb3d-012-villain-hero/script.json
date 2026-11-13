@@ -1,0 +1,106 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "They fight on the news. Then they go home. Together.",
+   "say": "They fight on the news. Then they go home. Together."
+  },
+  {
+   "shot": "fight",
+   "cap": "Tonight, the city will tremble!",
+   "say": "Tonight, the city will tremble!",
+   "who": "gloom",
+   "bubble": "THE CITY WILL TREMBLE! 🦹",
+   "emotion": "angry"
+  },
+  {
+   "shot": "fight",
+   "cap": "Not on my watch, Doctor Gloom!",
+   "say": "Not on my watch, Doctor Gloom!",
+   "who": "bright",
+   "bubble": "NOT ON MY WATCH! 🦸",
+   "emotion": "proud"
+  },
+  {
+   "shot": "home",
+   "cap": "Eleven p.m. Same bus. Same flat.",
+   "say": "Eleven p.m. Same bus. Same flat."
+  },
+  {
+   "shot": "home",
+   "cap": "Also, you ate my yoghurt. It had my name on it.",
+   "say": "Also, you ate my yoghurt. It had my name on it.",
+   "who": "gloom",
+   "bubble": "YOU ATE MY YOGHURT. 😤",
+   "emotion": "angry"
+  },
+  {
+   "shot": "home",
+   "cap": "Relax, buddy. I'll save the city. Right after you do the dishes.",
+   "say": "Relax, buddy. I'll save the city. Right after you do the dishes.",
+   "who": "bright",
+   "bubble": "I SAVE THE CITY. YOU DO DISHES. 🍽️",
+   "emotion": "happy"
+  },
+  {
+   "shot": "home",
+   "cap": "One day I will destroy him. After rent day.",
+   "say": "One day I will destroy him. After rent day.",
+   "who": "gloom",
+   "bubble": "ONE DAY I'LL DESTROY HIM. AFTER RENT DAY. 💸",
+   "think": true,
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "plan",
+   "cap": "Rent day. The heater is broken. The landlord won't answer.",
+   "say": "Rent day. The heater is broken. The landlord won't answer."
+  },
+  {
+   "shot": "plan",
+   "cap": "Fine. Time for my evil plan.",
+   "say": "Fine. Time for my evil plan.",
+   "who": "gloom",
+   "bubble": "TIME FOR MY EVIL PLAN. 😈",
+   "emotion": "proud"
+  },
+  {
+   "shot": "plan",
+   "cap": "His evil plan? A very polite email.",
+   "say": "His evil plan? A very polite email."
+  },
+  {
+   "shot": "twist",
+   "cap": "Dear landlord. Fix the heater. Or else.",
+   "say": "Dear landlord. Fix the heater. Or else.",
+   "who": "gloom",
+   "emotion": "calm"
+  },
+  {
+   "shot": "twist",
+   "cap": "The next morning, the heater works.",
+   "say": "The next morning, the heater works."
+  },
+  {
+   "shot": "twist",
+   "cap": "Teamwork!",
+   "say": "Teamwork!",
+   "who": "bright",
+   "bubble": "TEAMWORK! 🙌",
+   "emotion": "excited"
+  },
+  {
+   "shot": "twist",
+   "cap": "Do not tell the news.",
+   "say": "Do not tell the news.",
+   "who": "gloom",
+   "bubble": "DO NOT TELL THE NEWS. 🤫",
+   "emotion": "anxious"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag your flatmate. They fight on the news. Then they go home, together.",
+   "say": "Tag your flatmate. They fight on the news. Then they go home, together."
+  }
+ ]
+}
