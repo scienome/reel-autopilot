@@ -82,7 +82,7 @@ Folder: [`gears-pov/`](gears-pov/)
 | [040-taxi-driver-thoughts](gears-pov/040-taxi-driver-thoughts.mp4) | You can hear what your taxi driver thinks 🚕 | Posted on Instagram · on YouTube |
 | [041-sofa-thoughts](gears-pov/041-sofa-thoughts.mp4) | You can hear what your sofa thinks 🛋️ | Posted on Instagram · on YouTube |
 | [042-big-brother-thoughts](gears-pov/042-big-brother-thoughts.mp4) | You can hear what your big brother thinks 👦 | Waiting to post |
-| [043-owl-thoughts](gears-pov/043-owl-thoughts.mp4) | You can hear what the owl outside your window thinks 🦉 | Waiting to post |
+| [043-owl-thoughts](gears-pov/043-owl-thoughts.mp4) | You can hear what the owl outside your window thinks 🦉 | Posted on Instagram · on YouTube |
 | [044-first-date-thoughts](gears-pov/044-first-date-thoughts.mp4) | You can hear what your first date thinks 💘 | Posted on Instagram · on YouTube |
 | [045-old-dog-thoughts](gears-pov/045-old-dog-thoughts.mp4) | You can hear what your old dog thinks 🐕 | Posted on Instagram · on YouTube |
 | [046-tv-remote-thoughts](gears-pov/046-tv-remote-thoughts.mp4) | You can hear what your TV remote thinks 📺 | Waiting to post |
@@ -306,7 +306,7 @@ Folder: [`toy-reels/`](toy-reels/)
 | [181-cow-cud](toy-reels/181-cow-cud.mp4) | Cows swallow… then bring it back up for more 🐄 | Waiting to post |
 | [182-body-gas](toy-reels/182-body-gas.mp4) | Your body makes THIS much gas every day 💨 | Waiting to post |
 | [183-brain-size](toy-reels/183-brain-size.mp4) | Size does matter… in your brain? 🧠 | Waiting to post |
-| [184-hard-in-cold](toy-reels/184-hard-in-cold.mp4) | He got hard after 3 days in the cold 🥶 | Waiting to post |
+| [184-hard-in-cold](toy-reels/184-hard-in-cold.mp4) | He got hard after 3 days in the cold 🥶 | Posted (Instagram + YouTube) |
 | [185-halley-comes](toy-reels/185-halley-comes.mp4) | She only comes once every 76 years ☄️ | Waiting to post |
 | [186-four-hours](toy-reels/186-four-hours.mp4) | Stiff for more than 4 hours? Go to hospital 🚨 | Waiting to post |
 | [187-two-nuts](toy-reels/187-two-nuts.mp4) | Just two of my nuts a day is all you need 🥜 | Waiting to post |
@@ -314,7 +314,7 @@ Folder: [`toy-reels/`](toy-reels/)
 | [189-wet-every-night](toy-reels/189-wet-every-night.mp4) | Every night your brain gets a good wet wash 💦 | Waiting to post |
 | [19-batguy-electricity-bill](toy-reels/19-batguy-electricity-bill.mp4) | Bat-Guy's Worst Villain Was The Electricity Bill 🦇 | Waiting to post |
 | [190-melons-no-seeds](toy-reels/190-melons-no-seeds.mp4) | These melons were bred bigger, sweeter… and seedless 🍉 | Waiting to post |
-| [191-on-top-1900-years](toy-reels/191-on-top-1900-years.mp4) | She's been on top for 1,900 years 🏛️ | Waiting to post |
+| [191-on-top-1900-years](toy-reels/191-on-top-1900-years.mp4) | She's been on top for 1,900 years 🏛️ | Posted (Instagram + YouTube) |
 | [192-onoda-29-years](toy-reels/192-onoda-29-years.mp4) | He kept going for 29 years after it was over 🌴 | Waiting to post |
 | [193-janitor-drawers](toy-reels/193-janitor-drawers.mp4) | The janitor had $8 million in his drawers 💰 | Waiting to post |
 | [194-saroo-google-earth](toy-reels/194-saroo-google-earth.mp4) | He went down on Google Earth every night for years 🌏 | Waiting to post |
@@ -333,7 +333,7 @@ Folder: [`toy-reels/`](toy-reels/)
 | [206-sold-eiffel](toy-reels/206-sold-eiffel.mp4) | He screwed one buyer so well he came back for another 🗼 | Waiting to post |
 | [207-lemon-face](toy-reels/207-lemon-face.mp4) | He rubbed juice all over his face and thought he was invisible 🍋 | Waiting to post |
 | [208-hit-it-big](toy-reels/208-hit-it-big.mp4) | He hit it big one night… and it ruined his life 💸 | Waiting to post |
-| [209-played-dead](toy-reels/209-played-dead.mp4) | He played dead… and 3,000 people came 😳 | Waiting to post |
+| [209-played-dead](toy-reels/209-played-dead.mp4) | He played dead… and 3,000 people came 😳 | Posted (Instagram + YouTube) |
 | [21-zeus-wifi-down](toy-reels/21-zeus-wifi-down.mp4) | Zeus Unplugged Heaven's Wi-Fi 😇⚡ | Posted (Instagram + YouTube) |
 | [210-two-large-ones](toy-reels/210-two-large-ones.mp4) | He blew 10,000 on two large ones 🍕 | Waiting to post |
 | [211-went-in-from-below](toy-reels/211-went-in-from-below.mp4) | They went in from below, all weekend… and someone heard every word 📻 | Waiting to post |
