@@ -1,0 +1,28 @@
+{
+ "music-d7f4073d8926.mp3": {
+  "prompt": "Indian mythological cinematic underscore: tanpura drone, soft tabla, bansuri, temple bells, swelling shehnai at the climax, no vocals, warm devotional temple feeling",
+  "music_length_ms": 47860,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-731c5b0deea1.mp3": {
+  "text": "distant battle and a mournful horn",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-65cb987db033.mp3": {
+  "text": "a slow funeral drum",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-be2cacd3fef3.mp3": {
+  "text": "a firm resonant gong",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
