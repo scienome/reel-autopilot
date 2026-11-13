@@ -1,0 +1,28 @@
+{
+ "music-1ec99119b813.mp3": {
+  "prompt": "Indian mythological cinematic underscore: tanpura drone, soft tabla, bansuri, temple bells, swelling shehnai at the climax, no vocals, warm devotional temple feeling",
+  "music_length_ms": 44260,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-610589d071b2.mp3": {
+  "text": "night crickets and a tent flap",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-622fd0c6fc93.mp3": {
+  "text": "a storm of arrows whistling",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-e4161ebc263d.mp3": {
+  "text": "a heavy fall and a hushed battlefield",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
