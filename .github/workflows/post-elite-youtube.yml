@@ -57,6 +57,7 @@ jobs:
         run: |
           git pull -q --rebase || true
           python tools/elite_youtube.py ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '--dry-run' || '' }}
+          python tools/yt_fix_meta.py elite || true  # fix older Shorts' language/category (13 Nov 2026)
       - name: Publish the same reel on Instagram at its slot
         if: always()
         env:

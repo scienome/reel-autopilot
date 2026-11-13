@@ -63,7 +63,7 @@ def texts(rid):
     title = meta['title'].strip()
     if len(title) + 8 <= 100:
         title += ' #shorts'
-    ig_cap = body + '\n\n' + ' '.join('#' + t for t in tags)
+    ig_cap = body + '\n\n' + ' '.join('#' + t for t in tags[:5])  # Instagram allows 5 hashtags
     yt_desc = body + '\n\n' + ' '.join('#' + t for t in tags) + ' #shorts'
     return title, yt_desc, ['shorts'] + tags, ig_cap, body.split('\n')[0]
 

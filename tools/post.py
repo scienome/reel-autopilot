@@ -37,7 +37,7 @@ def caption_for(rid):
     meta = json.load(open(mp, encoding='utf-8')) if os.path.exists(mp) else {}
     tags = meta.get('hashtags') or CFG['instagram'].get('default_hashtags', [])
     cap = meta.get('caption', '').strip()
-    return (cap + '\n\n' + ' '.join('#' + t.lstrip('#') for t in tags)).strip()
+    return (cap + '\n\n' + ' '.join('#' + t.lstrip('#') for t in list(tags)[:5])).strip()  # Instagram allows 5 hashtags
 
 
 def api(method, path, **data):

@@ -2,13 +2,13 @@
  "lines": [
   {
    "shot": "hook",
-   "cap": "You come home and say, I'm fine. Here's what your mum actually hears.",
-   "say": "You come home and say, I'm fine. Here's what your mum actually hears."
+   "cap": "Riya comes home and says, I'm fine. Her mum hears something else. And the ghost in the hallway? He's seen it all.",
+   "say": "Riya comes home and says, I'm fine. Her mum hears something else. And the ghost in the hallway? He's seen it all."
   },
   {
    "shot": "bag",
-   "cap": "You drop your bag. A little too hard.",
-   "say": "You drop your bag. A little too hard."
+   "cap": "Riya drops her bag. A little too hard.",
+   "say": "Riya drops her bag. A little too hard."
   },
   {
    "shot": "bag",
@@ -17,9 +17,16 @@
    "who": "mum"
   },
   {
+   "shot": "bag",
+   "cap": "Level eight. I've haunted this house since eighteen twenty four.",
+   "say": "Level eight. I've haunted this house since eighteen twenty four.",
+   "who": "ghost"
+  },
+  {
    "shot": "hungry",
-   "cap": "You say, I'm not hungry.",
-   "say": "You say, I'm not hungry."
+   "cap": "I'm not hungry.",
+   "say": "I'm not hungry.",
+   "who": "riya"
   },
   {
    "shot": "hungry",
@@ -29,13 +36,19 @@
   },
   {
    "shot": "cook",
-   "cap": "She starts cooking. Everything. All of it.",
-   "say": "She starts cooking. Everything. All of it."
+   "cap": "So Mum starts cooking. Everything. All of it.",
+   "say": "So Mum starts cooking. Everything. All of it."
+  },
+  {
+   "shot": "cook",
+   "cap": "I can't even eat. And I'm jealous.",
+   "say": "I can't even eat. And I'm jealous.",
+   "who": "ghost"
   },
   {
    "shot": "room",
-   "cap": "You go to your room. Door shut.",
-   "say": "You go to your room. Door shut."
+   "cap": "Riya goes to her room. Door shut.",
+   "say": "Riya goes to her room. Door shut."
   },
   {
    "shot": "room",
@@ -45,19 +58,26 @@
   },
   {
    "shot": "knock",
-   "cap": "She knocks once. Need anything? No.",
-   "say": "She knocks once. Need anything? No."
-  },
-  {
-   "shot": "knock",
-   "cap": "No means yes.",
-   "say": "No means yes.",
+   "cap": "Need anything?",
+   "say": "Need anything?",
    "who": "mum"
   },
   {
+   "shot": "knock",
+   "cap": "No.",
+   "say": "No.",
+   "who": "riya"
+  },
+  {
+   "shot": "knock",
+   "cap": "No means yes. Even I know that.",
+   "say": "No means yes. Even I know that.",
+   "who": "ghost"
+  },
+  {
    "shot": "plate",
-   "cap": "At midnight, you open the door. A plate. Still warm. And a note.",
-   "say": "At midnight, you open the door. A plate. Still warm. And a note."
+   "cap": "At midnight, Riya opens her door. A plate. Still warm. And a note.",
+   "say": "At midnight, Riya opens her door. A plate. Still warm. And a note."
   },
   {
    "shot": "note",
@@ -66,9 +86,15 @@
    "who": "mum"
   },
   {
+   "shot": "note",
+   "cap": "Best family I've ever haunted. Don't tell them.",
+   "say": "Best family I've ever haunted. Don't tell them.",
+   "who": "ghost"
+  },
+  {
    "shot": "outro",
-   "cap": "Tag the one who always knows. Because when you come home and say, I'm fine.",
-   "say": "Tag the one who always knows. Because when you come home and say, I'm fine."
+   "cap": "Tag the one who always knows. Because when Riya comes home and says, I'm fine.",
+   "say": "Tag the one who always knows. Because when Riya comes home and says, I'm fine."
   }
  ]
 }

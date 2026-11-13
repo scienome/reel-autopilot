@@ -286,5 +286,16 @@ window.STORY = (build, opt = {}) => DIY((k) => {
       parts.forEach((p, j) => { const w = ctx.measureText(p).width; ctx.textAlign = 'left'; ctx.lineWidth = 14; ctx.strokeStyle = '#000'; ctx.strokeText(p, x, y); ctx.fillStyle = j % 2 ? '#ff3030' : '#ffffff'; ctx.fillText(p, x, y); x += w; }); }); ctx.restore(); };
   // k.think(ctx, obj, text, t, t0, t1, o): a thought cloud above a character's head (o.h head height, o.size, o.bg, o.y min top)
   k.think = (ctx, obj, txt, t, t0 = 0, t1 = 1e9, o = {}) => { const p = D.screen(obj, [0, o.h || 1.6, 0]); if (p.z > 1) return; const y = Math.max(o.y || 250, p.y - (o.up || 170)); D.thought(ctx, txt, o.x || 360, y, p.x, p.y, t, t0, t1, o); };
+  // k.ghost(o): a cute floating sheet ghost (glowing, wavy hem, big eyes). g.tick(t) floats it; o.h height (default 1.2), o.col, o.glow
+  k.ghost = (o = {}) => { const g = new T.Group(), h = o.h || 1.2, inner = new T.Group(); g.add(inner); const mat = new T.MeshStandardMaterial({ color: o.col || '#f4f8ff', emissive: o.glow || '#bcd8ff', emissiveIntensity: 0.55, roughness: 0.6, transparent: true, opacity: 0.92 });
+    const pts = []; for (let i = 0; i <= 24; i++) { const u = i / 24, y = h * (1 - u); let r = u < 0.42 ? Math.sin(Math.acos(1 - u / 0.42)) * h * 0.34 : h * (0.34 + (u - 0.42) * 0.22); pts.push(new T.Vector2(Math.max(0.001, r), y)); }
+    const body = new T.Mesh(new T.LatheGeometry(pts, 40), mat); body.castShadow = true; inner.add(body);
+    const hem = []; for (let i = 0; i < 8; i++) { const a = i / 8 * PI * 2; const b = new T.Mesh(new T.SphereGeometry(h * 0.085, 12, 8), mat); b.position.set(Math.cos(a) * h * 0.44, h * 0.02, Math.sin(a) * h * 0.44); inner.add(b); hem.push(b); }
+    const E = new T.MeshBasicMaterial({ color: '#141824' }); [-1, 1].forEach((sx) => { const e = new T.Mesh(new T.SphereGeometry(h * 0.065, 14, 10), E); e.scale.set(0.8, 1.2, 0.4); e.position.set(sx * h * 0.11, h * 0.68, h * 0.29); inner.add(e); const hl = new T.Mesh(new T.SphereGeometry(h * 0.018, 8, 6), new T.MeshBasicMaterial({ color: '#ffffff' })); hl.position.set(sx * h * 0.11 + h * 0.02, h * 0.71, h * 0.32); inner.add(hl); });
+    const mouth = new T.Mesh(new T.SphereGeometry(h * 0.04, 12, 8), E); mouth.scale.set(1.2, 0.8, 0.4); mouth.position.set(0, h * 0.52, h * 0.31); inner.add(mouth); g.mouth = mouth;
+    [-1, 1].forEach((sx) => { const arm = new T.Mesh(new T.SphereGeometry(h * 0.09, 12, 8), mat); arm.scale.set(1.6, 0.7, 0.8); arm.position.set(sx * h * 0.36, h * 0.42, 0.05); inner.add(arm); });
+    const L = new T.PointLight(o.glow || '#bcd8ff', 0.6, 3); L.position.set(0, h * 0.6, 0.3); g.add(L);
+    g.tick = (t, talk = false) => { inner.position.y = 0.25 + Math.sin(t * 2.2) * 0.06; inner.rotation.z = Math.sin(t * 1.3) * 0.06; hem.forEach((b, i) => { b.position.y = h * 0.02 + Math.sin(t * 5 + i) * h * 0.03; }); mouth.scale.y = talk ? 0.8 + Math.abs(Math.sin(t * 14)) * 1.2 : 0.8; };
+    return g; };
   const R = build(k); return Object.assign({ table: false }, R);
 }, opt);

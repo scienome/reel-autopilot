@@ -49,7 +49,7 @@ def slots(t, conf):
 def caption(rid):
     meta = json.load(open(os.path.join(REELS, rid, 'meta.json'), encoding='utf-8'))
     body = meta['caption'].strip()
-    return body + '\n\n' + ' '.join('#' + x.lstrip('#') for x in meta.get('hashtags', [])), body.split('\n')[0]
+    return body + '\n\n' + ' '.join('#' + x.lstrip('#') for x in meta.get('hashtags', [])[:5]), body.split('\n')[0]
 
 
 def post(rid, at):

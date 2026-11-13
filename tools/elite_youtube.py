@@ -84,7 +84,7 @@ def main():
     os.makedirs(out, exist_ok=True)
     subprocess.run(['gh', 'release', 'download', 'diorama-' + rid, '-p', '*.mp4', '-D', out, '--clobber'], check=True)
     title, desc, tags = texts(rid)
-    vid, _ = yt.upload(tok, os.path.join(out, rid + '.mp4'), title, desc, tags, slot)
+    vid, _ = yt.upload(tok, os.path.join(out, rid + '.mp4'), title, desc, tags, slot, lang='en', category='24')  # Entertainment (was Science & Tech)
     log[rid] = {'id': vid, 'url': f'https://youtu.be/{vid}', 'title': title, 'slot': key}
     json.dump(log, open(LOG, 'w'), indent=1)
     print(f'{rid}: https://youtu.be/{vid}, goes public at {key}')

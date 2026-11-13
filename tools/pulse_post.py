@@ -64,7 +64,7 @@ def texts(rid):
     title = meta['title'].strip()
     if len(title) + 8 <= 100:
         title += ' #shorts'
-    ig_cap = body + '\n\n' + ' '.join('#' + t for t in tags)
+    ig_cap = body + '\n\n' + ' '.join('#' + t for t in tags[:5])  # Instagram allows 5 hashtags
     yt_desc = body + '\n\n' + ' '.join('#' + t for t in tags) + ' #shorts'
     return title, yt_desc, ['shorts'] + tags, ig_cap, body.split('\n')[0]
 
@@ -118,7 +118,7 @@ def yt_post(tok, rid, title, desc, tags, at):
     d = tempfile.mkdtemp()
     if not yt.release_assets(TAG + rid, d):
         raise RuntimeError(f'could not download Release {TAG}{rid}')
-    yid, st = yt.upload(tok, os.path.join(d, rid + '.mp4'), title, desc, tags, at)
+    yid, st = yt.upload(tok, os.path.join(d, rid + '.mp4'), title, desc, tags, at, lang='en', category='17')  # Sports (was Science & Tech)
     if os.path.exists(os.path.join(d, 'cover.jpg')):
         try:
             yt.set_thumb(tok, yid, os.path.join(d, 'cover.jpg'))

@@ -61,6 +61,7 @@ jobs:
         run: |
           git pull -q --rebase || true
           python tools/ig_mech_post.py ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '--dry-run' || '' }} ${{ (github.event_name == 'workflow_dispatch' && inputs.short != '') && format('--id {0}', inputs.short) || '' }}
+          python tools/yt_fix_meta.py pov || true  # fix older Thought Bubble Shorts' category (13 Nov 2026)
       - name: Record it in ig_posted.json
         if: always()
         run: |

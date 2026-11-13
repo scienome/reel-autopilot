@@ -79,6 +79,7 @@ jobs:
             ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '--dry-run' || '' }} \
             ${{ (github.event_name == 'workflow_dispatch' && inputs.post_now) && '--now' || '' }} \
             ${{ (github.event_name == 'workflow_dispatch' && inputs.reel != '') && format('--id {0}', inputs.reel) || '' }}
+          python tools/yt_fix_meta.py toy || true  # fix older Shorts' language/category (13 Nov 2026)
       - name: Record it in toyreels/posted.json
         if: always()
         run: |

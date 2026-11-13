@@ -121,7 +121,7 @@ def caption(rid, folder=REELS):
     meta = json.load(open(os.path.join(folder, rid, 'meta.json')))
     lines = meta['caption'].strip().split('\n')
     body = '\n'.join(l if '[LINK]' not in l else '▶ Full video on our YouTube channel: Gears & Glitches' for l in lines)
-    tags = ' '.join('#' + t.lstrip('#') for t in meta.get('hashtags', []))
+    tags = ' '.join('#' + t.lstrip('#') for t in meta.get('hashtags', [])[:5])  # Instagram allows 5 hashtags
     return f'{body}\n\n{tags}', body.split('\n')[0]
 
 
@@ -179,7 +179,7 @@ def yt_post(tok, logkey, at):
     d = tempfile.mkdtemp()
     if not yt.release_assets(tag + rid, d):
         raise RuntimeError(f'could not download Release {tag}{rid}')
-    yid, st = yt.upload(tok, os.path.join(d, rid + '.mp4'), title, desc, tags, at.replace(tzinfo=None), yt.localized('pov', rid, desc) if kind == 'pov' else None)
+    yid, st = yt.upload(tok, os.path.join(d, rid + '.mp4'), title, desc, tags, at.replace(tzinfo=None), yt.localized('pov', rid, desc) if kind == 'pov' else None, **(dict(lang='en', category='23') if kind == 'pov' else {}))  # Thought Bubble: Comedy (was Science & Tech)
     e = {'id': yid, 'url': f'https://youtu.be/{yid}', 'publish_utc': st.get('publishAt', 'now'), 'title': title}
     print(f'YouTube: https://youtu.be/{yid} ({st["privacyStatus"]}{", goes public " + st["publishAt"] if "publishAt" in st else ""})', flush=True)
     return e
