@@ -1,0 +1,72 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Every chai stall has a man who knows everything.",
+   "say": "Every chai stall has a man who knows everything."
+  },
+  {
+   "shot": "talk",
+   "cap": "Petrol prices? Simple. I'll fix it in one week.",
+   "say": "Petrol prices? Simple. I'll fix it in one week.",
+   "who": "uncle",
+   "bubble": "PETROL PRICES? FIXED IN 1 WEEK. 🧠",
+   "emotion": "proud"
+  },
+  {
+   "shot": "talk",
+   "cap": "Cricket team? Wrong captain. I said it in 2011.",
+   "say": "Cricket team? Wrong captain. I said it in 2011.",
+   "who": "uncle",
+   "bubble": "WRONG CAPTAIN. I SAID IT IN 2011. 🏏",
+   "emotion": "proud"
+  },
+  {
+   "shot": "talk",
+   "cap": "Uncle, what should I study?",
+   "say": "Uncle, what should I study?",
+   "who": "kid",
+   "emotion": "calm"
+  },
+  {
+   "shot": "talk",
+   "cap": "Engineering. Then MBA. Then come work at my chai stall.",
+   "say": "Engineering. Then MBA. Then come work at my chai stall.",
+   "who": "uncle",
+   "bubble": "ENGINEERING → MBA → MY STALL. ☕",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "call",
+   "cap": "Then, his phone rings. It's his wife.",
+   "say": "Then, his phone rings. It's his wife."
+  },
+  {
+   "shot": "call",
+   "cap": "Where is the milk? I said one hour ago.",
+   "say": "Where is the milk? I said one hour ago.",
+   "who": "aunty",
+   "bubble": "WHERE IS THE MILK?! 🥛",
+   "emotion": "angry"
+  },
+  {
+   "shot": "call",
+   "cap": "The economy can wait. The milk cannot.",
+   "say": "The economy can wait. The milk cannot.",
+   "who": "uncle",
+   "bubble": "THE ECONOMY CAN WAIT. THE MILK CANNOT. 🏃",
+   "think": true,
+   "emotion": "scared"
+  },
+  {
+   "shot": "twist",
+   "cap": "He runs. Leaving a stall full of unsolved problems.",
+   "say": "He runs. Leaving a stall full of unsolved problems."
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the chai uncle you know. Every chai stall has a man who knows everything.",
+   "say": "Tag the chai uncle you know. Every chai stall has a man who knows everything."
+  }
+ ]
+}

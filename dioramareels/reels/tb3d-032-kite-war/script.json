@@ -1,0 +1,70 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Two rooftops. Two uncles. Thirty years of kite rivalry.",
+   "say": "Two rooftops. Two uncles. Thirty years of kite rivalry."
+  },
+  {
+   "shot": "war",
+   "cap": "This year, Sharma's kite goes down.",
+   "say": "This year, Sharma's kite goes down.",
+   "who": "dad",
+   "bubble": "THIS YEAR, SHARMA GOES DOWN. 🪁",
+   "emotion": "angry"
+  },
+  {
+   "shot": "war",
+   "cap": "He says that every year. Every year he loses.",
+   "say": "He says that every year. Every year he loses.",
+   "who": "uncle",
+   "bubble": "HE LOSES EVERY YEAR. 😏",
+   "think": true,
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "war",
+   "cap": "Both kites go up. The whole street is watching.",
+   "say": "Both kites go up. The whole street is watching."
+  },
+  {
+   "shot": "war",
+   "cap": "Pull. Pull! PULL!",
+   "say": "Pull. Pull! PULL!",
+   "who": "dad",
+   "bubble": "PULL! PULL!! 💪",
+   "emotion": "excited"
+  },
+  {
+   "shot": "twist",
+   "cap": "Snap. Both kites fall. Both strings cut.",
+   "say": "Snap. Both kites fall. Both strings cut."
+  },
+  {
+   "shot": "twist",
+   "cap": "By a nine year old girl. On the third roof.",
+   "say": "By a nine year old girl. On the third roof."
+  },
+  {
+   "shot": "twist",
+   "cap": "Easy.",
+   "say": "Easy.",
+   "who": "kid",
+   "bubble": "EASY. 😎",
+   "emotion": "proud"
+  },
+  {
+   "shot": "twist",
+   "cap": "Thirty years. Finally, a real champion.",
+   "say": "Thirty years. Finally, a real champion.",
+   "who": "ghost",
+   "bubble": "FINALLY. A REAL CHAMPION. 👻🏆",
+   "emotion": "happy"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag your kite rival. Two rooftops. Thirty years of rivalry.",
+   "say": "Tag your kite rival. Two rooftops. Thirty years of rivalry."
+  }
+ ]
+}

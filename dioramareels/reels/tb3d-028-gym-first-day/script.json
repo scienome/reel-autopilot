@@ -1,0 +1,71 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "First day at the gym. She thinks everyone is watching.",
+   "say": "First day at the gym. She thinks everyone is watching."
+  },
+  {
+   "shot": "enter",
+   "cap": "Act normal. Touch a machine. Any machine.",
+   "say": "Act normal. Touch a machine. Any machine.",
+   "who": "neha",
+   "bubble": "ACT NORMAL. TOUCH A MACHINE. 😬",
+   "think": true,
+   "emotion": "anxious"
+  },
+  {
+   "shot": "enter",
+   "cap": "Why is the mirror the size of a wall?",
+   "say": "Why is the mirror the size of a wall?",
+   "who": "neha",
+   "bubble": "WHY IS THE MIRROR A WALL?! 🪞",
+   "think": true,
+   "emotion": "scared"
+  },
+  {
+   "shot": "beast",
+   "cap": "Then she sees him. The biggest man in the gym. He's looking at her.",
+   "say": "Then she sees him. The biggest man in the gym. He's looking at her."
+  },
+  {
+   "shot": "beast",
+   "cap": "He knows. He knows I don't know.",
+   "say": "He knows. He knows I don't know.",
+   "who": "neha",
+   "bubble": "HE KNOWS I DON'T KNOW. 😰",
+   "think": true,
+   "emotion": "scared"
+  },
+  {
+   "shot": "beast",
+   "cap": "Please don't look. It's also my first day. I'm just big.",
+   "say": "Please don't look. It's also my first day. I'm just big.",
+   "who": "beast",
+   "bubble": "MY FIRST DAY TOO. I'M JUST BIG. 🥺",
+   "think": true,
+   "emotion": "anxious"
+  },
+  {
+   "shot": "twist",
+   "cap": "Okay newbies! Both of you. Warm up together.",
+   "say": "Okay newbies! Both of you. Warm up together.",
+   "who": "trainer",
+   "bubble": "NEWBIES! WARM UP TOGETHER! 📣",
+   "emotion": "excited"
+  },
+  {
+   "shot": "twist",
+   "cap": "Thank god. A friend.",
+   "say": "Thank god. A friend.",
+   "who": "beast",
+   "bubble": "THANK GOD. A FRIEND. 🤝",
+   "emotion": "happy"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag your gym partner. First day at the gym. Nobody is really watching.",
+   "say": "Tag your gym partner. First day at the gym. Nobody is really watching."
+  }
+ ]
+}

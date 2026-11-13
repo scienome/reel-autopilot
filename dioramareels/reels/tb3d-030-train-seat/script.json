@@ -1,0 +1,76 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Eight forty seven a.m. Local train. One seat. Five people. One plan.",
+   "say": "Eight forty seven a.m. Local train. One seat. Five people. One plan."
+  },
+  {
+   "shot": "wait",
+   "cap": "That man is getting up next station. I can feel it.",
+   "say": "That man is getting up next station. I can feel it.",
+   "who": "man",
+   "bubble": "HE'S GETTING UP. I CAN FEEL IT. 🎯",
+   "think": true,
+   "emotion": "excited"
+  },
+  {
+   "shot": "wait",
+   "cap": "Stand close. Look tired. Look very tired.",
+   "say": "Stand close. Look tired. Look very tired.",
+   "who": "girl",
+   "bubble": "LOOK TIRED. VERY TIRED. 🥱",
+   "think": true,
+   "emotion": "calm"
+  },
+  {
+   "shot": "wait",
+   "cap": "I have been standing since Borivali. That seat is mine by law.",
+   "say": "I have been standing since Borivali. That seat is mine by law.",
+   "who": "uncle",
+   "bubble": "SINCE BORIVALI. MINE BY LAW. ⚖️",
+   "think": true,
+   "emotion": "angry"
+  },
+  {
+   "shot": "stand",
+   "cap": "The man stands up. Everyone moves.",
+   "say": "The man stands up. Everyone moves."
+  },
+  {
+   "shot": "stand",
+   "cap": "Go go go!",
+   "say": "Go go go!",
+   "who": "man",
+   "bubble": "GO GO GO! 🏃",
+   "emotion": "excited"
+  },
+  {
+   "shot": "twist",
+   "cap": "From nowhere, an aunty slides in. Already sitting. Already knitting.",
+   "say": "From nowhere, an aunty slides in. Already sitting. Already knitting."
+  },
+  {
+   "shot": "twist",
+   "cap": "Thank you, beta.",
+   "say": "Thank you, beta.",
+   "who": "aunty",
+   "bubble": "THANK YOU, BETA. 🧶",
+   "emotion": "content"
+  },
+  {
+   "shot": "twist",
+   "cap": "Forty years. Never once.",
+   "say": "Forty years. Never once.",
+   "who": "uncle",
+   "bubble": "40 YEARS. NEVER ONCE. 😔",
+   "think": true,
+   "emotion": "sad"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag your train buddy. Eight forty seven a.m. One seat. Five people.",
+   "say": "Tag your train buddy. Eight forty seven a.m. One seat. Five people."
+  }
+ ]
+}

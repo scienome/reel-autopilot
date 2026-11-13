@@ -1,0 +1,69 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "The kid wasn't scared of the injection. The doctor was.",
+   "say": "The kid wasn't scared of the injection. The doctor was."
+  },
+  {
+   "shot": "wait",
+   "cap": "She'll cry. She always cries. Get ready.",
+   "say": "She'll cry. She always cries. Get ready.",
+   "who": "dad",
+   "bubble": "SHE'LL CRY. GET READY. 😬",
+   "think": true,
+   "emotion": "anxious"
+  },
+  {
+   "shot": "wait",
+   "cap": "Small pinch, beta. Very small.",
+   "say": "Small pinch, beta. Very small.",
+   "who": "doctor",
+   "bubble": "SMALL PINCH. VERY SMALL. 💉",
+   "emotion": "calm"
+  },
+  {
+   "shot": "wait",
+   "cap": "Doctor uncle. Your hands are shaking.",
+   "say": "Doctor uncle. Your hands are shaking.",
+   "who": "kid",
+   "bubble": "UNCLE. YOUR HANDS ARE SHAKING. 🤨",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "wait",
+   "cap": "Last week a kid bit me. I still have the mark.",
+   "say": "Last week a kid bit me. I still have the mark.",
+   "who": "doctor",
+   "bubble": "LAST WEEK A KID BIT ME. 😰",
+   "think": true,
+   "emotion": "scared"
+  },
+  {
+   "shot": "twist",
+   "cap": "The kid takes the injection. Doesn't blink.",
+   "say": "The kid takes the injection. Doesn't blink."
+  },
+  {
+   "shot": "twist",
+   "cap": "Done? Can I have a lollipop? And can he have one too?",
+   "say": "Done? Can I have a lollipop? And can he have one too?",
+   "who": "kid",
+   "bubble": "DONE? LOLLIPOP FOR HIM TOO? 🍭",
+   "emotion": "happy"
+  },
+  {
+   "shot": "twist",
+   "cap": "Yes please.",
+   "say": "Yes please.",
+   "who": "doctor",
+   "bubble": "YES PLEASE. 🥺",
+   "emotion": "sad"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag who's scared of injections. The doctor was.",
+   "say": "Tag who's scared of injections. The doctor was."
+  }
+ ]
+}

@@ -1,0 +1,77 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "The ticket checker got on the train. Everyone has a plan.",
+   "say": "The ticket checker got on the train. Everyone has a plan."
+  },
+  {
+   "shot": "in",
+   "cap": "I have a ticket. Why am I sweating? I have a ticket.",
+   "say": "I have a ticket. Why am I sweating? I have a ticket.",
+   "who": "man",
+   "bubble": "I HAVE A TICKET. WHY AM I SWEATING? 😰",
+   "think": true,
+   "emotion": "anxious"
+  },
+  {
+   "shot": "in",
+   "cap": "Act asleep. Ticket checkers respect sleep.",
+   "say": "Act asleep. Ticket checkers respect sleep.",
+   "who": "girl",
+   "bubble": "ACT ASLEEP. THEY RESPECT SLEEP. 😴",
+   "think": true,
+   "emotion": "calm"
+  },
+  {
+   "shot": "check",
+   "cap": "Ticket?",
+   "say": "Ticket?",
+   "who": "tt",
+   "bubble": "TICKET? 🎫",
+   "emotion": "calm"
+  },
+  {
+   "shot": "check",
+   "cap": "Here. Here. Here it is. I've had it since birth.",
+   "say": "Here. Here. Here it is. I've had it since birth.",
+   "who": "man",
+   "bubble": "HERE! HAD IT SINCE BIRTH! 🎫",
+   "emotion": "anxious"
+  },
+  {
+   "shot": "twist",
+   "cap": "Then he reaches the last passenger.",
+   "say": "Then he reaches the last passenger."
+  },
+  {
+   "shot": "twist",
+   "cap": "Ticket?",
+   "say": "Ticket?",
+   "who": "tt",
+   "emotion": "calm"
+  },
+  {
+   "shot": "twist",
+   "cap": "I come in peace. Also, I have a monthly pass.",
+   "say": "I come in peace. Also, I have a monthly pass.",
+   "who": "zork",
+   "bubble": "I COME IN PEACE. MONTHLY PASS. 👽🎫",
+   "emotion": "happy"
+  },
+  {
+   "shot": "twist",
+   "cap": "Thirty years. First valid ticket today.",
+   "say": "Thirty years. First valid ticket today.",
+   "who": "tt",
+   "bubble": "30 YEARS. FIRST VALID TICKET. 😭",
+   "think": true,
+   "emotion": "sad"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag who'd panic first. The ticket checker got on the train.",
+   "say": "Tag who'd panic first. The ticket checker got on the train."
+  }
+ ]
+}

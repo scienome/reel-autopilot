@@ -1,0 +1,66 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "A genie went to an Indian wedding. He granted every wish. Big mistake.",
+   "say": "A genie went to an Indian wedding. He granted every wish. Big mistake."
+  },
+  {
+   "shot": "wish",
+   "cap": "I wish the food comes on time.",
+   "say": "I wish the food comes on time.",
+   "who": "aunty",
+   "bubble": "I WISH THE FOOD COMES ON TIME. 🍛",
+   "emotion": "anxious"
+  },
+  {
+   "shot": "wish",
+   "cap": "Done!",
+   "say": "Done!",
+   "who": "genie",
+   "bubble": "DONE! ✨",
+   "emotion": "excited"
+  },
+  {
+   "shot": "wish",
+   "cap": "I wish I could dance like a film hero!",
+   "say": "I wish I could dance like a film hero!",
+   "who": "uncle",
+   "bubble": "I WISH I COULD DANCE LIKE A HERO! 🕺",
+   "emotion": "excited"
+  },
+  {
+   "shot": "wish",
+   "cap": "Done!",
+   "say": "Done!",
+   "who": "genie",
+   "emotion": "excited"
+  },
+  {
+   "shot": "dance",
+   "cap": "The uncle dances. He will not stop. It's been six hours.",
+   "say": "The uncle dances. He will not stop. It's been six hours."
+  },
+  {
+   "shot": "dance",
+   "cap": "I wish my uncle would stop dancing.",
+   "say": "I wish my uncle would stop dancing.",
+   "who": "bride",
+   "bubble": "I WISH UNCLE WOULD STOP. 😩",
+   "emotion": "sad"
+  },
+  {
+   "shot": "twist",
+   "cap": "Sorry. Even I can't do that. Nobody can.",
+   "say": "Sorry. Even I can't do that. Nobody can.",
+   "who": "genie",
+   "bubble": "SORRY. NOBODY CAN DO THAT. 🧞",
+   "emotion": "sad"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the uncle who dances like this. A genie went to an Indian wedding.",
+   "say": "Tag the uncle who dances like this. A genie went to an Indian wedding."
+  }
+ ]
+}

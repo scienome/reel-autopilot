@@ -1,0 +1,74 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "The superhero was saving the city. Then his mum called.",
+   "say": "The superhero was saving the city. Then his mum called."
+  },
+  {
+   "shot": "fight",
+   "cap": "Surrender, Captain Brightside!",
+   "say": "Surrender, Captain Brightside!",
+   "who": "gloom",
+   "bubble": "SURRENDER! 🦹",
+   "emotion": "angry"
+  },
+  {
+   "shot": "fight",
+   "cap": "Never! Wait. One second. It's my mum.",
+   "say": "Never! Wait. One second. It's my mum.",
+   "who": "bright",
+   "bubble": "NEVER! …WAIT. IT'S MY MUM. 📱",
+   "emotion": "anxious"
+  },
+  {
+   "shot": "call",
+   "cap": "Did you eat? You never eat. Wear a sweater.",
+   "say": "Did you eat? You never eat. Wear a sweater.",
+   "who": "mum",
+   "bubble": "DID YOU EAT? WEAR A SWEATER. 🧥",
+   "emotion": "sad"
+  },
+  {
+   "shot": "call",
+   "cap": "Mum, I'm fighting a villain.",
+   "say": "Mum, I'm fighting a villain.",
+   "who": "bright",
+   "emotion": "anxious"
+  },
+  {
+   "shot": "call",
+   "cap": "Give him the phone.",
+   "say": "Give him the phone.",
+   "who": "mum",
+   "bubble": "GIVE HIM THE PHONE. 📱",
+   "emotion": "calm"
+  },
+  {
+   "shot": "twist",
+   "cap": "Five minutes later.",
+   "say": "Five minutes later."
+  },
+  {
+   "shot": "twist",
+   "cap": "Yes, aunty. Yes, I'll eat. Sorry, aunty.",
+   "say": "Yes, aunty. Yes, I'll eat. Sorry, aunty.",
+   "who": "gloom",
+   "bubble": "YES AUNTY. SORRY AUNTY. 😔",
+   "emotion": "sad"
+  },
+  {
+   "shot": "twist",
+   "cap": "And that's how the city was saved.",
+   "say": "And that's how the city was saved.",
+   "who": "bright",
+   "bubble": "AND THE CITY WAS SAVED. 🦸",
+   "emotion": "proud"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag who always answers Mum. Even during a battle.",
+   "say": "Tag who always answers Mum. Even during a battle."
+  }
+ ]
+}

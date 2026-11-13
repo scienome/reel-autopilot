@@ -1,0 +1,87 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "The robot wanted to learn sarcasm. So it studied Mum.",
+   "say": "The robot wanted to learn sarcasm. So it studied Mum."
+  },
+  {
+   "shot": "learn",
+   "cap": "Observing mother. Recording.",
+   "say": "Observing mother. Recording.",
+   "who": "bot",
+   "bubble": "OBSERVING MOTHER. ● REC",
+   "emotion": "calm"
+  },
+  {
+   "shot": "learn",
+   "cap": "Mum, I cleaned my room!",
+   "say": "Mum, I cleaned my room!",
+   "who": "kid",
+   "emotion": "proud"
+  },
+  {
+   "shot": "learn",
+   "cap": "Wow. Should we call the news?",
+   "say": "Wow. Should we call the news?",
+   "who": "mum",
+   "bubble": "WOW. CALL THE NEWS? 📺",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "learn",
+   "cap": "Data received. Sarcasm level. Expert.",
+   "say": "Data received. Sarcasm level. Expert.",
+   "who": "bot",
+   "bubble": "SARCASM LEVEL: EXPERT 📈",
+   "think": true,
+   "emotion": "calm"
+  },
+  {
+   "shot": "try",
+   "cap": "Next day, the robot tries.",
+   "say": "Next day, the robot tries."
+  },
+  {
+   "shot": "try",
+   "cap": "Robot, I finished my homework!",
+   "say": "Robot, I finished my homework!",
+   "who": "kid",
+   "emotion": "happy"
+  },
+  {
+   "shot": "try",
+   "cap": "Wow. Should we call the news? Lie complete.",
+   "say": "Wow. Should we call the news? Lie complete.",
+   "who": "bot",
+   "bubble": "WOW. CALL THE NEWS? 🤖",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "twist",
+   "cap": "Mum looks at the robot.",
+   "say": "Mum looks at the robot."
+  },
+  {
+   "shot": "twist",
+   "cap": "Cute. Now do the dishes. Or should I call the news?",
+   "say": "Cute. Now do the dishes. Or should I call the news?",
+   "who": "mum",
+   "bubble": "CUTE. NOW DO THE DISHES. 😌",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "twist",
+   "cap": "System. Defeated.",
+   "say": "System. Defeated.",
+   "who": "bot",
+   "bubble": "SYSTEM: DEFEATED. 💀",
+   "emotion": "sad"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the sarcasm champion in your house. The robot studied Mum.",
+   "say": "Tag the sarcasm champion in your house. The robot studied Mum."
+  }
+ ]
+}

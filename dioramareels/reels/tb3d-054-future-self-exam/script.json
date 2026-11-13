@@ -1,0 +1,66 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Your future self came back in time. To help you with tomorrow's exam.",
+   "say": "Your future self came back in time. To help you with tomorrow's exam."
+  },
+  {
+   "shot": "help",
+   "cap": "Listen carefully. I've taken this exam. I know every answer.",
+   "say": "Listen carefully. I've taken this exam. I know every answer.",
+   "who": "old",
+   "bubble": "I KNOW EVERY ANSWER. 👴",
+   "emotion": "proud"
+  },
+  {
+   "shot": "help",
+   "cap": "Yes! Question one!",
+   "say": "Yes! Question one!",
+   "who": "you",
+   "bubble": "QUESTION ONE! 📝",
+   "emotion": "excited"
+  },
+  {
+   "shot": "help",
+   "cap": "Question one is. Hmm. It was. Something about. A triangle?",
+   "say": "Question one is. Hmm. It was. Something about. A triangle?",
+   "who": "old",
+   "bubble": "IT WAS… A TRIANGLE? 🔺",
+   "emotion": "anxious"
+  },
+  {
+   "shot": "help",
+   "cap": "You don't remember?",
+   "say": "You don't remember?",
+   "who": "you",
+   "emotion": "sad"
+  },
+  {
+   "shot": "help",
+   "cap": "It was fifty years ago! I don't remember my own phone number!",
+   "say": "It was fifty years ago! I don't remember my own phone number!",
+   "who": "old",
+   "bubble": "IT WAS 50 YEARS AGO! 😤",
+   "emotion": "angry"
+  },
+  {
+   "shot": "twist",
+   "cap": "So they study together. All night.",
+   "say": "So they study together. All night."
+  },
+  {
+   "shot": "twist",
+   "cap": "You know, this is the first time I actually learned this.",
+   "say": "You know, this is the first time I actually learned this.",
+   "who": "old",
+   "bubble": "FIRST TIME I ACTUALLY LEARNED THIS. 🥲",
+   "emotion": "content"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag who needs help with exams. Even your future self can't save you.",
+   "say": "Tag who needs help with exams. Even your future self can't save you."
+  }
+ ]
+}

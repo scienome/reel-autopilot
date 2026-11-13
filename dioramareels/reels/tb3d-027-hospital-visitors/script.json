@@ -1,0 +1,77 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Visiting hours. Nobody is here for the patient.",
+   "say": "Visiting hours. Nobody is here for the patient."
+  },
+  {
+   "shot": "visit",
+   "cap": "Beta, you look so weak. Also, what's your salary now?",
+   "say": "Beta, you look so weak. Also, what's your salary now?",
+   "who": "aunty",
+   "bubble": "YOU LOOK WEAK. SALARY? 💰",
+   "emotion": "sad"
+  },
+  {
+   "shot": "visit",
+   "cap": "I broke one finger.",
+   "say": "I broke one finger.",
+   "who": "raj",
+   "bubble": "I BROKE. ONE. FINGER. ☝️",
+   "think": true,
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "visit",
+   "cap": "Does this room have a phone charger? And Wi-Fi?",
+   "say": "Does this room have a phone charger? And Wi-Fi?",
+   "who": "uncle",
+   "bubble": "CHARGER? WI-FI? 🔌",
+   "emotion": "calm"
+  },
+  {
+   "shot": "visit",
+   "cap": "I brought bananas. I'll eat them. You rest.",
+   "say": "I brought bananas. I'll eat them. You rest.",
+   "who": "aunty",
+   "bubble": "BROUGHT BANANAS. I'LL EAT THEM. 🍌",
+   "emotion": "content"
+  },
+  {
+   "shot": "doc",
+   "cap": "Then the doctor walks in.",
+   "say": "Then the doctor walks in."
+  },
+  {
+   "shot": "doc",
+   "cap": "Good news. You can go home today.",
+   "say": "Good news. You can go home today.",
+   "who": "doctor",
+   "bubble": "YOU CAN GO HOME TODAY. ✅",
+   "emotion": "happy"
+  },
+  {
+   "shot": "doc",
+   "cap": "No. Please. Office reopens tomorrow.",
+   "say": "No. Please. Office reopens tomorrow.",
+   "who": "raj",
+   "bubble": "NO. OFFICE REOPENS TOMORROW. 😩",
+   "emotion": "scared"
+  },
+  {
+   "shot": "twist",
+   "cap": "Fine. One more day. I also have office tomorrow.",
+   "say": "Fine. One more day. I also have office tomorrow.",
+   "who": "doctor",
+   "bubble": "ONE MORE DAY. I HAVE OFFICE TOO. 🤝",
+   "think": true,
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the relative who comes for the food. Visiting hours. Nobody is here for the patient.",
+   "say": "Tag the relative who comes for the food. Visiting hours. Nobody is here for the patient."
+  }
+ ]
+}

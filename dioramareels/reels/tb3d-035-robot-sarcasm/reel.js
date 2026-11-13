@@ -1,0 +1,4 @@
+// tb3d-035-robot-sarcasm Thought Bubble 3D (k.tb template): The robot learned sarcasm. From Mum. 🤖🙄
+STORY((k) => k.tb({ hook: 'THE ROBOT LEARNED SARCASM.\nFROM *MUM*.', tag: 'TAG THE SARCASM CHAMPION 👇', cast: { bot: { make: 'robot' }, mum: { body: 'f', look: 'd' }, kid: { body: 'm', look: 'e', h: 1.25 } },
+  sets: { liv: { type: 'living', at: { bot: [-0.8, 0, 0.5, 0.4], mum: [0.7, 0.6, -0.4], kid: [0, 1.2, 0] }, props: [['sofa', 0, 0, -1.6, 0]] } },
+  shots: { hook: { set: 'liv', cam: 'two', noBubble: true }, learn: { set: 'liv' }, try: { set: 'liv', hide: ['mum'] }, twist: { set: 'liv', boom: ['K.O. 🥊', 0.85] }, outro: { set: 'liv', cam: 'wide' } } }), { assets: [...(window.TB_ASSETS || []), 'mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/ual1'] });

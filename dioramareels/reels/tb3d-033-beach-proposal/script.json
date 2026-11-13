@@ -1,0 +1,74 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "He planned the perfect proposal. The sea had other plans.",
+   "say": "He planned the perfect proposal. The sea had other plans."
+  },
+  {
+   "shot": "plan",
+   "cap": "Candles. Moon. Ring. Do not drop the ring.",
+   "say": "Candles. Moon. Ring. Do not drop the ring.",
+   "who": "arjun",
+   "bubble": "DO NOT DROP THE RING. 💍",
+   "think": true,
+   "emotion": "anxious"
+  },
+  {
+   "shot": "plan",
+   "cap": "Why is he sweating? It's night.",
+   "say": "Why is he sweating? It's night.",
+   "who": "mira",
+   "bubble": "WHY IS HE SWEATING? 🤨",
+   "think": true,
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "kneel",
+   "cap": "Mira. Will you.",
+   "say": "Mira. Will you.",
+   "who": "arjun",
+   "bubble": "MIRA… WILL YOU— 💍",
+   "emotion": "anxious"
+  },
+  {
+   "shot": "kneel",
+   "cap": "A wave. A big one. The ring is gone.",
+   "say": "A wave. A big one. The ring is gone."
+  },
+  {
+   "shot": "kneel",
+   "cap": "No. No no no.",
+   "say": "No. No no no.",
+   "who": "arjun",
+   "bubble": "NO. NO NO NO. 😱",
+   "emotion": "scared"
+  },
+  {
+   "shot": "twist",
+   "cap": "Then, from the water, a mermaid.",
+   "say": "Then, from the water, a mermaid."
+  },
+  {
+   "shot": "twist",
+   "cap": "You dropped this? Also, she's saying yes. I can tell.",
+   "say": "You dropped this? Also, she's saying yes. I can tell.",
+   "who": "pearl",
+   "bubble": "YOU DROPPED THIS? SHE SAYS YES. 🧜‍♀️💍",
+   "emotion": "happy"
+  },
+  {
+   "shot": "twist",
+   "cap": "Yes. Obviously yes.",
+   "say": "Yes. Obviously yes.",
+   "who": "mira",
+   "bubble": "YES. OBVIOUSLY YES. 💕",
+   "emotion": "excited"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag who'd propose like this. He planned the perfect proposal.",
+   "say": "Tag who'd propose like this. He planned the perfect proposal."
+  }
+ ]
+}

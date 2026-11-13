@@ -1,0 +1,85 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "The teacher asked, any questions? Here's what the class was really thinking.",
+   "say": "The teacher asked, any questions? Here's what the class was really thinking."
+  },
+  {
+   "shot": "ask",
+   "cap": "So. Any questions?",
+   "say": "So. Any questions?",
+   "who": "teacher",
+   "emotion": "calm"
+  },
+  {
+   "shot": "ask",
+   "cap": "I have forty questions. I will ask zero.",
+   "say": "I have forty questions. I will ask zero.",
+   "who": "riya",
+   "bubble": "40 QUESTIONS. ASKING 0. 🤐",
+   "think": true,
+   "emotion": "anxious"
+  },
+  {
+   "shot": "ask",
+   "cap": "If I don't move, she can't see me.",
+   "say": "If I don't move, she can't see me.",
+   "who": "aman",
+   "bubble": "DON'T MOVE. SHE CAN'T SEE YOU. 🦖",
+   "think": true,
+   "emotion": "scared"
+  },
+  {
+   "shot": "stare",
+   "cap": "Aman. Explain it to the class.",
+   "say": "Aman. Explain it to the class.",
+   "who": "teacher",
+   "bubble": "AMAN. EXPLAIN IT. 👀",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "stare",
+   "cap": "Explain what? What was the lesson? What is my name?",
+   "say": "Explain what? What was the lesson? What is my name?",
+   "who": "aman",
+   "bubble": "WHAT WAS THE LESSON?! 😰",
+   "think": true,
+   "emotion": "scared"
+  },
+  {
+   "shot": "stare",
+   "cap": "It's. Very. Interesting.",
+   "say": "It's. Very. Interesting.",
+   "who": "aman",
+   "emotion": "anxious"
+  },
+  {
+   "shot": "twist",
+   "cap": "Then they hear the teacher's thoughts.",
+   "say": "Then they hear the teacher's thoughts."
+  },
+  {
+   "shot": "twist",
+   "cap": "Please nobody ask. I read this chapter last night.",
+   "say": "Please nobody ask. I read this chapter last night.",
+   "who": "teacher",
+   "bubble": "PLEASE NOBODY ASK. I READ IT LAST NIGHT. 😅",
+   "think": true,
+   "emotion": "anxious"
+  },
+  {
+   "shot": "twist",
+   "cap": "Same lesson since 1824. Still no questions.",
+   "say": "Same lesson since 1824. Still no questions.",
+   "who": "ghost",
+   "bubble": "SAME LESSON SINCE 1824. 👻",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag your backbencher. The teacher asked, any questions?",
+   "say": "Tag your backbencher. The teacher asked, any questions?"
+  }
+ ]
+}

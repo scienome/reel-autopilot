@@ -1,0 +1,80 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "She said, I'm not hungry. Then the food arrived.",
+   "say": "She said, I'm not hungry. Then the food arrived."
+  },
+  {
+   "shot": "order",
+   "cap": "Ready to order?",
+   "say": "Ready to order?",
+   "who": "waiter",
+   "emotion": "calm"
+  },
+  {
+   "shot": "order",
+   "cap": "One burger, large fries. You?",
+   "say": "One burger, large fries. You?",
+   "who": "sam",
+   "emotion": "happy"
+  },
+  {
+   "shot": "order",
+   "cap": "Nothing. I'm not hungry.",
+   "say": "Nothing. I'm not hungry.",
+   "who": "maya",
+   "bubble": "NOTHING. NOT HUNGRY. 🙂",
+   "emotion": "calm"
+  },
+  {
+   "shot": "order",
+   "cap": "Order something. I know this trap.",
+   "say": "Order something. I know this trap.",
+   "who": "sam",
+   "bubble": "ORDER SOMETHING. I KNOW THIS TRAP. 🪤",
+   "think": true,
+   "emotion": "anxious"
+  },
+  {
+   "shot": "food",
+   "cap": "The food arrives.",
+   "say": "The food arrives."
+  },
+  {
+   "shot": "food",
+   "cap": "Just one fry.",
+   "say": "Just one fry.",
+   "who": "maya",
+   "bubble": "JUST ONE FRY. 🍟",
+   "emotion": "content"
+  },
+  {
+   "shot": "food",
+   "cap": "One fry became twenty. Then half the burger.",
+   "say": "One fry became twenty. Then half the burger."
+  },
+  {
+   "shot": "twist",
+   "cap": "Next time I'm ordering two of everything. And hiding one.",
+   "say": "Next time I'm ordering two of everything. And hiding one.",
+   "who": "sam",
+   "bubble": "NEXT TIME: ORDER 2. HIDE 1. 🕵️",
+   "think": true,
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "twist",
+   "cap": "Are you going to finish that?",
+   "say": "Are you going to finish that?",
+   "who": "maya",
+   "bubble": "ARE YOU GOING TO FINISH THAT? 👀",
+   "emotion": "happy"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag who does this. I'm not hungry, she said.",
+   "say": "Tag who does this. I'm not hungry, she said."
+  }
+ ]
+}

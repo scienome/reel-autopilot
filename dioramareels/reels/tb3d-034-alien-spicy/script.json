@@ -1,0 +1,73 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "An alien landed in India. First stop. Street food.",
+   "say": "An alien landed in India. First stop. Street food."
+  },
+  {
+   "shot": "order",
+   "cap": "One food, please. The mildest one.",
+   "say": "One food, please. The mildest one.",
+   "who": "zork",
+   "bubble": "ONE FOOD. MILDEST ONE. 👽",
+   "emotion": "calm"
+  },
+  {
+   "shot": "order",
+   "cap": "Mild? Haan haan, very mild.",
+   "say": "Mild? Haan haan, very mild.",
+   "who": "vendor",
+   "bubble": "MILD? HAAN HAAN. VERY MILD. 🌶️",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "order",
+   "cap": "Extra green chilli. For welcome.",
+   "say": "Extra green chilli. For welcome.",
+   "who": "vendor",
+   "bubble": "EXTRA CHILLI. FOR WELCOME. 😈",
+   "think": true,
+   "emotion": "proud"
+  },
+  {
+   "shot": "bite",
+   "cap": "One bite.",
+   "say": "One bite."
+  },
+  {
+   "shot": "bite",
+   "cap": "My antennae are on fire. I can see sounds.",
+   "say": "My antennae are on fire. I can see sounds.",
+   "who": "zork",
+   "bubble": "I CAN SEE SOUNDS. 🔥🔥",
+   "emotion": "scared"
+  },
+  {
+   "shot": "bite",
+   "cap": "Water. Water! Why is the water making it worse?",
+   "say": "Water. Water! Why is the water making it worse?",
+   "who": "zork",
+   "bubble": "WHY IS WATER MAKING IT WORSE?! 💧",
+   "emotion": "scared"
+  },
+  {
+   "shot": "twist",
+   "cap": "Five minutes later.",
+   "say": "Five minutes later."
+  },
+  {
+   "shot": "twist",
+   "cap": "One more plate. And two for my mother ship.",
+   "say": "One more plate. And two for my mother ship.",
+   "who": "zork",
+   "bubble": "ONE MORE. TWO FOR THE MOTHERSHIP. 🛸",
+   "emotion": "excited"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag who can't handle spice. An alien tried Indian street food.",
+   "say": "Tag who can't handle spice. An alien tried Indian street food."
+  }
+ ]
+}

@@ -1,0 +1,74 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Mum said, five minutes. Just milk.",
+   "say": "Mum said, five minutes. Just milk."
+  },
+  {
+   "shot": "shop",
+   "cap": "Just milk. Five minutes. Wait outside.",
+   "say": "Just milk. Five minutes. Wait outside.",
+   "who": "mum",
+   "bubble": "JUST MILK. 5 MINUTES. 🥛",
+   "emotion": "calm"
+  },
+  {
+   "shot": "shop",
+   "cap": "I have heard this before. I am not ready.",
+   "say": "I have heard this before. I am not ready.",
+   "who": "kid",
+   "bubble": "I'VE HEARD THIS BEFORE. 😰",
+   "think": true,
+   "emotion": "anxious"
+  },
+  {
+   "shot": "meet",
+   "cap": "Then she sees an old friend.",
+   "say": "Then she sees an old friend."
+  },
+  {
+   "shot": "meet",
+   "cap": "Sunita! Twenty years! How is your son? Still not married?",
+   "say": "Sunita! Twenty years! How is your son? Still not married?",
+   "who": "aunty",
+   "bubble": "20 YEARS! SON STILL NOT MARRIED? 👀",
+   "emotion": "excited"
+  },
+  {
+   "shot": "meet",
+   "cap": "Don't ask. Come, tell me everything.",
+   "say": "Don't ask. Come, tell me everything.",
+   "who": "mum",
+   "bubble": "DON'T ASK. TELL ME EVERYTHING. ☕",
+   "emotion": "happy"
+  },
+  {
+   "shot": "meet",
+   "cap": "Minute forty. The sun is setting. I am growing a beard.",
+   "say": "Minute forty. The sun is setting. I am growing a beard.",
+   "who": "kid",
+   "bubble": "MINUTE 40. GROWING A BEARD. 🧔",
+   "think": true,
+   "emotion": "sad"
+  },
+  {
+   "shot": "twist",
+   "cap": "Two hours later, they come home. Without the milk.",
+   "say": "Two hours later, they come home. Without the milk."
+  },
+  {
+   "shot": "twist",
+   "cap": "We forgot the milk. Go get it. Five minutes.",
+   "say": "We forgot the milk. Go get it. Five minutes.",
+   "who": "mum",
+   "bubble": "FORGOT THE MILK. 5 MINUTES. 🙃",
+   "emotion": "calm"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag your mum. She said, five minutes.",
+   "say": "Tag your mum. She said, five minutes."
+  }
+ ]
+}

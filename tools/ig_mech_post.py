@@ -65,10 +65,11 @@ def mech_order():
 
 def slots_near(now):
     s = json.load(open(SCHED)); off = s.get('timezone_offset', '+05:30')
+    times = (json.load(open(POV_SCHED)).get('times') if os.path.exists(POV_SCHED) else None) or s['times']  # povreels/schedule.json "times" (4 a day since 13 Nov 2026) wins over the Dave times
     out = []
     for k in (-1, 0, 1):
         day = (now + dt.timedelta(hours=5, minutes=30) + dt.timedelta(days=k)).date().isoformat()
-        out += [slot_utc(day, hhmm, off) for hhmm in s['times']]
+        out += [slot_utc(day, hhmm, off) for hhmm in times]
     return sorted(out)
 
 

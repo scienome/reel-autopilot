@@ -1,0 +1,73 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Death tried online dating. It went exactly how you think.",
+   "say": "Death tried online dating. It went exactly how you think."
+  },
+  {
+   "shot": "bio",
+   "cap": "You need a better bio, beta. I'll write it.",
+   "say": "You need a better bio, beta. I'll write it.",
+   "who": "nani",
+   "bubble": "I'LL WRITE YOUR BIO, BETA. ✍️",
+   "emotion": "happy"
+  },
+  {
+   "shot": "bio",
+   "cap": "Tall. Mysterious. Will be there for you in the end.",
+   "say": "Tall. Mysterious. Will be there for you in the end.",
+   "who": "death",
+   "bubble": "TALL. MYSTERIOUS. THERE IN THE END. 💀",
+   "emotion": "proud"
+  },
+  {
+   "shot": "bio",
+   "cap": "Hmm. Too honest.",
+   "say": "Hmm. Too honest.",
+   "who": "nani",
+   "bubble": "TOO HONEST. 🙄",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "match",
+   "cap": "Zero matches. For three weeks.",
+   "say": "Zero matches. For three weeks."
+  },
+  {
+   "shot": "match",
+   "cap": "Everybody swipes left. Everybody, eventually, meets me anyway.",
+   "say": "Everybody swipes left. Everybody, eventually, meets me anyway.",
+   "who": "death",
+   "bubble": "EVERYONE SWIPES LEFT. 😔",
+   "think": true,
+   "emotion": "sad"
+  },
+  {
+   "shot": "twist",
+   "cap": "Then. One match.",
+   "say": "Then. One match."
+  },
+  {
+   "shot": "twist",
+   "cap": "Hi. I'm also dead. Coffee?",
+   "say": "Hi. I'm also dead. Coffee?",
+   "who": "ghost",
+   "bubble": "HI. ALSO DEAD. COFFEE? 👻☕",
+   "emotion": "happy"
+  },
+  {
+   "shot": "twist",
+   "cap": "Finally. Someone who gets me.",
+   "say": "Finally. Someone who gets me.",
+   "who": "death",
+   "bubble": "FINALLY. SOMEONE WHO GETS ME. 💀💕",
+   "emotion": "happy"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag your single friend. Death tried online dating.",
+   "say": "Tag your single friend. Death tried online dating."
+  }
+ ]
+}

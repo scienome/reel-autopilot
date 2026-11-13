@@ -1,0 +1,73 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "The AC broke. Dad said, don't call anyone. I'll fix it.",
+   "say": "The AC broke. Dad said, don't call anyone. I'll fix it."
+  },
+  {
+   "shot": "fix",
+   "cap": "Don't call anyone. I watched one video.",
+   "say": "Don't call anyone. I watched one video.",
+   "who": "dad",
+   "bubble": "DON'T CALL ANYONE. I WATCHED 1 VIDEO. 📱",
+   "emotion": "proud"
+  },
+  {
+   "shot": "fix",
+   "cap": "He watched the first thirty seconds.",
+   "say": "He watched the first thirty seconds.",
+   "who": "kid",
+   "bubble": "HE WATCHED 30 SECONDS. 😬",
+   "think": true,
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "fix",
+   "cap": "Hour one. Hour two. Now there are extra screws.",
+   "say": "Hour one. Hour two. Now there are extra screws."
+  },
+  {
+   "shot": "fix",
+   "cap": "These are extra screws. Companies always give extra.",
+   "say": "These are extra screws. Companies always give extra.",
+   "who": "dad",
+   "bubble": "EXTRA SCREWS. ALWAYS EXTRA. 🔩",
+   "emotion": "anxious"
+  },
+  {
+   "shot": "mum",
+   "cap": "I'm calling the guy.",
+   "say": "I'm calling the guy.",
+   "who": "mum",
+   "bubble": "I'M CALLING THE GUY. 📞",
+   "emotion": "calm"
+  },
+  {
+   "shot": "mum",
+   "cap": "Fine. But I loosened it for him.",
+   "say": "Fine. But I loosened it for him.",
+   "who": "dad",
+   "bubble": "FINE. I LOOSENED IT FOR HIM. 😤",
+   "emotion": "proud"
+  },
+  {
+   "shot": "twist",
+   "cap": "The repair guy arrives. Fixes it in two minutes.",
+   "say": "The repair guy arrives. Fixes it in two minutes."
+  },
+  {
+   "shot": "twist",
+   "cap": "See? Because I loosened it.",
+   "say": "See? Because I loosened it.",
+   "who": "dad",
+   "bubble": "SEE? BECAUSE I LOOSENED IT. 😎",
+   "emotion": "proud"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the dad who fixes everything. He said, don't call anyone.",
+   "say": "Tag the dad who fixes everything. He said, don't call anyone."
+  }
+ ]
+}

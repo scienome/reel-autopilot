@@ -1,0 +1,77 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "The neighbour aunty knew your exam result before you did.",
+   "say": "The neighbour aunty knew your exam result before you did."
+  },
+  {
+   "shot": "res",
+   "cap": "Results come out at ten. It's nine fifty nine.",
+   "say": "Results come out at ten. It's nine fifty nine.",
+   "who": "kid",
+   "bubble": "RESULTS AT 10. IT'S 9:59. 😰",
+   "think": true,
+   "emotion": "anxious"
+  },
+  {
+   "shot": "res",
+   "cap": "Ding dong.",
+   "say": "Ding dong."
+  },
+  {
+   "shot": "res",
+   "cap": "Congratulations, beta! Seventy eight percent! Maths was weak, no?",
+   "say": "Congratulations, beta! Seventy eight percent! Maths was weak, no?",
+   "who": "aunty",
+   "bubble": "78%! MATHS WAS WEAK, NO? 📋",
+   "emotion": "excited"
+  },
+  {
+   "shot": "res",
+   "cap": "How. The website isn't even open.",
+   "say": "How. The website isn't even open.",
+   "who": "kid",
+   "bubble": "HOW?! THE SITE ISN'T OPEN. 😳",
+   "emotion": "scared"
+  },
+  {
+   "shot": "more",
+   "cap": "She also knows his crush. His salary next year. And his wedding date.",
+   "say": "She also knows his crush. His salary next year. And his wedding date."
+  },
+  {
+   "shot": "more",
+   "cap": "December. Nice girl. Don't worry.",
+   "say": "December. Nice girl. Don't worry.",
+   "who": "aunty",
+   "bubble": "DECEMBER. NICE GIRL. 💍",
+   "emotion": "content"
+  },
+  {
+   "shot": "twist",
+   "cap": "Mum walks in.",
+   "say": "Mum walks in."
+  },
+  {
+   "shot": "twist",
+   "cap": "Aunty, how do you know all this?",
+   "say": "Aunty, how do you know all this?",
+   "who": "mum",
+   "emotion": "calm"
+  },
+  {
+   "shot": "twist",
+   "cap": "The ghost upstairs. He tells me everything.",
+   "say": "The ghost upstairs. He tells me everything.",
+   "who": "aunty",
+   "bubble": "THE GHOST UPSTAIRS TELLS ME. 👻",
+   "emotion": "proud"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the aunty who knows everything. Before you do.",
+   "say": "Tag the aunty who knows everything. Before you do."
+  }
+ ]
+}

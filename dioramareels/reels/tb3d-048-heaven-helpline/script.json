@@ -1,0 +1,73 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Heaven has a customer care number. Please hold.",
+   "say": "Heaven has a customer care number. Please hold."
+  },
+  {
+   "shot": "call",
+   "cap": "Thank you for calling heaven. Press one for Hindi. Press two for clouds.",
+   "say": "Thank you for calling heaven. Press one for Hindi. Press two for clouds.",
+   "who": "clerk",
+   "bubble": "PRESS 1 FOR HINDI. 2 FOR CLOUDS. ☁️",
+   "emotion": "calm"
+  },
+  {
+   "shot": "call",
+   "cap": "I just want to know why I can't get in!",
+   "say": "I just want to know why I can't get in!",
+   "who": "you",
+   "bubble": "WHY CAN'T I GET IN?! 😤",
+   "emotion": "angry"
+  },
+  {
+   "shot": "call",
+   "cap": "Your call is important to us. Please hold for eternity.",
+   "say": "Your call is important to us. Please hold for eternity.",
+   "who": "clerk",
+   "bubble": "PLEASE HOLD. FOR ETERNITY. 🎵",
+   "emotion": "content"
+  },
+  {
+   "shot": "hold",
+   "cap": "Hold music. For four hundred years.",
+   "say": "Hold music. For four hundred years."
+  },
+  {
+   "shot": "hold",
+   "cap": "I've heard this flute song one billion times.",
+   "say": "I've heard this flute song one billion times.",
+   "who": "you",
+   "bubble": "1 BILLION FLUTE SONGS. 🎶😵",
+   "think": true,
+   "emotion": "sad"
+  },
+  {
+   "shot": "twist",
+   "cap": "Finally. A human answers. It's Death.",
+   "say": "Finally. A human answers. It's Death."
+  },
+  {
+   "shot": "twist",
+   "cap": "Hello. I'm covering the night shift. Have you tried dying again?",
+   "say": "Hello. I'm covering the night shift. Have you tried dying again?",
+   "who": "death",
+   "bubble": "HAVE YOU TRIED DYING AGAIN? 💀",
+   "emotion": "calm"
+  },
+  {
+   "shot": "twist",
+   "cap": "That's. Actually the IT advice.",
+   "say": "That's. Actually the IT advice.",
+   "who": "you",
+   "bubble": "THAT'S… THE IT ADVICE. 🤦",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag who's always on hold. Heaven has a customer care number.",
+   "say": "Tag who's always on hold. Heaven has a customer care number."
+  }
+ ]
+}

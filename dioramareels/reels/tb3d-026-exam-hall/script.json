@@ -1,0 +1,83 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Exam hall. Ten minutes in. Everyone is thinking the same thing.",
+   "say": "Exam hall. Ten minutes in. Everyone is thinking the same thing."
+  },
+  {
+   "shot": "paper",
+   "cap": "Question one. I have never seen these words in my life.",
+   "say": "Question one. I have never seen these words in my life.",
+   "who": "kabir",
+   "bubble": "Q1: NEVER SEEN THESE WORDS. 😶",
+   "think": true,
+   "emotion": "scared"
+  },
+  {
+   "shot": "paper",
+   "cap": "I studied chapter four. They asked chapter five.",
+   "say": "I studied chapter four. They asked chapter five.",
+   "who": "zoya",
+   "bubble": "STUDIED CH. 4. THEY ASKED CH. 5. 💀",
+   "think": true,
+   "emotion": "sad"
+  },
+  {
+   "shot": "paper",
+   "cap": "Eyes on your own paper.",
+   "say": "Eyes on your own paper.",
+   "who": "teacher",
+   "bubble": "EYES ON YOUR OWN PAPER. 👁️",
+   "emotion": "angry"
+  },
+  {
+   "shot": "topper",
+   "cap": "Then they look at the topper. He's writing. Fast.",
+   "say": "Then they look at the topper. He's writing. Fast."
+  },
+  {
+   "shot": "topper",
+   "cap": "He's on page six. How. HOW.",
+   "say": "He's on page six. How. HOW.",
+   "who": "kabir",
+   "bubble": "HE'S ON PAGE 6. HOW?! 😱",
+   "think": true,
+   "emotion": "anxious"
+  },
+  {
+   "shot": "topper",
+   "cap": "Even his handwriting looks confident.",
+   "say": "Even his handwriting looks confident.",
+   "who": "zoya",
+   "think": true,
+   "emotion": "sad"
+  },
+  {
+   "shot": "twist",
+   "cap": "Exam over. They check his paper.",
+   "say": "Exam over. They check his paper."
+  },
+  {
+   "shot": "twist",
+   "cap": "I didn't know anything. So I wrote the question six times.",
+   "say": "I didn't know anything. So I wrote the question six times.",
+   "who": "topper",
+   "bubble": "I WROTE THE QUESTION 6 TIMES. ✍️",
+   "emotion": "proud"
+  },
+  {
+   "shot": "twist",
+   "cap": "Full marks for confidence.",
+   "say": "Full marks for confidence.",
+   "who": "teacher",
+   "bubble": "FULL MARKS FOR CONFIDENCE. 🏆",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag your exam buddy. Exam hall. Ten minutes in.",
+   "say": "Tag your exam buddy. Exam hall. Ten minutes in."
+  }
+ ]
+}

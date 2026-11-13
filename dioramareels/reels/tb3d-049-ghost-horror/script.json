@@ -1,0 +1,66 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "The ghost went to see a horror movie. It did not go well.",
+   "say": "The ghost went to see a horror movie. It did not go well."
+  },
+  {
+   "shot": "watch",
+   "cap": "Ha. Fake ghosts. I've been a ghost since 1824. Nothing scares me.",
+   "say": "Ha. Fake ghosts. I've been a ghost since 1824. Nothing scares me.",
+   "who": "ghost",
+   "bubble": "NOTHING SCARES ME. SINCE 1824. 😎",
+   "emotion": "proud"
+  },
+  {
+   "shot": "watch",
+   "cap": "Why is the empty seat eating popcorn?",
+   "say": "Why is the empty seat eating popcorn?",
+   "who": "maya",
+   "bubble": "WHY IS THE EMPTY SEAT EATING POPCORN? 🍿",
+   "think": true,
+   "emotion": "scared"
+  },
+  {
+   "shot": "scary",
+   "cap": "The scary scene. The door creaks.",
+   "say": "The scary scene. The door creaks."
+  },
+  {
+   "shot": "scary",
+   "cap": "It's fine. It's fine. Why is it so quiet.",
+   "say": "It's fine. It's fine. Why is it so quiet.",
+   "who": "ghost",
+   "bubble": "IT'S FINE. WHY SO QUIET. 😰",
+   "think": true,
+   "emotion": "anxious"
+  },
+  {
+   "shot": "twist",
+   "cap": "Jump scare. The ghost screams. The whole cinema screams at the ghost.",
+   "say": "Jump scare. The ghost screams. The whole cinema screams at the ghost."
+  },
+  {
+   "shot": "twist",
+   "cap": "The ghost is scared of the ghost?",
+   "say": "The ghost is scared of the ghost?",
+   "who": "sam",
+   "bubble": "THE GHOST IS SCARED OF THE GHOST?! 😱",
+   "emotion": "scared"
+  },
+  {
+   "shot": "twist",
+   "cap": "I'm going home. I'm sleeping with the lights on.",
+   "say": "I'm going home. I'm sleeping with the lights on.",
+   "who": "ghost",
+   "bubble": "SLEEPING WITH THE LIGHTS ON. 💡",
+   "emotion": "scared"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag who screams at horror movies. Even the ghost did.",
+   "say": "Tag who screams at horror movies. Even the ghost did."
+  }
+ ]
+}

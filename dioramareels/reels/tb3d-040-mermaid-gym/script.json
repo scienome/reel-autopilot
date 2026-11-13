@@ -1,0 +1,64 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "A mermaid joined the gym. Monday is leg day.",
+   "say": "A mermaid joined the gym. Monday is leg day."
+  },
+  {
+   "shot": "day",
+   "cap": "Okay! Today. Legs! Squats! Let's go!",
+   "say": "Okay! Today. Legs! Squats! Let's go!",
+   "who": "trainer",
+   "bubble": "TODAY: LEGS! SQUATS! 📣",
+   "emotion": "excited"
+  },
+  {
+   "shot": "day",
+   "cap": "I have a tail. I have never had a leg day. Or a leg.",
+   "say": "I have a tail. I have never had a leg day. Or a leg.",
+   "who": "pearl",
+   "bubble": "NEVER HAD A LEG DAY. OR A LEG. 🧜‍♀️",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "day",
+   "cap": "No excuses. Tail day then!",
+   "say": "No excuses. Tail day then!",
+   "who": "trainer",
+   "bubble": "NO EXCUSES. TAIL DAY! 💪",
+   "emotion": "proud"
+  },
+  {
+   "shot": "try",
+   "cap": "She tries the treadmill. It does not go well.",
+   "say": "She tries the treadmill. It does not go well."
+  },
+  {
+   "shot": "try",
+   "cap": "Help. I'm flopping. I'm flopping!",
+   "say": "Help. I'm flopping. I'm flopping!",
+   "who": "pearl",
+   "bubble": "HELP. I'M FLOPPING! 🐟",
+   "emotion": "scared"
+  },
+  {
+   "shot": "twist",
+   "cap": "Then the swimming pool opens. She does two hundred laps in ten minutes.",
+   "say": "Then the swimming pool opens. She does two hundred laps in ten minutes."
+  },
+  {
+   "shot": "twist",
+   "cap": "Okay. You're the trainer now.",
+   "say": "Okay. You're the trainer now.",
+   "who": "trainer",
+   "bubble": "OKAY. YOU'RE THE TRAINER NOW. 🏆",
+   "emotion": "proud"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag who always skips leg day. A mermaid joined the gym.",
+   "say": "Tag who always skips leg day. A mermaid joined the gym."
+  }
+ ]
+}

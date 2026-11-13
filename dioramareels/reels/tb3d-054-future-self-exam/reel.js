@@ -1,0 +1,4 @@
+// tb3d-054-future-self-exam Thought Bubble 3D (k.tb template): Your future self came back to help with your exam. 👴📝
+STORY((k) => k.tb({ hook: 'YOUR FUTURE SELF CAME BACK\nTO HELP WITH YOUR *EXAM*.', tag: 'TAG WHO NEEDS EXAM HELP 👇', cast: { you: { body: 'm', look: 'e' }, old: { body: 'm', look: 'e', costume: 'old' } },
+  sets: { bed: { type: 'bedroom', at: { you: [0.3, -0.5, 0.2], old: [-1.0, 0.4, 0.5] }, props: [['chair', -1.5, 0, -0.6, 0.4]] } },
+  shots: { hook: { set: 'bed', cam: 'two', noBubble: true, boom: ['ZAP ⚡', 0.3] }, help: { set: 'bed' }, twist: { set: 'bed', counter: ['TIME', '3:00 AM 📚'], pose: { old: 'think' } }, outro: { set: 'bed', cam: 'wide' } } }), { assets: [...(window.TB_ASSETS || []), 'mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/ual1'] });

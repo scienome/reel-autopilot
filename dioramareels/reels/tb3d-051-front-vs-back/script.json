@@ -1,0 +1,73 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Front bench versus back bench. Same class. Different worlds.",
+   "say": "Front bench versus back bench. Same class. Different worlds."
+  },
+  {
+   "shot": "class",
+   "cap": "Ma'am, you forgot to give us homework.",
+   "say": "Ma'am, you forgot to give us homework.",
+   "who": "pet",
+   "bubble": "MA'AM, YOU FORGOT HOMEWORK. 🤓",
+   "emotion": "happy"
+  },
+  {
+   "shot": "class",
+   "cap": "The whole class is going to bury him after school.",
+   "say": "The whole class is going to bury him after school.",
+   "who": "back",
+   "bubble": "WE BURY HIM AFTER SCHOOL. ⚰️",
+   "think": true,
+   "emotion": "angry"
+  },
+  {
+   "shot": "back",
+   "cap": "Meanwhile, in the back row. A full business.",
+   "say": "Meanwhile, in the back row. A full business."
+  },
+  {
+   "shot": "back",
+   "cap": "Samosa, ten rupees. Answer key, fifty. Lunch box rental, twenty.",
+   "say": "Samosa, ten rupees. Answer key, fifty. Lunch box rental, twenty.",
+   "who": "back",
+   "bubble": "SAMOSA ₹10. ANSWER KEY ₹50. 💸",
+   "emotion": "proud"
+  },
+  {
+   "shot": "back",
+   "cap": "What is going on back there?",
+   "say": "What is going on back there?",
+   "who": "teacher",
+   "bubble": "WHAT IS GOING ON BACK THERE?! 😠",
+   "emotion": "angry"
+  },
+  {
+   "shot": "twist",
+   "cap": "Twenty years later.",
+   "say": "Twenty years later."
+  },
+  {
+   "shot": "twist",
+   "cap": "I'm a manager now. At his company.",
+   "say": "I'm a manager now. At his company.",
+   "who": "pet",
+   "bubble": "I'M A MANAGER. AT HIS COMPANY. 😅",
+   "emotion": "sad"
+  },
+  {
+   "shot": "twist",
+   "cap": "Samosa? Ten rupees. For old times.",
+   "say": "Samosa? Ten rupees. For old times.",
+   "who": "back",
+   "bubble": "SAMOSA? ₹10. OLD TIMES. 😎",
+   "emotion": "happy"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag your backbench gang. Same class. Different worlds.",
+   "say": "Tag your backbench gang. Same class. Different worlds."
+  }
+ ]
+}

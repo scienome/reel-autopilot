@@ -1,0 +1,65 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "The Goa plan. Eight years. Fifteen friends. Zero trips.",
+   "say": "The Goa plan. Eight years. Fifteen friends. Zero trips."
+  },
+  {
+   "shot": "plan",
+   "cap": "This year. Final. December. Everyone confirm!",
+   "say": "This year. Final. December. Everyone confirm!",
+   "who": "rohan",
+   "bubble": "THIS YEAR. FINAL. CONFIRM! ✅",
+   "emotion": "excited"
+  },
+  {
+   "shot": "plan",
+   "cap": "I'm in. As long as no one asks me for money.",
+   "say": "I'm in. As long as no one asks me for money.",
+   "who": "tara",
+   "bubble": "IN. NO MONEY THOUGH. 💸",
+   "emotion": "calm"
+  },
+  {
+   "shot": "plan",
+   "cap": "Sure. Just check with my wife. And my boss. And my horoscope.",
+   "say": "Sure. Just check with my wife. And my boss. And my horoscope.",
+   "who": "dev",
+   "bubble": "CHECK WITH WIFE. BOSS. HOROSCOPE. 🔮",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "drop",
+   "cap": "One by one, they drop out.",
+   "say": "One by one, they drop out."
+  },
+  {
+   "shot": "drop",
+   "cap": "Fifteen. Ten. Four. Me.",
+   "say": "Fifteen. Ten. Four. Me.",
+   "who": "rohan",
+   "bubble": "15 → 10 → 4 → ME. 😔",
+   "think": true,
+   "emotion": "sad"
+  },
+  {
+   "shot": "twist",
+   "cap": "So he goes. Alone. To the beach.",
+   "say": "So he goes. Alone. To the beach."
+  },
+  {
+   "shot": "twist",
+   "cap": "Fine. Best trip ever. Nobody fought about the bill.",
+   "say": "Fine. Best trip ever. Nobody fought about the bill.",
+   "who": "rohan",
+   "bubble": "BEST TRIP. NOBODY FOUGHT ABOUT THE BILL. 😎",
+   "emotion": "happy"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag your Goa group. Eight years. Zero trips.",
+   "say": "Tag your Goa group. Eight years. Zero trips."
+  }
+ ]
+}

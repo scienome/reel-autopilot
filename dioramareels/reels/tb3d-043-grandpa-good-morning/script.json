@@ -1,0 +1,67 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Grandpa discovered good morning images. The family will never sleep again.",
+   "say": "Grandpa discovered good morning images. The family will never sleep again."
+  },
+  {
+   "shot": "send",
+   "cap": "One rose. One sunrise. One baby with sunglasses. Send to all.",
+   "say": "One rose. One sunrise. One baby with sunglasses. Send to all.",
+   "who": "grandpa",
+   "bubble": "ROSE. SUNRISE. BABY WITH SUNGLASSES. SEND. 🌹",
+   "emotion": "excited"
+  },
+  {
+   "shot": "send",
+   "cap": "Four forty five a.m. Three hundred notifications.",
+   "say": "Four forty five a.m. Three hundred notifications.",
+   "who": "kid",
+   "bubble": "4:45 AM. 300 NOTIFICATIONS. 😵",
+   "think": true,
+   "emotion": "sad"
+  },
+  {
+   "shot": "send",
+   "cap": "Grandpa, why so many?",
+   "say": "Grandpa, why so many?",
+   "who": "kid",
+   "emotion": "calm"
+  },
+  {
+   "shot": "send",
+   "cap": "So everyone knows I woke up. And I'm alive.",
+   "say": "So everyone knows I woke up. And I'm alive.",
+   "who": "grandpa",
+   "bubble": "SO YOU KNOW I'M ALIVE. 👴",
+   "emotion": "content"
+  },
+  {
+   "shot": "twist",
+   "cap": "One morning, no message. The whole family panics.",
+   "say": "One morning, no message. The whole family panics."
+  },
+  {
+   "shot": "twist",
+   "cap": "Grandpa? Grandpa!",
+   "say": "Grandpa? Grandpa!",
+   "who": "kid",
+   "bubble": "GRANDPA?! 😱",
+   "emotion": "scared"
+  },
+  {
+   "shot": "twist",
+   "cap": "Relax. He's teaching me. I'm sending them now.",
+   "say": "Relax. He's teaching me. I'm sending them now.",
+   "who": "nani",
+   "bubble": "RELAX. NOW I SEND THEM. 🌻👵",
+   "emotion": "proud"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the good morning king of your family group.",
+   "say": "Tag the good morning king of your family group."
+  }
+ ]
+}

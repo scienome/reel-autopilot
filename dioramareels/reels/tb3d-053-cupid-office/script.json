@@ -1,0 +1,77 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Cupid got a corporate job. His target. Two shy coworkers.",
+   "say": "Cupid got a corporate job. His target. Two shy coworkers."
+  },
+  {
+   "shot": "brief",
+   "cap": "Cupid, your KPI this quarter. Raj and Priya. Make it happen.",
+   "say": "Cupid, your KPI this quarter. Raj and Priya. Make it happen.",
+   "who": "boss",
+   "bubble": "KPI: RAJ + PRIYA. MAKE IT HAPPEN. 📊",
+   "emotion": "calm"
+  },
+  {
+   "shot": "brief",
+   "cap": "Easy. Two arrows. Done by lunch.",
+   "say": "Easy. Two arrows. Done by lunch.",
+   "who": "cupid",
+   "bubble": "TWO ARROWS. DONE BY LUNCH. 🏹",
+   "emotion": "proud"
+  },
+  {
+   "shot": "shy",
+   "cap": "Should I say hi? No. Too much. Maybe a nod.",
+   "say": "Should I say hi? No. Too much. Maybe a nod.",
+   "who": "raj",
+   "bubble": "SAY HI? NO. MAYBE A NOD. 😳",
+   "think": true,
+   "emotion": "anxious"
+  },
+  {
+   "shot": "shy",
+   "cap": "He nodded. What does a nod mean?",
+   "say": "He nodded. What does a nod mean?",
+   "who": "priya",
+   "bubble": "HE NODDED. WHAT DOES IT MEAN?! 🤔",
+   "think": true,
+   "emotion": "anxious"
+  },
+  {
+   "shot": "shy",
+   "cap": "Three months. Nods only.",
+   "say": "Three months. Nods only."
+  },
+  {
+   "shot": "twist",
+   "cap": "Forget arrows. I booked you both the same meeting room. Forever.",
+   "say": "Forget arrows. I booked you both the same meeting room. Forever.",
+   "who": "cupid",
+   "bubble": "SAME MEETING ROOM. FOREVER. 🔒",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "twist",
+   "cap": "Hi.",
+   "say": "Hi.",
+   "who": "priya",
+   "bubble": "HI. 💕",
+   "emotion": "happy"
+  },
+  {
+   "shot": "twist",
+   "cap": "Hi.",
+   "say": "Hi.",
+   "who": "raj",
+   "bubble": "HI. 💕",
+   "emotion": "happy"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag your office crush. Or don't. Cupid got a corporate job.",
+   "say": "Tag your office crush. Or don't. Cupid got a corporate job."
+  }
+ ]
+}

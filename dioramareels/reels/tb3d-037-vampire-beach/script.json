@@ -1,0 +1,72 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "A six hundred year old vampire. His first beach holiday.",
+   "say": "A six hundred year old vampire. His first beach holiday."
+  },
+  {
+   "shot": "pack",
+   "cap": "Sunscreen?",
+   "say": "Sunscreen?",
+   "who": "ben",
+   "emotion": "calm"
+  },
+  {
+   "shot": "pack",
+   "cap": "SPF ten thousand. Four bottles. And an umbrella. And another umbrella.",
+   "say": "SPF ten thousand. Four bottles. And an umbrella. And another umbrella.",
+   "who": "victor",
+   "bubble": "SPF 10,000. ×4. 🧴🧴🧴🧴",
+   "emotion": "anxious"
+  },
+  {
+   "shot": "pack",
+   "cap": "Six hundred years. I have never seen the sea.",
+   "say": "Six hundred years. I have never seen the sea.",
+   "who": "victor",
+   "bubble": "600 YEARS. NEVER SEEN THE SEA. 🌊",
+   "think": true,
+   "emotion": "excited"
+  },
+  {
+   "shot": "arrive",
+   "cap": "They arrive. He steps on the sand.",
+   "say": "They arrive. He steps on the sand."
+  },
+  {
+   "shot": "arrive",
+   "cap": "It's beautiful. It's so dark. So calm.",
+   "say": "It's beautiful. It's so dark. So calm.",
+   "who": "victor",
+   "bubble": "SO BEAUTIFUL. SO… DARK. 🌙",
+   "emotion": "happy"
+  },
+  {
+   "shot": "arrive",
+   "cap": "Victor. We came at night. Obviously.",
+   "say": "Victor. We came at night. Obviously.",
+   "who": "ben",
+   "bubble": "WE CAME AT NIGHT. OBVIOUSLY. 🙄",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "twist",
+   "cap": "He doesn't care. He builds a sandcastle until four a.m.",
+   "say": "He doesn't care. He builds a sandcastle until four a.m."
+  },
+  {
+   "shot": "twist",
+   "cap": "Best holiday of my death.",
+   "say": "Best holiday of my death.",
+   "who": "victor",
+   "bubble": "BEST HOLIDAY OF MY DEATH. 🏰🧛",
+   "emotion": "happy"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag who burns in five minutes. A vampire's first beach holiday.",
+   "say": "Tag who burns in five minutes. A vampire's first beach holiday."
+  }
+ ]
+}

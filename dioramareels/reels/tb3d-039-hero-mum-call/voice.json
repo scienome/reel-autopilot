@@ -1,0 +1,13 @@
+{
+ "provider": "cartesia",
+ "one_take": false,
+ "model_id": "sonic-3.6-2026-08-27",
+ "voice_id": "a33f7a4c-100f-41cf-a1fd-5822e8fc253f",
+ "line_gap": 0.14,
+ "shot_gap": 0.25,
+ "cast": {
+  "bright": "710feaa3-b550-42f3-b3eb-6f37f2a7cc0a",
+  "gloom": "9fb269e7-70fe-4cbe-aa3f-28bdb67e3e84",
+  "mum": "26403c37-80c1-4a1a-8692-540551ca2ae5"
+ }
+}

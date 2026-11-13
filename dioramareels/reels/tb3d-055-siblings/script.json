@@ -1,0 +1,73 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Siblings in public. Versus siblings at home.",
+   "say": "Siblings in public. Versus siblings at home."
+  },
+  {
+   "shot": "public",
+   "cap": "Such sweet children! Do you love each other?",
+   "say": "Such sweet children! Do you love each other?",
+   "who": "aunty",
+   "bubble": "SUCH SWEET CHILDREN! 🥰",
+   "emotion": "happy"
+  },
+  {
+   "shot": "public",
+   "cap": "So much, aunty. He's my best friend.",
+   "say": "So much, aunty. He's my best friend.",
+   "who": "sis",
+   "bubble": "SO MUCH, AUNTY. BEST FRIEND. 😇",
+   "emotion": "happy"
+  },
+  {
+   "shot": "public",
+   "cap": "The moment we get home, he dies.",
+   "say": "The moment we get home, he dies.",
+   "who": "sis",
+   "bubble": "AT HOME… HE DIES. 😈",
+   "think": true,
+   "emotion": "angry"
+  },
+  {
+   "shot": "home",
+   "cap": "The door closes.",
+   "say": "The door closes."
+  },
+  {
+   "shot": "home",
+   "cap": "You ate my chocolate.",
+   "say": "You ate my chocolate.",
+   "who": "sis",
+   "bubble": "YOU ATE MY CHOCOLATE. 🍫",
+   "emotion": "angry"
+  },
+  {
+   "shot": "home",
+   "cap": "Your name wasn't on it.",
+   "say": "Your name wasn't on it.",
+   "who": "bro",
+   "bubble": "YOUR NAME WASN'T ON IT. 😏",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "twist",
+   "cap": "Then Mum shouts at him. For something small.",
+   "say": "Then Mum shouts at him. For something small."
+  },
+  {
+   "shot": "twist",
+   "cap": "Nobody shouts at my brother except me.",
+   "say": "Nobody shouts at my brother except me.",
+   "who": "sis",
+   "bubble": "NOBODY SHOUTS AT HIM EXCEPT ME. 😤",
+   "emotion": "angry"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag your sibling. Best friends in public. Enemies at home.",
+   "say": "Tag your sibling. Best friends in public. Enemies at home."
+  }
+ ]
+}

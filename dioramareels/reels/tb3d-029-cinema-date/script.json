@@ -1,0 +1,77 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "A movie date. Three hours. Nobody watched the movie.",
+   "say": "A movie date. Three hours. Nobody watched the movie."
+  },
+  {
+   "shot": "seat",
+   "cap": "Arm rest. Do I take it? Do I share it? What are the rules?",
+   "say": "Arm rest. Do I take it? Do I share it? What are the rules?",
+   "who": "sam",
+   "bubble": "ARMREST. WHAT ARE THE RULES?! 😰",
+   "think": true,
+   "emotion": "anxious"
+  },
+  {
+   "shot": "seat",
+   "cap": "Is he going to share the popcorn or is that HIS popcorn?",
+   "say": "Is he going to share the popcorn or is that HIS popcorn?",
+   "who": "maya",
+   "bubble": "IS THAT *HIS* POPCORN? 🍿",
+   "think": true,
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "scene",
+   "cap": "The scary scene starts.",
+   "say": "The scary scene starts."
+  },
+  {
+   "shot": "scene",
+   "cap": "If she grabs my arm, I'm a hero.",
+   "say": "If she grabs my arm, I'm a hero.",
+   "who": "sam",
+   "bubble": "IF SHE GRABS MY ARM… HERO. 🦸",
+   "think": true,
+   "emotion": "excited"
+  },
+  {
+   "shot": "scene",
+   "cap": "If he grabs my arm, I'm leaving.",
+   "say": "If he grabs my arm, I'm leaving.",
+   "who": "maya",
+   "bubble": "IF HE GRABS MY ARM… LEAVING. 🚪",
+   "think": true,
+   "emotion": "calm"
+  },
+  {
+   "shot": "twist",
+   "cap": "He screams first. Very loudly.",
+   "say": "He screams first. Very loudly."
+  },
+  {
+   "shot": "twist",
+   "cap": "Okay. That was cute.",
+   "say": "Okay. That was cute.",
+   "who": "maya",
+   "bubble": "OKAY. THAT WAS CUTE. 💕",
+   "think": true,
+   "emotion": "happy"
+  },
+  {
+   "shot": "twist",
+   "cap": "Row three. Best seat. I've seen this film forty times. Still scary.",
+   "say": "Row three. Best seat. I've seen this film forty times. Still scary.",
+   "who": "ghost",
+   "bubble": "40 TIMES. STILL SCARY. 👻",
+   "emotion": "scared"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag who you'd go with. A movie date. Nobody watched the movie.",
+   "say": "Tag who you'd go with. A movie date. Nobody watched the movie."
+  }
+ ]
+}

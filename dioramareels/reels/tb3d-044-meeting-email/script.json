@@ -1,0 +1,76 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "A one hour meeting. Everyone in the room is thinking the same thing.",
+   "say": "A one hour meeting. Everyone in the room is thinking the same thing."
+  },
+  {
+   "shot": "meet",
+   "cap": "Let's quickly align on the synergy.",
+   "say": "Let's quickly align on the synergy.",
+   "who": "boss",
+   "bubble": "LET'S QUICKLY ALIGN. 📊",
+   "emotion": "proud"
+  },
+  {
+   "shot": "meet",
+   "cap": "Quickly. He said quickly at nine a.m.",
+   "say": "Quickly. He said quickly at nine a.m.",
+   "who": "priya",
+   "bubble": "'QUICKLY.' SINCE 9 AM. ⏳",
+   "think": true,
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "meet",
+   "cap": "If I nod, nobody will know I'm asleep.",
+   "say": "If I nod, nobody will know I'm asleep.",
+   "who": "raj",
+   "bubble": "NOD. NOBODY KNOWS. 😴",
+   "think": true,
+   "emotion": "calm"
+  },
+  {
+   "shot": "meet",
+   "cap": "Any thoughts, intern?",
+   "say": "Any thoughts, intern?",
+   "who": "boss",
+   "emotion": "calm"
+  },
+  {
+   "shot": "meet",
+   "cap": "Could this have been an email?",
+   "say": "Could this have been an email?",
+   "who": "intern",
+   "bubble": "COULD THIS BE AN EMAIL? 📧",
+   "emotion": "anxious"
+  },
+  {
+   "shot": "twist",
+   "cap": "Silence. Then the boss smiles.",
+   "say": "Silence. Then the boss smiles."
+  },
+  {
+   "shot": "twist",
+   "cap": "Finally. I've been waiting six years for someone to say it.",
+   "say": "Finally. I've been waiting six years for someone to say it.",
+   "who": "boss",
+   "bubble": "6 YEARS I WAITED FOR THAT. 🙏",
+   "emotion": "happy"
+  },
+  {
+   "shot": "twist",
+   "cap": "Meeting over. Intern, you're promoted.",
+   "say": "Meeting over. Intern, you're promoted.",
+   "who": "boss",
+   "bubble": "MEETING OVER. PROMOTED. 🏆",
+   "emotion": "excited"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag your meeting buddy. This meeting could've been an email.",
+   "say": "Tag your meeting buddy. This meeting could've been an email."
+  }
+ ]
+}

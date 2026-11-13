@@ -1,0 +1,64 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "He travelled back twenty years to stop one terrible mistake.",
+   "say": "He travelled back twenty years to stop one terrible mistake."
+  },
+  {
+   "shot": "arrive",
+   "cap": "2006. The day it all went wrong.",
+   "say": "2006. The day it all went wrong.",
+   "who": "trav",
+   "bubble": "2006. THE DAY IT WENT WRONG. ⏳",
+   "emotion": "anxious"
+  },
+  {
+   "shot": "arrive",
+   "cap": "He finds his younger self. At the barber.",
+   "say": "He finds his younger self. At the barber."
+  },
+  {
+   "shot": "cut",
+   "cap": "Spikes. Lots of spikes. Like a hedgehog. With gel.",
+   "say": "Spikes. Lots of spikes. Like a hedgehog. With gel.",
+   "who": "young",
+   "bubble": "SPIKES. HEDGEHOG. GEL. 🦔",
+   "emotion": "excited"
+  },
+  {
+   "shot": "cut",
+   "cap": "STOP! You'll see that photo at every wedding. Forever.",
+   "say": "STOP! You'll see that photo at every wedding. Forever.",
+   "who": "trav",
+   "bubble": "STOP! THAT PHOTO. EVERY WEDDING. 📸",
+   "emotion": "scared"
+  },
+  {
+   "shot": "cut",
+   "cap": "Who is this man? He looks like you. But tired.",
+   "say": "Who is this man? He looks like you. But tired.",
+   "who": "barber",
+   "bubble": "HE LOOKS LIKE YOU. BUT TIRED. 🤨",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "twist",
+   "cap": "He saves the haircut. He returns to 2026. And checks his photos.",
+   "say": "He saves the haircut. He returns to 2026. And checks his photos."
+  },
+  {
+   "shot": "twist",
+   "cap": "Now it's a mullet. Somehow worse.",
+   "say": "Now it's a mullet. Somehow worse.",
+   "who": "trav",
+   "bubble": "NOW IT'S A MULLET. WORSE. 😭",
+   "emotion": "sad"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag who needs to see their old photos. He travelled back twenty years for this.",
+   "say": "Tag who needs to see their old photos. He travelled back twenty years for this."
+  }
+ ]
+}
