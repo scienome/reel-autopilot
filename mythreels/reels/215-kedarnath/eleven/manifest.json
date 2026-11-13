@@ -1,0 +1,28 @@
+{
+ "music-954041836cee.mp3": {
+  "prompt": "Indian mythological cinematic underscore: tanpura drone, soft tabla, bansuri, temple bells, swelling shehnai at the climax, no vocals, warm devotional temple feeling",
+  "music_length_ms": 48660,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-090fa8d2c56a.mp3": {
+  "text": "howling mountain wind and distant bells",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-2ea1ef92428f.mp3": {
+  "text": "a herd of cattle and a heavy stomp",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-81bf3030af1f.mp3": {
+  "text": "earth rumbling and cracking",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
