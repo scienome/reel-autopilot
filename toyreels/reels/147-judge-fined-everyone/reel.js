@@ -1,3 +1,4 @@
+// re-render: character flicker fix (13 Nov 2026)
 // 147 cinestory3d (story3d.js): the La Guardia 'bread thief' anecdote (told as 'the story goes'). Scroll stopper: a judge pointing at the whole room.
 STORY((k) => {
   const { T, M, PI, E, seg, lerp } = k; const ct = k.LIB.place.courtroom(); k.place(ct); const S = ct.spots;

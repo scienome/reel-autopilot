@@ -1,3 +1,4 @@
+// re-render: character flicker fix (13 Nov 2026)
 // toy cast: Kenney Mini Characters (re-render 13 Nov 2026)
 // 184 cinestory3d (story3d.js): frostbite stages and first aid (NHS; Mayo Clinic). Scroll stopper: a man curled up in the snow, "DAY 3", groaning "it's so hard"... then his frozen white fingers.
 STORY((k) => {

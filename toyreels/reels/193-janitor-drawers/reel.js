@@ -1,3 +1,4 @@
+// re-render: character flicker fix (13 Nov 2026)
 // 193 cinestory3d (story3d.js): Ronald Read, $8M estate (WSJ 2015; Brattleboro Reformer). Scroll stopper: an old janitor and cash flying out of his drawers... it's a bank box. Gag: a flashy neighbour's sports car gets a missile.
 STORY((k) => {
   const { T, PI } = k; const rm = k.LIB.place.room({ wall: '#d9cbb3' }); k.place(rm);

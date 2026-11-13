@@ -1,3 +1,4 @@
+// re-render: character flicker fix (13 Nov 2026)
 // 163 cinestory3d (story3d.js): the vixen's scream (Mammal Society; Newton-Fisher 1993). Scroll stopper: a dark street at night, a scream wave, a fox under a streetlight.
 STORY((k) => {
   const { T, M, PI, E, seg, lerp } = k; const st = k.LIB.place.street({ night: true, len: 50 }); k.place(st); const bed = k.LIB.place.room({ wall: '#2a2f45', window: true }); k.place(bed);

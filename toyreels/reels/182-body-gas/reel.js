@@ -1,3 +1,4 @@
+// re-render: character flicker fix (13 Nov 2026)
 // 182 cinestory3d (story3d.js): flatulence 5-15+ times a day (NHS; Suarez 1998). Scroll stopper: an office worker bends over and a green cloud puffs out behind him, his colleague recoils.
 STORY((k) => {
   const { T, PI } = k; const of = k.LIB.place.office({}); k.place(of);

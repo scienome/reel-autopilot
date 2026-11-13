@@ -1,3 +1,4 @@
+// re-render: character flicker fix (13 Nov 2026)
 // 211 cinestory3d (story3d.js): the Baker Street bank job, 1971 (The Guardian 2008; National Archives). Scroll stopper: three men crawling through a dark, narrow space, "ALL WEEKEND 😳"... a tunnel into a bank vault. Gag: police storm the wrong bank, again and again.
 STORY((k) => {
   const { T, M, PI } = k; const tn = k.LIB.place.room({ w: 2.2, d: 9, h: 1.6, wall: '#5a4030', floor: 'wood', window: false }); k.place(tn);

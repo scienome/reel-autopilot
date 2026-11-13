@@ -1,3 +1,4 @@
+// re-render: character flicker fix (13 Nov 2026)
 // 175 cinestory3d (story3d.js): the alpha wolf myth (Mech 1999; Schenkel 1947). Scroll stopper: two wolves snarling face to face, "ALPHA?" stamped over them.
 STORY((k) => {
   const { T, M, PI, E, seg, lerp } = k; const fr = k.forest({ trees: 20 }); const zoo = new T.Group(); k.place(zoo); const sn = k.snow({ trees: 6 });

@@ -1,3 +1,4 @@
+// re-render: character flicker fix (13 Nov 2026)
 // 156 cinestory3d (story3d.js): Laika and Sputnik 2 (NASA; Malashenkov 2002; Gazenko 1998). Told gently: no suffering shown. Scroll stopper: a small dog in a capsule window, Earth below.
 STORY((k) => {
   const { T, M, PI, E, seg, lerp } = k; const sp = k.space(); const st = k.LIB.place.street({ len: 50 }); k.place(st); const lab = k.LIB.place.office({ wall: '#cfd6dc' }); k.place(lab); const pad = k.snow({ trees: 6 });

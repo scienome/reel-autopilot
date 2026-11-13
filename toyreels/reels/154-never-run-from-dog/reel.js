@@ -1,3 +1,4 @@
+// re-render: character flicker fix (13 Nov 2026)
 // 154 cinestory3d (story3d.js): what to do when a dog runs at you (CDC, AVMA). Scroll stopper: a big dog sprinting straight at the camera.
 STORY((k) => {
   const { T, M, PI, E, seg, lerp } = k; const pk = k.LIB.place.park(); k.place(pk);

@@ -1,3 +1,4 @@
+// re-render: character flicker fix (13 Nov 2026)
 // 206 cinestory3d (story3d.js): Victor Lustig "sells" the Eiffel Tower, 1925 (Johnson & Miller 1961; Britannica). Scroll stopper: in a hotel room a man hands over money, "HE GOT SCREWED 😳"... out of a tower. Gag: the buyer tries to tow the tower away, and his truck goes BOOM.
 STORY((k) => {
   const { T, M, PI } = k; const ci = k.LIB.place.street({}); k.place(ci);

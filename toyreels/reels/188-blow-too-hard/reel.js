@@ -1,3 +1,4 @@
+// re-render: character flicker fix (13 Nov 2026)
 // 188 cinestory3d (story3d.js): hyperventilation + straining when blowing balloons (Cleveland Clinic). Scroll stopper: a close-up of a red, sweating man, "5 MIN NONSTOP", a woman watching... pull back: a giant balloon. Gag: the balloon pops and blasts him off.
 STORY((k) => {
   const { T, PI } = k; const rm = k.LIB.place.room({ wall: '#f2d9e6' }); k.place(rm);

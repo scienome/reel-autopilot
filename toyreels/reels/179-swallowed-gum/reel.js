@@ -1,3 +1,4 @@
+// re-render: character flicker fix (13 Nov 2026)
 // 179 cinestory3d (story3d.js): swallowed gum passes in days (Mayo Clinic; Milov 1998). Scroll stopper: a pink gum ball sitting in a stomach with a 7-YEAR countdown.
 STORY((k) => {
   const { T, M, PI, E, seg, lerp } = k; const rm = k.LIB.place.room({ wall: '#cfe0ea' }); k.place(rm);

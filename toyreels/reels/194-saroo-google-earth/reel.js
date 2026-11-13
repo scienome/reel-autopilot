@@ -1,3 +1,4 @@
+// re-render: character flicker fix (13 Nov 2026)
 // 194 cinestory3d (story3d.js): Saroo Brierley found Khandwa on Google Earth (Brierley 2013; BBC 2012). Scroll stopper: a man alone in a dark room at night, face lit by a screen, "NIGHT 1,247"... it's a satellite map. Gag: the coffee cups pile up.
 STORY((k) => {
   const { T, M, PI } = k; const rm = k.LIB.place.room({ wall: '#25304a' }); k.place(rm); const tbl = k.LIB.prop('props/table_round', { h: 0.76 }); tbl.position.set(0, 0, -0.55); rm.add(tbl);

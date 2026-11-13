@@ -1,3 +1,4 @@
+// re-render: character flicker fix (13 Nov 2026)
 // 209 cinestory3d (story3d.js): "Lord" Timothy Dexter's mock funeral (Marquand 1925; Smithsonian 2018). Scroll stopper: a crowd around a coffin, "3,000 CAME 😳"... and the dead man peeking from behind a curtain. Gag: he walks out alive, SURPRISE!, and the mourners faint.
 STORY((k) => {
   const { T, M, PI } = k; const rm = k.LIB.place.room({ w: 8, d: 7, wall: '#4a3a5a' }); k.place(rm);

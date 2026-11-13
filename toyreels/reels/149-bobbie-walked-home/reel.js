@@ -1,3 +1,4 @@
+// re-render: character flicker fix (13 Nov 2026)
 // 149 cinestory3d (story3d.js): Bobbie the Wonder Dog (1923-24, Oregon Historical Society). Scroll stopper: a lone dog walking a snowy road with a mile counter.
 STORY((k) => {
   const { T, M, PI, E, seg, lerp } = k; const road = k.LIB.place.street({ len: 80 }); k.place(road); const sn = k.snow({ trees: 18 }); const fr = k.forest(); const home = k.farm();

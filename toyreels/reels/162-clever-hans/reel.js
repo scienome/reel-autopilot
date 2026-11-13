@@ -1,3 +1,4 @@
+// re-render: character flicker fix (13 Nov 2026)
 // 162 cinestory3d (story3d.js): Clever Hans (Pfungst 1907). Scroll stopper: a horse tapping out a sum in front of a crowd, '2 + 3 = ?' on a blackboard.
 STORY((k) => {
   const { T, M, PI, E, seg, lerp } = k; const vil = k.LIB.place.village(); k.place(vil);

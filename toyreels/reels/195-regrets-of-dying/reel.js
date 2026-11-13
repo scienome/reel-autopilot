@@ -1,3 +1,4 @@
+// re-render: character flicker fix (13 Nov 2026)
 // 195 cinestory3d (story3d.js): Bronnie Ware's top five regrets (Ware 2011). Scroll stopper: a woman at a man's bedside, dim light, "HUNDREDS OF MEN"... it's palliative care. Gag: a boss barges in with "one more email" and gets a missile.
 STORY((k) => {
   const { PI } = k; const rm = k.LIB.place.room({ wall: '#e6dccb' }); k.place(rm); const bed = k.LIB.prop('props/bed_single', { h: 0.7 }); bed.position.set(0, 0, -0.7); rm.add(bed);

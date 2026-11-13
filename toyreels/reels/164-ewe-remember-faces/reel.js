@@ -1,3 +1,4 @@
+// re-render: character flicker fix (13 Nov 2026)
 // 164 cinestory3d (story3d.js): sheep remember 50 faces for 2 years (Kendrick 2001; Knolle 2017). Scroll stopper: a sheep staring into camera with face photos popping around it.
 STORY((k) => {
   const { T, M, PI, E, seg, lerp } = k; const fm = k.farm();

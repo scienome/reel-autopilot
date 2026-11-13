@@ -1,3 +1,4 @@
+// re-render: character flicker fix (13 Nov 2026)
 // 173 cinestory3d (story3d.js): sled-dog metabolic switch (Davis et al., Iditarod studies). Scroll stopper: a husky team racing under the northern lights, a clock spinning.
 STORY((k) => {
   const { T, M, PI, E, seg, lerp } = k; const sn = k.snow({ trees: 12 });

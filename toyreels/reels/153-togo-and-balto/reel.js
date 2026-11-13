@@ -1,3 +1,4 @@
+// re-render: character flicker fix (13 Nov 2026)
 // 153 cinestory3d (story3d.js): the 1925 serum run to Nome; Togo and Balto (NPS, Smithsonian). Scroll stopper: a husky team charging through a blizzard at night.
 STORY((k) => {
   const { T, M, PI, E, seg, lerp } = k; const sn = k.snow({ trees: 10 }); const vil = k.LIB.place.village(); k.place(vil);

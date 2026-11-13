@@ -1,3 +1,4 @@
+// re-render: character flicker fix (13 Nov 2026)
 // 200 cinestory3d (story3d.js): self-rescue from choking (American Red Cross; NHS). Scroll stopper: a man alone, bent over the back of a chair, red-faced, "ALONE? 😳"... it's choking. Gag: the meatball shoots out and lands on his flatmate's head, PLOP.
 STORY((k) => {
   const { T, M, PI } = k; const kt = k.LIB.place.kitchen({}); k.place(kt); const ch = k.LIB.prop('props/chair', { h: 0.95 }); ch.position.set(0, 0, 0.55); ch.rotation.y = PI; kt.add(ch);

@@ -1,3 +1,4 @@
+// re-render: character flicker fix (13 Nov 2026)
 // 204 cinestory3d (story3d.js): the de Havilland Comet and rounded windows (Withey 1997; 1955 Court of Inquiry). Scroll stopper: a square hole tearing open at its corners, RIP!... it's an aircraft window test. Gag: the water-tank test, SPLOOSH.
 STORY((k) => {
   const { T, M, PI } = k; const sp = k.LIB.place.street({}); const sk = new T.Group(); k.place(sk);

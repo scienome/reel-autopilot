@@ -1,3 +1,4 @@
+// re-render: character flicker fix (13 Nov 2026)
 // 196 cinestory3d (story3d.js): the "Jim twins" (Segal 2012; Bouchard 1990). Scroll stopper: two identical men, tally cards popping "LINDA ✔✔ BETTY ✔✔ TOY ✔✔"... Toy is the dog. Gag: they high-five and the "SAME!" boom knocks them both over.
 STORY((k) => {
   const { PI } = k; const rm = k.LIB.place.room({ wall: '#dfe4e8' }); k.place(rm); const J = () => k.LIB.human({ body: 'm', top: '#2f6fd8', bottom: '#3a3a40', hair: '#3b2414' });

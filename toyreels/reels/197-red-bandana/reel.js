@@ -1,3 +1,4 @@
+// re-render: character flicker fix (13 Nov 2026)
 // 197 cinestory3d (story3d.js): Welles Crowther, the man in the red bandana (NYT 2002; Rinaldi 2016; FDNY 2006). Respectful: no gag, no impact shown. Scroll stopper: a man in a red bandana walks into smoke, comes out leading people, and goes back in.
 STORY((k) => {
   const { T, M, PI } = k; const of = k.LIB.place.office({ wall: '#cfd4d8' }); k.place(of);

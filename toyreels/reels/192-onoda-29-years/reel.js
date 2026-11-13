@@ -1,3 +1,4 @@
+// re-render: character flicker fix (13 Nov 2026)
 // 192 cinestory3d (story3d.js): Hiroo Onoda on Lubang, 1944-1974 (Onoda 1974; Britannica; NYT 2014). Scroll stopper: an exhausted man in the jungle, panting, a counter ticking 1945 -> 1974. Gag: a "WAR IS OVER" leaflet slaps him in the face; he tosses it.
 STORY((k) => {
   const { PI } = k; const fo = k.forest(); const ono = k.add(k.LIB.human({ body: 'm', top: '#5a6a3a', bottom: '#4a5030', hair: '#1a1210', sleeves: true }), [0, 0, 0], 0.3, fo);

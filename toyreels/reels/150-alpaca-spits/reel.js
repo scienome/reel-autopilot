@@ -1,3 +1,4 @@
+// re-render: character flicker fix (13 Nov 2026)
 // 150 cinestory3d (story3d.js): alpacas spit mainly at each other (rejecting males, food fights); the 'spit-off' pregnancy test. Scroll stopper: green spit hitting a face.
 STORY((k) => {
   const { T, M, PI, E, seg, lerp } = k; const fm = k.farm();

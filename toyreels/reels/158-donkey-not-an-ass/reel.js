@@ -1,3 +1,4 @@
+// re-render: character flicker fix (13 Nov 2026)
 // 158 cinestory3d (story3d.js): donkeys are cautious, not stubborn (The Donkey Sanctuary). Scroll stopper: a man pulling a donkey that will not budge at a rickety bridge.
 STORY((k) => {
   const { T, M, PI, E, seg, lerp } = k; const fm = k.farm(); const OX = 4, OZ = 7; // open grass, away from the well

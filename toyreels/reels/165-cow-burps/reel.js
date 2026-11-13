@@ -1,3 +1,4 @@
+// re-render: character flicker fix (13 Nov 2026)
 // 165 cinestory3d (story3d.js): cow methane comes mostly from burps (UC Davis CLEAR; FAO; Roque 2021). Scroll stopper: a cow burping a green cloud out of its mouth.
 STORY((k) => {
   const { T, M, PI, E, seg, lerp } = k; const fm = k.farm();

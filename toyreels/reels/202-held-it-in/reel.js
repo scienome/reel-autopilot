@@ -1,3 +1,4 @@
+// re-render: character flicker fix (13 Nov 2026)
 // 202 cinestory3d (story3d.js): holding in a sneeze tore a man's throat (Yang 2018 BMJ Case Reports; Mistry 2024). Scroll stopper: a man straining, his head swelling, "HOLDING IT IN... 😳". Gag: he holds another one and blasts off like a rocket, ACHOO!
 STORY((k) => {
   const { T, PI } = k; const of = k.LIB.place.office({}); k.place(of); const man = k.add(k.LIB.human({ body: 'm', top: '#ffb21a', bottom: '#2a3140', hair: '#2b1d14' }), [0, 0, 0], 0, of);

@@ -1,3 +1,4 @@
+// re-render: character flicker fix (13 Nov 2026)
 // 180 cinestory3d (story3d.js): walking with a dog near cattle (HSE, NFU, Ramblers). Scroll stopper: a herd charging at a walker and dog.
 STORY((k) => {
   const { T, M, PI, E, seg, lerp } = k; const fm = k.farm();

@@ -1,3 +1,4 @@
+// re-render: character flicker fix (13 Nov 2026)
 // 144 cinestory3d (story3d.js): Hachikō (true story). Scroll stopper: a dog alone on a station platform as a crowd walks past.
 STORY((k) => {
   const { T, M, PI, E, seg, lerp } = k; const st = k.station({ name: 'SHIBUYA' }), P = st.spots.platform, Y = 0.9;
