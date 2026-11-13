@@ -1,0 +1,28 @@
+{
+ "music-13e54181d808.mp3": {
+  "prompt": "Indian mythological cinematic underscore: tanpura drone, soft tabla, bansuri, temple bells, swelling shehnai at the climax, no vocals, warm devotional temple feeling",
+  "music_length_ms": 48820,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-7f4cc08d6a28.mp3": {
+  "text": "chariot wheels creaking on a road",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-97b045d0eab1.mp3": {
+  "text": "water gushing from the earth",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-4741574a4b52.mp3": {
+  "text": "thunder crack and a deep curse rumble",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
