@@ -30,5 +30,11 @@
   "music_length_ms": 50580,
   "model_id": "music_v1",
   "force_instrumental": true
+ },
+ "music-ea6837122d08.mp3": {
+  "prompt": "Indian mythological cinematic underscore: tanpura drone, soft tabla, bansuri, temple bells, swelling shehnai at the climax, no vocals, warm devotional temple feeling",
+  "music_length_ms": 52820,
+  "model_id": "music_v1",
+  "force_instrumental": true
  }
 }
