@@ -160,7 +160,7 @@ def one_take(rid, reel, out, takes, cfg, lines):
 
 
 def finish(rid, reel, out, lines, audio, dur, lo, hi, wt=None):
-    timed = [dict({'shot': ln['shot'], 'cap': ln['cap'], 't0': round(LEAD_IN + lo[i], 3), 't1': round(LEAD_IN + hi[i], 3)}, **{k: ln[k] for k in ('who', 'bubble', 'think') if k in ln}) for i, ln in enumerate(lines)]
+    timed = [dict({'shot': ln['shot'], 'cap': ln['cap'], 't0': round(LEAD_IN + lo[i], 3), 't1': round(LEAD_IN + hi[i], 3)}, **{k: ln[k] for k in ('who', 'bubble', 'think', 'emotion') if k in ln}) for i, ln in enumerate(lines)]
     if wt:  # word times (captions pop on their own words)
         for i, ln in enumerate(timed):
             ln['words'] = [[round(LEAD_IN + a_, 3), round(LEAD_IN + b_, 3)] for a_, b_ in wt[i]]
@@ -215,7 +215,7 @@ def main(rid):
         with wave.open(wav) as w:
             pcm.append(w.readframes(w.getnframes()))
             dur = w.getnframes() / 44100
-        timed.append(dict({'shot': ln['shot'], 'cap': ln['cap'], 't0': round(t, 3), 't1': round(t + dur, 3)}, **{k: ln[k] for k in ('who', 'bubble', 'think') if k in ln}))
+        timed.append(dict({'shot': ln['shot'], 'cap': ln['cap'], 't0': round(t, 3), 't1': round(t + dur, 3)}, **{k: ln[k] for k in ('who', 'bubble', 'think', 'emotion') if k in ln}))
         t += dur
         last = ln['shot']
     for f in set(os.listdir(takes)) - keep:

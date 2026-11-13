@@ -25,7 +25,7 @@ if not os.path.exists(timing):
         if last is not None:
             t += 0.42 if ln['shot'] != last else 0.2
         d = max(0.7, len(ln['say']) / 15.5)
-        lines.append(dict({'shot': ln['shot'], 'cap': ln['cap'], 't0': round(t, 3), 't1': round(t + d, 3)}, **{k: ln[k] for k in ('who', 'bubble', 'think') if k in ln}))
+        lines.append(dict({'shot': ln['shot'], 'cap': ln['cap'], 't0': round(t, 3), 't1': round(t + d, 3)}, **{k: ln[k] for k in ('who', 'bubble', 'think', 'emotion') if k in ln}))
         shots.setdefault(ln['shot'], round(max(0, t - 0.25), 3))
         t += d
         last = ln['shot']
