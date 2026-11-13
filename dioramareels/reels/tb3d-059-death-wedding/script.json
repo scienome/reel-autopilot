@@ -1,0 +1,74 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Death walked into a wedding. He wasn't there for anyone. He just heard there was food.",
+   "say": "Death walked into a wedding. He wasn't there for anyone. He just heard there was food."
+  },
+  {
+   "shot": "dance",
+   "cap": "Six hours! My legs are magic! Nobody can stop me!",
+   "say": "Six hours! My legs are magic! Nobody can stop me!",
+   "who": "uncle",
+   "bubble": "6 HOURS! NOBODY CAN STOP ME! 💃",
+   "emotion": "excited"
+  },
+  {
+   "shot": "dance",
+   "cap": "Someone stop this uncle. Please. Anyone.",
+   "say": "Someone stop this uncle. Please. Anyone.",
+   "who": "ghost",
+   "bubble": "SOMEONE STOP THIS UNCLE. 🙏👻",
+   "think": true,
+   "emotion": "sad"
+  },
+  {
+   "shot": "enter",
+   "cap": "Then Death walks in. The music keeps playing. The uncle turns.",
+   "say": "Then Death walks in. The music keeps playing. The uncle turns."
+  },
+  {
+   "shot": "enter",
+   "cap": "Oh. Oh no. Is it. Is it my time?",
+   "say": "Oh. Oh no. Is it. Is it my time?",
+   "who": "uncle",
+   "bubble": "IS IT… MY TIME? 😨",
+   "emotion": "scared"
+  },
+  {
+   "shot": "enter",
+   "cap": "No. Relax. I'm here for the paneer.",
+   "say": "No. Relax. I'm here for the paneer.",
+   "who": "death",
+   "bubble": "NO. I'M HERE FOR THE PANEER. 💀",
+   "emotion": "calm"
+  },
+  {
+   "shot": "twist",
+   "cap": "The uncle sits down. For the first time in six hours. Everyone cheers.",
+   "say": "The uncle sits down. For the first time in six hours. Everyone cheers."
+  },
+  {
+   "shot": "twist",
+   "cap": "You did it. You stopped him. Stay for dinner.",
+   "say": "You did it. You stopped him. Stay for dinner.",
+   "who": "bride",
+   "bubble": "YOU STOPPED HIM. STAY FOR DINNER. 🤝",
+   "emotion": "happy"
+  },
+  {
+   "shot": "twist",
+   "cap": "Finally. A wedding where I'm the fun one.",
+   "say": "Finally. A wedding where I'm the fun one.",
+   "who": "death",
+   "bubble": "FINALLY. I'M THE FUN ONE. 💀🎉",
+   "think": true,
+   "emotion": "happy"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the uncle who never stops dancing. Only Death could stop him.",
+   "say": "Tag the uncle who never stops dancing. Only Death could stop him."
+  }
+ ]
+}

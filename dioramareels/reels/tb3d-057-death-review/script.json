@@ -1,0 +1,74 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Death had his yearly performance review. It did not go well.",
+   "say": "Death had his yearly performance review. It did not go well."
+  },
+  {
+   "shot": "review",
+   "cap": "Your numbers are down. Way down. What happened?",
+   "say": "Your numbers are down. Way down. What happened?",
+   "who": "boss",
+   "bubble": "YOUR NUMBERS ARE DOWN. 📉",
+   "emotion": "angry"
+  },
+  {
+   "shot": "review",
+   "cap": "There's this Nani. I went for her in March. I'm still there.",
+   "say": "There's this Nani. I went for her in March. I'm still there.",
+   "who": "death",
+   "bubble": "THERE'S THIS NANI… STILL THERE. 😅",
+   "think": true,
+   "emotion": "anxious"
+  },
+  {
+   "shot": "review",
+   "cap": "One grandmother ruined the entire quarter?",
+   "say": "One grandmother ruined the entire quarter?",
+   "who": "boss",
+   "bubble": "ONE GRANDMOTHER?! 😤",
+   "emotion": "angry"
+  },
+  {
+   "shot": "review",
+   "cap": "You don't understand. She makes pakoras.",
+   "say": "You don't understand. She makes pakoras.",
+   "who": "death",
+   "bubble": "YOU DON'T UNDERSTAND. PAKORAS. 😋",
+   "think": true,
+   "emotion": "happy"
+  },
+  {
+   "shot": "visit",
+   "cap": "So the boss goes to see this Nani himself. To fix it.",
+   "say": "So the boss goes to see this Nani himself. To fix it."
+  },
+  {
+   "shot": "visit",
+   "cap": "Arre, two of you now? Sit, sit. You're both so thin.",
+   "say": "Arre, two of you now? Sit, sit. You're both so thin.",
+   "who": "nani",
+   "bubble": "TWO OF YOU NOW? SIT, SIT. 🫖",
+   "emotion": "happy"
+  },
+  {
+   "shot": "twist",
+   "cap": "An hour later. The boss comes back. With a tiffin.",
+   "say": "An hour later. The boss comes back. With a tiffin."
+  },
+  {
+   "shot": "twist",
+   "cap": "New policy. We leave that house alone.",
+   "say": "New policy. We leave that house alone.",
+   "who": "boss",
+   "bubble": "NEW POLICY: LEAVE THAT HOUSE ALONE. 🍱",
+   "emotion": "content"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the Nani who'd beat Death. He had his yearly performance review.",
+   "say": "Tag the Nani who'd beat Death. He had his yearly performance review."
+  }
+ ]
+}

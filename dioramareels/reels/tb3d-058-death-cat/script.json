@@ -1,0 +1,71 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Death adopted a cat. The cat has nine lives. This was a mistake.",
+   "say": "Death adopted a cat. The cat has nine lives. This was a mistake."
+  },
+  {
+   "shot": "day1",
+   "cap": "A pet. For company. I am a responsible owner.",
+   "say": "A pet. For company. I am a responsible owner.",
+   "who": "death",
+   "bubble": "A PET. FOR COMPANY. 🐈",
+   "emotion": "content"
+  },
+  {
+   "shot": "day1",
+   "cap": "The cat sits on his scythe. Immediately.",
+   "say": "The cat sits on his scythe. Immediately."
+  },
+  {
+   "shot": "day1",
+   "cap": "That's. That's a thousand year old weapon.",
+   "say": "That's. That's a thousand year old weapon.",
+   "who": "death",
+   "bubble": "THAT'S A 1000-YEAR-OLD WEAPON. 😐",
+   "think": true,
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "fight",
+   "cap": "I have ended empires. Get off the sofa.",
+   "say": "I have ended empires. Get off the sofa.",
+   "who": "death",
+   "bubble": "I ENDED EMPIRES. GET OFF THE SOFA. 😤",
+   "emotion": "angry"
+  },
+  {
+   "shot": "fight",
+   "cap": "The cat stares. Death loses the stare. Death always loses the stare.",
+   "say": "The cat stares. Death loses the stare. Death always loses the stare."
+  },
+  {
+   "shot": "fight",
+   "cap": "Eight arguments this week. The cat won all eight.",
+   "say": "Eight arguments this week. The cat won all eight.",
+   "who": "ghost",
+   "bubble": "CAT: 8. DEATH: 0. 🐈👻",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "twist",
+   "cap": "Three a.m. Death is sleeping on the floor. The cat has the whole bed.",
+   "say": "Three a.m. Death is sleeping on the floor. The cat has the whole bed."
+  },
+  {
+   "shot": "twist",
+   "cap": "Who's a good boy. You are. Please don't scratch me.",
+   "say": "Who's a good boy. You are. Please don't scratch me.",
+   "who": "death",
+   "bubble": "WHO'S A GOOD BOY. PLEASE DON'T SCRATCH. 🥺",
+   "think": true,
+   "emotion": "anxious"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag your cat. Death adopted one. The cat has nine lives.",
+   "say": "Tag your cat. Death adopted one. The cat has nine lives."
+  }
+ ]
+}

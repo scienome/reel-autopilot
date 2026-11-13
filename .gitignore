@@ -20,3 +20,5 @@ out/tb/
 out/tb3d-*/
 out/tb3d-*/
 out/*.log
+out/*.err
+out/e.err
