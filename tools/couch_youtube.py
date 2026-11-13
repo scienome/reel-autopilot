@@ -34,6 +34,28 @@ def texts(rid):
     return title, desc, ['shorts'] + tags
 
 
+CFG_ROOT = json.load(open(os.path.join(ROOT, 'config.json')))
+RIDDLES = CFG_ROOT.get('queue') == 'riddles'
+LANG = dict(lang='hi', category='24') if RIDDLES else {}  # Socho Zara is Hindi/Hinglish: Hindi audio, Entertainment (13 Nov 2026; uploads were English / Science & Tech)
+
+
+def fix_old_languages(tok, log, n=10):
+    """Correct up to n earlier riddle uploads per run (Hindi audio, Entertainment)."""
+    if not RIDDLES:
+        return
+    done = 0
+    for r, e in log.items():
+        if not r.startswith('riddle') or not e.get('id') or e.get('lang') == 'hi' or done >= n:  # only the riddle Shorts, not the old English couch videos
+            continue
+        try:
+            if yt.fix_language(tok, e['id'], 'hi', '24'):
+                e['lang'] = 'hi'; done += 1
+        except Exception as x:
+            print(f'::notice::language fix for {r} skipped ({str(x)[:120]})'); break
+    if done:
+        save(log); print(f'YouTube: set Hindi audio / Entertainment on {done} older riddle Shorts')
+
+
 def save(log):
     json.dump(log, open(LOG, 'w'), indent=1)
 
@@ -73,7 +95,7 @@ def main():
             print(f'{rid} is already on YouTube (https://youtu.be/{old[0]}, {old[1]}); not uploading it again')
             log[rid] = {'id': old[0], 'url': f'https://youtu.be/{old[0]}', 'title': title, 'uploaded_at': 'already there'}; save(log); continue
         try:
-            yid, _ = yt.upload(tok, mp4, title, desc, tags, dt.datetime.now(dt.timezone.utc).replace(tzinfo=None), yt.localized('couch', rid, desc))
+            yid, _ = yt.upload(tok, mp4, title, desc, tags, dt.datetime.now(dt.timezone.utc).replace(tzinfo=None), yt.localized('couch', rid, desc), **LANG)
         except RuntimeError as e:
             print(f'::warning::{rid} not uploaded; it is tried again after the next Instagram post. {str(e)[:300]}')
             break

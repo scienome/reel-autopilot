@@ -134,10 +134,12 @@ def main():
                     if not target and old[1] != 'public':
                         print(f'{rid} is already on YouTube ({old[1]}); making it public now: ' + ('done' if cy.yt.make_public(tok, yid) else 'not allowed, it goes public at its scheduled time'))
                 else:
-                    yid, st = cy.yt.upload(tok, src.local_mp4(rid), *texts, when, cy.yt.localized('couch', rid, texts[1]))
+                    yid, st = cy.yt.upload(tok, src.local_mp4(rid), *texts, when, cy.yt.localized('couch', rid, texts[1]), **cy.LANG)
                 ylog[rid] = {'id': yid, 'url': f'https://youtu.be/{yid}', 'publish_utc': st.get('publishAt', 'now'),
                              'uploaded_at': datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds')}
+                if cy.LANG: ylog[rid]['lang'] = 'hi'
                 cy.save(ylog); print(f'YouTube: https://youtu.be/{yid} (goes public {st.get("publishAt", "now")})')
+                cy.fix_old_languages(tok, ylog)
         except Exception as e:  # the after-post YouTube workflow retries it
             print(f'::warning::YouTube upload failed, the follow-up workflow will retry: {str(e)[:300]}')
     if target:
