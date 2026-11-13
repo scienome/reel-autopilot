@@ -544,7 +544,7 @@
   // painted clothes for the realistic base bodies: every vertex takes the colour of the bones that move it (soft edges)
   const REGION = (b, o) => { b = b.toLowerCase();
     if (/head|neck|eye|jaw/.test(b)) return 'skin'; if (/hand|index|middle|ring|pinky|thumb/.test(b)) return 'skin';
-    if (/lowerarm/.test(b)) return o.sleeves === 'short' ? 'skin' : 'top'; if (/upperarm/.test(b)) return o.sleeves === 'none' ? 'skin' : 'top';
+    if (o.topless && /lowerarm|upperarm|spine|clavicle/.test(b)) return 'skin'; if (/lowerarm/.test(b)) return o.sleeves === 'short' ? 'skin' : 'top'; if (/upperarm/.test(b)) return o.sleeves === 'none' ? 'skin' : 'top';
     if (/spine|clavicle/.test(b)) return 'top'; if (/pelvis|root/.test(b)) return 'bottom'; if (/thigh/.test(b)) return 'bottom';
     if (/calf/.test(b)) return o.legs === 'shorts' ? 'skin' : 'bottom'; if (/foot|ball/.test(b)) return 'shoes'; return 'skin'; };
   const GC = (a, i, k) => (k === 0 ? a.getX(i) : k === 1 ? a.getY(i) : k === 2 ? a.getZ(i) : a.getW(i)); // BufferAttribute.getComponent is newer than r149
@@ -590,7 +590,7 @@
         const out = wrap(inner, { h: (o.h || (g0 === 'f' ? 1.7 : 1.78)) * (LIB.miniScale || 0.8) }); out.pose = poser(inner, Object.fromEntries(g.animations.map((c) => [c.name, c])), KMOVES); out.bone = (b) => { let f = null; inner.traverse((x) => { if (x.isBone && x.name === b) f = x; }); return f; }; out.pose('idle', 0); return out; } }
     if (/^woman_/.test(o.body)) { const n = 'humans/' + o.body.replace(/^woman_(\w)/, (m, c) => 'Woman_' + c.toUpperCase()).replace('Tanktop', 'TankTop'); const g = get(n); const inner = T.SkeletonUtils.clone(g.scene);
       const out = wrap(inner, { h: o.h || 1.7 }); const clips = Object.fromEntries(g.animations.map((c) => [c.name.split('|').pop(), c])); out.pose = poser(inner, clips, WMOVES); out.pose('idle', 0); return out; }
-    const n = o.body === 'f' ? 'humans/Superhero_Female' : 'humans/Superhero_Male'; const inner = T.SkeletonUtils.clone(get(n).scene); let body = null;
+    const n = o.body === 'f' ? 'humans/Superhero_Female' : (o.light && LIB.gltf['humans/Superhero_Male_Light'] ? 'humans/Superhero_Male_Light' : 'humans/Superhero_Male'); const inner = T.SkeletonUtils.clone(get(n).scene); let body = null;
     inner.traverse((m) => { if (m.isSkinnedMesh && (!body || m.geometry.attributes.position.count > body.geometry.attributes.position.count)) body = m; });
     let eyes = null; inner.traverse((m) => { if (m.isSkinnedMesh && /eye/i.test(m.name) && !/brow/i.test(m.name)) { m.geometry.computeBoundingBox(); eyes = m.geometry.boundingBox.getCenter(new T.Vector3()); } }); o.eyes = eyes;
     dress(body, o); const out = wrap(inner, { h: o.h || 1.78 }); out.pose = poser(inner, ual(), MOVES); out.pose('idle', 0); out.updateMatrixWorld(true); // hair is painted on the head in dress() (hairOn's cap meshes looked like bowls)

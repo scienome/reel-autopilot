@@ -5,6 +5,7 @@ Every model here is free to use in videos, commercial included. Keep this file w
 | Folder | Models | Author / source | Licence |
 |---|---|---|---|
 | humans/Superhero_Male.glb, Superhero_Female.glb | realistic base bodies (Humanoid rig) | Quaternius, *Universal Base Characters* (2025), mirrored in github.com/Dallolz/moorfall-assets | CC0 1.0 |
+| humans/Superhero_Male_Light.glb | the same body with the pack's light skin texture (T_Superhero_Male_Light, via github.com/karl3yyyy/infinity-grid) | Quaternius, *Universal Base Characters* | CC0 1.0 |
 | humans/ual1.glb | 43 animation clips (Unreal mannequin skeleton) | Quaternius, *Universal Animation Library* (standard), via github.com/rywible/wrela | CC0 1.0 |
 | humans/Woman_*.glb | 4 clothed women with 11 clips each | Quaternius, *Animated Women Pack* | CC0 1.0 |
 | animals/alpaca bull deer donkey fox horse_white stag | animated animals (converted glTF to GLB) | Quaternius, *Ultimate Animated Animals* (July 2021), via github.com/Tekh-ops/Ultimate-Animated-Animals-July-2021 (License.txt: CC0) | CC0 1.0 |

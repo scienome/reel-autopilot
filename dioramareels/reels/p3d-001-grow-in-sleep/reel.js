@@ -12,7 +12,7 @@ STORY((k) => {
   const strip = new T.Mesh(new T.BoxGeometry(12, 0.06, 0.06), EM('#ffffff', 2)); strip.position.set(0, 5.2, -5.9); gym.add(strip);
   const rack = new T.Group(); for (let i = 0; i < 7; i++) { const db = new T.Group(); const bar = new T.Mesh(new T.CylinderGeometry(0.03, 0.03, 0.42, 10), M('#9aa0a8', 0.25, 1)); bar.rotation.z = PI / 2; db.add(bar); [-0.17, 0.17].forEach((x) => { const p = new T.Mesh(new T.CylinderGeometry(0.09 + i * 0.008, 0.09 + i * 0.008, 0.1, 18), M('#16181c', 0.4, 0.5)); p.rotation.z = PI / 2; p.position.x = x; db.add(p); }); db.position.set(-2.4 + i * 0.8, 0.95, -4.6); rack.add(db); }
   const shelf = new T.Mesh(new T.BoxGeometry(6, 0.08, 0.6), M('#202226', 0.4, 0.7)); shelf.position.set(0, 0.85, -4.6); rack.add(shelf); gym.add(rack);
-  const man = k.add(k.LIB.human({ body: 'm', top: '#4a2412', bottom: '#020409', shoes: '#050505', sleeves: 'none', legs: 'shorts', hair: '#140d08', skin: '#b87a50' }), [0, 0, 0], 0.25, gym);
+  const man = k.add(k.LIB.human({ body: 'm', top: '#111111', bottom: '#0a0a0a', shoes: '#0a0a0a', topless: true, light: true, legs: 'shorts', hair: '#140d08' }), [0, 0, 0], 0.25, gym);
   const db = new T.Group(); { const bar = new T.Mesh(new T.CylinderGeometry(0.025, 0.025, 0.36, 10), M('#c0c6ce', 0.2, 1)); db.add(bar); [-0.14, 0.14].forEach((y) => { const p = new T.Mesh(new T.CylinderGeometry(0.08, 0.08, 0.08, 18), M('#16181c', 0.35, 0.6)); p.position.y = y; db.add(p); }); }
   const hand = man.bone('hand_r'), fore = man.bone('lowerarm_r'); if (hand) { hand.add(db); db.scale.setScalar(1 / Math.max(0.001, hand.getWorldScale(new T.Vector3()).x)); db.position.set(0, 0.05 / Math.max(0.001, hand.getWorldScale(new T.Vector3()).x), 0); }
   const spot = new T.SpotLight('#ffffff', 40, 14, 0.42, 0.6, 1.4); spot.position.set(0.4, 7, 2); spot.target = man; spot.castShadow = true; gym.add(spot);
@@ -31,7 +31,7 @@ STORY((k) => {
   const bed = new T.Group(); const bf = new T.Mesh(new T.PlaneGeometry(30, 30), M('#0d1018', 0.8)); bf.rotation.x = -PI / 2; bed.add(bf); const bw = new T.Mesh(new T.PlaneGeometry(30, 10), M('#0b0e16', 0.9)); bw.position.set(0, 5, -3); bed.add(bw);
   const win = new T.Mesh(new T.PlaneGeometry(1.6, 2.2), EM('#9ab8ff', 0.9)); win.position.set(-1.8, 2.4, -2.95); bed.add(win); const moon = new T.SpotLight('#8ab0ff', 9, 14, 0.5, 0.8, 1.4); moon.position.set(-2.5, 4.5, -1.5); bed.add(moon); moon.target.position.set(0.4, 0.5, 0.4); bed.add(moon.target);
   const frame = new T.Mesh(new T.BoxGeometry(1.5, 0.45, 2.3), M('#1c1f28', 0.7)); frame.position.set(0.4, 0.22, 0.2); bed.add(frame); const mat = new T.Mesh(new T.BoxGeometry(1.4, 0.18, 2.2), M('#3a4256', 0.9)); mat.position.set(0.4, 0.54, 0.2); bed.add(mat);
-  const sleeper = k.add(k.LIB.human({ body: 'm', top: '#4a2412', bottom: '#020409', sleeves: 'none', hair: '#140d08', skin: '#b87a50' }), [0.4, 0.72, 1.25], 0, bed); sleeper.rotation.x = -PI / 2;
+  const sleeper = k.add(k.LIB.human({ body: 'm', top: '#111111', bottom: '#0a0a0a', topless: true, light: true, legs: 'shorts', hair: '#140d08' }), [0.4, 0.72, 1.25], 0, bed); sleeper.rotation.x = -PI / 2;
   const blanket = new T.Mesh(new T.BoxGeometry(1.42, 0.12, 1.0), M('#1e2c5a', 0.9)); blanket.position.set(0.4, 0.86, 0.75); bed.add(blanket);
   const GN = 120, gg = new T.BufferGeometry(), gp = new Float32Array(GN * 3); gg.setAttribute('position', new T.BufferAttribute(gp, 3)); const gh = new T.Points(gg, new T.PointsMaterial({ map: DOT, color: '#7ae8ff', size: 0.16, transparent: true, blending: T.AdditiveBlending, depthWrite: false })); bed.add(gh);
   k.place(bed);
@@ -56,4 +56,4 @@ STORY((k) => {
     outro: (t, kk) => { k.only(gym); curl(t); ov = (ctx) => { k.card(ctx, 'SAVE THIS FOR YOUR REST DAY 💾', { y: 1185, bg: '#c8101e', size: 30 }); k.vignette(ctx, 0.5); }; return k.cam([1.2, 1.5, 3.4], [0, 1.25, 0], 40, { blur: 4 }); },
   };
   return { shots, sky: '#050608', capStyle: 'film', table: false, fog: ['#050608', 0.05], light: { sun: [3, 8, 4], key: 0.5, fill: 0.12, rim: 0.9, color: '#ffffff', shadow: 8, exposure: 1.05, grade: false }, over: (ctx) => { if (ov) ov(ctx); ov = null; } };
-}, { assets: ['humans/Superhero_Male', 'humans/ual1'] });
+}, { assets: ['humans/Superhero_Male', 'humans/Superhero_Male_Light', 'humans/ual1'] });
