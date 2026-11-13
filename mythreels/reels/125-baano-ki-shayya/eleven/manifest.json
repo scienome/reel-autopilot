@@ -1,0 +1,28 @@
+{
+ "music-7dac73585257.mp3": {
+  "prompt": "Indian mythological cinematic underscore: tanpura drone, soft tabla, bansuri, temple bells, swelling shehnai at the climax, no vocals, warm devotional temple feeling",
+  "music_length_ms": 46580,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-6cdff1237632.mp3": {
+  "text": "arrows thudding into the earth",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-e5a6b3375461.mp3": {
+  "text": "water gushing from the ground",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-70f48f02f931.mp3": {
+  "text": "a calm conch and heavenly bells",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
