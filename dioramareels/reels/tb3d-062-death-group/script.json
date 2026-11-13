@@ -1,0 +1,75 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Nani added Death to the family group chat. There is no leaving now.",
+   "say": "Nani added Death to the family group chat. There is no leaving now."
+  },
+  {
+   "shot": "add",
+   "cap": "Everyone, say hello to my new friend. He's very polite.",
+   "say": "Everyone, say hello to my new friend. He's very polite.",
+   "who": "nani",
+   "bubble": "SAY HELLO TO MY NEW FRIEND. 👋",
+   "emotion": "happy"
+  },
+  {
+   "shot": "add",
+   "cap": "Good morning. Here is a rose. And a sunrise. And a quote.",
+   "say": "Good morning. Here is a rose. And a sunrise. And a quote.",
+   "who": "death",
+   "bubble": "GOOD MORNING 🌹 SUNRISE ☀️ QUOTE",
+   "emotion": "content"
+  },
+  {
+   "shot": "add",
+   "cap": "Who added the Grim Reaper to the group?",
+   "say": "Who added the Grim Reaper to the group?",
+   "who": "kid",
+   "bubble": "WHO ADDED THE GRIM REAPER?! 😱",
+   "think": true,
+   "emotion": "scared"
+  },
+  {
+   "shot": "stuck",
+   "cap": "Three cousins try to leave the group. All three change their minds.",
+   "say": "Three cousins try to leave the group. All three change their minds."
+  },
+  {
+   "shot": "stuck",
+   "cap": "If I leave, does he come for me? I'll just mute it.",
+   "say": "If I leave, does he come for me? I'll just mute it.",
+   "who": "kid",
+   "bubble": "IF I LEAVE… DOES HE COME? I'LL MUTE IT. 🔇",
+   "think": true,
+   "emotion": "anxious"
+  },
+  {
+   "shot": "twist",
+   "cap": "Now it's the most active family group in history. Nobody dares leave.",
+   "say": "Now it's the most active family group in history. Nobody dares leave."
+  },
+  {
+   "shot": "twist",
+   "cap": "Two hundred good mornings sent. Zero people left.",
+   "say": "Two hundred good mornings sent. Zero people left.",
+   "who": "death",
+   "bubble": "200 GOOD MORNINGS. 0 LEFT. 💀📱",
+   "think": true,
+   "emotion": "proud"
+  },
+  {
+   "shot": "twist",
+   "cap": "See? I told you you'd make friends.",
+   "say": "See? I told you you'd make friends.",
+   "who": "nani",
+   "bubble": "SEE? YOU MADE FRIENDS. 👵💛",
+   "emotion": "happy"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag who never leaves the family group. Nani added Death to it.",
+   "say": "Tag who never leaves the family group. Nani added Death to it."
+  }
+ ]
+}

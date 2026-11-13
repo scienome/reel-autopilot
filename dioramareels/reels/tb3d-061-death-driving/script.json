@@ -1,0 +1,73 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Death decided to learn to drive. His instructor will never be the same.",
+   "say": "Death decided to learn to drive. His instructor will never be the same."
+  },
+  {
+   "shot": "start",
+   "cap": "Okay. Mirror, signal, and relax. You seem tense.",
+   "say": "Okay. Mirror, signal, and relax. You seem tense.",
+   "who": "instructor",
+   "bubble": "MIRROR, SIGNAL, RELAX. 🚗",
+   "emotion": "calm"
+  },
+  {
+   "shot": "start",
+   "cap": "I am four thousand years old. I have never relaxed.",
+   "say": "I am four thousand years old. I have never relaxed.",
+   "who": "death",
+   "bubble": "4000 YEARS. NEVER RELAXED. 💀",
+   "think": true,
+   "emotion": "anxious"
+  },
+  {
+   "shot": "road",
+   "cap": "They pull onto the road. Every other car suddenly changes lane. Far away.",
+   "say": "They pull onto the road. Every other car suddenly changes lane. Far away."
+  },
+  {
+   "shot": "road",
+   "cap": "Why is. Why is everyone avoiding us?",
+   "say": "Why is. Why is everyone avoiding us?",
+   "who": "instructor",
+   "bubble": "WHY IS EVERYONE AVOIDING US? 😰",
+   "emotion": "scared"
+  },
+  {
+   "shot": "road",
+   "cap": "Even the traffic is scared of him. Smart traffic.",
+   "say": "Even the traffic is scared of him. Smart traffic.",
+   "who": "ghost",
+   "bubble": "EVEN THE TRAFFIC IS SCARED. 👻",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "twist",
+   "cap": "Death passes. Perfect score. The examiner is shaking.",
+   "say": "Death passes. Perfect score. The examiner is shaking."
+  },
+  {
+   "shot": "twist",
+   "cap": "You're the safest driver I've ever seen. Nobody came within a mile.",
+   "say": "You're the safest driver I've ever seen. Nobody came within a mile.",
+   "who": "instructor",
+   "bubble": "SAFEST DRIVER EVER. 🏆",
+   "emotion": "scared"
+  },
+  {
+   "shot": "twist",
+   "cap": "See? Being scary has benefits.",
+   "say": "See? Being scary has benefits.",
+   "who": "death",
+   "bubble": "BEING SCARY HAS BENEFITS. 💀🚗",
+   "emotion": "proud"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the worst driver you know. Death just passed his test.",
+   "say": "Tag the worst driver you know. Death just passed his test."
+  }
+ ]
+}

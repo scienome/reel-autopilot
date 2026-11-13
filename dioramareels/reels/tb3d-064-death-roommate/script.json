@@ -1,0 +1,73 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Death and the ghost became roommates. It is not working out.",
+   "say": "Death and the ghost became roommates. It is not working out."
+  },
+  {
+   "shot": "night",
+   "cap": "Boo! Did I scare you? I've been practising!",
+   "say": "Boo! Did I scare you? I've been practising!",
+   "who": "ghost",
+   "bubble": "BOO! DID I SCARE YOU? 👻",
+   "emotion": "excited"
+  },
+  {
+   "shot": "night",
+   "cap": "It's three a.m. I have work in the morning. Please.",
+   "say": "It's three a.m. I have work in the morning. Please.",
+   "who": "death",
+   "bubble": "IT'S 3 AM. I HAVE WORK. 😩",
+   "emotion": "sad"
+  },
+  {
+   "shot": "night",
+   "cap": "The ghost keeps haunting the bathroom. Every night. On a schedule.",
+   "say": "The ghost keeps haunting the bathroom. Every night. On a schedule."
+  },
+  {
+   "shot": "bath",
+   "cap": "You've been going 'wooOOoo' in the bathroom for two hours.",
+   "say": "You've been going 'wooOOoo' in the bathroom for two hours.",
+   "who": "death",
+   "bubble": "2 HOURS OF 'WOOOO' IN THE BATHROOM. 🚿",
+   "think": true,
+   "emotion": "angry"
+  },
+  {
+   "shot": "bath",
+   "cap": "It has great echo! Listen! WooOOOoo!",
+   "say": "It has great echo! Listen! WooOOOoo!",
+   "who": "ghost",
+   "bubble": "IT HAS GREAT ECHO! WOOOO! 🎵",
+   "emotion": "happy"
+  },
+  {
+   "shot": "twist",
+   "cap": "Finally, Death puts up a chore chart. And earplugs.",
+   "say": "Finally, Death puts up a chore chart. And earplugs."
+  },
+  {
+   "shot": "twist",
+   "cap": "Monday to Friday, you haunt the neighbours. I sleep.",
+   "say": "Monday to Friday, you haunt the neighbours. I sleep.",
+   "who": "death",
+   "bubble": "MON-FRI: HAUNT THE NEIGHBOURS. 📋",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "twist",
+   "cap": "Deal. Best roommate I've had in two hundred years.",
+   "say": "Deal. Best roommate I've had in two hundred years.",
+   "who": "ghost",
+   "bubble": "BEST ROOMMATE IN 200 YEARS. 👻💀",
+   "emotion": "happy"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag your roommate. Death and the ghost moved in together.",
+   "say": "Tag your roommate. Death and the ghost moved in together."
+  }
+ ]
+}

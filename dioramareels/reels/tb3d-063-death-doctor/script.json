@@ -1,0 +1,73 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Death needed a flu shot. The most powerful being in the universe. Terrified.",
+   "say": "Death needed a flu shot. The most powerful being in the universe. Terrified."
+  },
+  {
+   "shot": "wait",
+   "cap": "Just a small injection, sir. You'll feel a tiny pinch.",
+   "say": "Just a small injection, sir. You'll feel a tiny pinch.",
+   "who": "doctor",
+   "bubble": "JUST A SMALL PINCH, SIR. 💉",
+   "emotion": "calm"
+  },
+  {
+   "shot": "wait",
+   "cap": "I have collected ten billion souls. I cannot look at the needle.",
+   "say": "I have collected ten billion souls. I cannot look at the needle.",
+   "who": "death",
+   "bubble": "10 BILLION SOULS. CAN'T LOOK. 😨",
+   "think": true,
+   "emotion": "scared"
+  },
+  {
+   "shot": "wait",
+   "cap": "Can I come back tomorrow? Or next century?",
+   "say": "Can I come back tomorrow? Or next century?",
+   "who": "death",
+   "bubble": "CAN I COME BACK NEXT CENTURY? 🙏",
+   "emotion": "anxious"
+  },
+  {
+   "shot": "help",
+   "cap": "Then a small hand takes his. It's the brave kid from room four.",
+   "say": "Then a small hand takes his. It's the brave kid from room four."
+  },
+  {
+   "shot": "help",
+   "cap": "It's okay, uncle. Look at me. Squeeze my hand. It's over fast.",
+   "say": "It's okay, uncle. Look at me. Squeeze my hand. It's over fast.",
+   "who": "kid",
+   "bubble": "LOOK AT ME. SQUEEZE MY HAND. 🤝",
+   "emotion": "happy"
+  },
+  {
+   "shot": "twist",
+   "cap": "The injection is done. Death didn't even feel it.",
+   "say": "The injection is done. Death didn't even feel it."
+  },
+  {
+   "shot": "twist",
+   "cap": "That's. That's it? You were very brave for me.",
+   "say": "That's. That's it? You were very brave for me.",
+   "who": "death",
+   "bubble": "THAT'S IT? YOU WERE BRAVE FOR ME. 🥹",
+   "emotion": "happy"
+  },
+  {
+   "shot": "twist",
+   "cap": "Lollipop?",
+   "say": "Lollipop?",
+   "who": "kid",
+   "bubble": "LOLLIPOP? 🍭",
+   "emotion": "happy"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag who holds your hand at the doctor. Even Death needed it.",
+   "say": "Tag who holds your hand at the doctor. Even Death needed it."
+  }
+ ]
+}

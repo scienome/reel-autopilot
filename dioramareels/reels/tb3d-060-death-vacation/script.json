@@ -1,0 +1,78 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Death took one week off. For the first time in four thousand years. Nobody could die.",
+   "say": "Death took one week off. For the first time in four thousand years. Nobody could die."
+  },
+  {
+   "shot": "beach",
+   "cap": "No scythe. No work. Just me and the sea.",
+   "say": "No scythe. No work. Just me and the sea.",
+   "who": "death",
+   "bubble": "NO WORK. JUST THE SEA. 🏖️",
+   "emotion": "happy"
+  },
+  {
+   "shot": "chaos",
+   "cap": "Meanwhile, back home. A very dramatic uncle.",
+   "say": "Meanwhile, back home. A very dramatic uncle."
+  },
+  {
+   "shot": "chaos",
+   "cap": "This is it. This is the end. Goodbye, cruel world!",
+   "say": "This is it. This is the end. Goodbye, cruel world!",
+   "who": "uncle",
+   "bubble": "THIS IS THE END! GOODBYE! 😵",
+   "emotion": "sad"
+  },
+  {
+   "shot": "chaos",
+   "cap": "He faints. He waits. Nothing happens. He gets up. He tries again.",
+   "say": "He faints. He waits. Nothing happens. He gets up. He tries again."
+  },
+  {
+   "shot": "chaos",
+   "cap": "Forty times today. He keeps getting up. It's exhausting.",
+   "say": "Forty times today. He keeps getting up. It's exhausting.",
+   "who": "aunty",
+   "bubble": "FAINTED 40 TIMES. KEEPS GETTING UP. 😮‍💨",
+   "think": true,
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "chaos",
+   "cap": "I can't even collect anyone. I'm just watching this.",
+   "say": "I can't even collect anyone. I'm just watching this.",
+   "who": "ghost",
+   "bubble": "CAN'T COLLECT ANYONE. JUST WATCHING. 👻",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "twist",
+   "cap": "Death comes back, tanned and relaxed. Sees the uncle mid-faint.",
+   "say": "Death comes back, tanned and relaxed. Sees the uncle mid-faint."
+  },
+  {
+   "shot": "twist",
+   "cap": "I leave for ONE week.",
+   "say": "I leave for ONE week.",
+   "who": "death",
+   "bubble": "I LEAVE FOR *ONE* WEEK. 😑",
+   "emotion": "sarcastic"
+  },
+  {
+   "shot": "twist",
+   "cap": "Oh good, you're back. Can I get up now?",
+   "say": "Oh good, you're back. Can I get up now?",
+   "who": "uncle",
+   "bubble": "OH GOOD. CAN I GET UP NOW? 🙃",
+   "emotion": "happy"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the drama queen of your family. Death took one week off.",
+   "say": "Tag the drama queen of your family. Death took one week off."
+  }
+ ]
+}
