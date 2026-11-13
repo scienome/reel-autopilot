@@ -1,0 +1,28 @@
+{
+ "music-60fc3d75237a.mp3": {
+  "prompt": "Indian mythological cinematic underscore: tanpura drone, soft tabla, bansuri, temple bells, swelling shehnai at the climax, no vocals, warm devotional temple feeling",
+  "music_length_ms": 46980,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-769eb996b540.mp3": {
+  "text": "ganga ghat bells and evening aarti",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-37e855e80c2c.mp3": {
+  "text": "massive flood waters and a rising whoosh",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-1d39380fe838.mp3": {
+  "text": "a soft om whisper",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
