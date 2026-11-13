@@ -1,0 +1,28 @@
+{
+ "music-ea6837122d08.mp3": {
+  "prompt": "Indian mythological cinematic underscore: tanpura drone, soft tabla, bansuri, temple bells, swelling shehnai at the climax, no vocals, warm devotional temple feeling",
+  "music_length_ms": 52820,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-3a8179881af2.mp3": {
+  "text": "heavy rain and thunder",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-92fd17d7e059.mp3": {
+  "text": "a mountain rumbling as it lifts",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-38be2bb41cf4.mp3": {
+  "text": "festive bells and happy crowd",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
