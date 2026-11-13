@@ -26,10 +26,10 @@ def api_key():
     sys.exit('CARTESIA_API_KEY is not set (environment or .env)')
 
 
-def tts(text, out, voice=VOICE, speed=1, volume=1):
+def tts(text, out, voice=VOICE, speed=1, volume=1, emotion=None):
     body = {'model_id': MODEL, 'transcript': text, 'voice': voice,
             'output_format': {'container': 'wav', 'encoding': 'pcm_s16le', 'sample_rate': 44100},
-            'generation_config': {'speed': speed, 'volume': volume}}
+            'generation_config': dict({'speed': speed, 'volume': volume}, **({'emotion': emotion} if emotion else {}))}  # emotion: happy, sad, sarcastic, scared, excited, angry, calm... (Cartesia, English)
     r = requests.post(URL, headers={'Content-Type': 'application/json', 'X-API-Key': api_key(), 'Cartesia-Version': VERSION},
                       json=body, timeout=180)
     if r.status_code != 200:

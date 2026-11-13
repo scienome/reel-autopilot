@@ -16,7 +16,8 @@
    "say": "Why is my face so big?",
    "who": "grandpa",
    "bubble": "WHY IS MY FACE SO BIG? 🔍",
-   "think": true
+   "think": true,
+   "emotion": "anxious"
   },
   {
    "shot": "call",
@@ -24,13 +25,15 @@
    "say": "Just say I love you. Say it.",
    "who": "grandma",
    "bubble": "JUST SAY 'I LOVE YOU'. SAY IT.",
-   "think": true
+   "think": true,
+   "emotion": "anxious"
   },
   {
    "shot": "call",
    "cap": "Hello? Can you hear us? We are fine!",
    "say": "Hello? Can you hear us? We are fine!",
-   "who": "grandpa"
+   "who": "grandpa",
+   "emotion": "happy"
   },
   {
    "shot": "cut",
@@ -43,7 +46,8 @@
    "say": "He has exams. He's busy.",
    "who": "grandma",
    "bubble": "HE HAS EXAMS. HE'S BUSY. 🥲",
-   "think": true
+   "think": true,
+   "emotion": "sad"
   },
   {
    "shot": "after",
@@ -55,14 +59,16 @@
    "cap": "In case he calls again.",
    "say": "In case he calls again.",
    "who": "grandpa",
-   "bubble": "IN CASE HE CALLS AGAIN."
+   "bubble": "IN CASE HE CALLS AGAIN.",
+   "emotion": "sad"
   },
   {
    "shot": "twist",
    "cap": "They do this every night. Call your grandparents.",
    "say": "They do this every night. Call your grandparents.",
    "who": "ghost",
-   "bubble": "THEY DO THIS EVERY NIGHT. CALL THEM. 📞"
+   "bubble": "THEY DO THIS EVERY NIGHT. CALL THEM. 📞",
+   "emotion": "sad"
   },
   {
    "shot": "outro",

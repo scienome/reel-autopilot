@@ -14,25 +14,29 @@
    "shot": "bag",
    "cap": "Bag drop. Level seven.",
    "say": "Bag drop. Level seven.",
-   "who": "mum"
+   "who": "mum",
+   "emotion": "sarcastic"
   },
   {
    "shot": "bag",
    "cap": "Level eight. I've haunted this house since eighteen twenty four.",
    "say": "Level eight. I've haunted this house since eighteen twenty four.",
-   "who": "ghost"
+   "who": "ghost",
+   "emotion": "proud"
   },
   {
    "shot": "hungry",
    "cap": "I'm not hungry.",
    "say": "I'm not hungry.",
-   "who": "riya"
+   "who": "riya",
+   "emotion": "sad"
   },
   {
    "shot": "hungry",
    "cap": "Not hungry? Code red.",
    "say": "Not hungry? Code red.",
-   "who": "mum"
+   "who": "mum",
+   "emotion": "anxious"
   },
   {
    "shot": "cook",
@@ -43,7 +47,8 @@
    "shot": "cook",
    "cap": "I can't even eat. And I'm jealous.",
    "say": "I can't even eat. And I'm jealous.",
-   "who": "ghost"
+   "who": "ghost",
+   "emotion": "sad"
   },
   {
    "shot": "room",
@@ -54,25 +59,29 @@
    "shot": "room",
    "cap": "Don't knock. Don't knock.",
    "say": "Don't knock. Don't knock.",
-   "who": "mum"
+   "who": "mum",
+   "emotion": "anxious"
   },
   {
    "shot": "knock",
    "cap": "Need anything?",
    "say": "Need anything?",
-   "who": "mum"
+   "who": "mum",
+   "emotion": "calm"
   },
   {
    "shot": "knock",
    "cap": "No.",
    "say": "No.",
-   "who": "riya"
+   "who": "riya",
+   "emotion": "sad"
   },
   {
    "shot": "knock",
    "cap": "No means yes. Even I know that.",
    "say": "No means yes. Even I know that.",
-   "who": "ghost"
+   "who": "ghost",
+   "emotion": "sarcastic"
   },
   {
    "shot": "plate",
@@ -83,13 +92,15 @@
    "shot": "note",
    "cap": "I'm fine too. Eat.",
    "say": "I'm fine too. Eat.",
-   "who": "mum"
+   "who": "mum",
+   "emotion": "content"
   },
   {
    "shot": "note",
    "cap": "Best family I've ever haunted. Don't tell them.",
    "say": "Best family I've ever haunted. Don't tell them.",
-   "who": "ghost"
+   "who": "ghost",
+   "emotion": "content"
   },
   {
    "shot": "outro",

@@ -11,7 +11,8 @@
    "say": "Do they have a dog? Please, no dog.",
    "who": "aunty",
    "bubble": "PLEASE. NO DOG. 🐕",
-   "think": true
+   "think": true,
+   "emotion": "anxious"
   },
   {
    "shot": "street",
@@ -19,7 +20,8 @@
    "say": "Are they loud? I sleep at nine.",
    "who": "uncle",
    "bubble": "I SLEEP AT 9. 😴",
-   "think": true
+   "think": true,
+   "emotion": "anxious"
   },
   {
    "shot": "street",
@@ -27,7 +29,8 @@
    "say": "Please have a kid my age. Please.",
    "who": "kid",
    "bubble": "PLEASE HAVE A KID MY AGE 🙏",
-   "think": true
+   "think": true,
+   "emotion": "excited"
   },
   {
    "shot": "ghost",
@@ -35,7 +38,8 @@
    "say": "Do they believe in ghosts?",
    "who": "ghost",
    "bubble": "DO THEY BELIEVE IN GHOSTS? 👻",
-   "think": true
+   "think": true,
+   "emotion": "excited"
   },
   {
    "shot": "unpack",
@@ -52,14 +56,16 @@
    "cap": "Hi! I'm here to find the ghost.",
    "say": "Hi! I'm here to find the ghost.",
    "who": "new",
-   "bubble": "HI! I'M HERE TO FIND THE GHOST. 🔦"
+   "bubble": "HI! I'M HERE TO FIND THE GHOST. 🔦",
+   "emotion": "excited"
   },
   {
    "shot": "twist",
    "cap": "Finally. A fan.",
-   "say": "Finally. A fan.",
+   "say": "Finally. [laughter] A fan.",
    "who": "ghost",
-   "bubble": "FINALLY. A FAN. 🥹"
+   "bubble": "FINALLY. A FAN. 🥹",
+   "emotion": "happy"
   },
   {
    "shot": "outro",

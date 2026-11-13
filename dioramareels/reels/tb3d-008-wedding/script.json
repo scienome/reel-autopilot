@@ -11,7 +11,8 @@
    "say": "Don't cry. This makeup cost a fortune.",
    "who": "bride",
    "bubble": "DON'T CRY. THE MAKEUP. 💄",
-   "think": true
+   "think": true,
+   "emotion": "anxious"
   },
   {
    "shot": "vows",
@@ -19,7 +20,8 @@
    "say": "Don't cry. Everyone is filming.",
    "who": "groom",
    "bubble": "EVERYONE'S FILMING. 📱",
-   "think": true
+   "think": true,
+   "emotion": "anxious"
   },
   {
    "shot": "uncle",
@@ -27,7 +29,8 @@
    "say": "When is the food? Is there chicken?",
    "who": "uncle",
    "bubble": "WHEN IS THE FOOD? 🍗",
-   "think": true
+   "think": true,
+   "emotion": "excited"
   },
   {
    "shot": "bet",
@@ -39,7 +42,8 @@
    "cap": "Every wedding. I bet on the uncle.",
    "say": "Every wedding. I bet on the uncle.",
    "who": "ghost",
-   "bubble": "I ALWAYS BET ON THE UNCLE. 👻"
+   "bubble": "I ALWAYS BET ON THE UNCLE. 👻",
+   "emotion": "excited"
   },
   {
    "shot": "cry",
@@ -51,7 +55,8 @@
    "cap": "She was this small. Now look at her.",
    "say": "She was this small. Now look at her.",
    "who": "uncle",
-   "bubble": "SHE WAS THIS SMALL… 😭"
+   "bubble": "SHE WAS THIS SMALL… 😭",
+   "emotion": "sad"
   },
   {
    "shot": "twist",

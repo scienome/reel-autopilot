@@ -14,11 +14,11 @@ KIT = os.path.join(ROOT, 'dioramareels', 'kit')  # the 3D engine; tools/toy3d_ma
 LINE_GAP, SHOT_GAP, LEAD_IN, TAIL = 0.2, 0.42, 0.25, 1.8
 
 
-def tts(text, cfg, path):
+def tts(text, cfg, path, emotion=None):
     if cfg.get('provider') == 'cartesia':  # a reel's voice.json can pick Cartesia: {"provider": "cartesia", "voice_id", "model_id"}
         import tempfile, cartesia_tts
         with tempfile.TemporaryDirectory() as d:
-            wav = cartesia_tts.tts(text, os.path.join(d, 'take.wav'), voice=cfg['voice_id'])
+            wav = cartesia_tts.tts(text, os.path.join(d, 'take.wav'), voice=cfg['voice_id'], emotion=emotion)
             subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', wav, '-b:a', '128k', path], check=True)
         return
     req = urllib.request.Request(
@@ -188,12 +188,12 @@ def main(rid):
             t += gap
             pcm.append(b'\0\0' * int(gap * 44100))
         lcfg = dict(cfg, voice_id=cfg.get('cast', {}).get(ln['who'], cfg['voice_id'])) if ln.get('who') else cfg  # a line can be spoken by a character: script line "who", voice.json "cast": {who: voice_id}
-        name = hashlib.sha1(f"{lcfg['voice_id']}|{lcfg['model_id']}|{ln['say']}".encode()).hexdigest()[:16] + '.mp3'
+        name = hashlib.sha1(f"{lcfg['voice_id']}|{lcfg['model_id']}|{ln['say']}{'|' + ln['emotion'] if ln.get('emotion') else ''}".encode()).hexdigest()[:16] + '.mp3'  # a line can carry an emotion (Cartesia) and [laughter] in its say
         mp3 = os.path.join(takes, name)
         keep.add(name)
         if not os.path.exists(mp3):
             print('voicing:', ln['say'], flush=True)
-            tts(ln['say'], lcfg, mp3)
+            tts(ln['say'], lcfg, mp3, ln.get('emotion'))
         wav = os.path.join(out, name + '.wav')
         subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', mp3, '-ac', '1', '-ar', '44100', '-sample_fmt', 's16', wav], check=True)
         with wave.open(wav) as w:

@@ -9,13 +9,15 @@
    "shot": "grab",
    "cap": "My turn. Cooking show.",
    "say": "My turn. Cooking show.",
-   "who": "maya"
+   "who": "maya",
+   "emotion": "proud"
   },
   {
    "shot": "grab",
    "cap": "Football. Final. Ten minutes.",
    "say": "Football. Final. Ten minutes.",
-   "who": "sam"
+   "who": "sam",
+   "emotion": "angry"
   },
   {
    "shot": "plan",
@@ -23,7 +25,8 @@
    "say": "He blinks first. I just wait.",
    "who": "maya",
    "bubble": "HE BLINKS FIRST. I WAIT. 😐",
-   "think": true
+   "think": true,
+   "emotion": "proud"
   },
   {
    "shot": "plan",
@@ -31,14 +34,16 @@
    "say": "She's bluffing. She hates football.",
    "who": "sam",
    "bubble": "SHE'S BLUFFING. 😏",
-   "think": true
+   "think": true,
+   "emotion": "sarcastic"
   },
   {
    "shot": "ghost",
    "cap": "Six years. I've had enough.",
    "say": "Six years. I've had enough.",
    "who": "ghost",
-   "bubble": "6 YEARS. ENOUGH. 😤"
+   "bubble": "6 YEARS. ENOUGH. 😤",
+   "emotion": "angry"
   },
   {
    "shot": "float",
@@ -50,7 +55,8 @@
    "cap": "Did the remote just fly?",
    "say": "Did the remote just fly?",
    "who": "sam",
-   "bubble": "DID THE REMOTE JUST… FLY? 😳"
+   "bubble": "DID THE REMOTE JUST… FLY? 😳",
+   "emotion": "scared"
   },
   {
    "shot": "twist",
@@ -62,13 +68,15 @@
    "cap": "Antiques. That's my sofa from eighteen twenty four.",
    "say": "Antiques. That's my sofa from eighteen twenty four.",
    "who": "ghost",
-   "bubble": "THAT'S MY SOFA FROM 1824. 🛋️"
+   "bubble": "THAT'S MY SOFA FROM 1824. 🛋️",
+   "emotion": "proud"
   },
   {
    "shot": "twist",
    "cap": "Honestly? I'd watch this.",
    "say": "Honestly? I'd watch this.",
-   "who": "maya"
+   "who": "maya",
+   "emotion": "content"
   },
   {
    "shot": "outro",

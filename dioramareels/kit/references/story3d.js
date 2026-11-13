@@ -358,7 +358,12 @@ window.STORY = (build, opt = {}) => DIY((k) => {
           k.think(ctx, a, (th ? '💭 ' : '') + txt, t, L0.t0, L0.t1 + 0.25, { h: head(a), up: a.userData.ghost ? 120 : 170, bg: col[0], fg: col[1], size }); }
         if (name === 'outro' && spec.tag) k.card(ctx, spec.tag, { y: 1185, bg: '#d8504a', size: 30 }); };
       const c = spk && !sh.noCut ? 'close:' + spk : (sh.cam || 'two'); return camFor(sh.set, c, t, kk); }; });
-    return { shots, lens: 28, minDist: 2.0, sky: '#f0d9b5', capStyle: 'film', over: (ctx) => { if (ov) ov(ctx); ov = null; } }; };
+    // free synth sound effects (style sound.js; minor = kept under the voiceover): pop per bubble, whoosh per speaker cut, sparkle for the ghost, impact on booms, ding on notes, riser into the twist
+    const score = (kit, st) => { let prev = null; LN.forEach((l) => { if (!l.who) { prev = null; return; } const g = spec.cast[l.who] && spec.cast[l.who].ghost; kit.play(g ? 'sparkle' : 'pop', l.t0 + 0.05, { gain: g ? 0.22 : 0.3, minor: true }); if (prev !== l.who) kit.play('whoosh', l.t0 - 0.08, { dur: 0.16, gain: 0.1, minor: true }); prev = l.who; });
+      Object.entries(spec.shots).forEach(([name, sh]) => { const a = st(name); if (!isFinite(a)) return; const b = (LN.filter((l) => l.shot === name).slice(-1)[0] || {}).t1 || a + 3;
+        if (sh.boom) kit.play('impact', a + (b - a) * sh.boom[1], { gain: 0.5, minor: true }); if (sh.note) kit.play('ding', a + 0.1, { gain: 0.4, minor: true }); if (sh.card) kit.play('stamp', a + 0.15, { gain: 0.3, minor: true }); if (sh.counter) kit.play('count', a + 0.1, { gain: 0.2, minor: true });
+        if (name === 'twist') kit.play('riser', a - 1.0, { dur: 1.0, gain: 0.25, minor: true }); }); };
+    return { shots, score, lens: 28, minDist: 2.0, sky: '#f0d9b5', capStyle: 'film', over: (ctx) => { if (ov) ov(ctx); ov = null; } }; };
   k.TB_ASSETS = ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/ual1'];
   const R = build(k); return Object.assign({ table: false }, R);
 }, opt);

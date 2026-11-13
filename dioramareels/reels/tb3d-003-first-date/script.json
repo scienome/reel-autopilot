@@ -9,7 +9,8 @@
    "shot": "sit",
    "cap": "Hi! You look great.",
    "say": "Hi! You look great.",
-   "who": "sam"
+   "who": "sam",
+   "emotion": "excited"
   },
   {
    "shot": "sit",
@@ -17,7 +18,8 @@
    "say": "Be cool. Do not mention your ex.",
    "who": "sam",
    "bubble": "BE COOL. DON'T MENTION YOUR EX.",
-   "think": true
+   "think": true,
+   "emotion": "anxious"
   },
   {
    "shot": "sit",
@@ -25,13 +27,15 @@
    "say": "He's cute. Do not laugh like a goat.",
    "who": "maya",
    "bubble": "DON'T LAUGH LIKE A GOAT. 🐐",
-   "think": true
+   "think": true,
+   "emotion": "anxious"
   },
   {
    "shot": "order",
    "cap": "Two coffees?",
    "say": "Two coffees?",
-   "who": "waiter"
+   "who": "waiter",
+   "emotion": "calm"
   },
   {
    "shot": "order",
@@ -39,13 +43,15 @@
    "say": "Third first date at this table today.",
    "who": "waiter",
    "bubble": "3RD FIRST DATE HERE TODAY. ☕",
-   "think": true
+   "think": true,
+   "emotion": "sarcastic"
   },
   {
    "shot": "slip",
    "cap": "So, my ex once said...",
    "say": "So, my ex once said...",
-   "who": "sam"
+   "who": "sam",
+   "emotion": "proud"
   },
   {
    "shot": "slip",
@@ -53,7 +59,8 @@
    "say": "Why. Why would you say that.",
    "who": "sam",
    "bubble": "WHY WOULD YOU SAY THAT. 😩",
-   "think": true
+   "think": true,
+   "emotion": "anxious"
   },
   {
    "shot": "laugh",
@@ -63,9 +70,10 @@
   {
    "shot": "laugh",
    "cap": "Baaa ha ha ha!",
-   "say": "Baaa ha ha ha!",
+   "say": "[laughter] Baaa ha ha ha! [laughter]",
    "who": "maya",
-   "bubble": "BAAA-HA-HA 🐐"
+   "bubble": "BAAA-HA-HA 🐐",
+   "emotion": "happy"
   },
   {
    "shot": "twist",
@@ -77,7 +85,8 @@
    "cap": "Three hundred first dates in this cafe. This one makes it.",
    "say": "Three hundred first dates in this cafe. This one makes it.",
    "who": "ghost",
-   "bubble": "300 DATES HERE. THIS ONE MAKES IT. 💛"
+   "bubble": "300 DATES HERE. THIS ONE MAKES IT. 💛",
+   "emotion": "content"
   },
   {
    "shot": "outro",

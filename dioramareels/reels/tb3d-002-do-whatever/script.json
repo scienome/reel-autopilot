@@ -9,13 +9,15 @@
    "shot": "ask",
    "cap": "So, what do you want for dinner?",
    "say": "So, what do you want for dinner?",
-   "who": "sam"
+   "who": "sam",
+   "emotion": "happy"
   },
   {
    "shot": "ask",
    "cap": "Do whatever you want.",
    "say": "Do whatever you want.",
-   "who": "maya"
+   "who": "maya",
+   "emotion": "calm"
   },
   {
    "shot": "think",
@@ -23,7 +25,8 @@
    "say": "Freedom. Pizza. Extra cheese.",
    "who": "sam",
    "bubble": "FREEDOM. PIZZA. 🍕",
-   "think": true
+   "think": true,
+   "emotion": "excited"
   },
   {
    "shot": "think",
@@ -31,7 +34,8 @@
    "say": "If he orders pizza, it's over.",
    "who": "maya",
    "bubble": "IF HE ORDERS PIZZA… IT'S OVER.",
-   "think": true
+   "think": true,
+   "emotion": "angry"
   },
   {
    "shot": "order",
@@ -43,7 +47,8 @@
    "cap": "Oh no. I've seen this since eighteen twenty four.",
    "say": "Oh no. I've seen this since eighteen twenty four.",
    "who": "ghost",
-   "bubble": "OH NO. SEEN THIS SINCE 1824. 👻"
+   "bubble": "OH NO. SEEN THIS SINCE 1824. 👻",
+   "emotion": "scared"
   },
   {
    "shot": "arrive",
@@ -60,14 +65,16 @@
    "cap": "I wanted pizza. I just wanted you to guess.",
    "say": "I wanted pizza. I just wanted you to guess.",
    "who": "maya",
-   "bubble": "I WANTED PIZZA. YOU HAD TO GUESS."
+   "bubble": "I WANTED PIZZA. YOU HAD TO GUESS.",
+   "emotion": "sarcastic"
   },
   {
    "shot": "twist",
    "cap": "Rookie.",
-   "say": "Rookie.",
+   "say": "[laughter] Rookie.",
    "who": "ghost",
-   "bubble": "ROOKIE. 👻"
+   "bubble": "ROOKIE. 👻",
+   "emotion": "sarcastic"
   },
   {
    "shot": "outro",

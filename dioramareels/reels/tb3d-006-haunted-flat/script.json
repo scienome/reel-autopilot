@@ -10,13 +10,15 @@
    "cap": "Boo.",
    "say": "Boo.",
    "who": "ghost",
-   "bubble": "BOO. 👻"
+   "bubble": "BOO. 👻",
+   "emotion": "proud"
   },
   {
    "shot": "boo",
    "cap": "Babe, did you leave the window open?",
    "say": "Babe, did you leave the window open?",
-   "who": "maya"
+   "who": "maya",
+   "emotion": "calm"
   },
   {
    "shot": "chair",
@@ -28,7 +30,8 @@
    "cap": "Aww. The house is settling.",
    "say": "Aww. The house is settling.",
    "who": "sam",
-   "bubble": "AWW. THE HOUSE IS SETTLING. 🥰"
+   "bubble": "AWW. THE HOUSE IS SETTLING. 🥰",
+   "emotion": "content"
   },
   {
    "shot": "knock",
@@ -39,14 +42,16 @@
    "shot": "knock",
    "cap": "Headphones on. Night, babe.",
    "say": "Headphones on. Night, babe.",
-   "who": "maya"
+   "who": "maya",
+   "emotion": "calm"
   },
   {
    "shot": "ghost",
    "cap": "Two hundred years of haunting. And I'm being ignored.",
    "say": "Two hundred years of haunting. And I'm being ignored.",
    "who": "ghost",
-   "bubble": "200 YEARS. IGNORED. 😤"
+   "bubble": "200 YEARS. IGNORED. 😤",
+   "emotion": "sad"
   },
   {
    "shot": "dog",
@@ -58,7 +63,8 @@
    "cap": "Ah. No. Not the dog.",
    "say": "Ah. No. Not the dog.",
    "who": "ghost",
-   "bubble": "NOT THE DOG. 😱"
+   "bubble": "NOT THE DOG. 😱",
+   "emotion": "scared"
   },
   {
    "shot": "twist",
