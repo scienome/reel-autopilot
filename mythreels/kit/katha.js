@@ -19,7 +19,13 @@
     const talking = (who, t) => BEATS.some((b) => b.who === who && WORDS[b.id].some((w) => t >= w.t - 0.03 && t <= w.e + 0.03));
     const pulse = (t, a, d = 0.35) => { const k = (t - a) / d; return k < 0 || k > 1 ? 0 : Math.sin(k * Math.PI); };
     const partTwo = (ctx, W, H_, t, a, txt = 'भाग 2?') => { const u = popU(t, a, 0.35); if (u <= 0) return; ctx.fillStyle = `rgba(20,4,0,${0.4 * u})`; ctx.fillRect(0, 0, W, H_); MYTH.card(ctx, W, H_, t, a, txt, { size: 96, y: 320 }); };
-    const char = (ctx, who, x, y, s, t, oo = {}) => MYTH.person(ctx, x, y, s, Object.assign({ who, t }, oo, { face: Object.assign({ talk: talking(oo.as || who, t) }, oo.face || {}) }));
+    // characters breathe, sway and bob (and move a little more while they speak), so no shot is ever a still frame
+    const charPh = (w) => { let h = 7; for (const c of String(w)) h = (h * 31 + c.charCodeAt(0)) % 1000; return h / 159; };
+    const char = (ctx, who, x, y, s, t, oo = {}) => { const tk = talking(oo.as || who, t), ph = charPh(who), live = o.cinema !== false && !oo.still;
+      if (live) { const bob = Math.sin(t * 2.3 + ph) * 5 * s + (tk ? Math.abs(Math.sin(t * 6.5 + ph)) * -4 * s : 0), sway = Math.sin(t * 1.15 + ph) * 0.03 + (tk ? Math.sin(t * 5.5 + ph) * 0.018 : 0), br = 1 + Math.sin(t * 2.6 + ph) * 0.014;
+        ctx.save(); ctx.translate(x, y + bob); ctx.rotate(sway); ctx.scale(1 + (br - 1) * 0.5, br); ctx.translate(-x, -y); }
+      MYTH.person(ctx, x, y, s, Object.assign({ who, t }, oo, { face: Object.assign({ talk: tk }, oo.face || {}) }));
+      if (live) ctx.restore(); };
     // shortcuts: cameras, one / two characters, a card on a word
     const CAM = { wide: [[360, 790, 1.0], [360, 770, 1.1]], mid: [[360, 800, 1.3], [360, 780, 1.45]], close: (x = 360) => [[x, 700, 1.9], [x, 690, 2.15]], push: [[360, 800, 1.0], [360, 720, 1.5]] };
     const one = (who, oo = {}, x = 360, s = 0.85, y = 1170) => (ctx, t) => char(ctx, who, x, y, s, t, typeof oo === 'function' ? oo(t) : oo);
@@ -104,6 +110,10 @@
       const [name, a, b] = shotAt(t), sp = SHOTS[name], u = H.clamp((t - a) / Math.max(0.01, b - a));
       ctx.save(); const sh = sp.shake != null && t > sp.shake ? 16 * Math.max(0, 1 - (t - sp.shake) * 2.5) : 0; ctx.translate(sh * Math.sin(t * 70), sh * Math.cos(t * 53));
       if (CINE) { const br = 1.03 + 0.012 * Math.sin(t * 0.35); ctx.translate(360, 640); ctx.scale(br, br); ctx.translate(-360, -640); }
+      if (CINE) { const si = SH.findIndex(([n]) => n === name), mode = si % 5, e = H.ease.inOut(u), cutU = Math.max(0, 1 - (t - a) / 0.3); // a different slow move for every shot + a punch-in on each cut + handheld drift
+        let z = 1, px = 0, py = 0; if (mode === 0) z = 1 + 0.13 * e; else if (mode === 1) { z = 1.08; px = -40 + 80 * e; } else if (mode === 2) z = 1.13 - 0.13 * e; else if (mode === 3) { z = 1.08; px = 40 - 80 * e; } else { z = 1.07 + 0.05 * e; py = 30 - 60 * e; }
+        z *= 1 + 0.05 * cutU * cutU; px += Math.sin(t * 0.9) * 6 + Math.sin(t * 2.3) * 2; py += Math.cos(t * 0.7) * 5 + Math.cos(t * 1.9) * 2;
+        ctx.translate(360, 640); ctx.scale(z, z); ctx.rotate(Math.sin(t * 0.5) * 0.004); ctx.translate(-360 + px, -640 + py); }
       shotCam(ctx, sp.cam[0], sp.cam[1] || sp.cam[0], u); MYTH.sets[sp.set](ctx, 720, 1280, t, sp.setOpt || {}); if (sp.draw) sp.draw(ctx, t); ctx.restore();
       if (CINE) { CINEMA.grade(ctx, W, H_, t, name); } else { MYTH.light(ctx, W, H_); MYTH.folkFinish(ctx, W, H_); }
       if (sp.over) sp.over(ctx, W, H_, t);

@@ -1,3 +1,4 @@
+// motion: camera moves + living characters (kit/katha.js)
 // narrator: Anuj (Cartesia), 13 Nov 2026
 // cinematic finish: kit/katha.js CINEMA (13 Nov 2026)
 KATHA((h) => {
