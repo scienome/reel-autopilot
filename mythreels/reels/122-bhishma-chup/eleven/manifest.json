@@ -1,0 +1,28 @@
+{
+ "music-90f0167104c5.mp3": {
+  "prompt": "Indian mythological cinematic underscore: tanpura drone, soft tabla, bansuri, temple bells, swelling shehnai at the climax, no vocals, warm devotional temple feeling",
+  "music_length_ms": 44580,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-55dfc6f6ad2f.mp3": {
+  "text": "dice rolling on a wooden board",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-6ca76553c93f.mp3": {
+  "text": "a hushed crowd gasp",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-915fac97f6d8.mp3": {
+  "text": "heavy chains clanking",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
