@@ -1,0 +1,28 @@
+{
+ "music-f5b8b196faed.mp3": {
+  "prompt": "Indian mythological cinematic underscore: tanpura drone, soft tabla, bansuri, temple bells, swelling shehnai at the climax, no vocals, warm devotional temple feeling",
+  "music_length_ms": 46420,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-f195bd51624d.mp3": {
+  "text": "galloping horses and chariot wheels",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-fd67aa7a02c4.mp3": {
+  "text": "vedic chant hum",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-d7adf69de37d.mp3": {
+  "text": "sunrise swell with conch",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
