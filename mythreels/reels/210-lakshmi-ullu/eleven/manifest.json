@@ -1,0 +1,28 @@
+{
+ "music-70dfdf83f6fd.mp3": {
+  "prompt": "Indian mythological cinematic underscore: tanpura drone, soft tabla, bansuri, temple bells, swelling shehnai at the climax, no vocals, warm devotional temple feeling",
+  "music_length_ms": 50260,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-c45da2776f4f.mp3": {
+  "text": "heavenly harp and soft bells",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-bdef16ae94c1.mp3": {
+  "text": "night crickets and an owl hoot",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-e37bb3999c5c.mp3": {
+  "text": "diya flames and soft temple bells",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
