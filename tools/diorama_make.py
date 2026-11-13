@@ -5,6 +5,7 @@ One voice reads script.json line by line. Takes are kept in the reel's voice_lin
 lines whose text changed. Timing uses the same gaps as the noirstyle kit. Needs ELEVENLABS_API_KEY (or CARTESIA_API_KEY when
 the reel's voice.json says "provider": "cartesia"), ffmpeg and playwright.
 """
+import re
 import hashlib, json, os, subprocess, sys, urllib.request, wave
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
@@ -14,12 +15,24 @@ KIT = os.path.join(ROOT, 'dioramareels', 'kit')  # the 3D engine; tools/toy3d_ma
 LINE_GAP, SHOT_GAP, LEAD_IN, TAIL = 0.2, 0.42, 0.25, 1.8
 
 
+def level(path, target=-16.0):
+    """Bring one voice line to the same loudness (mean -16 dB) so every voice in a cast sits level: some Cartesia
+    voices (Archie, the narrator) come out ~10 dB quieter than the others. A limiter keeps the peaks clean."""
+    o = subprocess.run(['ffmpeg', '-i', path, '-af', 'volumedetect', '-f', 'null', '-'], capture_output=True, text=True).stderr
+    m = re.search(r'mean_volume: (-?[\d.]+) dB', o)
+    if not m or abs(float(m.group(1)) - target) < 1: return
+    tmp = path + '.lvl.mp3'
+    subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', path, '-af', f'volume={target - float(m.group(1)):.1f}dB,alimiter=limit=0.95', '-ar', '44100', '-b:a', '128k', tmp], check=True)
+    os.replace(tmp, path)
+
+
 def tts(text, cfg, path, emotion=None):
     if cfg.get('provider') == 'cartesia':  # a reel's voice.json can pick Cartesia: {"provider": "cartesia", "voice_id", "model_id"}
         import tempfile, cartesia_tts
         with tempfile.TemporaryDirectory() as d:
             wav = cartesia_tts.tts(text, os.path.join(d, 'take.wav'), voice=cfg['voice_id'], emotion=emotion)
             subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', wav, '-b:a', '128k', path], check=True)
+        level(path)
         return
     req = urllib.request.Request(
         f"https://api.elevenlabs.io/v1/text-to-speech/{cfg['voice_id']}?output_format=mp3_44100_128",
