@@ -1,0 +1,28 @@
+{
+ "music-479a42ecbd9a.mp3": {
+  "prompt": "Indian mythological cinematic underscore: tanpura drone, soft tabla, bansuri, temple bells, swelling shehnai at the climax, no vocals, warm devotional temple feeling",
+  "music_length_ms": 49620,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-dd2aca887bb4.mp3": {
+  "text": "ocean waves on the shore",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-b196635caf93.mp3": {
+  "text": "a powerful whoosh of flight",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-a1775f6253ba.mp3": {
+  "text": "a heavy landing and a sad flute",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
