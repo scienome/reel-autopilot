@@ -1,3 +1,4 @@
+// cinematic finish: kit/katha.js CINEMA (13 Nov 2026)
 KATHA((h) => {
   const { V, at, char, CAM, one, two, cardOn } = h;
 

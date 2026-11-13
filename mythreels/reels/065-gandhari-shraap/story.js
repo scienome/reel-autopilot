@@ -1,3 +1,4 @@
+// cinematic finish: kit/katha.js CINEMA (13 Nov 2026)
 KATHA((h) => {
   const { V, at, char, CAM, one, two, cardOn } = h;
   const gan = (ctx, x, y, s, t, o = {}) => char(ctx, 'amba', x, y, s, t, Object.assign({ as: 'amba', style: { cloth: '#f4f0e8', cloth2: '#c9b48a' }, face: { eyes: 'closed', mouth: 'frown' } }, o));

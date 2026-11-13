@@ -1,3 +1,4 @@
+// cinematic finish: kit/katha.js CINEMA (13 Nov 2026)
 KATHA((h) => {
   const { V, at, char, CAM, one, two, cardOn } = h;
   const thread = (ctx, x, y, t) => { ctx.save(); ctx.strokeStyle = '#e8384f'; ctx.lineWidth = 8; ctx.beginPath(); ctx.ellipse(x, y, 40, 14, 0, 0, 7); ctx.stroke(); ctx.fillStyle = '#ffd23f'; ctx.beginPath(); ctx.arc(x, y - 14, 16 + Math.sin(t * 5) * 2, 0, 7); ctx.fill(); ctx.restore(); };

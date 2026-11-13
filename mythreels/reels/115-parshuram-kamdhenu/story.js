@@ -1,3 +1,4 @@
+// cinematic finish: kit/katha.js CINEMA (13 Nov 2026)
 KATHA((h) => {
   const { V, at, char, CAM, one, two, cardOn } = h;
   const axe = (ctx, x, y, s = 1, rot = 0, glow = 0) => { ctx.save(); ctx.translate(x, y); ctx.rotate(rot); ctx.scale(s, s); if (glow) { ctx.shadowColor = '#ffd23f'; ctx.shadowBlur = 30 * glow; } ctx.fillStyle = '#7a4a22'; ctx.fillRect(-8, -40, 16, 260); ctx.fillStyle = '#c8ccd4'; ctx.beginPath(); ctx.moveTo(8, -40); ctx.quadraticCurveTo(110, -60, 120, 30); ctx.quadraticCurveTo(70, 10, 8, 40); ctx.fill(); ctx.strokeStyle = '#ffd23f'; ctx.lineWidth = 4; ctx.stroke(); ctx.restore(); };

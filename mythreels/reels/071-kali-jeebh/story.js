@@ -1,3 +1,4 @@
+// cinematic finish: kit/katha.js CINEMA (13 Nov 2026)
 KATHA((h) => {
   const { V, at, char, CAM, one, two, cardOn } = h;
   const kali = (ctx, x, y, s, t, o = {}) => char(ctx, 'parvati', x, y, s, t, Object.assign({ as: 'parvati', hold: 'sword', style: { skin: '#2a3a6a', sh: '#1a2448', cloth: '#d6102a', cloth2: '#ffd23f' } }, o));
