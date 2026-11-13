@@ -1,0 +1,14 @@
+{
+ "provider": "cartesia",
+ "one_take": false,
+ "model_id": "sonic-3.6-2026-08-27",
+ "voice_id": "ef191366-f52f-447a-a398-ed8c0f2943a1",
+ "line_gap": 0.14,
+ "shot_gap": 0.25,
+ "cast": {
+  "bride": "57dcab65-68ac-45a6-8480-6c4c52ec1cd1",
+  "groom": "9fa83ce3-c3a8-4523-accc-173904582ced",
+  "uncle": "db69127a-dbaf-4fa9-b425-2fe67680c348",
+  "ghost": "c99d36f3-5ffd-4253-803a-535c1bc9c306"
+ }
+}

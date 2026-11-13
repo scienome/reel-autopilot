@@ -1,0 +1,74 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "This ghost has tried to scare this couple for a year. They haven't noticed once.",
+   "say": "This ghost has tried to scare this couple for a year. They haven't noticed once."
+  },
+  {
+   "shot": "boo",
+   "cap": "Boo.",
+   "say": "Boo.",
+   "who": "ghost",
+   "bubble": "BOO. 👻"
+  },
+  {
+   "shot": "boo",
+   "cap": "Babe, did you leave the window open?",
+   "say": "Babe, did you leave the window open?",
+   "who": "maya"
+  },
+  {
+   "shot": "chair",
+   "cap": "He drags a chair across the whole room.",
+   "say": "He drags a chair across the whole room."
+  },
+  {
+   "shot": "chair",
+   "cap": "Aww. The house is settling.",
+   "say": "Aww. The house is settling.",
+   "who": "sam",
+   "bubble": "AWW. THE HOUSE IS SETTLING. 🥰"
+  },
+  {
+   "shot": "knock",
+   "cap": "He knocks on the wall. Three times.",
+   "say": "He knocks on the wall. Three times."
+  },
+  {
+   "shot": "knock",
+   "cap": "Headphones on. Night, babe.",
+   "say": "Headphones on. Night, babe.",
+   "who": "maya"
+  },
+  {
+   "shot": "ghost",
+   "cap": "Two hundred years of haunting. And I'm being ignored.",
+   "say": "Two hundred years of haunting. And I'm being ignored.",
+   "who": "ghost",
+   "bubble": "200 YEARS. IGNORED. 😤"
+  },
+  {
+   "shot": "dog",
+   "cap": "Then the dog walks in. And stares right at him.",
+   "say": "Then the dog walks in. And stares right at him."
+  },
+  {
+   "shot": "dog",
+   "cap": "Ah. No. Not the dog.",
+   "say": "Ah. No. Not the dog.",
+   "who": "ghost",
+   "bubble": "NOT THE DOG. 😱"
+  },
+  {
+   "shot": "twist",
+   "cap": "The ghost hides under the bed. Scared of a dog.",
+   "say": "The ghost hides under the bed. Scared of a dog."
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the one who'd sleep through a haunting. Because this ghost has tried to scare this couple for a year.",
+   "say": "Tag the one who'd sleep through a haunting. Because this ghost has tried to scare this couple for a year."
+  }
+ ]
+}

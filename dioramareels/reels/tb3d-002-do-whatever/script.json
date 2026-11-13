@@ -1,0 +1,78 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "She said, do whatever you want. He believed her. That was his first mistake.",
+   "say": "She said, do whatever you want. He believed her. That was his first mistake."
+  },
+  {
+   "shot": "ask",
+   "cap": "So, what do you want for dinner?",
+   "say": "So, what do you want for dinner?",
+   "who": "sam"
+  },
+  {
+   "shot": "ask",
+   "cap": "Do whatever you want.",
+   "say": "Do whatever you want.",
+   "who": "maya"
+  },
+  {
+   "shot": "think",
+   "cap": "Freedom. Pizza. Extra cheese.",
+   "say": "Freedom. Pizza. Extra cheese.",
+   "who": "sam",
+   "bubble": "FREEDOM. PIZZA. 🍕",
+   "think": true
+  },
+  {
+   "shot": "think",
+   "cap": "If he orders pizza, it's over.",
+   "say": "If he orders pizza, it's over.",
+   "who": "maya",
+   "bubble": "IF HE ORDERS PIZZA… IT'S OVER.",
+   "think": true
+  },
+  {
+   "shot": "order",
+   "cap": "He orders pizza.",
+   "say": "He orders pizza."
+  },
+  {
+   "shot": "order",
+   "cap": "Oh no. I've seen this since eighteen twenty four.",
+   "say": "Oh no. I've seen this since eighteen twenty four.",
+   "who": "ghost",
+   "bubble": "OH NO. SEEN THIS SINCE 1824. 👻"
+  },
+  {
+   "shot": "arrive",
+   "cap": "Thirty minutes later, the pizza arrives. Silence.",
+   "say": "Thirty minutes later, the pizza arrives. Silence."
+  },
+  {
+   "shot": "twist",
+   "cap": "Then she eats four slices.",
+   "say": "Then she eats four slices."
+  },
+  {
+   "shot": "twist",
+   "cap": "I wanted pizza. I just wanted you to guess.",
+   "say": "I wanted pizza. I just wanted you to guess.",
+   "who": "maya",
+   "bubble": "I WANTED PIZZA. YOU HAD TO GUESS."
+  },
+  {
+   "shot": "twist",
+   "cap": "Rookie.",
+   "say": "Rookie.",
+   "who": "ghost",
+   "bubble": "ROOKIE. 👻"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the one who always says, do whatever you want. Because she said, do whatever you want.",
+   "say": "Tag the one who always says, do whatever you want. Because she said, do whatever you want."
+  }
+ ]
+}

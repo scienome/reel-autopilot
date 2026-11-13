@@ -1,0 +1,70 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "A new neighbour moves in. The whole street is thinking the same thing.",
+   "say": "A new neighbour moves in. The whole street is thinking the same thing."
+  },
+  {
+   "shot": "street",
+   "cap": "Do they have a dog? Please, no dog.",
+   "say": "Do they have a dog? Please, no dog.",
+   "who": "aunty",
+   "bubble": "PLEASE. NO DOG. 🐕",
+   "think": true
+  },
+  {
+   "shot": "street",
+   "cap": "Are they loud? I sleep at nine.",
+   "say": "Are they loud? I sleep at nine.",
+   "who": "uncle",
+   "bubble": "I SLEEP AT 9. 😴",
+   "think": true
+  },
+  {
+   "shot": "street",
+   "cap": "Please have a kid my age. Please.",
+   "say": "Please have a kid my age. Please.",
+   "who": "kid",
+   "bubble": "PLEASE HAVE A KID MY AGE 🙏",
+   "think": true
+  },
+  {
+   "shot": "ghost",
+   "cap": "Do they believe in ghosts?",
+   "say": "Do they believe in ghosts?",
+   "who": "ghost",
+   "bubble": "DO THEY BELIEVE IN GHOSTS? 👻",
+   "think": true
+  },
+  {
+   "shot": "unpack",
+   "cap": "The van opens. Box after box after box.",
+   "say": "The van opens. Box after box after box."
+  },
+  {
+   "shot": "reveal",
+   "cap": "The last box says, ghost hunting kit.",
+   "say": "The last box says, ghost hunting kit."
+  },
+  {
+   "shot": "reveal",
+   "cap": "Hi! I'm here to find the ghost.",
+   "say": "Hi! I'm here to find the ghost.",
+   "who": "new",
+   "bubble": "HI! I'M HERE TO FIND THE GHOST. 🔦"
+  },
+  {
+   "shot": "twist",
+   "cap": "Finally. A fan.",
+   "say": "Finally. A fan.",
+   "who": "ghost",
+   "bubble": "FINALLY. A FAN. 🥹"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag your nosiest neighbour. Because when a new neighbour moves in, the whole street is thinking the same thing.",
+   "say": "Tag your nosiest neighbour. Because when a new neighbour moves in, the whole street is thinking the same thing."
+  }
+ ]
+}

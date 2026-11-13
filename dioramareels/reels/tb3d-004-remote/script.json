@@ -1,0 +1,79 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "This couple has fought over one TV remote for six years. Tonight, the ghost decides.",
+   "say": "This couple has fought over one TV remote for six years. Tonight, the ghost decides."
+  },
+  {
+   "shot": "grab",
+   "cap": "My turn. Cooking show.",
+   "say": "My turn. Cooking show.",
+   "who": "maya"
+  },
+  {
+   "shot": "grab",
+   "cap": "Football. Final. Ten minutes.",
+   "say": "Football. Final. Ten minutes.",
+   "who": "sam"
+  },
+  {
+   "shot": "plan",
+   "cap": "He blinks first. I just wait.",
+   "say": "He blinks first. I just wait.",
+   "who": "maya",
+   "bubble": "HE BLINKS FIRST. I WAIT. 😐",
+   "think": true
+  },
+  {
+   "shot": "plan",
+   "cap": "She's bluffing. She hates football.",
+   "say": "She's bluffing. She hates football.",
+   "who": "sam",
+   "bubble": "SHE'S BLUFFING. 😏",
+   "think": true
+  },
+  {
+   "shot": "ghost",
+   "cap": "Six years. I've had enough.",
+   "say": "Six years. I've had enough.",
+   "who": "ghost",
+   "bubble": "6 YEARS. ENOUGH. 😤"
+  },
+  {
+   "shot": "float",
+   "cap": "The remote floats. Right out of their hands.",
+   "say": "The remote floats. Right out of their hands."
+  },
+  {
+   "shot": "float",
+   "cap": "Did the remote just fly?",
+   "say": "Did the remote just fly?",
+   "who": "sam",
+   "bubble": "DID THE REMOTE JUST… FLY? 😳"
+  },
+  {
+   "shot": "twist",
+   "cap": "Click. A show about old furniture.",
+   "say": "Click. A show about old furniture."
+  },
+  {
+   "shot": "twist",
+   "cap": "Antiques. That's my sofa from eighteen twenty four.",
+   "say": "Antiques. That's my sofa from eighteen twenty four.",
+   "who": "ghost",
+   "bubble": "THAT'S MY SOFA FROM 1824. 🛋️"
+  },
+  {
+   "shot": "twist",
+   "cap": "Honestly? I'd watch this.",
+   "say": "Honestly? I'd watch this.",
+   "who": "maya"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag who controls the remote in your house. Because this couple has fought over one remote for six years.",
+   "say": "Tag who controls the remote in your house. Because this couple has fought over one remote for six years."
+  }
+ ]
+}

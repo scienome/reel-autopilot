@@ -1,0 +1,5 @@
+// tb3d-003-first-date Thought Bubble 3D (k.tb template): A first date. Both of them are lying. 😅☕
+STORY((k) => k.tb({ hook: 'A FIRST DATE.\nBOTH OF THEM ARE *LYING*.', tag: "TAG WHO'D LAUGH LIKE A GOAT 👇", cast: { sam: { body: 'm', look: 'd' }, maya: { body: 'f', look: 'c' }, waiter: { body: 'm', look: 'f' }, ghost: { ghost: true } },
+  sets: { cafe: { type: 'cafe', at: { sam: [-3.0, 1.6, 0.9], maya: [-1.8, 1.6, -0.9], waiter: [-2.4, 0.75, 0], ghost: [-0.6, 1.0, 0.8] }, props: [['cups', -2.4, 0.81, 1.6, 0]] } },
+  shots: { hook: { set: 'cafe', cam: 'two', hide: ['waiter'] }, sit: { set: 'cafe', hide: ['waiter'] }, order: { set: 'cafe' }, slip: { set: 'cafe', hide: ['waiter'] }, laugh: { set: 'cafe', hide: ['waiter'], boom: ['BAAA!', 0.45] },
+  twist: { set: 'cafe', hide: ['waiter'], card: 'SECOND DATE? 💛', cardBg: '#d8504a' }, outro: { set: 'cafe', cam: 'two', hide: ['waiter'] } } }), { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/ual1'] });

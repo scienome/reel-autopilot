@@ -1,0 +1,88 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "A first date. Both of them are lying. Here's what they're really thinking.",
+   "say": "A first date. Both of them are lying. Here's what they're really thinking."
+  },
+  {
+   "shot": "sit",
+   "cap": "Hi! You look great.",
+   "say": "Hi! You look great.",
+   "who": "sam"
+  },
+  {
+   "shot": "sit",
+   "cap": "Be cool. Do not mention your ex.",
+   "say": "Be cool. Do not mention your ex.",
+   "who": "sam",
+   "bubble": "BE COOL. DON'T MENTION YOUR EX.",
+   "think": true
+  },
+  {
+   "shot": "sit",
+   "cap": "He's cute. Do not laugh like a goat.",
+   "say": "He's cute. Do not laugh like a goat.",
+   "who": "maya",
+   "bubble": "DON'T LAUGH LIKE A GOAT. 🐐",
+   "think": true
+  },
+  {
+   "shot": "order",
+   "cap": "Two coffees?",
+   "say": "Two coffees?",
+   "who": "waiter"
+  },
+  {
+   "shot": "order",
+   "cap": "Third first date at this table today.",
+   "say": "Third first date at this table today.",
+   "who": "waiter",
+   "bubble": "3RD FIRST DATE HERE TODAY. ☕",
+   "think": true
+  },
+  {
+   "shot": "slip",
+   "cap": "So, my ex once said...",
+   "say": "So, my ex once said...",
+   "who": "sam"
+  },
+  {
+   "shot": "slip",
+   "cap": "Why. Why would you say that.",
+   "say": "Why. Why would you say that.",
+   "who": "sam",
+   "bubble": "WHY WOULD YOU SAY THAT. 😩",
+   "think": true
+  },
+  {
+   "shot": "laugh",
+   "cap": "And she laughs. Exactly like a goat.",
+   "say": "And she laughs. Exactly like a goat."
+  },
+  {
+   "shot": "laugh",
+   "cap": "Baaa ha ha ha!",
+   "say": "Baaa ha ha ha!",
+   "who": "maya",
+   "bubble": "BAAA-HA-HA 🐐"
+  },
+  {
+   "shot": "twist",
+   "cap": "Silence. Then they both burst out laughing.",
+   "say": "Silence. Then they both burst out laughing."
+  },
+  {
+   "shot": "twist",
+   "cap": "Three hundred first dates in this cafe. This one makes it.",
+   "say": "Three hundred first dates in this cafe. This one makes it.",
+   "who": "ghost",
+   "bubble": "300 DATES HERE. THIS ONE MAKES IT. 💛"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the one who'd laugh like a goat. Because on a first date, both of them are lying.",
+   "say": "Tag the one who'd laugh like a goat. Because on a first date, both of them are lying."
+  }
+ ]
+}

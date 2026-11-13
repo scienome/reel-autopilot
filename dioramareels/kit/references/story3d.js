@@ -297,5 +297,68 @@ window.STORY = (build, opt = {}) => DIY((k) => {
     const L = new T.PointLight(o.glow || '#bcd8ff', 0.6, 3); L.position.set(0, h * 0.6, 0.3); g.add(L);
     g.tick = (t, talk = false) => { inner.position.y = 0.25 + Math.sin(t * 2.2) * 0.06; inner.rotation.z = Math.sin(t * 1.3) * 0.06; hem.forEach((b, i) => { b.position.y = h * 0.02 + Math.sin(t * 5 + i) * h * 0.03; }); mouth.scale.y = talk ? 0.8 + Math.abs(Math.sin(t * 14)) * 1.2 : 0.8; };
     return g; };
+  // ---------- k.tb(spec): the Thought Bubble 3D template (Kenney toy cast + scenery). A reel is mostly data:
+  // spec = { hook: 'BIG\n*RED* TEXT', tag: 'TAG ... 👇', cast: { maya: { body: 'f', look: 'a' }, ghost: { ghost: true } },
+  //   sets: { liv: { type: 'living'|'kitchen'|'bedroom'|'office'|'street'|'park'|'cafe'|'wedding', wall, at: { maya: [x, z, ry], ghost: [x, y, z] }, props: [[kind, x, y, z, ry]] } },
+  //   thinks: ['maya'] (their lines are thought clouds; others are speech bubbles; a script line can say think: true), colors: { who: [bg, fg] },
+  //   shots: { name: { set, cam: 'wide'|'two'|'close:who'|[pos, look, fov], pose: { who: move }, card, counter: [label, value], boom: [word, frac], note: [text, sign], dark, noCut, hide: [who] } } }
+  // Every spoken character line cuts to a close shot of the speaker with their bubble above them (more cuts = people keep watching).
+  k.tb = (spec) => { const LN = k.TM.lines, S = {}, ACT = {};
+    const mk = (type, o) => { const L = k.LIB.place; let g;
+      if (type === 'kitchen') g = L.kitchen(Object.assign({ w: 6, d: 5, wall: o.wall || '#f4e6c8' }));
+      else if (type === 'office') g = L.office(Object.assign({ w: 6, d: 5, wall: o.wall || '#dfe4e8' }));
+      else if (type === 'street') { g = L.street({ len: 50, night: !!o.night }); g.traverse((c) => { const pr = c.geometry && c.geometry.parameters; if (c.isMesh && pr && pr.height === 4.5 && pr.width === 0.12) c.visible = false; }); g.children.forEach((c) => { if (!c.isMesh && Math.abs(Math.abs(c.position.x) - 6.7) < 0.15) c.visible = false; }); } // Thought Bubble streets: no lamp posts / edge trees in front of the camera
+      else if (type === 'park') g = L.park({});
+      else if (type === 'bedroom') g = L.room({ w: 5, d: 4.4, wall: o.wall || '#b8c8e8', kind: 'bedroom', seed: 2 });
+      else if (type === 'cafe' || type === 'wedding') { g = L.room({ w: 7, d: 6, wall: o.wall || (type === 'cafe' ? '#e8c8a0' : '#f8eef2'), floor: type === 'cafe' ? 'wood' : 'tiles', kind: 'none' });
+        if (type === 'cafe') { [[-2.2, -1.4], [2.2, -1.4], [-2.4, 1.6], [2.4, 1.6]].forEach(([x, z]) => { const tb = new T.Mesh(new T.CylinderGeometry(0.45, 0.45, 0.05, 24), M('#5a3a22', 0.5)); tb.position.set(x, 0.78, z); g.add(tb); const leg = new T.Mesh(new T.CylinderGeometry(0.05, 0.08, 0.78, 10), M('#2a2a2a', 0.4, 0.6)); leg.position.set(x, 0.39, z); g.add(leg); });
+          for (let i = 0; i < 6; i++) { const b = new T.Mesh(new T.SphereGeometry(0.09, 10, 8), new T.MeshStandardMaterial({ color: '#ffd890', emissive: '#ffb040', emissiveIntensity: 1.2 })); b.position.set(-2.6 + i * 1.05, 2.5, -2.4); g.add(b); } }
+        else { const arch = new T.Mesh(new T.TorusGeometry(1.4, 0.12, 12, 40, PI), M('#f4c0d0', 0.6)); arch.position.set(0, 0.6, -2.6); g.add(arch); for (let i = 0; i < 26; i++) { const f = new T.Mesh(new T.SphereGeometry(0.09, 8, 6), M(['#ff7aa0', '#fff0f4', '#ffd23f'][i % 3], 0.6)); const a = i / 25 * PI; f.position.set(Math.cos(a) * 1.4, 0.6 + Math.sin(a) * 1.4, -2.55); g.add(f); }
+          for (let r = 0; r < 2; r++) for (let c = 0; c < 6; c++) { if (c === 2 || c === 3) continue; const ch = new T.Mesh(new T.BoxGeometry(0.45, 0.5, 0.45), M('#ffffff', 0.5)); ch.position.set(-2.5 + c * 1.0, 0.25, 1.4 + r * 0.9); g.add(ch); } } }
+      else g = L.room({ w: 6, d: 5, wall: o.wall || '#f0d9b5', kind: 'living', seed: o.seed || 1 });
+      return k.place(g); };
+    const prop = (kind) => { const g = new T.Group(); const C = (c, r = 0.5) => M(c, r);
+      if (kind === 'pizza') { const b = new T.Mesh(new T.BoxGeometry(0.5, 0.06, 0.5), C('#d8b080')); g.add(b); const p = new T.Mesh(new T.CylinderGeometry(0.22, 0.22, 0.03, 24), C('#f4c050')); p.position.y = 0.05; g.add(p); for (let i = 0; i < 6; i++) { const pe = new T.Mesh(new T.CylinderGeometry(0.035, 0.035, 0.01, 10), C('#c8301e')); pe.position.set(Math.cos(i) * 0.12, 0.07, Math.sin(i) * 0.12); g.add(pe); } }
+      else if (kind === 'remote') { const b = new T.Mesh(new T.BoxGeometry(0.08, 0.03, 0.25), C('#1a1a1a', 0.3)); g.add(b); const bt = new T.Mesh(new T.CylinderGeometry(0.015, 0.015, 0.01, 8), new T.MeshStandardMaterial({ color: '#ff3030', emissive: '#ff2020', emissiveIntensity: 1 })); bt.position.set(0, 0.02, -0.08); g.add(bt); }
+      else if (kind === 'phone') { const b = new T.Mesh(new T.BoxGeometry(0.4, 0.7, 0.04), C('#1a1a1a', 0.3)); g.add(b); const sc = new T.Mesh(new T.PlaneGeometry(0.36, 0.64), new T.MeshStandardMaterial({ color: '#9ad0ff', emissive: '#6ab0ff', emissiveIntensity: 0.8 })); sc.position.z = 0.021; g.add(sc); }
+      else if (kind === 'box') { const b = new T.Mesh(new T.BoxGeometry(0.6, 0.45, 0.5), C('#c8a070', 0.8)); b.position.y = 0.22; g.add(b); const tp = new T.Mesh(new T.BoxGeometry(0.62, 0.02, 0.1), C('#e8d8a0')); tp.position.y = 0.45; g.add(tp); }
+      else if (kind === 'cake') { [[0.35, 0.2, '#fff4f0'], [0.25, 0.18, '#ffd0e0'], [0.15, 0.15, '#fff4f0']].reduce((y, [r, h, c]) => { const m = new T.Mesh(new T.CylinderGeometry(r, r, h, 24), C(c)); m.position.y = y + h / 2; g.add(m); return y + h; }, 0); }
+      else if (kind === 'cups') { [-0.15, 0.15].forEach((x) => { const c = new T.Mesh(new T.CylinderGeometry(0.06, 0.05, 0.12, 14), C('#ffffff', 0.3)); c.position.set(x, 0.06, 0); g.add(c); }); }
+      else if (kind === 'bill') { const b = new T.Mesh(new T.BoxGeometry(0.12, 0.01, 0.2), C('#2a2a2a')); g.add(b); const p = new T.Mesh(new T.BoxGeometry(0.1, 0.012, 0.16), C('#ffffff')); p.position.y = 0.006; g.add(p); }
+      else if (kind === 'tv') { const b = new T.Mesh(new T.BoxGeometry(1.4, 0.8, 0.06), C('#111111', 0.3)); b.position.y = 0.4; g.add(b); const sc = new T.Mesh(new T.PlaneGeometry(1.32, 0.72), new T.MeshStandardMaterial({ color: '#4a8ad8', emissive: '#3a7ac8', emissiveIntensity: 0.7 })); sc.position.set(0, 0.4, 0.031); g.add(sc); g.screen = sc; }
+      else if (kind === 'sofa' && k.LIB.gltf['khome/loungeSofa']) { const s = k.LIB.prop('khome/loungeSofa', { h: 0.95 }); g.add(s); }
+      else if (kind === 'van' && k.LIB.gltf['ktown/car-van']) { g.add(k.LIB.prop('ktown/car-van', { scale: 1.3 })); }
+      else if (kind === 'chair') { const s = new T.Mesh(new T.BoxGeometry(0.5, 0.08, 0.5), C('#7a4e2e')); s.position.y = 0.45; g.add(s); const bk = new T.Mesh(new T.BoxGeometry(0.5, 0.55, 0.06), C('#7a4e2e')); bk.position.set(0, 0.75, -0.22); g.add(bk); }
+      g.traverse((n) => { if (n.isMesh) n.castShadow = true; }); return g; };
+    Object.entries(spec.sets).forEach(([name, o]) => { const g = mk(o.type, o); S[name] = g; ACT[name] = {};
+      Object.entries(o.at || {}).forEach(([who, p]) => { const c = spec.cast[who] || {}; const a = c.ghost ? k.ghost({ h: c.h || 0.9 }) : c.animal ? k.LIB.animal(c.animal, { h: c.h }) : k.LIB.human(c); if (c.ghost) a.position.set(p[0], p[1], p[2]); else a.position.set(p[0], p[3] != null ? p[3] : (c.y || 0), p[1]); a.userData.animal = !!c.animal; a.rotation.y = c.ghost ? (p[3] || 0) : (p[2] || 0); a.userData.home = [a.position.x, a.position.y, a.position.z, a.rotation.y]; a.userData.ghost = !!c.ghost; g.add(a); ACT[name][who] = a; });
+      (o.props || []).forEach(([kind, x, y, z, ry]) => { const pr = prop(kind); pr.position.set(x, y, z); pr.rotation.y = ry || 0; g.add(pr); g.userData[kind] = pr; }); });
+    const CL = Object.assign({ ghost: ['#cfe6ff', '#16304a'] }, spec.colors || {});
+    const lineNow = (t) => LN.findIndex((l) => t >= l.t0 - 0.05 && t <= l.t1 + 0.25);
+    const head = (a) => (a.userData.ghost ? 1.15 : a.userData.animal ? 0.9 : 1.5);
+    const camFor = (setName, c, t, kk) => { const acts = ACT[setName]; const people = Object.values(acts); const ctr = people.length ? people.reduce((s, a) => [s[0] + a.position.x / people.length, s[1] + a.position.z / people.length], [0, 0]) : [0, 0];
+      if (Array.isArray(c)) return k.cam(c[0], c[1], c[2] || 44, { blur: 2 });
+      if (typeof c === 'string' && c.startsWith('close:')) { const a = acts[c.slice(6)]; if (a) { const p = a.position; const y = a.userData.ghost ? p.y + 0.6 : 0.95; return k.cam([p.x + 0.4 + Math.sin(t * 0.3) * 0.1, y + 0.45, p.z + 2.5 - kk * 0.25], [p.x, y, p.z], 42, { blur: 3 }); } }
+      const spread = people.length ? Math.max(...people.map((a) => Math.abs(a.position.x - ctr[0]))) : 1; const far = c === 'wide' ? 5.6 : Math.max(3.4, spread * 2.4 + 2.2);
+      return k.cam([ctr[0] + 0.3 + Math.sin(t * 0.25) * 0.3, 1.7, ctr[1] + far - kk * 0.5], [ctr[0], 0.85, ctr[1]], 44, { blur: 2 }); };
+    let ov = null; const shots = {};
+    Object.entries(spec.shots).forEach(([name, sh]) => { shots[name] = (t, kk) => { const g = S[sh.set]; k.only(g); const acts = ACT[sh.set];
+      Object.entries(acts).forEach(([who, a]) => { const hm = a.userData.home; a.visible = !(sh.hide || []).includes(who); if (a.userData.ghost) { a.position.set(hm[0], hm[1], hm[2]); } else { a.position.set(hm[0], hm[1], hm[2]); a.rotation.y = hm[3]; } });
+      const li = lineNow(t), L0 = LN[li]; const spk = L0 && L0.who && acts[L0.who] && acts[L0.who].visible ? L0.who : null;
+      Object.entries(acts).forEach(([who, a]) => { if (a.userData.ghost) { a.tick(t, spk === who); return; } const mv = (sh.pose || {})[who] || (a.userData.animal ? 'idle' : spk === who ? (L0.think || (spec.thinks || []).includes(who) ? 'idle' : 'yes') : 'idle'); a.pose(mv, t); });
+      if (sh.move) sh.move(t, kk, acts, g);
+      ov = (ctx) => { if (sh.dark) k.vignette(ctx, 0.55);
+        if (name === 'hook' && spec.hook) k.hookText(ctx, spec.hook, { size: 56 });
+        if (sh.card) k.card(ctx, sh.card, { y: 300, bg: sh.cardBg || '#2a2f3a', size: 40 });
+        if (sh.counter) k.counter(ctx, sh.counter[0], typeof sh.counter[1] === 'function' ? sh.counter[1](kk) : sh.counter[1], { y: 170 });
+        if (sh.boom && kk > sh.boom[1] && kk < sh.boom[1] + 0.3) k.boom(ctx, (kk - sh.boom[1]) / 0.3, 360, 880, sh.boom[0]);
+        if (sh.note) { const u = Math.min(1, kk * 3); ctx.save(); ctx.translate(360, 640); ctx.rotate(-0.05); ctx.scale(u, u); ctx.fillStyle = '#ffe86a'; ctx.shadowColor = 'rgba(0,0,0,0.5)'; ctx.shadowBlur = 30; ctx.fillRect(-240, -200, 480, 400); ctx.shadowBlur = 0; ctx.fillStyle = '#3a2a1a'; ctx.textAlign = 'center';
+          sh.note[0].split('\n').forEach((l, i, arr) => { ctx.font = 'italic 700 58px Georgia, serif'; ctx.fillText(l, 0, -20 + (i - (arr.length - 1) / 2) * 80); }); if (sh.note[1]) { ctx.font = '700 30px Georgia, serif'; ctx.fillText(sh.note[1], 120, 160); } ctx.restore(); }
+        if (spk && !sh.noBubble) { const a = acts[spk], txt = (L0.bubble || L0.cap), th = L0.think || (spec.thinks || []).includes(spk), col = CL[spk] || (th ? ['#ffffff', '#3a1a1a'] : ['#ffd6e6', '#4a1a2a']); const size = Math.max(24, Math.min(36, 36 * 30 / Math.max(30, txt.length)));
+          k.think(ctx, a, (th ? '💭 ' : '') + txt, t, L0.t0, L0.t1 + 0.25, { h: head(a), up: a.userData.ghost ? 120 : 170, bg: col[0], fg: col[1], size }); }
+        if (name === 'outro' && spec.tag) k.card(ctx, spec.tag, { y: 1185, bg: '#d8504a', size: 30 }); };
+      const c = spk && !sh.noCut ? 'close:' + spk : (sh.cam || 'two'); return camFor(sh.set, c, t, kk); }; });
+    return { shots, lens: 28, minDist: 2.0, sky: '#f0d9b5', capStyle: 'film', over: (ctx) => { if (ov) ov(ctx); ov = null; } }; };
+  k.TB_ASSETS = ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/ual1'];
   const R = build(k); return Object.assign({ table: false }, R);
 }, opt);

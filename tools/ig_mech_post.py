@@ -94,6 +94,8 @@ def pov_order():
 def item(kind, rid):
     """(log key, folder, release tag prefix) for a POV episode, a Dave reel or a mechanic Short."""
     if kind == 'pov':
+        if rid.startswith('tb3d-'):  # new 3D toy Thought Bubble reels (13 Nov 2026): made in dioramareels/, Release diorama-<id>
+            return ('povreel-' + rid, os.path.join(ROOT, 'dioramareels', 'reels'), 'diorama-')
         return ('povreel-' + rid, POV, 'povreel-')
     return (rid, REELS, TAG) if kind == 'dave' else ('mechreel-' + rid, MECH, 'mechreel-')
 

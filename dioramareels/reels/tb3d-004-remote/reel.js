@@ -1,0 +1,7 @@
+// tb3d-004-remote Thought Bubble 3D (k.tb template): Six years fighting over one TV remote. Tonight the ghost decides. 📺👻
+STORY((k) => k.tb({ hook: 'SIX YEARS. ONE *REMOTE*.\nTONIGHT THE GHOST DECIDES.', tag: 'TAG WHO CONTROLS THE REMOTE 👇', cast: { sam: { body: 'm', look: 'a' }, maya: { body: 'f', look: 'f' }, ghost: { ghost: true } },
+  sets: { liv: { type: 'living', at: { sam: [-0.6, 0.7, 0.3], maya: [0.6, 0.7, -0.3], ghost: [-1.9, 0.8, -0.6, 0.5] }, props: [['sofa', 0, 0, -1.6, 0], ['tv', 0, 0.55, -2.3, 0], ['remote', 0, 0.75, 0.7, 0]] } },
+  shots: { hook: { set: 'liv', cam: 'wide' }, grab: { set: 'liv', counter: ['DAYS FIGHTING', (u) => '' + (2190 + Math.round(u * 3))] }, plan: { set: 'liv' }, ghost: { set: 'liv' },
+  float: { set: 'liv', boom: ['WHOOSH', 0.1], move: (t, kk, a, g) => { const r = g.userData.remote; r.position.set(-1.6 * kk, 0.75 + kk * 0.6, 0.7 - kk * 1.2); r.rotation.y = t * 6; } },
+  twist: { set: 'liv', card: '📺 ANTIQUES ROADSHOW', cardBg: '#8a5a36', move: (t, kk, a, g) => { g.userData.remote.position.set(-1.7, 1.3, -0.5); g.userData.tv.screen.material.color.set('#c89a5a'); } },
+  outro: { set: 'liv', cam: 'wide', move: (t, kk, a, g) => { g.userData.remote.position.set(0, 0.75, 0.7); g.userData.tv.screen.material.color.set('#4a8ad8'); } } } }), { assets: ['mini/male-a', 'mini/male-b', 'mini/male-c', 'mini/male-d', 'mini/male-e', 'mini/male-f', 'mini/female-a', 'mini/female-b', 'mini/female-c', 'mini/female-d', 'mini/female-e', 'mini/female-f', 'humans/ual1'] });

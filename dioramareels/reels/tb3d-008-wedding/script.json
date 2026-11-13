@@ -1,0 +1,67 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "At every wedding, someone cries the most. It's never who you think.",
+   "say": "At every wedding, someone cries the most. It's never who you think."
+  },
+  {
+   "shot": "vows",
+   "cap": "Don't cry. This makeup cost a fortune.",
+   "say": "Don't cry. This makeup cost a fortune.",
+   "who": "bride",
+   "bubble": "DON'T CRY. THE MAKEUP. 💄",
+   "think": true
+  },
+  {
+   "shot": "vows",
+   "cap": "Don't cry. Everyone is filming.",
+   "say": "Don't cry. Everyone is filming.",
+   "who": "groom",
+   "bubble": "EVERYONE'S FILMING. 📱",
+   "think": true
+  },
+  {
+   "shot": "uncle",
+   "cap": "When is the food? Is there chicken?",
+   "say": "When is the food? Is there chicken?",
+   "who": "uncle",
+   "bubble": "WHEN IS THE FOOD? 🍗",
+   "think": true
+  },
+  {
+   "shot": "bet",
+   "cap": "The vows begin.",
+   "say": "The vows begin."
+  },
+  {
+   "shot": "bet",
+   "cap": "Every wedding. I bet on the uncle.",
+   "say": "Every wedding. I bet on the uncle.",
+   "who": "ghost",
+   "bubble": "I ALWAYS BET ON THE UNCLE. 👻"
+  },
+  {
+   "shot": "cry",
+   "cap": "And then, the loudest sob in the hall.",
+   "say": "And then, the loudest sob in the hall."
+  },
+  {
+   "shot": "cry",
+   "cap": "She was this small. Now look at her.",
+   "say": "She was this small. Now look at her.",
+   "who": "uncle",
+   "bubble": "SHE WAS THIS SMALL… 😭"
+  },
+  {
+   "shot": "twist",
+   "cap": "The uncle. Every single time.",
+   "say": "The uncle. Every single time."
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the uncle who cries at every wedding. Because at every wedding, someone cries the most.",
+   "say": "Tag the uncle who cries at every wedding. Because at every wedding, someone cries the most."
+  }
+ ]
+}

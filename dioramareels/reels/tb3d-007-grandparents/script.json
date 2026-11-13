@@ -1,0 +1,73 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Grandparents on a video call. Here's what's really going on.",
+   "say": "Grandparents on a video call. Here's what's really going on."
+  },
+  {
+   "shot": "ready",
+   "cap": "They got ready an hour early. Best shirt. Best earrings.",
+   "say": "They got ready an hour early. Best shirt. Best earrings."
+  },
+  {
+   "shot": "call",
+   "cap": "Why is my face so big?",
+   "say": "Why is my face so big?",
+   "who": "grandpa",
+   "bubble": "WHY IS MY FACE SO BIG? 🔍",
+   "think": true
+  },
+  {
+   "shot": "call",
+   "cap": "Just say I love you. Say it.",
+   "say": "Just say I love you. Say it.",
+   "who": "grandma",
+   "bubble": "JUST SAY 'I LOVE YOU'. SAY IT.",
+   "think": true
+  },
+  {
+   "shot": "call",
+   "cap": "Hello? Can you hear us? We are fine!",
+   "say": "Hello? Can you hear us? We are fine!",
+   "who": "grandpa"
+  },
+  {
+   "shot": "cut",
+   "cap": "Two minutes later, the call ends.",
+   "say": "Two minutes later, the call ends."
+  },
+  {
+   "shot": "cut",
+   "cap": "He has exams. He's busy.",
+   "say": "He has exams. He's busy.",
+   "who": "grandma",
+   "bubble": "HE HAS EXAMS. HE'S BUSY. 🥲",
+   "think": true
+  },
+  {
+   "shot": "after",
+   "cap": "Then grandpa puts the phone on the table. Screen up.",
+   "say": "Then grandpa puts the phone on the table. Screen up."
+  },
+  {
+   "shot": "after",
+   "cap": "In case he calls again.",
+   "say": "In case he calls again.",
+   "who": "grandpa",
+   "bubble": "IN CASE HE CALLS AGAIN."
+  },
+  {
+   "shot": "twist",
+   "cap": "They do this every night. Call your grandparents.",
+   "say": "They do this every night. Call your grandparents.",
+   "who": "ghost",
+   "bubble": "THEY DO THIS EVERY NIGHT. CALL THEM. 📞"
+  },
+  {
+   "shot": "outro",
+   "cap": "Tag the one who should call their grandparents tonight. Because grandparents on a video call...",
+   "say": "Tag the one who should call their grandparents tonight. Because grandparents on a video call..."
+  }
+ ]
+}
