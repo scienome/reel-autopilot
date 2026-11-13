@@ -1,0 +1,28 @@
+{
+ "music-104d69e58e54.mp3": {
+  "prompt": "Indian mythological cinematic underscore: tanpura drone, soft tabla, bansuri, temple bells, swelling shehnai at the climax, no vocals, warm devotional temple feeling",
+  "music_length_ms": 49460,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-f1bfc14b55eb.mp3": {
+  "text": "veena strings and a calm river",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-d1cda950fc52.mp3": {
+  "text": "water splash and a gentle chime",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-4c5030a7c985.mp3": {
+  "text": "veena flourish",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
