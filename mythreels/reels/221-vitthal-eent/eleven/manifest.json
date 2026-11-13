@@ -1,0 +1,28 @@
+{
+ "music-ac6246e1c6c0.mp3": {
+  "prompt": "Indian mythological cinematic underscore: tanpura drone, soft tabla, bansuri, temple bells, swelling shehnai at the climax, no vocals, warm devotional temple feeling",
+  "music_length_ms": 47060,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-f13fd1f4cd78.mp3": {
+  "text": "soft flute and anklet bells",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-369972d26a39.mp3": {
+  "text": "a brick sliding on stone",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-cab02633ec58.mp3": {
+  "text": "taal cymbals and bhajan rhythm",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
