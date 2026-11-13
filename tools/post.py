@@ -109,7 +109,7 @@ def main():
         guard_slot(api, ig)
     except SlotTaken as e:
         print(f'::warning::{e}'); return
-    c = api('POST', f'/{ig}/media', media_type='REELS', video_url=url, caption=cap, share_to_feed=True)
+    c = api('POST', f'/{ig}/media', media_type='REELS', thumb_offset=300, video_url=url, caption=cap, share_to_feed=True)
     cid = c['id']; print('container', cid)
     for _ in range(30):  # up to ~10 minutes
         time.sleep(20)

@@ -88,7 +88,7 @@ def ig_post(rid, url, cap, key, at):
     if dup:
         print(f'{rid} is already on Instagram (media {dup["id"]}); recording it')
         return {'media_id': dup['id'], 'posted_at': dup.get('timestamp')}
-    cid = ig_api('POST', f'/{ig}/media', media_type='REELS', video_url=url, caption=cap, share_to_feed=True)['id']
+    cid = ig_api('POST', f'/{ig}/media', media_type='REELS', thumb_offset=300, video_url=url, caption=cap, share_to_feed=True)['id']
     print('Instagram container', cid, flush=True)
     for _ in range(40):  # up to ~13 minutes
         time.sleep(20)

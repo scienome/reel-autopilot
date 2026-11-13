@@ -49,7 +49,7 @@ def slots(t, conf):
 def caption(rid):
     meta = json.load(open(os.path.join(REELS, rid, 'meta.json'), encoding='utf-8'))
     body = meta['caption'].strip()
-    return body + '\n\n' + ' '.join('#' + x.lstrip('#') for x in meta.get('hashtags', [])[:5]), body.split('\n')[0]
+    return body + '\n\nFollow for the next file 🔔' + '\n\n' + ' '.join('#' + x.lstrip('#') for x in meta.get('hashtags', [])[:5]), body.split('\n')[0]
 
 
 def post(rid, at):
@@ -65,7 +65,7 @@ def post(rid, at):
     if dup:
         print(f'{rid} is already on Instagram (media {dup["id"]}); recording it')
         return {'media_id': dup['id'], 'posted_at': dup.get('timestamp')}
-    cid = ig_api('POST', f'/{ig}/media', media_type='REELS', video_url=r.url, caption=cap, share_to_feed=True)['id']
+    cid = ig_api('POST', f'/{ig}/media', media_type='REELS', thumb_offset=300, video_url=r.url, caption=cap, share_to_feed=True)['id']
     for _ in range(40):  # up to ~13 minutes
         time.sleep(20)
         st = ig_api('GET', f'/{cid}', fields='status_code,status').get('status_code')

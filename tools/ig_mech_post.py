@@ -122,7 +122,7 @@ def caption(rid, folder=REELS):
     lines = meta['caption'].strip().split('\n')
     body = '\n'.join(l if '[LINK]' not in l else '▶ Full video on our YouTube channel: Gears & Glitches' for l in lines)
     tags = ' '.join('#' + t.lstrip('#') for t in meta.get('hashtags', [])[:5])  # Instagram allows 5 hashtags
-    return f'{body}\n\n{tags}', body.split('\n')[0]
+    return f'{body}\n\nFollow for a new one every day 🔔\n\n{tags}', body.split('\n')[0]
 
 
 def split(logkey):
@@ -198,7 +198,7 @@ def ig_post(logkey, at):
     if dup:
         print(f'{rid} is already on Instagram (media {dup["id"]}); recording it')
         return {'media_id': dup['id'], 'posted_at': dup.get('timestamp')}
-    cid = api('POST', f'/{ig}/media', media_type='REELS', video_url=url, caption=cap, share_to_feed=True)['id']
+    cid = api('POST', f'/{ig}/media', media_type='REELS', thumb_offset=300, video_url=url, caption=cap, share_to_feed=True)['id']
     print('Instagram container', cid, flush=True)
     for _ in range(40):  # up to ~13 minutes
         time.sleep(20)

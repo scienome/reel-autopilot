@@ -64,7 +64,7 @@ def texts(rid):
     title = meta['title'].strip()
     if len(title) + 8 <= 100:
         title += ' #shorts'
-    ig_cap = body + '\n\n' + ' '.join('#' + t for t in tags[:5])  # Instagram allows 5 hashtags
+    ig_cap = body + '\n\nFollow for a new one every day 🔔' + '\n\n' + ' '.join('#' + t for t in tags[:5])  # Instagram allows 5 hashtags
     yt_desc = body + '\n\n' + ' '.join('#' + t for t in tags) + ' #shorts'
     return title, yt_desc, ['shorts'] + tags, ig_cap, body.split('\n')[0]
 
@@ -89,7 +89,7 @@ def ig_post(rid, url, cap, key, at):
     if dup:
         print(f'{rid} is already on Instagram (media {dup["id"]}); recording it')
         return {'media_id': dup['id'], 'posted_at': dup.get('timestamp')}
-    cid = ig_api('POST', f'/{ig}/media', media_type='REELS', video_url=url, caption=cap, share_to_feed=True)['id']
+    cid = ig_api('POST', f'/{ig}/media', media_type='REELS', thumb_offset=300, video_url=url, caption=cap, share_to_feed=True)['id']
     print('Instagram container', cid, flush=True)
     for _ in range(40):  # up to ~13 minutes
         time.sleep(20)
