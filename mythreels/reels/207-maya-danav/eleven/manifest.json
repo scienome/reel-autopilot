@@ -1,0 +1,28 @@
+{
+ "music-43836cc0141a.mp3": {
+  "prompt": "Indian mythological cinematic underscore: tanpura drone, soft tabla, bansuri, temple bells, swelling shehnai at the climax, no vocals, warm devotional temple feeling",
+  "music_length_ms": 51540,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-fbbce8737899.mp3": {
+  "text": "a mighty bow twang and a cosmic explosion",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-2af5ff5beba8.mp3": {
+  "text": "roaring forest fire",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-2a9ab812f05f.mp3": {
+  "text": "a splash of water and echoing laughter",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
