@@ -1,0 +1,44 @@
+{
+ "lines": [
+  {
+   "shot": "hook",
+   "cap": "Your muscles don't grow in the gym. They grow while you sleep.",
+   "say": "Your muscles don't grow in the gym. They grow while you sleep."
+  },
+  {
+   "shot": "lift",
+   "cap": "Every heavy rep rips thousands of tiny fibres inside the muscle.",
+   "say": "Every heavy rep rips thousands of tiny fibres inside the muscle."
+  },
+  {
+   "shot": "tear",
+   "cap": "Micro tears. That soreness the next day? That's damage, not growth.",
+   "say": "Micro tears. That soreness the next day? That's damage, not growth."
+  },
+  {
+   "shot": "sleep",
+   "cap": "Growth starts when you're asleep. Deep sleep is when your body releases most of its growth hormone.",
+   "say": "Growth starts when you're asleep. Deep sleep is when your body releases most of its growth hormone."
+  },
+  {
+   "shot": "repair",
+   "cap": "Then protein gets sent to every tear, and each fibre is rebuilt a little thicker than before.",
+   "say": "Then protein gets sent to every tear, and each fibre is rebuilt a little thicker than before."
+  },
+  {
+   "shot": "study",
+   "cap": "In one study, dieters who slept five and a half hours lost sixty percent more muscle than those who slept eight and a half.",
+   "say": "In one study, dieters who slept five and a half hours lost sixty percent more muscle than those who slept eight and a half."
+  },
+  {
+   "shot": "tip",
+   "cap": "So train hard, eat your protein, and protect your sleep. Seven to nine hours.",
+   "say": "So train hard, eat your protein, and protect your sleep. Seven to nine hours."
+  },
+  {
+   "shot": "outro",
+   "cap": "Save this for your next rest day. Because your muscles don't grow in the gym.",
+   "say": "Save this for your next rest day. Because your muscles don't grow in the gym."
+  }
+ ]
+}
