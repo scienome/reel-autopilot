@@ -1,0 +1,28 @@
+{
+ "music-cf0be9106d31.mp3": {
+  "prompt": "Indian mythological cinematic underscore: tanpura drone, soft tabla, bansuri, temple bells, swelling shehnai at the climax, no vocals, warm devotional temple feeling",
+  "music_length_ms": 53620,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-301b8110963c.mp3": {
+  "text": "war drums and an army marching",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-69a56f75bca9.mp3": {
+  "text": "running footsteps echoing in a cave",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-cbd5326a1d55.mp3": {
+  "text": "a roaring burst of fire",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
