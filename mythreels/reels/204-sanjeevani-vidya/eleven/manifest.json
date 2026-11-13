@@ -1,0 +1,28 @@
+{
+ "music-9693a9b17955.mp3": {
+  "prompt": "Indian mythological cinematic underscore: tanpura drone, soft tabla, bansuri, temple bells, swelling shehnai at the climax, no vocals, warm devotional temple feeling",
+  "music_length_ms": 48980,
+  "model_id": "music_v1",
+  "force_instrumental": true
+ },
+ "sfx-5dded80a45ec.mp3": {
+  "text": "war drums and clashing swords",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-0c4bbd484027.mp3": {
+  "text": "a mystical rising chime and wind",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-8753bed260a9.mp3": {
+  "text": "crackling fire and a goblet clink",
+  "duration_seconds": 1.6,
+  "prompt_influence": 0.5
+ },
+ "sfx-a3b329b143c8.mp3": {
+  "text": "deep suspense drum hit and rising whoosh",
+  "duration_seconds": 1.8,
+  "prompt_influence": 0.5
+ }
+}
