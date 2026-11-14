@@ -1,38 +1,113 @@
 {
  "account": "TOY",
  "username": "toyboxtheory",
- "followers": 18,
- "fetched": "2026-11-13T03:28:29.868335Z",
+ "followers": 19,
+ "fetched": "2026-11-14T03:27:02.803805Z",
  "reels": [
+  {
+   "id": "18001085529012902",
+   "timestamp": "2026-11-14T00:30:01+0000",
+   "like_count": 0,
+   "comments_count": 1,
+   "permalink": "https://www.instagram.com/reel/DfslHBcGZeU/",
+   "caption": "The man who sold the Eiffel Tower 🗼💸\nTag your smoothest talker 👇\n\nFollow for a new one eve",
+   "views": 283,
+   "reach": 237,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 1,
+   "ig_reels_avg_watch_time": 42376,
+   "ig_reels_video_view_total_time": 10043172
+  },
+  {
+   "id": "18148329937579162",
+   "timestamp": "2026-11-13T19:30:01+0000",
+   "like_count": 4,
+   "comments_count": 1,
+   "permalink": "https://www.instagram.com/reel/DfsC3C2ieWH/",
+   "caption": "The most expensive pizzas in history 🍕💸\nTag someone who'd still eat them 👇\n\nFollow for a n",
+   "views": 287,
+   "reach": 250,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 5,
+   "ig_reels_avg_watch_time": 12939,
+   "ig_reels_video_view_total_time": 3196032
+  },
+  {
+   "id": "17946025791365634",
+   "timestamp": "2026-11-13T15:00:01+0000",
+   "like_count": 4,
+   "comments_count": 1,
+   "permalink": "https://www.instagram.com/reel/DfrkOsBFBOs/",
+   "caption": "He drove a used car and pinned his coat shut 🧥\nTag your most frugal friend 👇\n\nFollow for a",
+   "views": 429,
+   "reach": 356,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 5,
+   "ig_reels_avg_watch_time": 10628,
+   "ig_reels_video_view_total_time": 3751957
+  },
+  {
+   "id": "18137227246672783",
+   "timestamp": "2026-11-13T07:30:01+0000",
+   "like_count": 21,
+   "comments_count": 4,
+   "permalink": "https://www.instagram.com/reel/DfqrSgKlPoA/",
+   "caption": "Then he got mad his wife didn't cry 😭\nTag the most dramatic person you know 👇\n\n#history #w",
+   "views": 1900,
+   "reach": 1593,
+   "saved": 1,
+   "shares": 5,
+   "total_interactions": 31,
+   "ig_reels_avg_watch_time": 11781,
+   "ig_reels_video_view_total_time": 18814748
+  },
+  {
+   "id": "18211242532371625",
+   "timestamp": "2026-11-13T03:30:01+0000",
+   "like_count": 22,
+   "comments_count": 1,
+   "permalink": "https://www.instagram.com/reel/DfqWyKvHKmN/",
+   "caption": "No steel. No support. Still on top 🏛️\nTag someone who'd visit Rome 👇\n\n#rome #pantheon #his",
+   "views": 1379,
+   "reach": 1199,
+   "saved": 1,
+   "shares": 0,
+   "total_interactions": 24,
+   "ig_reels_avg_watch_time": 13390,
+   "ig_reels_video_view_total_time": 15961582
+  },
   {
    "id": "18096680333681065",
    "timestamp": "2026-11-13T00:30:01+0000",
-   "like_count": 1,
+   "like_count": 4,
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfqAsB8CZ6R/",
    "caption": "Not what you think. Frostbite is brutal 🥶\nSave this before your next trip 👇\n\n#frostbite #w",
-   "views": 277,
-   "reach": 252,
+   "views": 301,
+   "reach": 275,
    "saved": 0,
    "shares": 0,
-   "total_interactions": 2,
-   "ig_reels_avg_watch_time": 4653,
-   "ig_reels_video_view_total_time": 1168094
+   "total_interactions": 5,
+   "ig_reels_avg_watch_time": 5148,
+   "ig_reels_video_view_total_time": 1420853
   },
   {
    "id": "18029002592871474",
    "timestamp": "2026-11-12T19:30:02+0000",
-   "like_count": 8,
+   "like_count": 14,
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfpfQqqlMhY/",
    "caption": "Not interested? She'll make it VERY clear 🦙💚\nTag the friend who needs an alpaca filter 👇\n\n",
-   "views": 594,
-   "reach": 521,
+   "views": 775,
+   "reach": 681,
    "saved": 0,
    "shares": 0,
-   "total_interactions": 9,
-   "ig_reels_avg_watch_time": 8826,
-   "ig_reels_video_view_total_time": 4721999
+   "total_interactions": 15,
+   "ig_reels_avg_watch_time": 9626,
+   "ig_reels_video_view_total_time": 6661453
   },
   {
    "id": "18403856998202246",
@@ -41,13 +116,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfpCu4LDMPf/",
    "caption": "It's usually not what you think 😅🐕\nTag a dog owner who needs this 👇\n\n#dogs #dogbehavior #d",
-   "views": 160,
-   "reach": 147,
+   "views": 173,
+   "reach": 160,
    "saved": 0,
    "shares": 0,
    "total_interactions": 2,
-   "ig_reels_avg_watch_time": 12405,
-   "ig_reels_video_view_total_time": 1823669
+   "ig_reels_avg_watch_time": 12167,
+   "ig_reels_video_view_total_time": 1946836
   },
   {
    "id": "17937974982406861",
@@ -56,13 +131,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfnqFGjmdcY/",
    "caption": "They really do it in the snow, and almost always facing north-east 🦊🧭\nNature is weirder th",
-   "views": 1589,
-   "reach": 1382,
+   "views": 1593,
+   "reach": 1384,
    "saved": 0,
    "shares": 7,
    "total_interactions": 28,
-   "ig_reels_avg_watch_time": 12861,
-   "ig_reels_video_view_total_time": 17838838
+   "ig_reels_avg_watch_time": 12847,
+   "ig_reels_video_view_total_time": 17845697
   },
   {
    "id": "18099388940671762",
@@ -106,8 +181,8 @@
    "saved": 0,
    "shares": 1,
    "total_interactions": 33,
-   "ig_reels_avg_watch_time": 11539,
-   "ig_reels_video_view_total_time": 20008974
+   "ig_reels_avg_watch_time": 11533,
+   "ig_reels_video_view_total_time": 20010509
   },
   {
    "id": "18127433452928589",
@@ -136,8 +211,8 @@
    "saved": 0,
    "shares": 0,
    "total_interactions": 3,
-   "ig_reels_avg_watch_time": 11584,
-   "ig_reels_video_view_total_time": 2305406
+   "ig_reels_avg_watch_time": 11561,
+   "ig_reels_video_view_total_time": 2312343
   },
   {
    "id": "17961583107011905",
@@ -521,13 +596,13 @@
    "comments_count": 2,
    "permalink": "https://www.instagram.com/reel/DfNzMSziFu_/",
    "caption": "True story. A Dutch forger was arrested for treason for selling a Vermeer to Goering. His ",
-   "views": 1660,
+   "views": 1663,
    "reach": 1466,
    "saved": 1,
    "shares": 0,
    "total_interactions": 13,
-   "ig_reels_avg_watch_time": 8102,
-   "ig_reels_video_view_total_time": 11740215
+   "ig_reels_avg_watch_time": 8099,
+   "ig_reels_video_view_total_time": 11744102
   },
   {
    "id": "17924926350216730",
@@ -551,13 +626,13 @@
    "comments_count": 2,
    "permalink": "https://www.instagram.com/reel/DfLy9P-GOj9/",
    "caption": "True story. In WWII the Polish army put a bear on the payroll. He carried real artillery s",
-   "views": 2209,
-   "reach": 1782,
+   "views": 2210,
+   "reach": 1784,
    "saved": 0,
    "shares": 57,
    "total_interactions": 141,
-   "ig_reels_avg_watch_time": 10487,
-   "ig_reels_video_view_total_time": 18982787
+   "ig_reels_avg_watch_time": 10482,
+   "ig_reels_video_view_total_time": 18983492
   },
   {
    "id": "18121107233084414",
@@ -566,13 +641,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfLEhAjH9Tc/",
    "caption": "True story. In 1932 the Australian army went to war against emus. The emus did not care. 🐦",
-   "views": 2205,
+   "views": 2206,
    "reach": 1820,
    "saved": 0,
    "shares": 1,
    "total_interactions": 31,
-   "ig_reels_avg_watch_time": 16996,
-   "ig_reels_video_view_total_time": 30814637
+   "ig_reels_avg_watch_time": 16988,
+   "ig_reels_video_view_total_time": 30816489
   },
   {
    "id": "17877383388582048",
@@ -581,13 +656,13 @@
    "comments_count": 16,
    "permalink": "https://www.instagram.com/reel/DfKCF2vnfFG/",
    "caption": "Parody. 🍲 The food taster deserved a raise.\nWhose dish was it? Wrong answers only 👇\n\n#paro",
-   "views": 2656,
-   "reach": 1784,
+   "views": 2660,
+   "reach": 1787,
    "saved": 1,
    "shares": 1,
    "total_interactions": 53,
-   "ig_reels_avg_watch_time": 14635,
-   "ig_reels_video_view_total_time": 26797824
+   "ig_reels_avg_watch_time": 14643,
+   "ig_reels_video_view_total_time": 26856312
   },
   {
    "id": "18105743072198139",
@@ -611,13 +686,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfIgacbgi7C/",
    "caption": "🌕 The most expensive cheap decision in history.\nWould you go back for them? 👇\n\n#moonlandin",
-   "views": 2804,
-   "reach": 2099,
+   "views": 2805,
+   "reach": 2101,
    "saved": 0,
    "shares": 0,
    "total_interactions": 55,
-   "ig_reels_avg_watch_time": 16598,
-   "ig_reels_video_view_total_time": 35586668
+   "ig_reels_avg_watch_time": 16591,
+   "ig_reels_video_view_total_time": 35588489
   },
   {
    "id": "18100662218436158",
@@ -626,13 +701,13 @@
    "comments_count": 4,
    "permalink": "https://www.instagram.com/reel/DfHd2qMgqMY/",
    "caption": "👁️ This explains literally everything.\nWhat did they break first? 👇\n\n#illuminati #heist #d",
-   "views": 2470,
+   "views": 2471,
    "reach": 1852,
    "saved": 1,
    "shares": 0,
    "total_interactions": 42,
-   "ig_reels_avg_watch_time": 15311,
-   "ig_reels_video_view_total_time": 28953840
+   "ig_reels_avg_watch_time": 15303,
+   "ig_reels_video_view_total_time": 28954603
   },
   {
    "id": "17935593450145851",
@@ -641,13 +716,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfGo1n7DiAd/",
    "caption": "🎅 Never fire the people who manage the naughty list.\nTeam elves or team Santa? 👇\n\n#santa #",
-   "views": 2585,
+   "views": 2589,
    "reach": 2152,
    "saved": 1,
    "shares": 0,
    "total_interactions": 51,
-   "ig_reels_avg_watch_time": 12242,
-   "ig_reels_video_view_total_time": 26750476
+   "ig_reels_avg_watch_time": 12249,
+   "ig_reels_video_view_total_time": 26789861
   },
   {
    "id": "17900320194608125",
@@ -686,13 +761,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfE5hw8CZOR/",
    "caption": "💀 Even the Grim Reaper isn't safe from AI.\nWould you trust an AI with your death? 👇\n\n#dark",
-   "views": 2174,
+   "views": 2177,
    "reach": 1758,
    "saved": 2,
    "shares": 1,
    "total_interactions": 44,
-   "ig_reels_avg_watch_time": 18416,
-   "ig_reels_video_view_total_time": 32468153
+   "ig_reels_avg_watch_time": 18389,
+   "ig_reels_video_view_total_time": 32475102
   },
   {
    "id": "17992724973114043",
@@ -701,13 +776,13 @@
    "comments_count": 1,
    "permalink": "https://www.instagram.com/reel/DfEEG9tjoVH/",
    "caption": "🧟 The apocalypse was cancelled due to lack of interest.\nWould you tip a zombie? Be honest ",
-   "views": 2117,
-   "reach": 1776,
+   "views": 2118,
+   "reach": 1777,
    "saved": 2,
    "shares": 0,
    "total_interactions": 40,
-   "ig_reels_avg_watch_time": 11157,
-   "ig_reels_video_view_total_time": 19815023
+   "ig_reels_avg_watch_time": 11151,
+   "ig_reels_video_view_total_time": 19815838
   },
   {
    "id": "18118001260823753",
@@ -716,13 +791,13 @@
    "comments_count": 8,
    "permalink": "https://www.instagram.com/reel/DfDXMhMlUEc/",
    "caption": "🔥 Hell's customer service is exactly as bad as you'd hope.\nWho else deserves the basement?",
-   "views": 4957,
+   "views": 4961,
    "reach": 4219,
    "saved": 2,
    "shares": 1,
    "total_interactions": 77,
-   "ig_reels_avg_watch_time": 20285,
-   "ig_reels_video_view_total_time": 85746465
+   "ig_reels_avg_watch_time": 20284,
+   "ig_reels_video_view_total_time": 85823169
   },
   {
    "id": "18072773543791200",
