@@ -59,13 +59,17 @@ or anything that posts publicly.
 - The owner loves the **Death** character (Death + Nani). 8 more Death reels were made (057–064). More Death, alien,
   robot, genie stories are a safe bet, but ASK with options first.
 
-### 2. Toy channel (toyboxtheory): NEW HUMAN KIT waiting for the owner's yes
+### 2. Toy channel (toyboxtheory): NEW HUMAN KIT IS LIVE (owner said yes, 14 Nov)
 - `LIB.toyHuman` in `dioramareels/kit/references/lib3d.js`: our own glossy plastic toy people in three.js. Honours the
   reel's top/bottom/shoes/hair/hairStyle/skin, blinks, talks, and covers all 23 poses the toy reels use.
-- **OFF by default.** Turn on per reel with `window.TOY_HUMANS = 2;` as the first line of reel.js, or for everything
-  with `LIB.humanKit = 'toy2'`. Samples were sent (line-up + reel 195 frames). **Open question to the owner: switch all
-  209 toy reels and re-render?** Plan if yes: render 3–4 varied reels as full videos first, show him, then the rest
-  (`make-toy3d.yml`, Release `toyreel-<id>`). Only verified on frame sheets so far.
+- **Now the default** wherever the Kenney mini cast was used (any reel that loads `mini/*` assets). To go back:
+  `LIB.humanKit = 'mini'`.
+- **14 Nov ~12:20 IST: the 62 queued, unposted toy reels (toyreels/posting.json order minus toyreels/posted.json) were
+  sent to re-render** (`make-toy3d.yml`, two dispatches, Releases `toyreel-<id>`). Already-posted reels were left alone.
+- **TO DO FIRST in the next session:** check those runs finished, download 3-4 finished videos (varied: a sit reel, a
+  dance reel, a crowd reel) and look at them. The kit was only verified on frame sheets of one reel (195), so poses or
+  sizes may be off in some reels (things held in hands, people on chairs/beds, crowds). Fix in `LIB.toyHuman`, re-render,
+  and send the owner 2-3 finished videos. Until a reel's new render finishes, its old video (old figures) can still post.
 
 ### 3. Other channels (state from this session)
 - **Elites Endgame:** 42 dark reels (056–097) + "the room" fiction reels 101–121 queued; 3 a day (01:00, 06:00, 20:30 IST).
