@@ -507,7 +507,7 @@
    LIB.place.room / park / village / street / courtroom / cell / office / kitchen(opts) -> Group (built from models + primitives),
    each with .spots (named positions to stand people) and .cam (a good wide camera). Units: 1 = 1 metre unless h/scale given. */
 (() => {
-  const T = THREE, BASE = 'https://kit.assets/';
+  const T = THREE, PI = Math.PI, BASE = 'https://kit.assets/';
   const cache = {}, loader = new T.GLTFLoader();
   const LIB = window.LIB = { gltf: {} };
   LIB.load = (n) => cache[n] || (cache[n] = new Promise((res, rej) => loader.load(BASE + n + '.glb', (g) => { LIB.gltf[n] = g; res(g); }, undefined, (e) => rej(new Error('LIB: cannot load ' + n + ': ' + (e && e.message))))));
@@ -579,7 +579,80 @@
     if (style === 'long') { const back = new T.Mesh(new T.CapsuleGeometry(r * 0.82, s.y * 0.9, 6, 16), HM); back.scale.set(1.05, 1, 0.55); back.position.set(0, -s.y * 0.25, -s.z * 0.32); g.add(back); }
     if (style === 'bun') { const bun = new T.Mesh(new T.SphereGeometry(r * 0.42, 16, 12), HM); bun.position.set(0, s.y * 0.38, -s.z * 0.42); g.add(bun); }
     g.position.copy(c); g.updateMatrixWorld(true); head.attach(g); g.traverse((n) => { if (n.isMesh) n.castShadow = true; }); };
+  // ---------- Toy human kit v2 (LIB.toyHuman): our own plastic toy people, built in three.js (no model files, nothing to license).
+  // Glossy vinyl look, big head, painted face that blinks, ball joints, mitten hands. It honours the reel's own colours
+  // (top, bottom, shoes, hair, hairStyle, skin), which the Kenney minis ignored. o.hairStyle: short buzz long bun pony curly bald.
+  // out.pose(move, t) covers every move the toy reels use (idle talk sit sittalk dance clap attack hit push interact pickup walk
+  // walkslow run sprint gallop crouch crouchwalk kneel eat headlow hithead jump death); unknown moves fall back to idle.
+  // A reel turns it on with  window.TOY_HUMANS = 2  (before TOY/STORY), or the harness sets LIB.humanKit = 'toy2' for every reel.
+  const SKINS = ['#f2c9a4', '#e3ad82', '#c98d5e', '#a8703f', '#7d4f2e', '#f6d7bd'];
+  LIB.toyHuman = (o = {}) => { const g = new T.Group(), root = new T.Group(); g.add(root); const fem = o.body === 'f' || /^woman_/.test(o.body || '');
+    const key = [o.top, o.bottom, o.hair, o.hairStyle, o.body].join('|'); let hsh = 7; for (const ch of key) hsh = (hsh * 31 + ch.charCodeAt(0)) >>> 0;
+    const shade = (c) => { const col = new T.Color(c).convertSRGBToLinear(); if (o.shade) col.multiplyScalar(o.shade); return col; }; // hex colours are sRGB; without this the plastic looks washed out
+    const P = (c, r = 0.32, cc = 0.55) => new T.MeshPhysicalMaterial({ color: shade(c), roughness: r, clearcoat: cc, clearcoatRoughness: 0.25 });
+    const SK = P(o.skin || SKINS[hsh % SKINS.length], 0.45, 0.3), TOP = o.topless ? SK : P(o.top || '#3a5f8a'), BOT = P(o.bottom || '#2a2f3a'), SH = P(o.shoes || '#1d1d1f', 0.3), HR = P(o.hair || '#2a1a10', 0.55, 0.2), JT = P('#2a2a30', 0.4, 0.3);
+    const cap = (r, l, m) => new T.Mesh(new T.CapsuleGeometry(r, l, 6, 14), m), sph = (r, m, w = 22) => new T.Mesh(new T.SphereGeometry(r, w, Math.round(w * 0.7)), m);
+    // unit figure: 1.0 tall, feet on y = 0, facing +z
+    const hips = new T.Group(); hips.position.y = 0.36; root.add(hips);
+    const pelvis = new T.Mesh(new T.CylinderGeometry(0.105, 0.095, 0.07, 20), BOT); pelvis.position.y = 0.01; hips.add(pelvis);
+    const legs = [-1, 1].map((sx) => { const L = new T.Group(); L.position.set(sx * 0.055, 0, 0); hips.add(L); const jt = sph(0.045, JT, 12); L.add(jt); const th = cap(0.05, 0.1, BOT); th.position.y = -0.085; L.add(th);
+      const K = new T.Group(); K.position.y = -0.17; L.add(K); const sh = cap(0.045, 0.09, BOT); sh.position.y = -0.075; K.add(sh); const ft = sph(0.06, SH); ft.scale.set(0.95, 0.6, 1.5); ft.position.set(0, -0.155, 0.03); K.add(ft); L.userData.knee = K; return L; });
+    const torso = new T.Group(); torso.position.y = 0.03; hips.add(torso); const chest = new T.Mesh(new T.CylinderGeometry(fem ? 0.1 : 0.115, 0.1, 0.2, 22), TOP); chest.position.y = 0.13; torso.add(chest);
+    const sho = sph(fem ? 0.1 : 0.115, TOP); sho.scale.set(1, 0.45, 0.9); sho.position.y = 0.23; torso.add(sho); chest.scale.z = 0.8; sho.scale.z = 0.75;
+    if (fem && !o.topless) { const sk = new T.Mesh(new T.CylinderGeometry(0.1, 0.15, 0.13, 22, 1, true), new T.MeshPhysicalMaterial({ color: shade(o.bottom || '#2a2f3a'), roughness: 0.35, clearcoat: 0.5, side: T.DoubleSide })); sk.position.y = -0.03; sk.scale.z = 0.85; torso.add(sk); }
+    const arms = [-1, 1].map((sx) => { const A = new T.Group(); A.position.set(sx * (fem ? 0.125 : 0.14), 0.215, 0); torso.add(A); const jt = sph(0.042, JT, 12); A.add(jt); const up = cap(0.036, 0.075, TOP); up.position.y = -0.07; A.add(up);
+      const E = new T.Group(); E.position.y = -0.135; A.add(E); const fo = cap(0.033, 0.07, o.sleeves === 'short' || o.topless ? SK : TOP); fo.position.y = -0.06; E.add(fo); const hd = sph(0.043, SK); hd.scale.set(0.8, 1, 1); hd.position.y = -0.13; E.add(hd); A.userData.elbow = E; A.userData.hand = hd; A.rotation.z = sx * 0.1; return A; });
+    const neck = new T.Mesh(new T.CylinderGeometry(0.035, 0.04, 0.05, 12), SK); neck.position.y = 0.265; torso.add(neck);
+    const head = new T.Group(); head.position.y = 0.28; torso.add(head); const R = 0.165; const skull = sph(R, SK, 30); skull.scale.set(1, 0.95, 0.96); skull.position.y = R; head.add(skull);
+    [-1, 1].forEach((sx) => { const ear = sph(0.035, SK, 10); ear.scale.set(0.5, 1, 0.8); ear.position.set(sx * R * 0.97, R * 0.95, 0); head.add(ear); });
+    const INK = new T.MeshBasicMaterial({ color: '#17131a' }), WH = new T.MeshBasicMaterial({ color: '#ffffff' });
+    const eyes = [-1, 1].map((sx) => { const e = sph(0.026, INK, 14); e.scale.set(0.85, 1.25, 0.45); e.position.set(sx * 0.06, R * 1.02, R * 0.9); head.add(e); const hl = sph(0.008, WH, 8); hl.position.set(sx * 0.06 + 0.008, R * 1.02 + 0.012, R * 0.9 + 0.012); head.add(hl); e.userData.hl = hl;
+      if (fem) { const ls = cap(0.004, 0.03, INK); ls.rotation.z = PI / 2 + sx * 0.5; ls.position.set(sx * 0.08, R * 1.02 + 0.03, R * 0.9); head.add(ls); } return e; });
+    const brows = [-1, 1].map((sx) => { const b = cap(0.006, 0.035, HR); b.rotation.z = PI / 2; b.position.set(sx * 0.06, R * 1.34, R * 0.86); head.add(b); return b; });
+    const smile = new T.Mesh(new T.TorusGeometry(0.03, 0.007, 6, 14, PI), INK); smile.rotation.z = PI; smile.position.set(0, R * 0.66, R * 0.92); head.add(smile);
+    const mouth = sph(0.028, new T.MeshBasicMaterial({ color: '#5a1a1a' }), 12); mouth.scale.set(1.2, 0.8, 0.4); mouth.position.set(0, R * 0.62, R * 0.92); head.add(mouth); mouth.visible = false;
+    [-1, 1].forEach((sx) => { const ck = new T.Mesh(new T.CircleGeometry(0.024, 14), new T.MeshBasicMaterial({ color: '#ff8a8a', transparent: true, opacity: 0.4 })); ck.position.set(sx * 0.1, R * 0.8, R * 0.87); ck.rotation.y = sx * 0.55; head.add(ck); });
+    const st = o.hairStyle || (fem ? ['long', 'bun', 'pony', 'curly'][hsh % 4] : ['short', 'short', 'curly', 'buzz'][hsh % 4]);
+    if (st !== 'bald' && st !== 'none') { if (st === 'curly') { for (let i = 0; i < 34; i++) { const a = i * 2.399, z = 1 - (i / 34) * 1.15, r0 = Math.sqrt(Math.max(0, 1 - z * z)); const b = sph(0.045, HR, 9); b.position.set(Math.cos(a) * r0 * R, R + z * R * 0.98, Math.sin(a) * r0 * R - 0.015); if (b.position.z > R * 0.5 && b.position.y < R * 1.45) continue; head.add(b); } }
+      else { const c = new T.Mesh(new T.SphereGeometry(R * (st === 'buzz' ? 1.02 : 1.07), 28, 18, 0, PI * 2, 0, PI * (st === 'buzz' ? 0.42 : 0.52)), HR); c.position.set(0, R * 1.04, -0.012); c.rotation.x = -0.5; head.add(c); if (st !== 'buzz') { const fr = sph(0.055, HR, 12); fr.scale.set(1.7, 0.55, 0.8); fr.position.set(0.035, R * 1.62, R * 0.66); fr.rotation.z = 0.25; head.add(fr); } }
+      if (st === 'long') { const bk = sph(R * 1.02, HR); bk.scale.set(1.02, 1.45, 0.6); bk.position.set(0, R * 0.62, -R * 0.42); head.add(bk); [-1, 1].forEach((sx) => { const sd = cap(0.045, 0.2, HR); sd.position.set(sx * R * 0.92, R * 0.6, -0.02); head.add(sd); }); }
+      if (st === 'bun') { const bn = sph(0.065, HR); bn.position.set(0, R * 2.02, -0.04); head.add(bn); }
+      if (st === 'pony') { const pn = cap(0.04, 0.16, HR); pn.position.set(0, R * 1.1, -R * 1.1); pn.rotation.x = 0.4; head.add(pn); } }
+    g.traverse((n) => { if (n.isMesh) { n.castShadow = true; n.receiveShadow = true; n.frustumCulled = false; } });
+    const H = (o.h || (fem ? 1.7 : 1.78)) * (LIB.miniScale || 0.8); root.scale.setScalar(H); g.userData.toy2 = true; g.userData.headH = H * 0.98;
+    const seed = (hsh % 97) * 0.13, aL = arms[0], aR = arms[1], lL = legs[0], lR = legs[1];
+    const reset = () => { root.position.set(0, 0, 0); root.rotation.set(0, 0, 0); hips.position.y = 0.36; hips.rotation.set(0, 0, 0); torso.rotation.set(0, 0, 0); head.rotation.set(0, 0, 0);
+      arms.forEach((A, i) => { A.rotation.set(0, 0, (i ? 1 : -1) * 0.1); A.userData.elbow.rotation.set(0, 0, 0); }); legs.forEach((L) => { L.rotation.set(0, 0, 0); L.userData.knee.rotation.set(0, 0, 0); }); mouth.visible = false; smile.visible = true; };
+    const gait = (t, f, amp, bob) => { legs.forEach((L, i) => { const ph = Math.sin(t * f + i * PI); L.rotation.x = ph * amp; L.userData.knee.rotation.x = Math.max(0, -ph) * amp * 1.4; }); arms.forEach((A, i) => { A.rotation.x = -Math.sin(t * f + i * PI) * amp * 0.9; A.userData.elbow.rotation.x = -0.35; }); hips.position.y = 0.36 + Math.abs(Math.sin(t * f)) * bob; torso.rotation.x = amp * 0.15; };
+    const sitDown = () => { legs.forEach((L) => { L.rotation.x = -1.5; L.userData.knee.rotation.x = 1.5; }); hips.position.y = 0.2; };
+    const talkFace = (t) => { mouth.visible = true; smile.visible = false; mouth.scale.y = 0.35 + Math.abs(Math.sin(t * 13) * Math.sin(t * 5.3)) * 1.1; head.rotation.x = Math.sin(t * 7) * 0.05; };
+    g.pose = (move = 'idle', t = 0) => { reset(); const tt = t + seed; const blink = (tt % 3.4) < 0.11; eyes.forEach((e) => { e.scale.y = blink ? 0.12 : 1.25; e.userData.hl.visible = !blink; });
+      hips.position.y += Math.sin(tt * 2.1) * 0.004; head.rotation.y = Math.sin(tt * 0.6) * 0.1; head.rotation.z = Math.sin(tt * 0.8) * 0.03; arms.forEach((A, i) => { A.rotation.x = Math.sin(tt * 1.3 + i) * 0.05; });
+      switch (move) {
+        case 'talk': talkFace(tt); aR.rotation.x = -0.7 + Math.sin(tt * 4) * 0.3; aR.userData.elbow.rotation.x = -0.9; aL.rotation.x = -0.2 - Math.sin(tt * 4) * 0.15; break;
+        case 'sit': case 'sitdown': sitDown(); arms.forEach((A) => { A.rotation.x = -0.5; A.userData.elbow.rotation.x = -0.6; }); break;
+        case 'sittalk': sitDown(); talkFace(tt); aR.rotation.x = -0.9 + Math.sin(tt * 4) * 0.25; aR.userData.elbow.rotation.x = -0.9; aL.rotation.x = -0.5; break;
+        case 'dance': hips.position.y += Math.abs(Math.sin(tt * 6)) * 0.03; hips.rotation.y = Math.sin(tt * 3) * 0.35; torso.rotation.z = Math.sin(tt * 6) * 0.12; arms.forEach((A, i) => { A.rotation.z = (i ? 1 : -1) * (2.3 + Math.sin(tt * 6 + i * PI) * 0.5); A.userData.elbow.rotation.x = -0.5; }); legs.forEach((L, i) => { L.rotation.x = Math.sin(tt * 6 + i * PI) * 0.25; }); break;
+        case 'clap': arms.forEach((A, i) => { A.rotation.x = -1.3; A.rotation.z = (i ? -1 : 1) * (0.25 + Math.abs(Math.sin(tt * 9)) * 0.3); A.userData.elbow.rotation.x = -0.7; }); hips.position.y += Math.abs(Math.sin(tt * 9)) * 0.008; break;
+        case 'attack': case 'hit': case 'push': { const u = (Math.sin(tt * 7) + 1) / 2; aR.rotation.x = -0.6 - u * 1.3; aR.userData.elbow.rotation.x = -1.2 + u * 1.1; torso.rotation.y = -0.35 + u * 0.6; aL.rotation.x = -0.6; aL.userData.elbow.rotation.x = -1.3; lL.rotation.x = -0.25; lR.rotation.x = 0.25; if (move === 'push') { aL.rotation.x = aR.rotation.x = -1.4; aL.userData.elbow.rotation.x = aR.userData.elbow.rotation.x = -0.2; torso.rotation.x = 0.3; } } break;
+        case 'interact': aR.rotation.x = -1.2 + Math.sin(tt * 3) * 0.15; aR.userData.elbow.rotation.x = -0.5; break;
+        case 'pickup': { const u = (Math.sin(tt * 2.5) + 1) / 2; torso.rotation.x = u * 0.9; legs.forEach((L) => { L.rotation.x = -u * 0.5; L.userData.knee.rotation.x = u * 0.9; }); hips.position.y -= u * 0.06; aR.rotation.x = -0.6 - u * 0.6; } break;
+        case 'walk': gait(tt, 6, 0.5, 0.012); break; case 'walkslow': case 'formalwalk': gait(tt, 3.6, 0.35, 0.008); break;
+        case 'run': case 'sprint': case 'gallop': case 'swim': gait(tt, 11, 0.85, 0.03); torso.rotation.x = 0.25; break;
+        case 'crouch': legs.forEach((L) => { L.rotation.x = -1.1; L.userData.knee.rotation.x = 1.9; }); hips.position.y = 0.2; torso.rotation.x = 0.45; arms.forEach((A) => { A.rotation.x = -0.6; }); break;
+        case 'crouchwalk': gait(tt, 5, 0.35, 0.006); legs.forEach((L) => { L.rotation.x -= 0.7; L.userData.knee.rotation.x += 1.2; }); hips.position.y = 0.25; torso.rotation.x = 0.5; break;
+        case 'kneel': lL.rotation.x = -1.5; lL.userData.knee.rotation.x = 1.5; lR.rotation.x = 0.1; lR.userData.knee.rotation.x = 1.5; hips.position.y = 0.21; head.rotation.x = 0.15; break;
+        case 'eat': aR.rotation.x = -1.7 + Math.sin(tt * 5) * 0.25; aR.userData.elbow.rotation.x = -1.9; aR.rotation.z = -0.25; mouth.visible = true; smile.visible = false; mouth.scale.y = 0.5 + Math.abs(Math.sin(tt * 5)) * 0.8; break;
+        case 'headlow': head.rotation.x = 0.55; torso.rotation.x = 0.15; arms.forEach((A) => { A.rotation.x = 0.05; }); break;
+        case 'hithead': aR.rotation.x = -2.6; aR.userData.elbow.rotation.x = -1.6; aR.rotation.z = -0.3; head.rotation.z = 0.15; break;
+        case 'jump': { const u = Math.abs(Math.sin(tt * 4.5)); root.position.y = u * 0.28 * H; legs.forEach((L) => { L.rotation.x = -u * 0.5; L.userData.knee.rotation.x = u * 0.9; }); arms.forEach((A, i) => { A.rotation.z = (i ? 1 : -1) * (0.3 + u * 2); }); } break;
+        case 'death': root.rotation.x = -PI / 2; root.position.y = 0.09 * H; arms.forEach((A, i) => { A.rotation.z = (i ? 1 : -1) * 1.1; }); eyes.forEach((e) => { e.scale.y = 0.12; e.userData.hl.visible = false; }); smile.rotation.z = 0; break;
+        default: break; }
+      if (move !== 'death') smile.rotation.z = PI; };
+    g.bone = (b) => ({ head, torso, hips, 'arm-left': aL, 'arm-right': aR, 'leg-left': lL, 'leg-right': lR, hand: aR.userData.hand, 'hand-right': aR.userData.hand, 'hand-left': aL.userData.hand })[b] || null;
+    g.pose('idle', 0); return g; };
   LIB.human = (o = {}) => { o = Object.assign({ body: 'm', top: '#3a5f8a', bottom: '#2a2f3a', shoes: '#1d1d1f', sleeves: 'long', legs: 'long' }, o);
+    if ((LIB.humanKit === 'toy2' || (typeof window !== 'undefined' && window.TOY_HUMANS === 2)) && !o.real && (o.body === 'm' || o.body === 'f' || /^woman_/.test(o.body))) return LIB.toyHuman(o);
     if (/^elite:/.test(o.body)) { const g = get('elite/' + o.body.slice(6)); const inner = T.SkeletonUtils.clone(g.scene); // Elites Endgame cast (Quaternius Ultimate Modular Men/Women, CC0): a look apart from the toy channel
       inner.traverse((m) => { if (m.isMesh) { m.castShadow = true; m.receiveShadow = true; m.material = m.material.clone(); const c = o.colors && o.colors[m.material.name]; if (c) m.material.color.set(c); if (o.shade) m.material.color.multiplyScalar(o.shade); } if (/pistol|sword|gun/i.test(m.name || '') && !o.armed) m.visible = false; }); // o.armed: keep the pack's pistol (gangsters)
       const out = wrap(inner, { h: o.h || 1.75 }); const clips = Object.fromEntries(g.animations.map((c) => [c.name.split('|').pop(), c])); out.pose = poser(inner, clips, EMOVES); out.mats = () => { const n = new Set(); inner.traverse((m) => { if (m.isMesh) n.add(m.material.name); }); return [...n]; }; out.pose('idle', 0); return out; }
