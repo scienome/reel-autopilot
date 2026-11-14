@@ -266,7 +266,7 @@ Folder: [`toy-reels/`](toy-reels/)
 | [145-uranus-stinks](toy-reels/145-uranus-stinks.mp4) | Scientists confirmed it: Uranus stinks 🪐💨 | Waiting to post |
 | [146-bull-cant-see-red](toy-reels/146-bull-cant-see-red.mp4) | Balls of steel… and he can't even see red 🐂 | Waiting to post |
 | [147-judge-fined-everyone](toy-reels/147-judge-fined-everyone.mp4) | The judge who fined the whole courtroom ⚖️ | Waiting to post |
-| [148-horse-standing-up](toy-reels/148-horse-standing-up.mp4) | This horse can do it standing up 🐴 | Waiting to post |
+| [148-horse-standing-up](toy-reels/148-horse-standing-up.mp4) | This horse can do it standing up 🐴 | Posted (Instagram + YouTube) |
 | [149-bobbie-walked-home](toy-reels/149-bobbie-walked-home.mp4) | He walked 2,500 miles to get home 🐕❤️ | Waiting to post |
 | [15-napoleon-sues-everyone](toy-reels/15-napoleon-sues-everyone.mp4) | Napoleon Came Back From The Dead To Sue Everyone 💀 | Waiting to post |
 | [150-alpaca-spits](toy-reels/150-alpaca-spits.mp4) | She'll spit on you if she's not into you 🦙💦 | Posted (Instagram + YouTube) |
@@ -316,8 +316,8 @@ Folder: [`toy-reels/`](toy-reels/)
 | [190-melons-no-seeds](toy-reels/190-melons-no-seeds.mp4) | These melons were bred bigger, sweeter… and seedless 🍉 | Waiting to post |
 | [191-on-top-1900-years](toy-reels/191-on-top-1900-years.mp4) | She's been on top for 1,900 years 🏛️ | Posted (Instagram + YouTube) |
 | [192-onoda-29-years](toy-reels/192-onoda-29-years.mp4) | He kept going for 29 years after it was over 🌴 | Waiting to post |
-| [193-janitor-drawers](toy-reels/193-janitor-drawers.mp4) | The janitor had $8 million in his drawers 💰 | Waiting to post |
-| [194-saroo-google-earth](toy-reels/194-saroo-google-earth.mp4) | He went down on Google Earth every night for years 🌏 | Waiting to post |
+| [193-janitor-drawers](toy-reels/193-janitor-drawers.mp4) | The janitor had $8 million in his drawers 💰 | Posted (Instagram + YouTube) |
+| [194-saroo-google-earth](toy-reels/194-saroo-google-earth.mp4) | He went down on Google Earth every night for years 🌏 | Posted (Instagram + YouTube) |
 | [195-regrets-of-dying](toy-reels/195-regrets-of-dying.mp4) | She was with hundreds of men at the very end 🕯️ | Waiting to post |
 | [196-jim-twins](toy-reels/196-jim-twins.mp4) | Same Linda. Same Betty. Same Toy. 👯 | Waiting to post |
 | [197-red-bandana](toy-reels/197-red-bandana.mp4) | He went in, pulled them out, and went in again ❤️ | Waiting to post |
@@ -330,12 +330,12 @@ Folder: [`toy-reels/`](toy-reels/)
 | [203-lost-make-yourself-big](toy-reels/203-lost-make-yourself-big.mp4) | Lost in the woods? Stay put and make yourself big 🌲 | Waiting to post |
 | [204-round-holes](toy-reels/204-round-holes.mp4) | Square holes kept ripping open… so now they're round ✈️ | Waiting to post |
 | [205-wrinkled-when-wet](toy-reels/205-wrinkled-when-wet.mp4) | Stay wet too long and things start to wrinkle 🛁 | Waiting to post |
-| [206-sold-eiffel](toy-reels/206-sold-eiffel.mp4) | He screwed one buyer so well he came back for another 🗼 | Waiting to post |
+| [206-sold-eiffel](toy-reels/206-sold-eiffel.mp4) | He screwed one buyer so well he came back for another 🗼 | Posted (Instagram + YouTube) |
 | [207-lemon-face](toy-reels/207-lemon-face.mp4) | He rubbed juice all over his face and thought he was invisible 🍋 | Waiting to post |
 | [208-hit-it-big](toy-reels/208-hit-it-big.mp4) | He hit it big one night… and it ruined his life 💸 | Waiting to post |
 | [209-played-dead](toy-reels/209-played-dead.mp4) | He played dead… and 3,000 people came 😳 | Posted (Instagram + YouTube) |
 | [21-zeus-wifi-down](toy-reels/21-zeus-wifi-down.mp4) | Zeus Unplugged Heaven's Wi-Fi 😇⚡ | Posted (Instagram + YouTube) |
-| [210-two-large-ones](toy-reels/210-two-large-ones.mp4) | He blew 10,000 on two large ones 🍕 | Waiting to post |
+| [210-two-large-ones](toy-reels/210-two-large-ones.mp4) | He blew 10,000 on two large ones 🍕 | Posted (Instagram + YouTube) |
 | [211-went-in-from-below](toy-reels/211-went-in-from-below.mp4) | They went in from below, all weekend… and someone heard every word 📻 | Waiting to post |
 | [22-devil-sues-billionaire](toy-reels/22-devil-sues-billionaire.mp4) | The Devil Sued A Billionaire And LOST 😈 | Waiting to post |
 | [23-last-man-spam-call](toy-reels/23-last-man-spam-call.mp4) | The Last Man On Earth Got A Phone Call. It Was Spam. ☠️ | Waiting to post |
