@@ -14,6 +14,81 @@ or anything that posts publicly.
 
 ---
 
+## ★ LATEST SESSION: 13–14 Nov 2026 (read this first; it overrides older sections where they differ)
+
+**Owner's standing rules (he repeated these, follow them strictly):**
+- **ASK FIRST.** Show topics + hooks and get a yes BEFORE writing reels or putting anything in a posting queue. He was
+  angry when 32 reels were queued without discussing their content. Give options he can tick.
+- Never change or add a voice without sending samples and getting his pick. Never run a posting workflow by hand.
+- Don't create or enable scheduled Claude tasks unless he asks (one-off "resume at HH:MM" reminders he asks for are fine).
+- Simple short English, result first, send finished videos. He is on his phone.
+- Cartesia: Max plan ($299/month), "no need to save credits". Key is ONLY in `.env` (git-ignored) and the GitHub secret
+  `CARTESIA_API_KEY`. Never print or commit it. Cartesia has NO sound-effects API (checked): SFX come from our synth
+  sound kit, Cartesia gives emotion + `[laughter]`.
+- Facts true with sources in meta.json; medical reels say "General information, not medical advice"; no antisemitic
+  banker myths; don't copy other creators' branding; no YouTube bot-check circumvention; no model names in commits.
+
+### 1. Thought Bubble channel (Instagram + YouTube, posts via `tools/ig_mech_post.py` / `post-instagram-mech.yml`)
+- **64 new reels `tb3d-001 … tb3d-064`** live in `dioramareels/reels/<id>/` (reel.js, script.json, voice.json, meta.json,
+  voice_lines/). All 64 are rendered on GitHub (Releases `diorama-<id>`), checked 14 Nov. Owner said "Perfect video!".
+- **Posting: 4 a day** at 01:00, 06:00, 13:30, 20:30 IST (`povreels/schedule.json` → `times`, used by ig_mech_post.py;
+  crons for the 13:30 slot were added to `post-instagram-mech.yml`). Queue = `povreels/schedule.json` → `queue`
+  (64 tb3d reels first, then the old POV reels). 3 had posted by 14 Nov 06:00 IST; ~61 left ≈ 15 days.
+- **Format:** third person (NOT POV), fiction comedy, hook in 2 s, a twist that loops back to the hook, tag line at the end.
+  Narrator **Lauren** (Cartesia `a33f7a4c-100f-41cf-a1fd-5822e8fc253f`, owner's pick; Archie was rejected).
+  Every character has their own Cartesia voice (bank in `tools/tb_gen/gen.py` → `V`), script lines carry
+  `who`, `bubble`, `think`, `emotion`, and `say` may contain `[laughter]`. `voice.json`: `provider: cartesia`,
+  `cast: {who: voice_id}`, `fx: {who: 'robot'}`. All lines are levelled to the same loudness (`level()` in
+  `tools/diorama_make.py`).
+- **Template `k.tb(spec)`** in `dioramareels/kit/references/story3d.js`: a reel is data (hook, tag, cast, sets, shots).
+  It auto-cuts to whoever speaks, shows their speech/thought bubble, and adds sound effects (pop, whoosh, sparkle,
+  impact, ding, riser). Shot options: cam, pose, mood, card, counter, boom, note, labels (forehead numbers), scale,
+  hide, dark, noCut, noBubble, move().
+- **Characters (all built in three.js, no model files):** `k.toon(o)` cartoon people (blink, eyebrows act the line's
+  emotion, mouth talks; 9 hair styles; costumes via `costume:` alien, old, granny, traveller, villain, hero, vampire,
+  mermaid, cupid). `k.toyChar('robot'|'death'|'genie')`, `k.ghost()`. Any cast entry `{body, look, costume}` becomes a
+  toon automatically (`k.toonOf`).
+- **Places** (`type:`): living, kitchen, bedroom, office, street, park, cafe, wedding, space, heaven, zoo, and (k.place2)
+  chai, rooftop, classroom, hospital, gym, beach, cinema, train.
+- **How to make more:** add a `dict(...)` to a file like `tools/tb_gen/reels4.py`, run
+  `python3 tools/tb_gen/gen.py tools/tb_gen/reelsN.py` (writes the reel folder), check with
+  `python3 tools/toy3d_sheet.py <id>` (frame sheet in `out/<id>/sheet.png`, look at it!), commit + push; GitHub voices
+  and renders on push (or dispatch `make-diorama-parallel.yml` with `reel: "<id> <id>"`). Then add ids to the queue.
+  Gotchas: escape apostrophes in the JS `hook:` string (`\\'`), list `assets=['animals/dog']` for animals, `git add`
+  with a glob that really matches the new folders.
+- The owner loves the **Death** character (Death + Nani). 8 more Death reels were made (057–064). More Death, alien,
+  robot, genie stories are a safe bet, but ASK with options first.
+
+### 2. Toy channel (toyboxtheory): NEW HUMAN KIT waiting for the owner's yes
+- `LIB.toyHuman` in `dioramareels/kit/references/lib3d.js`: our own glossy plastic toy people in three.js. Honours the
+  reel's top/bottom/shoes/hair/hairStyle/skin, blinks, talks, and covers all 23 poses the toy reels use.
+- **OFF by default.** Turn on per reel with `window.TOY_HUMANS = 2;` as the first line of reel.js, or for everything
+  with `LIB.humanKit = 'toy2'`. Samples were sent (line-up + reel 195 frames). **Open question to the owner: switch all
+  209 toy reels and re-render?** Plan if yes: render 3–4 varied reels as full videos first, show him, then the rest
+  (`make-toy3d.yml`, Release `toyreel-<id>`). Only verified on frame sheets so far.
+
+### 3. Other channels (state from this session)
+- **Elites Endgame:** 42 dark reels (056–097) + "the room" fiction reels 101–121 queued; 3 a day (01:00, 06:00, 20:30 IST).
+- **Lokvara:** narrator Anuj (Cartesia `7e8cb11d-37af-476b-ab8f-25da99b18644`), cinematic look + faster cuts in
+  `mythreels/kit/katha.js`. Owner asked for "more movement / more scene changes" and for two sample reels, one with
+  Imran's voice and one with Anuj's: that render was interrupted and is still OPEN. Ask before doing it.
+- **Musclyth:** premium three.js sample `p3d-001-grow-in-sleep` with Cartesia Dominic: owner said "Perfect!". Converting
+  the 49 queued reels to that style is OPEN (ask first).
+- **Socho Zara:** YouTube views ~20; it reuses an old English channel. Suggested a fresh channel; no decision yet.
+- **YouTube/Instagram reach fixes (done):** right category + language per channel on upload, `tools/yt_fix_meta.py`
+  fixes old videos (15 per run), Instagram captions capped at 5 hashtags, cover = hook frame, follow line.
+- Hiding like counts: only by hand in YouTube Studio / the Instagram app; the APIs don't offer it.
+
+### 4. Working notes for this environment
+- Local render tools need: `export PLAYWRIGHT_BROWSERS_PATH=<a dir with chromium>` (cloud sessions have Chromium
+  pre-installed; `python3 tools/toy3d_sheet.py <id> [times]` for sheets, `python3 tools/diorama_make.py <id>` for a full
+  local video ≈ 25 min for 50 s; `--voice-only` for voices). Voices need `set -a; . ./.env; set +a`.
+- Push loop: `for i in 1 2 3 4; do git push -q origin main && break; sleep $((i*2)); git pull -q --rebase; done`.
+- GitHub runners are shared with the posting jobs (they hold a runner for hours), so renders can sit "queued" a while.
+- Commits end with the Co-Authored-By + Claude-Session lines the session gives you.
+
+---
+
 ## 0. FIRST THING IN A NEW CHAT (do this before anything else)
 
 1. **Get repo access.** If GitHub isn't connected, tell me to connect it (claude.ai → Settings → Connectors → GitHub,
